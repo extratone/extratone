@@ -1,4 +1,4 @@
-![PRINTING](https://i.snap.as/SPEnhw1i.jpg)
+![David Blue Portrait 9](https://user-images.githubusercontent.com/43663476/112765148-78a5ca00-8fd1-11eb-88a4-664db2c60ab8.jpg)
 
 # ※ G o o d  M o r n i n g ※
 
