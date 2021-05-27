@@ -1,4 +1,4 @@
-![System Greeb](../bilge/images/David Blue for iOS Icon.png)
+![System Greeb](images/GreebIcons/David%20Blue%20for%20iOS%20Icon.png)
 
 # ※ G o o d  M o r n i n g ※
 
@@ -44,7 +44,10 @@ Thank you again for your hospitality.
 
 ⎆ ~~[Social Directory](https://davidblue.wtf/social) (An ongoing list of links to my profiles on every social service I can remember signing up for.)~~
 
-[MASTODON](https://mastodon.social/@DavidBlue) ※ [TWITTER](https://twitter.com/NeoYokel) ※ [DISCORD](https://discord.gg/eBVrcBaaHp) ※ [GITHUB](https://github.com/extratone/bilge) ※ [LICENSE](https://gist.github.com/extratone/140a11428b5dd1dda500b3928e0438b1)
+#### [MASTODON](https://mastodon.social/@DavidBlue) ※ [TWITTER](https://twitter.com/NeoYokel) ※ [DISCORD](https://discord.gg/eBVrcBaaHp) ※ [GITHUB](https://github.com/extratone/bilge) ※ [LICENSE](https://gist.github.com/extratone/140a11428b5dd1dda500b3928e0438b1)
+
+
+---
 
 | Social Service              | Profile Link                                                 |
 | :-------------------------- | :----------------------------------------------------------- |
