@@ -1,0 +1,8 @@
+AT&T UNIX System V Release 4 Version 2.1
+
+I have converted the disk images from the original Teledisk (TD0) format to standard raw images.  Boot from base1.img and follow the on-screen instructions to install the base system.  Then boot into Unix, and install the additional packages using:
+
+# pkgadd -d diskette1
+
+
+Enjoy!
