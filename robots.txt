@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://extratone.github.io/extratone/sitemap.xml
