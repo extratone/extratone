@@ -1,0 +1,24 @@
+# Microsoft Edge for iOS
+
+[x] Immediately more open and noticeably faster (though it could always be a visual trick in the UI,) but also less smooth.
+[ ] Close all tabs command!!!
+[ ] “[Microsoft's Edge Browser Reaches iOS, Android Tablets](https://www.pcmag.com/news/356644/microsofts-edge-browser-is-headed-to-ios-android)” - *PCMag* 
+[x] [Microsoft’s Announcement](https://blogs.windows.com/windowsexperience/2017/10/05/announcing-microsoft-edge-for-ios-and-android-microsoft-launcher/#dcplImBwBOvDiUmD.97)
+[x] Clumsier gestures.
+[x] Have to repeatedly sign back in to my Microsoft account.
+----------
+![](https://d2mxuefqeaa7sj.cloudfront.net/s_5E2538CD81489F1737D2642455C37A2FAC6E30D4C4ABF915FF051AA0934F844A_1526996905640_edge.jpg)
+
+
+Software reviews (especially of mobile browsers,) may seem a bit tedious, but tech publications are frustratingly hesitant to express any substantial favor, these days. Mobile browsers have been our primary vehicle to The Web for years now, which means we should expect the best experience possible, so I committed to spending one week with Microsoft Edge in my iPhone 8’s #1 browser seat to see how it compares with the lot of currently available web browsers on iOS: Safari, Firefox, Chrome, Brave, and Opera Mini.
+
+After using Safari since the last time it was the best choice (which was uh… quite a while ago,) the speed of my initial surfing on Edge was *very* impressive and immediately evident along with the foreign contrast of its stubbornly on-brand UI design which is matched impressively well with its Windows 10 kin. It feels just a bit more open and less intrusive than Safari or Chrome, and its custom buttons and menus are a refreshing change if you’ve grown tired of iOS’ look, though they’re still pretty ugly. Scrolling through webpages feels quicker, but it’s not quite as smooth as Safari, and neither especially are its responses to swiping gestures.
+
+Microsoft [emphasized](https://blogs.windows.com/windowsexperience/2017/10/05/announcing-microsoft-edge-for-ios-and-android-microsoft-launcher/#dcplImBwBOvDiUmD.97) bringing “familiar” features “like your Favorites, Reading List, New Tab Page and Reading View” on the go, and while these *are* indeed familiar, they are not particularly welcome. Edge was a good idea and undeniably the best browser with which to use a touchscreen on Windows 10, but it now feels unsturdy and broken compared with updated desktop alternatives, so there’s very little incentive right now to use Edge for iOS for its #1 feature, alone, but I did try it out for the sake of thoroughness. While signing in to my Microsoft account from within the app’s main ellipses menu was quicker than you’d expect, there currently doesn’t appear to be a way to *stay* signed in because the app’s been kicking me off at seemingly random intervals of time with no notice or indication that it’s done so.
+
+In terms of speed, I decided to take advantage of the [fastest internet connection I’ve ever tested](https://twitter.com/FickleCrux/status/997339214600593408) to screen capture two browser comparison videos. In the [first](https://youtu.be/J_23UXT6_k4), I simply navigated to and fully rendered the same single, fairly complex sample webpage in each of the six available browsers on iOS successively. (I hope you enjoy the YouTube rights-free soundtrack I added.) In the [second](https://youtu.be/UcHuYUFSmjw), I navigated to a more complex webpage and briefly scrolled through its animation with each before navigating to the same front-page story on *The New York Times*. If anything, these captures prove that modern web browsers are simply too fast for loading time to be a meaningful benchmark anymore, but I should note that Edge seemed noticeably more efficient than the others when I was reading news on a poor 3G connection.
+
+The ultimate issue with using Microsoft Edge is the same with using any browser aside from Safari on iOS: there’s no way to change system-wide which one clicking a link will open. Some old Twitter clients will still let you specify, but one or two sources may as well be none. If you open links from email newsletters as I do dozens of times a day, there’s no intuitive way to maintain use of any other browser. That said, Edge’s cross-platform preference syncing and elegantly simplified interface may make it a good choice for more senior users, and its one-touch “Close All Tabs” button!!! is a simple delight which should be standard everywhere.
+
+As it stands - unless you’re using too old of an iPhone for this comparison to be relevant anyway - you could simply do what I did for this review and simply keep every one of these six apps in a folder should any one take your particular web surfing fancy. I, myself, have already returned Safari back to its old spot in the interest of simplicity.
+

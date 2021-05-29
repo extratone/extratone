@@ -1,0 +1,49 @@
+{
+   "author": "Gordon Pedsersen",
+   "background": {
+      "scripts": [ "browser-polyfill.min.js", "background/apache-mime-types.js", "background/moment.min.js", "background/turndown.js", "/background/Readability.js", "background/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "128": "icons/appicon-128x128.png",
+         "16": "icons/favicon-16x16.png",
+         "32": "icons/favicon-32x32.png",
+         "48": "icons/favicon-48x48.png"
+      },
+      "default_popup": "popup/popup.html",
+      "default_title": "MarkDownload"
+   },
+   "browser_specific_settings": {
+      "gecko": {
+         "id": "{1c5e4c6f-5530-49a3-b216-31ce7d744db0}"
+      }
+   },
+   "commands": {
+      "_execute_browser_action": {
+         "suggested_key": {
+            "default": "Alt+Shift+M"
+         }
+      }
+   },
+   "description": "This extension works like a web clipper, but it downloads articles in markdown format.",
+   "icons": {
+      "128": "icons/appicon-128x128.png",
+      "16": "icons/favicon-16x16.png",
+      "192": "icons/favicon-192x192.png",
+      "32": "icons/favicon-32x32.png",
+      "48": "icons/favicon-48x48.png",
+      "512": "icons/favicon-512x512.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0/aoRyYdM5F2Gha1VNqLEMDflhLZ+7zSJ8N8znzAOVW8DqMfW5qmPWurjjHdTJQPIjmCfcvJ2MA0VMV7YOvawM+hHz4/AW2vdAN9ZdNl1SaNzXL8tj9a0zdetrxuIz4x99W0W0ZNoYZeoxNqmHMj4dNDDLyc+01G7EeFXVYUG7LstvVHZz/DbxQTeOG0C3ARLfyjJ0q8no6K/b0cGu2qowkbF8T98f3E4sRZrOewPjuh+oHVYj7AhPx0dcVlAM11eZ7nCj2HiqBCq2B99XX0tlRiz/j+HxPAwuNHmVY2rRJRxrbqPLna2YLJSf09YXMMgtLTxN3HR9kipDhuzCg+oQIDAQAB",
+   "manifest_version": 2,
+   "name": "MarkDownload - Markdown Web Clipper",
+   "options_ui": {
+      "browser_style": false,
+      "chrome_style": false,
+      "open_in_tab": false,
+      "page": "options/options.html"
+   },
+   "permissions": [ "\u003Call_urls>", "activeTab", "tabs", "downloads", "storage", "contextMenus", "clipboardWrite" ],
+   "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx",
+   "version": "3.0.0"
+}

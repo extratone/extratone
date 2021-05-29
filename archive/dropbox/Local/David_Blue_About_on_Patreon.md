@@ -1,0 +1,8 @@
+# David Blue About on Patreon
+https://diasp.org/public/davidblue.atom
+From across this little picoera of ours which has tried, separated, and derided us, become so ludicrously fascinating, yet deadly, I’ve spent a good portion of my adulthood so far writing about **cars** "[Hyundai is the New Honda](http://www.speedmonkey.co.uk/2012/10/honda-from-trendsetters-to-just-another.html)," *Speedmonkey*) and **technology** ("[Word Processing Mythology](http://bit.ly/ip8plus)*,” Extratone*) from a perspective that feels tedious or abstract to some, but is generally manifested and molded to eventually cure into something very entertaining, if that makes sense. entertaining, through-and-through. I'm proud of the work I've done so far, which has been wild, absurd, reflective, and hilarious - occasionally all in the same work as I develop my voice.
+
+After publishing a [**collection of poetry**](http://bit.ly/Feebles) from my adolescence and early adulthood in the Spring of 2016, I launched an online magazine called [***Extratone***](http://extratone.com) **in the interest of pursuing and defining new culture and ideas. The project and I have been indistinguishable in the two years since, and I’m extremely proud of what I’ve done with it, but I’ve recently refocused my effort back onto my own voice so that we may both benefit in the future. If you’d like to know more about *Extratone*, have a go at my [Editor’s Letters](http://extratone.com/freq) and visit our [Patreon](http://patreon.com/extratone).
+
+Currently, I'm working on a novel project called ***Blimp’s Burden*** which I'd been outlining since 2015 about a jaded software engineer who’s new, ridiculously-eccentric boss presents a future which forces him to reckon with his mishandled grief.
+
