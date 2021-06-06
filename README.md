@@ -1,4 +1,4 @@
-![System Greeb](images/Substation/substation (4).jpg)
+![System Greeb](images/Substation/substation.jpg)
 
 # ※ G o o d  M o r n i n g ※
 
