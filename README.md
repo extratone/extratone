@@ -1,4 +1,4 @@
-![System Greeb](images/Substation/substation.jpg)
+![David Blue](images/Substation/substation.JPG)
 
 # ※ G o o d  M o r n i n g ※
 
