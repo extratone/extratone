@@ -1,8 +1,8 @@
-blank_issues_enabled: false
+blank_issues_enabled: true
 contact_links:
-  - name: GitHub Community Support
-    url: https://github.community/
-    about: Please ask and answer questions here.
-  - name: GitHub Security Bug Bounty
-    url: https://bounty.github.com/
-    about: Please report security vulnerabilities here.
+  - name: *The Psalms* Contribution
+    url: https://github.com/extratone/bilge/issues
+    about: If you're intending to contribute feedback or reach out in Issue form, I think I'd rather you do it on my blog repo, instead. Thanks!
+  - name: Editorial Git
+    url: https://github.com/extratone/extratone/discussions/209
+    about: My main Discussions thread about using GitHub for editorial work.
