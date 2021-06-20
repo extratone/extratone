@@ -1,0 +1,431 @@
+Retrying.
+
+--2021-06-19 22:38:02--  (try: 6)  https://book.nushell.sh/
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:38:29--  (try: 7)  https://book.nushell.sh/
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:38:57--  (try: 8)  https://book.nushell.sh/
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:39:26--  (try: 9)  https://book.nushell.sh/
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:39:56--  (try:10)  https://book.nushell.sh/
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:40:27--  (try:11)  https://book.nushell.sh/
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:40:58--  (try:12)  https://book.nushell.sh/
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:41:29--  (try:13)  https://book.nushell.sh/
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:42:00--  (try:14)  https://book.nushell.sh/
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:42:31--  (try:15)  https://book.nushell.sh/
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:43:02--  (try:16)  https://book.nushell.sh/
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:43:33--  (try:17)  https://book.nushell.sh/
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:44:04--  (try:18)  https://book.nushell.sh/
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:44:35--  (try:19)  https://book.nushell.sh/
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:45:06--  (try:20)  https://book.nushell.sh/
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Giving up.
+
+--2021-06-19 22:45:27--  https://book.nushell.sh/en/plugins
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:45:49--  (try: 2)  https://book.nushell.sh/en/plugins
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:46:12--  (try: 3)  https://book.nushell.sh/en/plugins
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:46:36--  (try: 4)  https://book.nushell.sh/en/plugins
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:47:01--  (try: 5)  https://book.nushell.sh/en/plugins
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:47:27--  (try: 6)  https://book.nushell.sh/en/plugins
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:47:54--  (try: 7)  https://book.nushell.sh/en/plugins
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:48:22--  (try: 8)  https://book.nushell.sh/en/plugins
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:48:51--  (try: 9)  https://book.nushell.sh/en/plugins
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:49:21--  (try:10)  https://book.nushell.sh/en/plugins
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:49:52--  (try:11)  https://book.nushell.sh/en/plugins
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:50:23--  (try:12)  https://book.nushell.sh/en/plugins
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:50:54--  (try:13)  https://book.nushell.sh/en/plugins
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:51:25--  (try:14)  https://book.nushell.sh/en/plugins
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:51:56--  (try:15)  https://book.nushell.sh/en/plugins
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:52:27--  (try:16)  https://book.nushell.sh/en/plugins
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:52:58--  (try:17)  https://book.nushell.sh/en/plugins
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:53:29--  (try:18)  https://book.nushell.sh/en/plugins
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:54:00--  (try:19)  https://book.nushell.sh/en/plugins
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:54:31--  (try:20)  https://book.nushell.sh/en/plugins
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Giving up.
+
+--2021-06-19 22:54:52--  https://book.nushell.sh/en/installation
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:55:14--  (try: 2)  https://book.nushell.sh/en/installation
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:55:37--  (try: 3)  https://book.nushell.sh/en/installation
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:56:01--  (try: 4)  https://book.nushell.sh/en/installation
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:56:26--  (try: 5)  https://book.nushell.sh/en/installation
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:56:52--  (try: 6)  https://book.nushell.sh/en/installation
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:57:19--  (try: 7)  https://book.nushell.sh/en/installation
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:57:47--  (try: 8)  https://book.nushell.sh/en/installation
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:58:16--  (try: 9)  https://book.nushell.sh/en/installation
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:58:46--  (try:10)  https://book.nushell.sh/en/installation
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:59:17--  (try:11)  https://book.nushell.sh/en/installation
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 22:59:48--  (try:12)  https://book.nushell.sh/en/installation
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 23:00:20--  (try:13)  https://book.nushell.sh/en/installation
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 23:00:51--  (try:14)  https://book.nushell.sh/en/installation
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 23:01:22--  (try:15)  https://book.nushell.sh/en/installation
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 23:01:53--  (try:16)  https://book.nushell.sh/en/installation
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 23:02:24--  (try:17)  https://book.nushell.sh/en/installation
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 23:02:55--  (try:18)  https://book.nushell.sh/en/installation
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 23:03:26--  (try:19)  https://book.nushell.sh/en/installation
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Retrying.
+
+--2021-06-19 23:03:57--  (try:20)  https://book.nushell.sh/en/installation
+Connecting to book.nushell.sh (book.nushell.sh)|192.64.119.90|:443... failed: Resource temporarily unavailable.
+Giving up.
+
+--2021-06-19 23:04:18--  https://www.nushell.sh/book/es/
+Reusing existing connection to www.nushell.sh:443.
+HTTP request sent, awaiting response... No data received.
+Retrying.
+
+--2021-06-19 23:04:19--  (try: 2)  https://www.nushell.sh/book/es/
+Connecting to www.nushell.sh (www.nushell.sh)|185.199.109.153|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2021-06-19 23:04:19 ERROR 404: Not Found.
+
+FINISHED --2021-06-19 23:04:19--
+Total wall clock time: 1h 7m 53s
+Downloaded: 662 files, 20M in 2.0s (9.92 MB/s)
+Converting links in www.nushell.sh/book/types_of_data.html... 526-0
+Converting links in www.nushell.sh/contributor-book/metadata.html... 470-0
+Converting links in www.nushell.sh/cookbook/parsing_git_log.html... 469-0
+Converting links in www.nushell.sh/ja/book/shells_in_shells.html... 478-0
+Converting links in www.nushell.sh/book/introduction.html... 484-0
+Converting links in www.nushell.sh/book/commands/to-yaml.html... 482-0
+Converting links in www.nushell.sh/index.html... 460-0
+Converting links in www.nushell.sh/blog/2021-04-20-nushell_0_30.html... 469-0
+Converting links in www.nushell.sh/blog/2020-03-10-nushell_0_11_0.html... 469-0
+Converting links in www.nushell.sh/zh-cn/book/working_with_tables.html... 480-2
+Converting links in www.nushell.sh/pt-BR/contributor-book/filosofia.html... 472-0
+Converting links in www.nushell.sh/pt-BR/contributor-book/streams.html... 473-0
+Converting links in www.nushell.sh/contributor-book/plugins.html... 476-0
+Converting links in www.nushell.sh/es/book/aliases.html... 481-0
+Converting links in www.nushell.sh/ja/book/configuration.html... 485-0
+Converting links in www.nushell.sh/zh-cn/book/types_of_data.html... 489-2
+Converting links in www.nushell.sh/blog/2019-12-18-nushell-0_7_0.html... 471-0
+Converting links in www.nushell.sh/pt-BR/book/introducao.html... 470-0
+Converting links in www.nushell.sh/es/book/matematicas.html... 495-0
+Converting links in www.nushell.sh/ja/book/nushell_map_functional.html... 469-0
+Converting links in www.nushell.sh/pt-BR/contributor-book/valores.html... 474-0
+Converting links in www.nushell.sh/blog/2020-08-23-year_of_nushell.html... 484-0
+Converting links in www.nushell.sh/book/aliases.html... 487-0
+Converting links in www.nushell.sh/book/scripts.html... 486-0
+Converting links in www.nushell.sh/contributor-book/commands.html... 477-0
+Converting links in www.nushell.sh/es/book/pipeline.html... 486-0
+Converting links in www.nushell.sh/cookbook/index.html... 476-0
+Converting links in www.nushell.sh/blog/2020-12-15-nushell_0_24.html... 460-0
+Converting links in www.nushell.sh/ja/book/working_with_tables.html... 482-0
+Converting links in www.nushell.sh/blog/2020-11-03-nushell_0_22.html... 467-0
+Converting links in www.nushell.sh/es/book/variables_y_subexpresiones.html... 481-0
+Converting links in www.nushell.sh/book/commands/from-ics.html... 482-0
+Converting links in www.nushell.sh/book/commands/from-json.html... 483-0
+Converting links in www.nushell.sh/blog/2020-11-24-nushell_0_23.html... 463-0
+Converting links in www.nushell.sh/ja/book/introduction.html... 471-0
+Converting links in www.nushell.sh/es/contributor-book/comandos.html... 474-0
+Converting links in www.nushell.sh/blog/2021-01-26-nushell_0_26.html... 464-0
+Converting links in www.nushell.sh/ja/book/math.html... 475-0
+Converting links in www.nushell.sh/pt-BR/contributor-book/index.html... 472-0
+Converting links in www.nushell.sh/es/book/mapa_imperativo_nushell.html... 479-0
+Converting links in www.nushell.sh/zh-cn/book/installation.html... 488-2
+Converting links in www.nushell.sh/pt-BR/book/escapando.html... 470-0
+Converting links in www.nushell.sh/pt-BR/contributor-book/introdução.html... 466-0
+Converting links in www.nushell.sh/es/book/metadatos.html... 479-0
+Converting links in www.nushell.sh/zh-cn/book/metadata.html... 469-2
+Converting links in www.nushell.sh/contributor-book/shells.html... 469-0
+Converting links in www.nushell.sh/ja/book/metadata.html... 471-0
+Converting links in www.nushell.sh/book/command_reference.html... 1476-0
+Converting links in www.nushell.sh/book/escaping.html... 484-0
+Converting links in www.nushell.sh/blog/2019-12-31-happy-nu-year-2020.html... 468-0
+Converting links in www.nushell.sh/es/book/plugins.html... 479-0
+Converting links in www.nushell.sh/es/book/shells_en_shells.html... 486-0
+Converting links in www.nushell.sh/blog/2019-09-24-nushell_0_3_0.html... 472-0
+Converting links in www.nushell.sh/ja/book/escaping.html... 471-0
+Converting links in www.nushell.sh/ja/book/aliases.html... 471-0
+Converting links in www.nushell.sh/ja/book/nushell_map.html... 469-0
+Converting links in www.nushell.sh/blog/2020-06-30-nushell_0_16_0.html... 475-0
+Converting links in www.nushell.sh/ja/book/nushell_map_imperative.html... 469-0
+Converting links in www.nushell.sh/zh-cn/book/introduction.html... 469-2
+Converting links in www.nushell.sh/book/commands/from-ini.html... 482-0
+Converting links in www.nushell.sh/book/commands/from-toml.html... 482-0
+Converting links in www.nushell.sh/book/commands/from-tsv.html... 483-0
+Converting links in www.nushell.sh/es/contributor-book/metadatos.html... 466-0
+Converting links in www.nushell.sh/cookbook/git.html... 470-0
+Converting links in www.nushell.sh/book/commands/to-tsv.html... 482-0
+Converting links in nushell.sh/book.html... 508-0
+Converting links in www.nushell.sh/book/plugins.html... 485-0
+Converting links in www.nushell.sh/cookbook/files.html... 471-0
+Converting links in www.nushell.sh/ja/book/moving_around.html... 477-0
+Converting links in www.nushell.sh/blog/2020-09-22-nushell_0_20.html... 470-0
+Converting links in www.nushell.sh/ja/book/index.html... 489-1
+Converting links in book.nushell.sh/index.html... 508-0
+Converting links in www.nushell.sh/blog/2021-05-11-nushell_0_31.html... 465-0
+Converting links in www.nushell.sh/blog/2020-02-18-nushell-0_10_0.html... 472-0
+Converting links in www.nushell.sh/book/commands/to-md.html... 483-0
+Converting links in www.nushell.sh/es/contributor-book/valores.html... 471-0
+Converting links in www.nushell.sh/book/operators.html... 484-0
+Converting links in www.nushell.sh/book/commands/from-url.html... 482-0
+Converting links in www.nushell.sh/book/math.html... 500-0
+Converting links in www.nushell.sh/cookbook/help.html... 471-0
+Converting links in www.nushell.sh/book/commands/from-yaml.html... 482-0
+Converting links in www.nushell.sh/pt-BR/contributor-book/comandos.html... 477-0
+Converting links in www.nushell.sh/blog/2020-09-01-nushell_0_19.html... 475-0
+Converting links in www.nushell.sh/book/commands/to-url.html... 482-0
+Converting links in www.nushell.sh/book/coming_from_bash.html... 484-0
+Converting links in www.nushell.sh/cookbook/native_shell_programs.html... 468-0
+Converting links in www.nushell.sh/blog/2019-11-26-nushell-0_6_0.html... 479-0
+Converting links in www.nushell.sh/book/commands/from-xml.html... 482-0
+Converting links in www.nushell.sh/es/contributor-book/introduccion.html... 462-0
+Converting links in www.nushell.sh/pt-BR/contributor-book/shells.html... 469-0
+Converting links in www.nushell.sh/pt-BR/book/pipeline.html... 477-0
+Converting links in www.nushell.sh/book/working_with_tables.html... 495-0
+Converting links in www.nushell.sh/blog/index.html... 525-0
+Converting links in www.nushell.sh/zh-cn/index.html... 458-2
+Converting links in www.nushell.sh/es/book/trabajando_con_tablas.html... 489-0
+Converting links in www.nushell.sh/ja/book/installation.html... 491-0
+Converting links in www.nushell.sh/es/book/entorno.html... 480-0
+Converting links in www.nushell.sh/zh-cn/book/index.html... 479-12
+Converting links in www.nushell.sh/book/commands/to-xml.html... 483-0
+Converting links in www.nushell.sh/ja/book/plugins.html... 471-0
+Converting links in www.nushell.sh/contributor-book/values.html... 474-0
+Converting links in www.nushell.sh/es/book/configuracion.html... 493-0
+Converting links in www.nushell.sh/ja/book/environment.html... 470-0
+Converting links in www.nushell.sh/pt-BR/book/explorando.html... 476-0
+Converting links in www.nushell.sh/pt-BR/book/shells_em_shells.html... 477-0
+Converting links in www.nushell.sh/es/contributor-book/filosofia.html... 469-0
+Converting links in www.nushell.sh/book/nushell_map_functional.html... 484-0
+Converting links in www.nushell.sh/blog/2020-03-31-nushell_0_12_0.html... 473-0
+Converting links in www.nushell.sh/es/contributor-book/index.html... 466-0
+Converting links in www.nushell.sh/book/loading_data.html... 492-0
+Converting links in www.nushell.sh/es/book/tipos_de_datos.html... 494-0
+Converting links in www.nushell.sh/blog/2021-01-05-nushell_0_25.html... 466-0
+Converting links in nushell.sh/demo.html... 2-0
+Converting links in www.nushell.sh/blog/2019-11-05-nushell-0_5_0.html... 471-0
+Converting links in www.nushell.sh/blog/2020-06-09-nushell_0_15_0.html... 485-0
+Converting links in www.nushell.sh/pt-BR/contributor-book/plugins.html... 476-0
+Converting links in www.nushell.sh/blog/2020-07-21-nushell_0_17_0.html... 478-0
+Converting links in www.nushell.sh/es/book/escapando.html... 479-0
+Converting links in www.nushell.sh/book/commands/from-ods.html... 482-0
+Converting links in www.nushell.sh/pt-BR/book/plugins.html... 470-0
+Converting links in www.nushell.sh/ja/book/nushell_operator_map.html... 469-0
+Converting links in www.nushell.sh/es/book/index.html... 497-2
+Converting links in www.nushell.sh/book/shells_in_shells.html... 491-0
+Converting links in www.nushell.sh/book/metadata.html... 484-0
+Converting links in www.nushell.sh/blog/2021-03-30-nushell_0_29.html... 464-0
+Converting links in www.nushell.sh/contributor-book/index.html... 472-0
+Converting links in www.nushell.sh/book/commands/from-xlsx.html... 482-0
+Converting links in www.nushell.sh/book/custom_commands.html... 501-0
+Converting links in www.nushell.sh/book/moving_around.html... 490-0
+Converting links in www.nushell.sh/zh-cn/book/math.html... 481-2
+Converting links in www.nushell.sh/blog/2019-10-15-nushell-0_4_0.html... 471-0
+Converting links in www.nushell.sh/blog/2020-10-13-nushell_0_21.html... 465-0
+Converting links in www.nushell.sh/pt-BR/contributor-book/metadados.html... 470-0
+Converting links in www.nushell.sh/blog/2020-01-28-nushell-0_9_0.html... 482-0
+Converting links in www.nushell.sh/blog/2021-02-16-nushell_0_27.html... 472-0
+Converting links in www.nushell.sh/zh-cn/book/aliases.html... 473-2
+Converting links in www.nushell.sh/ja/book/loading_data.html... 479-0
+Converting links in www.nushell.sh/book/commands/from-vcf.html... 482-0
+Converting links in www.nushell.sh/es/book/instalacion.html... 494-0
+Converting links in www.nushell.sh/ja/book/types_of_data.html... 491-0
+Converting links in www.nushell.sh/zh-cn/book/moving_around.html... 475-2
+Converting links in www.nushell.sh/book/nushell_map_imperative.html... 484-0
+Converting links in www.nushell.sh/pt-BR/book/carregando_dados.html... 478-0
+Converting links in www.nushell.sh/book/commands/math-eval.html... 482-0
+Converting links in www.nushell.sh/es/book/mapa_nushell.html... 479-0
+Converting links in www.nushell.sh/zh-cn/book/environment.html... 470-2
+Converting links in www.nushell.sh/ja/index.html... 460-0
+Converting links in www.nushell.sh/blog/2020-04-21-nushell_0_13_0.html... 472-0
+Converting links in www.nushell.sh/cookbook/system.html... 473-0
+Converting links in www.nushell.sh/book/nushell_map.html... 484-0
+Converting links in www.nushell.sh/es/book/explorando.html... 485-0
+Converting links in www.nushell.sh/book/configuration.html... 511-0
+Converting links in www.nushell.sh/pt-BR/book/metadados.html... 470-0
+Converting links in www.nushell.sh/book/commands/to-json.html... 483-0
+Converting links in www.nushell.sh/blog/2020-01-07-nushell-0_8_0.html... 469-0
+Converting links in www.nushell.sh/es/book/llegando_de_bash.html... 479-0
+Converting links in www.nushell.sh/es/book/mapa_funcional_nushell.html... 479-0
+Converting links in www.nushell.sh/contributor-book/introduction.html... 466-0
+Converting links in www.nushell.sh/zh-cn/book/configuration.html... 483-2
+Converting links in www.nushell.sh/es/book/mapa_operador_nushell.html... 479-0
+Converting links in www.nushell.sh/book/working_with_lists.html... 484-0
+Converting links in www.nushell.sh/zh-cn/book/loading_data.html... 477-2
+Converting links in www.nushell.sh/ja/book/coming_from_bash.html... 469-0
+Converting links in www.nushell.sh/book/variables_and_subexpressions.html... 492-0
+Converting links in www.nushell.sh/blog/2021-06-01-nushell_0_32.html... 486-0
+Converting links in www.nushell.sh/contributor-book/philosophy.html... 472-0
+Converting links in www.nushell.sh/pt-BR/book/instalacao.html... 486-0
+Converting links in www.nushell.sh/pt-BR/book/trabalhando_com_tabelas.html... 481-0
+Converting links in www.nushell.sh/blog.html... 525-0
+Converting links in www.nushell.sh/pt-BR/index.html... 460-0
+Converting links in www.nushell.sh/es/book/introduccion.html... 479-0
+Converting links in www.nushell.sh/es/book/cargando_datos.html... 487-0
+Converting links in www.nushell.sh/cookbook/misc.html... 467-0
+Converting links in www.nushell.sh/blog/2019-11-23-nushell-survey-results.html... 476-0
+Converting links in www.nushell.sh/contributor-book/streams.html... 473-0
+Converting links in www.nushell.sh/book/commands/to-toml.html... 482-0
+Converting links in www.nushell.sh/book/pipeline.html... 491-0
+Converting links in www.nushell.sh/ja/book/pipeline.html... 478-0
+Converting links in www.nushell.sh/zh-cn/book/pipeline.html... 476-2
+Converting links in www.nushell.sh/blog/2020-08-11-nushell_0_18.html... 463-0
+Converting links in www.nushell.sh/es/index.html... 460-0
+Converting links in www.nushell.sh/book/installation.html... 503-0
+Converting links in www.nushell.sh/pt-BR/book/index.html... 479-1
+Converting links in www.nushell.sh/book/environment.html... 492-0
+Converting links in www.nushell.sh/cookbook/setup.html... 472-0
+Converting links in www.nushell.sh/book/nushell_operator_map.html... 484-0
+Converting links in www.nushell.sh/cookbook/parsing.html... 468-0
+Converting links in www.nushell.sh/pt-BR/book/tipos_de_dados.html... 485-0
+Converting links in www.nushell.sh/book/commands/from-csv.html... 482-0
+Converting links in www.nushell.sh/blog/2021-03-09-nushell_0_28.html... 476-0
+Converting links in www.nushell.sh/blog/2019-08-23-introducing-nushell.html... 472-0
+Converting links in www.nushell.sh/blog/2020-05-12-nushell_0_14_0.html... 473-0
+Converting links in www.nushell.sh/cookbook/http.html... 470-0
+Converting links in www.nushell.sh/book/commands/to-csv.html... 482-0
+Converting links in www.nushell.sh/assets/css/0.styles.9747aa62.css... 1-0
+Converted links in 195 files in 2.8 seconds.
