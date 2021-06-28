@@ -2,7 +2,7 @@
 
 # ※ G o o d  M o r n i n g ※
 
-## I'm David Blue - an automotive journalist on sabbatical and self-described *Software Historian*.
+## *"I am not a Maintainer, a Maker, or a Fixer, even. I am a Breaker, a Disruptor, and a Complainer."*
 
 
 
