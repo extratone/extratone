@@ -1,0 +1,46 @@
+
+<main class="contents chronicles">
+  <header>
+    <div class="heading">
+      <h1>The Chronicles</h1>
+      <h4 class="subheading">your primary source of news</h4>
+    </div>
+  </header>
+
+  <ul class="links">
+    <li><a href="">Subscribe via RSS</a></li>
+    <li><a href="">Submit news</a></li>
+  </ul>
+
+  <% if (pagination == 2){ %>
+    <% page.posts.each(function(post) { %>
+      <% if (post.wanted) { %>
+        <%- partial('wanted', {post: post, index: true}) %>
+      <% } %>
+    <% }) %>
+
+    <% page.posts.each(function(post) { %>
+      <% if (post.featured) { %>
+        <%- partial('featured', {post: post, index: true}) %>
+      <% } %>
+    <% }) %>
+    <div class="section-title">
+      <h4>IN THE NEWS</h4>
+    </div>
+    <div class="flexrow">
+    <% page.posts.each(function(post) { %>
+      <% if (!post.wanted && !post.featured) { %>
+        <%- partial('article', {post: post, index: true}) %>
+      <% } %>
+    <% }) %>
+    </div>
+  <% } %>
+
+  <% if (page.total > 1){ %>
+    <nav id="page-nav" class="page-nav">
+      <%- paginator({prev_text: "&#8249;", next_text: "&#8250;"}) %>
+    </nav>
+  <% } %>
+
+  <%- partial('_partial/buttons') %>
+</main>

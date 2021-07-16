@@ -1,0 +1,103 @@
+
+/* share buttons https://github.com/distributopia/share-connect-support */
+
+.dex-btn,
+.popup button {
+  cursor: pointer;
+}
+
+.dex-btn {
+  width: 30px;
+  height: 30px;
+  line-height: 1.6;
+  text-align: center;
+  text-decoration: none;
+  font-size: .85rem;
+  margin: 1.5em .4em 0;
+  border: none;
+  padding-top: 4px;
+  background: black;
+  padding: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.i-sidebar .dex-btn {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  display: initial;
+  margin: .1em 0;
+}
+
+.dex-btn span,
+.i-sidebar .dex-icon {
+  vertical-align: middle;
+}
+
+.dex-btn,
+.dex-btn span {
+  font-weight: bold;
+}
+
+.share {
+  max-height: 40px;
+  display: inline-block;
+}
+
+.i-sidebar .share {
+  display: block;
+}
+
+.dex-icon {
+  vertical-align: top;
+  fill: $golden;
+  width: 13px;
+  height: 13px;
+}
+
+.i-sidebar .dex-icon {
+  fill: $white;
+  width: 16px;
+  height: 16px;
+}
+
+.overlay,
+.hidden,
+.hidden + .popup {
+  display: none;
+}
+
+.hidden:checked + .popup {
+  position: absolute;
+  min-width: 265px;
+  padding: .4em;
+  z-index: $zIndex--3;
+  background-color: rgba($white, .25);
+  display: inline-block;
+}
+
+.i-sidebar .hidden:checked + .popup {
+  margin-left: 2em;
+}
+
+.popup input {
+  height: 25px;
+  min-width: 200px;
+}
+
+.popup button {
+  margin: 2.5px 0 2.5px 5px;
+  height: 28px;
+  width: 44px;
+}
+
+.i-sidebar .popup label {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, .5);
+}

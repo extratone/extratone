@@ -1,0 +1,51 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <link rel="shortcut icon" href="<%- url_for('favicon.ico') %>">
+    <title>
+        <% if (page.title) { %>
+          <%= page.title + ' - ' + config.title %>
+        <% } else { %>
+          <%= config.title %>
+        <% } %>
+    </title>
+    <meta name="description" content="<%=config.description%>">
+    <meta property="og:title" content="<%if (page.title) {%><%=page.title%><%}%> - <%=config.title%>">
+    <meta property="og:description" content="<%if (page.preview) {%><%=page.preview%><%} else {%><%=config.description%><%}%>">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="<%=config.url %>/<% if (page.path.match(/post/) && page.banner) {%><%=page.path%><%=page.banner%><%} else {%><%=config.ogImage%><%}%>">
+    <meta property="og:image:width" content="558">
+    <meta property="og:image:height" content="270">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content="<%if (page.preview) {%><%=page.preview%><%} else {%><%=config.description%><%}%>">
+    <meta name="twitter:title" content="<%if (page.title) {%><%=page.title%><%}%> - <%=config.title%>">
+    <meta name="twitter:image" content="<%=config.url %>/<% if (page.path.match(/post/) && page.banner) {%><%=page.path%><%=page.banner%><%} else {%><%=config.ogImage%><%}%>">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="canonical" href="https://fediverse.party">
+    <meta name="author" content="<%=config.author%>">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="FediGuide">
+    <link rel="icon" type="image/png" sizes="192x192" href="<%- url_for('img/touch/android-icon-192x192.png') %>">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="apple-mobile-web-app-title" content="FediGuide">
+    <link rel="apple-touch-icon" sizes="152x152" href="<%- url_for('img/touch/apple-icon-152x152.png') %>">
+    <link rel="apple-touch-icon" sizes="57x57" href="<%- url_for('img/touch/apple-icon-57x57.png') %>">
+    <link rel="apple-touch-icon" sizes="60x60" href="<%- url_for('img/touch/apple-icon-60x60.png') %>">
+    <link rel="apple-touch-icon" sizes="72x72" href="<%- url_for('img/touch/apple-icon-72x72.png') %>">
+    <link rel="apple-touch-icon" sizes="76x76" href="<%- url_for('img/touch/apple-icon-76x76.png') %>">
+    <link rel="apple-touch-icon" sizes="114x114" href="<%- url_for('img/touch/apple-icon-114x114.png') %>">
+    <link rel="apple-touch-icon" sizes="120x120" href="<%- url_for('img/touch/apple-icon-120x120.png') %>">
+    <link rel="apple-touch-icon" sizes="144x144" href="<%- url_for('img/touch/apple-icon-144x144.png') %>">
+    <link rel="apple-touch-icon" sizes="180x180" href="<%- url_for('img/touch/apple-icon-180x180.png') %>">
+
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="msapplication-TileImage" content="<%- url_for('img/touch/ms-touch-icon-144x144-precomposed.png') %>">
+    <meta name="msapplication-TileColor" content="#ffffff">
+
+    <link rel="manifest" href="<%- url_for('manifest.json') %>">
+    <meta name="theme-color" content="#f4f4f4">
+
+    <%- css('css/main.min.css') %>
+    <%- partial('_partial/svgfont') %>
+</head>

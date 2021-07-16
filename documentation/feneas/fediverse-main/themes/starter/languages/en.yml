@@ -1,0 +1,157 @@
+
+# translation needed for the right part of each string
+# variables before colon should be left as is
+
+# Menu
+menu: MENU
+chronicles: Chronicles
+knowledge: Knowledge
+more: All apps
+portal: Portal
+magic: Magic Ball
+logo: logo hub
+about: ABOUT
+
+# Index page
+hello: Hello, traveller!
+leave: Leave the familiar Web behind, and dive into the
+unique: unique part of the Internet
+theWorld: This is the world of independence and diversity.
+universe: A universe that you shape, refine and expand.
+joinF: JOIN FEDIVERSE
+
+# Fediverse page
+networks: networks
+protocols: protocols
+langs: programming languages
+history: history
+projects: related projects
+reading: additional reading
+
+# Knowledge page
+share: SHARE WITH FRIENDS
+
+# Chronicles page
+theChronicles: The Chronicles
+primary: your primary source of news
+subscribe: Subscribe via RSS
+submit: Submit news
+tags: Tags
+wanted: WANTED
+featured: FEATURED
+news: IN THE NEWS
+details: More details
+here: here
+
+# network pages
+overview: overview
+started: Getting started
+category: category
+type: type
+created: created
+official: official page
+license: license
+code: source code
+repo: repository
+language: written in
+wiki: wiki
+docs: docs
+links: links
+join: join the network
+serverList: Server list
+users: for users
+techies: for techies
+mobapps: Mobile apps
+tuts: tutorials
+utilities: utilities
+forks: forks / modifications
+cheatsheets: cheat sheets
+total: population
+server: servers
+accounts: accounts
+instances: instances
+active: active users
+people: people
+world: world
+mascot: mascot
+dwellers: dwellers
+communities: communities
+connections: connects
+stars: early adopters
+features: features
+information: information
+contributing: contributing
+donate: DONATE
+soon: coming soon
+wizard: SERVER WIZARD
+userGuide: User guide
+adminGuide: Administrator guide
+devGuide: Developer guide
+preinstalled: Preinstalled hosting
+mediaHosting: Communal media storage
+relay: Relay
+
+# diaspora page
+proxy: Proxy
+
+# mastodon page
+howto: How to Mastodon
+guide: Guide
+awesome: Awesome Mastodon list
+backup: Mastodon backup
+metrics: metrics
+stats: statistics
+graphs: graphs
+webmentions: Webmentions - site + Fediverse bridge
+mastofeed: Mastofeed
+crossposting: Mastodon-Twitter crossposting
+mastoGallery: Artodon gallery
+feedPreview: Instance timeline preview
+feed2toot: RSS to Mastodon bot
+trunk: Trunk - follow users with common interests
+
+#GNU Social page
+timeline: Timeline for website
+plugins: List of plugins
+
+#Friendica
+rss2Friendica: RSS-to-Friendica crossposting
+installation: Installation
+selfhost: Self-hosting Friendica
+
+# Hubzilla page
+channel: Personal channels
+permissions: ✓ Channel permissions and roles cheatsheet
+
+#Pleroma page
+ownInstance: Setting up your instance
+linuxInstall: Installing on Linux using OTP releases
+
+#PeerTube page
+sepia: ✓ Sepia Search for videos and channels
+search: Alternative search engine for videos
+
+# Contributing partial
+foreword: Please, keep in mind that you are a participant, not a customer.
+promptStart: If you'd like to help the
+promptEnd: network grow, you can contribute in different ways.
+optionOne1: Donate to
+devTeam: development team
+or: or
+optionOne2: the administrator of your server (if you have the means to do that).
+setUp: Set up # ...your own instance (context for translation)
+optionTwo: your own instance, to make federation stronger and healthier, with many small servers.
+optionThree: Spread the word. Invite your friends. Explain why it's important.
+optionFour1: Contribute with code. Send a pull request. Resolve an
+issue: issue
+optionFour2: Take a
+bounty: bounty
+help: Help # ...translating (context for translation)
+translating: translating
+optionFive: Design promo materials. Print and distribute
+stickers: stickers
+thanks: Thank you. See you in # ...network name (context for translation)
+
+# Clients
+pinafore: ✓ Pinafore - alternative web interface
+halcyon: ✓ Halcyon - alternative web interface

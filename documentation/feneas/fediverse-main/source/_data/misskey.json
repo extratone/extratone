@@ -1,0 +1,61 @@
+{
+  "data":
+    {
+      "title": "misskey",
+      "category": "social network",
+      "type": "microblogging",
+      "logoClr": "fb4e4e",
+      "created": "2014",
+      "official": "https://join.misskey.page/en",
+      "license": "AGPL-3.0",
+      "repo": "https://github.com/syuilo/misskey",
+      "language": "TypeScript",
+      "protocols":
+        [
+          {"title": "ActivityPub", "url": "https://activitypub.rocks"}
+        ],
+      "wiki": "",
+      "servers":
+        [
+          {"num": "1", "url": "https://the-federation.info/misskey"},
+          {"num": "2", "url": "https://join.misskey.page/en/wiki/instances"},
+          {"num": "3", "url": "https://fedidb.org/network/?s=misskey"}
+        ],
+      "mobile": "https://join.misskey.page/en/wiki/apps/clients",
+      "devTutorial": "https://github.com/syuilo/misskey/blob/master/docs/setup.en.md",
+      "mascot": [{"item": "藍 (Ai)", "imgNum": "1"}],
+      "dwellers": "Miskist",
+      "communities": "",
+      "descr": "Apart from the mainstream microblogging experience, this network provides many additional features like a calendar, emoji reactions, games. The web client can be customized by choosing from various available widgets. Original interface language is Japanese, but translations for many other languages such as English, German, Korean and more are available.",
+      "connections": ["Mastodon", "Pleroma"],
+      "screenshots":
+        [
+          {"descr": "Misskey interface", "img": "misskey-1.jpg"},
+          {"descr": "Dark theme", "img": "misskey-2.jpg"}
+        ],
+      "features":
+        [
+          "polls",
+          "emoji reactions",
+          "lists",
+          "calendar",
+          "trends",
+          "recommended users",
+          "tips for newcomers",
+          "server information",
+          "games"
+        ],
+      "donate": "https://www.patreon.com/syuilo",
+      "tracker": "https://github.com/syuilo/misskey/issues",
+      "bounty": "",
+      "translating": "https://crowdin.com/project/misskey",
+      "reading":
+        [
+          {
+            "title": "Introducing MissKey, a Fediverse microblogging app",
+            "url": "https://wedistribute.org/2019/03/introducing-misskey-a-fediverse-microblogging-app-built-with-node"
+          }
+        ],
+      "notable": ""
+    }
+}

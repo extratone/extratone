@@ -1,0 +1,19 @@
+
+<%
+  let sbClass = '';
+  if (is_root()) {
+    sbClass = 'sidebar i-sidebar';
+  } else {
+    sbClass = 'sidebar g-sidebar';
+  }
+%>
+
+<aside class="<%= sbClass %>">
+  <a href="<%= url_for('/') %>" class="f-logo" aria-labelledby="fLogo">
+    <svg role="img">
+      <title id="fLogo">Fediverse.Party logo</title>
+      <use xlink:href="#icon-logo"></use>
+    </svg>
+  </a>
+  <% if (is_root()) { %>  <%- partial('./buttons') %> <% } %>
+</aside>

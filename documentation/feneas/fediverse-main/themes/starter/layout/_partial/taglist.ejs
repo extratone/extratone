@@ -1,0 +1,10 @@
+
+
+<% posts.forEach(function(item) { %>
+  <li class="tags__item">
+    <span class="tag__date"><%= item.date.format(config.date_format).split('-').join('.') %></span>
+    <a href="<%- url_for(item.path) %>" class="title">
+      <%- item.title || "Untitled" %>
+    </a>
+  </li>
+<% }); %>

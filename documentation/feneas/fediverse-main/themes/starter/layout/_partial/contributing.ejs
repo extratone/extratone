@@ -1,0 +1,54 @@
+
+<%
+  const network = page.network;
+  const data = site.data[network].data;
+  const numbers = site.data.numbers.list[network];
+%>
+
+<div class="section-title block">
+  <h2><%- __('contributing') %></h2>
+</div>
+
+<strong><%- __('foreword') %></strong>
+
+<% if (data.donate) { %>
+  <a href="<%= data.donate %>" class="u-block u-emphasize btn-action u-center" style="color: white; background-color: #<%= data.logoClr %>"><%- __('donate') %></a>
+<% } %>
+
+<p><%- __('promptStart') %> <%= page.title %> <%- __('promptEnd') %></p>
+
+<ol>
+  <li>
+    <%- __('optionOne1') %>
+    <% if (data.donate) { %>
+      <a href="<%= data.donate %>"><%- __('devTeam') %></a> <%- __('or') %>
+    <% } %>
+    <%- __('optionOne2') %>
+  </li>
+  <li>
+    <% if (data.devTutorial) { %>
+      <a href="<%= data.devTutorial %>"><%- __('setUp') %></a> <%- __('optionTwo') %>
+    <% } else { %>
+      <%- __('setUp') %> <%- __('optionTwo') %>
+    <% } %>
+  </li>
+  <li><%- __('optionThree') %></li>
+  <li>
+    <%- __('optionFour1') %> <a href="<%= data.tracker %>"><%- __('issue') %></a>. <%- __('optionFour2') %>
+    <% if (data.bounty) { %>
+      <a href="<%= data.bounty %>"><%- __('bounty') %></a>.
+    <% } else { %>
+      <%- __('bounty') %>.
+    <% } %>
+  </li>
+  <li><%- __('help') %>
+    <% if (data.translating) { %>
+      <a href="<%= data.translating %>"><%- __('translating') %></a>.
+    <% } else { %>
+      <%- __('translating') %>.
+    <% } %>
+      <%- __('optionFive') %> <a href="https://git.feneas.org/light/distributopia/-/tree/main/sticker-bay"><%- __('stickers') %></a>.
+  </li>
+</ol>
+<br>
+<strong><%- __('thanks') %> <%= page.title %>.</strong>

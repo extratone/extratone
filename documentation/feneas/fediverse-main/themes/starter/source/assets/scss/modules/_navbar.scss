@@ -1,0 +1,243 @@
+
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: $zIndex--4;
+  padding: .4em;
+  color: $white;
+  font-family: $font-secondary;
+}
+
+.navbar svg {
+  fill: $white;
+}
+
+.nav svg {
+  height: 10px;
+  width: 10px;
+  margin-right: 4px;
+}
+
+.navbar .menu {
+  display: flex;
+  justify-content: flex-end;
+  flex: 96% 0 0;
+  padding-right: 1.5em;
+}
+
+.navbar li {
+  text-transform: uppercase;
+  font-family: $font-secondary;
+  color: $grey;
+  line-height: 2.2;
+  width: 100%;
+}
+
+.navbar li.todo {
+  text-align: center;
+  padding-right: 1.2em;
+}
+
+.navbar a {
+  border-bottom: none;
+  display: block;
+  padding-left: 2.2em;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+  color: $golden;
+  background-size: 2.5em 2.5em;
+}
+
+.navbar li:not(:last-child):hover svg {
+  fill: $golden;
+}
+
+.overlay,
+.control,
+.control ~ .slideout {
+  display: none;
+}
+
+.control ~ .slideout {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 100vh;
+  padding: 8em 0 1em 0;
+  background-color: $white;
+  display: inline-block;
+  transform: matrix(1, 0, 0, 1, 220, 0);
+  transition: all .3s cubic-bezier(.77, 0, .175, 1);
+}
+
+.control:checked ~ .slideout {
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.slideout label {
+  position: fixed;
+  top: 0;
+  right: 200px;
+  width: 0;
+  height: 0;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.control:checked ~ .slideout label {
+  width: 100vw;
+  height: 100vh;
+}
+
+.slideout a {
+  color: $black;
+}
+
+.hamburger {
+  position: absolute;
+  width: 200px;
+  height: 165px;
+  top: -70px;
+  right: -85px;
+  background-color: $black;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  z-index: $zIndex--4;
+  padding: .4em;
+  color: $white;
+  font-family: $font-secondary;
+}
+
+.hamburg-box {
+  cursor: pointer;
+  position: relative;
+  left: 3px;
+  top: 33px;
+  width: 120px;
+  height: 70px;
+  text-align: center;
+}
+
+.hamburger svg {
+  fill: $white;
+  width: 28px;
+  height: 28px;
+  margin-left: 5px;
+  margin-top: -10px;
+}
+
+.hamburger svg:last-of-type {
+  display: none;
+  margin-left: 47px;
+  margin-top: 1px;
+}
+
+.hamburger:hover svg {
+  fill: $golden;
+}
+
+.overlay:not(:checked) ~ .hamburger svg:first-of-type {
+  display: none;
+}
+
+.overlay:not(:checked) ~ .hamburger svg:last-of-type {
+  display: block;
+}
+
+.revealer {
+  position: absolute;
+  bottom: 1.8em;
+  width: 100%;
+  text-align: center;
+  font-size: .85rem;
+}
+
+.revealer__toggle {
+  display: block;
+  position: absolute;
+  font-size: 0;
+  z-index: 4;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  height: 34px;
+  width: 100%;
+}
+
+.revealer__toggle:focus {
+  outline: 0;
+}
+
+.revealer__text {
+  position: absolute;
+  font-family: $font-secondary;
+  cursor: pointer;
+  background: none;
+  color: $black;
+  border: 0;
+  width: 100%;
+}
+
+.revealer__toggle,
+.revealer__text {
+  bottom: 0;
+}
+
+.revealer__toggle:hover ~ .revealer__text > span {
+  outline: none;
+  border-bottom: 1px solid $golden;
+}
+
+.u-hidden.source {
+  transform: matrix(1, 0, 0, 1, 0, -30);
+}
+
+.u-hidden.source > a {
+  padding: 0;
+}
+
+.revealer__toggle:focus ~ .revealer__text {
+  z-index: 5;
+}
+
+.revealer__toggle:focus ~ .revealer__text > span {
+  outline: none;
+  border-bottom: 1px solid $golden;
+}
+
+.revealer__toggle:focus ~ .u-hidden {
+  opacity: 1;
+  visibility: visible;
+  transform: matrix(1, 0, 0, 1, 0, -35);
+}
+
+
+@media screen and (max-width: $mq-small) {
+  .hamburger {
+    width: 170px;
+    top: -80px;
+    right: -75px;
+  }
+
+  .hamburg-box {
+    top: 45px;
+    width: 95px;
+  }
+
+  .hamburger svg:last-of-type {
+    margin-left: 30px;
+  }
+
+  .navbar li:not(:last-child) {
+    line-height: 2.5;
+  }
+
+  .revealer {
+    display: none;
+  }
+}

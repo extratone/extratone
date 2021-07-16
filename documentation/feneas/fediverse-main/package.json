@@ -1,0 +1,54 @@
+{
+  "name": "Fediverse",
+  "version": "0.0.1",
+  "description": "Fediverse Guide",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/fediverse/fediverse.gitlab.io.git"
+  },
+  "author": "lostinlight",
+  "license": "AGPL-3.0-or-later",
+  "hexo": {
+    "version": "4.2.1"
+  },
+  "scripts": {},
+  "dependencies": {
+    "hexo": "^4.2.1",
+    "hexo-browsersync": "^0.3.0",
+    "hexo-deployer-git": "^3.0.0",
+    "hexo-filter-nofollow": "^2.0.2",
+    "hexo-generator-archive": "^1.0.0",
+    "hexo-generator-category": "^1.0.0",
+    "hexo-generator-feed": "^3.0.0",
+    "hexo-generator-index": "^2.0.0",
+    "hexo-generator-index-i18n": "^0.2.1",
+    "hexo-generator-tag": "^1.0.0",
+    "hexo-pagination": "^1.0.0",
+    "hexo-processor-static": "^1.1.0",
+    "hexo-renderer-ejs": "^1.0.0",
+    "hexo-renderer-markdown-it": "^5.0.0",
+    "hexo-server": "^2.0.0",
+    "hexo-yam": "^4.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.16",
+    "@babel/preset-env": "^7.13.15",
+    "babel-eslint": "^10.1.0",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^6.0.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-stylelint": "^13.0.0",
+    "gulp-uglify": "^3.0.2",
+    "stylelint": "^13.12.0",
+    "webpack-stream": "^6.1.2"
+  }
+}

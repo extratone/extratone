@@ -1,0 +1,44 @@
+
+<%
+  const network = page.network;
+  const data = site.data[network].data;
+%>
+
+<section class="column">
+  <div class="section">
+    <h4><%- __('category') %></h4><span><%= data.category %></span>
+  </div>
+  <div class="section">
+    <h4><%- __('type') %></h4><span><%= data.type %></span>
+  </div>
+  <div class="section">
+    <h4><%- __('created') %></h4><span><%= data.created %></span>
+  </div>
+  <div class="section">
+    <h4><%- __('official') %></h4><span><a href="<%= data.official %>"><%= stripHTTPS(data.official) %></a></span>
+  </div>
+  <div class="section">
+    <h4><%- __('license') %></h4><span><%= data.license %></span>
+  </div>
+  <div class="section">
+    <h4><%- __('code') %></h4><span><a href="<%= data.repo %>"><%- __('repo') %></a></span>
+  </div>
+  <div class="section">
+    <h4><%- __('language') %></h4><span><%= data.language %></span>
+  </div>
+  <div class="section">
+    <h4><%- __('protocols') %></h4>
+    <ul class="section-list">
+      <% for (item in data.protocols) { %>
+      <li class="u-inline">
+        <a href="<%= data.protocols[item].url %>"><%= data.protocols[item].title %></a><span>,&nbsp;&nbsp;</span>
+      </li>
+      <% } %>
+    </ul>
+  </div>
+  <% if (data.wiki) { %>
+  <div class="section">
+    <h4><%- __('wiki') %></h4><span><a href="<%= data.wiki %>"><%- __('resources') %></a></span>
+  </div>
+  <% } %>
+</section>

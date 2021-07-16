@@ -1,0 +1,311 @@
+
+{
+  "data":
+    {
+      "title": "mastodon",
+      "category": "social network",
+      "type": "microblogging",
+      "logoClr": "3088d4",
+      "created": "2016",
+      "official": "https://joinmastodon.org",
+      "license": "AGPL-3.0",
+      "repo": "https://github.com/mastodon/mastodon",
+      "language": "Ruby",
+      "protocols":
+        [
+          {"title": "ActivityPub", "url": "http://activitypub.rocks"}
+        ],
+      "wiki": "",
+      "servers":
+        [
+          {"num": "1", "url": "https://the-federation.info/mastodon"},
+          {"num": "2", "url": "/en/portal/servers"},
+          {"num": "3", "url": "https://instances.social"}
+        ],
+      "mobile": "https://web.archive.org/web/20191114114235/https://github.com/mastodon/documentation/blob/master/Using-Mastodon/Apps.md",
+      "forUsers":
+        [
+          {"id": "0", "url": "https://pinafore.social"},
+          {"id": "1", "url": "https://www.halcyon.social"},
+          {"id": "2", "url": "https://elenq.gitlab.io/artodon"},
+          {"id": "3", "url": "https://communitywiki.org/trunk"}
+        ],
+      "tutorials":
+        [
+          {"id": "0", "url": "https://alexschroeder.ch/wiki/2017-11-16_How_to_Mastodon"},
+          {"id": "1", "url": "https://gist.github.com/joyeusenoelle/74f6e6c0f349651349a0df9ae4582969"}
+        ],
+      "devTutorial": "https://github.com/mastodon/documentation",
+      "metrics":
+        [
+          {"id": "0", "url": "http://sp3r4z.fr/mastodon"}
+        ],
+      "forTechies":
+        [
+          {"id": "0", "url": "https://github.com/tleb/awesome-mastodon"},
+          {"id": "1", "url": "https://github.com/kensanata/mastodon-backup"}
+        ],
+      "services":
+        [
+          {"id": "0", "url": "https://masto.host"},
+          {"id": "1", "url": "https://jortage.com"}
+        ],
+      "forks":
+        [
+          {"id": "0", "url": "https://github.com/glitch-soc/mastodon", "descr": "Glitch-soc - fork with experimental features"},
+          {"id": "1", "url": "https://github.com/hometown-fork/hometown", "descr": "Hometown - up-to-date fork with extra features"},
+          {"id": "2", "url": "https://github.com/florence-social/mastodon-fork", "descr": "Florence - community fork"}
+        ],
+      "utilities":
+        [
+          {"id": "0", "url": "https://www.mastofeed.com"},
+          {"id": "1", "url": "https://crossposter.masto.donte.com.br"},
+          {"id": "2", "url": "http://www.unmung.com/mastoview"},
+          {"id": "3", "url": "https://fed.brid.gy"},
+          {"id": "4", "url": "https://gitlab.com/chaica/feed2toot"}
+        ],
+      "mascot": [{"item": "mastodon", "imgNum": "1"}],
+      "dwellers": "mastonauts",
+      "communities": [{"title": "List of servers by theme", "url": "/en/portal/servers"}],
+      "descr": "Mastodon is the largest federating social network. You'll find everything you want of a microblogging platform, and much more. There are numerous Mastodon servers (called \"instances\") created specifically for certain communities and dedicated to various interests, spheres of knowledge, regions and activities.",
+      "connections": ["Friendica", "Hubzilla", "microblog.pub", "Misskey", "PeerTube", "Pixelfed", "Pleroma", "Plume", "WriteFreely"],
+      "screenshots":
+        [
+          {"descr": "Default tweetdeck layout", "img": "mastodon-1.png"},
+          {"descr": "Alternative Pinafore layout", "img": "mastodon-2.png"},
+          {"descr": "Alternative Halcyon layout", "img": "halcyon.png"}
+        ],
+      "features":
+        [
+          "polls",
+          "custom emojis",
+          "pinned posts",
+          "featured hashtags",
+          "admin announcements",
+          "hiding followers",
+          "spoiler warnings",
+          "user-level mutes and blocks",
+          "bookmarks",
+          "redrafting posts",
+          "contact lists",
+          "image upload with focal points",
+          "verifying external links in your profile",
+          "filtering out unwanted content by keywords",
+          "two-factor authentication (TOTP)"
+        ],
+      "information":
+        [
+          "Direct messages (\"private messages\") are delivered with limited visibility (non public) only between Mastodon users. Friends from other Fediverse networks may get such \"direct messages\" as public (visible to all) because some networks (GNU Social) don't support DMs. Keep that in mind when sharing private information via a DM."
+        ],
+      "donate": "https://patreon.com/mastodon",
+      "tracker": "https://github.com/mastodon/mastodon/issues",
+      "bounty": "",
+      "translating": "https://crowdin.com/project/mastodon",
+      "reading":
+        [
+          {
+            "title": "Mastodon & Fediverse explained (video)",
+            "url": "https://peertube.social/videos/watch/d9bd2ee9-b7a4-44e3-8d65-61badd15c6e6"
+          },
+          {
+            "title": "One Mammoth of a Job: An Interview with Eugen Rochko of Mastodon",
+            "url": "https://medium.com/we-distribute/one-mammoth-of-a-job-an-interview-with-eugen-rochko-of-mastodon-23b159d6796a"
+          },
+          {
+            "title": "Two reasons why organizations should switch to self-hosting social media",
+            "url": "https://blog.joinmastodon.org/2017/03/two-reasons-why-organizations-should-switch-to-self-hosting-social-media"
+          },
+          {
+            "title": "Mastodon Timeline",
+            "url": "http://ansuz.sooke.bc.ca/entry/335"
+          },
+          {
+            "title": "Wikipedia article",
+            "url": "https://en.wikipedia.org/wiki/Mastodon_(software)"
+          }
+        ],
+      "notable":
+        [
+          {
+            "name": "Framasoft",
+            "url": "https://framapiaf.org/@Framasoft",
+            "avatar": "/img/avatars/framasoft.png"
+          },
+          {
+            "name": "YunoHost",
+            "url": "https://mastodon.social/@yunohost",
+            "avatar": "/img/avatars/yunohost.png"
+          },
+          {
+            "name": "FreedomBox",
+            "url": "https://mastodon.social/@freedomboxfndn",
+            "avatar": "/img/avatars/freedombox.png"
+          },
+          {
+            "name": "Ind.ie",
+            "url": "https://mastodon.ind.ie/@indie",
+            "avatar": "/img/avatars/indie.png"
+          },
+          {
+            "name": "Exodus",
+            "url": "https://framapiaf.org/@exodus",
+            "avatar": "/img/avatars/exodus.png"
+          },
+          {
+            "name": "CCC",
+            "url": "https://social.bau-ha.us/@CCC",
+            "avatar": "/img/avatars/ccc.png"
+          },
+          {
+            "name": "FSFE",
+            "url": "https://mastodon.social/@fsfe",
+            "avatar": "/img/avatars/fsfe.png"
+          },
+          {
+            "name": "the Vikings",
+            "url": "https://social.vikings.net/@vikings",
+            "avatar": "/img/avatars/vikings.png"
+          },
+          {
+            "name": "La Quadrature du Net",
+            "url": "https://mamot.fr/@LaQuadrature",
+            "avatar": "/img/avatars/laquadrature.png"
+          },
+          {
+            "name": "CHATONS",
+            "url": "https://framapiaf.org/@ChatonsOrg",
+            "avatar": "/img/avatars/chatons.png"
+          },
+          {
+            "name": "F-Droid",
+            "url": "https://mastodon.technology/@fdroidorg",
+            "avatar": "/img/avatars/fdroid.png"
+          },
+          {
+            "name": "David Revoy",
+            "url": "https://framapiaf.org/@davidrevoy",
+            "avatar": "/img/avatars/drevoy.png"
+          },
+          {
+            "name": "Digitalcourage",
+            "url": "https://digitalcourage.social/@digitalcourage",
+            "avatar": "/img/avatars/digitalcourage.png"
+          },
+          {
+            "name": "TorProject",
+            "url": "https://mastodon.social/@torproject",
+            "avatar": "/img/avatars/torproject.png"
+          },
+          {
+            "name": "Tutanota",
+            "url": "https://mastodon.social/@Tutanota",
+            "avatar": "/img/avatars/tutanota.png"
+          },
+          {
+            "name": "Protonmail",
+            "url": "https://mastodon.social/@protonmail",
+            "avatar": "/img/avatars/protonmail.png"
+          },
+          {
+            "name": "NextCloud",
+            "url": "https://mastodon.xyz/@nextcloud",
+            "avatar": "/img/avatars/nextcloud.png"
+          },
+          {
+            "name": "Privacy International",
+            "url": "https://mastodon.xyz/@privacyint",
+            "avatar": "/img/avatars/privacyinternational.png"
+          },
+          {
+            "name": "Yale Privacy Lab",
+            "url": "https://mastodon.social/@privacylab",
+            "avatar": "/img/avatars/yale-privacylab.png"
+          },
+          {
+            "name": "Libre Office",
+            "url": "https://fosstodon.org/@libreoffice",
+            "avatar": "/img/avatars/libreoffice.png"
+          },
+          {
+            "name": "Krita",
+            "url": "https://mastodon.art/@krita",
+            "avatar": "/img/avatars/krita.png"
+          },
+          {
+            "name": "Inkscape",
+            "url": "https://mastodon.art/@inkscape",
+            "avatar": "/img/avatars/inkscape.png"
+          },
+          {
+            "name": "FreeCAD",
+            "url": "https://fosstodon.org/@FreeCAD",
+            "avatar": "/img/avatars/freecad.png"
+          },
+          {
+            "name": "Association R.A.P.",
+            "url": "https://framapiaf.org/@RAPasso",
+            "avatar": "/img/avatars/rap.png"
+          },
+          {
+            "name": "Snowdrift",
+            "url": "https://social.coop/@snowdrift",
+            "avatar": "/img/avatars/snowdrift.png"
+          },
+          {
+            "name": "Liberapay",
+            "url": "https://mastodon.xyz/@Liberapay",
+            "avatar": "/img/avatars/liberapay.png"
+          },
+          {
+            "name": "GNOME",
+            "url": "https://floss.social/@gnome",
+            "avatar": "/img/avatars/gnome.png"
+          },
+          {
+            "name": "KDE",
+            "url": "https://mastodon.technology/@kde",
+            "avatar": "/img/avatars/kde.png"
+          },
+          {
+            "name": "Debian",
+            "url": "https://framapiaf.org/@debian",
+            "avatar": "/img/avatars/debian.png"
+          },
+          {
+            "name": "MXLinux",
+            "url": "https://mastodon.social/@mxlinux",
+            "avatar": "/img/avatars/mxlinux.png"
+          },
+          {
+            "name": "OpenSUSE",
+            "url": "https://fosstodon.org/@opensuse",
+            "avatar": "/img/avatars/opensuse.png"
+          },
+          {
+            "name": "Emmabuntus",
+            "url": "https://framapiaf.org/@Emmabuntus",
+            "avatar": "/img/avatars/emmabuntus.png"
+          },
+          {
+            "name": "Solus",
+            "url": "https://fosstodon.org/@solus",
+            "avatar": "/img/avatars/solus.png"
+          },
+          {
+            "name": "PINE64",
+            "url": "https://fosstodon.org/@PINE64",
+            "avatar": "/img/avatars/pine64.png"
+          },
+          {
+            "name": "mntmn hardware",
+            "url": "https://mastodon.social/@mntmn",
+            "avatar": "/img/avatars/mntmn.png"
+          },
+          {
+            "name": "Purism",
+            "url": "https://social.librem.one/@purism",
+            "avatar": "/img/avatars/purism.png"
+          }
+        ]
+    }
+}

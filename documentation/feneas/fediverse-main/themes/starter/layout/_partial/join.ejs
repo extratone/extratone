@@ -1,0 +1,33 @@
+
+<%
+  const network = page.network;
+  const data = site.data[network].data;
+%>
+
+<div class="section-title">
+  <div style="background-color: #<%= data.logoClr %>">
+    <svg class="icon-logotype" role="img" aria-labelledby="logo<%= data.title %>">
+      <title id="logo<%= data.title %>"><%= data.title %> logo</title>
+      <use xlink:href="#icon-<%= data.title %>">
+    </svg>
+  </div><h2><%- __('join') %></h2>
+</div>
+
+<div>
+  <p><svg class="f-highlight <%- network %>" role="img" aria-labelledby="f-snow" style="position: relative"><title id="f-snow">network logo colour icon</title><use xlink:href="#icon-snowflake"></use></svg> Choose a server with open registrations and create an account:</p>
+  <ul class="server-list">
+    <% for (item in data.servers) { %>
+      <li>
+        <a href="<%= data.servers[item].url %>"><%- __('serverList') %> /<%= data.servers[item].num %>/ </a></span>
+      </li>
+    <% } %>
+  </ul>
+  <% if (data.serverWizard) { %>
+    <p><svg class="f-highlight <%- network %>" role="img" aria-labelledby="f-snow" style="position: relative"><title id="f-snow">network logo colour icon</title><use xlink:href="#icon-snowflake"></use></svg> Or use a wizard to help you pick a server from the list:</p>
+    <a href="<%= data.serverWizard %>" class="u-block u-emphasize btn-action u-center"><%- __('wizard') %></a>
+  <% } %>
+  <% if (data.mobile) { %>
+    <p><svg class="f-highlight <%- network %>" role="img" aria-labelledby="f-snow" style="position: relative"><title id="f-snow">network logo colour icon</title><use xlink:href="#icon-snowflake"></use></svg> Choose a mobile application from the available ones:</p>
+    <div class="server-list"><a href="<%= data.mobile %>"><%- __('mobapps') %></a></div>
+  <% } %>
+</div>

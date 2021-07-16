@@ -1,0 +1,127 @@
+{
+  "list":
+    [
+      {
+        "title": "diaspora",
+        "url" : "https://diasporafoundation.org",
+        "smallImg": "img/diaspora.png",
+        "descr": "Online world where you are in control. Own your data. Choose your audience. Be who you want to be"
+      },
+      {
+        "title": "Friendica",
+        "url" : "https://friendi.ca",
+        "smallImg": "img/friendica.png",
+        "descr": "Personal network with no central authority or ownership. Keep in contact with people you care about"
+      },
+      {
+        "title": "GNU Social",
+        "url" : "https://gnusocial.network",
+        "smallImg": "img/gnusocial.png",
+        "descr": "Connecting free and independent communities across the web"
+      },
+      {
+        "title": "Hubzilla",
+        "url" : "https://hubzilla.org",
+        "smallImg": "img/hubzilla.png",
+        "descr": "Feature-rich social platform. Create channels with a decentralized nomadic identity"
+      },
+      {
+        "title": "Mastodon",
+        "url" : "https://joinmastodon.org",
+        "smallImg": "img/mastodon.png",
+        "descr": "Social networking back in your hands. Find your perfect community. Take control of your content"
+      },
+      {
+        "title": "Misskey",
+        "url" : "https://join.misskey.page/en",
+        "smallImg": "img/misskey.png",
+        "descr": "Sophisticated microblogging with personality"
+      },
+      {
+        "title": "PeerTube",
+        "url" : "https://joinpeertube.org/en",
+        "smallImg": "img/peertube.png",
+        "descr": "Decentralized video hosting. Take back the control of your videos"
+      },
+      {
+        "title": "Pleroma",
+        "url" : "https://pleroma.social",
+        "smallImg": "img/pleroma.png",
+        "descr": "Federated microblogging, light as a feather"
+      },
+      {
+        "title": "Pixelfed",
+        "url" : "https://pixelfed.org",
+        "smallImg": "img/pixelfed.png",
+        "descr": "Federated social image sharing for everyone"
+      },
+      {
+        "title": "Funkwhale",
+        "url" : "https://funkwhale.audio",
+        "smallImg": "img/funkwhale.png",
+        "descr": "A social platform to enjoy and share music"
+      }
+    ],
+  "protocols":
+    [
+      {
+        "name": "diaspora",
+        "url": "https://github.com/diaspora/diaspora_federation"
+      },
+      {
+        "name": "Zot",
+        "url": "https://zotlabs.org/help/developer/zot_protocol"
+      },
+      {
+        "name": "ActivityPub",
+        "url": "https://activitypub.rocks"
+      },
+      {
+        "name": "OStatus",
+        "url": "https://github.com/OStatus"
+      },
+      {
+        "name": "DFRN",
+        "url": "https://github.com/friendica/friendica/wiki/Protocol"
+      }
+    ],
+  "langs":
+    [
+      {
+        "name": "Elixir",
+        "networks": "Mobilizon, Pleroma, Bonfire"
+      },
+      {
+        "name": "Go",
+        "networks": "Honk, Littr.me, Socialtap, Tavern, WriteFreely"
+      },
+      {
+        "name": "Java",
+        "networks": "Smithereen"
+      },
+      {
+        "name": "JavaScript",
+        "networks": "Gancio, Guppe"
+      },
+      {
+        "name": "PHP",
+        "networks": "Castopod, Friendica, GNU Social, Hubzilla, Pixelfed, NextCloud-Social, Zap"
+      },
+      {
+        "name": "Python",
+        "networks": "Bookwyrm, Epicyon, Fedeproxy, Funkwhale, microblog.pub, OLKi, Socialhome"
+      },
+      {
+        "name": "Ruby",
+        "networks": "diaspora, Glitch-Soc, Hometown, Learn Awesome, Mastodon"
+      },
+      {
+        "name": "Rust",
+        "networks": "Lemmy, Kibou, Kroeg, Plume"
+      },
+      {
+        "name": "TypeScript",
+        "networks": "Dolphin, Misskey, PeerTube"
+      }
+    ]
+}

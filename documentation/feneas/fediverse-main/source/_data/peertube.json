@@ -1,0 +1,98 @@
+{
+  "data":
+    {
+      "title": "peertube",
+      "category": "federated network",
+      "type": "video streaming",
+      "logoClr": "f1680d",
+      "created": "2015",
+      "official": "https://joinpeertube.org/en",
+      "license": "AGPL-3.0",
+      "repo": "https://github.com/Chocobozzz/PeerTube",
+      "language": "TypeScript",
+      "protocols":
+        [
+          {"title": "ActivityPub", "url": "https://activitypub.rocks"}
+        ],
+      "wiki": "https://docs.joinpeertube.org",
+      "servers":
+        [
+          {"num": "1", "url": "https://joinpeertube.org/instances"},
+          {"num": "2", "url": "https://the-federation.info/peertube"},
+          {"num": "3", "url": "https://fedidb.org/network/?s=peertube"}
+        ],
+      "mobile": "https://docs.joinpeertube.org/#/use-third-party-application",
+      "forUsers":
+        [
+          {"id": "0", "url": "https://sepiasearch.org"},
+          {"id": "1", "url": "https://docs.joinpeertube.org/#/use-setup-account"},
+          {"id": "2", "url": "https://peertube-index.net"}
+        ],
+      "tutorials":
+        [
+          {"id": "0", "url": "https://docs.joinpeertube.org/#/admin-following-instances"}
+        ],
+      "devTutorial": "https://docs.joinpeertube.org/#/install-any-os",
+      "metrics":
+        [
+          {"id": "0", "url": "https://instances.joinpeertube.org/instances/stats"}
+        ],
+      "services":
+        [
+          {"id": "0", "url": "https://app.spacebear.ee"}
+        ],
+      "mascot": [{"item": "cuttlefish Papa Sepia", "imgNum": "1"}],
+      "dwellers": "peertubers",
+      "communities": "",
+      "descr": "Unlike centralized video platforms, PeerTube considers each user as a person, and not as a product to track and sell advertisements. PeerTube's goal is to create a network of small interconnected video hosting providers. Users are free to choose the hoster of their videos according to terms of service and moderation policy. There are no recommendation algorithms and no need to give away extended copyright to your work. PeerTube video broadcasting is peer-to-peer (through WebRTC): when other people watch a PeerTube video at the same time as you, as long as your tab remains open, your browser shares bits of that video and you participate in a healthier use of the Internet. Videos hosted on PeerTube can be viewed directly from Mastodon and (soon) other Fediverse networks.",
+      "connections": ["Friendica", "Mastodon", "Pleroma"],
+      "screenshots":
+        [
+          {"descr": "PeerTube interface", "img": "peertube-1.png"}
+        ],
+      "donate": "https://soutenir.framasoft.org/en",
+      "tracker": "https://github.com/Chocobozzz/PeerTube/issues",
+      "bounty": "",
+      "translating": "https://github.com/Chocobozzz/PeerTube/blob/develop/support/doc/translation.md",
+      "reading":
+        [
+          {
+            "title": "PeerTube guide for YouTubers made easy",
+            "url": "https://www.ubuntubuzz.com/2020/05/peertube-guide-for-youtubers-made-easy.html"
+          }
+        ],
+      "notable":
+        [
+          {
+            "name": "Framasoft",
+            "url": "https://framatube.org/accounts/framasoft",
+            "avatar": "/img/avatars/framasoft.png"
+          },
+          {
+            "name": "FSF",
+            "url": "https://framatube.org/accounts/fsf",
+            "avatar": "/img/avatars/fsf.png"
+          },
+          {
+            "name": "Krita",
+            "url": "https://share.tube/accounts/kritafoundation",
+            "avatar": "/img/avatars/krita.png"
+          },
+          {
+            "name": "David Revoy",
+            "url": "https://peertube.touhoppai.moe/accounts/shichimi",
+            "avatar": "/img/avatars/drevoy.png"
+          },
+          {
+            "name": "Pine64",
+            "url": "https://tilvids.com/accounts/pine64tilvids",
+            "avatar": "/img/avatars/pine64.png"
+          },
+          {
+            "name": "KDE",
+            "url": "https://conf.tube/accounts/kde",
+            "avatar": "/img/avatars/kde.png"
+          }
+        ]
+    }
+}

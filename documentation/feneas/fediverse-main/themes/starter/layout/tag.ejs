@@ -1,0 +1,28 @@
+
+<%
+  let title = '';
+  if (page.category) title = page.category;
+  if (page.tag) title = "#" + page.tag;
+  if (page.archive) {
+    if (page.year) title = page.year + (page.month ? '/' + page.month : '');
+    else title = __('archive_a');
+  }
+%>
+
+<div class="contents u-height">
+  <div class="tags__cloud">
+    <% site.tags.map(function(tag) {  %>
+      <%- partial('_partial/snowflake') %><a href="<%- url_for('/tags/' + tag.name) %>" <% if (page.path === "tags/" + tag.name + "/index.html") { %>  class="tag--current" <% } %> ><%= tag.name %></a>
+    <% }) %>
+  </div>
+  <div class="one-tag-list">
+    <span class="tag__text"><%= title %></span>
+    <% const groupObj = _.groupBy(page.posts.toArray(), function(p) {return -p.date.format('YYYY')}) %>
+    <% for (let year in groupObj){ %>
+      <h3 class="tags__year"><%- -year %></h3>
+      <ul class="tags__list">
+        <%- partial('_partial/taglist', {posts: groupObj[year]}) %>
+      </ul>
+    <% } %>
+   </div>
+</div>

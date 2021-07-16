@@ -1,0 +1,10 @@
+# humanstxt.org
+# The humans responsible & technology colophon
+
+# HUMANS
+  * see contributors: https://git.feneas.org/feneas/fediverse/-/graphs/master
+
+# TECHNOLOGY COLOPHON
+  Hexo
+  Sass
+  Gulp

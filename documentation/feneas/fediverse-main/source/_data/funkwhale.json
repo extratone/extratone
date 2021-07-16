@@ -1,0 +1,72 @@
+{
+  "data":
+    {
+      "title": "funkwhale",
+      "category": "social network",
+      "type": "audio streaming",
+      "logoClr": "009FE3",
+      "created": "2015",
+      "official": "https://funkwhale.audio",
+      "license": "AGPL-3.0",
+      "repo": "https://dev.funkwhale.audio/funkwhale/funkwhale",
+      "language": "Python",
+      "protocols":
+        [
+          {"title": "ActivityPub", "url": "https://activitypub.rocks"}
+        ],
+      "wiki": "https://docs.funkwhale.audio",
+      "servers":
+        [
+          {"num": "1", "url": "https://network.funkwhale.audio/dashboards/d/overview/network-overview"},
+          {"num": "2", "url": "https://the-federation.info/funkwhale"},
+          {"num": "3", "url": "https://fedidb.org/network/?s=funkwhale"}
+        ],
+      "mobile": "https://funkwhale.audio/en_US/apps",
+      "forUsers":
+        [
+          {"id": "0", "url": "https://docs.funkwhale.audio/users/index.html"}
+        ],
+      "devTutorial": "https://docs.funkwhale.audio/installation/index.html",
+      "services":
+        [
+          {"id": "0", "url": "https://app.spacebear.ee"}
+        ],
+      "mascot": [{"item": "whale", "imgNum": "1"}],
+      "dwellers": "",
+      "communities": "",
+      "descr": "Funkwhale is a community-driven project that lets you listen and share music within a decentralized, open network. Funkwhale is not only an audio server and player, it was designed to be a place for socializing around music and discovering new content.",
+      "connections": ["Mastodon"],
+      "screenshots":
+        [
+          {"descr": "Funkwhale interface", "img": "funkwhale-1.png"},
+          {"descr": "Funkwhale profile interface", "img": "funkwhale-2.jpg"}
+        ],
+      "features":
+        [
+          "radios",
+          "playlists",
+          "favourites",
+          "broadcasts",
+          "recommendations"
+        ],
+      "donate": "https://funkwhale.audio/support-us#donate",
+      "tracker": "https://dev.funkwhale.audio/funkwhale/funkwhale/issues",
+      "bounty": "",
+      "translating": "https://docs.funkwhale.audio/translators.html",
+      "reading": [
+          {
+            "title": "Funkwhale: past, present... and future?",
+            "url": "https://blog.funkwhale.audio/~/Announcements/funkwhale-past-present-and-future"
+          },
+          {
+            "title": "Funkwhale, an Open Source GrooveShark Alternative, Begins ActivityPub Implementation",
+            "url": "https://wedistribute.org/2018/04/funkwhale-an-open-source-grooveshark-alternative-begins-activitypub-implementation"
+          },
+          {
+            "title": "A podcasting task force and Funkwhale anniversary",
+            "url": "https://blog.funkwhale.audio/~/Announcements/blog-post-week-2019-48-a-podcasting-task-force-and-an-anniversary"
+          }
+        ],
+      "notable": ""
+    }
+}

@@ -1,0 +1,114 @@
+
+---
+layout: layout
+network: true
+---
+
+<%
+  const data = site.data.mastodon.data;
+  const tuts = [__('howto'), __('guide')];
+  const uxList = [__('pinafore'), __('halcyon'), __('mastoGallery'), __('trunk')];
+  const stats = [__('stats')];
+  const tech = [__('awesome'), __('backup')];
+  const tools = [__('preinstalled'), __('mediaHosting')];
+  const utils = [__('mastofeed'), __('crossposting'), __('feedPreview'), __('webmentions'), __('feed2toot')];
+%>
+
+<%- partial('_partial/heroheader') %>
+
+<main class="contents">
+
+  <%- partial('_partial/header') %>
+
+  <div class="section-wrapper">
+
+    <%- partial('_partial/generalinfo') %>
+
+    <section class="column">
+      <div class="section u-block inline-items">
+        <h4><%- __('users') %></h4>
+        <ul class="section-list">
+          <% for (item in data.forUsers) { %>
+            <% let n = data.forUsers[item].id %>
+            <li>
+              <a href="<%= data.forUsers[item].url %>"><%= uxList[n] %></a>
+            </li>
+          <% } %>
+        </ul>
+      </div>
+      <div class="section u-block inline-items">
+        <h4><%- __('techies') %></h4>
+        <ul class="section-list">
+          <% for (item in data.forTechies) { %>
+            <% let c = data.forTechies[item].id %>
+            <li>
+              <a href="<%= data.forTechies[item].url %>"><%= tech[c] %></a>
+            </li>
+          <% } %>
+          <% for (item in data.services) { %>
+            <% let b = data.services[item].id %>
+            <li class="u-inline">
+              <a href="<%= data.services[item].url %>"><%= tools[b] %></a><span>&nbsp;/&nbsp;</span>
+            </li>
+          <% } %>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <div class="section-wrapper">
+    <div class="column">
+      <div class="section u-block inline-items">
+        <h4><%- __('tuts') %></h4>
+        <ul class="section-list">
+          <% for (item in data.tutorials) { %>
+            <% let n = data.tutorials[item].id %>
+            <li class="u-inline">
+              <a href="<%= data.tutorials[item].url %>"><%= tuts[n] %></a><span>&nbsp;/&nbsp;</span>
+            </li>
+          <% } %>
+        </ul>
+      </div>
+      <div class="section u-block inline-items">
+        <h4><%- __('utilities') %></h4>
+        <ul class="section-list">
+          <% for (item in data.utilities) { %>
+            <% let u = data.utilities[item].id %>
+            <li>
+              <a href="<%= data.utilities[item].url %>"><%= utils[u] %></a>
+            </li>
+          <% } %>
+        </ul>
+      </div>
+    </div>
+    <div class="column">
+      <div class="section u-block inline-items">
+        <h4><%- __('forks') %></h4>
+        <ul class="section-list">
+          <% for (item in data.forks) { %>
+            <li>
+              <a href="<%= data.forks[item].url %>"><%= data.forks[item].descr %></a>
+            </li>
+          <% } %>
+        </ul>
+      </div>
+      <div class="section u-block inline-items">
+        <h4><%- __('metrics') %></h4>
+        <ul class="section-list">
+          <% for (item in data.metrics) { %>
+            <% let s = data.metrics[item].id %>
+            <li class="u-inline">
+              <a href="<%= data.metrics[item].url %>"><%= stats[s] %></a><span>&nbsp;/&nbsp;</span>
+            </li>
+          <% } %>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <%- partial('_partial/world') %>
+  <br>
+  <%- partial('_partial/contributing') %>
+
+  <%- partial('_partial/buttons') %>
+</main>

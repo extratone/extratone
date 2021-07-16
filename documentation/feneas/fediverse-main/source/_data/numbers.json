@@ -1,0 +1,103 @@
+
+{
+  "list":
+    {
+      "lastUpdate": "08/07/21",
+      "diaspora":
+        {
+          "population": "726.014",
+          "activeUsers": "47.967",
+          "podsNum": "158"
+        },
+      "friendica":
+        {
+          "population": "10.226",
+          "activeUsers": "5.531",
+          "podsNum": "332"
+        },
+      "hubzilla":
+        {
+          "population": "7.985",
+          "activeUsers": "2.169",
+          "podsNum": "159"
+        },
+      "socialhome":
+        {
+          "population": "1.495",
+          "activeUsers": "72",
+          "podsNum": "7"
+        },
+      "mastodon":
+        {
+          "population": "2.820.104",
+          "activeUsers": "981.009",
+          "podsNum": "3.437"
+        },
+      "gnusocial":
+        {
+          "population": "10.266",
+          "activeUsers": "2.901",
+          "podsNum": "67"
+        },
+      "pleroma":
+        {
+          "population": "61.379",
+          "activeUsers": "",
+          "podsNum": "1.080"
+        },
+      "misskey":
+        {
+          "population": "3.500",
+          "activeUsers": "",
+          "podsNum": "214"
+        },
+      "peertube":
+        {
+          "population": "164.850",
+          "activeUsers": "",
+          "podsNum": "1.004"
+        },
+      "pixelfed":
+        {
+          "population": "43.461",
+          "activeUsers": "22.894",
+          "podsNum": "185"
+        },
+      "funkwhale":
+        {
+          "population": "4.690",
+          "activeUsers": "1.601",
+          "podsNum": "82"
+        },
+      "writefreely":
+        {
+          "population": "28.439",
+          "activeUsers": "6.459",
+          "podsNum": "345"
+        },
+      "plume":
+        {
+          "population": "12.388",
+          "activeUsers": "",
+          "podsNum": "59"
+        },
+      "mobilizon":
+        {
+          "population": "5.019",
+          "activeUsers": "",
+          "podsNum": "82"
+        },
+      "lemmy":
+        {
+          "population": "31.867",
+          "activeUsers": "2.794",
+          "podsNum": "27"
+        },
+      "fediverse":
+        {
+          "population": "3.931.683",
+          "activeUsers": "1.073.397",
+          "podsNum": "7.238"
+        }
+    }
+}

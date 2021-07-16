@@ -1,0 +1,58 @@
+
+.u-hidden {
+  visibility: hidden;
+  opacity: 0;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition: .25s ease;
+  margin-bottom: .5em;
+}
+
+.u-hidden.open {
+  visibility: visible;
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, -3);
+}
+
+.contents .u-hidden {
+  visibility: visible;
+  opacity: 1;
+  margin-bottom: 2em;
+}
+
+.u-emphasize {
+  font-family: $font-secondary;
+}
+
+.u-block {
+  display: block;
+}
+
+.u-inline {
+  display: inline-block;
+}
+
+.u-temp {
+  color: $grey;
+}
+
+.u-center {
+  text-align: center;
+}
+
+.u-height {
+  min-height: 100vh;
+}
+
+.u-goldenBg,
+.u-blackBg {
+  padding: 0 .2em;
+}
+
+.u-goldenBg {
+  background: $golden;
+}
+
+.u-blackBg {
+  background: $black;
+  color: $grey;
+}

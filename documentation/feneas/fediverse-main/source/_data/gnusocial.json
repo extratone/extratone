@@ -1,0 +1,58 @@
+
+{
+  "data":
+    {
+      "title": "gnusocial",
+      "category": "social network",
+      "type": "microblogging",
+      "logoClr": "a22430",
+      "created": "2010",
+      "official": "https://gnusocial.network",
+      "license": "AGPL-3.0",
+      "repo": "https://notabug.org/diogo/gnu-social",
+      "language": "PHP",
+      "protocols":
+        [
+          {"title": "ActivityPub", "url": "https://activitypub.rocks"},
+          {"title": "OStatus", "url": "https://github.com/OStatus"}
+        ],
+      "wiki": "",
+      "servers":
+        [
+          {"num": "1", "url": "https://the-federation.info/gnusocial"},
+          {"num": "2", "url": "https://fedidb.org/network/?s=gnusocial"}
+        ],
+      "mobile": "",
+      "tutorials":
+        [
+          {"id": "0", "url": "http://thomask.sdf.org/social/en/user/getting_started.html"},
+          {"id": "1", "url": "https://gnusocial.net/doc/faq"}
+        ],
+      "devTutorial": "http://thomask.sdf.org/social/en/admin/installing_gnu_social.html",
+      "utilities":
+        [
+          {"id": "0", "url": "https://github.com/blankoworld/eli"},
+          {"id": "1", "url": "https://github.com/kuro5hin/fediwiki/blob/master/plugins.md"}
+        ],
+      "mascot": [{"item": "gnu"}],
+      "dwellers": "GNU-hackers",
+      "communities": [{"title": "List of groups", "url": "http://laemeur.sdf.org/gs/group-index.html"}],
+      "descr": "GNU Social creators are the founding fathers of free libre microblogging networks. The platform has a significant userbase and multiple plugins.",
+      "connections": ["Friendica", "Hubzilla", "Mastodon", "Pleroma"],
+      "screenshots":
+        [
+          {"descr": "GNU Social interface", "img": "gnusocial-1.png"}
+        ],
+      "tracker": "https://notabug.org/diogo/gnu-social/issues",
+      "bounty": "",
+      "translating": "https://www.transifex.com/gnu-social/gnu-social",
+      "reading":
+        [
+          {
+            "title": "Wikipedia article",
+            "url": "https://en.wikipedia.org/wiki/GNU_social"
+          }
+        ],
+      "notable": ""
+    }
+}

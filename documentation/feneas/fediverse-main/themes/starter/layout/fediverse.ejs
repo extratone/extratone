@@ -1,0 +1,123 @@
+
+---
+layout: layout
+---
+
+<%
+  const fv = site.data.fediverse.article;
+  const servers = fv.servers;
+  const networks = site.data.common.list;
+  const protocols = site.data.common.protocols;
+  const langs = site.data.common.langs;
+  const numbers = site.data.numbers.list.fediverse;
+  const update = site.data.numbers.list.lastUpdate;
+%>
+
+<%- partial('_partial/heroheader') %>
+
+<main class="contents">
+  <div class="section">
+    <h4>Fediverse
+      <svg role="img" aria-labelledby="logoFediverse" style="fill: #0e0a0c; vertical-align: sub; height: 22px; width: 22px;"><title id="logoFediverse">Fediverse logo</title><use xlink:href="#icon-fediverse"></svg>
+    </h4>
+    <span><%= fv.definition %></span>
+  </div>
+
+  <p><%= fv.preamble %></p>
+
+  <section class="section-hero">
+    <h3>
+      <span><%- __('total') %></span>
+      <span><% if (numbers) { %> ~ <%= numbers.population %><% } else { %> ? <% } %></span>
+      <span><%- __('accounts') %></span>
+    </h3>
+    <% if (numbers.activeUsers) { %>
+      <h3>
+        <span><%- __('active') %></span><span> ~ <%= numbers.activeUsers %></span><span><%- __('people') %></span>
+      </h3>
+    <% } %>
+    <h3>
+      <span><%- __('servers') %></span>
+      <span><% if (numbers) { %> > <%= numbers.podsNum %> <% } else { %> ? <% } %></span>
+      <span><%- __('instances') %></span>
+    </h3>
+  </section>
+  <% if (numbers) { %>
+    <small class="footnotes u-center">(statistics updated regularly, latest update - <%= update %>)</small>
+  <% } %>
+
+  <div class="section">
+    <h4><%- __('networks') %></h4>
+    <ul class="section-list">
+      <% for (item in networks) { %>
+      <li class="u-inline">
+        <a href="<%= networks[item].url %>"><%= networks[item].title %></a><span>,&nbsp;&nbsp;</span>
+      </li>
+      <% } %>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h4><%- __('protocols') %></h4>
+    <ul class="section-list">
+      <% for (item in protocols) { %>
+      <li class="u-inline">
+        <a href="<%= protocols[item].url %>"><%= protocols[item].name %></a><span>,&nbsp;&nbsp;</span>
+      </li>
+      <% } %>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h4><%- __('langs') %></h4>
+    <ul class="article-list">
+      <% for (item in langs) { %>
+      <li><strong><%= langs[item].name %></strong>: <%= langs[item].networks %></li>
+      <% } %>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h4><%- __('links') %></h4>
+    <ul class="article-list">
+      <% for (item in servers) { %>
+      <li class="u-inline"><a href="https://<%= servers[item] %>"><%= servers[item] %></a></li>
+      <% } %>
+    </ul>
+  </div>
+
+  <p><%= fv.info %></p>
+
+  <p class="u-center">
+    <a href="/en/portal/servers" class="u-block u-emphasize btn-action centered"><%- __('joinF') %></a>
+  </p>
+
+  <div class="section">
+    <h4><%- __('history') %></h4>
+    <ul class="article-list">
+      <% for (item in fv.history) { %>
+      <li><a href="<%= fv.history[item].url %>"><%= fv.history[item].title %></a></li>
+      <% } %>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h4><%- __('projects') %></h4>
+    <ul class="article-list">
+      <% for (item in fv.projects) { %>
+      <li><a href="<%= fv.projects[item].url %>"><%= fv.projects[item].title %></a></li>
+      <% } %>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h4><%- __('reading') %></h4>
+    <ul class="article-list">
+      <% for (item in fv.reading) { %>
+        <li><a href="<%= fv.reading[item].url %>"><%= fv.reading[item].title %></a></li>
+      <% } %>
+    </ul>
+  </div>
+
+  <%- partial('_partial/buttons') %>
+</main>

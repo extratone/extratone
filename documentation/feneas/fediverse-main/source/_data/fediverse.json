@@ -1,0 +1,51 @@
+
+{
+  "article":
+    {
+      "definition": "is a new word made of two words: “federation” + “universe”",
+      "preamble": "It is a common name for federated social networks running on free open software on a myriad of servers across the world. Historically, this term has included only microblogging platforms supporting a set of protocols called OStatus. With the wide adoption of a new standard protocol called ActivityPub, many new projects appeared. This guide unites all interconnected networks under one term.",
+      "info": "Fediverse social networks differ from mainstream platforms (Facebook, Twitter, Instagram, Pinterest, etc). Mainstream platforms concentrate millions of users on one website, where they control all the decision-making, enforce censorship, and hoard users' private data for commercial profit and spying. Fediverse networks, on the other hand, are developed by a community of people all around the globe, independent from any corporation or official institution. You are free to register on any Fediverse website you like. You can choose the person who will be in charge of your data - the administrator of your server. If you have technical knowledge, you can administrate your own server for your friends and family, connecting with thousands of other independent servers across the web. Fediverse is an autonomous universe where power and data are decentralized and scattered across multiple lands. No high fences. No algorithms. No ads. Don't trust our word - explore Fediverse yourself!",
+      "history":
+        [
+          {
+            "title": "A People's History of the Fediverse",
+            "url": "https://wiki.freedombone.net/view/welcome-visitors/view/a-peoples-history-of-the-fediverse/view/introduction"
+          },
+          {
+            "title": "From GNU Social to Mastodon",
+            "url": "https://thomask.sdf.org/blog/2018/08/19/from-gnu-social-to-mastodon.html"
+          },
+          {
+            "title": "Privacy and Tracking on the Fediverse",
+            "url": "https://blog.soykaf.com/post/privacy-and-tracking-on-the-fediverse"
+          },
+          {
+            "title": "Distributed Social Networks and Public History",
+            "url": "http://publichistory.media/2016/02/21/distributed-social-networks-and-public-history"},
+          {
+            "title": "Mastodon Timeline",
+            "url": "http://ansuz.sooke.bc.ca/entry/335"
+          },
+          {
+            "title": "A quick guide to the Free Network",
+            "url": "https://medium.com/we-distribute/a-quick-guide-to-the-free-network-c069309f334"
+          }
+        ],
+      "projects":
+        [
+          {
+            "title": "Fediverse visualization",
+            "url": "https://kumu.io/wakest/fediverse"
+          }
+        ],
+      "servers":
+        ["fedidb.org", "podupti.me", "the-federation.info"],
+      "reading":
+        [
+          {
+            "title": "Wikipedia article",
+            "url": "https://en.wikipedia.org/wiki/Fediverse"
+          }
+        ]
+    }
+}

@@ -1,0 +1,117 @@
+---
+layout: layout
+---
+
+<%
+  function langCount(arr) {
+    let langs = [];
+    arr.forEach(function(item) {
+      let lang = item.codeLanguage;
+      if (!lang) {return};
+      let check = langs.findIndex(function(x) {return x.language === lang});
+      if (check>=0) {
+        langs[check].count +=1;
+      } else {
+        let newLang = {};
+        newLang.language = lang;
+        newLang.count = 1;
+        langs.push(newLang);
+      }
+    });
+    return langs;
+  }
+
+  const apps = site.data.miscellaneous.apps;
+  const langList = langCount(apps).sort((a,b) => b.count - a.count);
+  const byCategory = [['snMacro', 'Social network (macro)'], ['snMicro', 'Social network (micro)'], ['blogPub', 'Blog and Publishing'], ['media', 'Media sharing'], ['links', 'Link sharing'], ['evMeet', 'Events and Meetups'], ['files', 'File hosting'], ['data', 'Open data'], ['reviews', 'Reviewing'], ['games', 'Gaming'], ['dev', 'Software development'], ['extend', 'Extentions'], ['forums', 'Forums, boards'], ['other', 'Other']];
+  const byProtocol = [['sortDiaspora', 'diaspora'], ['sortZot', 'Zot'], ['sortAP', 'ActivityPub'], ['sortOstatus', 'OStatus']];
+%>
+
+<%- partial('_partial/heroheader') %>
+
+<article class="contents misc">
+  <h2>EXPLORE FEDIVERSE SOFTWARE</h2>
+  <a class="dark-ui u-block u-center" href="/en/tools" style="border: 0; color: #fb4e4e;">→ Check out other Fediverse Tools ←</a></h5>
+
+  <h4>Sort by category:</h4>
+  <% for (item in byCategory) { %>
+    <label class="option" for="<%= byCategory[item][0] %>"><%= byCategory[item][1] %></label><input id="<%= byCategory[item][0] %>" type="checkbox">
+  <% } %>
+
+  <h4>Sort by protocol:</h4>
+  <% for (item in byProtocol) { %>
+    <label class="option" for="<%= byProtocol[item][0] %>"><%= byProtocol[item][1] %></label><input id="<%= byProtocol[item][0] %>" type="checkbox">
+  <% } %>
+
+  <h4>Sort by code language:</h4>
+  <label class="option" for="all">All</label><input id="all" type="radio" name="radio">
+  <% for (i in langList) { %>
+    <label class="option" for="<%= langList[i].language.toLowerCase() %>"><%= langList[i].language %> <span>(<%= langList[i].count %>)</span></label><input id="<%= langList[i].language.toLowerCase() %>" type="radio" name="radio">
+  <% } %>
+
+  <section class="grid misc__grid cards">
+    <% for (item in apps) { %>
+      <% let type = apps[item].categories %>
+      <% let lang = apps[item].codeLanguage.toLowerCase() %>
+
+      <button class="card <%= lang %> <% if (apps[item].apClass) { %>ap<% } %> <% if (apps[item].zotClass) { %>zot<% } %> <% if (apps[item].diasporaClass) { %>dia<% } %> <% if (apps[item].OStatusClass) { %>os<% } %> <% for (t in type) { %> <%=type[t]%> <% } %>">
+
+        <div class="card__content">
+          <div class="card__title">
+            <% if (apps[item].logo) { %><img src="<%= apps[item].logo %>" alt="logo"><% } %>
+            <p class="title u-emphasize"><%= apps[item].title %></p>
+          </div>
+          <div class="card__body">
+            <% if (apps[item].site) { %>
+              <h4 class="card__subtitle">Website</h4>
+              <% let path = apps[item].site.split('://') %>
+              <p><a href="<%= apps[item].site %>"><%= path[1] %></a>
+              <svg role="img"><title>remote link</title><use xlink:href="#icon-link"></use></svg></p>
+            <% } %>
+            <h4 class="card__subtitle">Source code</h4>
+            <p><a href="<%= apps[item].source %>">repository</a> <svg role="img"><title>remote link</title><use xlink:href="#icon-link"></use></svg></p>
+            <% if (apps[item].servers) { %>
+              <h4 class="card__subtitle">Servers</h4>
+              <p><a href="<%= apps[item].servers %>">list</a> <svg role="img"><title>remote link</title><use xlink:href="#icon-link"></use></svg></p>
+            <% } %>
+            <% if (apps[item].description) { %>
+              <h4 class="card__subtitle">About</h4>
+              <p class="card__about">
+              <%- truncate( (apps[item].description), {length: 200, omission: '...'}) %>
+            </p>
+            <% } %>
+            <span class="card__more u-emphasize">more info<i>▶</i</span>
+          </div>
+          <div class='card__extra'>
+            <% if (apps[item].codeLanguage) { %>
+              <h4 class="card__subtitle">Code language</h4>
+              <p><%= apps[item].codeLanguage %></p>
+            <% } %>
+            <% if (apps[item].techStack) { %>
+              <h4 class="card__subtitle">Tech stack</h4>
+              <p><%= apps[item].techStack %></p>
+            <% } %>
+              <h4 class="card__subtitle">Protocols</h4>
+              <p><%= apps[item].protocols %></p>
+            <% if (apps[item].license) { %>
+              <h4 class="card__subtitle">License</h4>
+              <p><%= apps[item].license %></p>
+            <% } %>
+            <% if (apps[item].FediAccount) { %>
+              <h4 class="card__subtitle">Contact</h4>
+              <p><%= apps[item].FediAccount %></p>
+            <% } %>
+          </div>
+        </div>
+      </button>
+    <% } %>
+  </section>
+
+  <footer>
+    <p>Something's missing? <a class="dark-ui" href="https://git.feneas.org/feneas/fediverse/blob/main/CONTRIBUTING.md#submitting-software">Add</a> it.</p>
+    <p>Software no longer maintained, renamed, broken link? Please, <a class="dark-ui" href="https://git.feneas.org/feneas/fediverse/issues">let us know</a>.</p>
+    <p>Special thanks to <a class="dark-ui" href="https://mastodon.nzoss.nz/@strypey">@strypey</a> and <a class="dark-ui" href="https://mastodon.social/@humanetech">@humanetech</a> - for curating this <a class="dark-ui" href="https://git.feneas.org/feneas/fediverse/wikis/watchlist-for-activitypub-apps">list</a>.</p>
+    <p>Other sources: implementation report on <a class="dark-ui" href="http://activitypub.rocks/implementation-report">activitypub.rocks</a> website.</p>
+  </footer>
+
+</article>

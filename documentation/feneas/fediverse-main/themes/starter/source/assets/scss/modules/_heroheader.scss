@@ -1,0 +1,72 @@
+
+.hero-header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  color: $white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-header .heading {
+  flex: 0 1 auto;
+  padding: 0 7em;
+}
+
+.hero-header small {
+  display: none;
+}
+
+.post .hero-header small {
+  display: block;
+}
+
+.hero-header .author {
+  display: block;
+  margin-top: 1.5em;
+}
+
+.author > a {
+  color: $white;
+  border: none;
+    &:hover,
+    &:focus,
+    &:active {
+      border-bottom: 1px solid $black;
+    }
+}
+
+.author > i:last-child {
+  display: none;
+}
+
+.hero-icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: $black;
+  border-radius: 50%;
+}
+
+.hero-icon > svg {
+  width: 13px;
+  height: 13px;
+  fill: $white;
+}
+
+@media screen and (max-width: $mq-small) {
+  .hero-header .heading {
+    padding: 1em 2em;
+  }
+}
+
+@media screen and (min-width: $mq-medium) {
+  .hero-icon {
+    line-height: 1.3;
+  }
+}

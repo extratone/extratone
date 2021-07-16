@@ -1,0 +1,52 @@
+
+---
+layout: layout
+network: true
+---
+
+<%
+  const data = site.data.funkwhale.data;
+  const uxList = [ __('userGuide')];
+  const tools = [__('preinstalled')];
+%>
+
+<%- partial('_partial/heroheader') %>
+
+<main class="contents">
+
+  <%- partial('_partial/header') %>
+
+  <div class="section-wrapper">
+    <%- partial('_partial/generalinfo') %>
+    <section class="column">
+      <div class="section u-block inline-items">
+        <h4><%- __('users') %></h4>
+        <ul class="section-list">
+          <% for (item in data.forUsers) { %>
+            <% let n = data.forUsers[item].id %>
+            <li>
+              <a href="<%= data.forUsers[item].url %>"><%= uxList[n] %></a>
+            </li>
+          <% } %>
+        </ul>
+      </div>
+      <div class="section u-block inline-items">
+        <h4><%- __('techies') %></h4>
+        <ul class="section-list">
+          <% for (item in data.services) { %>
+            <% let b = data.services[item].id %>
+            <li class="u-inline">
+              <a href="<%= data.services[item].url %>"><%= tools[b] %></a><span>&nbsp;/&nbsp;</span>
+            </li>
+          <% } %>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <%- partial('_partial/world') %>
+  <br>
+  <%- partial('_partial/contributing') %>
+
+  <%- partial('_partial/buttons') %>
+</main>

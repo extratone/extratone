@@ -1,0 +1,16 @@
+
+<%
+  const date = post.date.format(config.date_format).split('-').join('.');
+%>
+
+<section class="urgent">
+  <div class="section-title">
+    <h4><%- __('wanted') %></h4>
+  </div>
+  <div class="post__preview wanted">
+    <%- truncate(strip_html(post.preview), {length: 155, omission: '...'}) %>
+    <p class="post__meta u-emphasize">
+      <span><%- __('details') %> <a href="<%- url_for(post.url) %>"><%- __('here') %>.</a></span> <span><%= date %></span>
+    </p>
+  </div>
+</section>

@@ -1,0 +1,30 @@
+
+$font-primary: "primary", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif;
+$font-secondary: "secondary", "Georgia", sans-serif;
+
+[class^="icon-"],
+[class*=" icon-"] {
+  height: 27px;
+  width: 27px;
+  fill: #ffffff;
+}
+
+@font-face {
+  font-family: "primary";
+  src: url("../fonts/font-primary.woff2") format("woff2"),
+       url("../fonts/font-primary.woff") format("woff"),
+       url("../fonts/font-primary.eot"),
+       url("../fonts/font-primary.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "secondary";
+  src: url("../fonts/font-secondary.woff2") format("woff2"),
+       url("../fonts/font-secondary.woff") format("woff"),
+       url("../fonts/font-secondary.eot"),
+       url("../fonts/font-secondary.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

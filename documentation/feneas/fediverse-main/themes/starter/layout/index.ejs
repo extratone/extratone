@@ -1,0 +1,34 @@
+
+---
+layout: layout
+---
+
+<%
+  const list = site.data.common.list;
+  const noSpace = function(x) {return x.replace(/\s+/g, '')};
+  const lowCase = function(x) {return x.toLowerCase()};
+%>
+
+<div class="grid main__grid">
+  <% for (item in list) { %>
+    <a class="grid__item f-<%= noSpace(list[item].title) %>" href="<%= url_for(page.lang + '/' + noSpace(lowCase(list[item].title))) %>">
+      <img class="grid__item__image" src="<%= url_for(list[item].smallImg) %>" alt="<%= noSpace(list[item].title) %>"> <span class="grid__item__title"><%= list[item].title %></span>
+    </a>
+    <div class="grid__card">
+      <h4><img src="<%= url_for(list[item].smallImg) %>" alt="landscape image"> <span><%= list[item].title %></span></h4>
+      <p><%= list[item].descr %></p>
+    </div>
+  <% } %>
+  <div id="introduction" class="intro">
+    <div class="intro__content">
+      <svg id="introClose" class="f-icon" role="img" aria-labelledby="f-close2">
+        <title id="f-close2">close icon</title>
+        <use xlink:href="#icon-close">
+      </svg>
+      <span class="u-emphasize"><%- __('hello') %></span>
+      <p><%- __('leave') %> <a href="<%= url_for(page.lang) %>/fediverse"><%- __('unique') %></a>.</p>
+      <p><%- __('theWorld') %><br> <%- __('universe') %></p>
+      <a href="./en/portal/servers"><%- __('joinF') %></a>
+    </div>
+  </div>
+</div>

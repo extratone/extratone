@@ -1,0 +1,34 @@
+
+<div class="navbar">
+  <input name="slideout" id="overlay" class="overlay" type="radio" checked>
+  <div class="hamburger">
+    <label class="hamburg-box" for="f-menu">
+      <p><%- __('menu') %></p>
+      <svg class="f-menu" role="img" aria-labelledby="f-nav">
+        <title id="f-nav">menu icon</title>
+        <use xlink:href="#icon-menu">
+      </svg>
+      <svg id="menuClose" class="f-icon" role="img" aria-labelledby="f-close">
+        <title id="f-close">close icon</title>
+        <use xlink:href="#icon-close">
+      </svg>
+    </label>
+  </div>
+  <input name="slideout" id="f-menu" class="control" type="radio">
+  <ul class="nav slideout">
+    <label for="overlay"></label>
+    <li><a href="/en/fediverse"><svg class="f-icon"><use xlink:href="#icon-star"></use></svg> <span>Fediverse</span></a></li>
+    <li><a href="/en/chronicles"><svg class="f-icon"><use xlink:href="#icon-star"></use></svg> <span><%- __('chronicles') %></span></a></li>
+    <li><a href="/en/miscellaneous"><svg class="f-icon"><use xlink:href="#icon-star"></use></svg> <span><%- __('more') %></span></a></li>
+    <li><a href="/en/portal/servers"><svg class="f-icon"><use xlink:href="#icon-star"></use></svg> <span><%- __('portal') %></span></a></li>
+    <li><a href="/en/crystalball"><svg class="f-icon"><use xlink:href="#icon-star"></use></svg> <span><%- __('magic') %></span></a></li>
+    <li class="revealer">
+      <span class="revealer__toggle" tabindex="0"></span>
+      <div class="revealer__text"><span><%- __('about') %></span></div>
+      <div class="u-hidden source">
+        <a href="https://git.feneas.org/light/distributopia/-/tree/main/all-logos-in-one-basket"><%- __('logo') %></a>
+        <a href="https://git.feneas.org/feneas/fediverse"><%- __('code') %></a>
+      </div>
+    </li>
+  </ul>
+</div>

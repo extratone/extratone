@@ -1,0 +1,50 @@
+
+---
+layout: layout
+---
+
+<main class="contents chronicles">
+  <header>
+    <div class="heading">
+      <h1><%- __('theChronicles') %></h1>
+      <h4 class="subheading"><%- __('primary') %></h4>
+    </div>
+  </header>
+
+  <ul class="links">
+    <li><%- partial('_partial/snowflake') %><a href="<%= config.url%>/atom.xml"><%- __('subscribe') %></a></li>
+    <li><%- partial('_partial/snowflake') %><a href="https://git.feneas.org/feneas/fediverse/merge_requests"><%- __('submit') %></a></li>
+    <li><%- partial('_partial/snowflake') %><a href="<%- url_for('/tags') %>"><%- __('tags') %></a></li>
+  </ul>
+
+  <% page.posts.each(function(post) { %>
+    <% if (post.wanted) { %>
+      <%- partial('_partial/wanted', {post: post, index: true}) %>
+    <% } %>
+  <% }) %>
+
+  <% page.posts.each(function(post) { %>
+    <% if (post.featured) { %>
+      <%- partial('_partial/featured', {post: post, index: true}) %>
+    <% } %>
+  <% }) %>
+  <div class="section-title">
+    <h4><%- __('news') %></h4>
+  </div>
+  <div class="news">
+  <% page.posts.each(function(post) { %>
+    <% if (!post.wanted && !post.featured) { %>
+      <%- partial('_partial/article', {post: post, index: true}) %>
+    <% } %>
+  <% }) %>
+  </div>
+
+  <% if (page.total > 1) { %>
+    <nav id="page-nav" class="page-nav">
+      <%- paginator({prev_text: "◀", next_text: "▶"}) %>
+    </nav>
+  <% } %>
+
+  <%- partial('_partial/buttons') %>
+</main>
+

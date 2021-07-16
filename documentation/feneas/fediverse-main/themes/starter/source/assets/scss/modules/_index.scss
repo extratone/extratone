@@ -1,0 +1,357 @@
+
+.main__container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-top: 2em;
+  padding-bottom: 1.5em;
+  background: $black url(/img/index-bg.jpg) center center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.i-sidebar + .main__container {
+  width: calc(100% - 70px);
+}
+
+.main__container:after { /* dotted overlay */
+  content: "";
+  background-image: url(/img/dots.png);
+  background-size: 2px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: inherit;
+  height: 100%;
+  z-index: $zIndex--1;
+}
+
+.grid {
+  position: relative;
+  z-index: $zIndex--2;
+  width: inherit;
+  height: inherit;
+}
+
+.grid__item {
+  position: absolute;
+  width: 190px;
+  font-family: $font-secondary;
+  display: inline-flex;
+  border-bottom: none;
+    &:active,
+    &:focus,
+    &:hover {
+      background: none;
+    }
+}
+
+.grid__item__image {
+  width: 80px;
+  height: 80px;
+  flex: 40% 0 0;
+  border: 3px solid $white;
+  background: $white;
+  border-radius: 50%;
+}
+
+.grid__item__title {
+  color: $white;
+  flex: 60% 0 0;
+  margin: 0 .5em;
+  align-self: center;
+  transition: color .3s ease, text-shadow .3s ease;
+  font-size: 1.2rem;
+}
+
+.grid__item:hover .grid__item__title,
+.grid__item:focus .grid__item__title {
+  text-shadow: 0 0 10px $white;
+}
+
+.f-Misskey {
+  top: 9%;
+  left: 4%;
+}
+
+.f-Hubzilla {
+  top: 9.5em;
+  left: 28%;
+}
+
+.f-diaspora {
+  top: 3em;
+  left: 84%;
+}
+
+.f-Pleroma {
+  top: 48%;
+  left: 13%;
+}
+
+.f-Mastodon {
+  top: 35%;
+  left: 75%;
+}
+
+.f-Friendica {
+  top: 82%;
+  left: 32%;
+}
+
+.f-GNUSocial {
+  top: 76%;
+  left: 83%;
+}
+
+.f-PeerTube {
+  top: 53%;
+  left: 85%;
+}
+
+.f-Pixelfed {
+  top: 74%;
+  left: 7%;
+}
+
+.f-Funkwhale {
+  top: 85%;
+  left: 63%;
+}
+
+.grid__card {
+  opacity: 0;
+  position: absolute;
+  width: 350px;
+  height: 220px;
+  background: $black;
+  color: $white;
+  padding: 35px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity .45s ease-in;
+}
+
+.grid__item:hover + .grid__card {
+  opacity: 1;
+}
+
+.grid__card:after,
+.intro__content:after {
+  content: "";
+  border: 1px solid $golden;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  z-index: -1;
+}
+
+.grid__card h4,
+.intro__content span {
+  text-align: center;
+  color: $golden;
+}
+
+.grid__card img {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  margin-right: .2em;
+}
+
+.grid__card p {
+  font-size: .9rem;
+  margin-top: .3em;
+}
+
+.intro {
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: $golden;
+  box-shadow: 0 0 12px $golden;
+  z-index: $zIndex--4;
+}
+
+.intro:before {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 70px;
+  background: rgba($golden, .2);
+  border-radius: inherit;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: glow;
+}
+
+.grid__item:hover ~ .intro {
+  opacity: 0;
+}
+
+.intro__content {
+  opacity: 0;
+  position: relative;
+  left: 40%;
+  transform: translate(-40%, -40%);
+  display: none;
+  flex-direction: column;
+  width: 500px;
+  height: 260px;
+  background: $black;
+  color: $white;
+  padding: 35px;
+  transition: opacity .45s ease-in;
+}
+
+.intro__content.open {
+  display: flex;
+  opacity: 1;
+}
+
+.intro__content svg {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+}
+
+.intro__content a {
+  flex: 0 1 auto;
+  align-self: center;
+  color: $golden;
+  border-bottom: 1px solid $golden;
+    &:hover,
+    &:focus,
+    &:active {
+      color: $white;
+    }
+}
+
+.intro__content > a:last-child {
+  border: none;
+  font-family: $font-secondary;
+  margin-top: .5em;
+}
+
+@-webkit-keyframes glow {
+  0%,
+  100% {
+    opacity: .9;
+  }
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    opacity: .9;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: $mq-large) {
+  .grid__card {
+    top: 55%;
+    left: 58%;
+  }
+}
+
+@media screen and (max-width: $mq-medium) {
+  .main__container {
+    overflow-y: scroll;
+  }
+
+  .grid__item {
+    flex-wrap: wrap;
+  }
+
+  .grid__item__image {
+    width: 45px;
+    height: 45px;
+    flex: 25% 0 0;
+  }
+
+  .f-diaspora {
+    left: 75%;
+  }
+
+  .f-Mastodon {
+    top: 37%;
+  }
+
+  .intro {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $mq-medium) and (orientation: portrait), screen and (max-width: $mq-small) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .grid__item {
+    position: static;
+    flex: 50% 0 0;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .grid__item__image {
+    margin-left: 2em;
+  }
+
+  .grid__item__image,
+  .grid__item__title {
+    flex: initial;
+  }
+
+  .grid__card:before {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: $mq-xsmall) {
+  .grid__item {
+    flex: 100% 0 0;
+    align-self: flex-end;
+  }
+
+  .grid__item__image {
+    width: 30px;
+    height: 30px;
+  }
+
+  .grid__item__title {
+    font-size: 1rem;
+  }
+
+  .grid__card {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $mq-small) and (orientation: landscape) {
+  .source__toggle {
+    display: none;
+  }
+}

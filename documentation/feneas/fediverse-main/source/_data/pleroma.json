@@ -1,0 +1,80 @@
+{
+  "data":
+    {
+      "title": "pleroma",
+      "category": "social network",
+      "type": "microblogging",
+      "logoClr": "fba457",
+      "created": "2017",
+      "official": "https://pleroma.social",
+      "license": "AGPL-3.0",
+      "repo": "https://git.pleroma.social/pleroma",
+      "language": "Elixir",
+      "protocols":
+        [
+          {"title": "OStatus", "url": "https://github.com/tootsuite/ostatus2"},
+          {"title": "ActivityPub", "url": "https://activitypub.rocks"}
+        ],
+      "wiki": "",
+      "servers":
+        [
+          {"num": "1", "url": "https://the-federation.info/pleroma"},
+          {"num": "2", "url": "https://fedidb.org/network/?s=pleroma"}
+        ],
+      "mobile": "https://docs-develop.pleroma.social/backend/clients",
+      "forUsers":
+        [
+          {"id": "0", "url": "https://www.halcyon.social"}
+        ],
+      "tutorials":
+        [
+          {"id": "0", "url": "https://docs-develop.pleroma.social/backend/installation/otp_en"},
+          {"id": "1", "url": "https://i2p.rocks/blog/the-magical-world-of-pleroma-setting-up-your-instance.html"}
+        ],
+      "devTutorial": "https://docs.pleroma.social/backend/installation/otp_en",
+      "mascot": [{"item": "Fox Tan", "imgNum": "1"}],
+      "dwellers": "",
+      "communities": [
+        {"title": "List of servers by theme", "url": "/en/portal/servers"}
+      ],
+      "descr": "Pleroma microblogging platform is appreciated by the community for its low resource consumption. If you have a Raspberry Pi or similar single-board computer you can use it as Pleroma server for family and friends.",
+      "connections": ["Friendica", "GNU Social", "Hubzilla", "Mastodon", "microblog.pub", "Misskey", "Peertube", "Pixelfed", "Plume", "WriteFreely"],
+      "screenshots":
+        [
+          {"descr": "Default Pleroma layout", "img": "pleroma-1.jpg"},
+          {"descr": "Alternative Halcyon layout", "img": "halcyon.png"}
+        ],
+      "features":
+      [
+        "polls",
+        "live chat",
+        "markdown support",
+        "advanced custom themes",
+        "custom emojis",
+        "filtering out unwanted content by keywords"
+      ],
+      "tracker": "https://git.pleroma.social/pleroma/pleroma/issues",
+      "bounty": "",
+      "translating": "https://translate.pleroma.social",
+      "reading":
+        [
+          {
+            "title": "What is Pleroma",
+            "url": "https://blog.soykaf.com/post/what-is-pleroma"
+          },
+          {
+            "title": "ActivityPub in Pleroma",
+            "url": "https://blog.soykaf.com/post/activity-pub-in-pleroma"
+          },
+          {
+            "title": "Gopher Support in Pleroma",
+            "url": "https://blog.soykaf.com/post/gopher-support-in-pleroma"
+          },
+          {
+            "title": "Blushy-Crushy Fediverse Idol: A Chat with Lain about Pleroma",
+            "url": "https://wedistribute.org/2018/04/blushy-crushy-fediverse-idol-a-chat-with-lain-about-pleroma"
+          }
+        ],
+      "notable": ""
+    }
+}

@@ -1,0 +1,26 @@
+
+<%
+  const date = page.date.format(config.date_format).split('-').join('.');
+  const post = page.url;
+%>
+
+<header class="hero-header" style="background: #211d1f url('<% if (page.banner) {%>
+   <% if (post) {%> <%- url_for(post + '/' + page.banner) %> <%} else { %> <%- url_for(page.banner) %> <% } %>
+ <% } else { %> <%= url_for('img/knowledge-bg.jpg') %> <% } %>') <% if (page.percent) { %> <%= page.percent %> <% } else { %> 50% 50% <% } %> no-repeat; background-size: cover;">
+  <div class="heading">
+    <h1><%=page.title%></h1>
+    <h4 class="subheading"><%= page.subtitle || "" %></h4>
+    <small><%- date %></small>
+    <% if (page.authors) { %>
+      <strong class="author">Author(s):
+        <% page.authors.map(function(author) { %>
+          <a href="<%= author.url %>"><%= author.name %>
+            <% if (author.network) { %>
+              <span class="hero-icon"><svg role="img"><use xlink:href="#icon-<%= author.network %>"></use></svg></span>
+            <% } %>
+          </a><i>,</i>
+        <% }) %>
+      </strong>
+    <% } %>
+  </div>
+</header>

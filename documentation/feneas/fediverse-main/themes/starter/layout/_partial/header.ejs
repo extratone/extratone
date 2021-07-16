@@ -1,0 +1,22 @@
+
+<%
+  const network = page.network;
+  const data = site.data[network].data;
+%>
+
+<div class="section-title">
+  <div style="background-color: #<%= data.logoClr %>">
+    <svg class="icon-logotype" role="img" aria-labelledby="logo<%= data.title %>">
+      <title id="logo<%= data.title %>"><%= data.title %> logo</title>
+      <use xlink:href="#icon-<%= data.title %>">
+    </svg>
+  </div><h2><%- __('overview') %></h2>
+  <aside>
+    <h4><%- __('started') %></h4>
+    <ul>
+      <li>
+        <a href="<%- url_for('/en/post/fediverse-saves-from-pickup-artists-and-7-more-reasons-to-join') %>">Reasons to join</a>
+      </li>
+    </ul>
+  </aside>
+</div>

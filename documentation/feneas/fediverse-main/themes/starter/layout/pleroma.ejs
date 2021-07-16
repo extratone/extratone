@@ -1,0 +1,54 @@
+
+---
+layout: layout
+network: true
+---
+
+<%
+  const data = site.data.pleroma.data;
+  const tutorials = data.tutorials;
+  const tuts = [__('linuxInstall'), __('ownInstance')];
+  const ux = data.forUsers;
+  const uxList = [__('halcyon')];
+%>
+
+<%- partial('_partial/heroheader') %>
+
+<main class="contents">
+
+  <%- partial('_partial/header') %>
+
+  <div class="section-wrapper">
+    <%- partial('_partial/generalinfo') %>
+    <section class="column">
+      <div class="section u-block inline-items">
+        <h4><%- __('users') %></h4>
+        <ul class="section-list">
+          <% for (item in ux) { %>
+            <% let n = ux[item].id %>
+            <li>
+              <a href="<%= ux[item].url %>"><%= uxList[n] %></a>
+            </li>
+          <% } %>
+        </ul>
+      </div>
+      <div class="section u-block inline-items">
+        <h4><%- __('tuts') %></h4>
+        <ul class="section-list">
+          <% for (item in tutorials) { %>
+            <% let n = tutorials[item].id %>
+            <li>
+              <a href="<%= tutorials[item].url %>"><%= tuts[n] %></a>
+            </li>
+          <% } %>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <%- partial('_partial/world') %>
+  <br>
+  <%- partial('_partial/contributing') %>
+
+  <%- partial('_partial/buttons') %>
+</main>

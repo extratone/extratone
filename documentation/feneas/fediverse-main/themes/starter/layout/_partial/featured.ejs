@@ -1,0 +1,26 @@
+
+<%
+  const date = post.date.format(config.date_format).split('-').join('.');
+%>
+
+<section class="">
+  <div class="section-title">
+    <h4><%- __('featured') %></h4>
+  </div>
+  <a href="<%- url_for(post.url) %>" class="post__preview featured">
+    <div class="post__image">
+      <img src="<%- url_for(post.url + '/' + post.banner) %>" alt="featured post image">
+    </div>
+
+    <div class="post__content">
+      <p class="post__title u-emphasize u-center">
+        <%- post.title %>
+      </p>
+      <p class="post__text"><%- post.preview %></p>
+      <p class="post__meta u-emphasize">
+        <%= date %>
+        <span>by <% post.authors.map(function(author) { %><%= author.name %><i>, </i> <% }) %></span>
+      </p>
+    </div>
+  </a>
+</section>

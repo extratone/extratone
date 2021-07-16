@@ -1,0 +1,123 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: Fediverse.Party - explore federated networks
+subtitle:
+description: Making social media free, federated and fun!
+author: lostinlight
+language:
+  - en
+timezone:
+
+# URL
+url: https://fediverse.party
+root: /
+permalink: :lang/:layout/:title/
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: en/chronicles
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link:
+  enable: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: true
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: DD-MM-YY
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 23
+pagination_dir: page
+
+# Extensions
+theme: starter
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type:
+
+# Site settings
+ogImage: tile-wide.png
+
+# Plugins
+nofollow:
+  enable: true
+  include:
+    noreferrer: true
+    noopener: true
+
+# hexo-yam minifier
+minify:
+  css:
+    enable: false
+  js:
+    enable: false
+  svg:
+    enable: false
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: false
+  hub:
+  content: true
+
+# hexo-renderer-markdown-it
+markdown:
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: false
+    linkify: true
+    typographer: true
+    quotes: '“”‘’'
+  plugins:
+    - markdown-it-abbr
+    - markdown-it-footnote
+    - markdown-it-ins
+    - markdown-it-sub
+    - markdown-it-sup
+  anchors:
+    # Minimum level for ID creation. (Ex. h2 to h6)
+    level: 2
+    # A suffix that is prepended to the number given if the ID is repeated.
+    collisionSuffix: 'v'
+    # If `true`, creates an anchor tag with a permalink besides the heading.
+    permalink: false
+    # Class used for the permalink anchor tag.
+    permalinkClass: header-anchor
+    # The symbol used to make the permalink
+    permalinkSymbol: ¶

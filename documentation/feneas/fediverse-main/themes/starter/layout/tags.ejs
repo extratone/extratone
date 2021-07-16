@@ -1,0 +1,21 @@
+
+---
+layout: layout
+---
+
+<div class="contents u-height">
+  <div class="tags__cloud">
+    <% site.tags.map(function(tag) { %>
+      <%- partial('_partial/snowflake') %><a href="<%- url_for('/tags/' + tag.name) %>"><%= tag.name %></a> &nbsp;
+    <% }) %>
+  </div>
+  <div class="one-tag-list">
+    <% const groupObj = _.groupBy(site.posts.sort('date', -1).toArray(), function(p){return -p.date.format('YYYY')}) %>
+    <% for (let year in groupObj){ %>
+    <h3 class="tags__year"><%- -year %></h3>
+    <ul class="tags__list">
+      <%- partial('_partial/taglist', {posts: _.sortBy(groupObj[year], 'date').reverse()}) %>
+    </ul>
+    <% } %>
+  </div>
+</div>

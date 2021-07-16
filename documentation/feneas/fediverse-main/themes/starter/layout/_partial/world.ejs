@@ -1,0 +1,146 @@
+<%
+  const network = page.network;
+  const data = site.data[network].data;
+  const numbers = site.data.numbers.list[network];
+  const update = site.data.numbers.list.lastUpdate;
+%>
+
+<section class="section-hero">
+  <h3>
+    <span><%- __('total') %></span>
+    <span><% if (numbers) { %> ~ <%= numbers.population %><% } else { %> ? <% } %></span>
+    <span><%- __('accounts') %></span>
+  </h3>
+  <% if (numbers.activeUsers) { %>
+    <h3>
+      <span><%- __('active') %></span><span> ~ <%= numbers.activeUsers %></span><span><%- __('people') %></span>
+    </h3>
+  <% } %>
+  <h3>
+    <span><%- __('servers') %></span>
+    <span><% if (numbers) { %> > <%= numbers.podsNum %> <% } else { %> ? <% } %></span>
+    <span><%- __('instances') %></span>
+  </h3>
+</section>
+<% if (numbers) { %>
+  <small class="footnotes u-center">(statistics updated regularly, latest update - <%= update %>)</small>
+<% } %>
+
+<div class="section-title">
+  <div style="background-color: #<%= data.logoClr %>">
+    <svg class="icon-logotype" role="img" aria-labelledby="logo<%= data.title %>">
+      <title id="logo<%= data.title %>"><%= data.title %> logo</title>
+      <use xlink:href="#icon-<%= data.title %>">
+    </svg>
+  </div><h2><%- __('world') %></h2>
+</div>
+
+<div class="section-wrapper">
+  <div class="column">
+    <div class="section">
+      <h4 style="width: 100px;"><%- __('mascot') %></h4>
+      <ul class="section-list">
+      <% for (i in data.mascot) { %>
+        <li class="u-inline">
+          <% if (data.mascot[i].imgNum) { %>
+            <img class="mascot" src="<%- url_for('/img/mascots/' + network + '-' + data.mascot[i].imgNum) %>.png" alt="mascot picture"><% } %><%= data.mascot[i].item %><span>,&nbsp;&nbsp;</span>
+        </li>
+      <% } %>
+      </ul>
+    </div>
+    <% if (data.dwellers) { %>
+    <div class="section">
+      <h4 style="width: 100px;"><%- __('dwellers') %></h4><span><%= data.dwellers %></span>
+    </div>
+    <% } %>
+  </div>
+  <div class="column">
+    <% if (data.communities) { %>
+      <div class="section">
+        <h4><%- __('communities') %></h4>
+          <ul class="section-list">
+            <% for (item in data.communities) { %>
+              <li class="u-inline">
+                <a href="<%= data.communities[item].url %>"><%= data.communities[item].title %></a><span>&nbsp;/&nbsp;</span>
+              </li>
+            <% } %>
+          </ul>
+      </div>
+    <% } %>
+    <div class="section connections">
+      <h4><dfn title="The platform allows you to connect with users of these networks"><%- __('connections') %></dfn></h4>
+      <ul class="section-list">
+      <% for (item in data.connections) { %>
+        <li class="u-inline">
+          <svg class="f-highlight <%- network %>" role="img" aria-labelledby="f-snow" style="position: relative"><title id="f-snow">network logo colour icon</title><use xlink:href="#icon-snowflake"></use></svg><%= data.connections[item] %><span>,&nbsp;</span></li>
+      <% } %>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<p class="description u-nomargin"><%= data.descr %></p>
+
+<% if (data.screenshots) { %>
+<div class="screens">
+  <% for (item in data.screenshots) { %>
+  <div class="screen">
+    <figcaption><%= data.screenshots[item].descr %></figcaption>
+    <img alt="<%= data.screenshots[item].descr %>" src="<%- url_for('/img/screenshots/' + data.screenshots[item].img) %>">
+  </div>
+   <% } %>
+</div>
+<% } %>
+
+<% if (data.features) { %>
+<div class="section u-block">
+  <h4><%- __('features') %></h4>
+  <ul class="section-list article-list features">
+    <% for (item in data.features) { %>
+    <li class="<%= network %>">
+      <%= data.features[item] %>
+    </li>
+    <% } %>
+  </ul>
+</div>
+<% } %>
+
+<% if (data.information) { %>
+<div class="section u-block">
+  <h4><%- __('information') %></h4>
+  <ul class="section-list article-list warning-list">
+    <% for (item in data.information) { %>
+    <li>
+      <%= data.information[item] %>
+    </li>
+    <% } %>
+  </ul>
+</div>
+<% } %>
+
+<% if (data.notable) { %>
+<div class="section u-block with-image">
+  <h4><%- __('stars') %></h4>
+  <ul class="section-list">
+    <% for (item in data.notable) { %>
+    <li class="u-inline">
+      <a href="<%= data.notable[item].url %>" title="<%= data.notable[item].name %>"><img src="<%- url_for(data.notable[item].avatar) %>" alt="user"></a>
+    </li>
+    <% } %>
+  </ul>
+</div>
+<% } %>
+
+<%- partial('_partial/join') %>
+<br>
+
+<% if (data.reading) { %>
+<div class="section u-block">
+  <h4><%- __('reading') %></h4>
+  <ul class="article-list">
+    <% for (item in data.reading) { %>
+      <li class="<%= network %>"><a href="<%= data.reading[item].url %>"><%= data.reading[item].title %></a></li>
+    <% } %>
+  </ul>
+</div>
+<% } %>

@@ -1,0 +1,85 @@
+
+{
+  "data":
+    {
+      "title": "friendica",
+      "category": "social network",
+      "type": "macroblogging",
+      "logoClr": "ffb900",
+      "created": "2010",
+      "official": "https://friendi.ca",
+      "license": "AGPL-3.0",
+      "repo": "https://github.com/friendica/friendica",
+      "language": "PHP",
+      "protocols":
+        [
+          {"title": "DFRN", "url": "https://github.com/friendica/friendica/wiki/Protocol"},
+          {"title": "OStatus", "url": "https://github.com/OStatus"},
+          {"title": "diaspora", "url": "https://github.com/diaspora/diaspora_federation"},
+          {"title": "ActivityPub", "url": "https://activitypub.rocks"}
+        ],
+      "wiki": "https://github.com/friendica/friendica/wiki",
+      "servers":
+        [
+          {"num": "1", "url": "https://the-federation.info/friendica"},
+          {"num": "2", "url": "https://dir.friendica.social/servers"},
+          {"num": "3", "url": "https://fedidb.org/network/?s=friendica"}
+        ],
+      "serverWizard": "https://podupti.me",
+      "mobile": "https://github.com/friendica/friendica/wiki/Clients",
+      "tutorials":
+        [
+          {"id": "0", "url": "https://friendi.ca/resources/installation"},
+          {"id": "1", "url": "https://github.com/friendica/friendica/wiki/DreamHost-Friendica-Install-Guide"},
+          {"id": "2", "url": "https://github.com/friendica/friendica/wiki/How-to%3A-Hosting-a-Friendica-site-at-home"}
+        ],
+      "devTutorial": "https://github.com/friendica/friendica/tree/master/doc",
+      "utilities":
+        [
+          {"id": "0", "url": "https://github.com/pafcu/RSStoFriendika"}
+        ],
+      "mascot": [{"item": "Flaxy O'Hare", "imgNum": "1"}],
+      "dwellers": "friends",
+      "communities": [
+        {"title": "List of forums", "url": "https://dir.friendica.social/forums"},
+        {"title": "List of servers by theme", "url": "/en/portal/servers"}
+      ],
+      "descr": "Friendica aims at being a platform that suits everyone. Newcomers will feel right at home: the network's interface and functionality include common features of a mainstream social network. Being comparatively light on resources makes it attractive for administrators to host (Friendica servers are called \"nodes\"). The community is good-natured and helpful. Friendica is well connected with the rest of Fediverse — its users can follow friends on most other federated networks.",
+      "connections": ["diaspora*", "GNU Social", "Hubzilla", "Mastodon", "Misskey", "Pixelfed", "Pleroma", "Plume"],
+      "screenshots":
+        [
+          {"descr": "Default Frio theme (green colour)", "img": "friendica-1.png"},
+          {"descr": "Alternative Vier theme", "img": "friendica-2.png"}
+        ],
+      "tracker": "https://github.com/friendica/friendica/issues",
+      "bounty": "",
+      "translating": "https://www.transifex.com/Friendica/friendica",
+      "reading":
+        [
+          {
+            "title": "Encrypting private data in a social network web app. Friendica case.",
+            "url": "https://blog.mrpetovan.com/web-development/encrypting-private-data-in-a-social-network-web-app"
+          },
+          {
+            "title": "Distributed social networking in 2017: a review",
+            "url": "https://iwrotethislive.blogspot.ru/2017/11/distributed-social-networking-in-2017.html"
+          },
+          {
+            "title": "Got Zot — Mike Macgirvin on building your own apps and protocols",
+            "url": "https://medium.com/we-distribute/got-zot-mike-macgirvin-45287601ff19"
+          },
+          {
+            "title": "Wikipedia article",
+            "url": "https://en.wikipedia.org/wiki/Friendica"
+          }
+        ],
+      "notable":
+        [
+          {
+            "name": "Feneas",
+            "url": "https://friendica.feneas.org/profile/feneas",
+            "avatar": "/img/avatars/feneas.png"
+          }
+        ]
+    }
+}

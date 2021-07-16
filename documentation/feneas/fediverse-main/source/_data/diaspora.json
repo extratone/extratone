@@ -1,0 +1,111 @@
+
+{
+  "data":
+    {
+      "title": "diaspora",
+      "category": "social network",
+      "type": "macroblogging",
+      "logoClr": "000000",
+      "created": "2010",
+      "official": "https://diasporafoundation.org",
+      "license": "AGPL-3.0",
+      "repo": "https://github.com/diaspora/diaspora",
+      "language": "Ruby",
+      "protocols":
+        [{"title": "diaspora", "url": "https://github.com/diaspora/diaspora_federation"}],
+      "wiki": "https://wiki.diasporafoundation.org/Main_Page",
+      "servers":
+        [
+          {"num": "1", "url": "https://the-federation.info/diaspora"}
+        ],
+      "serverWizard": "https://podupti.me",
+      "mobile": "https://f-droid.org/en/packages/com.github.dfa.diaspora_android",
+      "proxy": "https://wiki.diasporafoundation.org/Installation/Camo",
+      "tutorials":
+        [
+          {"id": "0", "url": "https://diasporafoundation.org/tutorials"}
+        ],
+      "devTutorial": "https://wiki.diasporafoundation.org/FAQ_for_pod_maintainers",
+      "mascot": [{"item": "dandelion"}],
+      "dwellers": "diasporians",
+      "descr": "The diaspora* project appeared in 2010, when a group of friends decided to create a social network that would return control to users. The project's mascot is dandelion, and diaspora* servers are called \"pods\". Information about the new network spread far and wide like dandelion's seeds in the wind, attracting newcomers, increasing the number of available pods. Today it's a community project with a stable userbase. Many people joined diaspora* in search of a macroblogging platform independent from corporations.",
+      "communities": "",
+      "connections": ["Friendica", "Hubzilla", "Socialhome"],
+      "screenshots":
+        [
+          {"descr": "diaspora stream", "img": "diaspora-1.png"}
+        ],
+      "features":
+        [
+          "polls",
+          "markdown support",
+          "following hashtags",
+          "limited posts",
+          "hiding contact list",
+          "birthday notifications",
+          "two-factor authentication (TOTP)"
+        ],
+      "information":
+        [
+          "Creating a contact group (\"aspect\") and adding specific contacts there, you can make limited posts visible only to these people. After publishing a limited post you won't be able to change its visibility, it will forever be visible only to a particular group of people. New contacts added to that aspect will see only new limited posts published after they've been added to the aspect",
+          "Direct messages (\"conversations\") can't be deleted. You can mute a conversation and hide it from view. Your conversation will be kept in the database of the server you're registered on and the servers your correspondents are on. Don't use diaspora* conversations for sharing sensitive information",
+          "When you mute a \"conversation\" with someone, they won't know you did it. If they continue sending you direct messages in that muted conversation, you won't get them. Make sure your contacts know that the conversation was muted and is no longer available on your side"
+        ],
+      "tracker": "https://github.com/diaspora/diaspora/issues",
+      "bounty": "https://www.bountysource.com/teams/diaspora",
+      "translating": "https://wiki.diasporafoundation.org/Contribute_translations",
+      "reading":
+        [
+          {
+            "title": "Social networking the FOSS way with Diaspora",
+            "url": "http://www.linux-magazine.com/Issues/2017/194/Diaspora"
+          },
+          {
+            "title": "Wikipedia article",
+            "url": "https://en.wikipedia.org/wiki/Diaspora_(social_network)"
+          },
+          {
+            "title": "FOSDEM 2017: video about diaspora",
+            "url": "https://archive.fosdem.org/2017/schedule/event/diaspora"
+          }
+        ],
+      "notable":
+        [
+          {
+            "name": "FSF",
+            "url": "https://framasphere.org/u/fsf",
+            "avatar": "/img/avatars/fsf.png"
+          },
+          {
+            "name": "Framasoft",
+            "url": "https://framasphere.org/u/framasoft",
+            "avatar": "/img/avatars/framasoft.png"
+          },
+          {
+            "name": "La Quadrature du Net",
+            "url": "https://framasphere.org/u/la_quadrature_du_net",
+            "avatar": "/img/avatars/laquadrature.png"
+          },
+          {
+            "name": "Monomeer",
+            "url": "https://pod.geraspora.de/u/monomeer",
+            "avatar": "/img/avatars/monomeer.png"
+          },
+          {
+            "name": "CCC",
+            "url": "https://diasp.org/u/chaosupdates",
+            "avatar": "/img/avatars/ccc.png"
+          },
+          {
+            "name": "Die is lieb",
+            "url": "https://pod.geraspora.de/u/ey_lou_flynn",
+            "avatar": "/img/avatars/die_is_lieb.png"
+          },
+          {
+            "name": "Liberapay",
+            "url": "https://framasphere.org/u/liberapay",
+            "avatar": "/img/avatars/liberapay.png"
+          }
+        ]
+    }
+}

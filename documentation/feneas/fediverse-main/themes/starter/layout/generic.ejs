@@ -1,0 +1,23 @@
+
+---
+layout: layout
+network: true
+---
+
+<%
+  const url = getPath();
+  const data = site.data[url].data;
+  const file = '_partial/networks/' + url;
+%>
+
+<%- partial('_partial/heroheader') %>
+<main class="contents">
+  <%- partial('_partial/header') %>
+  <div class="section-wrapper">
+    <%- partial('_partial/generalinfo') %>
+  </div>
+  <%- partial('_partial/world') %>
+  <br>
+  <%- partial('_partial/contributing') %>
+  <%- partial('_partial/buttons') %>
+</main>

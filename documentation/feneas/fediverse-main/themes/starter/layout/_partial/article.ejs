@@ -1,0 +1,26 @@
+
+<%
+  const date = post.date.format(config.date_format).split('-').join('.');
+  const tag = function(arr) {return arr.map(tag => tag.name)};
+%>
+
+<div class="post__preview">
+  <a class="oneliner" href="<%- url_for(post.url) %>">
+    <svg class="f-tag  <%= tag(post.tags) %>" role="img" aria-labelledby="f-snow">
+      <title id="f-snow">tag colour icon</title>
+      <use xlink:href="#icon-snowflake">
+    </svg>
+    <p class="post__title u-emphasize">
+      <%- post.title %>
+    </p>
+    <div class="post__content">
+      <%- truncate(strip_html(post.preview), {length: 160, omission: '...'}) %>
+    </div>
+    <p class="post__meta u-emphasize">
+      <span><%= date %></span>
+      <span>
+        <% post.tags.map(function(tag) { %>#<%= tag.name %> <% }) %>
+      </span>
+    </p>
+  </a>
+</div>

@@ -1,0 +1,55 @@
+
+<%
+  let contType = '',
+      indexBody = '',
+      ball = false,
+      misc,
+      post,
+      nt;
+  if (is_root()) {
+    contType = 'main__container';
+    indexBody = 'main';
+  }
+  if (page.layout == 'crystalball') {
+    ball = true;
+  }
+  if (page.layout == 'miscellaneous' || page.layout == 'tools') {
+    misc = "miscellaneous";
+  }
+  if (page.layout == 'post') {
+    post = "post";
+  }
+  if (page.network) {
+    nt = "network";
+  }
+%>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<%- partial('_partial/head') %>
+<body class="<%= indexBody %>">
+  <main class="container-wrapper">
+    <!--[if lt IE 11]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please, upgrade</a>.</p>
+    <![endif]-->
+    <%- partial('_partial/navbar', null, {cache: !config.relative_link}) %>
+    <%- partial('_partial/sidebar') %>
+    <div class="container <%= contType %> <%= misc %> <%= post %> <%= nt %>">
+      <noscript><small class="no-js">You disabled Javascript. Some things won't work.</small></noscript>
+      <%- body %>
+    </div>
+  </main>
+  <!-- temporary https redirect hack -->
+  <script>
+    const host = "fediverse.party";
+    if ((host == window.location.host || "www." + host == window.location.host ) && (window.location.protocol != "https:")) {
+      window.location.protocol = "https";
+    }
+  </script>
+
+  <%- js('js/main.min.js') %>
+  <% if (is_root()) { %>  <%- js('js/index.min.js') %> <% } %>
+  <% if (ball) { %> <%- js('js/ball.min.js') %> <% } %>
+</body>
+</html>

@@ -1,0 +1,100 @@
+
+{
+  "data":
+    {
+      "title": "hubzilla",
+      "category": "social network",
+      "type": "macroblogging",
+      "logoClr": "43488a",
+      "created": "2015",
+      "official": "https://hubzilla.org",
+      "license": "MIT",
+      "repo": "https://framagit.org/hubzilla/core",
+      "language": "PHP",
+      "protocols":
+        [
+          {"title": "Zot", "url": "https://zotlabs.org/help/developer/zot_protocol"},
+          {"title": "OStatus", "url": "https://github.com/OStatus"},
+          {"title": "diaspora", "url": "https://github.com/diaspora/diaspora_federation"},
+          {"title": "ActivityPub", "url": "https://activitypub.rocks"}
+        ],
+      "wiki": "",
+      "servers":
+        [
+          {"num": "1", "url": "https://the-federation.info/hubzilla"},
+          {"num": "2", "url": "https://fedidb.org/network/?s=hubzilla"}
+        ],
+      "serverWizard": "https://podupti.me",
+      "mobile": "https://f-droid.org/en/packages/com.dfa.hubzilla_android",
+      "tutorials":
+        [
+          {"id": "0", "url": "https://zotlabs.org/help/member/member_guide"},
+          {"id": "1", "url": "https://zotlabs.org/help/developer/developer_guide"},
+          {"id": "2", "url": "https://zotlabs.org/help/tutorials/personal_channel"}
+
+        ],
+      "devTutorial": "https://zotlabs.org/help/admin/administrator_guide",
+      "cheatsheets":
+        [
+          {"id": "0", "url": "/img/hubzilla-permissions.png"}
+        ],
+      "mascot": [{"item": "red koala", "imgNum": "1"}],
+      "dwellers": "hubzillians",
+      "communities": [{"title": "List of forums", "url": "https://hub.libranet.de/directory?f=&global=1&pubforums=1"}],
+      "descr": "The multi-purpose Hubzilla network is home to nomads and power users. It includes a significant number of features and granular settings. Take your time to explore all of them. If you have questions, don't hesitate to post to developer forums or ask the community. Hubzilla is well connected to the rest of Fediverse and will let you follow users from most other federated networks.",
+      "connections": ["diaspora*", "Friendica", "GNU Social", "Mastodon", "Pleroma"],
+      "screenshots":
+        [
+          {"descr": "Hubzilla interface", "img": "hubzilla-1.png"}
+        ],
+      "features":
+        [
+          "granular privacy settings",
+          "polls",
+          "forums",
+          "file sharing",
+          "expiring posts",
+          "nomadic identity",
+          "events",
+          "calendar",
+          "encrypting comments with passphrase"
+        ],
+      "information":
+        [
+          "By default Hubzilla account federates only within Hubzilla network. You need to turn on ActivityPub and diaspora plugins in profile settings in order to connect with your friends from other networks",
+          "Sharing files is possible only between Hubzilla users, friends from other networks will not have access to shared files"
+        ],
+      "donate": "https://salt.bountysource.com/teams/hubzilla",
+      "tracker": "https://framagit.org/hubzilla/core/issues",
+      "bounty": "https://salt.bountysource.com/teams/hubzilla",
+      "translating": "https://www.transifex.com/Friendica/hubzilla",
+      "reading":
+        [
+          {
+            "title": "Hubzilla HowTo",
+            "url": "https://howto.disroot.org/en/dishub"
+          },
+          {
+            "title": "The Do-Everything System: An in-depth review of Hubzilla 3.0",
+            "url": "https://wedistribute.org/2018/02/the-do-everything-system-an-in-depth-review-of-hubzilla-3-0"
+          },
+          {
+            "title": "Nomadic identity in Hubzilla",
+            "url": "https://medium.com/@tamanning/nomadic-identity-brought-to-you-by-hubzilla-67eadce13c3b"
+          },
+          {
+            "title": "Getting started with nomadic identity — how to create a personal channel on Hubzilla",
+            "url": "https://medium.com/@tamanning/getting-started-with-nomadic-identity-how-to-create-a-personal-channel-on-hubzilla-7d9666a428b"
+          },
+          {
+            "title": "Got Zot — Mike Macgirvin on building your own apps and protocols",
+            "url": "https://wedistribute.org/2017/10/got-zot%e2%80%8a-%e2%80%8amike-macgirvin-on-building-your-own-apps-and-protocols"
+          },
+          {
+            "title": "Hubzilla Wiki article",
+            "url": "https://en.everybodywiki.com/Hubzilla"
+          }
+        ],
+      "notable": ""
+    }
+}
