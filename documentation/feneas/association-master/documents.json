@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Privacy Policy",
+    "path": "terms/privacy_policy.md",
+    "files": [
+      "privacy_policy.pdf",
+      "privacy_policy.html"
+    ]
+  },
+  {
+    "name": "Code of Conduct",
+    "path": "terms/code_of_conduct.md",
+    "files": [
+      "code_of_conduct.pdf",
+      "code_of_conduct.html"
+    ]
+  },
+  {
+    "name": "Feneas Rules (Finnish)",
+    "path": "rules/feneas_rules.fi.md",
+    "files": [
+      "feneas_rules.fi.pdf",
+      "feneas_rules.fi.html"
+    ]
+  },
+  {
+    "name": "Feneas Rules (English)",
+    "path": "rules/feneas_rules.en.md",
+    "files": [
+      "feneas_rules.en.pdf",
+      "feneas_rules.en.html"
+    ]
+  },
+  {
+    "name": "Feneas Rules (German)",
+    "path": "rules/feneas_rules.de.md",
+    "files": [
+      "feneas_rules.de.pdf",
+      "feneas_rules.de.html"
+    ]
+  },
+  {
+    "name": "FOSS manifesto",
+    "path": "manifestos/foss.md",
+    "files": [
+      "foss_manifesto.pdf",
+      "foss_manifesto.html"
+    ]
+  }
+]

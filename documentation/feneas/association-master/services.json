@@ -1,0 +1,111 @@
+[
+  {
+    "__EXAMPLE__": "__SERVICE__",
+    "url_icon": "Absolute path to the image file or the filename in https://git.feneas.org/feneas/infrastructure/ghost-theme/tree/master/assets/images/.",
+    "fa_icon": "Fontawesome classes e.g. 'fas fa-comments'",
+    "name": "Name of the service",
+    "description": "Description of the service 30-40 words (only plain text!).",
+    "register_url": "Registration or sign-up link for the service (Feneas specific)",
+    "url": "Link to the offical documentation of the service or a blog post (extra information).",
+    "access": "Access level 0=everyone, 1=partially everyone, 2=only feneas member"
+  },
+  {
+    "url_icon": "searx.svg",
+    "fa_icon": "fas fa-search",
+    "name": "Searx",
+    "description": "Searx is a free internet metasearch engine which aggregates results from more than 70 search services. Users are neither tracked nor profiled. Additionally, searx can be used over Tor for online anonymity.",
+    "register_url": "https://searx.feneas.org",
+    "url": "https://asciimoo.github.io/searx/",
+    "access": 0
+  },
+  {
+    "url_icon": "matrixorg.png",
+    "fa_icon": "fas fa-comments",
+    "name": "Matrix / Element",
+    "description": "Federated group chat with e2e encryption.",
+    "register_url": "https://chat.feneas.org",
+    "url": "https://matrix.org",
+    "access": 2
+  },
+  {
+    "url_icon": "friendica.png",
+    "fa_icon": "fas fa-pencil-alt",
+    "name": "Friendica",
+    "description": "Federated social network. Friendica federates with the whole Fediverse using multiple protocols.",
+    "register_url": "https://friendica.feneas.org",
+    "url": "https://friendi.ca",
+    "access": 0
+  },
+  {
+    "url_icon": "diaspora.svg",
+    "fa_icon": "fas fa-pencil-alt",
+    "name": "Diaspora",
+    "description": "Federated social network. Diaspora is a decentralized social network, consisting of many individual servers, called \"pods\". The current pod Joindiaspora is closed and therefore only available to members. Ask on the members mailing-list for access.",
+    "register_url": "mailto:members@feneas.org",
+    "url": "https://wiki.diasporafoundation.org",
+    "access": 2
+  },
+  {
+    "url_icon": "etherpad.png",
+    "fa_icon": "fas fa-file-alt",
+    "name": "Etherpad",
+    "description": "Collaborative online text editor.",
+    "register_url": "https://pad.feneas.org",
+    "url": "https://etherpad.org",
+    "access": 0
+  },
+  {
+    "url_icon": "gitlab.svg",
+    "fa_icon": "fab fa-gitlab",
+    "name": "GitLab",
+    "description": "Code hosting on steroids. Open to all but only a member will be able to enjoy all the features of our premium instance (License provided by GitLab Inc <3).",
+    "register_url": "https://git.feneas.org",
+    "url": "https://about.gitlab.com",
+    "access": 1
+  },
+  {
+    "url_icon": "nextcloud.svg",
+    "fa_icon": "fas fa-cloud",
+    "name": "Nextcloud",
+    "description": "Federated file hosting, calendar, tasks, contacts and more!",
+    "register_url": "https://cloud.feneas.org",
+    "url": "https://nextcloud.com",
+    "access": 2
+  },
+  {
+    "url_icon": "collabora.png",
+    "fa_icon": "fas fa-cloud",
+    "name": "Collabora",
+    "description": "Provides you the powerful on-premise office suites, that enable you to access documents, author new content and work collaboratively.",
+    "register_url": "https://cloud.feneas.org",
+    "url": "https://nextcloud.com/collaboraonline",
+    "access": 2
+  },
+  {
+    "url_icon": "discourse.svg",
+    "fa_icon": "fas fa-comment-alt",
+    "name": "Discourse",
+    "description": "Forum for discussion about anything related to the federated world. Members can log in via their LDAP credentials.",
+    "register_url": "https://talk.feneas.org",
+    "url": "https://www.discourse.org",
+    "access": 0
+  },
+  {
+    "url_icon": "wedistribute.png",
+    "fa_icon": "fas fa-file-alt",
+    "name": "WeDistribute",
+    "description": "WeDistribute is a publication service dedicated to Free Software, decentralized communication technologies, and sustainability. This service is developed to broadcast news to the Fediverse and other parts of the Free Network. Visit the blog it doesn't require any kind of registration.. it's free :)",
+    "register_url": "https://wedistribute.org",
+    "url": null,
+    "access": 0
+  },
+  {
+    "url_icon": "fediverse.party.png",
+    "fa_icon": "fas fa-list",
+    "name": "Fediverse Party",
+    "description": "A quick guide into Fediverse platforms.",
+    "register_url": "https://fediverse.party",
+    "url": null,
+    "access": 0
+  }
+]

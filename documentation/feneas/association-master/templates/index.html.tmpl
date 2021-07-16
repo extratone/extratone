@@ -1,0 +1,17 @@
+{{set . "title" "Documents"}}
+{{template "header" .}}
+
+<section class="post-full-content">
+{{range .JSON}}
+{{$root := .}}
+{{range .files}}
+<p>
+  <a href="https://feneas.git.feneas.org/association/{{.}}">
+    {{$root.name}}
+  </a> - <small>{{.}}</small> - <small>{{date}}</small>
+</p>
+{{end}}
+{{end}}
+</section>
+
+{{template "footer" .}}

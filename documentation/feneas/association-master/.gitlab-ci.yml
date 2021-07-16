@@ -1,0 +1,40 @@
+image: node:jessie
+variables:
+  JEKYLL_ENV: production
+  LC_ALL: C.UTF-8
+  MARKDOWN: "node_modules/.bin/markdown"
+  MARKDOWNPDF: "node_modules/.bin/markdown-pdf"
+before_script:
+  - npm install markdown-to-html markdown-pdf
+  - curl -o /usr/local/bin/jq -L https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64
+  - curl -o /usr/local/bin/gojsontmpl -L https://git.feneas.org/feneas/infrastructure/gojsontmpl/raw/master/dist/gojsontmpl
+  - chmod +x /usr/local/bin/jq
+  - chmod +x /usr/local/bin/gojsontmpl
+test:
+  stage: test
+  script:
+  - bash scripts/gen.sh test
+  artifacts:
+    paths:
+    - test
+  except:
+  - master
+pages:
+  stage: deploy
+  script:
+  - bash scripts/gen.sh public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
+ghost service update:
+  stage: deploy
+  trigger:
+    project: feneas/infrastructure/ghost-theme
+    strategy: depend
+  only:
+    refs:
+      - master
+    changes:
+      - services.json

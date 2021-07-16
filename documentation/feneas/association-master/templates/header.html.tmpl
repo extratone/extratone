@@ -1,0 +1,42 @@
+{{- define "header"}}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="HandheldFriendly" content="True" />
+
+    <title>Federated Networks Association - {{.title}}</title>
+
+    <link rel="stylesheet" type="text/css" href="https://feneas.org/assets/built/screen.css" />
+    <link rel="stylesheet" media="all" href="https://feneas.org/assets/built/share-connect-support.css">
+  </head>
+  <body class="post-template tag-feneas tag-meetings">
+  <div class="site-wrapper">
+    <header class="site-header outer">
+      <div class="inner">
+        <nav class="site-nav">
+          <div class="site-nav-left">
+            <a class="site-nav-logo" href="https://feneas.org">Federated Networks Association</a>
+            <ul class="nav" role="menu">
+              <li class="nav-home" role="menuitem"><a href="https://feneas.org">Back to blog</a></li>
+              <li class="nav-mission" role="menuitem"><a href="index.html">Documents</a></li>
+            </ul>
+          </div>
+          <div class="site-nav-right">
+            <div class="social-links">
+          </div>
+          <a class="rss-button" href="https://feneas.org/rss/" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="6.18" cy="17.82" r="2.18"></circle><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"></path></svg></a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main id="site-main" class="site-main outer">
+    <div class="inner">
+      <article class="post-full post tag-feneas tag-meetings">
+        <header class="post-full-header">
+          <h1 class="post-full-title">{{.title}}</h1>
+        </header>
+        <figure class="post-full-image" style="background-image: url(https://feneas.org/content/images/2018/07/clint-adair-68588-unsplash-2-1.jpg)"></figure>
+{{- end}}
