@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files>
+  <file name="Energy Management.djvu" source="derivative">
+    <format>DjVu</format>
+    <original>Energy Management_djvu.xml</original>
+    <mtime>1354076377</mtime>
+    <size>5519704</size>
+    <md5>e29abbe73cad50247ac41fa4158fb3db</md5>
+    <crc32>d3f5a4d1</crc32>
+    <sha1>35f4777fd1b1002f673ca1c99426b90deb1e0853</sha1>
+  </file>
+  <file name="Energy Management.gif" source="derivative">
+    <format>Animated GIF</format>
+    <original>Energy Management_jp2.zip</original>
+    <mtime>1354060404</mtime>
+    <size>152928</size>
+    <md5>194ef98b28f2fa067756833f1baf8ce2</md5>
+    <crc32>4593b45b</crc32>
+    <sha1>cf854503c9e2f7900214f6b104153f338a5d1552</sha1>
+  </file>
+  <file name="Energy Management.pdf" source="original">
+    <format>Text PDF</format>
+    <mtime>1352777346</mtime>
+    <size>20340955</size>
+    <md5>356fef278cab289c8749f5097e8d18d0</md5>
+    <crc32>365a5b94</crc32>
+    <sha1>fa31744cdc624f2e1ea1287e4dce6cc1895c90ae</sha1>
+  </file>
+  <file name="Energy Management.pdf_meta.txt" source="original">
+    <format>Metadata</format>
+    <mtime>1352777347</mtime>
+    <size>405</size>
+    <md5>26def9bf1b47eeb7e7452470359267d8</md5>
+    <crc32>460063c4</crc32>
+    <sha1>7d17ee3f1f8339b89f8f38c9a3d8f28c0a3ab0bc</sha1>
+  </file>
+  <file name="Energy Management_abbyy.gz" source="derivative">
+    <format>Abbyy GZ</format>
+    <original>Energy Management_jp2.zip</original>
+    <mtime>1354074151</mtime>
+    <size>7854263</size>
+    <md5>2b287c92786c93cc983cfbe6c790b06f</md5>
+    <crc32>63ec3716</crc32>
+    <sha1>2b5bcc14b1eef3533c5e4e3fbb36f143e276f05d</sha1>
+  </file>
+  <file name="Energy Management_djvu.txt" source="derivative">
+    <format>DjVuTXT</format>
+    <original>Energy Management.djvu</original>
+    <mtime>1354076413</mtime>
+    <size>553475</size>
+    <md5>4aeb103c7553f5c756c9502954d0f87c</md5>
+    <crc32>bd4c684e</crc32>
+    <sha1>91e123c1810e0ff97d9948307cde56bdd3aed34c</sha1>
+  </file>
+  <file name="Energy Management_djvu.xml" source="derivative">
+    <format>Djvu XML</format>
+    <original>Energy Management_abbyy.gz</original>
+    <mtime>1354074294</mtime>
+    <size>5203161</size>
+    <md5>b9934728edf66c0f42e9930cca526cab</md5>
+    <crc32>2ace1f91</crc32>
+    <sha1>2abc40ff7cf3b64bf432220c833d2e3716bd465b</sha1>
+  </file>
+  <file name="Energy Management_jp2.zip" source="derivative">
+    <format>Single Page Processed JP2 ZIP</format>
+    <original>Energy Management.pdf</original>
+    <mtime>1354060361</mtime>
+    <size>209986843</size>
+    <md5>880daa31673658b95ff71ef87f4c538a</md5>
+    <crc32>cb369576</crc32>
+    <sha1>a1e532078b7c4ddcdc59a49bc9cc479989175438</sha1>
+  </file>
+  <file name="Energy Management_scandata.xml" source="derivative">
+    <format>Scandata</format>
+    <original>Energy Management_djvu.xml</original>
+    <mtime>1354076381</mtime>
+    <size>76336</size>
+    <md5>2a27ab9606659dd3510e005fcb849130</md5>
+    <crc32>530d31ca</crc32>
+    <sha1>9c015ed3d1deacbab74d999f8ae8c366ce13a0e9</sha1>
+  </file>
+  <file name="__ia_thumb.jpg" source="original">
+    <mtime>1530874068</mtime>
+    <size>13549</size>
+    <md5>cf40ea95a0bfbe10fb38741c2e33a105</md5>
+    <crc32>d722af35</crc32>
+    <sha1>78a18b8286b0968e4b83b47e60fec0f4969edadf</sha1>
+    <format>Item Tile</format>
+    <rotation>0</rotation>
+  </file>
+  <file name="ost-engineering-energy-management_archive.torrent" source="metadata">
+    <btih>ad255cf79a3f4f0d3f8559ab7b10588382fde38d</btih>
+    <mtime>1530874071</mtime>
+    <size>12772</size>
+    <md5>2e5634d58e2f99bbd09af1eb79d6c90f</md5>
+    <crc32>59216470</crc32>
+    <sha1>aa230416bde704fdf09bcb0342ae938db94eddfc</sha1>
+    <format>Archive BitTorrent</format>
+  </file>
+  <file name="ost-engineering-energy-management_files.xml" source="original">
+    <format>Metadata</format>
+    <md5>0955c7b5c508ef4cdcec1b6a3313ed25</md5>
+  </file>
+  <file name="ost-engineering-energy-management_meta.sqlite" source="original">
+    <mtime>1467549543</mtime>
+    <size>6144</size>
+    <format>Metadata</format>
+    <md5>8b9f043e05ee71d337248b24ccc93d30</md5>
+    <crc32>31d12fab</crc32>
+    <sha1>93e449533e272210396ee219c6c69f41c3d31c64</sha1>
+  </file>
+  <file name="ost-engineering-energy-management_meta.xml" source="original">
+    <format>Metadata</format>
+    <mtime>1473534428</mtime>
+    <size>1144</size>
+    <md5>031a3fdf00be2529b9110be8e6094d12</md5>
+    <crc32>18d99d8a</crc32>
+    <sha1>78d0fa198fb297ce5d085a1712c4097ff27241d1</sha1>
+  </file>
+</files>

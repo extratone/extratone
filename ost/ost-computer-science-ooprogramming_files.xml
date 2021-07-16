@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files>
+  <file name="OOProgramming.jpg_meta.txt" source="original">
+    <format>Metadata</format>
+    <mtime>1352777822</mtime>
+    <size>398</size>
+    <md5>b33e6a19c1dfd47d7160d60a1f10741d</md5>
+    <crc32>0106e82f</crc32>
+    <sha1>f840200a8d41b409faf03bb257b27fda5d43a005</sha1>
+  </file>
+  <file name="OOProgramming.pdf" source="original">
+    <format>Text PDF</format>
+    <mtime>1352777819</mtime>
+    <size>5789509</size>
+    <md5>68d6480a22db46e43a168680962c9a1c</md5>
+    <crc32>c0b681f8</crc32>
+    <sha1>92aca8dce26117a3d81a415671a9f98f57f6ba47</sha1>
+  </file>
+  <file name="OOProgramming.pdf_meta.txt" source="original">
+    <format>Metadata</format>
+    <mtime>1352777819</mtime>
+    <size>405</size>
+    <md5>a06ea2ede75b356d1a26579bd0858664</md5>
+    <crc32>7357ddcb</crc32>
+    <sha1>151f135f445e17ea95c4d82ff050a6ca5bd365e4</sha1>
+  </file>
+  <file name="OOProgramming_djvu.xml" source="derivative">
+    <format>Djvu XML</format>
+    <original>OOProgramming_abbyy.gz</original>
+    <mtime>1354070035</mtime>
+    <size>2746512</size>
+    <md5>659d5f218f21b55072796053565f5e1e</md5>
+    <crc32>3ff2599a</crc32>
+    <sha1>ddd7a6f97db1889231dc9874f8e33873f592feaf</sha1>
+  </file>
+  <file name="OOProgramming_djvu.txt" source="derivative">
+    <format>DjVuTXT</format>
+    <original>OOProgramming.djvu</original>
+    <mtime>1354071787</mtime>
+    <size>292310</size>
+    <md5>91f727ac4cb37d398a4040d51341e02c</md5>
+    <crc32>728fd11f</crc32>
+    <sha1>b9fb5d4fcde0793d38d8b2b4ac93491989e8e27d</sha1>
+  </file>
+  <file name="OOProgramming.djvu" source="derivative">
+    <format>DjVu</format>
+    <original>OOProgramming_djvu.xml</original>
+    <mtime>1354071760</mtime>
+    <size>3145402</size>
+    <md5>19f13bd43fa641e21c05d9afb98164c0</md5>
+    <crc32>1981d39f</crc32>
+    <sha1>bafcce56be3a0a7e059cdd8e0184e46d8c7b7812</sha1>
+  </file>
+  <file name="OOProgramming.gif" source="derivative">
+    <format>Animated GIF</format>
+    <original>OOProgramming_jp2.zip</original>
+    <mtime>1354058421</mtime>
+    <size>130113</size>
+    <md5>0acb00b8e89a2184d9dc3683694e6072</md5>
+    <crc32>1d09e1cc</crc32>
+    <sha1>e5e57647cbc03705c28d4d80854630388bb9e61c</sha1>
+  </file>
+  <file name="OOProgramming_jp2.zip" source="derivative">
+    <format>Single Page Processed JP2 ZIP</format>
+    <original>OOProgramming.pdf</original>
+    <mtime>1354058364</mtime>
+    <size>130277940</size>
+    <md5>4a07ab8ed45116132055e00a1b0e8474</md5>
+    <crc32>7a3e36ac</crc32>
+    <sha1>c8806503d7f6e8a64311924de96308200d7652b4</sha1>
+  </file>
+  <file name="OOProgramming_abbyy.gz" source="derivative">
+    <format>Abbyy GZ</format>
+    <original>OOProgramming_jp2.zip</original>
+    <mtime>1354069959</mtime>
+    <size>4079600</size>
+    <md5>63b99b6fdd21fe512cd8f48c240227e6</md5>
+    <crc32>0d2a4117</crc32>
+    <sha1>90a885bf8efa92e1848e1057143992f81a93fa25</sha1>
+  </file>
+  <file name="OOProgramming_scandata.xml" source="derivative">
+    <format>Scandata</format>
+    <original>OOProgramming_djvu.xml</original>
+    <mtime>1354071761</mtime>
+    <size>46937</size>
+    <md5>05d64cd7f2f45dbc40e15223f7a59388</md5>
+    <crc32>227b82b6</crc32>
+    <sha1>c2fb7ad6063a2cbda875dabb469d6a14228ef16e</sha1>
+  </file>
+  <file name="OOProgramming_thumb.jpg" source="derivative">
+    <format>JPEG Thumb</format>
+    <original>OOProgramming.jpg</original>
+    <mtime>1354057522</mtime>
+    <size>1647</size>
+    <md5>7fa57dcf7f7bbada4ef5b4e9b565f4a3</md5>
+    <crc32>049288d3</crc32>
+    <sha1>ee136591bce1f614441ce45ab8fac9beef2b9d83</sha1>
+  </file>
+  <file name="OOProgramming.jpg" source="original">
+    <format>JPEG</format>
+    <mtime>1352777822</mtime>
+    <size>90810</size>
+    <md5>13df0b9e16b2c0e2d8fe46de93d98e4f</md5>
+    <crc32>94ed0afd</crc32>
+    <sha1>d00f2e19f8e3ea10111f5c1a1f0bb3eef989d28e</sha1>
+    <rotation>0</rotation>
+  </file>
+  <file name="ost-computer-science-ooprogramming_meta.sqlite" source="original">
+    <mtime>1465917972</mtime>
+    <size>6144</size>
+    <format>Metadata</format>
+    <md5>025eb6a4c924b20dcbe1ad9943aba6d1</md5>
+    <crc32>c78696d9</crc32>
+    <sha1>1d8e1a6c09e928cb4bb945ce9d977c6c17503b24</sha1>
+  </file>
+  <file name="ost-computer-science-ooprogramming_meta.xml" source="original">
+    <format>Metadata</format>
+    <mtime>1473737053</mtime>
+    <size>1260</size>
+    <md5>16b3a869d76feceed4086301cf9e2a8b</md5>
+    <crc32>56427815</crc32>
+    <sha1>3f34ac7c94f4b188cd96acc4eedd8e9f3e916c52</sha1>
+  </file>
+  <file name="ost-computer-science-ooprogramming_archive.torrent" source="metadata">
+    <btih>f70e4420e7ca815b2a1b6bb8ed88c69e9abc71be</btih>
+    <mtime>1473737056</mtime>
+    <size>9017</size>
+    <md5>468a8abc6c03ee3a560da17fcad4d9df</md5>
+    <crc32>a7eaf180</crc32>
+    <sha1>61c280e0cf88ef5bb5f016f85eed230155cd825d</sha1>
+    <format>Archive BitTorrent</format>
+  </file>
+  <file name="ost-computer-science-ooprogramming_files.xml" source="original">
+    <format>Metadata</format>
+    <md5>9f804f19b3b2da017a4f35e27486cdb3</md5>
+  </file>
+</files>

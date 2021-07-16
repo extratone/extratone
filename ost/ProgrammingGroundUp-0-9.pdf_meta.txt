@@ -1,0 +1,12 @@
+ETag: "0580fd777f1d1fbf198ac3f046fd0ebc"
+accept-encoding: identity
+authorization: AWS wEnuXrqrUECRSr5A:REDACTED_BY_IA_S3
+connection: close
+content-length: 1065718
+content-md5: BYD9d38dH78ZisPwRv0OvA==
+content-type: application/pdf
+date: Tue, 13 Nov 2012 03:37:12 GMT
+expect: 100-Continue
+host: ost-computer-science-programminggroundup-0-9.s3.us.archive.org
+user-agent: Boto/2.6.0 (linux2)
+x-archive-queue-derive: 0

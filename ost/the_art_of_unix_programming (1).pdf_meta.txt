@@ -1,0 +1,12 @@
+ETag: "b9dbc959d4f81a8c41f3adb951144457"
+accept-encoding: identity
+authorization: AWS wEnuXrqrUECRSr5A:REDACTED_BY_IA_S3
+connection: close
+content-length: 2316192
+content-md5: udvJWdT4GoxB8625URREVw==
+content-type: application/pdf
+date: Tue, 13 Nov 2012 03:37:57 GMT
+expect: 100-Continue
+host: ost-computer-science-the_art_of_unix_programming-1.s3.us.archive.org
+user-agent: Boto/2.6.0 (linux2)
+x-archive-queue-derive: 0

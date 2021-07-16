@@ -1,0 +1,12 @@
+ETag: "ff931f95a9093baa9881a71464b53f1d"
+accept-encoding: identity
+authorization: AWS wEnuXrqrUECRSr5A:REDACTED_BY_IA_S3
+connection: close
+content-length: 28523707
+content-md5: /5MflakJO6qYgacUZLU/HQ==
+content-type: application/pdf
+date: Tue, 13 Nov 2012 03:25:51 GMT
+expect: 100-Continue
+host: ost-engineering-chaotic_systems.s3.us.archive.org
+user-agent: Boto/2.6.0 (linux2)
+x-archive-queue-derive: 0

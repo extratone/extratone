@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files>
+  <file name="ProgrammingGroundUp-0-9.djvu" source="derivative">
+    <format>DjVu</format>
+    <original>ProgrammingGroundUp-0-9_djvu.xml</original>
+    <mtime>1354059974</mtime>
+    <size>2545642</size>
+    <md5>b7bb63454bf4aab93e3d825ad18ccb15</md5>
+    <crc32>aeed94b4</crc32>
+    <sha1>c63a9f6573b2ac9402b7a6ba98d8b21cf9b639c2</sha1>
+  </file>
+  <file name="ProgrammingGroundUp-0-9.gif" source="derivative">
+    <format>Animated GIF</format>
+    <original>ProgrammingGroundUp-0-9_jp2.zip</original>
+    <mtime>1354057791</mtime>
+    <size>148779</size>
+    <md5>4b032f80797ce759030bc77fe9b2d351</md5>
+    <crc32>a083f552</crc32>
+    <sha1>129e86c9f7e151055e3e0de759fb9bf40e2e99fb</sha1>
+  </file>
+  <file name="ProgrammingGroundUp-0-9.pdf" source="original">
+    <format>Text PDF</format>
+    <mtime>1352777833</mtime>
+    <size>1065718</size>
+    <md5>0580fd777f1d1fbf198ac3f046fd0ebc</md5>
+    <crc32>971350d7</crc32>
+    <sha1>dbec3b10e88b4f28f3e2c3933d185621826e0b84</sha1>
+  </file>
+  <file name="ProgrammingGroundUp-0-9.pdf_meta.txt" source="original">
+    <format>Metadata</format>
+    <mtime>1352777833</mtime>
+    <size>415</size>
+    <md5>193fb184ff69881f80e1321166304087</md5>
+    <crc32>ad64c4bc</crc32>
+    <sha1>bb3f4faf532de5dce6b34329a3cbab89f84a8244</sha1>
+  </file>
+  <file name="ProgrammingGroundUp-0-9_abbyy.gz" source="derivative">
+    <format>Abbyy GZ</format>
+    <original>ProgrammingGroundUp-0-9_jp2.zip</original>
+    <mtime>1354059483</mtime>
+    <size>5655356</size>
+    <md5>2e0c661cf492fc26b1102494e68a4704</md5>
+    <crc32>97e61a13</crc32>
+    <sha1>c410c4801d565e15ebad4d67c62889da5a6f9e11</sha1>
+  </file>
+  <file name="ProgrammingGroundUp-0-9_djvu.txt" source="derivative">
+    <format>DjVuTXT</format>
+    <original>ProgrammingGroundUp-0-9.djvu</original>
+    <mtime>1354059990</mtime>
+    <size>420834</size>
+    <md5>da70588db09839f023da5c8191a635e0</md5>
+    <crc32>8d9e6a68</crc32>
+    <sha1>8a7cbbe5d4ca55c730236b7229766774fff74660</sha1>
+  </file>
+  <file name="ProgrammingGroundUp-0-9_djvu.xml" source="derivative">
+    <format>Djvu XML</format>
+    <original>ProgrammingGroundUp-0-9_abbyy.gz</original>
+    <mtime>1354059582</mtime>
+    <size>4000569</size>
+    <md5>9311a4e7265b9fc56c8ca4d32440a2a4</md5>
+    <crc32>d8478635</crc32>
+    <sha1>89dcb79ecbdde9d8419f9f6e8b476a0559e3eb85</sha1>
+  </file>
+  <file name="ProgrammingGroundUp-0-9_jp2.zip" source="derivative">
+    <format>Single Page Processed JP2 ZIP</format>
+    <original>ProgrammingGroundUp-0-9.pdf</original>
+    <mtime>1354057771</mtime>
+    <size>95252392</size>
+    <md5>6bc998f290f9f01b6cb5d75149f233a4</md5>
+    <crc32>ac8fd50a</crc32>
+    <sha1>c72d9ecb079534e4da47fabafdc4d92d91596149</sha1>
+  </file>
+  <file name="ProgrammingGroundUp-0-9_scandata.xml" source="derivative">
+    <format>Scandata</format>
+    <original>ProgrammingGroundUp-0-9_djvu.xml</original>
+    <mtime>1354059976</mtime>
+    <size>70947</size>
+    <md5>0a10e4527c7a2b3672b2533f0feba0bb</md5>
+    <crc32>81361080</crc32>
+    <sha1>da5c35323c47867814528122ca10f0885444b202</sha1>
+  </file>
+  <file name="__ia_thumb.jpg" source="original">
+    <mtime>1542959693</mtime>
+    <size>2159</size>
+    <md5>0847eb0f2de4b11cc59d9a3de6f96132</md5>
+    <crc32>6df0f1b8</crc32>
+    <sha1>b77062bccc9b2f9866f9305c3eb33913e891b14d</sha1>
+    <format>Item Tile</format>
+    <rotation>0</rotation>
+  </file>
+  <file name="ost-computer-science-programminggroundup-0-9_archive.torrent" source="metadata">
+    <btih>740e37d519673d149646bedb5615dc55726f4e7c</btih>
+    <mtime>1473743159</mtime>
+    <size>7417</size>
+    <md5>d8d30c7d8780601a825cefad34bc3edb</md5>
+    <crc32>265d8f2d</crc32>
+    <sha1>bdc6e6a6a6e441d88545f3a025069b1cea674373</sha1>
+    <format>Archive BitTorrent</format>
+  </file>
+  <file name="ost-computer-science-programminggroundup-0-9_files.xml" source="original">
+    <format>Metadata</format>
+    <md5>c645c1107254c123b1c23863d9855f29</md5>
+  </file>
+  <file name="ost-computer-science-programminggroundup-0-9_meta.sqlite" source="original">
+    <mtime>1465912011</mtime>
+    <size>6144</size>
+    <format>Metadata</format>
+    <md5>c1db5504d9afca1f8a2b7266b25c994c</md5>
+    <crc32>c4c8cbba</crc32>
+    <sha1>05453978360351a093d46e6fc2e53811ac4b8602</sha1>
+  </file>
+  <file name="ost-computer-science-programminggroundup-0-9_meta.xml" source="original">
+    <format>Metadata</format>
+    <mtime>1473743158</mtime>
+    <size>1169</size>
+    <md5>9a22c689b22697ccb74863de00df65a1</md5>
+    <crc32>6287c139</crc32>
+    <sha1>5bd00e592a273e1623a6b0853739cae882a0300d</sha1>
+  </file>
+</files>

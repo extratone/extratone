@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files>
+  <file name="Chaotic_Systems.pdf" source="original">
+    <format>Text PDF</format>
+    <mtime>1352777153</mtime>
+    <size>28523707</size>
+    <md5>ff931f95a9093baa9881a71464b53f1d</md5>
+    <crc32>437364ce</crc32>
+    <sha1>08cf2435125b6ada419a5536f6bb5588341d93b4</sha1>
+  </file>
+  <file name="Chaotic_Systems.pdf_meta.txt" source="original">
+    <format>Metadata</format>
+    <mtime>1352777153</mtime>
+    <size>403</size>
+    <md5>39f94df5356ffcc2d848f2295688ccc7</md5>
+    <crc32>b5ad70a8</crc32>
+    <sha1>4bb37a3de18d6ba00924f155483b3cabace81c9f</sha1>
+  </file>
+  <file name="Chaotic_Systems_abbyy.gz" source="derivative">
+    <format>Abbyy GZ</format>
+    <original>Chaotic_Systems_jp2.zip</original>
+    <mtime>1354071243</mtime>
+    <size>9520789</size>
+    <md5>74884aacd04bcdc61c4304d7d4c41625</md5>
+    <crc32>57a6d9c0</crc32>
+    <sha1>6a4a41ea0012ae83fb35ac293ac32ec369faddab</sha1>
+  </file>
+  <file name="Chaotic_Systems_jp2.zip" source="derivative">
+    <format>Single Page Processed JP2 ZIP</format>
+    <original>Chaotic_Systems.pdf</original>
+    <mtime>1354061988</mtime>
+    <size>110052238</size>
+    <md5>284eb01e8d116d726c2acd5fd3e6d47b</md5>
+    <crc32>cec165f5</crc32>
+    <sha1>53496641ceb52e13e450eacc00db4fbfcf00f171</sha1>
+  </file>
+  <file name="Chaotic_Systems.gif" source="derivative">
+    <format>Animated GIF</format>
+    <original>Chaotic_Systems_jp2.zip</original>
+    <mtime>1354062044</mtime>
+    <size>95598</size>
+    <md5>b1c14f962e2cbfad4e37e15b09f7aa11</md5>
+    <crc32>9e574c10</crc32>
+    <sha1>3b18f1b0c4cee7380163f800d2e11f3e25c6aaf4</sha1>
+  </file>
+  <file name="Chaotic_Systems_scandata.xml" source="derivative">
+    <format>Scandata</format>
+    <original>Chaotic_Systems_djvu.xml</original>
+    <mtime>1354072351</mtime>
+    <size>96734</size>
+    <md5>c7a71ccd1488bc076f8e539eb6b73c7b</md5>
+    <crc32>f7b3feb9</crc32>
+    <sha1>215c3586892df5a1ccab8c3648bc2385c71d4ec1</sha1>
+  </file>
+  <file name="Chaotic_Systems_djvu.txt" source="derivative">
+    <format>DjVuTXT</format>
+    <original>Chaotic_Systems.djvu</original>
+    <mtime>1354072425</mtime>
+    <size>685916</size>
+    <md5>de5b627a6820178ad432f4c41195bb45</md5>
+    <crc32>708d6f08</crc32>
+    <sha1>237a1065ebd5c00556160e19e01cc7d2f390f7d2</sha1>
+  </file>
+  <file name="Chaotic_Systems.djvu" source="derivative">
+    <format>DjVu</format>
+    <original>Chaotic_Systems_djvu.xml</original>
+    <mtime>1354072348</mtime>
+    <size>5347367</size>
+    <md5>c1aa3c9d3a68735c16d9b53cc0183994</md5>
+    <crc32>8eef83e6</crc32>
+    <sha1>700046477961e516094f1274f2cedf6ed92d1e70</sha1>
+  </file>
+  <file name="Chaotic_Systems_djvu.xml" source="derivative">
+    <format>Djvu XML</format>
+    <original>Chaotic_Systems_abbyy.gz</original>
+    <mtime>1354071460</mtime>
+    <size>6383569</size>
+    <md5>218250d2ecf16c0b44087889a8414362</md5>
+    <crc32>b9447f67</crc32>
+    <sha1>4afd003db92a929c2fa22536b417c2ed6a6c3984</sha1>
+  </file>
+  <file name="ost-engineering-chaotic_systems_meta.sqlite" source="original">
+    <mtime>1465973799</mtime>
+    <size>6144</size>
+    <format>Metadata</format>
+    <md5>3864d7113bfd5f2560565c5f866f2431</md5>
+    <crc32>14cce976</crc32>
+    <sha1>f07e7b51f41dca6ade06172e916a24e82fc1368b</sha1>
+  </file>
+  <file name="ost-engineering-chaotic_systems_meta.xml" source="original">
+    <format>Metadata</format>
+    <mtime>1473447108</mtime>
+    <size>1138</size>
+    <md5>9f1442dcb77812214637007937561ef8</md5>
+    <crc32>4f75164f</crc32>
+    <sha1>2ee342a73fd254b40bc7b5c9291180cbbc5da966</sha1>
+  </file>
+  <file name="ost-engineering-chaotic_systems_archive.torrent" source="metadata">
+    <btih>798ceb7da1252f9d322f830c3983240f31d57492</btih>
+    <mtime>1473447109</mtime>
+    <size>9199</size>
+    <md5>64fdbe4199788f4027d36cf27c1dcf85</md5>
+    <crc32>6ec5e734</crc32>
+    <sha1>2080d94e6ac3195548d238af9f756222d5e9ec35</sha1>
+    <format>Archive BitTorrent</format>
+  </file>
+  <file name="ost-engineering-chaotic_systems_files.xml" source="original">
+    <format>Metadata</format>
+    <md5>ca2a515dc2e16f0262caf643793814a2</md5>
+  </file>
+</files>
