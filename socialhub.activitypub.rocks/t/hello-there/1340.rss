@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Hello there!</title>
+    <link>https://socialhub.activitypub.rocks/t/hello-there/1340</link>
+    <description>Hi everyone! 
+
+I thought it would be a good thing to come here and say &quot;hi&quot; since 2021 will be the year where I&#39;ll be going more deeper in the ActivityPub space. :slight_smile: 
+
+I have developed some tools around Mastodon API in the past, the most notable might be the multi-accounts focused client app [Sengi](https://nicolasconstant.github.io/sengi/). 
+
+Currently I&#39;m developing a pet-project on ActivityPub to understand a bit more how all this is working. It&#39;s just a stupid Twitter2ActivityPub relay. The code is awful but it&#39;s functional, I have a [live instance here](https://beta.birdsite.live/) and the code is linked in the page (can&#39;t post more than 2 links as a new user). 
+I will refine and refactor the code during the following weeks so that I&#39;ll have a healthy base to work from. 
+
+My aim is to develop some more ambitious and useful tools in the close future, since ActivityPub can support ideas I had since some years already. I will try to develop my vision first in the first half of 2021 and will work on it concretely just after.
+But one step at the time, for now I&#39;m the stupid padawan here to make a lot of errors and hopefully to learn from it. :no_mouth:
+
+See you around!</description>
+    
+    <lastBuildDate>Sat, 23 Jan 2021 07:23:23 +0000</lastBuildDate>
+    <category>Uncategorized</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/hello-there/1340.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Hello there!</title>
+        <dc:creator><![CDATA[NicoC]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes I’m aware of the Client2Server aspect of ActivityPub but Sengi is only using the MastodonAPI so it won’t fit in the list. <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/no_mouth.png?v=9" title=":no_mouth:" class="emoji" alt=":no_mouth:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/hello-there/1340/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/hello-there/1340/7</link>
+        <pubDate>Sat, 23 Jan 2021 07:23:23 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1340-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/hello-there/1340.rss">Hello there!</source>
+      </item>
+      <item>
+        <title>Hello there!</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Ok.<br>
+There are also Clients like AndStatus in the category.</p>
+<p>Just btw:<br>
+I would say Pleroma is very related to AP because they use the Client To Server portion of the protocol (+1)<br>
+</p><aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <a href="https://www.w3.org/TR/activitypub/#conformance" target="_blank" rel="noopener">w3.org</a>
+  </header>
+  <article class="onebox-body">
+    <img src="" class="thumbnail" width="" height="">
+
+<h3><a href="https://www.w3.org/TR/activitypub/#conformance" target="_blank" rel="noopener">ActivityPub</a></h3>
+
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+<br>
+While mastodon is a big problem for me with it’s specialised API …
+          <p><a href="https://socialhub.activitypub.rocks/t/hello-there/1340/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/hello-there/1340/6</link>
+        <pubDate>Sat, 23 Jan 2021 07:18:36 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1340-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/hello-there/1340.rss">Hello there!</source>
+      </item>
+      <item>
+        <title>Hello there!</title>
+        <dc:creator><![CDATA[NicoC]]></dc:creator>
+        <description><![CDATA[
+            <p>Sengi is just a Mastodon/Pleroma Client, nothing really related to ActivityPub. <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"><br>
+Thanks for asking!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/hello-there/1340/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/hello-there/1340/5</link>
+        <pubDate>Sat, 23 Jan 2021 07:13:37 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1340-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/hello-there/1340.rss">Hello there!</source>
+      </item>
+      <item>
+        <title>Hello there!</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey Nico,</p>
+<p>I forgot:<br>
+If you want a template for Sengi for the Software Category, let us know !<br>
+<aside class="onebox" style="border-left: 5px solid #3AB54A">
+  <article class="onebox-body category-onebox">
+    <h3>
+      <a class="badge-wrapper bullet" href="/c/software/14">
+        <span class="clear-badge"><span>Software</span></span>
+      </a>
+    </h3>
+      <div>
+        <span class="description">
+          <p>Discover and discuss ActivityPub implementations of all sizes and shapes.</p>
+        </span>
+      </div>
+      <div class="subcategories">
+          <span class="subcategory">
+            <a class="badge-wrapper bullet" href="/c/software/anfora/21">
+              <span class="badge-category-bg" style="background-color: #ff5230"></span>
+              <span class="badge-category clear-badge"><span class="category-name">Anfora</span></span>
+            </a>
+          </span>
+          <span class="subcategory">
+            <a class="badge-wrapper bullet" href="/c/software/olki/23">
+              <span class="badge-category-bg" style="background-color: #0088CC"></span>
+              <span class="badge-category clear-badge"><span class="category-name">Olki</span></span>
+            </a>
+          </span>
+          <span class="subcategory">
+            <a class="badge-wrapper bullet" href="/c/software/zap/47">
+              <span class="badge-category-bg" style="background-color: #0080FF"></span>
+              <span class="badge-category clear-badge"><span class="category-name">Zap</span></span>
+            </a>
+          </span>
+          <span class="subcategory">
+            <a class="badge-wrapper bullet" href="/c/software/mastodon/17">
+              <span class="badge-category-bg" style="background-color: #2b90d9"></span>
+              <span class="badge-category clear-badge"><span class="category-name">Mastodon</span></span>
+            </a>
+          </span>
+          <span class="subcategory">
+            <a class="badge-wrapper bullet" href="/c/software/hash2pub/48">
+              <span class="badge-category-bg" style="background-color: #0088CC"></span>
+              <span class="badge-category clear-badge"><span class="category-name">Hash2Pub</span></span>
+            </a>
+          </span>
+          <span class="subcategory">
+            <a class="badge-wrapper bullet" href="/c/software/funkwhale/16">
+              <span class="badge-category-bg" style="background-color: #4E82B0"></span>
+              <span class="badge-category clear-badge"><span class="category-name">Funkwhale</span></span>
+            </a>
+          </span>
+          <span class="subcategory">
+            <a class="badge-wrapper bullet" href="/c/software/mobilizon/20">
+              <span class="badge-category-bg" style="background-color: #FAAF2D"></span>
+              <span class="badge-category clear-badge"><span class="category-name">Mobilizon</span></span>
+            </a>
+          </span>
+          <span class="subcategory">
+            <a class="badge-wrapper bullet" href="/c/software/bonfire/25">
+              <span class="badge-category-bg" style="background-color: #f1c33a"></span>
+              <span class="badge-category clear-badge"><span class="category-name">Bonfire</span></span>
+            </a>
+          </span>
+          <span class="subcategory">
+            <a class="badge-wrapper bullet" href="/c/software/peertube/27">
+              <span class="badge-category-bg" style="background-color: #F1680D"></span>
+              <span class="badge-category clear-badge"><span class="category-name">PeerTube</span></span>
+            </a>
+          </span>
+          <span class="subcategory">
+            <a class="badge-wrapper bullet" href="/c/software/writefreely/29">
+              <span class="badge-category-bg" style="background-color: #292929"></span>
+              <span class="badge-category clear-badge"><span class="category-name">WriteFreely</span></span>
+            </a>
+          </span>
+          <span class="subcategory">
+            <a class="badge-wrapper bullet" href="/c/software/kepi/32">
+              <span class="badge-category-bg" style="background-color: #000000"></span>
+              <span class="badge-category clear-badge"><span class="category-name">kepi</span></span>
+            </a>
+          </span>
+          <span class="subcategory">
+            <a class="badge-wrapper bullet" href="/c/software/reel2bits/45">
+              <span class="badge-category-bg" style="background-color: #151fa3"></span>
+              <span class="badge-category clear-badge"><span class="category-name">reel2bits</span></span>
+            </a>
+          </span>
+          <span class="subcategory">
+            <a class="badge-wrapper bullet" href="/c/software/smithereen/52">
+              <span class="badge-category-bg" style="background-color: #AAB42F"></span>
+              <span class="badge-category clear-badge"><span class="category-name">Smithereen</span></span>
+            </a>
+          </span>
+          <span class="subcategory">
+            <a class="badge-wrapper bullet" href="/c/software/wordpress/55">
+              <span class="badge-category-bg" style="background-color: #32373c"></span>
+              <span class="badge-category clear-badge"><span class="category-name">WordPress</span></span>
+            </a>
+          </span>
+          <span class="subcategory">
+            <a class="badge-wrapper bullet" href="/c/software/discourse/24">
+              <span class="badge-category-bg" style="background-color: #FFF9AE"></span>
+              <span class="badge-category clear-badge"><span class="category-name">Discourse</span></span>
+            </a>
+          </span>
+          <span class="subcategory">
+            <a class="badge-wrapper bullet" href="/c/software/tavern/49">
+              <span class="badge-category-bg" style="background-color: #0088CC"></span>
+              <span class="badge-category clear-badge"><span class="category-name">Tavern</span></span>
+            </a>
+          </span>
+          <span class="subcategory">
+            <a class="badge-wrapper bullet" href="/c/software/lemmy/46">
+              <span class="badge-category-bg" style="background-color: #0088CC"></span>
+              <span class="badge-category clear-badge"><span class="category-name">Lemmy</span></span>
+            </a>
+          </span>
+          <span class="subcategory">
+            <a class="badge-wrapper bullet" href="/c/software/skohub/42">
+              <span class="badge-category-bg" style="background-color: #27c984"></span>
+              <span class="badge-category clear-badge"><span class="category-name">SkoHub</span></span>
+            </a>
+          </span>
+          <span class="subcategory">
+            <a class="badge-wrapper bullet" href="/c/software/redaktor-me/22">
+              <span class="badge-category-bg" style="background-color: #ff7a00"></span>
+              <span class="badge-category clear-badge"><span class="category-name">redaktor.me</span></span>
+            </a>
+          </span>
+          <span class="subcategory">
+            <a class="badge-wrapper bullet" href="/c/software/openengiadina/50">
+              <span class="badge-category-bg" style="background-color: #4782a7"></span>
+              <span class="badge-category clear-badge"><span class="category-name">openEngiadina</span></span>
+            </a>
+          </span>
+          <span class="subcategory">
+            <a class="badge-wrapper bullet" href="/c/software/pleroma/19">
+              <span class="badge-category-bg" style="background-color: #fba457"></span>
+              <span class="badge-category clear-badge"><span class="category-name">Pleroma</span></span>
+            </a>
+          </span>
+          <span class="subcategory">
+            <a class="badge-wrapper bullet" href="/c/software/pherephone/30">
+              <span class="badge-category-bg" style="background-color: #652D90"></span>
+              <span class="badge-category clear-badge"><span class="category-name">Pherephone</span></span>
+            </a>
+          </span>
+          <span class="subcategory">
+            <a class="badge-wrapper bullet" href="/c/software/go-fed/18">
+              <span class="badge-category-bg" style="background-color: #ff0000"></span>
+              <span class="badge-category clear-badge"><span class="category-name">Go-Fed</span></span>
+            </a>
+          </span>
+          <span class="subcategory">
+            <a class="badge-wrapper bullet" href="/c/software/pixelfed/28">
+              <span class="badge-category-bg" style="background-color: #F1592A"></span>
+              <span class="badge-category clear-badge"><span class="category-name">Pixelfed</span></span>
+            </a>
+          </span>
+          <span class="subcategory">
+            <a class="badge-wrapper bullet" href="/c/software/gancio/43">
+              <span class="badge-category-bg" style="background-color: #FF0000"></span>
+              <span class="badge-category clear-badge"><span class="category-name">Gancio</span></span>
+            </a>
+          </span>
+          <span class="subcategory">
+            <a class="badge-wrapper bullet" href="/c/software/andstatus/51">
+              <span class="badge-category-bg" style="background-color: #005b97"></span>
+              <span class="badge-category clear-badge"><span class="category-name">AndStatus</span></span>
+            </a>
+          </span>
+      </div>
+      <div class="clearfix"></div>
+  </article>
+  <div class="clearfix"></div>
+</aside>
+</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/hello-there/1340/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/hello-there/1340/4</link>
+        <pubDate>Sat, 23 Jan 2021 07:11:50 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1340-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/hello-there/1340.rss">Hello there!</source>
+      </item>
+      <item>
+        <title>Hello there!</title>
+        <dc:creator><![CDATA[NicoC]]></dc:creator>
+        <description><![CDATA[
+            <p>The meeting sounds interesting but I might struggle to attend this one, maybe the next one! <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/hello-there/1340/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/hello-there/1340/3</link>
+        <pubDate>Fri, 22 Jan 2021 16:47:28 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1340-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/hello-there/1340.rss">Hello there!</source>
+      </item>
+      <item>
+        <title>Hello there!</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Nico,</p>
+<p>very neat and nice to meet you!<br>
+Please note that we do weekly meetings and many are about Implementing ActivityPub.<br>
+The next one has a slightly different topic. It’s already tomorrow</p>
+<aside class="quote quote-modified" data-post="1" data-topic="1305">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/rhiaro/40/712_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/2021-01-23-socialcg-meeting-new-fediverse-users/1305">2021-01-23 SocialCG meeting - new fediverse users</a> <a class="badge-wrapper  box" href="/c/meeting/socialcg/15"><span class="badge-category-parent-bg" style="background-color: #0E76BD;"></span><span class="badge-category-bg" style="background-color: #9EB83B;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Announcing, discussing, and keeping track of SocialCG meetings.">SocialCG</span></a>
+  </div>
+  <blockquote>
+    Date: 2021-01-23T15:00:00Z (UTC) 
+Topic: The wave of new fediverse users who have been displaced from centralized social media recently. 
+
+How should we handle culture changes, communities who provide bad content or harassment, moderation, etc.
+
+Join: 
+
+<a href="https://bbb.w3c.social/b/rhi-vp1-fv6-vn7">BBB</a>
+<a href="http://irc.w3.org/?channels=social">IRC</a>
+
+Many people have things to say about this. If you are working or thinking and can prepare something to propose at the meeting, it can be really helpful to look for clear outcomes or next steps. 
+Feel free to discuss the topic in this thr…
+  </blockquote>
+</aside>
+
+<p>However, after 1 hour there is always space for informal talk.<br>
+Thank You for joining here.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/hello-there/1340/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/hello-there/1340/2</link>
+        <pubDate>Fri, 22 Jan 2021 14:22:29 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1340-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/hello-there/1340.rss">Hello there!</source>
+      </item>
+      <item>
+        <title>Hello there!</title>
+        <dc:creator><![CDATA[NicoC]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi everyone!</p>
+<p>I thought it would be a good thing to come here and say “hi” since 2021 will be the year where I’ll be going more deeper in the ActivityPub space. <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>I have developed some tools around Mastodon API in the past, the most notable might be the multi-accounts focused client app <a href="https://nicolasconstant.github.io/sengi/" rel="noopener nofollow ugc">Sengi</a>.</p>
+<p>Currently I’m developing a pet-project on ActivityPub to understand a bit more how all this is working. It’s just a stupid Twitter2ActivityPub relay. The code is awful but it’s functional, I have a <a href="https://beta.birdsite.live/" rel="noopener nofollow ugc">live instance here</a> and the code is linked in the page (can’t post more than 2 links as a new user).<br>
+I will refine and refactor the code during the following weeks so that I’ll have a healthy base to work from.</p>
+<p>My aim is to develop some more ambitious and useful tools in the close future, since ActivityPub can support ideas I had since some years already. I will try to develop my vision first in the first half of 2021 and will work on it concretely just after.<br>
+But one step at the time, for now I’m the stupid padawan here to make a lot of errors and hopefully to learn from it. <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/no_mouth.png?v=9" title=":no_mouth:" class="emoji" alt=":no_mouth:"></p>
+<p>See you around!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/hello-there/1340/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/hello-there/1340/1</link>
+        <pubDate>Fri, 22 Jan 2021 07:36:40 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1340-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/hello-there/1340.rss">Hello there!</source>
+      </item>
+  </channel>
+</rss>

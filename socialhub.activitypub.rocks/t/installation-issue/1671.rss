@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Installation issue</title>
+    <link>https://socialhub.activitypub.rocks/t/installation-issue/1671</link>
+    <description>I&#39;m not familiar with Drupal, and I could not find anything clear about what `private://activitypub/cache` means in terms of UNIX. After fiddling around I figured it might be by default `$app_root/sites/default/files/activitypub/cache` but it does not seem to be the case. I tried using `$settings`, etc. but never found a good solution: I&#39;m stuck with the following errors:
+
+![image|641x389](upload://icIhyo7HZcoW5smUZqsJNdIleUc.png) 
+
+If only I knew what is the corresponding path on the filesystem I could check for permissions. All the permissions are OK for `www-data` user which is running the PHP process. 
+
+Apart from this I have a running drupal 8 (9 would not install!) at https://drupal.demo.activitypub.eu that alledgedly support ActivityPub :innocent:</description>
+    
+    <lastBuildDate>Wed, 28 Apr 2021 14:39:20 +0000</lastBuildDate>
+    <category>Drupal</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/installation-issue/1671.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Installation issue</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m not familiar with Drupal, and I could not find anything clear about what <code>private://activitypub/cache</code> means in terms of UNIX. After fiddling around I figured it might be by default <code>$app_root/sites/default/files/activitypub/cache</code> but it does not seem to be the case. I tried using <code>$settings</code>, etc. but never found a good solution: I’m stuck with the following errors:</p>
+<p><img src="https://socialhub.activitypub.rocks/uploads/default/original/2X/7/7f970f571f75ce1cf28b5c2b35ea9e5d4058150c.png" alt="image" data-base62-sha1="icIhyo7HZcoW5smUZqsJNdIleUc" width="641" height="389"></p>
+<p>If only I knew what is the corresponding path on the filesystem I could check for permissions. All the permissions are OK for <code>www-data</code> user which is running the PHP process.</p>
+<p>Apart from this I have a running drupal 8 (9 would not install!) at <a href="https://drupal.demo.activitypub.eu">https://drupal.demo.activitypub.eu</a> that alledgedly support ActivityPub <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/innocent.png?v=9" title=":innocent:" class="emoji" alt=":innocent:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/installation-issue/1671/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/installation-issue/1671/1</link>
+        <pubDate>Wed, 28 Apr 2021 14:39:20 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1671-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/installation-issue/1671.rss">Installation issue</source>
+      </item>
+  </channel>
+</rss>

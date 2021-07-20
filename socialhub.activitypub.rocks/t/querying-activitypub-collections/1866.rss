@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Querying ActivityPub collections</title>
+    <link>https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866</link>
+    <description>It&#39;s me again with my efforts to extend collections. This is somewhat of a continuation of the discussion started in the #fep-400e topic, but I feel like it warrants having a topic (and at some point a FEP) of its own.
+
+Sometimes, it&#39;s useful to have the ability to issue a single request to ask a remote instance &quot;does this collection contain this object?&quot; for an authoritative answer. This can be useful both for collection synchronization and to enforce bilateral relationships.
+
+Example #1. There&#39;s a wall post made by a user from instance A on the wall of a group on instance B (in accordance to my #fep-400e). The user from instance A mentions a user from instance C in a reply to that post. The instance C fetches both the post and the reply to display them to its local user in a notification. *How does instance C verify that instance B has approved that parent post?*
+
+Example #2. A user from instance A and a user from instance B add each other as friends. They each have a &quot;friends&quot; collection that contains all such connections. Each sends an Add activity to their followers to keep friend lists in sync across instances. *How do recipients verify that this relationship was actually established on the other end if they only follow one of the users?*
+
+Currently, there&#39;s no non-ugly way to do this — the only way you can get something out of a collection is by going through its pages. I&#39;d like to discuss an easy way to query a collection, for example, using a well-defined query parameter or an HTTP header. You&#39;d send a request to the collection ID URL, specifying the ID of the object you&#39;re checking for, and the response would be one of three discernible states:
+
+* The collection contains the object
+* The collection does not contain the object
+* Inconclusive — the server doesn&#39;t support responding to these requests</description>
+    
+    <lastBuildDate>Sun, 27 Jun 2021 12:38:30 +0000</lastBuildDate>
+    <category>Server to Server</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Querying ActivityPub collections</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>5 posts were merged into an existing topic: <a href="/t/introducing-fedidb-devtools-for-activitypub/660/27">Introducing FediDB - DevTools for ActivityPub</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/20</link>
+        <pubDate>Sun, 27 Jun 2021 12:47:54 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1866-20</guid>
+        <source url="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866.rss">Querying ActivityPub collections</source>
+      </item>
+      <item>
+        <title>Querying ActivityPub collections</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>I didn’t verify if/how handled, but this is where <a class="mention" href="/u/dansup">@dansup</a>’s <a href="http://fedidb.org">fedidb.org</a> and <a class="mention" href="/u/cjs">@cjs</a> <a href="https://test.activitypub.dev/">testsuite</a> can be very useful in conformance reporting. We should encourage app devs to run these.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/19</link>
+        <pubDate>Sat, 26 Jun 2021 03:28:32 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1866-19</guid>
+        <source url="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866.rss">Querying ActivityPub collections</source>
+      </item>
+      <item>
+        <title>Querying ActivityPub collections</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="marius" data-post="17" data-topic="1866">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/marius/40/230_2.png" class="avatar"> marius:</div>
+<blockquote>
+<p>I think most developers in the AP space are pretending pretty hard that the -LD part is absent from the documents they process and treat everything like plain JSON. I know I do. <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/smiley.png?v=9" title=":smiley:" class="emoji" alt=":smiley:"></p>
+</blockquote>
+</aside>
+<p>Since I do actually run JSON-LD processing algorithms on everything I receive to convert it to my “local context”, it’s been at least 2 times when someone forgot to add <code>"https://w3id.org/security/v1"</code> to their <code>@context</code> causing my code to not see the public key of an actor.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/18</link>
+        <pubDate>Sat, 26 Jun 2021 02:43:21 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1866-18</guid>
+        <source url="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866.rss">Querying ActivityPub collections</source>
+      </item>
+      <item>
+        <title>Querying ActivityPub collections</title>
+        <dc:creator><![CDATA[marius]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/sebastian">@Sebastian</a>, it’s the first time I’ve seen this document, I wasn’t aware that there’s an attempt at producing a querying specification for JSON-LD.</p>
+<p>On a (very) quick glance, seems a step into the direction of GraphQL, which I personally don’t like. I consider it to be overkill for this specific use case, querying an ActivityPub server’s collection. It might be useful if there are libraries that seamlessly integrate the framing querying mechanism on top of some specific RDF storage, but I wouldn’t try to implement something like this from scratch on my own.</p>
+<p>I think most developers in the AP space are pretending pretty hard that the -LD part is absent from the documents they process and treat everything like plain JSON. I know I do. <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/smiley.png?v=9" title=":smiley:" class="emoji" alt=":smiley:"></p>
+<p>PS. The FEP draft-draft  is pretty far from being ready. I haven’t finished putting on paper all the details. I offered it to Grishka as he wanted ideas for something he can use immediately and it’s probably sufficient for that purpose.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/17</link>
+        <pubDate>Wed, 23 Jun 2021 15:44:54 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1866-17</guid>
+        <source url="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866.rss">Querying ActivityPub collections</source>
+      </item>
+      <item>
+        <title>Querying ActivityPub collections</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey <a class="mention" href="/u/marius">@marius</a> –</p>
+<p>thanks for posting and also thank you for the FEP.<br>
+Would like to get your opinion on the above posted article.</p>
+<p>ActivityPub is JSON LD and</p>
+<blockquote>
+<p>JSON-LD Framing allows developers to query by example and force a specific tree layout to a JSON-LD document.<br>
+<a href="https://www.w3.org/TR/json-ld11-framing" rel="noopener nofollow ugc">https://www.w3.org/TR/json-ld11-framing</a></p>
+</blockquote>
+<p>I mean, it is maybe not as easy-to-use as the FEP but we can basically use it to query anything, also nested and it’s already a W3C recommendation.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/16</link>
+        <pubDate>Wed, 23 Jun 2021 10:41:41 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1866-16</guid>
+        <source url="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866.rss">Querying ActivityPub collections</source>
+      </item>
+      <item>
+        <title>Querying ActivityPub collections</title>
+        <dc:creator><![CDATA[marius]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/grishka">@grishka</a> I didn’t reply on Mastodon, but there is a way to <a href="https://metalhead.club/@mariusor/106408252333293353" rel="noopener nofollow ugc">automatically populate columns</a> in postgresql/sqlite based on extracting data from Json, so maybe that can allow you to modify your model to include more columns/indexes.</p>
+<p>For my own application, in the case of relational databases storage, I’m thinking of using dual filtering:</p>
+<ol>
+<li>Filtering based on existing columns in the db, which can take advantage of indexes and such (ie, generating an SQL query)</li>
+<li>Filtering the remaining criteria by iterating over the returned set/collection and further removing what doesn’t match.</li>
+</ol>
+<p>Also I have an sqlite example for the basic tables I’m using in fedbox using <a href="https://github.com/go-ap/fedbox/blob/63d6bd9e99d399bb49c0969fc5aa72f229e35f23/storage/sqlite/init.go#L7" rel="noopener nofollow ugc">this approach</a>. This is work in progress, so some things (like indexes) are missing.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/15</link>
+        <pubDate>Wed, 23 Jun 2021 08:57:49 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1866-15</guid>
+        <source url="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866.rss">Querying ActivityPub collections</source>
+      </item>
+      <item>
+        <title>Querying ActivityPub collections</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <p>I think it’s a shame when applications that use a triple store have to struggle to provide the activityPub API. I don’t like this json-ld thing and for me it makes more trouble then fun.<br>
+To me, activityPub sounds more and more like an RDF - json bridge.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/14</link>
+        <pubDate>Tue, 22 Jun 2021 18:13:46 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1866-14</guid>
+        <source url="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866.rss">Querying ActivityPub collections</source>
+      </item>
+      <item>
+        <title>Querying ActivityPub collections</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Well, I came to the conclusion that we can use a subset of JSON-Schema or better JSON-LD Framing for filtering and querying.</p>
+<p>I agree with the conclusion in this article:</p><aside class="onebox allowlistedgeneric" data-onebox-src="https://davidwbarratt.com/node/46">
+  <header class="source">
+      <img src="https://davidwbarratt.com/core/themes/olivero/favicon.ico" class="site-icon" width="32" height="32">
+
+      <a href="https://davidwbarratt.com/node/46" target="_blank" rel="noopener nofollow ugc" title="12:51PM - 26 December 2020">david w barratt – 26 Dec 20</a>
+  </header>
+
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:657/500;"><img src="https://files.davidwbarratt.com/styles/max_2600x2600/s3/2020-12/Construction_workers_framing_posts_and_trusses_for_the_Palace_of_Varied_Industries_at_the_1904_World%27s_Fair.jpg?itok=oXzPGiwh" class="thumbnail" width="657" height="500"></div>
+
+<h3><a href="https://davidwbarratt.com/node/46" target="_blank" rel="noopener nofollow ugc">Using JSON-LD Framing as a Query Language</a></h3>
+
+  <p>I've been thinking about how app developers will interact with silk floss. Having a triplestore where apps can save any data in a structured format seems great on the surface, but presents a privacy nightmare.</p>
+
+
+  </article>
+
+  <div class="onebox-metadata">
+    
+    
+  </div>
+
+  <div style="clear: both"></div>
+</aside>
+
+<p>Especially because “Framing” is well specified in the underlying specs.</p>
+<p>See<br>
+<a href="https://www.w3.org/TR/json-ld11-framing/#matching-on-properties" class="onebox" target="_blank" rel="noopener nofollow ugc">https://www.w3.org/TR/json-ld11-framing/#matching-on-properties</a></p>
+<p>Opinions?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/13</link>
+        <pubDate>Tue, 22 Jun 2021 14:52:03 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1866-13</guid>
+        <source url="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866.rss">Querying ActivityPub collections</source>
+      </item>
+      <item>
+        <title>Querying ActivityPub collections</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>That’s still way too complex for what I’m trying to achieve. Marius’s solution is also kinda complex in that it allows querying on arbitrary fields (on which I might not have indexes), but at least doesn’t support joining, sorting, or aggregation.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/12</link>
+        <pubDate>Mon, 21 Jun 2021 14:22:45 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1866-12</guid>
+        <source url="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866.rss">Querying ActivityPub collections</source>
+      </item>
+      <item>
+        <title>Querying ActivityPub collections</title>
+        <dc:creator><![CDATA[gsvarovsky]]></dc:creator>
+        <description><![CDATA[
+            <p>Ah! Then in retrospect I should not have mentioned it. The library is only for convenience if you want to translate from json-rql to SPARQL or otherwise handle arbitrarily complex json-rql. Which I do – but you probably don’t. The language is just simple way of expressing SPARQL in JSON. That’s it – you can interpret the JSON yourself of course, especially if it’s only a small query.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/11</link>
+        <pubDate>Mon, 21 Jun 2021 14:04:22 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1866-11</guid>
+        <source url="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866.rss">Querying ActivityPub collections</source>
+      </item>
+      <item>
+        <title>Querying ActivityPub collections</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/marius">@marius</a> showed me a draft of a draft of his FEP that might be relevant to this discussion, and it <strong>is</strong> simple enough and doesn’t try its hardest to be SQL:</p><aside class="onebox allowlistedgeneric" data-onebox-src="https://metalhead.club/@mariusor/106439251787831931">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/fd156fff11fc042ed3ec6355c45f37e207e35839.ico" class="site-icon" width="45" height="48">
+
+      <a href="https://metalhead.club/@mariusor/106439251787831931" target="_blank" rel="noopener nofollow ugc" title="08:21PM - 19 June 2021">\m/ Metalhead.club \m/ – 19 Jun 21</a>
+  </header>
+
+  <article class="onebox-body">
+    <img src="https://socialhub.activitypub.rocks/uploads/default/original/2X/b/b7a4512e9c26596948175adeea8899db3de7a9c9.png" class="thumbnail onebox-avatar" width="120" height="120">
+
+<h3><a href="https://metalhead.club/@mariusor/106439251787831931" target="_blank" rel="noopener nofollow ugc">Marius Orcsik (@mariusor@metalhead.club)</a></h3>
+
+  <p>@grishka@mastodon.social @activitypub@gup.pe 
+
+I've started formalizing what I'm using for filtering on #fedbox into a FEP[1]. 
+
+&gt; I’d like to discuss an easy way to query a collection, for example, using a well-defined query parameter or an HTTP...</p>
+
+
+  </article>
+
+  <div class="onebox-metadata">
+    
+    
+  </div>
+
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/10</link>
+        <pubDate>Mon, 21 Jun 2021 13:42:30 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1866-10</guid>
+        <source url="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866.rss">Querying ActivityPub collections</source>
+      </item>
+      <item>
+        <title>Querying ActivityPub collections</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="gsvarovsky" data-post="7" data-topic="1866">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/gsvarovsky/40/1232_2.png" class="avatar"> gsvarovsky:</div>
+<blockquote>
+<p>Anyway happy to discuss further if you like the idea. There’s a <a href="https://github.com/gsvarovsky/json-rql-java" rel="noopener nofollow ugc">Java library</a> available, which has not had much love for a while but would be easy to re-invigorate.</p>
+</blockquote>
+</aside>
+<p>If it needs a library, it’s not simple enough for my needs.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/9</link>
+        <pubDate>Mon, 21 Jun 2021 13:40:00 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1866-9</guid>
+        <source url="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866.rss">Querying ActivityPub collections</source>
+      </item>
+      <item>
+        <title>Querying ActivityPub collections</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <p>My ActivityPub (AP) implementation uses RDF4J as RDF store. AP has as UseCase in the ClientToServer part (C2S) A Client App sends an Activity to the outbox of an Actor.<br>
+E.g. a webApp is calling the C2S API of an AP implementation and sends an activity (including object(s)) to an actors outbox.<br>
+An activity can have recipients like a mail. to,cc, bto, bcc,…<br>
+And the Server2SServer part defines the delivery to the recipient. Which means the recipient gets the reference to the sent activity in his inbox. See this picture: <a href="https://activitypub.rocks/">https://activitypub.rocks/</a></p>
+<p>Now I have created a possibility to query the outbox of an actor with sparql. this works well. But if there are queries on the inbox, it becomes difficult, because there are only references. Hence the idea of managing a copy of all activities and objects. and aschrivjer mentioned meld as a possible solution. but i see a lot of problems or challanges <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"><br>
+Because it’s not that one copy. it’s a copy of some activities of different outboxes on different servers.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/8</link>
+        <pubDate>Mon, 21 Jun 2021 13:21:34 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1866-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866.rss">Querying ActivityPub collections</source>
+      </item>
+      <item>
+        <title>Querying ActivityPub collections</title>
+        <dc:creator><![CDATA[gsvarovsky]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the shout Arnold, and for posting the links. I don’t know enough about ActivityPub to really get the details of the use-case here but I’ll make some comments about json-rql and <strong>m-ld</strong> in case they’re of interest.</p>
+<p>Judging by this:</p>
+<blockquote>
+<p>No. Absolutely, categorically not [a new query language]</p>
+</blockquote>
+<p>I think, a little contrarily, that json-rql might be something interesting to you. Its principle is very simple: just encode SPARQL in JSON. But the key contribution is that this not only makes it easy to embed, serialise and parse, but also you can easily document which parts of it your service supports – even if it’s very little. There’s some narrative about this on the <a href="https://github.com/gsvarovsky/json-rql/wiki" rel="noopener nofollow ugc">project wiki</a>.</p>
+<p>Anyway happy to discuss further if you like the idea. There’s a <a href="https://github.com/gsvarovsky/json-rql-java" rel="noopener nofollow ugc">Java library</a> available, which has not had much love for a while but would be easy to re-invigorate.</p>
+<p>In principle json-rql is agnostic about whether you’re on the client or the server (it’s just a serialisation of a language), so it should lend itself fine to having the application and the deployment making decisions about <em>where</em> to run the query. (Not really different to SPARQL in this regard – just maybe a bit easier to work with, especially if the only query supported is really simple.)</p>
+<p><strong>m-ld</strong> is a bit more of a machine with moving parts of its own. In effect it’s like a local database, with a json-rql API, which incidentally is very inclined to clone itself all over the place. <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/rabbit.png?v=9" title=":rabbit:" class="emoji" alt=":rabbit:"> <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/laughing.png?v=9" title=":laughing:" class="emoji" alt=":laughing:"></p>
+<p>The Java engine for <strong>m-ld</strong> does exist, but needs quite a bit of work. I was maybe too hopeful last year for how much I would be able to do <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"> . Use-cases would help me prioritise, for sure!</p>
+<aside class="quote no-group" data-username="aschrijver" data-post="5" data-topic="1866">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/aschrijver/40/278_2.png" class="avatar"> aschrijver:</div>
+<blockquote>
+<p>With Meld, apps use one of available Message-layer adapters to synchronise clones of ‘domain’ data.</p>
+</blockquote>
+</aside>
+<p><s>With regard to this, yes, an ActivityPub adapter might be a great thing for me to have.</s></p>
+<p><em>Edit: Having read a little more, I think this sentence does not really make sense  – I was assuming some peer-to-peer messaging going on, but I think ActivityPub is strongly client-server and a standard for activity publication (duh), agnostic to low-level message distribution. Let me know if I’m mistaken.</em></p>
+<p>I’ve just added a socket .io adapter (still incubating – I’ll update when it’s baked), but I still don’t have a great story for a fully decentralised messaging approach (even though <strong>m-ld</strong> itself is uninterested in servers or central coordination).</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/7</link>
+        <pubDate>Mon, 21 Jun 2021 11:30:32 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1866-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866.rss">Querying ActivityPub collections</source>
+      </item>
+      <item>
+        <title>Querying ActivityPub collections</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="naturzukunft" data-post="2" data-topic="1866">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/naturzukunft/40/983_2.png" class="avatar"> naturzukunft:</div>
+<blockquote>
+<p>“using a well-defined query parameter or an HTTP header.” This sounds to me like the beginning of a new query language. To query triples, there is already the standard SPQRQL.</p>
+</blockquote>
+</aside>
+<p>I don’t know the applicability of this, but just wanted to mention the <a href="https://m-ld.org/">Meld protocol</a> here (project will be presenting at <a class="mention" href="/u/j8ter">@j8ter</a> <a href="https://socialhub.activitypub.rocks/t/save-the-date-semantic-web-and-linked-data-ngi-event-june-21/1849">NGI Linked Data webinar</a> at 9.30 CEST).</p>
+<blockquote>
+<p>At the heart of <strong>m-ld</strong> is a decentralised protocol for distributing live state among <em>clones</em> . Using <strong>m-ld</strong> , every app instance has read-write access to the shared information via its local clone, with zero network latency. Changes to the information are propagated to all other app instances, so they are all <em>eventually consistent</em> .</p>
+</blockquote>
+<p>The <a href="https://spec.m-ld.org/">specification</a> includes a query language <a href="https://json-rql.org/#json-rql">json-rql</a> that is is a superset of JSON-LD, designed for query expressions.</p>
+<blockquote>
+<ol>
+<li>It’s <a href="https://json-rql.org/json.org">JSON</a>: straightforward to construct in code, manipulate and serialize, and also to <em>constrain</em> . Use standard JSON tooling such as <a href="https://json-rql.org/schema.json">JSON schema</a> to limit your API to the queries that your back-end has been designed and tested for.</li>
+<li>It’s <a href="https://www.w3.org/TR/sparql11-query/">SPARQL</a>: <em>in context</em> , all queries can be translated to the W3C standard language for directed, labeled graph data. This means that your API can be extended to cover future query requirements, without breaking changes.</li>
+</ol>
+</blockquote>
+<p>With Meld, apps use one of  available <a href="https://m-ld.org/doc/#messaging">Message-layer adapters</a> to synchronise clones of ‘domain’ data. It seems like this layer may as well be an ActivityPub adapter. A <a href="https://m-ld.org/doc/#platforms">Java platform implementation</a> is apparently in the works.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/5</link>
+        <pubDate>Mon, 21 Jun 2021 05:59:44 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1866-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866.rss">Querying ActivityPub collections</source>
+      </item>
+      <item>
+        <title>Querying ActivityPub collections</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="naturzukunft" data-post="2" data-topic="1866">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/naturzukunft/40/983_2.png" class="avatar"> naturzukunft:</div>
+<blockquote>
+<p>This sounds to me like the beginning of a new query language.</p>
+</blockquote>
+</aside>
+<p>No. Absolutely, categorically not. I mean for this to do one thing and one thing only. And it should be trivial to implement. It definitely shouldn’t require a library, or a lengthy spec with hundreds of unit tests. I’ve already had enough “fun” implementing JSON-LD processing algorithms. Except making a bug in a query language implementation also has a great potential of having security consequences.</p>
+<p>So, no, I don’t want a query language. I don’t want this to be much extensible, if at all.</p>
+<aside class="quote no-group" data-username="naturzukunft" data-post="3" data-topic="1866">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/naturzukunft/40/983_2.png" class="avatar"> naturzukunft:</div>
+<blockquote>
+<p>The question of whether an inbox contains objects or references is left to each implementation. Both have advantages and disadvantages.<br>
+Copying all references into my database somehow doesn’t feel like liked data.</p>
+</blockquote>
+</aside>
+<p>And now you’ve met the exact reason why I think c2s can’t be made practical. You have to make way too many requests to way too many servers to render something like a news feed. You’d need to fetch your inbox, filter the activities you want, issue a request for potentially each actor you encounter… Now imagine doing that on a crappy EDGE connection. Good luck.</p>
+<p>If you used a domain-specific client API instead, like Mastodon does and like I’m planning to do, that would’ve been a single request, with response containing everything you need, and the server itself handling the rest behind the scenes.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/4</link>
+        <pubDate>Sat, 19 Jun 2021 13:11:25 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1866-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866.rss">Querying ActivityPub collections</source>
+      </item>
+      <item>
+        <title>Querying ActivityPub collections</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <p>This became exciting for me because I assigned the task of an actor A, who created the task, to another actor B. So as:to and wf:assigned was ‘Actor B’ and no Actor B is my processing service.</p>
+<p>But if I only store references in the inbox of Actor B instead of duplicating all activities and objects in my database, then I can’t query the activities and objects at all. I would have to send a query to distributed creator servers ;-(</p>
+<p>Also a cache will be weird, as my cache will be organised by AP server rather than by inbox of a specific actor.</p>
+<p>The question of whether an inbox contains objects or references is left to each implementation. Both have advantages and disadvantages.<br>
+Copying all references into my database somehow doesn’t feel like liked data.</p>
+<p><a class="mention" href="/u/cjs">@cjs</a> has noted in another task that an inbox contains only references, not objects. (if I remember correctly)</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/3</link>
+        <pubDate>Sat, 19 Jun 2021 05:37:31 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1866-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866.rss">Querying ActivityPub collections</source>
+      </item>
+      <item>
+        <title>Querying ActivityPub collections</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <p>“using a well-defined query parameter or an HTTP header.” This sounds to me like the beginning of a new query language. To query triples, there is already the standard SPQRQL.</p>
+<p>I have a similar problem. An actor sets a task as an object of an activity and the actor that processes this task needs to be able to query for open tasks, for example.</p>
+<p>I had thought about limiting this to collections, but decided to query the whole storage. (This was also easier for me at first.) However, I could still filter this by collection. Certainly relevant for some UseCases. However, there are probably use cases where a query across collections is desired.</p>
+<p>My ActivityPub C2S interface has an endpoint that accepts SPQRQL queries and returns the result as SPQRQL bindings.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/2</link>
+        <pubDate>Sat, 19 Jun 2021 05:28:49 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1866-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866.rss">Querying ActivityPub collections</source>
+      </item>
+      <item>
+        <title>Querying ActivityPub collections</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>It’s me again with my efforts to extend collections. This is somewhat of a continuation of the discussion started in the <a class="hashtag" href="/tag/fep-400e">#<span>fep-400e</span></a> topic, but I feel like it warrants having a topic (and at some point a FEP) of its own.</p>
+<p>Sometimes, it’s useful to have the ability to issue a single request to ask a remote instance “does this collection contain this object?” for an authoritative answer. This can be useful both for collection synchronization and to enforce bilateral relationships.</p>
+<p>Example <span class="hashtag">#1</span>. There’s a wall post made by a user from instance A on the wall of a group on instance B (in accordance to my <a class="hashtag" href="/tag/fep-400e">#<span>fep-400e</span></a>). The user from instance A mentions a user from instance C in a reply to that post. The instance C fetches both the post and the reply to display them to its local user in a notification. <em>How does instance C verify that instance B has approved that parent post?</em></p>
+<p>Example <span class="hashtag">#2</span>. A user from instance A and a user from instance B add each other as friends. They each have a “friends” collection that contains all such connections. Each sends an Add activity to their followers to keep friend lists in sync across instances. <em>How do recipients verify that this relationship was actually established on the other end if they only follow one of the users?</em></p>
+<p>Currently, there’s no non-ugly way to do this — the only way you can get something out of a collection is by going through its pages. I’d like to discuss an easy way to query a collection, for example, using a well-defined query parameter or an HTTP header. You’d send a request to the collection ID URL, specifying the ID of the object you’re checking for, and the response would be one of three discernible states:</p>
+<ul>
+<li>The collection contains the object</li>
+<li>The collection does not contain the object</li>
+<li>Inconclusive — the server doesn’t support responding to these requests</li>
+</ul>
+          <p><a href="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/1</link>
+        <pubDate>Sat, 19 Jun 2021 02:18:13 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1866-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866.rss">Querying ActivityPub collections</source>
+      </item>
+  </channel>
+</rss>

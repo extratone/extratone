@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Help needed with #pherephone development. Boosts not federating to pleroma</title>
+    <link>https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145</link>
+    <description># #pherephone boost to pleroma Y U NO WORK??
+
+This is a #pherephone &quot;Announce&quot; activity from a writefreely post. It works on mastodon but not on pleroma. I cannot understand why this is. Can any helpful #pleroma or #ActivityPub experts give a hint?
+
+```
+POST request to https://pleroma.site/users/qwazix/inbox succeeded (200): 200 OK 
+Response: &quot;ok&quot; 
+Request: {
+        &quot;@context&quot;: [
+                &quot;https://www.w3.org/ns/activitystreams&quot;
+        ],
+        &quot;actor&quot;: &quot;https://floorb.qwazix.com/myAwesomeList5&quot;,
+        &quot;cc&quot;: [
+                &quot;https://pleroma.site/users/qwazix&quot;,
+                &quot;https://cybre.space/users/qwazix&quot;,
+                &quot;https://fosstodon.org/users/qwazix&quot;
+        ],
+        &quot;id&quot;: &quot;https://floorb.qwazix.com/myAwesomeList5/item/ULeVhJOsBTqWN22v&quot;,
+        &quot;object&quot;: &quot;https://mixt.qwazix.com/api/posts/mncqqz3y7u&quot;,
+        &quot;published&quot;: &quot;2019-10-14T12:13:43+03:00&quot;,
+        &quot;to&quot;: &quot;https://www.w3.org/ns/activitystreams#Public&quot;,
+        &quot;type&quot;: &quot;Announce&quot;
+} 
+Headers: 
+    Accept: application/activity+json; charset=utf-8
+    Accept-Charset: utf-8
+    Content-Type: application/activity+json; charset=utf-8
+    Date: Mon, 14 Oct 2019 09:13:44 GMT
+    Digest: SHA-256=Cl3iznjWvGXEFev5OP6ChwvVtY/Xtaw43ahnhXh4d4A=
+    Host: pleroma.site
+    Signature: keyId=&quot;https://floorb.qwazix.com/myAwesomeList5#main-key&quot;,algorithm=&quot;rsa-sha256&quot;,headers=&quot;(request-target) date host digest&quot;,signature=&quot;fnPHBAqWCIr3EpbwllBwFxhKJ03c23+evwPfX+Bcf/CEenQ/ZgTCViK5Gs0fW8qjzGuSCkYpFKFt7rmEiuXg7T4RkUy2LWq+kfTq8t/jWeS2LUCxNXRAgyJfhH2kioYefKqx6gl414js0qdFk6I0WWvtXpGuKIuiF/WK9FPx7WpJFJfN1WZ2kEdi87F0gRIAjllaGST15ZMx0mFkLVks2Vdff6saPR+V83muGClfzh78AN2XR4fnYve9m5Wm4/U6Q8n503CE/yfBb5bZSmfJZXZSlErT6L224b8LWKC7Q+IHe17k+aFibl/dNAknjmQwm/xFOdNzVHwGWXyhSrchGw==&quot;
+    User-Agent: pherephone 0.99
+```
+
+EDIT: I also tried after reversing the `cc` and `to` fields just as _pleroma_ does.
+
+```
+/home/qwazix/go/src/github.com/writeas/activityserve/actor.go:502: POST request to https://iscute.moe/users/qwazix/inbox succeeded (200): 200 OK 
+Response: &quot;ok&quot; 
+Request: {
+        &quot;@context&quot;: [
+                &quot;https://www.w3.org/ns/activitystreams&quot;
+        ],
+        &quot;actor&quot;: &quot;https://floorb.qwazix.com/myAwesomeList5&quot;,
+        &quot;cc&quot;: &quot;https://www.w3.org/ns/activitystreams#Public&quot;,
+        &quot;id&quot;: &quot;https://floorb.qwazix.com/myAwesomeList5/item/EUyTQEnz1gJK3qu3&quot;,
+        &quot;object&quot;: &quot;https://fosstodon.org/users/qwazix/statuses/102966679309503735&quot;,
+        &quot;published&quot;: &quot;2019-10-15T16:40:40+03:00&quot;,
+        &quot;to&quot;: [
+                &quot;https://floorb.qwazix.com/myAwesomeList5/followers&quot;,
+                &quot;https://cybre.space/users/qwazix&quot;,
+                &quot;https://fosstodon.org/users/qwazix&quot;,
+                &quot;https://iscute.moe/users/qwazix&quot;,
+                &quot;https://pleroma.site/users/qwazix&quot;
+        ],
+        &quot;type&quot;: &quot;Announce&quot;
+} 
+Headers: Accept: application/activity+json; charset=utf-8
+Accept-Charset: utf-8
+Content-Type: application/activity+json; charset=utf-8
+Date: Tue, 15 Oct 2019 13:40:41 GMT
+Digest: SHA-256=U30KWCsixidktfC/JToZSCX9HXoysMNrTqLPPzf62LI=
+Host: iscute.moe
+Signature: keyId=&quot;https://floorb.qwazix.com/myAwesomeList5#main-key&quot;,algorithm=&quot;rsa-sha256&quot;,headers=&quot;(request-target) date host digest&quot;,signature=&quot;DONBUM3O3s/YU/B4F9pWPWgFx1P7ZruJbuTrDVYIdY6m2EpVI7yihy157o3aUoC37acKuoo9F+F0sbOHyt3B3lwe+3eWHq0WbVDfoeIdOIFGVo2s9BxK748RHSSVU0lnLsIOQ/A3B3rRkkLlJ1zc3kdfHzfaNzQPUQJ9SL72x55sgzIthIY+vSAbS/IHbup5XomenkHynsj33F9RCYPqXajPRMUXPx0ljFcfRyQGX7/opipDQ4V2ANzjLHwosnHvKss+DQK9e2ZBbq3PaKYUwmKWdwDCQfzEok+hz6xTGzCnw8K7yICu2c1YNU0PD+q5rCATWhNuA3vPeme1iTcZ5A==&quot;
+User-Agent: pherephone 0.99
+```
+
+The thing that bothers me the most is that I get an &quot;ok&quot; response and a 200 but the post never appears in the interface.
+
+Reposted from [my blog](https://mixt.qwazix.com/pherephone-boost-to-pleroma-y-u-no-work)</description>
+    
+    <lastBuildDate>Wed, 23 Oct 2019 20:48:04 +0000</lastBuildDate>
+    <category>Software</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Help needed with #pherephone development. Boosts not federating to pleroma</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="https://socialhub.activitypub.rocks/u/lanodan">lanodan</a>, I am severely tempted to dive in both-feet-first into complaining about JSON-LD with you. <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<aside class="quote no-group" data-post="21" data-topic="145">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/qwazix/40/119_2.png" class="avatar"> qwazix:</div>
+<blockquote>
+<p>this is true, however I re-wrote <em>pherephone</em> without <em>go-fed</em> as it the interfaces it requires were too much of an overkill for it.</p>
+</blockquote>
+</aside>
+<p>Sounds fair! If you change your mind, the <code>go-fed/activity/streams</code> <a href="https://github.com/go-fed/activity/tree/master/streams" rel="nofollow noopener">generated code</a> package is available for ActivityStreams stand-alone (independent of ActivityPub), solely to solve the serialization/deserialization problems and enforce the ontological structure at the level of static type safety.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/23</link>
+        <pubDate>Wed, 23 Oct 2019 20:48:04 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-145-23</guid>
+        <source url="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145.rss">Help needed with #pherephone development. Boosts not federating to pleroma</source>
+      </item>
+      <item>
+        <title>Help needed with #pherephone development. Boosts not federating to pleroma</title>
+        <dc:creator><![CDATA[lanodan]]></dc:creator>
+        <description><![CDATA[
+            <p>I am completely on the “be liberal in what you accept, be strict on what you send” philosophy, it’s just that ActivityStreams2/ActivityPub allows way too may ways of formatting the same data for something which is supposed to be machine-readable, it reminds me a lot of trying to parse iCalendar data which sometimes just has three ways of formatting basic data (ActivityStreams can often do: string, object, string-list, object-list).</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/22</link>
+        <pubDate>Wed, 23 Oct 2019 16:59:13 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-145-22</guid>
+        <source url="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145.rss">Help needed with #pherephone development. Boosts not federating to pleroma</source>
+      </item>
+      <item>
+        <title>Help needed with #pherephone development. Boosts not federating to pleroma</title>
+        <dc:creator><![CDATA[qwazix]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="16" data-topic="145">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/cjs/40/35_2.png" class="avatar"> cjs:</div>
+<blockquote>
+<p>which is what WriteFreely uses.</p>
+</blockquote>
+</aside>
+<p>this is true, however I re-wrote <em>pherephone</em> without <em>go-fed</em> as it the interfaces it requires were too much of an overkill for it. The running instance <span class="mention">@pherephone.print3d.social</span> still uses go-fed but the one that presented this problem does not.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/21</link>
+        <pubDate>Wed, 23 Oct 2019 10:57:43 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-145-21</guid>
+        <source url="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145.rss">Help needed with #pherephone development. Boosts not federating to pleroma</source>
+      </item>
+      <item>
+        <title>Help needed with #pherephone development. Boosts not federating to pleroma</title>
+        <dc:creator><![CDATA[kaniini]]></dc:creator>
+        <description><![CDATA[
+            <p>I added explicit regression tests in commit <a href="https://git.pleroma.social/pleroma/pleroma/commit/277aea45b9799596c4144b80b9e77e2801d9becd" rel="nofollow noopener">2777aea45b</a> which shows that Pleroma can handle <code>to</code> and <code>cc</code> single-value messages just fine.</p>
+<p>As I mentioned, this is related to a spam protection we have on user inboxes.  That will be fixed, but asking somebody to use arrays (as it is something I know we have had issues with before) and see if it works does not mean that we do not consider it a bug.  I do not appreciate this blowing up into something that it did not need to be.</p>
+<p>As for JSON-LD safety in Pleroma, the main area of weakness has to do with the fact that protocol modules are responsible for demarshalling data to Pleroma’s IR <em>and</em> committing the side effects at the same time, which leads to people occasionally messing up and assuming that their code is running in an IR-safe context when they are actually processing JSON-LD.  I could write a very long-winded explanation about what Pleroma IR is, but a simple explanation is that Pleroma IR is a very strict subset of JSON-LD that is optimized for how we store our view of the distributed graph in our database.</p>
+<p>The plan is to split side effect committal and IR into two phases.  CommonsPub did something similar in their fork, but I don’t particularly like the approach there.  And of course, they moved away from storing the activities as graphs altogether.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/20</link>
+        <pubDate>Wed, 23 Oct 2019 00:53:57 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-145-20</guid>
+        <source url="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145.rss">Help needed with #pherephone development. Boosts not federating to pleroma</source>
+      </item>
+      <item>
+        <title>Help needed with #pherephone development. Boosts not federating to pleroma</title>
+        <dc:creator><![CDATA[kaniini]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-mastodon" data-post="17" data-topic="145">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/nightpool/40/36_2.png" class="avatar"> nightpool:</div>
+<blockquote>
+<p>not sure I understand this point. is there anything technically blocking pleroma from being treating “single element” and “arrays of a single element” the same? by the JSON-LD spec, they’re identical.</p>
+</blockquote>
+</aside>
+<p>Pleroma actually handles serializing and deserializing this just fine, it is just a problem with certain pre-flight checks that are done on user inboxes (namely, we peek at the activity to see if the user inbox matches one of the addressees).</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/19</link>
+        <pubDate>Wed, 23 Oct 2019 00:21:58 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-145-19</guid>
+        <source url="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145.rss">Help needed with #pherephone development. Boosts not federating to pleroma</source>
+      </item>
+      <item>
+        <title>Help needed with #pherephone development. Boosts not federating to pleroma</title>
+        <dc:creator><![CDATA[kaniini]]></dc:creator>
+        <description><![CDATA[
+            <p>Pleroma’s ActivityStreams code can handle deserializing string <code>to</code> and <code>cc</code> just fine.</p>
+<p>This is likely related to spam protection on user inboxes (which happens before deserialization), actually.</p>
+<p>It will be corrected, there is no need to tell us to fix it.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/18</link>
+        <pubDate>Wed, 23 Oct 2019 00:19:11 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-145-18</guid>
+        <source url="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145.rss">Help needed with #pherephone development. Boosts not federating to pleroma</source>
+      </item>
+      <item>
+        <title>Help needed with #pherephone development. Boosts not federating to pleroma</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-pleroma" data-post="15" data-topic="145">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/lanodan/40/40_2.png" class="avatar"> lanodan:</div>
+<blockquote>
+<p>Putting everything into arrays naively isn’t going to work</p>
+</blockquote>
+</aside>
+<p>not sure I understand this point. is there anything technically blocking pleroma from being treating “single element” and “arrays of a single element” the same? by the JSON-LD spec, they’re identical.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/17</link>
+        <pubDate>Tue, 22 Oct 2019 22:48:02 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-145-17</guid>
+        <source url="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145.rss">Help needed with #pherephone development. Boosts not federating to pleroma</source>
+      </item>
+      <item>
+        <title>Help needed with #pherephone development. Boosts not federating to pleroma</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <p>The single-value-ness of <em>non-functional</em> (I hate that term) ActivityStreams properties with a single value is go-fed’s serialization behavior, which is what WriteFreely uses. If there’s more than one value, then it will be a JSON array. Go-fed can handle deserializing both.</p>
+<p>The reason why, is because what is in the wild is a convention of “some non-functional properties being single-values, others being arrays”, so go-fed attempts to do the intelligent thing when sending and widely accept what it receives.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/16</link>
+        <pubDate>Tue, 22 Oct 2019 22:01:19 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-145-16</guid>
+        <source url="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145.rss">Help needed with #pherephone development. Boosts not federating to pleroma</source>
+      </item>
+      <item>
+        <title>Help needed with #pherephone development. Boosts not federating to pleroma</title>
+        <dc:creator><![CDATA[lanodan]]></dc:creator>
+        <description><![CDATA[
+            <p>[2019-10-22 13:17:25+0000] hellekin via SocialHub:</p>
+<blockquote>
+<aside class="quote no-group" data-post="13" data-topic="145">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar"> Sebastian:</div>
+<blockquote>
+<p>Personally I would prefer if simple strings are accepted by pleroma.</p>
+</blockquote>
+</aside>
+<p>I guess this is a fair view, and should not be too difficult to handle on Pleroma’s side: if it’s a string, wrap it into an Array, and you’re done.</p>
+<p>I also noticed in the spec that most of the fields that often appear as strings in the examples can be arrays, so this approach could be generalized without requiring everyone to be stricter than the spec.</p>
+<p>Do you have an issue about this in Pleroma, so we can reference it here to help following up?<br>
+At least other people bumping into this would effectively know the workaround (wrap everything into arrays) and eventually drop that constraint when the use-case is handled natively in Pleroma.</p>
+</blockquote>
+<p>Putting everything into arrays naively isn’t going to work, doing it in a way similar to what is seen in the wild is more like it. We could try to handle everything that you could do in ActivityPub but that would be quite a nightmare because IIRC there is no type restriction other than the ones with a single static type in their JSON-LD definition. (not that much)</p>
+<p>We did it in a “let’s support what we see in the wild” manner because everything legal in ActivityPub makes sense by itself (like favoriting an actor might make sense at some point but right now it doesn’t).</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/15</link>
+        <pubDate>Tue, 22 Oct 2019 18:44:49 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-145-15</guid>
+        <source url="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145.rss">Help needed with #pherephone development. Boosts not federating to pleroma</source>
+      </item>
+      <item>
+        <title>Help needed with #pherephone development. Boosts not federating to pleroma</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="13" data-topic="145">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar"> Sebastian:</div>
+<blockquote>
+<p>Personally I would prefer if simple strings are accepted by pleroma.</p>
+</blockquote>
+</aside>
+<p>I guess this is a fair view, and should not be too difficult to handle on Pleroma’s side: if it’s a string, wrap it into an Array, and you’re done.</p>
+<p>I also noticed in the spec that most of the fields that often appear as strings in the examples can be arrays, so this approach could be generalized without requiring everyone to be stricter than the spec.</p>
+<p>Do you have an issue about this in Pleroma, so we can reference it here to help following up?<br>
+At least other people bumping into this would effectively know the workaround (wrap everything into arrays) and eventually drop that constraint when the use-case is handled natively in Pleroma.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/14</link>
+        <pubDate>Tue, 22 Oct 2019 13:07:19 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-145-14</guid>
+        <source url="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145.rss">Help needed with #pherephone development. Boosts not federating to pleroma</source>
+      </item>
+      <item>
+        <title>Help needed with #pherephone development. Boosts not federating to pleroma</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Resolved is relative here. <a class="mention" href="/u/kaniini">@kaniini</a><br>
+Personally I would prefer if simple strings are accepted by pleroma.</p>
+<p>See <a href="https://www.w3.org/TR/activitypub/#client-addressing">Section 6.1 of the spec.</a> :<br>
+While it defines “who to address” the final result in <code>cc</code> is still a string and so<br>
+EXAMPLE 14 of the spec. (amongst others) would fail !</p>
+<p>And just btw –<br>
+If anyone wants to test against the <em>examples</em>, find em all as a JSON in the <code>/test/examples</code> folder !<br>
+It is a simple array with [titleOfTheExample, example] …<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://github.githubassets.com/favicons/favicon.svg" class="site-icon" width="32" height="32">
+      <a href="https://github.com/redaktor/ActivityPubSchema" target="_blank">GitHub</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/ea49e620486a0076524ebcac3f38b164e419abf0.png" class="thumbnail onebox-avatar" width="400" height="400">
+
+<h3><a href="https://github.com/redaktor/ActivityPubSchema" target="_blank">redaktor/ActivityPubSchema</a></h3>
+
+<p>An inofficial proposal for ActivityPub - JSON Schemas (draft 07) - redaktor/ActivityPubSchema</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/13</link>
+        <pubDate>Tue, 22 Oct 2019 10:00:31 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-145-13</guid>
+        <source url="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145.rss">Help needed with #pherephone development. Boosts not federating to pleroma</source>
+      </item>
+      <item>
+        <title>Help needed with #pherephone development. Boosts not federating to pleroma</title>
+        <dc:creator><![CDATA[qwazix]]></dc:creator>
+        <description><![CDATA[
+            <p>This issue has been resolved: see <a href="https://git.pleroma.social/pleroma/pleroma/issues/1326" rel="nofollow noopener">issue</a></p>
+<p>TL;DR: I needed to replace the <code>To</code> and <code>Cc</code> values with arrays.</p>
+<p>Thanks to all.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/12</link>
+        <pubDate>Tue, 22 Oct 2019 08:05:56 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-145-12</guid>
+        <source url="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145.rss">Help needed with #pherephone development. Boosts not federating to pleroma</source>
+      </item>
+      <item>
+        <title>Help needed with #pherephone development. Boosts not federating to pleroma</title>
+        <dc:creator><![CDATA[qwazix]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/nightpool">@nightpool</a> I’m sorry this is my working laptop instance. It’s up for now but I’ll try to set up a permanent one on a server asap.</p>
+<p><a class="mention" href="/u/kaniini">@kaniini</a> this is another bug (IIRC it’s already fixed in mainline, my blog is one version behind) on writefreely. The reblog however doesn’t work with mastodon id’s either (see second example)</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/11</link>
+        <pubDate>Mon, 21 Oct 2019 09:40:19 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-145-11</guid>
+        <source url="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145.rss">Help needed with #pherephone development. Boosts not federating to pleroma</source>
+      </item>
+      <item>
+        <title>Help needed with #pherephone development. Boosts not federating to pleroma</title>
+        <dc:creator><![CDATA[kaniini]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="https://mixt.qwazix.com/api/posts/mncqqz3y7u" rel="nofollow noopener">https://mixt.qwazix.com/api/posts/mncqqz3y7u</a> has an invalid <code>id</code>:</p>
+<pre><code class="lang-auto">$ curl -s -H 'Accept: application/activity+json' 'https://mixt.qwazix.com/api/posts/mncqqz3y7u' | jq .id
+"/api/posts/mncqqz3y7u"
+</code></pre>
+<p>Pleroma will reject this object because the ID is not a proper URI.</p>
+<p>(to clarify, it can be <em>any</em> proper URI, not just an http/https one.  but it has to be a URI, not a relative path.)</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/10</link>
+        <pubDate>Mon, 21 Oct 2019 00:18:51 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-145-10</guid>
+        <source url="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145.rss">Help needed with #pherephone development. Boosts not federating to pleroma</source>
+      </item>
+      <item>
+        <title>Help needed with #pherephone development. Boosts not federating to pleroma</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p>I tried looking into this, but I couldn’t resolve the actor <code>https://floorb.qwazix.com/myAwesomeList5</code>, it just timed out.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/8</link>
+        <pubDate>Sun, 20 Oct 2019 01:09:11 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-145-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145.rss">Help needed with #pherephone development. Boosts not federating to pleroma</source>
+      </item>
+      <item>
+        <title>Help needed with #pherephone development. Boosts not federating to pleroma</title>
+        <dc:creator><![CDATA[qwazix]]></dc:creator>
+        <description><![CDATA[
+            <p><strike>I tried registering with the gitlab instance on git.pleroma.social but I can’t seem to get the confirmation email. Any pointers?</strike></p>
+<p>EDIT: It just took its time. Sorry.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/7</link>
+        <pubDate>Fri, 18 Oct 2019 06:45:15 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-145-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145.rss">Help needed with #pherephone development. Boosts not federating to pleroma</source>
+      </item>
+      <item>
+        <title>Help needed with #pherephone development. Boosts not federating to pleroma</title>
+        <dc:creator><![CDATA[lanodan]]></dc:creator>
+        <description><![CDATA[
+            <p>[2019-10-17 12:39:45+0000] qwazix via SocialHub:</p>
+<blockquote>
+<p>Unfortunately it exhibits the exact same behavior both with <code>application/ld+json; charset=utf-8; profile="https://www.w3.org/ns/activitystreams"</code> and with <code>application/activity+json; profile="https://www.w3.org/ns/activitystreams"</code>, but still I will keep the profile attribute. Thanks for pointing that out.</p>
+</blockquote>
+<p>The profile attribute is only needed when using <code>application/ld+json</code> as <code>application/activity+json</code> implies ActivityStreams.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/6</link>
+        <pubDate>Thu, 17 Oct 2019 14:42:56 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-145-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145.rss">Help needed with #pherephone development. Boosts not federating to pleroma</source>
+      </item>
+      <item>
+        <title>Help needed with #pherephone development. Boosts not federating to pleroma</title>
+        <dc:creator><![CDATA[qwazix]]></dc:creator>
+        <description><![CDATA[
+            <p>Unfortunately it exhibits the exact same behavior both with <code>application/ld+json; charset=utf-8; profile="https://www.w3.org/ns/activitystreams"</code> and with <code>application/activity+json; profile="https://www.w3.org/ns/activitystreams"</code>, but still I will keep the profile attribute. Thanks for pointing that out.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/5</link>
+        <pubDate>Thu, 17 Oct 2019 12:29:37 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-145-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145.rss">Help needed with #pherephone development. Boosts not federating to pleroma</source>
+      </item>
+      <item>
+        <title>Help needed with #pherephone development. Boosts not federating to pleroma</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t know whether that’s related but I noticed your <code>Content-Type</code> header is missing the profile attribute: according to <a href="https://www.w3.org/TR/activitypub/#retrieving-objects" rel="nofollow noopener">spec 3.2</a> the server "<em>MUST</em>  present the ActivityStreams object representation in response to  <code>application/ld+json; profile="https://www.w3.org/ns/activitystreams</code>".</p>
+<p>Maybe making this modification will help.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/4</link>
+        <pubDate>Thu, 17 Oct 2019 10:59:26 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-145-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145.rss">Help needed with #pherephone development. Boosts not federating to pleroma</source>
+      </item>
+      <item>
+        <title>Help needed with #pherephone development. Boosts not federating to pleroma</title>
+        <dc:creator><![CDATA[qwazix]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m pretty sure it’s an issue on my end so I didn’t want to spam the issue tracker. I will leave it for another day here just in case someone sees something obvious and then I will bug you on the tracker (bad pun I know <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/stuck_out_tongue.png?v=9" title=":stuck_out_tongue:" class="emoji" alt=":stuck_out_tongue:"> )</p>
+<p>Thanks</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/3</link>
+        <pubDate>Thu, 17 Oct 2019 08:33:37 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-145-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145.rss">Help needed with #pherephone development. Boosts not federating to pleroma</source>
+      </item>
+      <item>
+        <title>Help needed with #pherephone development. Boosts not federating to pleroma</title>
+        <dc:creator><![CDATA[lanodan]]></dc:creator>
+        <description><![CDATA[
+            <p>I looked into it a bit after/during Prague ActivityPub Conference but I<br>
+forgot what was the issue since then.<br>
+I wanted to note that federation issues are  mostly managed by submitting<br>
+a ticket to our bugtracker: <a href="https://git.pleroma.social/pleroma/pleroma" rel="nofollow noopener">https://git.pleroma.social/pleroma/pleroma</a></p>
+<p>Luckily pleroma has a good presence on SocialHub, but I’m not sure if<br>
+having more places where one can submit federation issues with <em>one</em><br>
+software is a good idea, would be great for software like Mobilizon<br>
+which needs to be interoperable with almost completely new activities<br>
+(friendica also does events over ActivityPub) on the fediverse.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/2</link>
+        <pubDate>Thu, 17 Oct 2019 08:29:12 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-145-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145.rss">Help needed with #pherephone development. Boosts not federating to pleroma</source>
+      </item>
+      <item>
+        <title>Help needed with #pherephone development. Boosts not federating to pleroma</title>
+        <dc:creator><![CDATA[qwazix]]></dc:creator>
+        <description><![CDATA[
+            <h1>
+<span class="hashtag">#pherephone</span> boost to pleroma Y U NO WORK??</h1>
+<p>This is a <span class="hashtag">#pherephone</span> “Announce” activity from a writefreely post. It works on mastodon but not on pleroma. I cannot understand why this is. Can any helpful <span class="hashtag">#pleroma</span> or <span class="hashtag">#ActivityPub</span> experts give a hint?</p>
+<pre><code class="lang-auto">POST request to https://pleroma.site/users/qwazix/inbox succeeded (200): 200 OK 
+Response: "ok" 
+Request: {
+        "@context": [
+                "https://www.w3.org/ns/activitystreams"
+        ],
+        "actor": "https://floorb.qwazix.com/myAwesomeList5",
+        "cc": [
+                "https://pleroma.site/users/qwazix",
+                "https://cybre.space/users/qwazix",
+                "https://fosstodon.org/users/qwazix"
+        ],
+        "id": "https://floorb.qwazix.com/myAwesomeList5/item/ULeVhJOsBTqWN22v",
+        "object": "https://mixt.qwazix.com/api/posts/mncqqz3y7u",
+        "published": "2019-10-14T12:13:43+03:00",
+        "to": "https://www.w3.org/ns/activitystreams#Public",
+        "type": "Announce"
+} 
+Headers: 
+    Accept: application/activity+json; charset=utf-8
+    Accept-Charset: utf-8
+    Content-Type: application/activity+json; charset=utf-8
+    Date: Mon, 14 Oct 2019 09:13:44 GMT
+    Digest: SHA-256=Cl3iznjWvGXEFev5OP6ChwvVtY/Xtaw43ahnhXh4d4A=
+    Host: pleroma.site
+    Signature: keyId="https://floorb.qwazix.com/myAwesomeList5#main-key",algorithm="rsa-sha256",headers="(request-target) date host digest",signature="fnPHBAqWCIr3EpbwllBwFxhKJ03c23+evwPfX+Bcf/CEenQ/ZgTCViK5Gs0fW8qjzGuSCkYpFKFt7rmEiuXg7T4RkUy2LWq+kfTq8t/jWeS2LUCxNXRAgyJfhH2kioYefKqx6gl414js0qdFk6I0WWvtXpGuKIuiF/WK9FPx7WpJFJfN1WZ2kEdi87F0gRIAjllaGST15ZMx0mFkLVks2Vdff6saPR+V83muGClfzh78AN2XR4fnYve9m5Wm4/U6Q8n503CE/yfBb5bZSmfJZXZSlErT6L224b8LWKC7Q+IHe17k+aFibl/dNAknjmQwm/xFOdNzVHwGWXyhSrchGw=="
+    User-Agent: pherephone 0.99
+</code></pre>
+<p>EDIT: I also tried after reversing the <code>cc</code> and <code>to</code> fields just as <em>pleroma</em> does.</p>
+<pre><code class="lang-auto">/home/qwazix/go/src/github.com/writeas/activityserve/actor.go:502: POST request to https://iscute.moe/users/qwazix/inbox succeeded (200): 200 OK 
+Response: "ok" 
+Request: {
+        "@context": [
+                "https://www.w3.org/ns/activitystreams"
+        ],
+        "actor": "https://floorb.qwazix.com/myAwesomeList5",
+        "cc": "https://www.w3.org/ns/activitystreams#Public",
+        "id": "https://floorb.qwazix.com/myAwesomeList5/item/EUyTQEnz1gJK3qu3",
+        "object": "https://fosstodon.org/users/qwazix/statuses/102966679309503735",
+        "published": "2019-10-15T16:40:40+03:00",
+        "to": [
+                "https://floorb.qwazix.com/myAwesomeList5/followers",
+                "https://cybre.space/users/qwazix",
+                "https://fosstodon.org/users/qwazix",
+                "https://iscute.moe/users/qwazix",
+                "https://pleroma.site/users/qwazix"
+        ],
+        "type": "Announce"
+} 
+Headers: Accept: application/activity+json; charset=utf-8
+Accept-Charset: utf-8
+Content-Type: application/activity+json; charset=utf-8
+Date: Tue, 15 Oct 2019 13:40:41 GMT
+Digest: SHA-256=U30KWCsixidktfC/JToZSCX9HXoysMNrTqLPPzf62LI=
+Host: iscute.moe
+Signature: keyId="https://floorb.qwazix.com/myAwesomeList5#main-key",algorithm="rsa-sha256",headers="(request-target) date host digest",signature="DONBUM3O3s/YU/B4F9pWPWgFx1P7ZruJbuTrDVYIdY6m2EpVI7yihy157o3aUoC37acKuoo9F+F0sbOHyt3B3lwe+3eWHq0WbVDfoeIdOIFGVo2s9BxK748RHSSVU0lnLsIOQ/A3B3rRkkLlJ1zc3kdfHzfaNzQPUQJ9SL72x55sgzIthIY+vSAbS/IHbup5XomenkHynsj33F9RCYPqXajPRMUXPx0ljFcfRyQGX7/opipDQ4V2ANzjLHwosnHvKss+DQK9e2ZBbq3PaKYUwmKWdwDCQfzEok+hz6xTGzCnw8K7yICu2c1YNU0PD+q5rCATWhNuA3vPeme1iTcZ5A=="
+User-Agent: pherephone 0.99
+</code></pre>
+<p>The thing that bothers me the most is that I get an “ok” response and a 200 but the post never appears in the interface.</p>
+<p>Reposted from <a href="https://mixt.qwazix.com/pherephone-boost-to-pleroma-y-u-no-work" rel="nofollow noopener">my blog</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145/1</link>
+        <pubDate>Thu, 17 Oct 2019 08:01:34 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-145-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145.rss">Help needed with #pherephone development. Boosts not federating to pleroma</source>
+      </item>
+  </channel>
+</rss>

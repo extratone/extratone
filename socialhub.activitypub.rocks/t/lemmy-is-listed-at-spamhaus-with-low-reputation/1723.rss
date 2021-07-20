@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Lemmy is listed at Spamhaus with low reputation</title>
+    <link>https://socialhub.activitypub.rocks/t/lemmy-is-listed-at-spamhaus-with-low-reputation/1723</link>
+    <description>Hi @lemmy team,
+
+Just came here to notify some findings. As https://socialhub.activitypub.rocks/t/fediverse-futures-is-now-on-lemmy/1557 I am sharing links around to the community space. At LinkedIn I noticed that the URL is marked as Malicious and LI does not allow access, but redirects to this [LI genneral malware page](https://www.linkedin.com/redir/general-malware-page?url=https%3A%2F%2Flemmy%2eml%2Fc%2Ffediversefutures).
+
+I tested with @bengo on LI a couple of other Lemmy URL&#39;s and found only fediverse futures URL to have this. So I contacted LI support:
+
+[details=&quot;Response from LinkedIn support (click to expand)&quot;]
+
+![lemmy-linkedin-malicious-website-suspected|690x395](upload://dBTCfEewgxrUKErvtmZEyy3nthp.png) 
+
+Hi Arnold,
+
+Thanks for reaching out to us. My name is Natalia from the LinkedIn Member Support Team and I will be happy to help you today.
+
+LinkedIn does not block any external links and does not mark them as &quot;dangerous&quot;. Your external URL has been marked as unsafe/spam/malicious by &quot;Spamhaus&quot;, which you can check here: https://check.spamhaus.org/listed/?searchterm=lemmy.ml
+
+In order to remove your address from &quot;Spamhaus&quot;, I recommend reading detailed information provided in the link above. This link also provides instructions on what steps to take to have your site recognized as safe. 
+
+I hope you find the information I have given you useful! 
+
+I am wishing you good luck and please contact me again if you have any questions about your account in the future!
+
+Kind Regards,
+ 
+Natalia
+Member Support Consultant
+
+---
+
+[/details]
+
+Now, @bengo told me that at his end &quot;All of those were marked as potentially harmful, and I had to click to show the full URL :/ Wonder if it’s based on the TLD?&quot;
+
+There is indeed one entry for Lemmy: https://check.spamhaus.org/listed/?searchterm=lemmy.ml</description>
+    
+    <lastBuildDate>Tue, 11 May 2021 07:46:15 +0000</lastBuildDate>
+    <category>Lemmy</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/lemmy-is-listed-at-spamhaus-with-low-reputation/1723.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Lemmy is listed at Spamhaus with low reputation</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention-group" href="/groups/lemmy">@lemmy</a> team,</p>
+<p>Just came here to notify some findings. As <a href="https://socialhub.activitypub.rocks/t/fediverse-futures-is-now-on-lemmy/1557" class="inline-onebox">Fediverse Futures is now on Lemmy 😃</a> I am sharing links around to the community space. At LinkedIn I noticed that the URL is marked as Malicious and LI does not allow access, but redirects to this <a href="https://www.linkedin.com/redir/general-malware-page?url=https%3A%2F%2Flemmy%2eml%2Fc%2Ffediversefutures">LI genneral malware page</a>.</p>
+<p>I tested with <a class="mention" href="/u/bengo">@bengo</a> on LI a couple of other Lemmy URL’s and found only fediverse futures URL to have this. So I contacted LI support:</p>
+<details>
+<summary>
+Response from LinkedIn support (click to expand)</summary>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/2X/5/5f64eff65ece6bb5be93148ad4a1e548cf80b963.png" data-download-href="https://socialhub.activitypub.rocks/uploads/default/5f64eff65ece6bb5be93148ad4a1e548cf80b963" title="lemmy-linkedin-malicious-website-suspected"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/5/5f64eff65ece6bb5be93148ad4a1e548cf80b963_2_690x395.png" alt="lemmy-linkedin-malicious-website-suspected" data-base62-sha1="dBTCfEewgxrUKErvtmZEyy3nthp" width="690" height="395" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/5/5f64eff65ece6bb5be93148ad4a1e548cf80b963_2_690x395.png, https://socialhub.activitypub.rocks/uploads/default/original/2X/5/5f64eff65ece6bb5be93148ad4a1e548cf80b963.png 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/2X/5/5f64eff65ece6bb5be93148ad4a1e548cf80b963.png 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/5/5f64eff65ece6bb5be93148ad4a1e548cf80b963_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">lemmy-linkedin-malicious-website-suspected</span><span class="informations">907×520 22 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>Hi Arnold,</p>
+<p>Thanks for reaching out to us. My name is Natalia from the LinkedIn Member Support Team and I will be happy to help you today.</p>
+<p>LinkedIn does not block any external links and does not mark them as “dangerous”. Your external URL has been marked as unsafe/spam/malicious by “Spamhaus”, which you can check here: <a href="https://check.spamhaus.org/listed/?searchterm=lemmy.ml">https://check.spamhaus.org/listed/?searchterm=lemmy.ml</a></p>
+<p>In order to remove your address from “Spamhaus”, I recommend reading detailed information provided in the link above. This link also provides instructions on what steps to take to have your site recognized as safe.</p>
+<p>I hope you find the information I have given you useful!</p>
+<p>I am wishing you good luck and please contact me again if you have any questions about your account in the future!</p>
+<p>Kind Regards,</p>
+<p>Natalia<br>
+Member Support Consultant</p>
+<hr>
+</details>
+<p>Now, <a class="mention" href="/u/bengo">@bengo</a> told me that at his end “All of those were marked as potentially harmful, and I had to click to show the full URL <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/confused.png?v=9" title=":confused:" class="emoji" alt=":confused:"> Wonder if it’s based on the TLD?”</p>
+<p>There is indeed one entry for Lemmy: <a href="https://check.spamhaus.org/listed/?searchterm=lemmy.ml">https://check.spamhaus.org/listed/?searchterm=lemmy.ml</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/lemmy-is-listed-at-spamhaus-with-low-reputation/1723/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/lemmy-is-listed-at-spamhaus-with-low-reputation/1723/1</link>
+        <pubDate>Tue, 11 May 2021 07:46:15 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1723-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/lemmy-is-listed-at-spamhaus-with-low-reputation/1723.rss">Lemmy is listed at Spamhaus with low reputation</source>
+      </item>
+  </channel>
+</rss>

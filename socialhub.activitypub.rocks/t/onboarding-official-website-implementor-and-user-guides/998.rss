@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Onboarding, Official Website, Implementor and User Guides</title>
+    <link>https://socialhub.activitypub.rocks/t/onboarding-official-website-implementor-and-user-guides/998</link>
+    <description>Designers, Writers, Coders et al. 
+**We need your help to make the onboarding process to the Fediverse easier**
+https://socialhub.activitypub.rocks/t/easing-the-onboarding-of-new-developers-to-the-fediverse/847
+**and to improve the official website**
+https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142
+
+---
+We have drafts
+
+https://socialhub.activitypub.rocks/t/guide-for-new-activitypub-implementers/479
+
+# So, let us hack on that.
+
+See the Wikis split in
+Users 
+https://socialhub.activitypub.rocks/t/guide-for-activitypub-users/509
+Implementors
+https://socialhub.activitypub.rocks/t/guide-for-new-activitypub-implementers/479
+
+should there be a guide for instance admins? -&gt; moderation, well being etc. ?</description>
+    
+    <lastBuildDate>Fri, 02 Oct 2020 11:52:02 +0000</lastBuildDate>
+    <category>ActivityPub Conference 2020</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/onboarding-official-website-implementor-and-user-guides/998.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Onboarding, Official Website, Implementor and User Guides</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Although I’m a big fan of Markdown+Git, I must say <a class="mention" href="/u/mayel">@mayel</a> is teasing a lot:</p>
+<aside class="quote group-commonspub" data-username="mayel" data-post="3" data-topic="929">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/mayel/40/120_2.png" class="avatar"><a href="https://socialhub.activitypub.rocks/t/the-activitypub-panel/929/3">The ActivityPub Panel</a>
+</div>
+<blockquote>
+<p>I think we made a breakthrough recently though, thanks to using <a href="https://pragmaticstudio.com/phoenix-liveview">LiveView </a> which enables us to build realtime web apps in Elixir (a backend language) without any JavaScript or frameworks like React.</p>
+</blockquote>
+</aside>
+<p>Also <a class="hashtag" href="/c/software/redaktor-me/22">#<span>software:redaktor-me</span></a> has been showing its power lately, that’s something we might want to consider, don’t you think <a class="mention" href="/u/sebastian">@Sebastian</a>?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/onboarding-official-website-implementor-and-user-guides/998/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/onboarding-official-website-implementor-and-user-guides/998/3</link>
+        <pubDate>Fri, 02 Oct 2020 11:52:02 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-998-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/onboarding-official-website-implementor-and-user-guides/998.rss">Onboarding, Official Website, Implementor and User Guides</source>
+      </item>
+      <item>
+        <title>Onboarding, Official Website, Implementor and User Guides</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>FYI Suggestion: To get the Guides online a <a href="https://pmarsceill.github.io/just-the-docs/" rel="nofollow noopener">Just The Docs</a> Jekyll theme + Github Pages might be most straight-forward. Maybe with <a href="https://www.netlifycms.org/" rel="nofollow noopener">Netlify CMS</a> to facilitate non-technical editors.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/onboarding-official-website-implementor-and-user-guides/998/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/onboarding-official-website-implementor-and-user-guides/998/2</link>
+        <pubDate>Fri, 02 Oct 2020 10:31:19 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-998-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/onboarding-official-website-implementor-and-user-guides/998.rss">Onboarding, Official Website, Implementor and User Guides</source>
+      </item>
+      <item>
+        <title>Onboarding, Official Website, Implementor and User Guides</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Designers, Writers, Coders et al.<br>
+<strong>We need your help to make the onboarding process to the Fediverse easier</strong><br>
+<aside class="quote quote-modified" data-post="1" data-topic="847">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/aschrijver/40/278_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/easing-the-onboarding-of-new-developers-to-the-fediverse/847">Easing the onboarding of new developers to the Fediverse</a> <a class="badge-wrapper  box" href="/c/community/2"><span class="badge-category-bg" style="background-color: #808281;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Discussion about this site, its organization, how it works, and how we can improve it.">Community</span></a>
+  </div>
+  <blockquote>
+    (This is a continuation of <a href="https://socialhub.activitypub.rocks/t/discussing-onboarding-for-developers/61" class="inline-onebox">Discussing onboarding for developers</a> which veered into technical discussion) 
+TL;DR
+Onboarding new devs to AP/Fediverse is a weak spot that is hampering the evolution (speed) of the ecosystem. Information is super-fragmented and many of the complexities are not readily obvious. Starting new projects is an adventure for the brave. 
+There are efforts to improve this, but time-constraints of experts and - in general - lack of appetite to do the work involved, means this p…
+  </blockquote>
+</aside>
+<br>
+<strong>and to improve the official website</strong><br>
+<aside class="quote quote-modified" data-post="1" data-topic="142">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/rigelk/40/15_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142">Discussing the evolution of the activitypub.rocks site</a> <a class="badge-wrapper  box" href="/c/community/2"><span class="badge-category-bg" style="background-color: #808281;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Discussion about this site, its organization, how it works, and how we can improve it.">Community</span></a>
+  </div>
+  <blockquote>
+    Following the recent <a href="https://redaktor.me/apconf/" rel="nofollow noopener">APConf in Prague</a>, I tried going through the resources at hand for new ActivityPub implementers, <a href="https://socialhub.activitypub.rocks/t/discussing-onboarding-for-developers/61">reviewing what we could improve to ease the onboarding</a>. activitypub.rocks plays a major role in this, being the main landing page for the protocol. 
+In the meantime, this forum has been created and made public. It could play a major role at organizing the information long-term for varied audiences, but would not replace ap.rocks as a landing page, which means we have to properly l…
+  </blockquote>
+</aside>
+</p>
+<hr>
+<p>We have drafts</p>
+<aside class="quote quote-modified" data-post="1" data-topic="479">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/letter_avatar_proxy/v4/letter/n/da6949/40.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/guide-for-new-activitypub-implementers/479">Guide for new ActivityPub implementers</a> <a class="badge-wrapper  box" href="/c/activitypub/5"><span class="badge-category-bg" style="background-color: #0088CC;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Discuss the ActivityPub Recommendation, how to implement it, how to extend it. Home of the ActivityPub SIG.">ActivityPub</span></a>
+  </div>
+  <blockquote>
+    This wiki post is a place for collaboratively drafting ActivityPub documentation with the hope that this material may be incorporated into proposed improvements to the activitypub.rocks site, see <a href="https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142">the conversation about the new main page</a> and the <a href="https://rigelk.gitlab.io/activitypub.rocks/" rel="nofollow noopener">demonstration </a>. 
+ 
+About this guide
+This is an informal guide to help new implementers get up to speed with the <a href="https://www.w3.org/TR/activitypub" rel="nofollow noopener">ActivityPub specification</a> and how to built projects with ActivityPub support. 
+Why choose ActivityPub?
+Why might you choose to implement Activi…
+  </blockquote>
+</aside>
+
+<h1>So, let us hack on that.</h1>
+<p>See the Wikis split in<br>
+Users<br>
+<aside class="quote quote-modified" data-post="1" data-topic="509">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/letter_avatar_proxy/v4/letter/n/da6949/40.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/guide-for-activitypub-users/509">Guide for ActivityPub users</a> <a class="badge-wrapper  box" href="/c/activitypub/5"><span class="badge-category-bg" style="background-color: #0088CC;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Discuss the ActivityPub Recommendation, how to implement it, how to extend it. Home of the ActivityPub SIG.">ActivityPub</span></a>
+  </div>
+  <blockquote>
+    This collaboratively-edited guide provides information on how to become an ActivityPub user. Adopting ActivityPub as a user can be a great way to start putting a more people-centred Internet into practice. 
+ 
+Find and join a Fediverse site
+The easiest way to get started with ActivityPub and the Fediverse is to join a site and start participating. 
+Finding projects
+If you’re looking for alternatives to specific corporate social media sites, <a href="https://switching.software" rel="nofollow noopener">switching.software</a> is a great place to start. They offer…
+  </blockquote>
+</aside>
+<br>
+Implementors<br>
+<aside class="quote quote-modified" data-post="1" data-topic="479">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/letter_avatar_proxy/v4/letter/n/da6949/40.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/guide-for-new-activitypub-implementers/479">Guide for new ActivityPub implementers</a> <a class="badge-wrapper  box" href="/c/activitypub/5"><span class="badge-category-bg" style="background-color: #0088CC;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Discuss the ActivityPub Recommendation, how to implement it, how to extend it. Home of the ActivityPub SIG.">ActivityPub</span></a>
+  </div>
+  <blockquote>
+    This wiki post is a place for collaboratively drafting ActivityPub documentation with the hope that this material may be incorporated into proposed improvements to the activitypub.rocks site, see <a href="https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142">the conversation about the new main page</a> and the <a href="https://rigelk.gitlab.io/activitypub.rocks/" rel="nofollow noopener">demonstration </a>. 
+ 
+About this guide
+This is an informal guide to help new implementers get up to speed with the <a href="https://www.w3.org/TR/activitypub" rel="nofollow noopener">ActivityPub specification</a> and how to built projects with ActivityPub support. 
+Why choose ActivityPub?
+Why might you choose to implement Activi…
+  </blockquote>
+</aside>
+</p>
+<p>should there be a guide for instance admins? -&gt; moderation, well being etc. ?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/onboarding-official-website-implementor-and-user-guides/998/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/onboarding-official-website-implementor-and-user-guides/998/1</link>
+        <pubDate>Fri, 02 Oct 2020 10:23:59 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-998-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/onboarding-official-website-implementor-and-user-guides/998.rss">Onboarding, Official Website, Implementor and User Guides</source>
+      </item>
+  </channel>
+</rss>

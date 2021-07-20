@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>About PHP</title>
+    <link>https://socialhub.activitypub.rocks/t/about-php/320</link>
+    <description>Programming ActivityPub in PHP.</description>
+    
+    <lastBuildDate>Mon, 18 Nov 2019 12:26:57 +0000</lastBuildDate>
+    <category>PHP</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/about-php/320.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>About PHP</title>
+        <dc:creator><![CDATA[system]]></dc:creator>
+        <description><![CDATA[
+            <p>Programming ActivityPub in PHP.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-php/320/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-php/320/1</link>
+        <pubDate>Sat, 16 Nov 2019 15:23:32 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-320-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-php/320.rss">About PHP</source>
+      </item>
+  </channel>
+</rss>

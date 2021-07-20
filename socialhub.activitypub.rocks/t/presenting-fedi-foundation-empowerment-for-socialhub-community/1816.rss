@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Presenting Fedi Foundation: Empowerment for SocialHub community</title>
+    <link>https://socialhub.activitypub.rocks/t/presenting-fedi-foundation-empowerment-for-socialhub-community/1816</link>
+    <description>In follow-up to https://socialhub.activitypub.rocks/t/organizing-for-socialhub-community-empowerment/1529 I have published the first draft of:
+
+## Federated Diversity Foundation
+
+https://fediverse.codeberg.page
+
+Now this website is not a &#39;foundation&#39; in the sense of a non-profit. It is meant to provide a foundation to both the SocialHub community and the Fediverse technology base. To read more about it, you can visit the following pages:
+
+- [About Fedi Foundation](https://fediverse.codeberg.page/about.html)
+- [Introducing the Federated Diversity Foundation](https://fediverse.codeberg.page/2021/03/introducing-fedi-foundation/)
+- [Support the SocialHub Community](https://fediverse.codeberg.page/support/)
+- [The Fediverse is like Spiral Island](https://fediverse.codeberg.page/2021/04/fediverse-spiral-island-analogy/) (also published [here](https://socialhub.activitypub.rocks/t/socialhub-and-spiral-island-a-fediverse-foundation-analogy/1543))
+
+Some examples of typical content for Fedi Foundation are:
+
+- [The European Commission and the Fediverse](https://fediverse.codeberg.page/2021/05/socialhub-ec-liaison/): A call-to-action in Foster section
+- [ Exploring the «Community Has No Boundary» paradigm](https://fediverse.codeberg.page/2021/03/community-has-no-boundary/): A pattern document in Ideat section.
+
+The idea is that this site if for and by SocialHub members. Read:
+
+- [How you can publish to Fedi Foundation](https://fediverse.codeberg.page/publish.html)
+
+The website is hosted at [Codeberg](https://join.codeberg.org/), the Gitea instance exclusively for FOSS projects, and the [code repository](https://codeberg.org/fediverse/fedi-foundation) sits in the [Fediverse](https://codeberg.org/fediverse) organization where [SocialCG issue tracker and other repo&#39;s](https://socialhub.activitypub.rocks/t/social-cg-issue-trackers/1648) might be move to as well.
+
+### Contribute
+
+Now this is just the first draft of the page. Any contributions are most welcome, and I have already created a bunch of suggestions for improvement on the [Issue Tracker](https://codeberg.org/fediverse/fedi-foundation/issues).
+
+### Discuss
+
+Any feedback you have with regards to this website, and what it can be used for is most, most welcome below :pray: 
+For general discussion on making this community more productive, please comment on the [Empowerment thread](https://socialhub.activitypub.rocks/t/organizing-for-socialhub-community-empowerment/1529).</description>
+    
+    <lastBuildDate>Mon, 31 May 2021 21:10:03 +0000</lastBuildDate>
+    <category>Community</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/presenting-fedi-foundation-empowerment-for-socialhub-community/1816.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Presenting Fedi Foundation: Empowerment for SocialHub community</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://socialhub.activitypub.rocks/t/presenting-fedi-foundation-empowerment-for-socialhub-community/1816/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/presenting-fedi-foundation-empowerment-for-socialhub-community/1816/4</link>
+        <pubDate>Tue, 08 Jun 2021 06:00:10 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1816-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/presenting-fedi-foundation-empowerment-for-socialhub-community/1816.rss">Presenting Fedi Foundation: Empowerment for SocialHub community</source>
+      </item>
+      <item>
+        <title>Presenting Fedi Foundation: Empowerment for SocialHub community</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>In follow-up to <a href="https://socialhub.activitypub.rocks/t/organizing-for-socialhub-community-empowerment/1529" class="inline-onebox">Organizing for SocialHub Community Empowerment</a> I have published the first draft of:</p>
+<h2>
+<a name="federated-diversity-foundation-1" class="anchor" href="#federated-diversity-foundation-1"></a>Federated Diversity Foundation</h2>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/2X/d/d6eb1d923f07bf9718277468cfa9e8e262f59d88.ico" class="site-icon" width="15" height="16">
+      <a href="https://fediverse.codeberg.page" target="_blank" rel="noopener">fedi.foundation</a>
+  </header>
+  <article class="onebox-body">
+    
+
+<h3><a href="https://fediverse.codeberg.page" target="_blank" rel="noopener">Social Media Reimagined</a></h3>
+
+<p>Welcome to Federated Diversity Foundation. We strive to empower SocialHub community and the Fediverse they build.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>Now this website is not a ‘foundation’ in the sense of a non-profit. It is meant to provide a foundation to both the SocialHub community and the Fediverse technology base. To read more about it, you can visit the following pages:</p>
+<ul>
+<li><a href="https://fediverse.codeberg.page/about.html">About Fedi Foundation</a></li>
+<li><a href="https://fediverse.codeberg.page/2021/03/introducing-fedi-foundation/">Introducing the Federated Diversity Foundation</a></li>
+<li><a href="https://fediverse.codeberg.page/support/">Support the SocialHub Community</a></li>
+<li>
+<a href="https://fediverse.codeberg.page/2021/04/fediverse-spiral-island-analogy/">The Fediverse is like Spiral Island</a> (also published <a href="https://socialhub.activitypub.rocks/t/socialhub-and-spiral-island-a-fediverse-foundation-analogy/1543">here</a>)</li>
+</ul>
+<p>Some examples of typical content for Fedi Foundation are:</p>
+<ul>
+<li>
+<a href="https://fediverse.codeberg.page/2021/05/socialhub-ec-liaison/">The European Commission and the Fediverse</a>: A call-to-action in Foster section</li>
+<li>
+<a href="https://fediverse.codeberg.page/2021/03/community-has-no-boundary/"> Exploring the «Community Has No Boundary» paradigm</a>: A pattern document in Ideat section.</li>
+</ul>
+<p>The idea is that this site if for and by SocialHub members. Read:</p>
+<ul>
+<li><a href="https://fediverse.codeberg.page/publish.html">How you can publish to Fedi Foundation</a></li>
+</ul>
+<p>The website is hosted at <a href="https://join.codeberg.org/">Codeberg</a>, the Gitea instance exclusively for FOSS projects, and the <a href="https://codeberg.org/fediverse/fedi-foundation">code repository</a> sits in the <a href="https://codeberg.org/fediverse">Fediverse</a> organization where <a href="https://socialhub.activitypub.rocks/t/social-cg-issue-trackers/1648">SocialCG issue tracker and other repo’s</a> might be move to as well.</p>
+<h3>
+<a name="contribute-2" class="anchor" href="#contribute-2"></a>Contribute</h3>
+<p>Now this is just the first draft of the page. Any contributions are most welcome, and I have already created a bunch of suggestions for improvement on the <a href="https://codeberg.org/fediverse/fedi-foundation/issues">Issue Tracker</a>.</p>
+<h3>
+<a name="discuss-3" class="anchor" href="#discuss-3"></a>Discuss</h3>
+<p>Any feedback you have with regards to this website, and what it can be used for is most, most welcome below <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/pray.png?v=9" title=":pray:" class="emoji" alt=":pray:"><br>
+For general discussion on making this community more productive, please comment on the <a href="https://socialhub.activitypub.rocks/t/organizing-for-socialhub-community-empowerment/1529">Empowerment thread</a>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/presenting-fedi-foundation-empowerment-for-socialhub-community/1816/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/presenting-fedi-foundation-empowerment-for-socialhub-community/1816/1</link>
+        <pubDate>Mon, 31 May 2021 20:52:10 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1816-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/presenting-fedi-foundation-empowerment-for-socialhub-community/1816.rss">Presenting Fedi Foundation: Empowerment for SocialHub community</source>
+      </item>
+  </channel>
+</rss>

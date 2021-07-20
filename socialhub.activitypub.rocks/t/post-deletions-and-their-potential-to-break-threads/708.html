@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Post deletions and their potential to break threads - Server to Server - SocialHub</title>
+    <meta name="description" content="Suppose this happens: (users A and B are on the same instance) 
+
+User A creates a post.
+User B replies to that post.
+User A replies to that reply.
+User B deletes their first reply.
+User B replies to user A’s reply and me&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="708.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Post deletions and their potential to break threads&#39;" href="708.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/f883ceb77cbfaf6db7f454921d81aa298b874fe4.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/f883ceb77cbfaf6db7f454921d81aa298b874fe4.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/post-deletions-and-their-potential-to-break-threads/708" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/post-deletions-and-their-potential-to-break-threads/708" />
+<meta property="og:title" content="Post deletions and their potential to break threads" />
+<meta name="twitter:title" content="Post deletions and their potential to break threads" />
+<meta property="og:description" content="Suppose this happens: (users A and B are on the same instance)   User A creates a post. User B replies to that post. User A replies to that reply. User B deletes their first reply. User B replies to user A’s reply and mentions the user C who is from another instance that doesn’t have any of these posts in its database.  You end up with something like this, except the “test comment” is deleted:    The issue: when user C’s instance receives a Create activity about the last reply and goes to fetch ..." />
+<meta name="twitter:description" content="Suppose this happens: (users A and B are on the same instance)   User A creates a post. User B replies to that post. User A replies to that reply. User B deletes their first reply. User B replies to user A’s reply and mentions the user C who is from another instance that doesn’t have any of these posts in its database.  You end up with something like this, except the “test comment” is deleted:    The issue: when user C’s instance receives a Create activity about the last reply and goes to fetch ..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="1 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="2 ❤" />
+<meta property="article:published_time" content="2020-05-23T09:54:49+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="708.html">Post deletions and their potential to break threads</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/activitypub.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #0088CC'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>ActivityPub</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/activitypub/s2s/7.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #808281'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Server to Server</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="708.html">
+
+            <link itemprop="image" href="../../uploads/default/original/1X/f883ceb77cbfaf6db7f454921d81aa298b874fe4.png">
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-05-23T09:54:49Z' class='post-time'>
+                May 23, 2020,  9:54am
+              </time>
+              <meta itemprop='dateModified' content='2020-05-23T09:54:49Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Suppose this happens: (users A and B are on the same instance)</p>
+<ol>
+<li>User A creates a post.</li>
+<li>User B replies to that post.</li>
+<li>User A replies to that reply.</li>
+<li>User B deletes their first reply.</li>
+<li>User B replies to user A’s reply and mentions the user C who is from another instance that doesn’t have any of these posts in its database.</li>
+</ol>
+<p>You end up with something like this, except the “test comment” is deleted:</p>
+<p><img src="../../uploads/default/original/1X/f883ceb77cbfaf6db7f454921d81aa298b874fe4.png" alt="image" data-base62-sha1="zssO9s1gEqOhIASdKuSXnKuSKqM" width="418" height="283"></p>
+<p>The issue: when user C’s instance receives a <code>Create</code> activity about the last reply and goes to fetch the complete thread, it can’t. The idea is that you would follow <code>inReplyTo</code> references up, until you encounter an object without this field, which means you’ve reached the top-level post. But if there is any deleted object along the way, you kind of hit a wall and don’t have any way of getting to the top-level post and thus completing your representation of the comment thread. Or do you? I’ve just tested with Mastodon and it doesn’t even return a <code>Tombstone</code>, it acts as if the post didn’t ever exist by returning a 404. Anyway, any ideas on solving this?</p>
+<p>Related: going in the opposite direction, down from the top-level post, you have the exact same issue but with the <code>replies</code> collection.</p>
+        </div>
+
+        <meta itemprop='headline' content='Post deletions and their potential to break threads'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/yvolk.html'><span itemprop='name'>yvolk</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="708.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-05-25T04:38:45Z'>
+              <time itemprop='dateModified' datetime='2020-05-25T04:39:55Z' class='post-time'>
+                May 25, 2020,  4:39am
+              </time>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I solved exactly the same issue developing a Client app. And such cases occur not only when a note is deleted: we encounter the same case, when some post in the thread is not visible at our side. E.g. because an instance, from which that note was sent, does not communicate with our system (doesn’t work properly, is not configured to communicated with us, etc…)<br>
+In such cases I use “conversation” or “context” references (references to a collection of activities of this thread), if such exists.<br>
+Creation (and possible merging / linking…) of such “conversation” IDs is a separate not trivial task…</p>
+<p>Seeing different (numbers of) activities from different instances is a known problem of GNU Social and Mastodon, (cited from <a href="https://github.com/andstatus/andstatus/issues/466" rel="nofollow noopener">https://github.com/andstatus/andstatus/issues/466</a> ):</p>
+<p>I know these causes of such differences:</p>
+<ol>
+<li>Messages of a remote User are delivered to an instance (and hence can be retrieved as a part of a conversation) only if this User is followed by at least one User of  <em>this</em>  instance.</li>
+<li>Mastodon adds another restriction: a message can have an “instance scope” I.e. it cannot be sent to any other instance.</li>
+<li>And of course, there are sync problems between different instances. E.g. some days ago I’ve heard that there were problems in message communication between Mastodon and GNU Social instances…</li>
+</ol>
+        </div>
+
+        <meta itemprop='headline' content='Post deletions and their potential to break threads'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nightpool.html'><span itemprop='name'>nightpool</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="708.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-05-25T14:50:32Z' class='post-time'>
+                May 25, 2020,  2:50pm
+              </time>
+              <meta itemprop='dateModified' content='2020-05-25T14:50:32Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote group-andstatus" data-username="yvolk" data-post="2" data-topic="708">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/yvolk/40/310_2.png" class="avatar"> yvolk:</div>
+<blockquote>
+<p>Mastodon adds another restriction: a message can have an “instance scope” I.e. it cannot be sent to any other instance.</p>
+</blockquote>
+</aside>
+<p>To clarify: this is not a Mastodon feature, but there are various third-party forks of Mastodon that do provide this feature.</p>
+        </div>
+
+        <meta itemprop='headline' content='Post deletions and their potential to break threads'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="708.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-07-03T12:53:38Z' class='post-time'>
+                July 3, 2020, 12:53pm
+              </time>
+              <meta itemprop='dateModified' content='2020-07-03T12:53:38Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I ended up doing this:</p>
+<pre><code class="lang-json">{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "type": "Tombstone",
+  "formerType": "Note",
+  "url": "http://smithereen.local:8080/posts/114",
+  "id": "http://smithereen.local:8080/posts/114",
+  "inReplyTo": "http://smithereen.local:8080/posts/113",
+  "replies": {
+    "id": "http://smithereen.local:8080/posts/114/replies",
+    "type": "Collection",
+    "first": {
+      "next": "http://smithereen.local:8080/posts/114/replies?offset=0&amp;count=50",
+      "partOf": "http://smithereen.local:8080/posts/114/replies",
+      "type": "CollectionPage",
+      "items": []
+    }
+  }
+}
+</code></pre>
+<p>If a post gets deleted, either locally or by a <code>Delete</code> activity, and there are replies to it, I don’t delete the DB row completely but rather null most of it, keeping the fields needed to keep the thread intact.</p>
+        </div>
+
+        <meta itemprop='headline' content='Post deletions and their potential to break threads'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

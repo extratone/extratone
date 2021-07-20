@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Smithereen 0.1 beta is out!</title>
+    <link>https://socialhub.activitypub.rocks/t/smithereen-0-1-beta-is-out/1800</link>
+    <description>I&#39;m finally confident enough in this thing to say that it&#39;s okay for others to run their own instances. It might be rough around the edges, but it does work well enough that I myself at times use it more than Mastodon.
+
+You can run it either directly or in Docker. Code, prebuilt jar and instructions here: https://github.com/grishka/Smithereen
+
+Federation-related limitations to keep in mind:
+
+- Only public posts are supported. For the time being, that&#39;s intentional. Non-public posts are rejected with a &quot;bad request&quot; error.
+- Polls are not supported yet so these posts don&#39;t show up anywhere.
+- There&#39;s currently no UI to load an external post or profile. You can, however, use Mastodon&#39;s &quot;enter your username@domain to interact with this&quot; popup, or you can open `https://your.instance/activitypub/externalInteraction?uri=https://...` directly.
+- Loading older posts for an account isn&#39;t supported yet.
+- Boosts/reposts do show up in feed but you can&#39;t make one yourself. That&#39;s because I want more of a VK-like behavior where each repost has its own comment thread, which is not yet implemented.</description>
+    
+    <lastBuildDate>Mon, 31 May 2021 15:20:48 +0000</lastBuildDate>
+    <category>Smithereen</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/smithereen-0-1-beta-is-out/1800.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Smithereen 0.1 beta is out!</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>There is <a href="https://friends.grishka.me" rel="noopener nofollow ugc">my instance</a> and I can give you an invite to it, but I encourage people to host their own. After all, it’s important to make sure that it’s easy to set up and maintain. It’s as important to make sure that federation works.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/smithereen-0-1-beta-is-out/1800/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/smithereen-0-1-beta-is-out/1800/3</link>
+        <pubDate>Mon, 31 May 2021 15:20:48 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1800-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/smithereen-0-1-beta-is-out/1800.rss">Smithereen 0.1 beta is out!</source>
+      </item>
+      <item>
+        <title>Smithereen 0.1 beta is out!</title>
+        <dc:creator><![CDATA[CJameson]]></dc:creator>
+        <description><![CDATA[
+            <p>Is there any place to try out your server, by logging into it, or are people supposed to just install it and run it to get a first idea of what it even looks like?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/smithereen-0-1-beta-is-out/1800/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/smithereen-0-1-beta-is-out/1800/2</link>
+        <pubDate>Mon, 31 May 2021 14:52:15 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1800-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/smithereen-0-1-beta-is-out/1800.rss">Smithereen 0.1 beta is out!</source>
+      </item>
+      <item>
+        <title>Smithereen 0.1 beta is out!</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m finally confident enough in this thing to say that it’s okay for others to run their own instances. It might be rough around the edges, but it does work well enough that I myself at times use it more than Mastodon.</p>
+<p>You can run it either directly or in Docker. Code, prebuilt jar and instructions here: <a href="https://github.com/grishka/Smithereen" class="inline-onebox" rel="noopener nofollow ugc">GitHub - grishka/Smithereen: Federated, ActivityPub-compatible social network server with friends, walls, and groups.</a></p>
+<p>Federation-related limitations to keep in mind:</p>
+<ul>
+<li>Only public posts are supported. For the time being, that’s intentional. Non-public posts are rejected with a “bad request” error.</li>
+<li>Polls are not supported yet so these posts don’t show up anywhere.</li>
+<li>There’s currently no UI to load an external post or profile. You can, however, use Mastodon’s “enter your username@domain to interact with this” popup, or you can open <code>https://your.instance/activitypub/externalInteraction?uri=https://...</code> directly.</li>
+<li>Loading older posts for an account isn’t supported yet.</li>
+<li>Boosts/reposts do show up in feed but you can’t make one yourself. That’s because I want more of a VK-like behavior where each repost has its own comment thread, which is not yet implemented.</li>
+</ul>
+          <p><a href="https://socialhub.activitypub.rocks/t/smithereen-0-1-beta-is-out/1800/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/smithereen-0-1-beta-is-out/1800/1</link>
+        <pubDate>Wed, 26 May 2021 08:09:05 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1800-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/smithereen-0-1-beta-is-out/1800.rss">Smithereen 0.1 beta is out!</source>
+      </item>
+  </channel>
+</rss>

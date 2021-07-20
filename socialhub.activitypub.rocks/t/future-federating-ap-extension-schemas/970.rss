@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Future: Federating AP extension schemas</title>
+    <link>https://socialhub.activitypub.rocks/t/future-federating-ap-extension-schemas/970</link>
+    <description>(This is a continuation of my comment to @cjs https://socialhub.activitypub.rocks/t/go-fed-past-present-and-future/949/2 best addressed in a separate topic)
+
+The future of the Fediverse where we go way beyond fixed, still micro-blogging-like AP extended apps to support for rich Linked Data based domain-specific apps could be the absolute killer feature of the Fediverse.
+
+Right now any app with significant domain-specific AP extensions needs to squeeze into a &#39;microblogging jacket&#39; to achieve federated interoperability (i.e. you better have `as:Note` somewhere in there). The lowest common denominator determines the federated capabilities.
+
+@cjs in [your APConf presentation](https://conf.tube/videos/watch/952f9cef-3b97-45e4-a248-199772a23f62) at 35:15 you talk about federating the vocabulary schema&#39;s themselves, and even go a bit further by federating ActivityPub &quot;flavors&quot; (e.g. &#39;webfinger+HTTP-signatures&#39; vs. &#39;OCAP+Tor&#39;, etc.). That&#39;s some _really interesting_ stuff, and goes way beyond NodeInfo and the bit clumsy &#39;temporary convention/workaround&#39; of having FEDERATION.md docs.
+
+Would love :heart: to know more about your ideas in this regards, and to get a discussion going.
+
+---
+
+I posted about a related issue in the Solid forum: [Aligning efforts in LD schema / ontology design + adoption](https://forum.solidproject.org/t/aligning-efforts-in-ld-schema-ontology-design-adoption/3174).
+
+&gt; When it comes to what is out there on the web in terms of linked data, one can only conclude that it is a big sprawling mess. It is really hard to get good ontologies together in an application, and - after doing so - avoid creating your own unique interpretation of the semantics within.
+
+There&#39;s interesting insights provided by the devs of [TerminusDB](https://terminusdb.com/), which uses OWL-based schema&#39;s just like [go-fed](https://go-fed) does:
+
+&gt; For schema design, TerminusDB uses the OWL language with two modifications to make it suitable as a schema language. Namely, we dispense with the open world interpretation and insist on the unique name assumption. This provides us with a rich modelling language which can provide constraints on the allowable shapes in the graph. We really support OWL as it is logically expressive.
+
+Finally there was also this nice tool for visualizing schema&#39;s, called [Web-VOWL](http://vowl.visualdataweb.org/webvowl.html) (and other tools at [VOWL](http://vowl.visualdataweb.org/)).
+
+Based on that thread some Solid members are looking into building a [Solid List of Vocabularies](https://forum.solidproject.org/t/volunteers-needed-for-solidlov-app/3177) app, where vocabs stored in personal data vaults (POD&#39;s) are synchronized to collection hubs.</description>
+    
+    <lastBuildDate>Wed, 30 Sep 2020 08:00:18 +0000</lastBuildDate>
+    <category>ActivityPub</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/future-federating-ap-extension-schemas/970.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Future: Federating AP extension schemas</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>(This is a continuation of my comment to <a class="mention" href="/u/cjs">@cjs</a> <a href="https://socialhub.activitypub.rocks/t/go-fed-past-present-and-future/949/2" class="inline-onebox">Go-Fed: Past, Present, and Future</a> best addressed in a separate topic)</p>
+<p>The future of the Fediverse where we go way beyond fixed, still micro-blogging-like AP extended apps to support for rich Linked Data based domain-specific apps could be the absolute killer feature of the Fediverse.</p>
+<p>Right now any app with significant domain-specific AP extensions needs to squeeze into a ‘microblogging jacket’ to achieve federated interoperability (i.e. you better have <code>as:Note</code> somewhere in there). The lowest common denominator determines the federated capabilities.</p>
+<p><a class="mention" href="/u/cjs">@cjs</a> in <a href="https://conf.tube/videos/watch/952f9cef-3b97-45e4-a248-199772a23f62" rel="nofollow noopener">your APConf presentation</a> at 35:15 you talk about federating the vocabulary schema’s themselves, and even go a bit further by federating ActivityPub “flavors” (e.g. ‘webfinger+HTTP-signatures’ vs. ‘OCAP+Tor’, etc.). That’s some <em>really interesting</em> stuff, and goes way beyond NodeInfo and the bit clumsy ‘temporary convention/workaround’ of having FEDERATION.md docs.</p>
+<p>Would love <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/heart.png?v=9" title=":heart:" class="emoji" alt=":heart:"> to know more about your ideas in this regards, and to get a discussion going.</p>
+<hr>
+<p>I posted about a related issue in the Solid forum: <a href="https://forum.solidproject.org/t/aligning-efforts-in-ld-schema-ontology-design-adoption/3174" rel="nofollow noopener">Aligning efforts in LD schema / ontology design + adoption</a>.</p>
+<blockquote>
+<p>When it comes to what is out there on the web in terms of linked data, one can only conclude that it is a big sprawling mess. It is really hard to get good ontologies together in an application, and - after doing so - avoid creating your own unique interpretation of the semantics within.</p>
+</blockquote>
+<p>There’s interesting insights provided by the devs of <a href="https://terminusdb.com/" rel="nofollow noopener">TerminusDB</a>, which uses OWL-based schema’s just like <a href="https://go-fed" rel="nofollow noopener">go-fed</a> does:</p>
+<blockquote>
+<p>For schema design, TerminusDB uses the OWL language with two modifications to make it suitable as a schema language. Namely, we dispense with the open world interpretation and insist on the unique name assumption. This provides us with a rich modelling language which can provide constraints on the allowable shapes in the graph. We really support OWL as it is logically expressive.</p>
+</blockquote>
+<p>Finally there was also this nice tool for visualizing schema’s, called <a href="http://vowl.visualdataweb.org/webvowl.html" rel="nofollow noopener">Web-VOWL</a> (and other tools at <a href="http://vowl.visualdataweb.org/" rel="nofollow noopener">VOWL</a>).</p>
+<p>Based on that thread some Solid members are looking into building a <a href="https://forum.solidproject.org/t/volunteers-needed-for-solidlov-app/3177" rel="nofollow noopener">Solid List of Vocabularies</a> app, where vocabs stored in personal data vaults (POD’s) are synchronized to collection hubs.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/future-federating-ap-extension-schemas/970/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/future-federating-ap-extension-schemas/970/1</link>
+        <pubDate>Wed, 30 Sep 2020 08:00:18 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-970-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/future-federating-ap-extension-schemas/970.rss">Future: Federating AP extension schemas</source>
+      </item>
+  </channel>
+</rss>

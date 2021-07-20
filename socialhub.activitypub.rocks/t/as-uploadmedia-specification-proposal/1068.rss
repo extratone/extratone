@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>as:uploadMedia specification proposal</title>
+    <link>https://socialhub.activitypub.rocks/t/as-uploadmedia-specification-proposal/1068</link>
+    <description>&lt;p&gt;Based on content available in ActivityPub specification before &lt;a href=&quot;https://github.com/w3c/activitypub/commit/fae6a56a8dcba9de69374aa7ae0bef565217e5c7&quot;&gt;https://github.com/w3c/activitypub/commit/fae6a56a8dcba9de69374aa7ae0bef565217e5c7&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Servers MAY implement this feature. To accomplish this, a client must submit a &lt;code&gt;multipart/form-data&lt;/code&gt; request to the &lt;code&gt;uploadMedia&lt;/code&gt; user&#39;s endpoint on their ActivityStreams actor object.&lt;/p&gt;
+&lt;p&gt;A client should expect that it must be properly authenticated in order to be able to upload media.&lt;p&gt;
+&lt;p&gt;The submitted form data should contain two parts / fields:&lt;/p&gt;
+&lt;dl&gt;
+	&lt;dt&gt;file&lt;/dt&gt;	&lt;dd&gt;The file being uploaded&lt;/dd&gt;
+	&lt;dt&gt;object&lt;/dt&gt;	&lt;dd&gt;An optional skeleton for an ActivityStreams object to be finalized by the server&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;
+	Assuming that the server accepts the request and that the user was appropriately authorized to upload media, servers MUST respond with a
+	&lt;code&gt;201 Created&lt;/code&gt; if the submitted media is immediately available or a
+	&lt;code&gt;202 Accepted&lt;/code&gt; if the server is still processing the submitted media.
+	The response MUST contain a &lt;code&gt;Location&lt;/code&gt; header pointing to the new or to be created object&#39;s &lt;code&gt;id&lt;/code&gt;,&lt;br /&gt;
+	OR if considered a temporary transient object by the implementation, a copy of the object into the response body.
+&lt;/p&gt;
+&lt;p&gt;
+	The server, having done any appropriate processing on the received &lt;code&gt;file&lt;/code&gt; and putting it in place, transforms the &lt;code&gt;object&lt;/code&gt;.
+	In particular, servers SHOULD include the uploaded and/or processed file paths in the object&#39;s &lt;code&gt;url&lt;/code&gt; property.
+&lt;/p&gt;
+&lt;p&gt;(Examples to be included; implementation-side documentation example: &lt;a href=&quot;https://git.pleroma.social/pleroma/pleroma/-/merge_requests/3056/diffs&quot;&gt;https://git.pleroma.social/pleroma/pleroma/-/merge_requests/3056/diffs&lt;/a&gt;)&lt;/p&gt;</description>
+    
+    <lastBuildDate>Mon, 05 Oct 2020 17:23:13 +0000</lastBuildDate>
+    <category>Client to Server</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/as-uploadmedia-specification-proposal/1068.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>as:uploadMedia specification proposal</title>
+        <dc:creator><![CDATA[lanodan]]></dc:creator>
+        <description><![CDATA[
+            <p>Was wondering a bit about the case of the object potentially added into the actor’s outbox (and do related federation).</p>
+<p>I think there is two ways to address it:</p>
+<ol>
+<li>Server never add into the outbox, the client decides to do so</li>
+<li>Server adds it into the outbox if the object has addressing (defaults to no addressing if object is absent)</li>
+<li>Server adds it into the outbox only if the object is wrapped into a Create activity</li>
+</ol>
+<p>Currently Pleroma treats <code>uploadMedia</code> as a simple endpoint with the object being returned being something to be reused by the client later on as an attachment (or maybe a standalone object) so I personally would tend to go for option 1 but others (like PixelFed/Peertube/… and maybe Friendica as there is an media collection) might want option 2 or 3.</p>
+<p>For now I’m writing an example with no addressing.</p>
+<p>Extra thoughts:</p>
+<ul>
+<li>What happens if the upload worked but the client never received the response?</li>
+<li>What happens if you want to upload multiple files for one object?</li>
+</ul>
+<p>Q: Pushing Activities later on? (APConf2020 talks)<br>
+A: AP extension? Which could also be useful to Delete objects for post expiration.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/as-uploadmedia-specification-proposal/1068/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/as-uploadmedia-specification-proposal/1068/2</link>
+        <pubDate>Mon, 05 Oct 2020 16:52:12 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1068-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/as-uploadmedia-specification-proposal/1068.rss">as:uploadMedia specification proposal</source>
+      </item>
+      <item>
+        <title>as:uploadMedia specification proposal</title>
+        <dc:creator><![CDATA[lanodan]]></dc:creator>
+        <description><![CDATA[
+            <p>Based on content available in ActivityPub specification before <a href="https://github.com/w3c/activitypub/commit/fae6a56a8dcba9de69374aa7ae0bef565217e5c7" rel="noopener nofollow ugc">https://github.com/w3c/activitypub/commit/fae6a56a8dcba9de69374aa7ae0bef565217e5c7</a></p>
+<p>Servers MAY implement this feature. To accomplish this, a client must submit a <code>multipart/form-data</code> request to the <code>uploadMedia</code> user's endpoint on their ActivityStreams actor object.</p>
+<p>A client should expect that it must be properly authenticated in order to be able to upload media.</p><p>
+</p><p>The submitted form data should contain two parts / fields:</p>
+<dl>
+	<dt>file</dt>	<dd>The file being uploaded</dd>
+	<dt>object</dt>	<dd>An optional skeleton for an ActivityStreams object to be finalized by the server</dd>
+</dl>
+<p>
+	Assuming that the server accepts the request and that the user was appropriately authorized to upload media, servers MUST respond with a
+	<code>201 Created</code> if the submitted media is immediately available or a
+	<code>202 Accepted</code> if the server is still processing the submitted media.
+	The response MUST contain a <code>Location</code> header pointing to the new or to be created object's <code>id</code>,<br>
+	OR if considered a temporary transient object by the implementation, a copy of the object into the response body.
+</p>
+<p>
+	The server, having done any appropriate processing on the received <code>file</code> and putting it in place, transforms the <code>object</code>.
+	In particular, servers SHOULD include the uploaded and/or processed file paths in the object's <code>url</code> property.
+</p>
+<p>(Examples to be included; implementation-side documentation example: <a href="https://git.pleroma.social/pleroma/pleroma/-/merge_requests/3056/diffs" rel="noopener nofollow ugc">https://git.pleroma.social/pleroma/pleroma/-/merge_requests/3056/diffs</a>)</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/as-uploadmedia-specification-proposal/1068/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/as-uploadmedia-specification-proposal/1068/1</link>
+        <pubDate>Mon, 05 Oct 2020 15:59:50 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1068-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/as-uploadmedia-specification-proposal/1068.rss">as:uploadMedia specification proposal</source>
+      </item>
+  </channel>
+</rss>

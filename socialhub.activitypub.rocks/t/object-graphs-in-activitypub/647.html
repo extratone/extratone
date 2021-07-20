@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Object Graphs in ActivityPub - SocialHub</title>
+    <meta name="description" content="If I’m reading the Client Addressing (§6.1) and Outbox Delivery (§7.1.1) correctly, it seems as though the specification is written such that every Activity having to do with an Object (e.g., Like, or Document sent inRep&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="647.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Object Graphs in ActivityPub&#39;" href="647.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/object-graphs-in-activitypub/647" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/object-graphs-in-activitypub/647" />
+<meta property="og:title" content="Object Graphs in ActivityPub" />
+<meta name="twitter:title" content="Object Graphs in ActivityPub" />
+<meta property="og:description" content="If I’m reading the Client Addressing (§6.1) and Outbox Delivery (§7.1.1) correctly, it seems as though the specification is written such that every Activity having to do with an Object (e.g., Like, or Document sent inReplyTo) is addressed to the recipients of the original message plus any who have later sent an activity addressed to those recipients about said Object.  If that’s the case (and all servers/networks are working), then every Actor’s server should have received every Activity associa..." />
+<meta name="twitter:description" content="If I’m reading the Client Addressing (§6.1) and Outbox Delivery (§7.1.1) correctly, it seems as though the specification is written such that every Activity having to do with an Object (e.g., Like, or Document sent inReplyTo) is addressed to the recipients of the original message plus any who have later sent an activity addressed to those recipients about said Object.  If that’s the case (and all servers/networks are working), then every Actor’s server should have received every Activity associa..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="2 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="1 ❤" />
+<meta property="article:published_time" content="2020-04-28T20:16:15+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="647.html">Object Graphs in ActivityPub</a>
+    </h1>
+
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/koehn.html'><span itemprop='name'>koehn</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="647.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-28T20:16:15Z' class='post-time'>
+                April 28, 2020,  8:16pm
+              </time>
+              <meta itemprop='dateModified' content='2020-04-28T20:16:15Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>If I’m reading the Client Addressing (§6.1) and Outbox Delivery (§7.1.1) correctly, it seems as though the specification is written such that every Activity having to do with an Object (e.g., <code>Like</code>, or <code>Document</code> sent <code>inReplyTo</code>) is addressed to the recipients of the original message plus any who have later sent an activity addressed to those recipients about said Object.</p>
+<p>If that’s the case (and all servers/networks are working), then every Actor’s server should have received every Activity associated with the Object. And if <em>that’s</em> the case, then servers should be able to index those messages and provide collections of e.g., <code>/likes</code>, <code>/replies</code> without online access to the server where the message originated. It’s kind of like email where everyone is expected to use Reply All on every message, except obviously the parent.</p>
+<p>Is that correct? If so, I have follow-on questions:</p>
+<ol>
+<li>
+<p>There seems to be a race condition. If a user U sends a public message A to their followers, and a user S not addressed in the original message (because they weren’t a follower) could <code>Like</code> object A but still be in the process of delivering A to all recipients (imagine U has thousands of followers). Before receiving S’s <code>Like</code>, another user T sends a <code>Create</code> activity containing a <code>Note</code> with A as the <code>inReplyTo</code>. T’s client will not include S as an addressee (since it doesn’t know about S’s <code>Like</code> yet).</p>
+</li>
+<li>
+<p>If the Followers collection changes, which followers should receive reactions to the original message? How are they addressed? Do S2S Activities contain the expansion of the Followers collection, or are they referenced by the collection ID (e.g., <code>https://example.com/bob/followers</code>?</p>
+</li>
+</ol>
+        </div>
+
+        <meta itemprop='headline' content='Object Graphs in ActivityPub'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nightpool.html'><span itemprop='name'>nightpool</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="647.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-04-28T21:36:07Z'>
+              <time itemprop='dateModified' datetime='2020-04-28T21:36:47Z' class='post-time'>
+                April 28, 2020,  9:36pm
+              </time>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="koehn" data-post="1" data-topic="647">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/koehn/40/311_2.png" class="avatar"> koehn:</div>
+<blockquote>
+<p>the specification is written such that every Activity having to do with an Object (e.g., <code>Like</code> , or <code>Document</code> sent <code>inReplyTo</code> ) is addressed to the recipients of the original message plus any who have later sent an activity addressed to those recipients about said Object</p>
+</blockquote>
+</aside>
+<p>Clients can choose to address activities to whatever audience they wish to. The SHOULD in 6.1 is intended to provide a “sensible default” for this addressing, but ultimately users can choose to amend or omit whatever actors they want.</p>
+<p>I think there’s a misunderstanding here about what activities 6.1 is suggesting you recurse through. 6.1 calls out the <code>object</code> , <code>target</code> , <code>inReplyTo</code> and <code>tag</code> fields. In your first example, S’s Like is not attached to the <em>original</em> activity through any of these fields. It is not the <code>object</code> or the <code>target</code> of A, nor is A <code>inReplyTo</code> it, nor does A have it as a <code>tag</code>. It could be contained in A’s <a href="https://www.w3.org/TR/activitystreams-vocabulary/#dfn-replies"><code>replies</code></a>, if A chooses to include one, but there’s no requirement A do so.</p>
+<p>I think this answers your question <span class="hashtag">#1</span>, but let me know if I missed something!</p>
+<blockquote>
+<ol start="2">
+<li>If the Followers collection changes, which followers should receive reactions to the original message? How are they addressed? Do S2S Activities contain the expansion of the Followers collection, or are they referenced by the collection ID (e.g., <code>https://example.com/bob/followers</code> ?</li>
+</ol>
+</blockquote>
+<p>So, in a strict reading of the ActivityPub spec, the expansion of the collection happens at <em>delivery</em> time. The responsibility for doing so is primarily on the delivering server, but may also be filled by the server that owns the Collection in question, following the rules in <a href="https://www.w3.org/TR/activitypub/#inbox-forwarding">§ 7.1.2 Forwarding from Inbox</a>. In either case, the expansion happens, and then the activity is delivered to each actor’s inbox by POSTing it. From then on, that activity resides only in those actors’ inboxes, and the <code>to</code>, <code>cc</code>, and <code>audience</code> values are no longer used. In this way, the s2s activity does not need to contain the expansion of the Followers collection, but it still only gets delivered to the actors that are in the collection at the time of posting.</p>
+<p>Now, there are two complications here between the spec and current practice, and they go hand in hand. The first is that the usage of sharedInbox moves the responsibility for targeting individual inboxes from the delivering server to the <em>server delivered to</em>. Accordingly, this means that receiving servers have to make the decision of which inboxes should get which messages on their own, based on the targeting information supplied. Since the ActivityPub spec didn’t provide explicit guidance for this, not all servers implemented the same internal delivery mechanism, and so for activities delivered to sharedInbox, not all servers follow the behavior outlined above strictly.</p>
+<p>This is complicated by the second issue, which is that it’s a commonly desired feature in many social networking apps that following a user gives you access to that user’s previously followers only posts. (see Facebook, Twitter, Instagram, etc). So when servers were implementing ActivityPub, or adding it to existing apps, it seemed very natural to allow new followers, once <code>Approve</code>d, to see the old private posts made by user followed, even if those messages weren’t “delivered” to them, in the strict sense.</p>
+<p>Anyway, all that is a very long-winded way of saying “technically, only the followers at the time of delivery are supposed to see each message, (Meaning that if A is posted, and then U2 follows A’s actor, and then A2 is posted in reply to A, U2 would see A2 but not A). But many servers may give new followers access to old messages anyway, so it’s unclear whether this is an issue in practice.”</p>
+        </div>
+
+        <meta itemprop='headline' content='Object Graphs in ActivityPub'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/koehn.html'><span itemprop='name'>koehn</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="647.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-28T22:25:54Z' class='post-time'>
+                April 28, 2020, 10:25pm
+              </time>
+              <meta itemprop='dateModified' content='2020-04-28T22:25:54Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks for the interpretation!</p>
+<p>I’m trying to draw interoperability conclusions where perhaps I should not. It sounds like I should not assume that, across platforms, the graph of objects associated to an Object is intended to be consistent for all viewers of the document. I suppose I could make that a condition for servers that want to interoperate with my platform, but there’s no reason to belive other servers will comply.</p>
+        </div>
+
+        <meta itemprop='headline' content='Object Graphs in ActivityPub'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nightpool.html'><span itemprop='name'>nightpool</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="647.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-29T00:02:44Z' class='post-time'>
+                April 29, 2020, 12:02am
+              </time>
+              <meta itemprop='dateModified' content='2020-04-29T00:02:44Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="koehn" data-post="3" data-topic="647">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/koehn/40/311_2.png" class="avatar"> koehn:</div>
+<blockquote>
+<p>It sounds like I should not assume that, across platforms, the graph of objects associated to an Object is intended to be consistent for all viewers of the document</p>
+</blockquote>
+</aside>
+<p>Yes, fundamentally this is impossible with the spec as it is—linked data graphs are <em>open</em>. I can create an object that references your object, and <em>not tell you about it</em>. Here’s an example:</p>
+<pre><code class="lang-json">{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "to": "https://example.com/my-friend",
+  "content": "Get a load of this guy!",
+  "type": "Announce",
+  "target": "https://example2.com/someone-i-dislike/post/1"
+}
+</code></pre>
+        </div>
+
+        <meta itemprop='headline' content='Object Graphs in ActivityPub'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/koehn.html'><span itemprop='name'>koehn</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="647.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-29T12:24:23Z' class='post-time'>
+                April 29, 2020, 12:24pm
+              </time>
+              <meta itemprop='dateModified' content='2020-04-29T12:24:23Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <blockquote>
+<p>Yes, fundamentally this is impossible with the spec as it is—linked data graphs are  <em>open</em>.</p>
+</blockquote>
+<p>Graphs can be open, and that doesn’t prevent a specification from indicating how implementations of that specification should behave for interoperability. ActivityPub does this all the time; current specifications fall short in defining how graph consistency should be maintained.</p>
+<p>This isn’t a fatal flaw, but it should be directly addressed in a subsequent version of the specification. Until then, developers will piece together systems that work for their specific use case, which will result in different data being available to users on those platforms. Users won’t know except by trial and error what objects will be visible to others participating in a conversation, and that behavior will evolve over time. This puts an untoward mental burden on users and undermines the purpose of having an interoperability specification in the first place.</p>
+<p>The AP Object model is fine for representing social interactions; it’s just that there should be a better behavior model dealing with how the graph is transmitted and how implementations should achieve graph consistency (even the idea that graph consistency is important is never mentioned in the specification, that I can see), otherwise there’s limited benefit to users.</p>
+<p>With email, there’s a model that users understand: they can predict who will see a message, and have consistent control over that on any platform regardless of vendor. Likewise with competing platforms like Facebook and Twitter: it’s easy to understand, consistent, and predictable.</p>
+<p>Again, it’s great that AP specifies what it does for how systems should inter operate. What I would like to see in future versions of the specification is what the benefits to users are that implementations are expected to provide. That will make it much easier for implementors to know how their systems should behave, and why.</p>
+        </div>
+
+        <meta itemprop='headline' content='Object Graphs in ActivityPub'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

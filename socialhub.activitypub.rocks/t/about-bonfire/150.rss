@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>About Bonfire</title>
+    <link>https://socialhub.activitypub.rocks/t/about-bonfire/150</link>
+    <description>A generic ActivityPub federated server.
+
+[CommonsPub](https://commonspub.org/) aims to be an ActivityPub server which supports any type of activity, object and property, including any extensions to ActivityStreams.</description>
+    
+    <lastBuildDate>Thu, 26 Nov 2020 13:13:04 +0000</lastBuildDate>
+    <category>Bonfire</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/about-bonfire/150.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>About Bonfire</title>
+        <dc:creator><![CDATA[mayel]]></dc:creator>
+        <description><![CDATA[
+            <p>FYI the CommonsPub project is now part of <a href="https://bonfire.cafe/" rel="noopener nofollow ugc">Bonfire</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-bonfire/150/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-bonfire/150/2</link>
+        <pubDate>Thu, 26 Nov 2020 13:13:04 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-150-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-bonfire/150.rss">About Bonfire</source>
+      </item>
+      <item>
+        <title>About Bonfire</title>
+        <dc:creator><![CDATA[mayel]]></dc:creator>
+        <description><![CDATA[
+            <p>A generic ActivityPub federated server.</p>
+<p><a href="https://commonspub.org/" rel="noopener nofollow ugc">CommonsPub</a> aims to be an ActivityPub server which supports any type of activity, object and property, including any extensions to ActivityStreams.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-bonfire/150/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-bonfire/150/1</link>
+        <pubDate>Fri, 18 Oct 2019 12:42:00 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-150-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-bonfire/150.rss">About Bonfire</source>
+      </item>
+  </channel>
+</rss>

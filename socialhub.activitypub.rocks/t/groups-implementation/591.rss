@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Groups implementation</title>
+    <link>https://socialhub.activitypub.rocks/t/groups-implementation/591</link>
+    <description>I&#39;ve implemented groups in [Tavern](https://gitlab.com/ngerakines/tavern) and would like feedback and comments. All of the group specific actor and activity behavior is documented in https://gitlab.com/ngerakines/tavern/-/blob/issue-21-groups/FEDERATION.md as well.
+
+Groups share the same namespace as users and it is up to instance operators to moderate how that namespace is managed. For example, both @sneakerheads@groups.tavern.town, @sneakerheads-group@tavern.town, and @sneakerheads@tavern.town are all valid names. I&#39;m considering adding name filtering via allow-list or regex to give operators more control.
+
+Groups have 3 roles: viewer, member, and owner. Viewers will only receive activities published by the group (`Announce/Note`). Members will receive published activities and can also submit activities to the group inbox. Owners receive activities, can publish activities, and can also manage the group through the website. Groups can also be configured to auto-accept new followers.
+
+To join a group, an actor must send a `Follow/Group` activity to the group inbox. If auto-accept is enabled by the group, the actor will receive an `Accept/Follow/Group` activity and be recorded as a follower of the group with the default membership role.
+
+To leave a group, an actor must send the `Undo/Follow/Group` activity to the group inbox.
+
+To publish to the group, include the group inbox in the to/cc/bto/bcc fields and ensure the activity is sent to the group&#39;s inbox. Activities received from actors that are not &quot;member&quot; or &quot;owner&quot; will get an authorized error on submission. The group will create an `Announce/Object` activity and publish it to all followers for the received `Create/Note` or `Announce/Note` activity.
+
+Person actors may be invited to a groups.
+
+# Side Effects
+
+## Privacy
+
+When a group sends the `Announce/Object` activity to members, the &quot;to&quot; attribute is set to the group&#39;s followers collection. The activity is not intended to be public and only the object id is set. The expectation is that privacy mechanics between actors is meant to be respected and only minimal meta-data shared between group members.
+
+## Group Membership Changes
+
+When a member joins or leaves a group, an `Update/Collection` activity is created for the group follower&#39;s collection and sent to all members of the group. This activity may be throttled to occur less frequently by instance operators (no more than once every 30 minutes to allow batching).
+
+## Group Conversation Viewing
+
+The specifics of how group messages and threads are viewed is left to the actors receiving the announcements.
+
+# Use Cases
+
+## Public Group
+
+A &quot;public group&quot; is a group that is configured to auto-accept new followers with the &quot;member&quot; role.
+
+## Broadcast Group
+
+A &quot;broadcast group&quot; is a group that has one central creator of activities, and many followers that are only viewers. New followers may be auto-accepted with the &quot;viewer&quot; role.
+
+This is useful for:
+
+* Providing &quot;top down&quot; updates for projects, teams, or organizations
+
+## Working Group
+
+A &quot;working group&quot; (or committee) is a group has a mix of both viewers and contributors. New followers may be auto-accepted with the &quot;viewer&quot; role.
+
+This is useful for:
+
+* Public project groups where discussions are visible, but contributions limited to a select number of individuals.
+
+## Private Group
+
+A &quot;private group&quot; is a group that is limited to contributors who are invited to the group. New followers are kept as &quot;pending&quot; until accepted, or the group may be invitation only.
+
+# TODO
+
+* How can roles be conveyed in invitations?
+* Can group actors or follower collections be limited to members of the group?
+* Should `Join` and `Leave` activities be sent to group members instead of `Update/Followers` activities?</description>
+    
+    <lastBuildDate>Fri, 30 Apr 2021 21:27:15 +0000</lastBuildDate>
+    <category>ActivityPub</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/groups-implementation/591.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Groups implementation</title>
+        <dc:creator><![CDATA[macgirvin]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m not ignoring the other points raised, but they aren’t really issues in our implementation – for various reasons; so I wouldn’t be the best person to offer any advice on them or debate their merit.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/groups-implementation/591/73">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/groups-implementation/591/73</link>
+        <pubDate>Fri, 30 Apr 2021 21:27:15 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-591-73</guid>
+        <source url="https://socialhub.activitypub.rocks/t/groups-implementation/591.rss">Groups implementation</source>
+      </item>
+      <item>
+        <title>Groups implementation</title>
+        <dc:creator><![CDATA[macgirvin]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks. I’ve got something that may work with what you have today (needs testing but shouldn’t be too far off). If you do change anything just say something so  we can adjust and re-test if necessary.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/groups-implementation/591/72">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/groups-implementation/591/72</link>
+        <pubDate>Fri, 30 Apr 2021 11:03:43 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-591-72</guid>
+        <source url="https://socialhub.activitypub.rocks/t/groups-implementation/591.rss">Groups implementation</source>
+      </item>
+      <item>
+        <title>Groups implementation</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="macgirvin" data-post="70" data-topic="591">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/letter_avatar_proxy/v4/letter/m/82dd89/40.png" class="avatar"> macgirvin:</div>
+<blockquote>
+<p>What is the proposal for indicating these writable collections in the actor record?</p>
+</blockquote>
+</aside>
+<p>That’s a good question! Currently it’s up to the implementation. I suppose it’s best to take care of this particular thing as part of the capability negotiation/“compliance profiles”/privacy settings effort. Because, for example, an actor might have a wall, but whether you can post on it depends on who you are.</p>
+<aside class="quote no-group" data-username="macgirvin" data-post="70" data-topic="591">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/letter_avatar_proxy/v4/letter/m/82dd89/40.png" class="avatar"> macgirvin:</div>
+<blockquote>
+<p>The next question is about using Create/Note/Collection (type, object,target). In the original AP/AS specifications, it was suggested that such activities should be Add/Note/Collection (not explicitly, but more or less inferred in the description of ‘Add’ and also the text in section 5.8.2 “Collection Management”).</p>
+</blockquote>
+</aside>
+<p>The problem I see with the approach in the spec is that the collection ID is only contained in the Add activity. It’s fine for straightforward cases like when your server hosts the collection and receives such an activity, but there are cases when this breaks down. For example, if you fetch the object using its ID (aka copy a link to a post and paste it into the search field on your instance), your instance has no way of knowing which collection the object belongs to because it doesn’t have its enclosing activity. So, it’s not self-contained. This would lead to buggy behavior like misrepresenting wall posts as something posted to one’s followers.</p>
+<p>Example of an already existing similar behavior is replies. Each reply has a link to its parent in its inReplyTo, and each post that has replies lists them in its replies collection. This way you can traverse the thread in both directions, even when you start off with just a single post from the middle of it.</p>
+<aside class="quote no-group" data-username="macgirvin" data-post="70" data-topic="591">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/letter_avatar_proxy/v4/letter/m/82dd89/40.png" class="avatar"> macgirvin:</div>
+<blockquote>
+<p>Is there any chance that Smithereen could also do this, or should we also support Create/Note/Collection purely for Smithereen compatibility?</p>
+</blockquote>
+</aside>
+<p>It depends. For wall posts, it doesn’t make much sense imo — you can’t move a post between walls. There’s also the question of semantics: Add implies that you add an existing object to a collection, so there should have been a Create at some point before it.</p>
+<aside class="quote no-group" data-username="macgirvin" data-post="70" data-topic="591">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/letter_avatar_proxy/v4/letter/m/82dd89/40.png" class="avatar"> macgirvin:</div>
+<blockquote>
+<p>Whereas if there is a single recipient (the owner of the wall) it can be taken as a directive to actually perform the activity rather than just report that it happened. Not sure how best to clarify this difference other than by looking at the audience and seeing if the collection belongs to the single recipient and ignore it if the activity is addressed more widely.</p>
+</blockquote>
+</aside>
+<aside class="quote no-group" data-username="macgirvin" data-post="70" data-topic="591">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/letter_avatar_proxy/v4/letter/m/82dd89/40.png" class="avatar"> macgirvin:</div>
+<blockquote>
+<p>But if the activity is “Joe added a note to foobar group’s outbox” and it didn’t actually get added to foobar group’s outbox because Joe isn’t a member, such an activity is a lie and should not be sent.</p>
+</blockquote>
+</aside>
+<p>Right now I rely on LD-signed activity forwarding for this (the Create is sent to the collection owner only, and nothing is forwarded if it wasn’t added), but yes, I agree that it might use some improvement. There is currently no protection against some bad person sending a wall post to group members directly despite the group itself not allowing that post. You got me thinking about how there needs to be some (simple) way to prove that the collection owner approved someone adding an object to their collection. Maybe it should actually be an Add activity after all. So the flow would go like that:</p>
+<ul>
+<li>Someone sends a Create{Note}, as in my FEP, to the instance that hosts the group.</li>
+<li>If this is isn’t allowed, it returns a 403 or sends a Reject{Create{Note}} to that person.</li>
+<li>If it is allowed, it adds the post to its wall, and then sends all group members an Add{Note}, as per spec, with the post as a link.</li>
+</ul>
+<p>This way there will be a proof that the group has accepted the post, because there was an activity explicitly mentioning this post, signed by the group actor.</p>
+<p>The one small problem that then remains is that if you fetch that post using a direct URL, it would still be considered to be on the group’s wall even though it’s actually not. This could be abused by making such a post and then a comment (reply) to it mentioning someone. Their instance would receive the post with the mention, and will fetch the thread to show its context, and would thus end up with that fake post on a group wall.</p>
+<p>The problem then becomes: given an object that claims to belong to a collection on another instance, how do I prove that this instance that owns the collection has sanctioned the addition of this object to its collection? Since I’m treating ActivityPub like an API, I want something resembling an API call that would accept a collection ID and an object ID and return a yes/no answer whether the object is in the collection. I’m open to suggestions on this one.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/groups-implementation/591/71">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/groups-implementation/591/71</link>
+        <pubDate>Fri, 30 Apr 2021 10:26:09 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-591-71</guid>
+        <source url="https://socialhub.activitypub.rocks/t/groups-implementation/591.rss">Groups implementation</source>
+      </item>
+      <item>
+        <title>Groups implementation</title>
+        <dc:creator><![CDATA[macgirvin]]></dc:creator>
+        <description><![CDATA[
+            <p>Re-using this topic as it is still open. I’m currently implementing <a href="https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/src/branch/main/feps/fep-400e.md" rel="noopener nofollow ugc">FEP-400e</a> from <a class="mention" href="/u/grishka">@grishka</a>, in order to provide a complete project-agnostic groups implementation covering every known groups implementation and quirk (there are a fair number of these and I suspect we’ll have even more before all is said and done). Some questions came up.</p>
+<pre><code class="lang-markdown">If an actor has publicly-appendable collections, its server MAY include them as additional fields in its ActivityPub representation. For example, user actors may specify the link to their walls, or groups may specify the link to the collection of their photo albums.
+
+Implementations MAY use the presence or absence of specific collection to determine whether the actor’s server supports features that depend on that collection and alter their UIs accordingly.
+</code></pre>
+<p>What is the proposal for indicating these writable collections in the actor record? It’s OK if this is just a hack. I just need to know what it is so we can use it and alter our behaviour accordingly. I’m more concerned at the moment with the “wall” than photo albums, but if there’s an example actor record that shows what is planned for both it would be sweet.</p>
+<p>The next question is about using Create/Note/Collection (type, object,target). In the original AP/AS specifications, it was suggested that such activities should be Add/Note/Collection (not explicitly, but more or less inferred in the description of ‘Add’ and also the text in section 5.8.2 “Collection Management”). I intend to provide this as a general collection management interface and as recommended in the spec. Is there any chance that Smithereen could also do this,  or should we also support Create/Note/Collection purely for Smithereen compatibility?</p>
+<p>Third question. Regardless of the answer to the second question, there are different behaviours depending on the audience of the activity. If the activity is public, we don’t intend to add the Note to the wall (technically the outbox). This is more a published report of an activity that already happened - “Joe added a note to the Foobar group’s outbox”.  Whereas if there is a single recipient (the owner of the wall) it can be taken as a directive to actually perform the activity rather than just report that it happened. Not sure how best to clarify this difference other than by looking at the audience and seeing if the collection belongs to the single recipient and ignore it if the activity is addressed more widely.</p>
+<p>Fourth question (slightly related to the third): If the collection operation fails (lack of permission), is it even appropriate to notify anybody else besides the wall owner of the collection operation? I would say no, but I know there are a lot of people in this forum that would disagree and say the actor should be able to tell anybody anything at all, and the success or failure of the operation isn’t relevant. Because free speech. But if the activity is “Joe added a note to foobar group’s outbox” and it didn’t actually get added to foobar group’s outbox because Joe isn’t a member, such an activity is a lie and should not be sent.</p>
+<p>I’m merely suggesting that any kind of activity with a collection target might require a bit of extra care to define the activity audience; which would let receivers know for certain whether this was a request to perform the operation or an activity reporting  that it happened. Without looking at the activity audience, the desired action on receipt of the activity is ambiguous.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/groups-implementation/591/70">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/groups-implementation/591/70</link>
+        <pubDate>Fri, 30 Apr 2021 03:13:55 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-591-70</guid>
+        <source url="https://socialhub.activitypub.rocks/t/groups-implementation/591.rss">Groups implementation</source>
+      </item>
+      <item>
+        <title>Groups implementation</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Bumping… this discussion has unfinished biz &nbsp; <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/groups-implementation/591/69">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/groups-implementation/591/69</link>
+        <pubDate>Sat, 03 Oct 2020 20:56:12 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-591-69</guid>
+        <source url="https://socialhub.activitypub.rocks/t/groups-implementation/591.rss">Groups implementation</source>
+      </item>
+      <item>
+        <title>Groups implementation</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Hm, I can see six proposals by different people and other posts in the category.<br>
+So, <a class="mention" href="/u/how">@how</a> : Is the category maybe restricted to a group?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/groups-implementation/591/68">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/groups-implementation/591/68</link>
+        <pubDate>Tue, 04 Aug 2020 15:07:38 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-591-68</guid>
+        <source url="https://socialhub.activitypub.rocks/t/groups-implementation/591.rss">Groups implementation</source>
+      </item>
+      <item>
+        <title>Groups implementation</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/sebastian">@Sebastian</a> that APConf sub-category does not yet exist (or is restricted).</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/groups-implementation/591/66">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/groups-implementation/591/66</link>
+        <pubDate>Sun, 02 Aug 2020 20:38:33 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-591-66</guid>
+        <source url="https://socialhub.activitypub.rocks/t/groups-implementation/591.rss">Groups implementation</source>
+      </item>
+      <item>
+        <title>Groups implementation</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>For everybody attending <a href="https://conf.activitypub.rocks">the conference</a> :</p>
+<p>This thread got very long and is very active.<br>
+A Birds of Feather session would be nice !<br>
+But I am currently writing 2 proposals for “topics” and “ui things”, so:</p>
+<p>Does any attendee maybe want to write a very short proposal “groups”, linking to this post ?<br>
+<a href="https://socialhub.activitypub.rocks/c/meeting/apconf2020/53">Just create a topic in this category …</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/groups-implementation/591/65">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/groups-implementation/591/65</link>
+        <pubDate>Sun, 02 Aug 2020 17:32:05 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-591-65</guid>
+        <source url="https://socialhub.activitypub.rocks/t/groups-implementation/591.rss">Groups implementation</source>
+      </item>
+      <item>
+        <title>Groups implementation</title>
+        <dc:creator><![CDATA[vpzom]]></dc:creator>
+        <description><![CDATA[
+            <p>How should an implementation know whether they need to <code>Join</code> vs <code>Follow</code>? For some groups I guess they would need to offer both, but for the groups I’ve implemented so far there would be no difference</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/groups-implementation/591/64">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/groups-implementation/591/64</link>
+        <pubDate>Fri, 31 Jul 2020 14:43:25 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-591-64</guid>
+        <source url="https://socialhub.activitypub.rocks/t/groups-implementation/591.rss">Groups implementation</source>
+      </item>
+      <item>
+        <title>Groups implementation</title>
+        <dc:creator><![CDATA[lain]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t think membership in a group should be implicit through following. A group should have two collections, one of followers and one of members. You become a member of a group by <code>Join</code>ing, not by <code>Follow</code>ing. Restricted messages are addressed to both the group and the members and get <code>Announced</code> to the members. Public messages are addressed to the group and the public and get <code>Announced</code> to the followers.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/groups-implementation/591/63">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/groups-implementation/591/63</link>
+        <pubDate>Fri, 31 Jul 2020 11:20:00 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-591-63</guid>
+        <source url="https://socialhub.activitypub.rocks/t/groups-implementation/591.rss">Groups implementation</source>
+      </item>
+      <item>
+        <title>Groups implementation</title>
+        <dc:creator><![CDATA[vpzom]]></dc:creator>
+        <description><![CDATA[
+            <p>The followers don’t need to be enumerable to target them, the collection can be specified as a target</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/groups-implementation/591/62">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/groups-implementation/591/62</link>
+        <pubDate>Wed, 29 Jul 2020 00:20:04 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-591-62</guid>
+        <source url="https://socialhub.activitypub.rocks/t/groups-implementation/591.rss">Groups implementation</source>
+      </item>
+      <item>
+        <title>Groups implementation</title>
+        <dc:creator><![CDATA[macgirvin]]></dc:creator>
+        <description><![CDATA[
+            <p>That won’t actually work in our environment (where restricted comments are a fact, as well as permission to examine/enumerate the followers list). This ultimately implies a different implementation for every platform just like we do with protocols and signature requirements and mention formats and “obligatory mentions” to trigger notifications and markup support and differing comment policies.</p>
+<p>No big deal.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/groups-implementation/591/61">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/groups-implementation/591/61</link>
+        <pubDate>Tue, 28 Jul 2020 23:20:07 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-591-61</guid>
+        <source url="https://socialhub.activitypub.rocks/t/groups-implementation/591.rss">Groups implementation</source>
+      </item>
+      <item>
+        <title>Groups implementation</title>
+        <dc:creator><![CDATA[vpzom]]></dc:creator>
+        <description><![CDATA[
+            <p>Private groups won’t work quite as seamlessly with other software, but it’s still a viable option with similar mechanics. The Group would need to have manually approved followers, then mark all the Announces as <code>to</code> its followers and not public. For any posts to the group, they should also be sent <code>to</code> the group’s followers. Implementations that don’t know about groups probably wouldn’t do this, but they could technically still post to the group with a public post</p>
+<p>Restricting comments is a separate discussion that is still ongoing</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/groups-implementation/591/60">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/groups-implementation/591/60</link>
+        <pubDate>Mon, 27 Jul 2020 14:59:41 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-591-60</guid>
+        <source url="https://socialhub.activitypub.rocks/t/groups-implementation/591.rss">Groups implementation</source>
+      </item>
+      <item>
+        <title>Groups implementation</title>
+        <dc:creator><![CDATA[macgirvin]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/heluecht">@heluecht</a> Public posts to public groups and wide-open comment permissions work fine with that model. See gup.pe groups. However, if your software supports both public and private groups and restrictive comment permissions (and/or aspects), the same mechanisms are fatally flawed so that approach won’t work. How would you suggest supporting both behaviours? A completely different UX for each, or (as I’ve done) finding a method which works well for the private case as well as across all platforms and protocols; which can then be used for all situations and policy variants - wherever you need to post to a group? There’s method to my madness…</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/groups-implementation/591/59">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/groups-implementation/591/59</link>
+        <pubDate>Mon, 27 Jul 2020 06:31:00 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-591-59</guid>
+        <source url="https://socialhub.activitypub.rocks/t/groups-implementation/591.rss">Groups implementation</source>
+      </item>
+      <item>
+        <title>Groups implementation</title>
+        <dc:creator><![CDATA[heluecht]]></dc:creator>
+        <description><![CDATA[
+            <p>In Friendica the group is an actor with the type “group”. The users then are following the group account. To publish a note (or article) a user simply writes a (public) message and is mentioning the group account. The group then automatically shares this post via <code>announce</code>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/groups-implementation/591/58">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/groups-implementation/591/58</link>
+        <pubDate>Sun, 26 Jul 2020 04:08:05 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-591-58</guid>
+        <source url="https://socialhub.activitypub.rocks/t/groups-implementation/591.rss">Groups implementation</source>
+      </item>
+      <item>
+        <title>Groups implementation</title>
+        <dc:creator><![CDATA[vpzom]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t think groups copying the user’s content is a good solution, since that loses the connection with the original object/actor. If a user wants to post to a group, they need to send the object with enough permissions to be viewed by all group members (or public if the group is public), otherwise the post should be rejected by the group host.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/groups-implementation/591/57">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/groups-implementation/591/57</link>
+        <pubDate>Sun, 26 Jul 2020 01:39:58 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-591-57</guid>
+        <source url="https://socialhub.activitypub.rocks/t/groups-implementation/591.rss">Groups implementation</source>
+      </item>
+      <item>
+        <title>Groups implementation</title>
+        <dc:creator><![CDATA[macgirvin]]></dc:creator>
+        <description><![CDATA[
+            <p>Seems there are a lot of conflicting implementations. Zap has a conflicting implementation as well which grew from the way we initially tried to do groups across multiple protocols such as ActivityPub and OStatus and Diaspora  - none of which gave much thought how to implement groups in their initial specs .  These earlier efforts are still visible in Friendica and Hubzilla and have issues with privacy conflicts.</p>
+<p>A group in Zap looks just like any other actor except the type is ‘Group’. You can join a group with either a normal follow/group or use a join/group activity if you prefer. Groups, like Actors - can have either public, restricted, or private scope.</p>
+<p>Posting to a group is done either via a wall-to-wall post or a direct message to the group. These are re-written as normal posts from the group containing an embedded reshare activity (embedded as html, with some care taken to work around Mastodon’s aggressive  HTML filtering). We couldn’t use Announce because of privacy conflicts (*) and resultant complex delivery chains; as well as the fact that projects like Pleroma can’t handle LD-signatures on relayed posts and I’ve yet to see another project that correctly handles attribution on federated wall-to-wall posts correctly without embedding them - though I haven’t yet had an opportunity to test Smithereen. If the original post is edited or deleted, the embedded share is updated accordingly and re-pushed.</p>
+<p>Comments behave no different from any other activity.</p>
+<p>(*) Privacy conflicts arise when the posting actor has a different privacy and permission profile from the group. For instance if the actor only accepts comments from connections, they won’t see replies to the group post. Likewise if an actor with a public profile posts to a private group, all the replies to the private group would end up being shared publicly. A privacy conflict also arises in Pleroma because of their inability to use LD-sigs. The object must be fetched from the original actor site and will be blocked if the actor has restrictive permissions. You can’t easily use OCAP  methods to allow this because if the group is public, your private access key is now fully public.</p>
+<p>I don’t claim the solution I’ve come up with is elegant, only that it works and is fully compatible with existing ActivityPub implementations and works correctly even when there are privacy conflicts between the posting actor and the group. This behaviour has been  honed and refined as a result what we’ve learned in ten years of supporting this feature across protocols that are hostile to or ignorant of privacy and permissions. Maybe if we all share what we’re doing we might find a combination that is both elegant and works for everybody, though I am willing to live with “works for everybody” and go it alone if the end result is elegant but only works with fully public groups or actors.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/groups-implementation/591/56">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/groups-implementation/591/56</link>
+        <pubDate>Sat, 25 Jul 2020 23:33:57 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-591-56</guid>
+        <source url="https://socialhub.activitypub.rocks/t/groups-implementation/591.rss">Groups implementation</source>
+      </item>
+      <item>
+        <title>Groups implementation</title>
+        <dc:creator><![CDATA[diogo]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi, just to share some thoughts, at GNU social, for v3, we’re planning on adding a logic layer of umbrella groups that we’ve elaborated a bit here: <a href="https://notabug.org/diogo/gnu-social/issues/186" rel="nofollow noopener">https://notabug.org/diogo/gnu-social/issues/186</a> . We haven’t got to a lot of implementation details yet as we’ve been busy with other priorities. But it seems that the rest of the world is already having fun with implementing Groups in ActivityPub and, since we really aren’t available enough to get into these implementation discussions at the moment, just wanted to share this here so that the others could start deliberating a bit about it as well. TL;DR: GNU social may need a property in the group actor indicating whether it is meant to be under an umbrella (as described in the linked issue) or not. Thanks. If someone else has already thought about this or came up with a better solution, sorry for bothering, we will eventually read about it when with time to implement this.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/groups-implementation/591/55">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/groups-implementation/591/55</link>
+        <pubDate>Sun, 19 Jul 2020 11:58:20 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-591-55</guid>
+        <source url="https://socialhub.activitypub.rocks/t/groups-implementation/591.rss">Groups implementation</source>
+      </item>
+      <item>
+        <title>Groups implementation</title>
+        <dc:creator><![CDATA[snow]]></dc:creator>
+        <description><![CDATA[
+            <p>What if the owner leaved the group?</p>
+<p>Could the group still survive?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/groups-implementation/591/54">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/groups-implementation/591/54</link>
+        <pubDate>Sat, 18 Jul 2020 03:09:03 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-591-54</guid>
+        <source url="https://socialhub.activitypub.rocks/t/groups-implementation/591.rss">Groups implementation</source>
+      </item>
+      <item>
+        <title>Groups implementation</title>
+        <dc:creator><![CDATA[dessalines]]></dc:creator>
+        <description><![CDATA[
+            <p>How we’re doing groups in lemmy, is that a user sends messages to a group, then the group announces (acting as a forward) to all other members of that group, on all the various other instances. Their shared inbox then receives the announce.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/groups-implementation/591/53">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/groups-implementation/591/53</link>
+        <pubDate>Fri, 17 Jul 2020 02:14:07 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-591-53</guid>
+        <source url="https://socialhub.activitypub.rocks/t/groups-implementation/591.rss">Groups implementation</source>
+      </item>
+      <item>
+        <title>Groups implementation</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="vpzom" data-post="50" data-topic="591">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/letter_avatar_proxy/v4/letter/v/a698b9/40.png" class="avatar"> vpzom:</div>
+<blockquote>
+<p>Twitter handled this by hiding posts that started with a mention, which works for most cases but falls apart whenever you actually do want to start a post to your followers with a mention</p>
+</blockquote>
+</aside>
+<p>Twitter has a bunch of weird legacy that started out as sort of unspoken convention but was then picked up as a platform feature. Replies are one of these, retweets too — I remember when retweet with quote was a third-party-client-only feature around 2011. It worked by copying the tweet text, prepending <code>RT: @username</code> and letting you write whatever in the remaining characters.</p>
+<p>But that is still not quite what I want. What I want is basically the ability to put my own activities into someone else’s outbox (with their permission). That’s <a href="https://github.com/grishka/Smithereen/blob/963db148fd0b1e0c32684d2f8124774939e707a2/FEDERATION.md#wall-posts" rel="nofollow noopener">how I made walls in Smithereen</a>.</p>
+<aside class="quote no-group" data-username="vpzom" data-post="51" data-topic="591" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/letter_avatar_proxy/v4/letter/v/a698b9/40.png" class="avatar"> vpzom:</div>
+<blockquote>
+<p>If a note was addressed to <span class="hashtag">#Public</span> but not to the author’s followers collection, would that work? I’m guessing current implementations don’t care</p>
+</blockquote>
+</aside>
+<p>That would work to a varying degree. I changed my comments recently to not be addressed to followers — only <code>as:Public</code>, the top-level post author and whoever is mentioned. The idea was to show that I don’t want them in any feeds; that they aren’t really self-contained posts. Mastodon simply doesn’t care and displays them in the feed anyway. Pleroma apparently freaks out and doesn’t show them publicly, that is, in the web ui without logging in.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/groups-implementation/591/52">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/groups-implementation/591/52</link>
+        <pubDate>Thu, 16 Jul 2020 22:27:15 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-591-52</guid>
+        <source url="https://socialhub.activitypub.rocks/t/groups-implementation/591.rss">Groups implementation</source>
+      </item>
+      <item>
+        <title>Groups implementation</title>
+        <dc:creator><![CDATA[vpzom]]></dc:creator>
+        <description><![CDATA[
+            <p>If a note was addressed to <span class="hashtag">#Public</span> but not to the author’s followers collection, would that work? I’m guessing current implementations don’t care</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/groups-implementation/591/51">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/groups-implementation/591/51</link>
+        <pubDate>Thu, 16 Jul 2020 01:22:13 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-591-51</guid>
+        <source url="https://socialhub.activitypub.rocks/t/groups-implementation/591.rss">Groups implementation</source>
+      </item>
+      <item>
+        <title>Groups implementation</title>
+        <dc:creator><![CDATA[vpzom]]></dc:creator>
+        <description><![CDATA[
+            <p>I think “public-but-not-to-followers” is a case that should be looked at anyway. Twitter handled this by hiding posts that started with a mention, which works for most cases but falls apart whenever you actually do want to start a post to your followers with a mention</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/groups-implementation/591/50">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/groups-implementation/591/50</link>
+        <pubDate>Thu, 16 Jul 2020 01:17:13 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-591-50</guid>
+        <source url="https://socialhub.activitypub.rocks/t/groups-implementation/591.rss">Groups implementation</source>
+      </item>
+      <item>
+        <title>Groups implementation</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>It is not, because you post <em>in your own profile</em> and then the “group” boosts/announces your post to its followers. <a href="https://mastodon.ml/@rf" rel="nofollow noopener">There’s one group bot like this I’m aware of</a>, but I’m sure there are more. The post is still in your profile and your followers still see it, because it has to be public to be able to be announced. It’s a half-measure kind of solution that’s about the best that can be done to work with (and around) the feature set of existing microblogging implementations.</p>
+<p>A “full-blown” group is the one that’s a completely separate context from your profile. You open the group, you post something in it and it’s there and only there. The activity goes out to the group members/followers but not to your personal followers. Whether anyone then sees that post in their feed or only when they open the group profile is an implementation detail that doesn’t affect federation. If you’ve ever used Facebook or VKontakte groups, you know what I’m talking about from the user experience standpoint.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/groups-implementation/591/49">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/groups-implementation/591/49</link>
+        <pubDate>Wed, 15 Jul 2020 18:21:28 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-591-49</guid>
+        <source url="https://socialhub.activitypub.rocks/t/groups-implementation/591.rss">Groups implementation</source>
+      </item>
+      <item>
+        <title>Groups implementation</title>
+        <dc:creator><![CDATA[vpzom]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t really see much disadvantage to the Announce path. How is that not “full-blown”?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/groups-implementation/591/48">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/groups-implementation/591/48</link>
+        <pubDate>Tue, 14 Jul 2020 04:51:16 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-591-48</guid>
+        <source url="https://socialhub.activitypub.rocks/t/groups-implementation/591.rss">Groups implementation</source>
+      </item>
+  </channel>
+</rss>

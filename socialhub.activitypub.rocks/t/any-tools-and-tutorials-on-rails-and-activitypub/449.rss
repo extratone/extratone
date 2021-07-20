@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Any tools and tutorials on rails and activitypub?</title>
+    <link>https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449</link>
+    <description>I recently discovered [pump.io](https://pump.io), activitypub and the concept of &quot;federated&quot; networks. One of my friends invited me to the network mastodon. 
+ I realized mastodon itself is written in ruby. I&#39;m curious, is there anyway to make our rails apps federated? I did a bit of search but I found some of those projects are discontinued. And if yes, is there any tutorials?</description>
+    
+    <lastBuildDate>Thu, 31 Dec 2020 11:42:37 +0000</lastBuildDate>
+    <category>Ruby</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Any tools and tutorials on rails and activitypub?</title>
+        <dc:creator><![CDATA[pes]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/manu">@manu</a> thanks a bunch! I just noticed your post now, but will look into the repo in the next days</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449/14</link>
+        <pubDate>Thu, 31 Dec 2020 11:42:37 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-449-14</guid>
+        <source url="https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449.rss">Any tools and tutorials on rails and activitypub?</source>
+      </item>
+      <item>
+        <title>Any tools and tutorials on rails and activitypub?</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Reference is always good, and we have few Ruby code-related stuff. If it is usable we can add, especially if you intend to mature it further. But you can always give a heads up and I’ll add it then.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449/13</link>
+        <pubDate>Sun, 08 Nov 2020 20:13:22 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-449-13</guid>
+        <source url="https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449.rss">Any tools and tutorials on rails and activitypub?</source>
+      </item>
+      <item>
+        <title>Any tools and tutorials on rails and activitypub?</title>
+        <dc:creator><![CDATA[manu]]></dc:creator>
+        <description><![CDATA[
+            <p>That’s nice, but for now I consider it as a draft so I don’t know if it has any place in a watchlist <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"> . It may be used as reference for people wanting to develop something similar.</p>
+<p>I added an MIT license.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449/12</link>
+        <pubDate>Sun, 08 Nov 2020 18:52:50 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-449-12</guid>
+        <source url="https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449.rss">Any tools and tutorials on rails and activitypub?</source>
+      </item>
+      <item>
+        <title>Any tools and tutorials on rails and activitypub?</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>If you want I can add to either <a href="https://git.feneas.org/feneas/fediverse/-/wikis/watchlist-for-activitypub-apps">AP Watchlist</a> or <a href="https://git.feneas.org/feneas/fediverse/-/wikis/Watchlist-for-ActivityPub-developer-resources">AP Dev Watchlist</a>, but I’ll need info on desired location, category, license and description.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449/11</link>
+        <pubDate>Sat, 07 Nov 2020 20:32:05 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-449-11</guid>
+        <source url="https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449.rss">Any tools and tutorials on rails and activitypub?</source>
+      </item>
+      <item>
+        <title>Any tools and tutorials on rails and activitypub?</title>
+        <dc:creator><![CDATA[manu]]></dc:creator>
+        <description><![CDATA[
+            <p>… And it <s>will be</s> is here : <a href="https://gitlab.com/experimentslabs/experimentations/rails-activitypub-server" rel="noopener nofollow ugc">https://gitlab.com/experimentslabs/experimentations/rails-activitypub-server</a></p>
+<p>There’s only two branches: master and UI, which is the most up to date one.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449/10</link>
+        <pubDate>Thu, 05 Nov 2020 05:25:25 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-449-10</guid>
+        <source url="https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449.rss">Any tools and tutorials on rails and activitypub?</source>
+      </item>
+      <item>
+        <title>Any tools and tutorials on rails and activitypub?</title>
+        <dc:creator><![CDATA[manu]]></dc:creator>
+        <description><![CDATA[
+            <p>The project is in standby for now; i’m waiting to see how Mastodon implements end-to-end encryption before continuing with ActivityPub.</p>
+<p>I’ll publish the code I have this day.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449/9</link>
+        <pubDate>Thu, 05 Nov 2020 05:21:26 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-449-9</guid>
+        <source url="https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449.rss">Any tools and tutorials on rails and activitypub?</source>
+      </item>
+      <item>
+        <title>Any tools and tutorials on rails and activitypub?</title>
+        <dc:creator><![CDATA[pes]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi, are you still working on this project? I’d be interested in a git repo of the code</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449/8</link>
+        <pubDate>Tue, 03 Nov 2020 17:25:21 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-449-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449.rss">Any tools and tutorials on rails and activitypub?</source>
+      </item>
+      <item>
+        <title>Any tools and tutorials on rails and activitypub?</title>
+        <dc:creator><![CDATA[manu]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m currently working on something. It’s really a draft for now, but the goal is to create a Rails engine to bring federation to exiting Rails apps.</p>
+<p>My roadmap is as follow:</p>
+<ul>
+<li>Create a simple Rails app with users/actors/notes</li>
+<li>Extract relevant code into an engine to work with a site with only users/notes</li>
+<li>Make the engine flexible enough to support more kinds of actors and contents through configuration file.</li>
+</ul>
+<p>For now, I have:</p>
+<ul>
+<li>“Site”
+<ul>
+<li>
+<span class="chcklst-box checked fa fa-check-square fa-fw"></span> user</li>
+<li>
+<span class="chcklst-box checked fa fa-check-square fa-fw"></span> notes CRUD</li>
+<li>
+<span class="chcklst-box checked fa fa-check-square fa-fw"></span> local actors (tied to users for now)</li>
+<li>
+<span class="chcklst-box checked fa fa-check-square fa-fw"></span> activities: a kind of log to use for outboxes and feeds later</li>
+<li>
+<span class="chcklst-box checked fa fa-check-square fa-fw"></span> distant actors, fetched via webfinger calls</li>
+<li>
+<span class="chcklst-box checked fa fa-check-square fa-fw"></span> follow actors (with manual accepts)</li>
+<li>
+<span class="chcklst-box checked fa fa-check-square fa-fw"></span> follow distant actors (without accept confirmation)</li>
+<li>personal activity feed:
+<ul>
+<li>
+<span class="chcklst-box checked fa fa-check-square fa-fw"></span> local followed actors activity</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> distant followers actors activity</li>
+</ul>
+</li>
+<li>display distant actors:
+<ul>
+<li>
+<span class="chcklst-box checked fa fa-check-square fa-fw"></span> generic info</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> followers</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> outbox</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Federation
+<ul>
+<li>
+<span class="chcklst-box checked fa fa-check-square fa-fw"></span> webfinger (find and some other endpoints)</li>
+<li>
+<span class="chcklst-box checked fa fa-check-square fa-fw"></span> actor endpoint</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> inbox</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> outbox</li>
+<li>
+<span class="chcklst-box checked fa fa-check-square fa-fw"></span> followers endpoint</li>
+<li>
+<span class="chcklst-box checked fa fa-check-square fa-fw"></span> following endpoint</li>
+</ul>
+</li>
+</ul>
+<p>So for now, the app is publishing content, nothing more</p>
+<p>In my first attempt, I wanted to be compatible with Mastodon, and I stopped that : too much overhead for a beginning, so I started again from scratch, trying to stick to the simplest ActivityPub specs.</p>
+<p>It’s all evolving really slowly as i’m tired these days. I can publish the code on Gitlab if you’re interested.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449/7</link>
+        <pubDate>Thu, 16 Jul 2020 19:26:37 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-449-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449.rss">Any tools and tutorials on rails and activitypub?</source>
+      </item>
+      <item>
+        <title>Any tools and tutorials on rails and activitypub?</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve been looking into Ruby and ActivityPub, especially the Mastodon code: it should be doable to extract some of it to the Ruby gem dedicated to AP support, but AFAIK the current code is highly dependent on Mastodon modeling and code base.</p>
+<p>Actually there are a number of ongoing Ruby projects to support ActivityPub besides Mastodon:</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://github.githubassets.com/favicons/favicon.svg" class="site-icon" width="32" height="32">
+      <a href="https://github.com/johnholdun/activitypub-server" target="_blank">GitHub</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:298/297;"><img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/d169882dc0126ee042254821d3884a11345e2a85.png" class="thumbnail" width="298" height="297"></div>
+
+<h3><a href="https://github.com/johnholdun/activitypub-server" target="_blank">johnholdun/activitypub-server</a></h3>
+
+<p>An ActivityPub server. Contribute to johnholdun/activitypub-server development by creating an account on GitHub.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>mxb made a gem for Prismo:<br>
+<a href="https://rubygems.org/gems/activitypub-rails/versions/0.1.0" class="onebox" target="_blank">https://rubygems.org/gems/activitypub-rails/versions/0.1.0</a></p>
+<p>There’s also <a href="https://www.ruby-toolbox.com/projects/social_web-activity_pub">a dead project</a> to support AP from Rack (which sounds like a good idea).</p>
+<p><a class="mention" href="/u/rubygoddess">@RubyGoddess</a> did you find more material since your post?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449/6</link>
+        <pubDate>Sun, 23 Feb 2020 13:24:38 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-449-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449.rss">Any tools and tutorials on rails and activitypub?</source>
+      </item>
+      <item>
+        <title>Any tools and tutorials on rails and activitypub?</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>A post was split to a new topic: <a href="/t/getting-started-with-activitypub-in-php/526">Getting Started with ActivityPub in PHP</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449/4</link>
+        <pubDate>Sun, 23 Feb 2020 13:17:44 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-449-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449.rss">Any tools and tutorials on rails and activitypub?</source>
+      </item>
+      <item>
+        <title>Any tools and tutorials on rails and activitypub?</title>
+        <dc:creator><![CDATA[mistergibson]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve found this document VERY helpful in planning my ruby code: <a href="https://www.w3.org/TR/activitypub/#Overview" rel="nofollow noopener">https://www.w3.org/TR/activitypub/#Overview</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449/5</link>
+        <pubDate>Fri, 21 Feb 2020 17:00:55 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-449-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449.rss">Any tools and tutorials on rails and activitypub?</source>
+      </item>
+      <item>
+        <title>Any tools and tutorials on rails and activitypub?</title>
+        <dc:creator><![CDATA[RubyGoddess]]></dc:creator>
+        <description><![CDATA[
+            <p>I read this, but I actually understood less by reading more <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/smiley.png?v=9" title=":smiley:" class="emoji" alt=":smiley:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449/3</link>
+        <pubDate>Thu, 09 Jan 2020 10:56:07 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-449-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449.rss">Any tools and tutorials on rails and activitypub?</source>
+      </item>
+      <item>
+        <title>Any tools and tutorials on rails and activitypub?</title>
+        <dc:creator><![CDATA[wakest]]></dc:creator>
+        <description><![CDATA[
+            <p>there is this from last year that should be a good starting point <a href="https://blog.joinmastodon.org/2018/06/how-to-implement-a-basic-activitypub-server/" rel="nofollow noopener">https://blog.joinmastodon.org/2018/06/how-to-implement-a-basic-activitypub-server/</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449/2</link>
+        <pubDate>Thu, 09 Jan 2020 04:53:53 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-449-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449.rss">Any tools and tutorials on rails and activitypub?</source>
+      </item>
+      <item>
+        <title>Any tools and tutorials on rails and activitypub?</title>
+        <dc:creator><![CDATA[RubyGoddess]]></dc:creator>
+        <description><![CDATA[
+            <p>I recently discovered <a href="https://pump.io" rel="nofollow noopener">pump.io</a>, activitypub and the concept of “federated” networks. One of my friends invited me to the network mastodon.<br>
+I realized mastodon itself is written in ruby. I’m curious, is there anyway to make our rails apps federated? I did a bit of search but I found some of those projects are discontinued. And if yes, is there any tutorials?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449/1</link>
+        <pubDate>Fri, 03 Jan 2020 21:22:07 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-449-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449.rss">Any tools and tutorials on rails and activitypub?</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Service Capability Discovery</title>
+    <link>https://socialhub.activitypub.rocks/t/service-capability-discovery/630</link>
+    <description>The S2S specification doesn&#39;t appear to have an API for discovering what capabilities an Actor&#39;s server supports. As an example, I happen to know that right now Mastodon doesn&#39;t support AP features such as relationships, so I shouldn&#39;t offer my users an option to use those features with actors running on Mastodon. If I did, the experience for my user would be confusing (&quot;I sent Bob an `Offer` activity (friend request), but Bob never responded,&quot; when Mastodon never presented Bob with the activity). 
+
+How can I as a developer (on behalf of my users), know what features are supported for a given Actor? Manually maintaining a table of (Server, Version) =&gt; [Feature] seems inadequate, but also seems like the only option available to me right now. 
+
+How is service interoperability supposed to work in this model?</description>
+    
+    <lastBuildDate>Tue, 21 Apr 2020 20:34:12 +0000</lastBuildDate>
+    <category>Server to Server</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/service-capability-discovery/630.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Service Capability Discovery</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>As far as I know, you have two options:</p>
+<ol>
+<li>Specify the features your server supports in its <a href="http://nodeinfo.diaspora.software/" rel="nofollow noopener">NodeInfo</a>
+</li>
+<li>Specify feature flags in each actor object, in your own namespace (see <code>supportsFriendRequests</code> in this actor as an example: <a href="https://friends.grishka.me/grishka" rel="nofollow noopener">https://friends.grishka.me/grishka</a>).</li>
+</ol>
+          <p><a href="https://socialhub.activitypub.rocks/t/service-capability-discovery/630/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/service-capability-discovery/630/2</link>
+        <pubDate>Tue, 21 Apr 2020 20:34:12 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-630-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/service-capability-discovery/630.rss">Service Capability Discovery</source>
+      </item>
+      <item>
+        <title>Service Capability Discovery</title>
+        <dc:creator><![CDATA[koehn]]></dc:creator>
+        <description><![CDATA[
+            <p>The S2S specification doesn’t appear to have an API for discovering what capabilities an Actor’s server supports. As an example, I happen to know that right now Mastodon doesn’t support AP features such as relationships, so I shouldn’t offer my users an option to use those features with actors running on Mastodon. If I did, the experience for my user would be confusing (“I sent Bob an <code>Offer</code> activity (friend request), but Bob never responded,” when Mastodon never presented Bob with the activity).</p>
+<p>How can I as a developer (on behalf of my users), know what features are supported for a given Actor? Manually maintaining a table of (Server, Version) =&gt; [Feature] seems inadequate, but also seems like the only option available to me right now.</p>
+<p>How is service interoperability supposed to work in this model?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/service-capability-discovery/630/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/service-capability-discovery/630/1</link>
+        <pubDate>Tue, 21 Apr 2020 13:00:50 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-630-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/service-capability-discovery/630.rss">Service Capability Discovery</source>
+      </item>
+  </channel>
+</rss>

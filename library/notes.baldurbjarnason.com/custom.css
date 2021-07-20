@@ -1,0 +1,47 @@
+body {
+	font-weight: 400;
+	color: #000;
+}
+h2.blog-description, .poweredby {
+	display: none;
+}
+
+/* Links */
+.post a {
+    color: #006699;
+    text-decoration: none;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+.post a:visited {
+    color: #996600;
+}
+
+
+.site-footer a {
+	color: #006699;
+}
+
+a.read-more, a.read-more:hover, a.read-more:visited {
+    color: #006699;
+    text-decoration: none;
+    font-size:12px
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	color: #3A4145;
+	text-decoration: none;
+}
+
+.post-title a {
+	color: #3A4145 !important;
+	text-decoration: none !important;
+}
+.post-title {
+    margin-bottom: 0;
+    font-size: 3rem;
+    line-height: 1.1;
+}

@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Problems POSTing to Mastodon inbox - Server to Server - SocialHub</title>
+    <meta name="description" content="Hi, 
+Following the Instructions in How to implement a basic ActivityPub server, I tried to POST a response to a Mastodon post from my own server. 
+The thing is: It does not show up, although I am getting a postive HTTP r&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="801.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Problems POSTing to Mastodon inbox&#39;" href="801.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/problems-posting-to-mastodon-inbox/801" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/problems-posting-to-mastodon-inbox/801" />
+<meta property="og:title" content="Problems POSTing to Mastodon inbox" />
+<meta name="twitter:title" content="Problems POSTing to Mastodon inbox" />
+<meta property="og:description" content="Hi,  Following the Instructions in How to implement a basic ActivityPub server, I tried to POST a response to a Mastodon post from my own server.  The thing is: It does not show up, although I am getting a postive HTTP response (202 Accepted) and I am trying to figure out why. Perhaps someone here can give me a hint what is going on.  This is the kind of request I am making:  POST https://mastodon.social/inbox Host: mastodon.social Date: Mon, 13 Jul 2020 18:33:11 GMT Signature: keyId=&quot;https://an..." />
+<meta name="twitter:description" content="Hi,  Following the Instructions in How to implement a basic ActivityPub server, I tried to POST a response to a Mastodon post from my own server.  The thing is: It does not show up, although I am getting a postive HTTP response (202 Accepted) and I am trying to figure out why. Perhaps someone here can give me a hint what is going on.  This is the kind of request I am making:  POST https://mastodon.social/inbox Host: mastodon.social Date: Mon, 13 Jul 2020 18:33:11 GMT Signature: keyId=&quot;https://an..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="4 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="4 ❤" />
+<meta property="article:published_time" content="2020-07-13T18:48:58+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+        <link rel="next" href="801@page=2.html">
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="801.html">Problems POSTing to Mastodon inbox</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/activitypub.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #0088CC'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>ActivityPub</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/activitypub/s2s/7.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #808281'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Server to Server</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/aveltens.html'><span itemprop='name'>aveltens</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="801.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-07-13T18:48:58Z'>
+              <time itemprop='dateModified' datetime='2020-07-13T18:49:24Z' class='post-time'>
+                July 13, 2020,  6:49pm
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi,</p>
+<p>Following the Instructions in <a href="https://blog.joinmastodon.org/2018/06/how-to-implement-a-basic-activitypub-server/" rel="nofollow noopener">How to implement a basic ActivityPub server</a>, I tried to POST a response to a Mastodon post from my own server.</p>
+<p>The thing is: It does not show up, although I am getting a postive HTTP response (202 Accepted) and I am trying to figure out why. Perhaps someone here can give me a hint what is going on.</p>
+<p>This is the kind of request I am making:</p>
+<pre><code class="lang-auto">POST https://mastodon.social/inbox
+Host: mastodon.social
+Date: Mon, 13 Jul 2020 18:33:11 GMT
+Signature: keyId="https://angelo.veltens.org/profile/actor#main-key",headers="(request-target) host date",signature="Q2n8kP3kqfqjP3FVhWwLQ/tqSSnRw5QYuNgodXzLM98fykRmp3eIvQJajOaAKgpMxlbeajFsbS8AjOQqX/mw4dcQnoYMRvlNxEwwmVGXxqIcuhjSqEdDScTCZhoNcI6yDthq0BwR3nUvd5uHhpsQ7nPYw6eOzxVQMXUSx6R95gAVwYh7cILmqE6/wUhduskcblNoFPsQUt1e9mEFYB1QR6QTN5d1MXmOvtV1Ze/VdTMmMpx3GuMklmtbOYtsqyfurBYPBYP2uYTxYCI7LzH8YpaD0uL+AdAV45ArUKvH8o6nhV2ZcPVUiuBrS5XVPMLdmgB2QRV85K9SE4KHlJWutQ=="
+
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+
+  "id": "https://angelo.veltens.org/public/toots/hello-solid#create",
+  "type": "Create",
+  "actor": "https://angelo.veltens.org/profile/actor",
+
+  "object": {
+    "id": "https://angelo.veltens.org/public/toots/hello-solid#note",
+    "type": "Note",
+    "published": "2020-07-13T20:33:10+0200",
+    "attributedTo": "https://angelo.veltens.org/profile/actor",
+    "inReplyTo": "https://mastodon.social/@Gargron/100254678717223630",
+    "content": "&lt;p&gt;Hello again from Solid&lt;/p&gt;",
+    "to": "https://www.w3.org/ns/activitystreams#Public"
+  }
+}
+</code></pre>
+<p>And this is the response:</p>
+<pre><code class="lang-auto">HTTP/1.1 202 Accepted
+Date: Mon, 13 Jul 2020 18:33:13 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: Mastodon
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Set-Cookie: _mkra_stck=postgres%3A1594665198.514459; path=/; max-age=10; expires=Mon, 13 Jul 2020 18:33:23 GMT; HttpOnly
+Vary: Accept-Encoding
+Cache-Control: no-cache
+Content-Security-Policy: base-uri 'none'; default-src 'none'; frame-ancestors 'none'; font-src 'self' https://static-cdn.mastodon.social; img-src 'self' https: data: blob: https://static-cdn.mastodon.social; style-src 'self' https://static-cdn.mastodon.social 'nonce-PoTtEgRXnAWfIn/QUIV9qg=='; media-src 'self' https: data: https://static-cdn.mastodon.social; frame-src 'self' https:; manifest-src 'self' https://static-cdn.mastodon.social; connect-src 'self' data: blob: https://static-cdn.mastodon.social https://files.mastodon.social wss://mastodon.social; script-src 'self' https://static-cdn.mastodon.social; child-src 'self' blob: https://static-cdn.mastodon.social; worker-src 'self' blob: https://static-cdn.mastodon.social
+X-Request-Id: ddcbf0ea-4af9-4dd9-be57-1d8c6c8265c9
+X-Runtime: 0.029216
+
+&lt;Response body is empty&gt;
+
+Response code: 202 (Accepted); Time: 109ms; Content length: 0 bytes
+</code></pre>
+<p>If I mess up the <code>Signature</code> header deliberately I am getting <code>401 (Unauthorized)</code>, so I guess my signature is fine.</p>
+<p>What else could be wrong or what reasons exist, that the post does not show up?</p>
+<p>Thank you very much for your help.</p>
+        </div>
+
+        <meta itemprop='headline' content='Problems POSTing to Mastodon inbox'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="801.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-07-14T05:14:11Z' class='post-time'>
+                July 14, 2020,  5:14am
+              </time>
+              <meta itemprop='dateModified' content='2020-07-14T05:14:11Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Have you tried putting the <code>to</code> field onto the Create Activity itself, and not just the object?</p>
+<p>It’s a little odd that this is the recommended payload by Mastodon where <code>to</code> is on the object and not the Activity, since it violates expectations in 7.1 (server to server delivery) which also points to 6.1 (client addressing).</p>
+        </div>
+
+        <meta itemprop='headline' content='Problems POSTing to Mastodon inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/aveltens.html'><span itemprop='name'>aveltens</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="801.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-07-14T05:38:20Z' class='post-time'>
+                July 14, 2020,  5:38am
+              </time>
+              <meta itemprop='dateModified' content='2020-07-14T05:38:20Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks for the tip, but it still does not show up.</p>
+<p>I tried adding <code>"to": "https://www.w3.org/ns/activitystreams#Public"</code> to the <code>Create</code> as well as</p>
+<pre><code class="lang-auto">"to": [
+    "https://www.w3.org/ns/activitystreams#Public",
+    "https://mastodon.social/users/Gargron"
+  ],
+</code></pre>
+<p>I also tried to deliver to <code>https://mastodon.social/users/Gargron/inbox</code>, but nothing works out.</p>
+        </div>
+
+        <meta itemprop='headline' content='Problems POSTing to Mastodon inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="801.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-07-14T06:02:39Z' class='post-time'>
+                July 14, 2020,  6:02am
+              </time>
+              <meta itemprop='dateModified' content='2020-07-14T06:02:39Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>When I run:</p>
+<pre><code class="lang-auto">curl https://angelo.veltens.org/public/toots/hello-solid#note -H"Accept: application/activity+json"
+</code></pre>
+<p>Or:</p>
+<pre><code class="lang-auto">curl https://angelo.veltens.org/public/toots/hello-solid#note -H"Accept: application/ld+json; profile=\"https://www.w3.org/ns/activitystreams\""
+</code></pre>
+<p>I get:</p>
+<pre><code class="lang-auto">Cannot serve requested type: application/ld+json
+</code></pre>
+<p>I am not sure if Mastodon is also attempting to fetch the note to verify it exists at that ID, but you definitely want to be serving that created note at that endpoint.</p>
+        </div>
+
+        <meta itemprop='headline' content='Problems POSTing to Mastodon inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/aveltens.html'><span itemprop='name'>aveltens</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="801.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-07-14T06:49:39Z' class='post-time'>
+                July 14, 2020,  6:49am
+              </time>
+              <meta itemprop='dateModified' content='2020-07-14T06:49:39Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="cjs" data-post="4" data-topic="801">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/cjs/40/35_2.png" class="avatar"> cjs:</div>
+<blockquote>
+<p><code>curl https://angelo.veltens.org/public/toots/hello-solid#note -H"Accept: application/ld+json;</code></p>
+</blockquote>
+</aside>
+<p>JSON-LD without profile is working:</p>
+<pre><code class="lang-auto">▶ curl https://angelo.veltens.org/public/toots/hello-solid\#note -H"Accept: application/ld+json"
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+
+  "id": "https://angelo.veltens.org/public/toots/hello-solid#create",
+  "type": "Create",
+  "actor": "https://angelo.veltens.org/profile/actor",
+  "to": "https://www.w3.org/ns/activitystreams#Public",
+
+  "object": {
+    "id": "https://angelo.veltens.org/public/toots/hello-solid#note",
+    "type": "Note",
+    "published": "2020-07-13T20:33:10+0200",
+    "attributedTo": "https://angelo.veltens.org/profile/actor",
+    "inReplyTo": "https://mastodon.social/@Gargron/100254678717223630",
+    "content": "&lt;p&gt;Hello from Solid&lt;/p&gt;",
+    "to": "https://www.w3.org/ns/activitystreams#Public"
+  }
+}
+</code></pre>
+<p>The blogposts states:</p>
+<blockquote>
+<p>For our purposes, we don’t actually need to host this document publicly</p>
+</blockquote>
+<p>This of course might have changed meanwhile, since the article is 2 years old. So I will give it a try. If anyone knows for sure what is needed and what not, let me know please.</p>
+        </div>
+
+        <meta itemprop='headline' content='Problems POSTing to Mastodon inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="801.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-07-14T11:56:22Z' class='post-time'>
+                July 14, 2020, 11:56am
+              </time>
+              <meta itemprop='dateModified' content='2020-07-14T11:56:22Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <blockquote>
+<p>so I guess my signature is fine.</p>
+</blockquote>
+<p>Unfortunately probably not.<br>
+A known bug in mastodon is that signature errors return <code>202</code> !<br>
+e.g. <a href="https://github.com/snarfed/bridgy-fed/issues/16">https://github.com/snarfed/bridgy-fed/issues/16</a></p>
+<p>I also had this error when I followed the instructions.<br>
+What I can offer you is an undocumented 245 lines nodeJS snippet where the folder name says “worked” but without guarantees <img src="../../images/emoji/twitter/wink.png@v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+        </div>
+
+        <meta itemprop='headline' content='Problems POSTing to Mastodon inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nightpool.html'><span itemprop='name'>nightpool</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="801.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-07-14T13:04:32Z'>
+              <time itemprop='dateModified' datetime='2020-07-14T13:10:53Z' class='post-time'>
+                July 14, 2020,  1:10pm
+              </time>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Mastodon does not return 202 if the signature is valid, although we would be well within our rights to per the spec. But for HTTP signatures specifically we always process those synchronously and return a 401 with a specific error reason. Like the spec says, we return 202 if we accept the payload for further asynchronous processing, regardless of whether that processing succeeds or not. (since it’s asynchronous, there’s no way to know)</p>
+<p>(If you read the actual issue you linked, you’d know that this is the case, since it concludes by saying "We know now that 202 is okay in terms of signature)</p>
+        </div>
+
+        <meta itemprop='headline' content='Problems POSTing to Mastodon inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nightpool.html'><span itemprop='name'>nightpool</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="801.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-07-14T13:08:36Z' class='post-time'>
+                July 14, 2020,  1:08pm
+              </time>
+              <meta itemprop='dateModified' content='2020-07-14T13:08:36Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="aveltens" data-post="5" data-topic="801">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/aveltens/40/333_2.png" class="avatar"> aveltens:</div>
+<blockquote>
+<p>JSON-LD without profile is working:</p>
+</blockquote>
+</aside>
+<p>My guess is that the actor profile is being served with the same server, correct? Mastodon needs to be able to fetch your actor’s profile before it can attribute any posts to it, so if neither activity+json or ld+json with profile are responded to then that will cause a failure. I would suggest using mastodon’s “search box” as a debugging tool—put the URL of your actor into the search box, and if a profile comes up successfully, you can check off that step</p>
+        </div>
+
+        <meta itemprop='headline' content='Problems POSTing to Mastodon inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/aveltens.html'><span itemprop='name'>aveltens</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="801.html">
+
+            <link itemprop="image" href="../../uploads/default/original/1X/02b1bb71f869a336f60a31b02b75aeb8b1cd033e.png">
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-07-14T15:43:24Z' class='post-time'>
+                July 14, 2020,  3:43pm
+              </time>
+              <meta itemprop='dateModified' content='2020-07-14T15:43:24Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Right, the actor has the same issue with <code>profile</code>. I did not think about that, because I actually was able to find it on mastodon using <code>angelo@angelo.veltens.org</code> and felt safe.</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="../../uploads/default/original/1X/02b1bb71f869a336f60a31b02b75aeb8b1cd033e.png" data-download-href="https://socialhub.activitypub.rocks/uploads/default/02b1bb71f869a336f60a31b02b75aeb8b1cd033e" title="solid-mastodon"><img src="../../uploads/default/optimized/1X/02b1bb71f869a336f60a31b02b75aeb8b1cd033e_2_690x163.png" alt="solid-mastodon" data-base62-sha1="nPK9CSugIZ7JDK6B8l2167aQ3k" width="690" height="163" srcset="../../uploads/default/optimized/1X/02b1bb71f869a336f60a31b02b75aeb8b1cd033e_2_690x163.png, ../../uploads/default/optimized/1X/02b1bb71f869a336f60a31b02b75aeb8b1cd033e_2_1035x244.png 1.5x, ../../uploads/default/optimized/1X/02b1bb71f869a336f60a31b02b75aeb8b1cd033e_2_1380x326.png 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/02b1bb71f869a336f60a31b02b75aeb8b1cd033e_2_10x10.png"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">solid-mastodon</span><span class="informations">1786×424 44.7 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg></div></a></div></p>
+<p>But you are right, the actual actor URL does <strong>not</strong> give a result. This probably needs <a href="https://github.com/solid/node-solid-server/issues/943" rel="nofollow noopener">a fix on Node Solid Server</a>.</p>
+        </div>
+
+        <meta itemprop='headline' content='Problems POSTing to Mastodon inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/aveltens.html'><span itemprop='name'>aveltens</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="801.html">
+
+            <link itemprop="image" href="../../uploads/default/original/1X/ee2965807be9c8aefa1f4b02d1f3347815ed5ecf.png">
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-07-14T15:52:03Z'>
+              <time itemprop='dateModified' datetime='2020-07-14T15:53:07Z' class='post-time'>
+                July 14, 2020,  3:53pm
+              </time>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Ok, I just tried something else: I responded to a post of my account on mastodon.online and it worked!</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="../../uploads/default/original/1X/ee2965807be9c8aefa1f4b02d1f3347815ed5ecf.png" data-download-href="https://socialhub.activitypub.rocks/uploads/default/ee2965807be9c8aefa1f4b02d1f3347815ed5ecf" title="mastodon-post"><img src="../../uploads/default/optimized/1X/ee2965807be9c8aefa1f4b02d1f3347815ed5ecf_2_690x290.png" alt="mastodon-post" data-base62-sha1="xYSkqKWUoDuelfxqIKoCuHC5H3h" width="690" height="290" srcset="../../uploads/default/optimized/1X/ee2965807be9c8aefa1f4b02d1f3347815ed5ecf_2_690x290.png, ../../uploads/default/optimized/1X/ee2965807be9c8aefa1f4b02d1f3347815ed5ecf_2_1035x435.png 1.5x, ../../uploads/default/original/1X/ee2965807be9c8aefa1f4b02d1f3347815ed5ecf.png 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/ee2965807be9c8aefa1f4b02d1f3347815ed5ecf_2_10x10.png"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">mastodon-post</span><span class="informations">1314×554 51.3 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg></div></a></div></p>
+<p>I wonder why. Might mastodon.social and mastodon.online behave differently?</p>
+<p>Or did it work, because mastodon.online already knew about <code>@angelo@angelo.veltens.org</code>, because I did the search there before, but I did not do that on mastodon.social (due lack of account there).</p>
+<p>Lucky that it worked, but still confused <img src="../../images/emoji/twitter/confused.png@v=9" title=":confused:" class="emoji" alt=":confused:"></p>
+        </div>
+
+        <meta itemprop='headline' content='Problems POSTing to Mastodon inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="801.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-07-15T19:00:28Z' class='post-time'>
+                July 15, 2020,  7:00pm
+              </time>
+              <meta itemprop='dateModified' content='2020-07-15T19:00:28Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>The reason might also be that your IDs aren’t permanent, as in, they contain a <code>#fragment</code>. Posts and their corresponding Create activities are supposed to be <em>resolvable</em> — which means one should be able to send a GET request to the ID URL and get the object back. This can’t be done with an URL that contains a fragment as the fragment is not a part of the HTTP exchange, it’s processed on the client.</p>
+        </div>
+
+        <meta itemprop='headline' content='Problems POSTing to Mastodon inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/aveltens.html'><span itemprop='name'>aveltens</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="801.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-07-15T19:19:31Z' class='post-time'>
+                July 15, 2020,  7:19pm
+              </time>
+              <meta itemprop='dateModified' content='2020-07-15T19:19:31Z'>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Both URIs are permanent. Of course the client will resolve the document URL <code>https://angelo.veltens.org/public/toots/hello-solid</code> but both resources are described in that document.</p>
+<p>I guess the problem is, that mastodon.social could not get a JSON-LD representation of the actor, while mastodon.online already had one cached from the webfinger search. Although this still does not explain how it could retrieve the actor during the search.</p>
+        </div>
+
+        <meta itemprop='headline' content='Problems POSTing to Mastodon inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="801.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-07-15T19:35:54Z' class='post-time'>
+                July 15, 2020,  7:35pm
+              </time>
+              <meta itemprop='dateModified' content='2020-07-15T19:35:54Z'>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="aveltens" data-post="12" data-topic="801">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/aveltens/40/333_2.png" class="avatar"> aveltens:</div>
+<blockquote>
+<p>Of course the client will resolve the document URL <code>https://angelo.veltens.org/public/toots/hello-solid</code> but both resources are described in that document.</p>
+</blockquote>
+</aside>
+<p>Feels to me like that’s not a good thing. These are expected to be two distinct URLs — one that returns the <code>Note</code> wrapped in <code>Create</code>, and another one that returns the <code>Note</code> by itself.</p>
+<p>See for yourself how Mastodon does it. Try sending a GET request with <code>Accept: application/activity+json</code> to these URLs:<br>
+<code>https://mastodon.social/users/Gargron/statuses/104517499488193307/activity</code><br>
+<code>https://mastodon.social/users/Gargron/statuses/104517499488193307</code></p>
+        </div>
+
+        <meta itemprop='headline' content='Problems POSTing to Mastodon inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nightpool.html'><span itemprop='name'>nightpool</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="801.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-07-15T20:26:49Z'>
+              <time itemprop='dateModified' datetime='2020-07-15T20:27:38Z' class='post-time'>
+                July 15, 2020,  8:27pm
+              </time>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="aveltens" data-post="10" data-topic="801">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/aveltens/40/333_2.png" class="avatar"> aveltens:</div>
+<blockquote>
+<p>Or did it work, because mastodon.online already knew about <code>@angelo@angelo.veltens.org</code> , because I did the search there before, but I did not do that on mastodon.social (due lack of account there).</p>
+</blockquote>
+</aside>
+<p><a class="mention" href="../../u/aveltens.html">@aveltens</a> yes, this is certainly the reason! Mastodon will not try to (or need to) resolve your account again if it already knows about it</p>
+<p>My guess is that the webfinger -&gt; URL code is slightly less strict about the <code>Accept</code> header, because it already knows it’s looking for an AS2 document.</p>
+        </div>
+
+        <meta itemprop='headline' content='Problems POSTing to Mastodon inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nightpool.html'><span itemprop='name'>nightpool</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="801.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-07-15T20:39:58Z'>
+              <time itemprop='dateModified' datetime='2020-07-15T20:40:31Z' class='post-time'>
+                July 15, 2020,  8:40pm
+              </time>
+          <span itemprop='position'>#15</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote group-smithereen" data-username="grishka" data-post="13" data-topic="801">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/grishka/40/196_2.png" class="avatar"> grishka:</div>
+<blockquote>
+<p>Feels to me like that’s not a good thing. These are expected to be two distinct URLs — one that returns the <code>Note</code> wrapped in <code>Create</code> , and another one that returns the <code>Note</code> by itself.</p>
+</blockquote>
+</aside>
+<p>I don’t think this is absolutely required—mastodon had a <code>#activity</code> URL for a long time. Since the network as a whole already uses this same behavior widely for <code>#main-key</code>, I can’t see where the harm would be in allowing it to be used here as well</p>
+        </div>
+
+        <meta itemprop='headline' content='Problems POSTing to Mastodon inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/vpzom.html'><span itemprop='name'>vpzom</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="801.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-07-16T01:26:06Z' class='post-time'>
+                July 16, 2020,  1:26am
+              </time>
+              <meta itemprop='dateModified' content='2020-07-16T01:26:06Z'>
+          <span itemprop='position'>#16</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I don’t think fragments offer any information about where to actually find the object unless the implementation walks every node looking for a matching string</p>
+        </div>
+
+        <meta itemprop='headline' content='Problems POSTing to Mastodon inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/aveltens.html'><span itemprop='name'>aveltens</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="801.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-07-16T06:23:34Z' class='post-time'>
+                July 16, 2020,  6:23am
+              </time>
+              <meta itemprop='dateModified' content='2020-07-16T06:23:34Z'>
+          <span itemprop='position'>#17</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>That’s not true, and actually ony of the (hard to see <img src="../../images/emoji/twitter/thinking.png@v=9" title=":thinking:" class="emoji" alt=":thinking:"> ) benefits of JSON-LD</p>
+<p>Proper framing solves the problem:</p>
+<p><a href="https://json-ld.org/playground/#startTab=tab-framed&amp;json-ld=https%3A%2F%2Fangelo.veltens.org%2Fpublic%2Ftoots%2Fhello-solid%23note&amp;frame=%7B%22%40context%22%3A%22https%3A%2F%2Fwww.w3.org%2Fns%2Factivitystreams%22%2C%22id%22%3A%22https%3A%2F%2Fangelo.veltens.org%2Fpublic%2Ftoots%2Fhello-solid%23note%22%7D&amp;context=%7B%7D" class="onebox" target="_blank" rel="nofollow noopener">https://json-ld.org/playground/#startTab=tab-framed&amp;json-ld=https%3A%2F%2Fangelo.veltens.org%2Fpublic%2Ftoots%2Fhello-solid%23note&amp;frame={"%40context"%3A"https%3A%2F%2Fwww.w3.org%2Fns%2Factivitystreams"%2C"id"%3A"https%3A%2F%2Fangelo.veltens.org%2Fpublic%2Ftoots%2Fhello-solid%23note"}&amp;context={}</a></p>
+        </div>
+
+        <meta itemprop='headline' content='Problems POSTing to Mastodon inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/vpzom.html'><span itemprop='name'>vpzom</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="801.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-07-16T12:44:40Z' class='post-time'>
+                July 16, 2020, 12:44pm
+              </time>
+              <meta itemprop='dateModified' content='2020-07-16T12:44:40Z'>
+          <span itemprop='position'>#18</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>That just looks like tree traversal with extra steps</p>
+<p>Yes, technically ActivityStreams is JSON-LD, but very few implementations would actually accept any of the alternative forms</p>
+        </div>
+
+        <meta itemprop='headline' content='Problems POSTing to Mastodon inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nightpool.html'><span itemprop='name'>nightpool</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="801.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-07-16T20:30:35Z'>
+              <time itemprop='dateModified' datetime='2020-07-16T20:34:46Z' class='post-time'>
+                July 16, 2020,  8:34pm
+              </time>
+          <span itemprop='position'>#19</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="vpzom" data-post="16" data-topic="801" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../letter_avatar_proxy/v4/letter/v/a698b9/40.png" class="avatar"> vpzom:</div>
+<blockquote>
+<p>I don’t think fragments offer any information about where to actually find the object unless the implementation walks every node looking for a matching string</p>
+</blockquote>
+</aside>
+<p>All you need to do is keep track, when deserializing, of the different “id” nodes, and build a hashmap to them—or even just keep a single pointer to the id you’re looking for. It’s not going to be a performance bottleneck in most applications.</p>
+<p>(Mastodon does not currently do this, but we’re very flexible about whether implementations want to send us the activity or the object, and tend to treat them interchangeably, so i don’t think we’d run into any problems here)</p>
+        </div>
+
+        <meta itemprop='headline' content='Problems POSTing to Mastodon inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="801.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-07-16T20:34:50Z' class='post-time'>
+                July 16, 2020,  8:34pm
+              </time>
+              <meta itemprop='dateModified' content='2020-07-16T20:34:50Z'>
+          <span itemprop='position'>#20</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote group-mastodon" data-username="nightpool" data-post="19" data-topic="801">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/nightpool/40/36_2.png" class="avatar"> nightpool:</div>
+<blockquote>
+<p>All you need to do is keep track, when deserializing, of the different “id” nodes, and build a hashmap to them—or even just keep a single pointer to the id you’re looking for. It’s not going to be a performance bottleneck in most applications.</p>
+</blockquote>
+</aside>
+<p>Is this JSON-LD processing something that Mastodon does?</p>
+<p>I know go-fed does not do JSON-LD processing at runtime, which means it simply assumes performing a GET request to an IRI will yield an ActivityStreams payload that has that identifier as its root object.</p>
+        </div>
+
+        <meta itemprop='headline' content='Problems POSTing to Mastodon inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+
+    <div role='navigation' itemscope itemtype='http://schema.org/SiteNavigationElement' class="topic-body crawler-post">
+        <span itemprop='name'><b><a rel="next" itemprop="url" href="801@page=2.html">next page →</a></b></span>
+    </div>
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>About Lemmy</title>
+    <link>https://socialhub.activitypub.rocks/t/about-lemmy/491</link>
+    <description>Lemmy is a link aggregator / reddit alternative, intended to work in the fediverse.
+
+It&#39;s self-hostable, has live-updating comment threads, and is tiny ( `~80kB` ). Federation into the ActivityPub network is on the roadmap.
+
+Suggest new features or report bugs at https://github.com/LemmyNet/lemmy.
+
+:rat: See live instances:
+- https://dev.lemmy.ml
+
+ :vulcan_salute:Test federation:
+- https://voyager.lemmy.ml
+- https://enterprise.lemmy.ml
+- https://ds9.lemmy.ml
+
+Made with [Rust](https://www.rust-lang.org), [Actix](https://actix.rs/), [Inferno](https://infernojs.org), [Typescript](https://www.typescriptlang.org/).</description>
+    
+    <lastBuildDate>Mon, 03 Feb 2020 15:54:46 +0000</lastBuildDate>
+    <category>Lemmy</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/about-lemmy/491.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>About Lemmy</title>
+        <dc:creator><![CDATA[wakest]]></dc:creator>
+        <description><![CDATA[
+            <p>welcome yall! hope we can figure out how to get Lemmy federating asap!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-lemmy/491/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-lemmy/491/3</link>
+        <pubDate>Mon, 03 Feb 2020 15:54:46 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-491-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-lemmy/491.rss">About Lemmy</source>
+      </item>
+      <item>
+        <title>About Lemmy</title>
+        <dc:creator><![CDATA[dessalines]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m the other developer of lemmy, just chiming in so others can @ me.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-lemmy/491/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-lemmy/491/2</link>
+        <pubDate>Fri, 31 Jan 2020 13:55:49 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-491-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-lemmy/491.rss">About Lemmy</source>
+      </item>
+      <item>
+        <title>About Lemmy</title>
+        <dc:creator><![CDATA[nutomic]]></dc:creator>
+        <description><![CDATA[
+            <p>Lemmy is a link aggregator / reddit alternative, intended to work in the fediverse.</p>
+<p>It’s self-hostable, has live-updating comment threads, and is tiny ( <code>~80kB</code> ). Federation into the ActivityPub network is on the roadmap.</p>
+<p>Suggest new features or report bugs at <a href="https://github.com/LemmyNet/lemmy" rel="nofollow noopener">https://github.com/LemmyNet/lemmy</a>.</p>
+<p><img src="https://socialhub.activitypub.rocks/images/emoji/twitter/rat.png?v=9" title=":rat:" class="emoji" alt=":rat:"> See live instances:</p>
+<ul>
+<li><a href="https://dev.lemmy.ml" rel="nofollow noopener">https://dev.lemmy.ml</a></li>
+</ul>
+<p><img src="https://socialhub.activitypub.rocks/images/emoji/twitter/vulcan_salute.png?v=9" title=":vulcan_salute:" class="emoji" alt=":vulcan_salute:">Test federation:</p>
+<ul>
+<li><a href="https://voyager.lemmy.ml" rel="nofollow noopener">https://voyager.lemmy.ml</a></li>
+<li><a href="https://enterprise.lemmy.ml" rel="nofollow noopener">https://enterprise.lemmy.ml</a></li>
+<li><a href="https://ds9.lemmy.ml" rel="nofollow noopener">https://ds9.lemmy.ml</a></li>
+</ul>
+<p>Made with <a href="https://www.rust-lang.org" rel="nofollow noopener">Rust</a>, <a href="https://actix.rs/" rel="nofollow noopener">Actix</a>, <a href="https://infernojs.org" rel="nofollow noopener">Inferno</a>, <a href="https://www.typescriptlang.org/" rel="nofollow noopener">Typescript</a>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-lemmy/491/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-lemmy/491/1</link>
+        <pubDate>Thu, 30 Jan 2020 19:50:04 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-491-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-lemmy/491.rss">About Lemmy</source>
+      </item>
+  </channel>
+</rss>

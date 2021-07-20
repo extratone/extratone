@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Automated tests</title>
+    <link>https://socialhub.activitypub.rocks/t/automated-tests/612</link>
+    <description>I&#39;m pleased to introduce [Pubco](https://gitlab.com/taverntown/pubco/), the automated tests repository for Tavern.
+
+I think that automated testing is going to be essential to keeping test code coverage high, as well as ensuring that long-term federation compatibility. This repository contains all of the scripts and documentation to spin up a multi-instance Tavern cluster with the help of docker-compose and [ngrok](https://ngrok.com/) and execute automated tests using [nightwatchjs](https://nightwatchjs.org/).
+
+Demo: https://youtu.be/-VmEu-iaBYk</description>
+    
+    <lastBuildDate>Mon, 13 Apr 2020 15:35:57 +0000</lastBuildDate>
+    <category>Tavern</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/automated-tests/612.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Automated tests</title>
+        <dc:creator><![CDATA[ngerakines]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m pleased to introduce <a href="https://gitlab.com/taverntown/pubco/" rel="nofollow noopener">Pubco</a>, the automated tests repository for Tavern.</p>
+<p>I think that automated testing is going to be essential to keeping test code coverage high, as well as ensuring that long-term federation compatibility. This repository contains all of the scripts and documentation to spin up a multi-instance Tavern cluster with the help of docker-compose and <a href="https://ngrok.com/" rel="nofollow noopener">ngrok</a> and execute automated tests using <a href="https://nightwatchjs.org/" rel="nofollow noopener">nightwatchjs</a>.</p>
+<p>Demo: <a href="https://youtu.be/-VmEu-iaBYk" rel="nofollow noopener">https://youtu.be/-VmEu-iaBYk</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/automated-tests/612/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/automated-tests/612/1</link>
+        <pubDate>Mon, 13 Apr 2020 15:35:57 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-612-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/automated-tests/612.rss">Automated tests</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>openEngiadina - SocialHub</title>
+    <link>https://socialhub.activitypub.rocks/c/software/openengiadina/50</link>
+    <description>Topics in the &#39;openEngiadina&#39; category Create, share and use open local knowledge.</description>
+    
+      <lastBuildDate>Wed, 12 Aug 2020 12:41:56 +0000</lastBuildDate>
+      <atom:link href="https://socialhub.activitypub.rocks/c/software/openengiadina/50.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Demo: Federated Authentication and content-addressing</title>
+          <dc:creator><![CDATA[pukkamustard]]></dc:creator>
+          <category>openEngiadina</category>
+          <description><![CDATA[
+            <p>Hello SocialHub!</p>
+<p>We have another little demo showcasing two things: Federated authentication and content-addressing.</p>
+<p>The Demo consists of a ActivityPub(-esque) Server called <a href="https://gitlab.com/openengiadina/cpub" rel="nofollow noopener">CPub</a> and a Web client called <a href="https://gitlab.com/openengiadina/geopub" rel="nofollow noopener">GeoPub</a>.</p>
+<p>A demo instance is up here: <a href="https://geopub.openengiadina.net/" rel="nofollow noopener">https://geopub.openengiadina.net/</a></p>
+<h1>Federated Authentication</h1>
+<p>CPub supports authentication with OpenID-Connect providers as well as with servers that implement the <a href="https://docs.joinmastodon.org/methods/apps/oauth/" rel="nofollow noopener">Mastodon OAuth API</a>.</p>
+<p>You can try this out by going to <a href="https://geopub.openengiadina.net/settings/" rel="nofollow noopener">https://geopub.openengiadina.net/settings/</a> and click on the button “Authenticate with <a href="https://openengiadina.net/" rel="nofollow noopener">https://openengiadina.net/</a>”. You will be redirected to following page where you can enter the url of your Pleroma or Mastodon server:</p>
+<p><img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/3a934cd2e527eb35d9e828519edd4b29e7f5cc0b.png" alt="cpub-login" data-base62-sha1="8mbhv5byGHhdAfUoXIw6XGWSTMv" width="534" height="370"></p>
+<p>If you press “LOG IN” you will be directed to your instance where you will be authenticated and asked to grant CPub access to read your account (the <code>read:accounts</code> scope). This allows CPub to create a user that is linked to your Pleroma/Mastodon instance.</p>
+<p>The auth* happens in two-hops. The client (GeoPub) requests authorization from a CPub instance. The CPub instance authenticates with an external service. This is because GeoPub still relies on CPub feature. Once we fully implement the ActivityPub Client-to-Server protocol, GeoPub will directly authenticate and use your instance (similar to how Pinafore works).</p>
+<p>CPub can also be setup to authenticate with any OpenID-Connect provider. Currently we have setup authentication with <a href="https://public.cat/" rel="nofollow noopener">PUBLIC SSO</a>. We have tested it with GitLab, Keycloak and Azure AD.</p>
+<p>Previous related discussions on SocialHub: <a href="https://socialhub.activitypub.rocks/t/single-sign-on-for-fediverse/712/1" class="inline-onebox">Single Sign-On for Fediverse</a> and <a href="https://socialhub.activitypub.rocks/t/federating-authentication/823/1" class="inline-onebox">Federating authentication</a>.</p>
+<h1>Content-addressing</h1>
+<p>As <a href="https://socialhub.activitypub.rocks/t/content-addressing-and-signatures/744">previously mentioned</a> we have been doing some fiddling around with content-addressing. This is now implemented in CPub and GeoPub.</p>
+<p>The id of newly created content is not a URL pointing to some location but consists of a hash of the content-itself (as a URN). For example <a href="https://geopub.openengiadina.net/browse/object/urn%253Aerisx%253AAAAABKIJ2AGOMGIBANWOBNH2WP4PDHX7VTTWBAZS5DFMETDISPENRVVASNARFE5VC3VYQJUEVQSL2X45IR7CUCWQYGY3PA6WSNTL7CFUYB3A" rel="nofollow noopener">this “Hello World”</a> note has the identifier <code>urn:erisx:AAAABKIJ2AGOMGIBANWOBNH2WP4PDHX7VTTWBAZS5DFMETDISPENRVVASNARFE5VC3VYQJUEVQSL2X45IR7CUCWQYGY3PA6WSNTL7CFUYB3A</code>.</p>
+<p>This allows the content to be stored and transported in many different ways (IPFS, a USB stick, …). For the moment you can also use the CPub <code>objects</code> endpoint: <a href="https://openengiadina.net/objects/?iri=urn:erisx:AAAABKIJ2AGOMGIBANWOBNH2WP4PDHX7VTTWBAZS5DFMETDISPENRVVASNARFE5VC3VYQJUEVQSL2X45IR7CUCWQYGY3PA6WSNTL7CFUYB3A" rel="nofollow noopener">https://openengiadina.net/objects/?iri=urn:erisx:AAAABKIJ2AGOMGIBANWOBNH2WP4PDHX7VTTWBAZS5DFMETDISPENRVVASNARFE5VC3VYQJUEVQSL2X45IR7CUCWQYGY3PA6WSNTL7CFUYB3A</a></p>
+<p>This allows pretty neat things such as:</p>
+<ul>
+<li>A client can compute the identifier of newly created content on it’s own and can only forward the content to a server at a (much) later time. This enables offline-first clients.</li>
+<li>The authenticity of content can be directly verified by recomputing the identifier.</li>
+<li>Mutable content (such as a website) can be cached (go <a href="https://geopub.openengiadina.net/browse/object/https%253A%252F%252Fchaos.social%252Fusers%252Fpukkamustard" rel="nofollow noopener">here</a> and hit “Load more data” to see how this might work).</li>
+</ul>
+<p>There are also some things that suddenly become impossible: If the server changes the content of the activity when it is posted (add the correct actor, or published date) this will change the identifier of the content. This might cause problems and currently CPub does not allow any content to be posted that it would have to change. In particular <code>bcc</code> and <code>bto</code> are not supported by CPub.</p>
+<p>Anyways, give it a try and let me know what you think. Currently GeoPub only supports liking, so like away…</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/demo-federated-authentication-and-content-addressing/874">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/demo-federated-authentication-and-content-addressing/874</link>
+          <pubDate>Wed, 12 Aug 2020 12:41:56 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-874</guid>
+          <source url="https://socialhub.activitypub.rocks/t/demo-federated-authentication-and-content-addressing/874.rss">Demo: Federated Authentication and content-addressing</source>
+        </item>
+        <item>
+          <title>Content-addressing and signatures</title>
+          <dc:creator><![CDATA[pukkamustard]]></dc:creator>
+          <category>openEngiadina</category>
+          <description><![CDATA[
+            <p>As part of the <a href="https://openengiadina.net/" rel="nofollow noopener">openEngiadina</a> we have been doing some <a href="https://gitlab.com/openengiadina/data-model/" rel="nofollow noopener">research into data model and data storage</a> and are happy to announce initial results and a <a href="https://openengiadina.gitlab.io/js-eris/index.html" rel="nofollow noopener">demo</a>.</p>
+<p>There are three main parts:</p>
+<ul>
+<li>
+<a href="https://openengiadina.net/papers/content-addressable-rdf.html" rel="nofollow noopener">How to make RDF Content-addressable</a>: Basically two tricks: How to group RDF statements and how the grouping can be encoded in a canonical form.</li>
+<li>
+<a href="https://openengiadina.net/papers/rdf-signify.html" rel="nofollow noopener">How to sign content addressed RDF</a>: Once RDF is content-addressed it can be signed by simply signing it’s identifer (which is the hash). This introduces a small vocabulary for doing this based on the OpenBSD signify tool.</li>
+<li>
+<a href="https://openengiadina.net/papers/eris.html" rel="nofollow noopener">A secure way of doing content-addressing (ERIS)</a>: Naive content-addressing (just using the hash of the content) has some downsides. We present a scheme that was very much influenced by Datashards on how to securely store immutable content.</li>
+</ul>
+<p>All together we hope this might serve as robust and implementable foundations for offline-first and decentralized applications and to maybe pave a way towards decentralized ActivityPub.</p>
+<p>We have a <a href="https://openengiadina.gitlab.io/js-eris/index.html" rel="nofollow noopener">demo</a> that runs in the browser to show how this all works. The demo is capable of encoding any ActivityPub content (any JSON-LD) and I invite you to try it out.</p>
+<p>The demo also shows how all this works for <a href="https://socialhub.activitypub.rocks/t/content-addressed-vocabulary-for-extensions/539">content-addressed vocabularies</a></p>
+<p>There is also a <a href="https://gitlab.com/openengiadina/js-eris" rel="nofollow noopener">JavaScript</a> implementation that can be used (as well as a <a href="https://gitlab.com/openengiadina/data-model/" rel="nofollow noopener">Guile</a> implementation).</p>
+<h2>Relation to Datashards</h2>
+<p>ERIS (the scheme for content-addressing) is very much influenced by immutable Datashards.</p>
+<p>The research started as an attempt to reimplement Datashards but grew out to explore some other ideas. The main differences are:</p>
+<ul>
+<li>Different crypto primitives (BLAKE2b + ChaCha20 instead of SHA256 + AES)</li>
+<li>Blocks are combined in a tree (instead of a chain)</li>
+<li>Adds a verification capability (allows content to be cached without being able to read content)</li>
+<li>No mechanism for mutable content</li>
+</ul>
+<p>Idea is to converge in the future, discussion and work towards that has already <a href="https://gitlab.com/datashards/immutable-datashards-spec/-/issues" rel="nofollow noopener">started</a>.</p>
+<h2>Does this make signing JSON-LD easier?</h2>
+<p>Eeh, kind of…</p>
+<p>A design goal is implementability. However it starts at the RDF level.</p>
+<p>Once you have your content as RDF triples the implementations is fairly straightforward (and is optimized to be so). However (and unfortunately) when content is encoded as JSON-LD you still need to go trough the <a href="https://json-ld.org/spec/REC/json-ld-api/20140116/#expansion-algorithms" rel="nofollow noopener">expansion madness</a>. The <a href="https://openengiadina.gitlab.io/js-eris/index.html" rel="nofollow noopener">demo</a> uses the JavaScript JSON-LD library to do this.</p>
+<p>Compared to <a href="https://w3c-ccg.github.io/ld-proofs/" rel="nofollow noopener">Linked Data Proofs</a> (previously LD-Signatures) I believe <a href="https://openengiadina.net/papers/rdf-signify.html" rel="nofollow noopener">what we propose</a> is simpler and implementable (also less general and more opinionated).</p>
+<h2>Next steps</h2>
+<p>We intend to implement this in an Elixir ActivityPub server and get some hands-on experience.</p>
+<p>I’d be very happy for feedback, comments and questions. If anybody is interested in experimenting and implementing I would be thrilled.</p>
+            <p><small>5 posts - 3 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/content-addressing-and-signatures/744">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/content-addressing-and-signatures/744</link>
+          <pubDate>Thu, 11 Jun 2020 11:18:16 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-744</guid>
+          <source url="https://socialhub.activitypub.rocks/t/content-addressing-and-signatures/744.rss">Content-addressing and signatures</source>
+        </item>
+        <item>
+          <title>Issue tracker for CPub?</title>
+          <dc:creator><![CDATA[how]]></dc:creator>
+          <category>openEngiadina</category>
+          <description><![CDATA[
+            <p>Ohay, I’m wondering about an issue tracker for CPub, since I’m bumping into an install issue and cannot find an issue tracker in the repository.</p>
+<pre><code class="lang-auto">mix ecto.setup
+
+18:09:56.469 [error] GenServer #PID&lt;0.251.0&gt; terminating
+** (Postgrex.Error) FATAL 28P01 (invalid_password) password authentication failed for user "postgres"
+    (db_connection 2.1.1) lib/db_connection/connection.ex:87: DBConnection.Connection.connect/2
+    (connection 1.0.4) lib/connection.ex:622: Connection.enter_connect/5
+    (stdlib 3.12.1) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+Last message: nil
+State: Postgrex.Protocol
+** (Mix) The database for CPub.Repo couldn't be created: killed
+</code></pre>
+<p>Since I’m on Debian, peer authentication is used by default.</p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/issue-tracker-for-cpub/615">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/issue-tracker-for-cpub/615</link>
+          <pubDate>Tue, 14 Apr 2020 18:04:46 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-615</guid>
+          <source url="https://socialhub.activitypub.rocks/t/issue-tracker-for-cpub/615.rss">Issue tracker for CPub?</source>
+        </item>
+        <item>
+          <title>About openEngiadina</title>
+          <dc:creator><![CDATA[pukkamustard]]></dc:creator>
+          <category>openEngiadina</category>
+          <description><![CDATA[
+            <p>Create, share and use open local knowledge.</p>
+<p><a href="https://openengiadina.net/index.html" rel="nofollow noopener"><img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/d74fce8873b500155cf0956e53ba32afdd5f21de.png" alt="openEngiadina" data-base62-sha1="uIJDLotMbKhPzoMYRQJBL4S7tiC" width="690" height="80"></a></p>
+<p>openEngiadina is an effort towards creating a platform for open local knowledge.</p>
+<p>Local knowledge consists of thousands of little pieces of information and data that describe the social, cultural an natural environment of an area.</p>
+<p>We believe that local knowledge should be freely available for everyone to use and republish as they wish, local knowledge needs to be <a href="https://opendefinition.org/" rel="nofollow noopener">open data</a>. However, having access to data is not enough. Data needs to be accessible and efficiently useable. Local knowledge needs to be <a href="https://okfn.org/opendata/" rel="nofollow noopener">open knowledge</a>.</p>
+<p>The goal of the openEngiadina project is to research and develop data models, protocols and software that allow local knowledge to be created, shared and used.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/about-openengiadina/607">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/about-openengiadina/607</link>
+          <pubDate>Sun, 12 Apr 2020 11:11:37 +0000</pubDate>
+          <discourse:topicPinned>Yes</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-607</guid>
+          <source url="https://socialhub.activitypub.rocks/t/about-openengiadina/607.rss">About openEngiadina</source>
+        </item>
+        <item>
+          <title>GeoPub - initial demo</title>
+          <dc:creator><![CDATA[pukkamustard]]></dc:creator>
+          <category>openEngiadina</category>
+          <description><![CDATA[
+            <p>Hello SocialHub!</p>
+<p>I’ve been working on a project called <a href="https://openengiadina.net" rel="nofollow noopener">openEngiadina</a> that uses ActivityPub for “local knowledge”. Local knowledge might include things like:</p>
+<ul>
+<li>points of interest</li>
+<li>events</li>
+<li>local organizations and businesses</li>
+<li>classifieds</li>
+<li>real-time status of infrastructure</li>
+</ul>
+<p>We have an initial demo of our client working and I would be very happy for feedback, questions and comments.</p>
+<p>Demo instance: <a href="https://openengiadina.net/geopub/" rel="nofollow noopener">https://openengiadina.net/geopub/</a></p>
+<p>A post explaining the demo and some background: <a href="https://inqlab.net/2020-04-06-geopub-activitypub-for-content-curation.html" rel="nofollow noopener">https://inqlab.net/2020-04-06-geopub-activitypub-for-content-curation.html</a></p>
+<p>Thanks!</p>
+            <p><small>9 posts - 5 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/geopub-initial-demo/603">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/geopub-initial-demo/603</link>
+          <pubDate>Tue, 07 Apr 2020 07:32:14 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-603</guid>
+          <source url="https://socialhub.activitypub.rocks/t/geopub-initial-demo/603.rss">GeoPub - initial demo</source>
+        </item>
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>About reel2bits</title>
+    <link>https://socialhub.activitypub.rocks/t/about-reel2bits/397</link>
+    <description>[reel2bits](https://reel2bits.org/) is a self-hosted Soundtracks and Podcasts sharing, with ActivityPub federation.
+
+The website is located at https://reel2bits.org/ and the source code on https://github.com/reel2bits/reel2bits</description>
+    
+    <lastBuildDate>Fri, 13 Dec 2019 18:36:40 +0000</lastBuildDate>
+    <category>reel2bits</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/about-reel2bits/397.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>About reel2bits</title>
+        <dc:creator><![CDATA[dashie]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="https://reel2bits.org/" rel="nofollow noopener">reel2bits</a> is a self-hosted Soundtracks and Podcasts sharing, with ActivityPub federation.</p>
+<p>The website is located at <a href="https://reel2bits.org/" rel="nofollow noopener">https://reel2bits.org/</a> and the source code on <a href="https://github.com/reel2bits/reel2bits" rel="nofollow noopener">https://github.com/reel2bits/reel2bits</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-reel2bits/397/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-reel2bits/397/1</link>
+        <pubDate>Fri, 13 Dec 2019 13:54:24 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-397-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-reel2bits/397.rss">About reel2bits</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Indymedia reboot and epicyon codeing - hackathon - ActivityPub Conference 2020 - SocialHub</title>
+    <meta name="description" content="Template and back end work on the epicyon https://epicyon.net/ activertypub code base to make a village/street level indymedia news site based on the OMN project. 
+We plan to get a test activertypub news site online by t&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="987.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Indymedia reboot and epicyon codeing - hackathon&#39;" href="987.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987" />
+<meta property="og:title" content="Indymedia reboot and epicyon codeing - hackathon" />
+<meta name="twitter:title" content="Indymedia reboot and epicyon codeing - hackathon" />
+<meta property="og:description" content="Template and back end work on the epicyon https://epicyon.net/ activertypub code base to make a village/street level indymedia news site based on the OMN project.  We plan to get a test activertypub news site online by the end of the week, if your not sure how it should work watch the video The reboot of the indymedia project - ConfTube  Todo:    Add or check emoji. Many are implemented, but it might not be very comprehensive.    Figure out the workflow for incoming moderated posts.    Artwork f..." />
+<meta name="twitter:description" content="Template and back end work on the epicyon https://epicyon.net/ activertypub code base to make a village/street level indymedia news site based on the OMN project.  We plan to get a test activertypub news site online by the end of the week, if your not sure how it should work watch the video The reboot of the indymedia project - ConfTube  Todo:    Add or check emoji. Many are implemented, but it might not be very comprehensive.    Figure out the workflow for incoming moderated posts.    Artwork f..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="4 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="7 ❤" />
+<meta property="article:published_time" content="2020-10-01T20:58:44+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="987.html">Indymedia reboot and epicyon codeing - hackathon</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="https://socialhub.activitypub.rocks/c/meeting/11" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #0E76BD'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Meeting</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/meeting/apconf2020/53.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #ff7a00'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>ActivityPub Conference 2020</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+      <div class="topic-category">
+        <div class='discourse-tags list-tags'>
+            <a href='../../tag/hackathon.html' class='discourse-tag' rel="tag">hackathon</a>
+        </div>
+      </div>
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/hamishcampbell.html'><span itemprop='name'>hamishcampbell</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="987.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-10-01T20:58:44Z'>
+              <time itemprop='dateModified' datetime='2020-10-05T13:34:22Z' class='post-time'>
+                October 5, 2020,  1:34pm
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Template and back end work on the epicyon <a href="https://epicyon.net/" rel="noopener nofollow ugc">https://epicyon.net/</a> activertypub code base to make a village/street level indymedia news site based on the OMN project.</p>
+<p>We plan to get a test activertypub news site online by the end of the week, if your not sure how it should work watch the video <a href="https://conf.tube/videos/watch/953de898-74dc-4665-95fb-313042f66cc6?start=" class="inline-onebox" rel="noopener nofollow ugc">The reboot of the indymedia project - ConfTube</a></p>
+<p><strong>Todo:</strong></p>
+<ul>
+<li>
+<p>Add or check emoji. Many are implemented, but it might not be very comprehensive.</p>
+</li>
+<li>
+<p>Figure out the workflow for incoming moderated posts.</p>
+</li>
+<li>
+<p>Artwork for themes. Backgrounds, banners, icon sets, fonts. Get as creative as you want. Instance appearance doesn’t retain users but it’s an initial “this might be interesting” sign.</p>
+</li>
+<li>
+<p>Fix polls, which currently don’t work very well. How are polls supposed to work at the protocol level?</p>
+</li>
+<li>
+<p>Add or fix translations. Translate the website or the Gemini site.</p>
+</li>
+<li>
+<p>Testing with i2p. Are there any new bugs?</p>
+</li>
+<li>
+<p>Change the way that events are displayed, also ideas for how rsvp should be implemented. Is there any consensus on this?</p>
+</li>
+</ul>
+<p>We need to think about a database driven activertypub code base for bigger sites as well<a href="../../uploads/short-url/38d1GfRQ9hQcGALyk4agZ2aqSYI.jpeg"></a></p>
+<aside class="quote quote-modified" data-post="1" data-topic="942">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/hamishcampbell/40/284_2.png" class="avatar">
+    <a href="../the-reboot-of-the-indymedia-project/942.html">The reboot of the indymedia project</a> <a class="badge-wrapper  box" href="../../c/meeting/apconf2020/53.html"><span class="badge-category-parent-bg" style="background-color: #0E76BD;"></span><span class="badge-category-bg" style="background-color: #ff7a00;"></span><span style="color: #ffffff" data-drop-close="true" class="badge-category clear-badge" title="Add your proposals for the Conf by creating a New Topic –
+Tag it #bof for Birds of Feather sessions or #hackathon for Hack proposals …">ActivityPub Conference 2020</span></a>
+  </div>
+  <blockquote>
+    Hamish Campbell 
+ 
+We are a wide affinity group working to reboot the global indymedia network using modern federated protocols such as <a class="hashtag" href="../../c/activitypub.html">#activitypub</a>. This reboot will be based on the OMN project code. 
+What is the OMN (Open Media Network): 
+The project is to shift power to the producers and consumers of media. It’s about good UI and simple empowering #KISS tools to move content, by categorising it with a grassroots folksonomy. This simple approach is balanced by shared site level syntax for the …
+  </blockquote>
+</aside>
+
+        </div>
+
+        <meta itemprop='headline' content='Indymedia reboot and epicyon codeing - hackathon'>
+          <meta itemprop='keywords' content='hackathon'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/marnanel.html'><span itemprop='name'>marnanel</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="987.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-02T00:07:47Z' class='post-time'>
+                October 2, 2020, 12:07am
+              </time>
+              <meta itemprop='dateModified' content='2020-10-02T00:07:47Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>This sounds really exciting-- I miss indymedia!</p>
+        </div>
+
+        <meta itemprop='headline' content='Indymedia reboot and epicyon codeing - hackathon'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/bashrc.html'><span itemprop='name'>bashrc</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="987.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-10-05T13:18:08Z'>
+              <time itemprop='dateModified' datetime='2020-10-05T18:06:15Z' class='post-time'>
+                October 5, 2020,  6:06pm
+              </time>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Some things which can be done on Epicyon:</p>
+<p>Add or check emoji. Many are implemented, but it might not be very comprehensive.</p>
+<p>Figure out the workflow for incoming moderated posts.</p>
+<p>Artwork for themes. Backgrounds, banners, icon sets, fonts. Get as creative as you want. Instance appearance doesn’t retain users but it’s an initial “this might be interesting” sign.</p>
+<p>Fix polls, which currently don’t work very well. How are polls supposed to work at the protocol level?</p>
+<p>Add or fix translations. Translate the website or the Gemini site.</p>
+<p>Testing with i2p. Are there any new bugs?</p>
+<p>Testing in lynx, or a similar shell browser, with a screen reader. The UI should be accessible!</p>
+<p>Change the way that events are displayed, also ideas for how rsvp should be implemented. Is there any consensus on this?</p>
+<p>An advanced challenge would be to add support for WebAuth. My knowledge of this is hazy, and it might involve adding javascript to the login screen. WebAuth with a physical token might be useful in some scenarios (including journalistic ones).</p>
+<p>Support atom feeds on the newswire.</p>
+<p>When switching to the Indymedia theme, make it a blogging instance by default.</p>
+<p>Metadata is removed from uploaded images. Maybe under some journalistic scenarios the metadata should be preserved. Perhaps an option box for “preserve photo metadata”.</p>
+<p>For photo journalism, should the media timeline look any different?</p>
+<p>Add the option to specify or suggest a petname at the time of following an account.</p>
+        </div>
+
+        <meta itemprop='headline' content='Indymedia reboot and epicyon codeing - hackathon'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/hamishcampbell.html'><span itemprop='name'>hamishcampbell</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="987.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-05T13:31:58Z' class='post-time'>
+                October 5, 2020,  1:31pm
+              </time>
+              <meta itemprop='dateModified' content='2020-10-05T13:31:58Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Added it to the main post will share it out agen in a bit.</p>
+        </div>
+
+        <meta itemprop='headline' content='Indymedia reboot and epicyon codeing - hackathon'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/hamishcampbell.html'><span itemprop='name'>hamishcampbell</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="987.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-05T18:10:55Z' class='post-time'>
+                October 5, 2020,  6:10pm
+              </time>
+              <meta itemprop='dateModified' content='2020-10-05T18:10:55Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Codeing happening live’ish <a href="https://unite.openworlds.info/bashrc/epicyon/compare/aa1e481b1095d377d60ce3a4321062cb595fcc2a...6dbf97e172da92e017ddb7f8de19581e63b8f8c4" rel="noopener nofollow ugc">https://unite.openworlds.info/bashrc/epicyon/compare/aa1e481b1095d377d60ce3a4321062cb595fcc2a...6dbf97e172da92e017ddb7f8de19581e63b8f8c4</a></p>
+        </div>
+
+        <meta itemprop='headline' content='Indymedia reboot and epicyon codeing - hackathon'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/bashrc.html'><span itemprop='name'>bashrc</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="987.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-07T10:25:50Z' class='post-time'>
+                October 7, 2020, 10:25am
+              </time>
+              <meta itemprop='dateModified' content='2020-10-07T10:25:50Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Adding a news timeline to show featured items. There will be a news instance type where this is the default timeline.</p>
+        </div>
+
+        <meta itemprop='headline' content='Indymedia reboot and epicyon codeing - hackathon'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/saunders.html'><span itemprop='name'>saunders</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="987.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-07T19:05:53Z' class='post-time'>
+                October 7, 2020,  7:05pm
+              </time>
+              <meta itemprop='dateModified' content='2020-10-07T19:05:53Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../u/hamishcampbell.html">@hamishcampbell</a> and others;<br>
+can we define a use-case for “bigger sites” that would require backend database?<br>
+including min/max user count - there should be some kind of cap to re-enforce federation (of course, people can edit, but no reason not to encourage sense).</p>
+<p>is this specifically for epicyon? or other relevant aspects of freedombone as well (e.g. blogging apps, etc) ?</p>
+        </div>
+
+        <meta itemprop='headline' content='Indymedia reboot and epicyon codeing - hackathon'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/hamishcampbell.html'><span itemprop='name'>hamishcampbell</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="987.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-10-07T20:04:25Z'>
+              <time itemprop='dateModified' datetime='2020-10-07T22:19:10Z' class='post-time'>
+                October 7, 2020, 10:19pm
+              </time>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Were recreating an existing project with all its structures and process in place.</p>
+<p>Indymedia worked at city level, regional/state level, national level and global level.</p>
+<p>We are adding an extra level the hyper local to this mix.</p>
+<p>We still need a code-base that works at city, regional, national and global.</p>
+<p>Its a big project for thousands if not 10’s of thousands of people to be involved</p>
+<p>This grew very fast, most in the first 3 years:</p>
+<p><strong>Other UK IMCs</strong><br>
+<a href="http://bristol.indymedia.org/" rel="noopener nofollow ugc">Bristol/South West</a><br>
+<a href="http://london.indymedia.org.uk/" rel="noopener nofollow ugc">London</a><br>
+<a href="http://northern-indymedia.org/" rel="noopener nofollow ugc">Northern Indymedia</a><br>
+<a href="http://scotland.indymedia.org/" rel="noopener nofollow ugc">Scotland</a></p>
+<h2>IMCs</h2>
+<p><a href="https://www.indymedia.org/" rel="noopener nofollow ugc">www.indymedia.org</a></p>
+<p><strong>Projects</strong><br>
+<a href="http://print.indymedia.org/" rel="noopener nofollow ugc">print</a><br>
+<a href="http://radio.indymedia.org/" rel="noopener nofollow ugc">radio</a><br>
+<a href="http://satellite.indymedia.org/" rel="noopener nofollow ugc">satellite tv</a><br>
+<a href="http://video.indymedia.org" rel="noopener nofollow ugc">video</a></p>
+<p><a href="http://imc-africa.mayfirst.org/" rel="noopener nofollow ugc">Africa</a></p>
+<p><strong>Europe</strong><br>
+<a href="http://antwerpen-indymedia.be" rel="noopener nofollow ugc">antwerpen</a><br>
+<a href="http://armenia.indymedia.org/" rel="noopener nofollow ugc">armenia</a><br>
+<a href="http://athens.indymedia.org/" rel="noopener nofollow ugc">athens</a><br>
+<a href="http://austria.indymedia.org/" rel="noopener nofollow ugc">austria</a><br>
+<a href="http://barcelona.indymedia.org/" rel="noopener nofollow ugc">barcelona</a><br>
+<a href="http://belarus.indymedia.org/" rel="noopener nofollow ugc">belarus</a><br>
+<a href="http://belgium.indymedia.org/" rel="noopener nofollow ugc">belgium</a><br>
+<a href="http://belgrade.indymedia.org" rel="noopener nofollow ugc">belgrade</a><br>
+<a href="http://bxl.indymedia.org" rel="noopener nofollow ugc">brussels</a><br>
+<a href="http://bulgaria.indymedia.org" rel="noopener nofollow ugc">bulgaria</a><br>
+<a href="http://calabria.indymedia.org" rel="noopener nofollow ugc">calabria</a><br>
+<a href="http://croatia.indymedia.org" rel="noopener nofollow ugc">croatia</a><br>
+<a href="http://cyprus.indymedia.org" rel="noopener nofollow ugc">cyprus</a><br>
+<a href="http://emiliaromagna.indymedia.org/" rel="noopener nofollow ugc">emilia-romagna</a><br>
+<a href="http://estrecho.indymedia.org" rel="noopener nofollow ugc">estrecho / madiaq</a><br>
+<a href="http://galiza.indymedia.org" rel="noopener nofollow ugc">galiza</a><br>
+<a href="http://de.indymedia.org/" rel="noopener nofollow ugc">germany</a><br>
+<a href="http://grenoble.indymedia.org" rel="noopener nofollow ugc">grenoble</a><br>
+<a href="http://hungary.indymedia.org" rel="noopener nofollow ugc">hungary</a><br>
+<a href="http://www.indymedia.ie/" rel="noopener nofollow ugc">ireland</a><br>
+<a href="http://istanbul.indymedia.org/" rel="noopener nofollow ugc">istanbul</a><br>
+<a href="http://italy.indymedia.org/" rel="noopener nofollow ugc">italy</a><br>
+<a href="http://laplana.indymedia.org" rel="noopener nofollow ugc">la plana</a><br>
+<a href="http://liege.indymedia.org" rel="noopener nofollow ugc">liege</a><br>
+<a href="http://liguria.indymedia.org" rel="noopener nofollow ugc">liguria</a><br>
+<a href="http://lille.indymedia.org" rel="noopener nofollow ugc">lille</a><br>
+<a href="http://linksunten.indymedia.org" rel="noopener nofollow ugc">linksunten</a><br>
+<a href="http://lombardia.indymedia.org/" rel="noopener nofollow ugc">lombardia</a><br>
+<a href="http://madrid.indymedia.org/" rel="noopener nofollow ugc">madrid</a><br>
+<a href="http://malta.indymedia.org" rel="noopener nofollow ugc">malta</a><br>
+<a href="http://marseille.indymedia.org" rel="noopener nofollow ugc">marseille</a><br>
+<a href="http://nantes.indymedia.org" rel="noopener nofollow ugc">nantes</a><br>
+<a href="http://napoli.indymedia.org" rel="noopener nofollow ugc">napoli</a><br>
+<a href="http://indymedia.nl" rel="noopener nofollow ugc">netherlands</a><br>
+<a href="http://northern.indymedia.org" rel="noopener nofollow ugc">northern england</a><br>
+<a href="https://nottingham.indymedia.org" rel="noopener nofollow ugc">nottingham imc</a><br>
+<a href="http://paris.indymedia.org/" rel="noopener nofollow ugc">paris/île-de-france</a><br>
+<a href="http://patras.indymedia.org/" rel="noopener nofollow ugc">patras</a><br>
+<a href="http://piemonte.indymedia.org" rel="noopener nofollow ugc">piemonte</a><br>
+<a href="http://poland.indymedia.org" rel="noopener nofollow ugc">poland</a><br>
+<a href="http://pt.indymedia.org/" rel="noopener nofollow ugc">portugal</a><br>
+<a href="http://roma.indymedia.org" rel="noopener nofollow ugc">roma</a><br>
+<a href="http://romania.indymedia.org" rel="noopener nofollow ugc">romania</a><br>
+<a href="http://russia.indymedia.org/" rel="noopener nofollow ugc">russia</a><br>
+<a href="http://sardegna.indymedia.org" rel="noopener nofollow ugc">sardegna</a><br>
+<a href="http://www.indymediascotland.org/" rel="noopener nofollow ugc">scotland</a><br>
+<a href="http://sweden.indymedia.org/" rel="noopener nofollow ugc">sverige</a><br>
+<a href="http://switzerland.indymedia.org/" rel="noopener nofollow ugc">switzerland</a><br>
+<a href="http://torun.indymedia.org/" rel="noopener nofollow ugc">torun</a><br>
+<a href="http://toscana.indymedia.org/" rel="noopener nofollow ugc">toscana</a><br>
+<a href="http://ukraine.indymedia.org/" rel="noopener nofollow ugc">ukraine</a><br>
+<a href="http://www.indymedia.org.uk/" rel="noopener nofollow ugc">united kingdom</a><br>
+<a href="http://valencia.indymedia.org" rel="noopener nofollow ugc">valencia</a></p>
+<p><strong>Latin America</strong><br>
+<a href="http://argentina.indymedia.org/" rel="noopener nofollow ugc">argentina</a><br>
+<a href="http://bolivia.indymedia.org/" rel="noopener nofollow ugc">bolivia</a><br>
+<a href="http://chiapas.indymedia.org/" rel="noopener nofollow ugc">chiapas</a><br>
+<a href="http://chile.indymedia.org" rel="noopener nofollow ugc">chile</a><br>
+<a href="http://chilesur.indymedia.org" rel="noopener nofollow ugc">chile sur</a><br>
+<a href="http://www.midiaindependente.org" rel="noopener nofollow ugc">cmi brasil</a><br>
+<a href="http://sucre.indymedia.org/" rel="noopener nofollow ugc">cmi sucre</a><br>
+<a href="http://colombia.indymedia.org/" rel="noopener nofollow ugc">colombia</a><br>
+<a href="http://ecuador.indymedia.org/" rel="noopener nofollow ugc">ecuador</a><br>
+<a href="http://mexico.indymedia.org/" rel="noopener nofollow ugc">mexico</a><br>
+<a href="http://peru.indymedia.org" rel="noopener nofollow ugc">peru</a><br>
+<a href="http://indymediapr.org" rel="noopener nofollow ugc">puerto rico</a><br>
+<a href="http://qollasuyu.indymedia.org/" rel="noopener nofollow ugc">qollasuyu</a><br>
+<a href="http://rosario.indymedia.org/" rel="noopener nofollow ugc">rosario</a><br>
+<a href="http://santiago.indymedia.org" rel="noopener nofollow ugc">santiago</a><br>
+<a href="http://tijuana.indymedia.org/" rel="noopener nofollow ugc">tijuana</a><br>
+<a href="http://uruguay.indymedia.org/" rel="noopener nofollow ugc">uruguay</a><br>
+<a href="http://valparaiso.indymedia.org" rel="noopener nofollow ugc">valparaiso</a><br>
+<a href="http://venezuela.indymedia.org/" rel="noopener nofollow ugc">venezuela</a></p>
+<p><strong>Oceania</strong><br>
+<a href="http://www.indymedia.org.nz/" rel="noopener nofollow ugc">aotearoa</a><br>
+<a href="http://brisbane.indymedia.org/" rel="noopener nofollow ugc">brisbane</a><br>
+<a href="http://burma.indymedia.org/" rel="noopener nofollow ugc">burma</a><br>
+<a href="http://darwin.indymedia.org" rel="noopener nofollow ugc">darwin</a><br>
+<a href="http://jakarta.indymedia.org/" rel="noopener nofollow ugc">jakarta</a><br>
+<a href="http://manila.indymedia.org/" rel="noopener nofollow ugc">manila</a><br>
+<a href="http://melbourne.indymedia.org/" rel="noopener nofollow ugc">melbourne</a><br>
+<a href="http://perth.indymedia.org/" rel="noopener nofollow ugc">perth</a><br>
+<a href="http://qc.indymedia.org" rel="noopener nofollow ugc">qc</a><br>
+<a href="http://sydney.indymedia.org/" rel="noopener nofollow ugc">sydney</a></p>
+<p><strong>South Asia</strong><br>
+<a href="http://india.indymedia.org/" rel="noopener nofollow ugc">india</a></p>
+<p><strong>United States</strong><br>
+<a href="http://arizona.indymedia.org/" rel="noopener nofollow ugc">arizona</a><br>
+<a href="http://arkansas.indymedia.org/" rel="noopener nofollow ugc">arkansas</a><br>
+<a href="http://asheville.indymedia.org/" rel="noopener nofollow ugc">asheville</a><br>
+<a href="http://atlanta.indymedia.org/" rel="noopener nofollow ugc">atlanta</a><br>
+<a href="http://austin.indymedia.org/" rel="noopener nofollow ugc">Austin</a><br>
+<a href="http://binghamton.indymedia.org" rel="noopener nofollow ugc">binghamton</a><br>
+<a href="http://boston.indymedia.org/" rel="noopener nofollow ugc">boston</a><br>
+<a href="http://buffalo.indymedia.org/" rel="noopener nofollow ugc">buffalo</a><br>
+<a href="http://chicago.indymedia.org/" rel="noopener nofollow ugc">chicago</a><br>
+<a href="http://cleveland.indymedia.org/" rel="noopener nofollow ugc">cleveland</a><br>
+<a href="http://colorado.indymedia.org/" rel="noopener nofollow ugc">colorado</a><br>
+<a href="http://columbus.indymedia.org" rel="noopener nofollow ugc">columbus</a><br>
+<a href="http://dc.indymedia.org/" rel="noopener nofollow ugc">dc</a><br>
+<a href="http://hawaii.indymedia.org/" rel="noopener nofollow ugc">hawaii</a><br>
+<a href="http://houston.indymedia.org" rel="noopener nofollow ugc">houston</a><br>
+<a href="http://www.hm.indymedia.org/" rel="noopener nofollow ugc">hudson mohawk</a><br>
+<a href="http://kcindymedia.org/" rel="noopener nofollow ugc">kansas city</a><br>
+<a href="http://la.indymedia.org/" rel="noopener nofollow ugc">la</a><br>
+<a href="http://madison.indymedia.org/" rel="noopener nofollow ugc">madison</a><br>
+<a href="http://maine.indymedia.org/" rel="noopener nofollow ugc">maine</a><br>
+<a href="http://miami.indymedia.org/" rel="noopener nofollow ugc">miami</a><br>
+<a href="http://www.michiganimc.org/" rel="noopener nofollow ugc">michigan</a><br>
+<a href="http://milwaukee.indymedia.org/" rel="noopener nofollow ugc">milwaukee</a><br>
+<a href="http://twincities.indymedia.org/" rel="noopener nofollow ugc">minneapolis/st. paul</a><br>
+<a href="http://nh.indymedia.org" rel="noopener nofollow ugc">new hampshire</a><br>
+<a href="http://newjersey.indymedia.org/" rel="noopener nofollow ugc">new jersey</a><br>
+<a href="http://newmexico.indymedia.org/" rel="noopener nofollow ugc">new mexico</a><br>
+<a href="http://neworleans.indymedia.org/" rel="noopener nofollow ugc">new orleans</a><br>
+<a href="http://chapelhill.indymedia.org/" rel="noopener nofollow ugc">north carolina</a><br>
+<a href="http://www.ntimc.org/" rel="noopener nofollow ugc">north texas</a><br>
+<a href="http://nyc.indymedia.org/" rel="noopener nofollow ugc">nyc</a><br>
+<a href="http://www.okimc.org" rel="noopener nofollow ugc">oklahoma</a><br>
+<a href="http://www.phillyimc.org/" rel="noopener nofollow ugc">philadelphia</a><br>
+<a href="http://pittsburgh.indymedia.org" rel="noopener nofollow ugc">pittsburgh</a><br>
+<a href="http://portland.indymedia.org/" rel="noopener nofollow ugc">portland</a><br>
+<a href="http://richmond.indymedia.org/" rel="noopener nofollow ugc">richmond</a><br>
+<a href="http://rochester.indymedia.org/" rel="noopener nofollow ugc">rochester</a><br>
+<a href="http://rogueimc.org/" rel="noopener nofollow ugc">rogue valley</a><br>
+<a href="http://reboot.stlimc.org" rel="noopener nofollow ugc">saint louis</a><br>
+<a href="http://sandiego.indymedia.org/" rel="noopener nofollow ugc">san diego</a><br>
+<a href="http://sf.indymedia.org/" rel="noopener nofollow ugc">san francisco</a><br>
+<a href="http://www.indybay.org/" rel="noopener nofollow ugc">san francisco bay area</a><br>
+<a href="http://sbindymedia.org/" rel="noopener nofollow ugc">santa barbara</a><br>
+<a href="http://www.indybay.org/santacruz/" rel="noopener nofollow ugc">santa cruz, ca</a><br>
+<a href="http://sarasota.indymedia.org" rel="noopener nofollow ugc">sarasota</a><br>
+<a href="http://seattle.indymedia.org/" rel="noopener nofollow ugc">seattle</a><br>
+<a href="http://tampabay.indymedia.org" rel="noopener nofollow ugc">tampa bay</a><br>
+<a href="http://indymedia.us/" rel="noopener nofollow ugc">united states</a><br>
+<a href="http://www.ucimc.org/" rel="noopener nofollow ugc">urbana-champaign</a><br>
+<a href="http://vermont.indymedia.org/" rel="noopener nofollow ugc">vermont</a><br>
+<a href="http://wmass.indymedia.org/" rel="noopener nofollow ugc">western mass</a><br>
+<a href="http://worcester.indymedia.org" rel="noopener nofollow ugc">worcester</a></p>
+<p><strong>West Asia</strong><br>
+<a href="http://armenia.indymedia.org/" rel="noopener nofollow ugc">Armenia</a><br>
+<a href="http://beirut.indymedia.org" rel="noopener nofollow ugc">Beirut</a><br>
+<a href="http://israel.indymedia.org/" rel="noopener nofollow ugc">Israel</a><br>
+<a href="http://www.indymedia.org/en/static/palestine" rel="noopener nofollow ugc">Palestine</a></p>
+<p><strong>Topics</strong><br>
+<a href="http://biotech.indymedia.org/" rel="noopener nofollow ugc">biotech</a></p>
+        </div>
+
+        <meta itemprop='headline' content='Indymedia reboot and epicyon codeing - hackathon'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/saunders.html'><span itemprop='name'>saunders</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="987.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-10-08T05:01:59Z'>
+              <time itemprop='dateModified' datetime='2020-10-08T05:26:37Z' class='post-time'>
+                October 8, 2020,  5:26am
+              </time>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>ok, this is great, to get a better sense of it’s reach.</p>
+<p>Tell me if this is too far off-topic in this particular thread.<br>
+But I would still be interested in determining some method for scaling.<br>
+These would, at the very least, be “recommended/ sensible” defaults.</p>
+<hr>
+<p>I believe that once a group of people (collaborating, or even just participating in the same space, digitally or physically) gets beyond a certain capacity, moderation, consensus and forward-moving discussion/action becomes near impossible (and maybe this is a <em>good</em> thing).</p>
+<p>Consider <em>any</em> species population on the planet. Once a certain scale is met, it will self-divide, or if not in it’s nature, it will be kept to a healthy size by a predator (do not anthropomorphise the word predator).</p>
+<h3>Example</h3>
+<p>Let’s assume a maximum size for any functioning community to be <code>150</code> (I lean toward slightly less, but it’s a more round-ish number).</p>
+<blockquote>
+<p><code>15,000</code> people choose to be involved within <em>one</em> IMC, and they do not wish to divide into several smaller (approx <code>67</code> IMC’s) - one option might be:</p>
+</blockquote>
+<ul>
+<li>
+<p>Divide the <code>15,000</code> into <code>100</code> “sub-IMC’s” (groups) of <code>150</code> members</p>
+<ul>
+<li>each work with an equal proportion of the data flows coming in and going out from the IMC (blogs, reports, toots, etc…)</li>
+<li>there is no division based on content</li>
+<li>each group should be capable of handling all content types</li>
+</ul>
+</li>
+<li>
+<p>Within each <code>150</code>, have tight “guilds” ranging (default) from <code>3-12</code> members</p>
+<ul>
+<li>for a particular sub-set of the data flows - maybe determined simply by a specific set of <code>#hashtags</code>
+</li>
+<li>
+<code>3</code> minimum, required for consensus</li>
+<li>
+<code>12</code> is already a risky maximum for being able to maintain reasonable consensus</li>
+</ul>
+</li>
+<li>
+<p>Each “guild” shall likely be “specialised” in their expertise</p>
+<ul>
+<li>multiple guilds may have the same specialty
+<ul>
+<li>sharing a proportion of the sub-set of data flows, <strong><em>or</em></strong> based on <span class="hashtag">#hashtag</span>, etc</li>
+</ul>
+</li>
+<li>consensus should be reached between related guilds
+<ul>
+<li>automatically propogated out when making decisions <em>within</em>  the guilds’ “specialty”</li>
+<li>before propagating out to the wider set of guilds - for IMC-related decisions</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Further “guild-level” consensus may be implemented between groups for manageable “web”- (as opposed to hierarchical) decision making for the IMC at large.</p>
+</li>
+<li>
+<p>Each of the <code>100</code> groups could similarly have a “web”-based decision making approach, in order to achieve consensus among the IMC in toto.</p>
+<ul>
+<li>at this level, should consensus be difficult to reach, particularly repeatedly, this would be a strong sign to split
+<ul>
+<li>obviously the splits would ideally remain connected as “trusted peers” within the larger network of IMC’s.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Regarding consensus, there could be more “levels” between “guild” through to “group”, but kept to a minimum here for brevity.</p>
+<ul>
+<li>sets of <code>3</code> “guilds” may have to first achieve consensus before</li>
+<li>here we enter realms of more complication that require more thought, and would be more diverse in approach between different IMC’s</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>Of course, I accept that an IMC might choose not to follow this, but I believe we would be utterly remiss if we were not to encourage this.</p>
+<p>If there is any level of agreement for this approach, I would happily discuss it further, as I feel it would greatly help in building a genuinely robust network, that may be resistant to the inevitable in-fighting and collapse of “oversized colonies”.</p>
+        </div>
+
+        <meta itemprop='headline' content='Indymedia reboot and epicyon codeing - hackathon'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/hamishcampbell.html'><span itemprop='name'>hamishcampbell</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="987.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-10-08T08:29:54Z'>
+              <time itemprop='dateModified' datetime='2020-10-08T08:30:51Z' class='post-time'>
+                October 8, 2020,  8:30am
+              </time>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Its interesting to think about this, but likely not useful as almost all these decisions are made at the user/affinity group level and our mission is to build tools that allow them to take different paths, that still interop - activertypub.</p>
+<p>In the indymedia project most decisions already have a default - thus more a historian thinking, how did it used to work is the question… and its more complex than that - as how did it work at the successful start and how did it work at the dieing end is also a argument we do not wont to repeat <img src="../../images/emoji/twitter/slight_smile.png@v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+        </div>
+
+        <meta itemprop='headline' content='Indymedia reboot and epicyon codeing - hackathon'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/hamishcampbell.html'><span itemprop='name'>hamishcampbell</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="987.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-10-08T09:56:41Z'>
+              <time itemprop='dateModified' datetime='2020-10-08T12:11:04Z' class='post-time'>
+                October 8, 2020, 12:11pm
+              </time>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Think the were 5 used codebases and a few verations working over indymedia history, the is a page some were <img src="../../images/emoji/twitter/slight_smile.png@v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>In the UK the were all these IMC running on the same server, running java based Mear, just with different front ends<br>
+Birmingham</p>
+<p>Cambridge</p>
+<p>Liverpool</p>
+<p>London</p>
+<p>Oxford</p>
+<p>Sheffield</p>
+<p>South Coast</p>
+<p>Wales</p>
+<p><a href="http://hamishcampbell.com/index.php/2020/10/08/how-should-the-hyper-local-indymedia-rollout/" class="onebox" target="_blank" rel="noopener nofollow ugc">http://hamishcampbell.com/index.php/2020/10/08/how-should-the-hyper-local-indymedia-rollout/</a></p>
+        </div>
+
+        <meta itemprop='headline' content='Indymedia reboot and epicyon codeing - hackathon'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/hamishcampbell.html'><span itemprop='name'>hamishcampbell</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="987.html">
+
+            <link itemprop="image" href="../../uploads/default/original/1X/51fd599c3c06ee0c833451e82f867a4ae6fdbe5c.jpeg">
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-10-10T13:36:01Z'>
+              <time itemprop='dateModified' datetime='2020-10-10T13:36:51Z' class='post-time'>
+                October 10, 2020,  1:36pm
+              </time>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><div class="lightbox-wrapper"><a class="lightbox" href="../../uploads/default/original/1X/51fd599c3c06ee0c833451e82f867a4ae6fdbe5c.jpeg" data-download-href="https://socialhub.activitypub.rocks/uploads/default/51fd599c3c06ee0c833451e82f867a4ae6fdbe5c" title="indymedia"><img src="../../uploads/default/original/1X/51fd599c3c06ee0c833451e82f867a4ae6fdbe5c.jpeg" alt="indymedia" data-base62-sha1="bHjts95fBQH25n5Or5LPgoKzeAA" width="690" height="318" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/51fd599c3c06ee0c833451e82f867a4ae6fdbe5c_2_10x10.png"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">indymedia</span><span class="informations">1000×462 76.1 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg></div></a></div> we have a retro interface <span class="hashtag">#indymediaback</span></p>
+<p>We will need some UX crew to do a modern one as well soon.</p>
+        </div>
+
+        <meta itemprop='headline' content='Indymedia reboot and epicyon codeing - hackathon'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/decentral1se.html'><span itemprop='name'>decentral1se</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="987.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-11T15:52:57Z' class='post-time'>
+                October 11, 2020,  3:52pm
+              </time>
+              <meta itemprop='dateModified' content='2020-10-11T15:52:57Z'>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hey folks, trying to catch up with development of Epicyon and can’t seem to access the Matrix server @ <a href="http://matrix.freedombone.net" rel="noopener nofollow ugc">matrix.freedombone.net</a> (currently 403’ing) and I see that <a href="https://code.freedombone.net" rel="noopener nofollow ugc">https://code.freedombone.net</a> has also no public sign-ups or open issues on what is being worked on. So, from a developer on-boarding perspective, it is a bit tricky. I’m up for throwing in a bit of time into this if I can, so just letting you know that it is a bit hard right now. Thanks for the great initiative.</p>
+        </div>
+
+        <meta itemprop='headline' content='Indymedia reboot and epicyon codeing - hackathon'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/bashrc.html'><span itemprop='name'>bashrc</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="987.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-11T16:00:55Z' class='post-time'>
+                October 11, 2020,  4:00pm
+              </time>
+              <meta itemprop='dateModified' content='2020-10-11T16:00:55Z'>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>At present it’s best to add issues on <a href="https://gitlab.com/bashrc2/epicyon" rel="noopener nofollow ugc">https://gitlab.com/bashrc2/epicyon</a>. My own server doesn’t have the capacity to handle a lot of git cloning of large repos. The matrix server should be operational, but it’s not a public server.</p>
+        </div>
+
+        <meta itemprop='headline' content='Indymedia reboot and epicyon codeing - hackathon'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/decentral1se.html'><span itemprop='name'>decentral1se</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="987.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-10-11T17:59:56Z'>
+              <time itemprop='dateModified' datetime='2020-10-11T18:01:03Z' class='post-time'>
+                October 11, 2020,  6:01pm
+              </time>
+          <span itemprop='position'>#15</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Ah ok! Although <a class="mention" href="../../u/hamishcampbell.html">@hamishcampbell</a> recommended that I see/create issues over @ <a href="https://unite.openworlds.info/indymedia/epicyon" rel="noopener nofollow ugc">https://unite.openworlds.info/indymedia/epicyon</a>. Are you both (or whoever is doing this project) active/responsive to @'s there? Also re: matrix server, if not public then how do I join? I guess public would be easier, especially from a perspective of getting other people involved. Just trying to figure out the lay of the land.</p>
+<p>EDIT: re: matrix server, its advertised as the place to come and chat on <a href="https://epicyon.net" rel="noopener nofollow ugc">https://epicyon.net</a>, so I assumed it would be public.</p>
+        </div>
+
+        <meta itemprop='headline' content='Indymedia reboot and epicyon codeing - hackathon'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/bashrc.html'><span itemprop='name'>bashrc</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="987.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-11T20:13:33Z' class='post-time'>
+                October 11, 2020,  8:13pm
+              </time>
+              <meta itemprop='dateModified' content='2020-10-11T20:13:33Z'>
+          <span itemprop='position'>#16</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Yes you can make issues there if you prefer. I can pull in PRs from anywhere if they occur.</p>
+<p>Matrix is decentralized, like the fediverse, so it doesn’t matter which homeserver you join. Search for <span class="hashtag">#epicyon:matrix</span>.freedombone.net</p>
+        </div>
+
+        <meta itemprop='headline' content='Indymedia reboot and epicyon codeing - hackathon'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

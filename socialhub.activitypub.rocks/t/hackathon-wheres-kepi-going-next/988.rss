@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Hackathon: where&#39;s kepi going next?</title>
+    <link>https://socialhub.activitypub.rocks/t/hackathon-wheres-kepi-going-next/988</link>
+    <description>[kepi](https://gitlab.com/marnanel/kepi/) is a Mastodon-alike server written in Django, currently pre-alpha and running on [one live test site](https://marnanel.org/users/marnanel) (with no current HTML interface). It supports ActivityPub for server-to-server communications; the client-to-server interface is provided by the Mastodon protocol.
+
+During this hackathon session, we will discuss:
+* users&#39; hopes for this project
+* what needs to be done to achieve them
+* packaging to make kepi more easily testable
+
+If all goes well, we should come out of the session with a roadmap to v1.0. If all goes excellently, we should also have some working installation code and documentation.
+
+Everyone is welcome to participate, especially documentors, those who code in Django and other Python frameworks, and admins who might want to use kepi.
+
+(Over the weekend, I&#39;ll upload some documentation about the current structure of kepi, and link it here.)
+
+[![image|690x371](upload://AatkJpssPaX5uVHyfHoS7RcuReb.png)]((https://gitlab.com/marnanel/kepi/))
+
+(kepi was briefly known as chapeau; gitlab is still slightly confused about the name change, so &quot;chapeau&quot; appears in the URL. If anyone knows how to stop that, please let me know!)</description>
+    
+    <lastBuildDate>Sat, 03 Oct 2020 15:13:03 +0000</lastBuildDate>
+    <category>ActivityPub Conference 2020</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/hackathon-wheres-kepi-going-next/988.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Hackathon: where&#39;s kepi going next?</title>
+        <dc:creator><![CDATA[cwebber]]></dc:creator>
+        <description><![CDATA[
+            <p>Very cool!  I’m looking forward to what comes out of this presentation <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/hackathon-wheres-kepi-going-next/988/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/hackathon-wheres-kepi-going-next/988/3</link>
+        <pubDate>Sat, 03 Oct 2020 15:13:03 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-988-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/hackathon-wheres-kepi-going-next/988.rss">Hackathon: where&#39;s kepi going next?</source>
+      </item>
+      <item>
+        <title>Hackathon: where&#39;s kepi going next?</title>
+        <dc:creator><![CDATA[marnanel]]></dc:creator>
+        <description><![CDATA[
+            <p>Today I have added a lot of new documentation, which should be useful when we plan a roadmap.</p>
+<ul>
+<li><a href="https://gitlab.com/marnanel/kepi/-/blob/main/docs/modules.md" rel="nofollow noopener">A guide to the structure</a></li>
+<li>
+<a href="https://gitlab.com/marnanel/kepi/-/blob/main/docs/roadmap.md" rel="nofollow noopener">The roadmap</a>, which doesn’t really exist yet</li>
+<li>
+<a href="https://gitlab.com/marnanel/kepi/-/blob/main/docs/bowler-heavy.md" rel="nofollow noopener">bowler-heavy</a> was a historical course change that may still affect the state of the codebase.</li>
+<li><a href="https://gitlab.com/marnanel/kepi/-/blob/main/docs/name.md" rel="nofollow noopener">Why the name?</a></li>
+</ul>
+          <p><a href="https://socialhub.activitypub.rocks/t/hackathon-wheres-kepi-going-next/988/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/hackathon-wheres-kepi-going-next/988/2</link>
+        <pubDate>Fri, 02 Oct 2020 22:07:14 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-988-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/hackathon-wheres-kepi-going-next/988.rss">Hackathon: where&#39;s kepi going next?</source>
+      </item>
+      <item>
+        <title>Hackathon: where&#39;s kepi going next?</title>
+        <dc:creator><![CDATA[marnanel]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="https://gitlab.com/marnanel/kepi/" rel="nofollow noopener">kepi</a> is a Mastodon-alike server written in Django, currently pre-alpha and running on <a href="https://marnanel.org/users/marnanel" rel="nofollow noopener">one live test site</a> (with no current HTML interface). It supports ActivityPub for server-to-server communications; the client-to-server interface is provided by the Mastodon protocol.</p>
+<p>During this hackathon session, we will discuss:</p>
+<ul>
+<li>users’ hopes for this project</li>
+<li>what needs to be done to achieve them</li>
+<li>packaging to make kepi more easily testable</li>
+</ul>
+<p>If all goes well, we should come out of the session with a roadmap to v1.0. If all goes excellently, we should also have some working installation code and documentation.</p>
+<p>Everyone is welcome to participate, especially documentors, those who code in Django and other Python frameworks, and admins who might want to use kepi.</p>
+<p>(Over the weekend, I’ll upload some documentation about the current structure of kepi, and link it here.)</p>
+<p><a><img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/fd7d5666dce3d6ebd654e03597b50e43cbd26b33.png" alt="image" data-base62-sha1="AatkJpssPaX5uVHyfHoS7RcuReb" width="690" height="371"></a></p>
+<p>(kepi was briefly known as chapeau; gitlab is still slightly confused about the name change, so “chapeau” appears in the URL. If anyone knows how to stop that, please let me know!)</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/hackathon-wheres-kepi-going-next/988/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/hackathon-wheres-kepi-going-next/988/1</link>
+        <pubDate>Fri, 02 Oct 2020 00:24:23 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-988-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/hackathon-wheres-kepi-going-next/988.rss">Hackathon: where&#39;s kepi going next?</source>
+      </item>
+  </channel>
+</rss>

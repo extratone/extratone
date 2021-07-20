@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>I&#39;m excited to start this journey!</title>
+    <link>https://socialhub.activitypub.rocks/t/im-excited-to-start-this-journey/1887</link>
+    <description>Owncast recently hit it&#39;s 1 year anniversary of being a project.  Federation has been on the todo list since day one, but I always wanted to do it for the right reasons, to solve real problems.  Once enough features bubbled up that all felt like they all fell into the ActivityPub bucket the time has come.
+
+Seems like SocialHub is the place to be to post progress, questions and to learn what everyone else is up to.  So while I&#39;m a newbie to the scene, I&#39;m looking forward to becoming more embedded in it all.
+
+Thanks for everyone who have been so positive about Owncast and our future plans.</description>
+    
+    <lastBuildDate>Mon, 28 Jun 2021 23:47:18 +0000</lastBuildDate>
+    <category>Owncast</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/im-excited-to-start-this-journey/1887.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>I&#39;m excited to start this journey!</title>
+        <dc:creator><![CDATA[gabek]]></dc:creator>
+        <description><![CDATA[
+            <p>Owncast recently hit it’s 1 year anniversary of being a project.  Federation has been on the todo list since day one, but I always wanted to do it for the right reasons, to solve real problems.  Once enough features bubbled up that all felt like they all fell into the ActivityPub bucket the time has come.</p>
+<p>Seems like SocialHub is the place to be to post progress, questions and to learn what everyone else is up to.  So while I’m a newbie to the scene, I’m looking forward to becoming more embedded in it all.</p>
+<p>Thanks for everyone who have been so positive about Owncast and our future plans.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/im-excited-to-start-this-journey/1887/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/im-excited-to-start-this-journey/1887/1</link>
+        <pubDate>Mon, 28 Jun 2021 23:47:18 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1887-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/im-excited-to-start-this-journey/1887.rss">I&#39;m excited to start this journey!</source>
+      </item>
+  </channel>
+</rss>

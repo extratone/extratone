@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Twitter Bluesky : Report and Lead</title>
+    <link>https://socialhub.activitypub.rocks/t/twitter-bluesky-report-and-lead/1337</link>
+    <description>**Yay**
+
+Please see
+https://twitter.com/bluesky/status/1352302821140549632
+
+and apply here ;) 
+https://twitter.com/bluesky/status/1352302822428176387</description>
+    
+    <lastBuildDate>Wed, 03 Feb 2021 11:15:59 +0000</lastBuildDate>
+    <category>Fediversity</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/twitter-bluesky-report-and-lead/1337.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Twitter Bluesky : Report and Lead</title>
+        <dc:creator><![CDATA[alex.bourlier]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you so much for sharing!! Can’t wait to read it</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/twitter-bluesky-report-and-lead/1337/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/twitter-bluesky-report-and-lead/1337/3</link>
+        <pubDate>Wed, 03 Feb 2021 11:15:59 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1337-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/twitter-bluesky-report-and-lead/1337.rss">Twitter Bluesky : Report and Lead</source>
+      </item>
+      <item>
+        <title>Twitter Bluesky : Report and Lead</title>
+        <dc:creator><![CDATA[WClayFerguson]]></dc:creator>
+        <description><![CDATA[
+            <p>That’s a great and very comprehensive doc linked above and is good for it’s informational content.</p>
+<p>However I’m skeptical that Twitter is going to do anything with their new standard (If they ever propose one) other than attempt to further fragment an already fragmented social media space. The AP community should learn what we can from all of what Twitter is doing but we should be skeptical of any proposed standards that increase the level-of-difficulty or barrier-to-entry that already exists in AP. What AP needs most right now is more tutorials and info to get it where new teams can pick it up faster. We don’t need more complexity right now or even a new standard. Maybe in 2 years. Not now.</p>
+<p>The Fediverse is Twitter’s biggest threat right now, so anything they can do to cause turmoil and confusion in the Fediverse space, they’re going to do. It’s actually better for the world if Twitter is <em>unable</em> to interoperate with the Fediverse, in the short term, so that everyone first leaves twitter, and goes to the Fediverse. All Twitter is trying to do is remain relevant, and keep connectivity and access to a world that is leaving them behind.</p>
+<p>If Twitter, for example, succeeds in making AP more difficult to get going (in a new implementation), while simultaneously fragmenting the Social Media space with yet another competing standard, then they will have successfully set back the Fediverse by a significant amount, damaging our community, while only Twitter benefits.</p>
+<p>Also, even if Twitter has no real plans for a new standard, simply by claiming they’re creating one is enough to cause many large companies to slam on the brakes on any Fediverse work, until the Bluesky spec is out. So even if Twitter has no genuine plans to go forward they have every incentive to make the industry think they do, just to slow down Fediverse work.</p>
+<p>Let’s remember the lesson of what Bill Gates did when he first realized Java was eating into his business: He tried to create his own competing version of the Java language, to take as much control as possible, while simultaneously damaging the rest of the industry.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/twitter-bluesky-report-and-lead/1337/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/twitter-bluesky-report-and-lead/1337/2</link>
+        <pubDate>Fri, 22 Jan 2021 16:44:56 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1337-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/twitter-bluesky-report-and-lead/1337.rss">Twitter Bluesky : Report and Lead</source>
+      </item>
+      <item>
+        <title>Twitter Bluesky : Report and Lead</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p><strong>Yay</strong></p>
+<p>Please see<br>
+</p><aside class="onebox twitterstatus">
+  <header class="source">
+      <a href="https://twitter.com/bluesky/status/1352302821140549632" target="_blank" rel="noopener">twitter.com</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/2b78314b968ae7aa4d57187fa4d782a2d0aeda31.jpeg" class="thumbnail onebox-avatar" width="400" height="400">
+
+<h4><a href="https://twitter.com/bluesky/status/1352302821140549632" target="_blank" rel="noopener">bluesky (bluesky)</a></h4>
+
+<div class="tweet"> Working virtually through the pandemic, this group self-organized, invited additional experts, and created a review of the ecosystem around protocols for social media. You can read it here: https://t.co/U5DczWX1qb<div class="quoted"><a class="quoted-link" href="https://twitter.com/jack/status/1204766078468911106" rel="noopener"><p class="quoted-title">jack <span>@jack</span></p></a><div>Twitter is funding a small independent team of up to five open source architects, engineers, and designers to develop an open and decentralized standard for social media. The goal is for Twitter to ultimately be a client of this standard. </div></div></div>
+
+<div class="date">
+  <a href="https://twitter.com/bluesky/status/1352302821140549632" target="_blank" rel="noopener">09:11 - 21. Jan. 2021</a>
+    <span class="like">
+      <svg viewBox="0 0 512 512" width="14px" height="16px" aria-hidden="true">
+        <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
+      </svg> 104
+    </span>
+    <span class="retweet">
+      <svg viewBox="0 0 640 512" width="14px" height="16px" aria-hidden="true">
+        <path d="M629.657 343.598L528.971 444.284c-9.373 9.372-24.568 9.372-33.941 0L394.343 343.598c-9.373-9.373-9.373-24.569 0-33.941l10.823-10.823c9.562-9.562 25.133-9.34 34.419.492L480 342.118V160H292.451a24.005 24.005 0 0 1-16.971-7.029l-16-16C244.361 121.851 255.069 96 276.451 96H520c13.255 0 24 10.745 24 24v222.118l40.416-42.792c9.285-9.831 24.856-10.054 34.419-.492l10.823 10.823c9.372 9.372 9.372 24.569-.001 33.941zm-265.138 15.431A23.999 23.999 0 0 0 347.548 352H160V169.881l40.416 42.792c9.286 9.831 24.856 10.054 34.419.491l10.822-10.822c9.373-9.373 9.373-24.569 0-33.941L144.971 67.716c-9.373-9.373-24.569-9.373-33.941 0L10.343 168.402c-9.373 9.373-9.373 24.569 0 33.941l10.822 10.822c9.562 9.562 25.133 9.34 34.419-.491L96 169.881V392c0 13.255 10.745 24 24 24h243.549c21.382 0 32.09-25.851 16.971-40.971l-16.001-16z"></path>
+      </svg> 23
+    </span>
+</div>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>and apply here <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"><br>
+</p><aside class="onebox twitterstatus">
+  <header class="source">
+      <a href="https://twitter.com/bluesky/status/1352302822428176387" target="_blank" rel="noopener">twitter.com</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/2b78314b968ae7aa4d57187fa4d782a2d0aeda31.jpeg" class="thumbnail onebox-avatar" width="400" height="400">
+
+<h4><a href="https://twitter.com/bluesky/status/1352302822428176387" target="_blank" rel="noopener">bluesky (bluesky)</a></h4>
+
+<div class="tweet"> We are continuing to look for a lead, and hope to find one in the coming months. We'd love to hear from people interested in this role, in partnering with us, or if there are ways to improve the ecosystem review we shared above. Our DMs are open!<div class="quoted"><a class="quoted-link" href="https://twitter.com/jack/status/1204766078468911106" rel="noopener"><p class="quoted-title">jack <span>@jack</span></p></a><div>Twitter is funding a small independent team of up to five open source architects, engineers, and designers to develop an open and decentralized standard for social media. The goal is for Twitter to ultimately be a client of this standard. </div></div></div>
+
+<div class="date">
+  <a href="https://twitter.com/bluesky/status/1352302822428176387" target="_blank" rel="noopener">09:11 - 21. Jan. 2021</a>
+    <span class="like">
+      <svg viewBox="0 0 512 512" width="14px" height="16px" aria-hidden="true">
+        <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
+      </svg> 57
+    </span>
+    <span class="retweet">
+      <svg viewBox="0 0 640 512" width="14px" height="16px" aria-hidden="true">
+        <path d="M629.657 343.598L528.971 444.284c-9.373 9.372-24.568 9.372-33.941 0L394.343 343.598c-9.373-9.373-9.373-24.569 0-33.941l10.823-10.823c9.562-9.562 25.133-9.34 34.419.492L480 342.118V160H292.451a24.005 24.005 0 0 1-16.971-7.029l-16-16C244.361 121.851 255.069 96 276.451 96H520c13.255 0 24 10.745 24 24v222.118l40.416-42.792c9.285-9.831 24.856-10.054 34.419-.492l10.823 10.823c9.372 9.372 9.372 24.569-.001 33.941zm-265.138 15.431A23.999 23.999 0 0 0 347.548 352H160V169.881l40.416 42.792c9.286 9.831 24.856 10.054 34.419.491l10.822-10.822c9.373-9.373 9.373-24.569 0-33.941L144.971 67.716c-9.373-9.373-24.569-9.373-33.941 0L10.343 168.402c-9.373 9.373-9.373 24.569 0 33.941l10.822 10.822c9.562 9.562 25.133 9.34 34.419-.491L96 169.881V392c0 13.255 10.745 24 24 24h243.549c21.382 0 32.09-25.851 16.971-40.971l-16.001-16z"></path>
+      </svg> 11
+    </span>
+</div>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/twitter-bluesky-report-and-lead/1337/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/twitter-bluesky-report-and-lead/1337/1</link>
+        <pubDate>Thu, 21 Jan 2021 19:54:02 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1337-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/twitter-bluesky-report-and-lead/1337.rss">Twitter Bluesky : Report and Lead</source>
+      </item>
+  </channel>
+</rss>

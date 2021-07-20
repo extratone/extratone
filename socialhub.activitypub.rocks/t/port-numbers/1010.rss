@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Port numbers</title>
+    <link>https://socialhub.activitypub.rocks/t/port-numbers/1010</link>
+    <description>We should ensure that AP URLs can contain port numbers. I believe this is the single most helpful thing that we can provide to people experimenting with server software.
+
+At present, some clients restrict port numbers to 443, sometimes trying 80 first. A person can install any package they like, but to test it they need both root access and a separate publicly-visible hostname and IP address which isn&#39;t already running a web service. This can be a tall order.
+
+This may be the case for some servers too— I don&#39;t know. But I think everyone should check their code, client or server, to ensure that port numbers work.
+
+This also applies to custom protocols such as Mastodon!
+
+(Possible #hackathon topic?)</description>
+    
+    <lastBuildDate>Wed, 02 Dec 2020 02:24:49 +0000</lastBuildDate>
+    <category>Packaging</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/port-numbers/1010.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Port numbers</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>I explicitly include the port number, if any, into the domains I store. The limitation is that the URIs returned by that server must include the port number too.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/port-numbers/1010/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/port-numbers/1010/6</link>
+        <pubDate>Wed, 02 Dec 2020 02:24:49 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1010-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/port-numbers/1010.rss">Port numbers</source>
+      </item>
+      <item>
+        <title>Port numbers</title>
+        <dc:creator><![CDATA[marnanel]]></dc:creator>
+        <description><![CDATA[
+            <p>(FTAOD I wasn’t talking about production use of a server, where something like nginx would be used, but about informal testing to see whether the software is appropriate for someone’s needs.)</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/port-numbers/1010/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/port-numbers/1010/5</link>
+        <pubDate>Fri, 02 Oct 2020 18:26:41 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1010-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/port-numbers/1010.rss">Port numbers</source>
+      </item>
+      <item>
+        <title>Port numbers</title>
+        <dc:creator><![CDATA[marnanel]]></dc:creator>
+        <description><![CDATA[
+            <p>Why wouldn’t webfinger work? <a href="https://tools.ietf.org/html/rfc7033" rel="nofollow noopener">The RFC</a> requires the request to use HTTPS, but it doesn’t say anything about what port it should use. Obviously in the general case you use 443, but if someone’s running an AP service on a custom port it’s reasonable to assume the webfinger service will be provided there as well.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/port-numbers/1010/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/port-numbers/1010/4</link>
+        <pubDate>Fri, 02 Oct 2020 18:25:17 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1010-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/port-numbers/1010.rss">Port numbers</source>
+      </item>
+      <item>
+        <title>Port numbers</title>
+        <dc:creator><![CDATA[lanodan]]></dc:creator>
+        <description><![CDATA[
+            <p>Pleroma should loosely support it federation-wise (it need tests but stuff like WebFinger is a limitation, see <a href="https://git.pleroma.social/pleroma/pleroma/-/issues/1881" rel="nofollow noopener">https://git.pleroma.social/pleroma/pleroma/-/issues/1881</a> ), but it definitely does for just offline/LAN testing (the dev server uses 4000 by default, which is changeable in the config).<br>
+And pleroma never runs as root, 80/433 is done with a reverse proxy like nginx/varnish/OpenBSD-relayd that forward to 4000 or any other port chosen, so root access isn’t really needed.<br>
+For non-restricted ports it could be directly pleroma but I would still recommend using a reverse proxy to get some separation from the outside and avoid having TLS keys readable by pleroma.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/port-numbers/1010/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/port-numbers/1010/3</link>
+        <pubDate>Fri, 02 Oct 2020 17:02:19 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1010-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/port-numbers/1010.rss">Port numbers</source>
+      </item>
+      <item>
+        <title>Port numbers</title>
+        <dc:creator><![CDATA[heluecht]]></dc:creator>
+        <description><![CDATA[
+            <p>Friendica <strong>should</strong> have handled this. But this is mostly untested.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/port-numbers/1010/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/port-numbers/1010/2</link>
+        <pubDate>Fri, 02 Oct 2020 16:20:18 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1010-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/port-numbers/1010.rss">Port numbers</source>
+      </item>
+      <item>
+        <title>Port numbers</title>
+        <dc:creator><![CDATA[marnanel]]></dc:creator>
+        <description><![CDATA[
+            <p>We should ensure that AP URLs can contain port numbers. I believe this is the single most helpful thing that we can provide to people experimenting with server software.</p>
+<p>At present, some clients restrict port numbers to 443, sometimes trying 80 first. A person can install any package they like, but to test it they need both root access and a separate publicly-visible hostname and IP address which isn’t already running a web service. This can be a tall order.</p>
+<p>This may be the case for some servers too— I don’t know. But I think everyone should check their code, client or server, to ensure that port numbers work.</p>
+<p>This also applies to custom protocols such as Mastodon!</p>
+<p>(Possible <a class="hashtag" href="https://socialhub.activitypub.rocks/tag/hackathon">#<span>hackathon</span></a> topic?)</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/port-numbers/1010/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/port-numbers/1010/1</link>
+        <pubDate>Fri, 02 Oct 2020 16:02:34 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1010-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/port-numbers/1010.rss">Port numbers</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Fediverse centralization ➜ EEE vs. P2P AP small technology approach</title>
+    <link>https://socialhub.activitypub.rocks/t/fediverse-centralization-eee-vs-p2p-ap-small-technology-approach/703</link>
+    <description>This topic is branching off from the wonderful discussion on offers between @AndrewMackie and @cjs here: https://socialhub.activitypub.rocks/t/offers-unchained/697/2?u=aschrijver
+
+---
+
+[quote=&quot;cjs, post:5, topic:697&quot;]
+I hope the Fediverse is a good fit, but I’m not optimistic based on what I understand so far. Unfortunately it is currently susceptible to the same EEE _[.. Embrance/Extend/Extinguish]_ that has led to centralization of previous technologies that were once-upon-a-time more federated.
+[/quote]
+
+This is such a good point that @cjs is raising, and one that I see mentioned all of the time in various places, but I feel that it is not properly addressed so far, in favor of all the other things that need to solidify in AP based specs, implementations and processes.
+
+One thing that intrigues me is a mixed model of federation and peer-to-peer based ActivityPub support. And from a humane technology perspective I am also really charmed by the efforts of Aral Balkan to define and build [Small Technology](https://small-tech.org/about/#small-technology) (as opposed to &#39;Big Tech&#39; nomenclature).
+
+One of the tenets of small technology is that it is peer-to-peer, and AFAICS there is nothing in the AP specs that withholds one from creating a P2P software that happily integrates in the fediverse fabric.
+
+Aral is developing a cool personal web-publishing kit based on the 10 tenets of small-tech, called [Site.js](https://sitejs.org/) (new website + release coming soon). Besides taking meticulous care of making it small + simple Aral, I believe intends to make it p2p by giving it a [DAT](https://dat.foundation/) foundation in another project.
+
+Interesting subject for this topic:
+
+- How do we mitigate the centralization of the fediverse and the risk for EEE&#39;s?
+- What do you think about peer-to-peer ActivityPub in a small technology approach?
+- Which strategies would lead to a healthier mixed federated / p2p fediverse soonest?
+- ...</description>
+    
+    <lastBuildDate>Mon, 25 May 2020 20:32:13 +0000</lastBuildDate>
+    <category>ActivityPub</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/fediverse-centralization-eee-vs-p2p-ap-small-technology-approach/703.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Fediverse centralization ➜ EEE vs. P2P AP small technology approach</title>
+        <dc:creator><![CDATA[bhaugen]]></dc:creator>
+        <description><![CDATA[
+            <p>I and several other people have personal pubs. Works well for me, federated nicely with others.</p>
+<blockquote>
+<p>What do you think about peer-to-peer ActivityPub in a small technology approach?</p>
+</blockquote>
+<p>Yes please more of that.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/fediverse-centralization-eee-vs-p2p-ap-small-technology-approach/703/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/fediverse-centralization-eee-vs-p2p-ap-small-technology-approach/703/2</link>
+        <pubDate>Mon, 25 May 2020 20:32:13 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-703-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/fediverse-centralization-eee-vs-p2p-ap-small-technology-approach/703.rss">Fediverse centralization ➜ EEE vs. P2P AP small technology approach</source>
+      </item>
+      <item>
+        <title>Fediverse centralization ➜ EEE vs. P2P AP small technology approach</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>This topic is branching off from the wonderful discussion on offers between <a class="mention" href="/u/andrewmackie">@AndrewMackie</a> and <a class="mention" href="/u/cjs">@cjs</a> here: <a href="https://socialhub.activitypub.rocks/t/offers-unchained/697/2" class="inline-onebox">Offers unchained</a></p>
+<hr>
+<aside class="quote no-group quote-modified" data-username="cjs" data-post="5" data-topic="697">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/cjs/40/35_2.png" class="avatar"><a href="https://socialhub.activitypub.rocks/t/offers-unchained/697/5">Offers unchained</a>
+</div>
+<blockquote>
+<p>I hope the Fediverse is a good fit, but I’m not optimistic based on what I understand so far. Unfortunately it is currently susceptible to the same EEE <em>[… Embrance/Extend/Extinguish]</em> that has led to centralization of previous technologies that were once-upon-a-time more federated.</p>
+</blockquote>
+</aside>
+<p>This is such a good point that <a class="mention" href="/u/cjs">@cjs</a> is raising, and one that I see mentioned all of the time in various places, but I feel that it is not properly addressed so far, in favor of all the other things that need to solidify in AP based specs, implementations and processes.</p>
+<p>One thing that intrigues me is a mixed model of federation and peer-to-peer based ActivityPub support. And from a humane technology perspective I am also really charmed by the efforts of Aral Balkan to define and build <a href="https://small-tech.org/about/#small-technology" rel="nofollow noopener">Small Technology</a> (as opposed to ‘Big Tech’ nomenclature).</p>
+<p>One of the tenets of small technology is that it is peer-to-peer, and AFAICS there is nothing in the AP specs that withholds one from creating a P2P software that happily integrates in the fediverse fabric.</p>
+<p>Aral is developing a cool personal web-publishing kit based on the 10 tenets of small-tech, called <a href="https://sitejs.org/" rel="nofollow noopener">Site.js</a> (new website + release coming soon). Besides taking meticulous care of making it small + simple Aral, I believe intends to make it p2p by giving it a <a href="https://dat.foundation/" rel="nofollow noopener">DAT</a> foundation in another project.</p>
+<p>Interesting subject for this topic:</p>
+<ul>
+<li>How do we mitigate the centralization of the fediverse and the risk for EEE’s?</li>
+<li>What do you think about peer-to-peer ActivityPub in a small technology approach?</li>
+<li>Which strategies would lead to a healthier mixed federated / p2p fediverse soonest?</li>
+<li>…</li>
+</ul>
+          <p><a href="https://socialhub.activitypub.rocks/t/fediverse-centralization-eee-vs-p2p-ap-small-technology-approach/703/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/fediverse-centralization-eee-vs-p2p-ap-small-technology-approach/703/1</link>
+        <pubDate>Wed, 20 May 2020 17:48:04 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-703-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/fediverse-centralization-eee-vs-p2p-ap-small-technology-approach/703.rss">Fediverse centralization ➜ EEE vs. P2P AP small technology approach</source>
+      </item>
+  </channel>
+</rss>

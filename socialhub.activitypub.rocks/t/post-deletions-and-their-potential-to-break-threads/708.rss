@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Post deletions and their potential to break threads</title>
+    <link>https://socialhub.activitypub.rocks/t/post-deletions-and-their-potential-to-break-threads/708</link>
+    <description>Suppose this happens: (users A and B are on the same instance)
+1. User A creates a post.
+2. User B replies to that post.
+3. User A replies to that reply.
+4. User B deletes their first reply.
+5. User B replies to user A&#39;s reply and mentions the user C who is from another instance that doesn&#39;t have any of these posts in its database.
+
+You end up with something like this, except the &quot;test comment&quot; is deleted:
+
+![image|418x283](upload://zssO9s1gEqOhIASdKuSXnKuSKqM.png) 
+
+The issue: when user C&#39;s instance receives a `Create` activity about the last reply and goes to fetch the complete thread, it can&#39;t. The idea is that you would follow `inReplyTo` references up, until you encounter an object without this field, which means you&#39;ve reached the top-level post. But if there is any deleted object along the way, you kind of hit a wall and don&#39;t have any way of getting to the top-level post and thus completing your representation of the comment thread. Or do you? I&#39;ve just tested with Mastodon and it doesn&#39;t even return a `Tombstone`, it acts as if the post didn&#39;t ever exist by returning a 404. Anyway, any ideas on solving this?
+
+Related: going in the opposite direction, down from the top-level post, you have the exact same issue but with the `replies` collection.</description>
+    
+    <lastBuildDate>Fri, 03 Jul 2020 12:53:38 +0000</lastBuildDate>
+    <category>Server to Server</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/post-deletions-and-their-potential-to-break-threads/708.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Post deletions and their potential to break threads</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>I ended up doing this:</p>
+<pre><code class="lang-json">{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "type": "Tombstone",
+  "formerType": "Note",
+  "url": "http://smithereen.local:8080/posts/114",
+  "id": "http://smithereen.local:8080/posts/114",
+  "inReplyTo": "http://smithereen.local:8080/posts/113",
+  "replies": {
+    "id": "http://smithereen.local:8080/posts/114/replies",
+    "type": "Collection",
+    "first": {
+      "next": "http://smithereen.local:8080/posts/114/replies?offset=0&amp;count=50",
+      "partOf": "http://smithereen.local:8080/posts/114/replies",
+      "type": "CollectionPage",
+      "items": []
+    }
+  }
+}
+</code></pre>
+<p>If a post gets deleted, either locally or by a <code>Delete</code> activity, and there are replies to it, I don’t delete the DB row completely but rather null most of it, keeping the fields needed to keep the thread intact.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/post-deletions-and-their-potential-to-break-threads/708/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/post-deletions-and-their-potential-to-break-threads/708/4</link>
+        <pubDate>Fri, 03 Jul 2020 12:53:38 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-708-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/post-deletions-and-their-potential-to-break-threads/708.rss">Post deletions and their potential to break threads</source>
+      </item>
+      <item>
+        <title>Post deletions and their potential to break threads</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-andstatus" data-username="yvolk" data-post="2" data-topic="708">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/yvolk/40/310_2.png" class="avatar"> yvolk:</div>
+<blockquote>
+<p>Mastodon adds another restriction: a message can have an “instance scope” I.e. it cannot be sent to any other instance.</p>
+</blockquote>
+</aside>
+<p>To clarify: this is not a Mastodon feature, but there are various third-party forks of Mastodon that do provide this feature.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/post-deletions-and-their-potential-to-break-threads/708/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/post-deletions-and-their-potential-to-break-threads/708/3</link>
+        <pubDate>Mon, 25 May 2020 14:50:32 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-708-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/post-deletions-and-their-potential-to-break-threads/708.rss">Post deletions and their potential to break threads</source>
+      </item>
+      <item>
+        <title>Post deletions and their potential to break threads</title>
+        <dc:creator><![CDATA[yvolk]]></dc:creator>
+        <description><![CDATA[
+            <p>I solved exactly the same issue developing a Client app. And such cases occur not only when a note is deleted: we encounter the same case, when some post in the thread is not visible at our side. E.g. because an instance, from which that note was sent, does not communicate with our system (doesn’t work properly, is not configured to communicated with us, etc…)<br>
+In such cases I use “conversation” or “context” references (references to a collection of activities of this thread), if such exists.<br>
+Creation (and possible merging / linking…) of such “conversation” IDs is a separate not trivial task…</p>
+<p>Seeing different (numbers of) activities from different instances is a known problem of GNU Social and Mastodon, (cited from <a href="https://github.com/andstatus/andstatus/issues/466" rel="nofollow noopener">https://github.com/andstatus/andstatus/issues/466</a> ):</p>
+<p>I know these causes of such differences:</p>
+<ol>
+<li>Messages of a remote User are delivered to an instance (and hence can be retrieved as a part of a conversation) only if this User is followed by at least one User of  <em>this</em>  instance.</li>
+<li>Mastodon adds another restriction: a message can have an “instance scope” I.e. it cannot be sent to any other instance.</li>
+<li>And of course, there are sync problems between different instances. E.g. some days ago I’ve heard that there were problems in message communication between Mastodon and GNU Social instances…</li>
+</ol>
+          <p><a href="https://socialhub.activitypub.rocks/t/post-deletions-and-their-potential-to-break-threads/708/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/post-deletions-and-their-potential-to-break-threads/708/2</link>
+        <pubDate>Mon, 25 May 2020 04:38:45 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-708-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/post-deletions-and-their-potential-to-break-threads/708.rss">Post deletions and their potential to break threads</source>
+      </item>
+      <item>
+        <title>Post deletions and their potential to break threads</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>Suppose this happens: (users A and B are on the same instance)</p>
+<ol>
+<li>User A creates a post.</li>
+<li>User B replies to that post.</li>
+<li>User A replies to that reply.</li>
+<li>User B deletes their first reply.</li>
+<li>User B replies to user A’s reply and mentions the user C who is from another instance that doesn’t have any of these posts in its database.</li>
+</ol>
+<p>You end up with something like this, except the “test comment” is deleted:</p>
+<p><img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/f883ceb77cbfaf6db7f454921d81aa298b874fe4.png" alt="image" data-base62-sha1="zssO9s1gEqOhIASdKuSXnKuSKqM" width="418" height="283"></p>
+<p>The issue: when user C’s instance receives a <code>Create</code> activity about the last reply and goes to fetch the complete thread, it can’t. The idea is that you would follow <code>inReplyTo</code> references up, until you encounter an object without this field, which means you’ve reached the top-level post. But if there is any deleted object along the way, you kind of hit a wall and don’t have any way of getting to the top-level post and thus completing your representation of the comment thread. Or do you? I’ve just tested with Mastodon and it doesn’t even return a <code>Tombstone</code>, it acts as if the post didn’t ever exist by returning a 404. Anyway, any ideas on solving this?</p>
+<p>Related: going in the opposite direction, down from the top-level post, you have the exact same issue but with the <code>replies</code> collection.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/post-deletions-and-their-potential-to-break-threads/708/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/post-deletions-and-their-potential-to-break-threads/708/1</link>
+        <pubDate>Sat, 23 May 2020 09:54:49 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-708-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/post-deletions-and-their-potential-to-break-threads/708.rss">Post deletions and their potential to break threads</source>
+      </item>
+  </channel>
+</rss>

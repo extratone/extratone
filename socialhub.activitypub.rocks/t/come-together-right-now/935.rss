@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>&quot;Come Together Right Now&quot;</title>
+    <link>https://socialhub.activitypub.rocks/t/come-together-right-now/935</link>
+    <description>*[Sebastian Lasse](https://mastodon.social/web/accounts/193100)*
+
+https://conf.tube/videos/watch/4102f53a-3f91-46c1-bb9b-fb954990f023
+
+redaktor becomes inherently-social website building software capable of serving website-building needs of institutions, journalist organizations, citizen journalism and photo/film documentary.
+We are currently building a generic UI supporting the entirety of the client portion of the client to server protocol. In a CMS world no information should be hidden by the UI but it must be well-arranged. Let&#39;s talk and about how we can build conformance, generic servers and patterns for diverse clients together!
+
+This piece will identify repeating problems and misconceptions from socialhub and explore
+
+- what the concept of a generic ActivityPub conformant server means
+- how the client to server protocol helps us
+- what patterns are involved
+- how we can design, code and work together in federated harmony
+
+## Questions &amp; Answers available!
+**[Q&amp;A Session – Come Together Right Now](https://conf.tube/videos/watch/296da45b-560c-438e-ab58-7959f951ec6a)**
+⬡ Hooray, the live Questions &amp; Answers are available here
+https://conf.tube/videos/watch/296da45b-560c-438e-ab58-7959f951ec6a</description>
+    
+    <lastBuildDate>Thu, 01 Oct 2020 19:33:53 +0000</lastBuildDate>
+    <category>ActivityPub Conference 2020</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/come-together-right-now/935.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>&quot;Come Together Right Now&quot;</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Wow, this talk is a piece of art! Unfortunately there’s only one like button… No spoiler for this one: watch it! It’s filled with hard facts, crazy humor, and love for details. Thank you so much <a class="mention" href="/u/sebastian">@Sebastian</a> for this.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/come-together-right-now/935/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/come-together-right-now/935/2</link>
+        <pubDate>Thu, 01 Oct 2020 19:33:53 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-935-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/come-together-right-now/935.rss">&quot;Come Together Right Now&quot;</source>
+      </item>
+      <item>
+        <title>&quot;Come Together Right Now&quot;</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p><em><a href="https://mastodon.social/web/accounts/193100">Sebastian Lasse</a></em></p>
+<p><iframe width="560" height="315" src="https://conf.tube/videos/embed/4102f53a-3f91-46c1-bb9b-fb954990f023" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+<p>redaktor becomes inherently-social website building software capable of serving website-building needs of institutions, journalist organizations, citizen journalism and photo/film documentary.<br>
+We are currently building a generic UI supporting the entirety of the client portion of the client to server protocol. In a CMS world no information should be hidden by the UI but it must be well-arranged. Let’s talk and about how we can build conformance, generic servers and patterns for diverse clients together!</p>
+<p>This piece will identify repeating problems and misconceptions from socialhub and explore</p>
+<ul>
+<li>what the concept of a generic ActivityPub conformant server means</li>
+<li>how the client to server protocol helps us</li>
+<li>what patterns are involved</li>
+<li>how we can design, code and work together in federated harmony</li>
+</ul>
+<h2>Questions &amp; Answers available!</h2>
+<p><strong><a href="https://conf.tube/videos/watch/296da45b-560c-438e-ab58-7959f951ec6a">Q&amp;A Session – Come Together Right Now</a></strong><br>
+⬡ Hooray, the live Questions &amp; Answers are available here<br>
+<iframe width="560" height="315" src="https://conf.tube/videos/embed/296da45b-560c-438e-ab58-7959f951ec6a" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/come-together-right-now/935/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/come-together-right-now/935/1</link>
+        <pubDate>Wed, 30 Sep 2020 20:44:08 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-935-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/come-together-right-now/935.rss">&quot;Come Together Right Now&quot;</source>
+      </item>
+  </channel>
+</rss>

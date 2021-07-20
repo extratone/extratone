@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Federating authentication</title>
+    <link>https://socialhub.activitypub.rocks/t/federating-authentication/823</link>
+    <description>Hey folks, I&#39;m not sure if there&#39;s a topic for this because it&#39;s something that I&#39;ve seen people talk about elsewhere.
+
+With the large number of potential ActivityPub platforms available, it would be nice to use one user account for multiple platforms, and have activities on all platforms broadcast from the auth provider. The process would look like this:
+
+0. Set up an actor/account at https://site-a.example/@actor
+1. Sign in to another platform on https://site-b.example/
+2. Create a resource on site b at https://site-b.example/resource - probably signed to prove authenticity
+3. Send a Create event from https://site-a.example/ to all of the actor&#39;s followers
+
+Step 1 can be done with OIDC.
+Step 2 can use something like SOLID, but would additionally require a standardized API to ask the actor to sign the resource
+I thought Step 3 could be done with C2S, but actually it would probably need something slightly different, because we don&#39;t want to create any side effects - we&#39;d want to describe an action that has already happened, not cause an action to happen as the C2S spec actually does.
+
+Does anyone know any existing ways to accomplish this? Or am I coming at it from the wrong angle?</description>
+    
+    <lastBuildDate>Mon, 03 Aug 2020 10:17:58 +0000</lastBuildDate>
+    <category>ActivityPub</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/federating-authentication/823.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Federating authentication</title>
+        <dc:creator><![CDATA[acka47]]></dc:creator>
+        <description><![CDATA[
+            <p>I took think that this is a crucial feature for driving AP adoption.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federating-authentication/823/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federating-authentication/823/5</link>
+        <pubDate>Mon, 03 Aug 2020 10:17:58 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-823-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federating-authentication/823.rss">Federating authentication</source>
+      </item>
+      <item>
+        <title>Federating authentication</title>
+        <dc:creator><![CDATA[mattyp]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t know - am not a developer myself - but I do think this would be a game-changer for ActivityPub adoption. I administer two instances of different fediverse applications, and users often assume they can use the same login credentials at both sites. If we could offer something like this I think people would add great value and make people more willing to try switching over to federated platforms.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federating-authentication/823/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federating-authentication/823/4</link>
+        <pubDate>Wed, 29 Jul 2020 00:06:03 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-823-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federating-authentication/823.rss">Federating authentication</source>
+      </item>
+      <item>
+        <title>Federating authentication</title>
+        <dc:creator><![CDATA[birdsofpraise]]></dc:creator>
+        <description><![CDATA[
+            <p>No, I don’t think any existing implementations would accept an activity from a different origin to the actor. Some of them might accept an activity from the same origin whose <code>object</code> is on a different origin, I don’t know.</p>
+<p>But I am more thinking here about future implementations. If we could create a new platform to accomplish this task, how could it be achieved?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federating-authentication/823/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federating-authentication/823/3</link>
+        <pubDate>Sun, 26 Jul 2020 15:04:53 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-823-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federating-authentication/823.rss">Federating authentication</source>
+      </item>
+      <item>
+        <title>Federating authentication</title>
+        <dc:creator><![CDATA[vpzom]]></dc:creator>
+        <description><![CDATA[
+            <p>Currently I don’t think any implementations would accept an activity owned by a domain different from the Actor. If they sent a Create it would be technically verifiable, but I don’t think we have any mechanism for fetching a Create from the created activity.</p>
+<p>Note that I’m ignoring the suggestion of signatures, as that would probably have to be LDSigs and only a few implementations actually support those.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federating-authentication/823/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federating-authentication/823/2</link>
+        <pubDate>Sun, 26 Jul 2020 13:26:02 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-823-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federating-authentication/823.rss">Federating authentication</source>
+      </item>
+      <item>
+        <title>Federating authentication</title>
+        <dc:creator><![CDATA[birdsofpraise]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey folks, I’m not sure if there’s a topic for this because it’s something that I’ve seen people talk about elsewhere.</p>
+<p>With the large number of potential ActivityPub platforms available, it would be nice to use one user account for multiple platforms, and have activities on all platforms broadcast from the auth provider. The process would look like this:</p>
+<ol start="0">
+<li>Set up an actor/account at <a href="https://site-a.example/@actor" rel="nofollow noopener">https://site-a.example/@actor</a>
+</li>
+<li>Sign in to another platform on <a href="https://site-b.example/" rel="nofollow noopener">https://site-b.example/</a>
+</li>
+<li>Create a resource on site b at <a href="https://site-b.example/resource" rel="nofollow noopener">https://site-b.example/resource</a> - probably signed to prove authenticity</li>
+<li>Send a Create event from <a href="https://site-a.example/" rel="nofollow noopener">https://site-a.example/</a> to all of the actor’s followers</li>
+</ol>
+<p>Step 1 can be done with OIDC.<br>
+Step 2 can use something like SOLID, but would additionally require a standardized API to ask the actor to sign the resource<br>
+I thought Step 3 could be done with C2S, but actually it would probably need something slightly different, because we don’t want to create any side effects - we’d want to describe an action that has already happened, not cause an action to happen as the C2S spec actually does.</p>
+<p>Does anyone know any existing ways to accomplish this? Or am I coming at it from the wrong angle?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federating-authentication/823/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federating-authentication/823/1</link>
+        <pubDate>Sun, 26 Jul 2020 12:50:22 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-823-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federating-authentication/823.rss">Federating authentication</source>
+      </item>
+  </channel>
+</rss>

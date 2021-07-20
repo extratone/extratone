@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Notifying remote servers that they should refetch an object - Server to Server - SocialHub</title>
+    <meta name="description" content="S2S Update: 
+
+7.3 Update Activity
+For server to server interactions, an Update activity means that the receiving server SHOULD update its copy of the object of the same id to the copy supplied in the Update activity. Unl&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="259.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Notifying remote servers that they should refetch an object&#39;" href="https://socialhub.activitypub.rocks/t/notifying-remote-servers-that-they-should-refetch-an-object/259.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/notifying-remote-servers-that-they-should-refetch-an-object/259" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/notifying-remote-servers-that-they-should-refetch-an-object/259" />
+<meta property="og:title" content="Notifying remote servers that they should refetch an object" />
+<meta name="twitter:title" content="Notifying remote servers that they should refetch an object" />
+<meta property="og:description" content="S2S Update:   7.3 Update Activity For server to server interactions, an Update activity means that the receiving server SHOULD update its copy of the object of the same id to the copy supplied in the Update activity. Unlike the  client to server handling of the Update activity, this is not a partial update but a complete replacement of the object.  The receiving server MUST take care to be sure that the Update is authorized to modify its object . At minimum, this may be done by ensuring that the..." />
+<meta name="twitter:description" content="S2S Update:   7.3 Update Activity For server to server interactions, an Update activity means that the receiving server SHOULD update its copy of the object of the same id to the copy supplied in the Update activity. Unlike the  client to server handling of the Update activity, this is not a partial update but a complete replacement of the object.  The receiving server MUST take care to be sure that the Update is authorized to modify its object . At minimum, this may be done by ensuring that the..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="1 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="6 ❤" />
+<meta property="article:published_time" content="2019-11-01T20:02:12+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="259.html">Notifying remote servers that they should refetch an object</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/activitypub.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #0088CC'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>ActivityPub</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/activitypub/s2s/7.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #808281'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Server to Server</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/trwnh.html'><span itemprop='name'>trwnh</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="259.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-01T20:02:12Z' class='post-time'>
+                November 1, 2019,  8:02pm
+              </time>
+              <meta itemprop='dateModified' content='2019-11-01T20:02:12Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>S2S Update:</p>
+<blockquote>
+<h3>7.3 Update Activity</h3>
+<p>For server to server interactions, an <code>Update</code> activity means that the receiving server <em>SHOULD</em> update its copy of the <code>object</code> of the same <code>id</code> to the copy supplied in the <code>Update</code> activity. Unlike the <a href="https://www.w3.org/TR/activitypub/#update-activity-outbox" rel="nofollow noopener"> client to server handling of the Update activity</a>, this is not a partial update but a complete replacement of the object.</p>
+<p>The receiving server <em>MUST</em> take care to be sure that the <code>Update</code> is authorized to modify its <code>object</code> . At minimum, this may be done by ensuring that the <code>Update</code> and its <code>object</code> are of same origin.</p>
+</blockquote>
+<p>Presumably sending something like this over S2S would just get the object replaced by an empty copy:</p>
+<pre><code class="lang-auto">{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "id": "https://example.com/activities/1",
+  "type": "Update",
+  "actor": "https://example.com/actors/1",
+  "object": "https://example.com/objects/1"
+}
+</code></pre>
+<p>So how would this update/refetch notification be done properly?</p>
+        </div>
+
+        <meta itemprop='headline' content='Notifying remote servers that they should refetch an object'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="259.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-11-01T21:12:58Z'>
+              <time itemprop='dateModified' datetime='2019-11-01T21:14:16Z' class='post-time'>
+                November 1, 2019,  9:14pm
+              </time>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Going off memory, an IRI is not sufficient for S2S, it must be the inlined updated <code>object</code> value embedded into the Update. C2S too.</p>
+<p>Difference is that C2S is a recursive diff and S2S is a complete replacement. This “complete replacement” is ambiguous so go-fed implements it in a specific way.</p>
+<p>Your example has an IRI as <code>object</code> so would not be compliant.</p>
+        </div>
+
+        <meta itemprop='headline' content='Notifying remote servers that they should refetch an object'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/trwnh.html'><span itemprop='name'>trwnh</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="259.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-11-01T22:27:42Z'>
+              <time itemprop='dateModified' datetime='2019-11-03T17:08:51Z' class='post-time'>
+                November 3, 2019,  5:08pm
+              </time>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><s>Yeah, I know it wouldn’t be compliant. But perhaps it could be changed? If not, what other mechanism could be used?</s></p>
+<p>C2S-vs-S2S partial-vs-full is kind of beside the point, as this issue is only relevant to S2S. The desired standardized behavior is “this object has been changed”, as a purely informational thing so that implementations know the rough time of last modification and can do things like refetching or cache expiry.</p>
+        </div>
+
+        <meta itemprop='headline' content='Notifying remote servers that they should refetch an object'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nightpool.html'><span itemprop='name'>nightpool</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="259.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-11-01T23:11:19Z'>
+              <time itemprop='dateModified' datetime='2019-11-01T23:11:42Z' class='post-time'>
+                November 1, 2019, 11:11pm
+              </time>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>wait, what? why would the example posted not be compliant? The two representations (including an IRI to dereference vs including an embedded object) should be identical on the JSON-LD level.</p>
+        </div>
+
+        <meta itemprop='headline' content='Notifying remote servers that they should refetch an object'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="3" />
+           <span class='post-likes'>3 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="259.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-11-01T23:18:14Z'>
+              <time itemprop='dateModified' datetime='2019-11-01T23:21:11Z' class='post-time'>
+                November 1, 2019, 11:21pm
+              </time>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>6.3.1, on partial updates:</p>
+<blockquote>
+<p>Server to server interaction and updates from the server to the client should contain the entire new representation of the object, after the partial update application has been applied. See the description of the <a href="https://www.w3.org/TR/activitypub/#update-activity-inbox" rel="nofollow noopener">Update activity for server to server interactions</a> for more details.</p>
+</blockquote>
+<p>I interpret “updates … contain the entire new representation of the object” as not being an IRI.</p>
+<p>Edit:</p>
+<p>Plus the language in 7.3 of the OP talks about the “copy [of the object] supplied in the Update” and “complete replacement of the object”, all of which point at not-IRI but inlined-value expectations.</p>
+        </div>
+
+        <meta itemprop='headline' content='Notifying remote servers that they should refetch an object'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nightpool.html'><span itemprop='name'>nightpool</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="259.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-01T23:23:24Z' class='post-time'>
+                November 1, 2019, 11:23pm
+              </time>
+              <meta itemprop='dateModified' content='2019-11-01T23:23:24Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I agree that the spec might <em>expect</em> you to inline the object, but I absolutely disagree that it <em>requires</em> it.</p>
+        </div>
+
+        <meta itemprop='headline' content='Notifying remote servers that they should refetch an object'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="259.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-11-02T09:57:12Z'>
+              <time itemprop='dateModified' datetime='2019-11-02T10:59:37Z' class='post-time'>
+                November 2, 2019, 10:59am
+              </time>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I don’t understand. It’s my fault for going so off topic, we should follow up in another thread (Edit: <a href="../the-update-activity-more-than-caching/260.html">here</a>).</p>
+<aside class="quote no-group" data-post="3" data-topic="259">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/trwnh/40/128_2.png" class="avatar"> trwnh:</div>
+<blockquote>
+<p>Yeah, I know it wouldn’t be compliant. But perhaps it could be changed?</p>
+</blockquote>
+</aside>
+<p><a class="mention" href="../../u/trwnh.html">@trwnh</a>, yes! I agree we could make the IRI object value of an update means something like “always means fetch complete replacement” in both S2S and C2S. There’s temporal things to think about too though, since the Update is no longer synchronous with the actual changed object (so multiple cumulative data changes could accidentally be fetched at once). Since the spec is silent on the issue, we would need to get a general consensus on such a convention.</p>
+<p>I’m happy to have go-fed support a rule like that, as long as backwards compatibility is supported for the existing rules about inlined values.</p>
+<p>Edited multiple times.</p>
+        </div>
+
+        <meta itemprop='headline' content='Notifying remote servers that they should refetch an object'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/kaniini.html'><span itemprop='name'>kaniini</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="259.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-02T14:39:46Z' class='post-time'>
+                November 2, 2019,  2:39pm
+              </time>
+              <meta itemprop='dateModified' content='2019-11-02T14:39:46Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I agree with nightpool, a bare IRI is completely fine here.</p>
+        </div>
+
+        <meta itemprop='headline' content='Notifying remote servers that they should refetch an object'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/trwnh.html'><span itemprop='name'>trwnh</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="259.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-03T17:08:22Z' class='post-time'>
+                November 3, 2019,  5:08pm
+              </time>
+              <meta itemprop='dateModified' content='2019-11-03T17:08:22Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>OK, then. If a bare IRI is fine, then the next question would probably be how this would be handled in existing implementations. If an ActivityPub implementation were to hypothetically use Update in this manner, would it be received and handled properly?</p>
+        </div>
+
+        <meta itemprop='headline' content='Notifying remote servers that they should refetch an object'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Debian now has a Fediverse Packaging Team</title>
+    <link>https://socialhub.activitypub.rocks/t/debian-now-has-a-fediverse-packaging-team/565</link>
+    <description>Debian now has a [Fediverse Team](https://wiki.debian.org/FediverseTeam) which focuses on packagin Fediverse software for Debian.
+
+This happens together with Debian launching its own [Social Team](https://wiki.debian.org/Teams/DebianSocial) and launching own instances of Pleroma, Peertube, WriteFreely and Pixelfed for project members.
+
+*I am neither affiliated with Debian nor one of the mentioned teams, but just found these news relevant.*</description>
+    
+    <lastBuildDate>Tue, 10 Mar 2020 09:09:11 +0000</lastBuildDate>
+    <category>Packaging</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/debian-now-has-a-fediverse-packaging-team/565.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Debian now has a Fediverse Packaging Team</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you for the heads up, I’m going to see if they want to maintain presence here.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/debian-now-has-a-fediverse-packaging-team/565/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/debian-now-has-a-fediverse-packaging-team/565/2</link>
+        <pubDate>Tue, 10 Mar 2020 09:09:11 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-565-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/debian-now-has-a-fediverse-packaging-team/565.rss">Debian now has a Fediverse Packaging Team</source>
+      </item>
+      <item>
+        <title>Debian now has a Fediverse Packaging Team</title>
+        <dc:creator><![CDATA[schmittlauch]]></dc:creator>
+        <description><![CDATA[
+            <p>Debian now has a <a href="https://wiki.debian.org/FediverseTeam" rel="nofollow noopener">Fediverse Team</a> which focuses on packagin Fediverse software for Debian.</p>
+<p>This happens together with Debian launching its own <a href="https://wiki.debian.org/Teams/DebianSocial" rel="nofollow noopener">Social Team</a> and launching own instances of Pleroma, Peertube, WriteFreely and Pixelfed for project members.</p>
+<p><em>I am neither affiliated with Debian nor one of the mentioned teams, but just found these news relevant.</em></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/debian-now-has-a-fediverse-packaging-team/565/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/debian-now-has-a-fediverse-packaging-team/565/1</link>
+        <pubDate>Mon, 09 Mar 2020 23:16:47 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-565-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/debian-now-has-a-fediverse-packaging-team/565.rss">Debian now has a Fediverse Packaging Team</source>
+      </item>
+  </channel>
+</rss>

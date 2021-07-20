@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Respectfully dealing with fedizens who are deceased</title>
+    <link>https://socialhub.activitypub.rocks/t/respectfully-dealing-with-fedizens-who-are-deceased/1278</link>
+    <description>Maybe this forum is not the right place, and also not having well-formed thoughts on the subject, but... I just encountered a RIP toot of a well-loved fedizen. It is an issue on all social media: what to do in such case with the account? There can be painful situations for the relatives of a deceased person, caused by others continuing to communicate with them as if they were still alive, and unaware of the fact that they are not. Or an admin purges long inactive accounts and with that wipes dear memories of the deceased.
+
+In the case where the family or other caretakers have access to the account, the problem is more manageable: they can close the account or indicate the situation in the profile description, though that doesn&#39;t avoid the person from being tagged.
+
+Then there&#39;s the situation where those left behind have no account access and are powerless to act. They may try to convince individual admins to act on their behalf. But they should know how to do that. What the procedure is (they may be fedi noobs).
+
+Though it may be best to leave specific features to individual apps to implement, we may define a recommended practice to follow. Some features may be:
+
+- Freeze the account in the last state when the person was alive (no new toots possible, maybe no mentions, maybe no search)
+- Turn the account in a memoral of the person (various ways to do so)
+
+Anyone having thoughts on the subject?
+
+**Edit**: See this toot for more discussion on the topic: https://mastodon.social/web/statuses/105531175229665430</description>
+    
+    <lastBuildDate>Tue, 04 May 2021 05:31:25 +0000</lastBuildDate>
+    <category>Fediverse Futures</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/respectfully-dealing-with-fedizens-who-are-deceased/1278.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Respectfully dealing with fedizens who are deceased</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="bengo" data-post="2" data-topic="1278">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/letter_avatar_proxy/v4/letter/b/59ef9b/40.png" class="avatar"> bengo:</div>
+<blockquote>
+<p>It should be part of the metadata/settings associated with the ‘Actor’ or ‘Profile’ what to do.</p>
+</blockquote>
+</aside>
+<p>Yes, that’d be a good option. I can understand if apps aren’t too keen to have such a loaded, serious section in their Settings UI, but it can be added as a checkbox that only shows additional fields when checked.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/respectfully-dealing-with-fedizens-who-are-deceased/1278/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/respectfully-dealing-with-fedizens-who-are-deceased/1278/3</link>
+        <pubDate>Tue, 04 May 2021 05:31:25 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1278-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/respectfully-dealing-with-fedizens-who-are-deceased/1278.rss">Respectfully dealing with fedizens who are deceased</source>
+      </item>
+      <item>
+        <title>Respectfully dealing with fedizens who are deceased</title>
+        <dc:creator><![CDATA[bengo]]></dc:creator>
+        <description><![CDATA[
+            <p>I think this should be up to the person’s last will and testament.</p>
+<p>Every identity on the fediverse is not necessarily a human body. When the human body dies, it’s not always the case that all of their fediverse identities should advertise it.</p>
+<p>It should be part of the metadata/settings associated with the ‘Actor’ or ‘Profile’ what to do.</p>
+<p>Some people may want to disappear on purpose. They’re not necessarily gone forever or even dead.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/respectfully-dealing-with-fedizens-who-are-deceased/1278/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/respectfully-dealing-with-fedizens-who-are-deceased/1278/2</link>
+        <pubDate>Tue, 04 May 2021 01:02:06 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1278-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/respectfully-dealing-with-fedizens-who-are-deceased/1278.rss">Respectfully dealing with fedizens who are deceased</source>
+      </item>
+      <item>
+        <title>Respectfully dealing with fedizens who are deceased</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Maybe this forum is not the right place, and also not having well-formed thoughts on the subject, but… I just encountered a RIP toot of a well-loved fedizen. It is an issue on all social media: what to do in such case with the account? There can be painful situations for the relatives of a deceased person, caused by others continuing to communicate with them as if they were still alive, and unaware of the fact that they are not. Or an admin purges long inactive accounts and with that wipes dear memories of the deceased.</p>
+<p>In the case where the family or other caretakers have access to the account, the problem is more manageable: they can close the account or indicate the situation in the profile description, though that doesn’t avoid the person from being tagged.</p>
+<p>Then there’s the situation where those left behind have no account access and are powerless to act. They may try to convince individual admins to act on their behalf. But they should know how to do that. What the procedure is (they may be fedi noobs).</p>
+<p>Though it may be best to leave specific features to individual apps to implement, we may define a recommended practice to follow. Some features may be:</p>
+<ul>
+<li>Freeze the account in the last state when the person was alive (no new toots possible, maybe no mentions, maybe no search)</li>
+<li>Turn the account in a memoral of the person (various ways to do so)</li>
+</ul>
+<p>Anyone having thoughts on the subject?</p>
+<p><strong>Edit</strong>: See this toot for more discussion on the topic: <a href="https://mastodon.social/web/statuses/105531175229665430">https://mastodon.social/web/statuses/105531175229665430</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/respectfully-dealing-with-fedizens-who-are-deceased/1278/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/respectfully-dealing-with-fedizens-who-are-deceased/1278/1</link>
+        <pubDate>Sun, 10 Jan 2021 11:52:00 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1278-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/respectfully-dealing-with-fedizens-who-are-deceased/1278.rss">Respectfully dealing with fedizens who are deceased</source>
+      </item>
+  </channel>
+</rss>

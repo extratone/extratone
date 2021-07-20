@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Next Generation Internet</title>
+    <link>https://socialhub.activitypub.rocks/t/next-generation-internet/1149</link>
+    <description>This topic is to discuss funding opportunity for ActivityPub-related software within the European Commission&#39;s NGI initiative. Currently there are several opportunities that were mentioned during APConf 2020 (note: other sources of funding are mentioned in that post as well):
+
+[quote=&quot;how, post:5, topic:837&quot;]
+### ActivityPub-related Funding
+
+*Feel free to add to the table*
+
+15 ActivityPub projects were funded so far (PixelFed received 2 grants) through NGI0 Discovery, and there’s still an opportunity to get some funding: next deadline is **December 1st 2020** .
+[/quote]
+
+This topic is for people, NGI0 grantees and developers willing to take a chance and get funded, to share their experience with NGI0, review each other proposals, form teams, discuss strategies, etc.</description>
+    
+    <lastBuildDate>Sat, 15 May 2021 18:12:20 +0000</lastBuildDate>
+    <category>Fediverse Futures</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/next-generation-internet/1149.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Next Generation Internet</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>4 posts were split to a new topic: <a href="/t/fedeproxy-found-funding-how-do-we-ensure-project-success/1757">FedeProxy found funding. How do we ensure project success?</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/next-generation-internet/1149/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/next-generation-internet/1149/16</link>
+        <pubDate>Sun, 16 May 2021 06:16:13 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1149-16</guid>
+        <source url="https://socialhub.activitypub.rocks/t/next-generation-internet/1149.rss">Next Generation Internet</source>
+      </item>
+      <item>
+        <title>Next Generation Internet</title>
+        <dc:creator><![CDATA[hamishcampbell]]></dc:creator>
+        <description><![CDATA[
+            <p>It’s a bit more complex than that <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>OK back to the feeding frenzy, lots of the fedivers is getting  small funding, and likely the agenders that come with this funding.  The cats are feeding, not a bad thing if the agenders are not too strong, which needs looking at more.</p>
+<p>Humanism is a bit more than cats and food though, the subject of my post and blog.</p>
+<p>This comes to mind when talking to just about everyone today “They are casting their problems at society. And, you know, there’s no such thing as society. There are individual men and women and there are families. And no government can do anything except through people, and people must look after themselves first. It is our duty to look after ourselves and then, also, to look after our neighbours.”</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/next-generation-internet/1149/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/next-generation-internet/1149/15</link>
+        <pubDate>Sat, 15 May 2021 16:33:45 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1149-15</guid>
+        <source url="https://socialhub.activitypub.rocks/t/next-generation-internet/1149.rss">Next Generation Internet</source>
+      </item>
+      <item>
+        <title>Next Generation Internet</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>A related document is the PDF with a presentation outlining the new Horizon program in more detail (thanks <a class="mention" href="/u/dachary">@dachary</a>):</p>
+<aside class="onebox pdf">
+  <header class="source">
+      <a href="https://ec.europa.eu/info/sites/default/files/research_and_innovation/funding/presentations/ec_rtd_he-investing-to-shape-our-future.pdf" target="_blank" rel="noopener">ec.europa.eu</a>
+  </header>
+  <article class="onebox-body">
+    <a href="https://ec.europa.eu/info/sites/default/files/research_and_innovation/funding/presentations/ec_rtd_he-investing-to-shape-our-future.pdf" target="_blank" rel="noopener"><span class="pdf-onebox-logo"></span></a>
+<h3><a href="https://ec.europa.eu/info/sites/default/files/research_and_innovation/funding/presentations/ec_rtd_he-investing-to-shape-our-future.pdf" target="_blank" rel="noopener">ec_rtd_he-investing-to-shape-our-future.pdf</a></h3>
+
+<p class="filesize">2016.53 KB</p>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p><a class="mention" href="/u/hamishcampbell">@hamishcampbell</a> I wouldn’t worry so much about what these other projects do, and waste so much text complaining about it. I mean this in a friendly way. It is a given that on any large amount of funding that is available a large amount of people try to get at it. And that many don’t share our values and principles.</p>
+<p>Remember <a class="mention" href="/u/darius">@darius</a> words: “<a href="https://socialhub.activitypub.rocks/t/lets-play-and-win-our-own-game/953" class="inline-onebox">Let's Play and Win Our Own Game</a>”. Best focus only on our solutions and the unique value they provide. All these other things are mere distractions from that, imho. If our proposition is good, we’ll be granted funds, and then if we stand out above the rest, we’ll become standard bearers and see more people flock to our cause. It’s all up to us.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/next-generation-internet/1149/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/next-generation-internet/1149/14</link>
+        <pubDate>Sat, 15 May 2021 16:16:08 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1149-14</guid>
+        <source url="https://socialhub.activitypub.rocks/t/next-generation-internet/1149.rss">Next Generation Internet</source>
+      </item>
+      <item>
+        <title>Next Generation Internet</title>
+        <dc:creator><![CDATA[hamishcampbell]]></dc:creator>
+        <description><![CDATA[
+            <p><strong>This is an interesting challenge</strong></p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/2X/d/d05792eaec5f1e444d843db3739c1cd6e7d5cade.jpeg" data-download-href="https://socialhub.activitypub.rocks/uploads/default/d05792eaec5f1e444d843db3739c1cd6e7d5cade" title=""><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/d/d05792eaec5f1e444d843db3739c1cd6e7d5cade_2_690x239.jpeg" alt="" data-base62-sha1="tJ4WhBgwNKZEmWNxmbtYtK2ggz4" width="690" height="239" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/d/d05792eaec5f1e444d843db3739c1cd6e7d5cade_2_690x239.jpeg, https://socialhub.activitypub.rocks/uploads/default/original/2X/d/d05792eaec5f1e444d843db3739c1cd6e7d5cade.jpeg 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/2X/d/d05792eaec5f1e444d843db3739c1cd6e7d5cade.jpeg 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/d/d05792eaec5f1e444d843db3739c1cd6e7d5cade_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename"></span><span class="informations">720×250 102 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>Looking at this event <a href="https://2021.ngiforum.eu" rel="noopener nofollow ugc">https://2021.ngiforum.eu</a> Way to meany stuffed shirts, technological fantasists (blockchain) and a lot of <span class="hashtag">#EU</span> money what could go wrong…</p>
+<p>Spent a hour looking through the list of participants opening in new tab all that said something interesting. Of these more than 2/3’s had the tag blockchain so closed them, and then looked at the rest, then closed them… as we all know the is little hope in places like this, but worth a look, sometimes you find something useful. Someone has to turn over the tech shitpile to make compost.</p>
+<p>Last week attended the online event by the Knight Foundation (huge <a href="https://campaign.openworlds.info/tags/openweb" rel="noopener nofollow ugc">#openweb</a> funders for the last 10 years) in the USA on <a href="https://campaign.openworlds.info/tags/reimagining" rel="noopener nofollow ugc">#reimagining</a> the Internet. It was 100% about the <a href="https://campaign.openworlds.info/tags/dotcons" rel="noopener nofollow ugc">#dotcons</a> kinda nutty how bad things are in the funded <a href="https://campaign.openworlds.info/tags/NGO" rel="noopener nofollow ugc">#NGO</a> <a href="https://campaign.openworlds.info/tags/openweb" rel="noopener nofollow ugc">#openweb</a> world</p>
+<p>With this in mind I moved the <span class="hashtag">#4opens</span> to its own space <a href="https://unite.openworlds.info/Open-Media-Network/4opens/wiki" class="inline-onebox" rel="noopener nofollow ugc">Home - 4opens - Gitea: Open Media Network</a> it’s a useful <span class="hashtag">#openweb</span> tool for moving tech projects in to the right pile.</p>
+<p>Here are 10 sample <a href="https://activism.openworlds.info/tags/4opens" rel="noopener nofollow ugc">#4opens</a> reviews to help you to understand what its about and how you can use this simple way of judging if a project is worth supporting or not <a href="https://unite.openworlds.info/Open-Media-Network/4opens/issues" class="inline-onebox" rel="noopener nofollow ugc">Issues - 4opens - Gitea: Open Media Network</a></p>
+<p>Please add to this, sign up for the site and add more or just publish them on your own <a href="https://activism.openworlds.info/tags/openweb" rel="noopener nofollow ugc">#openweb</a> site with the hashtag <a href="https://activism.openworlds.info/tags/4opens" rel="noopener nofollow ugc">#4opens</a></p>
+<p><strong>UPDATE</strong></p>
+<p>Why go to these events? Its about connection to people building bridges and resources for bridge building. The problem is all the resources at these events are poured down the drain and/or consumed by social parasites - the chattering classes.</p>
+<p>I spend a bit of time going to the events every 10 years to see if this has changed. COVID-19 and the onlining of the events is a time to do this. This time, like last time, am feeling an “opening” but think the parasite classes are going to be stampeding through it. For a useful outcome we would need a soughted <a href="https://campaign.openworlds.info/tags/openweb" rel="noopener nofollow ugc">#openweb</a> group to take up space, without this the opening is not going to have any good outcome.</p>
+<p>This mythical group does not exist, there are individuals scattered about, but nothing that has much social power to be able to work with/bridge the power politics.</p>
+<p>Kinda sad and bad but its where we are at <span class="hashtag">#XR</span></p>
+<p><strong>UPDATE</strong></p>
+<p>This strategy can work (up to a point) to get resources, the last time, 10 years ago, I got a big chunk of dosh to set up <a href="http://visionon.tv" rel="noopener nofollow ugc">http://visionon.tv</a> which the remains of is funding the <span class="hashtag">#OMN</span> infrastructure. But this is another story - you can likely find articles about this back on this blog.</p>
+<p><strong>UPDATE</strong></p>
+<p>In any burocracy there are always a few people trying to get out, its what bridges are for, and there will likely be lots of people on our side who want to get in, also what bridges are for <a href="http://hamishcampbell.com/2021/04/16/outreaching-activitypub-to-the-eu-draft/" rel="noopener nofollow ugc">http://hamishcampbell.com/2021/04/16/outreaching-activitypub-to-the-eu-draft/</a> a post that touches on this bridging subject and why it has value.</p>
+<p><strong>UPDATE</strong></p>
+<p>Only now reading up on the background of this <a href="https://campaign.openworlds.info/tags/EU" rel="noopener nofollow ugc">#EU</a> stuff</p>
+<p>"What is Horizon Europe?</p>
+<p>Horizon Europe is the EU’s key funding programme for research and innovation with a budget of €95.5 billion."</p>
+<p>No wonder the is such a feeding frenzy of pigs at the trough was wondering why this sudden interest in the <a href="https://campaign.openworlds.info/tags/openweb" rel="noopener nofollow ugc">#openweb</a></p>
+<p>From <a href="http://hamishcampbell.com/2021/05/15/been-takeing-part-in-online-openweb-events-am-resisting-the-urge-to-bite-people/" rel="noopener nofollow ugc">http://hamishcampbell.com/2021/05/15/been-takeing-part-in-online-openweb-events-am-resisting-the-urge-to-bite-people/</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/next-generation-internet/1149/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/next-generation-internet/1149/13</link>
+        <pubDate>Sat, 15 May 2021 14:52:23 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1149-13</guid>
+        <source url="https://socialhub.activitypub.rocks/t/next-generation-internet/1149.rss">Next Generation Internet</source>
+      </item>
+      <item>
+        <title>Next Generation Internet</title>
+        <dc:creator><![CDATA[hamishcampbell]]></dc:creator>
+        <description><![CDATA[
+            <p>Dropped into the events for this <a href="https://knightcolumbia.org/events/reimagine-the-internet" class="inline-onebox" rel="noopener nofollow ugc">Reimagine the Internet | Knight First Amendment Institute</a> if you won’t an example of pouring hundreds of millions of $$$ down the drain the Knight foundation is it. This is normal, but by doing this they shaped the agender of the <span class="hashtag">#openweb</span> for the last 10 years, this is a problem.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/next-generation-internet/1149/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/next-generation-internet/1149/12</link>
+        <pubDate>Fri, 14 May 2021 18:19:38 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1149-12</guid>
+        <source url="https://socialhub.activitypub.rocks/t/next-generation-internet/1149.rss">Next Generation Internet</source>
+      </item>
+      <item>
+        <title>Next Generation Internet</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="titi" data-post="3" data-topic="1149">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/titi/40/515_2.png" class="avatar"> titi:</div>
+<blockquote>
+<p>why this post is in Fediversity and Fediverse Futures categories… It’s confusing at least for me… And I think it would be better placed in AP category…</p>
+</blockquote>
+</aside>
+<p>The reason why the funding topic is not in <a class="hashtag" href="/c/activitypub/5">#<span>activitypub</span></a> is that the <a class="hashtag" href="/c/activitypub/5">#<span>activitypub</span></a> category is to discuss the specification itself and not related topics. E.g., implementation issues usually go to <a class="hashtag" href="/c/software/14">#<span>software</span></a> unless they concern issues with the specification itself (e.g., groups or collections, and not a specific way of doing things in a software).</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/next-generation-internet/1149/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/next-generation-internet/1149/11</link>
+        <pubDate>Fri, 14 May 2021 10:12:29 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1149-11</guid>
+        <source url="https://socialhub.activitypub.rocks/t/next-generation-internet/1149.rss">Next Generation Internet</source>
+      </item>
+      <item>
+        <title>Next Generation Internet</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-redaktor.me" data-username="Sebastian" data-post="8" data-topic="1149">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar"> Sebastian:</div>
+<blockquote>
+<p>there is this Arnold who always deletes my posts,<br>
+I think, we will talk about it in the next meeting.</p>
+</blockquote>
+</aside>
+<p>You told me that you would slack some time off the SocialHub to focus on your new job.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/next-generation-internet/1149/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/next-generation-internet/1149/10</link>
+        <pubDate>Thu, 13 May 2021 07:44:52 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1149-10</guid>
+        <source url="https://socialhub.activitypub.rocks/t/next-generation-internet/1149.rss">Next Generation Internet</source>
+      </item>
+      <item>
+        <title>Next Generation Internet</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-redaktor.me" data-username="Sebastian" data-post="8" data-topic="1149">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar"> Sebastian:</div>
+<blockquote>
+<p>there is this Arnold who always deletes my posts,</p>
+</blockquote>
+</aside>
+<p>Well, no actually… I flagged two of your posts, because of language and accusations to other members, similar to the above. When flagging a post it becomes hidden, until other staff have reviewed it. At SocialHub anyone can be flagged, including mods and admins. To deal with that in a fair way there’s the Well-being team and <a class="hashtag" href="/c/community/well-being/9">#<span>community:well-being</span></a> forum section. I moved <a href="https://socialhub.activitypub.rocks/t/community-communication-and-collaboration/1640/26">the last flagged post</a> to that section, because you unethically moderated yourself and removed the flag. That, in itself is an abuse of your moderation privilege.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/next-generation-internet/1149/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/next-generation-internet/1149/9</link>
+        <pubDate>Thu, 13 May 2021 05:13:20 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1149-9</guid>
+        <source url="https://socialhub.activitypub.rocks/t/next-generation-internet/1149.rss">Next Generation Internet</source>
+      </item>
+      <item>
+        <title>Next Generation Internet</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey titi,</p>
+<p>there is this Arnold who always deletes my posts,<br>
+I think, we will talk about it in the next meeting.</p>
+<p>We made this huge lists of grants.</p><aside class="quote" data-post="1" data-topic="115">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/money-grants-fellowships-stipends-funding/115">Money : Grants, Fellowships, Stipends, Funding</a> <a class="badge-wrapper  box" href="/c/software/redaktor-me/22"><span class="badge-category-parent-bg" style="background-color: #3AB54A;"></span><span class="badge-category-bg" style="background-color: #ff7a00;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="The multimedia CMS for the Fediverse –
+redaktor will be a web content management system to setup
+your social connected website in minutes.
+On your own server.
+redaktor helps you with telling your stories.">redaktor.me</span></a>
+  </div>
+  <blockquote>
+    Have you seen our huge lists of grants ? 
+Add yours :
+  </blockquote>
+</aside>
+
+<p>Maybe you find a fair one at the list.</p>
+<p>About NGI0: I was also very astonished, <em>what</em> they found <em>instead</em> of their mandate, like <a href="https://socialhub.activitypub.rocks/t/this-ngi-funded-project-does-not-comply-to-gdpr/1614">private DRM passports </a> –<br>
+For example<br>
+I am a photojournalist and each year photos worth 4.000 - 6.000€ are stolen.<br>
+While the above project would be good for my ego, it would <strong>never</strong> give me the impression that the EU should fund private passports …<br>
+The Members of the European Parliament never gave NGI0 a mandate to fund private DRM and I am also in a conversation with Commissioner Vestager.</p>
+<p>The MEPs and also jury members encouraged me to apply because “Content Curation Experiences are much needed” but unfortunately after 2 years I got the response that Content Management Systems will not be funded.</p>
+<p>I saw that this post was flagged, so I propose to have an official SocialCG meeting because this here is the forum of the W3C SocialCG and not of NGI0.</p>
+<p>So, <a class="mention" href="/u/titi">@titi</a> I hope very much that you might find a grant on the list and if not, it is a wiki everyone can edit.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/next-generation-internet/1149/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/next-generation-internet/1149/8</link>
+        <pubDate>Thu, 13 May 2021 04:44:51 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1149-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/next-generation-internet/1149.rss">Next Generation Internet</source>
+      </item>
+      <item>
+        <title>Next Generation Internet</title>
+        <dc:creator><![CDATA[hamishcampbell]]></dc:creator>
+        <description><![CDATA[
+            <p>The is much that is healthy in the activertypub and fedivers but outside this is a lot of agenders and much of these are captured by the “common” sense of the dead neo-liberal thinking that makes such a mess in the non-tech world. This cam e to focus while listening to a presentation for the Wikimedia Foundation at a USA online conf yesterday.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/next-generation-internet/1149/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/next-generation-internet/1149/7</link>
+        <pubDate>Tue, 11 May 2021 08:29:52 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1149-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/next-generation-internet/1149.rss">Next Generation Internet</source>
+      </item>
+      <item>
+        <title>Next Generation Internet</title>
+        <dc:creator><![CDATA[hamishcampbell]]></dc:creator>
+        <description><![CDATA[
+            <p>Have been looking through the current funding agenders and finding 90% of money is poured down the drain at best and  much of the rest is feeding the libertarian/right wing who are making a strong push into <span class="hashtag">#openweb</span> because for the last 10 years the <span class="hashtag">#geekproblem</span>  has been building anti-social libertarian code based on the “is no such thing as society” so why code for this thing that does not exist.</p>
+<p>We have a problem, first a large pile of tech shit to compost, and second trying to reform the funders and <span class="hashtag">#NGO</span> that have pushed this problem for too long.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/next-generation-internet/1149/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/next-generation-internet/1149/6</link>
+        <pubDate>Mon, 10 May 2021 10:23:17 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1149-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/next-generation-internet/1149.rss">Next Generation Internet</source>
+      </item>
+      <item>
+        <title>Next Generation Internet</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>A post was merged into an existing topic: <a href="/t/community-communication-and-collaboration/1640/26">Community communication and collaboration</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/next-generation-internet/1149/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/next-generation-internet/1149/5</link>
+        <pubDate>Sun, 09 May 2021 09:07:29 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1149-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/next-generation-internet/1149.rss">Next Generation Internet</source>
+      </item>
+      <item>
+        <title>Next Generation Internet</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Good point.<br>
+It also seems not to be even software, they told me that they do not fund Content Management Systems. Very intransparent thing <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/frowning.png?v=9" title=":frowning:" class="emoji" alt=":frowning:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/next-generation-internet/1149/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/next-generation-internet/1149/4</link>
+        <pubDate>Fri, 07 May 2021 17:18:39 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1149-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/next-generation-internet/1149.rss">Next Generation Internet</source>
+      </item>
+      <item>
+        <title>Next Generation Internet</title>
+        <dc:creator><![CDATA[titi]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="how" data-post="1" data-topic="1149">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/how/40/94_2.png" class="avatar"> how:</div>
+<blockquote>
+<p>This topic is to discuss funding opportunity for ActivityPub-related software</p>
+</blockquote>
+</aside>
+<p>What a pitty that is just software… Is there a way to fund non-technical stuff?</p>
+<p><strong>Update 14/05/21</strong>: Hi again, <a class="mention" href="/u/how">@how</a> If this funding you promote is just about the protocol, I don’t really understand why this post is in Fediversity and Fediverse Futures categories… It’s confusing at least for me… And I think it would be better placed in AP category…</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/next-generation-internet/1149/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/next-generation-internet/1149/3</link>
+        <pubDate>Fri, 07 May 2021 17:09:59 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1149-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/next-generation-internet/1149.rss">Next Generation Internet</source>
+      </item>
+      <item>
+        <title>Next Generation Internet</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>An online meeting with the DG DIGIT of the European Commission is under way around April 19th. See <a href="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/1" class="inline-onebox">Webinar with the European Commission and AP Community</a>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/next-generation-internet/1149/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/next-generation-internet/1149/2</link>
+        <pubDate>Tue, 23 Mar 2021 13:19:07 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1149-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/next-generation-internet/1149.rss">Next Generation Internet</source>
+      </item>
+      <item>
+        <title>Next Generation Internet</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>This topic is to discuss funding opportunity for ActivityPub-related software within the European Commission’s NGI initiative. Currently there are several opportunities that were mentioned during APConf 2020 (note: other sources of funding are mentioned in that post as well):</p>
+<aside class="quote no-group" data-username="how" data-post="5" data-topic="837">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/how/40/94_2.png" class="avatar"><a href="https://socialhub.activitypub.rocks/t/scaling-up-cooperation/837/5">Scaling Up Cooperation</a>
+</div>
+<blockquote>
+<h3>ActivityPub-related Funding</h3>
+<p><em>Feel free to add to the table</em></p>
+<p>15 ActivityPub projects were funded so far (PixelFed received 2 grants) through NGI0 Discovery, and there’s still an opportunity to get some funding: next deadline is <strong>December 1st 2020</strong> .</p>
+</blockquote>
+</aside>
+<p>This topic is for people, NGI0 grantees and developers willing to take a chance and get funded, to share their experience with NGI0, review each other proposals, form teams, discuss strategies, etc.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/next-generation-internet/1149/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/next-generation-internet/1149/1</link>
+        <pubDate>Tue, 24 Nov 2020 17:15:18 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1149-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/next-generation-internet/1149.rss">Next Generation Internet</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Groups implementation - ActivityPub - SocialHub</title>
+    <meta name="description" content="I’ve implemented groups in Tavern and would like feedback and comments. All of the group specific actor and activity behavior is documented in https://gitlab.com/ngerakines/tavern/-/blob/issue-21-groups/FEDERATION.md as &amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="591@page=4.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Groups implementation&#39;" href="591.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/groups-implementation/591?page=4" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/groups-implementation/591?page=4" />
+<meta property="og:title" content="Groups implementation" />
+<meta name="twitter:title" content="Groups implementation" />
+<meta property="og:description" content="For everybody attending the conference :  This thread got very long and is very active.  A Birds of Feather session would be nice !  But I am currently writing 2 proposals for “topics” and “ui things”, so:  Does any attendee maybe want to write a very short proposal “groups”, linking to this post ?  Just create a topic in this category …" />
+<meta name="twitter:description" content="For everybody attending the conference :  This thread got very long and is very active.  A Birds of Feather session would be nice !  But I am currently writing 2 proposals for “topics” and “ui things”, so:  Does any attendee maybe want to write a very short proposal “groups”, linking to this post ?  Just create a topic in this category …" />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="19 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="31 ❤" />
+<meta property="article:published_time" content="2020-08-02T17:32:05+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+        <link rel="prev" href="591@page=3.html">
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="591.html">Groups implementation</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/activitypub.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #0088CC'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>ActivityPub</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="591.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-08-02T17:32:05Z' class='post-time'>
+                August 2, 2020,  5:32pm
+              </time>
+              <meta itemprop='dateModified' content='2020-08-02T17:32:05Z'>
+          <span itemprop='position'>#65</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>For everybody attending <a href="../../../conf.activitypub.rocks/index.html">the conference</a> :</p>
+<p>This thread got very long and is very active.<br>
+A Birds of Feather session would be nice !<br>
+But I am currently writing 2 proposals for “topics” and “ui things”, so:</p>
+<p>Does any attendee maybe want to write a very short proposal “groups”, linking to this post ?<br>
+<a href="../../c/meeting/apconf2020/53.html">Just create a topic in this category …</a></p>
+        </div>
+
+        <meta itemprop='headline' content='Groups implementation'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/aschrijver.html'><span itemprop='name'>aschrijver</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="591.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-08-02T20:38:33Z'>
+              <time itemprop='dateModified' datetime='2020-08-03T06:54:56Z' class='post-time'>
+                August 3, 2020,  6:54am
+              </time>
+          <span itemprop='position'>#66</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../u/sebastian.html">@Sebastian</a> that APConf sub-category does not yet exist (or is restricted).</p>
+        </div>
+
+        <meta itemprop='headline' content='Groups implementation'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="591.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-08-04T15:07:38Z' class='post-time'>
+                August 4, 2020,  3:07pm
+              </time>
+              <meta itemprop='dateModified' content='2020-08-04T15:07:38Z'>
+          <span itemprop='position'>#68</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hm, I can see six proposals by different people and other posts in the category.<br>
+So, <a class="mention" href="../../u/how.html">@how</a> : Is the category maybe restricted to a group?</p>
+        </div>
+
+        <meta itemprop='headline' content='Groups implementation'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/aschrijver.html'><span itemprop='name'>aschrijver</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="591.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-03T20:56:12Z' class='post-time'>
+                October 3, 2020,  8:56pm
+              </time>
+              <meta itemprop='dateModified' content='2020-10-03T20:56:12Z'>
+          <span itemprop='position'>#69</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Bumping… this discussion has unfinished biz &nbsp; <img src="../../images/emoji/twitter/slight_smile.png@v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+        </div>
+
+        <meta itemprop='headline' content='Groups implementation'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/macgirvin.html'><span itemprop='name'>macgirvin</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="591.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-04-30T03:13:55Z'>
+              <time itemprop='dateModified' datetime='2021-04-30T06:49:16Z' class='post-time'>
+                April 30, 2021,  6:49am
+              </time>
+          <span itemprop='position'>#70</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Re-using this topic as it is still open. I’m currently implementing <a href="https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/src/branch/main/feps/fep-400e.md" rel="noopener nofollow ugc">FEP-400e</a> from <a class="mention" href="../../u/grishka.html">@grishka</a>, in order to provide a complete project-agnostic groups implementation covering every known groups implementation and quirk (there are a fair number of these and I suspect we’ll have even more before all is said and done). Some questions came up.</p>
+<pre><code class="lang-markdown">If an actor has publicly-appendable collections, its server MAY include them as additional fields in its ActivityPub representation. For example, user actors may specify the link to their walls, or groups may specify the link to the collection of their photo albums.
+
+Implementations MAY use the presence or absence of specific collection to determine whether the actor’s server supports features that depend on that collection and alter their UIs accordingly.
+</code></pre>
+<p>What is the proposal for indicating these writable collections in the actor record? It’s OK if this is just a hack. I just need to know what it is so we can use it and alter our behaviour accordingly. I’m more concerned at the moment with the “wall” than photo albums, but if there’s an example actor record that shows what is planned for both it would be sweet.</p>
+<p>The next question is about using Create/Note/Collection (type, object,target). In the original AP/AS specifications, it was suggested that such activities should be Add/Note/Collection (not explicitly, but more or less inferred in the description of ‘Add’ and also the text in section 5.8.2 “Collection Management”). I intend to provide this as a general collection management interface and as recommended in the spec. Is there any chance that Smithereen could also do this,  or should we also support Create/Note/Collection purely for Smithereen compatibility?</p>
+<p>Third question. Regardless of the answer to the second question, there are different behaviours depending on the audience of the activity. If the activity is public, we don’t intend to add the Note to the wall (technically the outbox). This is more a published report of an activity that already happened - “Joe added a note to the Foobar group’s outbox”.  Whereas if there is a single recipient (the owner of the wall) it can be taken as a directive to actually perform the activity rather than just report that it happened. Not sure how best to clarify this difference other than by looking at the audience and seeing if the collection belongs to the single recipient and ignore it if the activity is addressed more widely.</p>
+<p>Fourth question (slightly related to the third): If the collection operation fails (lack of permission), is it even appropriate to notify anybody else besides the wall owner of the collection operation? I would say no, but I know there are a lot of people in this forum that would disagree and say the actor should be able to tell anybody anything at all, and the success or failure of the operation isn’t relevant. Because free speech. But if the activity is “Joe added a note to foobar group’s outbox” and it didn’t actually get added to foobar group’s outbox because Joe isn’t a member, such an activity is a lie and should not be sent.</p>
+<p>I’m merely suggesting that any kind of activity with a collection target might require a bit of extra care to define the activity audience; which would let receivers know for certain whether this was a request to perform the operation or an activity reporting  that it happened. Without looking at the activity audience, the desired action on receipt of the activity is ambiguous.</p>
+        </div>
+
+        <meta itemprop='headline' content='Groups implementation'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../fep-400e-publicly-appendable-activitypub-collections/1438/2.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/fep-400e-publicly-appendable-activitypub-collections/1438/2'>
+                      <span itemprop='name'>FEP-400e: Publicly-appendable ActivityPub collections</span>
+                    </a>
+                    <meta itemprop='position' content='2'>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="591.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-04-30T10:26:09Z'>
+              <time itemprop='dateModified' datetime='2021-04-30T10:31:54Z' class='post-time'>
+                April 30, 2021, 10:31am
+              </time>
+          <span itemprop='position'>#71</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="macgirvin" data-post="70" data-topic="591">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../letter_avatar_proxy/v4/letter/m/82dd89/40.png" class="avatar"> macgirvin:</div>
+<blockquote>
+<p>What is the proposal for indicating these writable collections in the actor record?</p>
+</blockquote>
+</aside>
+<p>That’s a good question! Currently it’s up to the implementation. I suppose it’s best to take care of this particular thing as part of the capability negotiation/“compliance profiles”/privacy settings effort. Because, for example, an actor might have a wall, but whether you can post on it depends on who you are.</p>
+<aside class="quote no-group" data-username="macgirvin" data-post="70" data-topic="591">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../letter_avatar_proxy/v4/letter/m/82dd89/40.png" class="avatar"> macgirvin:</div>
+<blockquote>
+<p>The next question is about using Create/Note/Collection (type, object,target). In the original AP/AS specifications, it was suggested that such activities should be Add/Note/Collection (not explicitly, but more or less inferred in the description of ‘Add’ and also the text in section 5.8.2 “Collection Management”).</p>
+</blockquote>
+</aside>
+<p>The problem I see with the approach in the spec is that the collection ID is only contained in the Add activity. It’s fine for straightforward cases like when your server hosts the collection and receives such an activity, but there are cases when this breaks down. For example, if you fetch the object using its ID (aka copy a link to a post and paste it into the search field on your instance), your instance has no way of knowing which collection the object belongs to because it doesn’t have its enclosing activity. So, it’s not self-contained. This would lead to buggy behavior like misrepresenting wall posts as something posted to one’s followers.</p>
+<p>Example of an already existing similar behavior is replies. Each reply has a link to its parent in its inReplyTo, and each post that has replies lists them in its replies collection. This way you can traverse the thread in both directions, even when you start off with just a single post from the middle of it.</p>
+<aside class="quote no-group" data-username="macgirvin" data-post="70" data-topic="591">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../letter_avatar_proxy/v4/letter/m/82dd89/40.png" class="avatar"> macgirvin:</div>
+<blockquote>
+<p>Is there any chance that Smithereen could also do this, or should we also support Create/Note/Collection purely for Smithereen compatibility?</p>
+</blockquote>
+</aside>
+<p>It depends. For wall posts, it doesn’t make much sense imo — you can’t move a post between walls. There’s also the question of semantics: Add implies that you add an existing object to a collection, so there should have been a Create at some point before it.</p>
+<aside class="quote no-group" data-username="macgirvin" data-post="70" data-topic="591">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../letter_avatar_proxy/v4/letter/m/82dd89/40.png" class="avatar"> macgirvin:</div>
+<blockquote>
+<p>Whereas if there is a single recipient (the owner of the wall) it can be taken as a directive to actually perform the activity rather than just report that it happened. Not sure how best to clarify this difference other than by looking at the audience and seeing if the collection belongs to the single recipient and ignore it if the activity is addressed more widely.</p>
+</blockquote>
+</aside>
+<aside class="quote no-group" data-username="macgirvin" data-post="70" data-topic="591">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../letter_avatar_proxy/v4/letter/m/82dd89/40.png" class="avatar"> macgirvin:</div>
+<blockquote>
+<p>But if the activity is “Joe added a note to foobar group’s outbox” and it didn’t actually get added to foobar group’s outbox because Joe isn’t a member, such an activity is a lie and should not be sent.</p>
+</blockquote>
+</aside>
+<p>Right now I rely on LD-signed activity forwarding for this (the Create is sent to the collection owner only, and nothing is forwarded if it wasn’t added), but yes, I agree that it might use some improvement. There is currently no protection against some bad person sending a wall post to group members directly despite the group itself not allowing that post. You got me thinking about how there needs to be some (simple) way to prove that the collection owner approved someone adding an object to their collection. Maybe it should actually be an Add activity after all. So the flow would go like that:</p>
+<ul>
+<li>Someone sends a Create{Note}, as in my FEP, to the instance that hosts the group.</li>
+<li>If this is isn’t allowed, it returns a 403 or sends a Reject{Create{Note}} to that person.</li>
+<li>If it is allowed, it adds the post to its wall, and then sends all group members an Add{Note}, as per spec, with the post as a link.</li>
+</ul>
+<p>This way there will be a proof that the group has accepted the post, because there was an activity explicitly mentioning this post, signed by the group actor.</p>
+<p>The one small problem that then remains is that if you fetch that post using a direct URL, it would still be considered to be on the group’s wall even though it’s actually not. This could be abused by making such a post and then a comment (reply) to it mentioning someone. Their instance would receive the post with the mention, and will fetch the thread to show its context, and would thus end up with that fake post on a group wall.</p>
+<p>The problem then becomes: given an object that claims to belong to a collection on another instance, how do I prove that this instance that owns the collection has sanctioned the addition of this object to its collection? Since I’m treating ActivityPub like an API, I want something resembling an API call that would accept a collection ID and an object ID and return a yes/no answer whether the object is in the collection. I’m open to suggestions on this one.</p>
+        </div>
+
+        <meta itemprop='headline' content='Groups implementation'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/macgirvin.html'><span itemprop='name'>macgirvin</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="591.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-04-30T11:03:43Z'>
+              <time itemprop='dateModified' datetime='2021-04-30T11:12:42Z' class='post-time'>
+                April 30, 2021, 11:12am
+              </time>
+          <span itemprop='position'>#72</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks. I’ve got something that may work with what you have today (needs testing but shouldn’t be too far off). If you do change anything just say something so  we can adjust and re-test if necessary.</p>
+        </div>
+
+        <meta itemprop='headline' content='Groups implementation'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/macgirvin.html'><span itemprop='name'>macgirvin</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="591.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-04-30T21:27:15Z' class='post-time'>
+                April 30, 2021,  9:27pm
+              </time>
+              <meta itemprop='dateModified' content='2021-04-30T21:27:15Z'>
+          <span itemprop='position'>#73</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’m not ignoring the other points raised, but they aren’t really issues in our implementation – for various reasons; so I wouldn’t be the best person to offer any advice on them or debate their merit.</p>
+        </div>
+
+        <meta itemprop='headline' content='Groups implementation'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+    <div role='navigation' itemscope itemtype='http://schema.org/SiteNavigationElement' class="topic-body crawler-post">
+        <span itemprop='name'><a rel="prev" itemprop="url" href="591@page=3.html">← previous page</a></span>
+    </div>
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

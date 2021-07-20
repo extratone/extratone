@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Spritely (or ocaps or virtual worlds) BoF?</title>
+    <link>https://socialhub.activitypub.rocks/t/spritely-or-ocaps-or-virtual-worlds-bof/985</link>
+    <description>Just curious if anyone is interested in one or more BoFs on: Spritely, virtual worlds, or ocaps on the fediverse.  Could be one or multiple.
+
+There will of course already be the [Q&amp;A session about the Spritely talk](https://socialhub.activitypub.rocks/t/spritely-and-federation-futures/932) so maybe more is not needed.  Unsure.  But unsurprisingly I&#39;m interested in conversations about all these.
+
+What do people think?</description>
+    
+    <lastBuildDate>Fri, 02 Oct 2020 15:39:34 +0000</lastBuildDate>
+    <category>ActivityPub Conference 2020</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/spritely-or-ocaps-or-virtual-worlds-bof/985.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Spritely (or ocaps or virtual worlds) BoF?</title>
+        <dc:creator><![CDATA[rzr]]></dc:creator>
+        <description><![CDATA[
+            <p>yes i am also interested, I hacked small PoCs with Mozilla hubs and i should be able to bridge this to AP too:</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/0f5c2fbd38b386c92ac4bb651286712f07ea1074.png" class="site-icon" width="32" height="32">
+      <a href="https://peertube.mastodon.host/videos/watch/63a1aafa-401b-42c4-a723-a0c16e350b06#web-of-twins-hubs-ow2con-2020-rzr" target="_blank" rel="nofollow noopener">peertube.mastodon.host</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/389;"><img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/7416e6f2907edf62d1d9f5d9c55319e31d052d86.jpeg" class="thumbnail" width="690" height="389" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/7416e6f2907edf62d1d9f5d9c55319e31d052d86_2_10x10.png"></div>
+
+<h3><a href="https://peertube.mastodon.host/videos/watch/63a1aafa-401b-42c4-a723-a0c16e350b06#web-of-twins-hubs-ow2con-2020-rzr" target="_blank" rel="nofollow noopener">web-of-twins-hubs-ow2con-2020-rzr</a></h3>
+
+<p>https://purl.org/rzr/weboftwins#</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/spritely-or-ocaps-or-virtual-worlds-bof/985/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/spritely-or-ocaps-or-virtual-worlds-bof/985/3</link>
+        <pubDate>Fri, 02 Oct 2020 15:39:34 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-985-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/spritely-or-ocaps-or-virtual-worlds-bof/985.rss">Spritely (or ocaps or virtual worlds) BoF?</source>
+      </item>
+      <item>
+        <title>Spritely (or ocaps or virtual worlds) BoF?</title>
+        <dc:creator><![CDATA[jfred]]></dc:creator>
+        <description><![CDATA[
+            <p>I’d be interested! You probably could’ve guessed that though. <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/stuck_out_tongue.png?v=9" title=":stuck_out_tongue:" class="emoji" alt=":stuck_out_tongue:"></p>
+<p>Looking forward to the Q&amp;A in either case though!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/spritely-or-ocaps-or-virtual-worlds-bof/985/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/spritely-or-ocaps-or-virtual-worlds-bof/985/2</link>
+        <pubDate>Fri, 02 Oct 2020 13:21:57 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-985-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/spritely-or-ocaps-or-virtual-worlds-bof/985.rss">Spritely (or ocaps or virtual worlds) BoF?</source>
+      </item>
+      <item>
+        <title>Spritely (or ocaps or virtual worlds) BoF?</title>
+        <dc:creator><![CDATA[cwebber]]></dc:creator>
+        <description><![CDATA[
+            <p>Just curious if anyone is interested in one or more BoFs on: Spritely, virtual worlds, or ocaps on the fediverse.  Could be one or multiple.</p>
+<p>There will of course already be the <a href="https://socialhub.activitypub.rocks/t/spritely-and-federation-futures/932">Q&amp;A session about the Spritely talk</a> so maybe more is not needed.  Unsure.  But unsurprisingly I’m interested in conversations about all these.</p>
+<p>What do people think?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/spritely-or-ocaps-or-virtual-worlds-bof/985/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/spritely-or-ocaps-or-virtual-worlds-bof/985/1</link>
+        <pubDate>Thu, 01 Oct 2020 18:20:32 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-985-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/spritely-or-ocaps-or-virtual-worlds-bof/985.rss">Spritely (or ocaps or virtual worlds) BoF?</source>
+      </item>
+  </channel>
+</rss>

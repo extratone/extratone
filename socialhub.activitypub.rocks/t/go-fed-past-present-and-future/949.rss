@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Go-Fed: Past, Present, and Future</title>
+    <link>https://socialhub.activitypub.rocks/t/go-fed-past-present-and-future/949</link>
+    <description>*CJ*
+
+https://conf.tube/videos/watch/952f9cef-3b97-45e4-a248-199772a23f62
+
+The Go-Fed suite of libraries implement the ActivityPub protocol in the Go language. It supports developers with different goals, from the polished projects of WriteFreely to scrappy personal blogs and a large swath of unnamed tinkered projects. Its development began in December 2017 and is still ongoing, readily scaling across new vocabularies, like ForgeFed, and is accommodating of complimentary libraries so clients can choose to embrace community-proposed solutions.
+
+Go-Fed takes to heart the philosophy that the ActivityPub specification left opportunities for further evolution of its core ideas. It also embraces the philosophy of &quot;only solving one problem&quot; to provide a concrete platform for experimenting with the protocol itself or experimenting with a complementary idea.
+
+This talk addresses Go-Fed’s unique history of being an early adopter, the challenges of developing in a statically-typed language, and the difficulty of rigorously isolating the &quot;ActivityPub protocol layer&quot; from other layers or an application. It goes over the approach to adopting the suite of libraries in new or existing codebases for interested developers. Finally, the project maintainer will provide his outlook on where Go-Fed can help provide a productive platform for protocol experiments, and where the project will focus efforts into 2021.
+
+## Questions &amp; Answers available!
+**[Q&amp;A Session – Go-Fed: Past, Present, and Future](https://conf.tube/videos/watch/580ae1ea-9f13-4cd0-8839-41c332a222ab)**
+⬡ Hooray, the live Questions &amp; Answers are available here
+https://conf.tube/videos/watch/580ae1ea-9f13-4cd0-8839-41c332a222ab</description>
+    
+    <lastBuildDate>Sat, 03 Oct 2020 17:48:24 +0000</lastBuildDate>
+    <category>ActivityPub Conference 2020</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/go-fed-past-present-and-future/949.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Go-Fed: Past, Present, and Future</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks everyone who attended! Thank you <a class="mention" href="/u/mlemweb">@mlemweb</a> and <a class="mention" href="/u/sebastian">@Sebastian</a> for putting on this conference, I meant to thank you at the end of my Q&amp;A but was nervous the whole time!</p>
+<p>And thank you <a class="mention" href="/u/lain">@lain</a>  for the super insightful Q – it was on point and hopefully I addressed it to a satisfactory degree. Happy to keep talking about it if needed.</p>
+<p>Thanks <a class="mention" href="/u/how">@how</a> for the compliments. <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"> I’m admittedly pretty terrible about having an online presence and connecting with people digitally. Thanks for pointing me to <a class="mention" href="/u/mayel">@mayel</a>’s presentation – I am very familiar with CommonsPub since Mayel connected with me a few years ago to evaluate go-fed. I watched that talk and definitely want to check in and reconnect there!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/go-fed-past-present-and-future/949/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/go-fed-past-present-and-future/949/5</link>
+        <pubDate>Sat, 03 Oct 2020 17:48:24 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-949-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/go-fed-past-present-and-future/949.rss">Go-Fed: Past, Present, and Future</source>
+      </item>
+      <item>
+        <title>Go-Fed: Past, Present, and Future</title>
+        <dc:creator><![CDATA[lain]]></dc:creator>
+        <description><![CDATA[
+            <p>Copy-Paste from my comment on the Q and A</p>
+<p>The problem I see with AP libraries is that the parts of an activitypub server are either easy and generic or very hard and very application specific (What’s the difference between a ‘Note’ and an ‘Article’). I can see the value in a complex code generator for a static language like go, but in this case it seems like you’re trying to make the static language very dynamic, a problem that can be solved by just not using the static parts in the first place. In our own efforts to modularize parts of the Pleroma codebase, we often found that a ‘pure’ AP view is often not realistic: You do need to know what kind of database you have, or whether a query to check for something else is expensive or not, or if you want to drop a message because you block the actor. All of these things are business logic (or, as we might call it, the actual program), but they still reach into the purer ActivityPub areas that people might want to have a library for.</p>
+<p>The point: I’m afraid that libraries either do not enough (just basic serialization) or too much (deeply embed semantic of how to handle activities). Do you think this issue is real?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/go-fed-past-present-and-future/949/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/go-fed-past-present-and-future/949/4</link>
+        <pubDate>Sat, 03 Oct 2020 17:11:10 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-949-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/go-fed-past-present-and-future/949.rss">Go-Fed: Past, Present, and Future</source>
+      </item>
+      <item>
+        <title>Go-Fed: Past, Present, and Future</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Wow, <a class="mention" href="/u/cjs">@cjs</a> thank you for your kind and warm presence. It’s good to see you, hear your voice and what you have to say beyond the purely technical domain. I found you reveal a lot about your motivations for making this software. You seem to be a really gentle person. I’m looking forward to hangout with you some time. I keep being amazed at the human qualities of many people in this community.</p>
+<p>Since it’s soon time for the BoF planning session I’ll just point you to <a class="mention" href="/u/mayel">@mayel</a>’s presentation  on <a href="https://socialhub.activitypub.rocks/t/commonspub-and-the-quest-for-a-modular-decentralised-app-ecosystem/938" class="inline-onebox">CommonsPub and the quest for a modular decentralised app ecosystem</a>, since he mentions <a href="https://valueflo.ws/">valueflo.ws</a> and you were asking about this.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/go-fed-past-present-and-future/949/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/go-fed-past-present-and-future/949/3</link>
+        <pubDate>Fri, 02 Oct 2020 15:28:21 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-949-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/go-fed-past-present-and-future/949.rss">Go-Fed: Past, Present, and Future</source>
+      </item>
+      <item>
+        <title>Go-Fed: Past, Present, and Future</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you so much for creating this talk. I really enjoyed watching it. I am really charmed by how well the go-fed library has been put together and the flexibility it offers in building AP social apps on top of it.</p>
+<p>I especially like the part where you can support arbitrary vocabularies that are modeled on top of the AS / AP vocabs, and which are defined in JSON-LD themself using a subset of the OWL2 Web Ontology language. Then do codegen based on that and get <em>strongly-typed</em> Golang interface types to work from.</p>
+<p>I would like to know more about 2 related aspects to this:</p>
+<ul>
+<li>Vocab plugin extensions in a go-fed app, maybe dynamically added (plugin marketplace)</li>
+<li>The future: Federating Schemas/Behavior-Capabilities (going beyond <code>FEDERATION.md</code>)</li>
+</ul>
+<h2>Vocab plugins</h2>
+<p>I guess with the current setup one has to know beforehand what vocabs the app should support, and then at compilation time everything is packaged in the application release. Changes to vocab? —&gt; Implement, codegen, add behavior, new release version.</p>
+<p>I am fine with this flow for the time being, but in the future I might be interested in more of an <a href="https://openengiadina.net" rel="nofollow noopener">openEngiadina</a> (<a class="mention" href="/u/pukkamustard">@pukkamustard</a>) approach with a federated platform that supports arbitrary Linked Data vocabs that are continually added/extended. Each vocab would be in its self-contained plugin together with behavior + UI.</p>
+<p>Now, I am not a Go dev yet, but I believe plugins is not Go’s strongest point (correct me if I’m wrong). There is this <a href="https://medium.com/learning-the-go-programming-language/writing-modular-go-programs-with-plugins-ec46381ee1a9" rel="nofollow noopener">Go plugin system</a> since v1.8. For dynamic plugins <a href="https://news.ycombinator.com/item?id=24568367" rel="nofollow noopener">Traefik implemented their own Go interpreter</a> called <a href="https://github.com/traefik/yaegi" rel="nofollow noopener">Yaegi</a>.</p>
+<p>About the Traefik implementation <a href="https://news.ycombinator.com/item?id=24569319" rel="nofollow noopener">HN commenter <strong>sagichmal</strong></a> said:</p>
+<blockquote>
+<p><em>“Go is basically incompatible with any kind of plugin-like dynamic linking. There are basically two reasonable models for doing something like plugins: the HashiCorp model, where plugins are actually separate processes that do some kind of intra-process communication with the host; or the Caddy model, where you select which plugins you want when downloading the binary, and they’re built-in at compile time.”</em></p>
+</blockquote>
+<p><a class="mention" href="/u/cjs">@cjs</a> I wonder if you have any thoughts on this wrt go-fed and go-fed future. Personally - given what you already have - a plugin infrastructure seems like a great feature for go-fed project.</p>
+<h2>Future: Federating AP extension schemas</h2>
+<p>In <a href="https://conf.tube/videos/watch/952f9cef-3b97-45e4-a248-199772a23f62" rel="nofollow noopener">your APConf presentation</a> at 35:15 you talk about federating the vocabulary schema’s themselves. This is mega interesting and important for Fediverse future, so I dediced to dedicate to a separate topic. See: <a href="https://socialhub.activitypub.rocks/t/future-federating-ap-extension-schemas/970" class="inline-onebox">Future: Federating AP extension schemas</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/go-fed-past-present-and-future/949/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/go-fed-past-present-and-future/949/2</link>
+        <pubDate>Wed, 30 Sep 2020 08:00:30 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-949-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/go-fed-past-present-and-future/949.rss">Go-Fed: Past, Present, and Future</source>
+      </item>
+      <item>
+        <title>Go-Fed: Past, Present, and Future</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <p><em>CJ</em></p>
+<p><iframe width="560" height="315" src="https://conf.tube/videos/embed/952f9cef-3b97-45e4-a248-199772a23f62" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+<p>The Go-Fed suite of libraries implement the ActivityPub protocol in the Go language. It supports developers with different goals, from the polished projects of WriteFreely to scrappy personal blogs and a large swath of unnamed tinkered projects. Its development began in December 2017 and is still ongoing, readily scaling across new vocabularies, like ForgeFed, and is accommodating of complimentary libraries so clients can choose to embrace community-proposed solutions.</p>
+<p>Go-Fed takes to heart the philosophy that the ActivityPub specification left opportunities for further evolution of its core ideas. It also embraces the philosophy of “only solving one problem” to provide a concrete platform for experimenting with the protocol itself or experimenting with a complementary idea.</p>
+<p>This talk addresses Go-Fed’s unique history of being an early adopter, the challenges of developing in a statically-typed language, and the difficulty of rigorously isolating the “ActivityPub protocol layer” from other layers or an application. It goes over the approach to adopting the suite of libraries in new or existing codebases for interested developers. Finally, the project maintainer will provide his outlook on where Go-Fed can help provide a productive platform for protocol experiments, and where the project will focus efforts into 2021.</p>
+<h2>Questions &amp; Answers available!</h2>
+<p><strong><a href="https://conf.tube/videos/watch/580ae1ea-9f13-4cd0-8839-41c332a222ab" rel="noopener nofollow ugc">Q&amp;A Session – Go-Fed: Past, Present, and Future</a></strong><br>
+⬡ Hooray, the live Questions &amp; Answers are available here<br>
+<iframe width="560" height="315" src="https://conf.tube/videos/embed/580ae1ea-9f13-4cd0-8839-41c332a222ab" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/go-fed-past-present-and-future/949/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/go-fed-past-present-and-future/949/1</link>
+        <pubDate>Tue, 29 Sep 2020 22:22:07 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-949-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/go-fed-past-present-and-future/949.rss">Go-Fed: Past, Present, and Future</source>
+      </item>
+  </channel>
+</rss>

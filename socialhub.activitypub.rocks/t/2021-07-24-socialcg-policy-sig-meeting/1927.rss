@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>2021-07-24 SocialCG Policy SIG Meeting</title>
+    <link>https://socialhub.activitypub.rocks/t/2021-07-24-socialcg-policy-sig-meeting/1927</link>
+    <description>### Next meeting for the Policy Group
+
+Per [the calendar](https://cloud.w3c.social/apps/calendar/p/GzxsDfE6CKtp9MHX/dayGridMonth/now), this meeting will be at:
+* 3pm UTC
+* 11am EST
+* 8am PDT
+
+[date=2021-07-24 time=17:00:00 timezone=&quot;Europe/Berlin&quot;]
+
+[ [find the whole story in this thread](https://socialhub.activitypub.rocks/t/news-from-the-european-union/1850) ] – Short story :
+https://twitter.com/1Br0wn/status/1402904802586238978
+
+This amendment would be reaching a first goal for the Policy Group.
+I was in Strasbourg last week as mentioned, talked with Jan Penfrat of edri and afterwards @CristinaDeLisle and me did a short meeting.
+
+We are asking for your feedback again:
+Prabhat Agarwal wanted to have a call with me at 29th of July.
+He is the EU Head of the Unit, [this is a nice article about his work in german](https://www.zeit.de/2020/50/eu-kommission-kartell-beamte-google-amazon-facebook) …
+He wants to learn about ActivityPub and so maybe a small group can explain and dream a littlebit.
+
+We also planned to have a roundtable event together with [edri](https://edri.org/wp-content/uploads/2020/04/DSA_EDRiPositionPaper.pdf) - Jan Penfrat proposed to “stick together after the summer break”
+
+So, esteemed Policy Group and everyone interested! 
+Please attend the meeting or leave your remarks, suggestions, questions, input here …
+
+# Agenda:
+* 5min - 30s introductions/reintroductions
+
+# Candidate Agenda Items
+
+Please reply below to propose an agenda item. Please consider doing some ahead-of-time work to articulate the item, and linking it in your proposal so others can come prepared to build consensus or raise objections that we can discuss in our limited time together.
+
+## Example Agenda Proposal
+
+
+&gt; PROPOSAL: @Sebastian  - 5min - An EU funded Fediverse of Trust
+
+Read [this for more on agendas](https://theanarchistlibrary.org/library/c-t-butler-and-amy-rothstein-on-conflict-and-consensus-a-handbook-on-formal-consensus-decisionm#toc62).</description>
+    
+    <lastBuildDate>Sun, 11 Jul 2021 23:04:36 +0000</lastBuildDate>
+    <category>Fediverse Policy SIG</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/2021-07-24-socialcg-policy-sig-meeting/1927.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>2021-07-24 SocialCG Policy SIG Meeting</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <h3>
+<a name="next-meeting-for-the-policy-group-1" class="anchor" href="#next-meeting-for-the-policy-group-1"></a>Next meeting for the Policy Group</h3>
+<p>Per <a href="https://cloud.w3c.social/apps/calendar/p/GzxsDfE6CKtp9MHX/dayGridMonth/now" rel="noopener nofollow ugc">the calendar</a>, this meeting will be at:</p>
+<ul>
+<li>3pm UTC</li>
+<li>11am EST</li>
+<li>8am PDT</li>
+</ul>
+<p><span data-date="2021-07-24" data-time="17:00:00" class="discourse-local-date" data-timezone="Europe/Berlin" data-email-preview="2021-07-24T15:00:00Z UTC">2021-07-24T15:00:00Z</span></p>
+<p>[ <a href="https://socialhub.activitypub.rocks/t/news-from-the-european-union/1850">find the whole story in this thread</a> ] – Short story :</p><aside class="onebox twitterstatus" data-onebox-src="https://twitter.com/1Br0wn/status/1402904802586238978">
+  <header class="source">
+
+      <a href="https://twitter.com/1Br0wn/status/1402904802586238978" target="_blank" rel="noopener nofollow ugc">twitter.com</a>
+  </header>
+
+  <article class="onebox-body">
+    <img src="https://socialhub.activitypub.rocks/uploads/default/original/2X/9/9dd62dbf4aff5f2ba0375b43687f83a2245250bd.jpeg" class="thumbnail onebox-avatar" width="335" height="249">
+<h4><a href="https://twitter.com/1Br0wn/status/1402904802586238978" target="_blank" rel="noopener nofollow ugc">Ian Brown 👨🏻‍💻</a></h4>
+<div class="twitter-screen-name"><a href="https://twitter.com/1Br0wn/status/1402904802586238978" target="_blank" rel="noopener nofollow ugc">@1Br0wn</a></div>
+
+<div class="tweet">
+  Yes @woelken! Draft @EP_Legal opinion on the #DigitalMarketsAct amendment 51 extends #interoperability requirement to core platform services 👏🏻 https://t.co/EtRNeHLSxY
+    <div class="quoted">
+      <a class="quoted-link" href="https://twitter.com/Andreas_Schwab/status/1394973332274036740" rel="noopener nofollow ugc">
+        <p class="quoted-title">Andreas Schwab  🇪🇺 🌍MdEP <span>@Andreas_Schwab</span></p>
+      </a>
+
+      <div>Good Meeting with @vestager on #DMA (in the middle)  @EP_SingleMarket @EPPGroup pic.twitter.com/b6ELRctsMW</div>
+    </div>
+</div>
+
+<div class="date">
+  <a href="https://twitter.com/1Br0wn/status/1402904802586238978" class="timestamp" target="_blank" rel="noopener nofollow ugc">01:25 - 10. Juni 2021</a>
+
+    <span class="like">
+      <svg viewbox="0 0 512 512" width="14px" height="16px" aria-hidden="true">
+        <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
+      </svg>
+      36
+    </span>
+
+    <span class="retweet">
+      <svg viewbox="0 0 640 512" width="14px" height="16px" aria-hidden="true">
+        <path d="M629.657 343.598L528.971 444.284c-9.373 9.372-24.568 9.372-33.941 0L394.343 343.598c-9.373-9.373-9.373-24.569 0-33.941l10.823-10.823c9.562-9.562 25.133-9.34 34.419.492L480 342.118V160H292.451a24.005 24.005 0 0 1-16.971-7.029l-16-16C244.361 121.851 255.069 96 276.451 96H520c13.255 0 24 10.745 24 24v222.118l40.416-42.792c9.285-9.831 24.856-10.054 34.419-.492l10.823 10.823c9.372 9.372 9.372 24.569-.001 33.941zm-265.138 15.431A23.999 23.999 0 0 0 347.548 352H160V169.881l40.416 42.792c9.286 9.831 24.856 10.054 34.419.491l10.822-10.822c9.373-9.373 9.373-24.569 0-33.941L144.971 67.716c-9.373-9.373-24.569-9.373-33.941 0L10.343 168.402c-9.373 9.373-9.373 24.569 0 33.941l10.822 10.822c9.562 9.562 25.133 9.34 34.419-.491L96 169.881V392c0 13.255 10.745 24 24 24h243.549c21.382 0 32.09-25.851 16.971-40.971l-16.001-16z"></path>
+      </svg>
+      11
+    </span>
+</div>
+
+  </article>
+
+  <div class="onebox-metadata">
+    
+    
+  </div>
+
+  <div style="clear: both"></div>
+</aside>
+
+<p>This amendment would be reaching a first goal for the Policy Group.<br>
+I was in Strasbourg last week as mentioned, talked with Jan Penfrat of edri and afterwards <a class="mention" href="/u/cristinadelisle">@CristinaDeLisle</a> and me did a short meeting.</p>
+<p>We are asking for your feedback again:<br>
+Prabhat Agarwal wanted to have a call with me at 29th of July.<br>
+He is the EU Head of the Unit, <a href="https://www.zeit.de/2020/50/eu-kommission-kartell-beamte-google-amazon-facebook" rel="noopener nofollow ugc">this is a nice article about his work in german</a> …<br>
+He wants to learn about ActivityPub and so maybe a small group can explain and dream a littlebit.</p>
+<p>We also planned to have a roundtable event together with <a href="https://edri.org/wp-content/uploads/2020/04/DSA_EDRiPositionPaper.pdf" rel="noopener nofollow ugc">edri</a> - Jan Penfrat proposed to “stick together after the summer break”</p>
+<p>So, esteemed Policy Group and everyone interested!<br>
+Please attend the meeting or leave your remarks, suggestions, questions, input here …</p>
+<h1>
+<a name="agenda-2" class="anchor" href="#agenda-2"></a>Agenda:</h1>
+<ul>
+<li>5min - 30s introductions/reintroductions</li>
+</ul>
+<h1>
+<a name="candidate-agenda-items-3" class="anchor" href="#candidate-agenda-items-3"></a>Candidate Agenda Items</h1>
+<p>Please reply below to propose an agenda item. Please consider doing some ahead-of-time work to articulate the item, and linking it in your proposal so others can come prepared to build consensus or raise objections that we can discuss in our limited time together.</p>
+<h2>
+<a name="example-agenda-proposal-4" class="anchor" href="#example-agenda-proposal-4"></a>Example Agenda Proposal</h2>
+<blockquote>
+<p>PROPOSAL: <a class="mention" href="/u/sebastian">@Sebastian</a>  - 5min - An EU funded Fediverse of Trust</p>
+</blockquote>
+<p>Read <a href="https://theanarchistlibrary.org/library/c-t-butler-and-amy-rothstein-on-conflict-and-consensus-a-handbook-on-formal-consensus-decisionm#toc62" rel="noopener nofollow ugc">this for more on agendas</a>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-07-24-socialcg-policy-sig-meeting/1927/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-07-24-socialcg-policy-sig-meeting/1927/1</link>
+        <pubDate>Sun, 11 Jul 2021 11:55:59 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1927-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-07-24-socialcg-policy-sig-meeting/1927.rss">2021-07-24 SocialCG Policy SIG Meeting</source>
+      </item>
+  </channel>
+</rss>

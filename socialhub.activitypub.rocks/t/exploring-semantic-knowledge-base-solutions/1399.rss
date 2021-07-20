@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Exploring semantic knowledge base solutions</title>
+    <link>https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399</link>
+    <description>### The WikiLibrary Manifesto
+
+https://www.wikimedia.de/the-wikilibrary-manifesto/
+
+&gt; # The WikiLibrary Manifesto
+&gt; 
+&gt; Our vision is to create a reliable, machine-readable, collaboratively maintained Linked Open Data network for the arts, culture and science as a solid base for FAIR knowledge. Yet fully applying the[ FAIR data](https://en.wikipedia.org/wiki/FAIR_data) principles to knowledge requires a shared framework. The signers of the Wikimedia Library Manifesto will work together to achieve the vision of a common knowledge graph embedded in a shared framework. They will do so by respecting the principles listed below and by taking specific measures to fulfil their vision, also outlined below.
+&gt; 
+&gt; ## ****Principles****
+&gt; 
+&gt; * Promoting free licenses for data and their software environment.
+&gt; 
+&gt; * Shaping spaces where diverse communities thrive. (Community gardening).
+&gt; 
+&gt; * Providing structured data based on FAIR data principles in order to be able to transparently transform data into information to create [FAIR](https://en.wikipedia.org/wiki/FAIR_data) knowledge.
+&gt; 
+&gt; * Promoting common core standards created consensually and collaboratively.
+&gt; 
+&gt; * Providing open governance structures and embedding them into existing systems.
+&gt; 
+&gt; * Dedicating resources to obtain user interfaces that are accessible to and user‑friendly for everybody who wants to contribute and actively care for data and knowledge.
+&gt; 
+&gt; * Fostering data literacy in the digital transformation on the three stages: data, information and knowledge. 
+
+This initiative is driven from Germany. @Sebastian this seems on first glance a very interesting take on things :slight_smile:</description>
+    
+    <lastBuildDate>Tue, 22 Jun 2021 07:02:18 +0000</lastBuildDate>
+    <category>Fediverse Futures</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Exploring semantic knowledge base solutions</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Presenting yesterday at the <a href="https://socialhub.activitypub.rocks/t/save-the-date-semantic-web-and-linked-data-ngi-event-june-21/1849">NGI Linked Data webinar</a> was AtomGraph with their: <a href="https://atomgraph.github.io/LinkedDataHub/" class="inline-onebox">LinkedDataHub - The Knowledge Graph management system</a></p>
+<blockquote>
+<p>LinkedDataHub is open source software you can use to manage data, create visualizations and build apps on RDF Knowledge Graphs</p>
+</blockquote>
+          <p><a href="https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399/18</link>
+        <pubDate>Tue, 22 Jun 2021 07:02:18 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1399-18</guid>
+        <source url="https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399.rss">Exploring semantic knowledge base solutions</source>
+      </item>
+      <item>
+        <title>Exploring semantic knowledge base solutions</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="https://anagora.org/@flancian">@flancian</a> is building the knowledge base <a href="https://anagora.org/">Agora</a>, discussed in <a href="https://news.ycombinator.com/item?id=25573523" class="inline-onebox">Show HN: The Agora – an experimental social network | Hacker News</a> (first HN comment gives a summary of Agora) and has very interesting concepts (though I didn’t deeply dig into them yet, and it can be a bit hard / overwhelming to navigate). Btw, Flancian is exploring a connection to <a href="https://anagora.org/underlay" class="inline-onebox">[[underlay]]</a> :</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/2X/a/aa9f242c52e633bd806a20ca190fdfa6953f9a80.png" data-download-href="https://socialhub.activitypub.rocks/uploads/default/aa9f242c52e633bd806a20ca190fdfa6953f9a80" title="Underlay --&amp;gt; Interlay --&amp;gt; Overlay relationship depicted"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/a/aa9f242c52e633bd806a20ca190fdfa6953f9a80_2_690x369.png" alt="Underlay --&gt; Interlay --&gt; Overlay relationship depicted" data-base62-sha1="olo7YuYFwxB1IHQI14wNgPB1BiE" width="690" height="369" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/a/aa9f242c52e633bd806a20ca190fdfa6953f9a80_2_690x369.png, https://socialhub.activitypub.rocks/uploads/default/original/2X/a/aa9f242c52e633bd806a20ca190fdfa6953f9a80.png 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/2X/a/aa9f242c52e633bd806a20ca190fdfa6953f9a80.png 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/a/aa9f242c52e633bd806a20ca190fdfa6953f9a80_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Underlay --&amp;gt; Interlay --&amp;gt; Overlay relationship depicted</span><span class="informations">799×428 55.6 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<hr>
+<p><a class="mention" href="/u/victorvenema">@VictorVenema</a> is outlining a use case related to knowledge collection in <a href="https://socialhub.activitypub.rocks/t/bulding-information-sources-with-lasting-value/1847" class="inline-onebox">Bulding information sources with lasting value</a>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399/17</link>
+        <pubDate>Thu, 10 Jun 2021 05:06:02 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1399-17</guid>
+        <source url="https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399.rss">Exploring semantic knowledge base solutions</source>
+      </item>
+      <item>
+        <title>Exploring semantic knowledge base solutions</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>A related topic on the Solid community forum:</p>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/2X/4/4993f0e08a9e35e55b51f7db737e3428f06d1a41.png" class="site-icon" width="32" height="32">
+      <a href="https://forum.solidproject.org/t/distributed-wikis-on-solid/3197" target="_blank" rel="noopener" title="12:59PM - 10 June 2020">Solid Community Forum – 10 Jun 20</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:250/225;"><img src="https://socialhub.activitypub.rocks/uploads/default/original/2X/8/8b03012bca25b9b7492f933b6d9eb44eb31a12c2.png" class="thumbnail" width="250" height="225"></div>
+
+<h3><a href="https://forum.solidproject.org/t/distributed-wikis-on-solid/3197" target="_blank" rel="noopener">Distributed Wiki's on Solid</a></h3>
+
+<p>Continuing the discussion from Looking for seasonned front end developer - Startin'blox:  Great idea!  As mentioned there is also Tiddlywiki</p>
+
+  <p><span class="label1">Reading time: 2 mins 🕑</span>
+    <span class="label2">Likes: 8 ❤</span></p>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399/16</link>
+        <pubDate>Fri, 21 May 2021 07:22:01 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1399-16</guid>
+        <source url="https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399.rss">Exploring semantic knowledge base solutions</source>
+      </item>
+      <item>
+        <title>Exploring semantic knowledge base solutions</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>A cryptpad written by <a href="http://www.simongrant.org/home.html">Simon Grant</a> of P2P Foundation that is worth referencing in this thread…</p>
+<blockquote>
+<h3><a href="https://cryptpad.fr/pad/#/2/pad/view/L0+lq6UiUgxTn6xZku9xa6ULPNZSCfivOdWbLLjhUrQ/">Commons P2P wiki requirements</a></h3>
+<p>Two relatively recent developments caught my attention. One is Ward Cunningham’s idea of the <a href="http://fedwiki.org/view/federated-wiki">Federated Wiki</a>; the other is the recently popular commercial software, <a href="https://roamresearch.com/">Roam Research</a>. I don’t see either as <strong>the</strong> answer, but both have interestingly different functionality.</p>
+<p>The question I want to address here is: what functionality do we need to implement an effective ICT system that can embody a healthy, growing, live, knowledge commons – of the kind that could be used for our shared purposes? But this page is not about listing and refining those purposes, integrating all the relevant writings: that belongs elsewhere.</p>
+<p>If this page could start to develop into a list of requirements that has broad agreement, then we could move on in two ways:</p>
+<ol>
+<li>
+<p>we could invite people to build a reference implementation, along with clarifying the relevant shared protocols, APIs and standards;</p>
+</li>
+<li>
+<p>we could invite developers of existing open systems to work on incorporating this functionality into their systems.</p>
+</li>
+</ol>
+</blockquote>
+          <p><a href="https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399/14</link>
+        <pubDate>Thu, 20 May 2021 19:12:58 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1399-14</guid>
+        <source url="https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399.rss">Exploring semantic knowledge base solutions</source>
+      </item>
+      <item>
+        <title>Exploring semantic knowledge base solutions</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>At Humane Tech Community my (inactive) co-admin is Samuel Klein, who is board member of <a href="https://underlay.org">The Underlay</a>, part of MIT’s not-for-profit <a href="https://www.knowledgefutures.org/">Knowledge Futures Group</a>.</p>
+<p>Here’s <a href="https://notes.knowledgefutures.org/pub/underlay-short-intro/release/1">why The Underlay exists</a>:</p>
+<blockquote>
+<p><em>"The creation of richer collections of machine-readable knowledge is inevitable. What is not inevitable is that such knowledge will be connected in a meaningful way and be freely available as a public resource. We are at a fork in the road. The transition to machine-mediated access  could consolidate our dependence on a few large commercial intermediaries, or alternatively, it could be built as open infrastructure, as a public good. "</em></p>
+</blockquote>
+<p>Here’s what The Underlay already (claims to) already solve:</p>
+<blockquote>
+<ul>
+<li>how to represent complex assertions</li>
+<li>how to represent the Underlay in a way that is independent of human language</li>
+<li>how to indicate and verify provenance</li>
+<li>how to recognize when separate sources are making assertions about the same entity</li>
+<li>the technical architecture required to store and disseminate the Underlay</li>
+<li>how to protect the Underlay from damage by imposters, spammers and other bad actors</li>
+</ul>
+</blockquote>
+          <p><a href="https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399/13</link>
+        <pubDate>Tue, 04 May 2021 17:47:36 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1399-13</guid>
+        <source url="https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399.rss">Exploring semantic knowledge base solutions</source>
+      </item>
+      <item>
+        <title>Exploring semantic knowledge base solutions</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="naturzukunft" data-post="6" data-topic="1399">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/letter_avatar_proxy/v4/letter/n/ba9def/40.png" class="avatar"> naturzukunft:</div>
+<blockquote>
+<p>Is there something like a federated wiki</p>
+</blockquote>
+</aside>
+<p>FYI. On the Feneas forum there is this post: <a href="https://talk.feneas.org/t/project-proposal-wikipedia-for-linked-data/384">Project proposal: Wikipedia for Linked Data</a>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399/12</link>
+        <pubDate>Sun, 14 Feb 2021 09:10:51 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1399-12</guid>
+        <source url="https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399.rss">Exploring semantic knowledge base solutions</source>
+      </item>
+      <item>
+        <title>Exploring semantic knowledge base solutions</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="aschrijver" data-post="10" data-topic="1399">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/aschrijver/40/278_2.png" class="avatar"> aschrijver:</div>
+<blockquote>
+<p>Don’t want to go off-topic too much, but this might be a PITA in type-safe Java.</p>
+</blockquote>
+</aside>
+<p>It indeed is — I wrote a more-or-less complete JSON-LD processor in Java and, to put it lightly, didn’t enjoy it. There’s too much <code>instanceof</code> and <code>Object</code>s all over the place because the spec often calls for variables that are capable of storing arrays, JSON objects, and primitives, simultaneously. I might rewrite it to use Gson at some point in the future to make the code a bit less atrocious.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399/11</link>
+        <pubDate>Mon, 08 Feb 2021 00:24:45 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1399-11</guid>
+        <source url="https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399.rss">Exploring semantic knowledge base solutions</source>
+      </item>
+      <item>
+        <title>Exploring semantic knowledge base solutions</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>I highly understand this. I am basically in the exact same situation. Also a bunch the fields of study you mention here, are on my list as well.</p>
+<aside class="quote no-group" data-username="naturzukunft" data-post="8" data-topic="1399">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/letter_avatar_proxy/v4/letter/n/ba9def/40.png" class="avatar"> naturzukunft:</div>
+<blockquote>
+<p>I hope this works out well and we get a first “minimal” spring-boot java AP C2S implementation based on rdf4j as OSS. So I’m trying to understand AP more and more. I’ve been trying to understand it for about a year now and it’s getting clearer every day.</p>
+</blockquote>
+</aside>
+<p>Don’t want to go off-topic too much, but this might be a PITA in type-safe Java. I started building an AP library based on Java and <a href="https://vertx.io">Vert.x</a> (which I like a lot, more than spring-boot). You can look at Smithereen by <a class="mention" href="/u/grishka">@grishka</a> that is written in Java. And this old <a href="https://github.com/OpenSocial/activitystreams">ActivityStreams reference implementation</a> is also still interesting.</p>
+<p>Thanks for the links. I will track them with interest. I should have mentioned that the link to innercircles just points to a teaser <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"> I use Matrix and <a href="https://mastodon.social/@humanetech">Fedi</a>, you can contact me there, or DM here for more info.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399/10</link>
+        <pubDate>Sun, 07 Feb 2021 18:46:53 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1399-10</guid>
+        <source url="https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399.rss">Exploring semantic knowledge base solutions</source>
+      </item>
+      <item>
+        <title>Exploring semantic knowledge base solutions</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="aschrijver" data-post="7" data-topic="1399">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/aschrijver/40/278_2.png" class="avatar"> aschrijver:</div>
+<blockquote>
+<p>Ultra interested to know more about it, and your plans.</p>
+</blockquote>
+</aside>
+<p>innercircles is nice, but i think i miss something ?!</p>
+<p>The wiki thing is currently discussed here (currently in german, but i think we can try to switch to english):<br>
+</p><aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://rocketchat.wechange.de/channel/woyQGjvnetTqrNbXh/assets/favicon_16.png" class="site-icon" width="16" height="16">
+      <a href="https://rocketchat.wechange.de/channel/woyQGjvnetTqrNbXh" target="_blank" rel="noopener nofollow ugc">rocketchat.wechange.de</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://rocketchat.wechange.de/channel/woyQGjvnetTqrNbXh/assets/favicon_512.png" class="thumbnail onebox-avatar" width="24" height="24">
+
+<h3><a href="https://rocketchat.wechange.de/channel/woyQGjvnetTqrNbXh" target="_blank" rel="noopener nofollow ugc">WECHANGE RocketChat</a></h3>
+
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399/9</link>
+        <pubDate>Sun, 07 Feb 2021 18:41:37 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1399-9</guid>
+        <source url="https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399.rss">Exploring semantic knowledge base solutions</source>
+      </item>
+      <item>
+        <title>Exploring semantic knowledge base solutions</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="aschrijver" data-post="7" data-topic="1399">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/aschrijver/40/278_2.png" class="avatar"> aschrijver:</div>
+<blockquote>
+<p>This was also what popped up with me immediately when I found the resource, and what I’ve discussed elsewhere too. I think it is very interesting to create a <a class="hashtag" href="/c/fediversity/fediverse-futures/58">#<span>fediversity:fediverse-futures</span></a> topic about that (see <a href="https://socialhub.activitypub.rocks/t/fediverse-futures-visions-dreams-feedback-wanted/1238">Fediverse Futures idea explained</a>). Do you think that’d be interesting for you to participate in elaborating?</p>
+</blockquote>
+</aside>
+<p>Hi aschrijver,<br>
+i understand what you mean by “fediverse futures idea explained”. but right now i have absolutely no spare capacity. I’m very new to linked data and federation and still struggling with many concepts. and haven’t even discovered a fraction yet. so today i dove a bit deeper into json-ld and came across hydra. i now also understand the background of json-ld, although i’m already well used to turtle and json-ld is more of a burden for me at the moment.</p>
+<p>I am working on making organisations and events interchangeable between different platforms. Linked Open Agents (LOA).  And in another project I am trying to build a minimal AP C2S. I have initially convinced the client that it is the right thing for them. Now it just has to survive the first use cases in the prototype well so I can push the added value.</p>
+<p>I hope this works out well and we get a first “minimal” spring-boot java AP C2S implementation based on rdf4j as OSS. So I’m trying to understand AP more and more. I’ve been trying to understand it for about a year now and it’s getting clearer every day.</p>
+<p>And the semantic wiki is again a kind of sub-project that I want to take in the right direction. LOA and the wiki are still crying out for a way to categorise and rank things. I’m in talks with kvm, glossary of change and <a href="http://wikirate.org" rel="noopener nofollow ugc">wikirate.org</a> about this.</p>
+<p>So tooooooo many tasks for now <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399/8</link>
+        <pubDate>Sun, 07 Feb 2021 18:35:11 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1399-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399.rss">Exploring semantic knowledge base solutions</source>
+      </item>
+      <item>
+        <title>Exploring semantic knowledge base solutions</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Very cool. Inove, KVM-like initatives are very interesting to me and my ‘side-project’ <a href="https://innercircles.community">innercircles</a> (teaser-only-link). There’s also the Dutch site <a href="https://nudge.nl">Nudge</a>, but they are a commercial entity.</p>
+<aside class="quote no-group" data-username="naturzukunft" data-post="5" data-topic="1399">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/letter_avatar_proxy/v4/letter/n/ba9def/40.png" class="avatar"> naturzukunft:</div>
+<blockquote>
+<p>And yesterday Alex from <a href="https://www.m4h.network">https://www.m4h.network</a> agreed to set up a “playground” Semantic Media Wiki instance for us.</p>
+</blockquote>
+</aside>
+<p>Ultra interested to know more about it, and your plans.</p>
+<aside class="quote no-group" data-username="naturzukunft" data-post="6" data-topic="1399">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/letter_avatar_proxy/v4/letter/n/ba9def/40.png" class="avatar"> naturzukunft:</div>
+<blockquote>
+<p>Is there something like a federated wiki</p>
+</blockquote>
+</aside>
+<p>This was also what popped up with me immediately when I found the resource, and what I’ve discussed elsewhere too. I think it is very interesting to create a <a class="hashtag" href="/c/fediversity/fediverse-futures/58">#<span>fediversity:fediverse-futures</span></a> topic about that (see <a href="https://socialhub.activitypub.rocks/t/fediverse-futures-visions-dreams-feedback-wanted/1238">Fediverse Futures idea explained</a>). Do you think that’d be interesting for you to participate in elaborating?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399/7</link>
+        <pubDate>Sun, 07 Feb 2021 18:06:56 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1399-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399.rss">Exploring semantic knowledge base solutions</source>
+      </item>
+      <item>
+        <title>Exploring semantic knowledge base solutions</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <p>But is it a good idea to have THAT ONE Wiki ? Is there something like a federated wiki <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399/6</link>
+        <pubDate>Sun, 07 Feb 2021 14:12:07 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1399-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399.rss">Exploring semantic knowledge base solutions</source>
+      </item>
+      <item>
+        <title>Exploring semantic knowledge base solutions</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <p>Intressting, I currently discussing with <a href="https://www.inove.network" rel="noopener nofollow ugc">https://www.inove.network</a> and <a href="https://kartevonmorgen.org" rel="noopener nofollow ugc">https://kartevonmorgen.org</a> (KVM) a “Wiki des Wandels” (Wiki of Change). There was one <a href="https://wandel.wiki" rel="noopener nofollow ugc">https://wandel.wiki</a> but it seems to sleep.</p>
+<p>And yesterday Alex from <a href="https://www.m4h.network" rel="noopener nofollow ugc">https://www.m4h.network</a> agreed to set up a “playground” Semantic Media Wiki instance for us.</p>
+<p>We want to somehow combine inove.network, KVM and <a href="https://glossardeswandels.de" rel="noopener nofollow ugc">https://glossardeswandels.de</a>. There are certainly parallels to our LinkedOpenAgents (LOA) project.</p>
+<p>Exciting time that gets even more exciting every day</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399/5</link>
+        <pubDate>Sun, 07 Feb 2021 14:07:28 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1399-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399.rss">Exploring semantic knowledge base solutions</source>
+      </item>
+      <item>
+        <title>Exploring semantic knowledge base solutions</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Please note that only institutions will appear. I co-signed but how about if<br>
+[Proposal]<br>
+the W3C Social CG signs the manifesto as institution ?</p>
+<p><a class="mention" href="/u/rhiaro">@rhiaro</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399/3</link>
+        <pubDate>Tue, 02 Feb 2021 12:31:48 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1399-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399.rss">Exploring semantic knowledge base solutions</source>
+      </item>
+      <item>
+        <title>Exploring semantic knowledge base solutions</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, thank you!<br>
+I wrote yesterday <a href="https://twitter.com/sl007/status/1356160095143546882">https://twitter.com/sl007/status/1356160095143546882</a><br>
+and will add the link now.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399/2</link>
+        <pubDate>Tue, 02 Feb 2021 11:30:03 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1399-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399.rss">Exploring semantic knowledge base solutions</source>
+      </item>
+      <item>
+        <title>Exploring semantic knowledge base solutions</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <h3>
+<a name="the-wikilibrary-manifesto-1" class="anchor" href="#the-wikilibrary-manifesto-1"></a>The WikiLibrary Manifesto</h3>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/f4c4e607faf300114fc961a806d903424ac2b39b.png" class="site-icon" width="32" height="32">
+      <a href="https://www.wikimedia.de/the-wikilibrary-manifesto/" target="_blank" rel="noopener">Wikimedia</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:646/77;"><img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/9aabd297ffa04660b25682603dd74ddc7c7fdb63.png" class="thumbnail" width="646" height="77"></div>
+
+<h3><a href="https://www.wikimedia.de/the-wikilibrary-manifesto/" target="_blank" rel="noopener">The WikiLibrary Manifesto - Wikimedia</a></h3>
+
+<p>Sign up now! The WikiLibrary Manifesto Our vision is to create a reliable, machine-readable, collaboratively maintained Linked Open Data network for the arts, …</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<blockquote>
+<h1>The WikiLibrary Manifesto</h1>
+<p>Our vision is to create a reliable, machine-readable, collaboratively maintained Linked Open Data network for the arts, culture and science as a solid base for FAIR knowledge. Yet fully applying the<a href="https://en.wikipedia.org/wiki/FAIR_data"> FAIR data</a> principles to knowledge requires a shared framework. The signers of the Wikimedia Library Manifesto will work together to achieve the vision of a common knowledge graph embedded in a shared framework. They will do so by respecting the principles listed below and by taking specific measures to fulfil their vision, also outlined below.</p>
+<h2><strong><strong>Principles</strong></strong></h2>
+<ul>
+<li>
+<p>Promoting free licenses for data and their software environment.</p>
+</li>
+<li>
+<p>Shaping spaces where diverse communities thrive. (Community gardening).</p>
+</li>
+<li>
+<p>Providing structured data based on FAIR data principles in order to be able to transparently transform data into information to create <a href="https://en.wikipedia.org/wiki/FAIR_data">FAIR</a> knowledge.</p>
+</li>
+<li>
+<p>Promoting common core standards created consensually and collaboratively.</p>
+</li>
+<li>
+<p>Providing open governance structures and embedding them into existing systems.</p>
+</li>
+<li>
+<p>Dedicating resources to obtain user interfaces that are accessible to and user‑friendly for everybody who wants to contribute and actively care for data and knowledge.</p>
+</li>
+<li>
+<p>Fostering data literacy in the digital transformation on the three stages: data, information and knowledge.</p>
+</li>
+</ul>
+</blockquote>
+<p>This initiative is driven from Germany. <a class="mention" href="/u/sebastian">@Sebastian</a> this seems on first glance a very interesting take on things <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399/1</link>
+        <pubDate>Tue, 02 Feb 2021 10:59:35 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1399-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399.rss">Exploring semantic knowledge base solutions</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>The ActivityPub test suite</title>
+    <link>https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290</link>
+    <description>test.activitypub.rocks has been down for a long time, as pretty much everyone knows.  More or less it&#39;s server issues, and I can be blamed since I run the server (and wrote the test suite).
+
+Why hasn&#39;t it gone back up though?  Mainly because I&#39;m a) very busy b) know how poor the test suite is at fulfilling the needs of the community and that makes it hard to feel motivated to put in the work.
+
+Here are some quirks about test.activitypub.rocks:
+
+- It was done in a rush to meet the standards deadline.  The main purpose was to collect implementation reports, and given the rush some things are funny about it.
+- It was done in *such a rush* that it&#39;s a completely separate program that&#39;s just bundled straight into the same codebase as the test activitypub implementation I was writing, [Pubstrate](https://gitlab.com/dustyweb/pubstrate) (which has some good ideas but which I won&#39;t recommend either).
+- Technically it&#39;s two test suites.  Scratch that, it&#39;s a test suite and a questionaire:
+  - There&#39;s a test suite for the client to server protocol, which really does resemble a test suite; it makes many requests against your server and sees if they work right.  (It&#39;s buggy, though.)
+  - There&#39;s a mostly-questionaire (but it runs a couple tests, I think) for the server-to-server protocol.  Why?  Because a) performing a test suite on an asynchronous protocol is already hard enough (when does the test complete?  it can be done with timeouts, but it&#39;s gross) and b) many of the requirements required that *some* authentication or authorization take place, but due to process reasons we couldn&#39;t specify what that was, and c) at that point we already had an unusual amount of interop, so we decided that if multiple implementations could federate on a feature and could confirm that in the questionaire, we could consider that sufficient.  (Even weirder, some of the questions would involve the server *doing something* to your server, but then still having a question for the user to confirm if the thing worked.)
+- A proper test suite wouldn&#39;t work like this.  It would be fully automated.
+
+It does look pretty though, that&#39;s the only thing I&#39;ll give it credit for. :P
+
+Where to from here?  There are really a few options:
+
+- Do nothing, things remain broken.  Obviously not ideal!
+- I get back up the test suite.  Again, it&#39;s hard for me to get motivated about this but I could probably do it.  But then I fear once I get it up all I&#39;ll get in response is *THIS* is the test suite?  WTF, this isn&#39;t a test suite at all!
+- Someone else could get up the test suite based on the current codebase and I could transfer running it to them.  Notably someone tried this already but they weren&#39;t familiar with Guix, and that&#39;s currently the easiest way to get it up and running :stuck_out_tongue:
+- Someone else could write a new, much better version of the test suite.  In fact we discussed this on a recent SocialCG call and I was asked how I would feel about that, and I more or less said I thought that would be great.  But someone needs to do it.  Who?  Maybe it&#39;s you!
+
+So... what next?</description>
+    
+    <lastBuildDate>Sat, 03 Oct 2020 01:09:22 +0000</lastBuildDate>
+    <category>Uncategorized</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>The ActivityPub test suite</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>4 posts were split to a new topic: <a href="/t/appealing-to-users-with-examples-in-software-demos/1020">Appealing to Users With Examples in Software Demos</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/24</link>
+        <pubDate>Sat, 03 Oct 2020 09:16:44 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-290-24</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290.rss">The ActivityPub test suite</source>
+      </item>
+      <item>
+        <title>The ActivityPub test suite</title>
+        <dc:creator><![CDATA[WClayFerguson]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the link to the funding related stuff. I’m going to submit the Quanta project for that. The project is still pretty much a secret (unknown), and hasn’t been posted to HackerNews or other developer sites yet, although I’ve been developing it for years and it’s fairly robust/stable at this point.</p>
+<p>About the jet, that X-15 is the “lorem ipsum” of images! haha. Everyone should use the X-15 for demo content images. <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/25</link>
+        <pubDate>Fri, 02 Oct 2020 18:35:59 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-290-25</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290.rss">The ActivityPub test suite</source>
+      </item>
+      <item>
+        <title>The ActivityPub test suite</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>For the funding part see <a href="https://socialhub.activitypub.rocks/t/scaling-up-cooperation/837" class="inline-onebox">Scaling Up Cooperation</a> BoF…</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/23</link>
+        <pubDate>Fri, 02 Oct 2020 17:04:02 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-290-23</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290.rss">The ActivityPub test suite</source>
+      </item>
+      <item>
+        <title>The ActivityPub test suite</title>
+        <dc:creator><![CDATA[WClayFerguson]]></dc:creator>
+        <description><![CDATA[
+            <p>I won’t be able to participate in the hackathon, but definitely once I have reasonable detailed examples of the JSON inputs/outputs for a ActivityPub service, I’ll add AP capabilities to Quanta.wiki (link above), and I’m looking for other developers (and/or funding) who can recognize the value of that platform, especially after AP is added!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/22</link>
+        <pubDate>Fri, 02 Oct 2020 16:51:56 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-290-22</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290.rss">The ActivityPub test suite</source>
+      </item>
+      <item>
+        <title>The ActivityPub test suite</title>
+        <dc:creator><![CDATA[marnanel]]></dc:creator>
+        <description><![CDATA[
+            <p>thank you! I’ve c&amp;p’d my response there.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/21</link>
+        <pubDate>Fri, 02 Oct 2020 16:05:55 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-290-21</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290.rss">The ActivityPub test suite</source>
+      </item>
+      <item>
+        <title>The ActivityPub test suite</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <p>You may be interested in the BoF session: <a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/996" class="inline-onebox">The ActivityPub Test suite</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/20</link>
+        <pubDate>Fri, 02 Oct 2020 16:00:56 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-290-20</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290.rss">The ActivityPub test suite</source>
+      </item>
+      <item>
+        <title>The ActivityPub test suite</title>
+        <dc:creator><![CDATA[marnanel]]></dc:creator>
+        <description><![CDATA[
+            <p>This sounds like a possible <a class="hashtag" href="https://socialhub.activitypub.rocks/tag/hackathon">#<span>hackathon</span></a> topic.</p>
+<p>I think a test suite naturally falls into two parts. One part checks protocols which can be accessed anonymously. This involves AP services such as looking up a user’s inbox and paging throug it, as well as non-AP services commonly used with AP, such as webfinger and the other .well-known services.</p>
+<p>The other, more complicated part, checks AP support. This will need to be able to create ephemeral accounts on the fly (like <code>test1234@validator.example.com</code>), each lasting a few hours, and allow you to follow them and send them messages, with a dashboard showing what has been received.</p>
+<p>You should also be able to request that the accounts send you messages— but not to set the content, to stop the validator being used as an anonymous message service. For similar reasons, I’m also supposing that each temporary account would be locked into communicating with a single server, specified at creation time.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/19</link>
+        <pubDate>Fri, 02 Oct 2020 15:39:50 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-290-19</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290.rss">The ActivityPub test suite</source>
+      </item>
+      <item>
+        <title>The ActivityPub test suite</title>
+        <dc:creator><![CDATA[nilesh]]></dc:creator>
+        <description><![CDATA[
+            <p>This is useful for me too. I have implemented <a href="https://github.com/learn-awesome/learn/issues/121#issuecomment-589921640" rel="nofollow noopener">partial ActivityPub support in an open-source Rails app</a> and it would be nice to know if it meets the actual spec or if it falls short.</p>
+<p>How about building a Postman collection as a start? It supports fully automated test cases and can generate code in multiple languages.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/18</link>
+        <pubDate>Sun, 30 Aug 2020 21:26:12 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-290-18</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290.rss">The ActivityPub test suite</source>
+      </item>
+      <item>
+        <title>The ActivityPub test suite</title>
+        <dc:creator><![CDATA[WClayFerguson]]></dc:creator>
+        <description><![CDATA[
+            <p>One of my goals is to add ActivityPub into my project (to make it Federated) and I’d be willing to do implementation in TypeScript and/or Java for a test suite if I had funding, because I could accomplish both objectives at the same time.</p>
+<p>But as I said before, we really wouldn’t even need a TestSuite that much (for new apps at least) if we simply had complete JSON <em>examples</em> including both Request JSON and Response JSON for most of the various C2S and S2S use cases.</p>
+<p>These examples would add so much clarity that actually most of the other documentation would be not even needed…at least to get something up and running, which is the primary challenge.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/17</link>
+        <pubDate>Tue, 25 Aug 2020 14:21:08 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-290-17</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290.rss">The ActivityPub test suite</source>
+      </item>
+      <item>
+        <title>The ActivityPub test suite</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>I would be happy to help find funding to fix the test suite if people step up to implement it.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/16</link>
+        <pubDate>Sat, 22 Aug 2020 09:39:01 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-290-16</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290.rss">The ActivityPub test suite</source>
+      </item>
+      <item>
+        <title>The ActivityPub test suite</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Added to<br>
+<aside class="quote quote-modified" data-post="1" data-topic="848">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/important-forum-topics/848">Important Forum Topics</a> <a class="badge-wrapper  box" href="/c/meeting/apconf2020/53"><span class="badge-category-parent-bg" style="background-color: #0E76BD;"></span><span class="badge-category-bg" style="background-color: #ff7a00;"></span><span style="color: #ffffff" data-drop-close="true" class="badge-category clear-badge" title="Add your proposals for the Conf by creating a New Topic –
+Tag it #bof for Birds of Feather sessions or #hackathon for Hack proposals …">ActivityPub Conference 2020</span></a>
+  </div>
+  <blockquote>
+    My feeling is we should have conference sessions for 
+
+
+and 
+
+
+and
+  </blockquote>
+</aside>
+</p>
+<p><a class="mention" href="/u/cjs">@cjs</a> <a class="mention" href="/u/rocco">@rocco</a><br>
+If someone would propose a session for the Conf about <em>Tests</em>, I would join <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"><br>
+Also authors of various tools are at the Conference, e.g.<br>
+<a href="https://tinysubversions.com/notes/activitypub-tool/" class="onebox" target="_blank">https://tinysubversions.com/notes/activitypub-tool/</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/15</link>
+        <pubDate>Tue, 18 Aug 2020 06:19:04 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-290-15</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290.rss">The ActivityPub test suite</source>
+      </item>
+      <item>
+        <title>The ActivityPub test suite</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>I agree. There is an alternative testsuite. Check <a href="https://socialhub.activitypub.rocks/t/unofficial-test-suite-go-fed-testsuite/805" class="inline-onebox">Unofficial Test Suite (go-fed/testsuite)</a> created by <a class="mention" href="/u/cjs">@cjs</a> . Imho, given this is the only functioning testsuite, it could as well become the Official one <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>The testsuite should be made discoverable, though, like with a mention on <a href="https://activitypub.rocks">activitypub.rocks</a>. Same for <a class="mention" href="/u/dansup">@dansup</a>’s FediDB (which is out of closed beta, I think?). See <a href="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660" class="inline-onebox">Introducing FediDB - DevTools for ActivityPub</a>.</p>
+<p>There’s an ongoing discussion related to this: <a href="https://socialhub.activitypub.rocks/t/easing-the-onboarding-of-new-developers-to-the-fediverse/847" class="inline-onebox">Easing the onboarding of new developers to the Fediverse</a>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/14</link>
+        <pubDate>Tue, 18 Aug 2020 05:44:20 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-290-14</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290.rss">The ActivityPub test suite</source>
+      </item>
+      <item>
+        <title>The ActivityPub test suite</title>
+        <dc:creator><![CDATA[WClayFerguson]]></dc:creator>
+        <description><![CDATA[
+            <p>I think the main thing holding back lots of developers from adding ActivityPub support to lots of platforms is the fact that although the AP Spec looks great and seems very good, it is nearly impossible to make much progress with coding because when you try to federate against Mastodon or some other AP site, stuff will not work, and there’s absolutely no way to know what’s going wrong.</p>
+<p>Without a test suite tool, the only way to make progress is to get a copy of  Pleroma or Mastodon, and install it, run a server yourself, and basically reverse engineer it by watching the HTTP traffic or logging.<br>
+Obliviously this is a hurdle not many are going to get over. It’s even worse than that, because both Ruby and Elixir are oddball languages that hardly anyone is using, so the odds are that 99% of the devs that want to implement an AP server are just going to find it nearly impossible.</p>
+<p>So the net result is that there is MUCH lower and slower adoption of ActivityPub in the world. Once there’s a test suite available the ecosystem will really take off rapidly, but not until then.</p>
+<p>=======<br>
+Update: There’s one other alternative that ‘could’ work instead of a test suite tool, and that is a set of complete “Request and Response” conversations for various example scenarios (AP actors and actions), that contains all the HTTP Request headers, URL parameters, and JSON responses, so that there’s no “guess work” having to be done to interpret the spec.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/13</link>
+        <pubDate>Tue, 18 Aug 2020 04:38:56 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-290-13</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290.rss">The ActivityPub test suite</source>
+      </item>
+      <item>
+        <title>The ActivityPub test suite</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>[ attachment ]</p>
+<aside class="quote quote-modified" data-post="1" data-topic="660">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/dansup/40/129_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660">Introducing FediDB - DevTools for ActivityPub</a> <a class="badge-wrapper  box" href="/c/activitypub"><span class="badge-category-bg" style="background-color: #0088CC;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Discuss the ActivityPub Recommendation, how to implement it, how to extend it. Home of the ActivityPub SIG.">ActivityPub</span></a>
+  </div>
+  <blockquote>
+    Introducing FediDB - DevTools for ActivityPub
+Hello Everyone! 
+I am the lead developer of <a href="https://pixelfed.org" rel="nofollow noopener">Pixelfed</a> and know how challenging ActivityPub can be to implement. 
+<a href="https://fedidb.org/about" rel="nofollow noopener">FediDB</a> is a suite of tools for AP devs to help make it easier to test and validate your implementation with existing implementations like Mastodon, PeerTube, Pixelfed and Pleroma. 
+We have 3 main features in development: 
+
+
+Request Bin - HTTP Bin with valid AP Actor to test federation support (HTTP Sig, Verb + Actors and more) 
+
+
+Verb Valid…
+  </blockquote>
+</aside>
+
+<p>and pinging <a class="mention" href="/u/dansup">@dansup</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/12</link>
+        <pubDate>Wed, 06 May 2020 06:30:02 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-290-12</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290.rss">The ActivityPub test suite</source>
+      </item>
+      <item>
+        <title>The ActivityPub test suite</title>
+        <dc:creator><![CDATA[schmittlauch]]></dc:creator>
+        <description><![CDATA[
+            <p>Also, the person asking had the impression that ActivityPub is dead because of the test suite being down.<br>
+So depending on how bad the old test suite is and how much effort is needed to bring it up again,it might make sense to bring the old test suite back up while a new one is being worked upon, <a class="mention" href="/u/cwebber">@cwebber</a>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/11</link>
+        <pubDate>Wed, 29 Apr 2020 09:26:18 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-290-11</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290.rss">The ActivityPub test suite</source>
+      </item>
+      <item>
+        <title>The ActivityPub test suite</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="https://fosstodon.org/@yarmo/104064240625523811">Someone on the Fediverse asked for the test suite</a> again. <a class="mention" href="/u/rocco">@rocco</a> do you think you’d have some time to work on it? Maybe <a class="mention" href="/u/yvolk">@yvolk</a> can help as well. What do you people need to help around? I could activate Discourse SSO provider if this can help, <a class="mention" href="/u/rocco">@rocco</a>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/10</link>
+        <pubDate>Tue, 28 Apr 2020 18:59:47 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-290-10</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290.rss">The ActivityPub test suite</source>
+      </item>
+      <item>
+        <title>The ActivityPub test suite</title>
+        <dc:creator><![CDATA[yvolk]]></dc:creator>
+        <description><![CDATA[
+            <p>We just created this topic <a href="https://socialhub.activitypub.rocks/t/about-andstatus/608" class="inline-onebox">About AndStatus</a> to discuss C2S<br>
+Thanks to <a class="mention" href="/u/how">@how</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/9</link>
+        <pubDate>Sun, 12 Apr 2020 17:56:27 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-290-9</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290.rss">The ActivityPub test suite</source>
+      </item>
+      <item>
+        <title>The ActivityPub test suite</title>
+        <dc:creator><![CDATA[strypey]]></dc:creator>
+        <description><![CDATA[
+            <p>It’s great to see Pleroma and Andstatus working together on AP C2S! Is there a thread here where we can follow progress on this, and point other devs wanting to try implementing it too, eg in the <a href="https://socialhub.activitypub.rocks/c/activitypub/c2s/6">C2S category</a>?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/8</link>
+        <pubDate>Sun, 12 Apr 2020 00:29:39 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-290-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290.rss">The ActivityPub test suite</source>
+      </item>
+      <item>
+        <title>The ActivityPub test suite</title>
+        <dc:creator><![CDATA[yvolk]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>OMG, why are you having this discussion there instead of here?</p>
+</blockquote>
+<p>That discussion is about concrete implementation of a concrete application. It gives real ground and subjects for “higher level” <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"> discussions and decision making.</p>
+<p>I hope that having working client app can motivate server-side developers to implement client-to-server support AND that such app will be used as a development/test tool. In fact, it is used now in this way helping to find programming and conceptual mistakes in the ActivityPub C2S implementation of Pleroma.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/7</link>
+        <pubDate>Tue, 31 Mar 2020 18:42:09 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-290-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290.rss">The ActivityPub test suite</source>
+      </item>
+      <item>
+        <title>The ActivityPub test suite</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Welcome <a class="mention" href="/u/yvolk">@yvolk</a>! Indeed C2S seems to have been neglected for too long. I wish it would be used though, since a full client implementation would make “apps” fade away and the protocol shine.</p>
+<aside class="quote no-group" data-username="yvolk" data-post="5" data-topic="290">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/yvolk/40/310_2.png" class="avatar"> yvolk:</div>
+<blockquote>
+<p>More details are here: <a href="https://github.com/andstatus/andstatus/issues/499">https://github.com/andstatus/andstatus/issues/499</a></p>
+</blockquote>
+</aside>
+<p>OMG, why are you having this discussion there instead of here?</p>
+<aside class="quote no-group" data-username="yvolk" data-post="5" data-topic="290">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/yvolk/40/310_2.png" class="avatar"> yvolk:</div>
+<blockquote>
+<p>I am willing to extend the application’s “ActivityPub tester’s” features.</p>
+</blockquote>
+</aside>
+<p>Sweet! I’m sure you’ll find here people willing to help. Yes, people?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/6</link>
+        <pubDate>Tue, 31 Mar 2020 07:07:48 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-290-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290.rss">The ActivityPub test suite</source>
+      </item>
+      <item>
+        <title>The ActivityPub test suite</title>
+        <dc:creator><![CDATA[yvolk]]></dc:creator>
+        <description><![CDATA[
+            <p><strong>AndStatus</strong> app for Android is a social networking client app that has most of the features that the ActivityPub test suite mentioned for Client to Server protocol. And it works with at least one real server software: Pleroma. More details are here: <a href="https://github.com/andstatus/andstatus/issues/499" rel="nofollow noopener">https://github.com/andstatus/andstatus/issues/499</a></p>
+<p>In this sense the app may be viewed as semi-automated test suite for a Server’s client to server implementation.</p>
+<p>I am willing to extend the application’s “ActivityPub tester’s” features. The only show stopper is absence of server side implementations. What are we talking about here if almost nobody develops ActivityPub Client-to-server part of the specification?</p>
+<p>AndStatus already has large automated self-test suite, so it’s not a problem to create (actually, compose from existing blocks) another test suite, focused on testing features that are needed for ActivityPub testing.</p>
+<p>The app is written in Java.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/5</link>
+        <pubDate>Tue, 31 Mar 2020 05:17:40 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-290-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290.rss">The ActivityPub test suite</source>
+      </item>
+      <item>
+        <title>The ActivityPub test suite</title>
+        <dc:creator><![CDATA[rocco]]></dc:creator>
+        <description><![CDATA[
+            <p>Golang can do.</p>
+<p>Tentative requirements for this webapp:</p>
+<ol>
+<li>
+<p>test suite results are generated as static HTML files that can be accessed publicly from a permalink; there is a summary page for all implementations, with the lastest test</p>
+</li>
+<li>
+<p>to start a test, the user has to log in to an “implementer dashboard” using her socialhub.activitypub.rocks account (we can use <a href="https://meta.discourse.org/t/using-discourse-as-a-sso-provider/32974" rel="nofollow noopener">discourse as a SSO provider</a>, there is an official golang implementation) and request it, filling a form</p>
+</li>
+<li>
+<p>test requests are stored in a queue and asynchronously processed; basic queue management: list tests, test status, cancel test, retry test</p>
+</li>
+<li>
+<p>notifications (“test failed”, “test passed” etc.) are posted to a discourse category (<a href="https://socialhub.activitypub.rocks/c/tests">https://socialhub.activitypub.rocks/c/tests</a>), quoting the user (<a class="mention" href="/u/rocco">@rocco</a>) so that she is pinged</p>
+</li>
+</ol>
+<p>Types of test suites:</p>
+<ul>
+<li>
+<p>user has a <strong>client</strong> up and running:</p>
+<ul>
+<li>c2s: test user’s client against our server</li>
+</ul>
+</li>
+<li>
+<p>user has a <strong>server</strong> up and running:</p>
+<ul>
+<li>c2s: test user’s server against our client</li>
+<li>s2s: test user’s server against our server</li>
+</ul>
+</li>
+</ul>
+<p>The webapp must be dockerized so that it can be run standalone with a development local discourse instance.</p>
+<p>It should be also possible to run each test suite locally from CLI so that the same tests can be run as local tests or as part of CI for each implementation (go implementations will benefit more from this).</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/4</link>
+        <pubDate>Wed, 06 Nov 2019 16:30:29 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-290-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290.rss">The ActivityPub test suite</source>
+      </item>
+      <item>
+        <title>The ActivityPub test suite</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <p>I think that’s a nice-to-have. If someone is generous enough with their time to do a rewrite, I think that they should use the language they’re most comfortable with.</p>
+<p>However, if they happened to pick Go, and happened to want to use go-fed apcore (which would help motivate my current slow-go near the finish line), I would gladly offer heavy collaboration (voice/video chat).</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/3</link>
+        <pubDate>Wed, 06 Nov 2019 15:16:24 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-290-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290.rss">The ActivityPub test suite</source>
+      </item>
+      <item>
+        <title>The ActivityPub test suite</title>
+        <dc:creator><![CDATA[rocco]]></dc:creator>
+        <description><![CDATA[
+            <p>I favor the last option:</p>
+<blockquote>
+<p>Someone else could write a new, much better version of the test suite</p>
+</blockquote>
+<p>It’s even possible that I can help, but I’m a guile/scheme noob so there’s probably not much I can do with the legacy test suite.</p>
+<p>To make sure it is not just me to be scared by scheme, elixir &amp; friends I did a <a href="https://github.com/search?q=activitypub" rel="nofollow noopener">quick, unscientific search for activitypub-related repos on github</a> and got 233 repos with this language distribution:</p>
+<div class="md-table">
+<table>
+<thead>
+<tr>
+<th>number of repos</th>
+<th>programming language</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>30</td>
+<td>Python</td>
+</tr>
+<tr>
+<td>25</td>
+<td>Go</td>
+</tr>
+<tr>
+<td>23</td>
+<td>PHP</td>
+</tr>
+<tr>
+<td>21</td>
+<td>JavaScript</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Rust</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Ruby</td>
+</tr>
+<tr>
+<td>10</td>
+<td>TypeScript</td>
+</tr>
+<tr>
+<td>9</td>
+<td>HTML</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Elixir</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Clojure</td>
+</tr>
+</tbody>
+</table>
+</div><p>IMHO the test suite should be implemented in a language which is both popular among activitypub hackers, and has good support for testing asynchronous protocols.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/2</link>
+        <pubDate>Wed, 06 Nov 2019 09:56:52 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-290-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290.rss">The ActivityPub test suite</source>
+      </item>
+      <item>
+        <title>The ActivityPub test suite</title>
+        <dc:creator><![CDATA[cwebber]]></dc:creator>
+        <description><![CDATA[
+            <p>test.activitypub.rocks has been down for a long time, as pretty much everyone knows.  More or less it’s server issues, and I can be blamed since I run the server (and wrote the test suite).</p>
+<p>Why hasn’t it gone back up though?  Mainly because I’m a) very busy b) know how poor the test suite is at fulfilling the needs of the community and that makes it hard to feel motivated to put in the work.</p>
+<p>Here are some quirks about test.activitypub.rocks:</p>
+<ul>
+<li>It was done in a rush to meet the standards deadline.  The main purpose was to collect implementation reports, and given the rush some things are funny about it.</li>
+<li>It was done in <em>such a rush</em> that it’s a completely separate program that’s just bundled straight into the same codebase as the test activitypub implementation I was writing, <a href="https://gitlab.com/dustyweb/pubstrate" rel="nofollow noopener">Pubstrate</a> (which has some good ideas but which I won’t recommend either).</li>
+<li>Technically it’s two test suites.  Scratch that, it’s a test suite and a questionaire:
+<ul>
+<li>There’s a test suite for the client to server protocol, which really does resemble a test suite; it makes many requests against your server and sees if they work right.  (It’s buggy, though.)</li>
+<li>There’s a mostly-questionaire (but it runs a couple tests, I think) for the server-to-server protocol.  Why?  Because a) performing a test suite on an asynchronous protocol is already hard enough (when does the test complete?  it can be done with timeouts, but it’s gross) and b) many of the requirements required that <em>some</em> authentication or authorization take place, but due to process reasons we couldn’t specify what that was, and c) at that point we already had an unusual amount of interop, so we decided that if multiple implementations could federate on a feature and could confirm that in the questionaire, we could consider that sufficient.  (Even weirder, some of the questions would involve the server <em>doing something</em> to your server, but then still having a question for the user to confirm if the thing worked.)</li>
+</ul>
+</li>
+<li>A proper test suite wouldn’t work like this.  It would be fully automated.</li>
+</ul>
+<p>It does look pretty though, that’s the only thing I’ll give it credit for. <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/stuck_out_tongue.png?v=9" title=":stuck_out_tongue:" class="emoji" alt=":stuck_out_tongue:"></p>
+<p>Where to from here?  There are really a few options:</p>
+<ul>
+<li>Do nothing, things remain broken.  Obviously not ideal!</li>
+<li>I get back up the test suite.  Again, it’s hard for me to get motivated about this but I could probably do it.  But then I fear once I get it up all I’ll get in response is <em>THIS</em> is the test suite?  WTF, this isn’t a test suite at all!</li>
+<li>Someone else could get up the test suite based on the current codebase and I could transfer running it to them.  Notably someone tried this already but they weren’t familiar with Guix, and that’s currently the easiest way to get it up and running <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/stuck_out_tongue.png?v=9" title=":stuck_out_tongue:" class="emoji" alt=":stuck_out_tongue:">
+</li>
+<li>Someone else could write a new, much better version of the test suite.  In fact we discussed this on a recent SocialCG call and I was asked how I would feel about that, and I more or less said I thought that would be great.  But someone needs to do it.  Who?  Maybe it’s you!</li>
+</ul>
+<p>So… what next?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/1</link>
+        <pubDate>Tue, 05 Nov 2019 14:52:30 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-290-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290.rss">The ActivityPub test suite</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Fediverse Usernames: User List or Directory</title>
+    <link>https://socialhub.activitypub.rocks/t/fediverse-usernames-user-list-or-directory/1815</link>
+    <description>A lot of the people on this server have a Fediverse presence. Is there a central list anywhere that would make it possible to find everyone at their home server, so they can be followed on the Fediverse in addition to this site?</description>
+    
+    <lastBuildDate>Tue, 01 Jun 2021 13:32:11 +0000</lastBuildDate>
+    <category>Uncategorized</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/fediverse-usernames-user-list-or-directory/1815.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Fediverse Usernames: User List or Directory</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>There’s no single user directory, but you may check individual account profiles for their (self-maintained) “On the Fediverse” field.</p>
+<p>Instead of trying to follow too many people,  I would recommend to subscribe to the <code>#ActivityPub</code> and <code>#Fediverse</code> tags, then selectively follow people posting there based on your interests.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/fediverse-usernames-user-list-or-directory/1815/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/fediverse-usernames-user-list-or-directory/1815/2</link>
+        <pubDate>Tue, 01 Jun 2021 13:32:11 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1815-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/fediverse-usernames-user-list-or-directory/1815.rss">Fediverse Usernames: User List or Directory</source>
+      </item>
+      <item>
+        <title>Fediverse Usernames: User List or Directory</title>
+        <dc:creator><![CDATA[CJameson]]></dc:creator>
+        <description><![CDATA[
+            <p>A lot of the people on this server have a Fediverse presence. Is there a central list anywhere that would make it possible to find everyone at their home server, so they can be followed on the Fediverse in addition to this site?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/fediverse-usernames-user-list-or-directory/1815/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/fediverse-usernames-user-list-or-directory/1815/1</link>
+        <pubDate>Mon, 31 May 2021 14:45:33 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1815-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/fediverse-usernames-user-list-or-directory/1815.rss">Fediverse Usernames: User List or Directory</source>
+      </item>
+  </channel>
+</rss>

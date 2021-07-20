@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>ActivityPub C2S and CORS headers</title>
+    <link>https://socialhub.activitypub.rocks/t/activitypub-c2s-and-cors-headers/1418</link>
+    <description>I am working on [Jejune](https://github.com/kaniini/jejune), a personal ActivityPub server that has a featureset similar to Tumblr.
+
+As part of this, [Jejune Client](https://github.com/kaniini/jejune-client) is an ActivityPub C2S client which runs in the browser to allow the user to manage her instance, read posts in her inbox and publish new posts to her friends.
+
+As part of this process, I have discovered that many AP servers do not consistently provide CORS headers when fetching ActivityPub objects.
+
+For example, SocialHome does not provide any CORS headers when fetching ActivityStreams objects, which means that posts from SocialHome users do not appear in a correctly attributed way (as we can&#39;t fetch the attributed actor), and Mastodon only provides CORS headers when fetching actors, but not posts and activities, which causes problems with building functionality where a user may want to examine a thread.
+
+These can be mitigated by proxying the requests through the local AP server, but I don&#39;t think this is a good design -- if I can fetch something with curl on the commandline, I believe I should be able to fetch the same content with a browser.
+
+So, I think it may be good to document the use of CORS headers when interacting with ActivityStreams/ActivityPub objects and endpoints over HTTP.  What do people think?</description>
+    
+    <lastBuildDate>Wed, 10 Feb 2021 15:10:41 +0000</lastBuildDate>
+    <category>Client to Server</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/activitypub-c2s-and-cors-headers/1418.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>ActivityPub C2S and CORS headers</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>There are also open issues in the mastodon issue tracker.<br>
+It would be very nice if m. users and the other implementors would know about the opinions.<br>
+The last <strong>feature request</strong> is <a href="https://github.com/tootsuite/mastodon/issues/10400">https://github.com/tootsuite/mastodon/issues/10400</a></p>
+<p>The use of CORS in alternate m. clients like Pinafore is partly documented, e.g.<br>
+see <a href="https://nolanlawson.com/2018/04/09/introducing-pinafore-for-mastodon/">https://nolanlawson.com/2018/04/09/introducing-pinafore-for-mastodon/</a><br>
+“Privacy is the key:<br>
+Thanks to the magic of <a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing">CORS</a>, Pinafore is an almost purely client-side web app”</p>
+<p>Since the vast majority of people seem to use CORS (also e.g. peertube since 2.2.0 or pixelfed) and specs like remotestorage or SOLID make it mandatory:<br>
+Maybe I should write a comparison.<br>
+We will document CORS use for <em>redaktor</em> too.</p>
+<p>As far as I remember, the author of geopub pukkamustard wanted to talk about CORS to, so maybe we can inform him when we documented.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/activitypub-c2s-and-cors-headers/1418/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/activitypub-c2s-and-cors-headers/1418/5</link>
+        <pubDate>Wed, 10 Feb 2021 15:10:41 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1418-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/activitypub-c2s-and-cors-headers/1418.rss">ActivityPub C2S and CORS headers</source>
+      </item>
+      <item>
+        <title>ActivityPub C2S and CORS headers</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p>Yeah, I agree with everything Claire is saying here, and for this and other reasons I don’t think it’s feasible to have any serious C2S server that doesn’t come with an authenticated proxy server for AP requests. Toy c2s apps for now can use one of the many numerous open CORS proxies that can be found on the internet (I’ve been using <a href="https://github.com/Freeboard/thingproxy">https://github.com/Freeboard/thingproxy</a> and its public instances), but those toy apps are going to run into issues with Mastodon Secure Mode / Pleroma’s <code>as:authenticated</code> objects.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/activitypub-c2s-and-cors-headers/1418/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/activitypub-c2s-and-cors-headers/1418/4</link>
+        <pubDate>Tue, 09 Feb 2021 16:00:18 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1418-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/activitypub-c2s-and-cors-headers/1418.rss">ActivityPub C2S and CORS headers</source>
+      </item>
+      <item>
+        <title>ActivityPub C2S and CORS headers</title>
+        <dc:creator><![CDATA[Claire]]></dc:creator>
+        <description><![CDATA[
+            <p>While I can see the point of setting CORS headers for public AS objects and activities, I’m wary of clients being able to sign their requests.</p>
+<p>Indeed, if a browser-based software can sign their request, it means the end-user has access to the signing keys. This is fine for domains serving a single user, but it becomes an issue with domains serving multiple users as there would then be no way of guaranteeing two users of the same domain aren’t using the same identifiers for their objects.</p>
+<p>For instance, if users <code>a@foo.com</code> and <code>b@foo.com</code> both have access to their private signing key, <code>a@foo.com</code> can create a <code>Note</code> with <code>id</code> <code>https://foo.com/notes/12345</code> and <code>b@foo.com</code> could do the same, meaning a third-party instance <code>bar.com</code> may have different contents for <code>https://foo.com/notes/12345</code> depending on who sent a <code>Create</code> activity first to <code>bar.com</code>.</p>
+<p>Therefore, I’d advise against allowing the <code>Signature</code> header for such queries to objects, as well as disallowing queries to inboxes.</p>
+<p>In the end, that would mean CORS is useful for public posts, but not private posts, nor instances requiring signed fetches.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/activitypub-c2s-and-cors-headers/1418/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/activitypub-c2s-and-cors-headers/1418/3</link>
+        <pubDate>Tue, 09 Feb 2021 15:05:17 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1418-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/activitypub-c2s-and-cors-headers/1418.rss">ActivityPub C2S and CORS headers</source>
+      </item>
+      <item>
+        <title>ActivityPub C2S and CORS headers</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Yep. Totally agree here.<br>
+CORS caused a lot of headache already at the watertower hackathon with Chris for an IPFS example with my minimal server (by that time) and the conduit “realworld” UI. However:</p>
+<p>CORS was on my list for last SocialCG. I had proposed the topic for last meeting.<br>
+Wanted to speak about how we can document a kind of reference for a generic server which anyone could implement in the sense of interconnection.<br>
+There was “no time anymore” … … …</p>
+<p>Documenting it would be very good.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/activitypub-c2s-and-cors-headers/1418/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/activitypub-c2s-and-cors-headers/1418/2</link>
+        <pubDate>Mon, 08 Feb 2021 18:34:57 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1418-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/activitypub-c2s-and-cors-headers/1418.rss">ActivityPub C2S and CORS headers</source>
+      </item>
+      <item>
+        <title>ActivityPub C2S and CORS headers</title>
+        <dc:creator><![CDATA[kaniini]]></dc:creator>
+        <description><![CDATA[
+            <p>I am working on <a href="https://github.com/kaniini/jejune" rel="noopener nofollow ugc">Jejune</a>, a personal ActivityPub server that has a featureset similar to Tumblr.</p>
+<p>As part of this, <a href="https://github.com/kaniini/jejune-client" rel="noopener nofollow ugc">Jejune Client</a> is an ActivityPub C2S client which runs in the browser to allow the user to manage her instance, read posts in her inbox and publish new posts to her friends.</p>
+<p>As part of this process, I have discovered that many AP servers do not consistently provide CORS headers when fetching ActivityPub objects.</p>
+<p>For example, SocialHome does not provide any CORS headers when fetching ActivityStreams objects, which means that posts from SocialHome users do not appear in a correctly attributed way (as we can’t fetch the attributed actor), and Mastodon only provides CORS headers when fetching actors, but not posts and activities, which causes problems with building functionality where a user may want to examine a thread.</p>
+<p>These can be mitigated by proxying the requests through the local AP server, but I don’t think this is a good design – if I can fetch something with curl on the commandline, I believe I should be able to fetch the same content with a browser.</p>
+<p>So, I think it may be good to document the use of CORS headers when interacting with ActivityStreams/ActivityPub objects and endpoints over HTTP.  What do people think?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/activitypub-c2s-and-cors-headers/1418/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/activitypub-c2s-and-cors-headers/1418/1</link>
+        <pubDate>Sat, 06 Feb 2021 22:22:09 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1418-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/activitypub-c2s-and-cors-headers/1418.rss">ActivityPub C2S and CORS headers</source>
+      </item>
+  </channel>
+</rss>

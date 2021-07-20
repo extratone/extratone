@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Lemmy Federation Alpha Version - Lemmy - SocialHub</title>
+    <meta name="description" content="We are happy to announce that we have finished the initial version of our ActivityPub implementation. At the moment, it can only federate a limited set of data, like communities, users and posts, but not comments or vote&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="632.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Lemmy Federation Alpha Version&#39;" href="632.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/lemmy-federation-alpha-version/632" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/lemmy-federation-alpha-version/632" />
+<meta property="og:title" content="Lemmy Federation Alpha Version" />
+<meta name="twitter:title" content="Lemmy Federation Alpha Version" />
+<meta property="og:description" content="We are happy to announce that we have finished the initial version of our ActivityPub implementation. At the moment, it can only federate a limited set of data, like communities, users and posts, but not comments or votes. So this initial version is mainly interesting for those who are familiar with the ActivityPub protocol, and those who would like to contribute to Lemmy.  These are our test instances, Be aware that they are not permanent, and we might wipe the data at any time. Federation uses..." />
+<meta name="twitter:description" content="We are happy to announce that we have finished the initial version of our ActivityPub implementation. At the moment, it can only federate a limited set of data, like communities, users and posts, but not comments or votes. So this initial version is mainly interesting for those who are familiar with the ActivityPub protocol, and those who would like to contribute to Lemmy.  These are our test instances, Be aware that they are not permanent, and we might wipe the data at any time. Federation uses..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="1 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="3 ❤" />
+<meta property="article:published_time" content="2020-04-22T15:28:48+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="632.html">Lemmy Federation Alpha Version</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/software/index.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #3AB54A'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Software</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/software/lemmy/46.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #0088CC'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Lemmy</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nutomic.html'><span itemprop='name'>nutomic</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="632.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-22T15:28:48Z' class='post-time'>
+                April 22, 2020,  3:28pm
+              </time>
+              <meta itemprop='dateModified' content='2020-04-22T15:28:48Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>We are happy to announce that we have finished the initial version of our ActivityPub implementation. At the moment, it can only federate a limited set of data, like communities, users and posts, but not comments or votes. So this initial version is mainly interesting for those who are familiar with the ActivityPub protocol, and those who would like to contribute to Lemmy.</p>
+<p>These are our test instances, Be aware that they are not permanent, and we might wipe the data at any time. Federation uses a whitelist for now, until we are confident that the implementation is secure.</p>
+<ul>
+<li><a href="https://enterprise.lemmy.ml" rel="nofollow noopener">https://enterprise.lemmy.ml</a></li>
+<li><a href="https://ds9.lemmy.ml" rel="nofollow noopener">https://ds9.lemmy.ml</a></li>
+<li><a href="https://voyager.lemmy.ml" rel="nofollow noopener">https://voyager.lemmy.ml</a></li>
+</ul>
+<p>If you are interested in contributing to the development, check out <a href="https://github.com/LemmyNet/lemmy/issues/647" rel="nofollow noopener">this issue</a> and the <a href="https://enterprise.lemmy.ml/docs/contributing_federation_development.html" rel="nofollow noopener">dev instructions</a>. Please use <a href="https://github.com/LemmyNet/lemmy/issues" rel="nofollow noopener">the issue tracker</a> to report bugs, so that we can keep everything organized.</p>
+<p>We also want to give a huge thanks to <a href="https://asonix.dog/@asonix" rel="nofollow noopener">Aode</a>, whose <a href="https://git.asonix.dog/Aardwolf/activitystreams" rel="nofollow noopener">ActivityStreams library</a> and advice have helped us immensely.</p>
+<p>If you like what we are doing, please consider donating towards Lemmy development. Besides <a href="https://liberapay.com/Lemmy/" rel="nofollow noopener">Liberapay</a> and <a href="https://www.patreon.com/dessalines" rel="nofollow noopener">Patreon</a>, we are also on <a href="https://opencollective.com/lemmy" rel="nofollow noopener">OpenCollective</a> now. Donations are a big help for us, because they allow us to spend more time to work on Lemmy, instead of selling our labour to a company just to pay for rent and other necessities.</p>
+<p><a href="https://dev.lemmy.ml/post/31977" rel="nofollow noopener">Originally posted here</a></p>
+        </div>
+
+        <meta itemprop='headline' content='Lemmy Federation Alpha Version'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="632.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-22T18:39:50Z' class='post-time'>
+                April 22, 2020,  6:39pm
+              </time>
+              <meta itemprop='dateModified' content='2020-04-22T18:39:50Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Out of curiosity, I tried fetching AP actors for the <a href="https://enterprise.lemmy.ml/c/main" rel="nofollow noopener">https://enterprise.lemmy.ml/c/main</a> community and the <a href="https://enterprise.lemmy.ml/u/nutomic" rel="nofollow noopener">https://enterprise.lemmy.ml/u/nutomic</a> user, but both these URLs return (very compact) HTML pages regardless of the <code>Accept</code> header. There’s no <code>&lt;link rel="alternate"&gt;</code> either. The only federation-related thing I was able to use is nodeinfo.</p>
+<p>Anyway, how do I get those actors?</p>
+        </div>
+
+        <meta itemprop='headline' content='Lemmy Federation Alpha Version'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nutomic.html'><span itemprop='name'>nutomic</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="632.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-22T18:54:00Z' class='post-time'>
+                April 22, 2020,  6:54pm
+              </time>
+              <meta itemprop='dateModified' content='2020-04-22T18:54:00Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Oops I messed up a bit there. You can get the json with the header <code>content-type: application/activity+json</code> for now.</p>
+        </div>
+
+        <meta itemprop='headline' content='Lemmy Federation Alpha Version'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/dessalines.html'><span itemprop='name'>dessalines</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="632.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-22T18:54:06Z' class='post-time'>
+                April 22, 2020,  6:54pm
+              </time>
+              <meta itemprop='dateModified' content='2020-04-22T18:54:06Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>curl -H “Content-Type:application/activity+json” <a href="https://enterprise.lemmy.ml/c/main" rel="nofollow noopener">https://enterprise.lemmy.ml/c/main</a></p>
+<p>This is our bad, I’m realizing this should be the Accept header, not Content-Type.</p>
+        </div>
+
+        <meta itemprop='headline' content='Lemmy Federation Alpha Version'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

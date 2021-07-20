@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Collections that are modifiable by actors other than their owner</title>
+    <link>https://socialhub.activitypub.rocks/t/collections-that-are-modifiable-by-actors-other-than-their-owner/815</link>
+    <description>Continuing on my outbox questions, here&#39;s the general construct I need: a collection that belongs to an actor that other actors can add objects to, with the owner having the ability to intervene. Examples:
+* Walls, again — both owned by users and groups
+* Photo albums in groups, where any member can upload a photo
+* Discussion boards in groups, where any member can create a topic
+
+In all these cases, there needs to be the ability for the collection owner to refuse the activity/object to be added to the collection, for example due to their privacy settings — a user should be able to only allow their friends to post on their wall. The collection owner should also be able to arbitrarily delete objects from the collection, for spam prevention or moderation purposes, or, really, any reason because they own the thing.
+
+What I suggest:
+* Adding an object to a collection is done by specifying the collection ID in its `partOf` field, and then sending it to the collection owner.
+  * If the receiving server accepts the addition, it simply responds with `200 OK` and stores the object in its database. It can then forward it to anyone it deems appropriate for the purpose of data consistency.
+  * If it does not because that would violate owner&#39;s privacy settings, it responds with `403 Unauthorized`. The originating server may reflect that in its UI.
+* Deletion from the owner side is done by the owner sending a `Delete` with the original object ID as the `object` to the server that hosts the object being deleted, and optionally to any servers that it forwarded the object to earlier.
+
+Is this okay?</description>
+    
+    <lastBuildDate>Mon, 10 Aug 2020 09:33:45 +0000</lastBuildDate>
+    <category>Server to Server</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/collections-that-are-modifiable-by-actors-other-than-their-owner/815.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Collections that are modifiable by actors other than their owner</title>
+        <dc:creator><![CDATA[Claire]]></dc:creator>
+        <description><![CDATA[
+            <p>By ActivityPub’s spec, <code>Follow</code> activities are already supposed to go through the <code>Accept</code>/<code>Reject</code> flow, so I would drop the <code>Offer</code> there (no implementation I know of uses <code>Offer</code> for follow requests, they use <code>Follow</code> as a request itself).</p>
+<p><a href="https://www.w3.org/TR/activitypub/#follow-activity-inbox" class="onebox" target="_blank" rel="nofollow noopener">https://www.w3.org/TR/activitypub/#follow-activity-inbox</a></p>
+<p>Using <code>Offer</code> to offer to <code>Add</code> to a wall/album etc. does sound like a good way to do that.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/collections-that-are-modifiable-by-actors-other-than-their-owner/815/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/collections-that-are-modifiable-by-actors-other-than-their-owner/815/5</link>
+        <pubDate>Mon, 10 Aug 2020 09:33:45 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-815-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/collections-that-are-modifiable-by-actors-other-than-their-owner/815.rss">Collections that are modifiable by actors other than their owner</source>
+      </item>
+      <item>
+        <title>Collections that are modifiable by actors other than their owner</title>
+        <dc:creator><![CDATA[trwnh]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="vpzom" data-post="2" data-topic="815">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/letter_avatar_proxy/v4/letter/v/a698b9/40.png" class="avatar"> vpzom:</div>
+<blockquote>
+<p>Another possible activity would be <code>Offer</code> , I’m not really sure what it’s for</p>
+</blockquote>
+</aside>
+<p>The way I see it, <code>Offer</code> is for when you want to suggest an Activity to be Accepted or Rejected by another actor. If the actor Accepts the Offer, that Activity can be published and its side effects can be processed. If not, then it won’t.</p>
+<p><code>Offer{Follow}</code> is one way to use Offer, sure. So would <code>Offer{Create}</code>, <code>Offer{Add}</code>, <code>Offer{Delete}</code>, etc.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/collections-that-are-modifiable-by-actors-other-than-their-owner/815/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/collections-that-are-modifiable-by-actors-other-than-their-owner/815/4</link>
+        <pubDate>Sun, 09 Aug 2020 17:27:08 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-815-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/collections-that-are-modifiable-by-actors-other-than-their-owner/815.rss">Collections that are modifiable by actors other than their owner</source>
+      </item>
+      <item>
+        <title>Collections that are modifiable by actors other than their owner</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="vpzom" data-post="2" data-topic="815">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/letter_avatar_proxy/v4/letter/v/a698b9/40.png" class="avatar"> vpzom:</div>
+<blockquote>
+<p>Another possible activity would be <code>Offer</code> , I’m not really sure what it’s for</p>
+</blockquote>
+</aside>
+<p>I use it for friend requests in the form of <code>Offer{Follow}</code></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/collections-that-are-modifiable-by-actors-other-than-their-owner/815/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/collections-that-are-modifiable-by-actors-other-than-their-owner/815/3</link>
+        <pubDate>Thu, 23 Jul 2020 01:16:55 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-815-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/collections-that-are-modifiable-by-actors-other-than-their-owner/815.rss">Collections that are modifiable by actors other than their owner</source>
+      </item>
+      <item>
+        <title>Collections that are modifiable by actors other than their owner</title>
+        <dc:creator><![CDATA[vpzom]]></dc:creator>
+        <description><![CDATA[
+            <p>Maybe <code>Add</code> and <code>Accept</code> would be more correct here?</p>
+<p>A user could <code>Add</code> the object to the collection, and send that activity to the collection owner, which could then send <code>Accept{Add}</code> to any relevant inboxes</p>
+<p>Another possible activity would be <code>Offer</code>, I’m not really sure what it’s for</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/collections-that-are-modifiable-by-actors-other-than-their-owner/815/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/collections-that-are-modifiable-by-actors-other-than-their-owner/815/2</link>
+        <pubDate>Thu, 23 Jul 2020 01:02:48 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-815-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/collections-that-are-modifiable-by-actors-other-than-their-owner/815.rss">Collections that are modifiable by actors other than their owner</source>
+      </item>
+      <item>
+        <title>Collections that are modifiable by actors other than their owner</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>Continuing on my outbox questions, here’s the general construct I need: a collection that belongs to an actor that other actors can add objects to, with the owner having the ability to intervene. Examples:</p>
+<ul>
+<li>Walls, again — both owned by users and groups</li>
+<li>Photo albums in groups, where any member can upload a photo</li>
+<li>Discussion boards in groups, where any member can create a topic</li>
+</ul>
+<p>In all these cases, there needs to be the ability for the collection owner to refuse the activity/object to be added to the collection, for example due to their privacy settings — a user should be able to only allow their friends to post on their wall. The collection owner should also be able to arbitrarily delete objects from the collection, for spam prevention or moderation purposes, or, really, any reason because they own the thing.</p>
+<p>What I suggest:</p>
+<ul>
+<li>Adding an object to a collection is done by specifying the collection ID in its <code>partOf</code> field, and then sending it to the collection owner.
+<ul>
+<li>If the receiving server accepts the addition, it simply responds with <code>200 OK</code> and stores the object in its database. It can then forward it to anyone it deems appropriate for the purpose of data consistency.</li>
+<li>If it does not because that would violate owner’s privacy settings, it responds with <code>403 Unauthorized</code>. The originating server may reflect that in its UI.</li>
+</ul>
+</li>
+<li>Deletion from the owner side is done by the owner sending a <code>Delete</code> with the original object ID as the <code>object</code> to the server that hosts the object being deleted, and optionally to any servers that it forwarded the object to earlier.</li>
+</ul>
+<p>Is this okay?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/collections-that-are-modifiable-by-actors-other-than-their-owner/815/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/collections-that-are-modifiable-by-actors-other-than-their-owner/815/1</link>
+        <pubDate>Wed, 22 Jul 2020 22:25:55 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-815-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/collections-that-are-modifiable-by-actors-other-than-their-owner/815.rss">Collections that are modifiable by actors other than their owner</source>
+      </item>
+  </channel>
+</rss>

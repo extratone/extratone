@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>GeoPub - initial demo</title>
+    <link>https://socialhub.activitypub.rocks/t/geopub-initial-demo/603</link>
+    <description>Hello SocialHub!
+
+I&#39;ve been working on a project called [openEngiadina](https://openengiadina.net) that uses ActivityPub for &quot;local knowledge&quot;. Local knowledge might include things like:
+
+- points of interest
+- events
+- local organizations and businesses
+- classifieds
+- real-time status of infrastructure
+
+We have an initial demo of our client working and I would be very happy for feedback, questions and comments.
+
+Demo instance: https://openengiadina.net/geopub/
+
+A post explaining the demo and some background: https://inqlab.net/2020-04-06-geopub-activitypub-for-content-curation.html
+
+Thanks!</description>
+    
+    <lastBuildDate>Sun, 25 Oct 2020 06:22:08 +0000</lastBuildDate>
+    <category>openEngiadina</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/geopub-initial-demo/603.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>GeoPub - initial demo</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>See also this ongoing discussion there where <a class="mention" href="/u/pukkamustard">@pukkamustard</a> is involved:</p>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/d7f480f9aa9b62b84dea983fb80d9d1b732cba05.png" class="site-icon" width="32" height="32">
+      <a href="https://talk.incommon.cc/t/merge-fairsync-and-incommon-or-make-it-interoperable/713" target="_blank" rel="noopener" title="10:22AM - 28 January 2020">IN COMMON – 28 Jan 20</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/478;"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/0aab62976eb78478ad0a60b0e71bb01a1e38a79e_2_690x478.jpeg" class="thumbnail" width="690" height="478" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/0aab62976eb78478ad0a60b0e71bb01a1e38a79e_2_690x478.jpeg, https://socialhub.activitypub.rocks/uploads/default/original/1X/0aab62976eb78478ad0a60b0e71bb01a1e38a79e.jpeg 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/1X/0aab62976eb78478ad0a60b0e71bb01a1e38a79e.jpeg 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/0aab62976eb78478ad0a60b0e71bb01a1e38a79e_2_10x10.png"></div>
+
+<h3><a href="https://talk.incommon.cc/t/merge-fairsync-and-incommon-or-make-it-interoperable/713" target="_blank" rel="noopener">Merge FairSync and InCommon or make it interoperable</a></h3>
+
+<p>In the D-A-CH-Region there is a Fairmove-IT-Movement working to connect the most relevant platforms of change like   Wechange.de  Kartevonmorgen.org (-&gt; Via OpenfairDB Open fair db) WordPress (via Plugin) Drupal-Pages like...</p>
+
+  <p><span class="label1">Reading time: 17 mins 🕑</span>
+    <span class="label2">Likes: 22 ❤</span></p>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/geopub-initial-demo/603/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/geopub-initial-demo/603/9</link>
+        <pubDate>Sun, 25 Oct 2020 06:22:08 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-603-9</guid>
+        <source url="https://socialhub.activitypub.rocks/t/geopub-initial-demo/603.rss">GeoPub - initial demo</source>
+      </item>
+      <item>
+        <title>GeoPub - initial demo</title>
+        <dc:creator><![CDATA[Emphack]]></dc:creator>
+        <description><![CDATA[
+            <p>This might be interesting also for you:<br>
+<aside class="quote" data-post="17" data-topic="256">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/emphack/40/162_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/lets-federate-all-wordpress-events-around-the-web/256/17">Let's federate all WordPress events around the web!</a> <a class="badge-wrapper  box" href="/c/software/14"><span class="badge-category-bg" style="background-color: #3AB54A;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Discover and discuss ActivityPub implementations of all sizes and shapes.">Software</span></a>
+  </div>
+  <blockquote>
+    I found a team which is actively working into something pretty close to a WP/AP Events/POIs plugin: <a href="https://nlnet.nl/project/FairSync/" rel="noopener nofollow ugc">FairSync</a>. 
+They are more focused on using Solid in order to sync Events and POIs between WP instances, but they are open to integrate also AP if somebody is willing to help. 
+Any volunteer? <img width="20" height="20" src="https://socialhub.activitypub.rocks/images/emoji/twitter/mage.png?v=9" title="mage" alt="mage" class="emoji">‍♂
+  </blockquote>
+</aside>
+</p>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/c2911d91c1567acaf78af4212b7669f2f61f67c1.png" class="site-icon" width="32" height="32">
+      <a href="https://git.fairkom.net/fairsync/maps/" target="_blank" rel="noopener nofollow ugc">GitLab</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/4593d341b5fb6566e9f06306ddd9d71352d33f79.png" class="thumbnail onebox-avatar" width="96" height="96">
+
+<h3><a href="https://git.fairkom.net/fairsync/maps/" target="_blank" rel="noopener nofollow ugc">Projects · FairSync / maps</a></h3>
+
+<p>How to sync metadata, such as initiatives, to be presented on maps.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/geopub-initial-demo/603/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/geopub-initial-demo/603/8</link>
+        <pubDate>Sat, 24 Oct 2020 21:50:14 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-603-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/geopub-initial-demo/603.rss">GeoPub - initial demo</source>
+      </item>
+      <item>
+        <title>GeoPub - initial demo</title>
+        <dc:creator><![CDATA[pukkamustard]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="bhaugen" data-post="6" data-topic="603">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/bhaugen/40/104_2.png" class="avatar"> bhaugen:</div>
+<blockquote>
+<p>Despite being closed code, is the app viewable publicly?</p>
+</blockquote>
+</aside>
+<p>Sent you a DM with a link.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/geopub-initial-demo/603/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/geopub-initial-demo/603/7</link>
+        <pubDate>Mon, 07 Sep 2020 06:36:09 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-603-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/geopub-initial-demo/603.rss">GeoPub - initial demo</source>
+      </item>
+      <item>
+        <title>GeoPub - initial demo</title>
+        <dc:creator><![CDATA[bhaugen]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="pukkamustard" data-post="5" data-topic="603">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/pukkamustard/40/111_2.png" class="avatar"> pukkamustard:</div>
+<blockquote>
+<p>There is already one specialized client that interacts with CPub (unfortunately not Free Software or open-source) - an application developed by a local Tourism Agency that allows users to comment on news entries, hiking trails and events.</p>
+</blockquote>
+</aside>
+<p>Despite being closed code, is the app viewable publicly?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/geopub-initial-demo/603/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/geopub-initial-demo/603/6</link>
+        <pubDate>Sun, 06 Sep 2020 18:09:25 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-603-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/geopub-initial-demo/603.rss">GeoPub - initial demo</source>
+      </item>
+      <item>
+        <title>GeoPub - initial demo</title>
+        <dc:creator><![CDATA[pukkamustard]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the questions!</p>
+<p>Maybe a first quick clarification on the architecture behind the demo. There are two parts to it:</p>
+<ul>
+<li>A Web client: GeoPub</li>
+<li>An ActivityPub-esque backend: <a href="https://gitlab.com/openengiadina/cpub" rel="nofollow noopener">CPub</a>
+</li>
+</ul>
+<p>Both are necessary to support “arbitrary” content (e.g. events, descriptions of local organizations, etc.).</p>
+<aside class="quote no-group" data-username="bhaugen" data-post="4" data-topic="603">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/bhaugen/40/104_2.png" class="avatar"> bhaugen:</div>
+<blockquote>
+<p>how people will use it? Will they sign up for a local/central site or can they alternatively set up their own personal geopub and connect with one or more local pubs?</p>
+</blockquote>
+</aside>
+<p>Short answer:They can set up their own.</p>
+<p>The software need to run an instance is CPub - the backend. CPub is very much designed to be self-hostable (even on very small hardware). Individual users will be able setup their own instance and participate in the federated network. In practice I expect that most people will use an instance setup by a local organization. Very much how the Fediverse works now.</p>
+<p>Maybe slightly different than the Fediverse, we are trying to make the backends as simple/stupid as possible. For example:</p>
+<ul>
+<li>Querying data is done on client-side</li>
+<li>
+<a href="https://socialhub.activitypub.rocks/t/content-addressing-and-signatures/744">Content-addressing</a> so that backend is not required for assigning identifiers</li>
+<li>Client side <a href="https://openengiadina.net/papers/rdf-signify.html" rel="nofollow noopener">verification of content authenticity</a>
+</li>
+</ul>
+<p>We hope this will allow us to build more “offline-first” clients, reduce complexity and reliance of backend and in general move more toward a more decentralized system.</p>
+<aside class="quote no-group" data-username="bhaugen" data-post="4" data-topic="603">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/bhaugen/40/104_2.png" class="avatar"> bhaugen:</div>
+<blockquote>
+<p>if and how it will federate?</p>
+</blockquote>
+</aside>
+<p>The plan is to federate using the ActivityPub protocol.</p>
+<p>All the things mentioned above seem to be mostly compatible with the ActivityPub protocol. Or at least that is the hope.</p>
+<aside class="quote no-group" data-username="bhaugen" data-post="4" data-topic="603">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/bhaugen/40/104_2.png" class="avatar"> bhaugen:</div>
+<blockquote>
+<p>ideas about UI?</p>
+</blockquote>
+</aside>
+<p>I imagine there to be many different applications with UIs specialized for specific data types. A bit like how Solid is supposed to work (we also intend to implement the Linked Data Platform specification - so Solid apps will also be usable clients).</p>
+<p>There is already one specialized client that interacts with CPub (unfortunately not Free Software or open-source) - an application developed by a local Tourism Agency that allows users to comment on news entries, hiking trails and events. The comments are just ActivityPub notes that can also be seen from GeoPub (or in the future any other ActivityPub client).</p>
+<p>CPub almost supports the ActivityPub Server-to-Client protocol, so any ActivityPub client should be usable. We are also thinking of implementing the Mastodon API as most clients seem to use that instead of the ActivityPub Server-to-Client protocol.</p>
+<p>GeoPub is an experiment into how arbitrary data (RDF) can be interacted with. Unfortunately I do not know how to make nice or appealing UIs…</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/geopub-initial-demo/603/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/geopub-initial-demo/603/5</link>
+        <pubDate>Sun, 06 Sep 2020 15:53:58 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-603-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/geopub-initial-demo/603.rss">GeoPub - initial demo</source>
+      </item>
+      <item>
+        <title>GeoPub - initial demo</title>
+        <dc:creator><![CDATA[bhaugen]]></dc:creator>
+        <description><![CDATA[
+            <p>I asked <a class="mention" href="/u/pukkamustard">@pukkamustard</a> some questions in the fediverse, including where to discuss them, and here is the designated place.</p>
+<p>In general, I’m interested where geopub wants to go as it grows up:</p>
+<ul>
+<li>how people will use it? Will they sign up for a local/central site or can they alternatively set up their own personal geopub and connect with one or more local pubs?</li>
+<li>if and how it will federate?</li>
+<li>ideas about UI?</li>
+</ul>
+          <p><a href="https://socialhub.activitypub.rocks/t/geopub-initial-demo/603/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/geopub-initial-demo/603/4</link>
+        <pubDate>Sun, 06 Sep 2020 13:56:51 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-603-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/geopub-initial-demo/603.rss">GeoPub - initial demo</source>
+      </item>
+      <item>
+        <title>GeoPub - initial demo</title>
+        <dc:creator><![CDATA[Emphack]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="https://socialhub.activitypub.rocks/t/how-to-represent-places-in-an-event/">https://socialhub.activitypub.rocks/t/how-to-represent-places-in-an-event/</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/geopub-initial-demo/603/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/geopub-initial-demo/603/3</link>
+        <pubDate>Mon, 04 May 2020 10:07:53 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-603-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/geopub-initial-demo/603.rss">GeoPub - initial demo</source>
+      </item>
+      <item>
+        <title>GeoPub - initial demo</title>
+        <dc:creator><![CDATA[strypey]]></dc:creator>
+        <description><![CDATA[
+            <p>This looks like a fantastic project. The <a href="https://www.loomio.org/g/exAKrBUp/open-app-ecosystem" rel="nofollow noopener">Open App Ecosystem group on Loomio</a> is another place you could seek feedback from devs and early adopters. I can imagine it being of great interest to some of the folks there.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/geopub-initial-demo/603/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/geopub-initial-demo/603/2</link>
+        <pubDate>Sun, 12 Apr 2020 00:40:01 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-603-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/geopub-initial-demo/603.rss">GeoPub - initial demo</source>
+      </item>
+      <item>
+        <title>GeoPub - initial demo</title>
+        <dc:creator><![CDATA[pukkamustard]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello SocialHub!</p>
+<p>I’ve been working on a project called <a href="https://openengiadina.net" rel="nofollow noopener">openEngiadina</a> that uses ActivityPub for “local knowledge”. Local knowledge might include things like:</p>
+<ul>
+<li>points of interest</li>
+<li>events</li>
+<li>local organizations and businesses</li>
+<li>classifieds</li>
+<li>real-time status of infrastructure</li>
+</ul>
+<p>We have an initial demo of our client working and I would be very happy for feedback, questions and comments.</p>
+<p>Demo instance: <a href="https://openengiadina.net/geopub/" rel="nofollow noopener">https://openengiadina.net/geopub/</a></p>
+<p>A post explaining the demo and some background: <a href="https://inqlab.net/2020-04-06-geopub-activitypub-for-content-curation.html" rel="nofollow noopener">https://inqlab.net/2020-04-06-geopub-activitypub-for-content-curation.html</a></p>
+<p>Thanks!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/geopub-initial-demo/603/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/geopub-initial-demo/603/1</link>
+        <pubDate>Tue, 07 Apr 2020 07:32:14 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-603-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/geopub-initial-demo/603.rss">GeoPub - initial demo</source>
+      </item>
+  </channel>
+</rss>

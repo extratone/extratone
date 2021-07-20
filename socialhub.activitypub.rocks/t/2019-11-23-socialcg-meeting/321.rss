@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>2019-11-23 SocialCG Meeting</title>
+    <link>https://socialhub.activitypub.rocks/t/2019-11-23-socialcg-meeting/321</link>
+    <description>[Wiki page](https://www.w3.org/wiki/SocialCG/2019-11-23)
+
+What would people like to discuss?
+
+## Current Topics:
+
+* Introductions
+* Evergreen Recs (followup if any after cwebber reached out to w3c staff)
+* socialhub.activitypub.rocks
+  * How&#39;s it going?
+* Github issue triage update
+* Litepub / SocialCG / SocialHub going forward
+* Next meeting scheduling</description>
+    
+    <lastBuildDate>Mon, 18 Nov 2019 12:55:39 +0000</lastBuildDate>
+    <category>SocialCG</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/2019-11-23-socialcg-meeting/321.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>2019-11-23 SocialCG Meeting</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://socialhub.activitypub.rocks/t/2019-11-23-socialcg-meeting/321/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2019-11-23-socialcg-meeting/321/4</link>
+        <pubDate>Mon, 04 Jan 2021 13:01:11 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-321-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2019-11-23-socialcg-meeting/321.rss">2019-11-23 SocialCG Meeting</source>
+      </item>
+      <item>
+        <title>2019-11-23 SocialCG Meeting</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/trwnh">@trwnh</a> a lot of those were carried over from last meeting, so they might not all still need to be discussed.</p>
+<p>I can try and make progress on Github issue triage before next week—there was a bug in the original github import, and it was done in a way that made a lot of noise for subscribers.</p>
+<blockquote>
+<ul>
+<li>socialhub.activitypub.rocks
+<ul>
+<li>How’s it going?</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p>Is there anything in particular the group would like a status update on here?</p>
+<blockquote>
+<ul>
+<li>Litepub / SocialCG / SocialHub going forward</li>
+</ul>
+</blockquote>
+<p>I think we resolved this topic last meeting—good to remove it? Otherwise, is there anything actionable to discuss here?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2019-11-23-socialcg-meeting/321/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2019-11-23-socialcg-meeting/321/3</link>
+        <pubDate>Mon, 18 Nov 2019 12:55:39 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-321-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2019-11-23-socialcg-meeting/321.rss">2019-11-23 SocialCG Meeting</source>
+      </item>
+      <item>
+        <title>2019-11-23 SocialCG Meeting</title>
+        <dc:creator><![CDATA[trwnh]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<ul>
+<li>Introductions</li>
+<li>Evergreen Recs (followup if any after cwebber reached out to w3c staff)</li>
+<li>socialhub.activitypub.rocks
+<ul>
+<li>How’s it going?</li>
+</ul>
+</li>
+<li>Github issue triage update</li>
+<li>Litepub / SocialCG / SocialHub going forward</li>
+<li>Next meeting scheduling</li>
+</ul>
+</blockquote>
+<p>This seems pretty meaty already <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>If there’s any time, then under “How’s it going?” I would say that maybe a few topics from here could be elevated for needing spec clarification? e.g. <a href="https://socialhub.activitypub.rocks/t/unresolved-issues-surrounding-follow-activities/114" class="inline-onebox">Unresolved issues surrounding Follow activities</a> needing some discussion around whether the AP spec should be extended to allow Follow on non-Actor types, and how such behavior should be defined; or <a href="https://socialhub.activitypub.rocks/t/signaling-side-effects-asynchronously-by-generalizing-accept-reject/125" class="inline-onebox">Signaling side effects asynchronously by generalizing Accept/Reject</a> needing some more specific language than “side effects are determined by the type of the object received”, especially when the side effects were processed on a remote server instead of yours.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2019-11-23-socialcg-meeting/321/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2019-11-23-socialcg-meeting/321/2</link>
+        <pubDate>Mon, 18 Nov 2019 11:46:09 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-321-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2019-11-23-socialcg-meeting/321.rss">2019-11-23 SocialCG Meeting</source>
+      </item>
+      <item>
+        <title>2019-11-23 SocialCG Meeting</title>
+        <dc:creator><![CDATA[cwebber]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="https://www.w3.org/wiki/SocialCG/2019-11-23" rel="nofollow noopener">Wiki page</a></p>
+<p>What would people like to discuss?</p>
+<h2>Current Topics:</h2>
+<ul>
+<li>Introductions</li>
+<li>Evergreen Recs (followup if any after cwebber reached out to w3c staff)</li>
+<li>socialhub.activitypub.rocks
+<ul>
+<li>How’s it going?</li>
+</ul>
+</li>
+<li>Github issue triage update</li>
+<li>Litepub / SocialCG / SocialHub going forward</li>
+<li>Next meeting scheduling</li>
+</ul>
+          <p><a href="https://socialhub.activitypub.rocks/t/2019-11-23-socialcg-meeting/321/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2019-11-23-socialcg-meeting/321/1</link>
+        <pubDate>Sat, 16 Nov 2019 16:46:41 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-321-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2019-11-23-socialcg-meeting/321.rss">2019-11-23 SocialCG Meeting</source>
+      </item>
+  </channel>
+</rss>

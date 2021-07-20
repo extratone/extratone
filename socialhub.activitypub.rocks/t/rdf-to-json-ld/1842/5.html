@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>RDF to json-ld - #5 by aschrijver - Java - SocialHub</title>
+    <meta name="description" content="Today i found a way to convert my RDF4J model into a json-ld representation that looks promising">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="../1842.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;RDF to json-ld&#39;" href="../1842.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/2X/6/6692bc71c8a8bb066ca4e714d966f47157df422d.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/2X/6/6692bc71c8a8bb066ca4e714d966f47157df422d.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/rdf-to-json-ld/1842/5" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/rdf-to-json-ld/1842/5" />
+<meta property="og:title" content="RDF to json-ld" />
+<meta name="twitter:title" content="RDF to json-ld" />
+<meta property="og:description" content="Don’t know the relevancy to both of you, but just FYI: yesterday AtomGraph was among the presenters of the NGI Linked Data webinar  and they have this java-based JSON2RDF library:" />
+<meta name="twitter:description" content="Don’t know the relevancy to both of you, but just FYI: yesterday AtomGraph was among the presenters of the NGI Linked Data webinar  and they have this java-based JSON2RDF library:" />
+<meta property="article:published_time" content="2021-06-22T06:35:57+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="../1842.html">RDF to json-ld</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="https://socialhub.activitypub.rocks/c/programming/33" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #B3B5B4'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Programming</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../../c/programming/java/44.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #ED8B00'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Java</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/naturzukunft.html'><span itemprop='name'>naturzukunft</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1842.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-06-08T09:59:11Z' class='post-time'>
+                June 8, 2021,  9:59am
+              </time>
+              <meta itemprop='dateModified' content='2021-06-08T09:59:11Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Today i found a way to convert my RDF4J model into a json-ld representation that looks promising</p>
+<aside class="quote quote-modified" data-post="3" data-topic="1841">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/naturzukunft/40/983_2.png" class="avatar">
+    <a href="../../is-json-ld-compatibe-to-json-ld-and-what-does-activitypub-understand-with-json-ld/1841/3.html">Is json-ld compatibe to json-ld and what does activityPub understand with json-ld</a> <a class="badge-wrapper  box" href="../../../c/activitypub.html"><span class="badge-category-bg" style="background-color: #0088CC;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Discuss the ActivityPub Recommendation, how to implement it, how to extend it. Home of the ActivityPub SIG.">ActivityPub</span></a>
+  </div>
+  <blockquote>
+    Today i found a way to be more compatible. <a href="https://github.com/filip26/titanium-json-ld" rel="noopener nofollow ugc">titanium</a> seems to do it’s job well! 
+Converting my RDF Model into the compact format like that: 
+import java.io.IOException;
+import java.io.StringReader;
+import java.io.StringWriter;
+import java.io.Writer;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.eclipse.rdf4j.model.Model;
+import org.eclipse.rdf4j.rio.RDFFormat;
+import org.eclipse.rdf4j.rio.Rio;
+import org.springframework.core.io.ClassPathResource;
+
+import com.apicatalog.jsonld.JsonLd…
+  </blockquote>
+</aside>
+
+        </div>
+
+        <meta itemprop='headline' content='RDF to json-ld'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1842.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-06-08T10:01:26Z' class='post-time'>
+                June 8, 2021, 10:01am
+              </time>
+              <meta itemprop='dateModified' content='2021-06-08T10:01:26Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I also have this cursed thing that passes all tests except some relative URI edge cases</p>
+<aside class="onebox githubblob">
+  <header class="source">
+
+      <a href="https://github.com/grishka/Smithereen/blob/6307aa677c87e2a489be3d6c76ab17e6d0a037e4/src/main/java/smithereen/jsonld/JLDProcessor.java" target="_blank" rel="noopener nofollow ugc">github.com</a>
+  </header>
+
+  <article class="onebox-body">
+    <h4><a href="https://github.com/grishka/Smithereen/blob/6307aa677c87e2a489be3d6c76ab17e6d0a037e4/src/main/java/smithereen/jsonld/JLDProcessor.java" target="_blank" rel="noopener nofollow ugc">grishka/Smithereen/blob/6307aa677c87e2a489be3d6c76ab17e6d0a037e4/src/main/java/smithereen/jsonld/JLDProcessor.java</a></h4>
+
+
+    <pre><code class="lang-java">package smithereen.jsonld;
+
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonNull;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+import com.google.gson.JsonPrimitive;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Locale;
+import java.util.Map;
+</code></pre>
+
+
+  This file has been truncated. <a href="https://github.com/grishka/Smithereen/blob/6307aa677c87e2a489be3d6c76ab17e6d0a037e4/src/main/java/smithereen/jsonld/JLDProcessor.java" target="_blank" rel="noopener nofollow ugc">show original</a>
+
+  </article>
+
+  <div class="onebox-metadata">
+    
+    
+  </div>
+
+  <div style="clear: both"></div>
+</aside>
+
+        </div>
+
+        <meta itemprop='headline' content='RDF to json-ld'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/naturzukunft.html'><span itemprop='name'>naturzukunft</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1842.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-06-08T10:03:07Z' class='post-time'>
+                June 8, 2021, 10:03am
+              </time>
+              <meta itemprop='dateModified' content='2021-06-08T10:03:07Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Are you internally working with RDF ?</p>
+        </div>
+
+        <meta itemprop='headline' content='RDF to json-ld'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1842.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-06-09T13:51:04Z' class='post-time'>
+                June 9, 2021,  1:51pm
+              </time>
+              <meta itemprop='dateModified' content='2021-06-09T13:51:04Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>No, I’m converting json to my “local context”. I only use the RDF stuff for LD-signatures.</p>
+        </div>
+
+        <meta itemprop='headline' content='RDF to json-ld'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/aschrijver.html'><span itemprop='name'>aschrijver</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1842.html">
+
+            <link itemprop="image" href="../../../uploads/default/original/2X/6/6692bc71c8a8bb066ca4e714d966f47157df422d.png">
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-06-22T06:35:57Z' class='post-time'>
+                June 22, 2021,  6:35am
+              </time>
+              <meta itemprop='dateModified' content='2021-06-22T06:35:57Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Don’t know the relevancy to both of you, but just FYI: yesterday AtomGraph was among the presenters of the <a href="../../save-the-date-semantic-web-and-linked-data-ngi-event-june-21/1849.html">NGI Linked Data webinar</a>  and they have this java-based JSON2RDF library:</p>
+<aside class="onebox allowlistedgeneric" data-onebox-src="https://github.com/AtomGraph/JSON2RDF">
+  <header class="source">
+      <img src="../../../uploads/default/original/1X/bad3e5f9ad67c1ddf145107ce7032ac1d7b22563.svg" class="site-icon" width="32" height="32">
+
+      <a href="https://github.com/AtomGraph/JSON2RDF" target="_blank" rel="noopener">GitHub</a>
+  </header>
+
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/345;"><img src="../../../uploads/default/optimized/2X/6/6692bc71c8a8bb066ca4e714d966f47157df422d_2_690x345.png" class="thumbnail" width="690" height="345" srcset="../../../uploads/default/optimized/2X/6/6692bc71c8a8bb066ca4e714d966f47157df422d_2_690x345.png, ../../../uploads/default/optimized/2X/6/6692bc71c8a8bb066ca4e714d966f47157df422d_2_1035x517.png 1.5x, ../../../uploads/default/original/2X/6/6692bc71c8a8bb066ca4e714d966f47157df422d.png 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/6/6692bc71c8a8bb066ca4e714d966f47157df422d_2_10x10.png"></div>
+
+<h3><a href="https://github.com/AtomGraph/JSON2RDF" target="_blank" rel="noopener">AtomGraph/JSON2RDF</a></h3>
+
+  <p>Streaming generic JSON to RDF converter. Contribute to AtomGraph/JSON2RDF development by creating an account on GitHub.</p>
+
+
+  </article>
+
+  <div class="onebox-metadata">
+    
+    
+  </div>
+
+  <div style="clear: both"></div>
+</aside>
+
+        </div>
+
+        <meta itemprop='headline' content='RDF to json-ld'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

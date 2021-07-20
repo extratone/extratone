@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Interoperability and the Solid Project</title>
+    <link>https://socialhub.activitypub.rocks/t/interoperability-and-the-solid-project/1444</link>
+    <description>This is just a FYI to reference some of the work that Solid is doing in the field of Interoperability. They have created a recent (16 February 2021) Editor&#39;s Draft on the subject: https://solid.github.io/data-interoperability-panel/specification/
+
+This specification was drafted to address the following: [Problems and Goals](https://github.com/solid/data-interoperability-panel/blob/f96e99932571acb9cd0b789969e4400a77c94ba5/problems-and-goals.md)
+
+It looks on first sight like there might be a lot of interesting stuff in this specification, and added incentive for some cross-community interaction as [recently discussed](https://socialhub.activitypub.rocks/t/a-popularization-article-on-the-solid-project/1147/18?u=aschrijver) with @aveltens and @rubenverborgh :blush:</description>
+    
+    <lastBuildDate>Thu, 18 Feb 2021 10:48:49 +0000</lastBuildDate>
+    <category>Fediversity</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/interoperability-and-the-solid-project/1444.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Interoperability and the Solid Project</title>
+        <dc:creator><![CDATA[kaniini]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t see how the <code>Application</code> agent’s vocabulary is related to NodeInfo.  It seems more related to something like OAuth: it describes a client application, not a server to server application.</p>
+<p>A good way of thinking about it is that SOLID is more like ActivityPub C2S on steroids.  You could use ActivityPub (well, really you would just use LDN itself, which ActivityPub is conceptually extended from) to federate events for a SOLID application that has participants on different pods.</p>
+<p>Maybe I should do a blog about this… but I think that SOLID’s insistence on including Turtle in the specification means it’s probably dead on arrival in the real world.  The reason ActivityPub has been successful is because it decisively went all in on JSON-LD.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/interoperability-and-the-solid-project/1444/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/interoperability-and-the-solid-project/1444/6</link>
+        <pubDate>Thu, 18 Feb 2021 10:43:57 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1444-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/interoperability-and-the-solid-project/1444.rss">Interoperability and the Solid Project</source>
+      </item>
+      <item>
+        <title>Interoperability and the Solid Project</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>There are a number of AP projects, like openEngiadina, that want to delve deeply into Linked Data capabilities. At the risk of saying stupid things by lack of knowledge, when looking at the Interop spec I see concepts that come close, not to auth/authz, but to the de-facto NodeInfo / NodeInfo2 standards. I believe NodeInfo was invented to convey the bare minimum of info about instances, while avoiding the complexity of exchanging the entire federation model in machine-readable way (added to this was the informal convention of providing a <code>FEDERATION.md</code> for devs to figure that out more easily).</p>
+<p>In this spec (which tbh seems to be very complex to me) there’s the definition of the <code>Application</code> agent with properties such as <code>interop:applicationName</code> and <code>interop:applicationDescription</code>, and it describes how agents (actors) register applications. In particular there are <code>interop:DataRegistration</code> in such registries, that define a type and the shape of that type using <a href="https://shapetrees.org/TR/specification/index.html">Shape Trees Specification</a>:</p>
+<blockquote>
+<p>Semantic Web Applications interoperate by sharing semantics of terms and constellations of resource-oriented data structures. This specification defines shape trees, a mechanism for declaring and operating over constellations of resource-oriented data structures.</p>
+</blockquote>
+          <p><a href="https://socialhub.activitypub.rocks/t/interoperability-and-the-solid-project/1444/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/interoperability-and-the-solid-project/1444/5</link>
+        <pubDate>Thu, 18 Feb 2021 07:11:34 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1444-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/interoperability-and-the-solid-project/1444.rss">Interoperability and the Solid Project</source>
+      </item>
+      <item>
+        <title>Interoperability and the Solid Project</title>
+        <dc:creator><![CDATA[kaniini]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, I would say the auth/authz story for ActivityPub is fundamentally complete.  We are more in the “hardening” phase.  But any advice on hardening from SOLID would not be applicable because the messaging model is basically the opposite of ActivityPub.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/interoperability-and-the-solid-project/1444/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/interoperability-and-the-solid-project/1444/4</link>
+        <pubDate>Thu, 18 Feb 2021 06:29:13 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1444-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/interoperability-and-the-solid-project/1444.rss">Interoperability and the Solid Project</source>
+      </item>
+      <item>
+        <title>Interoperability and the Solid Project</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you <a class="mention" href="/u/kaniini">@kaniini</a> for the info, and you are right of course to point out these differences, especially related to the ACL approach (which <a href="https://forum.solidproject.org/t/solid-acls-and-the-future/3489">was mentioned on Solid forum</a> in hopes of <a class="mention" href="/u/cwebber">@cwebber</a> and Solid core team getting to discuss different approaches).</p>
+<p>I was not thinking of the whole spec in its entirety to plug some hole in the AP technology landscape, but maybe some specific concepts or even just vocabulary snippets (but tbh lack expertise atm to really gauge that). Is the auth/authz story of AP-federated apps sufficiently complete / crystalized? Especially in non-microblogging domains and in comms between diverse apps…</p>
+<p>Maybe this is indeed not useful, but I thought it warranted a crossref &nbsp; <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/interoperability-and-the-solid-project/1444/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/interoperability-and-the-solid-project/1444/3</link>
+        <pubDate>Thu, 18 Feb 2021 06:27:38 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1444-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/interoperability-and-the-solid-project/1444.rss">Interoperability and the Solid Project</source>
+      </item>
+      <item>
+        <title>Interoperability and the Solid Project</title>
+        <dc:creator><![CDATA[kaniini]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t see the relevance.  ActivityPub is a protocol where access is determined by:</p>
+<ul>
+<li>Certain object properties (<code>to</code>, <code>cc</code>, <code>bto</code>, <code>bcc</code>, <code>audience</code>)</li>
+<li>The inboxes objects are received at</li>
+</ul>
+<p>While a distributed ACL system makes sense for <em>web resources</em>, this kind of permission model is entirely inappropriate for ActivityPub, where the access group is always bounded to <code>audience</code> and the final value of <code>audience</code> is determined from the two factors listed above.</p>
+<p>Basically, that kind of permission model is appropriate in a system where resources are <em>pulled</em>, like Solid.  In ActivityPub, resources are primarily <em>pushed</em>, which is why the current permission scheme is built around pushing messages around.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/interoperability-and-the-solid-project/1444/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/interoperability-and-the-solid-project/1444/2</link>
+        <pubDate>Wed, 17 Feb 2021 13:19:37 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1444-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/interoperability-and-the-solid-project/1444.rss">Interoperability and the Solid Project</source>
+      </item>
+      <item>
+        <title>Interoperability and the Solid Project</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>This is just a FYI to reference some of the work that Solid is doing in the field of Interoperability. They have created a recent (16 February 2021) Editor’s Draft on the subject: <a href="https://solid.github.io/data-interoperability-panel/specification/" class="inline-onebox">Solid Application Interoperability</a></p>
+<p>This specification was drafted to address the following: <a href="https://github.com/solid/data-interoperability-panel/blob/f96e99932571acb9cd0b789969e4400a77c94ba5/problems-and-goals.md">Problems and Goals</a></p>
+<p>It looks on first sight like there might be a lot of interesting stuff in this specification, and added incentive for some cross-community interaction as <a href="https://socialhub.activitypub.rocks/t/a-popularization-article-on-the-solid-project/1147/18">recently discussed</a> with <a class="mention" href="/u/aveltens">@aveltens</a> and <a class="mention" href="/u/rubenverborgh">@rubenverborgh</a> <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/blush.png?v=9" title=":blush:" class="emoji" alt=":blush:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/interoperability-and-the-solid-project/1444/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/interoperability-and-the-solid-project/1444/1</link>
+        <pubDate>Wed, 17 Feb 2021 10:20:40 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1444-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/interoperability-and-the-solid-project/1444.rss">Interoperability and the Solid Project</source>
+      </item>
+  </channel>
+</rss>

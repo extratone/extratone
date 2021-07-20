@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Defining alsoKnownAs</title>
+    <link>https://socialhub.activitypub.rocks/t/defining-alsoknownas/907</link>
+    <description>Hi everyone,
+
+Over in the Decentralized Identifiers (DID) W3C Working Group, we noticed that Mastondon uses the property `alsoKnownAs` ([docs](https://docs.joinmastodon.org/spec/activitypub/#profile)) for account migration. It&#39;s [implemented as though it&#39;s part of the ActivityStreams 2.0 vocabulary](https://github.com/tootsuite/mastodon/commit/0f938ff29c2e9bf92e3eb9c23be8d4ba3a1b97f7#diff-3a3f1efd0fd25ad768a79fb685938c1dR13) although it isn&#39;t actually in there. We also want a property like this for DIDs. In the interest of not duplicating work and to help make Mastodon&#39;s use of the term &#39;legit&#39; we were hoping to agree on a formal definition of `alsoKnownAs` (which we can publish in the [DID Core](https://w3c.github.io/did-core/) specification which is on track to become a W3C REC this year) and then add it properly as an ActivityStreams 2.0 extension (via a SocialCG resolution).
+
+So we&#39;re drafting a definition that we hope is agreeable to both the DID and ActivityPub communities:
+
+&gt; The value of `alsoKnownAs` MUST be a list (per [[&lt;a href=&quot;https://infra.spec.whatwg.org/#lists&quot;&gt;INFRA&lt;/a&gt;]]) where each item in the list is a URI conforming to [[&lt;a href=&quot;https://tools.ietf.org/html/rfc3986&quot;&gt;RFC3986&lt;/a&gt;]].
+&gt;
+&gt; This relationship is a statement that the subject of this identifier is also identified by one or more other identifiers.
+
+(Note that the [[INFRA]] spec is a set of abstract definitions of foundational concepts - like lists - so that they can be used in specs regardless of the actual concrete syntax used.)
+
+I&#39;d love feedback from anyone who implements or uses or otherwise has an opinion on this.
+
+Amy</description>
+    
+    <lastBuildDate>Mon, 29 Mar 2021 01:15:43 +0000</lastBuildDate>
+    <category>ActivityPub</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Defining alsoKnownAs</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p>hm… maybe the use of “This namespace” (“This namespace may be used by extensions […]”) in Section 4 is a little vague? We can probably change it to “The <code>as</code> namespace may be used by extensions” to match the language in section 3</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/29">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/29</link>
+        <pubDate>Mon, 29 Mar 2021 01:15:43 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-907-29</guid>
+        <source url="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907.rss">Defining alsoKnownAs</source>
+      </item>
+      <item>
+        <title>Defining alsoKnownAs</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/nightpool">@nightpool</a> … my confusion came from <a href="https://www.w3.org/ns/activitystreams#did-core" class="inline-onebox">ActivityStreams 2.0 Terms</a> where in Section 3 it says “terms are defined in <code>as</code> namespace” and in Section 4 this is not mentioned and says in 4.2  “The terms in this section are described in the [<a href="https://www.w3.org/ns/activitystreams#bib-did-core">DID-CORE</a>] specification.”</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/28">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/28</link>
+        <pubDate>Sat, 27 Mar 2021 05:46:24 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-907-28</guid>
+        <source url="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907.rss">Defining alsoKnownAs</source>
+      </item>
+      <item>
+        <title>Defining alsoKnownAs</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="nutomic" data-post="19" data-topic="907" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/letter_avatar_proxy/v4/letter/n/f475e1/40.png" class="avatar"> nutomic:</div>
+<blockquote>
+<p>This sounds like the <code>alsoKnownAs</code> field always has to point to an ActivityPub actor. However, we are thinking of using it to federate the user’s Matrix account ID. Would that violate the spec?</p>
+</blockquote>
+</aside>
+<p>There is no accepted spec text in this area—I wrote this just as a draft of what I understood the <em>current implementation</em> of alsoKnownAs on the fediverse to be as a starting point for discussion.</p>
+<p>I don’t have any strong philosophical objections to using <code>alsoKnownAs</code> to point to an object outside of the AS system—we’ve defined it on the as2 namespace, and to some extent we should expect it to be useful to <strong>any</strong> ActivityStreams implementor, even ones that have no interest in AP.</p>
+<p>However, that said, when we implemented a similar feature for Mastodon, we didn’t go that route—instead, we parse the free-form bio fields to find “verifiable links” (links with rel=me), and then created a simple rule for validation on the other side (the HTML page or HTTP response at the target contains a <code>rel=me</code> link that points back to the actor’s URL). To some extent this is duplicating work that <code>alsoKnownAs</code> is already covering, and it adds more out-of-band complexity, but we decided that this method was much easier to integrate with other non-AP systems, and had better existing wide-spread adoption.</p>
+<p>EDIT: However, in either situation you <em>need</em> to make sure that the claim is bidirectional. If you can somehow make the Matrix profile page serve an <code>as:alsoKnownAs</code> property (maybe using <a href="https://html.spec.whatwg.org/multipage/microdata.html#names:-the-itemprop-attribute"><code>itemprop</code></a>?), then that would be an acceptable route. However, if you can’t get that second half of the bidirectional loop, then alsoKnownAs is inappropriate.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/27">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/27</link>
+        <pubDate>Fri, 26 Mar 2021 16:06:30 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-907-27</guid>
+        <source url="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907.rss">Defining alsoKnownAs</source>
+      </item>
+      <item>
+        <title>Defining alsoKnownAs</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p>Just to be clear (and reiterate what <a class="mention" href="/u/msporny">@msporny</a> is saying): there is no such thing as <code>did:alsoKnownAs</code>. The DID spec defines the <code>as:alsoKnownAs</code> property as it relates to DID. Since AP implementations are generally don’t implement the DID spec, this doesn’t really affect them—if they do wish to implement the DID spec in the future, then our goal is that they can do it in a way where both specs can be satisfied.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/26">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/26</link>
+        <pubDate>Fri, 26 Mar 2021 15:48:40 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-907-26</guid>
+        <source url="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907.rss">Defining alsoKnownAs</source>
+      </item>
+      <item>
+        <title>Defining alsoKnownAs</title>
+        <dc:creator><![CDATA[msporny]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>So with the above Resolution this is temporary - so as not to block <a class="mention" href="/u/msporny">@msporny</a> with DID spec progress - and the intention is to iterate on a generalization of this? That would mean that eventually we’d have an <code>as:alsoKnownAs</code> , am I right?</p>
+</blockquote>
+<p>Yes, that is correct.</p>
+<p>I haven’t had a chance to read the rest of your post, apologies – rushed this morning. I have also logged this issue given your query: <a href="https://github.com/w3c/did-spec-registries/issues/275" class="inline-onebox" rel="noopener nofollow ugc">alsoKnownAs missing from DID Spec Registries · Issue #275 · w3c/did-spec-registries · GitHub</a></p>
+<p>We’re trying to do the right thing here wrt. the DID Specification… re-use alsoKnownAs, as defined in the ActivityPub community using the AS vocabulary. Our registry and JSON-LD Context will define <code>alsoKnownAs</code> to use <code>as:alsoKnownAs</code>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/25</link>
+        <pubDate>Fri, 26 Mar 2021 15:15:05 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-907-25</guid>
+        <source url="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907.rss">Defining alsoKnownAs</source>
+      </item>
+      <item>
+        <title>Defining alsoKnownAs</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Just some questions from my - still limited, so pls bear with me - understanding of the subject matter. From the SocialCG meeting minutes:</p>
+<blockquote>
+<p><strong>RESOLUTION</strong>: we accept the <code>alsoKnownAs</code> definition in the DID Core spec ("This relationship is a statement that the subject of this identifier is also identified by one or more other identifiers. ") as a starting point that can be iterated on with the participation of both the DID and SocialCG communities.</p>
+</blockquote>
+<p>This with the following understanding:</p>
+<ul>
+<li>AS definition is the most generic, and DID a specialization (e.g. added restriction to be a <a href="https://infra.spec.whatwg.org/#ordered-set">set</a>)
+<ul>
+<li>
+<a class="mention" href="/u/rhiaro">@rhiaro</a>: <em>“Yes, exactly – identifier and subject are meant to be general…<br>
+… The subject could be an Activity Pub profile URl – supposed to be general/generic language… relationship is alsoKnownAs – ANY identifiers, HTTP URLs, DIDs, etc.”</em>
+</li>
+<li>
+<a class="mention" href="/u/nightpool">@nightpool</a>, <a class="mention" href="/u/kaniini">@kaniini</a>: The Domain and Range of <code>alsoKnownAs</code> is Actor, i.e. an URI to an actor profile ID.</li>
+</ul>
+</li>
+</ul>
+<p>Aren’t the two sub-bullets in conflict with each other? Wouldn’t it imply a <code>did:alsoKnownAs</code> to refer to an actor, if there’s compatibility?</p>
+<p>Currently in <a href="https://www.w3.org/ns/activitystreams#alsoKnownAs">AS Vocab</a> the DID specialization is referred to. So with the above Resolution this is temporary - so as not to block <a class="mention" href="/u/msporny">@msporny</a> with DID spec progress - and the intention is to iterate on a generalization of this? That would mean that eventually we’d have an <code>as:alsoKnownAs</code>, am I right? Probably defined in a <a href="https://socialhub.activitypub.rocks/t/fep-a4ed-the-fediverse-enhancement-proposal-process/1171">FEP</a>.</p>
+<hr>
+<aside class="quote group-mastodon" data-username="nightpool" data-post="10" data-topic="907">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/nightpool/40/36_2.png" class="avatar"> nightpool:</div>
+<blockquote>
+<p>in Mastodon right now, we use alsoKnownAs for two <em>different</em> actors to identify that the same person controls both. Confusing the concept of (different representations for this actor) with the concept of (different actors for the same logical person) seems like a mistake to me.</p>
+</blockquote>
+</aside>
+<p>Will this interpretation give problems in having a universal understanding of the semantics of <code>as:alsoKnownAs</code>? Btw, in the context of a Move it is not necessarily the same Person that controls both (e.g. the move is from a personal account to one representing an organization actor).</p>
+<p>Wouldn’t it be great to have some consensus on how all this works? This concept of Moving applies to ALL activitypub application types, and - if not well-defined - the situation on Fediverse will become messier and messier. Here <a class="mention" href="/u/macgirvin">@macgirvin</a> with nomadic identity and <code>movedTo</code> / <code>copiedTo</code> may have great input.</p>
+<hr>
+<aside class="quote no-group" data-username="macgirvin" data-post="18" data-topic="907">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/letter_avatar_proxy/v4/letter/m/82dd89/40.png" class="avatar"> macgirvin:</div>
+<blockquote>
+<p>It would be advantageous if any official property documentation didn’t insist that it only apply to actors; as there are a number of reasons why content might have more than one fetchable id.</p>
+</blockquote>
+</aside>
+<p>Shouldn’t we consider this? Maybe the Domain and Range of <code>as:alsoKnownAs</code> should be Object? Consider e.g. an Event that has a Mobilizon url, a Gathio url, and an Organization website page (with SEO in it).</p>
+<hr>
+<aside class="quote no-group" data-username="nutomic" data-post="23" data-topic="907" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/letter_avatar_proxy/v4/letter/n/f475e1/40.png" class="avatar"> nutomic:</div>
+<blockquote>
+<p>In the end I came to the same conclusion as you, and went with a new field <code>matrixUserId</code> instead.</p>
+</blockquote>
+</aside>
+<p>I see that <a>in the Lemmy code</a> the JSON-LD context is defined as:</p>
+<pre><code class="lang-json">  {
+    "sc": "http://schema.org#",
+    "sensitive": "as:sensitive",
+    "stickied": "as:stickied",
+    "pt": "https://join.lemmy.ml#",
+    "comments_enabled": {
+      "type": "sc:Boolean",
+      "id": "pt:commentsEnabled"
+    },
+    "moderators": "as:moderators",
+    "matrixUserId": {
+      "type": "sc:Text",
+      "id": "as:alsoKnownAs"
+    }
+</code></pre>
+<p>I need to read up on the JSON-LD spec, so can’t say if this is correct. But I wonder about the mechanism in general. Matrix is just one of the many, many web locations that can represent an <code>alsoKnownAs</code> relationship. (For instance <a href="https://keyoxide.org/9f0048ac0b23301e1f77e994909f6bd6f80f485d">Keyoxide</a> is an app to represent a code-generated verified profile with an ever-growing list of such relationships).</p>
+<p>Shouldn’t there be a machine-readable way to figure out the type of link, without having to define unique property names for each of them? I don’t know what’s the best way, or if it is even desired. In <a href="http://schema.org">schema.org</a> (see <a href="https://schema.org/docs/datamodel.html#bgnotes">data model notes</a>) you have <code>sameAs</code> and <code>identifier</code> where the latter can be a PropertyValue with a <code>Text</code> + <code>URL</code>:</p>
+<pre><code class="lang-json">    {
+     "@context": "https://schema.org/",
+     "@type": "Book",
+     "name": "Library linked data in the cloud : OCLC's experiments with new models of resource description",
+     "author": "Carol Jean Godby",
+     "isbn": "9781627052191"
+     "identifier": {
+         "@type": "PropertyValue",
+         "propertyID": "OCoLC",
+         "value":  "889647468"
+       },
+     "sameAs": "http://www.worldcat.org/oclc/889647468"
+    }
+</code></pre>
+<p>PS. Note that AFAIK there’s no <code>as:stickied</code> (In Mastodon there’s <a href="https://docs.joinmastodon.org/spec/activitypub/#featured">featured</a>, <code>toot:featured</code> and <code>toot:featuredTag</code>). Nor are there <code>as:moderators</code>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/24</link>
+        <pubDate>Fri, 26 Mar 2021 08:40:58 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-907-24</guid>
+        <source url="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907.rss">Defining alsoKnownAs</source>
+      </item>
+      <item>
+        <title>Defining alsoKnownAs</title>
+        <dc:creator><![CDATA[nutomic]]></dc:creator>
+        <description><![CDATA[
+            <p>In the end I came to the same conclusion as you, and went with a new field <code>matrixUserId</code> instead.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/23</link>
+        <pubDate>Thu, 25 Mar 2021 23:10:48 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-907-23</guid>
+        <source url="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907.rss">Defining alsoKnownAs</source>
+      </item>
+      <item>
+        <title>Defining alsoKnownAs</title>
+        <dc:creator><![CDATA[kaniini]]></dc:creator>
+        <description><![CDATA[
+            <p>Yeah it looks to me like <code>did:alsoKnownAs</code> has good semantics, but the <code>as:alsoKnownAs</code> term really is supposed to point to an AP object.  That’s how it was implemented in AP servers, anyway.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/22</link>
+        <pubDate>Thu, 25 Mar 2021 15:36:38 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-907-22</guid>
+        <source url="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907.rss">Defining alsoKnownAs</source>
+      </item>
+      <item>
+        <title>Defining alsoKnownAs</title>
+        <dc:creator><![CDATA[rhiaro]]></dc:creator>
+        <description><![CDATA[
+            <p>The <a href="https://w3c.github.io/did-core/#dfn-alsoknownas">definition</a> says the value must be a URI, so there’s nothing to constrain it to an ActivityPub actor and it can be used to link identifiers in different systems this way.</p>
+<p>Edit: there’s nothing to stop anyone from more tightly defining it in a different namespace though</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/21</link>
+        <pubDate>Thu, 25 Mar 2021 12:56:01 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-907-21</guid>
+        <source url="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907.rss">Defining alsoKnownAs</source>
+      </item>
+      <item>
+        <title>Defining alsoKnownAs</title>
+        <dc:creator><![CDATA[kaniini]]></dc:creator>
+        <description><![CDATA[
+            <p>When I proposed <code>alsoKnownAs</code>, it was intended to point to AP objects only.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/20</link>
+        <pubDate>Thu, 25 Mar 2021 12:30:24 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-907-20</guid>
+        <source url="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907.rss">Defining alsoKnownAs</source>
+      </item>
+      <item>
+        <title>Defining alsoKnownAs</title>
+        <dc:creator><![CDATA[nutomic]]></dc:creator>
+        <description><![CDATA[
+            <p>This sounds like the <code>alsoKnownAs</code> field always has to point to an ActivityPub actor. However, we are thinking of using it to federate the user’s Matrix account ID. Would that violate the spec?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/19</link>
+        <pubDate>Sat, 20 Mar 2021 17:24:24 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-907-19</guid>
+        <source url="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907.rss">Defining alsoKnownAs</source>
+      </item>
+      <item>
+        <title>Defining alsoKnownAs</title>
+        <dc:creator><![CDATA[macgirvin]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-mastodon" data-username="nightpool" data-post="10" data-topic="907">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/nightpool/40/36_2.png" class="avatar"> nightpool:</div>
+<blockquote>
+<p>I would probably recommend just describing it as a (non-<a href="https://www.w3.org/TR/activitystreams-vocabulary/#properties" rel="noopener nofollow ugc">Functional</a>) relationship with a domain of Actor and a range of Actor.</p>
+</blockquote>
+</aside>
+<p>This shouldn’t affect anybody else, but we’re currently looking into using this construct for nomadic content (not just for actors). It would be advantageous if any official property documentation didn’t insist that it only apply to actors; as there are a number of reasons why content might have more than one fetchable id. Sure, we could go back to talking about arrays of ‘url’  but then we’re back to the original problem of a general lack of support in the fedi for arrays of ‘url’ (or ‘id’) and a lack of motivation to fix it unless it directly impacts users of the top name brands.</p>
+<p>[Edit: Cancel this request. There are some different directions I can take which should achieve the desired results and won’t involve or require any support from ActivityPub. Apologies. ]</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/18</link>
+        <pubDate>Mon, 15 Mar 2021 22:51:55 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-907-18</guid>
+        <source url="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907.rss">Defining alsoKnownAs</source>
+      </item>
+      <item>
+        <title>Defining alsoKnownAs</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p>Updated my definition with some clarifications and stronger language about how to verify the relationship. To give some context: currently, Mastodon processes and records the alsoKnownAs relationships indicated by each actor, but it only uses “1 way” relationships to make it easier for the user on the other end to “confirm” these relationships. 2-way relationships are currently only used for account migrations—before performing an account migration, each server receiving the <code>Move</code> activity checks to make sure that the 2-way relationship is in place.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/17</link>
+        <pubDate>Mon, 09 Nov 2020 17:31:58 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-907-17</guid>
+        <source url="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907.rss">Defining alsoKnownAs</source>
+      </item>
+      <item>
+        <title>Defining alsoKnownAs</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p>We discussed this in the SocialCG meeting today, minutes available here: <a href="https://www.w3.org/2020/11/07-social-minutes.html">https://www.w3.org/2020/11/07-social-minutes.html</a></p>
+<p>Just to give a perspective about where the Fediverse community is here, I’d like to give an example of what I think the spec text for this might look like if it was written in a activitystreams-specific or activitypub-specific way. I’m thinking of this as kind of a “starting point” from the other side, so we can figure out what the generic definition might look like by unifying these two ideas. Please let me know if you have any feedback!</p>
+<hr>
+<h2><code>alsoKnownAs</code></h2>
+<p>URL: <a href="https://www.w3.org/ns/activitystreams#alsoKnownAs">https://www.w3.org/ns/activitystreams#alsoKnownAs</a></p>
+<blockquote>
+<p>The alsoKnownAs relationship indicates that two Actor objects are shared by the same underlying user. However, care should be taken when consuming a document to make sure that the relationship is authorized by all actors involved. For example, if <code>https://example.org/cat</code> has <code>"alsoKnownAs": "https://example.org/dog"</code>, then processing systems should also make sure that <code>https://example.org/dog</code> has <code>"alsoKnownAs": "https://example.org/cat"</code> before treating the relationship as valid. <em>If</em> the relationship is reciprocated, then the two actors may be treated as the same person for certain security-sensitive operations.</p>
+</blockquote>
+<p><strong>Domain:</strong> <a href="https://www.w3.org/TR/activitystreams-core/#actors"><code>Actor</code></a><br>
+<strong>Range:</strong> <a href="https://www.w3.org/TR/activitystreams-core/#actors"><code>Actor</code></a><br>
+<strong>Functional:</strong> false</p>
+<h2>Example</h2>
+<pre><code>{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "type": "Person",
+  "id": "https://example.org/cat",
+  "name": "Catrina on dot-org"
+  "alsoKnownAs": "https://example.com/cat",
+}
+
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "type": "Person",
+  "id": "https://example.com/cat",
+  "name": "Catrina on dot-com"
+  "alsoKnownAs": "https://example.org/cat",
+}</code></pre>
+          <p><a href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/16</link>
+        <pubDate>Sat, 07 Nov 2020 17:15:16 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-907-16</guid>
+        <source url="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907.rss">Defining alsoKnownAs</source>
+      </item>
+      <item>
+        <title>Defining alsoKnownAs</title>
+        <dc:creator><![CDATA[msporny]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey <a class="mention" href="/u/nightpool">@nightpool</a>, my name is Manu Sporny, I’m one of the Editors of the DID Core specification… our goal here is to create something that is backwards-compatible with ActivityPub/Mastodon while achieving the use cases we need to solve in the official W3C DID Working Group. We’re using the property for the same purpose as Mastodon, AFAICT (and ActivityPub folks like <a class="mention" href="/u/rhiaro">@rhiaro</a> seem to agree).</p>
+<p><a class="mention" href="/u/nightpool">@nightpool</a> wrote:</p>
+<blockquote>
+<p>I don’t have any particular attachment to using JSON-LD or INFRA concepts specifically, i’d just rather maintain consistency within the AP/AS2 ecosystem on property definitions.</p>
+</blockquote>
+<p>The W3C DID WG has to use INFRA in our spec to describe core data model primitives (this is the direction that a lot of specs w/ abstract data models are taking), which should be compatible with JSON-LD and ActivityPub.</p>
+<p>The goal here is to make sure that we don’t do anything that prevents ActivityPub use cases, but defines things in a way that is compatible with the DID Core specification.</p>
+<blockquote>
+<p>the ordered/unordered thing is an important distinction that I think we should hammer out</p>
+</blockquote>
+<p>Yes, this is a common misconception with INFRA. INFRA only has the concept of an ordered set… see the note here:</p>
+<p><a href="https://infra.spec.whatwg.org/#sets" class="onebox" target="_blank" rel="nofollow noopener">https://infra.spec.whatwg.org/#sets</a></p>
+<p><code>NOTE: Almost all cases on the web platform require an  *ordered*  set, instead of an unordered one, since interoperability requires that any developer-exposed enumeration of the set’s contents be consistent between browsers. In those cases where order is not important, we still use ordered sets; implementations can optimize based on the fact that the order is not observable.</code></p>
+<p>So, the order doesn’t matter in this case – we just want to ensure that no item appears more than once in the set.</p>
+<p>Does this address your concerns <a class="mention" href="/u/nightpool">@nightpool</a>? To put it another way, what Mastodon use cases do you think are <em>not</em> covered with the current definition? Is there data that might be corrupted as a result?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/15</link>
+        <pubDate>Mon, 21 Sep 2020 13:59:20 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-907-15</guid>
+        <source url="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907.rss">Defining alsoKnownAs</source>
+      </item>
+      <item>
+        <title>Defining alsoKnownAs</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>This is what I mean, to specify its own relation at IANA, for example like we have it in the indieweb for micropub –<br>
+Aaron did register it (see above link), this one is then used like in <a href="https://www.w3.org/TR/micropub/#endpoint-discovery-p-1">https://www.w3.org/TR/micropub/#endpoint-discovery-p-1</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/14</link>
+        <pubDate>Tue, 15 Sep 2020 15:40:25 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-907-14</guid>
+        <source url="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907.rss">Defining alsoKnownAs</source>
+      </item>
+      <item>
+        <title>Defining alsoKnownAs</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p>to put it in terms of link relations, the problem is that the url property (as defined in the as2 spec) is more like rel=alternate then rel=me</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/13</link>
+        <pubDate>Fri, 11 Sep 2020 13:17:58 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-907-13</guid>
+        <source url="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907.rss">Defining alsoKnownAs</source>
+      </item>
+      <item>
+        <title>Defining alsoKnownAs</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-mastodon" data-username="nightpool" data-post="10" data-topic="907">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/nightpool/40/36_2.png" class="avatar"> nightpool:</div>
+<blockquote>
+<p>in Mastodon right now, we use alsoKnownAs for two <em>different</em> actors to identify that the same person controls both</p>
+</blockquote>
+</aside>
+<p>That is still a “link relation” and we can still use “alsoKnownAs” in <code>url</code> -<br>
+I would just like to have it specified as a link relation (if it is different from rel=“me” as described in the quote)<br>
+<a href="https://www.iana.org/assignments/link-relations/link-relations.xhtml" class="onebox" target="_blank">https://www.iana.org/assignments/link-relations/link-relations.xhtml</a></p>
+<p>I think this is how the Semantic Web works, it would be much more convenient to me if I have a list of links and my software learns about the links by just reading them.<br>
+Instead of /me feeding my software with a bunch of extra specified properties where /me has to say my software what they mean …</p>
+<p>Also I can communicate it to my users because <code>&lt;a rel="alsoKnownAs" href="https://serviceControlledByMe.org"&gt;Antifa&lt;/a&gt;</code> would be valid markup<br>
+<em>[wink smiley]</em></p>
+<p>It would simply make <a href="https://indieweb.org/rel-me">Software Support</a> easier …</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/12</link>
+        <pubDate>Fri, 11 Sep 2020 07:12:04 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-907-12</guid>
+        <source url="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907.rss">Defining alsoKnownAs</source>
+      </item>
+      <item>
+        <title>Defining alsoKnownAs</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p>(note: I don’t have any particular attachment to using JSON-LD or INFRA concepts specifically, i’d just rather maintain consistency within the AP/AS2 ecosystem on property definitions. When defining <em>algorithms</em>, it may make sense to reference to INFRA, but i think when defining vocabulary we should stick with the existing concepts used by the rest of the vocabulary)</p>
+<p>(also, as I mentioned, the ordered/unordered thing is an important distinction that I think we should hammer out)</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/11</link>
+        <pubDate>Thu, 10 Sep 2020 20:42:47 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-907-11</guid>
+        <source url="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907.rss">Defining alsoKnownAs</source>
+      </item>
+      <item>
+        <title>Defining alsoKnownAs</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p>I agree with <a class="mention" href="/u/rhiaro">@rhiaro</a> that adapting <code>url</code> for this very specific migration use-case makes little-to-no sense—in Mastodon right now, we use alsoKnownAs for two <em>different</em> actors to identify that the same person controls both. Confusing the concept of (different representations for this actor) with the concept of (different actors for the same logical person) seems like a mistake to me.</p>
+<p>On the specific spec language:</p>
+<aside class="quote no-group quote-modified" data-username="rhiaro" data-post="1" data-topic="907">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/rhiaro/40/17_2.png" class="avatar"> rhiaro:</div>
+<blockquote>
+<p>So we’re drafting a definition that we hope is agreeable to both the DID and ActivityPub communities:</p>
+<blockquote>
+<p>The value of <code>alsoKnownAs</code> MUST be a list (per [[<a href="https://infra.spec.whatwg.org/#lists">INFRA </a>]]) where each item in the list is a URI conforming to [[<a href="https://tools.ietf.org/html/rfc3986">RFC3986 </a>]].</p>
+<p>This relationship is a statement that the subject of this identifier is also identified by one or more other identifiers.</p>
+</blockquote>
+</blockquote>
+</aside>
+<p>I haven’t read the DID spec yet, but since AS2 is defined as basically a RDF vocabulary, i think it’s inappropriate to use the WHATWG definition of list here, since it doesn’t mesh with any of the other AP or AS2 specs. For example, <code>alsoKnownAs</code> relationships aren’t ordered in a JSON-LD document. Instead, I would probably recommend just describing it as a (non-<a href="https://www.w3.org/TR/activitystreams-vocabulary/#properties">Functional</a>) relationship with a domain of Actor and a range of Actor.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/10</link>
+        <pubDate>Thu, 10 Sep 2020 20:31:18 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-907-10</guid>
+        <source url="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907.rss">Defining alsoKnownAs</source>
+      </item>
+      <item>
+        <title>Defining alsoKnownAs</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>I fully agree to <a class="mention" href="/u/macgirvin">@macgirvin</a> because currently redaktor supports an <code>url</code> array as well.<br>
+I also have to say that it is pretty frustrating for another AP implementor that Mastodon does not care to become AP <a href="https://www.w3.org/TR/activitypub/#conformance">“conformant”</a> -</p>
+<p>The spec clearly says which things are “Functional” (can’t be an array) which means that other properties like <code>url</code> should be supported.<br>
+In terms of <code>url</code> the caption says it explicitly “Identifies one <strong>or more</strong> links to representations of the object” !<br>
+In some implementations it is just an issue of the UI. It could simply map an array or <code>Collection</code> to <code>&lt;ul&gt;</code> and <code>OrderedCollection</code> to <code>&lt;ol&gt;</code> and then add some CSS …</p>
+<hr>
+<p>However:<br>
+Personally I disagree that it is different from <code>url</code> –<br>
+<strong>I would clearly go with <code>url</code> !</strong></p>
+<p>The <code>rel</code> (relation) property in a <code>Link</code> is where we should specify such link relations !<br>
+E.g.: For redaktor <code>rel="me"</code> does the trick to lookup other “profiles” (but the protocol isn’t clear at this point)<br>
+or How about specifying <code>alsoKnownAs</code> as a <a href="https://www.iana.org/assignments/link-relations/link-relations.xhtml">link relation</a> ?</p>
+<hr>
+<p>please let me add</p>
+<blockquote>
+<p>I don’t have time to recheck every platform again and see which ones work and which don’t</p>
+</blockquote>
+<p>exactly the same. This is why I don’t care anymore while I am building a generic AP conformant server and client/UI …<br>
+I will have a look in the end if/how we can satisfy the limits of others (or if maybe not).</p>
+<hr>
+<p>Most important : The computer says this is the first time that “rhiaro” posted here.<br>
+<strong>This is awesome.</strong> <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/partying_face.png?v=9" title=":partying_face:" class="emoji" alt=":partying_face:"> Yay. Hooray.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/9</link>
+        <pubDate>Thu, 10 Sep 2020 10:16:49 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-907-9</guid>
+        <source url="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907.rss">Defining alsoKnownAs</source>
+      </item>
+      <item>
+        <title>Defining alsoKnownAs</title>
+        <dc:creator><![CDATA[macgirvin]]></dc:creator>
+        <description><![CDATA[
+            <p>It’s complicated. Originally we used url but early on in the activitypub world a number of  projects crashed when encountering an array instead of a single URI. In fact Mastodon was at one time the only project besides my own that didn’t crash in this case. Things have probably changed since then, but as long as Mastodon was using alsoKnownAs for their form of migration, I just copied for our completely different form of migration. I haven’t gone back to using an array for ‘url’  because frankly I don’t have time to recheck every platform again and see which ones work and which don’t.  Even after filing numerous bugs against a number of projects, most ignored the bug reports for months because Mastodon didn’t send an array and that’s all the compatibility they cared about. Those that didn’t fix their code noticed that we reverted to a single URI instead of an array (so we wouldn’t have to wait for months for them to fix their code) and closed the bug as no longer an issue.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/8</link>
+        <pubDate>Thu, 10 Sep 2020 00:47:17 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-907-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907.rss">Defining alsoKnownAs</source>
+      </item>
+      <item>
+        <title>Defining alsoKnownAs</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/rhiaro">@rhiaro</a>, maybe you could directly ping ppl in the Zap and Mastodon teams (see Groups in the menu). I don’t know how often they check the forum (and in how much hurry you are to get feedback <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"> )</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/7</link>
+        <pubDate>Tue, 08 Sep 2020 12:05:42 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-907-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907.rss">Defining alsoKnownAs</source>
+      </item>
+      <item>
+        <title>Defining alsoKnownAs</title>
+        <dc:creator><![CDATA[rhiaro]]></dc:creator>
+        <description><![CDATA[
+            <p><code>url</code> is a more specific kind of thing than we’re trying to capture, and isn’t necessarily an identifier for the person/org/thing whose profile it is on.</p>
+<p>The point really is that Mastodon and Zot are <em>already</em> using <code>alsoKnownAs</code> even though it wasn’t in the vocab - could they have used <code>streams</code> or <code>url</code> for their profile portability use case? I suspect not, the meanings of these things are all different, less precise than <code>alsoKnownAs</code>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/6</link>
+        <pubDate>Tue, 08 Sep 2020 08:48:46 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-907-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907.rss">Defining alsoKnownAs</source>
+      </item>
+      <item>
+        <title>Defining alsoKnownAs</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>I see. But i don’t fully understand why we need an extra property in AP vocab.<br>
+E.g. if you say</p>
+<blockquote>
+<p>refers to another identifier for entity itself</p>
+</blockquote>
+<p>In ActivityPub there is <code>url</code> 	<br>
+<em>Identifies one or more links to representations of the object</em></p>
+<p>The difference is that it MAY be a list …</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/5</link>
+        <pubDate>Tue, 08 Sep 2020 08:32:38 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-907-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907.rss">Defining alsoKnownAs</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Issue tracker for CPub?</title>
+    <link>https://socialhub.activitypub.rocks/t/issue-tracker-for-cpub/615</link>
+    <description>Ohay, I&#39;m wondering about an issue tracker for CPub, since I&#39;m bumping into an install issue and cannot find an issue tracker in the repository.
+
+```
+mix ecto.setup
+
+18:09:56.469 [error] GenServer #PID&lt;0.251.0&gt; terminating
+** (Postgrex.Error) FATAL 28P01 (invalid_password) password authentication failed for user &quot;postgres&quot;
+    (db_connection 2.1.1) lib/db_connection/connection.ex:87: DBConnection.Connection.connect/2
+    (connection 1.0.4) lib/connection.ex:622: Connection.enter_connect/5
+    (stdlib 3.12.1) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+Last message: nil
+State: Postgrex.Protocol
+** (Mix) The database for CPub.Repo couldn&#39;t be created: killed
+```
+
+Since I&#39;m on Debian, peer authentication is used by default.</description>
+    
+    <lastBuildDate>Wed, 15 Apr 2020 07:25:13 +0000</lastBuildDate>
+    <category>openEngiadina</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/issue-tracker-for-cpub/615.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Issue tracker for CPub?</title>
+        <dc:creator><![CDATA[pukkamustard]]></dc:creator>
+        <description><![CDATA[
+            <p>I just enabled the issue tracker on GitLab: <a href="https://gitlab.com/openengiadina/cpub/-/issues" rel="nofollow noopener">https://gitlab.com/openengiadina/cpub/-/issues</a></p>
+<p>Seems to be a issue with the <code>mix ecto.create</code> task with peer authentication. Unfortunately, I think the solution is to change the PostgreSQL config to allow password authentication from localhost. See also this issue on the Pleroma issue tracker: <a href="https://git.pleroma.social/pleroma/pleroma/issues/232" rel="nofollow noopener">https://git.pleroma.social/pleroma/pleroma/issues/232</a>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/issue-tracker-for-cpub/615/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/issue-tracker-for-cpub/615/2</link>
+        <pubDate>Wed, 15 Apr 2020 07:25:13 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-615-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/issue-tracker-for-cpub/615.rss">Issue tracker for CPub?</source>
+      </item>
+      <item>
+        <title>Issue tracker for CPub?</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Ohay, I’m wondering about an issue tracker for CPub, since I’m bumping into an install issue and cannot find an issue tracker in the repository.</p>
+<pre><code class="lang-auto">mix ecto.setup
+
+18:09:56.469 [error] GenServer #PID&lt;0.251.0&gt; terminating
+** (Postgrex.Error) FATAL 28P01 (invalid_password) password authentication failed for user "postgres"
+    (db_connection 2.1.1) lib/db_connection/connection.ex:87: DBConnection.Connection.connect/2
+    (connection 1.0.4) lib/connection.ex:622: Connection.enter_connect/5
+    (stdlib 3.12.1) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+Last message: nil
+State: Postgrex.Protocol
+** (Mix) The database for CPub.Repo couldn't be created: killed
+</code></pre>
+<p>Since I’m on Debian, peer authentication is used by default.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/issue-tracker-for-cpub/615/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/issue-tracker-for-cpub/615/1</link>
+        <pubDate>Tue, 14 Apr 2020 18:04:46 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-615-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/issue-tracker-for-cpub/615.rss">Issue tracker for CPub?</source>
+      </item>
+  </channel>
+</rss>

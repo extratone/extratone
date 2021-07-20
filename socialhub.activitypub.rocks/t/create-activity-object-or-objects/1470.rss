@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Create Activity (Object or Objects)</title>
+    <link>https://socialhub.activitypub.rocks/t/create-activity-object-or-objects/1470</link>
+    <description>Hello all,
+I am wondering in relation to the ActivityPub specification specifically on C2s, but is more general.
+
+When I create an activity, I actually create an object. And does the specification specify that this object should be exactly ONE object? Or can it be an object that links other objects?
+
+I add an example (without surrounding activity!)
+
+    @prefix output-file: &lt;http://www.w3.org/ns/person#&gt; .
+    @prefix schema: &lt;http://schema.org/&gt; .
+    @prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+    @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+    @prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+    @prefix SLR: &lt;http://xxxxxxxxxxx/ns/slr#&gt; .
+    @prefix as: &lt;http://www.w3.org/ns/activitystreams#&gt; .
+    @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+    &lt;http://example.com/rootObjectToAdd&gt; a SLR:CreateActor;
+      &lt;http://www.w3.org/2005/01/wf/flow#assignee&gt; &lt;http://localhost:8082/actors/4c207e4d-4b66-4a38-afa9-ec626a9f7a51&gt;;
+      as:object &lt;http://example.com/actors/33333333&gt;;
+      as:to &lt;http://localhost:8082/actors/4d055143-83c7-423e-bf5e-312e4443f467&gt; .
+
+    &lt;http://example.com/actors/33333333&gt; a as:Object;
+      as:name &quot;33333333&quot; .
+
+And how does the C2S create activity has to handle that? Just create the Object ```
+http://example.com/rootObjectToAdd
+``` and ignore ```http://example.com/actors/33333333``` or save both objects.
+
+Fredy
+
+![sample|261x361](upload://Jqb77R8XZdgzu9o9LDiG3kCqRg.png)</description>
+    
+    <lastBuildDate>Wed, 14 Apr 2021 14:02:13 +0000</lastBuildDate>
+    <category>ActivityPub</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/create-activity-object-or-objects/1470.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Create Activity (Object or Objects)</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <p>I wonder if there should not be a connection between activities.<br>
+Suppose a client app creates an activity in Leo’s outbox.<br>
+The server delivers this activity to the receivers and in the receivers inbox there is (more or less) a “copy” of the activity with a new id.<br>
+I have the need to link the activities with the <code>attributedTo</code> property.</p>
+<pre><code>ns2:activity237 as:attributedTo ns1:activity249
+ns1:activity249 as:attributedTo ns2:activity237
+</code></pre>
+<p>Is there anything in your opinion for or against this?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/create-activity-object-or-objects/1470/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/create-activity-object-or-objects/1470/6</link>
+        <pubDate>Wed, 14 Apr 2021 14:02:13 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1470-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/create-activity-object-or-objects/1470.rss">Create Activity (Object or Objects)</source>
+      </item>
+      <item>
+        <title>Create Activity (Object or Objects)</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <p>currently i read <a href="https://www.w3.org/TR/activitypub/#partial-updates" rel="noopener nofollow ugc">6.3 partial-updates</a></p>
+<blockquote>
+<p>This only applies to the top-level fields of the updated object.</p>
+</blockquote>
+<p>I understand that like “an object can have sub-objects” as in my example above.<br>
+But that doesn’t make it clearer, rather the opposite.</p>
+<p>Fredy</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/create-activity-object-or-objects/1470/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/create-activity-object-or-objects/1470/5</link>
+        <pubDate>Tue, 06 Apr 2021 14:35:49 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1470-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/create-activity-object-or-objects/1470.rss">Create Activity (Object or Objects)</source>
+      </item>
+      <item>
+        <title>Create Activity (Object or Objects)</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-redaktor.me" data-username="Sebastian" data-post="2" data-topic="1470">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar"> Sebastian:</div>
+<blockquote>
+<p>hackathon</p>
+</blockquote>
+</aside>
+<p>i’m not so convinced about hackathons and can’t imagine how a hackathon is supposed to clarify questions that arise during implementation.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/create-activity-object-or-objects/1470/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/create-activity-object-or-objects/1470/4</link>
+        <pubDate>Tue, 06 Apr 2021 10:18:17 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1470-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/create-activity-object-or-objects/1470.rss">Create Activity (Object or Objects)</source>
+      </item>
+      <item>
+        <title>Create Activity (Object or Objects)</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-redaktor.me" data-username="Sebastian" data-post="2" data-topic="1470">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar"> Sebastian:</div>
+<blockquote>
+<p>It seems a rarely happening very short Social CG makes little sense.<br>
+There are so many C2S questions and we decided to have a hackathon about that.<br>
+Is now the time?</p>
+</blockquote>
+</aside>
+<p>are all these questions summarized somewhere?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/create-activity-object-or-objects/1470/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/create-activity-object-or-objects/1470/3</link>
+        <pubDate>Tue, 06 Apr 2021 09:17:12 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1470-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/create-activity-object-or-objects/1470.rss">Create Activity (Object or Objects)</source>
+      </item>
+      <item>
+        <title>Create Activity (Object or Objects)</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>I have similar questions (e.g. what if I create a <a href="https://www.w3.org/TR/activitystreams-vocabulary/#dfn-collection">Collection</a>) and it has Objects which are not created yet …</p>
+<p>It seems a rarely happening very short Social CG makes little sense.<br>
+There are so many C2S questions and we decided to have a hackathon about that.<br>
+Is now the time?</p>
+<aside class="quote" data-post="12" data-topic="981">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/implementing-activitypub-client-to-server/981/12">Implementing ActivityPub Client-to-Server</a> <a class="badge-wrapper  box" href="/c/meeting/apconf2020/53"><span class="badge-category-parent-bg" style="background-color: #0E76BD;"></span><span class="badge-category-bg" style="background-color: #ff7a00;"></span><span style="color: #ffffff" data-drop-close="true" class="badge-category clear-badge" title="Add your proposals for the Conf by creating a New Topic –
+Tag it #bof for Birds of Feather sessions or #hackathon for Hack proposals …">ActivityPub Conference 2020</span></a>
+  </div>
+  <blockquote>
+    Do we do this and when?
+  </blockquote>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/create-activity-object-or-objects/1470/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/create-activity-object-or-objects/1470/2</link>
+        <pubDate>Fri, 26 Feb 2021 09:08:20 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1470-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/create-activity-object-or-objects/1470.rss">Create Activity (Object or Objects)</source>
+      </item>
+      <item>
+        <title>Create Activity (Object or Objects)</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello all,<br>
+I am wondering in relation to the ActivityPub specification specifically on C2s, but is more general.</p>
+<p>When I create an activity, I actually create an object. And does the specification specify that this object should be exactly ONE object? Or can it be an object that links other objects?</p>
+<p>I add an example (without surrounding activity!)</p>
+<pre><code>@prefix output-file: &lt;http://www.w3.org/ns/person#&gt; .
+@prefix schema: &lt;http://schema.org/&gt; .
+@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix SLR: &lt;http://xxxxxxxxxxx/ns/slr#&gt; .
+@prefix as: &lt;http://www.w3.org/ns/activitystreams#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+&lt;http://example.com/rootObjectToAdd&gt; a SLR:CreateActor;
+  &lt;http://www.w3.org/2005/01/wf/flow#assignee&gt; &lt;http://localhost:8082/actors/4c207e4d-4b66-4a38-afa9-ec626a9f7a51&gt;;
+  as:object &lt;http://example.com/actors/33333333&gt;;
+  as:to &lt;http://localhost:8082/actors/4d055143-83c7-423e-bf5e-312e4443f467&gt; .
+
+&lt;http://example.com/actors/33333333&gt; a as:Object;
+  as:name "33333333" .
+</code></pre>
+<p>And how does the C2S create activity has to handle that? Just create the Object <code>http://example.com/rootObjectToAdd</code> and ignore <code>http://example.com/actors/33333333</code> or save both objects.</p>
+<p>Fredy</p>
+<p><img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/0522712f5e0aa545dc4676d7bb711c915535df7e.png" alt="sample" data-base62-sha1="Jqb77R8XZdgzu9o9LDiG3kCqRg" width="261" height="361"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/create-activity-object-or-objects/1470/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/create-activity-object-or-objects/1470/1</link>
+        <pubDate>Thu, 25 Feb 2021 17:27:47 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1470-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/create-activity-object-or-objects/1470.rss">Create Activity (Object or Objects)</source>
+      </item>
+  </channel>
+</rss>

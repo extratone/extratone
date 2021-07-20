@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Kazarma - SocialHub</title>
+    <link>https://socialhub.activitypub.rocks/c/software/kazarma/64</link>
+    <description>Topics in the &#39;Kazarma&#39; category A Matrix-ActivityPub bridge</description>
+    
+      <lastBuildDate>Tue, 20 Apr 2021 19:18:30 +0000</lastBuildDate>
+      <atom:link href="https://socialhub.activitypub.rocks/c/software/kazarma/64.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>About Kazarma</title>
+          <dc:creator><![CDATA[pdelacroix]]></dc:creator>
+          <category>Kazarma</category>
+          <description><![CDATA[
+            <p>A Matrix-ActivityPub bridge</p>
+<p><a href="https://gitlab.com/kazarma/kazarma/" rel="noopener nofollow ugc">https://gitlab.com/kazarma/kazarma/</a></p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/about-kazarma/1631">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/about-kazarma/1631</link>
+          <pubDate>Tue, 20 Apr 2021 19:18:30 +0000</pubDate>
+          <discourse:topicPinned>Yes</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1631</guid>
+          <source url="https://socialhub.activitypub.rocks/t/about-kazarma/1631.rss">About Kazarma</source>
+        </item>
+  </channel>
+</rss>

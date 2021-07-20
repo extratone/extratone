@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!-- Just a bit of an experiment today right now-->
+<head>
+
+	
+	<title>Second Page</title>
+	
+	<meta name="description" content="Epub javascript and design experiementation" />
+	
+	<meta name="author" content="Baldur Bjarnason" />
+	<meta name="Copyright" content="Copyright Baldur Bjarnason 2010. All Rights Reserved." />
+
+	<meta name="DC.title" content="Test 1" />
+	<meta name="DC.creator" content="Baldur Bjarnason" />
+	<link rel="stylesheet" href="style.css" />
+
+    <script src="jquery.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
+    <style type="text/css">
+h3 {page-break-before: always;}
+</style>
+
+</head>
+
+<body id="titlepage">
+
+<div id="book">
+	<h1>This page tests whether cross document messaging works</h1>
+	
+<p><a class="popup" href="popup2.html">A link to the popup</a></p>
+<p><a class="popup" href="popup2.html" target="pop">A link to the popup with a target set</a></p>
+<p><a class="popup" href="popup2.html" target="_blank">A link to the popup with a target set to _blank</a></p>
+<p><a class="opener" href="popup2.html">A link to the popup using window.open()</a></p>
+<p class="results">The result should appear here.</p>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>The ActivityPub Test suite</title>
+    <link>https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/996</link>
+    <description>In the Hackathon let us heal that Open Wound
+
+https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290</description>
+    
+    <lastBuildDate>Mon, 05 Oct 2020 09:40:22 +0000</lastBuildDate>
+    <category>ActivityPub Conference 2020</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/996.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>The ActivityPub Test suite</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <h1>Shared Notes from the session</h1>
+<p><a href="https://test.activitypub.dev/" class="onebox" target="_blank" rel="noopener nofollow ugc">https://test.activitypub.dev/</a></p>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://github.githubassets.com/favicons/favicon.svg" class="site-icon" width="32" height="32">
+      <a href="https://github.com/go-fed/testsuite" target="_blank" rel="noopener nofollow ugc">GitHub</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/8278a9abf61fdc4a288de403428ea73f6ba2e20e.png" class="thumbnail onebox-avatar" width="400" height="400">
+
+<h3><a href="https://github.com/go-fed/testsuite" target="_blank" rel="noopener nofollow ugc">go-fed/testsuite</a></h3>
+
+<p>Unofficial ActivityPub test suite server, which runs machine-assisted test cases against federated software. - go-fed/testsuite</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p><strong>Others</strong> :</p>
+<p>Feneas + GangGo has other test suite options:</p>
+<ul>
+<li>
+<p><a href="https://testsuite.feneas.org/" rel="noopener nofollow ugc">https://testsuite.feneas.org/</a></p>
+</li>
+<li>
+<p><a href="https://feneas.org/federation-testsuite/" rel="noopener nofollow ugc">https://feneas.org/federation-testsuite/</a></p>
+</li>
+</ul>
+<p>Relation: Ganggo author + cj have connected previously</p>
+<p>PixelFed’s Dansup:</p>
+<ul>
+<li><a href="https://fedidb.org/about" rel="noopener nofollow ugc">https://fedidb.org/about</a></li>
+</ul>
+<p><strong>Questions</strong> :</p>
+<p>Will the test suite ever be considered to be the official test suite?</p>
+<ul>
+<li>Unknown but the first step of being linked by test.activitypub.rocks is a step towards that</li>
+</ul>
+<p><strong>Feedback</strong> :</p>
+<aside class="onebox githubissue">
+  <header class="source">
+      <a href="https://github.com/go-fed/testsuite/issues/9" target="_blank" rel="noopener nofollow ugc">github.com/go-fed/testsuite</a>
+  </header>
+  <article class="onebox-body">
+    <div class="github-row">
+  <div class="github-icon-container" title="Issue">
+	  <svg width="60" height="60" class="github-icon" viewBox="0 0 14 16" aria-hidden="true"><path d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
+  </div>
+
+  <div class="github-info-container">
+    <h4>
+      <a href="https://github.com/go-fed/testsuite/issues/9" target="_blank" rel="noopener nofollow ugc">Feature: Build Pedagogy intro the Test Report</a>
+    </h4>
+
+    <div class="github-info">
+      <div class="date">
+        opened <span class="discourse-local-date" data-format="ll" data-date="2020-10-04" data-time="13:19:10" data-timezone="UTC">01:19PM - 04 Oct 20 UTC</span>
+      </div>
+
+
+      <div class="user">
+        <a href="https://github.com/hellekin" target="_blank" rel="noopener nofollow ugc">
+          <img alt="hellekin" src="https://socialhub.activitypub.rocks/uploads/default/original/1X/595cdb0eae384f1006ff7edb1cad0fc784a831f8.png" class="onebox-avatar-inline" width="20" height="20">
+          hellekin
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="github-row">
+  <p class="github-content">A failing test report provides indication of the kind of (failing) feature being tested: MUST, SHOULD, MAY...
+A successful test report shows...</p>
+</div>
+
+<div class="labels">
+</div>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/996/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/996/6</link>
+        <pubDate>Sun, 04 Oct 2020 13:52:45 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-996-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/996.rss">The ActivityPub Test suite</source>
+      </item>
+      <item>
+        <title>The ActivityPub Test suite</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/cjs">@cjs</a> mentioned another testing tool that’s currently in private beta:<br>
+</p><aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <a href="https://fedidb.org/" target="_blank" rel="noopener">fedidb.org</a>
+  </header>
+  <article class="onebox-body">
+    <img src="" class="thumbnail" width="20" height="20">
+
+<h3><a href="https://fedidb.org/" target="_blank" rel="noopener">FediDB - ActivityPub Tools for Developers</a></h3>
+
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p><a class="mention" href="/u/dansup">@dansup</a> I guess you’re related to this <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/996/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/996/5</link>
+        <pubDate>Sun, 04 Oct 2020 13:40:07 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-996-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/996.rss">The ActivityPub Test suite</source>
+      </item>
+      <item>
+        <title>The ActivityPub Test suite</title>
+        <dc:creator><![CDATA[marnanel]]></dc:creator>
+        <description><![CDATA[
+            <p>c&amp;p from my reply elsewhere:</p>
+<p>I think a test suite naturally falls into two parts. One part checks protocols which can be accessed anonymously. This involves AP services such as looking up a user’s inbox and paging throug it, as well as non-AP services commonly used with AP, such as webfinger and the other .well-known services.</p>
+<p>The other, more complicated part, checks AP support. This will need to be able to create ephemeral accounts on the fly (like <code>test1234@validator.example.com</code>), each lasting a few hours, and allow you to follow them and send them messages, with a dashboard showing what has been received.</p>
+<p>You should also be able to request that the accounts send you messages— but not to set the content, to stop the validator being used as an anonymous message service. For similar reasons, I’m also supposing that each temporary account would be locked into communicating with a single server, specified at creation time.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/996/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/996/4</link>
+        <pubDate>Fri, 02 Oct 2020 16:04:44 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-996-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/996.rss">The ActivityPub Test suite</source>
+      </item>
+      <item>
+        <title>The ActivityPub Test suite</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Basically that was my idea.<br>
+The hackathon will be quite “timeless”.<br>
+I just wanted to have a “place” where implementors can come together and debate code or designers can talk about UI issues or anyone helps each other …<br>
+It is more meant as an “incubator” …</p>
+<p>So we will work around the repo.</p>
+<p>Also due to the fact that we asked many organisations for some awesome prices but that did unfortunately not work for [all of the reasons] which can appear in form letters …</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/996/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/996/3</link>
+        <pubDate>Fri, 02 Oct 2020 09:57:18 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-996-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/996.rss">The ActivityPub Test suite</source>
+      </item>
+      <item>
+        <title>The ActivityPub Test suite</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <p>I won’t be able to attend the hackathon but do accept PRs on the <a href="https://github.com/go-fed/testsuite" rel="nofollow noopener">unofficial test suite</a> at <a href="https://test.activitypub.dev/" rel="nofollow noopener">https://test.activitypub.dev/</a> which I believe based on talking with <a class="mention" href="/u/cwebber">@cwebber</a> a week ago will be where the official test suite redirects to (soon).</p>
+<p>There’s some bugs I’ve already filed against the repo. Happy to discuss the app’s architecture if needed.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/996/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/996/2</link>
+        <pubDate>Fri, 02 Oct 2020 09:48:31 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-996-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/996.rss">The ActivityPub Test suite</source>
+      </item>
+      <item>
+        <title>The ActivityPub Test suite</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>In the Hackathon let us heal that Open Wound</p>
+<aside class="quote quote-modified" data-post="1" data-topic="290">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/cwebber/40/51_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290">The ActivityPub test suite</a> 
+  </div>
+  <blockquote>
+    test.activitypub.rocks has been down for a long time, as pretty much everyone knows.  More or less it’s server issues, and I can be blamed since I run the server (and wrote the test suite). 
+Why hasn’t it gone back up though?  Mainly because I’m a) very busy b) know how poor the test suite is at fulfilling the needs of the community and that makes it hard to feel motivated to put in the work. 
+Here are some quirks about test.activitypub.rocks: 
+
+It was done in a rush to meet the standards deadli…
+  </blockquote>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/996/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/996/1</link>
+        <pubDate>Fri, 02 Oct 2020 09:43:00 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-996-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/996.rss">The ActivityPub Test suite</source>
+      </item>
+  </channel>
+</rss>

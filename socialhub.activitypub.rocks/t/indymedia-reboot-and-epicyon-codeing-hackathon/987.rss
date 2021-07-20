@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Indymedia reboot and epicyon codeing - hackathon</title>
+    <link>https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987</link>
+    <description>Template and back end work on the epicyon https://epicyon.net/ activertypub code base to make a village/street level indymedia news site based on the OMN project.
+
+We plan to get a test activertypub news site online by the end of the week, if your not sure how it should work watch the video https://conf.tube/videos/watch/953de898-74dc-4665-95fb-313042f66cc6?start=
+
+**Todo:**
+
+* Add or check emoji. Many are implemented, but it might not be very comprehensive.
+
+* Figure out the workflow for incoming moderated posts.
+
+* Artwork for themes. Backgrounds, banners, icon sets, fonts. Get as creative as you want. Instance appearance doesn’t retain users but it’s an initial “this might be interesting” sign.
+
+* Fix polls, which currently don’t work very well. How are polls supposed to work at the protocol level?
+
+* Add or fix translations. Translate the website or the Gemini site.
+
+* Testing with i2p. Are there any new bugs?
+
+* Change the way that events are displayed, also ideas for how rsvp should be implemented. Is there any consensus on this?
+
+We need to think about a database driven activertypub code base for bigger sites as well[](upload://38d1GfRQ9hQcGALyk4agZ2aqSYI.jpeg)
+
+https://socialhub.activitypub.rocks/t/the-reboot-of-the-indymedia-project/942?u=hamishcampbell</description>
+    
+    <lastBuildDate>Sun, 11 Oct 2020 20:13:33 +0000</lastBuildDate>
+    <category>ActivityPub Conference 2020</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Indymedia reboot and epicyon codeing - hackathon</title>
+        <dc:creator><![CDATA[bashrc]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes you can make issues there if you prefer. I can pull in PRs from anywhere if they occur.</p>
+<p>Matrix is decentralized, like the fediverse, so it doesn’t matter which homeserver you join. Search for <span class="hashtag">#epicyon:matrix</span>.freedombone.net</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987/16</link>
+        <pubDate>Sun, 11 Oct 2020 20:13:33 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-987-16</guid>
+        <source url="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987.rss">Indymedia reboot and epicyon codeing - hackathon</source>
+      </item>
+      <item>
+        <title>Indymedia reboot and epicyon codeing - hackathon</title>
+        <dc:creator><![CDATA[decentral1se]]></dc:creator>
+        <description><![CDATA[
+            <p>Ah ok! Although <a class="mention" href="/u/hamishcampbell">@hamishcampbell</a> recommended that I see/create issues over @ <a href="https://unite.openworlds.info/indymedia/epicyon" rel="noopener nofollow ugc">https://unite.openworlds.info/indymedia/epicyon</a>. Are you both (or whoever is doing this project) active/responsive to @'s there? Also re: matrix server, if not public then how do I join? I guess public would be easier, especially from a perspective of getting other people involved. Just trying to figure out the lay of the land.</p>
+<p>EDIT: re: matrix server, its advertised as the place to come and chat on <a href="https://epicyon.net" rel="noopener nofollow ugc">https://epicyon.net</a>, so I assumed it would be public.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987/15</link>
+        <pubDate>Sun, 11 Oct 2020 17:59:56 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-987-15</guid>
+        <source url="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987.rss">Indymedia reboot and epicyon codeing - hackathon</source>
+      </item>
+      <item>
+        <title>Indymedia reboot and epicyon codeing - hackathon</title>
+        <dc:creator><![CDATA[bashrc]]></dc:creator>
+        <description><![CDATA[
+            <p>At present it’s best to add issues on <a href="https://gitlab.com/bashrc2/epicyon" rel="noopener nofollow ugc">https://gitlab.com/bashrc2/epicyon</a>. My own server doesn’t have the capacity to handle a lot of git cloning of large repos. The matrix server should be operational, but it’s not a public server.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987/14</link>
+        <pubDate>Sun, 11 Oct 2020 16:00:55 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-987-14</guid>
+        <source url="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987.rss">Indymedia reboot and epicyon codeing - hackathon</source>
+      </item>
+      <item>
+        <title>Indymedia reboot and epicyon codeing - hackathon</title>
+        <dc:creator><![CDATA[decentral1se]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey folks, trying to catch up with development of Epicyon and can’t seem to access the Matrix server @ <a href="http://matrix.freedombone.net" rel="noopener nofollow ugc">matrix.freedombone.net</a> (currently 403’ing) and I see that <a href="https://code.freedombone.net" rel="noopener nofollow ugc">https://code.freedombone.net</a> has also no public sign-ups or open issues on what is being worked on. So, from a developer on-boarding perspective, it is a bit tricky. I’m up for throwing in a bit of time into this if I can, so just letting you know that it is a bit hard right now. Thanks for the great initiative.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987/13</link>
+        <pubDate>Sun, 11 Oct 2020 15:52:57 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-987-13</guid>
+        <source url="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987.rss">Indymedia reboot and epicyon codeing - hackathon</source>
+      </item>
+      <item>
+        <title>Indymedia reboot and epicyon codeing - hackathon</title>
+        <dc:creator><![CDATA[hamishcampbell]]></dc:creator>
+        <description><![CDATA[
+            <p><div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/1X/51fd599c3c06ee0c833451e82f867a4ae6fdbe5c.jpeg" data-download-href="https://socialhub.activitypub.rocks/uploads/default/51fd599c3c06ee0c833451e82f867a4ae6fdbe5c" title="indymedia"><img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/51fd599c3c06ee0c833451e82f867a4ae6fdbe5c.jpeg" alt="indymedia" data-base62-sha1="bHjts95fBQH25n5Or5LPgoKzeAA" width="690" height="318" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/51fd599c3c06ee0c833451e82f867a4ae6fdbe5c_2_10x10.png"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">indymedia</span><span class="informations">1000×462 76.1 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg></div></a></div> we have a retro interface <span class="hashtag">#indymediaback</span></p>
+<p>We will need some UX crew to do a modern one as well soon.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987/12</link>
+        <pubDate>Sat, 10 Oct 2020 13:36:01 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-987-12</guid>
+        <source url="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987.rss">Indymedia reboot and epicyon codeing - hackathon</source>
+      </item>
+      <item>
+        <title>Indymedia reboot and epicyon codeing - hackathon</title>
+        <dc:creator><![CDATA[hamishcampbell]]></dc:creator>
+        <description><![CDATA[
+            <p>Think the were 5 used codebases and a few verations working over indymedia history, the is a page some were <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>In the UK the were all these IMC running on the same server, running java based Mear, just with different front ends<br>
+Birmingham</p>
+<p>Cambridge</p>
+<p>Liverpool</p>
+<p>London</p>
+<p>Oxford</p>
+<p>Sheffield</p>
+<p>South Coast</p>
+<p>Wales</p>
+<p><a href="http://hamishcampbell.com/index.php/2020/10/08/how-should-the-hyper-local-indymedia-rollout/" class="onebox" target="_blank" rel="noopener nofollow ugc">http://hamishcampbell.com/index.php/2020/10/08/how-should-the-hyper-local-indymedia-rollout/</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987/11</link>
+        <pubDate>Thu, 08 Oct 2020 09:56:41 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-987-11</guid>
+        <source url="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987.rss">Indymedia reboot and epicyon codeing - hackathon</source>
+      </item>
+      <item>
+        <title>Indymedia reboot and epicyon codeing - hackathon</title>
+        <dc:creator><![CDATA[hamishcampbell]]></dc:creator>
+        <description><![CDATA[
+            <p>Its interesting to think about this, but likely not useful as almost all these decisions are made at the user/affinity group level and our mission is to build tools that allow them to take different paths, that still interop - activertypub.</p>
+<p>In the indymedia project most decisions already have a default - thus more a historian thinking, how did it used to work is the question… and its more complex than that - as how did it work at the successful start and how did it work at the dieing end is also a argument we do not wont to repeat <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987/10</link>
+        <pubDate>Thu, 08 Oct 2020 08:29:54 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-987-10</guid>
+        <source url="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987.rss">Indymedia reboot and epicyon codeing - hackathon</source>
+      </item>
+      <item>
+        <title>Indymedia reboot and epicyon codeing - hackathon</title>
+        <dc:creator><![CDATA[saunders]]></dc:creator>
+        <description><![CDATA[
+            <p>ok, this is great, to get a better sense of it’s reach.</p>
+<p>Tell me if this is too far off-topic in this particular thread.<br>
+But I would still be interested in determining some method for scaling.<br>
+These would, at the very least, be “recommended/ sensible” defaults.</p>
+<hr>
+<p>I believe that once a group of people (collaborating, or even just participating in the same space, digitally or physically) gets beyond a certain capacity, moderation, consensus and forward-moving discussion/action becomes near impossible (and maybe this is a <em>good</em> thing).</p>
+<p>Consider <em>any</em> species population on the planet. Once a certain scale is met, it will self-divide, or if not in it’s nature, it will be kept to a healthy size by a predator (do not anthropomorphise the word predator).</p>
+<h3>Example</h3>
+<p>Let’s assume a maximum size for any functioning community to be <code>150</code> (I lean toward slightly less, but it’s a more round-ish number).</p>
+<blockquote>
+<p><code>15,000</code> people choose to be involved within <em>one</em> IMC, and they do not wish to divide into several smaller (approx <code>67</code> IMC’s) - one option might be:</p>
+</blockquote>
+<ul>
+<li>
+<p>Divide the <code>15,000</code> into <code>100</code> “sub-IMC’s” (groups) of <code>150</code> members</p>
+<ul>
+<li>each work with an equal proportion of the data flows coming in and going out from the IMC (blogs, reports, toots, etc…)</li>
+<li>there is no division based on content</li>
+<li>each group should be capable of handling all content types</li>
+</ul>
+</li>
+<li>
+<p>Within each <code>150</code>, have tight “guilds” ranging (default) from <code>3-12</code> members</p>
+<ul>
+<li>for a particular sub-set of the data flows - maybe determined simply by a specific set of <code>#hashtags</code>
+</li>
+<li>
+<code>3</code> minimum, required for consensus</li>
+<li>
+<code>12</code> is already a risky maximum for being able to maintain reasonable consensus</li>
+</ul>
+</li>
+<li>
+<p>Each “guild” shall likely be “specialised” in their expertise</p>
+<ul>
+<li>multiple guilds may have the same specialty
+<ul>
+<li>sharing a proportion of the sub-set of data flows, <strong><em>or</em></strong> based on <span class="hashtag">#hashtag</span>, etc</li>
+</ul>
+</li>
+<li>consensus should be reached between related guilds
+<ul>
+<li>automatically propogated out when making decisions <em>within</em>  the guilds’ “specialty”</li>
+<li>before propagating out to the wider set of guilds - for IMC-related decisions</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Further “guild-level” consensus may be implemented between groups for manageable “web”- (as opposed to hierarchical) decision making for the IMC at large.</p>
+</li>
+<li>
+<p>Each of the <code>100</code> groups could similarly have a “web”-based decision making approach, in order to achieve consensus among the IMC in toto.</p>
+<ul>
+<li>at this level, should consensus be difficult to reach, particularly repeatedly, this would be a strong sign to split
+<ul>
+<li>obviously the splits would ideally remain connected as “trusted peers” within the larger network of IMC’s.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Regarding consensus, there could be more “levels” between “guild” through to “group”, but kept to a minimum here for brevity.</p>
+<ul>
+<li>sets of <code>3</code> “guilds” may have to first achieve consensus before</li>
+<li>here we enter realms of more complication that require more thought, and would be more diverse in approach between different IMC’s</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>Of course, I accept that an IMC might choose not to follow this, but I believe we would be utterly remiss if we were not to encourage this.</p>
+<p>If there is any level of agreement for this approach, I would happily discuss it further, as I feel it would greatly help in building a genuinely robust network, that may be resistant to the inevitable in-fighting and collapse of “oversized colonies”.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987/9</link>
+        <pubDate>Thu, 08 Oct 2020 05:01:59 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-987-9</guid>
+        <source url="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987.rss">Indymedia reboot and epicyon codeing - hackathon</source>
+      </item>
+      <item>
+        <title>Indymedia reboot and epicyon codeing - hackathon</title>
+        <dc:creator><![CDATA[hamishcampbell]]></dc:creator>
+        <description><![CDATA[
+            <p>Were recreating an existing project with all its structures and process in place.</p>
+<p>Indymedia worked at city level, regional/state level, national level and global level.</p>
+<p>We are adding an extra level the hyper local to this mix.</p>
+<p>We still need a code-base that works at city, regional, national and global.</p>
+<p>Its a big project for thousands if not 10’s of thousands of people to be involved</p>
+<p>This grew very fast, most in the first 3 years:</p>
+<p><strong>Other UK IMCs</strong><br>
+<a href="http://bristol.indymedia.org/" rel="noopener nofollow ugc">Bristol/South West</a><br>
+<a href="http://london.indymedia.org.uk/" rel="noopener nofollow ugc">London</a><br>
+<a href="http://northern-indymedia.org/" rel="noopener nofollow ugc">Northern Indymedia</a><br>
+<a href="http://scotland.indymedia.org/" rel="noopener nofollow ugc">Scotland</a></p>
+<h2>IMCs</h2>
+<p><a href="https://www.indymedia.org/" rel="noopener nofollow ugc">www.indymedia.org</a></p>
+<p><strong>Projects</strong><br>
+<a href="http://print.indymedia.org/" rel="noopener nofollow ugc">print</a><br>
+<a href="http://radio.indymedia.org/" rel="noopener nofollow ugc">radio</a><br>
+<a href="http://satellite.indymedia.org/" rel="noopener nofollow ugc">satellite tv</a><br>
+<a href="http://video.indymedia.org" rel="noopener nofollow ugc">video</a></p>
+<p><a href="http://imc-africa.mayfirst.org/" rel="noopener nofollow ugc">Africa</a></p>
+<p><strong>Europe</strong><br>
+<a href="http://antwerpen-indymedia.be" rel="noopener nofollow ugc">antwerpen</a><br>
+<a href="http://armenia.indymedia.org/" rel="noopener nofollow ugc">armenia</a><br>
+<a href="http://athens.indymedia.org/" rel="noopener nofollow ugc">athens</a><br>
+<a href="http://austria.indymedia.org/" rel="noopener nofollow ugc">austria</a><br>
+<a href="http://barcelona.indymedia.org/" rel="noopener nofollow ugc">barcelona</a><br>
+<a href="http://belarus.indymedia.org/" rel="noopener nofollow ugc">belarus</a><br>
+<a href="http://belgium.indymedia.org/" rel="noopener nofollow ugc">belgium</a><br>
+<a href="http://belgrade.indymedia.org" rel="noopener nofollow ugc">belgrade</a><br>
+<a href="http://bxl.indymedia.org" rel="noopener nofollow ugc">brussels</a><br>
+<a href="http://bulgaria.indymedia.org" rel="noopener nofollow ugc">bulgaria</a><br>
+<a href="http://calabria.indymedia.org" rel="noopener nofollow ugc">calabria</a><br>
+<a href="http://croatia.indymedia.org" rel="noopener nofollow ugc">croatia</a><br>
+<a href="http://cyprus.indymedia.org" rel="noopener nofollow ugc">cyprus</a><br>
+<a href="http://emiliaromagna.indymedia.org/" rel="noopener nofollow ugc">emilia-romagna</a><br>
+<a href="http://estrecho.indymedia.org" rel="noopener nofollow ugc">estrecho / madiaq</a><br>
+<a href="http://galiza.indymedia.org" rel="noopener nofollow ugc">galiza</a><br>
+<a href="http://de.indymedia.org/" rel="noopener nofollow ugc">germany</a><br>
+<a href="http://grenoble.indymedia.org" rel="noopener nofollow ugc">grenoble</a><br>
+<a href="http://hungary.indymedia.org" rel="noopener nofollow ugc">hungary</a><br>
+<a href="http://www.indymedia.ie/" rel="noopener nofollow ugc">ireland</a><br>
+<a href="http://istanbul.indymedia.org/" rel="noopener nofollow ugc">istanbul</a><br>
+<a href="http://italy.indymedia.org/" rel="noopener nofollow ugc">italy</a><br>
+<a href="http://laplana.indymedia.org" rel="noopener nofollow ugc">la plana</a><br>
+<a href="http://liege.indymedia.org" rel="noopener nofollow ugc">liege</a><br>
+<a href="http://liguria.indymedia.org" rel="noopener nofollow ugc">liguria</a><br>
+<a href="http://lille.indymedia.org" rel="noopener nofollow ugc">lille</a><br>
+<a href="http://linksunten.indymedia.org" rel="noopener nofollow ugc">linksunten</a><br>
+<a href="http://lombardia.indymedia.org/" rel="noopener nofollow ugc">lombardia</a><br>
+<a href="http://madrid.indymedia.org/" rel="noopener nofollow ugc">madrid</a><br>
+<a href="http://malta.indymedia.org" rel="noopener nofollow ugc">malta</a><br>
+<a href="http://marseille.indymedia.org" rel="noopener nofollow ugc">marseille</a><br>
+<a href="http://nantes.indymedia.org" rel="noopener nofollow ugc">nantes</a><br>
+<a href="http://napoli.indymedia.org" rel="noopener nofollow ugc">napoli</a><br>
+<a href="http://indymedia.nl" rel="noopener nofollow ugc">netherlands</a><br>
+<a href="http://northern.indymedia.org" rel="noopener nofollow ugc">northern england</a><br>
+<a href="https://nottingham.indymedia.org" rel="noopener nofollow ugc">nottingham imc</a><br>
+<a href="http://paris.indymedia.org/" rel="noopener nofollow ugc">paris/île-de-france</a><br>
+<a href="http://patras.indymedia.org/" rel="noopener nofollow ugc">patras</a><br>
+<a href="http://piemonte.indymedia.org" rel="noopener nofollow ugc">piemonte</a><br>
+<a href="http://poland.indymedia.org" rel="noopener nofollow ugc">poland</a><br>
+<a href="http://pt.indymedia.org/" rel="noopener nofollow ugc">portugal</a><br>
+<a href="http://roma.indymedia.org" rel="noopener nofollow ugc">roma</a><br>
+<a href="http://romania.indymedia.org" rel="noopener nofollow ugc">romania</a><br>
+<a href="http://russia.indymedia.org/" rel="noopener nofollow ugc">russia</a><br>
+<a href="http://sardegna.indymedia.org" rel="noopener nofollow ugc">sardegna</a><br>
+<a href="http://www.indymediascotland.org/" rel="noopener nofollow ugc">scotland</a><br>
+<a href="http://sweden.indymedia.org/" rel="noopener nofollow ugc">sverige</a><br>
+<a href="http://switzerland.indymedia.org/" rel="noopener nofollow ugc">switzerland</a><br>
+<a href="http://torun.indymedia.org/" rel="noopener nofollow ugc">torun</a><br>
+<a href="http://toscana.indymedia.org/" rel="noopener nofollow ugc">toscana</a><br>
+<a href="http://ukraine.indymedia.org/" rel="noopener nofollow ugc">ukraine</a><br>
+<a href="http://www.indymedia.org.uk/" rel="noopener nofollow ugc">united kingdom</a><br>
+<a href="http://valencia.indymedia.org" rel="noopener nofollow ugc">valencia</a></p>
+<p><strong>Latin America</strong><br>
+<a href="http://argentina.indymedia.org/" rel="noopener nofollow ugc">argentina</a><br>
+<a href="http://bolivia.indymedia.org/" rel="noopener nofollow ugc">bolivia</a><br>
+<a href="http://chiapas.indymedia.org/" rel="noopener nofollow ugc">chiapas</a><br>
+<a href="http://chile.indymedia.org" rel="noopener nofollow ugc">chile</a><br>
+<a href="http://chilesur.indymedia.org" rel="noopener nofollow ugc">chile sur</a><br>
+<a href="http://www.midiaindependente.org" rel="noopener nofollow ugc">cmi brasil</a><br>
+<a href="http://sucre.indymedia.org/" rel="noopener nofollow ugc">cmi sucre</a><br>
+<a href="http://colombia.indymedia.org/" rel="noopener nofollow ugc">colombia</a><br>
+<a href="http://ecuador.indymedia.org/" rel="noopener nofollow ugc">ecuador</a><br>
+<a href="http://mexico.indymedia.org/" rel="noopener nofollow ugc">mexico</a><br>
+<a href="http://peru.indymedia.org" rel="noopener nofollow ugc">peru</a><br>
+<a href="http://indymediapr.org" rel="noopener nofollow ugc">puerto rico</a><br>
+<a href="http://qollasuyu.indymedia.org/" rel="noopener nofollow ugc">qollasuyu</a><br>
+<a href="http://rosario.indymedia.org/" rel="noopener nofollow ugc">rosario</a><br>
+<a href="http://santiago.indymedia.org" rel="noopener nofollow ugc">santiago</a><br>
+<a href="http://tijuana.indymedia.org/" rel="noopener nofollow ugc">tijuana</a><br>
+<a href="http://uruguay.indymedia.org/" rel="noopener nofollow ugc">uruguay</a><br>
+<a href="http://valparaiso.indymedia.org" rel="noopener nofollow ugc">valparaiso</a><br>
+<a href="http://venezuela.indymedia.org/" rel="noopener nofollow ugc">venezuela</a></p>
+<p><strong>Oceania</strong><br>
+<a href="http://www.indymedia.org.nz/" rel="noopener nofollow ugc">aotearoa</a><br>
+<a href="http://brisbane.indymedia.org/" rel="noopener nofollow ugc">brisbane</a><br>
+<a href="http://burma.indymedia.org/" rel="noopener nofollow ugc">burma</a><br>
+<a href="http://darwin.indymedia.org" rel="noopener nofollow ugc">darwin</a><br>
+<a href="http://jakarta.indymedia.org/" rel="noopener nofollow ugc">jakarta</a><br>
+<a href="http://manila.indymedia.org/" rel="noopener nofollow ugc">manila</a><br>
+<a href="http://melbourne.indymedia.org/" rel="noopener nofollow ugc">melbourne</a><br>
+<a href="http://perth.indymedia.org/" rel="noopener nofollow ugc">perth</a><br>
+<a href="http://qc.indymedia.org" rel="noopener nofollow ugc">qc</a><br>
+<a href="http://sydney.indymedia.org/" rel="noopener nofollow ugc">sydney</a></p>
+<p><strong>South Asia</strong><br>
+<a href="http://india.indymedia.org/" rel="noopener nofollow ugc">india</a></p>
+<p><strong>United States</strong><br>
+<a href="http://arizona.indymedia.org/" rel="noopener nofollow ugc">arizona</a><br>
+<a href="http://arkansas.indymedia.org/" rel="noopener nofollow ugc">arkansas</a><br>
+<a href="http://asheville.indymedia.org/" rel="noopener nofollow ugc">asheville</a><br>
+<a href="http://atlanta.indymedia.org/" rel="noopener nofollow ugc">atlanta</a><br>
+<a href="http://austin.indymedia.org/" rel="noopener nofollow ugc">Austin</a><br>
+<a href="http://binghamton.indymedia.org" rel="noopener nofollow ugc">binghamton</a><br>
+<a href="http://boston.indymedia.org/" rel="noopener nofollow ugc">boston</a><br>
+<a href="http://buffalo.indymedia.org/" rel="noopener nofollow ugc">buffalo</a><br>
+<a href="http://chicago.indymedia.org/" rel="noopener nofollow ugc">chicago</a><br>
+<a href="http://cleveland.indymedia.org/" rel="noopener nofollow ugc">cleveland</a><br>
+<a href="http://colorado.indymedia.org/" rel="noopener nofollow ugc">colorado</a><br>
+<a href="http://columbus.indymedia.org" rel="noopener nofollow ugc">columbus</a><br>
+<a href="http://dc.indymedia.org/" rel="noopener nofollow ugc">dc</a><br>
+<a href="http://hawaii.indymedia.org/" rel="noopener nofollow ugc">hawaii</a><br>
+<a href="http://houston.indymedia.org" rel="noopener nofollow ugc">houston</a><br>
+<a href="http://www.hm.indymedia.org/" rel="noopener nofollow ugc">hudson mohawk</a><br>
+<a href="http://kcindymedia.org/" rel="noopener nofollow ugc">kansas city</a><br>
+<a href="http://la.indymedia.org/" rel="noopener nofollow ugc">la</a><br>
+<a href="http://madison.indymedia.org/" rel="noopener nofollow ugc">madison</a><br>
+<a href="http://maine.indymedia.org/" rel="noopener nofollow ugc">maine</a><br>
+<a href="http://miami.indymedia.org/" rel="noopener nofollow ugc">miami</a><br>
+<a href="http://www.michiganimc.org/" rel="noopener nofollow ugc">michigan</a><br>
+<a href="http://milwaukee.indymedia.org/" rel="noopener nofollow ugc">milwaukee</a><br>
+<a href="http://twincities.indymedia.org/" rel="noopener nofollow ugc">minneapolis/st. paul</a><br>
+<a href="http://nh.indymedia.org" rel="noopener nofollow ugc">new hampshire</a><br>
+<a href="http://newjersey.indymedia.org/" rel="noopener nofollow ugc">new jersey</a><br>
+<a href="http://newmexico.indymedia.org/" rel="noopener nofollow ugc">new mexico</a><br>
+<a href="http://neworleans.indymedia.org/" rel="noopener nofollow ugc">new orleans</a><br>
+<a href="http://chapelhill.indymedia.org/" rel="noopener nofollow ugc">north carolina</a><br>
+<a href="http://www.ntimc.org/" rel="noopener nofollow ugc">north texas</a><br>
+<a href="http://nyc.indymedia.org/" rel="noopener nofollow ugc">nyc</a><br>
+<a href="http://www.okimc.org" rel="noopener nofollow ugc">oklahoma</a><br>
+<a href="http://www.phillyimc.org/" rel="noopener nofollow ugc">philadelphia</a><br>
+<a href="http://pittsburgh.indymedia.org" rel="noopener nofollow ugc">pittsburgh</a><br>
+<a href="http://portland.indymedia.org/" rel="noopener nofollow ugc">portland</a><br>
+<a href="http://richmond.indymedia.org/" rel="noopener nofollow ugc">richmond</a><br>
+<a href="http://rochester.indymedia.org/" rel="noopener nofollow ugc">rochester</a><br>
+<a href="http://rogueimc.org/" rel="noopener nofollow ugc">rogue valley</a><br>
+<a href="http://reboot.stlimc.org" rel="noopener nofollow ugc">saint louis</a><br>
+<a href="http://sandiego.indymedia.org/" rel="noopener nofollow ugc">san diego</a><br>
+<a href="http://sf.indymedia.org/" rel="noopener nofollow ugc">san francisco</a><br>
+<a href="http://www.indybay.org/" rel="noopener nofollow ugc">san francisco bay area</a><br>
+<a href="http://sbindymedia.org/" rel="noopener nofollow ugc">santa barbara</a><br>
+<a href="http://www.indybay.org/santacruz/" rel="noopener nofollow ugc">santa cruz, ca</a><br>
+<a href="http://sarasota.indymedia.org" rel="noopener nofollow ugc">sarasota</a><br>
+<a href="http://seattle.indymedia.org/" rel="noopener nofollow ugc">seattle</a><br>
+<a href="http://tampabay.indymedia.org" rel="noopener nofollow ugc">tampa bay</a><br>
+<a href="http://indymedia.us/" rel="noopener nofollow ugc">united states</a><br>
+<a href="http://www.ucimc.org/" rel="noopener nofollow ugc">urbana-champaign</a><br>
+<a href="http://vermont.indymedia.org/" rel="noopener nofollow ugc">vermont</a><br>
+<a href="http://wmass.indymedia.org/" rel="noopener nofollow ugc">western mass</a><br>
+<a href="http://worcester.indymedia.org" rel="noopener nofollow ugc">worcester</a></p>
+<p><strong>West Asia</strong><br>
+<a href="http://armenia.indymedia.org/" rel="noopener nofollow ugc">Armenia</a><br>
+<a href="http://beirut.indymedia.org" rel="noopener nofollow ugc">Beirut</a><br>
+<a href="http://israel.indymedia.org/" rel="noopener nofollow ugc">Israel</a><br>
+<a href="http://www.indymedia.org/en/static/palestine" rel="noopener nofollow ugc">Palestine</a></p>
+<p><strong>Topics</strong><br>
+<a href="http://biotech.indymedia.org/" rel="noopener nofollow ugc">biotech</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987/8</link>
+        <pubDate>Wed, 07 Oct 2020 20:04:25 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-987-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987.rss">Indymedia reboot and epicyon codeing - hackathon</source>
+      </item>
+      <item>
+        <title>Indymedia reboot and epicyon codeing - hackathon</title>
+        <dc:creator><![CDATA[saunders]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/hamishcampbell">@hamishcampbell</a> and others;<br>
+can we define a use-case for “bigger sites” that would require backend database?<br>
+including min/max user count - there should be some kind of cap to re-enforce federation (of course, people can edit, but no reason not to encourage sense).</p>
+<p>is this specifically for epicyon? or other relevant aspects of freedombone as well (e.g. blogging apps, etc) ?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987/7</link>
+        <pubDate>Wed, 07 Oct 2020 19:05:53 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-987-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987.rss">Indymedia reboot and epicyon codeing - hackathon</source>
+      </item>
+      <item>
+        <title>Indymedia reboot and epicyon codeing - hackathon</title>
+        <dc:creator><![CDATA[bashrc]]></dc:creator>
+        <description><![CDATA[
+            <p>Adding a news timeline to show featured items. There will be a news instance type where this is the default timeline.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987/6</link>
+        <pubDate>Wed, 07 Oct 2020 10:25:50 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-987-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987.rss">Indymedia reboot and epicyon codeing - hackathon</source>
+      </item>
+      <item>
+        <title>Indymedia reboot and epicyon codeing - hackathon</title>
+        <dc:creator><![CDATA[hamishcampbell]]></dc:creator>
+        <description><![CDATA[
+            <p>Codeing happening live’ish <a href="https://unite.openworlds.info/bashrc/epicyon/compare/aa1e481b1095d377d60ce3a4321062cb595fcc2a...6dbf97e172da92e017ddb7f8de19581e63b8f8c4" rel="noopener nofollow ugc">https://unite.openworlds.info/bashrc/epicyon/compare/aa1e481b1095d377d60ce3a4321062cb595fcc2a...6dbf97e172da92e017ddb7f8de19581e63b8f8c4</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987/5</link>
+        <pubDate>Mon, 05 Oct 2020 18:10:55 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-987-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987.rss">Indymedia reboot and epicyon codeing - hackathon</source>
+      </item>
+      <item>
+        <title>Indymedia reboot and epicyon codeing - hackathon</title>
+        <dc:creator><![CDATA[hamishcampbell]]></dc:creator>
+        <description><![CDATA[
+            <p>Added it to the main post will share it out agen in a bit.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987/4</link>
+        <pubDate>Mon, 05 Oct 2020 13:31:58 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-987-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987.rss">Indymedia reboot and epicyon codeing - hackathon</source>
+      </item>
+      <item>
+        <title>Indymedia reboot and epicyon codeing - hackathon</title>
+        <dc:creator><![CDATA[bashrc]]></dc:creator>
+        <description><![CDATA[
+            <p>Some things which can be done on Epicyon:</p>
+<p>Add or check emoji. Many are implemented, but it might not be very comprehensive.</p>
+<p>Figure out the workflow for incoming moderated posts.</p>
+<p>Artwork for themes. Backgrounds, banners, icon sets, fonts. Get as creative as you want. Instance appearance doesn’t retain users but it’s an initial “this might be interesting” sign.</p>
+<p>Fix polls, which currently don’t work very well. How are polls supposed to work at the protocol level?</p>
+<p>Add or fix translations. Translate the website or the Gemini site.</p>
+<p>Testing with i2p. Are there any new bugs?</p>
+<p>Testing in lynx, or a similar shell browser, with a screen reader. The UI should be accessible!</p>
+<p>Change the way that events are displayed, also ideas for how rsvp should be implemented. Is there any consensus on this?</p>
+<p>An advanced challenge would be to add support for WebAuth. My knowledge of this is hazy, and it might involve adding javascript to the login screen. WebAuth with a physical token might be useful in some scenarios (including journalistic ones).</p>
+<p>Support atom feeds on the newswire.</p>
+<p>When switching to the Indymedia theme, make it a blogging instance by default.</p>
+<p>Metadata is removed from uploaded images. Maybe under some journalistic scenarios the metadata should be preserved. Perhaps an option box for “preserve photo metadata”.</p>
+<p>For photo journalism, should the media timeline look any different?</p>
+<p>Add the option to specify or suggest a petname at the time of following an account.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987/3</link>
+        <pubDate>Mon, 05 Oct 2020 13:18:08 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-987-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987.rss">Indymedia reboot and epicyon codeing - hackathon</source>
+      </item>
+      <item>
+        <title>Indymedia reboot and epicyon codeing - hackathon</title>
+        <dc:creator><![CDATA[marnanel]]></dc:creator>
+        <description><![CDATA[
+            <p>This sounds really exciting-- I miss indymedia!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987/2</link>
+        <pubDate>Fri, 02 Oct 2020 00:07:47 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-987-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987.rss">Indymedia reboot and epicyon codeing - hackathon</source>
+      </item>
+      <item>
+        <title>Indymedia reboot and epicyon codeing - hackathon</title>
+        <dc:creator><![CDATA[hamishcampbell]]></dc:creator>
+        <description><![CDATA[
+            <p>Template and back end work on the epicyon <a href="https://epicyon.net/" rel="noopener nofollow ugc">https://epicyon.net/</a> activertypub code base to make a village/street level indymedia news site based on the OMN project.</p>
+<p>We plan to get a test activertypub news site online by the end of the week, if your not sure how it should work watch the video <a href="https://conf.tube/videos/watch/953de898-74dc-4665-95fb-313042f66cc6?start=" class="inline-onebox" rel="noopener nofollow ugc">The reboot of the indymedia project - ConfTube</a></p>
+<p><strong>Todo:</strong></p>
+<ul>
+<li>
+<p>Add or check emoji. Many are implemented, but it might not be very comprehensive.</p>
+</li>
+<li>
+<p>Figure out the workflow for incoming moderated posts.</p>
+</li>
+<li>
+<p>Artwork for themes. Backgrounds, banners, icon sets, fonts. Get as creative as you want. Instance appearance doesn’t retain users but it’s an initial “this might be interesting” sign.</p>
+</li>
+<li>
+<p>Fix polls, which currently don’t work very well. How are polls supposed to work at the protocol level?</p>
+</li>
+<li>
+<p>Add or fix translations. Translate the website or the Gemini site.</p>
+</li>
+<li>
+<p>Testing with i2p. Are there any new bugs?</p>
+</li>
+<li>
+<p>Change the way that events are displayed, also ideas for how rsvp should be implemented. Is there any consensus on this?</p>
+</li>
+</ul>
+<p>We need to think about a database driven activertypub code base for bigger sites as well<a href="/uploads/short-url/38d1GfRQ9hQcGALyk4agZ2aqSYI.jpeg"></a></p>
+<aside class="quote quote-modified" data-post="1" data-topic="942">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/hamishcampbell/40/284_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/the-reboot-of-the-indymedia-project/942">The reboot of the indymedia project</a> <a class="badge-wrapper  box" href="/c/meeting/apconf2020/53"><span class="badge-category-parent-bg" style="background-color: #0E76BD;"></span><span class="badge-category-bg" style="background-color: #ff7a00;"></span><span style="color: #ffffff" data-drop-close="true" class="badge-category clear-badge" title="Add your proposals for the Conf by creating a New Topic –
+Tag it #bof for Birds of Feather sessions or #hackathon for Hack proposals …">ActivityPub Conference 2020</span></a>
+  </div>
+  <blockquote>
+    Hamish Campbell 
+ 
+We are a wide affinity group working to reboot the global indymedia network using modern federated protocols such as <a class="hashtag" href="/c/activitypub/5">#activitypub</a>. This reboot will be based on the OMN project code. 
+What is the OMN (Open Media Network): 
+The project is to shift power to the producers and consumers of media. It’s about good UI and simple empowering #KISS tools to move content, by categorising it with a grassroots folksonomy. This simple approach is balanced by shared site level syntax for the …
+  </blockquote>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987/1</link>
+        <pubDate>Thu, 01 Oct 2020 20:58:44 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-987-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987.rss">Indymedia reboot and epicyon codeing - hackathon</source>
+      </item>
+  </channel>
+</rss>

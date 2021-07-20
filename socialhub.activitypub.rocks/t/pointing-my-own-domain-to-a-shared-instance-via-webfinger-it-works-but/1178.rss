@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Pointing my own domain to a shared instance via WebFinger .... it works but</title>
+    <link>https://socialhub.activitypub.rocks/t/pointing-my-own-domain-to-a-shared-instance-via-webfinger-it-works-but/1178</link>
+    <description>So ... I have managed use use my custom domain and make it point to a shared instance, without hacking Mastodon 
+... and, it kinda works ...
+
+I have developed a small python app  [webfinger-proxy](https://github.com/raphaeljolivet/webfinger-proxy) to alias your own domain handles to a shared instance. 
+
+I have setup it on my own domain [rjo.name](https://rjo.name).
+The handle `testrjo@rjo.name` points to `testrjo@mamot.fr` 
+See the response of the Webfinger [https://rjo.name/.well-known/webfinger?resource=testrjo@rjo.name](https://rjo.name/.well-known/webfinger?resource=testrjo@rjo.name)
+
+I have managed to follow this account and send it private messages.
+I have another account on the same shared instance, and `testrjo@mamot.fr` appears as a completely separate remote account though. 
+
+I am not sure whether this is only on the UI or if Mastodon now have a duplicate account for this guy ... 
+I would need some help from the developers to figure this out : Is the handle a primary key ? Or is it the URL ?
+Can you see any have adverse effects ?
+Do you think the physical migration of accounts from one instance to another would still work ?
+
+I will continue my tests with other implementations : 
+Pleroma, mobile clients, etc ....</description>
+    
+    <lastBuildDate>Fri, 04 Dec 2020 14:14:30 +0000</lastBuildDate>
+    <category>Software</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/pointing-my-own-domain-to-a-shared-instance-via-webfinger-it-works-but/1178.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Pointing my own domain to a shared instance via WebFinger .... it works but</title>
+        <dc:creator><![CDATA[RaphJ]]></dc:creator>
+        <description><![CDATA[
+            <p>So … I have managed use use my custom domain and make it point to a shared instance, without hacking Mastodon<br>
+… and, it kinda works …</p>
+<p>I have developed a small python app  <a href="https://github.com/raphaeljolivet/webfinger-proxy" rel="noopener nofollow ugc">webfinger-proxy</a> to alias your own domain handles to a shared instance.</p>
+<p>I have setup it on my own domain <a href="https://rjo.name" rel="noopener nofollow ugc">rjo.name</a>.<br>
+The handle <code>testrjo@rjo.name</code> points to <code>testrjo@mamot.fr</code><br>
+See the response of the Webfinger <a href="https://rjo.name/.well-known/webfinger?resource=testrjo@rjo.name" rel="noopener nofollow ugc">https://rjo.name/.well-known/webfinger?resource=testrjo@rjo.name</a></p>
+<p>I have managed to follow this account and send it private messages.<br>
+I have another account on the same shared instance, and <code>testrjo@mamot.fr</code> appears as a completely separate remote account though.</p>
+<p>I am not sure whether this is only on the UI or if Mastodon now have a duplicate account for this guy …<br>
+I would need some help from the developers to figure this out : Is the handle a primary key ? Or is it the URL ?<br>
+Can you see any have adverse effects ?<br>
+Do you think the physical migration of accounts from one instance to another would still work ?</p>
+<p>I will continue my tests with other implementations :<br>
+Pleroma, mobile clients, etc …</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/pointing-my-own-domain-to-a-shared-instance-via-webfinger-it-works-but/1178/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/pointing-my-own-domain-to-a-shared-instance-via-webfinger-it-works-but/1178/1</link>
+        <pubDate>Fri, 04 Dec 2020 14:14:30 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1178-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/pointing-my-own-domain-to-a-shared-instance-via-webfinger-it-works-but/1178.rss">Pointing my own domain to a shared instance via WebFinger .... it works but</source>
+      </item>
+  </channel>
+</rss>

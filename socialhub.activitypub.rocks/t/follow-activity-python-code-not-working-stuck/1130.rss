@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Follow Activity python code not working, STUCK!</title>
+    <link>https://socialhub.activitypub.rocks/t/follow-activity-python-code-not-working-stuck/1130</link>
+    <description>Hi all,
+I am trying to wrote some sample Follow code and Instance response code on the Fediverse, but am not having success after a prolonged period of time.
+
+In short, I am trying to simulate a Follow request from one instance to another. The Follow Request instance is supposed to be farhan@p.farhan.codes. This runs some custom Python code I have written. The receiving host is ngrok@ee880c3b32b8.ngrok.io, an active instance running Pleroma.
+
+I am having the receiving host, in this case ee880c3b32b8 (dot) ngrok (dot) io (changed because of forum limitations), reach back out to the test server, p.farhan.codes/users/farhan, upon which it reports back that there was a failure.
+
+I suspect the mistake is somewhere in the httpsig or the response, but I have no idea where or what. My follow code is as follows below. Feel free to also reach out to the running host p.farhan.codes.
+
+Please please assist! I am utterly stuck!
+ https://dpaste.org/8OGk</description>
+    
+    <lastBuildDate>Tue, 10 Nov 2020 18:16:17 +0000</lastBuildDate>
+    <category>Server to Server</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/follow-activity-python-code-not-working-stuck/1130.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Follow Activity python code not working, STUCK!</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <p>Your python3 code is:</p>
+<pre><code class="lang-auto">signed_message = '(request-target): {%s} {%s}\nhost: {%s}\ndate: {%s}' % (method, request_path, to_hostname, now)
+</code></pre>
+<p>Which is confusing the <a href="https://docs.python.org/3.3/library/string.html#format-string-syntax" rel="noopener nofollow ugc"><code>.format</code> string syntax</a> and the <a href="https://docs.python.org/3/library/stdtypes.html#printf-style-string-formatting" rel="noopener nofollow ugc">string interpolation operator</a>.</p>
+<p>Your <code>signed_message</code> on the playground looks like:</p>
+<pre><code class="lang-auto">(request-target): {post} {../Playground/}
+host: {ee880c3b32b8.ngrok.io}
+date: {Tue, 10 Nov 2020 18:13:39 GMT}
+</code></pre>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/1X/cd896e0d8dc137bfaa3aa5be0dad16fb6b3b2166.png" data-download-href="https://socialhub.activitypub.rocks/uploads/default/cd896e0d8dc137bfaa3aa5be0dad16fb6b3b2166" title="Screen Shot 2020-11-10 at 19.14.57"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/cd896e0d8dc137bfaa3aa5be0dad16fb6b3b2166_2_690x194.png" alt="Screen Shot 2020-11-10 at 19.14.57" data-base62-sha1="tkgk42J4dCmH0bw4mwvLVRVj2hE" width="690" height="194" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/cd896e0d8dc137bfaa3aa5be0dad16fb6b3b2166_2_690x194.png, https://socialhub.activitypub.rocks/uploads/default/optimized/1X/cd896e0d8dc137bfaa3aa5be0dad16fb6b3b2166_2_1035x291.png 1.5x, https://socialhub.activitypub.rocks/uploads/default/optimized/1X/cd896e0d8dc137bfaa3aa5be0dad16fb6b3b2166_2_1380x388.png 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/cd896e0d8dc137bfaa3aa5be0dad16fb6b3b2166_2_10x10.png"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Screen Shot 2020-11-10 at 19.14.57</span><span class="informations">1409×397 53.9 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg></div></a></div></p>
+<p>Which is incorrectly adding the <code>{}</code>s.</p>
+<p>Simply remove them:</p>
+<pre><code class="lang-auto">signed_message = '(request-target): %s %s\nhost: %s\ndate: %s' % (method, request_path, to_hostname, now)
+</code></pre>
+          <p><a href="https://socialhub.activitypub.rocks/t/follow-activity-python-code-not-working-stuck/1130/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/follow-activity-python-code-not-working-stuck/1130/8</link>
+        <pubDate>Tue, 10 Nov 2020 18:16:17 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1130-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/follow-activity-python-code-not-working-stuck/1130.rss">Follow Activity python code not working, STUCK!</source>
+      </item>
+      <item>
+        <title>Follow Activity python code not working, STUCK!</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>Are you sure you’re signing your requests correctly? Your actor object appears to be valid now, including the public key, at least Smithereen happily accepts it (<a href="https://friends.grishka.me/farhan@p.farhan.codes" rel="noopener nofollow ugc">see on my instance</a>).</p>
+<p>Edit: see my <a href="https://github.com/grishka/Smithereen/blob/af68150770b0acb292cbe92b6946a1debdd21d1a/src/main/java/smithereen/activitypub/ActivityPub.java#L93" rel="noopener nofollow ugc">definitely working Java code</a> for HTTP signatures. You may skip Digest, the part where you hash the entire request body, but be aware that some Mastodon instances won’t accept requests without it.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/follow-activity-python-code-not-working-stuck/1130/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/follow-activity-python-code-not-working-stuck/1130/7</link>
+        <pubDate>Tue, 10 Nov 2020 08:23:36 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1130-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/follow-activity-python-code-not-working-stuck/1130.rss">Follow Activity python code not working, STUCK!</source>
+      </item>
+      <item>
+        <title>Follow Activity python code not working, STUCK!</title>
+        <dc:creator><![CDATA[farhan]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="cjs" data-post="5" data-topic="1130">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/cjs/40/35_2.png" class="avatar"> cjs:</div>
+<blockquote>
+<p><code>curl https://p.farhan.codes/users/farhan -H "Accept: application/activity+json"</code></p>
+</blockquote>
+</aside>
+<p>I modified the code to remove the double escape characters. The failure remains. Please see below:</p>
+<pre><code class="lang-auto">$ curl https://p.farhan.codes/users/farhan -H "Accept: application/activity+json"
+{
+  "@context": [
+    "https://www.w3.org/ns/activitystreams",
+    "https://p.farhan.codes/schemas/litepub-0.1.jsonld",
+    {
+      "@language": "und"
+    }
+  ],
+  "attachment": [],
+  "capabilities": {
+    "acceptsChatMessages": true
+  },
+  "discoverable": false,
+  "endpoints": {
+    "oauthAuthorizationEndpoint": "https://p.farhan.codes/oauth/authorize",
+    "oauthRegistrationEndpoint": "https://p.farhan.codes/api/v1/apps",
+    "oauthTokenEndpoint": "https://p.farhan.codes/oauth/token",
+    "sharedInbox": "https://p.farhan.codes/inbox",
+    "uploadMedia": "https://p.farhan.codes/api/ap/upload_media"
+  },
+  "followers": "https://p.farhan.codes/users/farhan/followers",
+  "following": "https://p.farhan.codes/users/farhan/following",
+  "id": "https://p.farhan.codes/users/farhan",
+  "inbox": "https://p.farhan.codes/users/farhan/inbox",
+  "manuallyApprovesFollowers": false,
+  "name": "farhan",
+  "outbox": "https://p.farhan.codes/users/farhan/outbox",
+  "preferredUsername": "farhan",
+  "publicKey": {
+    "id": "https://p.farhan.codes/users/farhan#main-key",
+    "owner": "https://p.farhan.codes/users/farhan",
+    "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn5JI+uBbt3w0tPekK+UD\naQLRG220XztYLEE1gC8eGYctYgrTX0wruNP+CFap1VsvyWxRoitNjFLDD3pwYxK9\n+k6P459ekL0fSRqQ0bzOQ5Vb22PBs9iOKonV9FSljCcDg0kc3cvxCeU246BMurGI\nIs0vWk3UwygkeMo+rYXDluTtuSvZs+2ume2JYgrtcQoDH5YzU+76dRLYfd1+xEFo\nP+K0hFb7+LhwGwDuLtTUYQ39kqm2jnC9/3W5yyweBqh05iQ0joDC0nuoZpjvT7on\n2Obwluci30Q2xS1i+5244qr9Ouq1EK+9kdf15RMMOH1Azumho1YNFoVZlcxy2bar\n6wIDAQAB\n-----END PUBLIC KEY-----\n"
+  },
+  "summary": "",
+  "tag": [],
+  "type": "Person",
+  "url": "https://p.farhan.codes/users/farhan"
+}</code></pre>
+<p>Still does not follow. In the case of a Mastodon server, it reports</p>
+<blockquote>
+<p>Verification failed for farhan@p.farhan.codes <a href="https://p.farhan.codes/users/farhan" rel="noopener nofollow ugc">https://p.farhan.codes/users/farhan</a></p>
+</blockquote>
+          <p><a href="https://socialhub.activitypub.rocks/t/follow-activity-python-code-not-working-stuck/1130/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/follow-activity-python-code-not-working-stuck/1130/6</link>
+        <pubDate>Mon, 09 Nov 2020 23:06:45 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1130-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/follow-activity-python-code-not-working-stuck/1130.rss">Follow Activity python code not working, STUCK!</source>
+      </item>
+      <item>
+        <title>Follow Activity python code not working, STUCK!</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <p>Your <code>publicKeyPem</code> is not being encoded correctly. When I run</p>
+<p><code>curl https://p.farhan.codes/users/farhan -H "Accept: application/activity+json"</code></p>
+<p>I get:</p>
+<pre><code class="lang-auto">{
+  "@context": ["https://www.w3.org/ns/activitystreams", "https://p.farhan.codes/schemas/litepub-0.1.jsonld", {"@language": "und"}],
+  "attachment": [],
+  "capabilities": {"acceptsChatMessages": true},
+  "discoverable": false,
+  "endpoints": {"oauthAuthorizationEndpoint": "https://p.farhan.codes/oauth/authorize", "oauthRegistrationEndpoint": "https://p.farhan.codes/api/v1/apps", "oauthTokenEndpoint": "https://p.farhan.codes/oauth/token", "sharedInbox": "https://p.farhan.codes/inbox", "uploadMedia": "https://p.farhan.codes/api/ap/upload_media"},
+  "followers": "https://p.farhan.codes/users/farhan/followers",
+  "following": "https://p.farhan.codes/users/farhan/following",
+  "id": "https://p.farhan.codes/users/farhan",
+  "inbox": "https://p.farhan.codes/users/farhan/inbox",
+  "manuallyApprovesFollowers": false,
+  "name": "farhan",
+  "outbox": "https://p.farhan.codes/users/farhan/outbox",
+  "preferredUsername": "farhan",
+  "publicKey": {
+    "id": "https://p.farhan.codes/users/farhan#main-key",
+    "owner": "https://p.farhan.codes/users/farhan",
+    "publicKeyPem": "-----BEGIN PUBLIC KEY-----\\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn5JI+uBbt3w0tPekK+UD\\naQLRG220XztYLEE1gC8eGYctYgrTX0wruNP+CFap1VsvyWxRoitNjFLDD3pwYxK9\\n+k6P459ekL0fSRqQ0bzOQ5Vb22PBs9iOKonV9FSljCcDg0kc3cvxCeU246BMurGI\\nIs0vWk3UwygkeMo+rYXDluTtuSvZs+2ume2JYgrtcQoDH5YzU+76dRLYfd1+xEFo\\nP+K0hFb7+LhwGwDuLtTUYQ39kqm2jnC9/3W5yyweBqh05iQ0joDC0nuoZpjvT7on\\n2Obwluci30Q2xS1i+5244qr9Ouq1EK+9kdf15RMMOH1Azumho1YNFoVZlcxy2bar\\n6wIDAQAB\\n-----END PUBLIC KEY-----\\n"
+  },
+  "summary": "",
+  "tag": [], "type":
+  "Person",
+  "url": "https://p.farhan.codes/users/farhan"
+}
+</code></pre>
+<p>Which has <code>publicKeyPem</code> improperly escaped with <code>\\n</code> instead of <code>\n</code>. For verification, see <a href="https://play.golang.org/p/ORiR8OMuJus" rel="noopener nofollow ugc">this playground in Golang</a>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/follow-activity-python-code-not-working-stuck/1130/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/follow-activity-python-code-not-working-stuck/1130/5</link>
+        <pubDate>Mon, 09 Nov 2020 10:53:41 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1130-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/follow-activity-python-code-not-working-stuck/1130.rss">Follow Activity python code not working, STUCK!</source>
+      </item>
+      <item>
+        <title>Follow Activity python code not working, STUCK!</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>It will request the actor object from the URL you specify in the <code>actor</code> field in your activity. The object should be a well-formed JSON document, with the public key among other things. Please read the tutorials I linked, they explain everything you need to achieve the exact thing you’re trying to do. Just replace Ruby code with Python equivalent.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/follow-activity-python-code-not-working-stuck/1130/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/follow-activity-python-code-not-working-stuck/1130/4</link>
+        <pubDate>Sun, 08 Nov 2020 19:52:10 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1130-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/follow-activity-python-code-not-working-stuck/1130.rss">Follow Activity python code not working, STUCK!</source>
+      </item>
+      <item>
+        <title>Follow Activity python code not working, STUCK!</title>
+        <dc:creator><![CDATA[farhan]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Grishka,</p>
+<p>I did not understand what you mean by not making the actor object available. Do you mean that the Requested instance, in this case ee880c3b32b8(dot)ngrok(dot)io, will reach back out to the requestor instance? Would that be a request to /inbox/username? I have code that does exactly that and replies with the public portion of the certificate used to send the initial certificate. However, I still receive an “error” message.</p>
+<p>My thoughts are either:<br>
+A. The format that it is replying in is not correct - However, I verbatim copied a Mastodon instance’s reply format.<br>
+B. Something is wrong with the HTTP sig code<br>
+C. Something else.</p>
+<p>I read the Mastodon documentation, but to be honest, it is not very clear on how a response to the actor object should look.</p>
+<p>Still stuck and don’t have a path forward…</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/follow-activity-python-code-not-working-stuck/1130/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/follow-activity-python-code-not-working-stuck/1130/3</link>
+        <pubDate>Sun, 08 Nov 2020 19:38:02 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1130-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/follow-activity-python-code-not-working-stuck/1130.rss">Follow Activity python code not working, STUCK!</source>
+      </item>
+      <item>
+        <title>Follow Activity python code not working, STUCK!</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t see where you’re making the actor object available when the receiving host tries to request it. See <a href="https://blog.joinmastodon.org/2018/06/how-to-implement-a-basic-activitypub-server/" rel="noopener nofollow ugc">this tutorial</a> and its <a href="https://blog.joinmastodon.org/2018/07/how-to-make-friends-and-verify-requests/" rel="noopener nofollow ugc">second part</a>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/follow-activity-python-code-not-working-stuck/1130/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/follow-activity-python-code-not-working-stuck/1130/2</link>
+        <pubDate>Sun, 08 Nov 2020 08:28:27 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1130-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/follow-activity-python-code-not-working-stuck/1130.rss">Follow Activity python code not working, STUCK!</source>
+      </item>
+      <item>
+        <title>Follow Activity python code not working, STUCK!</title>
+        <dc:creator><![CDATA[farhan]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all,<br>
+I am trying to wrote some sample Follow code and Instance response code on the Fediverse, but am not having success after a prolonged period of time.</p>
+<p>In short, I am trying to simulate a Follow request from one instance to another. The Follow Request instance is supposed to be farhan@p.farhan.codes. This runs some custom Python code I have written. The receiving host is <a href="mailto:ngrok@ee880c3b32b8.ngrok.io">ngrok@ee880c3b32b8.ngrok.io</a>, an active instance running Pleroma.</p>
+<p>I am having the receiving host, in this case ee880c3b32b8 (dot) ngrok (dot) io (changed because of forum limitations), reach back out to the test server, p.farhan.codes/users/farhan, upon which it reports back that there was a failure.</p>
+<p>I suspect the mistake is somewhere in the httpsig or the response, but I have no idea where or what. My follow code is as follows below. Feel free to also reach out to the running host p.farhan.codes.</p>
+<p>Please please assist! I am utterly stuck!<br>
+<a href="https://dpaste.org/8OGk" rel="noopener nofollow ugc">https://dpaste.org/8OGk</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/follow-activity-python-code-not-working-stuck/1130/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/follow-activity-python-code-not-working-stuck/1130/1</link>
+        <pubDate>Sun, 08 Nov 2020 08:08:37 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1130-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/follow-activity-python-code-not-working-stuck/1130.rss">Follow Activity python code not working, STUCK!</source>
+      </item>
+  </channel>
+</rss>

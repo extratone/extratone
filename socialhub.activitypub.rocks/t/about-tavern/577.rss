@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>About Tavern</title>
+    <link>https://socialhub.activitypub.rocks/t/about-tavern/577</link>
+    <description>[Tavern](https://tavern.town/) is an Activity Pub server written in Golang.
+
+# GitLab
+Project: https://gitlab.com/ngerakines/tavern
+Issues: https://gitlab.com/ngerakines/tavern/-/issues
+Milestones: https://gitlab.com/ngerakines/tavern/-/milestones
+Change Log: hhttps://gitlab.com/ngerakines/tavern/-/blob/master/CHANGELOG.md
+Federation: https://gitlab.com/ngerakines/tavern/-/blob/master/FEDERATION.md</description>
+    
+    <lastBuildDate>Fri, 20 Mar 2020 13:57:11 +0000</lastBuildDate>
+    <category>Software</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/about-tavern/577.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>About Tavern</title>
+        <dc:creator><![CDATA[ngerakines]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/cjs">@cjs</a>. A very early and loose version used <a href="https://github.com/piprate/json-gold" rel="nofollow noopener">https://github.com/piprate/json-gold</a>, but I through testing that a lot of messages weren’t working as expected. I’ll set some time aside to dig into it and see if go-fed is a good fit.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-tavern/577/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-tavern/577/3</link>
+        <pubDate>Fri, 20 Mar 2020 13:57:11 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-577-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-tavern/577.rss">About Tavern</source>
+      </item>
+      <item>
+        <title>About Tavern</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <p>FYI: even if you don’t like <code>go-fed/activity/pub</code>, it may be worth looking into the ActivityStreams side of things (<code>go-fed/activity/streams</code> and <code>go-fed/activity/streams/vocab</code>), as the current JSONStrings way tavern interprets properties on types in actors.go and elsewhere seems like it cannot handle certain forms of ActivityStreams data.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-tavern/577/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-tavern/577/2</link>
+        <pubDate>Fri, 20 Mar 2020 06:29:15 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-577-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-tavern/577.rss">About Tavern</source>
+      </item>
+      <item>
+        <title>About Tavern</title>
+        <dc:creator><![CDATA[ngerakines]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="https://tavern.town/" rel="nofollow noopener">Tavern</a> is an Activity Pub server written in Golang.</p>
+<h1>GitLab</h1>
+<p>Project: <a href="https://gitlab.com/ngerakines/tavern" rel="nofollow noopener">https://gitlab.com/ngerakines/tavern</a><br>
+Issues: <a href="https://gitlab.com/ngerakines/tavern/-/issues" rel="nofollow noopener">https://gitlab.com/ngerakines/tavern/-/issues</a><br>
+Milestones: <a href="https://gitlab.com/ngerakines/tavern/-/milestones" rel="nofollow noopener">https://gitlab.com/ngerakines/tavern/-/milestones</a><br>
+Change Log: hhttps://gitlab.com/ngerakines/tavern/-/blob/master/CHANGELOG.md<br>
+Federation: <a href="https://gitlab.com/ngerakines/tavern/-/blob/master/FEDERATION.md" rel="nofollow noopener">https://gitlab.com/ngerakines/tavern/-/blob/master/FEDERATION.md</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-tavern/577/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-tavern/577/1</link>
+        <pubDate>Thu, 19 Mar 2020 11:47:30 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-577-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-tavern/577.rss">About Tavern</source>
+      </item>
+  </channel>
+</rss>

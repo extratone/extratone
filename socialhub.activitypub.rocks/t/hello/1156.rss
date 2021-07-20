@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Hello</title>
+    <link>https://socialhub.activitypub.rocks/t/hello/1156</link>
+    <description>im a new use and i just wanted to say hi</description>
+    
+    <lastBuildDate>Fri, 27 Nov 2020 04:57:39 +0000</lastBuildDate>
+    <category>Uncategorized</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/hello/1156.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Hello</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello nugget,</p>
+<p>nice to have you.<br>
+If you are interested in ActivityPub, you can find some golden Talks and Q&amp;A videos at<br>
+⬡ <a href="https://conf.activitypub.rocks">https://conf.activitypub.rocks</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/hello/1156/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/hello/1156/2</link>
+        <pubDate>Fri, 27 Nov 2020 04:57:39 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1156-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/hello/1156.rss">Hello</source>
+      </item>
+      <item>
+        <title>Hello</title>
+        <dc:creator><![CDATA[nugget]]></dc:creator>
+        <description><![CDATA[
+            <p>im a new use and i just wanted to say hi</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/hello/1156/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/hello/1156/1</link>
+        <pubDate>Fri, 27 Nov 2020 04:44:34 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1156-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/hello/1156.rss">Hello</source>
+      </item>
+  </channel>
+</rss>

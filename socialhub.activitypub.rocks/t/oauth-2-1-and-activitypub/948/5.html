@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>OAuth 2.1 and ActivityPub - #5 by aschrijver - ActivityPub Conference 2020 - SocialHub</title>
+    <meta name="description" content="Aaron Parecki 
+ 
+OAuth is the foundation of most of modern online security, used everywhere from signing in to mobile apps to protecting your bank accounts. 
+This session will cover what’s new in OAuth 2.1 and how Activi&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="../948.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;OAuth 2.1 and ActivityPub&#39;" href="../948.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/oauth-2-1-and-activitypub/948/5" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/oauth-2-1-and-activitypub/948/5" />
+<meta property="og:title" content="OAuth 2.1 and ActivityPub" />
+<meta name="twitter:title" content="OAuth 2.1 and ActivityPub" />
+<meta property="og:description" content="Yes, it is something worth addressing, as the issue comes up in various places, like recently in Implementing ActivityPub Client-to-Server - #20 by macgirvin" />
+<meta name="twitter:description" content="Yes, it is something worth addressing, as the issue comes up in various places, like recently in Implementing ActivityPub Client-to-Server - #20 by macgirvin" />
+<meta property="article:published_time" content="2021-04-17T07:10:26+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="../948.html">OAuth 2.1 and ActivityPub</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="https://socialhub.activitypub.rocks/c/meeting/11" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #0E76BD'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Meeting</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../../c/meeting/apconf2020/53.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #ff7a00'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>ActivityPub Conference 2020</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+      <div class="topic-category">
+        <div class='discourse-tags list-tags'>
+            <a href='../../../tag/talk.html' class='discourse-tag' rel="tag">talk</a>, 
+            <a href='../../../tag/apconf.html' class='discourse-tag' rel="tag">apconf</a>, 
+            <a href='../../../tag/2020.html' class='discourse-tag' rel="tag">2020</a>
+        </div>
+      </div>
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/aaronpk.html'><span itemprop='name'>aaronpk</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../948.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-09-29T22:23:50Z'>
+              <time itemprop='dateModified' datetime='2020-10-19T17:34:11Z' class='post-time'>
+                October 19, 2020,  5:34pm
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><em>Aaron Parecki</em></p>
+<p><iframe width="560" height="315" src="https://conf.tube/videos/embed/32351956-89d7-4887-b6b0-f1a32f91dc36" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+<p>OAuth is the foundation of most of modern online security, used everywhere from signing in to mobile apps to protecting your bank accounts.</p>
+<p>This session will cover what’s new in OAuth 2.1 and how ActivityPub can take advantage of some of the newest features of OAuth to better support a wide range of interoperable ActivityPub clients.</p>
+<h2>Questions &amp; Answers available!</h2>
+<p>See also <a href="https://aaronparecki.com/2020/10/03/10/apconf" rel="noopener nofollow ugc">https://aaronparecki.com/2020/10/03/10/apconf</a></p>
+<p><strong><a href="https://conf.tube/videos/watch/f9e0856e-3825-476c-8cad-84f4331c04f5" rel="noopener nofollow ugc">Q&amp;A Session – OAuth 2.1 and ActivityPub</a></strong><br>
+⬡ Hooray, the live Questions &amp; Answers are available here<br>
+<iframe width="560" height="315" src="https://conf.tube/videos/embed/f9e0856e-3825-476c-8cad-84f4331c04f5" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+        </div>
+
+        <meta itemprop='headline' content='OAuth 2.1 and ActivityPub'>
+          <meta itemprop='keywords' content='talk, apconf, 2020'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/pukkamustard.html'><span itemprop='name'>pukkamustard</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../948.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-02T05:30:12Z' class='post-time'>
+                October 2, 2020,  5:30am
+              </time>
+              <meta itemprop='dateModified' content='2020-10-02T05:30:12Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thank you <a class="mention" href="../../../u/aaronpk.html">@aaronpk</a> for the very insightful talk!</p>
+<p>I really appreciate the slimming down in OAuth 2.1 and learnt a lot about PKCE (and how to pronounce it) and IndieAuth.</p>
+<p>IndieAuth (by using URL as client_id) and PKCE both solve problem of client registration. PKCE seems to be the more modern (and secure) way of doing this. Are there plans for IndieAuth v2 with PKCE?</p>
+<p>IndieAuth does authorization endpoint discovery by GET/HEAD request to the user profile. <a href="https://openid.net/specs/openid-connect-discovery-1_0.html" rel="nofollow noopener">OpenID Connect Discovery</a> does this via WebFinger and a special relation. Given how WebFinger is already widely used in ActivityPub implementations and almost a de-facto requirement for federation, would it make sense to use WebFinger like OpenID Connect?</p>
+<p>I think a definite document specifying how authentication/authorization should be implemented on the Fediverse would be immensely helpful. Would you suggest just agreeing on IndieAuth or writing up something new (IndieAuth v2 or FediAuth)?</p>
+        </div>
+
+        <meta itemprop='headline' content='OAuth 2.1 and ActivityPub'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/aaronpk.html'><span itemprop='name'>aaronpk</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../948.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-02T15:42:18Z' class='post-time'>
+                October 2, 2020,  3:42pm
+              </time>
+              <meta itemprop='dateModified' content='2020-10-02T15:42:18Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks for the comments!</p>
+<aside class="quote no-group" data-username="pukkamustard" data-post="2" data-topic="948">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/pukkamustard/40/111_2.png" class="avatar"> pukkamustard:</div>
+<blockquote>
+<p>IndieAuth (by using URL as client_id) and PKCE both solve problem of client registration. PKCE seems to be the more modern (and secure) way of doing this. Are there plans for IndieAuth v2 with PKCE?</p>
+</blockquote>
+</aside>
+<p>Client registration does a couple things. One part is the security gained by the client being able to authenticate, the other is providing metadata about the client such as the application name and logo.</p>
+<p>IndieAuth skips the need for client registration for metadata purposes by using URLs as client IDs and having the metadata published at that URL. PKCE is still a necessary step to provide an alternative to the authentication part of client registration. In fact, the <a href="https://indieauth.spec.indieweb.org/#authorization-request" rel="nofollow noopener">latest version of the IndieAuth spec</a> recommends that clients also use PKCE! There isn’t a need for a v2 spec because PKCE can be added to existing OAuth systems in a backwards compatible way, which was one of the design goals of PKCE.</p>
+<aside class="quote no-group" data-username="pukkamustard" data-post="2" data-topic="948">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/pukkamustard/40/111_2.png" class="avatar"> pukkamustard:</div>
+<blockquote>
+<p>Given how WebFinger is already widely used in ActivityPub implementations and almost a de-facto requirement for federation, would it make sense to use WebFinger like OpenID Connect?</p>
+</blockquote>
+</aside>
+<p>Interestingly, ActivityPub doesn’t actually need Webfinger, and in fact one of the principles of the W3C SocialCG (where ActivityPub was developed) was to take a “follow-your-nose” approach to spec design, which specifically avoids approaches like Webfinger with hardcoded URLs. Personally I’d love to see ActivityPub drop Webfinger in favor of discovery methods that don’t rely on hardcoded URLs, but that’s a different discussion.</p>
+<aside class="quote no-group" data-username="pukkamustard" data-post="2" data-topic="948">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/pukkamustard/40/111_2.png" class="avatar"> pukkamustard:</div>
+<blockquote>
+<p>I think a definite document specifying how authentication/authorization should be implemented on the Fediverse would be immensely helpful. Would you suggest just agreeing on IndieAuth or writing up something new (IndieAuth v2 or FediAuth)?</p>
+</blockquote>
+</aside>
+<p>Creating an maintaining a spec is not a small undertaking, I wouldn’t recommend creating something new if at all possible. Over the years, we’ve been trying to make IndieAuth closer and closer to plain OAuth 2 so that it has less functionality that is different, just to make it easier to understand and maintain.</p>
+<p>I’m pretty sure it would be possible for a developer to pick up IndieAuth and use it with ActivityPub clients and servers today exactly as written!</p>
+        </div>
+
+        <meta itemprop='headline' content='OAuth 2.1 and ActivityPub'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/MediaFormat.html'><span itemprop='name'>MediaFormat</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../948.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-04-17T03:00:53Z' class='post-time'>
+                April 17, 2021,  3:00am
+              </time>
+              <meta itemprop='dateModified' content='2021-04-17T03:00:53Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="aaronpk" data-post="3" data-topic="948">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/aaronpk/40/484_2.png" class="avatar"> aaronpk:</div>
+<blockquote>
+<p>Personally I’d love to see ActivityPub drop Webfinger in favor of discovery methods that don’t rely on hardcoded URLs, but that’s a different discussion.</p>
+</blockquote>
+</aside>
+<p>Would you care to expand on this discussion in a new thread?</p>
+        </div>
+
+        <meta itemprop='headline' content='OAuth 2.1 and ActivityPub'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/aschrijver.html'><span itemprop='name'>aschrijver</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../948.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-04-17T07:10:26Z'>
+              <time itemprop='dateModified' datetime='2021-04-17T07:10:27Z' class='post-time'>
+                April 17, 2021,  7:10am
+              </time>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Yes, it is something worth addressing, as the issue comes up in various places, like recently in <a href="../../implementing-activitypub-client-to-server/981/20.html" class="inline-onebox">Implementing ActivityPub Client-to-Server - #20 by macgirvin</a></p>
+        </div>
+
+        <meta itemprop='headline' content='OAuth 2.1 and ActivityPub'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

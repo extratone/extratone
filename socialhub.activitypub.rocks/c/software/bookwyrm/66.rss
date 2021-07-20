@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>BookWyrm - SocialHub</title>
+    <link>https://socialhub.activitypub.rocks/c/software/bookwyrm/66</link>
+    <description>Topics in the &#39;BookWyrm&#39; category Social Reading and Reviewing</description>
+    
+      <lastBuildDate>Tue, 15 Jun 2021 15:32:58 +0000</lastBuildDate>
+      <atom:link href="https://socialhub.activitypub.rocks/c/software/bookwyrm/66.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>About BookWyrm</title>
+          <dc:creator><![CDATA[mouse]]></dc:creator>
+          <category>BookWyrm</category>
+          <description><![CDATA[
+            <p>Social Reading and Reviewing</p>
+<p><a href="https://bookwyrm.social" rel="noopener nofollow ugc">BookWyrm</a> is a platform for social reading! You can use it to track what you’re reading, review books, and follow your friends. It isn’t primarily meant for cataloguing or as a data-source for books, but it does do both of those things to some degree.</p>
+<p><strong>Development</strong>: <a href="https://github.com/bookwyrm-social" class="inline-onebox" rel="noopener nofollow ugc">BookWyrm · GitHub</a><br>
+<strong>Documentation</strong>: <a href="https://docs.joinbookwyrm.com/" rel="noopener nofollow ugc">https://docs.joinbookwyrm.com/</a><br>
+<strong>Matrix</strong>: <a href="https://matrix.to/#/#bookwyrm:matrix.org" rel="noopener nofollow ugc">https://matrix.to/#/#bookwyrm:matrix.org</a></p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/about-bookwyrm/1861">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/about-bookwyrm/1861</link>
+          <pubDate>Tue, 15 Jun 2021 15:32:58 +0000</pubDate>
+          <discourse:topicPinned>Yes</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1861</guid>
+          <source url="https://socialhub.activitypub.rocks/t/about-bookwyrm/1861.rss">About BookWyrm</source>
+        </item>
+  </channel>
+</rss>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>About Smithereen</title>
+    <link>https://socialhub.activitypub.rocks/t/about-smithereen/674</link>
+    <description>Federated, ActivityPub-compatible social network with friends, walls, and groups.
+
+https://github.com/grishka/Smithereen</description>
+    
+    <lastBuildDate>Sat, 08 Aug 2020 12:09:54 +0000</lastBuildDate>
+    <category>Smithereen</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/about-smithereen/674.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>About Smithereen</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>I do have an <a href="https://friends.grishka.me" rel="nofollow noopener">instance</a> but it’s invite-only as I don’t want to bother myself with content moderation (and I don’t have any tools for that yet). I’ll PM you an invite.</p>
+<aside class="quote no-group" data-username="WClayFerguson" data-post="9" data-topic="674">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/wclayferguson/40/443_2.png" class="avatar"> WClayFerguson:</div>
+<blockquote>
+<p>I already combed thru your Java for AP and it looks nice and clean (unlike a lot of mine!). Nice work.</p>
+</blockquote>
+</aside>
+<p>It wasn’t always like that, took a lot of refactoring to get there</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-smithereen/674/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-smithereen/674/10</link>
+        <pubDate>Sat, 08 Aug 2020 12:09:54 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-674-10</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-smithereen/674.rss">About Smithereen</source>
+      </item>
+      <item>
+        <title>About Smithereen</title>
+        <dc:creator><![CDATA[WClayFerguson]]></dc:creator>
+        <description><![CDATA[
+            <p>Just letting you know I’m also a Java developer working on adding ActivityPub to my own project. Is there a place I can see Smithereen in action? or screenshots of the GUI? I already combed thru your Java for AP and it looks nice and clean (unlike a lot of mine!). Nice work.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-smithereen/674/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-smithereen/674/9</link>
+        <pubDate>Sat, 08 Aug 2020 03:35:19 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-674-9</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-smithereen/674.rss">About Smithereen</source>
+      </item>
+      <item>
+        <title>About Smithereen</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>Smithereen is now available as a docker container! <a href="https://github.com/grishka/Smithereen#using-docker" rel="nofollow noopener">See readme</a> for details.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-smithereen/674/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-smithereen/674/8</link>
+        <pubDate>Sun, 12 Jul 2020 21:53:34 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-674-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-smithereen/674.rss">About Smithereen</source>
+      </item>
+      <item>
+        <title>About Smithereen</title>
+        <dc:creator><![CDATA[yvolk]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-smithereen" data-username="grishka" data-post="6" data-topic="674">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/grishka/40/196_2.png" class="avatar"> grishka:</div>
+<blockquote>
+<p>there are many places where something accepts an input that could be a number, a string, a JSON object, or an array</p>
+</blockquote>
+</aside>
+<p>I made special general purpose class that helps parsing exactly such cases: when value is either a string, an object or an array, or doesn’t exist at all.<br>
+Using this “parser” main parsing flow is quite compact, see the class: <a href="https://github.com/andstatus/andstatus/blob/91514e994bd51b2a2edfff9954f36ef4ec1f5a47/app/src/main/java/org/andstatus/app/util/ObjectOrId.java" rel="nofollow noopener">https://github.com/andstatus/andstatus/blob/91514e994bd51b2a2edfff9954f36ef4ec1f5a47/app/src/main/java/org/andstatus/app/util/ObjectOrId.java</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-smithereen/674/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-smithereen/674/7</link>
+        <pubDate>Wed, 13 May 2020 16:38:22 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-674-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-smithereen/674.rss">About Smithereen</source>
+      </item>
+      <item>
+        <title>About Smithereen</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="cjs" data-post="5" data-topic="674">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/cjs/40/35_2.png" class="avatar"> cjs:</div>
+<blockquote>
+<p>I would be happy to help discuss the various pitfalls with trying to map ActivityStreams to statically typed languages and the different approaches (if that’s even a problem for the project).</p>
+</blockquote>
+</aside>
+<p>I did have some <a href="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659/7">weird questions</a> related to that, because AP objects can theoretically have more than one type. Realistically though, you still need either reflection or a <a href="https://github.com/grishka/Smithereen/blob/fa5880a446ce3b5433ed8e31a749d28f3c02bf65/src/main/java/smithereen/activitypub/objects/ActivityPubObject.java#L452" rel="nofollow noopener">big honking switch statement</a> to map AP types to your own classes, and from there you could as well treat those multiple-type objects as special cases.</p>
+<p>JSON-LD processing algorithms on the other hand… I just gave up and made them use <code>JSONObject</code>s, <code>JSONArray</code>s, and simple <code>Object</code>s throughout. In the spec, there are many places where something accepts an input that could be a number, a string, a JSON object, or an array — clearly written with something like JavaScript in mind. This was nightmarish to deal with.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-smithereen/674/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-smithereen/674/6</link>
+        <pubDate>Wed, 13 May 2020 11:38:27 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-674-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-smithereen/674.rss">About Smithereen</source>
+      </item>
+      <item>
+        <title>About Smithereen</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-andstatus" data-username="yvolk" data-post="2" data-topic="674">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/yvolk/40/310_2.png" class="avatar"> yvolk:</div>
+<blockquote>
+<p>At last something written in a strongly typed language <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+</blockquote>
+</aside>
+<p><em>waves in Golang</em> <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Go is also a statically typed language! I would be happy to help discuss the various pitfalls with trying to map ActivityStreams to statically typed languages and the different approaches (if that’s even a problem for the project).</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-smithereen/674/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-smithereen/674/5</link>
+        <pubDate>Wed, 13 May 2020 10:30:07 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-674-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-smithereen/674.rss">About Smithereen</source>
+      </item>
+      <item>
+        <title>About Smithereen</title>
+        <dc:creator><![CDATA[yvolk]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-smithereen" data-username="grishka" data-post="3" data-topic="674">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/grishka/40/196_2.png" class="avatar"> grishka:</div>
+<blockquote>
+<p>It prevents protocol optimizations because you can’t, for example, expose multiple sizes and formats for images.</p>
+</blockquote>
+</aside>
+<p>“Smart” server can add all necessary sizes and formats based on one size sent by a client app… And also a server can and should “enrich” what client app missed… I think there should be symbiosis here between a Sever and a Client <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"><br>
+Client app is really complex, you can check number of lines of code in my app (about 53k Java lines according to SonarCloud), but this is not a problem <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>… So, no <a class="hashtag" href="/c/activitypub/c2s/6">#<span>activitypub:c2s</span></a> as I got <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/frowning.png?v=9" title=":frowning:" class="emoji" alt=":frowning:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-smithereen/674/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-smithereen/674/4</link>
+        <pubDate>Sun, 10 May 2020 16:17:35 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-674-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-smithereen/674.rss">About Smithereen</source>
+      </item>
+      <item>
+        <title>About Smithereen</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m an Android developer, too, and making sense of HTML/CSS/JS hurts my head. There is definitely logic to it but it’s all so different from what I’m used to.</p>
+<p>To be honest, I don’t really believe in c2s. It is too generalized to make any semblance of a good UX possible. Sure, you can make an email-style client where you have your inbox with incoming activities and you can send outgoing activities to other places. It encourages duplicating complex server-side logic on the client — for example, all the capability detection associated with friend requests or wall posts. It prevents protocol optimizations because you can’t, for example, expose multiple sizes and formats for images. I have 5 sizes and 2 formats (jpeg and webp) for photos, but using ActivityPub objects directly forces the use of the biggest size and jpeg, even though Android supports webp natively since about forever.</p>
+<p>There’s going to be a proper client API at some point. There’s <a href="https://friends.grishka.me/grishka" rel="nofollow noopener">my private instance</a> but I’ll set up a couple of demo ones with open signups when I’ll have the option to have open signups lol</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-smithereen/674/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-smithereen/674/3</link>
+        <pubDate>Sun, 10 May 2020 14:43:45 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-674-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-smithereen/674.rss">About Smithereen</source>
+      </item>
+      <item>
+        <title>About Smithereen</title>
+        <dc:creator><![CDATA[yvolk]]></dc:creator>
+        <description><![CDATA[
+            <p>At last something written in a strongly typed language <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p><a class="mention" href="/u/grishka">@grishka</a> What’s about <a class="hashtag" href="/c/activitypub/c2s/6">#<span>activitypub:c2s</span></a> support in your server? Is any running  instance available for developers testing?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-smithereen/674/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-smithereen/674/2</link>
+        <pubDate>Sun, 10 May 2020 13:55:25 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-674-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-smithereen/674.rss">About Smithereen</source>
+      </item>
+      <item>
+        <title>About Smithereen</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>Federated, ActivityPub-compatible social network with friends, walls, and groups.</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://github.githubassets.com/favicons/favicon.svg" class="site-icon" width="32" height="32">
+      <a href="https://github.com/grishka/Smithereen" target="_blank" rel="nofollow noopener">GitHub</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/be8a8bda4e76e5b48c14492c7ee4a4b1d0f15195.jpeg" class="thumbnail onebox-avatar" width="400" height="400">
+
+<h3><a href="https://github.com/grishka/Smithereen" target="_blank" rel="nofollow noopener">grishka/Smithereen</a></h3>
+
+<p>Contribute to grishka/Smithereen development by creating an account on GitHub.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/about-smithereen/674/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-smithereen/674/1</link>
+        <pubDate>Sun, 10 May 2020 07:44:36 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-674-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-smithereen/674.rss">About Smithereen</source>
+      </item>
+  </channel>
+</rss>

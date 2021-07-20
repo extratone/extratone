@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Discussing the evolution of the activitypub.rocks site</title>
+    <link>https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142</link>
+    <description>Following the recent [APConf in Prague](https://redaktor.me/apconf/), I tried going through the resources at hand for new ActivityPub implementers, [reviewing what we could improve to ease the onboarding](https://socialhub.activitypub.rocks/t/discussing-onboarding-for-developers/61). activitypub.rocks plays a major role in this, being the main landing page for the protocol.
+
+In the meantime, this forum has been created and made public. It could play a major role at organizing the information long-term for varied audiences, but would not replace ap.rocks as a landing page, which means we have to properly link to the relevant parts of the forum for ap.rocks.
+
+Now, I would normally suggest the modifications through a PR directly against the code, but I was unable to run the site code. Moreover, the [28-09 SocialCG meeting](https://www.w3.org/wiki/SocialCG/2019-09-28) lead me to write down my suggestions here instead before deciding anything:
+
+- a top bar featuring the main links, so as make the most important information stand out:
+  - a link to the spec
+  - a link to the forum
+  - a link to (a) future guide(s) aimed at implemeters? That could also be done in the &quot;Implementers&quot; section below, but having twice the information doesn&#39;t hurt.
+ - same thing but for end users that might bump on ActivityPub before some more user-oriented project page like https://joinmastodon.org/ or the future https://joinfediverse.org.
+- a rewritten &quot;implementers&quot; section that points to the relevant forum sections rather than the defunct test.activitypub.rocks.
+- a visible rss feed button in the news section
+- a rewritten news section, that includes not just the blog but also selected videos from the past AP events that present the project well
+
+I made a demonstration at https://rigelk.gitlab.io/activitypub.rocks/ that I initially meant as a full rewrite of ap.rocks to be more hackable, including a replication of the [implementation reports page](https://rigelk.gitlab.io/activitypub.rocks/implementation-report/). Its code is available at https://gitlab.com/rigelk/activitypub.rocks.
+
+---
+
+**Questions:** do you find the suggested modifications to the site valuable? Do you have other modifications in mind? Would you favor a re-implementation of the site in something more easily hackable?
+
+---
+
+an issue was created on the dustycloud/activitpub.rocks tracker: https://gitlab.com/dustyweb/activitypub.rocks/issues/11 and a mirror issue on the w3c/activipub tracker: https://github.com/w3c/activitypub/issues/345
+this issue incidentally tries to achieve part of what https://github.com/w3c/activitypub/issues/335 diagnosed, and follows-up on https://github.com/w3c/activitypub/issues/331</description>
+    
+    <lastBuildDate>Thu, 26 Dec 2019 20:30:57 +0000</lastBuildDate>
+    <category>Community</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Discussing the evolution of the activitypub.rocks site</title>
+        <dc:creator><![CDATA[cwebber]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="9" data-topic="142">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/how/40/94_2.png" class="avatar"> how:</div>
+<blockquote>
+<p>I’m fine with using Haunt if indeed we can have a clear path to make something beautiful without too much headache. As long as it supports plain Markdown (preferrably CommonMark) input, I’m good <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+</blockquote>
+</aside>
+<p>It does support that!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142/10</link>
+        <pubDate>Thu, 26 Dec 2019 20:30:57 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-142-10</guid>
+        <source url="https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142.rss">Discussing the evolution of the activitypub.rocks site</source>
+      </item>
+      <item>
+        <title>Discussing the evolution of the activitypub.rocks site</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-olki" data-post="1" data-topic="142">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/rigelk/40/15_2.png" class="avatar"> rigelk:</div>
+<blockquote>
+<p>a link to the forum</p>
+</blockquote>
+</aside>
+<p>I’d like this link to be called “SocialHub” (with maybe a <code>title</code> attribute saying “The ActivityPub Community Forum”) so the name sticks. I think this was an excellent move from <span class="mention">@mxb</span> to name the original forum this way.</p>
+<aside class="quote group-olki" data-post="1" data-topic="142">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/rigelk/40/15_2.png" class="avatar"> rigelk:</div>
+<blockquote>
+<p>same thing but for end users that might bump on ActivityPub before some more user-oriented project page like <a href="https://joinmastodon.org/">https://joinmastodon.org/</a> or the future <a href="https://joinfediverse.org">https://joinfediverse.org </a>.</p>
+</blockquote>
+</aside>
+<aside class="quote no-group quote-modified" data-post="2" data-topic="142">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/cwebber/40/51_2.png" class="avatar"> cwebber:</div>
+<blockquote>
+<p>“who gets to be on the list?” I think I, at least, don’t have the energy to be able to accomodate the amount of work to do that responsibly.</p>
+</blockquote>
+</aside>
+<p>I guess <a class="hashtag" href="/c/10-fediversity">#<span>fediversity</span></a> can be a good help in this case for “[u]nderstanding and discovering communities on this emerging social network that is the Fediverse”. As it comprises <a href="https://fediverse.space">fediverse.space</a>, <a href="https://fediverse.network">fediverse.network</a> and <a href="https://switching.software">switching.software</a><sup class="footnote-ref"><a href="#footnote-1358-1" id="footnote-ref-1358-1">[1]</a></sup>, it offers a ready portal to all the implementations one would ever need to educate themselves.</p>
+<p>Also, I’d move the implementers section below the news (actually, just above the footer) since this section will hardly change.</p>
+<aside class="quote group-olki" data-post="1" data-topic="142">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/rigelk/40/15_2.png" class="avatar"> rigelk:</div>
+<blockquote>
+<p>Would you favor a re-implementation of the site in something more easily hackable?</p>
+</blockquote>
+</aside>
+<p>I’m fine with using Haunt if indeed we can have a clear path to make something beautiful without too much headache. As long as it supports plain Markdown (preferrably CommonMark) input, I’m good <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<hr class="footnotes-sep">
+
+<ol class="footnotes-list">
+<li id="footnote-1358-1" class="footnote-item">
+<details>
+<summary>
+and more Fediverse resources</summary>
+<p>Fediverse.Network has this list:</p>
+<ul>
+<li>fediverse.party</li>
+<li>fediverse.space</li>
+<li>search.social</li>
+<li><a href="http://wedistribute.org">wedistribute.org</a></li>
+<li>switching.social</li>
+<li><a href="http://retribute.me">retribute.me</a></li>
+<li><a href="http://distsn.org">distsn.org</a></li>
+<li>the-federation.info</li>
+<li>instances.social</li>
+</ul>
+</details>
+ <a href="#footnote-ref-1358-1" class="footnote-backref">↩︎</a>
+</li>
+</ol>
+          <p><a href="https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142/9</link>
+        <pubDate>Thu, 26 Dec 2019 17:52:13 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-142-9</guid>
+        <source url="https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142.rss">Discussing the evolution of the activitypub.rocks site</source>
+      </item>
+      <item>
+        <title>Discussing the evolution of the activitypub.rocks site</title>
+        <dc:creator><![CDATA[strypey]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for pointing me to it <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"> I won’t be available for any new projects until after FOSSasia in March. At this point I’m more flagging that some overlap in goals might exist and suggesting a chat with Light about it, who is Gold Leader at fediverse.party about collaboration and/or differentiation. Also inviting you to open a thread about the project in the Fediversity category so various other heads working on similar user support projects can chime in.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142/8</link>
+        <pubDate>Tue, 17 Dec 2019 18:59:45 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-142-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142.rss">Discussing the evolution of the activitypub.rocks site</source>
+      </item>
+      <item>
+        <title>Discussing the evolution of the activitypub.rocks site</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/rigelk">@rigelk</a> <a class="mention" href="/u/strypey">@strypey</a> We quickly discussed the site at the Social CG Telcon.<br>
+Have you seen the guide Chris wrote afterwards ?<br>
+<aside class="quote quote-modified" data-post="1" data-topic="375">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/cwebber/40/51_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/how-to-hack-on-activitypub-rocks/375">How to hack on activitypub.rocks</a> <a class="badge-wrapper  box" href="/c/community"><span class="badge-category-bg" style="background-color: #808281;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Discussion about this site, its organization, how it works, and how we can improve it.">Community</span></a>
+  </div>
+  <blockquote>
+    Setting up the dev environment
+Cloning from git
+First clone and change directory to a checkout of <a href="https://gitlab.com/dustyweb/activitypub.rocks" rel="nofollow noopener">the git repository</a>: 
+git clone https://gitlab.com/dustyweb/activitypub.rocks.git
+cd activitypub.rocks
+
+Setting up dependencies the easy way: use Guix
+Next you’re going to get the environment up and running.  The “easy” way to do this is to use <a href="https://guix.gnu.org/" rel="nofollow noopener">Guix</a> (which can be run as its own operating system distribution or as a userspace package manager under any GNU/Linux distribution): 
+guix environment -l guix…
+  </blockquote>
+</aside>
+</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142/7</link>
+        <pubDate>Mon, 16 Dec 2019 19:37:58 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-142-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142.rss">Discussing the evolution of the activitypub.rocks site</source>
+      </item>
+      <item>
+        <title>Discussing the evolution of the activitypub.rocks site</title>
+        <dc:creator><![CDATA[strypey]]></dc:creator>
+        <description><![CDATA[
+            <p>This is pretty much exactly the goals of fediverse.party. Maybe there’s sufficient points of difference that it’s worth having two sites with this goal, but even if that’s the case, we would definitely like to collaborate. Is anyone from <a href="http://joinfediverse.org" rel="nofollow noopener">joinfediverse.org</a> present on the <a href="https://socialhub.activitypub.rocks/c/fediversity">Fediversity board</a> on this forum? It was set up to discuss collaboration on these kinds of projects.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142/6</link>
+        <pubDate>Thu, 12 Dec 2019 07:43:50 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-142-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142.rss">Discussing the evolution of the activitypub.rocks site</source>
+      </item>
+      <item>
+        <title>Discussing the evolution of the activitypub.rocks site</title>
+        <dc:creator><![CDATA[rigelk]]></dc:creator>
+        <description><![CDATA[
+            <p>I am not responsible of the project, I just know some people involved.</p>
+<p>While the goals of the two projects sound similar, joinfediverse is meant as a landing page explaining concepts involved in the fediverse and what to expect from major implementations. The end goal is to be able to share the site with your family and friends without the need for any other explanation. Beyond that, I don’t know more.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142/5</link>
+        <pubDate>Sat, 16 Nov 2019 17:19:19 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-142-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142.rss">Discussing the evolution of the activitypub.rocks site</source>
+      </item>
+      <item>
+        <title>Discussing the evolution of the activitypub.rocks site</title>
+        <dc:creator><![CDATA[strypey]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-olki" data-post="1" data-topic="142">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/rigelk/40/15_2.png" class="avatar"> rigelk:</div>
+<blockquote>
+<p>same thing but for end users that might bump on ActivityPub before some more user-oriented project page like <a href="https://joinmastodon.org/" rel="nofollow noopener">https://joinmastodon.org/</a> or the future <a href="https://joinfediverse.org" rel="nofollow noopener">https://joinfediverse.org</a>.</p>
+</blockquote>
+</aside>
+<p>This might be a bit of a tangent, but what’s the plan for <a href="https://joinfediverse.org" rel="nofollow noopener">https://joinfediverse.org</a> ? From the label on the tin it sounds a bit like what we’ve been trying to do with <a href="https://fediverse.party" rel="nofollow noopener">fediverse.party</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142/4</link>
+        <pubDate>Fri, 15 Nov 2019 16:55:37 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-142-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142.rss">Discussing the evolution of the activitypub.rocks site</source>
+      </item>
+      <item>
+        <title>Discussing the evolution of the activitypub.rocks site</title>
+        <dc:creator><![CDATA[rigelk]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="2" data-topic="142">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/cwebber/40/51_2.png" class="avatar"> cwebber:</div>
+<blockquote>
+<p>Interesting but it may be a challenging problem for us; there are some tough governance decisions on “who gets to be on the list?” I think I, at least, don’t have the energy to be able to accomodate the amount of work to do that responsibly? But we could at least do something that gives people a better list of well acknowledged implementations.</p>
+</blockquote>
+</aside>
+<p>It doesn’t have to be hardcoded in the site. Just redirect to the software section of the forum (at least it would stay consistent with our forum moderation)? Or a list of lists? But having a list of software isn’t the most important point. It could be at least explaining the implications of the technology for the end-user, and what kind of software the user can find, in broad categories.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142/3</link>
+        <pubDate>Wed, 16 Oct 2019 16:01:05 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-142-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142.rss">Discussing the evolution of the activitypub.rocks site</source>
+      </item>
+      <item>
+        <title>Discussing the evolution of the activitypub.rocks site</title>
+        <dc:creator><![CDATA[cwebber]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>a top bar featuring the main links, so as make the most important information stand out:</p>
+</blockquote>
+<p>completely agree</p>
+<blockquote>
+<p>same thing but for end users that might bump on ActivityPub before some more user-oriented project page like <a href="https://joinmastodon.org/" rel="nofollow noopener">https://joinmastodon.org/</a> or the future <a href="https://joinfediverse.org" rel="nofollow noopener">https://joinfediverse.org</a>.</p>
+</blockquote>
+<p>Interesting but it may be a challenging problem for us; there are some tough governance decisions on “who gets to be on the list?”  I think I, at least, don’t have the energy to be able to accomodate the amount of work to do that responsibly?  But we could at least do something that gives people a better list of well acknowledged implementations.</p>
+<blockquote>
+<p>a rewritten “implementers” section that points to the relevant forum sections rather than the defunct test.activitypub.rocks.</p>
+</blockquote>
+<p>For that matter, we might as well discuss “what to do about the test suite”, but this should be its own thread</p>
+<blockquote>
+<p>a visible rss feed button in the news section</p>
+</blockquote>
+<p>Sure, that’s easy</p>
+<blockquote>
+<p>a rewritten news section, that includes not just the blog but also selected videos from the past AP events that present the project well</p>
+</blockquote>
+<p>Hm, good idea.  I’m also willing to accept more contributors on blogposts; it’s perfectly feasible to submit new blogposts as markdown.</p>
+<p>I’m willing to make some changes, but let’s discuss a little bit more here.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142/2</link>
+        <pubDate>Wed, 16 Oct 2019 15:50:30 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-142-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142.rss">Discussing the evolution of the activitypub.rocks site</source>
+      </item>
+      <item>
+        <title>Discussing the evolution of the activitypub.rocks site</title>
+        <dc:creator><![CDATA[rigelk]]></dc:creator>
+        <description><![CDATA[
+            <p>Following the recent <a href="https://redaktor.me/apconf/" rel="nofollow noopener">APConf in Prague</a>, I tried going through the resources at hand for new ActivityPub implementers, <a href="https://socialhub.activitypub.rocks/t/discussing-onboarding-for-developers/61">reviewing what we could improve to ease the onboarding</a>. activitypub.rocks plays a major role in this, being the main landing page for the protocol.</p>
+<p>In the meantime, this forum has been created and made public. It could play a major role at organizing the information long-term for varied audiences, but would not replace ap.rocks as a landing page, which means we have to properly link to the relevant parts of the forum for ap.rocks.</p>
+<p>Now, I would normally suggest the modifications through a PR directly against the code, but I was unable to run the site code. Moreover, the <a href="https://www.w3.org/wiki/SocialCG/2019-09-28" rel="nofollow noopener">28-09 SocialCG meeting</a> lead me to write down my suggestions here instead before deciding anything:</p>
+<ul>
+<li>a top bar featuring the main links, so as make the most important information stand out:
+<ul>
+<li>a link to the spec</li>
+<li>a link to the forum</li>
+<li>a link to (a) future guide(s) aimed at implemeters? That could also be done in the “Implementers” section below, but having twice the information doesn’t hurt.</li>
+</ul>
+</li>
+<li>same thing but for end users that might bump on ActivityPub before some more user-oriented project page like <a href="https://joinmastodon.org/" rel="nofollow noopener">https://joinmastodon.org/</a> or the future <a href="https://joinfediverse.org" rel="nofollow noopener">https://joinfediverse.org</a>.</li>
+<li>a rewritten “implementers” section that points to the relevant forum sections rather than the defunct test.activitypub.rocks.</li>
+<li>a visible rss feed button in the news section</li>
+<li>a rewritten news section, that includes not just the blog but also selected videos from the past AP events that present the project well</li>
+</ul>
+<p>I made a demonstration at <a href="https://rigelk.gitlab.io/activitypub.rocks/" rel="nofollow noopener">https://rigelk.gitlab.io/activitypub.rocks/</a> that I initially meant as a full rewrite of ap.rocks to be more hackable, including a replication of the <a href="https://rigelk.gitlab.io/activitypub.rocks/implementation-report/" rel="nofollow noopener">implementation reports page</a>. Its code is available at <a href="https://gitlab.com/rigelk/activitypub.rocks" rel="nofollow noopener">https://gitlab.com/rigelk/activitypub.rocks</a>.</p>
+<hr>
+<p><strong>Questions:</strong> do you find the suggested modifications to the site valuable? Do you have other modifications in mind? Would you favor a re-implementation of the site in something more easily hackable?</p>
+<hr>
+<p>an issue was created on the dustycloud/activitpub.rocks tracker: <a href="https://gitlab.com/dustyweb/activitypub.rocks/issues/11" rel="nofollow noopener">https://gitlab.com/dustyweb/activitypub.rocks/issues/11</a> and a mirror issue on the w3c/activipub tracker: <a href="https://github.com/w3c/activitypub/issues/345" rel="nofollow noopener">https://github.com/w3c/activitypub/issues/345</a><br>
+this issue incidentally tries to achieve part of what <a href="https://github.com/w3c/activitypub/issues/335" rel="nofollow noopener">https://github.com/w3c/activitypub/issues/335</a> diagnosed, and follows-up on <a href="https://github.com/w3c/activitypub/issues/331" rel="nofollow noopener">https://github.com/w3c/activitypub/issues/331</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142/1</link>
+        <pubDate>Tue, 15 Oct 2019 06:46:31 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-142-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142.rss">Discussing the evolution of the activitypub.rocks site</source>
+      </item>
+  </channel>
+</rss>

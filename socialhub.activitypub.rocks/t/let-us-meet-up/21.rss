@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Let us Meet Up!</title>
+    <link>https://socialhub.activitypub.rocks/t/let-us-meet-up/21</link>
+    <description>Planning and following ActivityPub-related events and gatherings.
+
+## Check the agendas!
+
+- [SocialCG Agenda](https://socialhub.activitypub.rocks/c/meeting/socialcg/l/agenda) keeps track of upcoming W3C Social Community Group meetings
+- [SocialHub Agenda](https://socialhub.activitypub.rocks/c/meeting/l/agenda) keeps tracks of other events
+
+## Use the calendar!
+
+- Our [Meeting calendar](https://socialhub.activitypub.rocks/c/meeting/l/calendar) allows you to subscribe to the event feed with iCal and RSS.</description>
+    
+    <lastBuildDate>Fri, 13 Sep 2019 12:43:20 +0000</lastBuildDate>
+    <category>Meeting</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/let-us-meet-up/21.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Let us Meet Up!</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://socialhub.activitypub.rocks/t/let-us-meet-up/21/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/let-us-meet-up/21/2</link>
+        <pubDate>Fri, 13 Sep 2019 12:45:43 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-21-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/let-us-meet-up/21.rss">Let us Meet Up!</source>
+      </item>
+      <item>
+        <title>Let us Meet Up!</title>
+        <dc:creator><![CDATA[system]]></dc:creator>
+        <description><![CDATA[
+            <p>Planning and following ActivityPub-related events and gatherings.</p>
+<h2>Check the agendas!</h2>
+<ul>
+<li>
+<a href="https://socialhub.activitypub.rocks/c/meeting/socialcg/l/agenda">SocialCG Agenda</a> keeps track of upcoming W3C Social Community Group meetings</li>
+<li>
+<a href="https://socialhub.activitypub.rocks/c/meeting/l/agenda">SocialHub Agenda</a> keeps tracks of other events</li>
+</ul>
+<h2>Use the calendar!</h2>
+<ul>
+<li>Our <a href="https://socialhub.activitypub.rocks/c/meeting/l/calendar">Meeting calendar</a> allows you to subscribe to the event feed with iCal and RSS.</li>
+</ul>
+          <p><a href="https://socialhub.activitypub.rocks/t/let-us-meet-up/21/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/let-us-meet-up/21/1</link>
+        <pubDate>Thu, 12 Sep 2019 19:14:53 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-21-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/let-us-meet-up/21.rss">Let us Meet Up!</source>
+      </item>
+  </channel>
+</rss>

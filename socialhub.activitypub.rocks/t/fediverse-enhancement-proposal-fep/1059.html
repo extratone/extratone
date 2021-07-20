@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Fediverse Enhancement Proposal (FEP) - ActivityPub Conference 2020 - SocialHub</title>
+    <meta name="description" content="As discussed in Scalling Up Cooperation BoF We’d like to try and put together a Git repository and templates for writing up documents that describe how things work on the Fediverse. 
+This builds upon work done by @cjs on&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="1059.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Fediverse Enhancement Proposal (FEP)&#39;" href="1059.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/fediverse-enhancement-proposal-fep/1059" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/fediverse-enhancement-proposal-fep/1059" />
+<meta property="og:title" content="Fediverse Enhancement Proposal (FEP)" />
+<meta name="twitter:title" content="Fediverse Enhancement Proposal (FEP)" />
+<meta property="og:description" content="As discussed in Scalling Up Cooperation BoF We’d like to try and put together a Git repository and templates for writing up documents that describe how things work on the Fediverse.  This builds upon work done by @cjs on https://library.activitypub.dev/ (see also post on SocialHub).  It might also be something that be used in context of what was discussed in the Experiments towards V2 BoF." />
+<meta name="twitter:description" content="As discussed in Scalling Up Cooperation BoF We’d like to try and put together a Git repository and templates for writing up documents that describe how things work on the Fediverse.  This builds upon work done by @cjs on https://library.activitypub.dev/ (see also post on SocialHub).  It might also be something that be used in context of what was discussed in the Experiments towards V2 BoF." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="2 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="8 ❤" />
+<meta property="article:published_time" content="2020-10-04T12:38:54+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="1059.html">Fediverse Enhancement Proposal (FEP)</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="https://socialhub.activitypub.rocks/c/meeting/11" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #0E76BD'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Meeting</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/meeting/apconf2020/53.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #ff7a00'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>ActivityPub Conference 2020</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+      <div class="topic-category">
+        <div class='discourse-tags list-tags'>
+            <a href='../../tag/hackathon.html' class='discourse-tag' rel="tag">hackathon</a>
+        </div>
+      </div>
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/pukkamustard.html'><span itemprop='name'>pukkamustard</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1059.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-10-04T12:38:54Z'>
+              <time itemprop='dateModified' datetime='2020-10-05T12:05:25Z' class='post-time'>
+                October 5, 2020, 12:05pm
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>As discussed in <a href="../scaling-up-cooperation/837.html">Scalling Up Cooperation BoF</a> We’d like to try and put together a Git repository and templates for writing up documents that describe how things work on the Fediverse.</p>
+<p>This builds upon work done by <a class="mention" href="../../u/cjs.html">@cjs</a> on <a href="https://library.activitypub.dev/" rel="noopener nofollow ugc">https://library.activitypub.dev/</a> (see also <a href="../library-of-non-tech-and-technical-works/866.html">post on SocialHub</a>).</p>
+<p>It might also be something that be used in context of what was discussed in the <a href="../activitypub-experimentation-towards-ap-v2/840/2.html">Experiments towards V2 BoF</a>.</p>
+        </div>
+
+        <meta itemprop='headline' content='Fediverse Enhancement Proposal (FEP)'>
+          <meta itemprop='keywords' content='hackathon'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../fep-a4edc7b-the-fediverse-enhancement-proposal-process/1090.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/fep-a4edc7b-the-fediverse-enhancement-proposal-process/1090'>
+                      <span itemprop='name'>FEP-a4edc7b: The Fediverse Enhancement Proposal Process</span>
+                    </a>
+                    <meta itemprop='position' content='5'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../socialcg-meeting-on-november-7th-16-00-utc/1106/3.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/socialcg-meeting-on-november-7th-16-00-utc/1106/3'>
+                      <span itemprop='name'>2020-11-07 SocialCG Meeting</span>
+                    </a>
+                    <meta itemprop='position' content='6'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../fep-a4ed-the-fediverse-enhancement-proposal-process/1171/2.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/fep-a4ed-the-fediverse-enhancement-proposal-process/1171/2'>
+                      <span itemprop='name'>FEP-a4ed: The Fediverse Enhancement Proposal Process</span>
+                    </a>
+                    <meta itemprop='position' content='7'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../2020-11-14-socialcg-meeting/1128.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/2020-11-14-socialcg-meeting/1128'>
+                      <span itemprop='name'>2020-11-14 SocialCG Meeting</span>
+                    </a>
+                    <meta itemprop='position' content='8'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../come-help-list-of-feps-needed/1097.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097'>
+                      <span itemprop='name'>Come Help: List of FEPs Needed</span>
+                    </a>
+                    <meta itemprop='position' content='9'>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/heluecht.html'><span itemprop='name'>heluecht</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1059.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-10-04T12:54:00Z'>
+              <time itemprop='dateModified' datetime='2020-10-04T12:58:45Z' class='post-time'>
+                October 4, 2020, 12:58pm
+              </time>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>This really sounds a good idea. We need to condensate the best practices.</p>
+        </div>
+
+        <meta itemprop='headline' content='Fediverse Enhancement Proposal (FEP)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/lain.html'><span itemprop='name'>lain</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1059.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-05T12:15:53Z' class='post-time'>
+                October 5, 2020, 12:15pm
+              </time>
+              <meta itemprop='dateModified' content='2020-10-05T12:15:53Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>i’ll take a look at this as well. This would also include things like Pleroma’s ChatMessages and EmojiReacts, right?</p>
+        </div>
+
+        <meta itemprop='headline' content='Fediverse Enhancement Proposal (FEP)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/pukkamustard.html'><span itemprop='name'>pukkamustard</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1059.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-05T12:20:00Z' class='post-time'>
+                October 5, 2020, 12:20pm
+              </time>
+              <meta itemprop='dateModified' content='2020-10-05T12:20:00Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="lain" data-post="3" data-topic="1059">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/lain/40/349_2.png" class="avatar"> lain:</div>
+<blockquote>
+<p>This would also include things like Pleroma’s ChatMessages and EmojiReacts, right?</p>
+</blockquote>
+</aside>
+<p>Absolutely. Any behavior that makes sense to document for interoperability should fit in.</p>
+        </div>
+
+        <meta itemprop='headline' content='Fediverse Enhancement Proposal (FEP)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/pukkamustard.html'><span itemprop='name'>pukkamustard</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1059.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-05T12:34:13Z' class='post-time'>
+                October 5, 2020, 12:34pm
+              </time>
+              <meta itemprop='dateModified' content='2020-10-05T12:34:13Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Playing around with some ideas and reading up on some other similar things (Bittorrent Enhancment Proposals, NixOS RFCs, Scheme SRFI, et al.).</p>
+<p>I think all this needs is a Git repo with following structure:</p>
+<pre><code class="lang-auto">├── README.md
+├── LICENSE
+├── feps
+│   ├── fep-a4edc7b.md
+│   └── fep-00001.md
+└── fep-0000000-template.md
+</code></pre>
+<p>An initial FEP would be describing the process itself - scope, format of document, publishing process. Here some initial notes on that: <a href="https://cryptpad.disroot.org/code/#/2/code/edit/XGsPnlKG6H8TRKznpSvjUKPm/" rel="noopener nofollow ugc">https://cryptpad.disroot.org/code/#/2/code/edit/XGsPnlKG6H8TRKznpSvjUKPm/</a></p>
+<p>How about a live catch-up later today or tomorrow to get some initial ideas? Maybe <a class="mention" href="../../u/cjs.html">@cjs</a> can join in later as well?</p>
+        </div>
+
+        <meta itemprop='headline' content='Fediverse Enhancement Proposal (FEP)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/lain.html'><span itemprop='name'>lain</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1059.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-05T16:10:09Z' class='post-time'>
+                October 5, 2020,  4:10pm
+              </time>
+              <meta itemprop='dateModified' content='2020-10-05T16:10:09Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>This looks really good, I’ll try to write up a spec for our EmojiReact system in that. We can catch up on this tomorrow in a call or just keep discussing things here, i don’t mind either way</p>
+        </div>
+
+        <meta itemprop='headline' content='Fediverse Enhancement Proposal (FEP)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/pukkamustard.html'><span itemprop='name'>pukkamustard</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1059.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-05T16:14:14Z' class='post-time'>
+                October 5, 2020,  4:14pm
+              </time>
+              <meta itemprop='dateModified' content='2020-10-05T16:14:14Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="lain" data-post="6" data-topic="1059">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/lain/40/349_2.png" class="avatar"> lain:</div>
+<blockquote>
+<p>I’ll try to write up a spec for our EmojiReact system in that</p>
+</blockquote>
+</aside>
+<p>Perfect!</p>
+<p>Just updated the Pad with an initial “Submission Process”: <a href="https://cryptpad.disroot.org/code/#/2/code/edit/XGsPnlKG6H8TRKznpSvjUKPm/" rel="noopener nofollow ugc">https://cryptpad.disroot.org/code/#/2/code/edit/XGsPnlKG6H8TRKznpSvjUKPm/</a></p>
+<aside class="quote no-group" data-username="lain" data-post="6" data-topic="1059">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/lain/40/349_2.png" class="avatar"> lain:</div>
+<blockquote>
+<p>We can catch up on this tomorrow in a call or just keep discussing things here, i don’t mind either way</p>
+</blockquote>
+</aside>
+<p>Cool, let’s keep discussing here and see if it makes sense for a call tomorrow.</p>
+        </div>
+
+        <meta itemprop='headline' content='Fediverse Enhancement Proposal (FEP)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/pukkamustard.html'><span itemprop='name'>pukkamustard</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1059.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-06T16:16:41Z' class='post-time'>
+                October 6, 2020,  4:16pm
+              </time>
+              <meta itemprop='dateModified' content='2020-10-06T16:16:41Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hello!</p>
+<p>I’ve pushed an initial Git repository: <a href="https://codeberg.org/pukkamustard/fep" rel="noopener nofollow ugc">https://codeberg.org/pukkamustard/fep</a></p>
+<p>Very happy for feedback and comments.</p>
+<p>Specific things that are missing and I am looking for input:</p>
+<h2>Hosting</h2>
+<p>Where should the FEP repository be hosted?</p>
+<h2>SocialHub</h2>
+<p>Would it make sense to have a category for FEPs?</p>
+<p>cc <a class="mention" href="../../u/how.html">@how</a></p>
+<h2>Pretty display</h2>
+<p>Currently FEP is just a Git repository of MarkDown files. I think this is good as it keeps required technology to a minimum.</p>
+<p>It would be nice to have a nice interface (web site) for the FEPs. A simple static site generator make pretty HTMLs. There can be multiple websites that provide a pretty interface.</p>
+<p>There are some additional meta-data that can be nicely displayed (see next point on Front Matter): related FEPs,</p>
+<h2>Front Matter</h2>
+<p>There is some required meta data that may be included in the Markdown file as such:</p>
+<pre><code class="lang-auto">---
+- authors: qfwfq &lt;qfwfq@luna.sol&gt;
+- status: DRAFT
+- receivedDate: 1970-01-01 # date when proposal became a DRAFT
+- finalizedDate: ... # date when proposal becomes FINAL
+- withdrawnDate: ... # date when proposal was withdrawn
+- relatedFEPs: FEP-abcdef, FEP-abcads
+- updatesFEPs: FEP-accdad
+- errataOfFEPs: FEP-adfsaf
+---
+# FEP-011231: How to post a picture of your cat on the Fediverse
+...
+</code></pre>
+<p>The two questions are:</p>
+<ul>
+<li>
+<p>what metadata is needed?</p>
+</li>
+<li>
+<p>how to encode it?<br>
+Static site generators seem to be able to parse YAML metadata as in example above. But YAML is not a nice thing. Is there a better way?<br>
+Other markup formats (rst, AsciiDoc) natively support such meta-data. Is that worth not using Markdown for?</p>
+</li>
+</ul>
+<h2>Editors</h2>
+<p>Any volunteers?</p>
+        </div>
+
+        <meta itemprop='headline' content='Fediverse Enhancement Proposal (FEP)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/pukkamustard.html'><span itemprop='name'>pukkamustard</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1059.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-07T09:04:07Z' class='post-time'>
+                October 7, 2020,  9:04am
+              </time>
+              <meta itemprop='dateModified' content='2020-10-07T09:04:07Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>There will be a meeting in the <a href="https://bbb.fosshost.org/b/mor-phk-9a0-6ey" rel="noopener nofollow ugc">Hallway</a> today at 15:00 UTC (17:00h CEST). <a class="mention" href="../../u/lain.html">@lain</a>, <a class="mention" href="../../u/cjs.html">@cjs</a> and myself will be there. Feel free to join.</p>
+        </div>
+
+        <meta itemprop='headline' content='Fediverse Enhancement Proposal (FEP)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/tinyrabbit.html'><span itemprop='name'>tinyrabbit</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1059.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-07T11:48:38Z' class='post-time'>
+                October 7, 2020, 11:48am
+              </time>
+              <meta itemprop='dateModified' content='2020-10-07T11:48:38Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I think the metadata can just be a preamble section of the document:</p>
+<h1>Title</h1>
+<hr>
+<ul>
+<li>some</li>
+<li>meta</li>
+<li>data</li>
+</ul>
+<hr>
+<h2>Summary</h2>
+<p>lorem ipsum</p>
+<h2>Details</h2>
+<p>morem ipsum</p>
+        </div>
+
+        <meta itemprop='headline' content='Fediverse Enhancement Proposal (FEP)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/tinyrabbit.html'><span itemprop='name'>tinyrabbit</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1059.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-07T11:49:12Z' class='post-time'>
+                October 7, 2020, 11:49am
+              </time>
+              <meta itemprop='dateModified' content='2020-10-07T11:49:12Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>And I <em>love</em> this idea, btw.</p>
+        </div>
+
+        <meta itemprop='headline' content='Fediverse Enhancement Proposal (FEP)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/how.html'><span itemprop='name'>how</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1059.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-10-12T09:27:37Z'>
+              <time itemprop='dateModified' datetime='2020-10-12T09:29:09Z' class='post-time'>
+                October 12, 2020,  9:29am
+              </time>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="pukkamustard" data-post="8" data-topic="1059">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/pukkamustard/40/111_2.png" class="avatar"> pukkamustard:</div>
+<blockquote>
+<p>Would it make sense to have a category for FEPs?</p>
+</blockquote>
+</aside>
+<p>We could certainly add a dedicated section under <a class="hashtag" href="../../c/activitypub.html">#<span>activitypub</span></a> for FEPs. If you consider the first part in a topic as the canonical version of the FEP, publishing it under /pub/fep-* would make it easy to keep track of. And we could have a crontab somewhere to synchronize with a git repository…</p>
+<p>The category can provide a template for new topics. Would someone be interested in working on a category description that describes the prices and on the topic template?</p>
+        </div>
+
+        <meta itemprop='headline' content='Fediverse Enhancement Proposal (FEP)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1059.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-15T20:58:32Z' class='post-time'>
+                October 15, 2020,  8:58pm
+              </time>
+              <meta itemprop='dateModified' content='2020-10-15T20:58:32Z'>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>After talking with <a class="mention" href="../../u/lain.html">@lain</a> and <a class="mention" href="../../u/pukkamustard.html">@pukkamustard</a> I’ve finally got <a href="https://git.activitypub.dev" rel="noopener nofollow ugc">https://git.activitypub.dev</a> set up with a <a href="https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals" rel="noopener nofollow ugc">repository</a>. I had promised them within 7 days but it’s been 8, so I guess better late than never!</p>
+<p>It still needs some work on my end:</p>
+<ol>
+<li>I can issue accounts for interested folks, reach out to me on Fedi (<span class="mention">@cj</span>@mastodon.technology). I didn’t want to open up registration because the mailer doesn’t appear to work to do the email verification, and I don’t want to open it up w/o that (spam concerns). However, for me to issue an account manually, I still require an email address though.</li>
+<li>I still need to spend more time with the Gitea themes and home page so it doesn’t feel quite so default-y.</li>
+</ol>
+        </div>
+
+        <meta itemprop='headline' content='Fediverse Enhancement Proposal (FEP)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/pukkamustard.html'><span itemprop='name'>pukkamustard</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1059.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-16T07:24:30Z' class='post-time'>
+                October 16, 2020,  7:24am
+              </time>
+              <meta itemprop='dateModified' content='2020-10-16T07:24:30Z'>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="cjs" data-post="13" data-topic="1059">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/cjs/40/35_2.png" class="avatar"> cjs:</div>
+<blockquote>
+<p>After talking with <a class="mention" href="../../u/lain.html">@lain</a> and <a class="mention" href="../../u/pukkamustard.html">@pukkamustard</a> I’ve finally got <a href="https://git.activitypub.dev" rel="noopener nofollow ugc">https://git.activitypub.dev</a> set up with a <a href="https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals" rel="noopener nofollow ugc">repository</a>. I had promised them within 7 days but it’s been 8, so I guess better late than never!</p>
+</blockquote>
+</aside>
+<p>Beautiful. Thanks!</p>
+<aside class="quote no-group" data-username="cjs" data-post="13" data-topic="1059">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/cjs/40/35_2.png" class="avatar"> cjs:</div>
+<blockquote>
+<p>I can issue accounts for interested folks, reach out to me on Fedi (<span class="mention">@cj</span>@mastodon.technology). I didn’t want to open up registration because the mailer doesn’t appear to work to do the email verification, and I don’t want to open it up w/o that (spam concerns). However, for me to issue an account manually, I still require an email address though.</p>
+</blockquote>
+</aside>
+<p>Maybe you can enable Authentication/Registration via OpenID? That would allow people to sign-in using their GitLab or GitHub accounts. Gittea seems to have this feature built-in: <a href="https://docs.gitea.io/en-us/config-cheat-sheet/#openid-openid" rel="noopener nofollow ugc">https://docs.gitea.io/en-us/config-cheat-sheet/#openid-openid</a>. Gittea also seems to support dynamic OpenID registration (allowing users to dynamically authenticate with their own OpenID provider), but I’m having a hard time navigating the Gitea docs to see how this works.</p>
+<p>Optimally it would be possible for people to just use their Fediverse account to login, but most services do not act as OpenID providers.</p>
+        </div>
+
+        <meta itemprop='headline' content='Fediverse Enhancement Proposal (FEP)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1059.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-16T11:01:51Z' class='post-time'>
+                October 16, 2020, 11:01am
+              </time>
+              <meta itemprop='dateModified' content='2020-10-16T11:01:51Z'>
+          <span itemprop='position'>#15</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks, I’ve enabled OpenID sign-in and have manually issued accounts for <a class="mention" href="../../u/pukkamustard.html">@pukkamustard</a> and <a class="mention" href="../../u/lain.html">@lain</a>.</p>
+        </div>
+
+        <meta itemprop='headline' content='Fediverse Enhancement Proposal (FEP)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/pukkamustard.html'><span itemprop='name'>pukkamustard</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1059.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-16T12:19:55Z' class='post-time'>
+                October 16, 2020, 12:19pm
+              </time>
+              <meta itemprop='dateModified' content='2020-10-16T12:19:55Z'>
+          <span itemprop='position'>#16</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>The FEP repository has moved to its new home: <a href="https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals" rel="noopener nofollow ugc">https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals</a></p>
+        </div>
+
+        <meta itemprop='headline' content='Fediverse Enhancement Proposal (FEP)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1059.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-21T22:07:20Z' class='post-time'>
+                October 21, 2020, 10:07pm
+              </time>
+              <meta itemprop='dateModified' content='2020-10-21T22:07:20Z'>
+          <span itemprop='position'>#17</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>After much “fun” debugging sendmail, I’ve opened up the site to general registration w/ email confirmation flow.</p>
+<p>If the email turns out not to be delivered, reach out to me and I’ll manually activate the account. I just don’t want the site to be overrun by spam bots.</p>
+        </div>
+
+        <meta itemprop='headline' content='Fediverse Enhancement Proposal (FEP)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/how.html'><span itemprop='name'>how</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1059.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-12-01T17:42:10Z' class='post-time'>
+                December 1, 2020,  5:42pm
+              </time>
+              <meta itemprop='dateModified' content='2020-12-01T17:42:10Z'>
+          <span itemprop='position'>#18</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I created a <a href="../../pub/fediverse-enhancement-proposals.html#index">FEP Index</a> from the new dedicated <a class="hashtag" href="../../c/activitypub/fep/54.html">#<span>activitypub:fep</span></a> category.</p>
+        </div>
+
+        <meta itemprop='headline' content='Fediverse Enhancement Proposal (FEP)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

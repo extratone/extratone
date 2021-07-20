@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Is json-ld compatibe to json-ld and what does activityPub understand with json-ld</title>
+    <link>https://socialhub.activitypub.rocks/t/is-json-ld-compatibe-to-json-ld-and-what-does-activitypub-understand-with-json-ld/1841</link>
+    <description>unfortunately i keep running into problems with parsing json-ld and the problem that others can&#39;t interpret &quot;my&quot; json-ld. if i take &quot;my&quot; json-ld and paste it into https://json-ld.org/playground/ everything seems to be ok.
+So it looks like activityPub implementations speak a different json-ld. But I have the feeling that this json-ld is not specified. 
+Am I the only one with this problem?
+I don&#39;t want to write a json-ld parser/generator, but use libraries that exist and are provided in the RDF context. At the moment I rely on https://github.com/jsonld-java/jsonld-java which is used in the context of rdf4j.
+
+Framing does not seem to solve the problem either. At least it didn&#39;t with Pleroma.</description>
+    
+    <lastBuildDate>Tue, 08 Jun 2021 09:56:41 +0000</lastBuildDate>
+    <category>ActivityPub</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/is-json-ld-compatibe-to-json-ld-and-what-does-activitypub-understand-with-json-ld/1841.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Is json-ld compatibe to json-ld and what does activityPub understand with json-ld</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <p>Today i found a way to be more compatible. <a href="https://github.com/filip26/titanium-json-ld" rel="noopener nofollow ugc">titanium</a> seems to do it’s job well!</p>
+<p>Converting my RDF Model into the compact format like that:</p>
+<pre><code class="lang-auto">import java.io.IOException;
+import java.io.StringReader;
+import java.io.StringWriter;
+import java.io.Writer;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.eclipse.rdf4j.model.Model;
+import org.eclipse.rdf4j.rio.RDFFormat;
+import org.eclipse.rdf4j.rio.Rio;
+import org.springframework.core.io.ClassPathResource;
+
+import com.apicatalog.jsonld.JsonLd;
+import com.apicatalog.jsonld.document.Document;
+import com.apicatalog.jsonld.document.JsonDocument;
+
+import jakarta.json.Json;
+import jakarta.json.JsonObject;
+import jakarta.json.JsonWriter;
+import jakarta.json.JsonWriterFactory;
+import jakarta.json.stream.JsonGenerator;
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+public class ApModelTools {
+
+	/**
+	 * Converts the passed model into a ActivityPub optimized string.
+	 * @param model The RDF4J Model
+	 * @param rdfFormat The format to convert to
+	 * @return The model as string.
+	 */
+	public static String toString(Model model, RDFFormat rdfFormat) {
+		
+		String modelAsString = modelToString(model, rdfFormat);
+		if(RDFFormat.JSONLD.equals(rdfFormat)) {
+			modelAsString = compact(modelAsString);	
+		}
+		return modelAsString;
+	}
+
+	/**
+	 * Converts the passed model into a string.
+	 * That can be a none optimized string for example in case of json-ld.
+	 * @param model The RDF4J Model
+	 * @param rdfFormat The format to convert to
+	 * @return The model as string.
+	 */
+	private static String modelToString(Model model, RDFFormat rdfFormat) {
+		StringWriter sw = new StringWriter();
+		Rio.write(model, sw, rdfFormat);
+		String modelAsString = sw.toString();
+		return modelAsString;
+	}
+		
+	/**
+	 * Converts the passed json-ld string into a &lt;a href="https://www.w3.org/TR/json-ld/#compacted-document-form"&gt;compact&lt;/a&gt; one.
+	 * @param rdf4jJsonLd string to be compacted
+	 * @return the compacted string or the input stream, if there was an error while converting. The error will be logged!
+	 */
+	private static String compact(String rdf4jJsonLd) {
+		try {
+			Document document = JsonDocument.of(new StringReader(rdf4jJsonLd));
+			Document frame = JsonDocument.of(new ClassPathResource("as.jsonld").getInputStream());
+			return jsonObjectToString(JsonLd.compact(document, frame)
+		      .ordered()
+		      .get());
+		} catch (Exception e) {
+			log.error("error compacting jsonLd", e);
+			return rdf4jJsonLd;
+		}
+	}
+	
+	/**
+	 * Converts the passed {@link JsonObject} into a pretty printed string.
+	 * @param json object to convert
+	 * @return a pretty printed string
+	 * @throws IOException
+	 */
+	private static String jsonObjectToString(JsonObject json) throws IOException	{
+	    Map&lt;String,Boolean&gt; config = new HashMap&lt;&gt;();
+	    config.put(JsonGenerator.PRETTY_PRINTING, true);
+	 
+	    JsonWriterFactory writerFactory = Json.createWriterFactory(config);
+	    try (Writer stringWriter = new StringWriter(); 
+	         JsonWriter jsonWriter = writerFactory.createWriter(stringWriter)) {
+	        jsonWriter.write(json);
+	        return stringWriter.toString();
+	    }
+	}		
+}
+</code></pre>
+<p>as.jsonld is more or less the same as:</p>
+<pre><code class="lang-auto">curl --location --request GET 'http://www.w3.org/ns/activitystreams' \
+--header 'Accept: application/ld+json'
+</code></pre>
+<p>Just with a small fix from <a class="mention" href="/u/pukkamustard">@pukkamustard</a></p>
+<p>So i’m again motivated to try some stuff with e.g. pleroma.</p>
+<p>Thanks to <a class="mention" href="/u/cjs">@cjs</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/is-json-ld-compatibe-to-json-ld-and-what-does-activitypub-understand-with-json-ld/1841/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/is-json-ld-compatibe-to-json-ld-and-what-does-activitypub-understand-with-json-ld/1841/3</link>
+        <pubDate>Tue, 08 Jun 2021 09:56:41 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1841-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/is-json-ld-compatibe-to-json-ld-and-what-does-activitypub-understand-with-json-ld/1841.rss">Is json-ld compatibe to json-ld and what does activityPub understand with json-ld</source>
+      </item>
+      <item>
+        <title>Is json-ld compatibe to json-ld and what does activityPub understand with json-ld</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="https://www.w3.org/TR/activitystreams-core">https://www.w3.org/TR/activitystreams-core</a> (section 2.1) specifies the rules that ActivityPub documents need to conform to be considered valid. Tl;dr: It’s a specific subset of JSON-LD based on compacting it to the normative context “<code>http://www.w3.org/ns/activitystreams</code>”</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/is-json-ld-compatibe-to-json-ld-and-what-does-activitypub-understand-with-json-ld/1841/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/is-json-ld-compatibe-to-json-ld-and-what-does-activitypub-understand-with-json-ld/1841/2</link>
+        <pubDate>Mon, 07 Jun 2021 20:40:28 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1841-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/is-json-ld-compatibe-to-json-ld-and-what-does-activitypub-understand-with-json-ld/1841.rss">Is json-ld compatibe to json-ld and what does activityPub understand with json-ld</source>
+      </item>
+      <item>
+        <title>Is json-ld compatibe to json-ld and what does activityPub understand with json-ld</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <p>unfortunately i keep running into problems with parsing json-ld and the problem that others can’t interpret “my” json-ld. if i take “my” json-ld and paste it into <a href="https://json-ld.org/playground/" class="inline-onebox" rel="noopener nofollow ugc">JSON-LD Playground</a> everything seems to be ok.<br>
+So it looks like activityPub implementations speak a different json-ld. But I have the feeling that this json-ld is not specified.<br>
+Am I the only one with this problem?<br>
+I don’t want to write a json-ld parser/generator, but use libraries that exist and are provided in the RDF context. At the moment I rely on <a href="https://github.com/jsonld-java/jsonld-java" class="inline-onebox" rel="noopener nofollow ugc">GitHub - jsonld-java/jsonld-java: JSON-LD implementation for Java</a> which is used in the context of rdf4j.</p>
+<p>Framing does not seem to solve the problem either. At least it didn’t with Pleroma.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/is-json-ld-compatibe-to-json-ld-and-what-does-activitypub-understand-with-json-ld/1841/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/is-json-ld-compatibe-to-json-ld-and-what-does-activitypub-understand-with-json-ld/1841/1</link>
+        <pubDate>Mon, 07 Jun 2021 19:25:17 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1841-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/is-json-ld-compatibe-to-json-ld-and-what-does-activitypub-understand-with-json-ld/1841.rss">Is json-ld compatibe to json-ld and what does activityPub understand with json-ld</source>
+      </item>
+  </channel>
+</rss>

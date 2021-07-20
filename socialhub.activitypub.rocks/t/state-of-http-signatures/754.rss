@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>State of HTTP Signatures?</title>
+    <link>https://socialhub.activitypub.rocks/t/state-of-http-signatures/754</link>
+    <description>The &quot;Guide for new ActivityPub implementers&quot; ([here](https://socialhub.activitypub.rocks/t/guide-for-new-activitypub-implementers/479)) links to draft 8 of HTTP Signatures, but it seems there are [newer versions](https://datatracker.ietf.org/doc/draft-ietf-httpbis-message-signatures/) now that might not be exactly compatible? How are AP implementations treating this situation?</description>
+    
+    <lastBuildDate>Wed, 17 Feb 2021 14:09:47 +0000</lastBuildDate>
+    <category>Server to Server</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>State of HTTP Signatures?</title>
+        <dc:creator><![CDATA[kaniini]]></dc:creator>
+        <description><![CDATA[
+            <p>I agree that there are a lot of design flaws in the old protocol, but the problem is, there is no logical path forward for ActivityPub implementations to support both versions at once.</p>
+<p>And what happens if it changes again?</p>
+<p>Why did the new draft not acknowledge that it broke current implementations and provide this advice?</p>
+<p>Why should we not just fork HTTP Signatures and introduce our own <code>X-ActivityPub-Signature</code> header?</p>
+<p>It is possible to make changes without breaking the consumers you asked 6 months ago to write into the IETF letting them know about our usage.  Instead, as a thank you to anybody who did that, we get hit with a draft that completely breaks us.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/22</link>
+        <pubDate>Wed, 17 Feb 2021 14:09:47 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-754-22</guid>
+        <source url="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754.rss">State of HTTP Signatures?</source>
+      </item>
+      <item>
+        <title>State of HTTP Signatures?</title>
+        <dc:creator><![CDATA[msporny]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>Given that the latest draft completely breaks real world uses of this spec, how can we fix that?</p>
+</blockquote>
+<p>There are two choices: stay with the old implementation of the specification – libraries are expected to support the old version for some time to come, while upgrading to the new version. The HTTP WG made a conscious decision to do breaking changes to align things with the direction that the new HTTP work is going in. Yes, it’s disruptive and none of us want to change our libraries/code, but the changes are for the better. If you want to provide input into the process, raising an issue (like you did) is the best course of action.</p>
+<p>In the end, implementations have the real power, and if something has been changed and the implementation community (which is massive) doesn’t want to go along with it, you kick up a fuss until the thing that broke for you is changed back (or it becomes clear that things are better with the new way of doing things).</p>
+<p>I’ll respond to your concern in the HTTP WG issue – there is a fairly straight forward answer that will keep old versions working while the official WG version is allowed to progress and eventually be adopted.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/21</link>
+        <pubDate>Wed, 17 Feb 2021 14:02:21 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-754-21</guid>
+        <source url="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754.rss">State of HTTP Signatures?</source>
+      </item>
+      <item>
+        <title>State of HTTP Signatures?</title>
+        <dc:creator><![CDATA[kaniini]]></dc:creator>
+        <description><![CDATA[
+            <p>I opened <a href="https://github.com/httpwg/http-extensions/issues/1410" class="inline-onebox" rel="noopener nofollow ugc">backward compatibility for current http-signatures implementations · Issue #1410 · httpwg/http-extensions · GitHub</a>, but it’s super cool that we got burned on this.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/20</link>
+        <pubDate>Wed, 17 Feb 2021 13:53:41 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-754-20</guid>
+        <source url="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754.rss">State of HTTP Signatures?</source>
+      </item>
+      <item>
+        <title>State of HTTP Signatures?</title>
+        <dc:creator><![CDATA[kaniini]]></dc:creator>
+        <description><![CDATA[
+            <p>Given that the latest draft completely breaks <em>real world uses of this spec</em>, how can we fix that?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/19</link>
+        <pubDate>Wed, 17 Feb 2021 13:38:06 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-754-19</guid>
+        <source url="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754.rss">State of HTTP Signatures?</source>
+      </item>
+      <item>
+        <title>State of HTTP Signatures?</title>
+        <dc:creator><![CDATA[msporny]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-username="vpzom" data-post="1" data-topic="754" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/letter_avatar_proxy/v4/letter/v/a698b9/40.png" class="avatar"> vpzom:</div>
+<blockquote>
+<p>The “Guide for new ActivityPub implementers”  links to draft 8 of HTTP Signatures, but it seems there are now that might not be exactly compatible? How are AP implementations treating this situation?</p>
+</blockquote>
+</aside>
+<p>Hey, I’m one of the Editors of the HTTP Signatures specification… how can I help?</p>
+<p>There are talks in the IETF to do breaking changes to the specification to “make it better”. It would be good to hear from implementers here on what is working for you and what isn’t working for you. The comment about <code>hs2019</code> not being defined is helpful… the goal with that was to define things as cryptosuites… and ideally, we wanted to close a security hole where you could say one thing in the algorithm field and then use a different key that some implementations were just blindly feeding into a cryptolibrary (that’s a bad idea, please don’t do that – it allows attackers to specially craft keys that can cause some badly implemented crypto libraries to do terrible things like… skip checking the validity of digital signatures!).</p>
+<p>In any case, let me know how I can help.</p>
+<p>If you’re wondering how you could help… post something about how you’re using HTTP Signatures to the IETF HTTP WG. Don’t be shy, if we don’t get enough feedback from implementers, the work will be shut down w/o a final RFC being created. To post, just send an email to <a href="mailto:ietf-http-wg@w3.org">ietf-http-wg@w3.org</a></p>
+<p>Here’s an example of the sort of thing to write:</p>
+<p><a href="https://lists.w3.org/Archives/Public/ietf-http-wg/2020JanMar/0020.html" class="onebox" target="_blank" rel="nofollow noopener">https://lists.w3.org/Archives/Public/ietf-http-wg/2020JanMar/0020.html</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/18</link>
+        <pubDate>Tue, 25 Aug 2020 16:11:23 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-754-18</guid>
+        <source url="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754.rss">State of HTTP Signatures?</source>
+      </item>
+      <item>
+        <title>State of HTTP Signatures?</title>
+        <dc:creator><![CDATA[Claire]]></dc:creator>
+        <description><![CDATA[
+            <p>The aforementioned PR has been merged into Mastodon, so the development branch should support the <code>hs2019</code> “algorithm”, assuming the actual underlying algorithms to be the same as rsa-sha256 (as no mechanism for defining/using such key metadata is implemented), but accepting <code>(created)</code> and <code>(expires)</code> as well as parsing them correctly.</p>
+<p>It still uses <code>rsa-sha256</code> for outgoing requests.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/17</link>
+        <pubDate>Mon, 24 Aug 2020 16:38:18 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-754-17</guid>
+        <source url="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754.rss">State of HTTP Signatures?</source>
+      </item>
+      <item>
+        <title>State of HTTP Signatures?</title>
+        <dc:creator><![CDATA[Claire]]></dc:creator>
+        <description><![CDATA[
+            <p>Yeah, I read the spec around hs2019 a bit fast and made the assumption it was RSASSA-PSS with SHA512, but even that way, I couldn’t get the examples to verify (and their description is pretty inconsistent, some of the examples claim to use SHA256, others SHA512, for the same key that is supposed to use SHA512).</p>
+<p>While I made some progress with it (<a href="https://github.com/tootsuite/mastodon/pull/14556" rel="nofollow noopener">https://github.com/tootsuite/mastodon/pull/14556</a>), it probably doesn’t make much sense to do anything with that until we have a standard mechanism to derive that info (but I could default to rsa-sha256 in the meantime).</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/15</link>
+        <pubDate>Mon, 10 Aug 2020 15:58:47 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-754-15</guid>
+        <source url="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754.rss">State of HTTP Signatures?</source>
+      </item>
+      <item>
+        <title>State of HTTP Signatures?</title>
+        <dc:creator><![CDATA[vpzom]]></dc:creator>
+        <description><![CDATA[
+            <p>hs2019 isn’t really a signature algorithm, the entire algorithm field is basically deprecated since its existence is a security hole. Technically the spec requires that the algorithm is derived from the keyId, but the mechanics of that aren’t defined, so most implementations (including Mastodon) simply use rsa-sha256 anyway</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/14</link>
+        <pubDate>Mon, 10 Aug 2020 14:37:08 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-754-14</guid>
+        <source url="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754.rss">State of HTTP Signatures?</source>
+      </item>
+      <item>
+        <title>State of HTTP Signatures?</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p>Other then the (speculative?) increase in hash digest size from 256 to 512, I don’t understand the differences between the sha-256 and hs2019 algorithms. Is there a reason to upgrade? The new algorithm looks very complicated, and I would prefer to limit the complexity of the HTTP Signature implementation in Mastodon as much as is feasibly possible while still maintaining interop. Specification complexity is a leading cause of security bugs in similar applications, and one of my favorite parts of HTTP Signatures up until now has been the straightforwardness of the algorithm.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/13</link>
+        <pubDate>Mon, 10 Aug 2020 14:29:16 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-754-13</guid>
+        <source url="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754.rss">State of HTTP Signatures?</source>
+      </item>
+      <item>
+        <title>State of HTTP Signatures?</title>
+        <dc:creator><![CDATA[vpzom]]></dc:creator>
+        <description><![CDATA[
+            <ul>
+<li>I don’t know what nbf is either (might be from the JWT spec?), the open PR just adds some text allowing implementations to account for skew.</li>
+<li>All algorithms other than hs2019 are deprecated, so it is important to support that</li>
+<li>I didn’t catch that the first time, but yeah I see it now. Probably should report issues for the examples</li>
+</ul>
+          <p><a href="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/12</link>
+        <pubDate>Mon, 10 Aug 2020 13:54:56 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-754-12</guid>
+        <source url="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754.rss">State of HTTP Signatures?</source>
+      </item>
+      <item>
+        <title>State of HTTP Signatures?</title>
+        <dc:creator><![CDATA[Claire]]></dc:creator>
+        <description><![CDATA[
+            <ul>
+<li>regarding clock skew, I’m sorry, I don’t know what <code>nbf</code> stands for</li>
+<li>alright, either way, if we consider the example to be wrong, then Mastodon probably does not need to support <code>created</code> and <code>expires</code>, as those MUST not be accepted for creation of signatures with the only algorithm it supports for now (arguably, it could/should support more algorithms, though)</li>
+<li>
+<code>(created)</code> is also occasionally used in examples as a signature parameter, but I assume that is an error as it does not make for a proper <code>token</code>
+</li>
+</ul>
+          <p><a href="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/11</link>
+        <pubDate>Mon, 10 Aug 2020 13:46:28 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-754-11</guid>
+        <source url="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754.rss">State of HTTP Signatures?</source>
+      </item>
+      <item>
+        <title>State of HTTP Signatures?</title>
+        <dc:creator><![CDATA[vpzom]]></dc:creator>
+        <description><![CDATA[
+            <ul>
+<li><a href="https://github.com/httpwg/http-extensions/issues/1187" rel="nofollow noopener">https://github.com/httpwg/http-extensions/issues/1187</a></li>
+<li>It looks like the example uses “rsa-256”, which doesn’t seem to exist. Either way that’s an issue</li>
+<li>I assume that’s a typo since it’s pretty consistent otherwise</li>
+<li>
+<code>created</code> is the signature parameter, but it’s <code>(created)</code> when used as a pseudo-header in the signed content</li>
+</ul>
+          <p><a href="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/10</link>
+        <pubDate>Mon, 10 Aug 2020 13:41:17 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-754-10</guid>
+        <source url="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754.rss">State of HTTP Signatures?</source>
+      </item>
+      <item>
+        <title>State of HTTP Signatures?</title>
+        <dc:creator><![CDATA[Claire]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m looking at the latest version of the HTTP sigs spec, since it has indeed changed a bit since we first implemented it, and tbh there are stuff i’m not sure about:</p>
+<ul>
+<li>the rules for <code>(created)</code> and <code>(expired)</code> do not permit accounting for clock skew (which is an acknowledged shortcoming of the spec), and while that’s probably fine for <code>(expired)</code>, that is probably <em>not</em> the case for <code>(created)</code>
+</li>
+<li>I am very confused with <a href="https://www.ietf.org/id/draft-ietf-httpbis-message-signatures-00.html#section-3.2.2" rel="nofollow noopener">https://www.ietf.org/id/draft-ietf-httpbis-message-signatures-00.html#section-3.2.2</a>, which states that if the signature Algorithm starts with “rsa”, and “(created)” is in the covered content, then the implementation MUST produce an error. Yet the example covers “(created)” and uses rsa-sha256?</li>
+<li>there’s also confusion between <code>(expired)</code> and <code>(expires)</code>. Most places talk about <code>(expires)</code> but one refers to <code>(expired)</code>
+</li>
+<li>in the signature parameters, sometimes the <code>created</code> parameter is written as such, sometimes as <code>(created)</code>
+</li>
+</ul>
+          <p><a href="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/9</link>
+        <pubDate>Mon, 10 Aug 2020 13:15:30 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-754-9</guid>
+        <source url="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754.rss">State of HTTP Signatures?</source>
+      </item>
+      <item>
+        <title>State of HTTP Signatures?</title>
+        <dc:creator><![CDATA[vpzom]]></dc:creator>
+        <description><![CDATA[
+            <p>Looks like the security vocab defines a <code>signatureAlgorithm</code> field. Would setting that on the key to <code>http://www.w3.org/2001/04/xmldsig-more#rsa-sha256</code> (or another option as defined in RFC6931) be a reasonable method to indicate this?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/8</link>
+        <pubDate>Wed, 15 Jul 2020 04:31:12 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-754-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754.rss">State of HTTP Signatures?</source>
+      </item>
+      <item>
+        <title>State of HTTP Signatures?</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <p>Mastodon for sure hardcodes SHA256.</p>
+<p>The <a href="https://github.com/go-fed/httpsig" rel="nofollow noopener">go-fed implementation</a> I think is slightly more flexible and is hs2019/expires compliant. It’s just not widely used. <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+<p>I’m not sure there’s currently a standard to convey what kind of key metadata is associated with a key id. I think most Mastodon profiles, for example, just list <code>id</code>, <code>owner</code>, and <code>publicKeyPem</code> properties from the <a href="https://w3c-ccg.github.io/security-vocab/" rel="nofollow noopener">security vocabulary</a>. There’s lots more that could be adopted.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/7</link>
+        <pubDate>Sun, 05 Jul 2020 19:21:52 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-754-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754.rss">State of HTTP Signatures?</source>
+      </item>
+      <item>
+        <title>State of HTTP Signatures?</title>
+        <dc:creator><![CDATA[vpzom]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="https://arewehs2019yet.vpzom.click/" class="onebox" target="_blank" rel="nofollow noopener">https://arewehs2019yet.vpzom.click/</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/6</link>
+        <pubDate>Fri, 03 Jul 2020 20:06:51 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-754-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754.rss">State of HTTP Signatures?</source>
+      </item>
+      <item>
+        <title>State of HTTP Signatures?</title>
+        <dc:creator><![CDATA[vpzom]]></dc:creator>
+        <description><![CDATA[
+            <p>From what I’ve seen it looks like most implementations have hardcoded SHA256…</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/5</link>
+        <pubDate>Fri, 03 Jul 2020 14:30:36 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-754-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754.rss">State of HTTP Signatures?</source>
+      </item>
+      <item>
+        <title>State of HTTP Signatures?</title>
+        <dc:creator><![CDATA[vpzom]]></dc:creator>
+        <description><![CDATA[
+            <p>I also notice that the algorithm change indicates that it should be ‘Derived from metadata associated with “keyId”’. Do we have such metadata?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/4</link>
+        <pubDate>Fri, 03 Jul 2020 14:30:01 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-754-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754.rss">State of HTTP Signatures?</source>
+      </item>
+      <item>
+        <title>State of HTTP Signatures?</title>
+        <dc:creator><![CDATA[vpzom]]></dc:creator>
+        <description><![CDATA[
+            <p>The main thing I noticed was the introduction of (created) and (expires), and I had to disable sending those for certain other servers to accept my signatures</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/3</link>
+        <pubDate>Sun, 21 Jun 2020 03:27:43 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-754-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754.rss">State of HTTP Signatures?</source>
+      </item>
+      <item>
+        <title>State of HTTP Signatures?</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <p>The only major difference I am aware of is how the <code>algorithm</code> field was handled, and that change doesn’t realistically create incompatibilities. Just eliminates a security vulnerability. I know Mastodon is up to date with that change. I know contributors have been keeping <code>github.com/go-fed/httpsig</code> update with the latest drafts.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/2</link>
+        <pubDate>Sat, 20 Jun 2020 19:48:11 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-754-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754.rss">State of HTTP Signatures?</source>
+      </item>
+      <item>
+        <title>State of HTTP Signatures?</title>
+        <dc:creator><![CDATA[vpzom]]></dc:creator>
+        <description><![CDATA[
+            <p>The “Guide for new ActivityPub implementers” (<a href="https://socialhub.activitypub.rocks/t/guide-for-new-activitypub-implementers/479">here</a>) links to draft 8 of HTTP Signatures, but it seems there are <a href="https://datatracker.ietf.org/doc/draft-ietf-httpbis-message-signatures/" rel="nofollow noopener">newer versions</a> now that might not be exactly compatible? How are AP implementations treating this situation?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/1</link>
+        <pubDate>Thu, 18 Jun 2020 14:48:35 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-754-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754.rss">State of HTTP Signatures?</source>
+      </item>
+  </channel>
+</rss>

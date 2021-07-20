@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>The ActivityPub test suite - #15 by Sebastian - SocialHub</title>
+    <meta name="description" content="test.activitypub.rocks has been down for a long time, as pretty much everyone knows.  More or less it’s server issues, and I can be blamed since I run the server (and wrote the test suite). 
+Why hasn’t it gone back up th&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="../290.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;The ActivityPub test suite&#39;" href="../290.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/15" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290/15" />
+<meta property="og:title" content="The ActivityPub test suite" />
+<meta name="twitter:title" content="The ActivityPub test suite" />
+<meta property="og:description" content="Added to      @cjs @rocco  If someone would propose a session for the Conf about Tests, I would join 😉  Also authors of various tools are at the Conference, e.g.  https://tinysubversions.com/notes/activitypub-tool/" />
+<meta name="twitter:description" content="Added to      @cjs @rocco  If someone would propose a session for the Conf about Tests, I would join 😉  Also authors of various tools are at the Conference, e.g.  https://tinysubversions.com/notes/activitypub-tool/" />
+<meta property="article:published_time" content="2020-08-18T06:19:04+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="../290.html">The ActivityPub test suite</a>
+    </h1>
+
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/how.html'><span itemprop='name'>how</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../290.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-03-31T07:07:48Z' class='post-time'>
+                March 31, 2020,  7:07am
+              </time>
+              <meta itemprop='dateModified' content='2020-03-31T07:07:48Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Welcome <a class="mention" href="../../../u/yvolk.html">@yvolk</a>! Indeed C2S seems to have been neglected for too long. I wish it would be used though, since a full client implementation would make “apps” fade away and the protocol shine.</p>
+<aside class="quote no-group" data-username="yvolk" data-post="5" data-topic="290">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/yvolk/40/310_2.png" class="avatar"> yvolk:</div>
+<blockquote>
+<p>More details are here: <a href="https://github.com/andstatus/andstatus/issues/499">https://github.com/andstatus/andstatus/issues/499</a></p>
+</blockquote>
+</aside>
+<p>OMG, why are you having this discussion there instead of here?</p>
+<aside class="quote no-group" data-username="yvolk" data-post="5" data-topic="290">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/yvolk/40/310_2.png" class="avatar"> yvolk:</div>
+<blockquote>
+<p>I am willing to extend the application’s “ActivityPub tester’s” features.</p>
+</blockquote>
+</aside>
+<p>Sweet! I’m sure you’ll find here people willing to help. Yes, people?</p>
+        </div>
+
+        <meta itemprop='headline' content='The ActivityPub test suite'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/yvolk.html'><span itemprop='name'>yvolk</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../290.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-03-31T18:42:09Z'>
+              <time itemprop='dateModified' datetime='2020-03-31T18:42:21Z' class='post-time'>
+                March 31, 2020,  6:42pm
+              </time>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <blockquote>
+<p>OMG, why are you having this discussion there instead of here?</p>
+</blockquote>
+<p>That discussion is about concrete implementation of a concrete application. It gives real ground and subjects for “higher level” <img src="../../../images/emoji/twitter/slight_smile.png@v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"> discussions and decision making.</p>
+<p>I hope that having working client app can motivate server-side developers to implement client-to-server support AND that such app will be used as a development/test tool. In fact, it is used now in this way helping to find programming and conceptual mistakes in the ActivityPub C2S implementation of Pleroma.</p>
+        </div>
+
+        <meta itemprop='headline' content='The ActivityPub test suite'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/strypey.html'><span itemprop='name'>strypey</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../290.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-12T00:29:39Z' class='post-time'>
+                April 12, 2020, 12:29am
+              </time>
+              <meta itemprop='dateModified' content='2020-04-12T00:29:39Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>It’s great to see Pleroma and Andstatus working together on AP C2S! Is there a thread here where we can follow progress on this, and point other devs wanting to try implementing it too, eg in the <a href="../../../c/activitypub/c2s/6.html">C2S category</a>?</p>
+        </div>
+
+        <meta itemprop='headline' content='The ActivityPub test suite'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/yvolk.html'><span itemprop='name'>yvolk</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../290.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-12T17:56:27Z' class='post-time'>
+                April 12, 2020,  5:56pm
+              </time>
+              <meta itemprop='dateModified' content='2020-04-12T17:56:27Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>We just created this topic <a href="../../about-andstatus/608.html" class="inline-onebox">About AndStatus</a> to discuss C2S<br>
+Thanks to <a class="mention" href="../../../u/how.html">@how</a></p>
+        </div>
+
+        <meta itemprop='headline' content='The ActivityPub test suite'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/how.html'><span itemprop='name'>how</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../290.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-28T18:59:47Z' class='post-time'>
+                April 28, 2020,  6:59pm
+              </time>
+              <meta itemprop='dateModified' content='2020-04-28T18:59:47Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a href="https://fosstodon.org/@yarmo/104064240625523811">Someone on the Fediverse asked for the test suite</a> again. <a class="mention" href="../../../u/rocco.html">@rocco</a> do you think you’d have some time to work on it? Maybe <a class="mention" href="../../../u/yvolk.html">@yvolk</a> can help as well. What do you people need to help around? I could activate Discourse SSO provider if this can help, <a class="mention" href="../../../u/rocco.html">@rocco</a>.</p>
+        </div>
+
+        <meta itemprop='headline' content='The ActivityPub test suite'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/schmittlauch.html'><span itemprop='name'>schmittlauch</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../290.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-29T09:26:18Z' class='post-time'>
+                April 29, 2020,  9:26am
+              </time>
+              <meta itemprop='dateModified' content='2020-04-29T09:26:18Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Also, the person asking had the impression that ActivityPub is dead because of the test suite being down.<br>
+So depending on how bad the old test suite is and how much effort is needed to bring it up again,it might make sense to bring the old test suite back up while a new one is being worked upon, <a class="mention" href="../../../u/cwebber.html">@cwebber</a>.</p>
+        </div>
+
+        <meta itemprop='headline' content='The ActivityPub test suite'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../290.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-05-06T06:30:02Z' class='post-time'>
+                May 6, 2020,  6:30am
+              </time>
+              <meta itemprop='dateModified' content='2020-05-06T06:30:02Z'>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>[ attachment ]</p>
+<aside class="quote quote-modified" data-post="1" data-topic="660">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/dansup/40/129_2.png" class="avatar">
+    <a href="../../introducing-fedidb-devtools-for-activitypub/660.html">Introducing FediDB - DevTools for ActivityPub</a> <a class="badge-wrapper  box" href="../../../c/activitypub.html"><span class="badge-category-bg" style="background-color: #0088CC;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Discuss the ActivityPub Recommendation, how to implement it, how to extend it. Home of the ActivityPub SIG.">ActivityPub</span></a>
+  </div>
+  <blockquote>
+    Introducing FediDB - DevTools for ActivityPub
+Hello Everyone! 
+I am the lead developer of <a href="https://pixelfed.org" rel="nofollow noopener">Pixelfed</a> and know how challenging ActivityPub can be to implement. 
+<a href="https://fedidb.org/about" rel="nofollow noopener">FediDB</a> is a suite of tools for AP devs to help make it easier to test and validate your implementation with existing implementations like Mastodon, PeerTube, Pixelfed and Pleroma. 
+We have 3 main features in development: 
+
+
+Request Bin - HTTP Bin with valid AP Actor to test federation support (HTTP Sig, Verb + Actors and more) 
+
+
+Verb Valid…
+  </blockquote>
+</aside>
+
+<p>and pinging <a class="mention" href="../../../u/dansup.html">@dansup</a></p>
+        </div>
+
+        <meta itemprop='headline' content='The ActivityPub test suite'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="3" />
+           <span class='post-likes'>3 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/WClayFerguson.html'><span itemprop='name'>WClayFerguson</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../290.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-08-18T04:38:56Z'>
+              <time itemprop='dateModified' datetime='2020-08-18T04:49:53Z' class='post-time'>
+                August 18, 2020,  4:49am
+              </time>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I think the main thing holding back lots of developers from adding ActivityPub support to lots of platforms is the fact that although the AP Spec looks great and seems very good, it is nearly impossible to make much progress with coding because when you try to federate against Mastodon or some other AP site, stuff will not work, and there’s absolutely no way to know what’s going wrong.</p>
+<p>Without a test suite tool, the only way to make progress is to get a copy of  Pleroma or Mastodon, and install it, run a server yourself, and basically reverse engineer it by watching the HTTP traffic or logging.<br>
+Obliviously this is a hurdle not many are going to get over. It’s even worse than that, because both Ruby and Elixir are oddball languages that hardly anyone is using, so the odds are that 99% of the devs that want to implement an AP server are just going to find it nearly impossible.</p>
+<p>So the net result is that there is MUCH lower and slower adoption of ActivityPub in the world. Once there’s a test suite available the ecosystem will really take off rapidly, but not until then.</p>
+<p>=======<br>
+Update: There’s one other alternative that ‘could’ work instead of a test suite tool, and that is a set of complete “Request and Response” conversations for various example scenarios (AP actors and actions), that contains all the HTTP Request headers, URL parameters, and JSON responses, so that there’s no “guess work” having to be done to interpret the spec.</p>
+        </div>
+
+        <meta itemprop='headline' content='The ActivityPub test suite'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="3" />
+           <span class='post-likes'>3 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../important-forum-topics/848.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/important-forum-topics/848'>
+                      <span itemprop='name'>Important Forum Topics</span>
+                    </a>
+                    <meta itemprop='position' content='1'>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/aschrijver.html'><span itemprop='name'>aschrijver</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../290.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-08-18T05:44:20Z'>
+              <time itemprop='dateModified' datetime='2020-08-18T05:44:51Z' class='post-time'>
+                August 18, 2020,  5:44am
+              </time>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I agree. There is an alternative testsuite. Check <a href="../../unofficial-test-suite-go-fed-testsuite/805.html" class="inline-onebox">Unofficial Test Suite (go-fed/testsuite)</a> created by <a class="mention" href="../../../u/cjs.html">@cjs</a> . Imho, given this is the only functioning testsuite, it could as well become the Official one <img src="../../../images/emoji/twitter/slight_smile.png@v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>The testsuite should be made discoverable, though, like with a mention on <a href="../../../../activitypub.rocks/index.html">activitypub.rocks</a>. Same for <a class="mention" href="../../../u/dansup.html">@dansup</a>’s FediDB (which is out of closed beta, I think?). See <a href="../../introducing-fedidb-devtools-for-activitypub/660.html" class="inline-onebox">Introducing FediDB - DevTools for ActivityPub</a>.</p>
+<p>There’s an ongoing discussion related to this: <a href="../../easing-the-onboarding-of-new-developers-to-the-fediverse/847.html" class="inline-onebox">Easing the onboarding of new developers to the Fediverse</a>.</p>
+        </div>
+
+        <meta itemprop='headline' content='The ActivityPub test suite'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../290.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-08-18T06:19:04Z' class='post-time'>
+                August 18, 2020,  6:19am
+              </time>
+              <meta itemprop='dateModified' content='2020-08-18T06:19:04Z'>
+          <span itemprop='position'>#15</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Added to<br>
+<aside class="quote quote-modified" data-post="1" data-topic="848">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar">
+    <a href="../../important-forum-topics/848.html">Important Forum Topics</a> <a class="badge-wrapper  box" href="../../../c/meeting/apconf2020/53.html"><span class="badge-category-parent-bg" style="background-color: #0E76BD;"></span><span class="badge-category-bg" style="background-color: #ff7a00;"></span><span style="color: #ffffff" data-drop-close="true" class="badge-category clear-badge" title="Add your proposals for the Conf by creating a New Topic –
+Tag it #bof for Birds of Feather sessions or #hackathon for Hack proposals …">ActivityPub Conference 2020</span></a>
+  </div>
+  <blockquote>
+    My feeling is we should have conference sessions for 
+
+
+and 
+
+
+and
+  </blockquote>
+</aside>
+</p>
+<p><a class="mention" href="../../../u/cjs.html">@cjs</a> <a class="mention" href="../../../u/rocco.html">@rocco</a><br>
+If someone would propose a session for the Conf about <em>Tests</em>, I would join <img src="../../../images/emoji/twitter/wink.png@v=9" title=":wink:" class="emoji" alt=":wink:"><br>
+Also authors of various tools are at the Conference, e.g.<br>
+<a href="https://tinysubversions.com/notes/activitypub-tool/" class="onebox" target="_blank">https://tinysubversions.com/notes/activitypub-tool/</a></p>
+        </div>
+
+        <meta itemprop='headline' content='The ActivityPub test suite'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/how.html'><span itemprop='name'>how</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../290.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-08-22T09:39:01Z'>
+              <time itemprop='dateModified' datetime='2020-08-22T09:39:28Z' class='post-time'>
+                August 22, 2020,  9:39am
+              </time>
+          <span itemprop='position'>#16</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I would be happy to help find funding to fix the test suite if people step up to implement it.</p>
+        </div>
+
+        <meta itemprop='headline' content='The ActivityPub test suite'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/WClayFerguson.html'><span itemprop='name'>WClayFerguson</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../290.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-08-25T14:21:08Z'>
+              <time itemprop='dateModified' datetime='2021-06-06T09:03:04Z' class='post-time'>
+                June 6, 2021,  9:03am
+              </time>
+          <span itemprop='position'>#17</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>One of my goals is to add ActivityPub into my project (to make it Federated) and I’d be willing to do implementation in TypeScript and/or Java for a test suite if I had funding, because I could accomplish both objectives at the same time.</p>
+<p>But as I said before, we really wouldn’t even need a TestSuite that much (for new apps at least) if we simply had complete JSON <em>examples</em> including both Request JSON and Response JSON for most of the various C2S and S2S use cases.</p>
+<p>These examples would add so much clarity that actually most of the other documentation would be not even needed…at least to get something up and running, which is the primary challenge.</p>
+        </div>
+
+        <meta itemprop='headline' content='The ActivityPub test suite'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/nilesh.html'><span itemprop='name'>nilesh</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../290.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-08-30T21:26:12Z'>
+              <time itemprop='dateModified' datetime='2020-08-30T21:27:16Z' class='post-time'>
+                August 30, 2020,  9:27pm
+              </time>
+          <span itemprop='position'>#18</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>This is useful for me too. I have implemented <a href="https://github.com/learn-awesome/learn/issues/121#issuecomment-589921640" rel="nofollow noopener">partial ActivityPub support in an open-source Rails app</a> and it would be nice to know if it meets the actual spec or if it falls short.</p>
+<p>How about building a Postman collection as a start? It supports fully automated test cases and can generate code in multiple languages.</p>
+        </div>
+
+        <meta itemprop='headline' content='The ActivityPub test suite'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/marnanel.html'><span itemprop='name'>marnanel</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../290.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-02T15:39:50Z' class='post-time'>
+                October 2, 2020,  3:39pm
+              </time>
+              <meta itemprop='dateModified' content='2020-10-02T15:39:50Z'>
+          <span itemprop='position'>#19</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>This sounds like a possible <a class="hashtag" href="../../../tag/hackathon.html">#<span>hackathon</span></a> topic.</p>
+<p>I think a test suite naturally falls into two parts. One part checks protocols which can be accessed anonymously. This involves AP services such as looking up a user’s inbox and paging throug it, as well as non-AP services commonly used with AP, such as webfinger and the other .well-known services.</p>
+<p>The other, more complicated part, checks AP support. This will need to be able to create ephemeral accounts on the fly (like <code>test1234@validator.example.com</code>), each lasting a few hours, and allow you to follow them and send them messages, with a dashboard showing what has been received.</p>
+<p>You should also be able to request that the accounts send you messages— but not to set the content, to stop the validator being used as an anonymous message service. For similar reasons, I’m also supposing that each temporary account would be locked into communicating with a single server, specified at creation time.</p>
+        </div>
+
+        <meta itemprop='headline' content='The ActivityPub test suite'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../290.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-02T16:00:56Z' class='post-time'>
+                October 2, 2020,  4:00pm
+              </time>
+              <meta itemprop='dateModified' content='2020-10-02T16:00:56Z'>
+          <span itemprop='position'>#20</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>You may be interested in the BoF session: <a href="../996.html" class="inline-onebox">The ActivityPub Test suite</a></p>
+        </div>
+
+        <meta itemprop='headline' content='The ActivityPub test suite'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/marnanel.html'><span itemprop='name'>marnanel</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../290.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-02T16:05:55Z' class='post-time'>
+                October 2, 2020,  4:05pm
+              </time>
+              <meta itemprop='dateModified' content='2020-10-02T16:05:55Z'>
+          <span itemprop='position'>#21</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>thank you! I’ve c&amp;p’d my response there.</p>
+        </div>
+
+        <meta itemprop='headline' content='The ActivityPub test suite'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/WClayFerguson.html'><span itemprop='name'>WClayFerguson</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../290.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-02T16:51:56Z' class='post-time'>
+                October 2, 2020,  4:51pm
+              </time>
+              <meta itemprop='dateModified' content='2020-10-02T16:51:56Z'>
+          <span itemprop='position'>#22</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I won’t be able to participate in the hackathon, but definitely once I have reasonable detailed examples of the JSON inputs/outputs for a ActivityPub service, I’ll add AP capabilities to Quanta.wiki (link above), and I’m looking for other developers (and/or funding) who can recognize the value of that platform, especially after AP is added!</p>
+        </div>
+
+        <meta itemprop='headline' content='The ActivityPub test suite'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/how.html'><span itemprop='name'>how</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../290.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-02T17:04:02Z' class='post-time'>
+                October 2, 2020,  5:04pm
+              </time>
+              <meta itemprop='dateModified' content='2020-10-02T17:04:02Z'>
+          <span itemprop='position'>#23</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>For the funding part see <a href="../../scaling-up-cooperation/837.html" class="inline-onebox">Scaling Up Cooperation</a> BoF…</p>
+        </div>
+
+        <meta itemprop='headline' content='The ActivityPub test suite'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/how.html'><span itemprop='name'>how</span></a>
+            
+              split this topic 
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../290.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-10-03T09:16:44Z'>
+              <time itemprop='dateModified' datetime='2020-10-03T09:16:45Z' class='post-time'>
+                October 3, 2020,  9:16am
+              </time>
+          <span itemprop='position'>#24</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>4 posts were split to a new topic: <a href="../../appealing-to-users-with-examples-in-software-demos/1020.html">Appealing to Users With Examples in Software Demos</a></p>
+        </div>
+
+        <meta itemprop='headline' content='The ActivityPub test suite'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/WClayFerguson.html'><span itemprop='name'>WClayFerguson</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../290.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-02T18:35:59Z' class='post-time'>
+                October 2, 2020,  6:35pm
+              </time>
+              <meta itemprop='dateModified' content='2020-10-02T18:35:59Z'>
+          <span itemprop='position'>#25</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks for the link to the funding related stuff. I’m going to submit the Quanta project for that. The project is still pretty much a secret (unknown), and hasn’t been posted to HackerNews or other developer sites yet, although I’ve been developing it for years and it’s fairly robust/stable at this point.</p>
+<p>About the jet, that X-15 is the “lorem ipsum” of images! haha. Everyone should use the X-15 for demo content images. <img src="../../../images/emoji/twitter/slight_smile.png@v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+        </div>
+
+        <meta itemprop='headline' content='The ActivityPub test suite'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

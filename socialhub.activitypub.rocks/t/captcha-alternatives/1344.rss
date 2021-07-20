@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>CAPTCHA alternatives</title>
+    <link>https://socialhub.activitypub.rocks/t/captcha-alternatives/1344</link>
+    <description>Hi folks,
+
+Had a couple of complaints about the google reCAPTCHA barrier to [joining the W3C Social Web CG](https://www.w3.org/community/SocialCG/). The great news is the W3C systems team are receptive to our feedback, and may be able to put something on their roadmap about removing CAPTCHAs altogether.
+
+Meanwhile, they have asked for advice about robust alternatives specifically to the google reCAPTCHA they could consider. They said &quot;We&#39;re aware of hCaptcha but at least when our team evaluated it a few months ago, it didn&#39;t seem to have the level of usability/accessibility we needed.&quot;
+
+Does anyone have any suggestions I can pass on?
+
+Amy</description>
+    
+    <lastBuildDate>Sat, 23 Jan 2021 16:57:09 +0000</lastBuildDate>
+    <category>Community</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/captcha-alternatives/1344.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>CAPTCHA alternatives</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>For a11y<br>
+“ Adding <em>aria-hidden=“true”</em> to an element removes that element and all of its children from the accessibility tree. This can improve the experience for assistive technology users by hiding: purely decorative content, such as icons or images. duplicated content, such as repeated text. ”<br>
+This will not prevent all bots either.</p>
+<p>My question is more:<br>
+What benefit would a bot have if it signs the Group CLA?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/captcha-alternatives/1344/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/captcha-alternatives/1344/4</link>
+        <pubDate>Sat, 23 Jan 2021 16:57:09 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1344-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/captcha-alternatives/1344.rss">CAPTCHA alternatives</source>
+      </item>
+      <item>
+        <title>CAPTCHA alternatives</title>
+        <dc:creator><![CDATA[rhiaro]]></dc:creator>
+        <description><![CDATA[
+            <p>I am not in a position to evaluate the alternatives myself, but would love if anyone has direct experience with something to let me know.</p>
+<blockquote>
+<p>a not-visual field which must never filled out (otherwise it’s a bot).</p>
+</blockquote>
+<p>I believe there is an accessibility problem with this approach because for example screenreaders can’t know whether a field is visible, and will read it to the person, so if it is labelled to say something like “do not fill this out” it is a) noise for the human, and b) ultimately bots can figure out how to read it to.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/captcha-alternatives/1344/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/captcha-alternatives/1344/3</link>
+        <pubDate>Sat, 23 Jan 2021 16:46:38 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1344-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/captcha-alternatives/1344.rss">CAPTCHA alternatives</source>
+      </item>
+      <item>
+        <title>CAPTCHA alternatives</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Regarding usability it is exactly the same, isn’t it?<br>
+See the ‘comparison’ challenge on <a href="https://www.hcaptcha.com">https://www.hcaptcha.com</a></p>
+<p>What level of accessibility is needed?<br>
+See <a href="https://www.hcaptcha.com/accessibility">https://www.hcaptcha.com/accessibility</a></p>
+<p>I would say, select the most easy challenge and maybe plus some bot traps<br>
+in the form, like a not-visual field which must never filled out (otherwise it’s a bot).</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/captcha-alternatives/1344/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/captcha-alternatives/1344/2</link>
+        <pubDate>Fri, 22 Jan 2021 21:54:47 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1344-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/captcha-alternatives/1344.rss">CAPTCHA alternatives</source>
+      </item>
+      <item>
+        <title>CAPTCHA alternatives</title>
+        <dc:creator><![CDATA[rhiaro]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi folks,</p>
+<p>Had a couple of complaints about the google reCAPTCHA barrier to <a href="https://www.w3.org/community/SocialCG/">joining the W3C Social Web CG</a>. The great news is the W3C systems team are receptive to our feedback, and may be able to put something on their roadmap about removing CAPTCHAs altogether.</p>
+<p>Meanwhile, they have asked for advice about robust alternatives specifically to the google reCAPTCHA they could consider. They said “We’re aware of hCaptcha but at least when our team evaluated it a few months ago, it didn’t seem to have the level of usability/accessibility we needed.”</p>
+<p>Does anyone have any suggestions I can pass on?</p>
+<p>Amy</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/captcha-alternatives/1344/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/captcha-alternatives/1344/1</link>
+        <pubDate>Fri, 22 Jan 2021 18:54:17 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1344-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/captcha-alternatives/1344.rss">CAPTCHA alternatives</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Visibility ↔ To/Cc mapping</title>
+    <link>https://socialhub.activitypub.rocks/t/visibility-to-cc-mapping/284</link>
+    <description>`Status`es in the Mastodon API have a `visibility` field; `Notes` in ActivityPub have `To`/`Cc`/`Bto`/`Bcc`/`Audience` fields which provide much the same functionality. I have been trying to figure out how they map to each other:
+
+| Mastodon `visibility`   |      `To`      |  `Cc` |
+|----------|-------------|------|
+| `public` | contains public | n/a |
+| `unlisted` | n/a | contains public |
+| `private` | contains actor&#39;s followers | n/a |
+| `direct` | contains anyone in mentions | n/a |
+| `limited` | fallback? | fallback? |
+
+Read top to bottom. &quot;Contains public&quot; means there&#39;s a non-empty intersection with the set [`https://www.w3.org/ns/activitystreams#Public`, `as:Public`, `Public`].
+
+Is this reasonable?</description>
+    
+    <lastBuildDate>Mon, 04 Nov 2019 21:32:25 +0000</lastBuildDate>
+    <category>Mastodon</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/visibility-to-cc-mapping/284.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Visibility ↔ To/Cc mapping</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/marnanel">@marnanel</a> mastodon does not store any original ActivityPub data, it just processes it into what the client will use.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/visibility-to-cc-mapping/284/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/visibility-to-cc-mapping/284/4</link>
+        <pubDate>Mon, 04 Nov 2019 21:32:25 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-284-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/visibility-to-cc-mapping/284.rss">Visibility ↔ To/Cc mapping</source>
+      </item>
+      <item>
+        <title>Visibility ↔ To/Cc mapping</title>
+        <dc:creator><![CDATA[marnanel]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks. Incoming posts retain their to/cc data, notwithstanding the conversion?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/visibility-to-cc-mapping/284/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/visibility-to-cc-mapping/284/3</link>
+        <pubDate>Mon, 04 Nov 2019 20:57:41 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-284-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/visibility-to-cc-mapping/284.rss">Visibility ↔ To/Cc mapping</source>
+      </item>
+      <item>
+        <title>Visibility ↔ To/Cc mapping</title>
+        <dc:creator><![CDATA[trwnh]]></dc:creator>
+        <description><![CDATA[
+            <p>This should probably be moved to the Software/Mastodon category, since it’s not really a question about ActivityPub.</p>
+<p>But in any case, Mastodon’s visibility scopes are a custom thing and this is generally how they map:</p>
+<ul>
+<li>public = to: [public], cc: [followers, mentions]</li>
+<li>unlisted = cc: [public, followers, mentions]</li>
+<li>followers-only = to: [followers], cc: [mentions]</li>
+<li>direct = to: [mentions]</li>
+</ul>
+<p>Incoming posts are converted heuristically. There is no concept of “unlisted” visibility or scope in ActivityPub by default – all addressing uses to/cc which should immediately be mapped to inboxes by the server.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/visibility-to-cc-mapping/284/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/visibility-to-cc-mapping/284/2</link>
+        <pubDate>Mon, 04 Nov 2019 20:40:03 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-284-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/visibility-to-cc-mapping/284.rss">Visibility ↔ To/Cc mapping</source>
+      </item>
+      <item>
+        <title>Visibility ↔ To/Cc mapping</title>
+        <dc:creator><![CDATA[marnanel]]></dc:creator>
+        <description><![CDATA[
+            <p><code>Status</code>es in the Mastodon API have a <code>visibility</code> field; <code>Notes</code> in ActivityPub have <code>To</code>/<code>Cc</code>/<code>Bto</code>/<code>Bcc</code>/<code>Audience</code> fields which provide much the same functionality. I have been trying to figure out how they map to each other:</p>
+<div class="md-table">
+<table>
+<thead>
+<tr>
+<th>Mastodon <code>visibility</code>
+</th>
+<th><code>To</code></th>
+<th><code>Cc</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public</code></td>
+<td>contains public</td>
+<td>n/a</td>
+</tr>
+<tr>
+<td><code>unlisted</code></td>
+<td>n/a</td>
+<td>contains public</td>
+</tr>
+<tr>
+<td><code>private</code></td>
+<td>contains actor’s followers</td>
+<td>n/a</td>
+</tr>
+<tr>
+<td><code>direct</code></td>
+<td>contains anyone in mentions</td>
+<td>n/a</td>
+</tr>
+<tr>
+<td><code>limited</code></td>
+<td>fallback?</td>
+<td>fallback?</td>
+</tr>
+</tbody>
+</table>
+</div><p>Read top to bottom. “Contains public” means there’s a non-empty intersection with the set [<code>https://www.w3.org/ns/activitystreams#Public</code>, <code>as:Public</code>, <code>Public</code>].</p>
+<p>Is this reasonable?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/visibility-to-cc-mapping/284/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/visibility-to-cc-mapping/284/1</link>
+        <pubDate>Mon, 04 Nov 2019 19:34:45 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-284-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/visibility-to-cc-mapping/284.rss">Visibility ↔ To/Cc mapping</source>
+      </item>
+  </channel>
+</rss>

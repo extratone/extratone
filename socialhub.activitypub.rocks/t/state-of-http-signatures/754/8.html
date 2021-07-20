@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>State of HTTP Signatures? - #8 by vpzom - Server to Server - SocialHub</title>
+    <meta name="description" content="The “Guide for new ActivityPub implementers” (here) links to draft 8 of HTTP Signatures, but it seems there are newer versions now that might not be exactly compatible? How are AP implementations treating this situation? &amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="../754.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;State of HTTP Signatures?&#39;" href="../754.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/8" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/8" />
+<meta property="og:title" content="State of HTTP Signatures?" />
+<meta name="twitter:title" content="State of HTTP Signatures?" />
+<meta property="og:description" content="Looks like the security vocab defines a signatureAlgorithm field. Would setting that on the key to http://www.w3.org/2001/04/xmldsig-more#rsa-sha256 (or another option as defined in RFC6931) be a reasonable method to indicate this?" />
+<meta name="twitter:description" content="Looks like the security vocab defines a signatureAlgorithm field. Would setting that on the key to http://www.w3.org/2001/04/xmldsig-more#rsa-sha256 (or another option as defined in RFC6931) be a reasonable method to indicate this?" />
+<meta property="article:published_time" content="2020-07-15T04:31:12+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="../754.html">State of HTTP Signatures?</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../../c/activitypub.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #0088CC'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>ActivityPub</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../../c/activitypub/s2s/7.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #808281'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Server to Server</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../754.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-06-20T19:48:11Z' class='post-time'>
+                June 20, 2020,  7:48pm
+              </time>
+              <meta itemprop='dateModified' content='2020-06-20T19:48:11Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>The only major difference I am aware of is how the <code>algorithm</code> field was handled, and that change doesn’t realistically create incompatibilities. Just eliminates a security vulnerability. I know Mastodon is up to date with that change. I know contributors have been keeping <code>github.com/go-fed/httpsig</code> update with the latest drafts.</p>
+        </div>
+
+        <meta itemprop='headline' content='State of HTTP Signatures?'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/vpzom.html'><span itemprop='name'>vpzom</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../754.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-06-21T03:27:43Z' class='post-time'>
+                June 21, 2020,  3:27am
+              </time>
+              <meta itemprop='dateModified' content='2020-06-21T03:27:43Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>The main thing I noticed was the introduction of (created) and (expires), and I had to disable sending those for certain other servers to accept my signatures</p>
+        </div>
+
+        <meta itemprop='headline' content='State of HTTP Signatures?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/vpzom.html'><span itemprop='name'>vpzom</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../754.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-07-03T14:30:01Z' class='post-time'>
+                July 3, 2020,  2:30pm
+              </time>
+              <meta itemprop='dateModified' content='2020-07-03T14:30:01Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I also notice that the algorithm change indicates that it should be ‘Derived from metadata associated with “keyId”’. Do we have such metadata?</p>
+        </div>
+
+        <meta itemprop='headline' content='State of HTTP Signatures?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/vpzom.html'><span itemprop='name'>vpzom</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../754.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-07-03T14:30:36Z' class='post-time'>
+                July 3, 2020,  2:30pm
+              </time>
+              <meta itemprop='dateModified' content='2020-07-03T14:30:36Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>From what I’ve seen it looks like most implementations have hardcoded SHA256…</p>
+        </div>
+
+        <meta itemprop='headline' content='State of HTTP Signatures?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/vpzom.html'><span itemprop='name'>vpzom</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../754.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-07-03T20:06:51Z' class='post-time'>
+                July 3, 2020,  8:06pm
+              </time>
+              <meta itemprop='dateModified' content='2020-07-03T20:06:51Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a href="https://arewehs2019yet.vpzom.click/" class="onebox" target="_blank" rel="nofollow noopener">https://arewehs2019yet.vpzom.click/</a></p>
+        </div>
+
+        <meta itemprop='headline' content='State of HTTP Signatures?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../754.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-07-05T19:21:52Z' class='post-time'>
+                July 5, 2020,  7:21pm
+              </time>
+              <meta itemprop='dateModified' content='2020-07-05T19:21:52Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Mastodon for sure hardcodes SHA256.</p>
+<p>The <a href="https://github.com/go-fed/httpsig" rel="nofollow noopener">go-fed implementation</a> I think is slightly more flexible and is hs2019/expires compliant. It’s just not widely used. <img src="../../../images/emoji/twitter/wink.png@v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+<p>I’m not sure there’s currently a standard to convey what kind of key metadata is associated with a key id. I think most Mastodon profiles, for example, just list <code>id</code>, <code>owner</code>, and <code>publicKeyPem</code> properties from the <a href="https://w3c-ccg.github.io/security-vocab/" rel="nofollow noopener">security vocabulary</a>. There’s lots more that could be adopted.</p>
+        </div>
+
+        <meta itemprop='headline' content='State of HTTP Signatures?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/vpzom.html'><span itemprop='name'>vpzom</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../754.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-07-15T04:31:12Z' class='post-time'>
+                July 15, 2020,  4:31am
+              </time>
+              <meta itemprop='dateModified' content='2020-07-15T04:31:12Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Looks like the security vocab defines a <code>signatureAlgorithm</code> field. Would setting that on the key to <code>http://www.w3.org/2001/04/xmldsig-more#rsa-sha256</code> (or another option as defined in RFC6931) be a reasonable method to indicate this?</p>
+        </div>
+
+        <meta itemprop='headline' content='State of HTTP Signatures?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../a-proposal-for-signature-algorithm-specification/819.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/a-proposal-for-signature-algorithm-specification/819'>
+                      <span itemprop='name'>A proposal for signature algorithm specification</span>
+                    </a>
+                    <meta itemprop='position' content='1'>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Claire.html'><span itemprop='name'>Claire</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../754.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-08-10T13:15:30Z'>
+              <time itemprop='dateModified' datetime='2020-08-10T13:24:30Z' class='post-time'>
+                August 10, 2020,  1:24pm
+              </time>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’m looking at the latest version of the HTTP sigs spec, since it has indeed changed a bit since we first implemented it, and tbh there are stuff i’m not sure about:</p>
+<ul>
+<li>the rules for <code>(created)</code> and <code>(expired)</code> do not permit accounting for clock skew (which is an acknowledged shortcoming of the spec), and while that’s probably fine for <code>(expired)</code>, that is probably <em>not</em> the case for <code>(created)</code>
+</li>
+<li>I am very confused with <a href="https://www.ietf.org/id/draft-ietf-httpbis-message-signatures-00.html#section-3.2.2" rel="nofollow noopener">https://www.ietf.org/id/draft-ietf-httpbis-message-signatures-00.html#section-3.2.2</a>, which states that if the signature Algorithm starts with “rsa”, and “(created)” is in the covered content, then the implementation MUST produce an error. Yet the example covers “(created)” and uses rsa-sha256?</li>
+<li>there’s also confusion between <code>(expired)</code> and <code>(expires)</code>. Most places talk about <code>(expires)</code> but one refers to <code>(expired)</code>
+</li>
+<li>in the signature parameters, sometimes the <code>created</code> parameter is written as such, sometimes as <code>(created)</code>
+</li>
+</ul>
+        </div>
+
+        <meta itemprop='headline' content='State of HTTP Signatures?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/vpzom.html'><span itemprop='name'>vpzom</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../754.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-08-10T13:41:17Z' class='post-time'>
+                August 10, 2020,  1:41pm
+              </time>
+              <meta itemprop='dateModified' content='2020-08-10T13:41:17Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <ul>
+<li><a href="https://github.com/httpwg/http-extensions/issues/1187" rel="nofollow noopener">https://github.com/httpwg/http-extensions/issues/1187</a></li>
+<li>It looks like the example uses “rsa-256”, which doesn’t seem to exist. Either way that’s an issue</li>
+<li>I assume that’s a typo since it’s pretty consistent otherwise</li>
+<li>
+<code>created</code> is the signature parameter, but it’s <code>(created)</code> when used as a pseudo-header in the signed content</li>
+</ul>
+        </div>
+
+        <meta itemprop='headline' content='State of HTTP Signatures?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Claire.html'><span itemprop='name'>Claire</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../754.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-08-10T13:46:28Z' class='post-time'>
+                August 10, 2020,  1:46pm
+              </time>
+              <meta itemprop='dateModified' content='2020-08-10T13:46:28Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <ul>
+<li>regarding clock skew, I’m sorry, I don’t know what <code>nbf</code> stands for</li>
+<li>alright, either way, if we consider the example to be wrong, then Mastodon probably does not need to support <code>created</code> and <code>expires</code>, as those MUST not be accepted for creation of signatures with the only algorithm it supports for now (arguably, it could/should support more algorithms, though)</li>
+<li>
+<code>(created)</code> is also occasionally used in examples as a signature parameter, but I assume that is an error as it does not make for a proper <code>token</code>
+</li>
+</ul>
+        </div>
+
+        <meta itemprop='headline' content='State of HTTP Signatures?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/vpzom.html'><span itemprop='name'>vpzom</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../754.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-08-10T13:54:56Z'>
+              <time itemprop='dateModified' datetime='2020-08-10T13:56:36Z' class='post-time'>
+                August 10, 2020,  1:56pm
+              </time>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <ul>
+<li>I don’t know what nbf is either (might be from the JWT spec?), the open PR just adds some text allowing implementations to account for skew.</li>
+<li>All algorithms other than hs2019 are deprecated, so it is important to support that</li>
+<li>I didn’t catch that the first time, but yeah I see it now. Probably should report issues for the examples</li>
+</ul>
+        </div>
+
+        <meta itemprop='headline' content='State of HTTP Signatures?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/nightpool.html'><span itemprop='name'>nightpool</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../754.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-08-10T14:29:16Z' class='post-time'>
+                August 10, 2020,  2:29pm
+              </time>
+              <meta itemprop='dateModified' content='2020-08-10T14:29:16Z'>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Other then the (speculative?) increase in hash digest size from 256 to 512, I don’t understand the differences between the sha-256 and hs2019 algorithms. Is there a reason to upgrade? The new algorithm looks very complicated, and I would prefer to limit the complexity of the HTTP Signature implementation in Mastodon as much as is feasibly possible while still maintaining interop. Specification complexity is a leading cause of security bugs in similar applications, and one of my favorite parts of HTTP Signatures up until now has been the straightforwardness of the algorithm.</p>
+        </div>
+
+        <meta itemprop='headline' content='State of HTTP Signatures?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/vpzom.html'><span itemprop='name'>vpzom</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../754.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-08-10T14:37:08Z' class='post-time'>
+                August 10, 2020,  2:37pm
+              </time>
+              <meta itemprop='dateModified' content='2020-08-10T14:37:08Z'>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>hs2019 isn’t really a signature algorithm, the entire algorithm field is basically deprecated since its existence is a security hole. Technically the spec requires that the algorithm is derived from the keyId, but the mechanics of that aren’t defined, so most implementations (including Mastodon) simply use rsa-sha256 anyway</p>
+        </div>
+
+        <meta itemprop='headline' content='State of HTTP Signatures?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Claire.html'><span itemprop='name'>Claire</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../754.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-08-10T15:58:47Z' class='post-time'>
+                August 10, 2020,  3:58pm
+              </time>
+              <meta itemprop='dateModified' content='2020-08-10T15:58:47Z'>
+          <span itemprop='position'>#15</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Yeah, I read the spec around hs2019 a bit fast and made the assumption it was RSASSA-PSS with SHA512, but even that way, I couldn’t get the examples to verify (and their description is pretty inconsistent, some of the examples claim to use SHA256, others SHA512, for the same key that is supposed to use SHA512).</p>
+<p>While I made some progress with it (<a href="https://github.com/tootsuite/mastodon/pull/14556" rel="nofollow noopener">https://github.com/tootsuite/mastodon/pull/14556</a>), it probably doesn’t make much sense to do anything with that until we have a standard mechanism to derive that info (but I could default to rsa-sha256 in the meantime).</p>
+        </div>
+
+        <meta itemprop='headline' content='State of HTTP Signatures?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Claire.html'><span itemprop='name'>Claire</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../754.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-08-24T16:38:18Z' class='post-time'>
+                August 24, 2020,  4:38pm
+              </time>
+              <meta itemprop='dateModified' content='2020-08-24T16:38:18Z'>
+          <span itemprop='position'>#17</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>The aforementioned PR has been merged into Mastodon, so the development branch should support the <code>hs2019</code> “algorithm”, assuming the actual underlying algorithms to be the same as rsa-sha256 (as no mechanism for defining/using such key metadata is implemented), but accepting <code>(created)</code> and <code>(expires)</code> as well as parsing them correctly.</p>
+<p>It still uses <code>rsa-sha256</code> for outgoing requests.</p>
+        </div>
+
+        <meta itemprop='headline' content='State of HTTP Signatures?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/msporny.html'><span itemprop='name'>msporny</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../754.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-08-25T16:11:23Z' class='post-time'>
+                August 25, 2020,  4:11pm
+              </time>
+              <meta itemprop='dateModified' content='2020-08-25T16:11:23Z'>
+          <span itemprop='position'>#18</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group quote-modified" data-username="vpzom" data-post="1" data-topic="754" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../letter_avatar_proxy/v4/letter/v/a698b9/40.png" class="avatar"> vpzom:</div>
+<blockquote>
+<p>The “Guide for new ActivityPub implementers”  links to draft 8 of HTTP Signatures, but it seems there are now that might not be exactly compatible? How are AP implementations treating this situation?</p>
+</blockquote>
+</aside>
+<p>Hey, I’m one of the Editors of the HTTP Signatures specification… how can I help?</p>
+<p>There are talks in the IETF to do breaking changes to the specification to “make it better”. It would be good to hear from implementers here on what is working for you and what isn’t working for you. The comment about <code>hs2019</code> not being defined is helpful… the goal with that was to define things as cryptosuites… and ideally, we wanted to close a security hole where you could say one thing in the algorithm field and then use a different key that some implementations were just blindly feeding into a cryptolibrary (that’s a bad idea, please don’t do that – it allows attackers to specially craft keys that can cause some badly implemented crypto libraries to do terrible things like… skip checking the validity of digital signatures!).</p>
+<p>In any case, let me know how I can help.</p>
+<p>If you’re wondering how you could help… post something about how you’re using HTTP Signatures to the IETF HTTP WG. Don’t be shy, if we don’t get enough feedback from implementers, the work will be shut down w/o a final RFC being created. To post, just send an email to <a href="mailto:ietf-http-wg@w3.org">ietf-http-wg@w3.org</a></p>
+<p>Here’s an example of the sort of thing to write:</p>
+<p><a href="https://lists.w3.org/Archives/Public/ietf-http-wg/2020JanMar/0020.html" class="onebox" target="_blank" rel="nofollow noopener">https://lists.w3.org/Archives/Public/ietf-http-wg/2020JanMar/0020.html</a></p>
+        </div>
+
+        <meta itemprop='headline' content='State of HTTP Signatures?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/kaniini.html'><span itemprop='name'>kaniini</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../754.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-02-17T13:38:06Z' class='post-time'>
+                February 17, 2021,  1:38pm
+              </time>
+              <meta itemprop='dateModified' content='2021-02-17T13:38:06Z'>
+          <span itemprop='position'>#19</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Given that the latest draft completely breaks <em>real world uses of this spec</em>, how can we fix that?</p>
+        </div>
+
+        <meta itemprop='headline' content='State of HTTP Signatures?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/kaniini.html'><span itemprop='name'>kaniini</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../754.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-02-17T13:53:41Z' class='post-time'>
+                February 17, 2021,  1:53pm
+              </time>
+              <meta itemprop='dateModified' content='2021-02-17T13:53:41Z'>
+          <span itemprop='position'>#20</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I opened <a href="https://github.com/httpwg/http-extensions/issues/1410" class="inline-onebox" rel="noopener nofollow ugc">backward compatibility for current http-signatures implementations · Issue #1410 · httpwg/http-extensions · GitHub</a>, but it’s super cool that we got burned on this.</p>
+        </div>
+
+        <meta itemprop='headline' content='State of HTTP Signatures?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/msporny.html'><span itemprop='name'>msporny</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../754.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-02-17T14:02:21Z' class='post-time'>
+                February 17, 2021,  2:02pm
+              </time>
+              <meta itemprop='dateModified' content='2021-02-17T14:02:21Z'>
+          <span itemprop='position'>#21</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <blockquote>
+<p>Given that the latest draft completely breaks real world uses of this spec, how can we fix that?</p>
+</blockquote>
+<p>There are two choices: stay with the old implementation of the specification – libraries are expected to support the old version for some time to come, while upgrading to the new version. The HTTP WG made a conscious decision to do breaking changes to align things with the direction that the new HTTP work is going in. Yes, it’s disruptive and none of us want to change our libraries/code, but the changes are for the better. If you want to provide input into the process, raising an issue (like you did) is the best course of action.</p>
+<p>In the end, implementations have the real power, and if something has been changed and the implementation community (which is massive) doesn’t want to go along with it, you kick up a fuss until the thing that broke for you is changed back (or it becomes clear that things are better with the new way of doing things).</p>
+<p>I’ll respond to your concern in the HTTP WG issue – there is a fairly straight forward answer that will keep old versions working while the official WG version is allowed to progress and eventually be adopted.</p>
+        </div>
+
+        <meta itemprop='headline' content='State of HTTP Signatures?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/kaniini.html'><span itemprop='name'>kaniini</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../754.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-02-17T14:09:47Z'>
+              <time itemprop='dateModified' datetime='2021-02-17T14:11:51Z' class='post-time'>
+                February 17, 2021,  2:11pm
+              </time>
+          <span itemprop='position'>#22</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I agree that there are a lot of design flaws in the old protocol, but the problem is, there is no logical path forward for ActivityPub implementations to support both versions at once.</p>
+<p>And what happens if it changes again?</p>
+<p>Why did the new draft not acknowledge that it broke current implementations and provide this advice?</p>
+<p>Why should we not just fork HTTP Signatures and introduce our own <code>X-ActivityPub-Signature</code> header?</p>
+<p>It is possible to make changes without breaking the consumers you asked 6 months ago to write into the IETF letting them know about our usage.  Instead, as a thank you to anybody who did that, we get hit with a draft that completely breaks us.</p>
+        </div>
+
+        <meta itemprop='headline' content='State of HTTP Signatures?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

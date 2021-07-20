@@ -1,0 +1,22 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Baldur Bjarnason</title>
+    <link>https://notes.baldurbjarnason.com/</link>
+    <description>Baldur Bjarnason works as a web developer in Hveragerði, Iceland, and writes about the web, digital publishing, and web/product development</description>
+    <copyright>Copyright 2021 Baldur Bjarnason</copyright>
+	<itunes:image href="https://micro.blog/baldur/podcast.png" />
+	<itunes:category text="Society &amp; Culture">
+		<itunes:category text="Personal Journals"></itunes:category>
+	</itunes:category>
+	<itunes:author>Baldur Bjarnason</itunes:author>
+	<itunes:explicit>no</itunes:explicit>		
+	<itunes:owner>
+		<itunes:name>Baldur Bjarnason</itunes:name>
+		<itunes:email></itunes:email>
+	</itunes:owner>
+    
+    <language>en</language>
+    
+    <lastBuildDate>Mon, 19 Apr 2021 14:53:39 +0000</lastBuildDate>
+  </channel>
+</rss>

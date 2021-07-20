@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>SocialHub - Topics tagged todo</title>
+    <link>https://socialhub.activitypub.rocks/tag/todo</link>
+    <description>Topics tagged todo</description>
+    
+      <lastBuildDate>Thu, 12 Sep 2019 19:57:33 +0000</lastBuildDate>
+      <atom:link href="https://socialhub.activitypub.rocks/tag/todo.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>About the Software category</title>
+          <dc:creator><![CDATA[how]]></dc:creator>
+          <category>Software</category>
+          <description><![CDATA[
+            <p>Discover and discuss ActivityPub implementations of all sizes and shapes.</p>
+<p>Each <em>free<sup class="footnote-ref"><a href="#footnote-35-1" id="footnote-ref-35-1">[1]</a></sup></em> software can have its own sub-category (ask <span class="mention">@staff</span> or reply here).</p>
+<p>You can use tags to find more details about:</p>
+<ul>
+<li>
+<a class="hashtag" href="https://socialhub.activitypub.rocks/tags/client">#<span>client</span></a> software</li>
+<li>
+<a class="hashtag" href="https://socialhub.activitypub.rocks/tags/server">#<span>server</span></a> software</li>
+<li>
+<a class="hashtag" href="https://socialhub.activitypub.rocks/tags/library">#<span>library</span></a> software</li>
+</ul>
+<p>(etc)</p>
+<hr class="footnotes-sep">
+
+<ol class="footnotes-list">
+<li id="footnote-35-1" class="footnote-item">
+<p>free as in free speech: no proprietary software allowed here. Don’t even bother wasting our time. <a href="#footnote-ref-35-1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+            <p><small>22 posts - 8 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/about-the-software-category/27">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/about-the-software-category/27</link>
+          <pubDate>Thu, 12 Sep 2019 19:57:33 +0000</pubDate>
+          <discourse:topicPinned>Yes</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-27</guid>
+          <source url="https://socialhub.activitypub.rocks/t/about-the-software-category/27.rss">About the Software category</source>
+        </item>
+        <item>
+          <title>Last Tasks Before Launch</title>
+          <dc:creator><![CDATA[how]]></dc:creator>
+          <category>Uncategorized</category>
+          <description><![CDATA[
+            <p>Continuing the discussion from <a href="https://socialhub.activitypub.rocks/t/things-to-be-done-before-announcing-the-forum/19">Things to be done before announcing the forum</a>:</p>
+<p>Since <a class="mention" href="/u/nightpool">@nightpool</a> noticed that editing the wiki is restricted because of so many mentions, I’ll fix it here and provide a shorter one to enable easier collaboration…</p>
+            <p><small>12 posts - 2 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/last-tasks-before-launch/78">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/last-tasks-before-launch/78</link>
+          <pubDate>Fri, 04 Oct 2019 17:57:39 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-78</guid>
+          <source url="https://socialhub.activitypub.rocks/t/last-tasks-before-launch/78.rss">Last Tasks Before Launch</source>
+        </item>
+        <item>
+          <title>About the ActivityPub category</title>
+          <dc:creator><![CDATA[how]]></dc:creator>
+          <category>ActivityPub</category>
+          <description><![CDATA[
+            <p>Discuss the <a href="https://www.w3.org/TR/activitypub/" rel="nofollow noopener">ActivityPub Recommendation</a>, how to implement it, how to extend it. Home of the ActivityPub <abbr title="Special Interest Group">SIG</abbr>.</p>
+<hr>
+<p>TBD</p>
+<p>Use the following paragraphs for a longer description, or to establish category guidelines or rules:</p>
+<ul>
+<li>
+<p>Why should people use this category? What is it for?</p>
+</li>
+<li>
+<p>How exactly is this different than the other categories we already have?</p>
+</li>
+<li>
+<p>What should topics in this category generally contain?</p>
+</li>
+<li>
+<p>Do we need this category? Can we merge with another category, or subcategory?</p>
+</li>
+</ul>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/about-the-activitypub-category/11">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/about-the-activitypub-category/11</link>
+          <pubDate>Thu, 12 Sep 2019 15:03:17 +0000</pubDate>
+          <discourse:topicPinned>Yes</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-11</guid>
+          <source url="https://socialhub.activitypub.rocks/t/about-the-activitypub-category/11.rss">About the ActivityPub category</source>
+        </item>
+        <item>
+          <title>Creating a template for software implementation categories</title>
+          <dc:creator><![CDATA[how]]></dc:creator>
+          <category>Software</category>
+          <description><![CDATA[
+            <p>The idea is to have, for each software implementation, a sub-category here. Each category comes with a pinned topic that would be a generic “identification card” for the project, maintained by the project’s team.</p>
+<p>Many such projects already have their own community space, and won’t maintain presence here beyond that “identification card”.</p>
+<p>Others will benefit from having a strong presence here and use the category for their own community.</p>
+<p>This topic is to define the template that could be used across projects to create a consistent “identification card”.</p>
+<aside class="quote no-group" data-post="10" data-topic="19">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/how/40/8_2.png" class="avatar"><a href="https://socialhub.activitypub.rocks/t/things-to-be-done-before-announcing-the-forum/19/10">Things to be done before announcing the forum</a>
+</div>
+<blockquote>
+<p>I would imagine an “id card” that would include:</p>
+<ul>
+<li>what the software is about</li>
+<li>language and license info</li>
+<li>a bit of branding</li>
+<li>team info</li>
+<li>where is:
+<ul>
+<li>the source code</li>
+<li>documentation</li>
+<li>communication channels including security reports and announcement feeds</li>
+<li>community norms</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</aside>
+            <p><small>4 posts - 2 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/creating-a-template-for-software-implementation-categories/39">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/creating-a-template-for-software-implementation-categories/39</link>
+          <pubDate>Fri, 13 Sep 2019 10:03:24 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-39</guid>
+          <source url="https://socialhub.activitypub.rocks/t/creating-a-template-for-software-implementation-categories/39.rss">Creating a template for software implementation categories</source>
+        </item>
+  </channel>
+</rss>

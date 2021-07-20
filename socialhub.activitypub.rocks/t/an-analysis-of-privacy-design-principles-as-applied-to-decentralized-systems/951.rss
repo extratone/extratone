@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>An analysis of privacy design principles as applied to decentralized systems</title>
+    <link>https://socialhub.activitypub.rocks/t/an-analysis-of-privacy-design-principles-as-applied-to-decentralized-systems/951</link>
+    <description>*Cristina DeLisle (@CristinaDeLisle)*
+
+https://conf.tube/videos/watch/a0196813-fb0d-4740-a37a-5f2b1fd1e774
+
+This talk will provide an analysis of privacy design principles in building software. It will consider best practice recommendations and the specific characteristics of decentralized models.
+For example, data separation is one of the main privacy design principles. Thus, a decentralized model is preferable as opposed to a centralized one. If we were to imagine a privacy by design future, a social media platform would be decentralized. Unfortunately, data separation alone is not contouring this future.
+
+- What design principles are there to consider?
+- What are the particular challenges posed by decentralized systems?
+
+This talk will tackle these topics and propose ways in which we can address them.
+
+
+## Questions &amp; Answers available!
+**[Q&amp;A Session – An analysis of privacy design principles as applied to decentralized systems](https://conf.tube/videos/watch/4dba3ced-7f1a-407a-aa3b-22b79467b3b8)**
+⬡ Hooray, the live Questions &amp; Answers are available here
+https://conf.tube/videos/watch/4dba3ced-7f1a-407a-aa3b-22b79467b3b8</description>
+    
+    <lastBuildDate>Sat, 03 Oct 2020 19:12:33 +0000</lastBuildDate>
+    <category>ActivityPub Conference 2020</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/an-analysis-of-privacy-design-principles-as-applied-to-decentralized-systems/951.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>An analysis of privacy design principles as applied to decentralized systems</title>
+        <dc:creator><![CDATA[CristinaDeLisle]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you, cjs for attending the Q&amp;A session! I wish I would have seen them earlier so that I could have answer them in a more structured way (my bad). I really enjoyed the very interesting topics opened and I did my best on the spot. I hope to see you again some other time and if you want to keep in touch, let’s do it! <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/smile.png?v=9" title=":smile:" class="emoji" alt=":smile:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/an-analysis-of-privacy-design-principles-as-applied-to-decentralized-systems/951/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/an-analysis-of-privacy-design-principles-as-applied-to-decentralized-systems/951/6</link>
+        <pubDate>Sat, 03 Oct 2020 19:12:33 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-951-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/an-analysis-of-privacy-design-principles-as-applied-to-decentralized-systems/951.rss">An analysis of privacy design principles as applied to decentralized systems</source>
+      </item>
+      <item>
+        <title>An analysis of privacy design principles as applied to decentralized systems</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you for taking the time to answer all the questions!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/an-analysis-of-privacy-design-principles-as-applied-to-decentralized-systems/951/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/an-analysis-of-privacy-design-principles-as-applied-to-decentralized-systems/951/5</link>
+        <pubDate>Sat, 03 Oct 2020 18:27:08 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-951-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/an-analysis-of-privacy-design-principles-as-applied-to-decentralized-systems/951.rss">An analysis of privacy design principles as applied to decentralized systems</source>
+      </item>
+      <item>
+        <title>An analysis of privacy design principles as applied to decentralized systems</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for this presentation, Cristina! Really appreciate your analysis between regulation and software.</p>
+<p>I’m parking some questions here that came to my mind while listening to your presentation, that I hope to ask in the BoF session:</p>
+<ul>
+<li>In a world where multiple, different jurisdictions are starting to wield their legal sovereignty over their portions of the internet for political reasons, what trends and changes have you seen in regulators/lawmakers’ views, and how do you see this impacting the future development of software or operators of software in the Fediverse?</li>
+<li>You mention that “The providers have the <em>potential to violate the privacy of the nodes</em>, based on the design choices of the platform”: does this mean in a P2P software case, where the user is possibly also the provider in a P2P world, does the regulatory liability sit on the user-provider’s own shoulders, or does it shift to the developers of the P2P software? Or is this an example where regulation and tech just do not align well?</li>
+<li>How do the EU regulators generally balance the privacy principles against other regulations (right to be forgotten, etc)?</li>
+</ul>
+          <p><a href="https://socialhub.activitypub.rocks/t/an-analysis-of-privacy-design-principles-as-applied-to-decentralized-systems/951/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/an-analysis-of-privacy-design-principles-as-applied-to-decentralized-systems/951/4</link>
+        <pubDate>Sat, 03 Oct 2020 09:44:36 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-951-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/an-analysis-of-privacy-design-principles-as-applied-to-decentralized-systems/951.rss">An analysis of privacy design principles as applied to decentralized systems</source>
+      </item>
+      <item>
+        <title>An analysis of privacy design principles as applied to decentralized systems</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you so much Cristina, as usual your analysis is crystal clear and to the point. I’m glad we have you around in this community!</p>
+<p>As I’m a bit running out of time I’ll skip the reminder of the 8 privacy principles in the EU framework and skip directly to the questions you propose to address during the live session:</p>
+<blockquote>
+<ol>
+<li>How to adapt privacy design principles to the Fediverse?</li>
+<li>What particular challenges does the Fediverse pose in implementing these ideas?</li>
+<li>Anything you feel like adressing <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:">
+</li>
+</ol>
+</blockquote>
+          <p><a href="https://socialhub.activitypub.rocks/t/an-analysis-of-privacy-design-principles-as-applied-to-decentralized-systems/951/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/an-analysis-of-privacy-design-principles-as-applied-to-decentralized-systems/951/2</link>
+        <pubDate>Fri, 02 Oct 2020 14:11:44 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-951-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/an-analysis-of-privacy-design-principles-as-applied-to-decentralized-systems/951.rss">An analysis of privacy design principles as applied to decentralized systems</source>
+      </item>
+      <item>
+        <title>An analysis of privacy design principles as applied to decentralized systems</title>
+        <dc:creator><![CDATA[CristinaDeLisle]]></dc:creator>
+        <description><![CDATA[
+            <p><em>Cristina DeLisle (<a class="mention" href="/u/cristinadelisle">@CristinaDeLisle</a>)</em></p>
+<p><iframe width="560" height="315" src="https://conf.tube/videos/embed/a0196813-fb0d-4740-a37a-5f2b1fd1e774" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+<p>This talk will provide an analysis of privacy design principles in building software. It will consider best practice recommendations and the specific characteristics of decentralized models.<br>
+For example, data separation is one of the main privacy design principles. Thus, a decentralized model is preferable as opposed to a centralized one. If we were to imagine a privacy by design future, a social media platform would be decentralized. Unfortunately, data separation alone is not contouring this future.</p>
+<ul>
+<li>What design principles are there to consider?</li>
+<li>What are the particular challenges posed by decentralized systems?</li>
+</ul>
+<p>This talk will tackle these topics and propose ways in which we can address them.</p>
+<h2>Questions &amp; Answers available!</h2>
+<p><strong><a href="https://conf.tube/videos/watch/4dba3ced-7f1a-407a-aa3b-22b79467b3b8" rel="noopener nofollow ugc">Q&amp;A Session – An analysis of privacy design principles as applied to decentralized systems</a></strong><br>
+⬡ Hooray, the live Questions &amp; Answers are available here<br>
+<iframe width="560" height="315" src="https://conf.tube/videos/embed/4dba3ced-7f1a-407a-aa3b-22b79467b3b8" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/an-analysis-of-privacy-design-principles-as-applied-to-decentralized-systems/951/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/an-analysis-of-privacy-design-principles-as-applied-to-decentralized-systems/951/1</link>
+        <pubDate>Wed, 30 Sep 2020 20:45:29 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-951-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/an-analysis-of-privacy-design-principles-as-applied-to-decentralized-systems/951.rss">An analysis of privacy design principles as applied to decentralized systems</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Shout out to Mobilizon for version 1.0.0!</title>
+    <link>https://socialhub.activitypub.rocks/t/shout-out-to-mobilizon-for-version-1-0-0/1115</link>
+    <description>https://framablog.org/2020/10/27/mobilizon-your-events-your-groups-your-data/</description>
+    
+    <lastBuildDate>Tue, 27 Oct 2020 23:04:00 +0000</lastBuildDate>
+    <category>Mobilizon</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/shout-out-to-mobilizon-for-version-1-0-0/1115.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Shout out to Mobilizon for version 1.0.0!</title>
+        <dc:creator><![CDATA[jarofgreen]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="https://framablog.org/2020/10/27/mobilizon-your-events-your-groups-your-data/" class="onebox" target="_blank" rel="noopener nofollow ugc">https://framablog.org/2020/10/27/mobilizon-your-events-your-groups-your-data/</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/shout-out-to-mobilizon-for-version-1-0-0/1115/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/shout-out-to-mobilizon-for-version-1-0-0/1115/1</link>
+        <pubDate>Tue, 27 Oct 2020 23:04:00 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1115-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/shout-out-to-mobilizon-for-version-1-0-0/1115.rss">Shout out to Mobilizon for version 1.0.0!</source>
+      </item>
+  </channel>
+</rss>

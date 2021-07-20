@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Confused about the (two types of?) Actor Objects</title>
+    <link>https://socialhub.activitypub.rocks/t/confused-about-the-two-types-of-actor-objects/1098</link>
+    <description>The Actor Object as described in the [specification](https://www.w3.org/TR/activitypub/#actor-objects) has an Inobx property that is a JSON file (a Collection, in this case), but when a server [retrieves the Actor JSON-LD representation to find its inbox](https://www.w3.org/TR/activitypub/#delivery), I&#39;m assuming it wants to find a URL path to post to. Something like [this.](https://blog.joinmastodon.org/2018/06/how-to-implement-a-basic-activitypub-server/)
+What *is* the Actor Object? Are there different types? Where should a remote server and/or a client find it?</description>
+    
+    <lastBuildDate>Thu, 22 Oct 2020 14:17:31 +0000</lastBuildDate>
+    <category>Server to Server</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/confused-about-the-two-types-of-actor-objects/1098.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Confused about the (two types of?) Actor Objects</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p>Yep, that looks good to me. <code>preferredUsername</code> is not required by the spec, but it is required by Mastodon and other implementations that use <a>Webfinger</a> as a way of referencing users (examples for this are also in the blog post as well).</p>
+<aside class="quote no-group" data-username="tinyrabbit" data-post="8" data-topic="1098" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/tinyrabbit/40/502_2.png" class="avatar"> tinyrabbit:</div>
+<blockquote>
+<p>Worth noting is that there’s no avatar link in there. Is there a consensus on that out there?</p>
+</blockquote>
+</aside>
+<p>You can see <a href="https://www.w3.org/TR/activitystreams-vocabulary">https://www.w3.org/TR/activitystreams-vocabulary</a> for more properties of Person, Note, Activity, etc that may not be covered by the ActivityPub spec. In this case, <a href="https://www.w3.org/TR/activitystreams-vocabulary/#dfn-icon">icon</a> is used for the avatar and, if the implementation supports it, <a href="https://www.w3.org/ns/activitystreams#image">image</a> is used for a more free-form image, like a profile header image.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/confused-about-the-two-types-of-actor-objects/1098/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/confused-about-the-two-types-of-actor-objects/1098/9</link>
+        <pubDate>Thu, 22 Oct 2020 14:17:31 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1098-9</guid>
+        <source url="https://socialhub.activitypub.rocks/t/confused-about-the-two-types-of-actor-objects/1098.rss">Confused about the (two types of?) Actor Objects</source>
+      </item>
+      <item>
+        <title>Confused about the (two types of?) Actor Objects</title>
+        <dc:creator><![CDATA[tinyrabbit]]></dc:creator>
+        <description><![CDATA[
+            <p>Worth noting is that there’s no avatar link in there. Is there a consensus on that out there?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/confused-about-the-two-types-of-actor-objects/1098/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/confused-about-the-two-types-of-actor-objects/1098/8</link>
+        <pubDate>Thu, 22 Oct 2020 08:41:17 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1098-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/confused-about-the-two-types-of-actor-objects/1098.rss">Confused about the (two types of?) Actor Objects</source>
+      </item>
+      <item>
+        <title>Confused about the (two types of?) Actor Objects</title>
+        <dc:creator><![CDATA[tinyrabbit]]></dc:creator>
+        <description><![CDATA[
+            <p>Then I assume an Actor Object that adheres to the specification <em>and</em> allows for HTTP signatures to work would look something like this:</p>
+<pre><code class="lang-auto">{
+    "@context": [
+        "https://www.w3.org/ns/activitystreams",
+        "https://w3id.org/security/v1"
+    ],  
+
+    "id": "https://tinyrabbit.ml/users/testuser",
+    "type": "Person",
+    "name": "Test User",
+    "preferredUsername": "Test User",
+    "summary": "Pretend user to test functionality.",
+    "inbox": "https://tinyrabbit.ml/users/testuser/inbox",
+    "outbox": "https://tinyrabbit.ml/users/testuser/outbox",
+    "followers": "https://tinyrabbit.ml/users/testuser/followers",
+    "following": "https://tinyrabbit.ml/users/testuser/following",
+    "liked": "https://tinyrabbit.ml/users/testuser/liked",
+    "publicKey": {
+        "id": "https://tinyrabbit.ml/users/testuser#main-key",
+        "owner": "https://tinyrabbit.ml/users/testuser",
+        "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAu6mKuqaq83M73HUnU+dp\n++g/lG4hAXgElIqlGFe+o4Lp6ISjRVL3BY53N3x+AhFg3UwYWv1VrySNphd1l08X\n43nZ+KeD9qKxDcMLVvFL3LlMJ/QwJ2yeUEPkRrypghQh9n3Vy58l27jLLpxdLz0c\nMs2BFeFheBhXIjy+vVpF28JbHvidxH97vsX28LIgSRKMNDvy/y4l5hmRNvsXkuKa\n4c62lNsVPCiwShb/vcTF+nv1PHeYZhOyH2+kHD3ia+rbwPmqKLTwwYQz/gMMtJnz\nhFtWCI37aKJIH6LmiKSudPZPRvAt+dh4OBPwYYBXgMGNuzdozTAx+YYYMYpT06q2\nQwIDAQAB\n-----END PUBLIC KEY-----"
+    }   
+}
+</code></pre>
+<p>I’ve merged the Actor Object from the specification with the extra context and public key fields from the blog post I linked to in my original post. Do you think this is a format that most implementations out there would accept?</p>
+<p>(The domain tinyrabbit.ml doesn’t exist, and may not ever depending on where I decide to set up a test server for my development efforts <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"> )</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/confused-about-the-two-types-of-actor-objects/1098/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/confused-about-the-two-types-of-actor-objects/1098/7</link>
+        <pubDate>Thu, 22 Oct 2020 08:40:03 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1098-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/confused-about-the-two-types-of-actor-objects/1098.rss">Confused about the (two types of?) Actor Objects</source>
+      </item>
+      <item>
+        <title>Confused about the (two types of?) Actor Objects</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p>It might look different, but behind the scenes they’re all just HTTP servers responding to requests. Just because one has <code>.json</code> in it doesn’t mean that it’s a file, or the resource maps to a file under the hood.</p>
+<p>I think this is maybe just a slightly-confusing example. Here’s another example from the same document (this one is Example 1):</p>
+<pre><code class="lang-json">{"@context": "https://www.w3.org/ns/activitystreams",
+ "type": "Person",
+ "id": "https://social.example/alyssa/",
+ "name": "Alyssa P. Hacker",
+ "preferredUsername": "alyssa",
+ "summary": "Lisp enthusiast hailing from MIT",
+ "inbox": "https://social.example/alyssa/inbox/",
+ "outbox": "https://social.example/alyssa/outbox/",
+ "followers": "https://social.example/alyssa/followers/",
+ "following": "https://social.example/alyssa/following/",
+ "liked": "https://social.example/alyssa/liked/"}
+</code></pre>
+<p>Ultimately, the choices servers make in constructing the routes they’ll respond to is arbitrary. Maybe the server at <code>kenzoishii.example.com</code> is running a framework that uses that convention to define any route that returns a JSON string. Maybe it is using a file under the hood. Ultimately, all of that is kind of beside the point when thinking about things on the level of HTTP requests—all you know if that you make a <code>POST</code> to the url specified in the <code>inbox</code> property, and it’s up to the other server to handle that correctly.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/confused-about-the-two-types-of-actor-objects/1098/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/confused-about-the-two-types-of-actor-objects/1098/6</link>
+        <pubDate>Wed, 21 Oct 2020 20:22:17 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1098-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/confused-about-the-two-types-of-actor-objects/1098.rss">Confused about the (two types of?) Actor Objects</source>
+      </item>
+      <item>
+        <title>Confused about the (two types of?) Actor Objects</title>
+        <dc:creator><![CDATA[tinyrabbit]]></dc:creator>
+        <description><![CDATA[
+            <p>What I don’t get is where and how the inbox URI should be presented.</p>
+<p>The Actor Object in the specification declares the Actor’s Inbox as <code>"inbox": "https://kenzoishii.example.com/inbox.json"</code> – a Collection. Is a remote server supposed to HTTP POST to a JSON file?</p>
+<p>Meanwhile the Actor Object in the blog post I linked declares the Actor’s Inbox as <code>"inbox": "https://my-example.com/inbox"</code> which makes a lot more sense. I was temporarily confused because I didn’t understand where a remote server would find this Actor Object (even though I implemented webfinger myself a few days ago… oh, well). That aside; why does this Actor Object differ so much from the Actor Object in the specification?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/confused-about-the-two-types-of-actor-objects/1098/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/confused-about-the-two-types-of-actor-objects/1098/5</link>
+        <pubDate>Wed, 21 Oct 2020 18:43:28 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1098-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/confused-about-the-two-types-of-actor-objects/1098.rss">Confused about the (two types of?) Actor Objects</source>
+      </item>
+      <item>
+        <title>Confused about the (two types of?) Actor Objects</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t quite understand the other two answers given here, but the spec is assuming that the “inbox” url should be able to support both GET and POST in different contexts (see <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods">here</a> for more on http methods).</p>
+<p>In practice, GETing the inbox is only relevant when implementing the c2s section of the spec (so clients can retrieve the list of relevant activities from the server), and POSTing to the inbox is only relevant when implementing the s2s section of the spec (so servers can deliver activities to other servers that need to know about them). So, for example, because Mastodon only implements s2s, and not c2s, it only allows a POST to the inbox route, not a GET. You could imagine a corresponding c2s only ActivityPub server that allowed clients to GET their inboxes (and POST to their <em>outboxes</em>, to publish new activities), but didn’t implement federation.</p>
+<p>Does that make sense? The important concept here is that the HTTP verb used (GET or POST) depends on the context of what you want to do with the resource on the other end.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/confused-about-the-two-types-of-actor-objects/1098/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/confused-about-the-two-types-of-actor-objects/1098/4</link>
+        <pubDate>Wed, 21 Oct 2020 17:37:05 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1098-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/confused-about-the-two-types-of-actor-objects/1098.rss">Confused about the (two types of?) Actor Objects</source>
+      </item>
+      <item>
+        <title>Confused about the (two types of?) Actor Objects</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>All other types are described in the <a href="https://www.w3.org/TR/activitystreams-vocabulary/#actor-types">Vocabulary Spec.</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/confused-about-the-two-types-of-actor-objects/1098/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/confused-about-the-two-types-of-actor-objects/1098/3</link>
+        <pubDate>Wed, 21 Oct 2020 16:25:26 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1098-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/confused-about-the-two-types-of-actor-objects/1098.rss">Confused about the (two types of?) Actor Objects</source>
+      </item>
+      <item>
+        <title>Confused about the (two types of?) Actor Objects</title>
+        <dc:creator><![CDATA[vpzom]]></dc:creator>
+        <description><![CDATA[
+            <p>JSON-LD objects can contain other objects either by their ID or by embedding the object. That ID is then the URL that should be POSTed to.</p>
+<p>There are several types of Actor, the most common is Person. The AP spec doesn’t include any “discovery” path outside of receiving activities from the actor, but most implementations also implement WebFinger for this purpose</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/confused-about-the-two-types-of-actor-objects/1098/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/confused-about-the-two-types-of-actor-objects/1098/2</link>
+        <pubDate>Wed, 21 Oct 2020 15:46:29 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1098-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/confused-about-the-two-types-of-actor-objects/1098.rss">Confused about the (two types of?) Actor Objects</source>
+      </item>
+      <item>
+        <title>Confused about the (two types of?) Actor Objects</title>
+        <dc:creator><![CDATA[tinyrabbit]]></dc:creator>
+        <description><![CDATA[
+            <p>The Actor Object as described in the <a href="https://www.w3.org/TR/activitypub/#actor-objects" rel="noopener nofollow ugc">specification</a> has an Inobx property that is a JSON file (a Collection, in this case), but when a server <a href="https://www.w3.org/TR/activitypub/#delivery" rel="noopener nofollow ugc">retrieves the Actor JSON-LD representation to find its inbox</a>, I’m assuming it wants to find a URL path to post to. Something like <a href="https://blog.joinmastodon.org/2018/06/how-to-implement-a-basic-activitypub-server/" rel="noopener nofollow ugc">this.</a><br>
+What <em>is</em> the Actor Object? Are there different types? Where should a remote server and/or a client find it?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/confused-about-the-two-types-of-actor-objects/1098/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/confused-about-the-two-types-of-actor-objects/1098/1</link>
+        <pubDate>Wed, 21 Oct 2020 12:30:32 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1098-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/confused-about-the-two-types-of-actor-objects/1098.rss">Confused about the (two types of?) Actor Objects</source>
+      </item>
+  </channel>
+</rss>

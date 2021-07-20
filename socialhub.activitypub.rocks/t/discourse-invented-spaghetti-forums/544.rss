@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Discourse Invented Spaghetti Forums!</title>
+    <link>https://socialhub.activitypub.rocks/t/discourse-invented-spaghetti-forums/544</link>
+    <description>Continuing the discussion from [Which links between ActivityPub and Solid project?](https://socialhub.activitypub.rocks/t/which-links-between-activitypub-and-solid-project/529/10):
+
+Hey @rishabh, @Falco: we have more and more the case that discussions spread across Discourse instances, it would be _very nice(TM)_ to have something that helps us federate those topics over ActivityPub. I&#39;ve seen that ActivityPub support is not on the menu for the upcoming version 2.5 that just started. Do you have any plans moving forward? Do you need help?</description>
+    
+    <lastBuildDate>Mon, 18 Jan 2021 20:43:33 +0000</lastBuildDate>
+    <category>Discourse</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/discourse-invented-spaghetti-forums/544.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Discourse Invented Spaghetti Forums!</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://socialhub.activitypub.rocks/t/discourse-invented-spaghetti-forums/544/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/discourse-invented-spaghetti-forums/544/3</link>
+        <pubDate>Mon, 18 Jan 2021 20:43:39 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-544-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/discourse-invented-spaghetti-forums/544.rss">Discourse Invented Spaghetti Forums!</source>
+      </item>
+      <item>
+        <title>Discourse Invented Spaghetti Forums!</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>We’re moving this discussion to <a href="https://socialhub.activitypub.rocks/t/shaping-up-a-business-use-case-for-activitypub-in-discourse/1321" class="inline-onebox">Shaping Up a Business Use-Case for ActivityPub in Discourse</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/discourse-invented-spaghetti-forums/544/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/discourse-invented-spaghetti-forums/544/2</link>
+        <pubDate>Mon, 18 Jan 2021 20:43:33 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-544-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/discourse-invented-spaghetti-forums/544.rss">Discourse Invented Spaghetti Forums!</source>
+      </item>
+      <item>
+        <title>Discourse Invented Spaghetti Forums!</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Continuing the discussion from <a href="https://socialhub.activitypub.rocks/t/which-links-between-activitypub-and-solid-project/529/10">Which links between ActivityPub and Solid project?</a>:</p>
+<p>Hey <a class="mention" href="/u/rishabh">@rishabh</a>, <a class="mention" href="/u/falco">@Falco</a>: we have more and more the case that discussions spread across Discourse instances, it would be <em>very nice™</em> to have something that helps us federate those topics over ActivityPub. I’ve seen that ActivityPub support is not on the menu for the upcoming version 2.5 that just started. Do you have any plans moving forward? Do you need help?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/discourse-invented-spaghetti-forums/544/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/discourse-invented-spaghetti-forums/544/1</link>
+        <pubDate>Fri, 28 Feb 2020 08:49:42 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-544-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/discourse-invented-spaghetti-forums/544.rss">Discourse Invented Spaghetti Forums!</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>An analysis of privacy design principles as applied to decentralized systems - ActivityPub Conference 2020 - SocialHub</title>
+    <meta name="description" content="Cristina DeLisle (@CristinaDeLisle) 
+ 
+This talk will provide an analysis of privacy design principles in building software. It will consider best practice recommendations and the specific characteristics of decentralize&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="951.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;An analysis of privacy design principles as applied to decentralized systems&#39;" href="951.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/an-analysis-of-privacy-design-principles-as-applied-to-decentralized-systems/951" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/an-analysis-of-privacy-design-principles-as-applied-to-decentralized-systems/951" />
+<meta property="og:title" content="An analysis of privacy design principles as applied to decentralized systems" />
+<meta name="twitter:title" content="An analysis of privacy design principles as applied to decentralized systems" />
+<meta property="og:description" content="Cristina DeLisle (@CristinaDeLisle)    This talk will provide an analysis of privacy design principles in building software. It will consider best practice recommendations and the specific characteristics of decentralized models.  For example, data separation is one of the main privacy design principles. Thus, a decentralized model is preferable as opposed to a centralized one. If we were to imagine a privacy by design future, a social media platform would be decentralized. Unfortunately, data s..." />
+<meta name="twitter:description" content="Cristina DeLisle (@CristinaDeLisle)    This talk will provide an analysis of privacy design principles in building software. It will consider best practice recommendations and the specific characteristics of decentralized models.  For example, data separation is one of the main privacy design principles. Thus, a decentralized model is preferable as opposed to a centralized one. If we were to imagine a privacy by design future, a social media platform would be decentralized. Unfortunately, data s..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="1 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="8 ❤" />
+<meta property="article:published_time" content="2020-09-30T20:45:29+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="951.html">An analysis of privacy design principles as applied to decentralized systems</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="https://socialhub.activitypub.rocks/c/meeting/11" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #0E76BD'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Meeting</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/meeting/apconf2020/53.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #ff7a00'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>ActivityPub Conference 2020</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+      <div class="topic-category">
+        <div class='discourse-tags list-tags'>
+            <a href='../../tag/talk.html' class='discourse-tag' rel="tag">talk</a>, 
+            <a href='../../tag/apconf.html' class='discourse-tag' rel="tag">apconf</a>, 
+            <a href='../../tag/2020.html' class='discourse-tag' rel="tag">2020</a>
+        </div>
+      </div>
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/CristinaDeLisle.html'><span itemprop='name'>CristinaDeLisle</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="951.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-09-30T20:45:29Z'>
+              <time itemprop='dateModified' datetime='2020-10-19T17:28:56Z' class='post-time'>
+                October 19, 2020,  5:28pm
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><em>Cristina DeLisle (<a class="mention" href="../../u/cristinadelisle.html">@CristinaDeLisle</a>)</em></p>
+<p><iframe width="560" height="315" src="https://conf.tube/videos/embed/a0196813-fb0d-4740-a37a-5f2b1fd1e774" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+<p>This talk will provide an analysis of privacy design principles in building software. It will consider best practice recommendations and the specific characteristics of decentralized models.<br>
+For example, data separation is one of the main privacy design principles. Thus, a decentralized model is preferable as opposed to a centralized one. If we were to imagine a privacy by design future, a social media platform would be decentralized. Unfortunately, data separation alone is not contouring this future.</p>
+<ul>
+<li>What design principles are there to consider?</li>
+<li>What are the particular challenges posed by decentralized systems?</li>
+</ul>
+<p>This talk will tackle these topics and propose ways in which we can address them.</p>
+<h2>Questions &amp; Answers available!</h2>
+<p><strong><a href="https://conf.tube/videos/watch/4dba3ced-7f1a-407a-aa3b-22b79467b3b8" rel="noopener nofollow ugc">Q&amp;A Session – An analysis of privacy design principles as applied to decentralized systems</a></strong><br>
+⬡ Hooray, the live Questions &amp; Answers are available here<br>
+<iframe width="560" height="315" src="https://conf.tube/videos/embed/4dba3ced-7f1a-407a-aa3b-22b79467b3b8" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+        </div>
+
+        <meta itemprop='headline' content='An analysis of privacy design principles as applied to decentralized systems'>
+          <meta itemprop='keywords' content='talk, apconf, 2020'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="4" />
+           <span class='post-likes'>4 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/how.html'><span itemprop='name'>how</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="951.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-10-02T14:11:44Z'>
+              <time itemprop='dateModified' datetime='2020-10-02T14:12:08Z' class='post-time'>
+                October 2, 2020,  2:12pm
+              </time>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thank you so much Cristina, as usual your analysis is crystal clear and to the point. I’m glad we have you around in this community!</p>
+<p>As I’m a bit running out of time I’ll skip the reminder of the 8 privacy principles in the EU framework and skip directly to the questions you propose to address during the live session:</p>
+<blockquote>
+<ol>
+<li>How to adapt privacy design principles to the Fediverse?</li>
+<li>What particular challenges does the Fediverse pose in implementing these ideas?</li>
+<li>Anything you feel like adressing <img src="../../images/emoji/twitter/slight_smile.png@v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:">
+</li>
+</ol>
+</blockquote>
+        </div>
+
+        <meta itemprop='headline' content='An analysis of privacy design principles as applied to decentralized systems'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="951.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-10-03T09:44:36Z'>
+              <time itemprop='dateModified' datetime='2020-10-03T09:45:24Z' class='post-time'>
+                October 3, 2020,  9:45am
+              </time>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks for this presentation, Cristina! Really appreciate your analysis between regulation and software.</p>
+<p>I’m parking some questions here that came to my mind while listening to your presentation, that I hope to ask in the BoF session:</p>
+<ul>
+<li>In a world where multiple, different jurisdictions are starting to wield their legal sovereignty over their portions of the internet for political reasons, what trends and changes have you seen in regulators/lawmakers’ views, and how do you see this impacting the future development of software or operators of software in the Fediverse?</li>
+<li>You mention that “The providers have the <em>potential to violate the privacy of the nodes</em>, based on the design choices of the platform”: does this mean in a P2P software case, where the user is possibly also the provider in a P2P world, does the regulatory liability sit on the user-provider’s own shoulders, or does it shift to the developers of the P2P software? Or is this an example where regulation and tech just do not align well?</li>
+<li>How do the EU regulators generally balance the privacy principles against other regulations (right to be forgotten, etc)?</li>
+</ul>
+        </div>
+
+        <meta itemprop='headline' content='An analysis of privacy design principles as applied to decentralized systems'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="951.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-03T18:27:08Z' class='post-time'>
+                October 3, 2020,  6:27pm
+              </time>
+              <meta itemprop='dateModified' content='2020-10-03T18:27:08Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thank you for taking the time to answer all the questions!</p>
+        </div>
+
+        <meta itemprop='headline' content='An analysis of privacy design principles as applied to decentralized systems'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/CristinaDeLisle.html'><span itemprop='name'>CristinaDeLisle</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="951.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-10-03T19:12:33Z'>
+              <time itemprop='dateModified' datetime='2020-10-03T19:14:39Z' class='post-time'>
+                October 3, 2020,  7:14pm
+              </time>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thank you, cjs for attending the Q&amp;A session! I wish I would have seen them earlier so that I could have answer them in a more structured way (my bad). I really enjoyed the very interesting topics opened and I did my best on the spot. I hope to see you again some other time and if you want to keep in touch, let’s do it! <img src="../../images/emoji/twitter/smile.png@v=9" title=":smile:" class="emoji" alt=":smile:"></p>
+        </div>
+
+        <meta itemprop='headline' content='An analysis of privacy design principles as applied to decentralized systems'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

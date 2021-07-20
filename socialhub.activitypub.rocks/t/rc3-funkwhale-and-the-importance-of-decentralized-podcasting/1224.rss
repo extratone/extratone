@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>rC3 – Funkwhale and the Importance of Decentralized Podcasting</title>
+    <link>https://socialhub.activitypub.rocks/t/rc3-funkwhale-and-the-importance-of-decentralized-podcasting/1224</link>
+    <description>[date=2020-12-27 time=21:00:00 timezone=&quot;Europe/Berlin&quot;]
+
+[Link](https://rc3.world/rc3/event/rc3-520410-funkwhale_and_the_importance_of_decentralized_podcasting/)
+
+**Podcasts are inherently decentralized.** As a medium, they rely on open standards and simple, straightforward tools to allow them to reach as wide an audience as possible. In recent years, however, the desire to monetize the format has started to change the shape of the podcasting landscape. With the acquisition of popular podcasts, platform holders such as Spotify have started a precipitous downward trend into centralization which flies in the face of what podcasts stand for. Luckily, there are many emerging platforms within the world of free software which aim to make the publication and dissemination of podcast content easier, more accessible, and more decentralized to combat this trend towards neo-corporate radio.
+
+As the developers of one of these platforms, the Funkwhale project has faced and still faces unique challenges designing the necessary tooling and anti-abuse features to enable users to host their own podacasting platform. This talk explores some of these issues, some of the solutions we have found, and why we believe it is important that users have free and open alternatives to centralized podcast hosts.</description>
+    
+    <lastBuildDate>Tue, 29 Dec 2020 11:01:16 +0000</lastBuildDate>
+    <category>Remote Chaos Experience</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/rc3-funkwhale-and-the-importance-of-decentralized-podcasting/1224.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>rC3 – Funkwhale and the Importance of Decentralized Podcasting</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, understandable… and good practice <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/rc3-funkwhale-and-the-importance-of-decentralized-podcasting/1224/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/rc3-funkwhale-and-the-importance-of-decentralized-podcasting/1224/4</link>
+        <pubDate>Tue, 29 Dec 2020 11:01:16 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1224-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/rc3-funkwhale-and-the-importance-of-decentralized-podcasting/1224.rss">rC3 – Funkwhale and the Importance of Decentralized Podcasting</source>
+      </item>
+      <item>
+        <title>rC3 – Funkwhale and the Importance of Decentralized Podcasting</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/aschrijver">@aschrijver</a><br>
+Please note, <em>why</em> we did not record other events:</p>
+<p>If I know people and they say, recording is ok, it is about trust for me.<br>
+Unfortunately this does not change the fact that we need a written consent which is easy for the main stage as above but not for many people joining ad-hoc for e.g. an AMA! event …</p>
+<p>Also especially at CCC “recording” is a controversial topic.<br>
+See e.g. their “No-Photo-Policy” <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/rc3-funkwhale-and-the-importance-of-decentralized-podcasting/1224/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/rc3-funkwhale-and-the-importance-of-decentralized-podcasting/1224/3</link>
+        <pubDate>Tue, 29 Dec 2020 10:52:44 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1224-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/rc3-funkwhale-and-the-importance-of-decentralized-podcasting/1224.rss">rC3 – Funkwhale and the Importance of Decentralized Podcasting</source>
+      </item>
+      <item>
+        <title>rC3 – Funkwhale and the Importance of Decentralized Podcasting</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Here is the recording of this event:</p>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/59ddbd9e4528ba935921ca0c268731789cd91a72.png" class="site-icon" width="96" height="96">
+      <a href="https://media.ccc.de/v/rc3-520410-funkwhale_and_the_importance_of_decentralized_podcasting" target="_blank" rel="noopener">media.ccc.de</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:256/144;"><img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/c420bae71b925ff716f7e0832f1859c6f0ae134c.jpeg" class="thumbnail" width="256" height="144"></div>
+
+<h3><a href="https://media.ccc.de/v/rc3-520410-funkwhale_and_the_importance_of_decentralized_podcasting" target="_blank" rel="noopener">Funkwhale and the Importance of Decentralized Podcasting</a></h3>
+
+<p>Podcasts are inherently decentralized. As a medium, they rely on open standards and simple, straightforward tools to allow them to reach ...</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/rc3-funkwhale-and-the-importance-of-decentralized-podcasting/1224/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/rc3-funkwhale-and-the-importance-of-decentralized-podcasting/1224/2</link>
+        <pubDate>Tue, 29 Dec 2020 10:46:48 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1224-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/rc3-funkwhale-and-the-importance-of-decentralized-podcasting/1224.rss">rC3 – Funkwhale and the Importance of Decentralized Podcasting</source>
+      </item>
+      <item>
+        <title>rC3 – Funkwhale and the Importance of Decentralized Podcasting</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p><span data-date="2020-12-27" data-time="21:00:00" class="discourse-local-date" data-timezone="Europe/Berlin" data-email-preview="2020-12-27T20:00:00Z UTC">2020-12-27T20:00:00Z</span></p>
+<p><a href="https://rc3.world/rc3/event/rc3-520410-funkwhale_and_the_importance_of_decentralized_podcasting/">Link</a></p>
+<p><strong>Podcasts are inherently decentralized.</strong> As a medium, they rely on open standards and simple, straightforward tools to allow them to reach as wide an audience as possible. In recent years, however, the desire to monetize the format has started to change the shape of the podcasting landscape. With the acquisition of popular podcasts, platform holders such as Spotify have started a precipitous downward trend into centralization which flies in the face of what podcasts stand for. Luckily, there are many emerging platforms within the world of free software which aim to make the publication and dissemination of podcast content easier, more accessible, and more decentralized to combat this trend towards neo-corporate radio.</p>
+<p>As the developers of one of these platforms, the Funkwhale project has faced and still faces unique challenges designing the necessary tooling and anti-abuse features to enable users to host their own podacasting platform. This talk explores some of these issues, some of the solutions we have found, and why we believe it is important that users have free and open alternatives to centralized podcast hosts.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/rc3-funkwhale-and-the-importance-of-decentralized-podcasting/1224/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/rc3-funkwhale-and-the-importance-of-decentralized-podcasting/1224/1</link>
+        <pubDate>Sun, 27 Dec 2020 20:37:54 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1224-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/rc3-funkwhale-and-the-importance-of-decentralized-podcasting/1224.rss">rC3 – Funkwhale and the Importance of Decentralized Podcasting</source>
+      </item>
+  </channel>
+</rss>

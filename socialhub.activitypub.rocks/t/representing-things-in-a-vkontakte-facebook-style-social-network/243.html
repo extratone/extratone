@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Representing things in a VKontakte/Facebook-style social network? - Server to Server - SocialHub</title>
+    <meta name="description" content="So far, all of the ActivityPub implementations I’ve seen are about microblogging – which means unilateral following, only own posts in own profile, and no concept of friends. I’m making one that’s different from that and&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="243.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Representing things in a VKontakte/Facebook-style social network?&#39;" href="243.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/representing-things-in-a-vkontakte-facebook-style-social-network/243" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/representing-things-in-a-vkontakte-facebook-style-social-network/243" />
+<meta property="og:title" content="Representing things in a VKontakte/Facebook-style social network?" />
+<meta name="twitter:title" content="Representing things in a VKontakte/Facebook-style social network?" />
+<meta property="og:description" content="So far, all of the ActivityPub implementations I’ve seen are about microblogging – which means unilateral following, only own posts in own profile, and no concept of friends. I’m making one that’s different from that and modeled off early, pre-public-pages VKontakte (Facebook probably was like that too as some point). So, I have some questions.   How do I best represent friend requests? An Offer activity, with a Relationship as the object, as the spec suggests? For compatibility purposes, I inte..." />
+<meta name="twitter:description" content="So far, all of the ActivityPub implementations I’ve seen are about microblogging – which means unilateral following, only own posts in own profile, and no concept of friends. I’m making one that’s different from that and modeled off early, pre-public-pages VKontakte (Facebook probably was like that too as some point). So, I have some questions.   How do I best represent friend requests? An Offer activity, with a Relationship as the object, as the spec suggests? For compatibility purposes, I inte..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="13 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="4 ❤" />
+<meta property="article:published_time" content="2019-10-28T16:06:13+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+        <link rel="next" href="243@page=2.html">
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="243.html">Representing things in a VKontakte/Facebook-style social network?</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/activitypub.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #0088CC'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>ActivityPub</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/activitypub/s2s/7.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #808281'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Server to Server</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="243.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-10-28T16:06:13Z'>
+              <time itemprop='dateModified' datetime='2019-10-28T16:17:41Z' class='post-time'>
+                October 28, 2019,  4:17pm
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>So far, all of the ActivityPub implementations I’ve seen are about microblogging – which means unilateral following, only own posts in own profile, and no concept of friends. I’m making one that’s different from that and modeled off early, pre-public-pages VKontakte (Facebook probably was like that too as some point). So, I have some questions.</p>
+<ol>
+<li>How do I best represent friend requests? An Offer activity, with a Relationship as the object, as the spec suggests? For compatibility purposes, I interpret a mutual following as a friendship, so it already works with existing microblogging software.</li>
+<li>How do I best represent the friend list of a user? Do I just introduce my own JSON-LD namespace and add a property “friends” there, that works the same way as “followers” and “following”? Or is it supposed to be an ordered collection of Relationships rather than (links to) Persons?</li>
+<li>My users have “walls” where anyone can post. Only own posts appear in feeds. How do I address a someone else’s post on someone’s wall? So far I use “blablabla#Public” as “to” and the wall owner’s ID as the only element of “cc”. This post is public but isn’t addressed to anyone’s followers, so seems logical I guess?</li>
+<li>Reposts aka the Announce activity – that’s kinda limited for what I ideally want it to be. VK allows reposting with an optional comment and a media attachment. How could this be represented in ActivityPub, preferably such that it works nicely with the existing implementations? Since Objects have all the needed fields, namely “content” and “attachments”, is it going to be okay if I pretend my Announce is a post with its own content and attachments? But then how do I refer to it in comment objects (replies)?</li>
+</ol>
+        </div>
+
+        <meta itemprop='headline' content='Representing things in a VKontakte/Facebook-style social network?'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/lanodan.html'><span itemprop='name'>lanodan</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="243.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-10-28T18:00:15Z'>
+              <time itemprop='dateModified' datetime='2019-10-28T18:00:31Z' class='post-time'>
+                October 28, 2019,  6:00pm
+              </time>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>[2019-10-28 16:16:16+0000] Gregory via SocialHub:</p>
+<blockquote>
+<p>So far, all of the ActivityPub implementations I’ve seen are about microblogging – which means unilateral following, only own posts in own profile, and no concept of friends. I’m making one that’s different from that and modeled off early, pre-public-pages VKontakte (Facebook probably was like that too as some point). So, I have some questions.</p>
+</blockquote>
+<p>Well, this is quite because most of the Fediverse are Twitter/GnuSocial clones and Friends are a bit weird in a networking point of view tbh, but Friendica (2008-present IIRC) -which I’m going to assume you’re not aware of- seems pretty much facebook-like and started to federate over ActivityPub earlier this year.</p>
+<blockquote>
+<ol>
+<li>How do I best represent friend requests? An Offer activity, with a Relationship as the object, as the spec suggests? For compatibility purposes, I interpret a mutual following as a friendship, so it already works with existing microblogging software.</li>
+</ol>
+</blockquote>
+<p>I think mutuals would be best, that’s also what Friendica does.</p>
+<blockquote>
+<ol>
+<li>How do I best represent the friend list of a user? Do I just introduce my own JSON-LD namespace and add a property “friends” there, that works the same way as “followers” and “following”? Or is it supposed to be an ordered collection of Relationships rather than (links to) Persons?</li>
+</ol>
+</blockquote>
+<p>I think your first one is the way to go, and IMHO I would call it “mutuals” instead of “friends” as it’s more transparent on what it actually represents.</p>
+<blockquote>
+<ol>
+<li>My users have “walls” where anyone can post. Only own posts appear in feeds. How do I address a someone else’s post on someone’s wall? So far I use “blablabla#Public” as “to” and the wall owner’s ID as the only element of “cc”. This post is public but isn’t addressed to anyone’s followers, so seems logical I guess?</li>
+</ol>
+</blockquote>
+<p>ActivityPub actually doesn’t says that your feed can only contain your own posts, relays are one example of ActivityPub actors that have no content. And I’m not sure I understood the other part but it seems okay (we often use <code>as:Public</code> as an abbreviation btw).</p>
+<blockquote>
+<ol>
+<li>Reposts aka the Announce activity – that’s kinda limited for what I ideally want it to be. VK allows reposting with an optional comment and a media attachment. How could this be represented in ActivityPub, preferably such that it works nicely with the existing implementations? Since Objects have all the needed fields, namely “content” and “attachments”, is it going to be okay if I pretend my Announce is a post with its own content and attachments? But then how do I refer to it in comment objects (replies)?</li>
+</ol>
+</blockquote>
+<p>Not sure if this is supported in any implementations (Mastodon and Pleroma via MastodonAPI doesn’t), but this is also something that friendica allows so I guess they might have figured it out already.</p>
+        </div>
+
+        <meta itemprop='headline' content='Representing things in a VKontakte/Facebook-style social network?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="243.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-10-28T19:42:29Z' class='post-time'>
+                October 28, 2019,  7:42pm
+              </time>
+              <meta itemprop='dateModified' content='2019-10-28T19:42:29Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks! I’ve heard of Friendica, but I assumed it doesn’t support ActivityPub. Upon closer inspection it somewhat does, but it seems as though it mainly supports it for the purpose of compatibility with microblogging software like Mastodon and Pleroma, not exposing all of its features. And it’s not even really spec-compliant either – I followed my account by sending it a Follow activity, it appeared as a “mutual following” in Friendica but I didn’t receive an Accept. It also doesn’t allow me to post on that foreign user’s wall.</p>
+<p>So I guess at this point I can make up whatever works best for my features and is as compatible with Mastodon/Pleroma/Misskey/etc as possible ¯\_(ツ)_/¯</p>
+        </div>
+
+        <meta itemprop='headline' content='Representing things in a VKontakte/Facebook-style social network?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="243.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-10-28T23:38:49Z' class='post-time'>
+                October 28, 2019, 11:38pm
+              </time>
+              <meta itemprop='dateModified' content='2019-10-28T23:38:49Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>My thoughts/opinions:</p>
+<aside class="quote no-group" data-post="1" data-topic="243">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../letter_avatar_proxy/v4/letter/g/ec9cab/40.png" class="avatar"> grishka:</div>
+<blockquote>
+<p>How do I best represent friend requests? An Offer activity, with a Relationship as the object, as the spec suggests? For compatibility purposes, I interpret a mutual following as a friendship, so it already works with existing microblogging software.</p>
+</blockquote>
+</aside>
+<p>For interoperability, Person A sending a <code>Follow</code> to Person B, and having Person B send back an <code>Accept{Follow}</code> or <code>Reject{Follow}</code>. These two steps would be cognizant choices by the user. Then on their behalf, have your B server do a reverse-<code>Follow</code> upon sending an <code>Accept{Follow}</code>, and when A’s server gets the <code>Accept{Follow}</code> and then B’s <code>Follow</code>, auto-<code>Accept</code> it.  Only then they’ll be mutually friends.</p>
+<aside class="quote no-group" data-post="1" data-topic="243">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../letter_avatar_proxy/v4/letter/g/ec9cab/40.png" class="avatar"> grishka:</div>
+<blockquote>
+<p>How do I best represent the friend list of a user?</p>
+</blockquote>
+</aside>
+<p>If your application strictly follows the paradigm above, only users in both <code>followers</code> and <code>following</code> will be “friends” (mutual).</p>
+<aside class="quote no-group" data-post="1" data-topic="243">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../letter_avatar_proxy/v4/letter/g/ec9cab/40.png" class="avatar"> grishka:</div>
+<blockquote>
+<p>Reposts aka the Announce activity – that’s kinda limited for what I ideally want it to be. VK allows reposting with an optional comment and a media attachment. How could this be represented in ActivityPub, preferably such that it works nicely with the existing implementations? Since Objects have all the needed fields, namely “content” and “attachments”, is it going to be okay if I pretend my Announce is a post with its own content and attachments? But then how do I refer to it in comment objects (replies)?</p>
+</blockquote>
+</aside>
+<p>You may have to (ab)use the <code>Announce</code> in a way that isn’t currently being used:</p>
+<pre><code class="lang-auto">{
+  "type": "Announce",
+  "object": "https://example.com/other/shared/post",
+  "content": "My commentary"
+}
+</code></pre>
+<p>Note that this will only allow text commentary, not other media (the Range of the <code>content</code> property is <code>xsd:string</code> or <code>rdf:langString</code>.</p>
+        </div>
+
+        <meta itemprop='headline' content='Representing things in a VKontakte/Facebook-style social network?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nightpool.html'><span itemprop='name'>nightpool</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="243.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-10-29T00:14:39Z'>
+              <time itemprop='dateModified' datetime='2019-10-29T00:19:38Z' class='post-time'>
+                October 29, 2019, 12:19am
+              </time>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>to be more precise, the content-type of content, by default, is HTML, so there’s no problem with using rich media there</p>
+        </div>
+
+        <meta itemprop='headline' content='Representing things in a VKontakte/Facebook-style social network?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="243.html">
+
+            <link itemprop="image" href="../../uploads/default/original/1X/acb757cf7099466eb8069e3f9732dbc38c0306e8.png">
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-10-29T00:33:39Z' class='post-time'>
+                October 29, 2019, 12:33am
+              </time>
+              <meta itemprop='dateModified' content='2019-10-29T00:33:39Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <blockquote>
+<p>For interoperability, Person A sending a  <code>Follow</code>  to Person B, and having Person B send back an  <code>Accept{Follow}</code>  or  <code>Reject{Follow}</code> . These two steps would be cognizant choices by the user. Then on their behalf, have your B server do a reverse- <code>Follow</code>  upon sending an  <code>Accept{Follow}</code> , and when A’s server gets the  <code>Accept{Follow}</code>  and then B’s  <code>Follow</code> , auto- <code>Accept</code>  it. Only then they’ll be mutually friends.</p>
+</blockquote>
+<p>I think I wasn’t clear enough about how I want this to work, sorry. Person A sends Person B a friend request, which has a side effect of A following B. If B declines the friend request, this only means that they don’t want to follow them back (and this will have an effect on the visibility of friends-only content if I decide to implement that), A still follows B. The only way for B to prevent A from following them is to block them. So following is still non-consensual like in microblogs, and friend requests are just an addition to that. VK worked like that for ages so I’m quite used to this. Facebook is probably different.</p>
+<p>This is best illustrated with this screenshot:<br>
+<img src="../../uploads/default/original/1X/acb757cf7099466eb8069e3f9732dbc38c0306e8.png" alt="56" data-base62-sha1="oDUW04qIipi0tRrbALu2vt7Kiz6" width="468" height="181"></p>
+<blockquote>
+<p>You may have to (ab)use the  <code>Announce</code>  in a way that isn’t currently being used:</p>
+</blockquote>
+<p>But since I then still end up with an activity rather than a <code>Note</code>, how do I have replies to that? I’d like each repost to have a completely separate comment (reply) thread, which requires that each repost be an object like <code>Note</code> rather than an activity.</p>
+<p>I’d post a screenshot of that as well, but apparently I’m a “new user” and am not allowed to have more than one image per post.</p>
+        </div>
+
+        <meta itemprop='headline' content='Representing things in a VKontakte/Facebook-style social network?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="243.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-10-29T07:43:19Z'>
+              <time itemprop='dateModified' datetime='2019-10-29T09:11:17Z' class='post-time'>
+                October 29, 2019,  9:11am
+              </time>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <blockquote>
+<p><a href="../../u/grishka.html">grishka</a></p>
+<pre><code>    October 29
+</code></pre>
+<blockquote>
+<p>For interoperability, Person A sending a <code>Follow</code>  to Person B, and having Person B send back an <code>Accept{Follow}</code>  or <code>Reject{Follow}</code> . These two steps would be cognizant choices by the user. Then on their behalf, have your B server do a reverse- <code>Follow</code>  upon sending an <code>Accept{Follow}</code> , and when A’s server gets the <code>Accept{Follow}</code>  and then B’s <code>Follow</code> , auto- <code>Accept</code>  it. Only then they’ll be mutually friends.</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>I think I wasn’t clear enough about how I want this to work, sorry. Person A sends Person B a friend request, which has a side effect of A following B.</p>
+</blockquote>
+<p>No, you misunderstand. A only follows B upon receiving an Accept{Follow}. Never when sending a Follow. (Edit to add: this is a SHOULD requirement in ActivityPub but not following this rule <em>will</em> violate federation expectations, result in weird interoperability issues in delivering content, and, I believe, result in a lot of very unhappy users demanding to boycott your software)</p>
+<p>The scheme I outlined above ensures 2 follows and two Accept{Follows}, one for each person, are sent, without requiring 2 actions from each user, only 2 actions total, and they either end in a state where both follow each other, or neither one follows the other. Plus it interoperates correctly out of the box.</p>
+<p>Your app will need to handle the case where other not-your-software federation results in a single sided follow. It will need to display it in a UI somehow, but luckily in either case I think it ends in the simple state of notifying your user that it is waiting for the other party to accept your follow.</p>
+<p>In either case, you’ll always be able to tell who is mutual because their name will be present in both the followers and following properties.</p>
+        </div>
+
+        <meta itemprop='headline' content='Representing things in a VKontakte/Facebook-style social network?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="243.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-10-29T16:13:27Z' class='post-time'>
+                October 29, 2019,  4:13pm
+              </time>
+              <meta itemprop='dateModified' content='2019-10-29T16:13:27Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="7" data-topic="243">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/cjs/40/35_2.png" class="avatar"> cjs:</div>
+<blockquote>
+<p>and they either end in a state where both follow each other, or neither one follows the other.</p>
+</blockquote>
+</aside>
+<p>Yeah, I understood, and that’s exactly what I <em>don’t</em> want. I’ll have to handle Mastodon’s <code>manuallyApprovesFollowers</code> as a special case anyway, and my software isn’t going to itself have that option – you’ll always be able to follow anyone.</p>
+        </div>
+
+        <meta itemprop='headline' content='Representing things in a VKontakte/Facebook-style social network?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/trwnh.html'><span itemprop='name'>trwnh</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="243.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-10-29T19:50:54Z' class='post-time'>
+                October 29, 2019,  7:50pm
+              </time>
+              <meta itemprop='dateModified' content='2019-10-29T19:50:54Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <h1>How do I best represent friend requests?</h1>
+<p>The majority of the existing network is based on <code>Follow</code>, which is primary behavior in a subscription-based network like Twitter or Mastodon.</p>
+<p>However, you can create Relationship objects, if you wish: <a href="https://www.w3.org/TR/activitystreams-vocabulary/#connections" rel="nofollow noopener">https://www.w3.org/TR/activitystreams-vocabulary/#connections</a> – but you will probably be one of the first/only software implementations to handle it this way, at least at the moment. No software currently uses Relationship (mutual friendship) or Offer Relationship (friend request) in the way described. Also, another limitation of Relationship is that you must specify <code>relationship</code> using an external vocabulary, such as <a href="http://vocab.org/relationship/" rel="nofollow noopener">http://vocab.org/relationship/</a> or some other schema.</p>
+<p>Some things you will have to consider:</p>
+<ul>
+<li>How would you model a friendship where one person has “unfollowed” the other, as Facebook lets you do? Do you just handle that with your own internal muting system?</li>
+<li>Are you interested in modeling cases where two people “follow” each other for their public posts, but are not necessarily “friends” when you attempt to consider access control or audience targeting?</li>
+<li>To what extent do you <em>want</em> compatibility with the pubsub network that is the current fediverse? Are you going to be implementing more complex features that require managing collections of contacts, or can you get by collapsing everything to “follower” and “following”?</li>
+</ul>
+<h1>How do I best represent the friend list of a user?</h1>
+<p>Well, in extension of the previous question: you can either rely on the existing follower/following, or you can create a custom Collection. You probably don’t have to introduce your own JSON-LD namespace, as several existing vocabularies can cover that for you. As stated above, <a href="http://vocab.org/relationship/" rel="nofollow noopener">http://vocab.org/relationship/</a> is used in examples. (It would be better to not make unnecessary vocabularies where existing ones are good enough.) But you would probably have to define a property within your namespace for disambiguation of what exactly your Collection represents.</p>
+<p>Consider the example of <code>toot:featured</code> from Mastodon, which points to a Collection of “featured” Objects, and is used to represent pinned statuses. You could certainly introduce a <code>friends</code> property within your namespace, if you expect remote sites to make use of it instead of <code>followers</code>/<code>following</code>. It would be up to you to define whether your property refers to a <code>Collection</code> of <code>Relationship</code> or a <code>Collection</code> of <code>Person</code>.</p>
+<h1>How do I address someone else’s post on someone’s wall?</h1>
+<p>This depends on how you model a “wall”. In ActivityPub, there is only <code>inbox</code> and <code>outbox</code> to be used for direct communications, like email. This is going to be pretty much up to what you think makes the most sense. Suppose you wanted to model a Group, that has members and a wall that only members can post to, but anyone can follow. You could say that the Group will check any activities received in its <code>inbox</code> and republish anything addressed to the Group (if it came from a member) to its <code>outbox</code>. That would be the simplest currently – you would just have to add support for <code>Join/Leave Group</code> to do your access control.</p>
+<p>In terms of Person, there is technically a <code>Profile</code> that <code>describes</code> another <code>Object</code> – you can choose to implement this, but you will once again be one of the first/only implementations using these semantics, as the current fediverse has semantically collapsed “profiles” to mean simply “the <code>outbox</code> of an Actor”. You can also develop some heuristics based on the content of <code>to</code> and <code>cc</code>, but this is already pretty confusing even in the existing fediverse, so I would advise against going down that path, but it is technically possible to address your post to someone’s followers instead of to that person.</p>
+<h1>How to represent VK reposting with an optional comment/attachment?</h1>
+<p>You can just extend the existing <code>Announce</code> semantics by adding a <code>content</code> or <code>attachment</code> field, yeah, but existing implementations will ignore those properties and interpret it as a direct boost of the Object that is the target of the Announce, which may be unintended by you.</p>
+<p>One alternative that might make more semantic sense is to instead send a Note with Note attached, as this will be interpreted as a Note in existing implementations and thus fallback to showing your added <code>content</code> instead of the referenced post.</p>
+<p>I think you might also want to consider, instead of using <code>attachment</code>, you might want to <code>tag</code>that post instead, as <code>tag</code> is possibly more semantically accurate. <code>tag</code> is for performing actions on <code>content</code>, e.g. “find <code>name</code> given in <code>content</code> and wrap it in <code>&lt;a&gt;</code> with the <code>href</code> given”. Or for <code>toot:Emoji</code> as custom emoji, “find <code>name</code> in <code>content</code> and embed the given <code>icon</code> in-place.” You could generalize this to say that if an <code>Object</code> is found in <code>tag</code> array, then it should be embedded in the post somehow.</p>
+        </div>
+
+        <meta itemprop='headline' content='Representing things in a VKontakte/Facebook-style social network?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="243.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-10-29T22:17:49Z' class='post-time'>
+                October 29, 2019, 10:17pm
+              </time>
+              <meta itemprop='dateModified' content='2019-10-29T22:17:49Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="9" data-topic="243">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/trwnh/40/128_2.png" class="avatar"> trwnh:</div>
+<blockquote>
+<p>How would you model a friendship where one person has “unfollowed” the other, as Facebook lets you do? Do you just handle that with your own internal muting system?</p>
+</blockquote>
+</aside>
+<p>If A and B are friends and A unfollows/unfriends B, they both disappear from each other’s friend lists and B becomes a follower of A. So “friend” is effectively just a term for “mutual follow”. My current implementation already does that – you will be friends with a Mastodon user if you follow each other (Mastodon would have no idea of course).</p>
+<aside class="quote no-group" data-post="9" data-topic="243">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/trwnh/40/128_2.png" class="avatar"> trwnh:</div>
+<blockquote>
+<p>Are you interested in modeling cases where two people “follow” each other for their public posts, but are not necessarily “friends” when you attempt to consider access control or audience targeting?</p>
+</blockquote>
+</aside>
+<p>No. I might add friends-only posts, that’s it.</p>
+<aside class="quote no-group" data-post="9" data-topic="243">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/trwnh/40/128_2.png" class="avatar"> trwnh:</div>
+<blockquote>
+<p>Are you going to be implementing more complex features that require managing collections of contacts, or can you get by collapsing everything to “follower” and “following”?</p>
+</blockquote>
+</aside>
+<p>I can! As I said, I already can be friends with Mastodon users by mutually following. I added <code>supportsFriendRequests: true</code> to the <code>metadata</code> section in my nodeinfo to provide a semblance of capability negotiation but I don’t use it just yet as I haven’t yet started trying to federate friend requests.</p>
+<aside class="quote no-group" data-post="9" data-topic="243">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/trwnh/40/128_2.png" class="avatar"> trwnh:</div>
+<blockquote>
+<p>This depends on how you model a “wall”. In ActivityPub, there is only  <code>inbox</code>  and  <code>outbox</code>  to be used for direct communications, like email. This is going to be pretty much up to what you think makes the most sense.</p>
+</blockquote>
+</aside>
+<p>That’s how I do it now:</p>
+<pre><code class="lang-json">{
+  "@context": [
+    "https://www.w3.org/ns/activitystreams",
+    {
+      "sensitive": "as:sensitive"
+    }
+  ],
+  "id": "https://localhost:4567/grishka/activitypub/outbox?max_id=0",
+  "type": "OrderedCollectionPage",
+  "next": "https://localhost:4567/grishka/activitypub/outbox?max_id=1",
+  "partOf": "https://localhost:4567/grishka/activitypub/outbox", /* &lt;- wall owner is @grishka */
+  "totalItems": 12,
+  "prev": "https://localhost:4567/grishka/activitypub/outbox?min_id=15",
+  "orderedItems": [
+    {
+      "cc": [
+        "https://localhost:4567/grishka"
+      ],
+      "actor": "https://localhost:4567/first.real.user",
+      "id": "https://localhost:4567/grishka/posts/15/activityCreate",
+      "published": "2019-10-29T22:06:19Z",
+      "to": [
+        "https://www.w3.org/ns/activitystreams#Public"
+      ],
+      "type": "Create",
+      "object": {
+        "cc": [
+          "https://localhost:4567/grishka" /* &lt;- not addressed to anyone's followers */
+        ],
+        "id": "https://localhost:4567/grishka/posts/15",
+        "attributedTo": "https://localhost:4567/first.real.user", /* &lt;- attributed to another user */
+        "published": "2019-10-29T22:06:19Z",
+        "to": [
+          "https://www.w3.org/ns/activitystreams#Public" /* &lt;- but still publicly accessible */
+        ],
+        "sensitive": false,
+        "type": "Note",
+        "content": "This is someone else&amp;#39;s post.",
+        "url": "https://localhost:4567/grishka/posts/15"
+      }
+    },
+    {
+      "cc": [
+        "https://localhost:4567/grishka/activitypub/followers"
+      ],
+      "actor": "https://localhost:4567/grishka",
+      "id": "https://localhost:4567/grishka/posts/14/activityCreate",
+      "published": "2019-10-29T22:05:46Z",
+      "to": [
+        "https://www.w3.org/ns/activitystreams#Public"
+      ],
+      "type": "Create",
+      "object": {
+        "cc": [
+          "https://localhost:4567/grishka/activitypub/followers"
+        ],
+        "id": "https://localhost:4567/grishka/posts/14",
+        "attributedTo": "https://localhost:4567/grishka",
+        "published": "2019-10-29T22:05:46Z",
+        "to": [
+          "https://www.w3.org/ns/activitystreams#Public"
+        ],
+        "sensitive": false,
+        "type": "Note",
+        "content": "This is my own post on my own wall.",
+        "url": "https://localhost:4567/grishka/posts/14"
+      }
+    },
+    /* ...more posts... */
+  ]
+}
+</code></pre>
+<p>No idea whether anything existing likes this because I wasn’t able to find anything that would allow me to see my outbox. Mastodon, for example, doesn’t use the outbox when you view a federated profile through an app but rather just shows everything <em>the instance already knows about that user</em> – so, only posts I sent to that instance and only followers from that instance.</p>
+<aside class="quote no-group" data-post="9" data-topic="243">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/trwnh/40/128_2.png" class="avatar"> trwnh:</div>
+<blockquote>
+<p>You can just extend the existing <code>Announce</code> semantics by adding a <code>content</code> or <code>attachment</code> field, yeah, but existing implementations will ignore those properties and interpret it as a direct boost of the Object that is the target of the Announce, which may be unintended by you.</p>
+</blockquote>
+</aside>
+<p>I’m now more inclined towards doing a Twitter-esque thing where you can either “retweet” or “retweet with quote”. The second one is basically what I want, and Twitter itself represents it as a tweet with an invisible link to another tweet. The only downside is that Mastodon doesn’t display those nicely – it shows the link as-is. But other than that, this seems perfect: it is still a repost, it has a proper ID so it could have its own comment thread, there could be as much text and media as in a regular post, it works with existing software, and I can even add a hidden mention (or will addressing it be enough?) so the original poster receives a notification.</p>
+<p>Note with a Note attached is a great idea too, but <em>something</em> tells me it won’t play nicely with anything existing.</p>
+        </div>
+
+        <meta itemprop='headline' content='Representing things in a VKontakte/Facebook-style social network?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="243.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-10-29T23:08:43Z'>
+              <time itemprop='dateModified' datetime='2019-10-29T23:17:30Z' class='post-time'>
+                October 29, 2019, 11:17pm
+              </time>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Sorry to return to the same post I replied to earlier. I hadn’t had a chance to fully sit and understand the consequences of what was said.</p>
+<aside class="quote no-group" data-post="6" data-topic="243">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../letter_avatar_proxy/v4/letter/g/ec9cab/40.png" class="avatar"> grishka:</div>
+<blockquote>
+<p>If B declines the friend request, this only means that they don’t want to follow them back (and this will have an effect on the visibility of friends-only content if I decide to implement that), A still follows B.</p>
+</blockquote>
+</aside>
+<p>In the ActivityStreams world, a <code>Reject{Follow}</code> is a pretty clear indicator that <em>B doesnt want A to follow them</em>. So don’t do it. Existing users on the Fediverse expect this.</p>
+<p>It’s even a MUST in the spec:</p>
+<blockquote>
+<p>If the  <code>object</code>  of a  <code>Reject</code>  received to an  <strong>inbox</strong>  is a  <code>Follow</code>  activity previously sent by the receiver, this means the recipient did not approve the  <code>Follow</code>  request. The server  <em>MUST NOT</em>  add the  <code>actor</code>  to the receiver’s <a href="https://www.w3.org/TR/activitypub/#following" rel="nofollow noopener">Following Collection</a>.</p>
+</blockquote>
+<aside class="quote no-group" data-post="6" data-topic="243">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../letter_avatar_proxy/v4/letter/g/ec9cab/40.png" class="avatar"> grishka:</div>
+<blockquote>
+<p>The only way for B to prevent A from following them is to block them.</p>
+</blockquote>
+</aside>
+<p>This is damaging to the ecosystem as a whole, violates expectations of users and developers. You’re forcing people to opt-out of your application by applying denylists, which could then become allowlist-only, which becomes a barrier to the open federative nature of the ecosystem.</p>
+<p>Please, don’t do this approach.</p>
+<aside class="quote no-group" data-post="6" data-topic="243">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../letter_avatar_proxy/v4/letter/g/ec9cab/40.png" class="avatar"> grishka:</div>
+<blockquote>
+<p>So following is still non-consensual like in microblogs, and friend requests are just an addition to that.</p>
+</blockquote>
+</aside>
+<p>It’s <em>always</em> been consensual on the Fediverse. By convention and history, there’s always either been:</p>
+<ul>
+<li>
+<code>Accept{Follow}</code> always automatically sent as a reply.</li>
+<li>Let the user decide whether to <code>Accept{Follow}</code> or <code>Reject{Follow}</code>. You don’t need <code>manuallyApprovesFollowers</code>, that’s just to let other instances know “oh I need to display a ‘manually approves followers’ tag on this federated profile”.</li>
+</ul>
+<p>The current visibility systems are already a mess to users between original content and Announcing, but users are savvy and look out for each other, and have (and will) complain if it is changed to the detriment of the ecosystem. I’m not sure that is a fire you want to be fighting, <em>and I want to <strong>strongly</strong> discourage you from ignoring <code>Accept{Follow}</code> and <code>Reject{Follow}</code></em>. But, you know your needs best, and if indeed you think it is in your best interest to continue down this path, I will go ahead and warn you that you will need to have really good answers lined up for users and devs of other Fediverse software who really want this convention/norm protected.</p>
+<p>I can go ahead and tell you now, having the reason “I want it to be like &lt;big social media company’s product&gt;” is <strong>not</strong> going to go over well.</p>
+<p>Edit: If you think I’m still misunderstanding you, it is because I am trying to interpret words like “decline” and “non-consensual” in an ActivityPub context, and it’s unclear to me whether you intend it that way or are instead using some specific language specific to your application / UI, in which case I really don’t understand what these terms mean in terms of actions/data in the ActivityPub/ActivityStreams space.</p>
+        </div>
+
+        <meta itemprop='headline' content='Representing things in a VKontakte/Facebook-style social network?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="243.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-10-29T23:19:45Z'>
+              <time itemprop='dateModified' datetime='2019-10-29T23:30:06Z' class='post-time'>
+                October 29, 2019, 11:30pm
+              </time>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="11" data-topic="243">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/cjs/40/35_2.png" class="avatar"> cjs:</div>
+<blockquote>
+<p>and I want to <strong>strongly</strong> discourage you from ignoring <code>Accept{Follow}</code> and <code>Reject{Follow}</code></p>
+</blockquote>
+</aside>
+<p>I wasn’t going to ignore them. I already send <code>Accept{Follow}</code> automatically and I expect it from the other server when I send <code>Follow</code>. The only thing I was saying is that my own implementation will always automatically send <code>Accept{Follow}</code> in response to a <code>Follow</code> without the option of manually approving followers because manually approving followers makes little sense for what I’m making.</p>
+<p>Friend requests are <strong>an optional addition</strong> to following. The “I now follow you and ask you to follow me back” sort of thing that doesn’t break any of the already existing concepts.</p>
+<p>Sorry, English isn’t my native language.</p>
+        </div>
+
+        <meta itemprop='headline' content='Representing things in a VKontakte/Facebook-style social network?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/trwnh.html'><span itemprop='name'>trwnh</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="243.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-10-30T01:23:18Z'>
+              <time itemprop='dateModified' datetime='2019-10-30T01:25:03Z' class='post-time'>
+                October 30, 2019,  1:25am
+              </time>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="10" data-topic="243">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../letter_avatar_proxy/v4/letter/g/ec9cab/40.png" class="avatar"> grishka:</div>
+<blockquote>
+<p>A unfollows/unfriends B</p>
+</blockquote>
+</aside>
+<p>These are not the same action. I am asking if you have thought about how you will handle cases where two people are “friends” but one does not receive the activities of the other. But also, you will need to make sure that reciprocity/bidirectionality is implied, if you are interested in that – since <code>manuallyRequiresApproval</code> is not enough to guarantee that side effects will be processed on other servers (you can’t request a follow-back), and since the “mutual follower” case might change at any time without implying a break in both directions.</p>
+<hr>
+<p>In response to other things, though:</p>
+<ul>
+<li>If you add “friends-only posts, that’s it”, you will still have to consider whether you want that to be at-delivery or retroactive.</li>
+<li>I’m not sure what <code>supportsFriendsRequests</code> is doing for you, exactly – if you’re depending on mutual-follows then “friends” is dynamically calculated.</li>
+<li>It seems your “wall” is just your outbox – how do you differentiate between user’s own posts and other users’ posts on that “wall”? Do you interpret an Announce of another person’s post to be a post made to the wall? Are you publishing activities attributed to other actors within your own outbox?</li>
+</ul>
+<aside class="quote no-group" data-post="10" data-topic="243">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../letter_avatar_proxy/v4/letter/g/ec9cab/40.png" class="avatar"> grishka:</div>
+<blockquote>
+<p>I’m now more inclined towards doing a Twitter-esque thing where you can either “retweet” or “retweet with quote”.</p>
+</blockquote>
+</aside>
+<p>This is a matter of display, not semantics. You can display information however you want to, and you can build your UI features however you want to, but on the backend you want to make sure your semantics are solid.</p>
+<aside class="quote no-group" data-post="10" data-topic="243">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../letter_avatar_proxy/v4/letter/g/ec9cab/40.png" class="avatar"> grishka:</div>
+<blockquote>
+<p>The only downside is that Mastodon doesn’t display those nicely – it shows the link as-is.</p>
+</blockquote>
+</aside>
+<p>Nothing can be done about that. Mastodon does not (and will not) support “boost with quote” styled posts, by design. You also cannot assume that the “quote” will generate a notification, so this seems like a UX minefield as well. If it semantically collapses into pasting a link, then perhaps that’s all it needs to be? The inline preview aspect of it is just an extension of how the post is displayed. This is why I suggested <code>tag</code>.</p>
+        </div>
+
+        <meta itemprop='headline' content='Representing things in a VKontakte/Facebook-style social network?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nightpool.html'><span itemprop='name'>nightpool</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="243.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-10-30T01:44:11Z' class='post-time'>
+                October 30, 2019,  1:44am
+              </time>
+              <meta itemprop='dateModified' content='2019-10-30T01:44:11Z'>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <blockquote>
+<p>These are not the same action. I am asking if you have thought about how you will handle cases where two people are “friends” but one does not receive the activities of the other. But also, you will need to make sure that reciprocity/bidirectionality is implied</p>
+</blockquote>
+<p>this also feels like overcomplication to me?</p>
+<p>I haven’t been able to track all of the back and forth on this thread, but stepping back to the original question: your friends are the list of people you are following who are also following you. no more, no less.</p>
+<p>I don’t see any reason to maintain a collection of them (unless it makes audience targeting easier for you, but I don’t think it will), and I certainly don’t see the need for any sort of Offer or Relationship shenanigans</p>
+        </div>
+
+        <meta itemprop='headline' content='Representing things in a VKontakte/Facebook-style social network?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="243.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-10-30T13:17:22Z' class='post-time'>
+                October 30, 2019,  1:17pm
+              </time>
+              <meta itemprop='dateModified' content='2019-10-30T13:17:22Z'>
+          <span itemprop='position'>#15</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="13" data-topic="243">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/trwnh/40/128_2.png" class="avatar"> trwnh:</div>
+<blockquote>
+<p>I’m not sure what <code>supportsFriendsRequests</code> is doing for you, exactly – if you’re depending on mutual-follows then “friends” is dynamically calculated.</p>
+</blockquote>
+</aside>
+<p>It’s how I’m going to be determining whether the server on the other end knows about, and is interested in, friend requests. If it does, I’ll send an <code>Offer{Relationship}</code> right after receiving <code>Accept{Follow}</code>. If it does not, I’ll just send <code>Follow</code> and stop right there, which is exactly what existing implementations do. My UI will also reflect that.</p>
+<aside class="quote no-group" data-post="13" data-topic="243">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/trwnh/40/128_2.png" class="avatar"> trwnh:</div>
+<blockquote>
+<p>It seems your “wall” is just your outbox – how do you differentiate between user’s own posts and other users’ posts on that “wall”?</p>
+</blockquote>
+</aside>
+<p>I use <code>attributedTo</code> in <code>Note</code> objects, as well as <code>actor</code> in activities, which must match.</p>
+<aside class="quote no-group" data-post="13" data-topic="243">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/trwnh/40/128_2.png" class="avatar"> trwnh:</div>
+<blockquote>
+<p>Do you interpret an Announce of another person’s post to be a post made to the wall?</p>
+</blockquote>
+</aside>
+<p>You can’t repost something to someone else’s wall, only to your own.</p>
+<aside class="quote no-group" data-post="13" data-topic="243">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/trwnh/40/128_2.png" class="avatar"> trwnh:</div>
+<blockquote>
+<p>Are you publishing activities attributed to other actors within your own outbox?</p>
+</blockquote>
+</aside>
+<p>Yes. Is this not a good thing to do? I can’t think of other ways of doing that in a semantically correct way.</p>
+<aside class="quote no-group" data-post="13" data-topic="243">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/trwnh/40/128_2.png" class="avatar"> trwnh:</div>
+<blockquote>
+<p>Nothing can be done about that. Mastodon does not (and will not) support “boost with quote” styled posts, by design. You also cannot assume that the “quote” will generate a notification, so this seems like a UX minefield as well. If it semantically collapses into pasting a link, then perhaps that’s all it needs to be? The inline preview aspect of it is just an extension of how the post is displayed. This is why I suggested <code>tag</code> .</p>
+</blockquote>
+</aside>
+<p>The link is just so that Mastodon displays it in a way that makes sense rather than simply a text toot that doesn’t have the context that it’s supposed to have. Of course I’m still able to parse it and display it the way I want. <code>tag</code> will work for me.</p>
+        </div>
+
+        <meta itemprop='headline' content='Representing things in a VKontakte/Facebook-style social network?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="243.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-06T03:02:11Z' class='post-time'>
+                November 6, 2019,  3:02am
+              </time>
+              <meta itemprop='dateModified' content='2019-11-06T03:02:11Z'>
+          <span itemprop='position'>#16</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>One more important case where the friend list, and it being a dedicated collection exposed via ActivityPub, is useful: displaying common friends. It’s very useful in this style of social network.</p>
+        </div>
+
+        <meta itemprop='headline' content='Representing things in a VKontakte/Facebook-style social network?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/trwnh.html'><span itemprop='name'>trwnh</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="243.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-06T21:52:18Z' class='post-time'>
+                November 6, 2019,  9:52pm
+              </time>
+              <meta itemprop='dateModified' content='2019-11-06T21:52:18Z'>
+          <span itemprop='position'>#17</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>i feel like if we’re going to have a dedicated <code>friends</code> property then it can’t be as simple as just calculating mutual Follow status. that would save you one computational step, sure, but it’s got exactly the same issues as checking <code>follower</code>/<code>following</code> on both ends. assuming you have actor A and actor B, fundamentally you need the following:</p>
+<ul>
+<li>for <code>following</code> to be published on A while containing B, and <code>followers</code> published on B while containing A</li>
+<li>for <code>following</code> to be published on B while containing A, and <code>followers</code> published on A while containing B</li>
+</ul>
+<p>the issues you might run into is that an activitypub server might not make the contents of <code>follower</code> or <code>following</code> public. as that would essentially be the same as leaking your address book. consider mastodon’s “hide your network” feature, or pleroma’s “don’t show following/follower (count)” settings. even facebook has access control functionality on the friends list, e.g. only making the friends list visible to friends, or to friends of friends, etc… in such a case, the server knows this info but requires authorization before returning that info. thus, the “friend” relationship should be explicitly defined and not implictly derived.</p>
+        </div>
+
+        <meta itemprop='headline' content='Representing things in a VKontakte/Facebook-style social network?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="243.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-12-30T17:43:23Z'>
+              <time itemprop='dateModified' datetime='2019-12-30T17:47:50Z' class='post-time'>
+                December 30, 2019,  5:47pm
+              </time>
+          <span itemprop='position'>#18</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Sorry for bumping an old topic, but I’m now at the stage where I’m going to be federating with myself.</p>
+<p>I do need federated friend lists because many things in this style of social network revolve around them:</p>
+<ul>
+<li>Mutual friends are a big one. I want to be able to display mutual friends for any profile you could open. It also makes sense to do that for friend requests. In both these cases the list of mutual friends helps understand the social context. To do this, I need to have a complete friend (mutual following) list of the other user and then intersect them. I <em>could</em> derive that by intersecting <code>following</code> and <code>followers</code>, and I’ll have to do that for Mastodon and such.</li>
+<li>In groups and events, I’d like to show which friends are there. Doesn’t require any federation trickery as pertains to friends, but, btw, how do I represent the group member list?</li>
+<li>Same for likes. People tend to be curious and want to know who of their friends liked something.</li>
+</ul>
+<p>I’m going to send friend requests (semantically “I ask you to follow me back requests”) as <code>Offer{Relationship}</code> where relationship type is <code>http://purl.org/vocab/relationship/friendOf</code>. I’ll only send that to compatible servers and the UI will change based on this compatibility. A server is compatible if it contains <code>friendRequests</code> in <code>metadata.capabilities</code> in its nodeinfo. I can’t think of a better way of capability negotiation and there’s clearly some needed.</p>
+<p>Flow between compatible servers:</p>
+<ol>
+<li>A sends B two activities: <code>Follow</code> and <code>Offer{Relationship}</code>
+</li>
+<li>B sends A <code>Accept{Follow}</code> immediately because I don’t implement follower approval</li>
+<li>The user on B sees the friend request and accepts it<br>
+3.1. If the user rejects the request, B sends <code>Reject{Offer{Relationship}}</code> and the process ends here, with an unilateral follow</li>
+<li>B sends A <code>Accept{Offer{Relationship}}</code> and <code>Follow</code>
+</li>
+<li>A sends B <code>Accept{Follow}</code>
+</li>
+<li>Users are now friends</li>
+</ol>
+<p>If the other server doesn’t support friend requests, the flow is exactly like it is between the existing microblogging servers. <code>Follow</code>, then <code>Accept{Follow}</code>, and that’s it.</p>
+<p>I’m going to also add a <code>friends</code> collection to my actors, where each object would be like this:</p>
+<pre><code class="lang-json">{
+    "type": "Relationship",
+    "relationship": "http://purl.org/vocab/relationship/friendOf",
+    "object": "https://friends.grishka.me/users/1",
+    "subject": "https://friends.grishka.me/users/2"
+}
+</code></pre>
+        </div>
+
+        <meta itemprop='headline' content='Representing things in a VKontakte/Facebook-style social network?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nightpool.html'><span itemprop='name'>nightpool</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="243.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-12-30T21:15:12Z' class='post-time'>
+                December 30, 2019,  9:15pm
+              </time>
+              <meta itemprop='dateModified' content='2019-12-30T21:15:12Z'>
+          <span itemprop='position'>#19</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Great to hear you’re making progress! Some thoughts:</p>
+<aside class="quote no-group" data-post="18" data-topic="243">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/grishka/40/196_2.png" class="avatar"> grishka:</div>
+<blockquote>
+<p>I <em>could</em> derive that by intersecting <code>following</code> and <code>followers</code> , and I’ll have to do that for Mastodon and such.</p>
+</blockquote>
+</aside>
+<p>If you’re going to have to do this anyway, why not just do it for all servers? what benefit do you gain from federating the extra data?</p>
+<aside class="quote no-group" data-post="18" data-topic="243">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/grishka/40/196_2.png" class="avatar"> grishka:</div>
+<blockquote>
+<ul>
+<li>In groups and events, I’d like to show which friends are there. Doesn’t require any federation trickery as pertains to friends, but, btw, how do I represent the group member list?</li>
+</ul>
+</blockquote>
+</aside>
+<p>I think the <code>replies</code> property makes the most sense here—have all of the responses (Accept/Reject/Tentative) marked as <code>inReplyTo</code> the base Event, and then show them in the replies collection.</p>
+<aside class="quote no-group" data-post="18" data-topic="243">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/grishka/40/196_2.png" class="avatar"> grishka:</div>
+<blockquote>
+<ul>
+<li>Same for likes. People tend to be curious and want to know who of their friends liked something.</li>
+</ul>
+</blockquote>
+</aside>
+<p>ActivityPub defines a <code>likes</code> collection as an extension on top of ActivityStreams, using that seems like it would make the most sense. <a href="https://www.w3.org/TR/activitypub/#likes">https://www.w3.org/TR/activitypub/#likes</a></p>
+<aside class="quote no-group" data-post="18" data-topic="243">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/grishka/40/196_2.png" class="avatar"> grishka:</div>
+<blockquote>
+<p>I’ll only send that to compatible servers and the UI will change based on this compatibility. A server is compatible if it contains <code>friendRequests</code> in <code>metadata.capabilities</code> in its nodeinfo.</p>
+</blockquote>
+</aside>
+<p>Why not just have an (extension) <code>supportsMutualFollowRequests</code> or <code>supportsFriendRequests</code> property on the actor object? ActivityPub is never going to define a “server-based” capability negotiation mechanism like the one you mention because “servers” are not a concept in the ActivityPub spec, only actors (and the endpoints associated with actors).</p>
+<aside class="quote no-group" data-post="18" data-topic="243">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/grishka/40/196_2.png" class="avatar"> grishka:</div>
+<blockquote>
+<p><code>Offer{Relationship}</code> where relationship type is <code>http://purl.org/vocab/relationship/friendOf</code></p>
+</blockquote>
+</aside>
+<p>Why not just <code>Offer { Follow }</code> the inverse following relation? That seems to be the most straightforward way to represent “I’m asking you to follow me back”. Something like:</p>
+<pre><code class="lang-json">{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "summary": "nightpool sent you a friend request",
+  "type": "Offer",
+  "actor": "https:​//cybre.space/users/nightpool",
+  "target": "https://friends.grishka.me/users/1",
+  "object": {
+    "type": "Follow",
+    "actor": "https://friends.grishka.me/users/1",
+    "object": "https:​//cybre.space/users/nightpool"
+  }
+}</code></pre>
+        </div>
+
+        <meta itemprop='headline' content='Representing things in a VKontakte/Facebook-style social network?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="243.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-12-30T21:37:06Z' class='post-time'>
+                December 30, 2019,  9:37pm
+              </time>
+              <meta itemprop='dateModified' content='2019-12-30T21:37:06Z'>
+          <span itemprop='position'>#20</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote group-mastodon" data-post="19" data-topic="243">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/nightpool/40/36_2.png" class="avatar"> nightpool:</div>
+<blockquote>
+<p>If you’re going to have to do this anyway, why not just do it for all servers? what benefit do you gain from federating the extra data?</p>
+</blockquote>
+</aside>
+<p>It’s an optimization. Popular users tend to have many followers, on the order of thousands, but not so many friends, on the order of hundreds. Fetching the follower and following lists only to throw away most of the data is a waste of resources. On the other hand, since I already store a flag whether a relationship is mutual, returning friend lists is trivial.</p>
+<aside class="quote group-mastodon" data-post="19" data-topic="243">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/nightpool/40/36_2.png" class="avatar"> nightpool:</div>
+<blockquote>
+<p>I think the <code>replies</code> property makes the most sense here—have all of the responses (Accept/Reject/Tentative) marked as <code>inReplyTo</code> the base Event, and then show them in the replies collection.</p>
+</blockquote>
+</aside>
+<p>But what if a user joined a group themselves without an invitation, by sending a <code>Join</code> activity?</p>
+<aside class="quote group-mastodon" data-post="19" data-topic="243">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/nightpool/40/36_2.png" class="avatar"> nightpool:</div>
+<blockquote>
+<p>Why not just have an (extension) <code>supportsMutualFollowRequests</code> or <code>supportsFriendRequests</code> property on the actor object?</p>
+</blockquote>
+</aside>
+<p>Again, it’s an optimization. It’d make sense to put it into the actor object if it was different across actors. But it’s not a property of an actor, rather it’s a property of a particular server software. It doesn’t vary across actors on the same server.</p>
+<aside class="quote group-mastodon" data-post="19" data-topic="243">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/nightpool/40/36_2.png" class="avatar"> nightpool:</div>
+<blockquote>
+<p>Why not just <code>Offer { Follow }</code> the inverse following relation? That seems to be the most straightforward way to represent “I’m asking you to follow me back”. Something like:</p>
+</blockquote>
+</aside>
+<p>This makes sense and is a better fit for my concept of a friendship. I do have to pick one to send, but I should probably support receiving both in the future since <a href="https://www.w3.org/TR/activitystreams-vocabulary/#modeling-friend-requests" rel="nofollow noopener">the spec actually suggests using Offer{Relationship} for friend requests</a>.</p>
+        </div>
+
+        <meta itemprop='headline' content='Representing things in a VKontakte/Facebook-style social network?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+
+    <div role='navigation' itemscope itemtype='http://schema.org/SiteNavigationElement' class="topic-body crawler-post">
+        <span itemprop='name'><b><a rel="next" itemprop="url" href="243@page=2.html">next page →</a></b></span>
+    </div>
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

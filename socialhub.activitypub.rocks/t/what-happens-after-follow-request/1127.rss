@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>What happens after Follow request?</title>
+    <link>https://socialhub.activitypub.rocks/t/what-happens-after-follow-request/1127</link>
+    <description>Hi all,
+
+I am trying to understand what a server does after a Follow request. Specifically:
+A. How does it verify the signature of the client request?
+B. How does it communicate the Accept object?
+C. How does the server reply to the Accept object?
+
+Thanks!</description>
+    
+    <lastBuildDate>Sun, 08 Nov 2020 08:04:42 +0000</lastBuildDate>
+    <category>Server to Server</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/what-happens-after-follow-request/1127.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>What happens after Follow request?</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>HTTP responses to posting things to inbox are usually ignored. You only need to return a 2xx status code to indicate that you accepted the request. Smithereen returns <code>200 OK</code>, Mastodon returns <code>202 Accepted</code>.</p>
+<p>The (barebones) flow is like this:</p>
+<ol>
+<li>Other server sends a <code>Follow</code> activity to your inbox.</li>
+<li>You verify the HTTP signature, fetching the actor from the URL in the <code>actor</code> field if necessary. Reject the request with a 4xx code if the signature doesn’t match.</li>
+<li>You look up the user specified in activity’s <code>object</code> in your database. Reject the request with a 4xx code if there’s no such user.</li>
+<li>You store the follow relation.</li>
+<li>You return a 2xx status code in your HTTP response.</li>
+<li>You send an <code>Accept{Follow}</code> to the inbox of the actor who followed one of your users, signed with the private key of that user.</li>
+<li>After the server responds with a 2xx code, it’s done. You’re now supposed to send any relevant activities by that user, like <code>Create{Note}</code>, to that server.</li>
+</ol>
+<p>So, to sum up: to do this, you need a working web server, with a valid SSL certificate, and a server application of some sort capable of both accepting and making HTTP requests. You can use something like <a href="http://ngrok.com" rel="noopener nofollow ugc">ngrok.com</a> to experiment from localhost.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/what-happens-after-follow-request/1127/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/what-happens-after-follow-request/1127/3</link>
+        <pubDate>Sun, 08 Nov 2020 08:04:42 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1127-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/what-happens-after-follow-request/1127.rss">What happens after Follow request?</source>
+      </item>
+      <item>
+        <title>What happens after Follow request?</title>
+        <dc:creator><![CDATA[vpzom]]></dc:creator>
+        <description><![CDATA[
+            <p>When an activity is received, it is typically verified using HTTP Signatures. The sending server is expected to send a Signature header. The target server then requests the user’s info from the sender and extracts the publicKey field in order to verify the signature.</p>
+<p>The user info also includes an <code>inbox</code> field, which is where the response will be sent when the follow is approved.</p>
+<p>Responding to an Accept is nothing special, most implementations just return some HTTP success code</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/what-happens-after-follow-request/1127/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/what-happens-after-follow-request/1127/2</link>
+        <pubDate>Sat, 07 Nov 2020 15:37:06 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1127-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/what-happens-after-follow-request/1127.rss">What happens after Follow request?</source>
+      </item>
+      <item>
+        <title>What happens after Follow request?</title>
+        <dc:creator><![CDATA[farhan]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all,</p>
+<p>I am trying to understand what a server does after a Follow request. Specifically:<br>
+A. How does it verify the signature of the client request?<br>
+B. How does it communicate the Accept object?<br>
+C. How does the server reply to the Accept object?</p>
+<p>Thanks!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/what-happens-after-follow-request/1127/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/what-happens-after-follow-request/1127/1</link>
+        <pubDate>Sat, 07 Nov 2020 05:29:22 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1127-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/what-happens-after-follow-request/1127.rss">What happens after Follow request?</source>
+      </item>
+  </channel>
+</rss>

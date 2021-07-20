@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>A quick survey of PHP projects in the ActivityPub space, plus comments - PHP - SocialHub</title>
+    <meta name="description" content="As part of working towards ActivityPub integration for a couple of PHP projects I’ve been looking into PHP ActivityPub-related projects and recently posted a summary in this issue: 
+
+
+As a new user on this SocialHub inst&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="464.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;A quick survey of PHP projects in the ActivityPub space, plus comments&#39;" href="464.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/b584186eadd0ac60c2ab0dd0d9899fa0d35633ac.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/b584186eadd0ac60c2ab0dd0d9899fa0d35633ac.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/a-quick-survey-of-php-projects-in-the-activitypub-space-plus-comments/464" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/a-quick-survey-of-php-projects-in-the-activitypub-space-plus-comments/464" />
+<meta property="og:title" content="A quick survey of PHP projects in the ActivityPub space, plus comments" />
+<meta name="twitter:title" content="A quick survey of PHP projects in the ActivityPub space, plus comments" />
+<meta property="og:description" content="As part of working towards ActivityPub integration for a couple of PHP projects I’ve been looking into PHP ActivityPub-related projects and recently posted a summary in this issue:    As a new user on this SocialHub instance I can’t (yet) repost the info here (too many links) but in that issue see the section “Potential models and building blocks” where I’ve listed the various efforts I found.  The other PHP project I’m contributing to is a module for Drupal:    Some of my early impressions:   T..." />
+<meta name="twitter:description" content="As part of working towards ActivityPub integration for a couple of PHP projects I’ve been looking into PHP ActivityPub-related projects and recently posted a summary in this issue:    As a new user on this SocialHub instance I can’t (yet) repost the info here (too many links) but in that issue see the section “Potential models and building blocks” where I’ve listed the various efforts I found.  The other PHP project I’m contributing to is a module for Drupal:    Some of my early impressions:   T..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="2 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="2 ❤" />
+<meta property="article:published_time" content="2020-01-10T01:24:48+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="464.html">A quick survey of PHP projects in the ActivityPub space, plus comments</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="https://socialhub.activitypub.rocks/c/programming/33" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #B3B5B4'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Programming</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/programming/php/39.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #777bb3'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>PHP</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nedjo.html'><span itemprop='name'>nedjo</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="464.html">
+
+            <link itemprop="image" href="../../uploads/default/original/1X/b584186eadd0ac60c2ab0dd0d9899fa0d35633ac.png">
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-01-10T01:24:48Z' class='post-time'>
+                January 10, 2020,  1:24am
+              </time>
+              <meta itemprop='dateModified' content='2020-01-10T01:24:48Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>As part of working towards ActivityPub integration for a couple of PHP projects I’ve been looking into PHP ActivityPub-related projects and recently posted a summary in this issue:</p>
+<aside class="onebox githubissue">
+  <header class="source">
+      <a href="https://github.com/philippejadin/agorakit/issues/271" target="_blank" rel="nofollow noopener">github.com/philippejadin/agorakit</a>
+  </header>
+  <article class="onebox-body">
+    <div class="github-row">
+  <div class="github-icon-container" title="Issue">
+	  <svg width="60" height="60" class="github-icon" viewbox="0 0 14 16" aria-hidden="true"><path d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
+  </div>
+
+  <div class="github-info-container">
+    <h4>
+      <a href="https://github.com/philippejadin/agorakit/issues/271" target="_blank" rel="nofollow noopener">Activitypub/Fediverse integration</a>
+    </h4>
+
+    <div class="github-info">
+      <div class="date">
+        opened <span class="discourse-local-date" data-format="ll" data-date="2019-12-11" data-time="17:38:45" data-timezone="UTC">05:38PM - 11 Dec 19 UTC</span>
+      </div>
+
+
+      <div class="user">
+        <a href="https://github.com/nedjo" target="_blank" rel="nofollow noopener">
+          <img alt="nedjo" src="../../uploads/default/original/1X/b584186eadd0ac60c2ab0dd0d9899fa0d35633ac.png" class="onebox-avatar-inline" width="20" height="20">
+          nedjo
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="github-row">
+  <p class="github-content">Agorakit seems like a great candidate for integration with the Fediverse through ActivityPub support. This issue outlines what such integration might...</p>
+</div>
+
+<div class="labels">
+    <span style="display:inline-block;margin-top:2px;background-color: #B8B8B8;padding: 2px;border-radius: 4px;color: #fff;margin-left: 3px;">enhancement</span>
+    <span style="display:inline-block;margin-top:2px;background-color: #B8B8B8;padding: 2px;border-radius: 4px;color: #fff;margin-left: 3px;">feature</span>
+    <span style="display:inline-block;margin-top:2px;background-color: #B8B8B8;padding: 2px;border-radius: 4px;color: #fff;margin-left: 3px;">help wanted</span>
+    <span style="display:inline-block;margin-top:2px;background-color: #B8B8B8;padding: 2px;border-radius: 4px;color: #fff;margin-left: 3px;">need more info</span>
+</div>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>As a new user on this SocialHub instance I can’t (yet) repost the info here (too many links) but in that issue see the section “Potential models and building blocks” where I’ve listed the various efforts I found.</p>
+<p>The other PHP project I’m contributing to is a module for Drupal:</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://github.githubassets.com/favicon.ico" class="site-icon" width="32" height="32">
+      <a href="https://github.com/swentel/activitypub/issues" target="_blank" rel="nofollow noopener">GitHub</a>
+  </header>
+  <article class="onebox-body">
+    <img src="../../uploads/default/original/1X/d9cb67e4ad8a7c3ea911f69e73f6c1807bcee536.jpeg" class="thumbnail onebox-avatar" width="400" height="400">
+
+<h3><a href="https://github.com/swentel/activitypub/issues" target="_blank" rel="nofollow noopener">swentel/activitypub</a></h3>
+
+<p>ActivityPub for Drupal. Contribute to swentel/activitypub development by creating an account on GitHub.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>Some of my early impressions:</p>
+<ul>
+<li>There are various projects that are drafts towards general-use PHP packages for ActivityPub integration, including pterotype-project/activitypub-php, landrok/activitypub, dansup/php-activitypub, patbator/activitystreams, and assemblee-virtuelle/ActivityPubBundle (this last one for Synfony 4).</li>
+<li>Of these, landrok/activitypub is probably the farthest along in terms of general applicability and comes with some great documentation. That said, it still has a ways to go and - inevitably - includes some architectural decisions that may conflict with those of specific ActivityPub applications.</li>
+<li>Pixelfed is far and away the furthest developed specific implementation that I found and provides a solid example to work from in terms of grokking what’s involved and how the different pieces interact, including ones that are needed but not in the ActivityPub spec–webfinger, nodeinfo.</li>
+</ul>
+<p>As usual, in theory we’d all stand to benefit from standardising on a set of packages we could collaborate on rather than maintaining a different implementation for each application. But there are challenges in getting there. What level of abstraction is enough to achieve broad applicability but not so much that it conflicts with specific architectures?</p>
+<p>As a fairly arbitrary example, Drupal uses Symfony’s serializer component and accompanying normalizers/denormalizers. So in Drupal this is the API we would probably use for transforming ActivityPub objects to and from Drupal entities. But other implementations naturally will have their own distinct approaches.</p>
+<p>Personally, some of my first steps will be:</p>
+<ul>
+<li>Study Pixelfed–well worth the time.</li>
+<li>See if I can directly use at least parts of, and/or contribute to, landrok/activitypub and delirehberi/webfinger.</li>
+</ul>
+<p>Other tips and ideas very welcome!</p>
+        </div>
+
+        <meta itemprop='headline' content='A quick survey of PHP projects in the ActivityPub space, plus comments'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/ekes.html'><span itemprop='name'>ekes</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="464.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-01-11T10:35:04Z' class='post-time'>
+                January 11, 2020, 10:35am
+              </time>
+              <meta itemprop='dateModified' content='2020-01-11T10:35:04Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Woot! More Drupal. I hadn’t got an watch on for the github project so hadn’t noticed you posting there. I’ll look through the issues added. But here I’ll just write my experiences implementing ActivityPub in Drupal 7 and what my thoughts were for doing it in Drupal 8.<br>
+I also want to be implementing it for D8, certainly in the first instance to push and pull from the D7 site. These are existing sites presently sharing data via a custom API, but can be better in the fediverse and hence communicate with the likes of Mobilizon and Friendica as well.</p>
+<p>Drupal itself should handle serialization, routing incoming and making outgoing http requests. So most of the libraries have redundant code. In addition Drupal has baked in rdf and flexible field mapping so you can, and want to, make most of the objects (that will in ActivityPub be represented in the json-ld) with Drupal’s own entity/field system rather than duplicating (and worse constraining) them in library PHP code. The challenge this flexible approach leaves is the best way to map fields/properties.</p>
+<p>Libraries are certainly helpful for signing, and signature verification. For Drupal 7 I just opted for dgwynne/php-http-signature. But for Drupal 8 99designs/http-signatures-php looks much more promising.</p>
+<p>Before continuing further into the gritty detail of Drupal 7 implementation, the other set of code I’ve found helpful, in addition, or possibly more so, than pixelfed, for understanding all this is that for friendica.</p>
+<p>Now my details from doing the Drupal 7. I’ve so far opted to create additional entities for ActivityPub Actor, Activity and Relation. They act mainly as glue to Drupal entities (with Entity References). So when represented in Activity Vocabulary they provide a wrapper and required additional data, an then the fields of the native Drupal entity, along with the namespace/s and properties. Let me explain:</p>
+<p>Starting with the actor. It felt like it would be even nicer to directly use ‘user’ or ‘group’ entities as the ActivityPub actor. However as there needs to be a unique constrained ‘webfinger’ name, and a public and private key for the signature, I opted to make an actor entity with these fields and an entity reference to the Drupal entity.</p>
+<p>The activitypub actor module then also provides the route, and the representation of the actor, in Activity Vocabulary, and the inbox and outbox of the actors, and intends to implement followers and would do following, but it’s not needed for my use case at the moment.</p>
+<p>There is a separate webfinger module that does little other than provide the route and a hook which the activitypub actor module implements. It does the lookup on the machine name of the actor, which is also used as the webfinger name, and returns the appropriate data - key, inbox outbox…</p>
+<p>To separate out the actors and allow for different mappings I make a different entity type for Actor Type <a href="https://www.w3.org/TR/activitystreams-vocabulary/#actor-types" rel="nofollow noopener">https://www.w3.org/TR/activitystreams-vocabulary/#actor-types</a> In this implementation just ‘Person’ &lt;-&gt; ‘user’ and ‘Group’ &lt;-&gt; (organic group) ‘node’.</p>
+<p>The Activity Entity represents the <a href="https://www.w3.org/TR/activitystreams-vocabulary/#activity-types" rel="nofollow noopener">https://www.w3.org/TR/activitystreams-vocabulary/#activity-types</a> , bundles or types for each actually implemented. So when you ‘Create’ a node that is to be announced in the fediverse it makes a Activity Entity of bundle ‘Create’ with references at a minimum with fields ‘actor’ and ‘object’, but could have more (fieldable).</p>
+<p>Depending on the entity referenced there is a mapping to Activity Vocabulary (actually plus other name spaces as discussed here <a href="../how-to-represent-places-in-an-event/413/8.html">How to represent places in an event</a>. So basically everything in the <code>object:</code> section there is provided by the Event Node itself and everything wrapping it is provided by the Activity entity.</p>
+<p>The Outbox is then populated by a query of Activity entities - queried by reference to Actor.<br>
+I’m yet to get there (or need to implement this), but then, access control needs then also to be delegated to a (plugin?) that controls that ‘type’ of actor, and referenced entities. This works for the different 'Audience’s. Bonus of entity references here, the Action can remain with an reference to the removed entity. The delete action can use the entity reference still - only returning the entity reference uri; old actions referencing deleted entities return a Tombstone.</p>
+<p>Finally the relationship entity is there for the actors ‘Follow’ and ‘Followers’. Again I initially thought this could be a multiple field on the actor, but it wants to have an acceptation workflow and can store, cache, additional fields - image, nick etc, about the remote following/follower. I’m coding away here still.</p>
+        </div>
+
+        <meta itemprop='headline' content='A quick survey of PHP projects in the ActivityPub space, plus comments'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nedjo.html'><span itemprop='name'>nedjo</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="464.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-01-12T18:03:23Z' class='post-time'>
+                January 12, 2020,  6:03pm
+              </time>
+              <meta itemprop='dateModified' content='2020-01-12T18:03:23Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../u/ekes.html">@ekes</a> Wow, great to know you’re actively working in this space and to hear your insights and experience. And thanks for your extensive comments in the <a href="https://github.com/swentel/activitypub/issues" rel="nofollow noopener">ActivityPub for Drupal</a> issue queue. See you there!</p>
+        </div>
+
+        <meta itemprop='headline' content='A quick survey of PHP projects in the ActivityPub space, plus comments'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

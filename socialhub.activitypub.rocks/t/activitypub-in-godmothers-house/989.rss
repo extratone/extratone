@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>ActivityPub in Godmother&#39;s House</title>
+    <link>https://socialhub.activitypub.rocks/t/activitypub-in-godmothers-house/989</link>
+    <description>Back in July I wrote a couple of introductory pieces about how ActivityPub works server-to-server.
+
+* [Part 1: Overview](https://marnanel.dreamwidth.org/417305.html)
+* [Part 2: Authentication](https://marnanel.dreamwidth.org/417662.html)
+
+I&#39;d welcome suggested edits and ideas about what else the series should cover.
+
+(The theme is based on Joyce Lankester Brisley&#39;s children&#39;s story [*Marigold in Godmother&#39;s House*](https://www.goodreads.com/book/show/788236.Marigold_In_Godmother_s_House).)</description>
+    
+    <lastBuildDate>Fri, 02 Oct 2020 00:46:14 +0000</lastBuildDate>
+    <category>Server to Server</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/activitypub-in-godmothers-house/989.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>ActivityPub in Godmother&#39;s House</title>
+        <dc:creator><![CDATA[marnanel]]></dc:creator>
+        <description><![CDATA[
+            <p>Back in July I wrote a couple of introductory pieces about how ActivityPub works server-to-server.</p>
+<ul>
+<li><a href="https://marnanel.dreamwidth.org/417305.html" rel="nofollow noopener">Part 1: Overview</a></li>
+<li><a href="https://marnanel.dreamwidth.org/417662.html" rel="nofollow noopener">Part 2: Authentication</a></li>
+</ul>
+<p>I’d welcome suggested edits and ideas about what else the series should cover.</p>
+<p>(The theme is based on Joyce Lankester Brisley’s children’s story <a href="https://www.goodreads.com/book/show/788236.Marigold_In_Godmother_s_House" rel="nofollow noopener"><em>Marigold in Godmother’s House</em></a>.)</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/activitypub-in-godmothers-house/989/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/activitypub-in-godmothers-house/989/1</link>
+        <pubDate>Fri, 02 Oct 2020 00:46:14 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-989-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/activitypub-in-godmothers-house/989.rss">ActivityPub in Godmother&#39;s House</source>
+      </item>
+  </channel>
+</rss>

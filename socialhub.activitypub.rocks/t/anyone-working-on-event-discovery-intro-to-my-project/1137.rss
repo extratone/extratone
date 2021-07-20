@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Anyone working on Event Discovery? (+ Intro to my project)</title>
+    <link>https://socialhub.activitypub.rocks/t/anyone-working-on-event-discovery-intro-to-my-project/1137</link>
+    <description>I know there are several projects for events: [Mobilizon](https://framagit.org/framasoft/mobilizon), [GetTogether](https://github.com/GetTogetherComm/GetTogether/issues/60), [Gathio](https://github.com/lowercasename/gathio), [Gancio](https://framagit.org/les/gancio), [Fairmove](https://fairmove.it/fairsync/) ...
+
+Many of these projects are for people organising events, with features like attendee signup.
+
+**Is anyone working on projects for discovering events that other people organise and then directing people back to the original home of the event online?**
+
+(I know that may seem like a subtle distinction, but I think that brings up some important points on how the app works - and I back this up with 7 years running a popular events listing site with user feedback on this.)
+
+I am, and even thought it&#39;s very early days for my project I wanted to introduce it: https://www.theoccasionoctopus.net/ 
+
+This is an event discovery app where everyone can have their own account and list things that interest them. You can then follow other people and discover other interesting events they list. There is no RSVP features; instead we try to direct people back to the original home of this event, wherever that is.
+
+It&#39;s intended not to only rely on people adding events by hand, but to encourage other people to publish event open data it can reuse. It can import from iCal, and it has a full write API and some existing bots that scrape information from other websites (with backlinks). 
+
+There is basic federation, but, er, not with ActivityPub yet - that&#39;s something I want to support in the future. Expect more questions [like this one](https://socialhub.activitypub.rocks/t/events-and-discovering-relevant-information-later/1114).
+
+Anyway, it&#39;s early days and there are many rough edges, but I&#39;m just going to keep working on it slowly. I&#39;m interested to chat with others working on event discovery, and interested in anything to encourage more open data on events!</description>
+    
+    <lastBuildDate>Wed, 18 Nov 2020 15:36:12 +0000</lastBuildDate>
+    <category>Community</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/anyone-working-on-event-discovery-intro-to-my-project/1137.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Anyone working on Event Discovery? (+ Intro to my project)</title>
+        <dc:creator><![CDATA[tykayn]]></dc:creator>
+        <description><![CDATA[
+            <p>that’s a good initiative,<br>
+You can also have a look at The Open Event Database, made by cQuest who develops things for OpenStreetMap france.<br>
+</p><aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://github.githubassets.com/favicons/favicon.svg" class="site-icon" width="32" height="32">
+      <a href="https://github.com/openeventdatabase" target="_blank" rel="noopener nofollow ugc">GitHub</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/e746713eff92ade92be426c2a91ac2eeca931c1e.png" class="thumbnail onebox-avatar" width="221" height="221">
+
+<h3><a href="https://github.com/openeventdatabase" target="_blank" rel="noopener nofollow ugc">OpenEventDatabase</a></h3>
+
+<p>What+Where+When : Backend API and several frontends... - OpenEventDatabase</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+<br>
+this shows a range of projects about feeds to take data, max them with geo data, and present them.
+<p>Discoverability is a key point in all activitypub related projects, so thank you to aim for that and creating the occasion octopus! <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/anyone-working-on-event-discovery-intro-to-my-project/1137/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/anyone-working-on-event-discovery-intro-to-my-project/1137/2</link>
+        <pubDate>Wed, 18 Nov 2020 15:36:12 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1137-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/anyone-working-on-event-discovery-intro-to-my-project/1137.rss">Anyone working on Event Discovery? (+ Intro to my project)</source>
+      </item>
+      <item>
+        <title>Anyone working on Event Discovery? (+ Intro to my project)</title>
+        <dc:creator><![CDATA[jarofgreen]]></dc:creator>
+        <description><![CDATA[
+            <p>I know there are several projects for events: <a href="https://framagit.org/framasoft/mobilizon" rel="noopener nofollow ugc">Mobilizon</a>, <a href="https://github.com/GetTogetherComm/GetTogether/issues/60" rel="noopener nofollow ugc">GetTogether</a>, <a href="https://github.com/lowercasename/gathio" rel="noopener nofollow ugc">Gathio</a>, <a href="https://framagit.org/les/gancio" rel="noopener nofollow ugc">Gancio</a>, <a href="https://fairmove.it/fairsync/" rel="noopener nofollow ugc">Fairmove</a> …</p>
+<p>Many of these projects are for people organising events, with features like attendee signup.</p>
+<p><strong>Is anyone working on projects for discovering events that other people organise and then directing people back to the original home of the event online?</strong></p>
+<p>(I know that may seem like a subtle distinction, but I think that brings up some important points on how the app works - and I back this up with 7 years running a popular events listing site with user feedback on this.)</p>
+<p>I am, and even thought it’s very early days for my project I wanted to introduce it: <a href="https://www.theoccasionoctopus.net/" rel="noopener nofollow ugc">https://www.theoccasionoctopus.net/</a></p>
+<p>This is an event discovery app where everyone can have their own account and list things that interest them. You can then follow other people and discover other interesting events they list. There is no RSVP features; instead we try to direct people back to the original home of this event, wherever that is.</p>
+<p>It’s intended not to only rely on people adding events by hand, but to encourage other people to publish event open data it can reuse. It can import from iCal, and it has a full write API and some existing bots that scrape information from other websites (with backlinks).</p>
+<p>There is basic federation, but, er, not with ActivityPub yet - that’s something I want to support in the future. Expect more questions <a href="https://socialhub.activitypub.rocks/t/events-and-discovering-relevant-information-later/1114">like this one</a>.</p>
+<p>Anyway, it’s early days and there are many rough edges, but I’m just going to keep working on it slowly. I’m interested to chat with others working on event discovery, and interested in anything to encourage more open data on events!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/anyone-working-on-event-discovery-intro-to-my-project/1137/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/anyone-working-on-event-discovery-intro-to-my-project/1137/1</link>
+        <pubDate>Mon, 16 Nov 2020 09:00:40 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1137-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/anyone-working-on-event-discovery-intro-to-my-project/1137.rss">Anyone working on Event Discovery? (+ Intro to my project)</source>
+      </item>
+  </channel>
+</rss>

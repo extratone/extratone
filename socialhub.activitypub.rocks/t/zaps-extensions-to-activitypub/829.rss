@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Zap&#39;s extensions to ActivityPub</title>
+    <link>https://socialhub.activitypub.rocks/t/zaps-extensions-to-activitypub/829</link>
+    <description>* There apparently are wall posts. How do these federate?
+* There&#39;s `zot:commentPolicy` to limit who can comment on a post. What are the possible values of this field? Is it only set per post, or it can have a default value per actor?
+* Can a post owner delete others&#39; comments on their post? If so, how does this federate? Is this simply the usual `Delete{Note}`?
+
+(I did see [this](https://framagit.org/zot/zap/-/blob/release/FEDERATION.md), but it doesn&#39;t answer any of my questions)</description>
+    
+    <lastBuildDate>Sat, 20 Feb 2021 06:35:02 +0000</lastBuildDate>
+    <category>Zap</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/zaps-extensions-to-activitypub/829.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Zap&#39;s extensions to ActivityPub</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/macgirvin">@macgirvin</a>. You are quite right in pointing this out. Though I am not as deeply technically involved as I’d like to at this point, I must say that I highly appreciate and value insights such as yours about any possible extensions that are in use on top of core AP.</p>
+<p>Quick judgment may be based on a “do I want this in my codebase” after spending only a fleety moment to peruse the information. That is unfortunate.</p>
+<p>The strength of AP is in its Linked Data foundation that allows extension in any direction, for any domain, and any purpose. To promote this broader perspective and also in hopes of attracting more people with different backgrounds &amp; expertise I’ve set up <a class="hashtag" href="/c/fediversity/fediverse-futures/58">#<span>fediversity:fediverse-futures</span></a> category.</p>
+<p>I for one hope you’ll continue to enlighten this community with your inspiring explorations of the federated application space <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/zaps-extensions-to-activitypub/829/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/zaps-extensions-to-activitypub/829/7</link>
+        <pubDate>Sat, 20 Feb 2021 06:04:32 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-829-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/zaps-extensions-to-activitypub/829.rss">Zap&#39;s extensions to ActivityPub</source>
+      </item>
+      <item>
+        <title>Zap&#39;s extensions to ActivityPub</title>
+        <dc:creator><![CDATA[macgirvin]]></dc:creator>
+        <description><![CDATA[
+            <p>In any event I was asked about obscure details of an implementation which I have knowledge of and which are currently un-supported by any project outside our family tree of fediverse applications. I provided them. I did not ask anybody to support them. I carefully considered that I’d be attacked and criticised harshly for trying to provide accurate documentation after it was specifically requested, but there it is. Each of these mechanisms predates ActivityPub by many years and we’ve found the ActivityPub “solutions” to similar problems are not viable - else <strong>we would have used them</strong>.</p>
+<p>What anybody else does with their own implementation is their concern. Nothing I’ve documented here violates the integrity or security or “policies” of any other site or project. If it does, my implementation is the least of their worries.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/zaps-extensions-to-activitypub/829/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/zaps-extensions-to-activitypub/829/6</link>
+        <pubDate>Tue, 04 Aug 2020 02:08:22 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-829-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/zaps-extensions-to-activitypub/829.rss">Zap&#39;s extensions to ActivityPub</source>
+      </item>
+      <item>
+        <title>Zap&#39;s extensions to ActivityPub</title>
+        <dc:creator><![CDATA[vpzom]]></dc:creator>
+        <description><![CDATA[
+            <p>The established path for redistributing content with ActivityPub is Announce activities. These allow an actor to “repost” content from another while maintaining the integrity and link to the original author.</p>
+<p>Signatures from a user other than the author mean basically nothing.</p>
+<p>“none” was obviously hyperbole, hiding replies is a reasonable request, but I don’t think it’s been defined yet and I wouldn’t consider it “deletion”. Only the author of the content (or realistically also their site admin) can Delete it</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/zaps-extensions-to-activitypub/829/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/zaps-extensions-to-activitypub/829/5</link>
+        <pubDate>Tue, 04 Aug 2020 01:27:12 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-829-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/zaps-extensions-to-activitypub/829.rss">Zap&#39;s extensions to ActivityPub</source>
+      </item>
+      <item>
+        <title>Zap&#39;s extensions to ActivityPub</title>
+        <dc:creator><![CDATA[macgirvin]]></dc:creator>
+        <description><![CDATA[
+            <p>The first topic is no different than pasting an article about hydroxychloroquine into your stream from some rando website. We don’t know where it came from and whether that source has credibility. Whether or not we believe it or wish to continue following the sender depends on our trust in the person who sent it. The only other option is to reject any content which wasn’t signed by the original author in a manner consistent with ActivityPub signatures and not only is this technically “challenging” for any value of “content”, it kind of destroys the value of the fediverse for sharing information that originated anywhere else. ActivityPub is not the only mechanism for sharing information.</p>
+<p>I’m willing to change the second (commentPolicy) as soon as ActivityPub provides a better mechanism which covers all these (or at least similar) use cases. We’re just warning you in advance that your comment may be discarded without looking at it (and providing the reason) and if your UI interprets these properties it will prevent you from wasting your time typing something that is going straight into the bitbucket. If it doesn’t, it’s only your own time that is wasted. We’re still going to discard it.</p>
+<p>The third is non-negotiable. If somebody posts kiddie porn to my stream and it is copied to all my followers, I get to remove it and notify all my followers that I have removed it. Your project can keep it if it wants.</p>
+<p>There is a slight correction to my description: we do not propagate site-admin deletions downstream. Their jursidiction over control of their site ends at the site boundary.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/zaps-extensions-to-activitypub/829/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/zaps-extensions-to-activitypub/829/4</link>
+        <pubDate>Tue, 04 Aug 2020 01:11:51 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-829-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/zaps-extensions-to-activitypub/829.rss">Zap&#39;s extensions to ActivityPub</source>
+      </item>
+      <item>
+        <title>Zap&#39;s extensions to ActivityPub</title>
+        <dc:creator><![CDATA[vpzom]]></dc:creator>
+        <description><![CDATA[
+            <p>None of this sounds like a good idea</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/zaps-extensions-to-activitypub/829/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/zaps-extensions-to-activitypub/829/3</link>
+        <pubDate>Mon, 03 Aug 2020 23:01:32 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-829-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/zaps-extensions-to-activitypub/829.rss">Zap&#39;s extensions to ActivityPub</source>
+      </item>
+      <item>
+        <title>Zap&#39;s extensions to ActivityPub</title>
+        <dc:creator><![CDATA[macgirvin]]></dc:creator>
+        <description><![CDATA[
+            <p>Wall-to-wall posts are federated like any other posts. The signatures are those of the wall owner (sender in this case). Some platforms will refuse these because neither the LD signature or HTTP signature is that of the original actor (the signing keys are unavailable to the person hosting the wall), but hear me out…</p>
+<p>The end viewer typically has a relationship with the sender, not the actor. It doesn’t matter if the actor validates the message, because this could be a total stranger to the viewer. The only person the viewer has a trust relationship with and who needs to be validated “to them” is the sender. The sender in turn has a relationship with the actor and need to verify them before being allowed to post on their wall. So this verification does happen but is not visible to the end viewer.</p>
+<p>Can this “chain of trust” be abused? Certainly. <strong>Anything</strong> can be abused. But the situation solves itself, because breaching the trust between the viewer and sender will break that relationship. It will also break any trust between the actor and the sender. And it is very easily discovered.</p>
+<p>In any event, this mechanism is undergoing revision due to the work on private groups mentioned elsewhere. For group wall-to-wall posts the actor’s post is now HTML embedded into the body of a new post created by the sender. This will allow federation over any platform. I expect the regular wall-to-wall mechanism to be updated to the same mechanism in due course. There’s really no difference in trust - it’s just a different presentation which federates easier.</p>
+<p>A detailed description of commentPolicy has been added to FEDERATION.md.</p>
+<p>Post owners (and also site admins) can delete wall-to-wall posts. Any conversation owner can also delete any comments in their own conversation. Twitter-like platforms will probably reject the deletion. Facbook-like platforms will accept it. This is an unresolvable conflict between implementations (just like mention disparities), however it doesn’t matter because the wall owner always gets to decide what goes on their wall and the site owner always gets to decide what goes on their site. Period. If such deleted posts and comments end up visible on other software, it’s a fact of life.</p>
+<p>I actually don’t care if developers on other platforms disagree with any of these mechanisms. As long as it is compliant with specifications (which I’ve found most projects ignore when it suits them), they can do whatever they want. It’s the fediverse way. Everything I do strives to be multi-protocol compliant, as I typically support more than one.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/zaps-extensions-to-activitypub/829/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/zaps-extensions-to-activitypub/829/2</link>
+        <pubDate>Mon, 03 Aug 2020 20:54:37 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-829-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/zaps-extensions-to-activitypub/829.rss">Zap&#39;s extensions to ActivityPub</source>
+      </item>
+      <item>
+        <title>Zap&#39;s extensions to ActivityPub</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <ul>
+<li>There apparently are wall posts. How do these federate?</li>
+<li>There’s <code>zot:commentPolicy</code> to limit who can comment on a post. What are the possible values of this field? Is it only set per post, or it can have a default value per actor?</li>
+<li>Can a post owner delete others’ comments on their post? If so, how does this federate? Is this simply the usual <code>Delete{Note}</code>?</li>
+</ul>
+<p>(I did see <a href="https://framagit.org/zot/zap/-/blob/release/FEDERATION.md" rel="nofollow noopener">this</a>, but it doesn’t answer any of my questions)</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/zaps-extensions-to-activitypub/829/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/zaps-extensions-to-activitypub/829/1</link>
+        <pubDate>Wed, 29 Jul 2020 15:44:16 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-829-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/zaps-extensions-to-activitypub/829.rss">Zap&#39;s extensions to ActivityPub</source>
+      </item>
+  </channel>
+</rss>

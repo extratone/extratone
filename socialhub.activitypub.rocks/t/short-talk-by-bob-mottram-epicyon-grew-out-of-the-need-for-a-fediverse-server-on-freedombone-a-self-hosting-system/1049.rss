@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Short talk by Bob Mottram - Epicyon grew out of the need for a fediverse server on Freedombone - a self-hosting system</title>
+    <link>https://socialhub.activitypub.rocks/t/short-talk-by-bob-mottram-epicyon-grew-out-of-the-need-for-a-fediverse-server-on-freedombone-a-self-hosting-system/1049</link>
+    <description>Short talk by Bob Mottram
+
+Epicyon grew out of the need for a fediverse server on Freedom one - a self-hosting system
+
+Originally I had used gnu social, but as the fediverse grew this became less feasible. Gnu social had no moderation capability, so was easily swamped by trolls
+
+Later I moved over to running pleroma on Freedom one. Pleroma was a significant improvement, but still had problems, and was hard to maintain
+
+So eventually a couple of years ago it became clear that I either had to leave the fediverse or write a server suitable for self-hosting on ARM single board computers
+
+And that was the start of Epicyon
+
+Since ActivityPub has an email-like structure of inbox and outbox I decided to implement it like an email server. That meant no database, just saving posts to files in directories
+
+I also wanted it to be easy to maintain with the minimum number of dependencies, and capable of use with a screen reader for accessibility
+
+Interpreting the ActivityPub spec was not easy, and many of the things essential to make it work - like the encryption signatures - were undocumented
+
+So implementing was like being a detective looking for clues
+
+Another thing I wanted was customisability. In corporate social media sites are extremely dull and monotonous
+
+Same old bland layout and generic colors. To some extent the fediverse had copied this. But it didn&#39;t have to be that way
+
+I also wanted to support Tor and i2p domains, so that in the most hostile environments it would still be possible to set up social networks
+
+There is now a script for deploying Epicyon on i2p
+
+One thing I&#39;ve left out so far is the mastodon API, so Epicyon is mainly web interface only
+
+Instead I&#39;m following the route of making a Progressive Web App
+
+In future I may try to support WebAuth for two factors, but for now the simple login is good enough. I&#39;ve avoided OAuth because it looked complicated and I didn&#39;t like its clunky UX
+
+Epicyon is the first web app of any significant size that I&#39;ve written. In Freedombone I&#39;ve avoided inventing any new apps unless there really is no alternative.
+
+It&#39;s written in Python 3 with a html5 and CSS user interface. There is no JavaScript, so it is usable in Tor browser or Privacy Browser with JavaScript turned off.
+
+I think the theme ability may be an important factor to draw people into the fediverse. It&#39;s something which the silo systems can&#39;t or won&#39;t deliver. This means you can customize your instance to express your personality.</description>
+    
+    <lastBuildDate>Wed, 07 Oct 2020 18:28:42 +0000</lastBuildDate>
+    <category>ActivityPub Conference 2020</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/short-talk-by-bob-mottram-epicyon-grew-out-of-the-need-for-a-fediverse-server-on-freedombone-a-self-hosting-system/1049.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Short talk by Bob Mottram - Epicyon grew out of the need for a fediverse server on Freedombone - a self-hosting system</title>
+        <dc:creator><![CDATA[tinyrabbit]]></dc:creator>
+        <description><![CDATA[
+            <p>This sounds incredibly inspiring! I have to watch this talk, as I’ve just started a similar journey.</p>
+<p>Do you have any resources to point to that you wish someone had helped you find? <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/smile.png?v=9" title=":smile:" class="emoji" alt=":smile:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/short-talk-by-bob-mottram-epicyon-grew-out-of-the-need-for-a-fediverse-server-on-freedombone-a-self-hosting-system/1049/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/short-talk-by-bob-mottram-epicyon-grew-out-of-the-need-for-a-fediverse-server-on-freedombone-a-self-hosting-system/1049/2</link>
+        <pubDate>Wed, 07 Oct 2020 18:28:42 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1049-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/short-talk-by-bob-mottram-epicyon-grew-out-of-the-need-for-a-fediverse-server-on-freedombone-a-self-hosting-system/1049.rss">Short talk by Bob Mottram - Epicyon grew out of the need for a fediverse server on Freedombone - a self-hosting system</source>
+      </item>
+      <item>
+        <title>Short talk by Bob Mottram - Epicyon grew out of the need for a fediverse server on Freedombone - a self-hosting system</title>
+        <dc:creator><![CDATA[hamishcampbell]]></dc:creator>
+        <description><![CDATA[
+            <p>Short talk by Bob Mottram</p>
+<p>Epicyon grew out of the need for a fediverse server on Freedom one - a self-hosting system</p>
+<p>Originally I had used gnu social, but as the fediverse grew this became less feasible. Gnu social had no moderation capability, so was easily swamped by trolls</p>
+<p>Later I moved over to running pleroma on Freedom one. Pleroma was a significant improvement, but still had problems, and was hard to maintain</p>
+<p>So eventually a couple of years ago it became clear that I either had to leave the fediverse or write a server suitable for self-hosting on ARM single board computers</p>
+<p>And that was the start of Epicyon</p>
+<p>Since ActivityPub has an email-like structure of inbox and outbox I decided to implement it like an email server. That meant no database, just saving posts to files in directories</p>
+<p>I also wanted it to be easy to maintain with the minimum number of dependencies, and capable of use with a screen reader for accessibility</p>
+<p>Interpreting the ActivityPub spec was not easy, and many of the things essential to make it work - like the encryption signatures - were undocumented</p>
+<p>So implementing was like being a detective looking for clues</p>
+<p>Another thing I wanted was customisability. In corporate social media sites are extremely dull and monotonous</p>
+<p>Same old bland layout and generic colors. To some extent the fediverse had copied this. But it didn’t have to be that way</p>
+<p>I also wanted to support Tor and i2p domains, so that in the most hostile environments it would still be possible to set up social networks</p>
+<p>There is now a script for deploying Epicyon on i2p</p>
+<p>One thing I’ve left out so far is the mastodon API, so Epicyon is mainly web interface only</p>
+<p>Instead I’m following the route of making a Progressive Web App</p>
+<p>In future I may try to support WebAuth for two factors, but for now the simple login is good enough. I’ve avoided OAuth because it looked complicated and I didn’t like its clunky UX</p>
+<p>Epicyon is the first web app of any significant size that I’ve written. In Freedombone I’ve avoided inventing any new apps unless there really is no alternative.</p>
+<p>It’s written in Python 3 with a html5 and CSS user interface. There is no JavaScript, so it is usable in Tor browser or Privacy Browser with JavaScript turned off.</p>
+<p>I think the theme ability may be an important factor to draw people into the fediverse. It’s something which the silo systems can’t or won’t deliver. This means you can customize your instance to express your personality.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/short-talk-by-bob-mottram-epicyon-grew-out-of-the-need-for-a-fediverse-server-on-freedombone-a-self-hosting-system/1049/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/short-talk-by-bob-mottram-epicyon-grew-out-of-the-need-for-a-fediverse-server-on-freedombone-a-self-hosting-system/1049/1</link>
+        <pubDate>Sat, 03 Oct 2020 19:25:25 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1049-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/short-talk-by-bob-mottram-epicyon-grew-out-of-the-need-for-a-fediverse-server-on-freedombone-a-self-hosting-system/1049.rss">Short talk by Bob Mottram - Epicyon grew out of the need for a fediverse server on Freedombone - a self-hosting system</source>
+      </item>
+  </channel>
+</rss>

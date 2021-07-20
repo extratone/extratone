@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Meeting on Horizon Europe 2021: Opportunities and Funding</title>
+    <link>https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916</link>
+    <description>
+![Horizon Europe Info Days 2021 opengraph image](upload://hppz2dyIOpmDj3MeXYWDI8mTXGd.jpeg)
+
+Attention @policy,
+
+The Horizon Europe Info Days were just held, where the EC presented their strategies and funding programs for the coming years.
+
+https://www.horizon-europe-infodays2021.eu
+
+Existing funding programs for federated apps will come to an end, as a new [Horizon Europe](https://ec.europa.eu/info/research-and-innovation/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe_en) programme starts. Hordes of companies and projects are fishing for the significant amounts of money that is distributed the coming years.
+
+There are many developments and opportunities that exist now. And I think most fedizens are not in the loop. Therefore this wiki post to plan a meeting to discuss the ins and outs.
+
+---
+
+*(**NOTE: This is a wiki post** that anyone can edit. Please edit and add agenda points and other relevant details)*
+
+## Horizon Europe &amp; Fediverse
+
+- **Proposed Date**: [date=2021-07-10 time=17:00:00 timezone=&quot;Europe/Amsterdam&quot;]
+- **Vidcall URL**: https://bbb.w3c.social/b/seb-lld-rxj-zdg
+
+#### Participants:
+
+- @CristinaDeLisle: Hello! I hope everyone is well. I confirm I will attend as well this meeting. See you then! :slight_smile: 
+
+- @Sebastian  nice, added meeting URL
+#### Agenda:
+
+- @Sebastian informs about EU developments, possible further steps (will talk with Prabhat Agarwal) and edri roundtable.
+
+- _[Add your input]_</description>
+    
+    <lastBuildDate>Wed, 14 Jul 2021 06:26:29 +0000</lastBuildDate>
+    <category>Fediverse Policy SIG</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Meeting on Horizon Europe 2021: Opportunities and Funding</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the info, both of you. Very interesting topics indeed. Note that in terms of community work for SocialHub I have created two topics that are relevant:</p>
+<ul>
+<li><a href="https://socialhub.activitypub.rocks/t/organizing-for-socialhub-community-empowerment/1529" class="inline-onebox">Organizing for SocialHub Community Empowerment</a></li>
+<li><a href="https://socialhub.activitypub.rocks/t/presenting-fedi-foundation-empowerment-for-socialhub-community/1816" class="inline-onebox">Presenting Fedi Foundation: Empowerment for SocialHub community</a></li>
+</ul>
+<p>Lukewarm responses so far, so I may give this my own twist, instead of something tied to SocialHub.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916/16</link>
+        <pubDate>Wed, 14 Jul 2021 06:26:29 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1916-16</guid>
+        <source url="https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916.rss">Meeting on Horizon Europe 2021: Opportunities and Funding</source>
+      </item>
+      <item>
+        <title>Meeting on Horizon Europe 2021: Opportunities and Funding</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Well, right now, it is just that <a class="mention" href="/u/mathewlowry">@mathewlowry</a> and  <a class="mention" href="/u/sebastian">@Sebastian</a> were asked by Prabhat Agarwal to attend the meeting. Not the other way around …<br>
+I thought, maximum transparency is asking the community for feedback.</p>
+<p>The policy group reached its first goal and as you can see from the protocol, it was my next task to do a next meeting. Since we said, we lobby with edri, this could then be the edri roundtable.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916/14</link>
+        <pubDate>Tue, 13 Jul 2021 06:24:17 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1916-14</guid>
+        <source url="https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916.rss">Meeting on Horizon Europe 2021: Opportunities and Funding</source>
+      </item>
+      <item>
+        <title>Meeting on Horizon Europe 2021: Opportunities and Funding</title>
+        <dc:creator><![CDATA[CristinaDeLisle]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello! No worries <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:">  It was just <a class="mention" href="/u/sebastian">@Sebastian</a> and myself in the meeting and it lasted about 2h. As a summary, we had a free discussion broadly on the following topics:</p>
+<ul>
+<li>a feedback on the NGI0 event and opinions on financing AP projects - from Sebastian</li>
+<li>the AP community and activities happening on the policy side</li>
+<li>we discussed a bit also on the topic of a legal entity for this community and how that could look like</li>
+<li>future opportunity to get involved in a roundtable to be organized by edri - the contact person would be Jan Penfrat - Sebastian spoke with him to about this</li>
+<li>participating in a meeting with Prabhat Agarwal on the 29th of July, where <a class="mention" href="/u/mathewlowry">@mathewlowry</a> would be present as well - Matthew, I am tagging you here, as I understand from Sebastian that you wanted to participate to that meeting</li>
+</ul>
+<p>As this time it was only Sebastian and myself in the call, we thought to come up with the proposal of a second meeting 2 weeks from now, which he proposed in this pinned post: <a href="https://socialhub.activitypub.rocks/t/2021-07-24-socialcg-policy-sig-meeting/1927" class="inline-onebox">2021-07-24 SocialCG Policy SIG Meeting</a></p>
+<p>I propose to have this meeting from the 24th and / or discuss on the forum prior, especially regarding the communication with Prabhat Agarwal &amp; edri event Sebastian was talking about.</p>
+<p>I also proposed to use the ideas we  worked at for the NGI0 AP for Administrations presentation and have the community improve / adjust the content for the occasion. This is just a proposal and would require a common effort. The point would be to ensure that this is a common message, as previously - I think that this is important for the AP community.</p>
+<p>In any case, let’s keep in touch about this and enjoy the sunny days <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/sunflower.png?v=9" title=":sunflower:" class="emoji" alt=":sunflower:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916/13</link>
+        <pubDate>Mon, 12 Jul 2021 14:07:07 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1916-13</guid>
+        <source url="https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916.rss">Meeting on Horizon Europe 2021: Opportunities and Funding</source>
+      </item>
+      <item>
+        <title>Meeting on Horizon Europe 2021: Opportunities and Funding</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916/12</link>
+        <pubDate>Mon, 12 Jul 2021 04:53:21 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1916-12</guid>
+        <source url="https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916.rss">Meeting on Horizon Europe 2021: Opportunities and Funding</source>
+      </item>
+      <item>
+        <title>Meeting on Horizon Europe 2021: Opportunities and Funding</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/sebastian">@Sebastian</a> <a class="mention" href="/u/cristinadelisle">@CristinaDeLisle</a> sorry that I couldn’t attend. Did you have the meetup yesterday? Maybe there’s some general info to add to this thread?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916/11</link>
+        <pubDate>Sun, 11 Jul 2021 03:20:52 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1916-11</guid>
+        <source url="https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916.rss">Meeting on Horizon Europe 2021: Opportunities and Funding</source>
+      </item>
+      <item>
+        <title>Meeting on Horizon Europe 2021: Opportunities and Funding</title>
+        <dc:creator><![CDATA[dachary]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-redaktor.me quote-modified" data-username="Sebastian" data-post="9" data-topic="1916">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar"> Sebastian:</div>
+<blockquote>
+<blockquote>
+<p>Are the grant applications and refusals published in a public place ?</p>
+</blockquote>
+<p>No, I thought, it doesn’t make sense cause it was rejected and after 3 years they told us, they don’t fund CMS. I can send it to you.</p>
+</blockquote>
+</aside>
+<p>This is very kind of you but I think I now have a good understanding of how it goes. There is a lot of value in publishing rejected applications because, together with the rejection notice, it shows the kind of things that should be avoided. There is a little bit of that in a successful application too (for instance <a href="https://forum.fedeproxy.eu/t/dapsi-call-deadline-20-01-2021/14/9" rel="noopener nofollow ugc">fedeproxy got negative grading</a> because <em>“Work plan with accompanying milestones is credible but should be more elaborated on though.”</em>), but it is less enlightening.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916/10</link>
+        <pubDate>Sat, 10 Jul 2021 13:22:01 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1916-10</guid>
+        <source url="https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916.rss">Meeting on Horizon Europe 2021: Opportunities and Funding</source>
+      </item>
+      <item>
+        <title>Meeting on Horizon Europe 2021: Opportunities and Funding</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>Are the grant applications and refusals published in a public place ?</p>
+</blockquote>
+<p>No, I thought, it doesn’t make sense cause it was rejected and after 3 years they told us, they don’t fund CMS. I can send it to you.</p>
+<blockquote>
+<p>after retrieving my lost password</p>
+</blockquote>
+<p>The same <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"><br>
+It would be nice to have a common “Login with ActivityPub” …</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916/9</link>
+        <pubDate>Sat, 10 Jul 2021 12:51:08 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1916-9</guid>
+        <source url="https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916.rss">Meeting on Horizon Europe 2021: Opportunities and Funding</source>
+      </item>
+      <item>
+        <title>Meeting on Horizon Europe 2021: Opportunities and Funding</title>
+        <dc:creator><![CDATA[dachary]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-redaktor.me" data-username="Sebastian" data-post="7" data-topic="1916">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar"> Sebastian:</div>
+<blockquote>
+<p>Personally, we applied with 8 people for both, DAPSI and NGI Zero over 3 years but this brought us also nothing than paperwork.<br>
+The same for some partner projects of redaktor.</p>
+</blockquote>
+</aside>
+<p>Are the grant applications and refusals published in a public place ?</p>
+<p>I was surprised not to find any when I started working on the grant application earlier this year. The most difficult part when filling an application is to figure out how to write something that makes sense to the experts judging it. And the lack of examples to get inspiration from is a real handicap. That was my motivation for <a href="https://forum.fedeproxy.eu/uploads/short-url/oSiYTieakwY1rlhtnxm7uiHSB1Q.odt" rel="noopener nofollow ugc">publishing the application we submitted</a> as well as all the <a href="https://forum.fedeproxy.eu/t/dapsi-call-deadline-20-01-2021/14" rel="noopener nofollow ugc">correspondence with the grant organization</a>.</p>
+<aside class="quote group-redaktor.me" data-username="Sebastian" data-post="7" data-topic="1916">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar"> Sebastian:</div>
+<blockquote>
+<p>Please everybody, guide them about the general digital principles and raise awareness for the fediverse and ActivityPub in this → <a href="https://digital-strategy.ec.europa.eu/en/news/europes-digital-decade-commission-launches-consultation-and-discussion-eu-digital-principles" rel="noopener nofollow ugc">Public Consultation</a></p>
+</blockquote>
+</aside>
+<p>I filled the survey (after retrieving my lost password <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/stuck_out_tongue.png?v=9" title=":stuck_out_tongue:" class="emoji" alt=":stuck_out_tongue:"> ).</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916/8</link>
+        <pubDate>Sat, 10 Jul 2021 10:27:47 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1916-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916.rss">Meeting on Horizon Europe 2021: Opportunities and Funding</source>
+      </item>
+      <item>
+        <title>Meeting on Horizon Europe 2021: Opportunities and Funding</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey Loïc,</p>
+<p>that is very right.<br>
+Horizon itself also created an industry of companies doing nothing else in specialising in this “overhead” and paperwork and receive lots and lots of money and burn it.<br>
+The GAFAM gets billions through it.</p>
+<p>Personally, we applied with 8 people for both, DAPSI and NGI Zero over 3 years but this brought us also nothing than paperwork.<br>
+The same for some partner projects of redaktor.</p>
+<p>But the logic of Horizon would be similar to what mastodon did with the eunomia.social project.<br>
+They have built a consortium with a media partner and a university:</p><aside class="onebox allowlistedgeneric" data-onebox-src="https://cordis.europa.eu/project/id/825171">
+  <header class="source">
+      <img src="https://cordis.europa.eu/project/id/825171/favicon.ico" class="site-icon" width="" height="">
+
+      <a href="https://cordis.europa.eu/project/id/825171" target="_blank" rel="noopener nofollow ugc">CORDIS | European Commission</a>
+  </header>
+
+  <article class="onebox-body">
+    <img src="https://socialhub.activitypub.rocks/uploads/default/original/2X/6/6f9dd5efd552638ae4608bbe572ccda92dc6be1d.jpeg" class="thumbnail onebox-avatar" width="150" height="150">
+
+<h3><a href="https://cordis.europa.eu/project/id/825171" target="_blank" rel="noopener nofollow ugc">User-oriented, secure, trustful &amp; decentralised social media | EUNOMIA...</a></h3>
+
+
+
+  </article>
+
+  <div class="onebox-metadata">
+    
+    
+  </div>
+
+  <div style="clear: both"></div>
+</aside>
+
+<p>Then some people familar with the matter can do the administrative overhead.<br>
+That would need implementors to team and build what they call consortium.<br>
+I can help to find a media partner and we would contact the universities we have contacts with …</p>
+<p>My main motivation for a meeting is that I will have a call with the Head of Unit, Prabhat Agarwal soon and want to know, what the ActivityPub Community wants him to know.<br>
+There is a nice <a href="https://www.zeit.de/2020/50/eu-kommission-kartell-beamte-google-amazon-facebook" rel="noopener nofollow ugc">article about Agarwal in german</a> …</p>
+<p>Please everybody, guide them about the general digital principles and raise awareness for the fediverse and ActivityPub in this → <a href="https://digital-strategy.ec.europa.eu/en/news/europes-digital-decade-commission-launches-consultation-and-discussion-eu-digital-principles" rel="noopener nofollow ugc">Public Consultation</a></p>
+<p>And the new Horizon Clusters / Programmes will pop up now and the Policy Group wants to organise a roundtable with edri after the EU summer break.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916/7</link>
+        <pubDate>Fri, 09 Jul 2021 07:44:33 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1916-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916.rss">Meeting on Horizon Europe 2021: Opportunities and Funding</source>
+      </item>
+      <item>
+        <title>Meeting on Horizon Europe 2021: Opportunities and Funding</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>I am curious about these things myself, and to hear from people that are more in the loop. Unfortunately I just learned that due to circumstance I am not able to join myself on Saturday at the proposed time.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916/6</link>
+        <pubDate>Fri, 09 Jul 2021 06:03:33 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1916-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916.rss">Meeting on Horizon Europe 2021: Opportunities and Funding</source>
+      </item>
+      <item>
+        <title>Meeting on Horizon Europe 2021: Opportunities and Funding</title>
+        <dc:creator><![CDATA[dachary]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m an individual and assuming that even trying to understand what Horizon Europe 2021 is about will consume more energy than I can afford. Yet, I <a href="https://forum.fedeproxy.eu/t/about-the-funding-category/19" rel="noopener nofollow ugc">applied for grants in the past</a> and I’m interested in <a href="https://socialhub.activitypub.rocks/t/grant-proposal-for-federation-in-gitea/1921">applying for new grants</a>, eventually. When cascading grants are created by large organizations (for instance <a href="https://dapsi.ngi.eu/" rel="noopener nofollow ugc">https://dapsi.ngi.eu/</a> or <a href="https://www.ngi.eu/ngi-projects/" class="inline-onebox" rel="noopener nofollow ugc">NGI Projects | Next Generation Internet</a>), to reduce the administrative overhead to something that is more in line with individuals or NGOs.</p>
+<p>Am I wrong?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916/5</link>
+        <pubDate>Thu, 08 Jul 2021 21:08:34 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1916-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916.rss">Meeting on Horizon Europe 2021: Opportunities and Funding</source>
+      </item>
+      <item>
+        <title>Meeting on Horizon Europe 2021: Opportunities and Funding</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916/4</link>
+        <pubDate>Wed, 07 Jul 2021 19:15:28 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1916-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916.rss">Meeting on Horizon Europe 2021: Opportunities and Funding</source>
+      </item>
+      <item>
+        <title>Meeting on Horizon Europe 2021: Opportunities and Funding</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p><div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/2X/7/7a0458ddfc110d4eb9006129b9fab8ef4c27594d.jpeg" data-download-href="https://socialhub.activitypub.rocks/uploads/default/7a0458ddfc110d4eb9006129b9fab8ef4c27594d" title="Horizon Europe Info Days 2021 opengraph image"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/7/7a0458ddfc110d4eb9006129b9fab8ef4c27594d_2_690x362.jpeg" alt="Horizon Europe Info Days 2021 opengraph image" data-base62-sha1="hppz2dyIOpmDj3MeXYWDI8mTXGd" width="690" height="362" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/7/7a0458ddfc110d4eb9006129b9fab8ef4c27594d_2_690x362.jpeg, https://socialhub.activitypub.rocks/uploads/default/optimized/2X/7/7a0458ddfc110d4eb9006129b9fab8ef4c27594d_2_1035x543.jpeg 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/2X/7/7a0458ddfc110d4eb9006129b9fab8ef4c27594d.jpeg 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/7/7a0458ddfc110d4eb9006129b9fab8ef4c27594d_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Horizon Europe Info Days 2021 opengraph image</span><span class="informations">1200×630 88.5 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>Attention <a class="mention-group" href="/groups/policy">@policy</a>,</p>
+<p>The Horizon Europe Info Days were just held, where the EC presented their strategies and funding programs for the coming years.</p>
+<aside class="onebox allowlistedgeneric" data-onebox-src="https://www.horizon-europe-infodays2021.eu">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/2X/4/466f3dadd57f53e601c5d1c981f5fc468ad96e3c.png" class="site-icon" width="32" height="32">
+
+      <a href="https://www.horizon-europe-infodays2021.eu" target="_blank" rel="noopener">Horizon Europe Info Days 2021</a>
+  </header>
+
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/362;"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/7/7a0458ddfc110d4eb9006129b9fab8ef4c27594d_2_690x362.jpeg" class="thumbnail" width="690" height="362" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/7/7a0458ddfc110d4eb9006129b9fab8ef4c27594d_2_690x362.jpeg, https://socialhub.activitypub.rocks/uploads/default/optimized/2X/7/7a0458ddfc110d4eb9006129b9fab8ef4c27594d_2_1035x543.jpeg 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/2X/7/7a0458ddfc110d4eb9006129b9fab8ef4c27594d.jpeg 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/7/7a0458ddfc110d4eb9006129b9fab8ef4c27594d_2_10x10.png"></div>
+
+<h3><a href="https://www.horizon-europe-infodays2021.eu" target="_blank" rel="noopener">Homepage | Horizon Europe Info Days 2021</a></h3>
+
+  <p>The 10-day event will give the opportunity to prospective applicants to receive information and ask questions about the EU Research &amp; Innovation Programme 2021-2027.</p>
+
+
+  </article>
+
+  <div class="onebox-metadata">
+    
+    
+  </div>
+
+  <div style="clear: both"></div>
+</aside>
+
+<p>Existing funding programs for federated apps will come to an end, as a new <a href="https://ec.europa.eu/info/research-and-innovation/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe_en">Horizon Europe</a> programme starts. Hordes of companies and projects are fishing for the significant amounts of money that is distributed the coming years.</p>
+<p>There are many developments and opportunities that exist now. And I think most fedizens are not in the loop. Therefore this wiki post to plan a meeting to discuss the ins and outs.</p>
+<hr>
+<p><em>(<strong>NOTE: This is a wiki post</strong> that anyone can edit. Please edit and add agenda points and other relevant details)</em></p>
+<h2>
+<a name="horizon-europe-fediverse-1" class="anchor" href="#horizon-europe-fediverse-1"></a>Horizon Europe &amp; Fediverse</h2>
+<ul>
+<li>
+<strong>Proposed Date</strong>: <span data-date="2021-07-10" data-time="17:00:00" class="discourse-local-date" data-timezone="Europe/Amsterdam" data-email-preview="2021-07-10T15:00:00Z UTC">2021-07-10T15:00:00Z</span>
+</li>
+<li>
+<strong>Vidcall URL</strong>: <a href="https://bbb.w3c.social/b/seb-lld-rxj-zdg" class="inline-onebox">Startraum</a>
+</li>
+</ul>
+<h4>
+<a name="participants-2" class="anchor" href="#participants-2"></a>Participants:</h4>
+<ul>
+<li>
+<p><a class="mention" href="/u/cristinadelisle">@CristinaDeLisle</a>: Hello! I hope everyone is well. I confirm I will attend as well this meeting. See you then! <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+</li>
+<li>
+<p><a class="mention" href="/u/sebastian">@Sebastian</a>  nice, added meeting URL</p>
+</li>
+</ul>
+<h4>
+<a name="agenda-3" class="anchor" href="#agenda-3"></a>Agenda:</h4>
+<ul>
+<li>
+<p><a class="mention" href="/u/sebastian">@Sebastian</a> informs about EU developments, possible further steps (will talk with Prabhat Agarwal) and edri roundtable.</p>
+</li>
+<li>
+<p><em>[Add your input]</em></p>
+</li>
+</ul>
+          <p><a href="https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916/1</link>
+        <pubDate>Tue, 06 Jul 2021 18:50:45 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1916-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/meeting-on-horizon-europe-2021-opportunities-and-funding/1916.rss">Meeting on Horizon Europe 2021: Opportunities and Funding</source>
+      </item>
+  </channel>
+</rss>

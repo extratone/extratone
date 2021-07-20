@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>2021-02-06 Social CG meeting - DEMOS! Diverse clients and generic servers</title>
+    <link>https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364</link>
+    <description>**Date:** [date=2021-02-06 time=16:00:00 timezone=&quot;Europe/Berlin&quot;] (Saturday)
+
+# **Topic:** Diverse clients and generic servers
+
+## Call for demos!
+
+Many of us dream of a fediverse with a diverse range of specialised clients (doing one thing really well) which can communicate with generic servers, set up to handle any kind of incoming Activities (perhaps falling back to simple text descriptions for things they don&#39;t understand).
+
+If you are working on clients like this - even if it isn&#39;t polished, or finished, or only half works, or is just a mockup - we would love a preview.
+
+If you are working on generic servers, please share these as well!
+
+Maybe we can find new opportunities to interoperate with each others software.
+
+**Please leave a reply below if you&#39;d like to demo, and any links to your projects (or posts about your projects).**
+
+## **Join:**
+* [BBB](https://bbb.w3c.social/b/rhi-vp1-fv6-vn7)
+* [IRC](http://irc.w3.org/?channels=social)</description>
+    
+    <lastBuildDate>Tue, 09 Feb 2021 11:04:24 +0000</lastBuildDate>
+    <category>SocialCG</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>2021-02-06 Social CG meeting - DEMOS! Diverse clients and generic servers</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Maybe the SocialCG is just the wrong / much to “time-limited” place to discuss a reference guide for a LD server.</p>
+<p>A question:<br>
+<strong>What would be a nice format to discuss the pitfalls and solutions of a generic server?</strong><br>
+To check out, what is needed. To work across languages. To compare existing solutions we saw.</p>
+<p>Could this be e.g. a 3 days aynchronous hackathon (covering all timezones) where I would try again to bring implementors of all sizes together with BBB and federated tools?<br>
+I doubt it is fragmentation or a centralized forum.</p>
+<p>To hear the voices of (for example) pleroma, peertube, funkwhale, pixelfed, mastodon, andstatus, bonfire, go-fed, openengiadina, redaktor, skohub, smithereen, writefreely and all the others and being major inclusive to beginners …</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364/14</link>
+        <pubDate>Tue, 09 Feb 2021 11:04:24 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1364-14</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364.rss">2021-02-06 Social CG meeting - DEMOS! Diverse clients and generic servers</source>
+      </item>
+      <item>
+        <title>2021-02-06 Social CG meeting - DEMOS! Diverse clients and generic servers</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>Yeah I noticed that long and it’s a really nice touch. I’m just too forgetful and didn’t put this one into my calendar to be spammed with reminders.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364/13</link>
+        <pubDate>Sat, 06 Feb 2021 17:37:32 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1364-13</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364.rss">2021-02-06 Social CG meeting - DEMOS! Diverse clients and generic servers</source>
+      </item>
+      <item>
+        <title>2021-02-06 Social CG meeting - DEMOS! Diverse clients and generic servers</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>also tip: Dates and Times here are localised.<br>
+Set your timezone correct or hover the date.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364/12</link>
+        <pubDate>Sat, 06 Feb 2021 17:24:07 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1364-12</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364.rss">2021-02-06 Social CG meeting - DEMOS! Diverse clients and generic servers</source>
+      </item>
+      <item>
+        <title>2021-02-06 Social CG meeting - DEMOS! Diverse clients and generic servers</title>
+        <dc:creator><![CDATA[by_caballero]]></dc:creator>
+        <description><![CDATA[
+            <p>Meeting is now if y’all got the timezones wrong!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364/11</link>
+        <pubDate>Sat, 06 Feb 2021 15:14:39 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1364-11</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364.rss">2021-02-06 Social CG meeting - DEMOS! Diverse clients and generic servers</source>
+      </item>
+      <item>
+        <title>2021-02-06 Social CG meeting - DEMOS! Diverse clients and generic servers</title>
+        <dc:creator><![CDATA[calummackervoy]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/aschrijver">@aschrijver</a> I tested in a private browser and I think the link was broken (sorry!)</p>
+<p>I’ve updated my post with the correct one: <a href="https://git.startinblox.com/management/core-team/issues/15" rel="noopener nofollow ugc">https://git.startinblox.com/management/core-team/issues/15</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364/10</link>
+        <pubDate>Thu, 04 Feb 2021 09:14:43 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1364-10</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364.rss">2021-02-06 Social CG meeting - DEMOS! Diverse clients and generic servers</source>
+      </item>
+      <item>
+        <title>2021-02-06 Social CG meeting - DEMOS! Diverse clients and generic servers</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Wonderful, thanks. PS. I’ve upped both your trust levels, so you can paste in more links. PS2. linked issues require sign-up to view.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364/9</link>
+        <pubDate>Wed, 03 Feb 2021 10:25:01 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1364-9</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364.rss">2021-02-06 Social CG meeting - DEMOS! Diverse clients and generic servers</source>
+      </item>
+      <item>
+        <title>2021-02-06 Social CG meeting - DEMOS! Diverse clients and generic servers</title>
+        <dc:creator><![CDATA[calummackervoy]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Alex,</p>
+<p>Very cool!</p>
+<p>DjangoLDP_ActivityPub isn’t the up-to-date link, it’s a proof-of-concept module which we’re not using on the servers</p>
+<p>The current implementation of ActivityPub is in the DjangoLDP core repository, although there are still lots of <a href="https://git.startinblox.com/management/core-team/issues/3" rel="noopener nofollow ugc">open issues</a>. It’s all in the <code>activities</code> Python module except for Activity and Follower models which can be found in djangoldp/models.py and the InboxView which is also in the core module (I suppose we should be packaging all of it into the activities module for cleanliness)</p>
+<p>Some of the issues are very important (like the fact that <a href="https://git.startinblox.com/djangoldp-packages/djangoldp/issues/236" rel="noopener nofollow ugc">we’re not authenticating the InboxView at all</a>), and there are some which I’m sure mean that our implementation isn’t fully spec compliant. It’d be amazing if any ActivityPub devs were tempted to open some merge requests <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>I did a quick review and labelled some good first issues - you can find them in <a href="https://git.startinblox.com/management/core-team/issues/15" rel="noopener nofollow ugc">https://git.startinblox.com/management/core-team/issues/15</a></p>
+<p>Thanks,<br>
+Calum</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364/8</link>
+        <pubDate>Wed, 03 Feb 2021 10:01:28 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1364-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364.rss">2021-02-06 Social CG meeting - DEMOS! Diverse clients and generic servers</source>
+      </item>
+      <item>
+        <title>2021-02-06 Social CG meeting - DEMOS! Diverse clients and generic servers</title>
+        <dc:creator><![CDATA[alex.bourlier]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, we are aware that this is missing from the landing page. We’ll add a Gitlab link on it. In the meantime, <a href="https://git.startinblox.com/applications/hubl/" rel="noopener nofollow ugc">here it is</a>.</p>
+<p>We use ActivityPub to handle our notification system. I’m actually not sure which piece of code I can point you to. Let me ask that to the real makers of this tool and I get back to you.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364/7</link>
+        <pubDate>Tue, 02 Feb 2021 16:24:29 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1364-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364.rss">2021-02-06 Social CG meeting - DEMOS! Diverse clients and generic servers</source>
+      </item>
+      <item>
+        <title>2021-02-06 Social CG meeting - DEMOS! Diverse clients and generic servers</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>The website looks great (btw, should add a link to the <a href="https://git.startinblox.com/applications/hubl">source code</a>). Not sure how it all fits together with AP (found <a href="https://git.startinblox.com/djangoldp-packages/djangoldp-activitypub/tree/master/djangoldp_activitypub">djangoldp_activitypub</a>). With AP support I can add Hubl and/or Startin’Blox to the <a href="https://git.feneas.org/feneas/fediverse/-/wikis/watchlist-for-activitypub-apps">AP watchlist</a> and/or <a href="https://git.feneas.org/feneas/fediverse/-/wikis/Watchlist-for-ActivityPub-developer-resources">AP dev watchlist</a> (but I need to know which sources to link to).</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364/6</link>
+        <pubDate>Tue, 02 Feb 2021 16:06:01 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1364-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364.rss">2021-02-06 Social CG meeting - DEMOS! Diverse clients and generic servers</source>
+      </item>
+      <item>
+        <title>2021-02-06 Social CG meeting - DEMOS! Diverse clients and generic servers</title>
+        <dc:creator><![CDATA[alex.bourlier]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m loving this thread.</p>
+<p>We’d be very interested to present <a href="https://hubl.world/" rel="noopener nofollow ugc">https://hubl.world/</a></p>
+<p>Hubl is a federated and open source app.<br>
+Hubl help freelancers’ collectives and communities to collaborate online, exchange work, socialize, publish their events, find each other.</p>
+<p>It is based on both Solid and ActivityPub.</p>
+<p>If that fits the bill, we’d love to demo</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364/5</link>
+        <pubDate>Tue, 02 Feb 2021 15:43:53 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1364-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364.rss">2021-02-06 Social CG meeting - DEMOS! Diverse clients and generic servers</source>
+      </item>
+      <item>
+        <title>2021-02-06 Social CG meeting - DEMOS! Diverse clients and generic servers</title>
+        <dc:creator><![CDATA[rhiaro]]></dc:creator>
+        <description><![CDATA[
+            <p><strong>Date:</strong> <span data-date="2021-02-06" data-time="16:00:00" class="discourse-local-date" data-timezone="Europe/Berlin" data-email-preview="2021-02-06T15:00:00Z UTC">2021-02-06T15:00:00Z</span> (Saturday)</p>
+<h1>
+<strong>Topic:</strong> Diverse clients and generic servers</h1>
+<h2>Call for demos!</h2>
+<p>Many of us dream of a fediverse with a diverse range of specialised clients (doing one thing really well) which can communicate with generic servers, set up to handle any kind of incoming Activities (perhaps falling back to simple text descriptions for things they don’t understand).</p>
+<p>If you are working on clients like this - even if it isn’t polished, or finished, or only half works, or is just a mockup - we would love a preview.</p>
+<p>If you are working on generic servers, please share these as well!</p>
+<p>Maybe we can find new opportunities to interoperate with each others software.</p>
+<p><strong>Please leave a reply below if you’d like to demo, and any links to your projects (or posts about your projects).</strong></p>
+<h2><strong>Join:</strong></h2>
+<ul>
+<li><a href="https://bbb.w3c.social/b/rhi-vp1-fv6-vn7">BBB</a></li>
+<li><a href="http://irc.w3.org/?channels=social">IRC</a></li>
+</ul>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364/1</link>
+        <pubDate>Fri, 29 Jan 2021 09:56:21 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1364-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364.rss">2021-02-06 Social CG meeting - DEMOS! Diverse clients and generic servers</source>
+      </item>
+  </channel>
+</rss>

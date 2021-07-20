@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Activity specification turtle documents</title>
+    <link>https://socialhub.activitypub.rocks/t/activity-specification-turtle-documents/1293</link>
+    <description>I found this one: (not easy to find, ask me why!)
+* https://www.w3.org/ns/activitystreams-owl
+
+But i miss the turtle file for https://www.w3.org/ns/activitystreams#activitypub
+
+Any idea ?
+Thanks</description>
+    
+    <lastBuildDate>Sun, 07 Feb 2021 13:51:10 +0000</lastBuildDate>
+    <category>Client to Server</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/activity-specification-turtle-documents/1293.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Activity specification turtle documents</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <p>ok, so i’ve to eat that: <a href="https://www.w3.org/ns/activitystreams" rel="noopener nofollow ugc">https://www.w3.org/ns/activitystreams</a> <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"><br>
+However, at the end there are triples. Even that is hided.<br>
+Thanks</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/activity-specification-turtle-documents/1293/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/activity-specification-turtle-documents/1293/4</link>
+        <pubDate>Sun, 07 Feb 2021 13:51:10 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1293-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/activity-specification-turtle-documents/1293.rss">Activity specification turtle documents</source>
+      </item>
+      <item>
+        <title>Activity specification turtle documents</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p>Ultimately, the OWL files were just something provided on a best-effort basis by one of the previous group members, and they’re not well-maintained. The specifications in question are still the normative reference for these properties.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/activity-specification-turtle-documents/1293/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/activity-specification-turtle-documents/1293/3</link>
+        <pubDate>Sun, 07 Feb 2021 04:33:06 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1293-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/activity-specification-turtle-documents/1293.rss">Activity specification turtle documents</source>
+      </item>
+      <item>
+        <title>Activity specification turtle documents</title>
+        <dc:creator><![CDATA[kaniini]]></dc:creator>
+        <description><![CDATA[
+            <p>ActivityPub is strictly built on JSON-LD.  It is not valid to send Turtle or any other RDF serialization other than JSON-LD to an ActivityPub endpoint.  Accordingly, ActivityPub vocabularies are only provided in JSON-LD format.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/activity-specification-turtle-documents/1293/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/activity-specification-turtle-documents/1293/2</link>
+        <pubDate>Sun, 07 Feb 2021 03:11:15 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1293-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/activity-specification-turtle-documents/1293.rss">Activity specification turtle documents</source>
+      </item>
+      <item>
+        <title>Activity specification turtle documents</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <p>I found this one: (not easy to find, ask me why!)</p>
+<ul>
+<li><a href="https://www.w3.org/ns/activitystreams-owl" rel="noopener nofollow ugc">https://www.w3.org/ns/activitystreams-owl</a></li>
+</ul>
+<p>But i miss the turtle file for <a href="https://www.w3.org/ns/activitystreams#activitypub" rel="noopener nofollow ugc">https://www.w3.org/ns/activitystreams#activitypub</a></p>
+<p>Any idea ?<br>
+Thanks</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/activity-specification-turtle-documents/1293/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/activity-specification-turtle-documents/1293/1</link>
+        <pubDate>Thu, 14 Jan 2021 14:46:15 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1293-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/activity-specification-turtle-documents/1293.rss">Activity specification turtle documents</source>
+      </item>
+  </channel>
+</rss>

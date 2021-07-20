@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>SocialHub Community Values Policy</title>
+    <link>https://socialhub.activitypub.rocks/t/socialhub-community-values-policy/1391</link>
+    <description>## Be CareFOO!
+
+Happy to introduce the &quot;Care FOO&quot; policy! Please take the time to read it thoroughly.
+
+----
+ 
+[policy version=&quot;1&quot; group=&quot;trust_level_1&quot; accept=&quot;I agree to abide by these values&quot; revoke=&quot;I disagree and will go elsewhere&quot; reminder=&quot;weekly&quot;]
+# We Care For Our Own
+
+Members of the Social Web Incubator CG agree to abide by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).
+
+On top of this, we acknowledge that Web and communication technologies are inherently political and can be used to cause harm, against the intent of the original creators. We recognise power imbalances already endemic in the tech industry, and in Social Web systems in mainstream use. With that in mind, we do not welcome participation (however polite) by contributors to projects which are designed or primarily used for:
+
+- oppression, or encouraging oppression, of vulnerable people or minority groups.
+- planning, encouragement of or inciting violence against vulnerable people.
+- promoting fascism, nazism or other authoritarian systems and practices.
+- perpetuating, promoting, or enacting systematic injustices, such as racism, sexism, homophobia, transphobia.
+
+We are vigilant for the use of imagery, language and dogwhistles related to such behaviours. We reserve the right to exclude projects which tolerate such behaviours within their communities, or have not made a good faith effort to discourage such behaviours.
+
+The intent of this policy is _not_ to exclude wholesale any developers involved with projects or communities who unknowingly interact with bad actors, or who are struggling to or unable to eliminate behavior that goes against this policy in their wider communities. Similarly, we do not expect developers of open source projects to be responsible for every installation or fork of their codebase and will of course take the realities of this into account when making any moderation decisions. 
+
+SocialCG chairs and forum administrators may use their discretion to remove posts or suspend user accounts. SocialCG chairs may similarly refuse access to or remove individuals from virtual meetings.
+[/policy]
+
+### Active stage
+
+The policy is now active, from [date=2021-02-19 timezone=&quot;Europe/Brussels&quot;].
+
+[details=&quot;Policy Details&quot;]
+## Details
+
+### It does concern you!
+
+Following [intense discussion during the proposal phase](https://socialhub.activitypub.rocks/t/policy-proposal-socialhub-community-values/1453) @rhiaro updated the Policy to make it clear we are not trying to place unreasonable burdens on developers or other participants in open source communities who can’t be held responsible for actions of wider communities or other users of their projects.
+
+The policy above is destined to anyone willing to become a member of the SocialHub community, and applied here to @trust_level_1 -- a group you&#39;re automatically part of when you spend a few minutes reading around...
+
+### Here&#39;s how it plays...
+
+Once you&#39;re in this group, you will receive a _weekly_ reminder until you accept or refuse the policy.
+
+You can simply click the &quot;I agree to abide by these rules&quot; button to accept the policy. If you want to refuse the policy, you first have to click the same button, and then the &quot;I disagree and will go elsewhere&quot; button.  
+
+- Accounts with no policy agreement or with disagreement will be suspended indefinitely.
+- Accounts who do not abide by these rules will be removed as well.
+[/details]
+
+### Proposal stage
+
+The proposal stage got some intense discussion which is now archived at https://socialhub.activitypub.rocks/t/policy-proposal-socialhub-community-values/1453.</description>
+    
+    <lastBuildDate>Sat, 01 May 2021 12:53:24 +0000</lastBuildDate>
+    <category>SocialHub Policy</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/socialhub-community-values-policy/1391.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>SocialHub Community Values Policy</title>
+        <dc:creator><![CDATA[hamishcampbell]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="system" data-post="1" data-topic="1391">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/uploads/default/original/1X/2957f9f20df131569f26dd7b28bbe7f4af5739f5.png" class="avatar"> system:</div>
+<blockquote>
+<ul>
+<li>oppression, or encouraging oppression, of vulnerable people or minority groups.</li>
+<li>planning, encouragement of or inciting violence against vulnerable people.</li>
+<li>promoting fascism, nazism or other authoritarian systems and practices.</li>
+<li>perpetuating, promoting, or enacting systematic injustices, such as racism, sexism, homophobia, transphobia.</li>
+</ul>
+</blockquote>
+</aside>
+<p>The must be a better way of wording things like this… each statement is basically saying the same thing.</p>
+<p>Why not just have the one statement and what would this be?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/socialhub-community-values-policy/1391/57">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/socialhub-community-values-policy/1391/57</link>
+        <pubDate>Sat, 01 May 2021 12:53:24 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1391-57</guid>
+        <source url="https://socialhub.activitypub.rocks/t/socialhub-community-values-policy/1391.rss">SocialHub Community Values Policy</source>
+      </item>
+      <item>
+        <title>SocialHub Community Values Policy</title>
+        <dc:creator><![CDATA[nutomic]]></dc:creator>
+        <description><![CDATA[
+            <p>I agree with almost all of this, but this part is very unclear and vague: “promoting […] authoritarian systems and practices”. What is your definition of “authoritarian” here? The interpretation might be very different depending on who you ask, even including any state government according to some anarchists.</p>
+<p>Edit: I also found this sentence very complicated, and had to read the previous discussion to understand what it means. I believe it could be rewritten in a clearer way, by splitting it into two or more sentences. “With that in mind, we do not welcome participation (however polite) by contributors to projects which are designed or primarily used for…”</p>
+<p>Edit: I agreed to the statement because it keeps bugging me and I dont plan to talk about politics on here anyway. Still I would be curious about a reply to my doubts.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/socialhub-community-values-policy/1391/56">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/socialhub-community-values-policy/1391/56</link>
+        <pubDate>Sat, 20 Mar 2021 16:54:55 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1391-56</guid>
+        <source url="https://socialhub.activitypub.rocks/t/socialhub-community-values-policy/1391.rss">SocialHub Community Values Policy</source>
+      </item>
+      <item>
+        <title>SocialHub Community Values Policy</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="system" data-post="1" data-topic="1391">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/uploads/default/original/1X/2957f9f20df131569f26dd7b28bbe7f4af5739f5.png" class="avatar"> system:</div>
+<blockquote>
+<p>we acknowledge that Web and communication technologies are inherently political</p>
+</blockquote>
+</aside>
+<p>What if I don’t acknowledge that? I don’t want to be constantly sent notifications about this topic that I can’t seem to find a way to disable.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/socialhub-community-values-policy/1391/54">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/socialhub-community-values-policy/1391/54</link>
+        <pubDate>Sat, 20 Mar 2021 00:41:32 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1391-54</guid>
+        <source url="https://socialhub.activitypub.rocks/t/socialhub-community-values-policy/1391.rss">SocialHub Community Values Policy</source>
+      </item>
+      <item>
+        <title>SocialHub Community Values Policy</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>55 posts were merged into an existing topic: <a href="/t/policy-proposal-socialhub-community-values/1453/2">Policy Proposal: SocialHub Community Values</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/socialhub-community-values-policy/1391/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/socialhub-community-values-policy/1391/3</link>
+        <pubDate>Fri, 19 Feb 2021 16:47:50 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1391-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/socialhub-community-values-policy/1391.rss">SocialHub Community Values Policy</source>
+      </item>
+      <item>
+        <title>SocialHub Community Values Policy</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://socialhub.activitypub.rocks/t/socialhub-community-values-policy/1391/51">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/socialhub-community-values-policy/1391/51</link>
+        <pubDate>Fri, 05 Feb 2021 08:40:47 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1391-51</guid>
+        <source url="https://socialhub.activitypub.rocks/t/socialhub-community-values-policy/1391.rss">SocialHub Community Values Policy</source>
+      </item>
+      <item>
+        <title>SocialHub Community Values Policy</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>6 posts were split to a new topic: <a href="/t/carefoo-vs-socialhub-moderation/1407">CareFOO vs SocialHub Moderation</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/socialhub-community-values-policy/1391/43">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/socialhub-community-values-policy/1391/43</link>
+        <pubDate>Thu, 04 Feb 2021 23:36:12 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1391-43</guid>
+        <source url="https://socialhub.activitypub.rocks/t/socialhub-community-values-policy/1391.rss">SocialHub Community Values Policy</source>
+      </item>
+      <item>
+        <title>SocialHub Community Values Policy</title>
+        <dc:creator><![CDATA[system]]></dc:creator>
+        <description><![CDATA[
+            <h2>Be CareFOO!</h2>
+<p>Happy to introduce the “Care FOO” policy! Please take the time to read it thoroughly.</p>
+<hr>
+<div class="policy" data-group="trust_level_1" data-version="1" data-reminder="weekly" data-accept="I agree to abide by these values" data-revoke="I disagree and will go elsewhere">
+<h1>We Care For Our Own</h1>
+<p>Members of the Social Web Incubator CG agree to abide by the <a href="https://www.w3.org/Consortium/cepc/">W3C Code of Ethics and Professional Conduct</a>.</p>
+<p>On top of this, we acknowledge that Web and communication technologies are inherently political and can be used to cause harm, against the intent of the original creators. We recognise power imbalances already endemic in the tech industry, and in Social Web systems in mainstream use. With that in mind, we do not welcome participation (however polite) by contributors to projects which are designed or primarily used for:</p>
+<ul>
+<li>oppression, or encouraging oppression, of vulnerable people or minority groups.</li>
+<li>planning, encouragement of or inciting violence against vulnerable people.</li>
+<li>promoting fascism, nazism or other authoritarian systems and practices.</li>
+<li>perpetuating, promoting, or enacting systematic injustices, such as racism, sexism, homophobia, transphobia.</li>
+</ul>
+<p>We are vigilant for the use of imagery, language and dogwhistles related to such behaviours. We reserve the right to exclude projects which tolerate such behaviours within their communities, or have not made a good faith effort to discourage such behaviours.</p>
+<p>The intent of this policy is <em>not</em> to exclude wholesale any developers involved with projects or communities who unknowingly interact with bad actors, or who are struggling to or unable to eliminate behavior that goes against this policy in their wider communities. Similarly, we do not expect developers of open source projects to be responsible for every installation or fork of their codebase and will of course take the realities of this into account when making any moderation decisions.</p>
+<p>SocialCG chairs and forum administrators may use their discretion to remove posts or suspend user accounts. SocialCG chairs may similarly refuse access to or remove individuals from virtual meetings.</p>
+</div>
+<h3>Active stage</h3>
+<p>The policy is now active, from <span data-date="2021-02-19" class="discourse-local-date" data-timezone="Europe/Brussels" data-email-preview="2021-02-18T23:00:00Z UTC">2021-02-18T23:00:00Z</span>.</p>
+<details>
+<summary>
+Policy Details</summary>
+<h2>Details</h2>
+<h3>It does concern you!</h3>
+<p>Following <a href="https://socialhub.activitypub.rocks/t/policy-proposal-socialhub-community-values/1453">intense discussion during the proposal phase</a> <a class="mention" href="/u/rhiaro">@rhiaro</a> updated the Policy to make it clear we are not trying to place unreasonable burdens on developers or other participants in open source communities who can’t be held responsible for actions of wider communities or other users of their projects.</p>
+<p>The policy above is destined to anyone willing to become a member of the SocialHub community, and applied here to <a class="mention-group" href="/groups/trust_level_1">@trust_level_1</a> – a group you’re automatically part of when you spend a few minutes reading around…</p>
+<h3>Here’s how it plays…</h3>
+<p>Once you’re in this group, you will receive a <em>weekly</em> reminder until you accept or refuse the policy.</p>
+<p>You can simply click the “I agree to abide by these rules” button to accept the policy. If you want to refuse the policy, you first have to click the same button, and then the “I disagree and will go elsewhere” button.</p>
+<ul>
+<li>Accounts with no policy agreement or with disagreement will be suspended indefinitely.</li>
+<li>Accounts who do not abide by these rules will be removed as well.</li>
+</ul>
+</details>
+<h3>Proposal stage</h3>
+<p>The proposal stage got some intense discussion which is now archived at <a href="https://socialhub.activitypub.rocks/t/policy-proposal-socialhub-community-values/1453">https://socialhub.activitypub.rocks/t/policy-proposal-socialhub-community-values/1453</a>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/socialhub-community-values-policy/1391/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/socialhub-community-values-policy/1391/1</link>
+        <pubDate>Tue, 02 Feb 2021 13:57:28 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1391-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/socialhub-community-values-policy/1391.rss">SocialHub Community Values Policy</source>
+      </item>
+  </channel>
+</rss>

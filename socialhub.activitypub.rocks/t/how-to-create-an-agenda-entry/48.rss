@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How to Create an Agenda Entry?</title>
+    <link>https://socialhub.activitypub.rocks/t/how-to-create-an-agenda-entry/48</link>
+    <description>Continuing the discussion from [Let us Meet Up!](https://socialhub.activitypub.rocks/t/let-us-meet-up/21):
+
+_This is a wiki._
+
+## How to Create an Agenda Entry?
+
+Categories under #meeting offer an agenda functionality to keep track of events. 
+
+Agenda entries are associated with a topic. When creating a topic, if there is an existing URL associated to the event you want to announce, please paste that link in the &quot;topic title&quot; field. This must be the first thing you do, otherwise the system won&#39;t associate the link. You also need to keep the URL in the post! Sometimes you may have to change the title to replace the URL with something more descriptive.
+
+The new topic interface will present you with an &quot;Add date and time&quot; button with some options:
+- always use the `UTC` timezone: the interface will transform this for each user (you can set your preferred timezone in your preferences.)
+- always enable RSVP so that we can have a clue how many people are going to attend.
+- you may enter an ending date if you know it in advance.</description>
+    
+    <lastBuildDate>Wed, 09 Oct 2019 16:44:56 +0000</lastBuildDate>
+    <category>Meeting</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/how-to-create-an-agenda-entry/48.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How to Create an Agenda Entry?</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>I activated the calendar in <span class="hashtag">#meeting:</span></p>
+<p><a href="https://socialhub.activitypub.rocks/c/meeting/l/calendar">https://socialhub.activitypub.rocks/c/meeting/l/calendar</a></p>
+<p>You may subscribe to the iCal feed or RSS feed.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/how-to-create-an-agenda-entry/48/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/how-to-create-an-agenda-entry/48/3</link>
+        <pubDate>Wed, 09 Oct 2019 16:44:56 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-48-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/how-to-create-an-agenda-entry/48.rss">How to Create an Agenda Entry?</source>
+      </item>
+      <item>
+        <title>How to Create an Agenda Entry?</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Generally a subscribable iCalendar would help very much not to miss meetings.<br>
+I just found this <a href="https://www.discourse.org/plugins/calendar.html" rel="nofollow noopener">https://www.discourse.org/plugins/calendar.html</a> but it says<br>
+“Calendar is available on <a href="https://www.discourse.org/pricing" rel="nofollow noopener">Enterprise hosting plans</a>”</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/how-to-create-an-agenda-entry/48/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/how-to-create-an-agenda-entry/48/2</link>
+        <pubDate>Thu, 03 Oct 2019 16:58:23 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-48-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/how-to-create-an-agenda-entry/48.rss">How to Create an Agenda Entry?</source>
+      </item>
+      <item>
+        <title>How to Create an Agenda Entry?</title>
+        <dc:creator><![CDATA[system]]></dc:creator>
+        <description><![CDATA[
+            <p>Continuing the discussion from <a href="https://socialhub.activitypub.rocks/t/let-us-meet-up/21">Let us Meet Up!</a>:</p>
+<p><em>This is a wiki.</em></p>
+<h2>How to Create an Agenda Entry?</h2>
+<p>Categories under <a class="hashtag" href="/c/11-meeting">#<span>meeting</span></a> offer an agenda functionality to keep track of events.</p>
+<p>Agenda entries are associated with a topic. When creating a topic, if there is an existing URL associated to the event you want to announce, please paste that link in the “topic title” field. This must be the first thing you do, otherwise the system won’t associate the link. You also need to keep the URL in the post! Sometimes you may have to change the title to replace the URL with something more descriptive.</p>
+<p>The new topic interface will present you with an “Add date and time” button with some options:</p>
+<ul>
+<li>always use the <code>UTC</code> timezone: the interface will transform this for each user (you can set your preferred timezone in your preferences.)</li>
+<li>always enable RSVP so that we can have a clue how many people are going to attend.</li>
+<li>you may enter an ending date if you know it in advance.</li>
+</ul>
+          <p><a href="https://socialhub.activitypub.rocks/t/how-to-create-an-agenda-entry/48/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/how-to-create-an-agenda-entry/48/1</link>
+        <pubDate>Fri, 13 Sep 2019 14:58:27 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-48-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/how-to-create-an-agenda-entry/48.rss">How to Create an Agenda Entry?</source>
+      </item>
+  </channel>
+</rss>

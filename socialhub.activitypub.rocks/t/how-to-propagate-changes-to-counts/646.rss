@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How to propagate changes to &quot;counts&quot;</title>
+    <link>https://socialhub.activitypub.rocks/t/how-to-propagate-changes-to-counts/646</link>
+    <description>Several places in the spec designate a change to a count as a side effect, e.g. receiving accepted Follow activity increases actor&#39;s followers count. How do you propagate that new count to federated servers? Send an &quot;Update&quot; for the Actor object or for that specific followers collection?</description>
+    
+    <lastBuildDate>Sat, 02 May 2020 07:46:23 +0000</lastBuildDate>
+    <category>ActivityPub</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/how-to-propagate-changes-to-counts/646.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How to propagate changes to &quot;counts&quot;</title>
+        <dc:creator><![CDATA[yvolk]]></dc:creator>
+        <description><![CDATA[
+            <p>Aha, so you are thinking about a way to make Fediverse (servers or client apps) know that some Actor’s property (e.g. count of posts by this Actor or count of Actor’s followers) changed.<br>
+As some properties (e.g. count of posts or likes) could change very often, I don’t think that any Actor’s object updates should be broadcasted (e.g. to other servers…)<br>
+If anybody is interested in current state they can easily query the source as you noted.<br>
+But do you think that if my ActorA follows ActorB,  ActorA should receive not only ActorB’s Activities (which already may contain updated ActorB’s object), but separately explicit updates of the ActorB’s object??? Too much, I would say.<br>
+Anyway, having “update” property in the Actor’s object allows any client or server to know, how old is the object’s information. And update it if or when necessary.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/how-to-propagate-changes-to-counts/646/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/how-to-propagate-changes-to-counts/646/6</link>
+        <pubDate>Sat, 02 May 2020 07:46:23 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-646-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/how-to-propagate-changes-to-counts/646.rss">How to propagate changes to &quot;counts&quot;</source>
+      </item>
+      <item>
+        <title>How to propagate changes to &quot;counts&quot;</title>
+        <dc:creator><![CDATA[datatitian]]></dc:creator>
+        <description><![CDATA[
+            <p>What I do mean is you’d fetch Actor B from its source when one of your users follows it, and then assume Actor B is up-to-date until Actor B sends you an “Update” activity for their actor object</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/how-to-propagate-changes-to-counts/646/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/how-to-propagate-changes-to-counts/646/5</link>
+        <pubDate>Sat, 02 May 2020 02:18:54 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-646-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/how-to-propagate-changes-to-counts/646.rss">How to propagate changes to &quot;counts&quot;</source>
+      </item>
+      <item>
+        <title>How to propagate changes to &quot;counts&quot;</title>
+        <dc:creator><![CDATA[yvolk]]></dc:creator>
+        <description><![CDATA[
+            <p>Do you mean that when I receive activity “ActorA follows ActorB” I should assume that ActorB’s object is up-to-date at the date of the activity creation? In this exactly case I wouldn’t trust the activity at all, because it was not sent by ActorB (whose object I consider for update), and ActorA could use for his Activity outdated (or incomplete) ActorB’s object?!<br>
+Anyway, here we are talking now about guesses. But if we had “update” property in Actor object, we could simply compare dates?!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/how-to-propagate-changes-to-counts/646/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/how-to-propagate-changes-to-counts/646/4</link>
+        <pubDate>Thu, 30 Apr 2020 18:19:41 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-646-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/how-to-propagate-changes-to-counts/646.rss">How to propagate changes to &quot;counts&quot;</source>
+      </item>
+      <item>
+        <title>How to propagate changes to &quot;counts&quot;</title>
+        <dc:creator><![CDATA[datatitian]]></dc:creator>
+        <description><![CDATA[
+            <p>Does watching for “Update” activities that target the actor/actor’s collections not tell you when to update, or are the current implementations not sending those?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/how-to-propagate-changes-to-counts/646/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/how-to-propagate-changes-to-counts/646/3</link>
+        <pubDate>Thu, 30 Apr 2020 18:08:02 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-646-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/how-to-propagate-changes-to-counts/646.rss">How to propagate changes to &quot;counts&quot;</source>
+      </item>
+      <item>
+        <title>How to propagate changes to &quot;counts&quot;</title>
+        <dc:creator><![CDATA[yvolk]]></dc:creator>
+        <description><![CDATA[
+            <p>In my view, as a Client application’s  developer, the main problem in updating Actor’s properties is to figure out if I need to update Actor’s object at all or not. So I think that the main task on ANY Actor object’s changes is to change the object’s “update” property.<br>
+If any recipient (app…) receives the Actor’s object (as a part of that Actor’s Activity… so it can trust the data…) and notices that local copy has older “updated” date, then that recipient (app) knows that locally stored object should be updated, including any “counts”. This will be that “propagation” of all properties and counts, I think <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"><br>
+Unfortunately, as I see, current ActivityPub implementations (what I see in Pleroma and in Mastodon) don’t have this property in Actor’s object at all <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/frowning.png?v=9" title=":frowning:" class="emoji" alt=":frowning:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/how-to-propagate-changes-to-counts/646/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/how-to-propagate-changes-to-counts/646/2</link>
+        <pubDate>Thu, 30 Apr 2020 17:18:21 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-646-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/how-to-propagate-changes-to-counts/646.rss">How to propagate changes to &quot;counts&quot;</source>
+      </item>
+      <item>
+        <title>How to propagate changes to &quot;counts&quot;</title>
+        <dc:creator><![CDATA[datatitian]]></dc:creator>
+        <description><![CDATA[
+            <p>Several places in the spec designate a change to a count as a side effect, e.g. receiving accepted Follow activity increases actor’s followers count. How do you propagate that new count to federated servers? Send an “Update” for the Actor object or for that specific followers collection?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/how-to-propagate-changes-to-counts/646/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/how-to-propagate-changes-to-counts/646/1</link>
+        <pubDate>Tue, 28 Apr 2020 17:47:47 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-646-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/how-to-propagate-changes-to-counts/646.rss">How to propagate changes to &quot;counts&quot;</source>
+      </item>
+  </channel>
+</rss>

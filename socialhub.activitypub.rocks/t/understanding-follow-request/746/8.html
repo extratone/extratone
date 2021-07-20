@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Understanding follow request - #8 by aschrijver - Server to Server - SocialHub</title>
+    <meta name="description" content="In addition to the documentation, I am trying to understand the ActivityPub protocol through replaying messages to a personal server. I am trying to understand how Follow requests work, but running into problems. 
+
+Where&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="../746.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Understanding follow request&#39;" href="../746.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/understanding-follow-request/746/8" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/understanding-follow-request/746/8" />
+<meta property="og:title" content="Understanding follow request" />
+<meta name="twitter:title" content="Understanding follow request" />
+<meta property="og:description" content="@dansup’s FediDB might be able to help with HTTP Signatures, but I’m not sure if it is still in private beta (you may request access from dansup)." />
+<meta name="twitter:description" content="@dansup’s FediDB might be able to help with HTTP Signatures, but I’m not sure if it is still in private beta (you may request access from dansup)." />
+<meta property="article:published_time" content="2020-06-26T09:32:16+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="../746.html">Understanding follow request</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../../c/activitypub.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #0088CC'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>ActivityPub</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../../c/activitypub/s2s/7.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #808281'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Server to Server</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/farhan.html'><span itemprop='name'>farhan</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../746.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-06-11T20:17:02Z' class='post-time'>
+                June 11, 2020,  8:17pm
+              </time>
+              <meta itemprop='dateModified' content='2020-06-11T20:17:02Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>In addition to the documentation, I am trying to understand the ActivityPub protocol through replaying messages to a personal server. I am trying to understand how Follow requests work, but running into problems.</p>
+<ol>
+<li>Where in the protocol documentation is the Follow example JSON?</li>
+<li>What is the UUID value in the ID? How is that generated?</li>
+<li>Why is the following request failing? I receive an internal error, as noted below:</li>
+</ol>
+<p><code>$ curl \ -H 'Content-Type: application/activity+json' \ https://testserver.farhan.codes/inbox/ -d '{"@context":["https://www.w3.org/ns/activitystreams","https://dev.farhan.codes/schemas/litepub-0.1.jsonld",{"@language":"und"}],"actor":"https://dev.farhan.codes/users/farhan","cc":["https://www.w3.org/ns/activitystreams#Public"],"id":"https://testserver.farhan.codes/activities/47e0a50f-fa4b-4339-bf3c-ec7e927379e7","object":"https://testserver.farhan.codes/users/farhan","published":"2020-06-11T06:02:42.553779Z","state":"pending","to":["https://testserver.farhan.codes/users/farhan"],"type":"Follow"}' {"errors":{"detail":"Internal server error"}}</code></p>
+<p>Please advise. Thanks!</p>
+        </div>
+
+        <meta itemprop='headline' content='Understanding follow request'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/farhan.html'><span itemprop='name'>farhan</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../746.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-06-12T05:08:43Z' class='post-time'>
+                June 12, 2020,  5:08am
+              </time>
+              <meta itemprop='dateModified' content='2020-06-12T05:08:43Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>The answer to the second appears to be arbitrary by the server.<br>
+However, I cannot find the answer to the other two questions in the documentation.</p>
+<p>Why would a replay fail? Is this a problem in the protocol?</p>
+        </div>
+
+        <meta itemprop='headline' content='Understanding follow request'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../746.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-06-14T15:11:29Z'>
+              <time itemprop='dateModified' datetime='2020-06-14T15:14:44Z' class='post-time'>
+                June 14, 2020,  3:14pm
+              </time>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="farhan" data-post="1" data-topic="746">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/farhan/40/382_2.png" class="avatar"> farhan:</div>
+<blockquote>
+<p>Where in the protocol documentation is the Follow example JSON?</p>
+</blockquote>
+</aside>
+<p>I don’t think there is one.</p>
+<aside class="quote no-group" data-username="farhan" data-post="1" data-topic="746">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/farhan/40/382_2.png" class="avatar"> farhan:</div>
+<blockquote>
+<p>What is the UUID value in the ID? How is that generated?</p>
+</blockquote>
+</aside>
+<p>This is generated arbitrarily by the server that sends it. To make sure your implementation is interoperable, you shouldn’t attempt to interpret it beyond making sure it’s a valid URI.</p>
+<aside class="quote no-group" data-username="farhan" data-post="1" data-topic="746">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/farhan/40/382_2.png" class="avatar"> farhan:</div>
+<blockquote>
+<p>Why is the following request failing? I receive an internal error, as noted below:</p>
+</blockquote>
+</aside>
+<p>You need to have the actor object publicly available at the URL you specify for <code>actor</code> (the receiving server will fetch it), it needs to have a public RSA key, and you need to sign your request with the private counterpart of that key. See <a href="https://blog.joinmastodon.org/2018/06/how-to-implement-a-basic-activitypub-server/" rel="nofollow noopener">this</a> and <a href="https://blog.joinmastodon.org/2018/07/how-to-make-friends-and-verify-requests/" rel="nofollow noopener">this</a> for details.</p>
+        </div>
+
+        <meta itemprop='headline' content='Understanding follow request'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/rinpatch.html'><span itemprop='name'>rinpatch</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../746.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-06-15T21:03:31Z'>
+              <time itemprop='dateModified' datetime='2020-06-15T21:03:42Z' class='post-time'>
+                June 15, 2020,  9:03pm
+              </time>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>The server in your example is down, but judging by the URI structure I am guessing this is a Pleroma server.</p>
+<p>There are several problems with the request in your example:</p>
+<ol>
+<li>It’s not signed, Pleroma requires requests to be signed, or for the activity to be publicly fetchable</li>
+<li>The id of the activity is not on the same host the actor is, which is also a requirement for Pleroma.</li>
+</ol>
+        </div>
+
+        <meta itemprop='headline' content='Understanding follow request'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/farhan.html'><span itemprop='name'>farhan</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../746.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-06-26T06:08:30Z' class='post-time'>
+                June 26, 2020,  6:08am
+              </time>
+              <meta itemprop='dateModified' content='2020-06-26T06:08:30Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <ol>
+<li>
+<p>What would a signed request look like? The specific JSON-LD?</p>
+</li>
+<li>
+<p>How would a “generic” request from any particular system look like? What does the JSON-LD look like?</p>
+</li>
+</ol>
+<p>I can’t find an example or documentation that says how I need to do this…</p>
+        </div>
+
+        <meta itemprop='headline' content='Understanding follow request'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/farhan.html'><span itemprop='name'>farhan</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../746.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-06-26T06:10:12Z' class='post-time'>
+                June 26, 2020,  6:10am
+              </time>
+              <meta itemprop='dateModified' content='2020-06-26T06:10:12Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>What would the JSON-LD of a signed request look like? Can you give me an example? I cannot find one anywhere and my attempts to reverse engineer a follow request do not know the signing you are referencing.</p>
+<p>I’ve been stuck for weeks now…</p>
+        </div>
+
+        <meta itemprop='headline' content='Understanding follow request'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/aschrijver.html'><span itemprop='name'>aschrijver</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../746.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-06-26T09:32:16Z' class='post-time'>
+                June 26, 2020,  9:32am
+              </time>
+              <meta itemprop='dateModified' content='2020-06-26T09:32:16Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../../u/dansup.html">@dansup</a>’s <a href="../../introducing-fedidb-devtools-for-activitypub/660.html">FediDB</a> might be able to help with HTTP Signatures, but I’m not sure if it is still in private beta (you may request access from dansup).</p>
+        </div>
+
+        <meta itemprop='headline' content='Understanding follow request'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../746.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-06-26T10:23:46Z' class='post-time'>
+                June 26, 2020, 10:23am
+              </time>
+              <meta itemprop='dateModified' content='2020-06-26T10:23:46Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>HTTP signature is sent as an HTTP header. You should definitely read the Mastodon tutorial I linked.</p>
+<p>Here’s what an activity request looks like with both HTTP signature (in headers) and LD-signature (<code>signature</code> field in JSON-LD itself):</p>
+<pre><code class="lang-auto">POST /activitypub/sharedInbox HTTP/1.1
+Signature: keyId="http://smithereen.local:8080/users/1#main-key",headers="(request-target) host date",signature="bh7lKy7gKmLqCXUJtHZxYV5r8wqMrWyeu7QvB8mkwMJuiNSqLtAcWZuM06WeerES0EZNFi+CdlfV+ssmsGUXl8lprdnyBRh0y6FCCqMnrBTq+Tsspn54QfC3nPUZKXPiED6BwOFuwuq7GWSifxEdKMF+Csy8dtlh+IcAWxCniWm/9npM3Bomk8fkBeezGE6obGG4xFtMMYEu9NBGgzF/UVMRVc3LnJKAzlubxqTfqSJNyC3qhTycdHN0Du6E0nTM9WzqSDkOmsvP6Iw/Vr1b/NRRpaRh5pY7ZQvRR1G4ZIIP4fik6KX9iJp80EnbZbS9N8VuLmGU1enbUsMvV30Brg=="
+Date: Fri, 26 Jun 2020 10:16:04 GMT
+Content-Type: application/ld+json; profile="https://www.w3.org/ns/activitystreams"; charset=utf-8
+Content-Length: 1218
+Host: localhost2:7890
+Connection: Keep-Alive
+Accept-Encoding: gzip
+User-Agent: okhttp/3.2.0
+
+{"cc":["http://smithereen.local:8080/users/1/followers"],"actor":"http://smithereen.local:8080/users/1","signature":{"creator":"http://smithereen.local:8080/users/1#main-key","created":"2020-06-26T10:16:04Z","type":"RsaSignature2017","signatureValue":"FflQcL2S99CFCdSd22bOz0S2pZ59fsODQA4XRBz4Fxo1pwOWciP3WZUnfpumMFzTnHs96VTeg8d7yzW36mYkITkaMyul4touUiE31X5WRd5lpRTQbU7qKlsyJ4ScF5jrhW9v8o5QhmSixV9dB4Dqypy7xVPUj2aTbhXZHNdv3kNDjyimgWRHYKUTpwU7n17zRatGe+TmhX2j/pnngKsU9eTbY/hmbGRxr8GZe8nUlV3cruQhaxTW7MB4+1+EeZRfPo7T6O1drnYDxqpshS9N25SRXJHpofEUQX/CLHn0yFt6gZhftYyhEvxk9duXR49VFen75OqS6c8jSmfDs6xvfg=="},"id":"http://smithereen.local:8080/posts/111/activityCreate","published":"2020-06-26T10:16:04Z","to":["https://www.w3.org/ns/activitystreams#Public"],"type":"Create","@context":["https://www.w3.org/ns/activitystreams",{"sensitive":"as:sensitive"}],"object":{"cc":["http://smithereen.local:8080/users/1/followers"],"id":"http://smithereen.local:8080/posts/111","attributedTo":"http://smithereen.local:8080/users/1","published":"2020-06-26T10:16:04Z","to":["https://www.w3.org/ns/activitystreams#Public"],"sensitive":false,"type":"Note","content":"&lt;p&gt;Test for farhan&lt;\/p&gt;","url":"http://smithereen.local:8080/posts/111"}}
+</code></pre>
+<p>You don’t need LD-signatures now though. You only need HTTP as those are enough to participate in the network.</p>
+        </div>
+
+        <meta itemprop='headline' content='Understanding follow request'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../746.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-06-26T10:29:29Z'>
+              <time itemprop='dateModified' datetime='2020-06-26T10:34:32Z' class='post-time'>
+                June 26, 2020, 10:34am
+              </time>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Also, here’s my implementation of HTTP signature in Java: <a href="https://github.com/grishka/Smithereen/blob/5122851e6d9e03f831597064d0ca8bb080a6d6f4/src/main/java/smithereen/activitypub/ActivityPub.java#L86-L108" rel="nofollow noopener">https://github.com/grishka/Smithereen/blob/5122851e6d9e03f831597064d0ca8bb080a6d6f4/src/main/java/smithereen/activitypub/ActivityPub.java#L86-L108</a></p>
+<p>Hope this helps.</p>
+        </div>
+
+        <meta itemprop='headline' content='Understanding follow request'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>About Pixelfed</title>
+    <link>https://socialhub.activitypub.rocks/t/about-pixelfed/160</link>
+    <description>Photo sharing. For everyone.
+
+[Pixelfed](https://pixelfed.org) is a free and ethical photo sharing platform, powered by ActivityPub federation.
+
+# GitHub
+
+- https://github.com/pixelfed/pixelfed -- source code
+- https://github.com/pixelfed/support -- issues with deployment
+- https://github.com/pixelfed/ideas -- file feature requests or suggestions here
+
+# Project chat
+
+- #pixelfed on freenode.net -- general discussion
+  - https://matrix.to/#/#freenode_#pixelfed:matrix.org -- Matrix bridge
+- #pixelfed_dev on freenode.net -- technical discussion
+
+# Social media
+
+- https://mastodon.social/@pixelfed -- project announcements
+- https://mastodon.social/@pixeldev -- dev announcements</description>
+    
+    <lastBuildDate>Wed, 23 Oct 2019 21:09:13 +0000</lastBuildDate>
+    <category>Pixelfed</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/about-pixelfed/160.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>About Pixelfed</title>
+        <dc:creator><![CDATA[trwnh]]></dc:creator>
+        <description><![CDATA[
+            <p>Photo sharing. For everyone.</p>
+<p><a href="https://pixelfed.org" rel="nofollow noopener">Pixelfed</a> is a free and ethical photo sharing platform, powered by ActivityPub federation.</p>
+<h1>GitHub</h1>
+<ul>
+<li>
+<a href="https://github.com/pixelfed/pixelfed" rel="nofollow noopener">https://github.com/pixelfed/pixelfed</a> – source code</li>
+<li>
+<a href="https://github.com/pixelfed/support" rel="nofollow noopener">https://github.com/pixelfed/support</a> – issues with deployment</li>
+<li>
+<a href="https://github.com/pixelfed/ideas" rel="nofollow noopener">https://github.com/pixelfed/ideas</a> – file feature requests or suggestions here</li>
+</ul>
+<h1>Project chat</h1>
+<ul>
+<li>
+<span class="hashtag">#pixelfed</span> on <a href="http://freenode.net" rel="nofollow noopener">freenode.net</a> – general discussion
+<ul>
+<li>
+<a href="https://matrix.to/#/#freenode_#pixelfed:matrix.org" rel="nofollow noopener">https://matrix.to/#/#freenode_#pixelfed:matrix.org</a> – Matrix bridge</li>
+</ul>
+</li>
+<li>
+<span class="hashtag">#pixelfed_dev</span> on <a href="http://freenode.net" rel="nofollow noopener">freenode.net</a> – technical discussion</li>
+</ul>
+<h1>Social media</h1>
+<ul>
+<li>
+<a href="https://mastodon.social/@pixelfed" rel="nofollow noopener">https://mastodon.social/@pixelfed</a> – project announcements</li>
+<li>
+<a href="https://mastodon.social/@pixeldev" rel="nofollow noopener">https://mastodon.social/@pixeldev</a> – dev announcements</li>
+</ul>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-pixelfed/160/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-pixelfed/160/1</link>
+        <pubDate>Tue, 22 Oct 2019 07:18:25 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-160-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-pixelfed/160.rss">About Pixelfed</source>
+      </item>
+  </channel>
+</rss>

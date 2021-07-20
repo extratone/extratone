@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Ping and Pong activities - Server to Server - SocialHub</title>
+    <meta name="description" content="A proposal for a new activity which can help diagnose federation failures. There’s a lot of moving parts (IP, DNS, SSL, proxies) between two servers, and it’s often a mystery why two servers don’t seem to communicate, le&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="251.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Ping and Pong activities&#39;" href="https://socialhub.activitypub.rocks/t/ping-and-pong-activities/251.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/ping-and-pong-activities/251" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/ping-and-pong-activities/251" />
+<meta property="og:title" content="Ping and Pong activities" />
+<meta name="twitter:title" content="Ping and Pong activities" />
+<meta property="og:description" content="A proposal for a new activity which can help diagnose federation failures. There’s a lot of moving parts (IP, DNS, SSL, proxies) between two servers, and it’s often a mystery why two servers don’t seem to communicate, leading to a lot of ‘can you hear me now?’.  I cooked this up in the early days of honk, and despite nobody else implementing it, it was quite useful. I think other implementations would benefit as well.  – rationale  Diagnosing communication failures between federated servers ofte..." />
+<meta name="twitter:description" content="A proposal for a new activity which can help diagnose federation failures. There’s a lot of moving parts (IP, DNS, SSL, proxies) between two servers, and it’s often a mystery why two servers don’t seem to communicate, leading to a lot of ‘can you hear me now?’.  I cooked this up in the early days of honk, and despite nobody else implementing it, it was quite useful. I think other implementations would benefit as well.  – rationale  Diagnosing communication failures between federated servers ofte..." />
+<meta property="article:published_time" content="2019-10-29T23:59:52+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="251.html">Ping and Pong activities</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/activitypub.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #0088CC'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>ActivityPub</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/activitypub/s2s/7.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #808281'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Server to Server</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/tedu.html'><span itemprop='name'>tedu</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="251.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-10-29T23:59:52Z' class='post-time'>
+                October 29, 2019, 11:59pm
+              </time>
+              <meta itemprop='dateModified' content='2019-10-29T23:59:52Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>A proposal for a new activity which can help diagnose federation failures. There’s a lot of moving parts (IP, DNS, SSL, proxies) between two servers, and it’s often a mystery why two servers don’t seem to communicate, leading to a lot of ‘can you hear me now?’.</p>
+<p>I cooked this up in the early days of honk, and despite nobody else implementing it, it was quite useful. I think other implementations would benefit as well.</p>
+<p>– rationale</p>
+<p>Diagnosing communication failures between federated servers often requires<br>
+sending test messages. There is no dedicated activity type for this purpose,<br>
+however, and thus many operators use normal notes. This creates unnecessary<br>
+noise. It would be better to have a side effect free message that can be<br>
+triggered and sent on demand.</p>
+<p>The proposed Ping and corresponding Pong activities are similar to the ICMP<br>
+echo request and echo reply messages. (c.f. the familiar ping tool.)</p>
+<p>Other online social contexts often use the term ping to refer to a variety<br>
+of activities. The activity here is unrelated to any user visible activity or<br>
+action.</p>
+<p>– message format</p>
+<p>The ping message has a type of Ping. Here, user pinger on server<br>
+<a href="http://h1.example.com" rel="nofollow noopener">h1.example.com</a> is sending a Ping to testrcpt on <a href="http://h2.example.com" rel="nofollow noopener">h2.example.com</a>.</p>
+<p>{<br>
+“<span class="mention">@context</span>”: “<a href="https://www.w3.org/ns/activitystreams" rel="nofollow noopener">https://www.w3.org/ns/activitystreams</a>”,<br>
+“type”: “Ping”,<br>
+“id”: “<a href="https://h1.example.com/u/pinger/ping/r4nd0m1d" rel="nofollow noopener">https://h1.example.com/u/pinger/ping/r4nd0m1d</a>”,<br>
+“actor”: “<a href="https://h1.example.com/u/pinger" rel="nofollow noopener">https://h1.example.com/u/pinger</a>”,<br>
+“to”: “<a href="https://h2.example.com/u/testrcpt" rel="nofollow noopener">https://h2.example.com/u/testrcpt</a>”<br>
+}</p>
+<p>The Pong message is similar, but includes an object field quoting the Ping id<br>
+field.</p>
+<p>{<br>
+“<span class="mention">@context</span>”: “<a href="https://www.w3.org/ns/activitystreams" rel="nofollow noopener">https://www.w3.org/ns/activitystreams</a>”,<br>
+“type”: “Pong”,<br>
+“id”: “<a href="https://h2.example.com/u/testrcpt/pong/0pp0s1t3" rel="nofollow noopener">https://h2.example.com/u/testrcpt/pong/0pp0s1t3</a>”,<br>
+“actor”: “<a href="https://h2.example.com/u/testrcpt" rel="nofollow noopener">https://h2.example.com/u/testrcpt</a>”,<br>
+“to”: “<a href="https://h1.example.com/u/pinger" rel="nofollow noopener">https://h1.example.com/u/pinger</a>”,<br>
+“object”: “<a href="https://h1.example.com/u/pinger/ping/r4nd0m1d" rel="nofollow noopener">https://h1.example.com/u/pinger/ping/r4nd0m1d</a>”<br>
+}</p>
+<p>Ping and Pong id fields look like URLs, but need not be fetchable. They are<br>
+only intended as transient messages.</p>
+<p>– semantics</p>
+<p>The Ping message should be sent from one actor to another, delivered to their<br>
+inbox. Upon receipt of a Ping message, a server should reply with a Pong<br>
+message. The Pong reply should quote the id of the Ping (just the id, not the<br>
+whole message) in the object field.</p>
+<p>Random ids may used. They should be probabilistically unique.</p>
+<p>The usual access and verification checks performed for other messages should<br>
+be performed for Ping and Pong as well. (If HTTP signatures are in use,<br>
+messages should be signed by senders and verified by receivers.)</p>
+<p>Ping and Pong messages should be queued using the normal facilities. (Don’t<br>
+fast track.) Messages should not be retried. After one failure, drop the<br>
+message.</p>
+<p>As these messages are intended as administrator aids, they should not be<br>
+displayed to end users. They should not cause any lasting change in the state<br>
+of either the sending or receiving server.</p>
+<p>Rate limiting and abuse controls apply as usual. Servers may choose to impose<br>
+length restrictions on maximum id length. A minimum of 256 bytes should be<br>
+supported.</p>
+<p>Servers which do not understand the Ping activity will hopefully ignore it.</p>
+<p>– usage</p>
+<p>It is unspecified how one initiates a ping, but it is expected to be a manual<br>
+operation performed by a system administrator. This will generate traffic,<br>
+which may then be logged. The admin reads the logs and solves the problem.<br>
+Specific problem solving instructions are not provided here.</p>
+<p>– future</p>
+<p>It may be helpful to have a variant of Ping that does perform retries to test<br>
+recovery after disconnect.</p>
+        </div>
+
+        <meta itemprop='headline' content='Ping and Pong activities'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nightpool.html'><span itemprop='name'>nightpool</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="251.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-10-30T00:48:31Z' class='post-time'>
+                October 30, 2019, 12:48am
+              </time>
+              <meta itemprop='dateModified' content='2019-10-30T00:48:31Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Why implement this rather then just use the normal activity handlers you’re going to have to implement anyway? Who cares about “unnecessary noise” on testing accounts? You’re still going to have to test stuff anyway, above and beyond what this Ping supports.</p>
+<aside class="quote no-group" data-post="1" data-topic="251">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../letter_avatar_proxy/v4/letter/t/bcef8e/40.png" class="avatar"> tedu:</div>
+<blockquote>
+<p>There’s a lot of moving parts (IP, DNS, SSL, proxies) between two servers, and it’s often a mystery why two servers don’t seem to communicate, leading to a lot of ‘can you hear me now?’.</p>
+</blockquote>
+</aside>
+<p>What benefit does a brand new activity type give to diagnosing these issues over just using a simple <code>curl</code> command?</p>
+        </div>
+
+        <meta itemprop='headline' content='Ping and Pong activities'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/lanodan.html'><span itemprop='name'>lanodan</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="251.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-11-02T14:49:08Z'>
+              <time itemprop='dateModified' datetime='2019-11-02T14:50:49Z' class='post-time'>
+                November 2, 2019,  2:50pm
+              </time>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>[2019-10-30 00:58:36+0000] nightpool via SocialHub:</p>
+<blockquote>
+<p>Why implement this rather then just use the normal activity handlers you’re going to have to implement anyway? Who cares about “unnecessary noise” on testing accounts? You’re still going to have to test stuff anyway, above and beyond what this Ping supports.</p>
+<aside class="quote no-group" data-post="1" data-topic="251">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../letter_avatar_proxy/v4/letter/t/bcef8e/40.png" class="avatar"> tedu:</div>
+<blockquote>
+<p>There’s a lot of moving parts (IP, DNS, SSL, proxies) between two servers, and it’s often a mystery why two servers don’t seem to communicate, leading to a lot of ‘can you hear me now?’.</p>
+</blockquote>
+</aside>
+<p>What benefit does a brand new activity type give to diagnosing these issues over just using a simple <code>curl</code> command?</p>
+</blockquote>
+<p>How would you know that a server is receiving you and you can receive from it with only <code>curl</code>, specially when testing between stuff like Peertube/Plume/… and Pleroma/Mastodon which don’t share a lot of Activity types?</p>
+<p>And I think this is more going to be useful for admins and maybe implementing something like a smokeping for stuff like fediverse.network as this way they can verify that a node is actually working rather than just “replies good data on endpoints that could be cached”.</p>
+        </div>
+
+        <meta itemprop='headline' content='Ping and Pong activities'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>About Kazarma</title>
+    <link>https://socialhub.activitypub.rocks/t/about-kazarma/1631</link>
+    <description>A Matrix-ActivityPub bridge
+
+&lt;https://gitlab.com/kazarma/kazarma/&gt;</description>
+    
+    <lastBuildDate>Wed, 02 Jun 2021 11:55:42 +0000</lastBuildDate>
+    <category>Kazarma</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/about-kazarma/1631.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>About Kazarma</title>
+        <dc:creator><![CDATA[Hadrien]]></dc:creator>
+        <description><![CDATA[
+            <p>There’s also the <a href="https://matrix.to/#/#kazarma:matrix.org?via=matrix.asso-fare.fr&amp;via=matrix.org&amp;via=t2bot.io" rel="noopener nofollow ugc">Matrix room about Kazarma</a>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-kazarma/1631/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-kazarma/1631/2</link>
+        <pubDate>Wed, 02 Jun 2021 11:55:42 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1631-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-kazarma/1631.rss">About Kazarma</source>
+      </item>
+      <item>
+        <title>About Kazarma</title>
+        <dc:creator><![CDATA[pdelacroix]]></dc:creator>
+        <description><![CDATA[
+            <p>A Matrix-ActivityPub bridge</p>
+<p><a href="https://gitlab.com/kazarma/kazarma/" rel="noopener nofollow ugc">https://gitlab.com/kazarma/kazarma/</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-kazarma/1631/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-kazarma/1631/1</link>
+        <pubDate>Tue, 20 Apr 2021 19:18:30 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1631-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-kazarma/1631.rss">About Kazarma</source>
+      </item>
+  </channel>
+</rss>

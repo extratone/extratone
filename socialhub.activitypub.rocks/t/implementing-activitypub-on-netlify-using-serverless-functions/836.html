@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Implementing ActivityPub on Netlify using serverless functions - ActivityPub - SocialHub</title>
+    <meta name="description" content="I’m excited to get involved with ActivityPub, and I decided it would be cool to set my blog up as a node in the fediverse. I’ve read a few documents describing activities, the inbox, and the outbox so I figured I would s&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="836.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Implementing ActivityPub on Netlify using serverless functions&#39;" href="https://socialhub.activitypub.rocks/t/implementing-activitypub-on-netlify-using-serverless-functions/836.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/implementing-activitypub-on-netlify-using-serverless-functions/836" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/implementing-activitypub-on-netlify-using-serverless-functions/836" />
+<meta property="og:title" content="Implementing ActivityPub on Netlify using serverless functions" />
+<meta name="twitter:title" content="Implementing ActivityPub on Netlify using serverless functions" />
+<meta property="og:description" content="I’m excited to get involved with ActivityPub, and I decided it would be cool to set my blog up as a node in the fediverse. I’ve read a few documents describing activities, the inbox, and the outbox so I figured I would start with a minimal implementation. My blog runs on Netlify, which supports serverless functions that I will use to implement my inbox and outbox.  I followed this article about getting set up, and webfinger and actor are working.  I set up a user on a Mastodon instance at https:..." />
+<meta name="twitter:description" content="I’m excited to get involved with ActivityPub, and I decided it would be cool to set my blog up as a node in the fediverse. I’ve read a few documents describing activities, the inbox, and the outbox so I figured I would start with a minimal implementation. My blog runs on Netlify, which supports serverless functions that I will use to implement my inbox and outbox.  I followed this article about getting set up, and webfinger and actor are working.  I set up a user on a Mastodon instance at https:..." />
+<meta property="article:published_time" content="2020-08-02T01:52:25+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="836.html">Implementing ActivityPub on Netlify using serverless functions</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/activitypub.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #0088CC'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>ActivityPub</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/wlindner.html'><span itemprop='name'>wlindner</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="836.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-08-02T01:52:25Z' class='post-time'>
+                August 2, 2020,  1:52am
+              </time>
+              <meta itemprop='dateModified' content='2020-08-02T01:52:25Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’m excited to get involved with ActivityPub, and I decided it would be cool to set my blog up as a node in the fediverse. I’ve read a few documents describing activities, the inbox, and the outbox so I figured I would start with a minimal implementation. My blog runs on Netlify, which supports serverless functions that I will use to implement my inbox and outbox.</p>
+<p>I followed <a href="https://blog.joinmastodon.org/2018/06/how-to-implement-a-basic-activitypub-server/" rel="nofollow noopener">this article</a> about getting set up, and <a href="https://william.cool/.well-known/webfinger" rel="nofollow noopener">webfinger</a> and <a href="https://william.cool/actor" rel="nofollow noopener">actor</a> are working.</p>
+<p>I set up a user on a Mastodon instance at <a href="https://fosstodon.org" rel="nofollow noopener">https://fosstodon.org</a>, then I searched for my user hosted by my blog and it worked. The search is <span class="mention">@william</span>@william.cool</p>
+<p>That’s good, but then when I actually open my blog user’s profile on fosstodon, I see no toots. Even though it correctly shows the total as 16, and I know it’s hitting my outbox endpoint because I can look at the logs for my blog.</p>
+<p>Ok, so then I try to follow my blog user and my inbox endpoint never gets called, so I can’t complete the follow request.</p>
+<p>I’m starting to feel like Mastodon expects additional API endpoints other than just the ActivityPub spec, but I’m still confused why my inbox is not getting called when I try to follow my self hosted account.</p>
+<p>Am I trying to do something ActivityPub was not intended for? I’d be happy to give any additional info, any suggestions are greatly appreciated.</p>
+        </div>
+
+        <meta itemprop='headline' content='Implementing ActivityPub on Netlify using serverless functions'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nightpool.html'><span itemprop='name'>nightpool</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="836.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-08-02T02:26:34Z' class='post-time'>
+                August 2, 2020,  2:26am
+              </time>
+              <meta itemprop='dateModified' content='2020-08-02T02:26:34Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group quote-modified" data-username="wlindner" data-post="1" data-topic="836">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/wlindner/40/379_2.png" class="avatar"> wlindner:</div>
+<blockquote>
+<p>I set up a user on a Mastodon instance at <a href="https://fosstodon.org">https://fosstodon.org</a>, then I searched for my user hosted by my blog and it worked. The search is @​william@william.cool</p>
+</blockquote>
+</aside>
+<p>Weirdly, the webfinger resolution works, but i get a timeout when trying to search for your actor ID, which seems to indicate that there’s something wrong with the way your Actor is being served. I’m seeing a <code>Content-Type: text/plain</code> response—you should make sure that it gets served with the proper <code>application/activity+json</code> content type, or it might break some servers.</p>
+<aside class="quote no-group" data-username="wlindner" data-post="1" data-topic="836">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/wlindner/40/379_2.png" class="avatar"> wlindner:</div>
+<blockquote>
+<p>That’s good, but then when I actually open my blog user’s profile on fosstodon, I see no toots. Even though it correctly shows the total as 16, and I know it’s hitting my outbox endpoint because I can look at the logs for my blog.</p>
+</blockquote>
+</aside>
+<p>Mastodon doesn’t read posts from the outbox. You have to POST activities to your follower’s inbox before Mastodon will display or process them.</p>
+<aside class="quote no-group" data-username="wlindner" data-post="1" data-topic="836">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/wlindner/40/379_2.png" class="avatar"> wlindner:</div>
+<blockquote>
+<p>Ok, so then I try to follow my blog user and my inbox endpoint never gets called, so I can’t complete the follow request.</p>
+</blockquote>
+</aside>
+<p>I’d need more info to debug this—I sent both a DM and a follow request from my local server (cybre.space) and they seemed to go through successfully. Do you have anything in your logs?</p>
+        </div>
+
+        <meta itemprop='headline' content='Implementing ActivityPub on Netlify using serverless functions'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/wlindner.html'><span itemprop='name'>wlindner</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="836.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-08-02T04:08:36Z'>
+              <time itemprop='dateModified' datetime='2020-08-02T04:09:54Z' class='post-time'>
+                August 2, 2020,  4:09am
+              </time>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Ok, cool. I fixed the <code>Content-Type</code> for the Actor to be <code>application/activity+json</code>, thanks for that!</p>
+<p>I’m not seeing DM’s or follow requests from your server in the logs, but I was able to confirm that the endpoint works by using this curl command<br>
+<code>curl -X POST -H "Content-Type: application/activity+json" -d @follow-activity.json https://william.cool/.netlify/functions/inbox</code></p>
+<p>This is the contents of <code>follow-activity.json</code></p>
+<pre><code class="lang-auto">{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "id": "https://fosstodon.org/users/wlindner/follow/240782",
+  "type": "Follow",
+  "actor": "https://fosstodon.org/users/wlindner",
+  "object": "https://william.cool/actor"
+}
+</code></pre>
+<p>It all comes through, so I’m not sure why your requests did not. Even stranger, I am seeing POST requests with Activity Json from various Mastodon servers with the Activity Type of <code>Delete</code>. If I had to guess, I’d say they are accounts that are getting deleted, and Mastodon must propagate that through all of the inboxes it knows about, or something? So… I guess it is able to find my inbox, it’s just not sending the DMs or Follow requests for some reason.</p>
+<p>What are you trying to do when you say “search for your actor ID”? Maybe I set up webfinger wrong. It doesn’t do a lookup, it’s just a static file that serves json since I only have 1 user.</p>
+<p>Both<br>
+<code>https://william.cool/.well-known/webfinger</code><br>
+and<br>
+<code>https://william.cool/.well-known/webfinger?resource=acct:william@william.cool</code><br>
+return what I expect and don’t time out for me.</p>
+        </div>
+
+        <meta itemprop='headline' content='Implementing ActivityPub on Netlify using serverless functions'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

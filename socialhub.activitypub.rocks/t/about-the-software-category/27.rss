@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>About the Software category</title>
+    <link>https://socialhub.activitypub.rocks/t/about-the-software-category/27</link>
+    <description>Discover and discuss ActivityPub implementations of all sizes and shapes.
+
+Each _free[^1]_ software can have its own sub-category (ask @staff or reply here).
+
+[^1]: free as in free speech: no proprietary software allowed here. Don&#39;t even bother wasting our time.
+
+You can use tags to find more details about:
+
+- #client software
+- #server software
+- #library software
+
+(etc)</description>
+    
+    <lastBuildDate>Thu, 22 Apr 2021 07:41:15 +0000</lastBuildDate>
+    <category>Software</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/about-the-software-category/27.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>About the Software category</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Weclome <a class="mention" href="/u/mario">@Mario</a>, thank you for coming! You’re on: <a class="hashtag" href="/c/software/hubzilla/65">#<span>software:hubzilla</span></a> and <a class="mention-group" href="/groups/hubzilla">@hubzilla</a> are yours.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-the-software-category/27/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-the-software-category/27/22</link>
+        <pubDate>Thu, 22 Apr 2021 07:41:15 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-27-22</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-the-software-category/27.rss">About the Software category</source>
+      </item>
+      <item>
+        <title>About the Software category</title>
+        <dc:creator><![CDATA[Mario]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi there!</p>
+<p>A category for Hubzilla (<a href="https://hubzilla.org" rel="noopener nofollow ugc">https://hubzilla.org</a>) would be appreciated too <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/smiley.png?v=9" title=":smiley:" class="emoji" alt=":smiley:"></p>
+<p>Hubzilla is a decentralized identity, communications, and permissions framework and provides useful community organisation tools (events, files, wikis, etc.). It provides Activitypub as an addon for staying in touch with our friends in fedi.</p>
+<p>Cheers,<br>
+Mario</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-the-software-category/27/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-the-software-category/27/21</link>
+        <pubDate>Thu, 22 Apr 2021 06:52:00 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-27-21</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-the-software-category/27.rss">About the Software category</source>
+      </item>
+      <item>
+        <title>About the Software category</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello, can I have a category for <a href="https://github.com/grishka/Smithereen" rel="nofollow noopener">Smithereen</a>?</p>
+<p>Icon: <a href="https://github.com/grishka/Smithereen/blob/3771f767e8f6cf81d06cfe68bc22efca60e1ae7a/logo.svg" rel="nofollow noopener">https://github.com/grishka/Smithereen/blob/3771f767e8f6cf81d06cfe68bc22efca60e1ae7a/logo.svg</a></p>
+<p>Thank you!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-the-software-category/27/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-the-software-category/27/20</link>
+        <pubDate>Sat, 09 May 2020 23:45:56 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-27-20</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-the-software-category/27.rss">About the Software category</source>
+      </item>
+      <item>
+        <title>About the Software category</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/emphack">@Emphack</a>, I added it to my tasks for tomorrow’s meeting. I see <a class="mention" href="/u/pfefferle">@pfefferle</a> is here, so this part should be fine (especially if he wants you to take care of it <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:">). What’s up with MoodleNet?</p>
+<aside class="quote no-group" data-username="how" data-post="1" data-topic="639">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/how/40/94_2.png" class="avatar"><a href="https://socialhub.activitypub.rocks/t/2020-05-09-socialcg-meeting/639/1">2020-05-09 SocialCG Meeting</a>
+</div>
+<blockquote>
+<p>Adding WordPress (<a class="mention" href="/u/pfefferle">@pfefferle</a>), Mobilizon (<a class="mention" href="/u/tcit">@tcit</a>) to <a class="hashtag" href="/c/software/14">#<span>software</span></a></p>
+</blockquote>
+</aside>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-the-software-category/27/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-the-software-category/27/19</link>
+        <pubDate>Fri, 08 May 2020 17:28:09 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-27-19</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-the-software-category/27.rss">About the Software category</source>
+      </item>
+      <item>
+        <title>About the Software category</title>
+        <dc:creator><![CDATA[Emphack]]></dc:creator>
+        <description><![CDATA[
+            <p>Ok for <strong>MoodleNet</strong> but what about <strong>WordPress plug-ins</strong>? It involves many projects and I can manage it if you like: I’ve proposals that I want to discuss to put inside.</p>
+<p>This for example should stay there:<br>
+<a href="https://socialhub.activitypub.rocks/t/lets-federate-all-wordpress-events-around-the-web/">https://socialhub.activitypub.rocks/t/lets-federate-all-wordpress-events-around-the-web/</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-the-software-category/27/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-the-software-category/27/18</link>
+        <pubDate>Mon, 04 May 2020 11:39:41 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-27-18</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-the-software-category/27.rss">About the Software category</source>
+      </item>
+      <item>
+        <title>About the Software category</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Indeed <a class="mention" href="/u/emphack">@Emphack</a>, this is because nobody stepped up from their team to take care of the category – nor were they contacted AFAIK, and nobody from our community stepped up to become <a class="mention-group" href="/groups/software.hosts">@software.hosts</a>. So there’s nobody to handle the case. I would be happy to have pages for software whose developers are not around (yet), but it’s work, and if nobody volunteers, it will happen as <a class="hashtag" href="https://socialhub.activitypub.rocks/tag/todo">#<span>todo</span></a> topics are resolved. <a class="mention-group" href="/groups/staff">@staff</a> cannot and should not do everything in a community, don’t you agree?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-the-software-category/27/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-the-software-category/27/17</link>
+        <pubDate>Mon, 04 May 2020 10:22:42 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-27-17</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-the-software-category/27.rss">About the Software category</source>
+      </item>
+      <item>
+        <title>About the Software category</title>
+        <dc:creator><![CDATA[Emphack]]></dc:creator>
+        <description><![CDATA[
+            <p><strong>Wordpress Plug-ins</strong> and <strong>MoodleNet</strong> are still missing…</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-the-software-category/27/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-the-software-category/27/16</link>
+        <pubDate>Mon, 04 May 2020 10:03:34 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-27-16</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-the-software-category/27.rss">About the Software category</source>
+      </item>
+      <item>
+        <title>About the Software category</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/pukkamustard">@pukkamustard</a> you now have a <a href="/g/openengiadina">group</a>, the <a class="hashtag" href="/c/software/openengiadina/50">#<span>software:openengiadina</span></a> category and you can edit  <a href="https://socialhub.activitypub.rocks/t/about-openengiadina/607" class="inline-onebox">About openEngiadina</a>. It’s a rad project BTW.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-the-software-category/27/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-the-software-category/27/15</link>
+        <pubDate>Sun, 12 Apr 2020 12:03:05 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-27-15</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-the-software-category/27.rss">About the Software category</source>
+      </item>
+      <item>
+        <title>About the Software category</title>
+        <dc:creator><![CDATA[pukkamustard]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello <a class="mention-group" href="/groups/staff">@staff</a>. Can we have a new category for <a href="https://openengiadina.net/" rel="nofollow noopener">openEngiadina</a>?</p>
+<p>An icon is available here: <a href="https://gitlab.com/openengiadina/etc/-/blob/master/logo/sgraffito.svg" rel="nofollow noopener">https://gitlab.com/openengiadina/etc/-/blob/master/logo/sgraffito.svg</a></p>
+<p>Thanks!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-the-software-category/27/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-the-software-category/27/14</link>
+        <pubDate>Wed, 01 Apr 2020 16:18:53 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-27-14</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-the-software-category/27.rss">About the Software category</source>
+      </item>
+      <item>
+        <title>About the Software category</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/schmittlauch">@schmittlauch</a> you’re on: please edit <a href="https://socialhub.activitypub.rocks/t/about-hash2pub/543" class="inline-onebox">About Hash2Pub</a> and eventually communicate a short description, color, and URL to the project so I can update the <a href="/g/hash2pub">group</a> <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-the-software-category/27/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-the-software-category/27/13</link>
+        <pubDate>Fri, 28 Feb 2020 07:35:15 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-27-13</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-the-software-category/27.rss">About the Software category</source>
+      </item>
+      <item>
+        <title>About the Software category</title>
+        <dc:creator><![CDATA[schmittlauch]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention-group" href="/groups/staff">@staff</a> Can you please set up a new category for <span class="hashtag">#software:Hash2Pub</span>, the hashtag store and subscription relay I’m working on? I’d like to document my progress here.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-the-software-category/27/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-the-software-category/27/12</link>
+        <pubDate>Thu, 27 Feb 2020 21:53:03 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-27-12</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-the-software-category/27.rss">About the Software category</source>
+      </item>
+      <item>
+        <title>About the Software category</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/acka47">@acka47</a>, <a class="mention" href="/u/macgirvin">@macgirvin</a> your categories are ready. Sorry for the delay!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-the-software-category/27/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-the-software-category/27/11</link>
+        <pubDate>Sun, 23 Feb 2020 13:38:22 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-27-11</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-the-software-category/27.rss">About the Software category</source>
+      </item>
+      <item>
+        <title>About the Software category</title>
+        <dc:creator><![CDATA[macgirvin]]></dc:creator>
+        <description><![CDATA[
+            <p>Would appreciate a category for Zap. An icon is available at</p>
+<p><a href="https://framagit.org/zot/zap/raw/master/images/z1.svg" class="onebox" target="_blank" rel="nofollow noopener">https://framagit.org/zot/zap/raw/master/images/z1.svg</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-the-software-category/27/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-the-software-category/27/10</link>
+        <pubDate>Tue, 18 Feb 2020 04:51:37 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-27-10</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-the-software-category/27.rss">About the Software category</source>
+      </item>
+      <item>
+        <title>About the Software category</title>
+        <dc:creator><![CDATA[acka47]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks! We don’t have a real logo yet but we can use this one for now: <a href="https://github.com/hbz/skohub-extension/tree/master/src/icons" rel="nofollow noopener">https://github.com/hbz/skohub-extension/tree/master/src/icons</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-the-software-category/27/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-the-software-category/27/9</link>
+        <pubDate>Wed, 27 Nov 2019 13:07:36 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-27-9</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-the-software-category/27.rss">About the Software category</source>
+      </item>
+      <item>
+        <title>About the Software category</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Welcome <a class="mention" href="/u/acka47">@acka47</a>! Please head to <a class="hashtag" href="/c/software/skohub/42">#<span>software:skohub</span></a> and fix what needs fixing (also the <a href="/g/skohub">SkoHub group</a>, and please tell a color and logo when you have it.)</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-the-software-category/27/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-the-software-category/27/8</link>
+        <pubDate>Wed, 27 Nov 2019 11:31:29 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-27-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-the-software-category/27.rss">About the Software category</source>
+      </item>
+      <item>
+        <title>About the Software category</title>
+        <dc:creator><![CDATA[acka47]]></dc:creator>
+        <description><![CDATA[
+            <p>Could you please add a subcategory for SkoHub? See <a href="https://skohub.io" rel="nofollow noopener">https://skohub.io</a> for information of the project.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-the-software-category/27/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-the-software-category/27/7</link>
+        <pubDate>Tue, 26 Nov 2019 11:08:23 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-27-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-the-software-category/27.rss">About the Software category</source>
+      </item>
+      <item>
+        <title>About the Software category</title>
+        <dc:creator><![CDATA[Emphack]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/mayel">@mayel</a> I think: I saw his post about CommonsPub, which was a project started by the MoodleNet team <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/smiley_cat.png?v=9" title=":smiley_cat:" class="emoji" alt=":smiley_cat:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-the-software-category/27/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-the-software-category/27/6</link>
+        <pubDate>Sun, 24 Nov 2019 00:11:38 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-27-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-the-software-category/27.rss">About the Software category</source>
+      </item>
+      <item>
+        <title>About the Software category</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Is there someone here from MoodleNet?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-the-software-category/27/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-the-software-category/27/5</link>
+        <pubDate>Tue, 19 Nov 2019 11:55:02 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-27-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-the-software-category/27.rss">About the Software category</source>
+      </item>
+      <item>
+        <title>About the Software category</title>
+        <dc:creator><![CDATA[Emphack]]></dc:creator>
+        <description><![CDATA[
+            <p>Also “MoodleNet” is missing!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-the-software-category/27/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-the-software-category/27/4</link>
+        <pubDate>Mon, 18 Nov 2019 21:31:51 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-27-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-the-software-category/27.rss">About the Software category</source>
+      </item>
+      <item>
+        <title>About the Software category</title>
+        <dc:creator><![CDATA[Emphack]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="255">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/emphack/40/162_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/wordpress/255">WordPress</a> <a class="badge-wrapper  box" href="/c/software"><span class="badge-category-bg" style="background-color: #3AB54A;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Discover and discuss ActivityPub implementations of all sizes and shapes.">Software</span></a>
+  </div>
+  <blockquote>
+    Let’s discuss about plug-ins to federate WordPress data (articles, events, places…): please create a new software category. <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/pray.png?v=9" title="pray" alt="pray" class="emoji">
+  </blockquote>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/about-the-software-category/27/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-the-software-category/27/3</link>
+        <pubDate>Mon, 18 Nov 2019 21:31:14 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-27-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-the-software-category/27.rss">About the Software category</source>
+      </item>
+      <item>
+        <title>About the Software category</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>2 posts were split to a new topic: <a href="/t/how-to-use-tags-in-the-software-category/146">How to use tags in the Software category?</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-the-software-category/27/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-the-software-category/27/2</link>
+        <pubDate>Thu, 17 Oct 2019 18:09:48 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-27-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-the-software-category/27.rss">About the Software category</source>
+      </item>
+      <item>
+        <title>About the Software category</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Discover and discuss ActivityPub implementations of all sizes and shapes.</p>
+<p>Each <em>free<sup class="footnote-ref"><a href="#footnote-35-1" id="footnote-ref-35-1">[1]</a></sup></em> software can have its own sub-category (ask <span class="mention">@staff</span> or reply here).</p>
+<p>You can use tags to find more details about:</p>
+<ul>
+<li>
+<a class="hashtag" href="https://socialhub.activitypub.rocks/tags/client">#<span>client</span></a> software</li>
+<li>
+<a class="hashtag" href="https://socialhub.activitypub.rocks/tags/server">#<span>server</span></a> software</li>
+<li>
+<a class="hashtag" href="https://socialhub.activitypub.rocks/tags/library">#<span>library</span></a> software</li>
+</ul>
+<p>(etc)</p>
+<hr class="footnotes-sep">
+
+<ol class="footnotes-list">
+<li id="footnote-35-1" class="footnote-item">
+<p>free as in free speech: no proprietary software allowed here. Don’t even bother wasting our time. <a href="#footnote-ref-35-1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-the-software-category/27/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-the-software-category/27/1</link>
+        <pubDate>Thu, 12 Sep 2019 19:57:33 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-27-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-the-software-category/27.rss">About the Software category</source>
+      </item>
+  </channel>
+</rss>

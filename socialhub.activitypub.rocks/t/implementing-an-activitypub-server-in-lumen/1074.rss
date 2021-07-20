@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Implementing an ActivityPub server in Lumen</title>
+    <link>https://socialhub.activitypub.rocks/t/implementing-an-activitypub-server-in-lumen/1074</link>
+    <description>I&#39;ve decided to make my journey towards implementing an ActivityPub server with a web interface (and later a C5S part) public: https://notabug.org/tinyrabbit/lumen-ap-server
+
+I&#39;ll definitely be asking questions in this forum when I run into issues or don&#39;t understand the protocol or de facto standards :D I hope you&#39;ll all help me along.</description>
+    
+    <lastBuildDate>Wed, 07 Oct 2020 13:26:12 +0000</lastBuildDate>
+    <category>PHP</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/implementing-an-activitypub-server-in-lumen/1074.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Implementing an ActivityPub server in Lumen</title>
+        <dc:creator><![CDATA[tinyrabbit]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ll need to parse JSON-LD, obviously, and am looking at PHP libs for it.</p>
+<p>Has anyone tried <a href="https://github.com/lanthaler/JsonLD" rel="noopener nofollow ugc">https://github.com/lanthaler/JsonLD</a> in PHP7.3? Tried incorporating it into a Laravel or Lumen project?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/implementing-an-activitypub-server-in-lumen/1074/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/implementing-an-activitypub-server-in-lumen/1074/2</link>
+        <pubDate>Wed, 07 Oct 2020 13:26:12 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1074-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/implementing-an-activitypub-server-in-lumen/1074.rss">Implementing an ActivityPub server in Lumen</source>
+      </item>
+      <item>
+        <title>Implementing an ActivityPub server in Lumen</title>
+        <dc:creator><![CDATA[tinyrabbit]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve decided to make my journey towards implementing an ActivityPub server with a web interface (and later a C5S part) public: <a href="https://notabug.org/tinyrabbit/lumen-ap-server" rel="noopener nofollow ugc">https://notabug.org/tinyrabbit/lumen-ap-server</a></p>
+<p>I’ll definitely be asking questions in this forum when I run into issues or don’t understand the protocol or de facto standards <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/smiley.png?v=9" title=":smiley:" class="emoji" alt=":smiley:"> I hope you’ll all help me along.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/implementing-an-activitypub-server-in-lumen/1074/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/implementing-an-activitypub-server-in-lumen/1074/1</link>
+        <pubDate>Wed, 07 Oct 2020 08:38:53 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1074-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/implementing-an-activitypub-server-in-lumen/1074.rss">Implementing an ActivityPub server in Lumen</source>
+      </item>
+  </channel>
+</rss>

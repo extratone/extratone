@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Feneas research wiki has a new &#39;Developer resources&#39; page</title>
+    <link>https://socialhub.activitypub.rocks/t/feneas-research-wiki-has-a-new-developer-resources-page/885</link>
+    <description>Hi all,
+
+As a follow-up to https://socialhub.activitypub.rocks/t/easing-the-onboarding-of-new-developers-to-the-fediverse/847 where I already mentioned this, I have created a page to track AP-related development resources on the Feneas research wiki.
+
+- [Watchlist for ActivityPub developer resources](https://git.feneas.org/feneas/fediverse/-/wikis/Watchlist-for-ActivityPub-developer-resources)
+
+Your additions and feedback most welcome (see also [this issue](https://git.feneas.org/feneas/fediverse/-/issues/19#note_11683)).</description>
+    
+    <lastBuildDate>Sat, 22 Aug 2020 11:02:55 +0000</lastBuildDate>
+    <category>Fediversity</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/feneas-research-wiki-has-a-new-developer-resources-page/885.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Feneas research wiki has a new &#39;Developer resources&#39; page</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Well that is part of the onboarding discussion mentioned above, where <a class="mention" href="/u/cjs">@cjs</a> also participated. There are a number of suggestions there on how to structure things intuitively and without overlap. It is the reason why I created the topic in the first place.</p>
+<p>Possibly in that topic <a class="mention" href="/u/cjs">@cjs</a> first mentioned the idea for a Library.</p>
+<p>Before that I discussed with <span class="mention">@lostinlight</span> about having a developer section on fediverse.party, but we’ll wait with that for a while. Right now I just collected code projects for developers, which is fitting for fediverse.party in the role of a directory, and most of which where on the main AP watchlist before.</p>
+<p>For the other sections I also intend to include code projects if possible, but for sections where this does not apply (e.g. API docs) I’ll happily help maintain them in another place. Don’t know if wiki posts on the forum are a good place, unless they are pinned in the category or even globally. They tend to sink into forum history.</p>
+<p>Besides the library initiative that popped up, <a href="https://socialhub.activitypub.rocks/t/easing-the-onboarding-of-new-developers-to-the-fediverse/847/5">I proposed…</a></p>
+<hr>
+<p>Maybe (just brainstorming) the separation of concerns could be:</p>
+<ul>
+<li>
+<code>fediverse.party</code>: The authoritative Fediverse directory for end-users and techies (given the tech metrics in directory entries).</li>
+<li>
+<code>activitypub.dev</code>: The authoritative AP/Fediverse in-depth development guide and resource pointers.</li>
+<li>
+<code>activitypub.rocks</code>: The authoritative AP/Fediverse reference for specifications and future versions/extensions thereof.</li>
+</ul>
+          <p><a href="https://socialhub.activitypub.rocks/t/feneas-research-wiki-has-a-new-developer-resources-page/885/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/feneas-research-wiki-has-a-new-developer-resources-page/885/3</link>
+        <pubDate>Sat, 22 Aug 2020 10:58:44 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-885-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/feneas-research-wiki-has-a-new-developer-resources-page/885.rss">Feneas research wiki has a new &#39;Developer resources&#39; page</source>
+      </item>
+      <item>
+        <title>Feneas research wiki has a new &#39;Developer resources&#39; page</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>I see a lot of placeholders there and all this looks like you want to drag people from here to there: we already have wiki and collaborative writing capacity here in the SocialHub. Why not put relevant resources here in <a class="hashtag" href="/c/fediversity/10">#<span>fediversity</span></a>?</p>
+<p><a class="mention" href="/u/cjs">@cjs</a> already proposed to gather such resources, and I see more meaning in joining forces rather than splitting up resources. This story seems to be repeating: would you please consider collaborating with him instead?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/feneas-research-wiki-has-a-new-developer-resources-page/885/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/feneas-research-wiki-has-a-new-developer-resources-page/885/2</link>
+        <pubDate>Sat, 22 Aug 2020 09:35:14 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-885-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/feneas-research-wiki-has-a-new-developer-resources-page/885.rss">Feneas research wiki has a new &#39;Developer resources&#39; page</source>
+      </item>
+      <item>
+        <title>Feneas research wiki has a new &#39;Developer resources&#39; page</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all,</p>
+<p>As a follow-up to <a href="https://socialhub.activitypub.rocks/t/easing-the-onboarding-of-new-developers-to-the-fediverse/847" class="inline-onebox">Easing the onboarding of new developers to the Fediverse</a> where I already mentioned this, I have created a page to track AP-related development resources on the Feneas research wiki.</p>
+<ul>
+<li><a href="https://git.feneas.org/feneas/fediverse/-/wikis/Watchlist-for-ActivityPub-developer-resources" rel="nofollow noopener">Watchlist for ActivityPub developer resources</a></li>
+</ul>
+<p>Your additions and feedback most welcome (see also <a href="https://git.feneas.org/feneas/fediverse/-/issues/19#note_11683" rel="nofollow noopener">this issue</a>).</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/feneas-research-wiki-has-a-new-developer-resources-page/885/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/feneas-research-wiki-has-a-new-developer-resources-page/885/1</link>
+        <pubDate>Tue, 18 Aug 2020 12:48:33 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-885-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/feneas-research-wiki-has-a-new-developer-resources-page/885.rss">Feneas research wiki has a new &#39;Developer resources&#39; page</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>PROPOSAL: Rank choice meeting times for the weekend SocialCG Meeting</title>
+    <link>https://socialhub.activitypub.rocks/t/proposal-rank-choice-meeting-times-for-the-weekend-socialcg-meeting/1713</link>
+    <description>(via https://socialhub.activitypub.rocks/t/2021-05-07-socialcg-meeting/1697/7?u=bengo)
+
+People can submit votes or ranked choices here.
+
+PROPOSAL: move Saturday meetings later to accommodate restful Saturday mornings  (and attendance) for US time zones like PDT. Encourage people to rank choice (ignore the date, just time):
+
+1.  status quo [date=2021-05-07 time=16:00:00 timezone=&quot;UTC&quot;] 
+
+2.   [date=2021-05-28 time=17:00:00 timezone=&quot;UTC&quot;] 
+3.  [date=2021-05-28 time=18:00:00 timezone=&quot;UTC&quot;] 
+4.  [date=2021-05-28 time=19:00:00 timezone=&quot;UTC&quot;] 
+5.  [date=2021-05-28 time=20:00:00 timezone=&quot;UTC&quot;] 
+6. Sunday instead of Saturday (if this is ranked highly, we can revote with times)
+
+# Please vote below:
+
+[poll type=regular results=always chartType=bar]
+# Vote for your preferred option from the list above
+* 1
+* 2
+* 3
+* 4
+* 5
+* 6
+[/poll]</description>
+    
+    <lastBuildDate>Fri, 07 May 2021 19:17:43 +0000</lastBuildDate>
+    <category>SocialCG</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/proposal-rank-choice-meeting-times-for-the-weekend-socialcg-meeting/1713.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>PROPOSAL: Rank choice meeting times for the weekend SocialCG Meeting</title>
+        <dc:creator><![CDATA[bengo]]></dc:creator>
+        <description><![CDATA[
+            <p>(via <a href="https://socialhub.activitypub.rocks/t/2021-05-07-socialcg-meeting/1697/7" class="inline-onebox">2021-05-07 SocialCG Meeting - #7 by bengo</a>)</p>
+<p>People can submit votes or ranked choices here.</p>
+<p>PROPOSAL: move Saturday meetings later to accommodate restful Saturday mornings  (and attendance) for US time zones like PDT. Encourage people to rank choice (ignore the date, just time):</p>
+<ol>
+<li>
+<p>status quo <span data-date="2021-05-07" data-time="16:00:00" class="discourse-local-date" data-timezone="UTC" data-email-preview="2021-05-07T16:00:00Z UTC">2021-05-07T16:00:00Z</span></p>
+</li>
+<li>
+<p><span data-date="2021-05-28" data-time="17:00:00" class="discourse-local-date" data-timezone="UTC" data-email-preview="2021-05-28T17:00:00Z UTC">2021-05-28T17:00:00Z</span></p>
+</li>
+<li>
+<p><span data-date="2021-05-28" data-time="18:00:00" class="discourse-local-date" data-timezone="UTC" data-email-preview="2021-05-28T18:00:00Z UTC">2021-05-28T18:00:00Z</span></p>
+</li>
+<li>
+<p><span data-date="2021-05-28" data-time="19:00:00" class="discourse-local-date" data-timezone="UTC" data-email-preview="2021-05-28T19:00:00Z UTC">2021-05-28T19:00:00Z</span></p>
+</li>
+<li>
+<p><span data-date="2021-05-28" data-time="20:00:00" class="discourse-local-date" data-timezone="UTC" data-email-preview="2021-05-28T20:00:00Z UTC">2021-05-28T20:00:00Z</span></p>
+</li>
+<li>
+<p>Sunday instead of Saturday (if this is ranked highly, we can revote with times)</p>
+</li>
+</ol>
+<h1>
+<a name="please-vote-below-1" class="anchor" href="#please-vote-below-1"></a>Please vote below:</h1>
+<div class="poll" data-poll-status="open" data-poll-results="always" data-poll-charttype="bar" data-poll-type="regular" data-poll-name="poll">
+<div>
+<div class="poll-container">
+<div class="poll-title">Vote for your preferred option from the list above</div>
+<ul>
+<li data-poll-option-id="4d8a15e3cc35750f016ce15a43937620">1</li>
+<li data-poll-option-id="cd314db7dfbac2b10687b6f39abfdf41">2</li>
+<li data-poll-option-id="68b434ff88aeae7054e42cd05a4d9056">3</li>
+<li data-poll-option-id="aa2393b424f2f395abb63bf785760a3b">4</li>
+<li data-poll-option-id="8b2f2930cac0574c3450f5db9a6fb7f9">5</li>
+<li data-poll-option-id="60cad69e0cfcb3fa77a68d11d3758002">6</li>
+</ul>
+</div>
+<div class="poll-info">
+<p>
+<span class="info-number">0</span>
+<span class="info-label">voters</span>
+</p>
+</div>
+</div>
+</div>
+          <p><a href="https://socialhub.activitypub.rocks/t/proposal-rank-choice-meeting-times-for-the-weekend-socialcg-meeting/1713/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/proposal-rank-choice-meeting-times-for-the-weekend-socialcg-meeting/1713/1</link>
+        <pubDate>Fri, 07 May 2021 16:22:15 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1713-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/proposal-rank-choice-meeting-times-for-the-weekend-socialcg-meeting/1713.rss">PROPOSAL: Rank choice meeting times for the weekend SocialCG Meeting</source>
+      </item>
+  </channel>
+</rss>

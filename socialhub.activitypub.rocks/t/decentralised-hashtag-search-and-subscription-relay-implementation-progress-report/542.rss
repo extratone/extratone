@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</title>
+    <link>https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542</link>
+    <description>I have finally started implementing my ActivityPub relay that is going to allow subscription to hashtags and querying a more or less consistent list of posts of that hashtag.  
+The current working title for that software is **Hash2Pub**.
+
+The final goal for that project is to have a component that runs alongside to the main AP server and talks to it using the existing ActivityPub relay mechanism. But all these relay instances build a fully-decentralised DHT infrastructure to manage the assignment, resolution, relaying and storage of posts with a certain hashtag.
+As I am doing this implementation for a study research project, the current phase of implementation unfortunately will focus on functionality that is necessary for proper evaluation, simulation and profiling of my architecture.
+
+## Give me some feedback!
+
+I&#39;ll be posting about the current state of the implementation, design choices I made and open questions. If you disagree with one of my choices or can provide valuable input to one of these questions, please let me know.
+
+I am implementing the project in Haskell, so if there are experienced Haskell programmers around I may decide to already publish the code and let you take a look at it. (implementation is currently happening in a closed repo as it is interwoven with my real-name study publications. It will be released under AGPL once ready.)
+
+## More about the project
+
+I proposed my decentralised architecture of AP relays at ActivityPubConf 2019. For further information about it take a look at my [talk there](https://conf.tube/videos/watch/340eb706-28c0-4a43-9364-700297ca96cb) (30min) or take a look at [the full paper](https://git.orlives.de/schmittlauch/paper_hashtag_federation).</description>
+    
+    <lastBuildDate>Sun, 22 Nov 2020 23:08:54 +0000</lastBuildDate>
+    <category>Hash2Pub</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</title>
+        <dc:creator><![CDATA[schmittlauch]]></dc:creator>
+        <description><![CDATA[
+            <p>I have recently finished my <em>study project</em> during which I started implementing Hash2Pub, so it is time for…</p>
+<h1>…another status update:</h1>
+<p>I have been working on Hash2Pub since March 2020 for a study project.<br>
+The main goals have been implementing a simplified post relay, its foundational DHT with load balancing, and then benchmark the effectivity and efficiency of that load balancing.  While I had to focus on the academic useful aspects, this allowed me to lay some important groundwork</p>
+<h2>current implementation status</h2>
+<p>So currently my Hash2Pub implementation provides</p>
+<ul>
+<li>an EpiChord DHT implementation in Haskell
+<ul>
+<li>its own UDP-based communication protocol</li>
+<li>load balancing with k-choices (still untested)</li>
+</ul>
+</li>
+<li>a simplified RESTful relay service on top of the DHT</li>
+<li>a testbed for performance evaluation
+<ul>
+<li>built with NixOS</li>
+<li>utilising real-world input samples</li>
+<li>system model, assumptions, szenarios</li>
+</ul>
+</li>
+</ul>
+<p>…well, that is almost true. Notice that I mention a testbed, but not the test/ simulation results.<br>
+Unfortunately there are still major bugs present preventing the simulation from running successfully in larger setups (&gt; 20 nodes), so until these are found and fixed I don’t feel comfortable deriving any meaningful insights from this.</p>
+<h2>next up</h2>
+<p>The <strong>bad news</strong>: I won’t be able to work in this full-time anymore, making Hash2Pub my slower progressing side project now.</p>
+<p>The <strong>good news</strong>: I can now work on things which are not interesting from an academic point of view, such as proper documentation, real-world use cases, and improving the code quality.</p>
+<p>My roadmap for the near future is:</p>
+<ul>
+<li>finding the bugs left that prevented the simulation from running properly</li>
+<li>do some simulation runs</li>
+<li>clean up code and improve module organisation
+<ul>
+<li>e.g by factoring out certain parts into separate modules (RingMap)</li>
+</ul>
+</li>
+<li>improve test coverage</li>
+<li>improve code documentation</li>
+<li>release public documentation of architecture, design decisions, and protocol</li>
+<li>replace the simple HTTP relay by an ActivtyPub one</li>
+</ul>
+<p>If you have ideas, comments, or want to join me working on this please contact me. The code base, but without the testbed setup and some documentation, <a href="https://git.orlives.de/schmittlauch/Hash2Pub" rel="noopener nofollow ugc">is already publicly available</a>. Big thanks to <code>@hecate@pleroma.fr</code> who already provided some help and PRs.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/19</link>
+        <pubDate>Sun, 22 Nov 2020 23:07:14 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-542-19</guid>
+        <source url="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542.rss">Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</source>
+      </item>
+      <item>
+        <title>Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>FYI <a href="https://fosstodon.org/@yarmo" rel="nofollow noopener">@yarmo</a> maintains <a href="https://codeberg.org/yarmo/delightful-databases" rel="nofollow noopener">delightful databases</a> with many options. <a href="https://terminusdb.com/" rel="nofollow noopener">TerminusDB</a> is interesting for its JSON-LD support.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/18</link>
+        <pubDate>Fri, 02 Oct 2020 11:15:33 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-542-18</guid>
+        <source url="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542.rss">Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</source>
+      </item>
+      <item>
+        <title>Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</title>
+        <dc:creator><![CDATA[schmittlauch]]></dc:creator>
+        <description><![CDATA[
+            <h2>Which data storage shall I use?</h2>
+<p>While it definitely still takes some time until I implement post storage, at some point I have to think about how I want to persist posts, subscriptions, caches and other data.</p>
+<p>One obvious choice would be <strong>Postgres</strong>, as Mastodon or Pleroma instances already have to run it anyways. But it’s been a while since I last wrote SQL and it never was that elaborated. Also the question is whether the ability to do elaborate queries is needed, or whether more simple solutions are a better fit.<br>
+Talking about simpler solutions, when saying <em>key value store</em> many think <strong>Redis</strong>. I guess that should work for simply persisting application and post data. I’m a bit worried about the proprietary licensing situation around the Redis addons and I hope that Redis doesn’t become another MongoDB.<br>
+Heading over to the more uncommon solutions, I like the concept of <strong>CouchDB</strong>: It is a document database, not a relational DB, and allows to prepare indexing queries that are later used for retrieving data. It also uses JSON as storage format, allowing to directly feed in JSON(-LD) ActivityPub posts. On the other hand using HTTP+JSON for querying might be less efficient.</p>
+<p>I have used none of the databases so far (except playing around with CouchDB some years ago), so I welcome opinionated recommendations.<br>
+Have I forgotten any other important options (tokio cabinet, BerkeleyDB)?</p>
+<p>Bonus points for experience with Haskell bindings.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/17</link>
+        <pubDate>Tue, 19 May 2020 21:36:07 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-542-17</guid>
+        <source url="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542.rss">Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</source>
+      </item>
+      <item>
+        <title>Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>You’re supposed to use one socket per local port. As in, you’d create a new socket whenever you want to bind to a different local port, but don’t use <code>SO_REUSEPORT</code> to bind multiple sockets to one port, it’ll make you suffer.</p>
+<aside class="quote no-group" data-username="schmittlauch" data-post="15" data-topic="542">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/schmittlauch/40/84_2.png" class="avatar"> schmittlauch:</div>
+<blockquote>
+<p>But that also means creating a new socket for each request, involving a context switch to the OS. Any thoughts on whether this is a too large drawback for the convenience it gives me?</p>
+</blockquote>
+</aside>
+<p>It’s not a full context switch, it’s a system call involving a switch to kernel mode and back. It’s fine as long as you aren’t doing it a million times per second <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/16</link>
+        <pubDate>Mon, 18 May 2020 19:18:46 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-542-16</guid>
+        <source url="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542.rss">Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</source>
+      </item>
+      <item>
+        <title>Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</title>
+        <dc:creator><![CDATA[schmittlauch]]></dc:creator>
+        <description><![CDATA[
+            <p>A question for folks familiar with Socket programming:</p>
+<p>For communication between DHT nodes I am using Datagram sockets. I am looking for experience about how many sockets to use and how much overhead is caused by creating a new socket per each request-response cycle:<br>
+While incoming requests always arrive at the same listening port of a node and responses are sent from that port as well, when initiating a request from a node I decided to create a new socket at a different port, <code>connect</code> it to the target node, send the request over that socket and wait for the replies on just that socket. The advantage is that only the response of this specific request will arrive at that socket, which makes managing multiple requests in parallel much easier.<br>
+But that also means creating a new socket for each request, involving a context switch to the OS. Any thoughts on whether this is a too large drawback for the convenience it gives me?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/15</link>
+        <pubDate>Mon, 18 May 2020 10:29:47 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-542-15</guid>
+        <source url="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542.rss">Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</source>
+      </item>
+      <item>
+        <title>Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</title>
+        <dc:creator><![CDATA[schmittlauch]]></dc:creator>
+        <description><![CDATA[
+            <p>I just published the source code repo of Hash2Pub: <a href="https://git.orlives.de/schmittlauch/Hash2Pub" rel="nofollow noopener">https://git.orlives.de/schmittlauch/Hash2Pub</a></p>
+<p>Please be aware that this is still heavily WIP, underdocumented and does not provide any real functionality yet. The main reason for publishing right now is that I can point to specific parts of the code when asking for help.</p>
+<p>Proper documentation of protocol, semantics and implementation decisions will be released once the study project is finished.</p>
+<p>If you’re a Haskell dev or are familiar with ASN.1, feel free to take a look and shout at me (constructively please) (=</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/14</link>
+        <pubDate>Mon, 18 May 2020 09:25:45 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-542-14</guid>
+        <source url="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542.rss">Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</source>
+      </item>
+      <item>
+        <title>Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</title>
+        <dc:creator><![CDATA[schmittlauch]]></dc:creator>
+        <description><![CDATA[
+            <p>I decided to keep using TreeMaps, but added a small layer of indirection on top:</p>
+<p>I insert proxy elements at minBound and maxBound that forward the lookup operations so that the ring is closed, making lookup operations loop to the beginning once they have reached the largest value in the map (and the other way around).<br>
+These proxy elements can of course hold a node themself.</p>
+<p>While there are other promising data structures like indexed skip-lists or interval maps, a thin layer on top of an existing data structure is hopefully quicker to implement than starting a new data structure from scratch.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/13</link>
+        <pubDate>Wed, 15 Apr 2020 18:09:19 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-542-13</guid>
+        <source url="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542.rss">Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</source>
+      </item>
+      <item>
+        <title>Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>For the</p>
+<aside class="quote no-group" data-username="schmittlauch" data-post="11" data-topic="542">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/schmittlauch/40/84_2.png" class="avatar"> schmittlauch:</div>
+<blockquote>
+<p>returns the next larger (or next smaller) element when looking up a non-existing element in the interval between those two</p>
+</blockquote>
+</aside>
+<p>part I’d suggest researching the way databases use indexes (which are some tree-like data structures, I assume) when processing queries of the form <code>SELECT ... WHERE some_field&gt;123</code> on large tables.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/12</link>
+        <pubDate>Wed, 15 Apr 2020 13:25:07 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-542-12</guid>
+        <source url="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542.rss">Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</source>
+      </item>
+      <item>
+        <title>Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</title>
+        <dc:creator><![CDATA[schmittlauch]]></dc:creator>
+        <description><![CDATA[
+            <p>I may need to restructure my basic data structure for the DHT node cache.</p>
+<p>I need a data structure that is:</p>
+<ul>
+<li>sparsely populated (the namespace is <span class="math">2^{256}</span> elements large)</li>
+<li>allows efficient access to elements, inserting or removing them (like a dictionary/ map)</li>
+<li>allows to efficiently traverse the successors and predecessors of an element</li>
+<li>returns the next larger (or next smaller) element when looking up a non-existing element in the interval between those two</li>
+<li>works in a modular/ ring-like element space</li>
+</ul>
+<p>Especially the last 2 requirements are rather tricky, but rather important, because on a ring node <span class="math">5</span> can have node <span class="math">2^{256}-10</span> as its direct successor.<br>
+I am currently using an ordered tree map as data structure because it supports looking up the next element &lt; or &gt; the given lookup index. But I have to mess around with the used comparison functions to make it somehow work, by comparing <span class="math">(a-b) \mod N</span> and <span class="math">(b-a) \mod N</span> when doing <code>compare a b</code>.<br>
+This requires some compromise of a node seemingly not having a predecessor when actually the predecessor is just more than <span class="math">\frac{N}{2}</span> away.<br>
+I can imagine that this compromise might work, but either my test code is wrong or there are some undesirable further edge cases I do not understand yet.</p>
+<p>So if you know another data structure supporting the requirements mentioned above, I welcome any recommendations.</p>
+<p><strong>Update</strong>:<br>
+Unfortunately, I have indeed found an edge case where a tree map does not work properly.</p>
+<p>Let there be a Map with the keys [2^255+2^254+3, 2, 2^253], all keys are NodeIDs mod 2^256.<br>
+fromList [(NodeID {getNodeID = 86844066927987146567678238756515930889952488499230423029593188005934847229955},()),(NodeID {getNodeID = 2},()),(NodeID {getNodeID = 14474011154664524427946373126085988481658748083205070504932198000989141204992},())]</p>
+<p>While (NodeID 2^255+2^254+3) &gt; (NodeID 2^254 + 14) …<br>
+True<br>
+… and 2^255+2^254+3 is an element of the map…<br>
+True<br>
+… looking for an element larger than 2^254 + 14 doesn’t yield any.<br>
+Nothing</p>
+<p>That’s the tree of the map:<br>
+NodeID {getNodeID = 2}:=()<br>
+±-NodeID {getNodeID = 86844066927987146567678238756515930889952488499230423029593188005934847229955}:=()<br>
+±-NodeID {getNodeID = 14474011154664524427946373126085988481658748083205070504932198000989141204992}:=()</p>
+<p>So I obviously need to find another data structure <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/sob.png?v=9" title=":sob:" class="emoji" alt=":sob:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/11</link>
+        <pubDate>Mon, 13 Apr 2020 21:21:50 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-542-11</guid>
+        <source url="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542.rss">Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</source>
+      </item>
+      <item>
+        <title>Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</title>
+        <dc:creator><![CDATA[schmittlauch]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/how">@how</a> I am considering to settle on ASN.1 because of its extensibility, wide-spread availability in ecosystems an of it being a standard.<br>
+JSON will of course be used in the ActivityPub part but for DHT communication I think it is a bad choice: Not only is it quite verbose, the biggest problem is the underspecified nature. I need to represent 256bit long node IDs somehow. How numbers are parsed in JSON is implementation-specific, if they are parsed as a limited-precision floating point number everything breaks down.<br>
+In ASN.1 I can at least serialise them as a blob, which is still better than passing them as a string in JSON.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/10</link>
+        <pubDate>Sun, 12 Apr 2020 13:01:47 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-542-10</guid>
+        <source url="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542.rss">Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</source>
+      </item>
+      <item>
+        <title>Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/schmittlauch">@schmittlauch</a> did you settle on a serialization format already? I guess you mention msgpack and protobuf out of performance concerns. What about considering simplicity as well: you’re making something to work with a text-based protocol ; and JSON is also a given in ActivityPub. That makes another argument for it.</p>
+<p>So in terms of dependencies and understanding for your fellow developers, sticking to JSON might be the straightforward path. Now if you’re looking for the fastest possible thing, it’s another concern, right?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/9</link>
+        <pubDate>Sun, 12 Apr 2020 11:52:16 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-542-9</guid>
+        <source url="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542.rss">Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</source>
+      </item>
+      <item>
+        <title>Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</title>
+        <dc:creator><![CDATA[schmittlauch]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>I mean, DHT is a request-response protocol. You request other nodes to store values and retrieve values. You receive responses from them.</p>
+</blockquote>
+<p>Not necessarily: First of all DHTs are hashtables, and <em>additionally</em> they’re distributed. So their main functionality is the mapping of value identifiers to nodes. Many of them additionally implement a key-value-store within the same service.<br>
+My solution only implements the mapping of responsibilities in the main DHT service and handles the value sending, retrieving and management on top of it in a dedicated ActivityPub service.</p>
+<p>You can do quite a lot of things in HTTP, I just hope that doing this small part of the service in UDP is not too much pain for a reasonable performance gain.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/8</link>
+        <pubDate>Sun, 01 Mar 2020 17:34:02 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-542-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542.rss">Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</source>
+      </item>
+      <item>
+        <title>Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>I mean, DHT is a request-response protocol. You request other nodes to store values and retrieve values. You receive responses from them. HTTP is also a request-response protocol. It kinda comes naturally to just use straight HTTP for DHT.</p>
+<p>But then my server is this monolithic Java <em>thing</em>. It handles everything itself, for example it converts uploaded images using a JNI wrapper I made for libvips.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/7</link>
+        <pubDate>Sun, 01 Mar 2020 15:26:20 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-542-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542.rss">Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</source>
+      </item>
+      <item>
+        <title>Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</title>
+        <dc:creator><![CDATA[schmittlauch]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/grishka">@Grishka</a></p>
+<blockquote>
+<p>Hm. My idea was to specifically avoid any new ports and just run the thing over HTTP. Like add a new endpoint for the DHT and advertise it somewhere under .well-known, in nodeinfo for example. This way more software is able to use it – including something that runs on a shared host. Encryption is a nice bonus from using existing HTTPS too.</p>
+</blockquote>
+<p>The actual ActivityPub payload communication will still happen via HTTP. Tunneling DHT communication through HTTP might be possible (web sockets), but would be a bit hacky IMHO.<br>
+Additionally, my DHT relay is a separate additional component to the main AP server anyways, so it needs to run on a different port anyways (unless reverse-proxied).</p>
+<blockquote>
+<p>As someone who invented a UDP protocol as part of my job at Telegram, this is really really hard to get right. Everything works well until you lose a packet. And then another one. You end up reinventing a better TCP. In my case, that was a better TCP but it is allowed to lose packets because it was a VoIP implementation.</p>
+<p>But this use case calls for reliable, orderly data delivery.</p>
+</blockquote>
+<p>I might be a bit naive, but a lot of the DHT communication hopefully doesn’t require super reliable data delivery for e.g. periodically notifying neighbour nodes or exchange a list of known peers.<br>
+I’m not even sure whether all of those require acknowledgements at all.</p>
+<p>TCP or QUIC might be more reliable, but  they require a handshake with more latency and more stateful housekeeping of connections.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/6</link>
+        <pubDate>Sun, 01 Mar 2020 13:23:05 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-542-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542.rss">Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</source>
+      </item>
+      <item>
+        <title>Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>Oh okay. I thought I was going to be first to implement DHT in fediverse, it turns out I’m not. Being initially an Android developer, I was too caught up in the basic web stuff lol. I still am.</p>
+<aside class="quote no-group" data-username="schmittlauch" data-post="3" data-topic="542">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/schmittlauch/40/84_2.png" class="avatar"> schmittlauch:</div>
+<blockquote>
+<p>For delay reasons, this communication is supposed to be UDP-based.</p>
+</blockquote>
+</aside>
+<p>Hm. My idea was to specifically avoid any new ports and just run the thing over HTTP. Like add a new endpoint for the DHT and advertise it somewhere under .well-known, in nodeinfo for example. This way more software is able to use it – including something that runs on a shared host. Encryption is a nice bonus from using existing HTTPS too.</p>
+<p>As someone who invented a UDP protocol as part of my job at Telegram, this is really really hard to get right. Everything works well until you lose a packet. And then another one. You end up reinventing a better TCP. In my case, that was a better TCP but it is allowed to lose packets because it was a VoIP implementation.</p>
+<p>But this use case calls for reliable, orderly data delivery. If you do really want <em>something</em> that runs over UDP out of principle, there’s HTTP/3. Not sure about actual implementations tho.</p>
+<p>I should definitely watch your talk.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/5</link>
+        <pubDate>Sat, 29 Feb 2020 22:15:44 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-542-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542.rss">Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</source>
+      </item>
+      <item>
+        <title>Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Not sure if this is helpful at all (as I am a noob in most of this) but the fellows at Dat Foundation have some nice documentation on p2p dht-based protocol design (they are creating hyperswarm based on KademliaDHT for peer discovery, and use protobuf for messaging). See <a href="https://datprotocol.github.io/how-dat-works/" rel="nofollow noopener">How Dat Works</a> and <a href="https://www.datprotocol.com/" rel="nofollow noopener">Dat Protocol</a>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/4</link>
+        <pubDate>Fri, 28 Feb 2020 10:22:11 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-542-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542.rss">Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</source>
+      </item>
+      <item>
+        <title>Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</title>
+        <dc:creator><![CDATA[schmittlauch]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m currently building the main data structures for the DHT. One change to my architecture paper is the replacement of the Chord DHT by <a href="https://www.comp.nus.edu.sg/~bleong/publications/icon2004-epichord.pdf" rel="nofollow noopener">Epichord</a>: After consulting various performance evaluations I decided that Chord’s performance, especially under excessive churn, is unsufficient. EpiChord is still similar enough to Chord to keep the load balancing mechanism presented in my previous paper.</p>
+<p>I also need to decide about the <strong>serialisation format</strong> for inter-node communication. For delay reasons, this communication is supposed to be UDP-based.</p>
+<p>Requirements:</p>
+<ul>
+<li>language-agnostic data representation</li>
+<li>good Haskell libraries</li>
+<li>fast (enough)</li>
+<li>can encode NodeIDs (256bit long integers)
+<ul>
+<li>fallback: either as string or as blob</li>
+</ul>
+</li>
+</ul>
+<p>Technologies to be considered:</p>
+<ul>
+<li>JSON
+<ul>
+<li>needs string-representation of NodeIDs</li>
+</ul>
+</li>
+<li>ASN.1
+<ul>
+<li>standardised, established, but confusing</li>
+</ul>
+</li>
+<li>msgpack
+<ul>
+<li>binary serialisation format faster than JSON</li>
+<li>supports blobs</li>
+<li>has Haskell RPC framework</li>
+</ul>
+</li>
+<li>Protocol Buffers
+<ul>
+<li>binary</li>
+<li>support versioning</li>
+<li>have a schema that could be imported by other implementers</li>
+<li>Haskell libraries only support v2 of the format</li>
+</ul>
+</li>
+</ul>
+<p>Any strong opinions about these formats? Are there good resources for designing an UDP-based RPC protocol available?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/3</link>
+        <pubDate>Fri, 28 Feb 2020 08:15:33 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-542-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542.rss">Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</source>
+      </item>
+      <item>
+        <title>Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p><iframe width="560" height="315" src="https://conf.tube/videos/embed/340eb706-28c0-4a43-9364-700297ca96cb" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/2</link>
+        <pubDate>Fri, 28 Feb 2020 07:44:23 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-542-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542.rss">Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</source>
+      </item>
+      <item>
+        <title>Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</title>
+        <dc:creator><![CDATA[schmittlauch]]></dc:creator>
+        <description><![CDATA[
+            <p>I have finally started implementing my ActivityPub relay that is going to allow subscription to hashtags and querying a more or less consistent list of posts of that hashtag.<br>
+The current working title for that software is <strong>Hash2Pub</strong>.</p>
+<p>The final goal for that project is to have a component that runs alongside to the main AP server and talks to it using the existing ActivityPub relay mechanism. But all these relay instances build a fully-decentralised DHT infrastructure to manage the assignment, resolution, relaying and storage of posts with a certain hashtag.<br>
+As I am doing this implementation for a study research project, the current phase of implementation unfortunately will focus on functionality that is necessary for proper evaluation, simulation and profiling of my architecture.</p>
+<h2>Give me some feedback!</h2>
+<p>I’ll be posting about the current state of the implementation, design choices I made and open questions. If you disagree with one of my choices or can provide valuable input to one of these questions, please let me know.</p>
+<p>I am implementing the project in Haskell, so if there are experienced Haskell programmers around I may decide to already publish the code and let you take a look at it. (implementation is currently happening in a closed repo as it is interwoven with my real-name study publications. It will be released under AGPL once ready.)</p>
+<h2>More about the project</h2>
+<p>I proposed my decentralised architecture of AP relays at ActivityPubConf 2019. For further information about it take a look at my <a href="https://conf.tube/videos/watch/340eb706-28c0-4a43-9364-700297ca96cb" rel="nofollow noopener">talk there</a> (30min) or take a look at <a href="https://git.orlives.de/schmittlauch/paper_hashtag_federation" rel="nofollow noopener">the full paper</a>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542/1</link>
+        <pubDate>Thu, 27 Feb 2020 22:18:48 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-542-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/decentralised-hashtag-search-and-subscription-relay-implementation-progress-report/542.rss">Decentralised Hashtag Search and Subscription Relay: Implementation Progress Report</source>
+      </item>
+  </channel>
+</rss>

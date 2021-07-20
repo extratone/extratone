@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Demo: Federated Authentication and content-addressing</title>
+    <link>https://socialhub.activitypub.rocks/t/demo-federated-authentication-and-content-addressing/874</link>
+    <description>Hello SocialHub!
+
+We have another little demo showcasing two things: Federated authentication and content-addressing.
+
+The Demo consists of a ActivityPub(-esque) Server called [CPub](https://gitlab.com/openengiadina/cpub) and a Web client called [GeoPub](https://gitlab.com/openengiadina/geopub).
+
+A demo instance is up here: https://geopub.openengiadina.net/
+
+# Federated Authentication
+
+CPub supports authentication with OpenID-Connect providers as well as with servers that implement the [Mastodon OAuth API](https://docs.joinmastodon.org/methods/apps/oauth/).
+
+You can try this out by going to https://geopub.openengiadina.net/settings/ and click on the button &quot;Authenticate with https://openengiadina.net/&quot;. You will be redirected to following page where you can enter the url of your Pleroma or Mastodon server:
+
+![cpub-login|534x370](upload://8mbhv5byGHhdAfUoXIw6XGWSTMv.png) 
+
+If you press &quot;LOG IN&quot; you will be directed to your instance where you will be authenticated and asked to grant CPub access to read your account (the `read:accounts` scope). This allows CPub to create a user that is linked to your Pleroma/Mastodon instance.
+
+The auth* happens in two-hops. The client (GeoPub) requests authorization from a CPub instance. The CPub instance authenticates with an external service. This is because GeoPub still relies on CPub feature. Once we fully implement the ActivityPub Client-to-Server protocol, GeoPub will directly authenticate and use your instance (similar to how Pinafore works).
+
+CPub can also be setup to authenticate with any OpenID-Connect provider. Currently we have setup authentication with [PUBLIC SSO](https://public.cat/). We have tested it with GitLab, Keycloak and Azure AD.
+
+Previous related discussions on SocialHub: https://socialhub.activitypub.rocks/t/single-sign-on-for-fediverse/712/1 and https://socialhub.activitypub.rocks/t/federating-authentication/823/1.
+
+# Content-addressing
+
+As [previously mentioned](https://socialhub.activitypub.rocks/t/content-addressing-and-signatures/744) we have been doing some fiddling around with content-addressing. This is now implemented in CPub and GeoPub.
+
+The id of newly created content is not a URL pointing to some location but consists of a hash of the content-itself (as a URN). For example [this &quot;Hello World&quot;](https://geopub.openengiadina.net/browse/object/urn%253Aerisx%253AAAAABKIJ2AGOMGIBANWOBNH2WP4PDHX7VTTWBAZS5DFMETDISPENRVVASNARFE5VC3VYQJUEVQSL2X45IR7CUCWQYGY3PA6WSNTL7CFUYB3A) note has the identifier `urn:erisx:AAAABKIJ2AGOMGIBANWOBNH2WP4PDHX7VTTWBAZS5DFMETDISPENRVVASNARFE5VC3VYQJUEVQSL2X45IR7CUCWQYGY3PA6WSNTL7CFUYB3A`.
+
+This allows the content to be stored and transported in many different ways (IPFS, a USB stick, ...). For the moment you can also use the CPub `objects` endpoint: https://openengiadina.net/objects/?iri=urn:erisx:AAAABKIJ2AGOMGIBANWOBNH2WP4PDHX7VTTWBAZS5DFMETDISPENRVVASNARFE5VC3VYQJUEVQSL2X45IR7CUCWQYGY3PA6WSNTL7CFUYB3A
+
+This allows pretty neat things such as:
+
+- A client can compute the identifier of newly created content on it&#39;s own and can only forward the content to a server at a (much) later time. This enables offline-first clients.
+- The authenticity of content can be directly verified by recomputing the identifier.
+- Mutable content (such as a website) can be cached (go [here](https://geopub.openengiadina.net/browse/object/https%253A%252F%252Fchaos.social%252Fusers%252Fpukkamustard) and hit &quot;Load more data&quot; to see how this might work).
+
+There are also some things that suddenly become impossible: If the server changes the content of the activity when it is posted (add the correct actor, or published date) this will change the identifier of the content. This might cause problems and currently CPub does not allow any content to be posted that it would have to change. In particular `bcc` and `bto` are not supported by CPub.
+
+Anyways, give it a try and let me know what you think. Currently GeoPub only supports liking, so like away...</description>
+    
+    <lastBuildDate>Wed, 12 Aug 2020 16:23:33 +0000</lastBuildDate>
+    <category>openEngiadina</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/demo-federated-authentication-and-content-addressing/874.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Demo: Federated Authentication and content-addressing</title>
+        <dc:creator><![CDATA[pukkamustard]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello SocialHub!</p>
+<p>We have another little demo showcasing two things: Federated authentication and content-addressing.</p>
+<p>The Demo consists of a ActivityPub(-esque) Server called <a href="https://gitlab.com/openengiadina/cpub" rel="nofollow noopener">CPub</a> and a Web client called <a href="https://gitlab.com/openengiadina/geopub" rel="nofollow noopener">GeoPub</a>.</p>
+<p>A demo instance is up here: <a href="https://geopub.openengiadina.net/" rel="nofollow noopener">https://geopub.openengiadina.net/</a></p>
+<h1>Federated Authentication</h1>
+<p>CPub supports authentication with OpenID-Connect providers as well as with servers that implement the <a href="https://docs.joinmastodon.org/methods/apps/oauth/" rel="nofollow noopener">Mastodon OAuth API</a>.</p>
+<p>You can try this out by going to <a href="https://geopub.openengiadina.net/settings/" rel="nofollow noopener">https://geopub.openengiadina.net/settings/</a> and click on the button “Authenticate with <a href="https://openengiadina.net/" rel="nofollow noopener">https://openengiadina.net/</a>”. You will be redirected to following page where you can enter the url of your Pleroma or Mastodon server:</p>
+<p><img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/3a934cd2e527eb35d9e828519edd4b29e7f5cc0b.png" alt="cpub-login" data-base62-sha1="8mbhv5byGHhdAfUoXIw6XGWSTMv" width="534" height="370"></p>
+<p>If you press “LOG IN” you will be directed to your instance where you will be authenticated and asked to grant CPub access to read your account (the <code>read:accounts</code> scope). This allows CPub to create a user that is linked to your Pleroma/Mastodon instance.</p>
+<p>The auth* happens in two-hops. The client (GeoPub) requests authorization from a CPub instance. The CPub instance authenticates with an external service. This is because GeoPub still relies on CPub feature. Once we fully implement the ActivityPub Client-to-Server protocol, GeoPub will directly authenticate and use your instance (similar to how Pinafore works).</p>
+<p>CPub can also be setup to authenticate with any OpenID-Connect provider. Currently we have setup authentication with <a href="https://public.cat/" rel="nofollow noopener">PUBLIC SSO</a>. We have tested it with GitLab, Keycloak and Azure AD.</p>
+<p>Previous related discussions on SocialHub: <a href="https://socialhub.activitypub.rocks/t/single-sign-on-for-fediverse/712/1" class="inline-onebox">Single Sign-On for Fediverse</a> and <a href="https://socialhub.activitypub.rocks/t/federating-authentication/823/1" class="inline-onebox">Federating authentication</a>.</p>
+<h1>Content-addressing</h1>
+<p>As <a href="https://socialhub.activitypub.rocks/t/content-addressing-and-signatures/744">previously mentioned</a> we have been doing some fiddling around with content-addressing. This is now implemented in CPub and GeoPub.</p>
+<p>The id of newly created content is not a URL pointing to some location but consists of a hash of the content-itself (as a URN). For example <a href="https://geopub.openengiadina.net/browse/object/urn%253Aerisx%253AAAAABKIJ2AGOMGIBANWOBNH2WP4PDHX7VTTWBAZS5DFMETDISPENRVVASNARFE5VC3VYQJUEVQSL2X45IR7CUCWQYGY3PA6WSNTL7CFUYB3A" rel="nofollow noopener">this “Hello World”</a> note has the identifier <code>urn:erisx:AAAABKIJ2AGOMGIBANWOBNH2WP4PDHX7VTTWBAZS5DFMETDISPENRVVASNARFE5VC3VYQJUEVQSL2X45IR7CUCWQYGY3PA6WSNTL7CFUYB3A</code>.</p>
+<p>This allows the content to be stored and transported in many different ways (IPFS, a USB stick, …). For the moment you can also use the CPub <code>objects</code> endpoint: <a href="https://openengiadina.net/objects/?iri=urn:erisx:AAAABKIJ2AGOMGIBANWOBNH2WP4PDHX7VTTWBAZS5DFMETDISPENRVVASNARFE5VC3VYQJUEVQSL2X45IR7CUCWQYGY3PA6WSNTL7CFUYB3A" rel="nofollow noopener">https://openengiadina.net/objects/?iri=urn:erisx:AAAABKIJ2AGOMGIBANWOBNH2WP4PDHX7VTTWBAZS5DFMETDISPENRVVASNARFE5VC3VYQJUEVQSL2X45IR7CUCWQYGY3PA6WSNTL7CFUYB3A</a></p>
+<p>This allows pretty neat things such as:</p>
+<ul>
+<li>A client can compute the identifier of newly created content on it’s own and can only forward the content to a server at a (much) later time. This enables offline-first clients.</li>
+<li>The authenticity of content can be directly verified by recomputing the identifier.</li>
+<li>Mutable content (such as a website) can be cached (go <a href="https://geopub.openengiadina.net/browse/object/https%253A%252F%252Fchaos.social%252Fusers%252Fpukkamustard" rel="nofollow noopener">here</a> and hit “Load more data” to see how this might work).</li>
+</ul>
+<p>There are also some things that suddenly become impossible: If the server changes the content of the activity when it is posted (add the correct actor, or published date) this will change the identifier of the content. This might cause problems and currently CPub does not allow any content to be posted that it would have to change. In particular <code>bcc</code> and <code>bto</code> are not supported by CPub.</p>
+<p>Anyways, give it a try and let me know what you think. Currently GeoPub only supports liking, so like away…</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/demo-federated-authentication-and-content-addressing/874/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/demo-federated-authentication-and-content-addressing/874/1</link>
+        <pubDate>Wed, 12 Aug 2020 12:41:56 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-874-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/demo-federated-authentication-and-content-addressing/874.rss">Demo: Federated Authentication and content-addressing</source>
+      </item>
+  </channel>
+</rss>

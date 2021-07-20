@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Detecting Language (i.e. English, Spanish, Russian, etc)</title>
+    <link>https://socialhub.activitypub.rocks/t/detecting-language-i-e-english-spanish-russian-etc/1349</link>
+    <description>Does anyone have a good solution to the problem of servers that post content that don&#39;t contain the @language tag in the @context for &quot;Note&quot; Objects, for example. That would for example have &quot;en&quot; for English language. I&#39;m noticing that tons of messages in outboxes I&#39;m reading from across the web don&#39;t have language specified, so I get tons of foreign language stuff on my English language server.
+
+I know I can use a spell checker to impose a rule of like if more than 60% of words are unknown think of it as non-English, but that would be quite a hack.</description>
+    
+    <lastBuildDate>Sat, 23 Jan 2021 21:31:47 +0000</lastBuildDate>
+    <category>Programming</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/detecting-language-i-e-english-spanish-russian-etc/1349.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Detecting Language (i.e. English, Spanish, Russian, etc)</title>
+        <dc:creator><![CDATA[WClayFerguson]]></dc:creator>
+        <description><![CDATA[
+            <p>Does anyone have a good solution to the problem of servers that post content that don’t contain the <span class="mention">@language</span> tag in the <span class="mention">@context</span> for “Note” Objects, for example. That would for example have “en” for English language. I’m noticing that tons of messages in outboxes I’m reading from across the web don’t have language specified, so I get tons of foreign language stuff on my English language server.</p>
+<p>I know I can use a spell checker to impose a rule of like if more than 60% of words are unknown think of it as non-English, but that would be quite a hack.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/detecting-language-i-e-english-spanish-russian-etc/1349/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/detecting-language-i-e-english-spanish-russian-etc/1349/1</link>
+        <pubDate>Sat, 23 Jan 2021 21:31:47 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1349-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/detecting-language-i-e-english-spanish-russian-etc/1349.rss">Detecting Language (i.e. English, Spanish, Russian, etc)</source>
+      </item>
+  </channel>
+</rss>

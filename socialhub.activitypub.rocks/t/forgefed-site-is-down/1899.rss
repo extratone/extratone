@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>ForgeFed site is down</title>
+    <link>https://socialhub.activitypub.rocks/t/forgefed-site-is-down/1899</link>
+    <description>Hi @fr33domlover @forgefed apparently the site at https://forgefed.peers.community is down.</description>
+    
+    <lastBuildDate>Wed, 14 Jul 2021 19:20:58 +0000</lastBuildDate>
+    <category>ForgeFed</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/forgefed-site-is-down/1899.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>ForgeFed site is down</title>
+        <dc:creator><![CDATA[bill-auger]]></dc:creator>
+        <description><![CDATA[
+            <p>the peers.community website was moved to a new host last week - they forgot to add a route for forgefed.peers.community - it should be back online soon</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/forgefed-site-is-down/1899/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/forgefed-site-is-down/1899/2</link>
+        <pubDate>Wed, 14 Jul 2021 19:20:58 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1899-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/forgefed-site-is-down/1899.rss">ForgeFed site is down</source>
+      </item>
+      <item>
+        <title>ForgeFed site is down</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/fr33domlover">@fr33domlover</a> <a class="mention-group" href="/groups/forgefed">@forgefed</a> apparently the site at <a href="https://forgefed.peers.community">https://forgefed.peers.community</a> is down.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/forgefed-site-is-down/1899/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/forgefed-site-is-down/1899/1</link>
+        <pubDate>Thu, 01 Jul 2021 07:49:51 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1899-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/forgefed-site-is-down/1899.rss">ForgeFed site is down</source>
+      </item>
+  </channel>
+</rss>

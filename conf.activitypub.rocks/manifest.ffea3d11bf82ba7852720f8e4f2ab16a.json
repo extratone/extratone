@@ -1,0 +1,27 @@
+{
+  "icons": [
+    {
+      "src": "icon_512x512.cbaf9a630dabf278de8f6ef5eb913e04.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_256x256.1b82591236c31a3aae2e19343d464095.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_128x128.373c5d0cee4ad3ff389e0204f7d5c6a2.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }
+  ],
+  "name": "apconf2020",
+  "short_name": "apconf2020",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "apconf2020",
+  "background_color": "#ffffff",
+  "theme_color": "#f1007e"
+}

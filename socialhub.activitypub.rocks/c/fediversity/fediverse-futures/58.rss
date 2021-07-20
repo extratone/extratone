@@ -1,0 +1,1214 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Fediverse Futures - SocialHub</title>
+    <link>https://socialhub.activitypub.rocks/c/fediversity/fediverse-futures/58</link>
+    <description>Topics in the &#39;Fediverse Futures&#39; category This is a space to elaborate the Fediverse from high-level, non-technical perspectives, brainstorming our visions and dreams.</description>
+    
+      <lastBuildDate>Mon, 05 Jul 2021 09:03:02 +0000</lastBuildDate>
+      <atom:link href="https://socialhub.activitypub.rocks/c/fediversity/fediverse-futures/58.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Using ActivityPub for Podcast Comments (exploration)</title>
+          <dc:creator><![CDATA[keunes]]></dc:creator>
+          <category>Fediverse Futures</category>
+          <description><![CDATA[
+            <p>Dear ActivityPub community!</p>
+<p>I’m somewhat active in the Podcasting 2.0 community. This community works on the <strong>Podcast Namespace</strong>, which extends the RSS standard with new tags for podcasts. For example the <code>podcast:person</code> tag (to identify individuals heard in the podcast, both presenters and guests), or the <code>podcast:funding</code> tag (to indicate ways to financially support the podcaster). Podcast hosts should support them; podcast apps should use them.</p>
+<p>The loose group is now also discussing <strong>comments</strong> (via a <code>podcast:comments</code> tag), and one venue that is being explored is ActivityPub.</p>
+<p>The goal here is a YouTube-comment-like-experience. But then in some decentralised fashion. I see some open questions regarding</p>
+<ul>
+<li>hosting (where are the comments hosted; by podcast host, podcaster, podcast client app, or another specialised comment entity)</li>
+<li>moderation (should probably be the responsibility of the podcaster, but this depends on who hosts the comments)</li>
+<li>inclusion (should comments be gathered through a hashtag of some sorts, or is there a single thread that is displayed)</li>
+<li>initiation (who gets to ‘start’ a comment thread, and who has control over this (client app, podcaster, no-one))</li>
+<li>technology (should we rely on Mastodon, or create a ‘new’ ActivityPub-based standard specific to comments? If something new, in which ways should it federate?)</li>
+</ul>
+<p>Adam &amp; Dave (who basically initiated the Podcasting 2.0 community) are discussing  the comments concept here - I would recommend listening to it because it probably gives a better idea than my summary above:</p>
+<blockquote>
+<p><a href="https://podcastindex.org/podcast/920666" rel="noopener nofollow ugc">Podcasting 2.0</a>: Episode 44: Separating the Nodes from the Noobs<br>
+<a href="https://mp3s.nashownotes.com/PC20-44-2021-07-02-Final.mp3#t=5617" rel="noopener nofollow ugc">https://mp3s.nashownotes.com/PC20-44-2021-07-02-Final.mp3#t=5617</a> [01:33:37]</p>
+</blockquote>
+<p><strong>It would be great if the ActivityPub community could chip in.</strong> Every 1,5 week or so there’s a community developer meeting, and the first next one is Wednesday 7 July at 20:00 CEST. I’m pretty sure that Podcast Comments will be on the agenda for that meeting.</p>
+<aside class="onebox allowlistedgeneric" data-onebox-src="https://meet.jit.si/Podcasting-2.0-Community">
+  <header class="source">
+      <img src="https://meet.jit.si/Podcasting-2.0-Community/images/favicon.ico?v=1" class="site-icon" width="32" height="32">
+
+      <a href="https://meet.jit.si/Podcasting-2.0-Community" target="_blank" rel="noopener nofollow ugc">meet.jit.si</a>
+  </header>
+
+  <article class="onebox-body">
+    
+
+<h3><a href="https://meet.jit.si/Podcasting-2.0-Community" target="_blank" rel="noopener nofollow ugc">Jitsi Meet</a></h3>
+
+  <p>Join a WebRTC video conference powered by the Jitsi Videobridge</p>
+
+
+  </article>
+
+  <div class="onebox-metadata">
+    
+    
+  </div>
+
+  <div style="clear: both"></div>
+</aside>
+
+<p>If you prefer to chip in on Mastodon, there’s a discussion thread here:</p><aside class="onebox allowlistedgeneric" data-onebox-src="https://podcastindex.social/@agates/106513794100156732">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/fd156fff11fc042ed3ec6355c45f37e207e35839.ico" class="site-icon" width="45" height="48">
+
+      <a href="https://podcastindex.social/@agates/106513794100156732" target="_blank" rel="noopener nofollow ugc" title="12:18AM - 03 July 2021">PodcastIndex Social – 3 Jul 21</a>
+  </header>
+
+  <article class="onebox-body">
+    <img src="https://socialhub.activitypub.rocks/uploads/default/original/2X/e/e3a7b90ce223e1e05e7d8df5db6d2988e8a39692.jpeg" class="thumbnail onebox-avatar" width="400" height="400">
+
+<h3><a href="https://podcastindex.social/@agates/106513794100156732" target="_blank" rel="noopener nofollow ugc">Alecks Gates (@agates@podcastindex.social)</a></h3>
+
+  <p>@adam @dave 
+
+1) We plan on using ActivityPub for comments.  This already exists and works.  That's ActivityPub (Mastodon style).  Just taking time to get to help with implementation details, we're catching up on other things.
+2) I'm like you, Adam,...</p>
+
+
+  </article>
+
+  <div class="onebox-metadata">
+    
+    
+  </div>
+
+  <div style="clear: both"></div>
+</aside>
+
+<p>Would be great to hear from you <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+            <p><small>8 posts - 6 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/using-activitypub-for-podcast-comments-exploration/1909">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/using-activitypub-for-podcast-comments-exploration/1909</link>
+          <pubDate>Mon, 05 Jul 2021 09:03:02 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1909</guid>
+          <source url="https://socialhub.activitypub.rocks/t/using-activitypub-for-podcast-comments-exploration/1909.rss">Using ActivityPub for Podcast Comments (exploration)</source>
+        </item>
+        <item>
+          <title>How to Empower Local Communities/Organizations with Fediverse applications?</title>
+          <dc:creator><![CDATA[dorian]]></dc:creator>
+          <category>Fediverse Futures</category>
+          <description><![CDATA[
+            <p>Lately I’ve been thinking about how I might be able to propose some fediverse applications to some local organizations in my area in order to enhance and replace (in that order) their organization efforts on the large closed social media platforms. I think working with already existing groups tied to geographic areas could bring some great grassroots power to the fediverse.</p>
+<p>Something that I think is really important in approaching this is that communities themselves know best what they need. I know that if I come in just talking about the ways in which Mastodon mimics or is better than Twitter people will just ignore me. As they should, if I come in speaking before listening.</p>
+<p>Has anyone else worked with local groups on these things? What were some pitfalls? Benefits?</p>
+<p>Two pros of fediverse social media that I’ve been mulling over, both related to moderation:</p>
+<ul>
+<li>Advertising based social media means that when participating in your group members get served ads that you have no control over. I’ve heard stories from some People of Color that they got served racist ads, ads that they felt were targeted to do harm. That’s a problem fediverse social media can solve.</li>
+<li>Fediverse social media has many more options for moderation. On Facebook many groups are set to private in order to protect members. This closes them off, less able to communicate with other groups. Federation enables groups to be selectively closed to some groups and open to others.</li>
+</ul>
+            <p><small>8 posts - 6 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/how-to-empower-local-communities-organizations-with-fediverse-applications/1892">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/how-to-empower-local-communities-organizations-with-fediverse-applications/1892</link>
+          <pubDate>Wed, 30 Jun 2021 15:43:32 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1892</guid>
+          <source url="https://socialhub.activitypub.rocks/t/how-to-empower-local-communities-organizations-with-fediverse-applications/1892.rss">How to Empower Local Communities/Organizations with Fediverse applications?</source>
+        </item>
+        <item>
+          <title>A system allowing existing user to vouch for new invitees</title>
+          <dc:creator><![CDATA[lrhodes]]></dc:creator>
+          <category>Fediverse Futures</category>
+          <description><![CDATA[
+            <p>I mentioned this <strong>feature idea</strong> over <a href="https://merveilles.town/@lrhodes/106495932606975203" rel="noopener nofollow ugc">on Mastodon</a>, and a few people suggested I suggest it here as well: Some sort of semantic relation between accounts, built into an instance’s invitation and/or registration function, indicating that the newer account was admitted at the request of the older.</p>
+<p>You can think of it as a profile-based system for recording when one user <em>vouched for</em> adding another. On the one hand, this would add a slightly different way of mapping the semantic relationships between accounts, on top of the follows, which are more gregarious. The vouched-for/by linkage between accounts would imply some measure of trust and entail some measure of responsibility. As such, fostering those relations could encourage community-building.</p>
+<p>That’s somewhat aspirational, though. The more immediate practical effect is that baking vouched-for/by relationships into profiles would give moderators a tool for working through mediation procedures.</p>
+<p>An example:</p>
+<blockquote>
+<p>Suppose you moderate an invite-only instance. An active member  — call her Helga — DMs you and asks, “Hey, can my pal Ogbar get an invite?” Sure thing. You go into the mod panel to generate the invite. One of the options is a checkbox labelled “Vouched by…” or something to that effect. Checking that activates a text field/drop down. From that, you select Helga’s account name. Now, when Ogbar uses the invite link, the account he creates will be permanently linked to Helga’s account in a semantic relationship that’s visible to moderators.</p>
+<p>Weeks pass. One day, Ogbar does something that requires moderation. A glance at his account would tell you who requested their invite. So rather than jumping straight to a ban or some other heavy-handed measure, you can ask Helga to mediate. You may not even need to ask — maybe just knowing that that act of having vouched for Ogbar is baked into their accounts encourages Helga to feel just a little responsible for Ogbar’s behavior, and she steps in of her own volition.</p>
+<p>But let’s say that things don’t work out that way. Helga never steps in and is unresponsive to friendly requests for mediation. Ogbar’s behavior worsens, and eventually you feel compelled to ban him. Then, a year later, Helga DMs you and asks,  “Hey, can my pal Ryuchi get an invite?” The Ogbar episode is no longer fresh in your mind, so you look at her profile for a refresher. Oh, right… Maybe her vouching for a prospective user shouldn’t count for so much, huh? Informed, you can better weigh how to handle her request — whether that means turning it down flat, basing your decision on some other factor (like Ryuchi’s social media history elsewhere), or warning Helga that banning another user she vouched for will mean tighter restrictions on her account in the future.</p>
+</blockquote>
+<p>There are some implementation questions that need to be worked out (e.g. would these relations be public, or visible only to the moderators and the accounts linked by vouching?), but I think it’s an idea worth exploring.</p>
+            <p><small>3 posts - 3 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/a-system-allowing-existing-user-to-vouch-for-new-invitees/1891">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/a-system-allowing-existing-user-to-vouch-for-new-invitees/1891</link>
+          <pubDate>Wed, 30 Jun 2021 14:34:02 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1891</guid>
+          <source url="https://socialhub.activitypub.rocks/t/a-system-allowing-existing-user-to-vouch-for-new-invitees/1891.rss">A system allowing existing user to vouch for new invitees</source>
+        </item>
+        <item>
+          <title>Gitea/Codeberg roadmap to federation</title>
+          <dc:creator><![CDATA[dachary]]></dc:creator>
+          <category>Fediverse Futures</category>
+          <description><![CDATA[
+            <p>Bonjour,</p>
+<p>I’m curious to hear what people involved in Codeberg ( <a href="https://codeberg.org/6543" class="inline-onebox" rel="noopener nofollow ugc">6543 - Codeberg.org</a>  <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/eyes.png?v=9" title=":eyes:" class="emoji" alt=":eyes:"> ) have in mind regarding federation. Will there be multiple independent instances of Codeberg working together in a federated way? Is it something that is worked on in Gitea (via <a class="mention" href="/u/cjs">@cjs</a> <a href="https://github.com/go-gitea/gitea/issues/14186" rel="noopener nofollow ugc">go-fed integration</a> maybe ?). Or something else entirely?</p>
+<p>I’ve not seen recent activity on this topic but since I’m not involved in the Gitea/Codeberg community, it is entirely possible that I missed something <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Cheers</p>
+            <p><small>3 posts - 2 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/gitea-codeberg-roadmap-to-federation/1883">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/gitea-codeberg-roadmap-to-federation/1883</link>
+          <pubDate>Sat, 26 Jun 2021 06:56:30 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1883</guid>
+          <source url="https://socialhub.activitypub.rocks/t/gitea-codeberg-roadmap-to-federation/1883.rss">Gitea/Codeberg roadmap to federation</source>
+        </item>
+        <item>
+          <title>Passionate for Fediverse? Then you should join SocialHub community!</title>
+          <dc:creator><![CDATA[aschrijver]]></dc:creator>
+          <category>Fediverse Futures</category>
+          <description><![CDATA[
+            <p><div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/2X/4/45e52092d18f5912506af025cb0d2a5fad2fbb7f.png" data-download-href="https://socialhub.activitypub.rocks/uploads/default/45e52092d18f5912506af025cb0d2a5fad2fbb7f" title="join-socialhub-reimagine-social-networking"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/4/45e52092d18f5912506af025cb0d2a5fad2fbb7f_2_690x99.png" alt="join-socialhub-reimagine-social-networking" data-base62-sha1="9YjQATQxozP72IF0kPROgiIKbKv" width="690" height="99" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/4/45e52092d18f5912506af025cb0d2a5fad2fbb7f_2_690x99.png, https://socialhub.activitypub.rocks/uploads/default/original/2X/4/45e52092d18f5912506af025cb0d2a5fad2fbb7f.png 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/2X/4/45e52092d18f5912506af025cb0d2a5fad2fbb7f.png 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/4/45e52092d18f5912506af025cb0d2a5fad2fbb7f_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">join-socialhub-reimagine-social-networking</span><span class="informations">912×131 25.4 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<br>
+<p>You  <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/sparkling_heart.png?v=9" title=":sparkling_heart:" class="emoji" alt=":sparkling_heart:">  love Fediverse, right? It’s vibrant unique culture and the lovely people you meet. You want to protect it, increase its beauty, see more applications interoperate seamlessly. You know that you are part of a ‘reimagining of social networking’ that is much needed, as traditional social media are destroying the fabric of society.</p>
+<p>What you may not know is that:</p>
+<ul>
+<li>
+<p>The Fediverse is still incredibly weak. That it has a tiny community of technologists that evolve it, and that this process is stalling as people are absorbed in their own projects. (“The Tragedy of the Grassroots Movement?”)</p>
+</li>
+<li>
+<p>That what Fediverse currently offers is just the tiny tip of the iceberg. That humongous potential still lies dormant, waiting to be explored. That we can go <em>way</em> beyond microblogging features that dominate the fedi now.</p>
+</li>
+<li>
+<p>That YOU are instrumental in tapping this potential, and that you don’t have to be a techie to help with that.</p>
+</li>
+</ul>
+<p>At <a href="https://socialhub.activitypub.rocks">SocialHub community</a> we come together to improve the Fediverse, evolve its standards and the ecosystem. And regardless of your skills and expertise we need all the help we can get to move forwards, to progress this thing we love.</p>
+<p>Throw off your individualism and become a fedi builder. It’s a win-win for all. We are ‘United in Diversity’ and should build together. Join SocialHub as member and interact. And also join <a href="https://lemmy.ml/c/fediversefutures">Fediverse Futures on Lemmy</a> to brainstorm on exciting ideas.</p>
+<p>We are <a href="https://socialhub.activitypub.rocks/t/socialhub-and-spiral-island-a-fediverse-foundation-analogy/1543">Spiral Island</a> still, and can become a sprawling archipelago.</p>
+            <p><small>2 posts - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/passionate-for-fediverse-then-you-should-join-socialhub-community/1871">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/passionate-for-fediverse-then-you-should-join-socialhub-community/1871</link>
+          <pubDate>Tue, 22 Jun 2021 08:48:49 +0000</pubDate>
+          <discourse:topicPinned>Yes</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1871</guid>
+          <source url="https://socialhub.activitypub.rocks/t/passionate-for-fediverse-then-you-should-join-socialhub-community/1871.rss">Passionate for Fediverse? Then you should join SocialHub community!</source>
+        </item>
+        <item>
+          <title>Exploring Hospitality Exchange platforms, opportunities to federate</title>
+          <dc:creator><![CDATA[aschrijver]]></dc:creator>
+          <category>Fediverse Futures</category>
+          <description><![CDATA[
+            <p><em>(Note: This is a <strong>Wiki</strong> post that anyone can edit, by clicking ‘Edit’ in bottom-right corner)</em></p>
+<h2>
+<a name="exploring-platforms-1" class="anchor" href="#exploring-platforms-1"></a>Exploring platforms</h2>
+<h3>
+<a name="mentions-2" class="anchor" href="#mentions-2"></a>Mentions</h3>
+<p>Add yourself here to get notified on updates: <a class="mention" href="/u/aschrijver">@aschrijver</a>, <a class="mention" href="/u/mariha">@mariha</a>, <a class="mention" href="/u/nicksellen">@nicksellen</a>,  …</p>
+<h3>
+<a name="notes-3" class="anchor" href="#notes-3"></a>Notes</h3>
+<ul>
+<li>
+<p><a class="mention" href="/u/aschrijver">@aschrijver</a>: Note, this topic is locked, to ensure that wiki edits bump the topic to the top of the form. For general discussion use <a href="https://socialhub.activitypub.rocks/t/hospitality-exchange-community-considers-moving-to-the-fediverse/1765" class="inline-onebox">Hospitality exchange community considers moving to the fediverse ;)</a></p>
+</li>
+<li>
+<p><a class="mention" href="/u/aschrijver">@aschrijver</a>: Without having experience with any platform, or having signed up, I have summarized some functionality which I ‘scraped’ from looking at the websites. In this wiki post we can further elaborate and look into some federation ideas. (My description below will be incomplete, and probably inaccurate, but its just to get things going).</p>
+</li>
+<li>
+<p><a class="mention" href="/u/aschrijver">@aschrijver</a>: I hope this setup is useful to get a bit of an overview of things. Any feedback is welcome. Chat is in <span class="hashtag">#hospex:matrix</span>.org</p>
+</li>
+</ul>
+<h3>
+<a name="warmshowershttpswwwwarmshowersorg-4" class="anchor" href="#warmshowershttpswwwwarmshowersorg-4"></a><a href="https://www.warmshowers.org">WarmShowers</a>
+</h3>
+<h4>
+<a name="hospitality-exchangehttpsfedihospexgithubiowarmshowers-domainhtmlhospitality-exchange-domain-5" class="anchor" href="#hospitality-exchangehttpsfedihospexgithubiowarmshowers-domainhtmlhospitality-exchange-domain-5"></a><a href="https://fedihospex.github.io/warmshowers-domain.html#hospitality-exchange-domain">Hospitality Exchange</a>
+</h4>
+<p>Core domain: Allows Travellers to find and contact Hosts to arrange a Stay.</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/2X/8/80bbaddc9e2a01ae88069f61c19062f46282aad8.png" data-download-href="https://socialhub.activitypub.rocks/uploads/default/80bbaddc9e2a01ae88069f61c19062f46282aad8" title="warmshowers-domain-model"><img src="https://socialhub.activitypub.rocks/uploads/default/original/2X/8/80bbaddc9e2a01ae88069f61c19062f46282aad8.png" alt="warmshowers-domain-model" data-base62-sha1="imPdrU6yhdIv3RVSHl9EfqMgyGA" width="616" height="500" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/8/80bbaddc9e2a01ae88069f61c19062f46282aad8_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">warmshowers-domain-model</span><span class="informations">741×601 22.7 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>Actors:</p>
+<ul>
+<li>
+<p>A <strong>Host</strong> is a Member that provides a place to stay</p>
+</li>
+<li>
+<p>A <strong>Traveller</strong> is a Member that seeks a place to stay</p>
+</li>
+</ul>
+<p>Ubiquitous language:</p>
+<ul>
+<li>
+<p>Host offers <strong>Accomodations</strong> to travellers</p>
+</li>
+<li>
+<p>Host presents <strong>Host Profile</strong> to travellers</p>
+</li>
+<li>
+<p>Host specifies <strong>Availability</strong> of accomodation</p>
+</li>
+<li>
+<p>Hosts are displayed on a geographic <strong>Map</strong></p>
+</li>
+<li>
+<p>Traveller filters Hosts on Map by <strong>Search Criteria</strong></p>
+</li>
+<li>
+<p>Traveller searches Hosts by <strong>Search Criteria</strong></p>
+</li>
+<li>
+<p>Traveller bookmarks Host Profiles to return to later</p>
+</li>
+<li>
+<p>Traveller contacts Host to plan their travel</p>
+</li>
+<li>
+<p><em>Traveller arranges a <strong>Stay</strong> facilitated by a Host</em></p>
+</li>
+<li>
+<p><em>Traveller might get <strong>Amenities</strong> provided by a Host</em></p>
+</li>
+</ul>
+<p>Other subdomains:</p>
+<ul>
+<li>
+<b><a href="https://fedihospex.github.io/warmshowers-domain.html#membership-domain">Membership</a></b> generic domain: Allows Members to register on the platform.</li>
+<li>
+<b><a href="https://fedihospex.github.io/warmshowers-domain.html#social-domain">Social</a></b> supporting domain: Allows Members to present themselves and provide feedback.</li>
+<li>
+<b><a href="https://fedihospex.github.io/warmshowers-domain.html#messaging-domain">Messaging</a></b> supporting domain: Allows Members to communicate in order to plan a stay.</li>
+<li>
+<b><a href="https://fedihospex.github.io/warmshowers-domain.html#funding-domain">Funding</a></b> generic domain: Allows Members to donate to the project team.</li>
+</ul>
+<p>Notes:</p>
+<ul>
+<li>A Community subdomain exists implicitly; all platform members together are the WarmShowers community.</li>
+</ul>
+<h3>
+<a name="trustrootshttpswwwtrustrootsorg-6" class="anchor" href="#trustrootshttpswwwtrustrootsorg-6"></a><a href="https://www.trustroots.org/">Trustroots</a>
+</h3>
+<ul>
+<li>
+<strong>Community</strong> core domain: Allows Members to join Circles to indicate their interests around specific Themes.</li>
+<li>
+<strong>Hospitality Exchange</strong> core domain: Allows Members to find a Place to stay</li>
+<li>
+<strong>Safety</strong> supporting domain: Allows Members to block other Members or report them to the safety team.</li>
+<li>
+<strong>Social</strong> supporting domain: Allows Members to present themselves, provide feedback about their experience and manage contacts.</li>
+<li>
+<strong>Messaging</strong> supporting domain: Allows one-to-one Member communication, about hosting, or general chat.</li>
+<li>
+<strong>Meet</strong> supporting domain: Allows Members to show interest to meet-up in person for non-hospitality related purposes.</li>
+<li>
+<strong>Membership</strong> generic domain: Allows Members to register on the platform.</li>
+</ul>
+<details>
+<summary>
+Click here to view Domain elaboration ...</summary>
+<br>
+<h3>
+<a name="todo-elaborate-7" class="anchor" href="#todo-elaborate-7"></a>TODO elaborate</h3>
+<hr>
+</details>
+<br>
+<h2>
+<a name="federation-brainstorm-8" class="anchor" href="#federation-brainstorm-8"></a>Federation brainstorm</h2>
+<p>(<strong>Note</strong>: This is brainstorm, so <strong>anything goes</strong>, criticism/restrictions come later <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/blush.png?v=9" title=":blush:" class="emoji" alt=":blush:"> )</p>
+<ul>
+<li>
+<p>Membership domain is the same functionality that any federated (microblogging) app has.</p>
+</li>
+<li>
+<p>Members / Member Profiles might also be exposed as regular microblogging actors, even though from a HospEx web or client UI they have additional functionality.</p>
+</li>
+<li>
+<p>Direct Messaging might have to be encrypted, because e.g. addresses, trip details are exchanged.</p>
+</li>
+<li>
+<p>Discovery needs some more exploration, how to search hospitality offers across instances? Respecting (maybe opt-in/allowlist style) intentions.</p>
+<ul>
+<li>Related topic of discovery of instances (in the scenario where there are many small instances, like fediverse microblogging)</li>
+</ul>
+</li>
+<li>
+<p>Note that a Host (taking the example of WS) does not <em>need</em> to provide Accomodation. They may also provide help in any form (e.g. amenities), such as offering repair for flat tires, dry shelter when it rains, just the shower/drinking water, breakfast or dinner, etc.</p>
+<ul>
+<li>This is interesting as a way to strengthen both the travel support network, as well as community aspects.</li>
+</ul>
+</li>
+</ul>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/exploring-hospitality-exchange-platforms-opportunities-to-federate/1857">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/exploring-hospitality-exchange-platforms-opportunities-to-federate/1857</link>
+          <pubDate>Fri, 11 Jun 2021 18:22:57 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>Yes</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1857</guid>
+          <source url="https://socialhub.activitypub.rocks/t/exploring-hospitality-exchange-platforms-opportunities-to-federate/1857.rss">Exploring Hospitality Exchange platforms, opportunities to federate</source>
+        </item>
+        <item>
+          <title>Bulding information sources with lasting value</title>
+          <dc:creator><![CDATA[VictorVenema]]></dc:creator>
+          <category>Fediverse Futures</category>
+          <description><![CDATA[
+            <p>Mastodon is a huge step-up from Twitter. The Signal to Noise Ratio is much better. With all this valuable information flowing by and so many people investing a lot of time into creating quality content, I increasingly wonder whether we could use that energy to jointly build knowledge bases.</p>
+<p>A second starting point of my thinking is the Delightful List (on Open Science) I am creating with <a class="mention" href="/u/aschrijver">@aschrijver</a> on Codeberg. (This is similar to the Awesome Lists on GitHub).  And I am also compiling a list of all groups that work on digital things in my city, which I thought to publish on a local Wiki. Hopefully this local lists will be followed by other topics (housing, environment, sports, …) happening in my city, so I was thinking of Wiki (rather than a GIT repository) to make it less technical to add and edit it for normal people.</p>
+<p>Then I just listened to a talk at the Open Repositories conference. In de end I am not sure they actually did this, but initially it sounded like the system they were building would suggest interesting datasets to researchers using their repositories. Suggesting potentially interesting articles, datasets and code would be very useful for science. Currently you have to wade through a lot to find the few things that you need.</p>
+<p>Before writing this up, I remembered that Mastodon nowadays has bookmarks. So the step to social bookmarking is no longer that big.</p>
+<p>Putting all of this together. Would it be possible to create a system where you bookmark interesting toots, posts and webpages (either in Mastodon or your browser), which are stored by default in a bulk list. My browser bookmark menu is extensive. That would be the next step: categorizing the bookmarks.</p>
+<p>Some of these categories could be public. Some could be jointly edited with friends. Some could be based on hashtags (probably best moderated before becoming publicly visible). Once a category is sufficiently filled a machine learning tool could also suggest interesting toots and posts (again probably best moderated before becoming public) from the toots and RSS feeds you missed.</p>
+<p>Some of these collections could also take into account how current the information is. If the curator would estimate how long a toot or post remains relevant, the system could sort the collection by how (relatively) timely the links are (or, e.g., replace the announcement of the 2021 conference with a link to the conference series).</p>
+<p>Above such a collection people could write a short summary on the topic. This could be done like a Wikipage (as long as all links go to pre-approved URLs from the link collection, spam risks are small and everyone (not just the group making the collection) could join in writing/editing such a text).</p>
+<p>Just a thought. How could we improve this idea? What existing systems already do something (somewhat) similar?</p>
+            <p><small>4 posts - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/bulding-information-sources-with-lasting-value/1847">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/bulding-information-sources-with-lasting-value/1847</link>
+          <pubDate>Wed, 09 Jun 2021 17:15:44 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1847</guid>
+          <source url="https://socialhub.activitypub.rocks/t/bulding-information-sources-with-lasting-value/1847.rss">Bulding information sources with lasting value</source>
+        </item>
+        <item>
+          <title>Governance - Exploring what works and what doesn&#39;t</title>
+          <dc:creator><![CDATA[hamishcampbell]]></dc:creator>
+          <category>Fediverse Futures</category>
+          <description><![CDATA[
+            <p>I think traditional structers are dead ends for this community, if money was involved then you would get people, but the wrong ones. Without money in the era of <span class="hashtag">#stupidindividualism</span> the is nothing to gain from cooperation and voluntarism.</p>
+<p>Would make a good thread to ask people</p>
+<p>Q. What have you seen fail</p>
+<p>Q. What have you seen work</p>
+<p>Could be a  good resource?</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/governance-exploring-what-works-and-what-doesnt/1840">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/governance-exploring-what-works-and-what-doesnt/1840</link>
+          <pubDate>Sat, 05 Jun 2021 09:26:12 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1840</guid>
+          <source url="https://socialhub.activitypub.rocks/t/governance-exploring-what-works-and-what-doesnt/1840.rss">Governance - Exploring what works and what doesn&#39;t</source>
+        </item>
+        <item>
+          <title>Hospitality exchange community considers moving to the fediverse ;)</title>
+          <dc:creator><![CDATA[mariha]]></dc:creator>
+          <category>Fediverse Futures</category>
+          <description><![CDATA[
+            <p><div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/2X/5/58bdfe7e164ff3423e9b05d67096b537145cc382.jpeg" data-download-href="https://socialhub.activitypub.rocks/uploads/default/58bdfe7e164ff3423e9b05d67096b537145cc382" title="pexels-tim-douglas-6205480"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/5/58bdfe7e164ff3423e9b05d67096b537145cc382_2_690x459.jpeg" alt="pexels-tim-douglas-6205480" data-base62-sha1="cF34PtaaFx9qzC7nor4f4NGw7L4" width="690" height="459" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/5/58bdfe7e164ff3423e9b05d67096b537145cc382_2_690x459.jpeg, https://socialhub.activitypub.rocks/uploads/default/original/2X/5/58bdfe7e164ff3423e9b05d67096b537145cc382.jpeg 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/2X/5/58bdfe7e164ff3423e9b05d67096b537145cc382.jpeg 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/5/58bdfe7e164ff3423e9b05d67096b537145cc382_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">pexels-tim-douglas-6205480</span><span class="informations">800×533 54 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>I outlined the reasons in my into post <a href="https://socialhub.activitypub.rocks/t/hello-from-hospitality-exchange-community-devs/1764" class="inline-onebox">Hello from hospitality exchange community devs!</a></p>
+<p>The idea is drafted here: <a href="https://github.com/mariha/federated-trustroots/discussions/3" rel="noopener nofollow ugc">https://github.com/mariha/federated-trustroots/discussions/3</a></p>
+<p>I’d like to discuss the idea and possibly get some help in the direction where to go next. In particular, I am not sure if ActivityPub is what we should use to implement our federation. We are not social media platforms.</p>
+<p><small><em>(Photo by <strong><a href="https://www.pexels.com/@tim-douglas?utm_content=attributionCopyText&amp;utm_medium=referral&amp;utm_source=pexels" rel="noopener nofollow ugc">Tim Douglas</a></strong> from <strong><a href="https://www.pexels.com/photo/lady-standing-in-cafeteria-and-demonstrating-sign-open-6205480/?utm_content=attributionCopyText&amp;utm_medium=referral&amp;utm_source=pexels" rel="noopener nofollow ugc">Pexels</a></strong>)</em></small></p>
+            <p><small>30 posts - 8 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/hospitality-exchange-community-considers-moving-to-the-fediverse/1765">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/hospitality-exchange-community-considers-moving-to-the-fediverse/1765</link>
+          <pubDate>Mon, 17 May 2021 11:00:46 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1765</guid>
+          <source url="https://socialhub.activitypub.rocks/t/hospitality-exchange-community-considers-moving-to-the-fediverse/1765.rss">Hospitality exchange community considers moving to the fediverse ;)</source>
+        </item>
+        <item>
+          <title>FedeProxy found funding. How do we ensure project success?</title>
+          <dc:creator><![CDATA[dachary]]></dc:creator>
+          <category>Fediverse Futures</category>
+          <description><![CDATA[
+            <p>As of this month I’m <a href="https://forum.fedeproxy.eu/t/dapsi-call-deadline-20-01-2021/14" rel="noopener nofollow ugc">lucky to be funded</a> to work on fedeproxy, for the next 9 months. Lucky because I can’t shake the notion that the luck factor (15 projects out of 170) is the primary cause of the selection. And the first question in my mind is <strong>how to make use of this time to bootstrap something sustainable</strong>?  It’s a tough one and as far as I can tell the vast majority of projects did not succeed in doing this. One thing is for certain: unless something is done differently and cleverly, the probability that fedeproxy momentum fades in 2022 is extremely high.</p>
+<p>So the question is… what is your advice for someone in my position? What should I do?</p>
+            <p><small>11 posts - 4 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/fedeproxy-found-funding-how-do-we-ensure-project-success/1757">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/fedeproxy-found-funding-how-do-we-ensure-project-success/1757</link>
+          <pubDate>Sat, 15 May 2021 16:52:51 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1757</guid>
+          <source url="https://socialhub.activitypub.rocks/t/fedeproxy-found-funding-how-do-we-ensure-project-success/1757.rss">FedeProxy found funding. How do we ensure project success?</source>
+        </item>
+        <item>
+          <title>Sports clubs and their fan base be united and in control on the Fediverse</title>
+          <dc:creator><![CDATA[zleap]]></dc:creator>
+          <category>Fediverse Futures</category>
+          <description><![CDATA[
+            <h2>
+<a name="football-for-everyone-1" class="anchor" href="#football-for-everyone-1"></a>Football for Everyone</h2>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/2X/f/f4b86faa0644184dd6bb04bb11aa5c1f2b31e67e.jpeg" data-download-href="https://socialhub.activitypub.rocks/uploads/default/f4b86faa0644184dd6bb04bb11aa5c1f2b31e67e" title="football-for-everyone-uk"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/f/f4b86faa0644184dd6bb04bb11aa5c1f2b31e67e_2_690x387.jpeg" alt="football-for-everyone-uk" data-base62-sha1="yUTEDK2ZVlrmNZPyMSDJoJAsvrU" width="690" height="387" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/f/f4b86faa0644184dd6bb04bb11aa5c1f2b31e67e_2_690x387.jpeg, https://socialhub.activitypub.rocks/uploads/default/optimized/2X/f/f4b86faa0644184dd6bb04bb11aa5c1f2b31e67e_2_1035x580.jpeg 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/2X/f/f4b86faa0644184dd6bb04bb11aa5c1f2b31e67e.jpeg 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/f/f4b86faa0644184dd6bb04bb11aa5c1f2b31e67e_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">football-for-everyone-uk</span><span class="informations">1048×589 116 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>Over here in the United Kingdom, over the weekend of 29th April to May 3rd there was a social media boycott by, at first Football (soccer) players and this was joined by other sports over racism in sport.</p>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/2X/8/8b2e51649345699b74077bafaeb13c45c548372d.png" class="site-icon" width="32" height="32">
+      <a href="https://www.kickitout.org/" target="_blank" rel="noopener nofollow ugc">Kick It Out</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/362;"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/9/9148495490830c376dc688641d05abe5895c209e_2_690x362.jpeg" class="thumbnail" width="690" height="362" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/9/9148495490830c376dc688641d05abe5895c209e_2_690x362.jpeg, https://socialhub.activitypub.rocks/uploads/default/optimized/2X/9/9148495490830c376dc688641d05abe5895c209e_2_1035x543.jpeg 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/2X/9/9148495490830c376dc688641d05abe5895c209e.jpeg 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/9/9148495490830c376dc688641d05abe5895c209e_2_10x10.png"></div>
+
+<h3><a href="https://www.kickitout.org/" target="_blank" rel="noopener nofollow ugc">Kick It Out</a></h3>
+
+<p>Kick It Out is football’s equality and inclusion organisation - working throughout the football, educational and community sectors to challenge discrimination, encourage inclusive practices and campaign for positive change.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>This has got me thinking, if main stream social media continue to fail at dealing with abuse of people,  then it may present us a real opportunity to not only provide alternative platforms so that genuine fans can follow their favourite sports team / players but also an environment where users are more in control over this.</p>
+<p>A team could set up an instance, and have all it’s players on that one instance,  another instance could be set up for a supporters club (which generally you pay to be part of ) so as part of that membership you can join the fediverse instance,  this would allow some communication between clubs and fans (a sort of membership perk)</p>
+<p>Out side of this,   those who are not members can join the fediverse but have some sort of limited access, maybe connect but in follow only mode (not commenting for example)</p>
+<p>I just wondered if the fediverse is ready for that, it may perhaps require</p>
+<ol>
+<li>Easy set up<br>
+2 for clubs it may need an instance with say :-</li>
+</ol>
+<ul>
+<li>Mastodon,</li>
+<li>Pixelfed</li>
+<li>Peertube</li>
+</ul>
+<ol start="3">
+<li>Single sign on for all 3 services<br>
+4 2 factor authentication</li>
+</ol>
+<p>For fans we would need to get across the idea that you just need Mastodon and your instance can still follow the other services (a concept that may be harder to grasp at first</p>
+<p>Finally,  I think Mobile first is expected so make sure there is a full range of apps, or perhaps an app that could handle all 3 services in some way.</p>
+<p>I am not sure if this would solve the issue, but it may get more people on here if some of the big clubs took up the idea and abandoned centralised social media</p>
+<p>Of course these clubs all have sponsors so the sponsors would probably need to join too, and also accept the model of ‘advertising’ that is different here.  So they need to adapt to our way of doing things, rather than the fediverse surrendering to money making and advertising.</p>
+<p>Just an thought as a way to reach out and perhaps help solve a problem at the same time.</p>
+<p>Of course the ‘skills’ needed to set these services up are not exactly out there in huge numbers,  so perhaps there is money to be made from people here, but perhaps with some of that revenue being channelled back in to development of the fediverse.</p>
+<p>Perhaps also these services need to be based in the UK or EU to comply with data protection laws and a UK based instance.</p>
+<p>This may encourage the decentralisation model giving users back control as the primary selling point</p>
+<p>Paul</p>
+<p><small><em>(Image credit: <a href="https://www.levelplayingfield.org.uk/campaigns-research/football-4-everyone-project/" rel="noopener nofollow ugc">levelplayingfield.org.uk</a>)</em></small></p>
+            <p><small>4 posts - 3 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/sports-clubs-and-their-fan-base-be-united-and-in-control-on-the-fediverse/1700">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/sports-clubs-and-their-fan-base-be-united-and-in-control-on-the-fediverse/1700</link>
+          <pubDate>Tue, 04 May 2021 18:16:52 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1700</guid>
+          <source url="https://socialhub.activitypub.rocks/t/sports-clubs-and-their-fan-base-be-united-and-in-control-on-the-fediverse/1700.rss">Sports clubs and their fan base be united and in control on the Fediverse</source>
+        </item>
+        <item>
+          <title>Federating IoT datastreams and optimize equipment usage in Healthcare</title>
+          <dc:creator><![CDATA[pskulski]]></dc:creator>
+          <category>Fediverse Futures</category>
+          <description><![CDATA[
+            <h2>
+<a name="fediverse-in-healthcare-1" class="anchor" href="#fediverse-in-healthcare-1"></a>Fediverse in Healthcare</h2>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/2X/0/0083aec2247c4143d156e58654324c54fa370e7c.jpeg" data-download-href="https://socialhub.activitypub.rocks/uploads/default/0083aec2247c4143d156e58654324c54fa370e7c" title="pexels-pixabay-40568"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/0/0083aec2247c4143d156e58654324c54fa370e7c_2_517x345.jpeg" alt="pexels-pixabay-40568" data-base62-sha1="4y7Z0YrYyIxYiHTRzTuvun0NKA" width="517" height="345" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/0/0083aec2247c4143d156e58654324c54fa370e7c_2_517x345.jpeg, https://socialhub.activitypub.rocks/uploads/default/optimized/2X/0/0083aec2247c4143d156e58654324c54fa370e7c_2_775x517.jpeg 1.5x, https://socialhub.activitypub.rocks/uploads/default/optimized/2X/0/0083aec2247c4143d156e58654324c54fa370e7c_2_1034x690.jpeg 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/0/0083aec2247c4143d156e58654324c54fa370e7c_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">pexels-pixabay-40568</span><span class="informations">3000×2000 502 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<aside class="quote no-group" data-username="zleap" data-post="2" data-topic="1238">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/letter_avatar_proxy/v4/letter/z/e495f1/40.png" class="avatar"><a href="https://socialhub.activitypub.rocks/t/fediverse-futures-visions-dreams-feedback-wanted/1238/2">Fediverse Futures: Visions &amp; dreams. Feedback wanted</a>
+</div>
+<blockquote>
+<p><strong>Idea</strong> : Select business domains we’d love to see in the fediverse, and write visions / business cases for candidate projects.</p>
+</blockquote>
+</aside>
+<p>There are two interesting cases I would be happy to <em>fediversize</em>, being currently discussed in a team I am part of.</p>
+<ol>
+<li>Secure handling of sensitive IoT data. The case is how to gather and securely process medical telemetry from smartwatches, fitness bands and such (implants being discreetly <em>undiscussed</em>).  Following the idea of decentralization, I can imagine a locally hosted server, collecting data, somehow combined with secure backbone (<a href="https://friendica.wprzemianie.pl/search?q=%23TheTubes" class="inline-onebox" rel="noopener nofollow ugc">TePeWu: Friendica | Search</a>) and some ways to make data available either for an authorized physician or (locally anonymized) for research. But here I got to the limit of my technical imagination and I have no one around here to help me. Anyone?</li>
+<li>There are two cases of matching underused assets with their possible uses<br>
+2.1. Medical equipment being left unused once research projects are done and closed with professionals lacking funding to buy/rent it on a commercial basis.<br>
+2.2. Clinical research programs looking for certain specific “cases” – volunteers for experimental treatment or diagnostics – and people who cannot afford therapy for their less common conditions.<br>
+I can imagine using fediverse approach to create decentralized exchange, without central database, using tag and categories to find matching pairs.</li>
+</ol>
+<p>Do you think it is worth some effort?</p>
+<p><small><em>(Image CC0 Credit: <a href="https://www.pexels.com/photo/blue-and-silver-stetoscope-40568/" rel="noopener nofollow ugc">Pixabay on Pexels</a>)</em></small></p>
+            <p><small>6 posts - 4 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/federating-iot-datastreams-and-optimize-equipment-usage-in-healthcare/1699">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/federating-iot-datastreams-and-optimize-equipment-usage-in-healthcare/1699</link>
+          <pubDate>Tue, 04 May 2021 12:48:45 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1699</guid>
+          <source url="https://socialhub.activitypub.rocks/t/federating-iot-datastreams-and-optimize-equipment-usage-in-healthcare/1699.rss">Federating IoT datastreams and optimize equipment usage in Healthcare</source>
+        </item>
+        <item>
+          <title>Improve &quot;Onboarding&quot; of fedizens but avoid problematic engagement features</title>
+          <dc:creator><![CDATA[hamishcampbell]]></dc:creator>
+          <category>Fediverse Futures</category>
+          <description><![CDATA[
+            <h2>
+<a name="talking-about-onboarding-mastodon-is-changeing-how-will-this-rollout-on-other-codebases-1" class="anchor" href="#talking-about-onboarding-mastodon-is-changeing-how-will-this-rollout-on-other-codebases-1"></a>Talking about “Onboarding” mastodon is changeing - how will this rollout on other codebases?</h2>
+<p>“On mastodon.social / mastodon.online, newly registered users no longer automatically follow admins. End of an era. There’s something else now… will post about it later…”</p>
+<p>New (public) Patreon post: Feature preview: Onboarding</p>
+<p><a href="https://www.patreon.com/posts/feature-preview-50441161" rel="noopener nofollow ugc">https://www.patreon.com/posts/feature-prev</a></p>
+<p><strong>TEXT here</strong></p>
+<blockquote>
+<h2>Feature preview: Onboarding</h2>
+<p>Back when I was working with Pam Drouin on improving the UX on <a href="https://joinmastodon.org" rel="noopener nofollow ugc">joinmastodon.org</a> and we did user testing sessions, one of the (at the time) out of scope suggestions that came up was to give a new user some choice of accounts to follow. This came up again during the development of our iOS app as I saw an opportunity to try and address that. I have heard someone call it the “<a href="https://twitter.com/ShaanVP/status/1371972331095126019" rel="noopener nofollow ugc">interesting-ness problem</a>” - you must give a new user something interesting in the first few seconds on the app or they bounce.</p>
+<p>This is a pretty difficult problem to solve. When a user is new, there is nothing in the system that could be used to find what would be interesting to them. Most recommendations are based on what the user previously interacted with (in fact, our existing follow recommendations system was exactly that, showing you who you interacted with most that you don’t follow yet). I’ve made some attempts to help the situation before, namely by making new users follow their server’s admins by default (a “Myspace Tom” kind of deal) pretty early on.</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/2X/1/1191d3aff36b3654a2249bf48bece2e6baea5171.png" data-download-href="https://socialhub.activitypub.rocks/uploads/default/1191d3aff36b3654a2249bf48bece2e6baea5171" title=""><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/1/1191d3aff36b3654a2249bf48bece2e6baea5171_2_690x340.png" alt="" data-base62-sha1="2vqy52jPBzqLXfHVvRrOy1ljRLz" width="690" height="340" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/1/1191d3aff36b3654a2249bf48bece2e6baea5171_2_690x340.png, https://socialhub.activitypub.rocks/uploads/default/original/2X/1/1191d3aff36b3654a2249bf48bece2e6baea5171.png 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/2X/1/1191d3aff36b3654a2249bf48bece2e6baea5171.png 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/1/1191d3aff36b3654a2249bf48bece2e6baea5171_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename"></span><span class="informations">820×405 75.2 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>New users will now see this page on first launch of the web app. Obviously this is a screenshot from my development machine, so it’s just example data. Which brings me to: How did I decide to approach the interesting-ness problem.</p>
+<p>In absence of other information to go on, I decided that the only reasonable approach is to use the wisdom of the crowd, or popularity. To minimize vectors for manipulation and ensure the presented content is actually fresh (no use recommending someone an account that’s been inactive for a long time, even if it has the most followers!), I chose to use only local data about accounts instead of relying on total follower numbers, and to consider only followers that themselves have been active in the past 30 days.</p>
+<p>Looking at the results, I realized that “big name” accounts are not necessarily “interesting” accounts. Case in point the <a class="mention-group" href="/groups/mastodon">@Mastodon</a> account itself: A lot of followers, but only updates when a new version of Mastodon comes out, that’s hardly something a person would stick around for. So I had to turn to content itself, by seeing who wrote posts that got the most engagements in the past 30 days. If everyone shares around the post, it’s gotta be worth seeing, right? In the end I went with a mix of both, most-followed and most-engaged-with accounts.</p>
+<p>The one piece of information that we do have about new users is their preferred language. Not everyone on Mastodon speaks English, so I felt it was important to try and help people find content in their own language. I added some code that determines which language an account posted in most recently, and classified accounts into those languages, allowing the follow recommendations to be specific to each language. Since not all languages are equally active on Mastodon, the language-agnostic recommendations are used as fallback.</p>
+<p><strong>Now a bit of practical advice if you want your account to show up in those recommendations:</strong> Make sure that in your profile settings, you have opted-in to the “Suggest account to others” option (previously it was “List this account on the directory”). Your account will also not show up if your account is locked (“Require follow requests”). Since bios on Mastodon can get pretty wild and we’re working with limited space, the UI will display only one line of the bio and attempt to cut it to the first sentence only (to avoid mid-sentence cut-offs). So try to word your bio such that the first sentence describes you best.</p>
+<p>Conversely, new users will no longer automatically follow admins. The admin setting that used to control this is still used though, now to push specific accounts to the top of recommendations (and it’s been renamed). There’s a new API endpoint (/api/v2/suggestions) that shows a bit more information about each account, specifically the source of the suggestion: “staff”, “past_interactions” or “global”. I’m in talks with another UX designer to run some user tests on this new flow.</p>
+</blockquote>
+            <p><small>7 posts - 3 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/improve-onboarding-of-fedizens-but-avoid-problematic-engagement-features/1655">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/improve-onboarding-of-fedizens-but-avoid-problematic-engagement-features/1655</link>
+          <pubDate>Sun, 25 Apr 2021 12:41:10 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1655</guid>
+          <source url="https://socialhub.activitypub.rocks/t/improve-onboarding-of-fedizens-but-avoid-problematic-engagement-features/1655.rss">Improve &quot;Onboarding&quot; of fedizens but avoid problematic engagement features</source>
+        </item>
+        <item>
+          <title>Fediverse, NetCommons and the blueprint for P2P society?</title>
+          <dc:creator><![CDATA[pskulski]]></dc:creator>
+          <category>Fediverse Futures</category>
+          <description><![CDATA[
+            <p>I am new here, so I can only hope I put it into an adequate category. Please help me correct it, if I am wrong.</p>
+<p>My background is more political (as in “personal is political” and vice-versa) than technical, although I keep my toes and fingers in many jars here and there.</p>
+<p>For many years now I’ve been working to find a practical way to show people the benefits of P2P networked society, where “bubbles” are not underground bunkers, but rather “safe spaces” wherefrom people can venture outside to meet others.  To cut the long story short, I believe that if we combine the social dynamics inherent to Fediverse with community-controlled infrastructure and digital memory (think NetCommons) we can create a strong impulse towards building a society of confederated heterogeneous communities. Fediverse would then become a PoC for inert medium, encouraging cohabitation, communication, and cooperation between communities of all (within reason) shapes, sizes, and colours.</p>
+<p>I am currently involved in some projects which include self-hosting made easy (Yunohost) and federated tools of communications. We are trying to increase community-level resilience and empowerment giving them better control over their data. If we are lucky enough, we may initiate an upward spiral, making local and intentional communities stronger and more fit to take their role of a social mainstay in the face of the All-crisis.</p>
+<p>I would be happy to learn if this thinking resonates here.</p>
+            <p><small>13 posts - 5 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/fediverse-netcommons-and-the-blueprint-for-p2p-society/1654">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/fediverse-netcommons-and-the-blueprint-for-p2p-society/1654</link>
+          <pubDate>Sun, 25 Apr 2021 11:55:12 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1654</guid>
+          <source url="https://socialhub.activitypub.rocks/t/fediverse-netcommons-and-the-blueprint-for-p2p-society/1654.rss">Fediverse, NetCommons and the blueprint for P2P society?</source>
+        </item>
+        <item>
+          <title>A project idea: An engine for creating thematic websites, fansites. Will it be useful?</title>
+          <dc:creator><![CDATA[mrcatmann]]></dc:creator>
+          <category>Fediverse Futures</category>
+          <description><![CDATA[
+            <p>I want to propose an idea for a project that I want to implement, but I don’t know if it will be useful to anyone.</p>
+<ul>
+<li>It will be an engine for creating thematic websites, fansites, etc.</li>
+<li>The main section will be a place where users can post their submissions (it will be possible to turn on pre-moderation or turn off ability to submit posts at all).</li>
+<li>There will be ability to make multiple “sections” - for example first for user-submitted posts and discussions, second for site news, third for pictures gallery, etc.</li>
+<li>You’ll be able to change the appearance of the sections - it can look like a forum, like a newsfeed (as in social networks), maybe something else.</li>
+<li>The tech stack will be based on PHP/MySQL - i want it to be installable on any shared hosting.</li>
+<li>The process of installation and configuration also will be simpler than in other fediverse projects.</li>
+<li>It will be compatible and federating with other ActivityPub-based projects, at least with Mastodon.</li>
+</ul>
+<p>sorry for mistakes in English, it’s not my native language <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/frowning.png?v=9" title=":frowning:" class="emoji" alt=":frowning:"> Also, sorry if this kind of topics isn’t allowed here.</p>
+            <p><small>8 posts - 4 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/a-project-idea-an-engine-for-creating-thematic-websites-fansites-will-it-be-useful/1651">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/a-project-idea-an-engine-for-creating-thematic-websites-fansites-will-it-be-useful/1651</link>
+          <pubDate>Fri, 23 Apr 2021 20:42:39 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1651</guid>
+          <source url="https://socialhub.activitypub.rocks/t/a-project-idea-an-engine-for-creating-thematic-websites-fansites-will-it-be-useful/1651.rss">A project idea: An engine for creating thematic websites, fansites. Will it be useful?</source>
+        </item>
+        <item>
+          <title>United Software Development: A new paradigm?</title>
+          <dc:creator><![CDATA[aschrijver]]></dc:creator>
+          <category>Fediverse Futures</category>
+          <description><![CDATA[
+            <h1>
+<a name="coderglue-lets-code-together-1" class="anchor" href="#coderglue-lets-code-together-1"></a>CoderGlue: Let’s Code Together <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:">
+</h1>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/2X/5/59fe2ad0c3a5a59c929d21db0940afb0a926893b.jpeg" data-download-href="https://socialhub.activitypub.rocks/uploads/default/59fe2ad0c3a5a59c929d21db0940afb0a926893b" title="Spotify Engineering Culture excerpt showing: &amp;quot;You are the culture&amp;quot;"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/5/59fe2ad0c3a5a59c929d21db0940afb0a926893b_2_690x431.jpeg" alt='Spotify Engineering Culture excerpt showing: "You are the culture"' data-base62-sha1="cQ72PCzw0TJY3EfPYO3vfPYyfXB" width="690" height="431" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/5/59fe2ad0c3a5a59c929d21db0940afb0a926893b_2_690x431.jpeg, https://socialhub.activitypub.rocks/uploads/default/optimized/2X/5/59fe2ad0c3a5a59c929d21db0940afb0a926893b_2_1035x646.jpeg 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/2X/5/59fe2ad0c3a5a59c929d21db0940afb0a926893b.jpeg 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/5/59fe2ad0c3a5a59c929d21db0940afb0a926893b_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Spotify Engineering Culture excerpt showing: &amp;quot;You are the culture&amp;quot;</span><span class="informations">1080×675 56.5 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>This topic was inspired by <a href="https://fedeproxy.eu">FedeProxy</a> project, and my interactions on their <a href="https://forum.fedeproxy.eu">forum</a>. There’s a wink in the title, because “CoderGlue” name and icon design is just a proposal I made, as alternative more descriptive project name. Nothing more than that.</p>
+<h2>
+<a name="culture-and-process-2" class="anchor" href="#culture-and-process-2"></a>Culture and process</h2>
+<p>I really like how the team is setting up the FedeProxy project organisation. A thorough approach, deep thought, and proper preparation. So too on diversity:</p>
+<blockquote>
+<p><a class="mention" href="/u/dachary">@dachary</a>: <a href="https://forum.fedeproxy.eu/t/diversity-first-action/98">Diversity: First action</a></p>
+<p>I’d like to propose that a first action is done to improve the diversity in the fedeproxy community. It is still tiny and it should not be too difficult <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"> Two ideas:</p>
+<ul>
+<li>Add a <strong>Diversity</strong> section on <a href="https://fedeproxy.eu">https://fedeproxy.eu </a>
+</li>
+<li>Call for ideas on mastodon</li>
+</ul>
+</blockquote>
+<p>Referring to two other topics on FedeProxy forum and knitting things together:</p>
+<ul>
+<li>Your toot (or ‘post’) in <a href="https://forum.fedeproxy.eu/t/how-and-why-do-you-use-multiple-software-forges/88/8" class="inline-onebox">How and why do you use multiple software forges? - UX / User Research - Fedeproxy</a>
+</li>
+<li>
+<a class="mention" href="/u/dachary">@dachary</a>’s statement <em>“I woke up this morning thinking that fedeproxy/coderglue should (must?) be developed in a federated way, from the beginning.”</em> in <a href="https://forum.fedeproxy.eu/t/a-better-project-name/103/20" class="inline-onebox">A better project name - Fedeproxy</a>
+</li>
+</ul>
+<p>There’s some great feedback on the toot already, right? Loïc, you’ve got your audience right there on the fedi <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/blush.png?v=9" title=":blush:" class="emoji" alt=":blush:"><br>
+Also we’ve got diversity in abundunce in fedi culture.</p>
+<p>At <a href="https://socialhub.activitypub.rocks">SocialHub</a> we just presented in our first <a href="https://socialhub.activitypub.rocks/t/ec-ngi0-liaison-webinars-and-workshop-april-2021/1539">“ActivityPub for Administrations”</a> event the slogan and rallying cry  <strong>“Social Networking Reimagined”</strong>, and described fedi culture as <strong>“United in Diversity”</strong>.</p>
+<p>These two things can be embraced by FedeProxy, and become deeply engrained in your approach. First of all for your own project development. Here you can…</p>
+<blockquote>
+<p>Dogfood your own development process that you’ll learn along the way, while dogfooding the fediverse.</p>
+</blockquote>
+<p>And incorporate that in your ‘product experience’ i.e. as product features. I think your ‘proposition’ can be strongest the more you think about the Domain, and the less about the technical reality of what the software does (i.e. a bridge / proxy between code forges). In software development things all starts with <strong>culture and process</strong>.</p>
+<p>I’ve worked with (scaled) agile in the past, as tech lead and product owner in quite large (200+ devs, 100+ consultants), quite diverse (60+ natiionalities) environment, where we adopted a <a href="https://engineering.atspotify.com/2014/03/27/spotify-engineering-culture-part-1/">Spotify Engineering Culture</a>. I have also seen during my whole tech career (which has been mostly FOSS, fedi, humanetech advocacy &amp; community volunteering for the past couple of years… not much ‘career’ in that. It’s all humble pie <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"> ) plenty of times where processes, culture and communication are the bottlenecks to successful projects. Not the tech itself.</p>
+<p>Here can be the <strong>absolute strong points</strong> of FedeProxy, that might make it a killer app! By thinking holistically about what the objective is, and go from there:</p>
+<blockquote>
+<p><strong>Facilitating great, open to anyone, community-driven, successful free software projects that can sustain themselves.</strong></p>
+</blockquote>
+<p>Now Spotify Engineering Culture is interesting. You can go for something similar, <strong>yet entirely different</strong> at the same time. Imagine if FedeProxy could deliver their own vision to open software development culture + processes with videos similar to these (look through the specifics, those are <em>unimportant</em>):</p>
+<p>          <iframe width="640" height="360" src="https://player.vimeo.com/video/94950270" data-original-href="https://vimeo.com/94950270" frameborder="0" allowfullscreen="" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe>
+</p>
+<p>(and here’s <a href="https://vimeo.com/85490944">the video</a> of Part 1, more focused on Scrum / agile)</p>
+<h2>
+<a name="discover-the-domain-3" class="anchor" href="#discover-the-domain-3"></a>Discover the Domain</h2>
+<p>Now, is it worthwhile to go the extra mile and explore the above? It will certainly consume part of your funding in extra time spent.</p>
+<p>But what you have to do anyway is to analyse and elaborate the application / ‘business’ domain where you want to reach your project objectives. Right now, FedeProxy is conducting User Research. Very good and utterly important to gather as much feedback as possible.</p>
+<p>But there’s a possible pitfall too. What users are you researching? For what domain? Currently on the forum this occurs in the <a href="https://forum.fedeproxy.eu/c/user-research/8">“UX / User research”</a> category. But UX is a step too far, if you do not know the domain. There’s a risk to start thinking about concrete features and functionality, UI widgets even, way too fast.</p>
+<p>Note that there’s no need to search for a new paradigm - which I have named “United Software Development” - in a full deep-dive either. Just determine if it can be in your Vision! Then from there you can work backwards, find stuff that may be Roadmap items, skin further… until you drill-down to a MVP.</p>
+<p>I feel that with a proper approach, FedeProxy may not be alone in chasing the paradigm. A host of other projects might spring up. This is the reason why I posted to <a class="hashtag" href="/c/fediversity/fediverse-futures/58">#<span>fediversity:fediverse-futures</span></a> instead of on the FedeProxy forum.</p>
+<h2>
+<a name="the-united-software-development-paradigm-4" class="anchor" href="#the-united-software-development-paradigm-4"></a>The “United Software Development” paradigm</h2>
+<p>To conclude this brainstorm topic, I’ll try to come up with a first definition of the new paradigm that I feel tingling below the surface, just waiting to be uncovered…</p>
+<blockquote>
+<h3>United Software Development</h3>
+<p><em>“Free, libre software development, processes and culture united,. Sustainable, open and accessible to anyone.”</em></p>
+</blockquote>
+<p>Open source software has eaten the world. Free software is still struggling. FOSS maintainers have a very hard time to manage their projects, let alone sustain their own life with a decent income.</p>
+<p>United software development leverages the decentralized web, and combines all the best-practices and lessons-learned in the past decades to shape a way forwards. To facilitate a collective crafting of humane technology where people are in control, and that is to the benefit of humanity.</p>
+            <p><small>13 posts - 3 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/united-software-development-a-new-paradigm/1632">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/united-software-development-a-new-paradigm/1632</link>
+          <pubDate>Wed, 21 Apr 2021 07:27:31 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1632</guid>
+          <source url="https://socialhub.activitypub.rocks/t/united-software-development-a-new-paradigm/1632.rss">United Software Development: A new paradigm?</source>
+        </item>
+        <item>
+          <title>Federating the Murmurations Protocol</title>
+          <dc:creator><![CDATA[aschrijver]]></dc:creator>
+          <category>Fediverse Futures</category>
+          <description><![CDATA[
+            <p>(This topic is a follow-up to  <a href="https://socialhub.activitypub.rocks/t/improvement-to-federation-md-convention-murmurations/1573" class="inline-onebox">Improvement to FEDERATION.md convention: Murmurations</a>)</p>
+<hr>
+<p>The Murmurations project itself is a good candidate to be a federated application. By adding S2S synchronization to the The Murmuration Index and everyone can set up their self-hosted instances within the Fediverse.</p>
+<p><strong>Update</strong>: I notified Murmurations project about the federation idea: <a href="https://github.com/MurmurationsNetwork/MurmurationsServices/issues/128">Federated Murmurations with ActivityPub</a>.</p>
+<p>Welcome to the SocialHub <a class="mention" href="/u/olisb">@olisb</a>, so nice to see you here.</p>
+<p>This <a class="hashtag" href="/c/fediversity/fediverse-futures/58">#<span>fediversity:fediverse-futures</span></a> is mostly an ideation area, where we think about cool ways to further Fediverse-related technology, and tap ActivityPub’s full potential.</p>
+<p>But going further with FEDERATION.md in the way described here, would first of all require interest from the ActivityPub application developers, and that takes time. In the meantime it may be very interesting to discuss Federated Murmurations in more detail.</p>
+<p>Note that I brought up Murmurations on some other locations too, also merely brainstorming:</p>
+<ul>
+<li>At FedeProxy in <a href="https://forum.fedeproxy.eu/t/inspirations-from-other-communities/105/2" class="inline-onebox">Inspirations from other communities - Development - Fedeproxy</a>
+</li>
+<li>On Lemmy (a federated Reddit alternative) to a <a href="https://lemmy.ml/post/60740/comment/49719">Federated App Store idea</a>
+</li>
+<li>In my own ideas list for <a href="https://codeberg.org/innercircles/seedvault/issues/12">Auto-collecting awesome / delightful lists</a>
+</li>
+</ul>
+<p>Note too that regarding federation the Murmurations Library also should be part of what is federated, so every aggregator can collect those schema’s they are most interested in.</p>
+<p><strong>Update</strong>: <a class="mention" href="/u/olisb">@olisb</a> I have also brought Murmurations to attention of Yarmo, the <a href="https://keyoxide.org">Keyoxide</a> maintainer: <a href="https://codeberg.org/keyoxide/web/issues/88">https://codeberg.org/keyoxide/web/issues/88</a></p>
+            <p><small>6 posts - 2 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/federating-the-murmurations-protocol/1701">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/federating-the-murmurations-protocol/1701</link>
+          <pubDate>Tue, 20 Apr 2021 13:26:57 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1701</guid>
+          <source url="https://socialhub.activitypub.rocks/t/federating-the-murmurations-protocol/1701.rss">Federating the Murmurations Protocol</source>
+        </item>
+        <item>
+          <title>Federated Moderation: Towards Delegated Moderation?</title>
+          <dc:creator><![CDATA[aschrijver]]></dc:creator>
+          <category>Fediverse Futures</category>
+          <description><![CDATA[
+            <p><div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/1X/b8803c9fb0d666f366a39950d89e87d0b2218dfb.jpeg" data-download-href="https://socialhub.activitypub.rocks/uploads/default/b8803c9fb0d666f366a39950d89e87d0b2218dfb" title="pexels-pixabay-163064"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/b8803c9fb0d666f366a39950d89e87d0b2218dfb_2_690x460.jpeg" alt="pexels-pixabay-163064" data-base62-sha1="qkaBeXbez0D52ZrsAUijYcQbL9F" width="690" height="460" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/b8803c9fb0d666f366a39950d89e87d0b2218dfb_2_690x460.jpeg, https://socialhub.activitypub.rocks/uploads/default/optimized/1X/b8803c9fb0d666f366a39950d89e87d0b2218dfb_2_1035x690.jpeg 1.5x, https://socialhub.activitypub.rocks/uploads/default/optimized/1X/b8803c9fb0d666f366a39950d89e87d0b2218dfb_2_1380x920.jpeg 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/b8803c9fb0d666f366a39950d89e87d0b2218dfb_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">pexels-pixabay-163064</span><span class="informations">5472×3648 1.33 MB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<h2>
+<a name="introduction-1" class="anchor" href="#introduction-1"></a>Introduction</h2>
+<p>In <a href="https://socialhub.activitypub.rocks/t/improving-fediverse-culture-and-social-behavior/1397" class="inline-onebox">Improving fediverse culture and social behavior</a> along the way I introduced two ideas, that are I think interesting enough to warrant a separate thread. The brainstorm will start in the Lemmy <a href="https://lemmy.ml/c/fediversefutures">Fediverse Futures</a> ideation space, and elaborated here (if there’s interest). See Lemmy: <a href="https://lemmy.ml/post/60475">https://lemmy.ml/post/60475</a></p>
+<p><strong>Note</strong>: There’s ongoing research on Moderation by <a class="mention" href="/u/audrey">@Audrey</a> and <a class="mention" href="/u/robertwgehl">@robertwgehl</a>. See:</p>
+<ul>
+<li><a href="https://socialhub.activitypub.rocks/t/experiences-and-aspirations-about-content-moderation-in-the-fediverse/1093" class="inline-onebox">Experiences and aspirations about content moderation in the fediverse</a></li>
+<li><a href="https://socialhub.activitypub.rocks/t/im-part-of-a-research-team-studying-moderation-on-mastodon-and-we-have-a-survey-for-devs/1389" class="inline-onebox">I'm part of a research team studying moderation on Mastodon, and we have a survey for devs!</a></li>
+</ul>
+<p>(The sections below will be duplicated to Lemmy brainstorming post)</p>
+<hr>
+<h2>
+<a name="moderation-on-the-fediverse-2" class="anchor" href="#moderation-on-the-fediverse-2"></a>Moderation on the Fediverse</h2>
+<p>Right now when people install federated server instances of any kind that are open for others to join, they take on the job to be the instance admin. When membership grows, they attract additional moderators to help with maintenance and assuring a healthy community.</p>
+<p>I haven’t been admin or mod myself, but AFAIK the moderation work is mostly manual, based on the specific UI administrative features offered by a particular app. Metrics are collected about instance operation, and federated messages come in from members (e.g. <code>Flag</code> and <code>Block</code>). There’s a limited set of moderation measures that can be taken (see e.g. <a href="https://docs.joinmastodon.org/admin/moderation/">Mastodon’s Moderation docs</a>). The toughests actions that can be taken are to blocklist an entire domain (here’s the <a href="https://mastodon.social/about/more#unavailable-content">list for mastodon.social</a>, the largest fedi instance).</p>
+<h4>
+<a name="the-burden-of-moderating-3" class="anchor" href="#the-burden-of-moderating-3"></a>The burden of moderating</h4>
+<p>I think (but pls correct me) that in general there are two important areas for improvement from moderators perspective:</p>
+<ul>
+<li>Moderation is very time-consuming.</li>
+<li>Moderation is somewhat of an unthankful, underappreciated job.</li>
+</ul>
+<p>It is time-consuming to monitor what happens on your server, to act timely on moderation request, answer questions, get informed about other instances that may have to be blocked.</p>
+<p>It is unthankful / underappreciated because your instance members take it for granted, and because you are often the bad guy when acting against someone who misbehaved. Moderation is often seen as unfair and your decisions fiercely argued.</p>
+<p>Due to these reasons instances are closed down, or are under-moderated and toxic behavior can fester.</p>
+<p>(There’s much more to this, but I’ll leave it here for now)</p>
+<h2>
+<a name="federating-moderation-4" class="anchor" href="#federating-moderation-4"></a>Federating Moderation</h2>
+<p>From the Mastodon docs:</p>
+<blockquote>
+<p>Moderation in Mastodon is always applied locally, i.e. as seen from the particular server. An admin or moderator on one server cannot affect a user on another server, they can only affect the local copy on their own server.</p>
+</blockquote>
+<p>This is a good, logical model. After all, you only control your own instance(s). But what if the federation tasks that are bound to the instance got help from ActivityPub federation itself? Copying from <a href="https://socialhub.activitypub.rocks/t/improving-fediverse-culture-and-social-behavior/1397/5">this post</a>:</p>
+<p>The whole instance discovery / mapping of the Fediverse network can be federated. E.g.:</p>
+<ul>
+<li>A new server is detected</li>
+<li>Instance updates internal server list</li>
+<li>Instance federates (<code>Announce</code>) the new server</li>
+<li>Other instances update their server list</li>
+<li>Domain blocklisting / allowlisting actions are announced (with reason)</li>
+</ul>
+<p>Then in addition to that Moderation Incidents can be collected as metrics and federated as soon as they occur:</p>
+<ul>
+<li>User mutes / blocks, instance blocks (without PII, as it is the metric counts that are relevant)</li>
+<li>Flags (federated after they are approved by admins, without PII)</li>
+<li>Incidents may include more details (reason for blocking, topic e.g. ‘misinformation’)</li>
+</ul>
+<p>So a new instance pops up, and all across fedi people start blocking its users. There’s probably something wrong with the instance that may warrant blocklisting. Instance admin goes to the server list, sees a large incident count for a particular server, clicks the entry and gets a more detailed report on the nature of said incident. Makes the decision whether to block the domain for their own instance or not.</p>
+<h2>
+<a name="delegated-moderation-5" class="anchor" href="#delegated-moderation-5"></a>Delegated moderation</h2>
+<p>When having <strong>Federated Moderation</strong> it may also be possible to <em>delegate moderation tasks</em> to admins of other instances who are authorized to do so, or even have ‘roaming moderators’ that are not affiliated to any one instance.</p>
+<p>I have described this idea already, but from the perspective of Discourse forums having native federation capabilities. See <a href="https://meta.discourse.org/t/community-has-no-boundary-discourse-as-a-fabric-ideation-brainstorm/174578/12?u=aschrijver">Discourse: Delegating Community Management</a>. Why would you want to delegate moderation:</p>
+<ul>
+<li>Temporarily, while looking for new mods and admins.</li>
+<li>When an instance is under attack by trolls and the like, ask extra help</li>
+<li>When there is a large influx of new users</li>
+</ul>
+<h4>
+<a name="moderation-as-a-service-6" class="anchor" href="#moderation-as-a-service-6"></a>Moderation-as-a-Service</h4>
+<p><em>(Copied and extended from <a href="https://socialhub.activitypub.rocks/t/improving-fediverse-culture-and-social-behavior/1397/8">this post</a>)</em></p>
+<p>But this extension to the Moderation model goes further… we can have Moderation-as-a-Service. Experienced moderators and admins gain reputation and trust. They can offer their services, and can be rewarded for the work they do (e.g. via Donations, or otherwise). They may state their available time and timeslots in which they are available, so I could invoke their service and provide 24/7 monitoring of my instance.</p>
+<p>The Reputation model of available moderators  might even be federated. So I can see history of their work, satisfaction level / review by others, amount of time spent / no. of Incidents handled, etc.</p>
+<p>All of this could be intrinsic part of the fabric of the Fediverse, and extend across different application types.</p>
+<p>There would be much more visibility to the under-appreciated task of the moderator, and as the model matures more features can be added e.g. in the form of support for Moderation Policies. Like their Code of Conduct different instances would like different governance models (think democratic voting mechanisms, or <a href="https://en.wikipedia.org/wiki/Sortition">Sortition</a>. See also <a href="https://socialhub.activitypub.rocks/t/what-would-a-fediverse-governance-body-look-like/1497" class="inline-onebox">What would a fediverse "governance" body look like?</a>)</p>
+<hr>
+<p><strong>Note</strong>: I <em>highly recommend</em> to also read the toot thread for this topic with many  people responding with great insights: <a href="https://mastodon.social/web/statuses/106059921223198405">https://mastodon.social/web/statuses/106059921223198405</a></p>
+            <p><small>12 posts - 5 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580</link>
+          <pubDate>Tue, 13 Apr 2021 18:21:18 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1580</guid>
+          <source url="https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580.rss">Federated Moderation: Towards Delegated Moderation?</source>
+        </item>
+        <item>
+          <title>Improvement to FEDERATION.md convention: Murmurations</title>
+          <dc:creator><![CDATA[aschrijver]]></dc:creator>
+          <category>Fediverse Futures</category>
+          <description><![CDATA[
+            <h2>
+<a name="background-1" class="anchor" href="#background-1"></a>Background</h2>
+<p>Proposed last year by <a class="mention" href="/u/darius">@darius</a> in <a href="https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453" class="inline-onebox">Documenting federation behavior in a semi-standard way?</a> proposed the FEDERATION.md convention, and discussed in <a href="https://www.w3.org/2020/02/08-social-minutes.html">SocialCG 2020-02-08</a> was the convention to have a FEDERATION.md in the root of code repositories of a federated application project, to describe in what ways the app implements its federated messages.</p>
+<p>FEDERATION.md was a concession. With it the interoperability capabilities of a federated apps can be described by:</p>
+<ul>
+<li>
+<a href="https://github.com/jhass/nodeinfo">NodeInfo</a>: A per-server machine-readable definition, with basic metadata about the server</li>
+<li>FEDERATION.md: Hand-written doc to describe interoperability in detail, side effects, business logic, etc.</li>
+</ul>
+<p>Standardizing full capability negotiation in a machine-readable format  was deemed too complex.</p>
+<p>Since then <a href="https://socialhub.activitypub.rocks/t/guide-for-new-activitypub-implementers/479#federation-md">a handful of projects</a> have committed to the convention:</p>
+<ul>
+<li><a href="https://github.com/dariusk/gathio/blob/783a5fbc270452148a6bcc92cb37469e6da349d7/FEDERATION.md">gathio </a></li>
+<li><a href="https://github.com/writefreely/documentation/blob/63dadbfd3654696f8539b7532f8df54512f2854b/writer/federation.md">WriteFreely </a></li>
+<li><a href="https://framagit.org/zot/zap/blob/master/FEDERATION.md">Zap</a></li>
+<li><a href="https://gitlab.com/ngerakines/tavern/-/blob/master/FEDERATION.md">Tavern</a></li>
+<li><a href="https://github.com/grishka/Smithereen/blob/e1b76b85edb2e5ec7e3d695a3be5e23bade6aaab/FEDERATION.md">Smithereen </a></li>
+<li><a href="https://github.com/lesion/gancio/blob/9472d8d919face015065209047247d08c18b4895/docs/federation.md">gancio</a></li>
+<li>
+<a href="https://join.lemmy.ml/docs/en/federation/overview.html">Lemmy </a> (not FEDERATION.md but a page in site docs)</li>
+</ul>
+<h2>
+<a name="the-problem-2" class="anchor" href="#the-problem-2"></a>The Problem</h2>
+<ul>
+<li>
+<p>As fedi developers we need to know how Fediverse evolves, which AS/AP extensions are in use, and preferably adopt them ourselves or even standardize them (using the <a href="https://socialhub.activitypub.rocks/t/about-the-fediverse-enhancement-proposals/1168">Fediverse Enhancement Proposals</a> process.</p>
+</li>
+<li>
+<p>Ideally we want to have a clear overview of all interoperability designs, both standards-based and custom extensions, in use today without having to hop around and search for info across the web.</p>
+</li>
+<li>
+<p>Even if there is a FEDERATION.md document, they are all formatted differently, and it is unclear whether they are kept up-to-date at all. This makes maintaining of a directory hard and time-consuming.</p>
+</li>
+<li>
+<p>The FEDERATION.md convention is not known by most AP devs, can be streamlined, and provide more incentives to adhere to it.</p>
+</li>
+</ul>
+<p><strong>Update</strong>: <a href="https://github.com/redaktor/ActivityPubSchema">ActivityPubSchema</a> by <a class="mention" href="/u/sebastian">@Sebastian</a> may be usable for the validation of federation profiles.</p>
+<h2>
+<a name="the-improvement-3" class="anchor" href="#the-improvement-3"></a>The Improvement</h2>
+<p>A possible solution that goes a step further than informal FEDERATION.md documents, but still stays well away from tackling the complexity of a machine-readable capability negotiation standard, is to use the <a href="https://murmurations.network/">Murmurations Protocol</a> to describe how federation is implemented in each app.</p>
+<ul>
+<li>
+<p>Primary goal is to deliver <em>consistent</em> documentation on how interop can be achieved, in the form of a document template.</p>
+</li>
+<li>
+<p>Secondary goal is to make it easy to discover this documentation, regardless of where an implementation keeps track of it.</p>
+</li>
+</ul>
+<p>The document template could be set up in such way that it can be read as a checklist by someone implementing a compliant app, describing side-effects, validation and other rules.</p>
+<blockquote>
+<h2>Solution</h2>
+<ol>
+<li>
+<p>Define a JSON-LD Murmurations Profile that is <strong>document template</strong> to describe AP interoperability support.</p>
+</li>
+<li>
+<p>Fediverse projects maintain their own profile, and register it with <a href="https://app.swaggerhub.com/apis-docs/MurmurationsNetwork/IndexAPI/1.0">The Murmurations Index</a>.</p>
+<ul>
+<li>They can use it for their own website to generate reference documentation from it.</li>
+</ul>
+</li>
+<li>
+<p>A SocialHub-affiliated website functions as the Murmurations Aggregator and generates a Directory of docs.</p>
+</li>
+</ol>
+</blockquote>
+<p>By creating a profile there is assurance that all projects deliver consistent content. There can be a bunch of additional metadata in it, such as ‘Last updated’ or ‘Release Version’ to gauge relevance. And ‘Issue Tracker’, ‘Repositories’, ‘Project lead’ and other project metadata to ease inquiries and contributions. Etcetera.</p>
+<h2>
+<a name="side-note-federated-murmurations-4" class="anchor" href="#side-note-federated-murmurations-4"></a>Side note: Federated Murmurations</h2>
+<p>This topic has been split, see also: <a href="https://socialhub.activitypub.rocks/t/federating-the-murmurations-protocol/1701" class="inline-onebox">Federating the Murmurations Protocol</a></p>
+            <p><small>5 posts - 3 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/improvement-to-federation-md-convention-murmurations/1573">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/improvement-to-federation-md-convention-murmurations/1573</link>
+          <pubDate>Mon, 12 Apr 2021 09:49:54 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1573</guid>
+          <source url="https://socialhub.activitypub.rocks/t/improvement-to-federation-md-convention-murmurations/1573.rss">Improvement to FEDERATION.md convention: Murmurations</source>
+        </item>
+        <item>
+          <title>Fediverse Futures is now on Lemmy :smiley:</title>
+          <dc:creator><![CDATA[aschrijver]]></dc:creator>
+          <category>Fediverse Futures</category>
+          <description><![CDATA[
+            <h2>
+<a name="brainstorming-space-on-lemmy-1" class="anchor" href="#brainstorming-space-on-lemmy-1"></a>Brainstorming space on Lemmy</h2>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/2X/2/2b6bc271f02bb8ea476d9b35b914a75b8092fcf5.jpeg" data-download-href="https://socialhub.activitypub.rocks/uploads/default/2b6bc271f02bb8ea476d9b35b914a75b8092fcf5" title="pexels-erik-mclean-5696534"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/2/2b6bc271f02bb8ea476d9b35b914a75b8092fcf5_2_690x225.jpeg" alt="pexels-erik-mclean-5696534" data-base62-sha1="6c7p6PtAkUxo3O5FJVnR7sh3yvP" width="690" height="225" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/2/2b6bc271f02bb8ea476d9b35b914a75b8092fcf5_2_690x225.jpeg, https://socialhub.activitypub.rocks/uploads/default/optimized/2X/2/2b6bc271f02bb8ea476d9b35b914a75b8092fcf5_2_1035x337.jpeg 1.5x, https://socialhub.activitypub.rocks/uploads/default/optimized/2X/2/2b6bc271f02bb8ea476d9b35b914a75b8092fcf5_2_1380x450.jpeg 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/2/2b6bc271f02bb8ea476d9b35b914a75b8092fcf5_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">pexels-erik-mclean-5696534</span><span class="informations">1600×524 164 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>I am very pleased to announce that <a class="hashtag" href="/c/fediversity/fediverse-futures/58">#<span>fediversity:fediverse-futures</span></a>  now has a presence on Lemmy:</p>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/55b71e37b7983e7a2cc4bd3516669493a331dd03_2_500x500.webp" class="site-icon" width="500" height="500" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/55b71e37b7983e7a2cc4bd3516669493a331dd03_2_500x500.webp, https://socialhub.activitypub.rocks/uploads/default/optimized/1X/55b71e37b7983e7a2cc4bd3516669493a331dd03_2_750x750.webp 1.5x, https://socialhub.activitypub.rocks/uploads/default/optimized/1X/55b71e37b7983e7a2cc4bd3516669493a331dd03_2_1000x1000.webp 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/55b71e37b7983e7a2cc4bd3516669493a331dd03_2_10x10.png">
+
+      <a href="https://lemmy.ml/post/59536" target="_blank" rel="noopener">lemmy.ml</a>
+  </header>
+
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:464/410;"><img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/fe29fa6f19ee06b873203d5e189ddda84005eeac.png" class="thumbnail" width="464" height="410"></div>
+
+<h3><a href="https://lemmy.ml/post/59536" target="_blank" rel="noopener">Welcome to Fediverse Futures on Lemmy! - Lemmy</a></h3>
+
+  <p>Hi there fellow fedizen, it is great to see you in this community 😊
+…</p>
+
+
+  </article>
+
+  <div class="onebox-metadata">
+    
+    
+  </div>
+
+  <div style="clear: both"></div>
+</aside>
+
+<p>Copying the welcoming post here:</p>
+<blockquote>
+<p>Hi there fellow fedizen, it is great to see you in this community <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/blush.png?v=9" title=":blush:" class="emoji" alt=":blush:"></p>
+<p>Why did I create this space, you ask? Well, first of all because Lemmy rocks of course, and I wanted to be part of the fun.</p>
+<p>This community will focus on the future of the fediverse mostly. Because our potential is humongous and remains largely untapped. Fedi has come a long way, and has explored ‘doing social media differently’. Free, libre and open software, a great online culture, tremendous diversity and wonderful people.</p>
+<p>It is time to go beyond microblogging and - like Lemmy and other <a href="https://git.feneas.org/feneas/fediverse/-/wikis/watchlist-for-activitypub-apps">splendid apps</a> - go way further in the realm of possiblities. The dream of Fediverse Futures is …</p>
+<h2>“Social Media Reimagined”</h2>
+<p>Yeah, that’s right. We should <em>go wild</em> in exploring what is possible. Dream our most beautiful dreams, and cooperatively work on materializing them. Make them real.</p>
+<p>In this space we’ll brainstorm and ideate, letting our imagination run free. This community is a companion to <a href="https://socialhub.activitypub.rocks/c/fediversity/fediverse-futures/58">Fediverse Futures</a> that exists at <a href="https://socialhub.activitypub.rocks">SocialHub</a>. This community is non-technical at heart. It is for everyone dreaming fedi dreams.</p>
+<p>Visionary ideas discussed here, can be taken further on the SocialHub forum to be elaborated and further flesh them out with more technical discussion.</p>
+</blockquote>
+<p>The idea of Lemmy Community vs. SocialHub Community is a transfer of ideas along the following lines:</p>
+<ul>
+<li>
+<a href="https://lemmy.ml/c/fediversefutures">Fediverse Futures on Lemmy</a> (musing, dreaming, exploring, non-technical) → SocialHub (elaborate along technical lines)</li>
+</ul>
+<p><strong>Update</strong>: Help spread the news and <a href="https://mastodon.social/web/statuses/106017388592705664"><strong>Boost the Announcement</strong></a>   <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/pray.png?v=9" title=":pray:" class="emoji" alt=":pray:"></p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/fediverse-futures-is-now-on-lemmy/1557">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/fediverse-futures-is-now-on-lemmy/1557</link>
+          <pubDate>Tue, 06 Apr 2021 08:06:04 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1557</guid>
+          <source url="https://socialhub.activitypub.rocks/t/fediverse-futures-is-now-on-lemmy/1557.rss">Fediverse Futures is now on Lemmy :smiley:</source>
+        </item>
+        <item>
+          <title>Federated Processes: Combining Valueflows and ActivityPub</title>
+          <dc:creator><![CDATA[bhaugen]]></dc:creator>
+          <category>Fediverse Futures</category>
+          <description><![CDATA[
+            <p>In follow-up to <a href="https://socialhub.activitypub.rocks/t/from-silo-first-to-task-oriented-federated-app-design/1457/5" class="inline-onebox">From silo-first to task-oriented federated app design - #5 by aschrijver</a> may I suggest a more interesting (to me) use case?</p>
+<p>Here goes:</p>
+<p>I want to organize a lovely dinner for some assembled Fediversians.  (I know, I know, after we are all immune to Covid…)</p>
+<p>So I request contributions of recipes, ingredients, equipment, a kitchen, a dining room, people with cooking skills, etc etc.</p>
+<p>Then the assembled catering crew will want to coordinate their activities and contributions also using the fediverse.</p>
+<p>(All of that could be expressed using the Valueflows vocabulary, but would require some of those Processes and Methods you mentioned. Or start with one recipe and the activities to assemble the requirements and deliver the food to one or more people.)</p>
+<hr>
+<p>For Processes and Methods, this thread about Flow-Based Programming and compositionality might provide some ideas: <a href="https://libranet.de/display/0b6b25a8-1960-66b1-c826-5cf990465839" class="inline-onebox" rel="noopener nofollow ugc">LIBRANET.de | Display</a></p>
+            <p><small>4 posts - 3 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/federated-processes-combining-valueflows-and-activitypub/1559">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/federated-processes-combining-valueflows-and-activitypub/1559</link>
+          <pubDate>Sun, 04 Apr 2021 12:16:19 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1559</guid>
+          <source url="https://socialhub.activitypub.rocks/t/federated-processes-combining-valueflows-and-activitypub/1559.rss">Federated Processes: Combining Valueflows and ActivityPub</source>
+        </item>
+        <item>
+          <title>EC Webinar Prep: ActivityPub beyond Microblogging --&gt; Exploring Domains</title>
+          <dc:creator><![CDATA[aschrijver]]></dc:creator>
+          <category>Fediverse Futures</category>
+          <description><![CDATA[
+            <p><em>(This is a wiki post that anyone can edit, by clicking the ‘Edit’ link in the bottom-left corner)</em></p>
+<aside class="quote no-group" data-username="how" data-post="15" data-topic="1507">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/how/40/94_2.png" class="avatar"><a href="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/15">Webinar with the European Commission and AP Community</a>
+</div>
+<blockquote>
+<p><a class="mention" href="/u/aschrijver">@aschrijver</a> thank you for your presence. Since you mentioned schemas, can you describe some you have in mind? Maybe using the <a href="https://pad.public.cat/features#Diagrams">diagram feature</a> of HedgeDoc or images.</p>
+</blockquote>
+</aside>
+<p>The Fediverse has evolved mainly around Mastodon - a microblogging app - but with AS/AP as core specs and based on Linked Data it can be the foundation for Federated Apps in numerous different application/business domains.</p>
+<p>In this wiki post we can collect some of the apps being developed that go beyond microblogging, and ideate on some other exciting future apps that could enrich the Fediverse.</p>
+<p>This is in preparation for the <a href="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507" class="inline-onebox">Webinar with the European Commission and AP Community</a>. Results from this topic will be moved to the <a href="https://pad.public.cat/ngi0-ec-activitypub-liaison?view#" class="inline-onebox">NGI0 European Commission / ActivityPub Liaison - HedgeDoc</a> pad.</p>
+<hr>
+<p>[TODO: Discuss &amp; Extend]</p>
+<h2>Beyond microblogging</h2>
+<p>Some existing applications and protocols under development (see also: <a href="https://git.feneas.org/feneas/fediverse/-/wikis/Watchlist-for-ActivityPub-apps">AP apps watchlist</a> and <a href="https://git.feneas.org/feneas/fediverse/-/wikis/Watchlist-for-ActivityPub-developer-resources">AP dev watchlist</a>):</p>
+<ul>
+<li>ForgeFed</li>
+<li>OpenEngiadina</li>
+</ul>
+<p>Future app domains?</p>
+<ul>
+<li>Community vocabulary extension (e.g. federated Discourse forums)</li>
+</ul>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/ec-webinar-prep-activitypub-beyond-microblogging-exploring-domains/1531">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/ec-webinar-prep-activitypub-beyond-microblogging-exploring-domains/1531</link>
+          <pubDate>Sun, 28 Mar 2021 12:26:53 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1531</guid>
+          <source url="https://socialhub.activitypub.rocks/t/ec-webinar-prep-activitypub-beyond-microblogging-exploring-domains/1531.rss">EC Webinar Prep: ActivityPub beyond Microblogging --&gt; Exploring Domains</source>
+        </item>
+        <item>
+          <title>Roadwork ahead: Evaluating needs of FOSS communities working in the public interest</title>
+          <dc:creator><![CDATA[natacha]]></dc:creator>
+          <category>Fediverse Futures</category>
+          <description><![CDATA[
+            <p>Maybe of interest here</p>
+<h2>Evaluating the needs of FOSS communities working on digital infrastructure in the public interest</h2>
+<p>This report explores the unique nature of the community that builds and maintains free and open-source software (FOSS) and its role in sha-ping an open Internet. It draws on interviews with contributors to FOSS projects to highlight the community’s strengths as well as its challenges. It finds that, while the community runs on trust-based relationships, self-organization and self-motivation, these foster a lack of organizational structure and low diversity among contributors. This results in a lack of different skills and perspectives that are necessary for running successful, sustainable projects, and lost oppor-tunities to receive funding and other, non-monetary support. Based on these insights, this report proposes recommendations of how funders can support the FOSS community more effectively</p>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/a84e5d3768733a90401426016437c1d23d1af378.png" class="site-icon" width="135" height="134">
+      <a href="https://recommendations.implicit-development.org/" target="_blank" rel="noopener nofollow ugc">Roadwork ahead</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/362;"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/feb4a7689e2a82b7a9254442f17e8fbca0bc1a63_2_690x362.jpeg" class="thumbnail" width="690" height="362" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/feb4a7689e2a82b7a9254442f17e8fbca0bc1a63_2_690x362.jpeg, https://socialhub.activitypub.rocks/uploads/default/optimized/1X/feb4a7689e2a82b7a9254442f17e8fbca0bc1a63_2_1035x543.jpeg 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/1X/feb4a7689e2a82b7a9254442f17e8fbca0bc1a63.jpeg 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/feb4a7689e2a82b7a9254442f17e8fbca0bc1a63_2_10x10.png"></div>
+
+<h3><a href="https://recommendations.implicit-development.org/" target="_blank" rel="noopener nofollow ugc">Roadwork ahead</a></h3>
+
+<p>Evaluating the needs of FOSS communities working on digital infrastructure in the public interest</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/roadwork-ahead-evaluating-needs-of-foss-communities-working-in-the-public-interest/1509">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/roadwork-ahead-evaluating-needs-of-foss-communities-working-in-the-public-interest/1509</link>
+          <pubDate>Fri, 19 Mar 2021 17:20:53 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1509</guid>
+          <source url="https://socialhub.activitypub.rocks/t/roadwork-ahead-evaluating-needs-of-foss-communities-working-in-the-public-interest/1509.rss">Roadwork ahead: Evaluating needs of FOSS communities working in the public interest</source>
+        </item>
+        <item>
+          <title>Organizing for SocialHub Community Empowerment</title>
+          <dc:creator><![CDATA[aschrijver]]></dc:creator>
+          <category>Fediverse Futures</category>
+          <description><![CDATA[
+            <p><em>(<strong>Note</strong>: The first four posts in this thread have been moved from <a href="https://socialhub.activitypub.rocks/t/what-would-a-fediverse-governance-body-look-like/1497" class="inline-onebox">What would a fediverse "governance" body look like?</a>)</em></p>
+<p>I’d like to start at looking what triggered this topic, a <a href="https://mastodon.social/web/statuses/105876132191612591">fedi discussion</a> with lotsa interesting background (started by me pointing to reasons why Signal chose to be centralized and <a href="https://mastodon.social/@rysiek">@rysiek</a> following-up)</p>
+<p>Some important points as I see them:</p>
+<ul>
+<li>Fediverse is evolving quite slowly, our greatest strength (decentralization) is our weakness too (fragmentation).</li>
+<li>Our developer base is quite small, and SocialCG / SocialHub has low activity. Time is our most precious commodity.</li>
+<li>Many open issues stay open, things drag on, onboarding is really bad, documentation is lagging, involvement is ad-hoc.</li>
+</ul>
+<p>In theory <strong>this is all fine</strong>. After all, most devs are here for the fun, passion, and excitement to run cool FOSS projects.</p>
+<p>But it also makes us weak in a rapidly evolving world of tech. There’s a real danger we are outmanouvered, become irrelevant or even tombstoned in the long term.</p>
+<p>I’ll copy some text from <a href="https://socialhub.activitypub.rocks/t/rationale-for-participation-in-socialhub/1486" class="inline-onebox">Rationale for participation in SocialHub</a> now:</p>
+<details><summary>My collapsed argument that AP/Fedi evolution too slow, making us weak and needing focal points of coordination (click to expand).</summary>
+<p>On AP / Fedi itself I notice that - while its install base is healthy-ish - its dev community overall is very small and thus quite weak-ish in upholding innovation pace. And the fragmentation by which development takes place is hampering fedi + standards evolution, imho.</p>
+<p>Though we are proponents of decentralized technology our community needs central focal points to coordinate, where “the family” comes together, so to say. In this we only really have SocialCG and SocialHub (plus <span class="hashtag">#social</span> irc channel, and some matrix rooms, but they are less effective for knowledge gathering and coordination). A metric ton of useful developer information goes lost each day, because it happens on isolated islands and others aren’t aware. The onboarding experience for new devs that want their apps to federate and make sense of the technology is horrible.</p>
+<p>And as a result AP / Fediverse innovation &amp; evolution speed is lagging imho, when compared to other decentralized technologies. Even though we have truly production-ready platforms, tested to reality, slowly other tech may become the more attractive candidates. Solid project, though doing zero community-building and having no apps in production is 3x as large as SocialHub, and SAFE community is 16x as large, IPFS 10x exceeds our little group.</p>
+<p>There was excitement and trepidation about Jack Dorsey’s Bluesky report. But the questions are a) if they’d choose AP could we handle it and b) if they’d choose another tech could we handle it? We should not become irrelevant, folks. We want to lobby the EU to become a recognized interop standard, but we currently simply have no good story.  Finally I wan to once more point to <a href="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810" class="inline-onebox">Are we ready for the threats to the Fediverse and decentralization movement?</a></p>
+</details>
+<h2>Community engagement</h2>
+<p>The above leads me to conclude that we need more <em>community engagement</em>:</p>
+<p><img src="https://socialhub.activitypub.rocks/images/emoji/twitter/loudspeaker.png?v=9" title=":loudspeaker:" class="emoji" alt=":loudspeaker:">   <strong>We urgently need a stronger SocialHub to reinforce the ActivityPub ecosystem !</strong></p>
+<p>The problem with this is that rallying of the community, advocating, housekeeping (besides in general being an unthankful job) takes really a humongous amount of time! And here it was raised that:</p>
+<blockquote>
+<p>Maybe the community needs a <strong>donation-funded foundation</strong> that enables people to spend more time on these things. Most devs lack bandwidth. Such foundation could have very exciting way in which it is set up, i.e. as a real <strong>innovation center</strong> that truly involves people from all walks of life, and stimulates to think about tech differently.</p>
+</blockquote>
+<p>Rysiekúr then brought the discussion to our <a href="https://socialhub.activitypub.rocks/c/meeting/fediverse-policy/59">Fediverse Policy Special Interest Group</a> (where things stalled after 1st meetups) with:</p>
+<blockquote>
+<p>How do we get policymakers etc. to know about fediverse and treat fediverse seriously? […] the pitch to users, developers, mastohosters and other fedifolk would be:</p>
+<blockquote>
+<p>Important fedi-affecting legislation is being passed or discussed:</p>
+<ul>
+<li>implementation of the Copyright Directive</li>
+<li>discussion on Digital Services Act and Digital Markets Act</li>
+</ul>
+</blockquote>
+</blockquote>
+<p>Ending the argument by stating:</p>
+<blockquote>
+<p><img src="https://socialhub.activitypub.rocks/images/emoji/twitter/speaking_head.png?v=9" title=":speaking_head:" class="emoji" alt=":speaking_head:">   <strong>Fediverse needs to have a loud, well-resourced voice.</strong></p>
+</blockquote>
+<p>My argument on this point is that our Interoperability ‘sales pitch’ to e.g. politicians is also quite weak:</p>
+<ul>
+<li>The good part: We have 2 great W3C Recommendations with AS/AP that build on other standards!</li>
+<li>Then we have some de-facto standards, where you have to figure out how they are implemented across the board.</li>
+<li>Then you’d have to find out all the hidden complexities of federation by literally digging through code bases and issue trackers!</li>
+<li>Then we have no good places where to ask for support, no process guidance, a very early-days FEP process, etc.</li>
+<li>And most of our interop experiences are limited to a Microblogging domain.</li>
+</ul>
+<p>Interoperability constitutes a complete package, that just doesn’t exist at the moment.</p>
+<h2>Fediverse foundation</h2>
+<p>“We need a foundation, you say?”. Yes, I think so. The “governance” body - even though in scare quotes - is a bit of a formal start.</p>
+<blockquote>
+<p>From The Free Dictionary: <a href="https://www.thefreedictionary.com/foundation"><strong>Foundation</strong></a></p>
+<ul>
+<li>that on which something is founded; basis</li>
+<li>the base on which something stands</li>
+<li>an institution supported by an endowment, often one that provides funds for charities, research, etc</li>
+<li>the charter incorporating or establishing a society or institution and the statutes or rules governing its affairs</li>
+</ul>
+</blockquote>
+<p>I think its main tasks should be:</p>
+<ol>
+<li>Organizer of ‘focal points’ where community comes together, coordinates and becomes stronger (e.g. by rallying, advocacy).</li>
+<li>Presenting a unified face, our ‘official’ front office to the outside world.</li>
+<li>Be a collector and distributor of funds to any people playing active roles in evolving the fediverse.</li>
+</ol>
+<p>This foundation would be really something that belongs to all of us, representing and defending the fediverse’s interests. It needs not have a very formal organization structure / governance model.</p>
+<ul>
+<li>It wouldn’t be authoritative in tech decisions (SocialCG + SocialHub are for that).</li>
+<li>Certainly not have Presidents and Board of Directors and all that jazz.</li>
+<li>It would not be co-opted by accepting big tech money.</li>
+<li>It’d be totally transparent in how it operates, and where funds are spent.</li>
+</ul>
+<p>Maybe some people heavily involved on a daily basis may earn some sort of modest income from their efforts. Other than that:</p>
+<ul>
+<li>The foundation might crowdsource their activities</li>
+<li>Activities are prioritized based on their merits to the community</li>
+<li>A bounty model of funding might serve to reward those carrying them out</li>
+</ul>
+<h2>Humane technology</h2>
+<p><em>(<strong>Note</strong>: This was originally posted <a href="https://socialhub.activitypub.rocks/t/what-would-a-fediverse-governance-body-look-like/1497/17">here</a>)</em></p>
+<p>I have another discussion going with members of the Humane Tech Community about <a href="https://community.humanetech.com/t/what-makes-a-humane-technologist/5174">“What makes a Humane Technologist?”</a> that is quite interesting and has relevancy to how a foundation can position itself:</p>
+<ul>
+<li>While <a href="https://mastodon.social/@humanetech/105492005146865341">pondering fedi slogans</a> I think <em>“Social Media Reimagined”</em> can be a true paradigm to follow, and a rallying cry too.</li>
+<li>With that Fediverse can be a veritable playground, makers space and innovation labs for <em>would-be</em> humane technologists.</li>
+<li>As it evolves around its community values and culture, embracing best practices, it’ll be an <em>exemplar of humane technology</em>.</li>
+</ul>
+            <p><small>36 posts - 7 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/organizing-for-socialhub-community-empowerment/1529">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/organizing-for-socialhub-community-empowerment/1529</link>
+          <pubDate>Sat, 13 Mar 2021 21:43:51 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1529</guid>
+          <source url="https://socialhub.activitypub.rocks/t/organizing-for-socialhub-community-empowerment/1529.rss">Organizing for SocialHub Community Empowerment</source>
+        </item>
+        <item>
+          <title>What would a fediverse &quot;governance&quot; body look like?</title>
+          <dc:creator><![CDATA[hamishcampbell]]></dc:creator>
+          <category>Fediverse Futures</category>
+          <description><![CDATA[
+            <p><span class="hashtag">#Bluesky</span> thinking of a “governance” body of the fediverse - If it does not have elephants running around throwing paper planes its likely the wrong structure<br>
+<div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/1X/feb16d9af0a556c5bc54d6b854b17bc45b351562.jpeg" data-download-href="https://socialhub.activitypub.rocks/uploads/default/feb16d9af0a556c5bc54d6b854b17bc45b351562" title="securaty modeal for mastodon"><img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/feb16d9af0a556c5bc54d6b854b17bc45b351562.jpeg" alt="securaty modeal for mastodon" data-base62-sha1="Al7pLlpDcsSFyVW8AikEyovImRA" width="690" height="463" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/feb16d9af0a556c5bc54d6b854b17bc45b351562_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">securaty modeal for mastodon</span><span class="informations">712×478 66 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+            <p><small>116 posts - 13 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/what-would-a-fediverse-governance-body-look-like/1497">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/what-would-a-fediverse-governance-body-look-like/1497</link>
+          <pubDate>Sat, 13 Mar 2021 18:16:33 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1497</guid>
+          <source url="https://socialhub.activitypub.rocks/t/what-would-a-fediverse-governance-body-look-like/1497.rss">What would a fediverse &quot;governance&quot; body look like?</source>
+        </item>
+  </channel>
+</rss>

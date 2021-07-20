@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Hello from hospitality exchange community devs!</title>
+    <link>https://socialhub.activitypub.rocks/t/hello-from-hospitality-exchange-community-devs/1764</link>
+    <description>Hi all, I am happy to be joining you!
+
+I am a software engineer (backend java) and a long distance bike tourer. 
+
+I was a contributor to the community built WarmShowers Android app (50+K installs in app store) when the 30 years old organization connecting bicycle touring travelers and those who want to host them, over the period of 5 years slowly changed from fully open and transparent, volunteers built platform and apps to a payed service that locked its own community (160K members) behind paywall. 
+
+We published a message from the developers: [https://WarmShowers.bike](http://warmshowers.bike/) (where you can also find a short background story) and started to think about building next generation federated platform as a long term remedy for the issues bicycle touring and other hospitality exchange communities faced in recent years (CouchSurfing did similar thing). 
+
+I&#39;d like to discuss the idea more and possibly get some help in the direction where to go next. 
+
+---
+Edit: I moved the idea to separate discussion: https://socialhub.activitypub.rocks/t/hospitality-exchange-community-considers-moving-to-the-fediverse/1765</description>
+    
+    <lastBuildDate>Wed, 19 May 2021 13:30:08 +0000</lastBuildDate>
+    <category>Uncategorized</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/hello-from-hospitality-exchange-community-devs/1764.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Hello from hospitality exchange community devs!</title>
+        <dc:creator><![CDATA[mariha]]></dc:creator>
+        <description><![CDATA[
+            <p>For federated hospex JavaScript seems most natural choice, as most of the existing platforms are built with it, but for the other apps that I had in mind, there is quite some chance that I’d go with jvm and Java/Kotlin, and if so I was thinking about giving a try to Quarkus, which also leverages vert.x. Keep me in the loop if you were doing anything in that area.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/hello-from-hospitality-exchange-community-devs/1764/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/hello-from-hospitality-exchange-community-devs/1764/10</link>
+        <pubDate>Wed, 19 May 2021 13:30:08 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1764-10</guid>
+        <source url="https://socialhub.activitypub.rocks/t/hello-from-hospitality-exchange-community-devs/1764.rss">Hello from hospitality exchange community devs!</source>
+      </item>
+      <item>
+        <title>Hello from hospitality exchange community devs!</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Yeah, Java is having a great ecosystem still. I wanted to start federated app dev based on Java too, running on top of <a href="https://vertx.io/">Vert.x</a>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/hello-from-hospitality-exchange-community-devs/1764/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/hello-from-hospitality-exchange-community-devs/1764/8</link>
+        <pubDate>Tue, 18 May 2021 14:37:44 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1764-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/hello-from-hospitality-exchange-community-devs/1764.rss">Hello from hospitality exchange community devs!</source>
+      </item>
+      <item>
+        <title>Hello from hospitality exchange community devs!</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="mariha" data-post="1" data-topic="1764">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/mariha/40/1133_2.png" class="avatar"> mariha:</div>
+<blockquote>
+<p>(backend java)</p>
+</blockquote>
+</aside>
+<p>So that’s one more of us.</p>
+<p>(I’m actually initially an Android developer, but Java works for almost everything tbh)</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/hello-from-hospitality-exchange-community-devs/1764/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/hello-from-hospitality-exchange-community-devs/1764/7</link>
+        <pubDate>Tue, 18 May 2021 14:24:16 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1764-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/hello-from-hospitality-exchange-community-devs/1764.rss">Hello from hospitality exchange community devs!</source>
+      </item>
+      <item>
+        <title>Hello from hospitality exchange community devs!</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="mariha" data-post="1" data-topic="1764">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/mariha/40/1133_2.png" class="avatar"> mariha:</div>
+<blockquote>
+<p>(backend java)</p>
+</blockquote>
+</aside>
+<p><img src="https://socialhub.activitypub.rocks/images/emoji/twitter/heart_eyes.png?v=9" title=":heart_eyes:" class="emoji only-emoji" alt=":heart_eyes:"><br>
+I have to write min. 20 chars, but it doesn’t need them ,-)</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/hello-from-hospitality-exchange-community-devs/1764/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/hello-from-hospitality-exchange-community-devs/1764/6</link>
+        <pubDate>Tue, 18 May 2021 13:00:27 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1764-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/hello-from-hospitality-exchange-community-devs/1764.rss">Hello from hospitality exchange community devs!</source>
+      </item>
+      <item>
+        <title>Hello from hospitality exchange community devs!</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Oh, I’d like to add your project(s) to the <a href="https://git.feneas.org/feneas/fediverse/-/wikis/watchlist-for-activitypub-apps">ActivityPub Application Watchlist</a> as soon as they are underway (there’s no need to have any working code, just the intention to build federated apps is enough for inclusion). The watchlist is a staging area for later inclusion in <a href="https://fediverse.party">Fediverse Party</a>.</p>
+<p>Could you have a look at the list and tell me if and how you want to be listed there?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/hello-from-hospitality-exchange-community-devs/1764/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/hello-from-hospitality-exchange-community-devs/1764/5</link>
+        <pubDate>Tue, 18 May 2021 09:41:08 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1764-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/hello-from-hospitality-exchange-community-devs/1764.rss">Hello from hospitality exchange community devs!</source>
+      </item>
+      <item>
+        <title>Hello from hospitality exchange community devs!</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="mariha" data-post="3" data-topic="1764">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/mariha/40/1133_2.png" class="avatar"> mariha:</div>
+<blockquote>
+<p>Haven’t thought about it before but know as you wrote it I am very much looking forward to it!</p>
+</blockquote>
+</aside>
+<p>A nice example is <a class="hashtag" href="/c/software/pixelfed/28">#<span>software:pixelfed</span></a> where lead dev <a class="mention" href="/u/dansup">@dansup</a> decided to remove addictive features, based on feedback from other Fedizens. You can read more about this here: <a href="https://lemmy.ml/post/59581/comment/47782">https://lemmy.ml/post/59581/comment/47782</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/hello-from-hospitality-exchange-community-devs/1764/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/hello-from-hospitality-exchange-community-devs/1764/4</link>
+        <pubDate>Tue, 18 May 2021 09:36:42 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1764-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/hello-from-hospitality-exchange-community-devs/1764.rss">Hello from hospitality exchange community devs!</source>
+      </item>
+      <item>
+        <title>Hello from hospitality exchange community devs!</title>
+        <dc:creator><![CDATA[mariha]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="aschrijver" data-post="2" data-topic="1764">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/aschrijver/40/278_2.png" class="avatar"> aschrijver:</div>
+<blockquote>
+<p>Reading from your profile on “culture follows structure” I feel it works both ways, and an actual virtuous cycle is created, and after a while the culture become ‘custodian’ of the structure.</p>
+</blockquote>
+</aside>
+<p>I am sure it does! It’s known as Conway’s low, that structure of a system designed by an organization tends to be isomorphic with that organization structure. It’s a good reading in case you haven’t read it yet: <a href="http://www.melconway.com/Home/Conways_Law.html" rel="noopener nofollow ugc">How Do Committees Invent? </a>.</p>
+<aside class="quote no-group" data-username="aschrijver" data-post="2" data-topic="1764">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/aschrijver/40/278_2.png" class="avatar"> aschrijver:</div>
+<blockquote>
+<p>You see this on the Fediverse too.</p>
+</blockquote>
+</aside>
+<p>Haven’t thought about it before but now as you wrote it I am very much looking forward to it!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/hello-from-hospitality-exchange-community-devs/1764/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/hello-from-hospitality-exchange-community-devs/1764/3</link>
+        <pubDate>Tue, 18 May 2021 09:33:07 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1764-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/hello-from-hospitality-exchange-community-devs/1764.rss">Hello from hospitality exchange community devs!</source>
+      </item>
+      <item>
+        <title>Hello from hospitality exchange community devs!</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>What a wonderful stance and ditto initiative you are engaging with <a class="mention" href="/u/mariha">@mariha</a>. You are most welcome to SocialHub, we love to have you and your team members in our midst. Reading from your profile on “culture follows structure” I feel it works both ways, and an actual virtuous cycle is created, and after a while the culture become ‘custodian’ of the structure. You see this on the Fediverse too.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/hello-from-hospitality-exchange-community-devs/1764/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/hello-from-hospitality-exchange-community-devs/1764/2</link>
+        <pubDate>Mon, 17 May 2021 11:14:43 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1764-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/hello-from-hospitality-exchange-community-devs/1764.rss">Hello from hospitality exchange community devs!</source>
+      </item>
+      <item>
+        <title>Hello from hospitality exchange community devs!</title>
+        <dc:creator><![CDATA[mariha]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all, I am happy to be joining you!</p>
+<p>I am a software engineer (backend java) and a long distance bike tourer.</p>
+<p>I was a contributor to the community built WarmShowers Android app (50+K installs in app store) when the 30 years old organization connecting bicycle touring travelers and those who want to host them, over the period of 5 years slowly changed from fully open and transparent, volunteers built platform and apps to a payed service that locked its own community (160K members) behind paywall.</p>
+<p>We published a message from the developers: <a href="http://warmshowers.bike/" rel="noopener nofollow ugc">https://WarmShowers.bike</a> (where you can also find a short background story) and started to think about building next generation federated platform as a long term remedy for the issues bicycle touring and other hospitality exchange communities faced in recent years (CouchSurfing did similar thing).</p>
+<p>I’d like to discuss the idea more and possibly get some help in the direction where to go next.</p>
+<hr>
+<p>Edit: I moved the idea to separate discussion: <a href="https://socialhub.activitypub.rocks/t/hospitality-exchange-community-considers-moving-to-the-fediverse/1765" class="inline-onebox">Hospitality exchange community considers moving to the fediverse ;)</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/hello-from-hospitality-exchange-community-devs/1764/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/hello-from-hospitality-exchange-community-devs/1764/1</link>
+        <pubDate>Mon, 17 May 2021 10:35:39 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1764-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/hello-from-hospitality-exchange-community-devs/1764.rss">Hello from hospitality exchange community devs!</source>
+      </item>
+  </channel>
+</rss>

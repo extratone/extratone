@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Retooling or suspending the SocialCG</title>
+    <link>https://socialhub.activitypub.rocks/t/retooling-or-suspending-the-socialcg/869</link>
+    <description>At the top of the hour is the usual time for the next SocialCG.  Are we having one?  I&#39;ll show up at the [usual place](https://www.w3.org/wiki/SocialCG#Meetings) if anyone else does also.
+
+But it feels like the SocialCG is, and has been, spinning its wheels for a long time, for two reasons:
+
+* I&#39;m too busy to organize, though I&#39;m happy to run (or scribe) meetings, as I&#39;ve said before.  I&#39;ve been fairly clear about this and have made various attempts to get others to help me do the organization but people are busy and it hasn&#39;t happened... at the end of the day, I still remain the primary organizer, and I&#39;m not good at it.
+* I don&#39;t think the state of the SocialCG reflects the current structure of fediverse activity.  The structure today reflects the structure of the SocialWG: list agenda items beforehand and go through them, and it&#39;s mostly talk.  Fediverse and ActivityPub development are vibrant places right now.  I don&#39;t know about you, but it doesn&#39;t feel like the SocialCG currently reflects that vibrancy.
+
+I have a suggestion on what we *could* do: have regular meetings, and people can schedule important action items, but in the general case it can be more like a usergroup first.  By that I mean, we&#39;ll switch from my Mumble server (audio-only) to an audio-video setup (like Jitsi Meet) and people can give *presentations* on what they&#39;re working on... and if there aren&#39;t presentations to give, we can at least talk about interesting topics that have come up on this forum.  Thus this becomes more of an implementer support and idea generation group.
+
+That last sentence reflects how SocialHub can perform interesting and useful roles for this group: a space for people to lay out ideas.  If a thread becomes sufficiently interesting, someone can say &quot;I think this would be interesting to talk about on the next SocialCG call!&quot;
+
+We can still do important decision-making-with-consensus when necessary, but my gut feeling is that this isn&#39;t nearly as necessary as it currently is prioritized.  There may be a time where it becomes so again... likely at a time where we have something else we want to make standards-track.
+
+The alternate options are:
+
+* Just put the SocialCG on hiatus, re-activating it when a real need is expressed from the community.
+* Have meetings when there&#39;s enough topic interest in having meetings.  For a while when @nightpool was organizing, this was the structure we used, and honestly I thought it was going fairly well, though other people in the community complained about not having a regular time.  We went back to a regular time but for whatever reason I think the quality of the meetings *decreased* after that move.  (Maybe it&#39;s because I then effectively became the de-facto organizer again, and honestly I think @nightpool did a better job than I did.)
+
+But what do people think?
+
+If you want to talk about it with me, I&#39;ll be [on Mumble](https://www.w3.org/wiki/SocialCG#Meetings) at the top of the hour, or we can on this thread for now.  (Though I&#39;m not very good at keeping on track of this place admittedly, so [ping me on the fediverse](https://octodon.social/@cwebber/) if I&#39;m missing important updates to this thread.)</description>
+    
+    <lastBuildDate>Sun, 09 Aug 2020 21:29:43 +0000</lastBuildDate>
+    <category>SocialCG</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/retooling-or-suspending-the-socialcg/869.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Retooling or suspending the SocialCG</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Cross-reffing to <a href="https://socialhub.activitypub.rocks/t/easing-the-onboarding-of-new-developers-to-the-fediverse/847/9" class="inline-onebox">Easing the onboarding of new developers to the Fediverse</a> as this also deals with the general organization structure for ActivityPub evolution. In <a href="https://socialhub.activitypub.rocks/t/easing-the-onboarding-of-new-developers-to-the-fediverse/847/5">this comment</a> I suggest using <code>fediverse.rocks</code> more actively to track the status of AP spec development, and in <a href="https://socialhub.activitypub.rocks/t/easing-the-onboarding-of-new-developers-to-the-fediverse/847/8">this comment</a> to prepare input for a productive BoF to discuss this where all ‘stakeholders’ are present.</p>
+<p><a class="mention" href="/u/trwnh">@trwnh</a> those “open” threads could linked to in new issues in the AP spec repo, so they are not forgotten about.</p>
+<p>I think if there is more of a clear Roadmap for AP’s future, it’ll make it easier to plan meetings and get people to attend. The meetings themself can be planned ad-hoc based on needs, and most other work/preparation is async.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/retooling-or-suspending-the-socialcg/869/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/retooling-or-suspending-the-socialcg/869/5</link>
+        <pubDate>Sun, 09 Aug 2020 21:29:43 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-869-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/retooling-or-suspending-the-socialcg/869.rss">Retooling or suspending the SocialCG</source>
+      </item>
+      <item>
+        <title>Retooling or suspending the SocialCG</title>
+        <dc:creator><![CDATA[cwebber]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>When and how can the spec be changed? Even when the SocialCG wasn’t on hiatus, that wasn’t very clear.</p>
+</blockquote>
+<p>The CG stands for “Community Group”, and its purpose is to incubate new developments and extensions.  Assuming we were going to change or extend ActivityPub, the right path would be to experiment and incubate a draft version of things in the Community Group (which we can do already as an editors draft / community group report) and when it’s time for that version to go through the standards process we can make a proposal to charter a new Working Group (assuming work continues under the W3C).  We can use this same process for eg extensions, etc.</p>
+<blockquote>
+<p>How does the urgency of a topic get decided? IMO there are a lot of “open” threads on here that haven’t really gotten “enough” discussion, and partially due to (1) above.</p>
+</blockquote>
+<p>The general process has been to flag issues for discussion in the CG, but in general it’s been rare for people to do that, or to raise them on the ActivityPub issue tracker, which admittedly I’ve neglected a lot (it would be good to raise issues to discuss in-meeting, which we had agreed to do, but there hasn’t been sufficient attendance).</p>
+<blockquote>
+<p>The times of the meetings may be regular, but are they convenient to the people actually attending the meeting? In my time zone, it’s 11AM, and this is a bit too early for me to be able to make it regularly (assuming enough topics were selected for discussion). This is again a question of authority, I suppose.</p>
+</blockquote>
+<p>This is the general problem with synchronous meetings in a global community… nobody has a good solution due to the nature of timezones; in general the best approach I’ve known of has been to have both asynchronous communication platforms combined with synchronous meetings, and when important conversations that involve participants who aren’t able to reach the regular meeting time, schedule special meetings.  That’s not great as it generally results in <em>some</em> section of the globe excluded for the “regular” meetings, but I don’t know of anything better…</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/retooling-or-suspending-the-socialcg/869/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/retooling-or-suspending-the-socialcg/869/4</link>
+        <pubDate>Sun, 09 Aug 2020 17:57:51 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-869-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/retooling-or-suspending-the-socialcg/869.rss">Retooling or suspending the SocialCG</source>
+      </item>
+      <item>
+        <title>Retooling or suspending the SocialCG</title>
+        <dc:creator><![CDATA[trwnh]]></dc:creator>
+        <description><![CDATA[
+            <p>My main concerns are thus:</p>
+<ol>
+<li>
+<p>When and how can the spec be changed? Even when the SocialCG wasn’t on hiatus, that wasn’t very clear.</p>
+</li>
+<li>
+<p>How does the urgency of a topic get decided? IMO there are a lot of “open” threads on here that haven’t really gotten “enough” discussion, and partially due to (1) above.</p>
+</li>
+<li>
+<p>The times of the meetings may be regular, but are they convenient to the people actually attending the meeting? In my time zone, it’s 11AM, and this is a <em>bit</em> too early for me to be able to make it regularly (assuming enough topics were selected for discussion). This is again a question of authority, I suppose.</p>
+</li>
+</ol>
+          <p><a href="https://socialhub.activitypub.rocks/t/retooling-or-suspending-the-socialcg/869/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/retooling-or-suspending-the-socialcg/869/3</link>
+        <pubDate>Sun, 09 Aug 2020 17:14:33 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-869-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/retooling-or-suspending-the-socialcg/869.rss">Retooling or suspending the SocialCG</source>
+      </item>
+      <item>
+        <title>Retooling or suspending the SocialCG</title>
+        <dc:creator><![CDATA[cwebber]]></dc:creator>
+        <description><![CDATA[
+            <p>Nobody showed up for the meeting.  I think this is fairly clear by now that the claim that the lack of regular times was the source of low attendance is false: the <em>only</em> meetings that get well attended are ones that are announced within two days of the scheduled times in my experience.</p>
+<p>At any rate, I feel like this is an indication that the thrust of this thread is correct.  For that reason, for the moment let’s consider the SocialCG on hiatus.  We can resume once a change to the structure, or an urgent topic, is determined.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/retooling-or-suspending-the-socialcg/869/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/retooling-or-suspending-the-socialcg/869/2</link>
+        <pubDate>Sat, 08 Aug 2020 16:16:43 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-869-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/retooling-or-suspending-the-socialcg/869.rss">Retooling or suspending the SocialCG</source>
+      </item>
+      <item>
+        <title>Retooling or suspending the SocialCG</title>
+        <dc:creator><![CDATA[cwebber]]></dc:creator>
+        <description><![CDATA[
+            <p>At the top of the hour is the usual time for the next SocialCG.  Are we having one?  I’ll show up at the <a href="https://www.w3.org/wiki/SocialCG#Meetings" rel="nofollow noopener">usual place</a> if anyone else does also.</p>
+<p>But it feels like the SocialCG is, and has been, spinning its wheels for a long time, for two reasons:</p>
+<ul>
+<li>I’m too busy to organize, though I’m happy to run (or scribe) meetings, as I’ve said before.  I’ve been fairly clear about this and have made various attempts to get others to help me do the organization but people are busy and it hasn’t happened… at the end of the day, I still remain the primary organizer, and I’m not good at it.</li>
+<li>I don’t think the state of the SocialCG reflects the current structure of fediverse activity.  The structure today reflects the structure of the SocialWG: list agenda items beforehand and go through them, and it’s mostly talk.  Fediverse and ActivityPub development are vibrant places right now.  I don’t know about you, but it doesn’t feel like the SocialCG currently reflects that vibrancy.</li>
+</ul>
+<p>I have a suggestion on what we <em>could</em> do: have regular meetings, and people can schedule important action items, but in the general case it can be more like a usergroup first.  By that I mean, we’ll switch from my Mumble server (audio-only) to an audio-video setup (like Jitsi Meet) and people can give <em>presentations</em> on what they’re working on… and if there aren’t presentations to give, we can at least talk about interesting topics that have come up on this forum.  Thus this becomes more of an implementer support and idea generation group.</p>
+<p>That last sentence reflects how SocialHub can perform interesting and useful roles for this group: a space for people to lay out ideas.  If a thread becomes sufficiently interesting, someone can say “I think this would be interesting to talk about on the next SocialCG call!”</p>
+<p>We can still do important decision-making-with-consensus when necessary, but my gut feeling is that this isn’t nearly as necessary as it currently is prioritized.  There may be a time where it becomes so again… likely at a time where we have something else we want to make standards-track.</p>
+<p>The alternate options are:</p>
+<ul>
+<li>Just put the SocialCG on hiatus, re-activating it when a real need is expressed from the community.</li>
+<li>Have meetings when there’s enough topic interest in having meetings.  For a while when <a class="mention" href="/u/nightpool">@nightpool</a> was organizing, this was the structure we used, and honestly I thought it was going fairly well, though other people in the community complained about not having a regular time.  We went back to a regular time but for whatever reason I think the quality of the meetings <em>decreased</em> after that move.  (Maybe it’s because I then effectively became the de-facto organizer again, and honestly I think <a class="mention" href="/u/nightpool">@nightpool</a> did a better job than I did.)</li>
+</ul>
+<p>But what do people think?</p>
+<p>If you want to talk about it with me, I’ll be <a href="https://www.w3.org/wiki/SocialCG#Meetings" rel="nofollow noopener">on Mumble</a> at the top of the hour, or we can on this thread for now.  (Though I’m not very good at keeping on track of this place admittedly, so <a href="https://octodon.social/@cwebber/" rel="nofollow noopener">ping me on the fediverse</a> if I’m missing important updates to this thread.)</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/retooling-or-suspending-the-socialcg/869/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/retooling-or-suspending-the-socialcg/869/1</link>
+        <pubDate>Sat, 08 Aug 2020 15:36:25 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-869-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/retooling-or-suspending-the-socialcg/869.rss">Retooling or suspending the SocialCG</source>
+      </item>
+  </channel>
+</rss>

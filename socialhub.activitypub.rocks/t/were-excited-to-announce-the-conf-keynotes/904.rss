@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>We&#39;re excited to announce the Conf Keynotes</title>
+    <link>https://socialhub.activitypub.rocks/t/were-excited-to-announce-the-conf-keynotes/904</link>
+    <description>![robin|40x48](upload://9oJUh8V0IgBzGcn9AlOTg1Vg6oF.png)  **Yay**
+
+*Opening up the conference we have a panel featuring the editors/authors*
+
+**The ActivityPub Panel**
+
+“ [ActivityPub](https://activitypub.rocks/) is now a widely adopted [standard](https://www.w3.org/TR/activitypub)
+... but how did it become a standard in the first place?
+
+Hear about the process of getting ActivityPub all the way to W3C Recommendation status from the people who made it happen, as well as the history that lead to the decision to try and make ActivityPub a standard in the first place! This will be a panel of editors and authors of the ActivityPub protocol including Jessica Tallon, Amy Guy, Evan Prodroumo, and Erin Shepherd moderated by Christopher Lemmer-Webber. ”
+
+---
+*Wrapping things up is Darius Kazemi ([@darius](https://friend.camp/@darius)) presenting*
+
+**Let&#39;s Play and Win Our Own Game**
+
+“ As creators of federated social software, we have a choice: we can compete with social media giants on their own terms, or we can play our own game, one that&#39;s impossible for the giants to play in the first place. If we want to do the latter, we need to identify the fundamental assumptions that constrain the giants and ask ourselves what we can do when we throw those assumptions out entirely.
+
+In this talk, I am going to try and inspire you to make things that would be literally impossible to make on the centralized web. I am going to talk about both the advantages and disadvantages of doing this kind of thing. Expect to hear concrete examples of software that already exists, and also examples of software that could conceivably exist in the very near future. ”
+
+*See also /talks*
+https://conf.activitypub.rocks/#talks
+
+**Please don&#39;t forget to add your suggestions for the Hackathon or Sessions by creating a new post in this category …**</description>
+    
+    <lastBuildDate>Fri, 11 Sep 2020 16:54:44 +0000</lastBuildDate>
+    <category>ActivityPub Conference 2020</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/were-excited-to-announce-the-conf-keynotes/904.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>We&#39;re excited to announce the Conf Keynotes</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p><img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/41df830dff9251a5bf2ebdb4e5a1d309e84ad781.png" alt="robin" data-base62-sha1="9oJUh8V0IgBzGcn9AlOTg1Vg6oF" width="40" height="48">  <strong>Yay</strong></p>
+<p><em>Opening up the conference we have a panel featuring the editors/authors</em></p>
+<p><strong>The ActivityPub Panel</strong></p>
+<p>“ <a href="https://activitypub.rocks/">ActivityPub</a> is now a widely adopted <a href="https://www.w3.org/TR/activitypub">standard</a><br>
+… but how did it become a standard in the first place?</p>
+<p>Hear about the process of getting ActivityPub all the way to W3C Recommendation status from the people who made it happen, as well as the history that lead to the decision to try and make ActivityPub a standard in the first place! This will be a panel of editors and authors of the ActivityPub protocol including Jessica Tallon, Amy Guy, Evan Prodroumo, and Erin Shepherd moderated by Christopher Lemmer-Webber. ”</p>
+<hr>
+<p><em>Wrapping things up is Darius Kazemi (<a href="https://friend.camp/@darius">@darius</a>) presenting</em></p>
+<p><strong>Let’s Play and Win Our Own Game</strong></p>
+<p>“ As creators of federated social software, we have a choice: we can compete with social media giants on their own terms, or we can play our own game, one that’s impossible for the giants to play in the first place. If we want to do the latter, we need to identify the fundamental assumptions that constrain the giants and ask ourselves what we can do when we throw those assumptions out entirely.</p>
+<p>In this talk, I am going to try and inspire you to make things that would be literally impossible to make on the centralized web. I am going to talk about both the advantages and disadvantages of doing this kind of thing. Expect to hear concrete examples of software that already exists, and also examples of software that could conceivably exist in the very near future. ”</p>
+<p><em>See also /talks</em><br>
+</p><aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <a href="https://conf.activitypub.rocks/#talks" target="_blank">#apconf</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/345;"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/36abcb49fe32ac5223d5ae2433a12a8673619fc7_2_690x345.png" class="thumbnail" width="690" height="345" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/36abcb49fe32ac5223d5ae2433a12a8673619fc7_2_690x345.png, https://socialhub.activitypub.rocks/uploads/default/optimized/1X/36abcb49fe32ac5223d5ae2433a12a8673619fc7_2_1035x517.png 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/1X/36abcb49fe32ac5223d5ae2433a12a8673619fc7.png 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/36abcb49fe32ac5223d5ae2433a12a8673619fc7_2_10x10.png"></div>
+
+<h3><a href="https://conf.activitypub.rocks/#talks" target="_blank">ActivityPub Conference 2020 Virtual</a></h3>
+
+<p>A conference about the present and future of ActivityPub, the world’s leading federated social web standard. Presentations of prepared talks followed by a loosely structured unconference. #apconf</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p><strong>Please don’t forget to add your suggestions for the Hackathon or Sessions by creating a new post in this category …</strong></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/were-excited-to-announce-the-conf-keynotes/904/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/were-excited-to-announce-the-conf-keynotes/904/1</link>
+        <pubDate>Sun, 06 Sep 2020 10:55:03 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-904-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/were-excited-to-announce-the-conf-keynotes/904.rss">We&#39;re excited to announce the Conf Keynotes</source>
+      </item>
+  </channel>
+</rss>

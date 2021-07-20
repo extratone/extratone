@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>What does ActivityStreams Conformance mean?</title>
+    <link>https://socialhub.activitypub.rocks/t/what-does-activitystreams-conformance-mean/1733</link>
+    <description>I see a lot of times the conformance of applications being brought up in topics, e.g:
+
+[quote=&quot;Sebastian, post:13, topic:1649&quot;]
+The [Conformance Section, 2.1](https://www.w3.org/TR/activitypub/#specification-profiles) often says “the entirety” when it comes to being
+“ *ActivityPub conformant* ” …
+
+* What is this theoretical entirety (which personally I strive for) and what does it mean in reality?
+[/quote]
+
+Indeed, what is &quot;the entirety&quot; and in that light what is Conformant?
+
+[quote=&quot;Sebastian, post:4, topic:624&quot;]
+About “subsets”, the [Conformance Section ](https://www.w3.org/TR/activitypub/#conformance) made very clear what is ActivityPub conformant (“the entirety”) and what is not. So, we need to decide for ourselves if we “copy” short-message-box-logics or if we are ActivityPub conformant.
+[/quote]
+
+It seems to me that &#39;conformance&#39; (as applying to AS vocab) has a _very broad_ range:
+
+- All properties are optional (including the `id` and `type` ).
+- Most properties are defined on the root `Object` type, applying to all sub-types.
+- Applications are free to define the semantics, e.g. choose to use `Document` for images.
+- And this applies to activities and social graphs too, e.g. my `Create{Note}` may have completely different meaning than yours.
+- Applications ignore objects that are not handled, or respond with an error.
+
+And still be fully conformant, or not? Posts seem to criticize apps for non-conformance (looks to me), but is that justified?
+Genuine question, because I don&#39;t know if I understand the conformance part well enough.</description>
+    
+    <lastBuildDate>Wed, 12 May 2021 09:26:09 +0000</lastBuildDate>
+    <category>ActivityPub</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/what-does-activitystreams-conformance-mean/1733.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>What does ActivityStreams Conformance mean?</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>It is an implicit MUST!</p>
+<blockquote>
+<p>When used on an <a href="https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object">Object</a>,</p>
+</blockquote>
+<p>this is <code>true</code> for the given examples</p>
+<blockquote>
+<p>identifies the MIME media type of the value of the <code>content</code> property.</p>
+</blockquote>
+<p>means, it DOES  identify the MIME media type of the value of the <code>content</code> property.</p>
+<p> → </p>
+<p>So, if no <code>content</code> then no <code>mediaType</code> !!!</p>
+<p>Otherwise you would neglect the fact that every <code>type</code> can have <strong>multiple</strong> <code>Link</code> for <strong>multiple</strong> <code>mediaType</code>. This would not make sense.</p>
+<hr>
+<p>side note:<br>
+There is an RFC for the use of MUST, SHOULD, MAY etc.<br>
+“Imperatives of the type defined in this memo must be used with care and sparingly.”<br>
+and if it does not make sense at all, they shouldn’t …</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/what-does-activitystreams-conformance-mean/1733/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/what-does-activitystreams-conformance-mean/1733/7</link>
+        <pubDate>Wed, 12 May 2021 09:26:09 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1733-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/what-does-activitystreams-conformance-mean/1733.rss">What does ActivityStreams Conformance mean?</source>
+      </item>
+      <item>
+        <title>What does ActivityStreams Conformance mean?</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-redaktor.me" data-username="Sebastian" data-post="5" data-topic="1733">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar"> Sebastian:</div>
+<blockquote>
+<p>The specification for <code>mediaType</code> <strong>clearly</strong> says</p>
+</blockquote>
+</aside>
+<p>You are right. But technically, since there is no MUST, the meaning of <code>mediaType</code> in absence of <code>content</code> isn’t well-defined either.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/what-does-activitystreams-conformance-mean/1733/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/what-does-activitystreams-conformance-mean/1733/6</link>
+        <pubDate>Wed, 12 May 2021 09:12:51 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1733-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/what-does-activitystreams-conformance-mean/1733.rss">What does ActivityStreams Conformance mean?</source>
+      </item>
+      <item>
+        <title>What does ActivityStreams Conformance mean?</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="aschrijver" data-post="4" data-topic="1733">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/aschrijver/40/278_2.png" class="avatar"> aschrijver:</div>
+<blockquote>
+<p>But you are making a case of what would be a <em>best-practice</em></p>
+</blockquote>
+</aside>
+<p>Well, at the moment, yes because the quoted sentence in the spec. is not a MUST.<br>
+But in AS3 we could make “Use the most specific type” a MUST …<br>
+(or whatever it would be in correct english)</p>
+<p>And then not all other 1000 implementors are hindered to write a generic validator without the need for ugly code like I just wrote</p>
+<pre><code>    if (APo.type.indexOf('Image') &lt; 0 &amp;&amp; (!APo.mediaType || APo.mediaType.toLowerCase().indexOf('image') !== 0)) {
+		return ''
+	}
+</code></pre>
+<p>In above <code>APo.type</code> is always an Array and a generic validator would just look if <code>type</code> is correct for the widget.</p>
+<hr>
+<p>However, <strong>please note that the mastodon/pleroma examples are</strong></p>
+<h2>
+<a name="invalid-1" class="anchor" href="#invalid-1"></a>invalid</h2>
+<p>The specification for <code>mediaType</code> <strong>clearly</strong> says <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/bug.png?v=9" title=":bug:" class="emoji" alt=":bug:"> :<br>
+When used on an <a href="https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object">Object</a>, identifies the MIME media type of the value of the <code>content</code> property.</p>
+<p>Unfortunately <a href="https://socialhub.activitypub.rocks/t/representing-images/624/2">these poor examples</a> try to describe the <code>url</code> property.<br>
+And as said, this does not make sense.<br>
+And the protocol authors are the clever people …</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/what-does-activitystreams-conformance-mean/1733/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/what-does-activitystreams-conformance-mean/1733/5</link>
+        <pubDate>Wed, 12 May 2021 09:06:27 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1733-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/what-does-activitystreams-conformance-mean/1733.rss">What does ActivityStreams Conformance mean?</source>
+      </item>
+      <item>
+        <title>What does ActivityStreams Conformance mean?</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>But you are making a case of what would be a <em>best-practice</em> to keep the highest level of interoperability between apps. That’s different than what Conformance means. The choices that Pleroma and Mastodon made wrt <code>Document</code> vs. <code>Image</code> are completely valid. Maybe not the most optimal for interoperbility, though.</p>
+<p>That’s one of the biggest issues with the AS/AP specs as the Fediverse scales and will contain more and more different app types targeting different domains: <strong>The specs define format, but not semantics</strong>.</p>
+<p>Semantics are hard, and are arguably why the Semantic Web failed, because there is no thing as <em>universal semantics</em> unless they are universally standardized.</p>
+<aside class="quote group-redaktor.me" data-username="Sebastian" data-post="3" data-topic="1733">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar"> Sebastian:</div>
+<blockquote>
+<p>“Care should be taken to not unduly overlap with or duplicate the existing Object types.”</p>
+</blockquote>
+</aside>
+<p>This refers to vocabulary extensions which needs to be handled as in <a href="https://www.w3.org/TR/activitystreams-core/#fig-an-object-that-is-both-a-place-and-a-gr-location">Example 8</a>, but it does not say this also applies to objects from the same spec (may be good practice, idk). Quoting the full text:</p>
+<blockquote>
+<p>Furthermore, while implementations are free to introduce new types of Objects beyond those defined by the Activity Vocabulary, interoperability issues can arise when applications rely too much on extension types that are not recognized by other implementations. Care should be taken to not unduly overlap with or duplicate the existing Object types.</p>
+</blockquote>
+<h2>
+<a name="capability-negotation-1" class="anchor" href="#capability-negotation-1"></a>Capability negotation</h2>
+<p>To me it seem for Capability Negotiation to be useful, it should unambiguously define the semantics of a remote endpoint you want to interoperate with.</p>
+<p>What we have right now with NodeInfo is very basic for two reasons:</p>
+<ul>
+<li>We only had to make it work for the Microblogging domain (the implicit ‘conformance profile’).</li>
+<li>We only specified the absolute minimum, because even here completeness was deemed too complex.</li>
+</ul>
+<p>To me it seems that something similar to ‘Conformance Profiles’ is needed in relation to Capability Negotiation. Here the profile is an agreement on what is minimally needed in terms of Objects, Properties format &amp; semantics for e.g. a Microblogging app. The Profile can be documented as a FEP, and then metadata about the supported profile(s) can be used by applications.</p>
+<p>That would be a relatively simple mechanism.</p>
+<p>If you want to go a step further, things get complicated really quick. Maybe <a href="http://shex.io/shex-semantics/"> Shape Expressions Language</a> will be useful?</p>
+<blockquote>
+<p>The Shape Expressions (ShEx) language provides a structural schema for RDF data. This can be used to document APIs or datasets, aid in development of API-conformant messages, minimize defensive programming, guide user interfaces, or anything else that involves a machine-readable description of data organization and typing requirements.</p>
+</blockquote>
+<p>About the choices Mastodon makes…</p>
+<aside class="quote group-redaktor.me" data-username="Sebastian" data-post="3" data-topic="1733">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar"> Sebastian:</div>
+<blockquote>
+<p>Why should anyone at mastodon finally hear what we say?</p>
+</blockquote>
+</aside>
+<p>I would say they might listen, because of:</p>
+<ol>
+<li>Our new specifications make a whole lot of sense, and are beneficial to apply.</li>
+<li>Not doing so would risk to become a lonely fork of fedi, while all other apps go a different direction.</li>
+</ol>
+<p>Point 1) means we should work on creating that, and 2) means we should continue to convince app developers on the benefits of spec alignment. The quality of 1) will be a convincing argument to do so.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/what-does-activitystreams-conformance-mean/1733/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/what-does-activitystreams-conformance-mean/1733/4</link>
+        <pubDate>Wed, 12 May 2021 08:55:26 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1733-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/what-does-activitystreams-conformance-mean/1733.rss">What does ActivityStreams Conformance mean?</source>
+      </item>
+      <item>
+        <title>What does ActivityStreams Conformance mean?</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Hm,<br>
+first off, it seems very strange to me.<br>
+If 30+ implementations use <code>Image</code> and 2 implementations use <code>Document</code> …</p>
+<p>A <code>Document</code> is the most generic <code>Object type</code> - this is totally against all programming logic<br>
+“Be liberal in what you accept and <strong>strict</strong> in what you send”<br>
+Apart from that, I read the sentence<br>
+“Care should be taken to not unduly overlap with or duplicate the existing Object types.”<br>
+also as<br>
+be as specific as possible.</p>
+<p>So, either <code>"type": "Image"</code> or<br>
+see the following Ex. 8 – that would then be <code>"type": ["Document", "Image"]</code> -<br>
+and it would even be compatible to all …</p>
+<blockquote>
+<p>Capability Negotiation</p>
+</blockquote>
+<p>Why should anyone at mastodon finally hear what we say? Years later?<br>
+I can write lots of words for a FEP but doubt, it would help.</p>
+<p><strong>Update</strong><br>
+It is also a bad decision to let <code>mediaType</code> decide over ActivityPub <code>type</code> !<br>
+In the real world one ActivityPub <code>"type":"image"</code> can have <strong>multiple</strong> <code>mediaType</code> and this is super useful if you let the browser decide in the <code>srcset</code>, e.g. webp for modern or jpeg for old-school …<br>
+Even more critical with audio and video formats cause different browsers need different formats.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/what-does-activitystreams-conformance-mean/1733/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/what-does-activitystreams-conformance-mean/1733/3</link>
+        <pubDate>Wed, 12 May 2021 08:16:57 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1733-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/what-does-activitystreams-conformance-mean/1733.rss">What does ActivityStreams Conformance mean?</source>
+      </item>
+      <item>
+        <title>What does ActivityStreams Conformance mean?</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-redaktor.me" data-username="Sebastian" data-post="4" data-topic="624">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar"><a href="https://socialhub.activitypub.rocks/t/representing-images/624/4">Representing images</a>
+</div>
+<blockquote>
+<p>For me it is frustrating enough now that I need to go up all the chain because of above examples<br>
+<code>Image</code> → <code>Document</code> to check the <code>mediaType</code> to know it is ActivityPub <code>"type": "Image"</code> …</p>
+</blockquote>
+</aside>
+<p>In this example, while it can be frustrating, it is not an non-conformant choice. The decision what type of object is most appropriate is app-specific.</p>
+<p><strong>Update</strong>: Whether that choice is a good thing for Interoperability is an entirely different matter. That’s where Capability Negotiation, Conformance Profiles and the current NodeInfo and FEDERATION.md are helpers to improve the situation.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/what-does-activitystreams-conformance-mean/1733/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/what-does-activitystreams-conformance-mean/1733/2</link>
+        <pubDate>Wed, 12 May 2021 08:06:21 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1733-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/what-does-activitystreams-conformance-mean/1733.rss">What does ActivityStreams Conformance mean?</source>
+      </item>
+      <item>
+        <title>What does ActivityStreams Conformance mean?</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>I see a lot of times the conformance of applications being brought up in topics, e.g:</p>
+<aside class="quote group-redaktor.me" data-username="Sebastian" data-post="13" data-topic="1649">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar"><a href="https://socialhub.activitypub.rocks/t/2021-05-01-fediverse-interest-group-meeting/1649/13">2021-05-01 Fediverse Interest Group Meeting</a>
+</div>
+<blockquote>
+<p>The <a href="https://www.w3.org/TR/activitypub/#specification-profiles">Conformance Section, 2.1</a> often says “the entirety” when it comes to being<br>
+“ <em>ActivityPub conformant</em> ” …</p>
+<ul>
+<li>What is this theoretical entirety (which personally I strive for) and what does it mean in reality?</li>
+</ul>
+</blockquote>
+</aside>
+<p>Indeed, what is “the entirety” and in that light what is Conformant?</p>
+<aside class="quote group-redaktor.me" data-username="Sebastian" data-post="4" data-topic="624">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar"><a href="https://socialhub.activitypub.rocks/t/representing-images/624/4">Representing images</a>
+</div>
+<blockquote>
+<p>About “subsets”, the <a href="https://www.w3.org/TR/activitypub/#conformance">Conformance Section </a> made very clear what is ActivityPub conformant (“the entirety”) and what is not. So, we need to decide for ourselves if we “copy” short-message-box-logics or if we are ActivityPub conformant.</p>
+</blockquote>
+</aside>
+<p>It seems to me that ‘conformance’ (as applying to AS vocab) has a <em>very broad</em> range:</p>
+<ul>
+<li>All properties are optional (including the <code>id</code> and <code>type</code> ).</li>
+<li>Most properties are defined on the root <code>Object</code> type, applying to all sub-types.</li>
+<li>Applications are free to define the semantics, e.g. choose to use <code>Document</code> for images.</li>
+<li>And this applies to activities and social graphs too, e.g. my <code>Create{Note}</code> may have completely different meaning than yours.</li>
+<li>Applications ignore objects that are not handled, or respond with an error.</li>
+</ul>
+<p>And still be fully conformant, or not? Posts seem to criticize apps for non-conformance (looks to me), but is that justified?<br>
+Genuine question, because I don’t know if I understand the conformance part well enough.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/what-does-activitystreams-conformance-mean/1733/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/what-does-activitystreams-conformance-mean/1733/1</link>
+        <pubDate>Wed, 12 May 2021 07:54:39 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1733-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/what-does-activitystreams-conformance-mean/1733.rss">What does ActivityStreams Conformance mean?</source>
+      </item>
+  </channel>
+</rss>

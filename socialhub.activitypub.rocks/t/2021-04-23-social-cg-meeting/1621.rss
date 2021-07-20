@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>2021-04-23 Social CG meeting</title>
+    <link>https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621</link>
+    <description>Hi all,
+
+We&#39;ll have a SocialCG meeting this week, which will take the form of an unstructured chat about fediverse topics of interest and whatever related things you&#39;re working on, hosted by @bengo. We can also reflect on this week&#39;s [EC Activitypub Webinar](https://socialhub.activitypub.rocks/t/ec-ngi0-liaison-webinars-and-workshop-april-2021) and think about what we&#39;d like to cover at the next one.
+
+All welcome!
+
+**Date: [date=2021-04-23 time=17:00:00 timezone=&quot;Europe/London&quot;]**
+
+**Join:**
+* [BBB](https://bbb.w3c.social/b/rhi-vp1-fv6-vn7)
+* [IRC](http://irc.w3.org/?channels=social)
+
+
+Amy</description>
+    
+    <lastBuildDate>Wed, 05 May 2021 22:36:26 +0000</lastBuildDate>
+    <category>SocialCG</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>2021-04-23 Social CG meeting</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>The main difference I see between Discourse and Loomio is that the former focuses on conversation, that forces people to explain their thoughts and find a way to compose with each other, while the latter focuses on “voting tools” that cuts shorts options to what the powerful being in charge of casting the voting options can come up with. Personally I do not appreciate technological solutions to social (and political) issues. Loomio hes this shortcoming for me that it delegates proper discussion to expedients.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/29">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/29</link>
+        <pubDate>Wed, 05 May 2021 22:36:26 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1621-29</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621.rss">2021-04-23 Social CG meeting</source>
+      </item>
+      <item>
+        <title>2021-04-23 Social CG meeting</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>It does not support everything in the same way that Loomio supports, but additional workarounds can be found, I think. By default Discourse supports polls, and they have some settings to configure them. E.g. a public vote:</p>
+<div class="poll" data-poll-status="open" data-poll-close="2021-05-07T22:00:00.000Z" data-poll-public="true" data-poll-results="always" data-poll-charttype="bar" data-poll-type="regular" data-poll-name="poll">
+<div>
+<div class="poll-container">
+<div class="poll-title">Howto tally community votes?</div>
+<ul>
+<li data-poll-option-id="e0903734a3cdea7fb98f7c2937d34800">Let’s use Loomio for voting</li>
+<li data-poll-option-id="7495bd35d35621df88ab07b203fc8e71">Discourse has sufficient functionality</li>
+</ul>
+</div>
+<div class="poll-info">
+<p>
+<span class="info-number">0</span>
+<span class="info-label">voters</span>
+</p>
+</div>
+</div>
+</div>
+<p>In addition you can specify topic templates for a specific subcategory, and it can include Mentions, so that email notifications are sent. And in that way there are many other ways to make things easier. Also on <a href="https://meta.discourse.org">Discourse Meta</a> forum there are many theme components and plugins that we may consider to make this power tool even more powerful.</p>
+<p><strong>Update</strong>: Multipl-choice voting (in this example restricted for trust_level_2 and above, and not public)</p>
+<div class="poll" data-poll-status="open" data-poll-max="2" data-poll-min="2" data-poll-name="poll2" data-poll-results="always" data-poll-charttype="bar" data-poll-groups="trust_level_2" data-poll-type="multiple">
+<div>
+<div class="poll-container">
+<div class="poll-title">Elect the two members of the XYZ team</div>
+<ul>
+<li data-poll-option-id="1b86e0e8d99a4fe672249e8ab602f998">Alice</li>
+<li data-poll-option-id="dddb2bfab860ea89a65eff043c03f0ff">Bob</li>
+<li data-poll-option-id="43f0e480b9f9926df0898a1d7baa0626">Alex</li>
+<li data-poll-option-id="6c929a7dd51f75c4abfe4bee51904769">Zena</li>
+</ul>
+</div>
+<div class="poll-info">
+<p>
+<span class="info-number">0</span>
+<span class="info-label">voters</span>
+</p>
+</div>
+</div>
+</div>
+<p>It is not ranked, however, but when the results are in you can see the number of votes per candidate. If two have equal votes, you can do an additional poll.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/28">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/28</link>
+        <pubDate>Tue, 04 May 2021 21:33:24 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1621-28</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621.rss">2021-04-23 Social CG meeting</source>
+      </item>
+      <item>
+        <title>2021-04-23 Social CG meeting</title>
+        <dc:creator><![CDATA[bengo]]></dc:creator>
+        <description><![CDATA[
+            <p>How can discourse tally votes? Does it support stacked rank voting?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/27">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/27</link>
+        <pubDate>Tue, 04 May 2021 21:28:13 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1621-27</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621.rss">2021-04-23 Social CG meeting</source>
+      </item>
+      <item>
+        <title>2021-04-23 Social CG meeting</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Tbh, I am against that. What Loomio offers could as well be done in similar ways on this Discourse forum, and would not require a new separate tool. Note that, when I tried Loomio I found it severely lacking as a discussion forum UX-wise… still years behind Discourse in that regard.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/26">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/26</link>
+        <pubDate>Tue, 04 May 2021 21:17:08 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1621-26</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621.rss">2021-04-23 Social CG meeting</source>
+      </item>
+      <item>
+        <title>2021-04-23 Social CG meeting</title>
+        <dc:creator><![CDATA[bengo]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="aschrijver" data-post="22" data-topic="1621" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/aschrijver/40/278_2.png" class="avatar"> aschrijver:</div>
+<blockquote>
+<p>But that does not solve the issue, it only creates more single-point-of-failures. What we need is a proper way where multiple people have access to community resources. (btw, I have <code>fedi.foundation</code> domain).</p>
+</blockquote>
+</aside>
+<p>The best I’ve seen is to use a tool like <a href="https://www.loomio.org/" rel="noopener nofollow ugc">https://www.loomio.org/</a> to help with that. i.e. come up with a good-enough way of making proposals, voting on them, and enforcing a time limit to reach approximate consensus, then let a robot do the busywork of tallying votes, sending reminder emails, etc.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/25</link>
+        <pubDate>Tue, 04 May 2021 21:12:58 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1621-25</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621.rss">2021-04-23 Social CG meeting</source>
+      </item>
+      <item>
+        <title>2021-04-23 Social CG meeting</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Indeed the problem is expectations. If people expect to see fresh information on activitypub.rocks and they cannot, or they expect to be able to update this site, and they cannot, there is a problem. Indeed we could decide than anyone could host ‘official resources’, but then, more SPoFs, and a dilution of information.</p>
+<p>Ideally all information about the Fediverse should go to the Fediverse. In the meantime we need collective ways to facilitate cooperation, not clog it. It’s not a difficult thing to do and I bet <a class="mention" href="/u/cwebber">@cwebber</a> would be more than inclined to do it. He’s just super busy as usual. But if the Social CG comes to a reasonable proposal, things could be moving forward fast. I think one of the issues why it didn’t was the apparent lack of response to the <a href="https://socialhub.activitypub.rocks/t/how-to-hack-on-activitypub-rocks/375" class="inline-onebox">How to hack on activitypub.rocks</a> : MRs were merged but issues were not taken care of and no more MRs were proposed, nor did the topic seems to interest anyone. One way to fix this would be to add more <a href="https://gitlab.com/dustyweb/activitypub.rocks/-/project_members">members</a> to the project, so that we’d have a volunteer team whose role would be to keep this site up to date. Another would be start over somewhere else. In the meantime we can <a href="https://socialhub.activitypub.rocks/t/publish-pages-for-ap-guides-on-activitypub-rocks/638/" class="inline-onebox">Publish pages for AP guides on activitypub.rocks</a> collectively, here.</p>
+<p>Being a bottleneck is not a judgement, it’s a fact. The discussion should revolve around possible ways to remove any bottleneck in this community while remaining cohesive enough that we don’t go each our own way, which would not be a great outcome.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/23</link>
+        <pubDate>Thu, 29 Apr 2021 10:51:51 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1621-23</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621.rss">2021-04-23 Social CG meeting</source>
+      </item>
+      <item>
+        <title>2021-04-23 Social CG meeting</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>But that does not solve the issue, it only creates more single-point-of-failures. What we need is a proper way where multiple people have access to community resources. (btw, I have <code>fedi.foundation</code> domain).</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/22</link>
+        <pubDate>Thu, 29 Apr 2021 05:50:53 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1621-22</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621.rss">2021-04-23 Social CG meeting</source>
+      </item>
+      <item>
+        <title>2021-04-23 Social CG meeting</title>
+        <dc:creator><![CDATA[bengo]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t think it’s important for all kinds of things to be subdomains of the same apex domain that is owned by one community member. If your goal is to host something on the web, I don’t see how <a class="mention" href="/u/cwebber">@cwebber</a> is a bottleneck. You can host it on a domain that you control.</p>
+<p>I see this as one of the benefits of ActivityPub-style federation: we can spread a community out across many separately-governed DNS names.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/21</link>
+        <pubDate>Wed, 28 Apr 2021 23:13:00 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1621-21</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621.rss">2021-04-23 Social CG meeting</source>
+      </item>
+      <item>
+        <title>2021-04-23 Social CG meeting</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <h2>
+<a name="highlight-1" class="anchor" href="#highlight-1"></a>Highlight</h2>
+<p>Note that there’s a big issue with <a class="mention" href="/u/cwebber">@cwebber</a>’s (lack of) presence that makes him a bottleneck. Chris is way too occupied on his own stuff to even be able to respond to requests from the community, or do it juggling with eggs. Since conf.ap.rocks has been broken for some time, and ap.rocks proposed changes have not been merged so far, <a href="https://www.w3.org/2021/04/23-social-minutes.html#x154">the Social CG discussed</a> that we should either take collective ownership of the <code>activitypub.rocks</code> domain or move to another one (<a class="mention" href="/u/bengo">@bengo</a> has <code>activitypub.com</code> and I have <code>activitypub.eu</code>, that we’re using here for emails because it was simpler to create a new one than access ap.rocks at the time).</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/20</link>
+        <pubDate>Mon, 26 Apr 2021 07:33:16 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1621-20</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621.rss">2021-04-23 Social CG meeting</source>
+      </item>
+      <item>
+        <title>2021-04-23 Social CG meeting</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Ben,<br>
+a very good question. Usually on Saturday as we do alternating FRI/SAT …<br>
+<a class="mention" href="/u/bengo">@bengo</a> <a class="mention" href="/u/rhiaro">@rhiaro</a> Is there an announcement already, should I write 1 ?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/19</link>
+        <pubDate>Sun, 25 Apr 2021 18:22:54 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1621-19</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621.rss">2021-04-23 Social CG meeting</source>
+      </item>
+      <item>
+        <title>2021-04-23 Social CG meeting</title>
+        <dc:creator><![CDATA[benjaminbellamy]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all,<br>
+I just stumbled on this, too late obviously, so I apologized for not being here to represent Castopod.<br>
+When is the next meeting?<br>
+Ben.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/18</link>
+        <pubDate>Sun, 25 Apr 2021 18:08:33 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1621-18</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621.rss">2021-04-23 Social CG meeting</source>
+      </item>
+      <item>
+        <title>2021-04-23 Social CG meeting</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>The logs can be found here:</p>
+<h2>
+<a name="minutes-of-the-meetinghttpswwww3org20210423-social-minuteshtml-1" class="anchor" href="#minutes-of-the-meetinghttpswwww3org20210423-social-minuteshtml-1"></a><a href="https://www.w3.org/2021/04/23-social-minutes.html">Minutes of the meeting</a>
+</h2>
+<hr>
+<p><em>I stand by my point that 1 hour is to less time when we have awesome demos or important topics.</em></p>
+<p>Personally, I was running out of time, so here the major points which <a class="mention-group" href="/groups/redaktor.me">@redaktor.me</a> did not showcase in the demo:</p>
+<ul>
+<li>
+<p>Any webcomponent/widget only needs an ActivityPub Object to work,<br>
+the containers (mini Preview, Card, Row, full Page) expect an <code>Activity</code> and any <code>Object</code> type has it’s own widget expecting, well, an <code>Object</code> … These are fully responsive (was width: 50%; in demo), have noJS fallbacks and adapt to the Container</p>
+</li>
+<li>
+<p>Any webcomponent/widget is Themed !!! You can easily create your CSS theme to use them in your client. They can look nearly as diverse as nature is.<br>
+The aspects (called <a href="https://www.w3.org/community/design-tokens/">Design Tokens</a>) like Typo or Colors which I demoed at the beginning can help you to create themes.<br>
+And the widgets come whith Variants like flat, filled, raised, shaped so that the food is varied.</p>
+</li>
+<li>
+<p>Themes have dark/light. You can always change to the light theme but I only showed the dark one.</p>
+</li>
+</ul>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/17</link>
+        <pubDate>Sun, 25 Apr 2021 09:50:04 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1621-17</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621.rss">2021-04-23 Social CG meeting</source>
+      </item>
+      <item>
+        <title>2021-04-23 Social CG meeting</title>
+        <dc:creator><![CDATA[bengo]]></dc:creator>
+        <description><![CDATA[
+            <p>We are meeting in here due to me not being able to start a bbb. Sorry all. <a href="https://meet.jit.si/SocialCG" rel="noopener nofollow ugc">https://meet.jit.si/SocialCG</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/16</link>
+        <pubDate>Fri, 23 Apr 2021 16:07:25 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1621-16</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621.rss">2021-04-23 Social CG meeting</source>
+      </item>
+      <item>
+        <title>2021-04-23 Social CG meeting</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/bengo">@bengo</a></p>
+<p>Of course. You missed my desperate pleas, requests, petitions, appeals and encouragement that a SocialCG meeting should last <strong>2 hours</strong> …</p>
+<p>Maybe, I should prepare a presentation and play it doublespeed <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/15</link>
+        <pubDate>Thu, 22 Apr 2021 15:57:55 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1621-15</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621.rss">2021-04-23 Social CG meeting</source>
+      </item>
+      <item>
+        <title>2021-04-23 Social CG meeting</title>
+        <dc:creator><![CDATA[bengo]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-redaktor.me" data-username="Sebastian" data-post="9" data-topic="1621">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar"> Sebastian:</div>
+<blockquote>
+<p>5 minutes is really punishment</p>
+</blockquote>
+</aside>
+<p>My goal isn’t to punish, it’s to make space for many people to present, and also for everyone to listen about more than one thing.</p>
+<p>Remember the old aphorism, sometimes attributed to William of Ockham:</p>
+<blockquote>
+<p>It is vain to do with more what can be done with fewer</p>
+</blockquote>
+<p>Here is one way of using the 5min parsimoniously:</p>
+<ul>
+<li>60sec: summary of the project</li>
+<li>60sec: summary of recent progress</li>
+<li>60sec: summary of the intention for the next 1-4 weeks, if any</li>
+<li>60sec: Any <span class="hashtag">#good-first-issue</span> or way community can help (if willing)</li>
+<li>60sec: “If I could wave a magic wand, I’d…”</li>
+</ul>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/14</link>
+        <pubDate>Thu, 22 Apr 2021 15:42:28 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1621-14</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621.rss">2021-04-23 Social CG meeting</source>
+      </item>
+      <item>
+        <title>2021-04-23 Social CG meeting</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Interesting.<br>
+I do not want any private person to be influential in the EU.<br>
+I want elected MEPs to be influential.<br>
+We called it democracy.<br>
+Especially we do not need wannabe kings.</p>
+<p>And shhh:<br>
+It is totally unrealistic to do such a software alone, see the UN (longterm) findings of Michael Downey, you need at least a 5-diverse-people-team funded.</p>
+<p>MEPs are pretty pissed about nlnet already.<br>
+Now that I took Venture Capital, I doubt, I will apply again at EU, the killing machine, pushing people at Open Sea, rendering hommage to dictators.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/13</link>
+        <pubDate>Wed, 21 Apr 2021 04:12:11 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1621-13</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621.rss">2021-04-23 Social CG meeting</source>
+      </item>
+      <item>
+        <title>2021-04-23 Social CG meeting</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>We’re being more influential than you think. We’ll see in next funding round, Horizon Europe.<br>
+The EC is huge and works in chunks of seven years. But they’re very interested in ActivityPub.<br>
+We had great feedback from the first webinar. They’re just getting started, give them time.<br>
+Actually I think the ‘private counsels’ are more to blame than the Commission. They are not from the free software community and they’re scared touching stuff they do not know. But the Commission is not stupid and they will eventually turn to us. The cascading funding scheme makes up for the slowness of the administration.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/12</link>
+        <pubDate>Tue, 20 Apr 2021 14:10:50 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1621-12</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621.rss">2021-04-23 Social CG meeting</source>
+      </item>
+      <item>
+        <title>2021-04-23 Social CG meeting</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Not fulltime, not in a team with 8 people. Thanks to the eurocrats:<br>
+Pretty much alone and the main focus is now a Headless CMS for the largest german publishing house.</p>
+<p>This EU thing feels like kindergarden. I have talked to MEPs not only accredited but also very personal.<br>
+Everybody was expecting the NGI programme to fund solutions with a benefit for EU citizens.<br>
+They are my elected MEPs.<br>
+They <em>want</em> ActivityPub projects making sense.</p>
+<p>Unfortunately there seems to be a totally incompetent administration and funders not doing what the elected people want. This is neither transparent nor democratic.<br>
+And while Anke is describing an EU funded fediverse in one hour in the parliament, they fund hypercapitalistic clones or private passports. I have no doubt that the EU will digitall fail completely.<br>
+Another “lost decade” …</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/11</link>
+        <pubDate>Tue, 20 Apr 2021 13:53:55 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1621-11</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621.rss">2021-04-23 Social CG meeting</source>
+      </item>
+      <item>
+        <title>2021-04-23 Social CG meeting</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-redaktor.me" data-username="Sebastian" data-post="9" data-topic="1621">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar"> Sebastian:</div>
+<blockquote>
+<p>redaktor was <a href="https://github.com/redaktor/widgets-preview/">incredibly active</a></p>
+</blockquote>
+</aside>
+<p>Does that mean you continue developing it as free software?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/10</link>
+        <pubDate>Tue, 20 Apr 2021 12:16:22 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1621-10</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621.rss">2021-04-23 Social CG meeting</source>
+      </item>
+      <item>
+        <title>2021-04-23 Social CG meeting</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p><img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/41df830dff9251a5bf2ebdb4e5a1d309e84ad781.png" alt="robin" data-base62-sha1="9oJUh8V0IgBzGcn9AlOTg1Vg6oF" width="40" height="48">  <strong>Yay</strong></p>
+<p>redaktor was <a href="https://github.com/redaktor/widgets-preview/">incredibly active</a><br>
+<a class="mention" href="/u/bengo">@bengo</a> 5 minutes is really punishment <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+<p>However:<br>
+What we did in the last week, after the NGI0 and DAPSI rejections was:</p>
+<ul>
+<li>Markdown parsing</li>
+<li>an <code>Audio</code> player with .vtt / .srt / WebVTT support which will also be the<br>
+foundation for <code>Video</code>
+</li>
+</ul>
+<p>VTT can solve a bunch of problems (e.g.  subtitles for translation of content that cannot be understood by the viewer or captions for translations/multilanguage or chapters … In terms of audio they can help hearing impaired etc.)</p>
+<p>This is one of the examples which just needs an ActivityPub <code>Object</code> and I thought a lot about different patterns for the fact that most properties can have “multiple” and “multi language” values.<br>
+Would quickly like to demo.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/9</link>
+        <pubDate>Tue, 20 Apr 2021 12:15:12 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1621-9</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621.rss">2021-04-23 Social CG meeting</source>
+      </item>
+      <item>
+        <title>2021-04-23 Social CG meeting</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>I am not sure… I thought I saw someone with Hubzilla in profile description. It is probably best to contact them.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/8</link>
+        <pubDate>Tue, 20 Apr 2021 09:07:49 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1621-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621.rss">2021-04-23 Social CG meeting</source>
+      </item>
+      <item>
+        <title>2021-04-23 Social CG meeting</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Hubzilla and Kazarma are missing a category here in <a class="hashtag" href="/c/software/14">#<span>software</span></a>. Are the developers here already or should I contact them?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/7</link>
+        <pubDate>Tue, 20 Apr 2021 08:39:55 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1621-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621.rss">2021-04-23 Social CG meeting</source>
+      </item>
+      <item>
+        <title>2021-04-23 Social CG meeting</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="bengo" data-post="5" data-topic="1621">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/letter_avatar_proxy/v4/letter/b/59ef9b/40.png" class="avatar"> bengo:</div>
+<blockquote>
+<p>I think it would be fun to kick off the meeting with any project updates from socialhub-allied project team members. Probably no more than 5 minutes. Let’s try no more than 3 per week, to take up the first ~25% of the meeting.</p>
+</blockquote>
+</aside>
+<p>We might start with Hubzilla, Castopod and Kazarma as these are slated to participate at the next EC webinar, and we can discuss specific things that’d be of particular interest for that.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/6</link>
+        <pubDate>Tue, 20 Apr 2021 08:30:21 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1621-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621.rss">2021-04-23 Social CG meeting</source>
+      </item>
+      <item>
+        <title>2021-04-23 Social CG meeting</title>
+        <dc:creator><![CDATA[bengo]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you <a class="mention" href="/u/rhiaro">@rhiaro</a> !</p>
+<p>I think it would be fun to kick off the meeting with any project updates from socialhub-allied project team members. Probably no more than 5 minutes. Let’s try no more than 3 per week, to take up the first ~25% of the meeting.</p>
+<p>Please post here if you’d like to give a short project overview or update.</p>
+<p>Otherwise we’ll just chit chat, and I think that often way the right things will come up as they come up.</p>
+<p>Proposed Agenda (WIP):</p>
+<ul>
+<li>Reminder: notes in IRC</li>
+<li>5min - reintroductions/hellos</li>
+<li>15min - Tiny Project Updates/Reminders. No more than 5min per project, ideally less.</li>
+<li>5min - <a class="mention" href="/u/bengo">@bengo</a> - reminder of resolution to resolve to this github repo as issue tracker for now: <a href="https://github.com/swicg/general/issues/27" class="inline-onebox" rel="noopener nofollow ugc">RESOLUTION: This is currently the primary issue tracker for SWICG · Issue #27 · swicg/general · GitHub</a> .
+<ul>
+<li>This way we can clear out those issues down to zero. If we get it to zero, we can also change the issue tracking method, e.g. to Nextcloud or files-in-git or something?</li>
+</ul>
+</li>
+<li>End of agenda proposals</li>
+<li>40min: chit chat about upcoming EC webinar</li>
+</ul>
+<p>Please make a PROPOSAL ahead of time in this thread for agenda time. Some proposals may not be accomodated until next week, especially to accomodate discussion for the webinar coming up fast.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/5</link>
+        <pubDate>Mon, 19 Apr 2021 10:44:24 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1621-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621.rss">2021-04-23 Social CG meeting</source>
+      </item>
+      <item>
+        <title>2021-04-23 Social CG meeting</title>
+        <dc:creator><![CDATA[rhiaro]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621/4</link>
+        <pubDate>Mon, 19 Apr 2021 10:42:33 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1621-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621.rss">2021-04-23 Social CG meeting</source>
+      </item>
+  </channel>
+</rss>

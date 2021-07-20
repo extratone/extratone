@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Federated Moderation: Towards Delegated Moderation?</title>
+    <link>https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580</link>
+    <description>![pexels-pixabay-163064|690x460, 100%](upload://qkaBeXbez0D52ZrsAUijYcQbL9F.jpeg) 
+
+## Introduction
+
+In https://socialhub.activitypub.rocks/t/improving-fediverse-culture-and-social-behavior/1397 along the way I introduced two ideas, that are I think interesting enough to warrant a separate thread. The brainstorm will start in the Lemmy [Fediverse Futures](https://lemmy.ml/c/fediversefutures) ideation space, and elaborated here (if there&#39;s interest). See Lemmy: https://lemmy.ml/post/60475
+
+**Note**: There&#39;s ongoing research on Moderation by @Audrey and @robertwgehl. See:
+
+- https://socialhub.activitypub.rocks/t/experiences-and-aspirations-about-content-moderation-in-the-fediverse/1093
+- https://socialhub.activitypub.rocks/t/im-part-of-a-research-team-studying-moderation-on-mastodon-and-we-have-a-survey-for-devs/1389
+
+(The sections below will be duplicated to Lemmy brainstorming post)
+
+---
+
+## Moderation on the Fediverse
+
+Right now when people install federated server instances of any kind that are open for others to join, they take on the job to be the instance admin. When membership grows, they attract additional moderators to help with maintenance and assuring a healthy community.
+
+I haven&#39;t been admin or mod myself, but AFAIK the moderation work is mostly manual, based on the specific UI administrative features offered by a particular app. Metrics are collected about instance operation, and federated messages come in from members (e.g. `Flag` and `Block`). There&#39;s a limited set of moderation measures that can be taken (see e.g. [Mastodon&#39;s Moderation docs](https://docs.joinmastodon.org/admin/moderation/)). The toughests actions that can be taken are to blocklist an entire domain (here&#39;s the [list for mastodon.social](https://mastodon.social/about/more#unavailable-content), the largest fedi instance).
+
+#### The burden of moderating
+
+I think (but pls correct me) that in general there are two important areas for improvement from moderators perspective:
+
+- Moderation is very time-consuming.
+- Moderation is somewhat of an unthankful, underappreciated job.
+
+It is time-consuming to monitor what happens on your server, to act timely on moderation request, answer questions, get informed about other instances that may have to be blocked.
+
+It is unthankful / underappreciated because your instance members take it for granted, and because you are often the bad guy when acting against someone who misbehaved. Moderation is often seen as unfair and your decisions fiercely argued.
+
+Due to these reasons instances are closed down, or are under-moderated and toxic behavior can fester.
+
+(There&#39;s much more to this, but I&#39;ll leave it here for now)
+
+## Federating Moderation
+
+From the Mastodon docs:
+
+&gt; Moderation in Mastodon is always applied locally, i.e. as seen from the particular server. An admin or moderator on one server cannot affect a user on another server, they can only affect the local copy on their own server.
+
+This is a good, logical model. After all, you only control your own instance(s). But what if the federation tasks that are bound to the instance got help from ActivityPub federation itself? Copying from [this post](https://socialhub.activitypub.rocks/t/improving-fediverse-culture-and-social-behavior/1397/5?u=aschrijver):
+
+The whole instance discovery / mapping of the Fediverse network can be federated. E.g.:
+
+- A new server is detected
+- Instance updates internal server list
+- Instance federates (`Announce`) the new server
+- Other instances update their server list
+- Domain blocklisting / allowlisting actions are announced (with reason)
+
+Then in addition to that Moderation Incidents can be collected as metrics and federated as soon as they occur:
+
+- User mutes / blocks, instance blocks (without PII, as it is the metric counts that are relevant)
+- Flags (federated after they are approved by admins, without PII)
+- Incidents may include more details (reason for blocking, topic e.g. &#39;misinformation&#39;)
+
+So a new instance pops up, and all across fedi people start blocking its users. There&#39;s probably something wrong with the instance that may warrant blocklisting. Instance admin goes to the server list, sees a large incident count for a particular server, clicks the entry and gets a more detailed report on the nature of said incident. Makes the decision whether to block the domain for their own instance or not.
+
+## Delegated moderation
+
+When having **Federated Moderation** it may also be possible to _delegate moderation tasks_ to admins of other instances who are authorized to do so, or even have &#39;roaming moderators&#39; that are not affiliated to any one instance.
+
+I have described this idea already, but from the perspective of Discourse forums having native federation capabilities. See [Discourse: Delegating Community Management](https://meta.discourse.org/t/community-has-no-boundary-discourse-as-a-fabric-ideation-brainstorm/174578/12?u=aschrijver). Why would you want to delegate moderation:
+
+- Temporarily, while looking for new mods and admins.
+- When an instance is under attack by trolls and the like, ask extra help
+- When there is a large influx of new users
+
+#### Moderation-as-a-Service
+
+_(Copied and extended from [this post](https://socialhub.activitypub.rocks/t/improving-fediverse-culture-and-social-behavior/1397/8?u=aschrijver))_
+
+But this extension to the Moderation model goes further.. we can have Moderation-as-a-Service. Experienced moderators and admins gain reputation and trust. They can offer their services, and can be rewarded for the work they do (e.g. via Donations, or otherwise). They may state their available time and timeslots in which they are available, so I could invoke their service and provide 24/7 monitoring of my instance.
+
+The Reputation model of available moderators  might even be federated. So I can see history of their work, satisfaction level / review by others, amount of time spent / no. of Incidents handled, etc.
+
+All of this could be intrinsic part of the fabric of the Fediverse, and extend across different application types.
+
+There would be much more visibility to the under-appreciated task of the moderator, and as the model matures more features can be added e.g. in the form of support for Moderation Policies. Like their Code of Conduct different instances would like different governance models (think democratic voting mechanisms, or [Sortition](https://en.wikipedia.org/wiki/Sortition). See also https://socialhub.activitypub.rocks/t/what-would-a-fediverse-governance-body-look-like/1497)
+
+---
+
+**Note**: I _highly recommend_ to also read the toot thread for this topic with many  people responding with great insights: https://mastodon.social/web/statuses/106059921223198405</description>
+    
+    <lastBuildDate>Mon, 17 May 2021 09:49:46 +0000</lastBuildDate>
+    <category>Fediverse Futures</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Federated Moderation: Towards Delegated Moderation?</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, indeed. If you want to take federated moderation a step further, then “publishing” can mean more than a toot. It may use an agreed-upon AP extension vocabulary, so you can send more fine-grained metrics and information and process them in multiple different ways. Also these action could then be federated to other instances, so they can learn what is happening elsewhere on the fedi (a transparency thing, making moderation a first-class citizen).</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580/13</link>
+        <pubDate>Mon, 17 May 2021 09:49:46 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1580-13</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580.rss">Federated Moderation: Towards Delegated Moderation?</source>
+      </item>
+      <item>
+        <title>Federated Moderation: Towards Delegated Moderation?</title>
+        <dc:creator><![CDATA[hamishcampbell]]></dc:creator>
+        <description><![CDATA[
+            <p>I start to see what motivates you on this one. you are outlining the <a href="https://unite.openworlds.info/Open-Media-Network/4opens/wiki" rel="noopener nofollow ugc">4th open</a> - openprocess</p>
+<p>In mastodon the is admin tick box to publish the federation mod outcomes on the instance, think its unticked by default. the is also a Audit log that is private to mods and admins would be nice to have a tickbox to publish that two?</p>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/fd156fff11fc042ed3ec6355c45f37e207e35839.ico" class="site-icon" width="45" height="48">
+      <a href="https://activism.openworlds.info/about/more" target="_blank" rel="noopener nofollow ugc">Mastodon hosted on activism.openworlds.info</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:220/334;"><img src="https://socialhub.activitypub.rocks/uploads/default/original/2X/8/884d9d7cfafc0c167f6cb848c5615a2c2487f66b.png" class="thumbnail" width="220" height="334"></div>
+
+<h3><a href="https://activism.openworlds.info/about/more" target="_blank" rel="noopener nofollow ugc">Activism</a></h3>
+
+<p>To support this server and the OMN project https://opencollective.com/open-media-network</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>in peertube the is a admin interface to see the list of mod rules but nothing public, think the might be a plugin that alowes you to make this public</p>
+<p><a href="https://visionon.tv/about/follows" class="inline-onebox" rel="noopener nofollow ugc">visionOntv</a> is basic info.</p>
+<p>peertube I think is missing the audit log - and has the info scattered around the admin backend.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580/12</link>
+        <pubDate>Mon, 17 May 2021 08:42:03 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1580-12</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580.rss">Federated Moderation: Towards Delegated Moderation?</source>
+      </item>
+      <item>
+        <title>Federated Moderation: Towards Delegated Moderation?</title>
+        <dc:creator><![CDATA[hamishcampbell]]></dc:creator>
+        <description><![CDATA[
+            <p>Are you a mod on an instance, its good to get lived expirence, you can come help out on <a href="https://activism.openworlds.info" rel="noopener nofollow ugc">https://activism.openworlds.info</a> regular right-wing attacks/spam on this one - we also have a growing nutty/senses issue that is a challenge to know what to do with. Or for peertube <a href="http://visionon.tv" rel="noopener nofollow ugc">http://visionon.tv</a> which has its own issues due to the way peertube federates, we do not have open posting of video due to this.</p>
+<p>Working though lived expirence.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580/11</link>
+        <pubDate>Mon, 17 May 2021 07:50:24 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1580-11</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580.rss">Federated Moderation: Towards Delegated Moderation?</source>
+      </item>
+      <item>
+        <title>Federated Moderation: Towards Delegated Moderation?</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="tuttle" data-post="8" data-topic="1580">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/tuttle/40/1083_2.png" class="avatar"> tuttle:</div>
+<blockquote>
+<p>“United in Diversity” and “Social Networking Reimagined” are nice words, but they are not specific guide lines.</p>
+</blockquote>
+</aside>
+<p>Sure, and you are right. But I was just being introductory based on your introduction and mention of ‘basic principles’ <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/blush.png?v=9" title=":blush:" class="emoji" alt=":blush:"><br>
+In summary I think we fully agree on the role of technology as merely supportive and adding value.</p>
+<aside class="quote no-group" data-username="tuttle" data-post="6" data-topic="1580">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/tuttle/40/1083_2.png" class="avatar"> tuttle:</div>
+<blockquote>
+<p>So IMHO, as custodians I think it would be a good idea to define some basic principals to help guide us to nurture the Fediverse so that it becomes something that improves society instead of being just another media meat market.</p>
+</blockquote>
+</aside>
+<p>In follow-up to you, <a class="mention" href="/u/pskulski">@pskulski</a> and also on fedi discussion, like <a href="https://epicyon.freedombone.net/@bob/106200493840204587">here by Bob Mottram</a> where I reacted:</p>
+<p>I am not seeking technological solutions for the sake of technology in this brainstorm. Forget the tech, but think of the tech as an abstraction of real-world social relationships. We have modeled the interaction of Fedizens (in the microblogging domain), and we also know that a strong point is the way fedi is moderated on an instance-by-instance basis by <strong>real humans</strong>. This is a discerning factor wrt traditional social media.</p>
+<p>We also know that the current Moderation toolset is not enough. That toxicity also creeps onto the fedi, and instances close down, people moving back to the Twitter et al. See also <a href="https://socialhub.activitypub.rocks/t/improving-fediverse-culture-and-social-behavior/1397">my breakdown on “Fediverse is Crumbling”</a> article.</p>
+<p>Better moderation is crucial. And if in future we were to move towards more <a href="https://socialhub.activitypub.rocks/t/from-silo-first-to-task-oriented-federated-app-design/1457">task-oriented fediverse</a> - where application and instance boundaries are ‘pushed’ to a lower layer of the techstack - its nature will fundamentally change.</p>
+<p>Yet <strong>Moderation is not part of Fediverse at all</strong>. It exists in the shadows, separately on a different plane, out of sight for most fedizens who depend on it. People take it for granted too: “I just move to this instance and everything will be provided to me”. And when moderation occurs the moderators are seen as an abstract entity, not as humans who do the unthankful job to keep an instance healthy… “InstanceXYZ <em>(them)</em> censured / cancelled me <em>(us)</em>”.</p>
+<p>Delegated Moderation provides transparency and openness: “I am a fedizen and a moderator who helps keeps fedi safe and healthy”. That’s it, visibility and recognition of their work. In no way mods will become god-like creatures moderating all-over-the-place. There’s the same control that exists now.</p>
+<aside class="quote no-group quote-modified" data-username="pskulski" data-post="9" data-topic="1580">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/pskulski/40/1067_2.png" class="avatar"> pskulski:</div>
+<blockquote>
+<p>I just rediscovered my old piece on this topic. After three years I still believe this perspective is valid, so I am linking it here as my voice in this conversation. <a href="https://kanenasblog.wordpress.com/fake-news-or-filter-bubble/" class="inline-onebox">Fake News or Filter Bubble? – Political is personal</a></p>
+<p>[quoting parts from the article…]</p>
+<blockquote>
+<p><em>IMO you are missing the policy part. I.e. who and how is going to categorize channels as fake news.</em></p>
+</blockquote>
+<blockquote>
+<p>What will be the level of agency of community members? Are they expected to participate in the process? How directly? Are they expected to interact with the system all the time, periodically or once-off at the start? Do we want to create a subset of population to deal with moderation? On what basis?</p>
+</blockquote>
+</blockquote>
+</aside>
+<p>Fantastic article. And once again we see concepts popping up that are ongoing discussion on this forum: <a href="https://socialhub.activitypub.rocks/t/standardizing-on-a-common-community-domain-as-ap-extension/1353">Community</a> and <a href="https://socialhub.activitypub.rocks/t/what-would-a-fediverse-governance-body-look-like/1497">Governance</a>.</p>
+<p>I won’t go into all the ins and outs, because this post is already long. Just some considerations:</p>
+<ul>
+<li>
+<p><strong>Federated moderation</strong>: Brings moderation activity out into the open (like an audit log), so that the entire community and beyond can be informed in what ways it is taking place. And it can be helpful to avoid filter bubbles caused by <em>‘Shadow Moderation’</em>.</p>
+</li>
+<li>
+<p><strong>Delegated moderation</strong>: Brings moderation as an important responsibility for any community out in the open, and facilitates having open and rotating roles doing this work: Distribution of authority based on democratic principles.</p>
+</li>
+</ul>
+<p>Both these ‘features’ of the future Fediverse, built on top of Community and Governance domains, are very much in line with the <a href="https://socialhub.activitypub.rocks/t/what-would-a-fediverse-governance-body-look-like/1497/79">guidelines set out in the <strong>Tyranny of Structurelessness</strong></a>.</p>
+<h3>
+<a name="government-involvement-1" class="anchor" href="#government-involvement-1"></a>Government involvement</h3>
+<aside class="quote no-group" data-username="pskulski" data-post="9" data-topic="1580">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/pskulski/40/1067_2.png" class="avatar"> pskulski:</div>
+<blockquote>
+<p>I believe these two aspects need clear, public and serious discussion within Fediverse circles, before implementing any tools that could support disempowerment of the people of fediverse. <strong>The internet got tamed once. Perhaps right now we have a chance to rewild a part of it, or at least not let the powers that be take control again.</strong> I would not be happy to see this opportunity missed.</p>
+</blockquote>
+</aside>
+<p>1,000% agree.</p>
+<p>I want to address this separately. It is not directly on-topic for this thread, but a much broader subject area. A broad discussion must indeed be started. There’ll be many topics, meetups and probably projects needed to steer this well.</p>
+<p>At SocialHub we created the <a class="hashtag" href="/c/meeting/fediverse-policy/59">#<span>meeting:fediverse-policy</span></a> Special Interest Group, but haven’t done much with it yet. I invite anyone interested in the discussion to join this group, so we can set things in motion.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580/10</link>
+        <pubDate>Tue, 11 May 2021 07:11:52 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1580-10</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580.rss">Federated Moderation: Towards Delegated Moderation?</source>
+      </item>
+      <item>
+        <title>Federated Moderation: Towards Delegated Moderation?</title>
+        <dc:creator><![CDATA[pskulski]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>So IMHO, as custodians I think it would be a good idea to define some basic principles to help guide us to nurture the Fediverse so that it becomes something that improves society instead of being just another media meat market.</p>
+</blockquote>
+<p>I do not really believe there is a place for such generalized “custodians” in a decentralized network. I admire  Fediverse enormous social and political potential, but it can only do any good to the people if it is rigorously people-driven.</p>
+<p>As I wrote <a href="https://socialhub.activitypub.rocks/t/improving-fediverse-culture-and-social-behavior/1397/9">here</a>, people migrate to Fediverse, carrying the burden of toxic social behaviours. <strong>And that includes “us geeks”, admins, devs, moderators and other privileged users. We are not immune to toxicity of state-supported surveillance capitalism.</strong> I may accept delegated moderation as a short-term solution, but I am definitely against accepting it as a long-term rule, ingrained in the core technology.<br>
+My strong belief is that we should go the way of <a href="https://www.ic.org/social-permaculture-what-is-it/" rel="noopener nofollow ugc">social permaculture</a>, “designing beneficial relationships” and creating an environment that nurtures them.</p>
+<p>From the political perspective, which is crucial for me, moderation should be initiated by users themselves and an admin should be solely a tool of community, executing whatever decisions they take.</p>
+<p>I just rediscovered my old piece on this topic. After three years I still believe this perspective is valid, so I am linking it here as my voice in this conversation.</p><aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/2X/7/73e6c211c81e21cadfe983cb291cc8862bd6c8d0.png" class="site-icon" width="32" height="32">
+      <a href="https://kanenasblog.wordpress.com/fake-news-or-filter-bubble/" target="_blank" rel="noopener nofollow ugc" title="06:11PM - 24 August 2018">Political is personal – 24 Aug 18</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://socialhub.activitypub.rocks/uploads/default/original/2X/0/038fa0165e3ad08c46ac39b2927abd5e2c30f6db.png" class="thumbnail onebox-avatar" width="200" height="200">
+
+<h3><a href="https://kanenasblog.wordpress.com/fake-news-or-filter-bubble/" target="_blank" rel="noopener nofollow ugc">Fake News or Filter Bubble?</a></h3>
+
+<p>Ideally, the system I am trying to describe would balance users’ agency, AI-implemented community policies and feedback from changing community preferences. Combined with practically-oriented…</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p><strong>We do not operate  in vacuum</strong></p>
+<p>Let us be cold sober about the political situation. We all suffer from surveillance capitalism, and we believe our immediate adversary is cybermedia corporate complex, vacuuming our data, profiling us and selling it all to anyone, including state and interstate actors.<br>
+But there is no supply without demand. All state-ish bodies, EU included, are power hungry and are always happy to know more about their subjects – for their own good, safety and convenience. From one side we see growing interest in legal tools like <span class="hashtag">#TERREG</span> (let alone state-level attempts) and <strong>“irregular migration control”  (I am close to the topic since 2015, and I consider it probably the dirtiest game EU ever played).</strong><br>
+From the other side we see growing interest in “helping users keep quality of the news”, through projects like <a href="https://hub.libranet.de/wiki/paulfree14/The(20)critical(20)EUnomia(20)FAQ/Home#What_is_EUnomia_" rel="noopener nofollow ugc">#EUnomia</a> that I only started learning about (but I am already concerned a lot).</p>
+<p>I believe these two aspects need clear, public and serious discussion within Fediverse circles, before  implementing any tools that could support disempowerment of the people of fediverse. <strong>The internet got tamed once. Perhaps right now we have a chance to rewild a part of it, or at least not let the powers that be take control again.</strong> I would not be happy to see this opportunity missed.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580/9</link>
+        <pubDate>Tue, 11 May 2021 05:56:53 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1580-9</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580.rss">Federated Moderation: Towards Delegated Moderation?</source>
+      </item>
+      <item>
+        <title>Federated Moderation: Towards Delegated Moderation?</title>
+        <dc:creator><![CDATA[tuttle]]></dc:creator>
+        <description><![CDATA[
+            <p>Well, when I suggested the example “Manual intervention before automatic resolution.” as a guide to protocol and social development, I am talking about something concrete.</p>
+<p>“United in Diversity” and “Social Networking Reimagined” are nice words, but they are not specific guide lines.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580/8</link>
+        <pubDate>Mon, 10 May 2021 10:41:04 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1580-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580.rss">Federated Moderation: Towards Delegated Moderation?</source>
+      </item>
+      <item>
+        <title>Federated Moderation: Towards Delegated Moderation?</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>So very true. That is one of the distinguishing factors of the things we do for the fediverse. Completely different incentives and a much better culture right from the start. A unique opportunity. I wrote about this in more detail at Humane Tech Community in <a href="https://community.humanetech.com/t/what-makes-a-humane-technologist/5174/3">What Makes a Humane Technologist?</a>.</p>
+<p>Part of the TL;DR I guess is this:</p>
+<blockquote>
+<p><strong>Hypercapitalism stands in direct opposition of Humanity!</strong></p>
+</blockquote>
+<p>And also the insight that:</p>
+<blockquote>
+<ul>
+<li>
+<p><strong>Humane technology depends on Humanity</strong> and to create it one should embrace and practice this virtue in daily life.</p>
+</li>
+<li>
+<p>Technology mirrors the society that creates it, and for it to be humane <strong>we must weave a social fabric that fosters humanity</strong>.</p>
+</li>
+</ul>
+</blockquote>
+<p>There’s two slogans we recently adopted at SocialHub applying to the Fediverse:</p>
+<ul>
+<li>United in Diversity</li>
+<li>Social Networking Reimagined</li>
+</ul>
+<p>Note the ‘social networking’ in the second bullet: The real-world concept is meant here. While our online technology can unite us, it is also just an abstraction of that.</p>
+<p>With regards to moderation I feel that making it a first-class citizens of the Fediverse itself, will ensure proper appreciation and visibility of the work involved to keep us on track of these visionary statements. Emphasize that it is humans all the way.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580/7</link>
+        <pubDate>Fri, 07 May 2021 19:13:16 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1580-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580.rss">Federated Moderation: Towards Delegated Moderation?</source>
+      </item>
+      <item>
+        <title>Federated Moderation: Towards Delegated Moderation?</title>
+        <dc:creator><![CDATA[tuttle]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi,</p>
+<p>Thanks for the invitation to participate in this thread.</p>
+<p>It was a pleasure to be at the last SocialCG meeting. The work being done to define the technical side of Fediverse is so very important.</p>
+<p>I also think that this Fediversity category here on socialhub where the non-technical side of the Fediverse is being considered is just as important, perhaps even more so.</p>
+<p>We are Geeks, most of us anyway, and we like tinkering. I’ve been playing with tech since I was a child. Tech is fun. You connect this wire to that resistor and the LED lights. You change one value for another, and something else happens. Cool! How many hours have I spent doing such things? Half a lifetime, and I love it! <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/nerd_face.png?v=9" title=":nerd_face:" class="emoji" alt=":nerd_face:"></p>
+<p>But as the years have gone by, I’ve realized that tech for tech’s sake is not generally a positive thing for humanity. Building technology just because “you can”, is not reason enough to build it.</p>
+<p>ActiviyPub for the sake of ActivityPub and interconnecting people is not a reason enough to develop AP. We are already hyper connected via proprietary and/or open standards, yet we are more atomized than ever. I think we know that AP has to mean more than just a technical challenge, more than just tickling our geekness.</p>
+<p>Tech and software are all the rage. Now, after covid, even more so. Everyone is promoting it. Businesses are booming and you can get grants to develop. But while the focus on developing more technology is huge, the focus on building a better society with that technology seem inversely proportionate.</p>
+<p>Advocating for ‘technology for good’ is hard work (all of us who have been involved in the GNU project know what I mean), but it’s worth it. We’ve come far and matured along the way. The importance we place on our Social contracts is proof of that. So we are in a good place, more prepared than ever. <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>So IMHO, as custodians I think it would be a good idea to define some basic principals to help guide us to nurture the Fediverse so that it becomes something that improves society instead of being just another media meat market.</p>
+<p>About moderation: Just a few years ago when I wanted to hail a Taxi, I would stand on the street, raise my arm, and yell Taxi! Now you do all that with an app. Really convenient (maybe), but where is the humanity? Lost. In the same sense I feel that node moderation needs to be based on human contact to keep it, well, human. So perhaps that could be an example of a basic principal. Manual intervention before automatic resolution.</p>
+<p>The Fediverse is an opportunity of a lifetime!</p>
+<p>Pleased to be here.<br>
+Chris.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580/6</link>
+        <pubDate>Fri, 07 May 2021 10:31:49 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1580-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580.rss">Federated Moderation: Towards Delegated Moderation?</source>
+      </item>
+      <item>
+        <title>Federated Moderation: Towards Delegated Moderation?</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>In today’s SocialCG meetup <a href="https://git.feneas.org/buttle/fedihealth">FediHealth</a> by <a class="mention" href="/u/tuttle">@tuttle</a> was demonstrated. I did not attend, but the topic seems very much related to this brainstorm thread:</p>
+<aside class="quote group-redaktor.me quote-modified" data-username="Sebastian" data-post="23" data-topic="1649">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar"><a href="https://socialhub.activitypub.rocks/t/2021-05-01-fediverse-interest-group-meeting/1649/23">2021-05-01 Fediverse Interest Group Meeting</a>
+</div>
+<blockquote>
+<p><a class="mention" href="/u/tuttle">@tuttle</a> showcased <strong>FediHealth</strong> with a walkthrough and demo<br>
+[shows repo]</p>
+<p>[…]</p>
+<p>“moderation of nodes is a good idea”<br>
+Some nodes are healthy, some nodes are not.<br>
+Make a list of the nodes whos’ federation <strong>policies you trust</strong> .<br>
+[people write instances in shared note]</p>
+<p>This ended in a working demo. Some nodes do not support it and are mentioned in an error report,<br>
+and then visualised the federation policies of other nodes.<br>
+tuttle mentions networks of trusted nodes and the importance for schools and covid …</p>
+<p>Will:<br>
+“Matrix wrote a post about distributed moderation in a federated context” <a href="https://jaygraber.medium.com/designing-decentralized-moderation-a76430a8eab">Designing decentralized moderation | by Jay Graber | Medium</a></p>
+<p><a class="mention" href="/u/sebastian">@Sebastian</a>  mentioned Cristina DeLisle<br>
+“so when you as an admin were peering with another instance you are showing your set of values, and if that other instance believes that they are sharing those values, that instance can peer with you”</p>
+</blockquote>
+</aside>
+          <p><a href="https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580/5</link>
+        <pubDate>Sat, 01 May 2021 16:55:04 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1580-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580.rss">Federated Moderation: Towards Delegated Moderation?</source>
+      </item>
+      <item>
+        <title>Federated Moderation: Towards Delegated Moderation?</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>You provided some great resources. Welcome to SocialHub <a class="mention" href="/u/arnebab">@ArneBab</a>, nice to have you here. I would also like to quote <a href="https://rollenspiel.social/@ArneBab/106062408125407749">your other toot</a>:</p>
+<blockquote>
+<p>If you want to try this, there are two steps: First the current state in Freenet: <a href="https://github.com/xor-freenet/plugin-WebOfTrust/blob/4fdcc56558b4a64facc9b7ab25d695765356ca69/developer-documentation/core-developers-manual/OadSFfF-version1.2-non-print-edition.pdf" class="inline-onebox">plugin-WebOfTrust/OadSFfF-version1.2-non-print-edition.pdf at 4fdcc56558b4a64facc9b7ab25d695765356ca69 · xor-freenet/plugin-WebOfTrust · GitHub</a></p>
+<p>Then the optimizations needed so this scales to arbitrary size: <a href="https://www.draketo.de/english/freenet/deterministic-load-decentralized-spam-filter" class="inline-onebox">A deterministic upper bound for the network load of the fully decentralized Freenet spam filter | Zwillingssterns Weltenwald | 1w6</a></p>
+<p>Here’s some data if you want to test algorithms: <a href="https://figshare.com/articles/dataset/The_Freenet_social_trust_graph_extracted_from_the_Web_of_Trust/4725664" class="inline-onebox">The Freenet social trust graph extracted from the Web of Trust</a></p>
+<p>And some starting code of a more generic prototype for faster testing: <a href="https://hg.sr.ht/~arnebab/wispwot/" class="inline-onebox">~arnebab/wispwot - sourcehut hg</a></p>
+</blockquote>
+<p>CC: <a class="mention" href="/u/audrey">@Audrey</a> and <a class="mention" href="/u/robertwgehl">@robertwgehl</a> …</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580/4</link>
+        <pubDate>Wed, 14 Apr 2021 09:23:24 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1580-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580.rss">Federated Moderation: Towards Delegated Moderation?</source>
+      </item>
+      <item>
+        <title>Federated Moderation: Towards Delegated Moderation?</title>
+        <dc:creator><![CDATA[ArneBab]]></dc:creator>
+        <description><![CDATA[
+            <p>The challenge with moderation is that disrupting communication often scales better than individual blocking.</p>
+<p>In the Freenet project (where centralized moderation simply is no option) the answer was to propagate blocking between users in a transparent way. That way blocking disruptors scales better than disrupting. For more info see: <a href="https://www.draketo.de/english/freenet/friendly-communication-with-anonymity" class="inline-onebox" rel="noopener nofollow ugc">The Freenet Web of Trust keeps communication friendly with actual anonymity | Zwillingssterns Weltenwald | 1w6</a></p>
+<p>(copied from the thread at <a href="https://rollenspiel.social/@ArneBab/106062349411699555" class="inline-onebox" rel="noopener nofollow ugc">ArneBab: "@tio@social.trom.tf @humanetech@mastodon.social @…" - Die Heimat für Rollenspieler</a> — there is more in that thread, but the current limits for new users prevent me from posting it here)</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580/3</link>
+        <pubDate>Wed, 14 Apr 2021 09:15:03 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1580-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580.rss">Federated Moderation: Towards Delegated Moderation?</source>
+      </item>
+      <item>
+        <title>Federated Moderation: Towards Delegated Moderation?</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p><div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/1X/b8803c9fb0d666f366a39950d89e87d0b2218dfb.jpeg" data-download-href="https://socialhub.activitypub.rocks/uploads/default/b8803c9fb0d666f366a39950d89e87d0b2218dfb" title="pexels-pixabay-163064"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/b8803c9fb0d666f366a39950d89e87d0b2218dfb_2_690x460.jpeg" alt="pexels-pixabay-163064" data-base62-sha1="qkaBeXbez0D52ZrsAUijYcQbL9F" width="690" height="460" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/b8803c9fb0d666f366a39950d89e87d0b2218dfb_2_690x460.jpeg, https://socialhub.activitypub.rocks/uploads/default/optimized/1X/b8803c9fb0d666f366a39950d89e87d0b2218dfb_2_1035x690.jpeg 1.5x, https://socialhub.activitypub.rocks/uploads/default/optimized/1X/b8803c9fb0d666f366a39950d89e87d0b2218dfb_2_1380x920.jpeg 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/b8803c9fb0d666f366a39950d89e87d0b2218dfb_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">pexels-pixabay-163064</span><span class="informations">5472×3648 1.33 MB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<h2>
+<a name="introduction-1" class="anchor" href="#introduction-1"></a>Introduction</h2>
+<p>In <a href="https://socialhub.activitypub.rocks/t/improving-fediverse-culture-and-social-behavior/1397" class="inline-onebox">Improving fediverse culture and social behavior</a> along the way I introduced two ideas, that are I think interesting enough to warrant a separate thread. The brainstorm will start in the Lemmy <a href="https://lemmy.ml/c/fediversefutures">Fediverse Futures</a> ideation space, and elaborated here (if there’s interest). See Lemmy: <a href="https://lemmy.ml/post/60475">https://lemmy.ml/post/60475</a></p>
+<p><strong>Note</strong>: There’s ongoing research on Moderation by <a class="mention" href="/u/audrey">@Audrey</a> and <a class="mention" href="/u/robertwgehl">@robertwgehl</a>. See:</p>
+<ul>
+<li><a href="https://socialhub.activitypub.rocks/t/experiences-and-aspirations-about-content-moderation-in-the-fediverse/1093" class="inline-onebox">Experiences and aspirations about content moderation in the fediverse</a></li>
+<li><a href="https://socialhub.activitypub.rocks/t/im-part-of-a-research-team-studying-moderation-on-mastodon-and-we-have-a-survey-for-devs/1389" class="inline-onebox">I'm part of a research team studying moderation on Mastodon, and we have a survey for devs!</a></li>
+</ul>
+<p>(The sections below will be duplicated to Lemmy brainstorming post)</p>
+<hr>
+<h2>
+<a name="moderation-on-the-fediverse-2" class="anchor" href="#moderation-on-the-fediverse-2"></a>Moderation on the Fediverse</h2>
+<p>Right now when people install federated server instances of any kind that are open for others to join, they take on the job to be the instance admin. When membership grows, they attract additional moderators to help with maintenance and assuring a healthy community.</p>
+<p>I haven’t been admin or mod myself, but AFAIK the moderation work is mostly manual, based on the specific UI administrative features offered by a particular app. Metrics are collected about instance operation, and federated messages come in from members (e.g. <code>Flag</code> and <code>Block</code>). There’s a limited set of moderation measures that can be taken (see e.g. <a href="https://docs.joinmastodon.org/admin/moderation/">Mastodon’s Moderation docs</a>). The toughests actions that can be taken are to blocklist an entire domain (here’s the <a href="https://mastodon.social/about/more#unavailable-content">list for mastodon.social</a>, the largest fedi instance).</p>
+<h4>
+<a name="the-burden-of-moderating-3" class="anchor" href="#the-burden-of-moderating-3"></a>The burden of moderating</h4>
+<p>I think (but pls correct me) that in general there are two important areas for improvement from moderators perspective:</p>
+<ul>
+<li>Moderation is very time-consuming.</li>
+<li>Moderation is somewhat of an unthankful, underappreciated job.</li>
+</ul>
+<p>It is time-consuming to monitor what happens on your server, to act timely on moderation request, answer questions, get informed about other instances that may have to be blocked.</p>
+<p>It is unthankful / underappreciated because your instance members take it for granted, and because you are often the bad guy when acting against someone who misbehaved. Moderation is often seen as unfair and your decisions fiercely argued.</p>
+<p>Due to these reasons instances are closed down, or are under-moderated and toxic behavior can fester.</p>
+<p>(There’s much more to this, but I’ll leave it here for now)</p>
+<h2>
+<a name="federating-moderation-4" class="anchor" href="#federating-moderation-4"></a>Federating Moderation</h2>
+<p>From the Mastodon docs:</p>
+<blockquote>
+<p>Moderation in Mastodon is always applied locally, i.e. as seen from the particular server. An admin or moderator on one server cannot affect a user on another server, they can only affect the local copy on their own server.</p>
+</blockquote>
+<p>This is a good, logical model. After all, you only control your own instance(s). But what if the federation tasks that are bound to the instance got help from ActivityPub federation itself? Copying from <a href="https://socialhub.activitypub.rocks/t/improving-fediverse-culture-and-social-behavior/1397/5">this post</a>:</p>
+<p>The whole instance discovery / mapping of the Fediverse network can be federated. E.g.:</p>
+<ul>
+<li>A new server is detected</li>
+<li>Instance updates internal server list</li>
+<li>Instance federates (<code>Announce</code>) the new server</li>
+<li>Other instances update their server list</li>
+<li>Domain blocklisting / allowlisting actions are announced (with reason)</li>
+</ul>
+<p>Then in addition to that Moderation Incidents can be collected as metrics and federated as soon as they occur:</p>
+<ul>
+<li>User mutes / blocks, instance blocks (without PII, as it is the metric counts that are relevant)</li>
+<li>Flags (federated after they are approved by admins, without PII)</li>
+<li>Incidents may include more details (reason for blocking, topic e.g. ‘misinformation’)</li>
+</ul>
+<p>So a new instance pops up, and all across fedi people start blocking its users. There’s probably something wrong with the instance that may warrant blocklisting. Instance admin goes to the server list, sees a large incident count for a particular server, clicks the entry and gets a more detailed report on the nature of said incident. Makes the decision whether to block the domain for their own instance or not.</p>
+<h2>
+<a name="delegated-moderation-5" class="anchor" href="#delegated-moderation-5"></a>Delegated moderation</h2>
+<p>When having <strong>Federated Moderation</strong> it may also be possible to <em>delegate moderation tasks</em> to admins of other instances who are authorized to do so, or even have ‘roaming moderators’ that are not affiliated to any one instance.</p>
+<p>I have described this idea already, but from the perspective of Discourse forums having native federation capabilities. See <a href="https://meta.discourse.org/t/community-has-no-boundary-discourse-as-a-fabric-ideation-brainstorm/174578/12?u=aschrijver">Discourse: Delegating Community Management</a>. Why would you want to delegate moderation:</p>
+<ul>
+<li>Temporarily, while looking for new mods and admins.</li>
+<li>When an instance is under attack by trolls and the like, ask extra help</li>
+<li>When there is a large influx of new users</li>
+</ul>
+<h4>
+<a name="moderation-as-a-service-6" class="anchor" href="#moderation-as-a-service-6"></a>Moderation-as-a-Service</h4>
+<p><em>(Copied and extended from <a href="https://socialhub.activitypub.rocks/t/improving-fediverse-culture-and-social-behavior/1397/8">this post</a>)</em></p>
+<p>But this extension to the Moderation model goes further… we can have Moderation-as-a-Service. Experienced moderators and admins gain reputation and trust. They can offer their services, and can be rewarded for the work they do (e.g. via Donations, or otherwise). They may state their available time and timeslots in which they are available, so I could invoke their service and provide 24/7 monitoring of my instance.</p>
+<p>The Reputation model of available moderators  might even be federated. So I can see history of their work, satisfaction level / review by others, amount of time spent / no. of Incidents handled, etc.</p>
+<p>All of this could be intrinsic part of the fabric of the Fediverse, and extend across different application types.</p>
+<p>There would be much more visibility to the under-appreciated task of the moderator, and as the model matures more features can be added e.g. in the form of support for Moderation Policies. Like their Code of Conduct different instances would like different governance models (think democratic voting mechanisms, or <a href="https://en.wikipedia.org/wiki/Sortition">Sortition</a>. See also <a href="https://socialhub.activitypub.rocks/t/what-would-a-fediverse-governance-body-look-like/1497" class="inline-onebox">What would a fediverse "governance" body look like?</a>)</p>
+<hr>
+<p><strong>Note</strong>: I <em>highly recommend</em> to also read the toot thread for this topic with many  people responding with great insights: <a href="https://mastodon.social/web/statuses/106059921223198405">https://mastodon.social/web/statuses/106059921223198405</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580/1</link>
+        <pubDate>Tue, 13 Apr 2021 18:21:19 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1580-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580.rss">Federated Moderation: Towards Delegated Moderation?</source>
+      </item>
+  </channel>
+</rss>

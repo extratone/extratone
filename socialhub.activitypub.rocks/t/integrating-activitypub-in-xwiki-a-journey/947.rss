@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Integrating ActivityPub in XWiki: a journey</title>
+    <link>https://socialhub.activitypub.rocks/t/integrating-activitypub-in-xwiki-a-journey/947</link>
+    <description>*Simon Urli*
+
+https://conf.tube/videos/watch/bf1309c1-0f5e-4fa1-9b58-fc240f369684
+
+XWiki is an open-source wiki platform written in Java with a design emphasis on extensibility. The core feature of XWiki is its capacity to design structured-data documents and applications directly in the wiki. But if XWiki is easily extensible and has a store of more than 900 existing extensions, until recently its social features were limited inside the platform and didn’t allow to interact outside it, in a federated ecosystem.
+
+In this presentation, we’ll see how we developed a new extension in XWiki to support the ActivityPub protocol, what part of the protocol we have integrated so far and how other document-oriented federated services can integrate to us. We also want to spend some time to discuss about the various challenges we encountered, be it on understanding the protocol, testing our implementation, or integrating with other existing implementations.
+
+## Questions &amp; Answers available!
+**[Q&amp;A Session – Integrating ActivityPub in XWiki: a journey](https://conf.tube/videos/watch/dee609c2-5d0f-4cae-90fd-bd5ea472e6d5)**
+⬡ Hooray, the live Questions &amp; Answers are available here
+https://conf.tube/videos/watch/dee609c2-5d0f-4cae-90fd-bd5ea472e6d5</description>
+    
+    <lastBuildDate>Mon, 19 Oct 2020 17:37:53 +0000</lastBuildDate>
+    <category>ActivityPub Conference 2020</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/integrating-activitypub-in-xwiki-a-journey/947.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Integrating ActivityPub in XWiki: a journey</title>
+        <dc:creator><![CDATA[surli]]></dc:creator>
+        <description><![CDATA[
+            <p><em>Simon Urli</em></p>
+<p><iframe width="560" height="315" src="https://conf.tube/videos/embed/bf1309c1-0f5e-4fa1-9b58-fc240f369684" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+<p>XWiki is an open-source wiki platform written in Java with a design emphasis on extensibility. The core feature of XWiki is its capacity to design structured-data documents and applications directly in the wiki. But if XWiki is easily extensible and has a store of more than 900 existing extensions, until recently its social features were limited inside the platform and didn’t allow to interact outside it, in a federated ecosystem.</p>
+<p>In this presentation, we’ll see how we developed a new extension in XWiki to support the ActivityPub protocol, what part of the protocol we have integrated so far and how other document-oriented federated services can integrate to us. We also want to spend some time to discuss about the various challenges we encountered, be it on understanding the protocol, testing our implementation, or integrating with other existing implementations.</p>
+<h2>Questions &amp; Answers available!</h2>
+<p><strong><a href="https://conf.tube/videos/watch/dee609c2-5d0f-4cae-90fd-bd5ea472e6d5" rel="noopener nofollow ugc">Q&amp;A Session – Integrating ActivityPub in XWiki: a journey</a></strong><br>
+⬡ Hooray, the live Questions &amp; Answers are available here<br>
+<iframe width="560" height="315" src="https://conf.tube/videos/embed/dee609c2-5d0f-4cae-90fd-bd5ea472e6d5" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/integrating-activitypub-in-xwiki-a-journey/947/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/integrating-activitypub-in-xwiki-a-journey/947/1</link>
+        <pubDate>Wed, 30 Sep 2020 13:52:32 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-947-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/integrating-activitypub-in-xwiki-a-journey/947.rss">Integrating ActivityPub in XWiki: a journey</source>
+      </item>
+  </channel>
+</rss>

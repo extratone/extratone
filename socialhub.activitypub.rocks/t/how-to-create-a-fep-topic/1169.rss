@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How to create a FEP topic</title>
+    <link>https://socialhub.activitypub.rocks/t/how-to-create-a-fep-topic/1169</link>
+    <description>:todo: use the Discourse API to autocreate the topic when the repository entry is created.
+
+Staff members and @activitypub.hosts can create a topic in the #activitypub:fep category.
+
+## FEP-09ba: Sample FEP
+
+For the purpose of illustration we imagine the following FEP:
+
+* title: `Sample FEP`
+* link to repository: `https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/src/branch/main/feps/fep-e9ba.md`
+
+### Process to create the FEP-09ba topic
+
+1. Copy the original FEP link from the repository
+2. Hit the ![image|128x30](upload://2ayN7PXIL3ifviN7jg8BY8wj2D &quot;New Topic&quot;) button and paste the link in the title field.
+3. Edit the resulting title to read `FEP-e9ba: Sample FEP`
+4. Edit the body to read `source: https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/src/branch/main/feps/fep-e9ba.md`
+5. Add the tags: `fep` , `draft` , `fep-e9ba` .
+6. Ensure category is #activitypub:fep
+7. Save edit
+8. Change ownership to the @system user
+9. Move any previous discussion to this topic or reference it
+
+## What you obtained
+
+A new, properly referenced FEP topic is available that provides a direct link to the original FEP from the topic list (thanks to step 2) and can be further discussed in an obvious place.
+
+## Next Steps
+
+1. You can copy-paste the new topic URL to the [Drafts section of the FEP Index](https://socialhub.activitypub.rocks/t/about-the-fediverse-enhancement-proposals/1168#draft).
+2. Keep an eye on the FEP status to adjust tags, and eventually publish the FEP.</description>
+    
+    <lastBuildDate>Tue, 01 Dec 2020 16:22:05 +0000</lastBuildDate>
+    <category>ActivityPub</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/how-to-create-a-fep-topic/1169.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How to create a FEP topic</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>:todo: use the Discourse API to autocreate the topic when the repository entry is created.</p>
+<p>Staff members and <a class="mention-group" href="/groups/activitypub.hosts">@activitypub.hosts</a> can create a topic in the <a class="hashtag" href="/c/activitypub/fep/54">#<span>activitypub:fep</span></a> category.</p>
+<h2>FEP-09ba: Sample FEP</h2>
+<p>For the purpose of illustration we imagine the following FEP:</p>
+<ul>
+<li>title: <code>Sample FEP</code>
+</li>
+<li>link to repository: <code>https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/src/branch/main/feps/fep-e9ba.md</code>
+</li>
+</ul>
+<h3>Process to create the FEP-09ba topic</h3>
+<ol>
+<li>Copy the original FEP link from the repository</li>
+<li>Hit the <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/003ece53f530a6f8f785c113359f0bdbed63b92f.png" alt="image" title="New Topic" data-base62-sha1="2ayN7PXIL3ifviN7jg8BY8wj2D" width="128" height="30"> button and paste the link in the title field.</li>
+<li>Edit the resulting title to read <code>FEP-e9ba: Sample FEP</code>
+</li>
+<li>Edit the body to read <code>source: https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/src/branch/main/feps/fep-e9ba.md</code>
+</li>
+<li>Add the tags: <code>fep</code> , <code>draft</code> , <code>fep-e9ba</code> .</li>
+<li>Ensure category is <a class="hashtag" href="/c/activitypub/fep/54">#<span>activitypub:fep</span></a>
+</li>
+<li>Save edit</li>
+<li>Change ownership to the <a class="mention" href="/u/system">@system</a> user</li>
+<li>Move any previous discussion to this topic or reference it</li>
+</ol>
+<h2>What you obtained</h2>
+<p>A new, properly referenced FEP topic is available that provides a direct link to the original FEP from the topic list (thanks to step 2) and can be further discussed in an obvious place.</p>
+<h2>Next Steps</h2>
+<ol>
+<li>You can copy-paste the new topic URL to the <a href="https://socialhub.activitypub.rocks/t/about-the-fediverse-enhancement-proposals/1168#draft">Drafts section of the FEP Index</a>.</li>
+<li>Keep an eye on the FEP status to adjust tags, and eventually publish the FEP.</li>
+</ol>
+          <p><a href="https://socialhub.activitypub.rocks/t/how-to-create-a-fep-topic/1169/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/how-to-create-a-fep-topic/1169/1</link>
+        <pubDate>Tue, 01 Dec 2020 16:02:36 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1169-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/how-to-create-a-fep-topic/1169.rss">How to create a FEP topic</source>
+      </item>
+  </channel>
+</rss>

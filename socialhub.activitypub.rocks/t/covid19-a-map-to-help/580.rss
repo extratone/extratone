@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>COVID19 – a map to help</title>
+    <link>https://socialhub.activitypub.rocks/t/covid19-a-map-to-help/580</link>
+    <description>Let us show some #CoronaCrisis  **solidarity**
+
+[Update] please note : The page is now up at https://redaktor.me
+- fixed bugs
+- 2.366 solidary neighbourhoods so far
+
+redaktor will break any other coding now and write a page. 
+And a bridge and bot #ushahidi &lt;-&gt; #activitypub …
+
+Some fediverse  features are protected, tell us if you want to moderate.
+
+# [--&gt; This is usable to inform, seek for help or HELP.](https://redaktor.me)</description>
+    
+    <lastBuildDate>Mon, 30 Mar 2020 14:45:46 +0000</lastBuildDate>
+    <category>redaktor.me</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/covid19-a-map-to-help/580.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>COVID19 – a map to help</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="https://redaktor.me">New page</a> online,<br>
+needs french and spanish and ? language</p>
+<p><a href="https://github.com/redaktor/COVID19"><strong>please add translations here</strong></a></p>
+<p>for the amazing map<br>
+<div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/1X/3ec478ec7ce17ce7875d36810e44b3c7637b7ab7.jpeg" data-download-href="https://socialhub.activitypub.rocks/uploads/default/3ec478ec7ce17ce7875d36810e44b3c7637b7ab7" title="Bildschirmfoto 2020-03-22 um 16.33.55"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/3ec478ec7ce17ce7875d36810e44b3c7637b7ab7_2_345x215.jpeg" alt="Bildschirmfoto 2020-03-22 um 16.33.55" data-base62-sha1="8XgxGgMETN9LhXlhyfQWAM81m3J" width="345" height="215" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/3ec478ec7ce17ce7875d36810e44b3c7637b7ab7_2_345x215.jpeg, https://socialhub.activitypub.rocks/uploads/default/optimized/1X/3ec478ec7ce17ce7875d36810e44b3c7637b7ab7_2_517x322.jpeg 1.5x, https://socialhub.activitypub.rocks/uploads/default/optimized/1X/3ec478ec7ce17ce7875d36810e44b3c7637b7ab7_2_690x430.jpeg 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/3ec478ec7ce17ce7875d36810e44b3c7637b7ab7_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Bildschirmfoto 2020-03-22 um 16.33.55</span><span class="informations">2646×1650 395 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/covid19-a-map-to-help/580/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/covid19-a-map-to-help/580/4</link>
+        <pubDate>Mon, 30 Mar 2020 14:45:46 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-580-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/covid19-a-map-to-help/580.rss">COVID19 – a map to help</source>
+      </item>
+      <item>
+        <title>COVID19 – a map to help</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>We can’t handle so much are overwhelmed, 1st priority is now to reach risk groups and enhance the telephone lines. Our network is <a href="https://blog.krisenkultur.de">https://blog.krisenkultur.de</a> but it is in german.<br>
+We currently focus on a giant post thing for risk people and flyers etc with the phone numbers and also begin in germany cause with phone you need to begin somewhere <a href="https://gemeinschaft.online">https://gemeinschaft.online</a><br>
+I hope I can continue the AP work tomorrow …</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/covid19-a-map-to-help/580/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/covid19-a-map-to-help/580/3</link>
+        <pubDate>Fri, 27 Mar 2020 13:22:50 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-580-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/covid19-a-map-to-help/580.rss">COVID19 – a map to help</source>
+      </item>
+      <item>
+        <title>COVID19 – a map to help</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>I posted my local help group: <a href="https://redaktor.ushahidi.io/posts/4978">https://redaktor.ushahidi.io/posts/4978</a></p>
+<p>Wondering how to attach a feed to that post now…</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/covid19-a-map-to-help/580/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/covid19-a-map-to-help/580/2</link>
+        <pubDate>Thu, 26 Mar 2020 15:23:51 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-580-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/covid19-a-map-to-help/580.rss">COVID19 – a map to help</source>
+      </item>
+      <item>
+        <title>COVID19 – a map to help</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Let us show some <span class="hashtag">#CoronaCrisis</span>  <strong>solidarity</strong></p>
+<p>[Update] please note : The page is now up at <a href="https://redaktor.me">https://redaktor.me</a></p>
+<ul>
+<li>fixed bugs</li>
+<li>2.366 solidary neighbourhoods so far</li>
+</ul>
+<p>redaktor will break any other coding now and write a page.<br>
+And a bridge and bot <span class="hashtag">#ushahidi</span> &lt;-&gt; <a class="hashtag" href="/c/activitypub/5">#<span>activitypub</span></a> …</p>
+<p>Some fediverse  features are protected, tell us if you want to moderate.</p>
+<h1><a href="https://redaktor.me">–&gt; This is usable to inform, seek for help or HELP.</a></h1>
+          <p><a href="https://socialhub.activitypub.rocks/t/covid19-a-map-to-help/580/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/covid19-a-map-to-help/580/1</link>
+        <pubDate>Fri, 20 Mar 2020 17:48:15 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-580-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/covid19-a-map-to-help/580.rss">COVID19 – a map to help</source>
+      </item>
+  </channel>
+</rss>

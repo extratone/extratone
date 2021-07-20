@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>EU Consumers confirm need for effective interoperability in DMA</title>
+    <link>https://socialhub.activitypub.rocks/t/eu-consumers-confirm-need-for-effective-interoperability-in-dma/1682</link>
+    <description>In latest [Interoperability News toot](https://activism.openworlds.info/@InteropNews/106153145767687515) there was mention of this article: https://interoperability.news/2021/04/european-consumers-confirm-need-for-effective-interoperability-in-digital-markets-act/
+
+It refers to some interesting work by the European Consumer Organization [BEUC](https://www.beuc.eu/):
+
+- A [Position Paper on the Digital Markets Act Proposal](https://www.beuc.eu/publications/beuc-x-2021-030_digital_markets_act_proposal.pdf) (PDF)
+- A [Factsheet on the Digital Markets Act](https://www.beuc.eu/publications/beuc-x-2021-031_proposal_for_an_eu_digital_markets_act.pdf) (PDF)
+- An [Assessment of the Digital Markets Act](https://www.beuc.eu/publications/beuc-x-2021-035_overview_of_beucs_assessment_of_proposed_digital_markets_act.pdf) (PDF)
+
+The factsheet mentions what the proposed Digital Markets Act would do for consumers, quoting..
+
+&gt; The DMA would prohibit gatekeepers from using a number of unfair practices that harm consumers, such as:
+&gt; 
+&gt; - **blocking  users  from  un-installing**  pre-installed  software or apps
+&gt;
+&gt; - **mixing  user’s  personal  data**  collected  on  one  of  their  core  platform  services  with  personal  data  collected  on  another  of  their  services  or  personal  data from third parties
+&gt; - **prohibiting  services  using  a  gatekeeper’s  app  store   from   selling   discounted   subscriptions** bought  directly  from  the  service  provider’s  own  website rather than the app store
+&gt; - **discriminating   against   other   providers’   apps** on  their  app  stores  or  prohibiting  competing  app  stores on devices
+&gt; - **forcing  customers  to  sign  up  for  other  core  platform  services**  in  order  to  access  the  specific  service they wanted to use (e.g. consumers wishing to  use  Instagram  could  not  be  obliged  to  have  a  Facebook account)
+&gt; - **gathering  data  on  their  business  customers  to  ascertain  how  best  to  compete  with  them**  and  whether  to  themselves  market  their  customers’  most successful products
+&gt; - **ranking  their  own  products  or  services  more  favourably than third party services** e.g. in search results• locking in customers by“technically restricting” users from switching away from default apps and services
+
+And to top it off they wrote a nice blog post about all this:
+
+https://www.beuc.eu/blog/eu-proposals-to-shape-the-digital-landscape-a-step-forward-for-consumers/</description>
+    
+    <lastBuildDate>Fri, 30 Apr 2021 09:59:59 +0000</lastBuildDate>
+    <category>Fediverse Policy SIG</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/eu-consumers-confirm-need-for-effective-interoperability-in-dma/1682.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>EU Consumers confirm need for effective interoperability in DMA</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>In latest <a href="https://activism.openworlds.info/@InteropNews/106153145767687515">Interoperability News toot</a> there was mention of this article: <a href="https://interoperability.news/2021/04/european-consumers-confirm-need-for-effective-interoperability-in-digital-markets-act/" class="inline-onebox">European consumers confirm need for effective interoperability in DMA – Interoperability News</a></p>
+<p>It refers to some interesting work by the European Consumer Organization <a href="https://www.beuc.eu/">BEUC</a>:</p>
+<ul>
+<li>A <a href="https://www.beuc.eu/publications/beuc-x-2021-030_digital_markets_act_proposal.pdf">Position Paper on the Digital Markets Act Proposal</a> (PDF)</li>
+<li>A <a href="https://www.beuc.eu/publications/beuc-x-2021-031_proposal_for_an_eu_digital_markets_act.pdf">Factsheet on the Digital Markets Act</a> (PDF)</li>
+<li>An <a href="https://www.beuc.eu/publications/beuc-x-2021-035_overview_of_beucs_assessment_of_proposed_digital_markets_act.pdf">Assessment of the Digital Markets Act</a> (PDF)</li>
+</ul>
+<p>The factsheet mentions what the proposed Digital Markets Act would do for consumers, quoting…</p>
+<blockquote>
+<p>The DMA would prohibit gatekeepers from using a number of unfair practices that harm consumers, such as:</p>
+<ul>
+<li>
+<p><strong>blocking  users  from  un-installing</strong>  pre-installed  software or apps</p>
+</li>
+<li>
+<p><strong>mixing  user’s  personal  data</strong>  collected  on  one  of  their  core  platform  services  with  personal  data  collected  on  another  of  their  services  or  personal  data from third parties</p>
+</li>
+<li>
+<p><strong>prohibiting  services  using  a  gatekeeper’s  app  store   from   selling   discounted   subscriptions</strong> bought  directly  from  the  service  provider’s  own  website rather than the app store</p>
+</li>
+<li>
+<p><strong>discriminating   against   other   providers’   apps</strong> on  their  app  stores  or  prohibiting  competing  app  stores on devices</p>
+</li>
+<li>
+<p><strong>forcing  customers  to  sign  up  for  other  core  platform  services</strong>  in  order  to  access  the  specific  service they wanted to use (e.g. consumers wishing to  use  Instagram  could  not  be  obliged  to  have  a  Facebook account)</p>
+</li>
+<li>
+<p><strong>gathering  data  on  their  business  customers  to  ascertain  how  best  to  compete  with  them</strong>  and  whether  to  themselves  market  their  customers’  most successful products</p>
+</li>
+<li>
+<p><strong>ranking  their  own  products  or  services  more  favourably than third party services</strong> e.g. in search results• locking in customers by“technically restricting” users from switching away from default apps and services</p>
+</li>
+</ul>
+</blockquote>
+<p>And to top it off they wrote a nice blog post about all this:</p>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <a href="https://www.beuc.eu/blog/eu-proposals-to-shape-the-digital-landscape-a-step-forward-for-consumers/" target="_blank" rel="noopener" title="02:47PM - 22 February 2021">Consumer Corner – 22 Feb 21</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/461;"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/e/e23c3428234570d74214c106b71646f43c132838_2_690x461.jpeg" class="thumbnail" width="690" height="461" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/e/e23c3428234570d74214c106b71646f43c132838_2_690x461.jpeg, https://socialhub.activitypub.rocks/uploads/default/original/2X/e/e23c3428234570d74214c106b71646f43c132838.jpeg 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/2X/e/e23c3428234570d74214c106b71646f43c132838.jpeg 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/e/e23c3428234570d74214c106b71646f43c132838_2_10x10.png"></div>
+
+<h3><a href="https://www.beuc.eu/blog/eu-proposals-to-shape-the-digital-landscape-a-step-forward-for-consumers/" target="_blank" rel="noopener">EU proposals to shape the digital landscape, a step forward for consumers -...</a></h3>
+
+<p>Just as the European Parliament and the EU’s Council of Ministers are gearing up to begin their scrutiny of the European Commission’s December 2020 proposals for a Digital Services Act (DSA) and a Digital Markets Act (DMA), it is timely …</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/eu-consumers-confirm-need-for-effective-interoperability-in-dma/1682/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/eu-consumers-confirm-need-for-effective-interoperability-in-dma/1682/1</link>
+        <pubDate>Fri, 30 Apr 2021 09:59:59 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1682-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/eu-consumers-confirm-need-for-effective-interoperability-in-dma/1682.rss">EU Consumers confirm need for effective interoperability in DMA</source>
+      </item>
+  </channel>
+</rss>

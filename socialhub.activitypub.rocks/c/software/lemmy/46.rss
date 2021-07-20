@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Lemmy - SocialHub</title>
+    <link>https://socialhub.activitypub.rocks/c/software/lemmy/46</link>
+    <description>Topics in the &#39;Lemmy&#39; category Lemmy is a link aggregator / reddit alternative, intended to work in the fediverse.</description>
+    
+      <lastBuildDate>Tue, 11 May 2021 07:46:15 +0000</lastBuildDate>
+      <atom:link href="https://socialhub.activitypub.rocks/c/software/lemmy/46.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Lemmy is listed at Spamhaus with low reputation</title>
+          <dc:creator><![CDATA[aschrijver]]></dc:creator>
+          <category>Lemmy</category>
+          <description><![CDATA[
+            <p>Hi <a class="mention-group" href="/groups/lemmy">@lemmy</a> team,</p>
+<p>Just came here to notify some findings. As <a href="https://socialhub.activitypub.rocks/t/fediverse-futures-is-now-on-lemmy/1557" class="inline-onebox">Fediverse Futures is now on Lemmy 😃</a> I am sharing links around to the community space. At LinkedIn I noticed that the URL is marked as Malicious and LI does not allow access, but redirects to this <a href="https://www.linkedin.com/redir/general-malware-page?url=https%3A%2F%2Flemmy%2eml%2Fc%2Ffediversefutures">LI genneral malware page</a>.</p>
+<p>I tested with <a class="mention" href="/u/bengo">@bengo</a> on LI a couple of other Lemmy URL’s and found only fediverse futures URL to have this. So I contacted LI support:</p>
+<details>
+<summary>
+Response from LinkedIn support (click to expand)</summary>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/2X/5/5f64eff65ece6bb5be93148ad4a1e548cf80b963.png" data-download-href="https://socialhub.activitypub.rocks/uploads/default/5f64eff65ece6bb5be93148ad4a1e548cf80b963" title="lemmy-linkedin-malicious-website-suspected"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/5/5f64eff65ece6bb5be93148ad4a1e548cf80b963_2_690x395.png" alt="lemmy-linkedin-malicious-website-suspected" data-base62-sha1="dBTCfEewgxrUKErvtmZEyy3nthp" width="690" height="395" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/5/5f64eff65ece6bb5be93148ad4a1e548cf80b963_2_690x395.png, https://socialhub.activitypub.rocks/uploads/default/original/2X/5/5f64eff65ece6bb5be93148ad4a1e548cf80b963.png 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/2X/5/5f64eff65ece6bb5be93148ad4a1e548cf80b963.png 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/5/5f64eff65ece6bb5be93148ad4a1e548cf80b963_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">lemmy-linkedin-malicious-website-suspected</span><span class="informations">907×520 22 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>Hi Arnold,</p>
+<p>Thanks for reaching out to us. My name is Natalia from the LinkedIn Member Support Team and I will be happy to help you today.</p>
+<p>LinkedIn does not block any external links and does not mark them as “dangerous”. Your external URL has been marked as unsafe/spam/malicious by “Spamhaus”, which you can check here: <a href="https://check.spamhaus.org/listed/?searchterm=lemmy.ml">https://check.spamhaus.org/listed/?searchterm=lemmy.ml</a></p>
+<p>In order to remove your address from “Spamhaus”, I recommend reading detailed information provided in the link above. This link also provides instructions on what steps to take to have your site recognized as safe.</p>
+<p>I hope you find the information I have given you useful!</p>
+<p>I am wishing you good luck and please contact me again if you have any questions about your account in the future!</p>
+<p>Kind Regards,</p>
+<p>Natalia<br>
+Member Support Consultant</p>
+<hr>
+</details>
+<p>Now, <a class="mention" href="/u/bengo">@bengo</a> told me that at his end “All of those were marked as potentially harmful, and I had to click to show the full URL <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/confused.png?v=9" title=":confused:" class="emoji" alt=":confused:"> Wonder if it’s based on the TLD?”</p>
+<p>There is indeed one entry for Lemmy: <a href="https://check.spamhaus.org/listed/?searchterm=lemmy.ml">https://check.spamhaus.org/listed/?searchterm=lemmy.ml</a></p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/lemmy-is-listed-at-spamhaus-with-low-reputation/1723">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/lemmy-is-listed-at-spamhaus-with-low-reputation/1723</link>
+          <pubDate>Tue, 11 May 2021 07:46:15 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1723</guid>
+          <source url="https://socialhub.activitypub.rocks/t/lemmy-is-listed-at-spamhaus-with-low-reputation/1723.rss">Lemmy is listed at Spamhaus with low reputation</source>
+        </item>
+        <item>
+          <title>Federation is now enabled on https://lemmy.ml!</title>
+          <dc:creator><![CDATA[nutomic]]></dc:creator>
+          <category>Lemmy</category>
+          <description><![CDATA[
+            <p><a href="https://lemmy.ml/docs/administration.html" rel="noopener nofollow ugc">Instructions for running your own lemmy instance.</a></p>
+<p>For the moment, <a href="https://lemmy.ml" rel="noopener nofollow ugc">lemmy.ml</a> is using an explicit <code>allowlist</code> for instances we federate with. If you currently run an instance, and would like to be added to <a href="https://join.lemmy.ml/join" rel="noopener nofollow ugc">join.lemmy.ml</a>:</p>
+<ul>
+<li>Let us know either on <a href="https://lemmy.ml/c/lemmy_instances" rel="noopener nofollow ugc">!lemmy_instances</a>, or commenting here.</li>
+<li>We’ll add you to our allowlist.</li>
+<li>Add this block to your server’s <code>lemmy.hjson</code> config:</li>
+</ul>
+<pre><code class="lang-auto">federation: {
+  enabled: true
+  tls_enabled: true
+  allowed_instances: lemmy.ml,other_instance.tld,...
+}
+</code></pre>
+<ul>
+<li>Type <code>!announcements@lemmy.ml</code> into your server’s search box, and subscribe to it to connect the two instances.</li>
+</ul>
+            <p><small>3 posts - 3 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/federation-is-now-enabled-on-https-lemmy-ml/1150">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/federation-is-now-enabled-on-https-lemmy-ml/1150</link>
+          <pubDate>Wed, 25 Nov 2020 00:12:23 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1150</guid>
+          <source url="https://socialhub.activitypub.rocks/t/federation-is-now-enabled-on-https-lemmy-ml/1150.rss">Federation is now enabled on https://lemmy.ml!</source>
+        </item>
+        <item>
+          <title>We have created documentation on how exactly Lemmy federation works</title>
+          <dc:creator><![CDATA[nutomic]]></dc:creator>
+          <category>Lemmy</category>
+          <description><![CDATA[
+            <p>This first document gives a high-level overview, without being too technical. It is roughly based on the <a href="https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453">federation.md proposal</a>.</p>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      
+      <a href="https://enterprise.lemmy.ml/docs/contributing_federation_overview.html" target="_blank" rel="noopener nofollow ugc">enterprise.lemmy.ml</a>
+  </header>
+  <article class="onebox-body">
+    <img src="" class="thumbnail" width="" height="">
+
+<h3><a href="https://enterprise.lemmy.ml/docs/contributing_federation_overview.html" target="_blank" rel="noopener nofollow ugc">Federation Overview - Lemmy Documentation</a></h3>
+
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>We also have a separate document that describes the exact JSON format used by Lemmy, and how the various fields are interpreted.</p>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      
+      <a href="https://enterprise.lemmy.ml/docs/contributing_apub_api_outline.html" target="_blank" rel="noopener nofollow ugc">enterprise.lemmy.ml</a>
+  </header>
+  <article class="onebox-body">
+    <img src="" class="thumbnail" width="" height="">
+
+<h3><a href="https://enterprise.lemmy.ml/docs/contributing_apub_api_outline.html" target="_blank" rel="noopener nofollow ugc">ActivityPub API Outline - Lemmy Documentation</a></h3>
+
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>The links go to our test instance (which is already federating). It will also be available from dev.lemmy.ml once we deploy the next version.</p>
+<p>If anything is unclear or missing from those docs, please comment here and we will add it.</p>
+            <p><small>5 posts - 3 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/we-have-created-documentation-on-how-exactly-lemmy-federation-works/1085">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/we-have-created-documentation-on-how-exactly-lemmy-federation-works/1085</link>
+          <pubDate>Wed, 14 Oct 2020 11:43:52 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1085</guid>
+          <source url="https://socialhub.activitypub.rocks/t/we-have-created-documentation-on-how-exactly-lemmy-federation-works/1085.rss">We have created documentation on how exactly Lemmy federation works</source>
+        </item>
+        <item>
+          <title>Lemmy Federation Alpha Version</title>
+          <dc:creator><![CDATA[nutomic]]></dc:creator>
+          <category>Lemmy</category>
+          <description><![CDATA[
+            <p>We are happy to announce that we have finished the initial version of our ActivityPub implementation. At the moment, it can only federate a limited set of data, like communities, users and posts, but not comments or votes. So this initial version is mainly interesting for those who are familiar with the ActivityPub protocol, and those who would like to contribute to Lemmy.</p>
+<p>These are our test instances, Be aware that they are not permanent, and we might wipe the data at any time. Federation uses a whitelist for now, until we are confident that the implementation is secure.</p>
+<ul>
+<li><a href="https://enterprise.lemmy.ml" rel="nofollow noopener">https://enterprise.lemmy.ml</a></li>
+<li><a href="https://ds9.lemmy.ml" rel="nofollow noopener">https://ds9.lemmy.ml</a></li>
+<li><a href="https://voyager.lemmy.ml" rel="nofollow noopener">https://voyager.lemmy.ml</a></li>
+</ul>
+<p>If you are interested in contributing to the development, check out <a href="https://github.com/LemmyNet/lemmy/issues/647" rel="nofollow noopener">this issue</a> and the <a href="https://enterprise.lemmy.ml/docs/contributing_federation_development.html" rel="nofollow noopener">dev instructions</a>. Please use <a href="https://github.com/LemmyNet/lemmy/issues" rel="nofollow noopener">the issue tracker</a> to report bugs, so that we can keep everything organized.</p>
+<p>We also want to give a huge thanks to <a href="https://asonix.dog/@asonix" rel="nofollow noopener">Aode</a>, whose <a href="https://git.asonix.dog/Aardwolf/activitystreams" rel="nofollow noopener">ActivityStreams library</a> and advice have helped us immensely.</p>
+<p>If you like what we are doing, please consider donating towards Lemmy development. Besides <a href="https://liberapay.com/Lemmy/" rel="nofollow noopener">Liberapay</a> and <a href="https://www.patreon.com/dessalines" rel="nofollow noopener">Patreon</a>, we are also on <a href="https://opencollective.com/lemmy" rel="nofollow noopener">OpenCollective</a> now. Donations are a big help for us, because they allow us to spend more time to work on Lemmy, instead of selling our labour to a company just to pay for rent and other necessities.</p>
+<p><a href="https://dev.lemmy.ml/post/31977" rel="nofollow noopener">Originally posted here</a></p>
+            <p><small>4 posts - 3 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/lemmy-federation-alpha-version/632">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/lemmy-federation-alpha-version/632</link>
+          <pubDate>Wed, 22 Apr 2020 15:28:48 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-632</guid>
+          <source url="https://socialhub.activitypub.rocks/t/lemmy-federation-alpha-version/632.rss">Lemmy Federation Alpha Version</source>
+        </item>
+        <item>
+          <title>About Lemmy</title>
+          <dc:creator><![CDATA[nutomic]]></dc:creator>
+          <category>Lemmy</category>
+          <description><![CDATA[
+            <p>Lemmy is a link aggregator / reddit alternative, intended to work in the fediverse.</p>
+<p>It’s self-hostable, has live-updating comment threads, and is tiny ( <code>~80kB</code> ). Federation into the ActivityPub network is on the roadmap.</p>
+<p>Suggest new features or report bugs at <a href="https://github.com/LemmyNet/lemmy" rel="nofollow noopener">https://github.com/LemmyNet/lemmy</a>.</p>
+<p><img src="https://socialhub.activitypub.rocks/images/emoji/twitter/rat.png?v=9" title=":rat:" class="emoji" alt=":rat:"> See live instances:</p>
+<ul>
+<li><a href="https://dev.lemmy.ml" rel="nofollow noopener">https://dev.lemmy.ml</a></li>
+</ul>
+<p><img src="https://socialhub.activitypub.rocks/images/emoji/twitter/vulcan_salute.png?v=9" title=":vulcan_salute:" class="emoji" alt=":vulcan_salute:">Test federation:</p>
+<ul>
+<li><a href="https://voyager.lemmy.ml" rel="nofollow noopener">https://voyager.lemmy.ml</a></li>
+<li><a href="https://enterprise.lemmy.ml" rel="nofollow noopener">https://enterprise.lemmy.ml</a></li>
+<li><a href="https://ds9.lemmy.ml" rel="nofollow noopener">https://ds9.lemmy.ml</a></li>
+</ul>
+<p>Made with <a href="https://www.rust-lang.org" rel="nofollow noopener">Rust</a>, <a href="https://actix.rs/" rel="nofollow noopener">Actix</a>, <a href="https://infernojs.org" rel="nofollow noopener">Inferno</a>, <a href="https://www.typescriptlang.org/" rel="nofollow noopener">Typescript</a>.</p>
+            <p><small>3 posts - 3 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/about-lemmy/491">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/about-lemmy/491</link>
+          <pubDate>Thu, 30 Jan 2020 19:50:04 +0000</pubDate>
+          <discourse:topicPinned>Yes</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-491</guid>
+          <source url="https://socialhub.activitypub.rocks/t/about-lemmy/491.rss">About Lemmy</source>
+        </item>
+  </channel>
+</rss>

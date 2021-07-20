@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>FEP-a4edc7b: The Fediverse Enhancement Proposal Process</title>
+    <link>https://socialhub.activitypub.rocks/t/fep-a4edc7b-the-fediverse-enhancement-proposal-process/1090</link>
+    <description>Hello Fediverse,
+
+This is call for feedback and comments on the initial Fediverse Enhancement Proposal (FEP): 
+
+# [FEP-a4ed: The Fediverse Enhancement Proposal Process](https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/src/branch/main/feps/fep-a4ed.md).
+
+Summary:
+
+&gt; A Fediverse Enhancement Proposal (FEP) is a document that provides information to the Fediverse community. The goal of a FEP is to improve interoperability and well-being of diverse services, applications and communities that form the Fediverse.
+&gt; 
+&gt; This document describes the scope, format and process of publishing Fediverse Enhancement Proposals.
+
+This is something @lain, @cjs and myself worked on during the ActivityPubConf 2020 Hackathon (see https://socialhub.activitypub.rocks/t/fediverse-enhancement-proposal-fep/1059). 
+
+This initial FEP ([FEP-a4ed](https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/src/branch/main/feps/fep-a4ed.md)) defines the format of a FEP and the process of publishing a FEP.
+
+# Community peer-review
+
+The FEP publishing process is a peer-review system where **you** are the peers! Your comments are extremely valuable and an essential part of the process. If you have questions, comments or doubts please post. If you think this is a good idea, pleas also express your support.
+
+Thanks!</description>
+    
+    <lastBuildDate>Tue, 01 Dec 2020 09:44:40 +0000</lastBuildDate>
+    <category>ActivityPub</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/fep-a4edc7b-the-fediverse-enhancement-proposal-process/1090.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>FEP-a4edc7b: The Fediverse Enhancement Proposal Process</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://socialhub.activitypub.rocks/t/fep-a4edc7b-the-fediverse-enhancement-proposal-process/1090/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/fep-a4edc7b-the-fediverse-enhancement-proposal-process/1090/14</link>
+        <pubDate>Tue, 01 Dec 2020 17:20:56 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1090-14</guid>
+        <source url="https://socialhub.activitypub.rocks/t/fep-a4edc7b-the-fediverse-enhancement-proposal-process/1090.rss">FEP-a4edc7b: The Fediverse Enhancement Proposal Process</source>
+      </item>
+      <item>
+        <title>FEP-a4edc7b: The Fediverse Enhancement Proposal Process</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>12 posts were merged into an existing topic: <a href="/t/fep-a4ed-the-fediverse-enhancement-proposal-process/1171">FEP-a4ed: The Fediverse Enhancement Proposal Process</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/fep-a4edc7b-the-fediverse-enhancement-proposal-process/1090/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/fep-a4edc7b-the-fediverse-enhancement-proposal-process/1090/2</link>
+        <pubDate>Tue, 01 Dec 2020 17:20:55 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1090-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/fep-a4edc7b-the-fediverse-enhancement-proposal-process/1090.rss">FEP-a4edc7b: The Fediverse Enhancement Proposal Process</source>
+      </item>
+      <item>
+        <title>FEP-a4edc7b: The Fediverse Enhancement Proposal Process</title>
+        <dc:creator><![CDATA[pukkamustard]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello Fediverse,</p>
+<p>This is call for feedback and comments on the initial Fediverse Enhancement Proposal (FEP):</p>
+<h1>
+<a href="https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/src/branch/main/feps/fep-a4ed.md" rel="noopener nofollow ugc">FEP-a4ed: The Fediverse Enhancement Proposal Process</a>.</h1>
+<p>Summary:</p>
+<blockquote>
+<p>A Fediverse Enhancement Proposal (FEP) is a document that provides information to the Fediverse community. The goal of a FEP is to improve interoperability and well-being of diverse services, applications and communities that form the Fediverse.</p>
+<p>This document describes the scope, format and process of publishing Fediverse Enhancement Proposals.</p>
+</blockquote>
+<p>This is something <a class="mention" href="/u/lain">@lain</a>, <a class="mention" href="/u/cjs">@cjs</a> and myself worked on during the ActivityPubConf 2020 Hackathon (see <a href="https://socialhub.activitypub.rocks/t/fediverse-enhancement-proposal-fep/1059" class="inline-onebox">Fediverse Enhancement Proposal (FEP)</a>).</p>
+<p>This initial FEP (<a href="https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/src/branch/main/feps/fep-a4ed.md" rel="noopener nofollow ugc">FEP-a4ed</a>) defines the format of a FEP and the process of publishing a FEP.</p>
+<h1>Community peer-review</h1>
+<p>The FEP publishing process is a peer-review system where <strong>you</strong> are the peers! Your comments are extremely valuable and an essential part of the process. If you have questions, comments or doubts please post. If you think this is a good idea, pleas also express your support.</p>
+<p>Thanks!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/fep-a4edc7b-the-fediverse-enhancement-proposal-process/1090/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/fep-a4edc7b-the-fediverse-enhancement-proposal-process/1090/1</link>
+        <pubDate>Mon, 19 Oct 2020 08:26:37 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1090-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/fep-a4edc7b-the-fediverse-enhancement-proposal-process/1090.rss">FEP-a4edc7b: The Fediverse Enhancement Proposal Process</source>
+      </item>
+  </channel>
+</rss>

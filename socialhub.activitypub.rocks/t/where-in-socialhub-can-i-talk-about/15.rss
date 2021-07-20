@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Where in SocialHub Can I Talk about ...?</title>
+    <link>https://socialhub.activitypub.rocks/t/where-in-socialhub-can-i-talk-about/15</link>
+    <description>This is the place where you can ask where is the more appropriate place for a topic you have in mind: maybe there&#39;s already an ongoing discussion relevant to that topic, or someone can guide you to the right category.
+
+Here&#39;s a [list of top-level categories](https://socialhub.activitypub.rocks/t/welcome-to-socialhub/7/1#list-of-top-level-categories) and their purpose.
+
+If you&#39;re wondering about a missing category, you reached the right topic: please describe the category you have in mind and why it should be created. Each category requires one or more _hosts_ who will be in charge of organizing, facilitating, and moderating it so that it remains active, relevant, and welcoming.</description>
+    
+    <lastBuildDate>Sun, 15 Dec 2019 13:57:43 +0000</lastBuildDate>
+    <category>Community</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/where-in-socialhub-can-i-talk-about/15.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Where in SocialHub Can I Talk about ...?</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <h2>Beyond ActivityPub</h2>
+<p>It was suggested to me that there’s a category missing to invite non-technical talks related to ActivityPub and its milieu. Something that would be welcoming to academics, journalists, and a public curious about the purpose, history and outreach of the ActivityPub community. For example, the following topics could belong there:</p>
+<ul>
+<li><a href="https://socialhub.activitypub.rocks/t/articles-about-activitypub/404" class="inline-onebox">Articles about ActivityPub</a></li>
+<li><a href="https://socialhub.activitypub.rocks/t/twitter-to-develop-an-open-and-decentralized-standard-for-social-media/380" class="inline-onebox">Twitter to "develop an open and decentralized standard for social media"</a></li>
+</ul>
+          <p><a href="https://socialhub.activitypub.rocks/t/where-in-socialhub-can-i-talk-about/15/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/where-in-socialhub-can-i-talk-about/15/2</link>
+        <pubDate>Sun, 15 Dec 2019 13:57:43 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-15-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/where-in-socialhub-can-i-talk-about/15.rss">Where in SocialHub Can I Talk about ...?</source>
+      </item>
+      <item>
+        <title>Where in SocialHub Can I Talk about ...?</title>
+        <dc:creator><![CDATA[system]]></dc:creator>
+        <description><![CDATA[
+            <p>This is the place where you can ask where is the more appropriate place for a topic you have in mind: maybe there’s already an ongoing discussion relevant to that topic, or someone can guide you to the right category.</p>
+<p>Here’s a <a href="https://socialhub.activitypub.rocks/t/welcome-to-socialhub/7/1#list-of-top-level-categories">list of top-level categories</a> and their purpose.</p>
+<p>If you’re wondering about a missing category, you reached the right topic: please describe the category you have in mind and why it should be created. Each category requires one or more <em>hosts</em> who will be in charge of organizing, facilitating, and moderating it so that it remains active, relevant, and welcoming.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/where-in-socialhub-can-i-talk-about/15/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/where-in-socialhub-can-i-talk-about/15/1</link>
+        <pubDate>Thu, 12 Sep 2019 15:51:37 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-15-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/where-in-socialhub-can-i-talk-about/15.rss">Where in SocialHub Can I Talk about ...?</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Did you miss something?</title>
+    <link>https://socialhub.activitypub.rocks/t/did-you-miss-something/1071</link>
+    <description>![robin|40x48](upload://9oJUh8V0IgBzGcn9AlOTg1Vg6oF.png)  **Yay**
+
+*updated the website ⬡ https://conf.activitypub.rocks* …
+*We will be uploading the recordings of the live sessions from #apconf2020 to [conf.tube](https://conf.tube/video-channels/apconf_channel/videos) soon, but in the meantime, you can stream them from Big Blue Button* (**Firefox, Chrome**):
+
+The recordings for **Question &amp; Answer Sessions** are public, updated all the posts, see
+https://socialhub.activitypub.rocks/tag/talk 
+
+The recording of the **Lightning Talks Round** can be found here
+
+https://bbb.fosshost.org/playback/presentation/2.0/playback.html?meetingId=2dbbb31314ce3469c302e4c540e8f4807bf7ef01-1601832533158
+
+https://socialhub.activitypub.rocks/t/lightning-round-talks/955
+
+:partying_face: and a little present by Chris at the [Hackathon](https://socialhub.activitypub.rocks/t/activitypub-hackathon-2020/956): [**Walkthrough Petnames**](https://bbb.fosshost.org/playback/presentation/2.0/playback.html?meetingId=98a52b344136ed4e45fcac6481f6a18bb9354a6e-1601915922065)
+ (Firefox, Chrome)
+## ⬡ Did you miss something else? Please reply here …</description>
+    
+    <lastBuildDate>Tue, 06 Oct 2020 10:47:03 +0000</lastBuildDate>
+    <category>ActivityPub Conference 2020</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/did-you-miss-something/1071.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Did you miss something?</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p><img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/41df830dff9251a5bf2ebdb4e5a1d309e84ad781.png" alt="robin" data-base62-sha1="9oJUh8V0IgBzGcn9AlOTg1Vg6oF" width="40" height="48">  <strong>Yay</strong></p>
+<p><em>updated the website ⬡ <a href="https://conf.activitypub.rocks">https://conf.activitypub.rocks</a></em> …<br>
+<em>We will be uploading the recordings of the live sessions from <span class="hashtag">#apconf2020</span> to <a href="https://conf.tube/video-channels/apconf_channel/videos">conf.tube</a> soon, but in the meantime, you can stream them from Big Blue Button</em> (<strong>Firefox, Chrome</strong>):</p>
+<p>The recordings for <strong>Question &amp; Answer Sessions</strong> are public, updated all the posts, see<br>
+<a href="https://socialhub.activitypub.rocks/tag/talk">https://socialhub.activitypub.rocks/tag/talk</a></p>
+<p>The recording of the <strong>Lightning Talks Round</strong> can be found here</p>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <a href="https://bbb.fosshost.org/playback/presentation/2.0/playback.html?meetingId=2dbbb31314ce3469c302e4c540e8f4807bf7ef01-1601832533158" target="_blank" rel="noopener">bbb.fosshost.org</a>
+  </header>
+  <article class="onebox-body">
+    <img src="" class="thumbnail" width="" height="">
+
+<h3><a href="https://bbb.fosshost.org/playback/presentation/2.0/playback.html?meetingId=2dbbb31314ce3469c302e4c540e8f4807bf7ef01-1601832533158" target="_blank" rel="noopener">Loading</a></h3>
+
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<aside class="quote quote-modified" data-post="1" data-topic="955">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/system/40/11_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/lightning-round-talks/955">Lightning Round Talks</a> <a class="badge-wrapper  box" href="/c/meeting/apconf2020/53"><span class="badge-category-parent-bg" style="background-color: #0E76BD;"></span><span class="badge-category-bg" style="background-color: #ff7a00;"></span><span style="color: #ffffff" data-drop-close="true" class="badge-category clear-badge" title="Add your proposals for the Conf by creating a New Topic –
+Tag it #bof for Birds of Feather sessions or #hackathon for Hack proposals …">ActivityPub Conference 2020</span></a>
+  </div>
+  <blockquote>
+    The lightning talk session for <a class="hashtag" href="/c/meeting/apconf2020/53">#meeting:apconf2020</a>  is scheduled on Sunday 4th. 
+Room: <a href="https://bbb.fosshost.org/b/mor-qfh-vv1-ivq">https://bbb.fosshost.org/b/mor-qfh-vv1-ivq</a> 
+Lightning round talks will be under 5 minutes long and will hopefully include summaries of the BoF sessions as well as individual topics. Since a lot of the lightning round talks will include content from the same day’s BoFs, we can’t require early submission of slides etc, so you can share your screen on Big Blue Button if you’d like to include slides. 
+Talk #-2: <a class="mention" href="/u/mlemweb">@m…</a>
+  </blockquote>
+</aside>
+
+<p><img src="https://socialhub.activitypub.rocks/images/emoji/twitter/partying_face.png?v=9" title=":partying_face:" class="emoji" alt=":partying_face:"> and a little present by Chris at the <a href="https://socialhub.activitypub.rocks/t/activitypub-hackathon-2020/956">Hackathon</a>: <a href="https://bbb.fosshost.org/playback/presentation/2.0/playback.html?meetingId=98a52b344136ed4e45fcac6481f6a18bb9354a6e-1601915922065"><strong>Walkthrough Petnames</strong></a><br>
+(Firefox, Chrome)</p>
+<h2>⬡ Did you miss something else? Please reply here …</h2>
+          <p><a href="https://socialhub.activitypub.rocks/t/did-you-miss-something/1071/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/did-you-miss-something/1071/1</link>
+        <pubDate>Tue, 06 Oct 2020 10:19:57 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1071-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/did-you-miss-something/1071.rss">Did you miss something?</source>
+      </item>
+  </channel>
+</rss>

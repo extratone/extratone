@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Registration on gancio weblate</title>
+    <link>https://socialhub.activitypub.rocks/t/registration-on-gancio-weblate/798</link>
+    <description>We never receive the confirmation link by e-mail to complete the registration.
+
+Is it working mail send from weblate.gancio.org?</description>
+    
+    <lastBuildDate>Sun, 12 Jul 2020 08:49:05 +0000</lastBuildDate>
+    <category>Gancio</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/registration-on-gancio-weblate/798.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Registration on gancio weblate</title>
+        <dc:creator><![CDATA[hacklabkelo]]></dc:creator>
+        <description><![CDATA[
+            <p>We never receive the confirmation link by e-mail to complete the registration.</p>
+<p>Is it working mail send from <a href="http://weblate.gancio.org" rel="nofollow noopener">weblate.gancio.org</a>?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/registration-on-gancio-weblate/798/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/registration-on-gancio-weblate/798/1</link>
+        <pubDate>Sun, 12 Jul 2020 08:49:05 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-798-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/registration-on-gancio-weblate/798.rss">Registration on gancio weblate</source>
+      </item>
+  </channel>
+</rss>

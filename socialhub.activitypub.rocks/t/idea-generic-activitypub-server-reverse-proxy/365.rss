@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Idea: Generic ActivityPub Server/Reverse Proxy</title>
+    <link>https://socialhub.activitypub.rocks/t/idea-generic-activitypub-server-reverse-proxy/365</link>
+    <description>Hello, SocialHub!
+
+I had an idea for an open source tool, and figured it was worth having a discussion to see if it&#39;s really something people want, or if there&#39;s a better option for the task.
+
+Essentially, my idea would be to write a small standalone HTTP server in Java, probably called `ap_proxy`. `ap_proxy` wouldc ontain a complete, spec-compliant implementation of both the client-to-server and server-to-server protocols.
+
+Like `nginx`, `ap_proxy` would read configuration files in a simple language, and use it to determine how to handle user/federated actions.
+
+A contrived example, that reverse proxies to your server, might look like:
+
+```
+#!/usr/bin/env java org.ap_proxy.Main
+on Create {
+  when Like {
+     forward_to http://localhost:3000;
+  }
+}
+```
+
+The DSL would be pretty simplistic, as the main use case would be proxying over some underlying server.
+
+**Pros:**
+* Would guarantee your server to be spec compliant; many S2S implementations of AP today are partial/incomplete
+* Would normalize all data into its most verbose forms, so users of statically-typed languages could now handle AP with ease
+* Most importantly - *you don&#39;t have to implement AP yourself*, which saves time, AND encourages more fed services to support AP as well
+
+**Cons:**
+* Overhead of running an additional server
+* Requires learning the DSL (although simple)
+* Introduces new complexity during development/testing
+
+So, what does everyone think? Would this be a worthwhile use of time? I know that I would use it, but is it something that would truly have a positive impact for many people?
+
+Thanks.</description>
+    
+    <lastBuildDate>Mon, 09 Mar 2020 11:06:48 +0000</lastBuildDate>
+    <category>Software</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/idea-generic-activitypub-server-reverse-proxy/365.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Idea: Generic ActivityPub Server/Reverse Proxy</title>
+        <dc:creator><![CDATA[thosakwe]]></dc:creator>
+        <description><![CDATA[
+            <p>This is true, and ultimately something I overlooked in this design. I was really thinking of something in the same vein as nginx, but as you said, AP isn’t stateless.</p>
+<p>I may be misunderstanding AP, though, but I still think it’s possible to have a sort of “gateway” server that normalizes incoming data, at least.</p>
+<p>My core problem, though, is about getting the data properly read in a language like Dart or Java, so this might just be the wrong solution altogether.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/idea-generic-activitypub-server-reverse-proxy/365/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/idea-generic-activitypub-server-reverse-proxy/365/7</link>
+        <pubDate>Mon, 09 Mar 2020 11:06:48 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-365-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/idea-generic-activitypub-server-reverse-proxy/365.rss">Idea: Generic ActivityPub Server/Reverse Proxy</source>
+      </item>
+      <item>
+        <title>Idea: Generic ActivityPub Server/Reverse Proxy</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>But AP is not only about <em>receiving</em> the requests, it’s also about <em>sending</em> them and – importantly – keeping track of who follows you. It’s not a stateless protocol like HTTP. Which part is going to be handling and storing this persistent state?</p>
+<p>p.s. I’m no longer alone in writing AP things in Java, yay</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/idea-generic-activitypub-server-reverse-proxy/365/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/idea-generic-activitypub-server-reverse-proxy/365/6</link>
+        <pubDate>Wed, 25 Dec 2019 02:45:55 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-365-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/idea-generic-activitypub-server-reverse-proxy/365.rss">Idea: Generic ActivityPub Server/Reverse Proxy</source>
+      </item>
+      <item>
+        <title>Idea: Generic ActivityPub Server/Reverse Proxy</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <p>Let us know, if you are prototyping. i’m interessted on everything java and activity pub related <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/idea-generic-activitypub-server-reverse-proxy/365/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/idea-generic-activitypub-server-reverse-proxy/365/5</link>
+        <pubDate>Tue, 24 Dec 2019 22:08:24 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-365-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/idea-generic-activitypub-server-reverse-proxy/365.rss">Idea: Generic ActivityPub Server/Reverse Proxy</source>
+      </item>
+      <item>
+        <title>Idea: Generic ActivityPub Server/Reverse Proxy</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <p>I am still confused, as I thought the JSON (or JSON-LD) payload of an AP POST HTTP request was the same as the AP data itself. The rest of it about HTTP clients and JSON-LD expansion algorithm I am good on. But, don’t let my confusion get in your way, it sounds like you have a pretty good idea of what you want.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/idea-generic-activitypub-server-reverse-proxy/365/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/idea-generic-activitypub-server-reverse-proxy/365/4</link>
+        <pubDate>Thu, 28 Nov 2019 21:55:28 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-365-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/idea-generic-activitypub-server-reverse-proxy/365.rss">Idea: Generic ActivityPub Server/Reverse Proxy</source>
+      </item>
+      <item>
+        <title>Idea: Generic ActivityPub Server/Reverse Proxy</title>
+        <dc:creator><![CDATA[thosakwe]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for reponse. <code>forward_to</code> is a bit of a misnomer; it would probably actually be called <code>proxy_pass</code>, like in <code>nginx</code>, or something similar.</p>
+<p>Also, I guess I didn’t mention this, but the hypothetical <code>ap_proxy</code> wouldn’t forward activities/the AP data itself. It would just forward the JSON content sent by the client, normalized into the most verbose form. Your upstream server wouldn’t have to handle JSON-LD, or multiple formats; instead, it could operate on the JSON body itself, like your average REST API.</p>
+<p>I think I might go ahead and try hacking a prototype out, if I have time today.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/idea-generic-activitypub-server-reverse-proxy/365/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/idea-generic-activitypub-server-reverse-proxy/365/3</link>
+        <pubDate>Thu, 28 Nov 2019 18:59:31 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-365-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/idea-generic-activitypub-server-reverse-proxy/365.rss">Idea: Generic ActivityPub Server/Reverse Proxy</source>
+      </item>
+      <item>
+        <title>Idea: Generic ActivityPub Server/Reverse Proxy</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <p>When first building out <code>go-fed/activity</code>, I had a similar idea, but was thinking more of a forward proxy at the http layer (route the AP HTTP request to a backend) than a reverse proxy at the AP layer. I abandoned that idea because I wasn’t sure how http-signatures would behave, and because such a HTTP proxy wouldn’t need <code>go-fed/activity</code> for payload introspection as any generic JSON introspection for making routing decisions would suffice.</p>
+<p>I think the idea of a generic AP server has been asked for quite a few times, (both <code>go-fed/activity</code> and <code>go-fed/apcore</code> let one build it in a statically typed environment, Pleroma in a dynamically typed one) but at the end of the day the question always seems to be “why does one want AP data” which is usually a specific Activity side effect (from running joke reply bots to OCR image to text reply).</p>
+<p>I’m not quite sure I understand the “reverse proxy” part since your DSL markup makes it look like a forward proxy. It’s not immediately clear how an actor at such a proxy would forward Activities without wrapping it in its own Activity, such as an Announce (which is what pherephone is doing).</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/idea-generic-activitypub-server-reverse-proxy/365/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/idea-generic-activitypub-server-reverse-proxy/365/2</link>
+        <pubDate>Thu, 28 Nov 2019 08:23:30 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-365-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/idea-generic-activitypub-server-reverse-proxy/365.rss">Idea: Generic ActivityPub Server/Reverse Proxy</source>
+      </item>
+      <item>
+        <title>Idea: Generic ActivityPub Server/Reverse Proxy</title>
+        <dc:creator><![CDATA[thosakwe]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello, SocialHub!</p>
+<p>I had an idea for an open source tool, and figured it was worth having a discussion to see if it’s really something people want, or if there’s a better option for the task.</p>
+<p>Essentially, my idea would be to write a small standalone HTTP server in Java, probably called <code>ap_proxy</code>. <code>ap_proxy</code> wouldc ontain a complete, spec-compliant implementation of both the client-to-server and server-to-server protocols.</p>
+<p>Like <code>nginx</code>, <code>ap_proxy</code> would read configuration files in a simple language, and use it to determine how to handle user/federated actions.</p>
+<p>A contrived example, that reverse proxies to your server, might look like:</p>
+<pre><code class="lang-auto">#!/usr/bin/env java org.ap_proxy.Main
+on Create {
+  when Like {
+     forward_to http://localhost:3000;
+  }
+}
+</code></pre>
+<p>The DSL would be pretty simplistic, as the main use case would be proxying over some underlying server.</p>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>Would guarantee your server to be spec compliant; many S2S implementations of AP today are partial/incomplete</li>
+<li>Would normalize all data into its most verbose forms, so users of statically-typed languages could now handle AP with ease</li>
+<li>Most importantly - <em>you don’t have to implement AP yourself</em>, which saves time, AND encourages more fed services to support AP as well</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>Overhead of running an additional server</li>
+<li>Requires learning the DSL (although simple)</li>
+<li>Introduces new complexity during development/testing</li>
+</ul>
+<p>So, what does everyone think? Would this be a worthwhile use of time? I know that I would use it, but is it something that would truly have a positive impact for many people?</p>
+<p>Thanks.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/idea-generic-activitypub-server-reverse-proxy/365/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/idea-generic-activitypub-server-reverse-proxy/365/1</link>
+        <pubDate>Thu, 28 Nov 2019 04:32:40 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-365-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/idea-generic-activitypub-server-reverse-proxy/365.rss">Idea: Generic ActivityPub Server/Reverse Proxy</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>IoT meets SocialWeb using ActivityPub</title>
+    <link>https://socialhub.activitypub.rocks/t/iot-meets-socialweb-using-activitypub/952</link>
+    <description>*Philippe Coval (aka RzR)*
+
+https://conf.tube/videos/watch/ec2370d9-899b-4ab2-abcd-d1ff99c036ff
+
+There is no doubt that the Web became a platform of choice for online social interactions, but it can be also used [in IoT context](https://mastodon.social/@rzr/104445414812540466)
+
+## Questions &amp; Answers available!
+**[Q&amp;A Session – IoT meets SocialWeb using ActivityPub](https://conf.tube/videos/watch/61f38780-8b73-4d6b-816d-fe9c8f3c8d86)**
+⬡ Hooray, the live Questions &amp; Answers are available here
+https://conf.tube/videos/watch/61f38780-8b73-4d6b-816d-fe9c8f3c8d86</description>
+    
+    <lastBuildDate>Wed, 07 Oct 2020 09:44:57 +0000</lastBuildDate>
+    <category>ActivityPub Conference 2020</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/iot-meets-socialweb-using-activitypub/952.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>IoT meets SocialWeb using ActivityPub</title>
+        <dc:creator><![CDATA[rzr]]></dc:creator>
+        <description><![CDATA[
+            <p>To follow up asked questions , check this security related post:</p>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/e4ec3b839472b41f863b2789cbe30b7fc1f3dd4a.png" class="site-icon" width="32" height="32">
+      <a href="https://discourse.mozilla.org/t/jwt-implementation-for-webthing-python-and-thing-url-adapter/68111/" target="_blank" rel="noopener nofollow ugc" title="11:06PM - 24 September 2020">Mozilla Discourse – 24 Sep 20</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/1e9bf330a7eb757e98e400cdc695a6037f2ce9a0.png" class="thumbnail onebox-avatar" width="500" height="500" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/1e9bf330a7eb757e98e400cdc695a6037f2ce9a0_2_10x10.png">
+
+<h3><a href="https://discourse.mozilla.org/t/jwt-implementation-for-webthing-python-and-thing-url-adapter/68111/" target="_blank" rel="noopener nofollow ugc">JWT implementation for webthing-python and thing-url-adapter</a></h3>
+
+<p>Hi,  Edited 9/25 – added config option on adapter page.  I needed webthings to support some sort of authentication while maintaining compatibility with the gateway.  I have working  jwt implementations of both the webthing-python and...</p>
+
+  <p><span class="label1">Reading time: 1 mins 🕑</span>
+    <span class="label2">Likes: 1 ❤</span></p>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>Back to my addon feel free to discuss at:</p>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://github.githubassets.com/favicons/favicon.svg" class="site-icon" width="32" height="32">
+      <a href="https://github.com/rzr/mastodon-lite" target="_blank" rel="noopener nofollow ugc">GitHub</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:360/202;"><img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/13800c6a32c14e11f541224214e9dc3c733eb650.png" class="thumbnail" width="360" height="202"></div>
+
+<h3><a href="https://github.com/rzr/mastodon-lite" target="_blank" rel="noopener nofollow ugc">rzr/mastodon-lite</a></h3>
+
+<p>Lightweight client for mastodon micro blogging service. - rzr/mastodon-lite</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>Regards</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/iot-meets-socialweb-using-activitypub/952/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/iot-meets-socialweb-using-activitypub/952/3</link>
+        <pubDate>Wed, 07 Oct 2020 09:44:57 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-952-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/iot-meets-socialweb-using-activitypub/952.rss">IoT meets SocialWeb using ActivityPub</source>
+      </item>
+      <item>
+        <title>IoT meets SocialWeb using ActivityPub</title>
+        <dc:creator><![CDATA[rzr]]></dc:creator>
+        <description><![CDATA[
+            <p>Ask me any question here or from fediverse:</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://mastodon.social/favicon.ico" class="site-icon" width="45" height="48">
+      <a href="https://mastodon.social/@rzr/104445414812540466" target="_blank" rel="nofollow noopener">Mastodon</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:360/202;"><img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/3084bb5fc487ca07716280e33c5fff58903dc2d2.gif" class="thumbnail" width="360" height="202"></div>
+
+<h3><a href="https://mastodon.social/@rzr/104445414812540466" target="_blank" rel="nofollow noopener">https://purl.org/rzr/# (@rzr@mastodon.social)</a></h3>
+
+<p>Attached: 1 image
+
+https://purl.org/rzr/web-of-things-agriculture-20180712rzr# #IoT meets #SocialWeb using #ActivityPub with @mozilla 's #WebThings gateway , I hacked a #SmartAgriculture concept to notify when my plants are lacking water...</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/iot-meets-socialweb-using-activitypub/952/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/iot-meets-socialweb-using-activitypub/952/2</link>
+        <pubDate>Thu, 01 Oct 2020 08:51:43 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-952-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/iot-meets-socialweb-using-activitypub/952.rss">IoT meets SocialWeb using ActivityPub</source>
+      </item>
+      <item>
+        <title>IoT meets SocialWeb using ActivityPub</title>
+        <dc:creator><![CDATA[rzr]]></dc:creator>
+        <description><![CDATA[
+            <p><em>Philippe Coval (aka RzR)</em></p>
+<p><iframe width="560" height="315" src="https://conf.tube/videos/embed/ec2370d9-899b-4ab2-abcd-d1ff99c036ff" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+<p>There is no doubt that the Web became a platform of choice for online social interactions, but it can be also used <a href="https://mastodon.social/@rzr/104445414812540466" rel="noopener nofollow ugc">in IoT context</a></p>
+<h2>Questions &amp; Answers available!</h2>
+<p><strong><a href="https://conf.tube/videos/watch/61f38780-8b73-4d6b-816d-fe9c8f3c8d86" rel="noopener nofollow ugc">Q&amp;A Session – IoT meets SocialWeb using ActivityPub</a></strong><br>
+⬡ Hooray, the live Questions &amp; Answers are available here<br>
+<iframe width="560" height="315" src="https://conf.tube/videos/embed/61f38780-8b73-4d6b-816d-fe9c8f3c8d86" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/iot-meets-socialweb-using-activitypub/952/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/iot-meets-socialweb-using-activitypub/952/1</link>
+        <pubDate>Wed, 30 Sep 2020 20:46:21 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-952-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/iot-meets-socialweb-using-activitypub/952.rss">IoT meets SocialWeb using ActivityPub</source>
+      </item>
+  </channel>
+</rss>

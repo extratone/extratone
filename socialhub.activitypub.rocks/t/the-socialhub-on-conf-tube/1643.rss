@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>The SocialHub on Conf.Tube</title>
+    <link>https://socialhub.activitypub.rocks/t/the-socialhub-on-conf-tube/1643</link>
+    <description>From the beginning, we adopted http://conf.tube to disseminate videos related to the ActivityPub community. The [APconf account](https://conf.tube/accounts/apconf/video-channels) was created for the #meeting:apconf2020 and remains there to give witness to the work accomplished.
+
+Yesterday I obtained from [@rgggn](https://floss.social/@rgggn), the admin of conf.tube a dedicated [socialhub](https://conf.tube/accounts/socialhub) account for the ActivityPub community at large. I would like here to propose how we could use this account collectively, notably to avoid further hiccups with timely access to the _publish_ button.
+
+Here are a few topics we can discuss here...
+
+## What is the socialhub account for?
+_This section is to define what goes to the video channels_
+
+Description: https://conf.tube/accounts/socialhub/about
+
+&gt; The [SocialHub](https://socialhub.activitypub.rocks/) brings together members of the W3 Social CG, ActivityPub implementors, users, researchers, and other interested people to further the development of the specifications and explore the Fediverse together.
+&gt;
+&gt; This account provides channels to share ongoing work with the community. For the ActivityPub Conference, see the [APConf](https://conf.tube/apconf) account.
+
+
+## Access to the socialhub account on conf.tube
+_How to hit this publish button_
+
+As for other SocialHub assets, the @sysadmin.team shares credentials to access the account. 
+
+- should we define another team to share credentials with?
+- should we define some dedicated channels?
+  2 initial channels come to mind:
+  - ActivityPub for Administrations (our current webinars/workshop series)  
+  - APconf 2021 if we want to do that
+- should we define a following policy?
+
+For all questions my guts feeling is that we should trust our community members and respond to requests here. When questions arise, we can discuss the specific cases.</description>
+    
+    <lastBuildDate>Fri, 23 Apr 2021 08:10:53 +0000</lastBuildDate>
+    <category>Community</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/the-socialhub-on-conf-tube/1643.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>The SocialHub on Conf.Tube</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>From the beginning, we adopted <a href="http://conf.tube">http://conf.tube</a> to disseminate videos related to the ActivityPub community. The <a href="https://conf.tube/accounts/apconf/video-channels">APconf account</a> was created for the <a class="hashtag" href="/c/meeting/apconf2020/53">#<span>meeting:apconf2020</span></a> and remains there to give witness to the work accomplished.</p>
+<p>Yesterday I obtained from <a href="https://floss.social/@rgggn">@rgggn</a>, the admin of conf.tube a dedicated <a href="https://conf.tube/accounts/socialhub">socialhub</a> account for the ActivityPub community at large. I would like here to propose how we could use this account collectively, notably to avoid further hiccups with timely access to the <em>publish</em> button.</p>
+<p>Here are a few topics we can discuss here…</p>
+<h2>
+<a name="what-is-the-socialhub-account-for-1" class="anchor" href="#what-is-the-socialhub-account-for-1"></a>What is the socialhub account for?</h2>
+<p><em>This section is to define what goes to the video channels</em></p>
+<p>Description: <a href="https://conf.tube/accounts/socialhub/about" class="inline-onebox">The ActivityPub Community - ConfTube</a></p>
+<blockquote>
+<p>The <a href="https://socialhub.activitypub.rocks/">SocialHub</a> brings together members of the W3 Social CG, ActivityPub implementors, users, researchers, and other interested people to further the development of the specifications and explore the Fediverse together.</p>
+<p>This account provides channels to share ongoing work with the community. For the ActivityPub Conference, see the <a href="https://conf.tube/apconf">APConf</a> account.</p>
+</blockquote>
+<h2>
+<a name="access-to-the-socialhub-account-on-conftube-2" class="anchor" href="#access-to-the-socialhub-account-on-conftube-2"></a>Access to the socialhub account on conf.tube</h2>
+<p><em>How to hit this publish button</em></p>
+<p>As for other SocialHub assets, the <a class="mention-group" href="/groups/sysadmin.team">@sysadmin.team</a> shares credentials to access the account.</p>
+<ul>
+<li>should we define another team to share credentials with?</li>
+<li>should we define some dedicated channels?<br>
+2 initial channels come to mind:
+<ul>
+<li>ActivityPub for Administrations (our current webinars/workshop series)</li>
+<li>APconf 2021 if we want to do that</li>
+</ul>
+</li>
+<li>should we define a following policy?</li>
+</ul>
+<p>For all questions my guts feeling is that we should trust our community members and respond to requests here. When questions arise, we can discuss the specific cases.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/the-socialhub-on-conf-tube/1643/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-socialhub-on-conf-tube/1643/1</link>
+        <pubDate>Fri, 23 Apr 2021 08:10:53 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1643-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-socialhub-on-conf-tube/1643.rss">The SocialHub on Conf.Tube</source>
+      </item>
+  </channel>
+</rss>

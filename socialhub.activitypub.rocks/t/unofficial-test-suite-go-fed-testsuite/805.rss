@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Unofficial Test Suite (go-fed/testsuite)</title>
+    <link>https://socialhub.activitypub.rocks/t/unofficial-test-suite-go-fed-testsuite/805</link>
+    <description>Hi all,
+
+I&#39;ve heard there&#39;s still trouble getting the official test suite up and running in its original form. I don&#39;t want to detract from that effort, if it is still going on.
+
+However, I did want to have a bit more of an automated experience. And, in a great exercise of NIH syndrome, I started hacking on go-fed/testsuite, built on go-fed: https://github.com/go-fed/testsuite
+
+When a user wants to begin testing their AP application, the server launches a TestRunner, which entirely contains its own hermetic environment: an isolated in-memory DB, isolated web serving paths, isolated AP actors. Yes, it basically spins up a whole S2S+C2S &quot;federated app&quot; that acts as a giant shim for the tests to leverage. Yay for the go-fed library!
+
+Here&#39;s a sample screenshot of the very bare-bones UI showing that a test needs further input and is awaiting the user to input more. There&#39;s a table of pending tests (blocked by the instructions or simply being late in the order) and a table of completed tests:
+![Screen Shot 2020-07-15 at 21.39.31|690x391](upload://v256FsfEvlspuEWrbgFf82pm4bL.png)
+
+If a test succeeds or fails, each test has a very detailed log of what it was doing to execute those tests, so end-users can get an idea of what was going on and where things started going wrong:
+![Screen Shot 2020-07-15 at 21.41.54|690x314](upload://v0nCswkORsRjk5DXadwXMSXkVs5.png) 
+
+Clearly there&#39;s more work to be done (more tests to be written, a hell of a better UI to make). I would definitely appreciate help if folks are interested.
+
+It is my hope that most of these tests are automated and there are as few &quot;on your honor, check the box&quot; type of questions as possible.
+
+All of this was hugely inspired by the original official test suite, thank you to those who built it (@cwebber I believe!).</description>
+    
+    <lastBuildDate>Tue, 09 Mar 2021 23:27:11 +0000</lastBuildDate>
+    <category>Go-Fed</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/unofficial-test-suite-go-fed-testsuite/805.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Unofficial Test Suite (go-fed/testsuite)</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <p>Just wanted to mention here, should be good now. Thanks for pinging me on matrix. <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/unofficial-test-suite-go-fed-testsuite/805/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/unofficial-test-suite-go-fed-testsuite/805/8</link>
+        <pubDate>Tue, 09 Mar 2021 23:27:11 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-805-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/unofficial-test-suite-go-fed-testsuite/805.rss">Unofficial Test Suite (go-fed/testsuite)</source>
+      </item>
+      <item>
+        <title>Unofficial Test Suite (go-fed/testsuite)</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/cjs">@cjs</a>. The test-suite is currently down, I noticed.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/unofficial-test-suite-go-fed-testsuite/805/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/unofficial-test-suite-go-fed-testsuite/805/7</link>
+        <pubDate>Sat, 27 Feb 2021 06:22:47 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-805-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/unofficial-test-suite-go-fed-testsuite/805.rss">Unofficial Test Suite (go-fed/testsuite)</source>
+      </item>
+      <item>
+        <title>Unofficial Test Suite (go-fed/testsuite)</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve updated the test suite at <a href="https://test.activitypub.dev" rel="nofollow noopener">https://test.activitypub.dev</a> to be much more pleasant-looking and hopefully more comprehensible when running the tests. Please take a look and file bugs against the test suite if needed.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/unofficial-test-suite-go-fed-testsuite/805/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/unofficial-test-suite-go-fed-testsuite/805/6</link>
+        <pubDate>Sun, 02 Aug 2020 20:46:07 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-805-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/unofficial-test-suite-go-fed-testsuite/805.rss">Unofficial Test Suite (go-fed/testsuite)</source>
+      </item>
+      <item>
+        <title>Unofficial Test Suite (go-fed/testsuite)</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <p>Sneak peek: <a href="https://test.activitypub.dev/" rel="nofollow noopener">https://test.activitypub.dev/</a></p>
+<p>Please feel free to <a href="https://github.com/go-fed/testsuite" rel="nofollow noopener">file issues</a>.</p>
+<p>Caveats:</p>
+<ul>
+<li>UI is ugly</li>
+<li>The “C2S” option in the “new test” page does nothing. You’ll probably want to check the “S2S” one.</li>
+<li>Once you begin the test, you’ll have to refresh the page manually to get updates. Once instructions show, testing is paused and awaiting your input</li>
+<li>Did I mention the UI is ugly? I haven’t done but the bare minimum for the instructions, etc.</li>
+<li>Known problem with the “done” button for the one test that has it.</li>
+<li>Early on a test asks you to “Block” an actor, but later tests re-use that actor (oops)</li>
+<li>One or two tests have a 5 second sleep. Hooray</li>
+</ul>
+<p>To build and run it on your own:</p>
+<pre><code class="lang-auto">$ go get github.com/go-fed/testsuite
+$ go install github.com/go-fed/testsuite
+$ ./$GOPATH/bin/testsuite -cert &lt;your TLS pub key file&gt; -key &lt;your TLS private key file&gt; -host $hostname
+</code></pre>
+<p>Not sure if it will work with self-signed certificates / localhost, as I didn’t consider testing locally. However, one of the test cases to port is “dont send HTTP requests to localhost” which will make this not a good way to test anyway.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/unofficial-test-suite-go-fed-testsuite/805/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/unofficial-test-suite-go-fed-testsuite/805/5</link>
+        <pubDate>Wed, 29 Jul 2020 20:50:50 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-805-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/unofficial-test-suite-go-fed-testsuite/805.rss">Unofficial Test Suite (go-fed/testsuite)</source>
+      </item>
+      <item>
+        <title>Unofficial Test Suite (go-fed/testsuite)</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>Stupid question: how do I run this? I’ve never dealt with Go. And, should I run this on a server that has a public IP or this isn’t needed?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/unofficial-test-suite-go-fed-testsuite/805/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/unofficial-test-suite-go-fed-testsuite/805/4</link>
+        <pubDate>Wed, 29 Jul 2020 16:09:39 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-805-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/unofficial-test-suite-go-fed-testsuite/805.rss">Unofficial Test Suite (go-fed/testsuite)</source>
+      </item>
+      <item>
+        <title>Unofficial Test Suite (go-fed/testsuite)</title>
+        <dc:creator><![CDATA[Alamantus]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m definitely going to be taking a look at this! Thanks for sharing!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/unofficial-test-suite-go-fed-testsuite/805/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/unofficial-test-suite-go-fed-testsuite/805/3</link>
+        <pubDate>Tue, 28 Jul 2020 02:09:08 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-805-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/unofficial-test-suite-go-fed-testsuite/805.rss">Unofficial Test Suite (go-fed/testsuite)</source>
+      </item>
+      <item>
+        <title>Unofficial Test Suite (go-fed/testsuite)</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <p>FYI, interested parties can follow along the work being tracked in <a href="https://github.com/go-fed/testsuite/issues/1" rel="nofollow noopener">this mega issue</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/unofficial-test-suite-go-fed-testsuite/805/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/unofficial-test-suite-go-fed-testsuite/805/2</link>
+        <pubDate>Sun, 19 Jul 2020 10:39:12 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-805-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/unofficial-test-suite-go-fed-testsuite/805.rss">Unofficial Test Suite (go-fed/testsuite)</source>
+      </item>
+      <item>
+        <title>Unofficial Test Suite (go-fed/testsuite)</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all,</p>
+<p>I’ve heard there’s still trouble getting the official test suite up and running in its original form. I don’t want to detract from that effort, if it is still going on.</p>
+<p>However, I did want to have a bit more of an automated experience. And, in a great exercise of NIH syndrome, I started hacking on go-fed/testsuite, built on go-fed: <a href="https://github.com/go-fed/testsuite" rel="nofollow noopener">https://github.com/go-fed/testsuite</a></p>
+<p>When a user wants to begin testing their AP application, the server launches a TestRunner, which entirely contains its own hermetic environment: an isolated in-memory DB, isolated web serving paths, isolated AP actors. Yes, it basically spins up a whole S2S+C2S “federated app” that acts as a giant shim for the tests to leverage. Yay for the go-fed library!</p>
+<p>Here’s a sample screenshot of the very bare-bones UI showing that a test needs further input and is awaiting the user to input more. There’s a table of pending tests (blocked by the instructions or simply being late in the order) and a table of completed tests:<br>
+<div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/1X/d97fa74f1b2bd45c9681dcd169649f1414162909.png" data-download-href="https://socialhub.activitypub.rocks/uploads/default/d97fa74f1b2bd45c9681dcd169649f1414162909" title="Screen Shot 2020-07-15 at 21.39.31"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/d97fa74f1b2bd45c9681dcd169649f1414162909_2_690x391.png" alt="Screen Shot 2020-07-15 at 21.39.31" data-base62-sha1="v256FsfEvlspuEWrbgFf82pm4bL" width="690" height="391" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/d97fa74f1b2bd45c9681dcd169649f1414162909_2_690x391.png, https://socialhub.activitypub.rocks/uploads/default/optimized/1X/d97fa74f1b2bd45c9681dcd169649f1414162909_2_1035x586.png 1.5x, https://socialhub.activitypub.rocks/uploads/default/optimized/1X/d97fa74f1b2bd45c9681dcd169649f1414162909_2_1380x782.png 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/d97fa74f1b2bd45c9681dcd169649f1414162909_2_10x10.png"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Screen Shot 2020-07-15 at 21.39.31</span><span class="informations">1433×814 60.1 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg></div></a></div></p>
+<p>If a test succeeds or fails, each test has a very detailed log of what it was doing to execute those tests, so end-users can get an idea of what was going on and where things started going wrong:<br>
+<div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/1X/d94e6af1154e84d485ac4238ee268c04a5089b81.png" data-download-href="https://socialhub.activitypub.rocks/uploads/default/d94e6af1154e84d485ac4238ee268c04a5089b81" title="Screen Shot 2020-07-15 at 21.41.54"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/d94e6af1154e84d485ac4238ee268c04a5089b81_2_690x314.png" alt="Screen Shot 2020-07-15 at 21.41.54" data-base62-sha1="v0nCswkORsRjk5DXadwXMSXkVs5" width="690" height="314" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/d94e6af1154e84d485ac4238ee268c04a5089b81_2_690x314.png, https://socialhub.activitypub.rocks/uploads/default/optimized/1X/d94e6af1154e84d485ac4238ee268c04a5089b81_2_1035x471.png 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/1X/d94e6af1154e84d485ac4238ee268c04a5089b81.png 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/d94e6af1154e84d485ac4238ee268c04a5089b81_2_10x10.png"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Screen Shot 2020-07-15 at 21.41.54</span><span class="informations">1368×624 46.9 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg></div></a></div></p>
+<p>Clearly there’s more work to be done (more tests to be written, a hell of a better UI to make). I would definitely appreciate help if folks are interested.</p>
+<p>It is my hope that most of these tests are automated and there are as few “on your honor, check the box” type of questions as possible.</p>
+<p>All of this was hugely inspired by the original official test suite, thank you to those who built it (<a class="mention" href="/u/cwebber">@cwebber</a> I believe!).</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/unofficial-test-suite-go-fed-testsuite/805/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/unofficial-test-suite-go-fed-testsuite/805/1</link>
+        <pubDate>Wed, 15 Jul 2020 20:23:40 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-805-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/unofficial-test-suite-go-fed-testsuite/805.rss">Unofficial Test Suite (go-fed/testsuite)</source>
+      </item>
+  </channel>
+</rss>

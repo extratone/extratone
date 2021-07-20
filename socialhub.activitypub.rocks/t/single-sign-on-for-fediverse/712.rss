@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Single Sign-On for Fediverse</title>
+    <link>https://socialhub.activitypub.rocks/t/single-sign-on-for-fediverse/712</link>
+    <description>I think having a single sign-on option across application could be the value-add that attracts substantial numbers of new users to the Fediverse.
+
+It&#39;s hard enough for users to dive into the Fediverse, when few (if any) of their friends are there yet. But if we could tell them: there are plenty of great applications, AND you don&#39;t need to make a separate account with each one, you can use just one set of credentials to blog, share photos, microblog, social network - that would be a real compelling proposition.
+
+I think many people would agree that SSO is convenient. The problem, as I see it, is that there are many ways that a SSO system can be implemented, and currently no consensus on the best option. My proposal would be that the group here, or perhaps in the SocialCG meeting, form a consensus on the best SSO approach(es) for the Fediverse. That way, developers can focus on implementing and developing, without needing to individually determine the pros and cons of each option. 
+
+As an example, consider that on PixelFed&#39;s Github, there is an [Issue #2089](https://github.com/pixelfed/pixelfed/issues/2089) open asking for SSO with LDAP, SAML, or Open ID Connect; [Issue #935](https://github.com/pixelfed/pixelfed/issues/935) asks for IndieAuth support; and [Issue #14](https://github.com/pixelfed/ideas/issues/14) asks for LDAP or other SSO support. On Friendica, [Issue #1260](https://github.com/friendica/friendica/issues/1260) asks for IndieAuth support. And some Friendica instances such as Nerdica.net offer Open ID sign-on, but this seems outdated compared to Open ID Connect and other options. Giving guidance on this could allow developers to focus on developing.
+
+Here are the options that I have seen discussed:
+Open ID Connect
+IndieAuth: https://indieauth.com/
+KeyCloak: https://www.keycloak.org/
+Gluu: https://gluu.org/docs/gluu-server/
+SQRL: https://en.m.wikipedia.org/wiki/SQRL
+Zot protocol: Nomadic identity and Remote Authentication [Zotlabs](https://zotlabs.org/help/en/developer/zot_protocol#What_is_Zot_)
+
+Or perhaps address this through ActivityPub&#39;s Client to Server Interactions.
+
+What do people think? Is there guidance that can be developed? Are any of these approaches better than others, or additional options that should be on the table?</description>
+    
+    <lastBuildDate>Sun, 03 Jan 2021 14:55:28 +0000</lastBuildDate>
+    <category>Fediversity</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/single-sign-on-for-fediverse/712.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Single Sign-On for Fediverse</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>For 2 factor <a href="https://webauthn.io">https://webauthn.io</a> will make things easier I guess.<br>
+Also<br>
+<a class="mention" href="/u/mattyp">@mattyp</a><br>
+and <a class="mention" href="/u/macgirvin">@macgirvin</a><br>
+Would prefer if we can speak about it.<br>
+Can you attend the Social CG next week, SAT?</p>
+<p>See “Generic Servers” - if more people would use the Client2Server portion, it would be a good start …<br>
+We could schedule a meeting for a group who want to work on that …<br>
+For slow-me 1 day talking is like 1 week writing <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+<hr>
+<aside class="quote quote-modified" data-post="1" data-topic="1246">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/2021-01-09-socialcg-meeting-fep/1246">2021-01-09 SocialCG Meeting - FEP</a> <a class="badge-wrapper  box" href="/c/meeting/socialcg/15"><span class="badge-category-parent-bg" style="background-color: #0E76BD;"></span><span class="badge-category-bg" style="background-color: #9EB83B;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Announcing, discussing, and keeping track of SocialCG meetings.">SocialCG</span></a>
+  </div>
+  <blockquote>
+    2021-01-09T15:00:00Z (UTC) 
+Topics 
+FEP
+<a class="mention" href="/u/pukkamustard">@pukkamustard</a> 
+and <a class="mention" href="/u/cjs">@cjs</a> 
+
+
+which started probably here: <a href="https://socialhub.activitypub.rocks/t/fediverse-enhancement-proposal-fep/1059:">https://socialhub.activitypub.rocks/t/fediverse-enhancement-proposal-fep/1059:</a> 
+
+
+<a href="https://socialhub.activitypub.rocks/t/fep-a4edc7b-the-fediverse-enhancement-proposal-process/1090" class="inline-onebox">FEP-a4edc7b: The Fediverse Enhancement Proposal Process</a> <a class="mention" href="/u/pukkamustard">@pukkamustard</a> 
+
+
+<a href="https://socialhub.activitypub.rocks/t/proposal-mechanism-for-synchronizing-followers-lists-across-servers/852" class="inline-onebox">Proposal: Mechanism for synchronizing followers lists across servers</a> <a class="mention" href="/u/claire">@Claire</a> 
+
+
+<a href="https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097" class="inline-onebox">Come Help: List of FEPs Needed</a> <a class="mention" href="/u/cjs">@cjs</a> 
+
+
+the <a href="https://socialhub.activitypub.rocks/pub/fediverse-enhancement-proposals#index">FEP Index</a> 
+
+
+… 
+… 
+
+&lt;personalOpinion&gt; 
+and there were many things many people wanted to talk about in 2020 but 
+were censored …
+  </blockquote>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/single-sign-on-for-fediverse/712/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/single-sign-on-for-fediverse/712/8</link>
+        <pubDate>Sun, 03 Jan 2021 14:55:28 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-712-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/single-sign-on-for-fediverse/712.rss">Single Sign-On for Fediverse</source>
+      </item>
+      <item>
+        <title>Single Sign-On for Fediverse</title>
+        <dc:creator><![CDATA[zleap]]></dc:creator>
+        <description><![CDATA[
+            <p>Would this work if the services are on different hosts / servers. I know that it works with debian as I can use salsa to sign in to the gitlab (salsa) moodle, peertube but I think they are all hosted in the same place.</p>
+<p>But yes a single sign on would make it a lot easier for people.   But many may also expect that to be backed up with 2 factor authentication.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/single-sign-on-for-fediverse/712/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/single-sign-on-for-fediverse/712/7</link>
+        <pubDate>Sun, 03 Jan 2021 11:38:50 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-712-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/single-sign-on-for-fediverse/712.rss">Single Sign-On for Fediverse</source>
+      </item>
+      <item>
+        <title>Single Sign-On for Fediverse</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you!</p>
+<p>PS. I recently asked <a class="mention" href="/u/cwebber">@cwebber</a> on the fediverse about <a href="https://w3c-ccg.github.io/zcap-ld/" rel="nofollow noopener">zcap-ld</a> and its relation to the the fediverse, and here is <a href="https://mastodon.social/web/statuses/104230285098466844" rel="nofollow noopener">his answer</a>:</p>
+<blockquote>
+<p>zcap-ld is one way to implement ocaps.  Is it the right one for the fediverse?</p>
+<p>There are really three viable paths for a fully rich federated social network:</p>
+<ol>
+<li>“sufficiently unguessable” ocap URIs (ocap literature: “sturdyRefs”)</li>
+<li>ocap certificates (eg zcap-ld)</li>
+<li>live references (requires CapTP, which I am working on)</li>
+<li>and ok also technically ocap powered storage (datashards)</li>
+</ol>
+<ol>
+<li>
+<p>and 4) are the easiest tie-ins to present infrastructure, but…</p>
+</li>
+<li>
+<p>is going to be desirable if you have a lot of, er, “fast and furious short lived ocaps”, as a virtual world would need.  That’s probably not necessary or within the scopes of most others right now.</p>
+</li>
+<li>
+<p>is nice, and I’m a big enthusiast of zcap-ld, but it’s kind of a jump in tooling vs the amount of payoff available for most implementors right now (whereas 3 is a big jump in payof while also being an increase in tooling)</p>
+</li>
+</ol>
+<p>I’m not really answering your question clearly, so basically: I think bearcaps + datashards (or something like either) for networked ocaps and storage are the fastest path to global fediverse adoption of ocaps.</p>
+<p>(But for the virtual world stuff I’m working on, we’ll need CapTP too… but I’m not expecting most fediverse developers to take interest in that yet.)</p>
+</blockquote>
+          <p><a href="https://socialhub.activitypub.rocks/t/single-sign-on-for-fediverse/712/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/single-sign-on-for-fediverse/712/6</link>
+        <pubDate>Thu, 28 May 2020 15:06:35 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-712-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/single-sign-on-for-fediverse/712.rss">Single Sign-On for Fediverse</source>
+      </item>
+      <item>
+        <title>Single Sign-On for Fediverse</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>There was a long discussion about OCap during <a href="https://socialhub.activitypub.rocks/t/blog-posts-about-apconf-activitypub-conference-2019/77">APconf 2019</a> and the special guest and keynote speaker was <a href="http://erights.org/talks/thesis/">Mark S. Miller</a> whose thesis was on object capabilities. Of course there’s the <a href="https://socialhub.activitypub.rocks/t/ocappub/133" class="inline-onebox">OcapPub</a> topic here that links to Chris’ paper and Sebastian’s notes of the live session.</p>
+<p>As you can see in this picture <a href="https://blogghoran.se/2019/09/23/activity-pub-its-all-connected/">from @maloki’s blog</a> of the sticky board, the OcapPub session was pretty much something everybody wanted to attend <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"><br>
+<div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/1X/6069912eb96e831e3e204f1759f9d8a60726786f.jpeg" data-download-href="https://socialhub.activitypub.rocks/uploads/default/6069912eb96e831e3e204f1759f9d8a60726786f" title=""><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/6069912eb96e831e3e204f1759f9d8a60726786f_2_690x388.jpeg" alt="" data-base62-sha1="dKU0QyDhYTdZzgkWCaAZAn3eboj" width="690" height="388" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/6069912eb96e831e3e204f1759f9d8a60726786f_2_690x388.jpeg, https://socialhub.activitypub.rocks/uploads/default/optimized/1X/6069912eb96e831e3e204f1759f9d8a60726786f_2_1035x582.jpeg 1.5x, https://socialhub.activitypub.rocks/uploads/default/optimized/1X/6069912eb96e831e3e204f1759f9d8a60726786f_2_1380x776.jpeg 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/6069912eb96e831e3e204f1759f9d8a60726786f_2_10x10.png"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename"></span><span class="informations">1920×1080 380 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg></div></a></div></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/single-sign-on-for-fediverse/712/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/single-sign-on-for-fediverse/712/5</link>
+        <pubDate>Thu, 28 May 2020 14:20:07 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-712-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/single-sign-on-for-fediverse/712.rss">Single Sign-On for Fediverse</source>
+      </item>
+      <item>
+        <title>Single Sign-On for Fediverse</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-username="macgirvin" data-post="2" data-topic="712">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/macgirvin/40/287_2.png" class="avatar"> macgirvin:</div>
+<blockquote>
+<p>this technology has been shunned by this community in favour of OCAP. I’m mentioning the original purpose not to start another [discussion]</p>
+</blockquote>
+</aside>
+<p>Do you have pointers to the discussion? I am interested to know the considerations, and the resolution / compromise (or not) they had.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/single-sign-on-for-fediverse/712/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/single-sign-on-for-fediverse/712/4</link>
+        <pubDate>Thu, 28 May 2020 14:04:35 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-712-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/single-sign-on-for-fediverse/712.rss">Single Sign-On for Fediverse</source>
+      </item>
+      <item>
+        <title>Single Sign-On for Fediverse</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you <a class="mention" href="/u/mattyp">@mattyp</a> for starting this up!</p>
+<p>I would like to see some comparison or research in SSO, and I would suggest this can be funded, either by <a href="https://nlnet.nl/PET">NGI0 PET</a><sup class="footnote-ref"><a href="#footnote-2301-1" id="footnote-ref-2301-1">[1]</a></sup>, or <a href="https://ngi-pointer.fundingbox.com">NGI-POINTER</a>, as an inter-disciplinary group bringing together various approaches. If you’re interested in tackling this issue, I’d be happy to help within the <a href="https://matrix.to/#/+community:public.cat">+community:public.cat</a> scope.</p>
+<p>I’m currently using Keycloak mostly with SAML for PUBLIC SSO and would be delighted to expand this service to a larger portion of the Fediverse. Besides, I really like the self-sovereign identity (<abbr title="Self Sovereign Identity">SSI</abbr>) approach taken by the <a href="https://gnunet.org/gns">GNU Name System</a> called <a href="https://reclaimid.gitlab.io/">Re:claim ID</a> – what do you think?</p>
+<hr class="footnotes-sep">
+
+<ol class="footnotes-list">
+<li id="footnote-2301-1" class="footnote-item">
+<p>there are a number of related projects already funded in this direction:</p>
+<ul>
+<li>Markus Sabadello’s <a href="https://nlnet.nl/project/UniversalDID">Universal DID</a>
+</li>
+<li>
+<a class="mention" href="/u/pukkamustard">@pukkamustard</a>’s <a class="hashtag" href="/c/software/openengiadina/50">#<span>software:openengiadina</span></a> (using <a href="https://kaspars.net/blog/solid-webid-oidc">WebID-OIDC</a>)</li>
+<li>Staffan Hagnell’s <a href="https://nlnet.nl/project/EGIL-SCIM/">EGIL-SCIM</a> (based on <a href="https://datatracker.ietf.org/wg/scim/documents/">SCIM</a>)</li>
+</ul>
+ <a href="#footnote-ref-2301-1" class="footnote-backref">↩︎</a>
+</li>
+</ol>
+          <p><a href="https://socialhub.activitypub.rocks/t/single-sign-on-for-fediverse/712/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/single-sign-on-for-fediverse/712/3</link>
+        <pubDate>Thu, 28 May 2020 10:14:27 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-712-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/single-sign-on-for-fediverse/712.rss">Single Sign-On for Fediverse</source>
+      </item>
+      <item>
+        <title>Single Sign-On for Fediverse</title>
+        <dc:creator><![CDATA[macgirvin]]></dc:creator>
+        <description><![CDATA[
+            <p>Zot’s magic-auth is now called OpenWebAuth and is implemented on Hubzilla, Friendica, and Zap.</p>
+<p>It’s a way to “link” a browser cookie from one domain to a browser cookie in another domain using HTTP signatures and webfinger. It is described here:</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/c2911d91c1567acaf78af4212b7669f2f61f67c1.png" class="site-icon" width="32" height="32">
+      <a href="https://framagit.org/zot/zap/-/blob/master/spec/OpenWebAuth/Home.md" target="_blank" rel="nofollow noopener">GitLab</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/7a2b13b86c516ab3dcf36cc16794f8df5a93a368.png" class="thumbnail onebox-avatar" width="500" height="500">
+
+<h3><a href="https://framagit.org/zot/zap/-/blob/master/spec/OpenWebAuth/Home.md" target="_blank" rel="nofollow noopener">spec/OpenWebAuth/Home.md · master · Zot / zap</a></h3>
+
+<p>Framagit</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>The original goal was to provide access control across domains but now has a much wider scope. It was used to provide private photos and videos (ACL) but this technology has been shunned by this community in favour of OCAP. I’m mentioning the original purpose not to start another shitfight but so that folks will understand the original intention of a cross-domain authentication and SSO mechanism that involves zero user interaction. This is important if you have a hundred access controlled photos in your morning stream and the reason this wasn’t based on OAuth/OIDC/SAML/whatever.  It was originally based on the design of “password-less ssh” but is now easier and involves less overhead since it was re-written to use HTTP signatures. IndieAuth is a much simpler mechanism overall, but requires you to have write access on each linked server which sort of implies you need to already have an account there in order to create the link. OpenWebAuth does not require an account or any pre-existing knowledge at the destination endpoint. LDAP is fine for linking services across an organisation but is centralised and probably wouldn’t be a good fit for this purpose. You can also just use OCAP to do most of this (including SSO) - but I’ll let others decide if that is the right tool for their needs. It wasn’t for my work.</p>
+<p>I am not promoting any technology, but merely discussing the reasoning behind engineering decisions that I made a decade ago when I looked into how to bind smaller fediverse sites into a larger whole where people could flow between diverse sites and use services and access restricted content without encountering login prompts, boundaries, or other hurdles.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/single-sign-on-for-fediverse/712/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/single-sign-on-for-fediverse/712/2</link>
+        <pubDate>Sun, 24 May 2020 21:08:42 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-712-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/single-sign-on-for-fediverse/712.rss">Single Sign-On for Fediverse</source>
+      </item>
+      <item>
+        <title>Single Sign-On for Fediverse</title>
+        <dc:creator><![CDATA[mattyp]]></dc:creator>
+        <description><![CDATA[
+            <p>I think having a single sign-on option across application could be the value-add that attracts substantial numbers of new users to the Fediverse.</p>
+<p>It’s hard enough for users to dive into the Fediverse, when few (if any) of their friends are there yet. But if we could tell them: there are plenty of great applications, AND you don’t need to make a separate account with each one, you can use just one set of credentials to blog, share photos, microblog, social network - that would be a real compelling proposition.</p>
+<p>I think many people would agree that SSO is convenient. The problem, as I see it, is that there are many ways that a SSO system can be implemented, and currently no consensus on the best option. My proposal would be that the group here, or perhaps in the SocialCG meeting, form a consensus on the best SSO approach(es) for the Fediverse. That way, developers can focus on implementing and developing, without needing to individually determine the pros and cons of each option.</p>
+<p>As an example, consider that on PixelFed’s Github, there is an <a href="https://github.com/pixelfed/pixelfed/issues/2089" rel="nofollow noopener">Issue #2089</a> open asking for SSO with LDAP, SAML, or Open ID Connect; <a href="https://github.com/pixelfed/pixelfed/issues/935" rel="nofollow noopener">Issue #935</a> asks for IndieAuth support; and <a href="https://github.com/pixelfed/ideas/issues/14" rel="nofollow noopener">Issue #14</a> asks for LDAP or other SSO support. On Friendica, <a href="https://github.com/friendica/friendica/issues/1260" rel="nofollow noopener">Issue #1260</a> asks for IndieAuth support. And some Friendica instances such as <a href="http://Nerdica.net" rel="nofollow noopener">Nerdica.net</a> offer Open ID sign-on, but this seems outdated compared to Open ID Connect and other options. Giving guidance on this could allow developers to focus on developing.</p>
+<p>Here are the options that I have seen discussed:<br>
+Open ID Connect<br>
+IndieAuth: <a href="https://indieauth.com/" rel="nofollow noopener">https://indieauth.com/</a><br>
+KeyCloak: <a href="https://www.keycloak.org/" rel="nofollow noopener">https://www.keycloak.org/</a><br>
+Gluu: <a href="https://gluu.org/docs/gluu-server/" rel="nofollow noopener">https://gluu.org/docs/gluu-server/</a><br>
+SQRL: <a href="https://en.m.wikipedia.org/wiki/SQRL" rel="nofollow noopener">https://en.m.wikipedia.org/wiki/SQRL</a><br>
+Zot protocol: Nomadic identity and Remote Authentication <a href="https://zotlabs.org/help/en/developer/zot_protocol#What_is_Zot_" rel="nofollow noopener">Zotlabs</a></p>
+<p>Or perhaps address this through ActivityPub’s Client to Server Interactions.</p>
+<p>What do people think? Is there guidance that can be developed? Are any of these approaches better than others, or additional options that should be on the table?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/single-sign-on-for-fediverse/712/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/single-sign-on-for-fediverse/712/1</link>
+        <pubDate>Sun, 24 May 2020 16:34:53 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-712-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/single-sign-on-for-fediverse/712.rss">Single Sign-On for Fediverse</source>
+      </item>
+  </channel>
+</rss>

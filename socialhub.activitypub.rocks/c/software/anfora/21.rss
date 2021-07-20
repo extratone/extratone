@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Anfora - SocialHub</title>
+    <link>https://socialhub.activitypub.rocks/c/software/anfora/21</link>
+    <description>Topics in the &#39;Anfora&#39; category A decentralized image sharing platform</description>
+    
+      <lastBuildDate>Thu, 03 Oct 2019 18:19:17 +0000</lastBuildDate>
+      <atom:link href="https://socialhub.activitypub.rocks/c/software/anfora/21.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>About Anfora</title>
+          <dc:creator><![CDATA[yabirgb]]></dc:creator>
+          <category>Anfora</category>
+          <description><![CDATA[
+            <p>A decentralized image sharing platform</p>
+<p><a href="http://anfora.app" rel="nofollow noopener">Anfora</a> is a self-hosted photo gallery social network. This projects aims to create a simple to use self-hosted gallery app with a minimal footprint in the server.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/about-anfora/75">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/about-anfora/75</link>
+          <pubDate>Thu, 03 Oct 2019 18:19:17 +0000</pubDate>
+          <discourse:topicPinned>Yes</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-75</guid>
+          <source url="https://socialhub.activitypub.rocks/t/about-anfora/75.rss">About Anfora</source>
+        </item>
+  </channel>
+</rss>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>About the Fediversity category</title>
+    <link>https://socialhub.activitypub.rocks/t/about-the-fediversity-category/20</link>
+    <description>Understanding and discovering communities on this emerging social network that is the Fediverse.
+
+This category relates to meta-systems, such as [fediverse.network ](https://fediverse.network) and [fediverse.space ](https://fediverse.space), that give an overview of the Fediverse, and provide tools to discover, monitor, and visualize our growing Fediverse and its interactions.
+
+Topics in this category concern not the protocol itself (see #activitypub), but the network of nodes using it.
+
+----
+[Category logo](https://commons.wikimedia.org/w/index.php?curid=90896306) CC-BY-SA [Eukombos](https://commons.wikimedia.org/wiki/User:Eukombos).</description>
+    
+    <lastBuildDate>Tue, 01 Dec 2020 18:21:05 +0000</lastBuildDate>
+    <category>Fediversity</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/about-the-fediversity-category/20.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>About the Fediversity category</title>
+        <dc:creator><![CDATA[tao]]></dc:creator>
+        <description><![CDATA[
+            <p>Understanding and discovering communities on this emerging social network that is the Fediverse.</p>
+<p>This category relates to meta-systems, such as <a href="https://fediverse.network" rel="noopener nofollow ugc">fediverse.network </a> and <a href="https://fediverse.space">fediverse.space </a>, that give an overview of the Fediverse, and provide tools to discover, monitor, and visualize our growing Fediverse and its interactions.</p>
+<p>Topics in this category concern not the protocol itself (see <a class="hashtag" href="/c/activitypub/5">#<span>activitypub</span></a>), but the network of nodes using it.</p>
+<hr>
+<p><a href="https://commons.wikimedia.org/w/index.php?curid=90896306" rel="noopener nofollow ugc">Category logo</a> CC-BY-SA <a href="https://commons.wikimedia.org/wiki/User:Eukombos" rel="noopener nofollow ugc">Eukombos</a>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-the-fediversity-category/20/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-the-fediversity-category/20/1</link>
+        <pubDate>Thu, 12 Sep 2019 18:47:58 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-20-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-the-fediversity-category/20.rss">About the Fediversity category</source>
+      </item>
+  </channel>
+</rss>

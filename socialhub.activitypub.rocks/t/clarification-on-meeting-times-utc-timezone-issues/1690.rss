@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Clarification on meeting times - UTC/timezone issues</title>
+    <link>https://socialhub.activitypub.rocks/t/clarification-on-meeting-times-utc-timezone-issues/1690</link>
+    <description>Can we clarify this? 
+
+I thought the meetings were defined at a UTC time - https://www.w3.org/wiki/SocialCG#Meetings says
+
+&gt; Meetings in general are alternating Fridays and Saturdays. On Friday at 1700 UTC and Saturday at 1500 UTC.
+
+However today&#39;s meeting happened at a different time: https://socialhub.activitypub.rocks/t/2021-05-01-fediverse-interest-group-meeting/1649
+
+&gt; * 2pm UTC
+
+I think I know what happened,  based on another comment on that post:
+
+&gt; Per [the calendar ](https://cloud.w3c.social/apps/calendar/p/GzxsDfE6CKtp9MHX/dayGridMonth/now)
+
+So this meeting was set based on the NextCloud calendar. 
+
+The problem is, that calendar - the NextCloud one - has a timezone &quot;bug&quot;. It&#39;s set to reoccur an event in London time **NOT** UTC time - ie, it stays 3 oclock  (London Time) whenever the event is in the year. However, the event is defined at UTC time so if you then look at London time you should see the event time (London time) shift by an hour over the year.
+
+I did point this out when the calendar was created: https://socialhub.activitypub.rocks/t/socialcg-meetings-calendar/1308/2?u=jarofgreen
+
+The ActivtyPub aware event listing I put together carefully always created events at UTC time - so if you look down the page (it should open showing them in London time) you&#39;ll see they jump by an hour at one point: https://denof.theoccasionoctopus.net/a/w3_social_web_incubator_community_group/manage/event?eventListFilterDataSubmitted=1&amp;showCancelled=1&amp;set_timezone=Europe/London
+
+So this is a long winded way of saying it&#39;s not my fault I was late for the meeting :-) 
+
+**But seriously; can we clarify meeting start times for future?**
+
+https://www.w3.org/wiki/SocialCG#Meetings says 1500 UTC
+
+https://socialhub.activitypub.rocks/t/2021-05-01-fediverse-interest-group-meeting/1649 says 2pm UTC.
+
+Something is wrong</description>
+    
+    <lastBuildDate>Thu, 06 May 2021 07:24:46 +0000</lastBuildDate>
+    <category>SocialCG</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/clarification-on-meeting-times-utc-timezone-issues/1690.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Clarification on meeting times - UTC/timezone issues</title>
+        <dc:creator><![CDATA[jarofgreen]]></dc:creator>
+        <description><![CDATA[
+            <p>Anyone can also open <a href="https://denof.theoccasionoctopus.net/a/w3_social_web_incubator_community_group" class="inline-onebox" rel="noopener nofollow ugc">Welcome! - Den of The Occasion Octopus</a> and scroll to the footer for a link to change to any timezone they want.</p>
+<p>Can we add that to the instructions <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/stuck_out_tongue.png?v=9" title=":stuck_out_tongue:" class="emoji" alt=":stuck_out_tongue:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/clarification-on-meeting-times-utc-timezone-issues/1690/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/clarification-on-meeting-times-utc-timezone-issues/1690/7</link>
+        <pubDate>Thu, 06 May 2021 07:24:46 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1690-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/clarification-on-meeting-times-utc-timezone-issues/1690.rss">Clarification on meeting times - UTC/timezone issues</source>
+      </item>
+      <item>
+        <title>Clarification on meeting times - UTC/timezone issues</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>We may also add timezone options for the SocialHub dwellers cities. Please chime in with the timezone you’re in so we can adapt the list that shows in the date tool.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/clarification-on-meeting-times-utc-timezone-issues/1690/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/clarification-on-meeting-times-utc-timezone-issues/1690/6</link>
+        <pubDate>Wed, 05 May 2021 22:38:01 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1690-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/clarification-on-meeting-times-utc-timezone-issues/1690.rss">Clarification on meeting times - UTC/timezone issues</source>
+      </item>
+      <item>
+        <title>Clarification on meeting times - UTC/timezone issues</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>A good site to use when in doubt is <a href="https://time.is/compare">time.is</a> and it will tell when timezones are not in use atm.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/clarification-on-meeting-times-utc-timezone-issues/1690/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/clarification-on-meeting-times-utc-timezone-issues/1690/5</link>
+        <pubDate>Tue, 04 May 2021 21:54:29 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1690-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/clarification-on-meeting-times-utc-timezone-issues/1690.rss">Clarification on meeting times - UTC/timezone issues</source>
+      </item>
+      <item>
+        <title>Clarification on meeting times - UTC/timezone issues</title>
+        <dc:creator><![CDATA[bengo]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for diagnosing this <a class="mention" href="/u/jarofgreen">@jarofgreen</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/clarification-on-meeting-times-utc-timezone-issues/1690/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/clarification-on-meeting-times-utc-timezone-issues/1690/4</link>
+        <pubDate>Tue, 04 May 2021 21:45:46 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1690-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/clarification-on-meeting-times-utc-timezone-issues/1690.rss">Clarification on meeting times - UTC/timezone issues</source>
+      </item>
+      <item>
+        <title>Clarification on meeting times - UTC/timezone issues</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>James, sorry!<br>
+Find the logs of the meeting under the announcement soon …<br>
+I would be fine with any time <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/clarification-on-meeting-times-utc-timezone-issues/1690/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/clarification-on-meeting-times-utc-timezone-issues/1690/3</link>
+        <pubDate>Sat, 01 May 2021 15:51:26 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1690-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/clarification-on-meeting-times-utc-timezone-issues/1690.rss">Clarification on meeting times - UTC/timezone issues</source>
+      </item>
+      <item>
+        <title>Clarification on meeting times - UTC/timezone issues</title>
+        <dc:creator><![CDATA[rhiaro]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve set the calendar to use UTC - So 3pm UTC Saturdays and 5pm UTC, Fridays, as it says on the wiki.</p>
+<p>This means they’re an hour later than previously during the summer in regions with daylight savings.</p>
+<p>If the ‘new’ times (for some people) are now bad, we can have a separate thread about moving the meeting time, I guess.</p>
+<p>Thanks for being timezone/calendar monitor, James <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/clarification-on-meeting-times-utc-timezone-issues/1690/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/clarification-on-meeting-times-utc-timezone-issues/1690/2</link>
+        <pubDate>Sat, 01 May 2021 15:44:00 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1690-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/clarification-on-meeting-times-utc-timezone-issues/1690.rss">Clarification on meeting times - UTC/timezone issues</source>
+      </item>
+      <item>
+        <title>Clarification on meeting times - UTC/timezone issues</title>
+        <dc:creator><![CDATA[jarofgreen]]></dc:creator>
+        <description><![CDATA[
+            <p>Can we clarify this?</p>
+<p>I thought the meetings were defined at a UTC time - <a href="https://www.w3.org/wiki/SocialCG#Meetings" class="inline-onebox" rel="noopener nofollow ugc">SocialCG - W3C Wiki</a> says</p>
+<blockquote>
+<p>Meetings in general are alternating Fridays and Saturdays. On Friday at 1700 UTC and Saturday at 1500 UTC.</p>
+</blockquote>
+<p>However today’s meeting happened at a different time: <a href="https://socialhub.activitypub.rocks/t/2021-05-01-fediverse-interest-group-meeting/1649" class="inline-onebox">2021-05-01 Fediverse Interest Group Meeting</a></p>
+<blockquote>
+<ul>
+<li>2pm UTC</li>
+</ul>
+</blockquote>
+<p>I think I know what happened,  based on another comment on that post:</p>
+<blockquote>
+<p>Per <a href="https://cloud.w3c.social/apps/calendar/p/GzxsDfE6CKtp9MHX/dayGridMonth/now" rel="noopener nofollow ugc">the calendar </a></p>
+</blockquote>
+<p>So this meeting was set based on the NextCloud calendar.</p>
+<p>The problem is, that calendar - the NextCloud one - has a timezone “bug”. It’s set to reoccur an event in London time <strong>NOT</strong> UTC time - ie, it stays 3 oclock  (London Time) whenever the event is in the year. However, the event is defined at UTC time so if you then look at London time you should see the event time (London time) shift by an hour over the year.</p>
+<p>I did point this out when the calendar was created: <a href="https://socialhub.activitypub.rocks/t/socialcg-meetings-calendar/1308/2" class="inline-onebox">SocialCG meetings calendar - #2 by jarofgreen</a></p>
+<p>The ActivtyPub aware event listing I put together carefully always created events at UTC time - so if you look down the page (it should open showing them in London time) you’ll see they jump by an hour at one point: <a href="https://denof.theoccasionoctopus.net/a/w3_social_web_incubator_community_group/manage/event?eventListFilterDataSubmitted=1&amp;showCancelled=1&amp;set_timezone=Europe/London" rel="noopener nofollow ugc">https://denof.theoccasionoctopus.net/a/w3_social_web_incubator_community_group/manage/event?eventListFilterDataSubmitted=1&amp;showCancelled=1&amp;set_timezone=Europe/London</a></p>
+<p>So this is a long winded way of saying it’s not my fault I was late for the meeting <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p><strong>But seriously; can we clarify meeting start times for future?</strong></p>
+<p><a href="https://www.w3.org/wiki/SocialCG#Meetings" class="inline-onebox" rel="noopener nofollow ugc">SocialCG - W3C Wiki</a> says 1500 UTC</p>
+<p><a href="https://socialhub.activitypub.rocks/t/2021-05-01-fediverse-interest-group-meeting/1649" class="inline-onebox">2021-05-01 Fediverse Interest Group Meeting</a> says 2pm UTC.</p>
+<p>Something is wrong</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/clarification-on-meeting-times-utc-timezone-issues/1690/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/clarification-on-meeting-times-utc-timezone-issues/1690/1</link>
+        <pubDate>Sat, 01 May 2021 15:25:20 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1690-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/clarification-on-meeting-times-utc-timezone-issues/1690.rss">Clarification on meeting times - UTC/timezone issues</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Create Activity with graph</title>
+    <link>https://socialhub.activitypub.rocks/t/create-activity-with-graph/1336</link>
+    <description>Hi there,
+if a client stores an &quot;activity&quot; with an &quot;object&quot;, that references &quot;anotherObject&quot;, 
+should the activity pub implementation then also save &quot;anotherObject&quot; or validate, that &quot;anotherObject&quot; is existend? 
+Or just store the IRI/URL?
+
+Means: 
+Is a createActivity limited to one object or is it also for graphs/trees.
+Or should there be a create activity for each object of the graph/tree?
+
+activity.object -&gt; someObject ; 
+someObject.anotherObject -&gt; anotherObject;
+
+Thanks Fredy</description>
+    
+    <lastBuildDate>Thu, 21 Jan 2021 20:11:34 +0000</lastBuildDate>
+    <category>ActivityPub</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/create-activity-with-graph/1336.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Create Activity with graph</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="naturzukunft" data-post="3" data-topic="1336">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/letter_avatar_proxy/v4/letter/n/ba9def/40.png" class="avatar"> naturzukunft:</div>
+<blockquote>
+<p>should this representation contain the graph/tree or just the root object <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+</blockquote>
+</aside>
+<p>This depends on what you’re going to be doing with it. You can’t make software in isolation from its intended use cases.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/create-activity-with-graph/1336/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/create-activity-with-graph/1336/4</link>
+        <pubDate>Thu, 21 Jan 2021 20:11:34 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1336-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/create-activity-with-graph/1336.rss">Create Activity with graph</source>
+      </item>
+      <item>
+        <title>Create Activity with graph</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi,<br>
+“the only important part is that you’re able to generate their ActivityPub representations from it.”<br>
+should this representation contain the graph/tree or just the root object <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+<p>I decided to only store the object. And if somebody want to reference “anotherObject” he has to create it first.</p>
+<p>Thanks</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/create-activity-with-graph/1336/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/create-activity-with-graph/1336/3</link>
+        <pubDate>Thu, 21 Jan 2021 20:07:19 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1336-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/create-activity-with-graph/1336.rss">Create Activity with graph</source>
+      </item>
+      <item>
+        <title>Create Activity with graph</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>Strictly speaking, you aren’t required to store activities at all. You only need to store objects, and whether you traverse the graph, and how do you do that, depends on your intentions. It’s hard to reason about things this abstract with zero concrete use-case examples, and you rarely need to.</p>
+<p>For example, if you receive a <code>Create{Note}</code> that mentions a user on your instance and is in the middle of a reply thread you’ve never seen, you might want to traverse the reply thread to provide the user with some context.</p>
+<p>This also depends on your storage. I store everything in an SQL database, so each post is assigned an ID. I can’t store a reply that points to a post that I don’t have because that parent post won’t have an ID in my table, so I won’t be able to represent that relation, so I have to traverse the thread bottom to top and then insert the rows into the table going from top to bottom.</p>
+<p>To sum it up: you can store objects in whatever format is convenient to your particular application, the only important part is that you’re able to generate their ActivityPub representations from it. It helps to envision ActivityPub as an API.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/create-activity-with-graph/1336/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/create-activity-with-graph/1336/2</link>
+        <pubDate>Thu, 21 Jan 2021 17:37:16 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1336-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/create-activity-with-graph/1336.rss">Create Activity with graph</source>
+      </item>
+      <item>
+        <title>Create Activity with graph</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi there,<br>
+if a client stores an “activity” with an “object”, that references “anotherObject”,<br>
+should the activity pub implementation then also save “anotherObject” or validate, that “anotherObject” is existend?<br>
+Or just store the IRI/URL?</p>
+<p>Means:<br>
+Is a createActivity limited to one object or is it also for graphs/trees.<br>
+Or should there be a create activity for each object of the graph/tree?</p>
+<p>activity.object -&gt; someObject ;<br>
+someObject.anotherObject -&gt; anotherObject;</p>
+<p>Thanks Fredy</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/create-activity-with-graph/1336/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/create-activity-with-graph/1336/1</link>
+        <pubDate>Thu, 21 Jan 2021 08:40:34 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1336-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/create-activity-with-graph/1336.rss">Create Activity with graph</source>
+      </item>
+  </channel>
+</rss>

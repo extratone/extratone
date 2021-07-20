@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Extensible client-to-server applications</title>
+    <link>https://socialhub.activitypub.rocks/t/extensible-client-to-server-applications/341</link>
+    <description>@nightpool and I had kind of a micro-meeting today and discussed client-to-server applications.  We identified two areas of work of use to the AP community:
+
+- &quot;specific&quot; clients like Mastodon&#39;s (microblogging) or eg a &quot;youtube/instagram/etc&quot; type client.  @nightpool [started a thread about this](https://socialhub.activitypub.rocks/t/content-text-plain-and-fallback-behaviors-for-limited-clients/340)
+- &quot;General purpose&quot; C2S clients which can be pluggable to understand new activity / object types.  There&#39;s general interest in this, but how to dispatch different UI patterns for both composing / rendering / interacting with those different types?  In reality, whoever ends up making one that becomes reasonably popular will realistically be in effect developing those &quot;guidelines&quot; in practice of how to do this route.</description>
+    
+    <lastBuildDate>Sun, 24 Nov 2019 21:11:14 +0000</lastBuildDate>
+    <category>Client to Server</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/extensible-client-to-server-applications/341.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Extensible client-to-server applications</title>
+        <dc:creator><![CDATA[pukkamustard]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>I feel like the natural-language properties (name, summary) should be more heavily encouraged so that activities that aren’t understood are at least able to be displayed.</p>
+</blockquote>
+<p>There is a standardized way of doing this with <a href="https://en.wikipedia.org/wiki/RDF_Schema" rel="nofollow noopener">RDF Schema</a>.</p>
+<p>I recently stumbled upon an example of this from <a href="https://gtfs.org/" rel="nofollow noopener">General Transit Feed Specification</a>. Exactly like ActivityStreams, it is a vocabulary for talking about certain things. In this case: public transit data.</p>
+<p>For example it defines a thing called <code>Gondola</code> to represent a gondola. This is formalized as such (see source <a href="https://gtfs.org/" rel="nofollow noopener">here</a>):</p>
+<pre><code class="lang-auto">gtfs:Gondola a gtfs:RouteType ;
+              status:term_status "unstable"@en ;
+              status:term_status "inestable"@es ;
+              rdfs:label "Gondola, Suspended cable car"@en ;
+              rdfs:label "Teleférico, telecabina"@es ;
+              rdfs:comment "Gondola, Suspended cable car. Typically used for aerial cable cars where the car is suspended from the cable."@en ;
+              rdfs:comment "Normalmente se utiliza para medios de transporte público por cable en donde el vehículo queda suspendido de un cable."@es .
+</code></pre>
+<p>The <code>rdfs:label</code> and <code>rdfs:comment</code> give a human readable specifications (in multiple languages) that could be used in an extensible client.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/extensible-client-to-server-applications/341/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/extensible-client-to-server-applications/341/4</link>
+        <pubDate>Sun, 24 Nov 2019 21:11:14 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-341-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/extensible-client-to-server-applications/341.rss">Extensible client-to-server applications</source>
+      </item>
+      <item>
+        <title>Extensible client-to-server applications</title>
+        <dc:creator><![CDATA[trwnh]]></dc:creator>
+        <description><![CDATA[
+            <p>I feel like the natural-language properties (name, summary) should be more heavily encouraged so that activities that aren’t understood are at least able to be displayed. I’ve thought about having a literal “activity stream” and how that might be expressed and serialized. Perhaps a more formal recommendation of using name/summary for S2S? Or should implementations try to auto-generate their own summaries based on actor and object?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/extensible-client-to-server-applications/341/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/extensible-client-to-server-applications/341/3</link>
+        <pubDate>Sat, 23 Nov 2019 19:23:58 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-341-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/extensible-client-to-server-applications/341.rss">Extensible client-to-server applications</source>
+      </item>
+      <item>
+        <title>Extensible client-to-server applications</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="https://socialhub.activitypub.rocks/c/software/redaktor-me">redaktor</a> is doing the second by  designing webcomponents with <a href="http://dojo.io">dojo.io</a><br>
+–&gt; <a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components">webcomponents</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/extensible-client-to-server-applications/341/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/extensible-client-to-server-applications/341/2</link>
+        <pubDate>Sat, 23 Nov 2019 17:54:20 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-341-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/extensible-client-to-server-applications/341.rss">Extensible client-to-server applications</source>
+      </item>
+      <item>
+        <title>Extensible client-to-server applications</title>
+        <dc:creator><![CDATA[cwebber]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/nightpool">@nightpool</a> and I had kind of a micro-meeting today and discussed client-to-server applications.  We identified two areas of work of use to the AP community:</p>
+<ul>
+<li>“specific” clients like Mastodon’s (microblogging) or eg a “youtube/instagram/etc” type client.  <a class="mention" href="/u/nightpool">@nightpool</a> <a href="https://socialhub.activitypub.rocks/t/content-text-plain-and-fallback-behaviors-for-limited-clients/340">started a thread about this</a>
+</li>
+<li>“General purpose” C2S clients which can be pluggable to understand new activity / object types.  There’s general interest in this, but how to dispatch different UI patterns for both composing / rendering / interacting with those different types?  In reality, whoever ends up making one that becomes reasonably popular will realistically be in effect developing those “guidelines” in practice of how to do this route.</li>
+</ul>
+          <p><a href="https://socialhub.activitypub.rocks/t/extensible-client-to-server-applications/341/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/extensible-client-to-server-applications/341/1</link>
+        <pubDate>Sat, 23 Nov 2019 17:41:38 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-341-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/extensible-client-to-server-applications/341.rss">Extensible client-to-server applications</source>
+      </item>
+  </channel>
+</rss>

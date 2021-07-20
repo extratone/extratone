@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Place to discuss general issues of interop between implementations?</title>
+    <link>https://socialhub.activitypub.rocks/t/place-to-discuss-general-issues-of-interop-between-implementations/362</link>
+    <description>Hi all, is there a place to discuss general Fediverse interoperability on the application layer? Not on a spec level but for topics like &quot;let&#39;s brainstorm how various AP-compatible servers could interpret an Article object type and render it for their users&quot; or discussing general principles of interoperability.
+
+I could imagine a sub-category for interoperability under Software, but maybe somewhere else would make sense?</description>
+    
+    <lastBuildDate>Tue, 17 Dec 2019 08:28:48 +0000</lastBuildDate>
+    <category>Community</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/place-to-discuss-general-issues-of-interop-between-implementations/362.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Place to discuss general issues of interop between implementations?</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Tags cab be used across categories. If you don’t know where to post things, don’t categorize then, and someone who knows better will move it to the right place. Following <a class="mention" href="/u/nightpool">@nightpool</a>:</p>
+<aside class="quote group-mastodon" data-post="2" data-topic="362">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/nightpool/40/36_2.png" class="avatar"> nightpool:</div>
+<blockquote>
+<p>Overall, I’d recommend using the <a class="hashtag" href="/c/5-activitypub">#<span>activitypub</span></a> topic—<a class="hashtag" href="/c/14-software">#<span>software</span></a> is designed to be focused on <em>specific</em> implementations.</p>
+</blockquote>
+</aside>
+<p>If post something related to two implementations in <a class="hashtag" href="/c/14-software">#<span>software</span></a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/place-to-discuss-general-issues-of-interop-between-implementations/362/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/place-to-discuss-general-issues-of-interop-between-implementations/362/10</link>
+        <pubDate>Tue, 17 Dec 2019 08:28:48 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-362-10</guid>
+        <source url="https://socialhub.activitypub.rocks/t/place-to-discuss-general-issues-of-interop-between-implementations/362.rss">Place to discuss general issues of interop between implementations?</source>
+      </item>
+      <item>
+        <title>Place to discuss general issues of interop between implementations?</title>
+        <dc:creator><![CDATA[wakest]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the mention. I am not sure I understand how the tag system is suppose to work here. What category are posts about <a class="hashtag" href="https://socialhub.activitypub.rocks/tags/interop">#<span>interop</span></a> suppose to posted in? Lets say I want to work out interoperability between polls posted from Misskey showing up on Hubzilla. Where would this posted?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/place-to-discuss-general-issues-of-interop-between-implementations/362/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/place-to-discuss-general-issues-of-interop-between-implementations/362/9</link>
+        <pubDate>Tue, 17 Dec 2019 00:06:24 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-362-9</guid>
+        <source url="https://socialhub.activitypub.rocks/t/place-to-discuss-general-issues-of-interop-between-implementations/362.rss">Place to discuss general issues of interop between implementations?</source>
+      </item>
+      <item>
+        <title>Place to discuss general issues of interop between implementations?</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve created the <a class="hashtag" href="https://socialhub.activitypub.rocks/tags/interop">#<span>interop</span></a> tag</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/place-to-discuss-general-issues-of-interop-between-implementations/362/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/place-to-discuss-general-issues-of-interop-between-implementations/362/7</link>
+        <pubDate>Fri, 13 Dec 2019 01:52:33 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-362-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/place-to-discuss-general-issues-of-interop-between-implementations/362.rss">Place to discuss general issues of interop between implementations?</source>
+      </item>
+      <item>
+        <title>Place to discuss general issues of interop between implementations?</title>
+        <dc:creator><![CDATA[MediaFormat]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/how">@how</a> I think the time is right for the creation of the <span class="hashtag">#interop</span> tag.</p>
+<p>See this thread about the need for ironing out compatibility bugs between <a class="hashtag" href="/c/5-activitypub">#<span>activitypub</span></a> <a class="hashtag" href="/c/14-software">#<span>software</span></a>  <a href="https://social.wake.st/@liaizon/103292640718142195" rel="nofollow noopener">https://social.wake.st/@liaizon/103292640718142195</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/place-to-discuss-general-issues-of-interop-between-implementations/362/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/place-to-discuss-general-issues-of-interop-between-implementations/362/6</link>
+        <pubDate>Fri, 13 Dec 2019 01:37:02 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-362-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/place-to-discuss-general-issues-of-interop-between-implementations/362.rss">Place to discuss general issues of interop between implementations?</source>
+      </item>
+      <item>
+        <title>Place to discuss general issues of interop between implementations?</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Maybe we could use an <span class="hashtag">#interop</span> tag or similar to keep things easy to follow.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/place-to-discuss-general-issues-of-interop-between-implementations/362/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/place-to-discuss-general-issues-of-interop-between-implementations/362/5</link>
+        <pubDate>Sun, 01 Dec 2019 13:03:28 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-362-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/place-to-discuss-general-issues-of-interop-between-implementations/362.rss">Place to discuss general issues of interop between implementations?</source>
+      </item>
+      <item>
+        <title>Place to discuss general issues of interop between implementations?</title>
+        <dc:creator><![CDATA[darius]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks, I’ll post this kind of stuff in <a class="hashtag" href="/c/5-activitypub">#<span>activitypub</span></a>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/place-to-discuss-general-issues-of-interop-between-implementations/362/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/place-to-discuss-general-issues-of-interop-between-implementations/362/4</link>
+        <pubDate>Wed, 27 Nov 2019 23:59:20 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-362-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/place-to-discuss-general-issues-of-interop-between-implementations/362.rss">Place to discuss general issues of interop between implementations?</source>
+      </item>
+      <item>
+        <title>Place to discuss general issues of interop between implementations?</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p>Another topic you might be interested in is <a href="https://socialhub.activitypub.rocks/t/resolving-the-note-vs-article-distinction/258" class="inline-onebox">Resolving the Note vs. Article distinction</a>, which dives into a lot of thoughts about what people are intending when they use Article</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/place-to-discuss-general-issues-of-interop-between-implementations/362/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/place-to-discuss-general-issues-of-interop-between-implementations/362/3</link>
+        <pubDate>Wed, 27 Nov 2019 20:00:28 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-362-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/place-to-discuss-general-issues-of-interop-between-implementations/362.rss">Place to discuss general issues of interop between implementations?</source>
+      </item>
+      <item>
+        <title>Place to discuss general issues of interop between implementations?</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p>hi darius! A similar topic is <a href="https://socialhub.activitypub.rocks/t/content-text-plain-and-fallback-behaviors-for-limited-clients/340/2" class="inline-onebox">Content, text/plain, and fallback behaviors for limited clients</a>, which is focused on rich text support specifically.</p>
+<p>In general, I think concerns of interoperability are always a concern for the community group. Even if it’s not a discussion about hard requirements, things like codifying best practices, hashing out general principles, and coming to consensus on guides to implementation are definitely things the process can help with. Overall, I’d recommend using the <a class="hashtag" href="/c/5-activitypub">#<span>activitypub</span></a> topic—<a class="hashtag" href="/c/14-software">#<span>software</span></a> is designed to be focused on <em>specific</em> implementations.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/place-to-discuss-general-issues-of-interop-between-implementations/362/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/place-to-discuss-general-issues-of-interop-between-implementations/362/2</link>
+        <pubDate>Wed, 27 Nov 2019 19:57:02 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-362-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/place-to-discuss-general-issues-of-interop-between-implementations/362.rss">Place to discuss general issues of interop between implementations?</source>
+      </item>
+      <item>
+        <title>Place to discuss general issues of interop between implementations?</title>
+        <dc:creator><![CDATA[darius]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all, is there a place to discuss general Fediverse interoperability on the application layer? Not on a spec level but for topics like “let’s brainstorm how various AP-compatible servers could interpret an Article object type and render it for their users” or discussing general principles of interoperability.</p>
+<p>I could imagine a sub-category for interoperability under Software, but maybe somewhere else would make sense?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/place-to-discuss-general-issues-of-interop-between-implementations/362/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/place-to-discuss-general-issues-of-interop-between-implementations/362/1</link>
+        <pubDate>Wed, 27 Nov 2019 19:29:37 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-362-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/place-to-discuss-general-issues-of-interop-between-implementations/362.rss">Place to discuss general issues of interop between implementations?</source>
+      </item>
+  </channel>
+</rss>

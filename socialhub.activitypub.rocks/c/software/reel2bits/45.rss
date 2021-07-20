@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>reel2bits - SocialHub</title>
+    <link>https://socialhub.activitypub.rocks/c/software/reel2bits/45</link>
+    <description>Topics in the &#39;reel2bits&#39; category &lt;a href=&quot;https://reel2bits.org/&quot; rel=&quot;nofollow noopener&quot;&gt;reel2bits&lt;/a&gt; is a self-hosted Soundtracks and Podcasts sharing, with ActivityPub federation.</description>
+    
+      <lastBuildDate>Fri, 13 Dec 2019 13:54:24 +0000</lastBuildDate>
+      <atom:link href="https://socialhub.activitypub.rocks/c/software/reel2bits/45.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>About reel2bits</title>
+          <dc:creator><![CDATA[dashie]]></dc:creator>
+          <category>reel2bits</category>
+          <description><![CDATA[
+            <p><a href="https://reel2bits.org/" rel="nofollow noopener">reel2bits</a> is a self-hosted Soundtracks and Podcasts sharing, with ActivityPub federation.</p>
+<p>The website is located at <a href="https://reel2bits.org/" rel="nofollow noopener">https://reel2bits.org/</a> and the source code on <a href="https://github.com/reel2bits/reel2bits" rel="nofollow noopener">https://github.com/reel2bits/reel2bits</a></p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/about-reel2bits/397">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/about-reel2bits/397</link>
+          <pubDate>Fri, 13 Dec 2019 13:54:24 +0000</pubDate>
+          <discourse:topicPinned>Yes</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-397</guid>
+          <source url="https://socialhub.activitypub.rocks/t/about-reel2bits/397.rss">About reel2bits</source>
+        </item>
+  </channel>
+</rss>

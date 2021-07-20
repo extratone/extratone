@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Using ActivityPub for Podcast Comments (exploration) - Fediverse Futures - SocialHub</title>
+    <meta name="description" content="Dear ActivityPub community! 
+I’m somewhat active in the Podcasting 2.0 community. This community works on the Podcast Namespace, which extends the RSS standard with new tags for podcasts. For example the podcast:person t&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="1909.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Using ActivityPub for Podcast Comments (exploration)&#39;" href="1909.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/using-activitypub-for-podcast-comments-exploration/1909" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/using-activitypub-for-podcast-comments-exploration/1909" />
+<meta property="og:title" content="Using ActivityPub for Podcast Comments (exploration)" />
+<meta name="twitter:title" content="Using ActivityPub for Podcast Comments (exploration)" />
+<meta property="og:description" content="Dear ActivityPub community!  I’m somewhat active in the Podcasting 2.0 community. This community works on the Podcast Namespace, which extends the RSS standard with new tags for podcasts. For example the podcast:person tag (to identify individuals heard in the podcast, both presenters and guests), or the podcast:funding tag (to indicate ways to financially support the podcaster). Podcast hosts should support them; podcast apps should use them.  The loose group is now also discussing comments (vi..." />
+<meta name="twitter:description" content="Dear ActivityPub community!  I’m somewhat active in the Podcasting 2.0 community. This community works on the Podcast Namespace, which extends the RSS standard with new tags for podcasts. For example the podcast:person tag (to identify individuals heard in the podcast, both presenters and guests), or the podcast:funding tag (to indicate ways to financially support the podcaster). Podcast hosts should support them; podcast apps should use them.  The loose group is now also discussing comments (vi..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="1 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="2 ❤" />
+<meta property="article:published_time" content="2021-07-05T09:03:02+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="1909.html">Using ActivityPub for Podcast Comments (exploration)</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/fediversity.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #92278F'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Fediversity</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/fediversity/fediverse-futures/58.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #92278F'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Fediverse Futures</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+      <div class="topic-category">
+        <div class='discourse-tags list-tags'>
+            <a href='../../tag/podcasting.html' class='discourse-tag' rel="tag">podcasting</a>
+        </div>
+      </div>
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/keunes.html'><span itemprop='name'>keunes</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1909.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-07-05T09:03:02Z'>
+              <time itemprop='dateModified' datetime='2021-07-06T07:32:57Z' class='post-time'>
+                July 6, 2021,  7:32am
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Dear ActivityPub community!</p>
+<p>I’m somewhat active in the Podcasting 2.0 community. This community works on the <strong>Podcast Namespace</strong>, which extends the RSS standard with new tags for podcasts. For example the <code>podcast:person</code> tag (to identify individuals heard in the podcast, both presenters and guests), or the <code>podcast:funding</code> tag (to indicate ways to financially support the podcaster). Podcast hosts should support them; podcast apps should use them.</p>
+<p>The loose group is now also discussing <strong>comments</strong> (via a <code>podcast:comments</code> tag), and one venue that is being explored is ActivityPub.</p>
+<p>The goal here is a YouTube-comment-like-experience. But then in some decentralised fashion. I see some open questions regarding</p>
+<ul>
+<li>hosting (where are the comments hosted; by podcast host, podcaster, podcast client app, or another specialised comment entity)</li>
+<li>moderation (should probably be the responsibility of the podcaster, but this depends on who hosts the comments)</li>
+<li>inclusion (should comments be gathered through a hashtag of some sorts, or is there a single thread that is displayed)</li>
+<li>initiation (who gets to ‘start’ a comment thread, and who has control over this (client app, podcaster, no-one))</li>
+<li>technology (should we rely on Mastodon, or create a ‘new’ ActivityPub-based standard specific to comments? If something new, in which ways should it federate?)</li>
+</ul>
+<p>Adam &amp; Dave (who basically initiated the Podcasting 2.0 community) are discussing  the comments concept here - I would recommend listening to it because it probably gives a better idea than my summary above:</p>
+<blockquote>
+<p><a href="https://podcastindex.org/podcast/920666" rel="noopener nofollow ugc">Podcasting 2.0</a>: Episode 44: Separating the Nodes from the Noobs<br>
+<a href="https://mp3s.nashownotes.com/PC20-44-2021-07-02-Final.mp3#t=5617" rel="noopener nofollow ugc">https://mp3s.nashownotes.com/PC20-44-2021-07-02-Final.mp3#t=5617</a> [01:33:37]</p>
+</blockquote>
+<p><strong>It would be great if the ActivityPub community could chip in.</strong> Every 1,5 week or so there’s a community developer meeting, and the first next one is Wednesday 7 July at 20:00 CEST. I’m pretty sure that Podcast Comments will be on the agenda for that meeting.</p>
+<aside class="onebox allowlistedgeneric" data-onebox-src="https://meet.jit.si/Podcasting-2.0-Community">
+  <header class="source">
+      <img src="https://meet.jit.si/Podcasting-2.0-Community/images/favicon.ico?v=1" class="site-icon" width="32" height="32">
+
+      <a href="https://meet.jit.si/Podcasting-2.0-Community" target="_blank" rel="noopener nofollow ugc">meet.jit.si</a>
+  </header>
+
+  <article class="onebox-body">
+    
+
+<h3><a href="https://meet.jit.si/Podcasting-2.0-Community" target="_blank" rel="noopener nofollow ugc">Jitsi Meet</a></h3>
+
+  <p>Join a WebRTC video conference powered by the Jitsi Videobridge</p>
+
+
+  </article>
+
+  <div class="onebox-metadata">
+    
+    
+  </div>
+
+  <div style="clear: both"></div>
+</aside>
+
+<p>If you prefer to chip in on Mastodon, there’s a discussion thread here:</p><aside class="onebox allowlistedgeneric" data-onebox-src="https://podcastindex.social/@agates/106513794100156732">
+  <header class="source">
+      <img src="../../uploads/default/original/1X/fd156fff11fc042ed3ec6355c45f37e207e35839.ico" class="site-icon" width="45" height="48">
+
+      <a href="https://podcastindex.social/@agates/106513794100156732" target="_blank" rel="noopener nofollow ugc" title="12:18AM - 03 July 2021">PodcastIndex Social – 3 Jul 21</a>
+  </header>
+
+  <article class="onebox-body">
+    <img src="../../uploads/default/original/2X/e/e3a7b90ce223e1e05e7d8df5db6d2988e8a39692.jpeg" class="thumbnail onebox-avatar" width="400" height="400">
+
+<h3><a href="https://podcastindex.social/@agates/106513794100156732" target="_blank" rel="noopener nofollow ugc">Alecks Gates (@agates@podcastindex.social)</a></h3>
+
+  <p>@adam @dave 
+
+1) We plan on using ActivityPub for comments.  This already exists and works.  That's ActivityPub (Mastodon style).  Just taking time to get to help with implementation details, we're catching up on other things.
+2) I'm like you, Adam,...</p>
+
+
+  </article>
+
+  <div class="onebox-metadata">
+    
+    
+  </div>
+
+  <div style="clear: both"></div>
+</aside>
+
+<p>Would be great to hear from you <img src="../../images/emoji/twitter/slight_smile.png@v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+        </div>
+
+        <meta itemprop='headline' content='Using ActivityPub for Podcast Comments (exploration)'>
+          <meta itemprop='keywords' content='podcasting'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/VictorVenema.html'><span itemprop='name'>VictorVenema</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1909.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-07-05T19:09:21Z' class='post-time'>
+                July 5, 2021,  7:09pm
+              </time>
+              <meta itemprop='dateModified' content='2021-07-05T19:09:21Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Sounds like you know way more than I do, but just to be sure: It sounds like what you want to do for podcasts is what Indieweb does for blog posts.<br>
+<a href="https://indieweb.org" class="onebox" target="_blank" rel="noopener nofollow ugc">https://indieweb.org</a></p>
+        </div>
+
+        <meta itemprop='headline' content='Using ActivityPub for Podcast Comments (exploration)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/keunes.html'><span itemprop='name'>keunes</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1909.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-07-06T07:23:01Z' class='post-time'>
+                July 6, 2021,  7:23am
+              </time>
+              <meta itemprop='dateModified' content='2021-07-06T07:23:01Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Wouldn’t say I’m knowledgeable - at most I structured my thoughts well <img src="../../images/emoji/twitter/stuck_out_tongue.png@v=9" title=":stuck_out_tongue:" class="emoji" alt=":stuck_out_tongue:"></p>
+<p>The discussion over at Podcasting 2.0 also included the option of <a href="https://www.webmention.net" rel="noopener nofollow ugc">Webmention</a>, which seems to stem from IndieWeb. So I guess it’s relevant indeed.</p>
+        </div>
+
+        <meta itemprop='headline' content='Using ActivityPub for Podcast Comments (exploration)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1909.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-07-06T10:11:03Z' class='post-time'>
+                July 6, 2021, 10:11am
+              </time>
+              <meta itemprop='dateModified' content='2021-07-06T10:11:03Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="keunes" data-post="1" data-topic="1909">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/keunes/40/1252_2.png" class="avatar"> keunes:</div>
+<blockquote>
+<p>The loose group is now also discussing <strong>comments</strong> (via a <code>podcast:comments</code> tag), and one venue that is being explored is ActivityPub.</p>
+</blockquote>
+</aside>
+<p>ActivityPub requires a degree of dynamic behaviors (delivery, processing incoming peer data, etc) that is far above and beyond what RSS requires, so there’s some sunk cost to adoption that may act as a barrier.</p>
+<p>Where ActivityPub starts to shine is when you have to come up with the next thing to implement, after solving comments, plus how you want such software to interact with the greater web. If you need the flexibility that ActivityPub provides and have already paid the sunk cost and want other app writers to potentially integrate, then it starts to pay off dividends. If you just want a quick win for a one-off feature and less engineering work and don’t care about wider ecosystem interactions, it’s less appealing.</p>
+<p>In my humble opinion, the choice of whether to adopt AP is more philosophically about how one views growing an ecosystem – a question I can’t answer for others.</p>
+<p>Note, at the time of this writing I haven’t listened to the Podcast in the OP.</p>
+        </div>
+
+        <meta itemprop='headline' content='Using ActivityPub for Podcast Comments (exploration)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1909.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-07-07T07:45:48Z' class='post-time'>
+                July 7, 2021,  7:45am
+              </time>
+              <meta itemprop='dateModified' content='2021-07-07T07:45:48Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>The way commenting works in ActivityPub is that someone creates an object, for example a Note, and others reply to it by referencing it in the <code>inReplyTo</code> field in their notes. So it makes sense that each podcast is an actor, and each episode is an object created by that actor that people can comment on.</p>
+<p>You do need a server application of some sort for ActivityPub — no getting around that. It could be very barebones, but it at the very least needs to support other actors following yours and then sending activities out to followers. In your case it would also need to store the list of comments (replies) and return them in the <code>replies</code> collections.</p>
+        </div>
+
+        <meta itemprop='headline' content='Using ActivityPub for Podcast Comments (exploration)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1909.html">
+
+            <link itemprop="image" href="../../uploads/default/original/2X/c/caa0e11e97a992608dcfbac6b664fb86605081b8.png">
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-07-11T18:37:12Z'>
+              <time itemprop='dateModified' datetime='2021-07-11T18:42:15Z' class='post-time'>
+                July 11, 2021,  6:42pm
+              </time>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Are we talking about this Namespace or is there another one ?</p><aside class="onebox allowlistedgeneric" data-onebox-src="https://github.com/Podcastindex-org/podcast-namespace">
+  <header class="source">
+      <img src="../../uploads/default/original/1X/bad3e5f9ad67c1ddf145107ce7032ac1d7b22563.svg" class="site-icon" width="32" height="32">
+
+      <a href="https://github.com/Podcastindex-org/podcast-namespace" target="_blank" rel="noopener nofollow ugc">GitHub</a>
+  </header>
+
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/345;"><img src="../../uploads/default/optimized/2X/c/caa0e11e97a992608dcfbac6b664fb86605081b8_2_690x345.png" class="thumbnail" width="690" height="345" srcset="../../uploads/default/optimized/2X/c/caa0e11e97a992608dcfbac6b664fb86605081b8_2_690x345.png, ../../uploads/default/optimized/2X/c/caa0e11e97a992608dcfbac6b664fb86605081b8_2_1035x517.png 1.5x, ../../uploads/default/original/2X/c/caa0e11e97a992608dcfbac6b664fb86605081b8.png 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/c/caa0e11e97a992608dcfbac6b664fb86605081b8_2_10x10.png"></div>
+
+<h3><a href="https://github.com/Podcastindex-org/podcast-namespace" target="_blank" rel="noopener nofollow ugc">Podcastindex-org/podcast-namespace</a></h3>
+
+  <p>A wholistic rss namespace for podcasting. Contribute to Podcastindex-org/podcast-namespace development by creating an account on GitHub.</p>
+
+
+  </article>
+
+  <div class="onebox-metadata">
+    
+    
+  </div>
+
+  <div style="clear: both"></div>
+</aside>
+
+<p>Just opened an issue at</p><aside class="onebox githubblob" data-onebox-src="https://github.com/Podcastindex-org/activitypub-spec-work/blob/a5bcf35c83f584249e528aed32666a2cb352681b/proposal-docs/podcast-activitystream/podcast-activitystream.md">
+  <header class="source">
+
+      <a href="https://github.com/Podcastindex-org/activitypub-spec-work/blob/a5bcf35c83f584249e528aed32666a2cb352681b/proposal-docs/podcast-activitystream/podcast-activitystream.md" target="_blank" rel="noopener nofollow ugc">github.com</a>
+  </header>
+
+  <article class="onebox-body">
+    <h4><a href="https://github.com/Podcastindex-org/activitypub-spec-work/blob/a5bcf35c83f584249e528aed32666a2cb352681b/proposal-docs/podcast-activitystream/podcast-activitystream.md" target="_blank" rel="noopener nofollow ugc">Podcastindex-org/activitypub-spec-work/blob/a5bcf35c83f584249e528aed32666a2cb352681b/proposal-docs/podcast-activitystream/podcast-activitystream.md</a></h4>
+
+
+    <pre><code class="lang-md"># The Podcast ActivityStream
+
+&gt; Version 1.0 by Yassine Doghri - 2021.04.15
+
+The document aims to explain through examples and namespace definition how the existing RSS specification could be interfaced to [ActivityPub](https://www.w3.org/TR/activitypub/).
+
+This is meant as a complementary work to the existing [RSS podcast namespace specification](https://github.com/Podcastindex-org/podcast-namespace) whilst unlocking features offered by the ActivityPub protocol.
+
+## Context
+
+A Podcast show is essentially constituted of two entities. In the RSS specification, these are placed under the `&lt;channel&gt;` and `&lt;item&gt;` tags. The `&lt;channel&gt;`, referring to the Podcast, may include multiple `&lt;item&gt;` tags which are the Podcast episodes.
+
+[The ActivityPub protocol](https://www.w3.org/TR/activitypub) is a decentralized social networking protocol based upon the [ActivityStreams 2.0](https://www.w3.org/TR/activitystreams-core/) data format. This offers a base vocabulary for social interactions between decentralized servers and allows us to extend it for podcasting.
+
+The syntax for defining the ActivityStreams 2.0 data format is called [JSON-LD](https://json-ld.org/), a method of encoding linked data using JSON.
+
+Just as the RSS specification, the **Podcast ActivityStream** defines two entities:
+
+- [Podcast Actor](#the-podcast-object)
+- [PodcastEpisode Object](#the-podcastepisode-object).
+</code></pre>
+
+
+  This file has been truncated. <a href="https://github.com/Podcastindex-org/activitypub-spec-work/blob/a5bcf35c83f584249e528aed32666a2cb352681b/proposal-docs/podcast-activitystream/podcast-activitystream.md" target="_blank" rel="noopener nofollow ugc">show original</a>
+
+  </article>
+
+  <div class="onebox-metadata">
+    
+    
+  </div>
+
+  <div style="clear: both"></div>
+</aside>
+
+        </div>
+
+        <meta itemprop='headline' content='Using ActivityPub for Podcast Comments (exploration)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/aschrijver.html'><span itemprop='name'>aschrijver</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1909.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-07-12T05:07:12Z'>
+              <time itemprop='dateModified' datetime='2021-07-12T05:41:22Z' class='post-time'>
+                July 12, 2021,  5:41am
+              </time>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote group-redaktor.me" data-username="Sebastian" data-post="6" data-topic="1909">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar"> Sebastian:</div>
+<blockquote>
+<p>Are we talking about this Namespace or is there another one ?</p>
+</blockquote>
+</aside>
+<p>This is great!! And I will add it to the <a href="https://git.feneas.org/feneas/fediverse/-/wikis/Watchlist-for-ActivityPub-developer-resources">ActivityPub Developer Resources Watchlist</a>.</p>
+<p><strong>Update</strong>: Besides the issue that <a class="mention" href="../../u/sebastian.html">@Sebastian</a> created (i.e. <a href="https://github.com/Podcastindex-org/activitypub-spec-work/issues/3">Proposal: Make the Podcast Episode Object more ActivityPub friendly</a>) I added an invitation to join us:</p>
+<aside class="onebox githubissue" data-onebox-src="https://github.com/Podcastindex-org/activitypub-spec-work/issues/4">
+  <header class="source">
+
+      <a href="https://github.com/Podcastindex-org/activitypub-spec-work/issues/4" target="_blank" rel="noopener">github.com/Podcastindex-org/activitypub-spec-work</a>
+  </header>
+
+  <article class="onebox-body">
+    <div class="github-row">
+  <div class="github-icon-container" title="Issue">
+	  <svg width="60" height="60" class="github-icon" viewbox="0 0 14 16" aria-hidden="true"><path d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
+  </div>
+
+  <div class="github-info-container">
+    <h4>
+      <a href="https://github.com/Podcastindex-org/activitypub-spec-work/issues/4" target="_blank" rel="noopener">Collaborate with SocialHub ActivityPub community</a>
+    </h4>
+
+    <div class="github-info">
+      <div class="date">
+        opened <span class="discourse-local-date" data-format="ll" data-date="2021-07-12" data-time="05:37:36" data-timezone="UTC">05:37AM - 12 Jul 21 UTC</span>
+      </div>
+
+
+      <div class="user">
+        <a href="https://github.com/aschrijver" target="_blank" rel="noopener">
+          <img alt="aschrijver" src="../../uploads/default/original/2X/6/68cbb6a3645a5276b95a9cc32851b18c95c3732a.jpeg" class="onebox-avatar-inline" width="20" height="20">
+          aschrijver
+        </a>
+      </div>
+    </div>
+
+    <div class="labels">
+    </div>
+  </div>
+</div>
+
+  <div class="github-row">
+    <p class="github-body-container">I was made aware of this repository by @sebilasse post on the SocialHub communit<span class="show-more-container"><a href="1909.html" rel="noopener" class="show-more">…</a></span><span class="excerpt hidden">y forum in [Using ActivityPub for Podcasting Comments](https://socialhub.activitypub.rocks/t/using-activitypub-for-podcast-comments-exploration/1909) thread, and I just added you to the [ActivityPub Developer Resources Watchlist](https://git.feneas.org/feneas/fediverse/-/wikis/Watchlist-for-ActivityPub-developer-resources) that I co-maintain (there's also an [AP application watchlist](https://git.feneas.org/feneas/fediverse/-/wikis/Watchlist-for-ActivityPub-apps).
+
+I highly, highly recommend you and other interested members of Podcastindex join our community, and I hereby invite you to become members. An issue on the fediverse that we need to overcome is dispersed development of ActivityPub-related interoperability projects, where valuable knowledge and insights continue to be stuck in 'siloed' federated app projects, and specification initiatives like yours.
+
+On SocialHub we can be stronger together (see also the [Spiral Island analogy](https://socialhub.activitypub.rocks/t/socialhub-and-spiral-island-a-fediverse-foundation-analogy/1543)), and various podcasting projects have either already joined (e.g. [Castopod](https://socialhub.activitypub.rocks/c/software/castopod/63)) or shown interest to join our community. Other media platforms like Peertube and Owncast are also participating.
+
+---
+
+PS. As feedback to this repo I'd like to recommend adding some more related links and explainer text to the README and to consider adding a license document (even though this repo may be meant as temp workspace). Some repo topic labels for findability would be great too (e.g. 'activitypub', 'podcasting', 'specification', etc.)
+
+PS2. As you will close this issue at certain time, maybe you'd consider mentioning SocialHub community forum in the README. Podcasting related topics can be marked with the `#podcasting` forum tag.</span></p>
+  </div>
+
+  </article>
+
+  <div class="onebox-metadata">
+    
+    
+  </div>
+
+  <div style="clear: both"></div>
+</aside>
+
+        </div>
+
+        <meta itemprop='headline' content='Using ActivityPub for Podcast Comments (exploration)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1909.html">
+
+            <link itemprop="image" href="../../uploads/default/original/2X/e/e19e32933d937397f37452df2221542e910273db.png">
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-07-12T08:40:09Z'>
+              <time itemprop='dateModified' datetime='2021-07-12T08:40:25Z' class='post-time'>
+                July 12, 2021,  8:40am
+              </time>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>But they are already here (?)<br>
+There is a category and <a class="mention" href="../../u/benjaminbellamy.html">@benjaminbellamy</a> is here and they were active at the NGI event …</p>
+<aside class="onebox category-onebox" style="box-shadow: -5px 0px #009786;">
+  <article class="onebox-body category-onebox-body">
+      <div class="aspect-image" style="--aspect-ratio:120/120;"><img src="../../uploads/default/original/2X/e/e19e32933d937397f37452df2221542e910273db.png" class="thumbnail" width="120" height="120"></div>
+    <h3>
+      <a class="badge-wrapper bullet" href="../../c/software/castopod/63.html">
+          <span class="badge-category-bg" style="background-color: #009786"></span>
+        <span class="clear-badge"><span>Castopod</span></span>
+      </a>
+    </h3>
+      <div>
+        <span class="description">
+          <p><a href="https://castopod.org/" rel="noopener nofollow ugc">Castopod</a> is an open-source hosting platform made for podcasters who want engage and interact with their audience.</p>
+        </span>
+      </div>
+  </article>
+  <div class="clearfix"></div>
+</aside>
+
+        </div>
+
+        <meta itemprop='headline' content='Using ActivityPub for Podcast Comments (exploration)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

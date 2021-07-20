@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Pherephone - SocialHub</title>
+    <link>https://socialhub.activitypub.rocks/c/software/pherephone/30</link>
+    <description>Topics in the &#39;Pherephone&#39; category An activityPub server that reblogs all the statuses of certain actors.</description>
+    
+      <lastBuildDate>Tue, 22 Oct 2019 20:34:18 +0000</lastBuildDate>
+      <atom:link href="https://socialhub.activitypub.rocks/c/software/pherephone/30.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>About Pherephone</title>
+          <dc:creator><![CDATA[qwazix]]></dc:creator>
+          <category>Pherephone</category>
+          <description><![CDATA[
+            <p>An activityPub server that reblogs all the statuses of certain actors.</p>
+<p><a href="https://github.com/writeas/pherephone" rel="nofollow noopener">pherephone</a>, from pherephonon: someone who lacks his own voice and repeats what others say.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/about-pherephone/163">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/about-pherephone/163</link>
+          <pubDate>Tue, 22 Oct 2019 20:34:18 +0000</pubDate>
+          <discourse:topicPinned>Yes</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-163</guid>
+          <source url="https://socialhub.activitypub.rocks/t/about-pherephone/163.rss">About Pherephone</source>
+        </item>
+  </channel>
+</rss>

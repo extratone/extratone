@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bookmarks - ActivityPub - SocialHub</title>
+    <meta name="description" content="I’d like to share and receive bookmarks, but the spec has some room for interpretation as to how a bookmark can be represented. This is what I have so far: 
+
+User actors have a collection called bookmarks
+
+When a user wa&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="641.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Bookmarks&#39;" href="https://socialhub.activitypub.rocks/t/bookmarks/641.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/bookmarks/641" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/bookmarks/641" />
+<meta property="og:title" content="Bookmarks" />
+<meta name="twitter:title" content="Bookmarks" />
+<meta property="og:description" content="I’d like to share and receive bookmarks, but the spec has some room for interpretation as to how a bookmark can be represented. This is what I have so far:   User actors have a collection called bookmarks  When a user wants to bookmark something, a Add{Document} activity is generated:  {   &quot;@context&quot;: &quot;https://www.w3.org/ns/activitystreams&quot;,   &quot;type&quot;: &quot;Add&quot;,   &quot;actor&quot;: &quot;https://tavern.town/users/nick&quot;,   &quot;object&quot;: {     &quot;id&quot;: &quot;https://tavern.town/objects/8dc00625-474e-405e-94e7-e9b17551e749&quot;,   ..." />
+<meta name="twitter:description" content="I’d like to share and receive bookmarks, but the spec has some room for interpretation as to how a bookmark can be represented. This is what I have so far:   User actors have a collection called bookmarks  When a user wants to bookmark something, a Add{Document} activity is generated:  {   &quot;@context&quot;: &quot;https://www.w3.org/ns/activitystreams&quot;,   &quot;type&quot;: &quot;Add&quot;,   &quot;actor&quot;: &quot;https://tavern.town/users/nick&quot;,   &quot;object&quot;: {     &quot;id&quot;: &quot;https://tavern.town/objects/8dc00625-474e-405e-94e7-e9b17551e749&quot;,   ..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="2 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="2 ❤" />
+<meta property="article:published_time" content="2020-04-25T23:52:04+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="641.html">Bookmarks</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/activitypub.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #0088CC'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>ActivityPub</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/ngerakines.html'><span itemprop='name'>ngerakines</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="641.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-25T23:52:04Z' class='post-time'>
+                April 25, 2020, 11:52pm
+              </time>
+              <meta itemprop='dateModified' content='2020-04-25T23:52:04Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’d like to share and receive bookmarks, but the spec has some room for interpretation as to how a bookmark can be represented. This is what I have so far:</p>
+<ul>
+<li>User actors have a collection called <code>bookmarks</code>
+</li>
+<li>When a user wants to bookmark something, a <code>Add{Document}</code> activity is generated:</li>
+</ul>
+<pre><code class="lang-json">{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "type": "Add",
+  "actor": "https://tavern.town/users/nick",
+  "object": {
+    "id": "https://tavern.town/objects/8dc00625-474e-405e-94e7-e9b17551e749",
+    "type": "Document",
+    "name": "Tavern Town",
+    "url": "https://tavern.town/"
+  },
+  "target": "https://tavern.town/users/nick/bookmarks"
+}
+</code></pre>
+<p>I’m avoiding using the Link type because the spec implies that Links are used to create relationships between objects and target contents:</p>
+<blockquote>
+<p>When a <code>Link</code> is used, it establishes a <a href="http://patterns.dataincubator.org/book/qualified-relation.html" rel="nofollow noopener">qualified relation</a> connecting the subject (the containing object) to the resource identified by the <code>href</code>.</p>
+</blockquote>
+<p>This makes sense to me as mentions and hashtags are types of Links specifically used to associate content, actors or collections, with objects like Notes.</p>
+<p>Another alternative would be to use the existing <a href="http://schema.org" rel="nofollow noopener">schema.org</a> taxonomy as described on <a href="https://schema.org/WebSite" rel="nofollow noopener">https://schema.org/WebSite</a>. I’m hesitant to go in this direction though.</p>
+<pre><code class="lang-json">{
+  "@context": {
+    "as": "https://www.w3.org/ns/activitystreams",
+    "schema": "http://schema.org"
+  },
+  "@id": "https://tavern.town/activities/02e029d6-e647-4ef3-b539-bb96a8f69030",
+  "@type": "as:Add",
+  "as:actor": "https://tavern.town/users/nick",
+  "as:object": {
+    "@id": "https://tavern.town/objects/8dc00625-474e-405e-94e7-e9b17551e749",
+    "@type": "schema:WebSite",
+    "schema:url": "https://tavern.town/"
+  },
+  "as:target": "https://tavern.town/users/nick/bookmarks"
+}
+</code></pre>
+<p>I was a developer on the <a href="http://del.icio.us" rel="nofollow noopener">del.icio.us</a> team years ago and have some opinions, but I’d like to get feedback.</p>
+        </div>
+
+        <meta itemprop='headline' content='Bookmarks'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/how.html'><span itemprop='name'>how</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="641.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-04-26T01:25:51Z'>
+              <time itemprop='dateModified' datetime='2020-04-26T01:32:10Z' class='post-time'>
+                April 26, 2020,  1:32am
+              </time>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi Nick,</p>
+<p>I understand a bookmark as the qualified relation between the person who makes the bookmark (represented by the actor) and the Document that is pointed at. So I would represent bookmarks as a collection of Links, where each bookmark has a Document object.</p>
+<p>You mention Document in your example. I guess you chose this over Article because of  <code>url</code>. So why not a collection of links?</p>
+<p>For me a Bookmark is to a Page what a Mention is to a Person.</p>
+<p>Does it make sense? Would you expand on why would prefer not to use <code>Link</code> in this case? I mean, I could annotate a bookmark or tag it so I can search its kind later on, not unlike what you seem to be describing.</p>
+<p>FWIW, <a href="https://gitlab.com/prismosuite/prismo/-/blob/dev/app/models/activitypub_post.rb">Prismo uses Article or Page</a>, using an absence of URL as a marker for local resources, while <a href="https://github.com/LemmyNet/lemmy/blob/a4f779bc3213eedfb894b34ee0ed9a53996cb8e0/server/src/apub/post.rs">Lemmy uses Page</a> – both are Reddit-like link aggregators.</p>
+<p><small>I used to be a heavy <a href="http://del.icio.us">del.icio.us</a> user. <img src="../../images/emoji/twitter/slight_smile.png@v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"> </small></p>
+        </div>
+
+        <meta itemprop='headline' content='Bookmarks'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/ngerakines.html'><span itemprop='name'>ngerakines</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="641.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-26T14:23:06Z' class='post-time'>
+                April 26, 2020,  2:23pm
+              </time>
+              <meta itemprop='dateModified' content='2020-04-26T14:23:06Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="how" data-post="2" data-topic="641">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/how/40/8_2.png" class="avatar"> how:</div>
+<blockquote>
+<p>You mention Document in your example. I guess you chose this over Article because of <code>url</code> . So why not a collection of links?</p>
+</blockquote>
+</aside>
+<p>Continuing with the above example, the bookmarks collection would look like this:</p>
+<pre><code class="lang-json">{
+  "@context": {
+    "as": "https://www.w3.org/ns/activitystreams"
+  },
+  "@id": "https://tavern.town/users/nick/bookmarks?page=1",
+  "@type": "as:OrderedCollectionPage",
+  "as:orderedItems": [
+    {
+      "@id": "https://tavern.town/objects/8dc00625-474e-405e-94e7-e9b17551e749",
+      "@type": "as:Document",
+      "as:name": "Tavern Town",
+      "as:tag": [
+        {
+          "@type": "as:Hashtag",
+          "as:name": "#activitypub"
+        },
+        {
+          "@type": "as:Hashtag",
+          "as:name": "#tavern"
+        }
+      ],
+      "as:url": "https://tavern.town/"
+    },
+    {
+      "@id": "https://tavern.town/objects/7b2f4d66-df08-4d24-abfd-ef9590d0492c",
+      "@type": "as:Document",
+      "as:name": "Tavern on GitLab",
+      "as:tag": [
+        {
+          "@type": "as:Hashtag",
+          "as:name": "#gitlab"
+        },
+        {
+          "@type": "as:Hashtag",
+          "as:name": "#tavern"
+        }
+      ],
+      "as:url": "https://gitlab.com/ngerakines/tavern/"
+    }
+  ],
+  "as:partOf": "https://tavern.town/users/nick/bookmarks",
+  "as:totalItems": 2
+}
+</code></pre>
+<aside class="quote no-group" data-username="how" data-post="2" data-topic="641">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/how/40/8_2.png" class="avatar"> how:</div>
+<blockquote>
+<p>Does it make sense? Would you expand on why would prefer not to use <code>Link</code> in this case? I mean, I could annotate a bookmark or tag it so I can search its kind later on, not unlike what you seem to be describing.</p>
+</blockquote>
+</aside>
+<p>Yeah, that makes sense. From what I read on <a href="https://www.w3.org/TR/activitystreams-vocabulary/#dfn-link" rel="nofollow noopener">https://www.w3.org/TR/activitystreams-vocabulary/#dfn-link</a>, the <code>Link</code> type is used to create explicit relationships between things. Take, for example, the <code>Mention</code> or <code>Hashtag</code> types. When used within an object, they create an explicit attachment between the object and the tag or actor that they reference. I’m hesitant to use the <code>Link</code> type now, because I read them as supplemental types to enhance existing types. Although they could be used on their own, I’d be worried about how activities that reference them would be modified by them, vs having them as the object of the activity.</p>
+<aside class="quote no-group" data-username="how" data-post="2" data-topic="641">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/how/40/8_2.png" class="avatar"> how:</div>
+<blockquote>
+<p>FWIW, <a href="https://gitlab.com/prismosuite/prismo/-/blob/dev/app/models/activitypub_post.rb" rel="nofollow noopener">Prismo uses Article or Page</a>, using an absence of URL as a marker for local resources, while <a href="https://github.com/LemmyNet/lemmy/blob/a4f779bc3213eedfb894b34ee0ed9a53996cb8e0/server/src/apub/post.rs" rel="nofollow noopener">Lemmy uses Page</a> – both are Reddit-like link aggregators.</p>
+</blockquote>
+</aside>
+<p>Thanks, that is good to know. On delicious, the href content is considered an arbitrary payload. There was some parsing that was done for de-duplication, but you can stuff anything inside of it. My first thought was to go with Document, because all of these are valid bookmarks in my opinion:</p>
+<ul>
+<li><a href="https://tavern.town/" rel="nofollow noopener">https://tavern.town/</a></li>
+<li><a href="mailto:nick@tavern.town">mailto:nick@tavern.town</a></li>
+<li>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4…</li>
+<li>slack://channel?id=your-channel&amp;team=your-team</li>
+</ul>
+<p>I think a <code>Document</code> is better suited to represent the different kinds and is closer to “some thing with a URL” than <code>Page</code> or <code>Article</code>. Going with <code>Document</code> (or anything that extends <code>Object</code>) allows for additional meta-data vs having a flat list of URLs in the collection as well.</p>
+        </div>
+
+        <meta itemprop='headline' content='Bookmarks'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/yvolk.html'><span itemprop='name'>yvolk</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="641.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-26T15:46:48Z' class='post-time'>
+                April 26, 2020,  3:46pm
+              </time>
+              <meta itemprop='dateModified' content='2020-04-26T15:46:48Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi <a class="mention" href="../../u/ngerakines.html">@ngerakines</a><br>
+Do you expect that Bookmarks can be not only added or removed, but updated also (e.g. to change a list of tags or name)?<br>
+I think that doing such updates via Remove + Add would be inconvenient…</p>
+        </div>
+
+        <meta itemprop='headline' content='Bookmarks'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/ngerakines.html'><span itemprop='name'>ngerakines</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="641.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-26T16:07:03Z' class='post-time'>
+                April 26, 2020,  4:07pm
+              </time>
+              <meta itemprop='dateModified' content='2020-04-26T16:07:03Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Yeah, bookmarks can be created (added to the bookmarks collection), deleted (removed from the bookmarks collection), or updated. Given that each bookmark <code>Document</code> has a unique identifier in this example, I don’t think that performing an <code>Add{Bookmark}~Collection[Bookmarks]</code> or <code>Remove{Bookmark}~Collection[Bookmarks]</code> is necessary each time the bookmark is updated.</p>
+<p>In this implementation example, each user actor would have a single bookmarks collection that the bookmark <code>Document</code> objects are added to. Additional activities could be published (<code>Create{Document}</code>, <code>Update{Document}</code>, etc.).</p>
+        </div>
+
+        <meta itemprop='headline' content='Bookmarks'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/yvolk.html'><span itemprop='name'>yvolk</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="641.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-04-26T16:26:56Z'>
+              <time itemprop='dateModified' datetime='2020-04-26T16:28:02Z' class='post-time'>
+                April 26, 2020,  4:28pm
+              </time>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Good. For a long time I (and other people with whom I discuss this) are dreaming of having a way to tag/bookmark Notes / Activities privately, and not only “Like” or “Announce” them.<br>
+Being able to have such bookmarks at a server side allows to sync them between all client devices…</p>
+<p>Actually such “bookmarks” can be used even to mute Actors…</p>
+        </div>
+
+        <meta itemprop='headline' content='Bookmarks'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

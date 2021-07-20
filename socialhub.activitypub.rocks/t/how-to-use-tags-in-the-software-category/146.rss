@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How to use tags in the Software category?</title>
+    <link>https://socialhub.activitypub.rocks/t/how-to-use-tags-in-the-software-category/146</link>
+    <description>Perhaps a #monolithic tag would be appropriate for software which does not function as a pure AP Client or Server, but instead simply communicates over S2S while subsuming the C2S part with internal business logic.</description>
+    
+    <lastBuildDate>Thu, 17 Oct 2019 18:09:49 +0000</lastBuildDate>
+    <category>Community</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/how-to-use-tags-in-the-software-category/146.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How to use tags in the Software category?</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Tags are indicative of compliance: if your implementation complies to C2S, or aims at such compliance, use <a class="hashtag" href="https://socialhub.activitypub.rocks/tags/client">#<span>client</span></a>; if it’s S2S, go <span class="hashtag">#server:</span> a single category may be listed in one or more tags. “<span class="hashtag">#monolithic</span>” doesn’t really convey anything trustworthy. <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"> In the example you gave, I would use <a class="hashtag" href="https://socialhub.activitypub.rocks/tags/server">#<span>server</span></a> only (since the C2S part is “internal”). The idea is that developers can compare implementations: so if you’re looking for C2S implementation, you would head to the <a class="hashtag" href="https://socialhub.activitypub.rocks/tags/client">#<span>client</span></a> tag. Maybe we could rename these tags: <span class="hashtag">#c2s</span>, <span class="hashtag">#s2s</span> but this maybe become confusing with <a class="hashtag" href="/c/activitypub/c2s/6">#<span>activitypub:c2s</span></a> and <a class="hashtag" href="/c/activitypub/s2s/7">#<span>activitypub:s2s</span></a>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/how-to-use-tags-in-the-software-category/146/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/how-to-use-tags-in-the-software-category/146/2</link>
+        <pubDate>Thu, 17 Oct 2019 18:09:05 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-146-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/how-to-use-tags-in-the-software-category/146.rss">How to use tags in the Software category?</source>
+      </item>
+      <item>
+        <title>How to use tags in the Software category?</title>
+        <dc:creator><![CDATA[trwnh]]></dc:creator>
+        <description><![CDATA[
+            <p>Perhaps a <span class="hashtag">#monolithic</span> tag would be appropriate for software which does not function as a pure AP Client or Server, but instead simply communicates over S2S while subsuming the C2S part with internal business logic.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/how-to-use-tags-in-the-software-category/146/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/how-to-use-tags-in-the-software-category/146/1</link>
+        <pubDate>Fri, 11 Oct 2019 04:50:01 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-146-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/how-to-use-tags-in-the-software-category/146.rss">How to use tags in the Software category?</source>
+      </item>
+  </channel>
+</rss>

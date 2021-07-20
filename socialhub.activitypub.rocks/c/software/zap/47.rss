@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Zap - SocialHub</title>
+    <link>https://socialhub.activitypub.rocks/c/software/zap/47</link>
+    <description>Topics in the &#39;Zap&#39; category Zap is a webserver app which implements a decentralised social network with more privacy and less drama.</description>
+    
+      <lastBuildDate>Wed, 29 Jul 2020 15:44:16 +0000</lastBuildDate>
+      <atom:link href="https://socialhub.activitypub.rocks/c/software/zap/47.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Zap&#39;s extensions to ActivityPub</title>
+          <dc:creator><![CDATA[grishka]]></dc:creator>
+          <category>Zap</category>
+          <description><![CDATA[
+            <ul>
+<li>There apparently are wall posts. How do these federate?</li>
+<li>There’s <code>zot:commentPolicy</code> to limit who can comment on a post. What are the possible values of this field? Is it only set per post, or it can have a default value per actor?</li>
+<li>Can a post owner delete others’ comments on their post? If so, how does this federate? Is this simply the usual <code>Delete{Note}</code>?</li>
+</ul>
+<p>(I did see <a href="https://framagit.org/zot/zap/-/blob/release/FEDERATION.md" rel="nofollow noopener">this</a>, but it doesn’t answer any of my questions)</p>
+            <p><small>7 posts - 4 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/zaps-extensions-to-activitypub/829">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/zaps-extensions-to-activitypub/829</link>
+          <pubDate>Wed, 29 Jul 2020 15:44:16 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-829</guid>
+          <source url="https://socialhub.activitypub.rocks/t/zaps-extensions-to-activitypub/829.rss">Zap&#39;s extensions to ActivityPub</source>
+        </item>
+        <item>
+          <title>About Zap</title>
+          <dc:creator><![CDATA[macgirvin]]></dc:creator>
+          <category>Zap</category>
+          <description><![CDATA[
+            <p>Zap is a webserver app which implements a decentralised social network with more privacy and less drama.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/about-zap/527">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/about-zap/527</link>
+          <pubDate>Sun, 23 Feb 2020 13:35:42 +0000</pubDate>
+          <discourse:topicPinned>Yes</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-527</guid>
+          <source url="https://socialhub.activitypub.rocks/t/about-zap/527.rss">About Zap</source>
+        </item>
+  </channel>
+</rss>

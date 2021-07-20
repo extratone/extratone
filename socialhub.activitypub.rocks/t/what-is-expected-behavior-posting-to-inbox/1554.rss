@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>What is Expected Behavior POSTing to Inbox?</title>
+    <link>https://socialhub.activitypub.rocks/t/what-is-expected-behavior-posting-to-inbox/1554</link>
+    <description>This is more of a &quot;Server to Server to Client&quot; question, but this feels like the best place for it.
+
+I&#39;m trying to implement very basic ActivityPub features in my [Little Library](https://github.com/Alamantus/little-library/tree/activitypub) (link to `activitypub` branch in GitHub) app that allows other accounts to `Follow` it so they can get updates in their timeline when a book is added or removed. So far, I have succeeded in `Accept`ing incoming `Follow` requests and removing followers on `Undo{Follow}` and `Delete` activities, but I&#39;m not sure if I&#39;m sending my `Create` activities correctly because when I send it to the follower (my Mastodon account), it does not appear to show up in my Mastodon timeline at all.
+
+The actual process involves running through a queue of followers and sending them the activity, but here are the most relevant lines of code in GitHub:
+
+- [createActivity method](https://github.com/Alamantus/little-library/blob/74d6c55c244a6acb12583cb5b03e1936c0de9e5e/server.js#L363-L400) (generates the `Create{Note}` activity that is sent)
+- [sendActivity method](https://github.com/Alamantus/little-library/blob/74d6c55c244a6acb12583cb5b03e1936c0de9e5e/server.js#L402-L433) (actually `POST`s the activity to the target inbox)
+
+I&#39;m not receiving any errors or anything after sending to my Mastodon inbox, but it&#39;s not showing on my timeline like other messages. Am I missing something required to get it to show up in the follower&#39;s timeline?</description>
+    
+    <lastBuildDate>Fri, 02 Apr 2021 19:18:52 +0000</lastBuildDate>
+    <category>Mastodon</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/what-is-expected-behavior-posting-to-inbox/1554.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>What is Expected Behavior POSTing to Inbox?</title>
+        <dc:creator><![CDATA[Alamantus]]></dc:creator>
+        <description><![CDATA[
+            <p>Oh dang if you get a chance and you’re ok with it, it would be awesome if you could check the logs! The activities would be coming from <code>https://ap2.library.alamantus.com/activitypub/actor</code> and being sent to whatever the inbox is for <code>@Alamantus@cybre.space</code> is.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/what-is-expected-behavior-posting-to-inbox/1554/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/what-is-expected-behavior-posting-to-inbox/1554/5</link>
+        <pubDate>Fri, 02 Apr 2021 19:18:52 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1554-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/what-is-expected-behavior-posting-to-inbox/1554.rss">What is Expected Behavior POSTing to Inbox?</source>
+      </item>
+      <item>
+        <title>What is Expected Behavior POSTing to Inbox?</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p>happy to look into the <a href="http://cybre.space">cybre.space</a> logs for you when I get a second <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/stuck_out_tongue.png?v=9" title=":stuck_out_tongue:" class="emoji" alt=":stuck_out_tongue:"></p>
+<p>I <em>think</em> the thing you did with cc: followers should be sufficient? I’d have to look in more detail though.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/what-is-expected-behavior-posting-to-inbox/1554/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/what-is-expected-behavior-posting-to-inbox/1554/4</link>
+        <pubDate>Fri, 02 Apr 2021 17:41:55 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1554-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/what-is-expected-behavior-posting-to-inbox/1554.rss">What is Expected Behavior POSTing to Inbox?</source>
+      </item>
+      <item>
+        <title>What is Expected Behavior POSTing to Inbox?</title>
+        <dc:creator><![CDATA[Alamantus]]></dc:creator>
+        <description><![CDATA[
+            <p>Really? Well that’s slightly comforting… I don’t need to include the inbox I’m sending to in the <code>to</code> or <code>cc</code> or <code>bcc</code> field or anything like that? Would it help/hurt if I did?</p>
+<p>I can’t easily look at the logs because I’m testing using live instances I don’t own like cybre.space and toot.cafe, but I guess I’ll have to figure out a good way to set one up to test with huh?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/what-is-expected-behavior-posting-to-inbox/1554/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/what-is-expected-behavior-posting-to-inbox/1554/3</link>
+        <pubDate>Fri, 02 Apr 2021 17:30:12 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1554-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/what-is-expected-behavior-posting-to-inbox/1554.rss">What is Expected Behavior POSTing to Inbox?</source>
+      </item>
+      <item>
+        <title>What is Expected Behavior POSTing to Inbox?</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m not seeing anything obviously incorrect here, you’ll have to look at the mastodon server logs for more information</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/what-is-expected-behavior-posting-to-inbox/1554/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/what-is-expected-behavior-posting-to-inbox/1554/2</link>
+        <pubDate>Fri, 02 Apr 2021 14:45:14 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1554-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/what-is-expected-behavior-posting-to-inbox/1554.rss">What is Expected Behavior POSTing to Inbox?</source>
+      </item>
+      <item>
+        <title>What is Expected Behavior POSTing to Inbox?</title>
+        <dc:creator><![CDATA[Alamantus]]></dc:creator>
+        <description><![CDATA[
+            <p>This is more of a “Server to Server to Client” question, but this feels like the best place for it.</p>
+<p>I’m trying to implement very basic ActivityPub features in my <a href="https://github.com/Alamantus/little-library/tree/activitypub" rel="noopener nofollow ugc">Little Library</a> (link to <code>activitypub</code> branch in GitHub) app that allows other accounts to <code>Follow</code> it so they can get updates in their timeline when a book is added or removed. So far, I have succeeded in <code>Accept</code>ing incoming <code>Follow</code> requests and removing followers on <code>Undo{Follow}</code> and <code>Delete</code> activities, but I’m not sure if I’m sending my <code>Create</code> activities correctly because when I send it to the follower (my Mastodon account), it does not appear to show up in my Mastodon timeline at all.</p>
+<p>The actual process involves running through a queue of followers and sending them the activity, but here are the most relevant lines of code in GitHub:</p>
+<ul>
+<li>
+<a href="https://github.com/Alamantus/little-library/blob/74d6c55c244a6acb12583cb5b03e1936c0de9e5e/server.js#L363-L400" rel="noopener nofollow ugc">createActivity method</a> (generates the <code>Create{Note}</code> activity that is sent)</li>
+<li>
+<a href="https://github.com/Alamantus/little-library/blob/74d6c55c244a6acb12583cb5b03e1936c0de9e5e/server.js#L402-L433" rel="noopener nofollow ugc">sendActivity method</a> (actually <code>POST</code>s the activity to the target inbox)</li>
+</ul>
+<p>I’m not receiving any errors or anything after sending to my Mastodon inbox, but it’s not showing on my timeline like other messages. Am I missing something required to get it to show up in the follower’s timeline?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/what-is-expected-behavior-posting-to-inbox/1554/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/what-is-expected-behavior-posting-to-inbox/1554/1</link>
+        <pubDate>Thu, 01 Apr 2021 23:28:40 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1554-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/what-is-expected-behavior-posting-to-inbox/1554.rss">What is Expected Behavior POSTing to Inbox?</source>
+      </item>
+  </channel>
+</rss>

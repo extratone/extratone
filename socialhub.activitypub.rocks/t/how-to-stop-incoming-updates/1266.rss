@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How to stop incoming updates?</title>
+    <link>https://socialhub.activitypub.rocks/t/how-to-stop-incoming-updates/1266</link>
+    <description>Since I experimented with ActivityPub my server keeps getting updates about user deletions from other instances like mastodon.social
+
+How can I stop those?</description>
+    
+    <lastBuildDate>Fri, 19 Feb 2021 19:01:13 +0000</lastBuildDate>
+    <category>Server to Server</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/how-to-stop-incoming-updates/1266.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How to stop incoming updates?</title>
+        <dc:creator><![CDATA[aveltens]]></dc:creator>
+        <description><![CDATA[
+            <p>I locked up my inbox for a while and the servers eventually gave up sending those updates</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/how-to-stop-incoming-updates/1266/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/how-to-stop-incoming-updates/1266/3</link>
+        <pubDate>Fri, 19 Feb 2021 19:01:13 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1266-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/how-to-stop-incoming-updates/1266.rss">How to stop incoming updates?</source>
+      </item>
+      <item>
+        <title>How to stop incoming updates?</title>
+        <dc:creator><![CDATA[Claire]]></dc:creator>
+        <description><![CDATA[
+            <p>Not really, to ensure accounts are deleted across the fediverse, Mastodon sends <code>Delete</code> on <code>Actor</code>s to all the inboxes (or shared inboxes) it knows. It’s the only kind of updates Mastodon currently sends when there are no follow relationships, though.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/how-to-stop-incoming-updates/1266/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/how-to-stop-incoming-updates/1266/2</link>
+        <pubDate>Fri, 08 Jan 2021 18:00:27 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1266-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/how-to-stop-incoming-updates/1266.rss">How to stop incoming updates?</source>
+      </item>
+      <item>
+        <title>How to stop incoming updates?</title>
+        <dc:creator><![CDATA[aveltens]]></dc:creator>
+        <description><![CDATA[
+            <p>Since I experimented with ActivityPub my server keeps getting updates about user deletions from other instances like mastodon.social</p>
+<p>How can I stop those?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/how-to-stop-incoming-updates/1266/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/how-to-stop-incoming-updates/1266/1</link>
+        <pubDate>Thu, 07 Jan 2021 08:56:47 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1266-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/how-to-stop-incoming-updates/1266.rss">How to stop incoming updates?</source>
+      </item>
+  </channel>
+</rss>

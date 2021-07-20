@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Fediverse Enhancement Proposals - SocialHub</title>
+    <link>https://socialhub.activitypub.rocks/c/activitypub/fep/54</link>
+    <description>Topics in the &#39;Fediverse Enhancement Proposals&#39; category Fediverse Enhancement Proposals (FEP) index and discussion.</description>
+    
+      <lastBuildDate>Sat, 13 Feb 2021 15:08:02 +0000</lastBuildDate>
+      <atom:link href="https://socialhub.activitypub.rocks/c/activitypub/fep/54.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>FEP-400e: Publicly-appendable ActivityPub collections</title>
+          <dc:creator><![CDATA[grishka]]></dc:creator>
+          <category>Fediverse Enhancement Proposals</category>
+          <description><![CDATA[
+            <p>The following FEP was proposed by <a class="mention" href="/u/grishka">@grishka</a> and received on 2021-02-12:</p>
+<blockquote>
+<h1><a href="https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/src/commit/f94077e1514928c2d2ae79d86a5953c93874b73d/feps/fep-400e.md" rel="noopener nofollow ugc">FEP-400e: Publicly-appendable ActivityPub collections</a></h1>
+<h2>Summary</h2>
+<p>In social media, it’s a frequent pattern when there’s a collection owned by someone that other people can contribute to. Examples include:</p>
+<ul>
+<li>Walls where others can post</li>
+<li>Forums as well as topics within</li>
+<li>Photo albums in groups where group members can add photos</li>
+</ul>
+<p>Currently, there is no generic way to signify that an object was created as part of a collection and should only be considered in its context.</p>
+<p>This proposal describes how ActivityPub servers and clients could specify collections to which objects created by their actors belong.</p>
+</blockquote>
+<p>We ask all ActivityPub developers to which this is relevant to carefully read the specification text and provide your feedback!</p>
+            <p><small>18 posts - 3 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/fep-400e-publicly-appendable-activitypub-collections/1438">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/fep-400e-publicly-appendable-activitypub-collections/1438</link>
+          <pubDate>Sat, 13 Feb 2021 15:08:02 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1438</guid>
+          <source url="https://socialhub.activitypub.rocks/t/fep-400e-publicly-appendable-activitypub-collections/1438.rss">FEP-400e: Publicly-appendable ActivityPub collections</source>
+        </item>
+        <item>
+          <title>FEP-f1d5: NodeInfo in Fediverse Software</title>
+          <dc:creator><![CDATA[system]]></dc:creator>
+          <category>Fediverse Enhancement Proposals</category>
+          <description><![CDATA[
+            <p>source: <a href="https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/src/branch/main/feps/fep-f1d5.md">https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/src/branch/main/feps/fep-f1d5.md</a></p>
+            <p><small>12 posts - 5 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190</link>
+          <pubDate>Sun, 13 Dec 2020 21:39:59 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1190</guid>
+          <source url="https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190.rss">FEP-f1d5: NodeInfo in Fediverse Software</source>
+        </item>
+        <item>
+          <title>FEP-8fcf: Followers collection synchronization across servers</title>
+          <dc:creator><![CDATA[system]]></dc:creator>
+          <category>Fediverse Enhancement Proposals</category>
+          <description><![CDATA[
+            <p>source: <a href="https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/src/branch/main/feps/fep-8fcf.md">https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/src/branch/main/feps/fep-8fcf.md</a></p>
+<hr>
+            <p><small>48 posts - 10 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/fep-8fcf-followers-collection-synchronization-across-servers/1172">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/fep-8fcf-followers-collection-synchronization-across-servers/1172</link>
+          <pubDate>Tue, 01 Dec 2020 17:25:06 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1172</guid>
+          <source url="https://socialhub.activitypub.rocks/t/fep-8fcf-followers-collection-synchronization-across-servers/1172.rss">FEP-8fcf: Followers collection synchronization across servers</source>
+        </item>
+        <item>
+          <title>FEP-a4ed: The Fediverse Enhancement Proposal Process</title>
+          <dc:creator><![CDATA[system]]></dc:creator>
+          <category>Fediverse Enhancement Proposals</category>
+          <description><![CDATA[
+            <p>source: <a href="https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/src/branch/main/feps/fep-a4ed.md">https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/src/branch/main/feps/fep-a4ed.md</a></p>
+<hr>
+<p>authors: <a class="mention" href="/u/pukkamustard">@pukkamustard</a><br>
+status: FINAL<br>
+dateReceived: 2020-10-16<br>
+dateFinalized: 2021-01-18</p>
+<h1>FEP-a4ed: The Fediverse Enhancement Proposal Process</h1>
+<h2>Summary</h2>
+<p>A Fediverse Enhancement Proposal (FEP) is a document that provides information to the Fediverse community. The goal of a FEP is to improve interoperability and well-being of diverse services, applications and communities that form the Fediverse.</p>
+<p>This document describes the scope, format and process of publishing Fediverse Enhancement Proposals.</p>
+<h2>Scope and Objectives</h2>
+<p>A Fediverse Enhancement Proposal (FEP) should be a concise and focused documentation of a specific topic that is of interest to the Fediverse community.</p>
+<p>A proposal should always have the intention of improving the interoperability and well-being of diverse services, applications and community of the Fediverse.</p>
+<p>The Fediverse includes applications, services and communities using the ActivityPub protocol and other protocols that foster decentralized and diverse social media and culture.</p>
+<p>Proposals may include descriptions of technical protocols and mechanism, documentation of experimental work or current best practices.</p>
+<p>Proposals are not limited to technical topics and may focus on social and cultural aspects.</p>
+<p>Proposals may be entertaining and humorous (unlike this proposal).</p>
+<h2>Language, Document Structure and Format</h2>
+<p>All Fediverse Enhancement Proposals must be written in English, be properly formatted as CommonMark [CommonMark] and be reasonably grammatical.</p>
+<p>Authors should use inclusive language and examples and refrain from using oppressive terminology [Internet-Draft-terminology].</p>
+<h3>Proposal Title and Identifier</h3>
+<p>Every Fediverse Enhancement Proposals must have a descriptive title.</p>
+<p>An identifier is computed from the proposal title as the first 7 digits of the sha256 hash (in hex). The identifier can be computed from the title with standard Unix tools:</p>
+<pre><code class="lang-auto">$ echo -n "The Fediverse Enhancement Proposal Process" | sha256sum | cut -c-4
+a4ed
+</code></pre>
+<p>By using the hash of the title as identifier we reduce the burden on editors to assign unique ids. This require proposal titles to be unique.</p>
+<h3>Metadata</h3>
+<p>Proposal metadata is placed at the top of the document as key-value pairs between opening and closing ~—~.</p>
+<p>Following metadata key-value pairs may be placed at the top of a proposal:</p>
+<ul>
+<li>
+<code>authors</code>: A comma separated list of authors of the proposal.</li>
+<li>
+<code>status</code>: Indicates the proposal status. Can be either <code>DRAFT</code>, <code>WITHDRAWN</code> or <code>FINAL</code>.</li>
+<li>
+<code>dateReceived</code>: Date of when the proposal was added to the repository (when status is set to <code>DRAFT</code>).</li>
+<li>
+<code>dateWithdrawn</code>: Date of when the proposal status was set to <code>WITHDRAWN</code> (only for proposals with status <code>WITHDRAWN</code>).</li>
+<li>
+<code>dateFinalized</code>: Date of when the proposal status was set to <code>FINAL</code> (only for proposals with status <code>FINAL</code>).</li>
+<li>
+<code>relatedFeps</code>: A comma separated list of related FEPs (e.g. <code>FEP-a4ed, FEP-141a, FEP-686f</code>).</li>
+</ul>
+<p>Future FEPs may specify additional metadata fields.</p>
+<h3>Required Sections</h3>
+<p>Every FEP should include at least following sections:</p>
+<ul>
+<li>Summary: A short (no more than 200 words) summary of the proposal.</li>
+<li>Copyright: Indicating that the proposal has been placed in the public domain.</li>
+</ul>
+<p>Following sections may be included in a proposal:</p>
+<ul>
+<li>History: An overview of previous related efforts and how they relate to the proposal.</li>
+<li>Implementations: If applicable an overview of services or applications that implement the proposal at time of submission.</li>
+<li>References: A list of documents and resources referenced by the proposal.</li>
+</ul>
+<h3>Copyright</h3>
+<p>Fediverse Enhancement Proposals must be placed in the public domain by the authors with a CC0 1.0 Universal (CC0 1.0) Public Domain Dedication.</p>
+<h2>The Fediverse Enhancement Proposals Process</h2>
+<pre><code class="lang-auto">                                     +-------+
+                           +-------&gt; | FINAL | 
+                           |         +-------+
+         +-------+         |
+--------&gt;| DRAFT | --------+
+         +-------+         |
+             ^             |         +-----------+
+             |             +-------&gt; | WITHDRAWN |
+             |                       +-----------+
+             |                             |
+             +-----------------------------+
+</code></pre>
+<ol>
+<li>A Fediverse Enhancement Proposal can be submitted by individuals or groups of individuals (authors). See the <code>SUBMISSION.md</code> file for a list of accepted submission methods.</li>
+<li>Within seven days one of the editors will read and respond to the proposal. The editor checks if the proposal conforms to the required structure and fits the scope and objective of the FEPs. The editor may request the authors to clarify, justify, or withdraw the proposal. Such a request must not reflect the personal bias of an editor. Rather, it will be made strictly to maintain a high quality of submissions. The editors reserve the right to reject a submission when a proposal amounts to blatant misuse of the process. The authors may seek feedback from the wider community if the submitted proposal is rejected or clarifications are requested.</li>
+<li>If a FEP editor approves a submission it receives the status <code>DRAFT</code> and is added to the repository.</li>
+<li>While a proposal has the status <code>DRAFT</code>:
+<ul>
+<li>Authors are responsible for initiating community discussion and collecting feedback.</li>
+<li>Authors may submit updates to the proposal which will be checked in to the repository by an editor.</li>
+<li>Authors may withdraw the submission upon which an editor will set the status of the submission to <code>WITHDRAWN</code>.</li>
+</ul>
+</li>
+<li>After at least 60 days the authors may request the proposal to be finalized. This is done by requesting final comments on the proposal.
+<ul>
+<li>If there are no community objections within 14 days and the authors can show that they have initiated sufficient awareness and discussion of the proposal, an editor will set the status of the submission to <code>FINAL</code>.</li>
+</ul>
+</li>
+<li>If after 120 days the authors have not requested the proposal to be finalized or there is no community consensus, an editor will set the status of the submission to <code>WITHDRAWN</code>.</li>
+<li>A proposal with status <code>FINAL</code> can not be changed or updated.</li>
+<li>A proposal with status <code>WITHDRAWN</code> remains in the repository and can be resubmitted.</li>
+</ol>
+<h3>Editors</h3>
+<p>A list of editors is maintained in the <code>EDITORS.md</code> file at the root of the FEP repository.</p>
+<h3>Submission Methods</h3>
+<p>A list of methods in which a proposal may be submitted is maintained in the <code>SUBMISSION.md</code> file at the root of the FEP repository.</p>
+<h2>History</h2>
+<p>The process and format described in this proposal is influenced by other community driven documentation efforts such as the BitTorrent Enhancement Proposal Process [BEP-1], Scheme Request for Implementation [SRFI] and the IETF RFC Series [RFC-8729].</p>
+<h2>References</h2>
+<ul>
+<li>[SRFI] Dave Mason, <a href="https://srfi.schemers.org/srfi-process.html">Scheme Request For Implementation - Process</a>
+</li>
+<li>[BEP-1] David Harrison, <a href="http://bittorrent.org/beps/bep_0001.html">The BitTorrent Enhancement Proposal Process</a>, 2008</li>
+<li>[RFC-8729] Housley, R., Ed., and L. Daigle, Ed., <a href="https://www.rfc-editor.org/info/rfc8729">The RFC Series and RFC Editor</a>, 2020</li>
+<li>[CommonMark] John MacFarlane, <a href="https://spec.commonmark.org/0.29/">CommonMark Spec</a> Version 0.29, 2019</li>
+<li>[Internet-Draft-terminology] Mallory Knodel, <a href="https://tools.ietf.org/html/draft-knodel-terminology">Terminology, Power and Oppressive Language</a>
+</li>
+</ul>
+<h2>Copyright</h2>
+<p>CC0 1.0 Universal (CC0 1.0) Public Domain Dedication</p>
+<p>To the extent possible under law, the authors of this Fediverse Enhancement Proposal have waived all copyright and related or neighboring rights to this work.</p>
+            <p><small>33 posts - 9 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/fep-a4ed-the-fediverse-enhancement-proposal-process/1171">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/fep-a4ed-the-fediverse-enhancement-proposal-process/1171</link>
+          <pubDate>Tue, 01 Dec 2020 17:19:20 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1171</guid>
+          <source url="https://socialhub.activitypub.rocks/t/fep-a4ed-the-fediverse-enhancement-proposal-process/1171.rss">FEP-a4ed: The Fediverse Enhancement Proposal Process</source>
+        </item>
+        <item>
+          <title>About the Fediverse Enhancement Proposals</title>
+          <dc:creator><![CDATA[how]]></dc:creator>
+          <category>Fediverse Enhancement Proposals</category>
+          <description><![CDATA[
+            <p>Fediverse Enhancement Proposals (FEP) index and discussion.</p>
+<h2>Introduction</h2>
+<aside class="quote no-group" data-username="pukkamustard" data-post="2" data-topic="1171">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/pukkamustard/40/111_2.png" class="avatar"><a href="https://socialhub.activitypub.rocks/t/fep-a4ed-the-fediverse-enhancement-proposal-process/1171/2">FEP-a4ed: The Fediverse Enhancement Proposal Process</a>
+</div>
+<blockquote>
+<p>A Fediverse Enhancement Proposal (FEP) is a document that provides information to the Fediverse community. The goal of a FEP is to improve interoperability and well-being of diverse services, applications and communities that form the Fediverse.</p>
+</blockquote>
+</aside>
+<h3>Discussing an existing FEP</h3>
+<p>FEPs are maintained in the <a href="https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/">ActivityPubDev Fediverse-Enhancement-Proposals repository</a>.</p>
+<p>To each FEP there, a local topic here is indexed below. Everyone can discuss FEPs here and propose changes in the repository.</p>
+<h3>Making a New Proposal</h3>
+<p>A FEP usually follows from a conversation. Once the conversation starts shaping up, it’s time to <a href="https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/src/branch/main/SUBMISSION_METHODS"><strong>make a formal submission</strong></a>. Once the newly created FEP is available from the repository, a new topic is created in the <a class="hashtag" href="/c/activitypub/fep/54">#<span>activitypub:fep</span></a> category by <a class="mention-group" href="/groups/activitypub.hosts">@activitypub.hosts</a>.</p>
+<p>See <a href="https://socialhub.activitypub.rocks/t/about-the-fediverse-enhancement-proposals/1169" class="inline-onebox">How to create a FEP topic</a></p>
+<h2>Published FEPs</h2>
+<p>Once a FEP is <code>FINAL</code>, the <code>draft</code> tag is replaced by a <code>final</code> tag, and the FEP content can be pasted to the first post (retaining the original link to the repository) to be published. The published page will be available at, e.g., <code>/pub/fep-a4edc7b-the-fediverse-enhancement-proposal-process</code>, and can be referenced in documentation.</p>
+<hr>
+<p><a name="index"></a></p>
+<h1>FEP Index</h1>
+<p><a name="final"></a></p>
+<h2>Final</h2>
+<p><em>Accepted Federation Enhancements</em></p>
+<aside class="quote" data-post="1" data-topic="1171">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/uploads/default/original/1X/2957f9f20df131569f26dd7b28bbe7f4af5739f5.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/fep-a4ed-the-fediverse-enhancement-proposal-process/1171">FEP-a4ed: The Fediverse Enhancement Proposal Process</a> <a class="badge-wrapper  box" href="/c/activitypub/fep/54"><span class="badge-category-parent-bg" style="background-color: #0088CC;"></span><span class="badge-category-bg" style="background-color: #0088CC;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Fediverse Enhancement Proposals (FEP) index and discussion.">Fediverse Enhancement Proposals</span></a>
+  </div>
+  <blockquote>
+    source: <a href="https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/src/branch/main/feps/fep-a4ed.md">https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/src/branch/main/feps/fep-a4ed.md</a>
+  </blockquote>
+</aside>
+
+<p><a name="draft"></a></p>
+<h2>Drafts</h2>
+<p><em>Currently under consideration</em></p>
+<aside class="quote" data-post="1" data-topic="1172">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/uploads/default/original/1X/2957f9f20df131569f26dd7b28bbe7f4af5739f5.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/fep-8fcf-followers-collection-synchronization-across-servers/1172">FEP-8fcf: Followers collection synchronization across servers</a> <a class="badge-wrapper  box" href="/c/activitypub/fep/54"><span class="badge-category-parent-bg" style="background-color: #0088CC;"></span><span class="badge-category-bg" style="background-color: #0088CC;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Fediverse Enhancement Proposals (FEP) index and discussion.">Fediverse Enhancement Proposals</span></a>
+  </div>
+  <blockquote>
+    source: <a href="https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/src/branch/main/feps/fep-8fcf.md">https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/src/branch/main/feps/fep-8fcf.md</a>
+  </blockquote>
+</aside>
+<aside class="quote" data-post="1" data-topic="1190">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/uploads/default/original/1X/2957f9f20df131569f26dd7b28bbe7f4af5739f5.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190">FEP-f1d5: NodeInfo in Fediverse Software</a> <a class="badge-wrapper  box" href="/c/activitypub/fep/54"><span class="badge-category-parent-bg" style="background-color: #0088CC;"></span><span class="badge-category-bg" style="background-color: #0088CC;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Fediverse Enhancement Proposals (FEP) index and discussion.">Fediverse Enhancement Proposals</span></a>
+  </div>
+  <blockquote>
+    source: <a href="https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/src/branch/main/feps/fep-f1d5.md">https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/src/branch/main/feps/fep-f1d5.md</a>
+  </blockquote>
+</aside>
+<aside class="quote quote-modified" data-post="1" data-topic="1438">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/uploads/default/original/1X/2957f9f20df131569f26dd7b28bbe7f4af5739f5.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/fep-400e-publicly-appendable-activitypub-collections/1438">FEP-400e: Publicly-appendable ActivityPub collections</a> <a class="badge-wrapper  box" href="/c/activitypub/fep/54"><span class="badge-category-parent-bg" style="background-color: #0088CC;"></span><span class="badge-category-bg" style="background-color: #0088CC;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Fediverse Enhancement Proposals (FEP) index and discussion.">Fediverse Enhancement Proposals</span></a>
+  </div>
+  <blockquote>
+    The following FEP was proposed by <a class="mention" href="/u/grishka">@grishka</a> and received on 2021-02-12: 
+
+<a href="https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/src/commit/f94077e1514928c2d2ae79d86a5953c93874b73d/feps/fep-400e.md">FEP-400e: Publicly-appendable ActivityPub collections</a>
+Summary
+In social media, it’s a frequent pattern when there’s a collection owned by someone that other people can contribute to. Examples include: 
+
+Walls where others can post
+Forums as well as topics within
+Photo albums in groups where group members can add photos
+
+Currently, there is no generic way to signify that an object was created as part of a collection and shou…
+  </blockquote>
+</aside>
+
+<p><a name="withdrawn"></a></p>
+<h2>Withdrawn</h2>
+<p><em>No FEP has been withdrawn at this time.</em></p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/about-the-fediverse-enhancement-proposals/1168">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/about-the-fediverse-enhancement-proposals/1168</link>
+          <pubDate>Tue, 01 Dec 2020 15:22:56 +0000</pubDate>
+          <discourse:topicPinned>Yes</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1168</guid>
+          <source url="https://socialhub.activitypub.rocks/t/about-the-fediverse-enhancement-proposals/1168.rss">About the Fediverse Enhancement Proposals</source>
+        </item>
+        <item>
+          <title>Come Help: List of FEPs Needed</title>
+          <dc:creator><![CDATA[cjs]]></dc:creator>
+          <category>Fediverse Enhancement Proposals</category>
+          <description><![CDATA[
+            <p>Building off <a class="mention" href="/u/pukkamustard">@pukkamustard</a>’s <a href="https://socialhub.activitypub.rocks/t/fediverse-enhancement-proposal-fep/1059">FEP</a> and the <a href="https://socialhub.activitypub.rocks/t/fep-a4edc7b-the-fediverse-enhancement-proposal-process/1090">initial proposed process</a> over at <a href="https://git.activitypub.dev" rel="noopener nofollow ugc">https://git.activitypub.dev</a>, there’s a list of FEPs that are missing that could document the current Fediverse better:</p>
+<ul>
+<li>webfinger: <a class="mention" href="/u/tinyrabbit">@tinyrabbit</a> + ?</li>
+<li>http signatures: ?</li>
+<li>federating Block activities: ?</li>
+<li>custom emojis: ?</li>
+<li>e2e encryption: ?</li>
+<li>nodeinfo2: ?</li>
+<li>federating.md: <a class="mention" href="/u/darius">@darius</a>
+</li>
+<li>chat: <a class="mention" href="/u/lain">@lain</a>
+</li>
+<li>…?</li>
+</ul>
+<p>(I am not here to say which of these I do/don’t endorse, just figured all should be considered for FEP)</p>
+<p>I’ve “volunteered” a few folks I think that had expressed something before. If I’m wrong, let me know. <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Anyone else want to sign up / pair up for writing these? Also, what other topics are we missing?</p>
+            <p><small>11 posts - 7 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097</link>
+          <pubDate>Tue, 20 Oct 2020 15:56:52 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1097</guid>
+          <source url="https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097.rss">Come Help: List of FEPs Needed</source>
+        </item>
+  </channel>
+</rss>

@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Suggestion: a custom URL scheme handler as a streamlined UX for cross-instance interactions on the web - ActivityPub - SocialHub</title>
+    <meta name="description" content="Currently, there’s no easy way to do something with a public post on an instance where you don’t have an account. 
+
+Mastodon and Pleroma open a popup where you have to input your username@domain, get redirected to your i&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="504.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Suggestion: a custom URL scheme handler as a streamlined UX for cross-instance interactions on the web&#39;" href="504.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/suggestion-a-custom-url-scheme-handler-as-a-streamlined-ux-for-cross-instance-interactions-on-the-web/504" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/suggestion-a-custom-url-scheme-handler-as-a-streamlined-ux-for-cross-instance-interactions-on-the-web/504" />
+<meta property="og:title" content="Suggestion: a custom URL scheme handler as a streamlined UX for cross-instance interactions on the web" />
+<meta name="twitter:title" content="Suggestion: a custom URL scheme handler as a streamlined UX for cross-instance interactions on the web" />
+<meta property="og:description" content="Currently, there’s no easy way to do something with a public post on an instance where you don’t have an account.   Mastodon and Pleroma open a popup where you have to input your username@domain, get redirected to your instance, and do with the post whatever you intended to do (it just opens the post, but now on your instance). Not very streamlined and a little bit confusing. Some software just doesn’t do anything for this. For example, if I want to remotely follow a Pixelfed user from Mastodon,..." />
+<meta name="twitter:description" content="Currently, there’s no easy way to do something with a public post on an instance where you don’t have an account.   Mastodon and Pleroma open a popup where you have to input your username@domain, get redirected to your instance, and do with the post whatever you intended to do (it just opens the post, but now on your instance). Not very streamlined and a little bit confusing. Some software just doesn’t do anything for this. For example, if I want to remotely follow a Pixelfed user from Mastodon,..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="3 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="13 ❤" />
+<meta property="article:published_time" content="2020-02-06T14:20:01+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="504.html">Suggestion: a custom URL scheme handler as a streamlined UX for cross-instance interactions on the web</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/activitypub.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #0088CC'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>ActivityPub</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="504.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-02-06T14:20:01Z' class='post-time'>
+                February 6, 2020,  2:20pm
+              </time>
+              <meta itemprop='dateModified' content='2020-02-06T14:20:01Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Currently, there’s no easy way to do something with a public post on an instance where you don’t have an account.</p>
+<ul>
+<li>Mastodon and Pleroma open a popup where you have to input your username@domain, get redirected to your instance, and do with the post whatever you intended to do (it just opens the post, but now on your instance). Not very streamlined and a little bit confusing.</li>
+<li>Some software just doesn’t do anything for this. For example, if I want to remotely follow a Pixelfed user from Mastodon, I have to copy the URL of their profile, paste it into the search field on my instance, and click the follow button. If I try liking a Pixelfed post, it redirects me to log in on that instance, not very helpful.</li>
+<li>Some software doesn’t support even that. I still have no idea how to remotely follow things on Funkwhale.</li>
+</ul>
+<p>Overall, interacting with a post or a user you were sent a link to isn’t easy. Neither is sharing something from an arbitrary website (there are no “share to fediverse” buttons in existence for all I know).</p>
+<p>I suggest that we come up with a universal protocol for remote interactions on the web that would require as little user intervention as possible. Technologically, there’s no better fit than <a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/registerProtocolHandler" rel="nofollow noopener">custom URL protocol handlers</a>. It works in all modern browsers except Safari (iOS users suffer anyway by not being able to install apps that aren’t signed by Apple). It would go as follows:</p>
+<ol>
+<li>You log in to your instance.</li>
+<li>Your instance suggests itself as a handler for the scheme <code>web+social</code>.</li>
+<li>Whenever you want to interact with something on another instance, you would click a link that points to something like <code>web+social:follow?url=https://friends.grishka.me/grishka</code>
+</li>
+<li>Your web browser will redirect you to your instance, essentially skipping Mastodon’s “enter your username@domain”.</li>
+<li>You confirm the action on your instance.</li>
+<li>Your instance takes the action, in what amounts to just two clicks and zero text inputs.</li>
+</ol>
+<p>The general URL format would be <code>web+social:&lt;action&gt;?&lt;parameters&gt;</code>. Actions are all the things you could do with that object: <code>follow</code>, <code>like</code>, <code>announce</code>, and <code>reply</code>. Also <code>web+social:share?text=...</code> for all those share buttons on non-social websites.</p>
+<p>What do you all think about this?</p>
+        </div>
+
+        <meta itemprop='headline' content='Suggestion: a custom URL scheme handler as a streamlined UX for cross-instance interactions on the web'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="3" />
+           <span class='post-likes'>3 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../planning-the-next-socialcg-meeting-when/481/17.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/planning-the-next-socialcg-meeting-when/481/17'>
+                      <span itemprop='name'>Planning the next SocialCG meeting: when?</span>
+                    </a>
+                    <meta itemprop='position' content='2'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../planning-the-next-socialcg-meeting-when/481/16.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/planning-the-next-socialcg-meeting-when/481/16'>
+                      <span itemprop='name'>Planning the next SocialCG meeting: when?</span>
+                    </a>
+                    <meta itemprop='position' content='3'>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nightpool.html'><span itemprop='name'>nightpool</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="504.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-02-06T14:48:47Z' class='post-time'>
+                February 6, 2020,  2:48pm
+              </time>
+              <meta itemprop='dateModified' content='2020-02-06T14:48:47Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>mastodon implemented this for a while, but the browser level UX for registering a custom profile handler was pretty confusing for users and non-mastodon adoption was very low, so we eventually took it out. might be worth revisiting if there’s broad implementor interest, but it definitely requires some sort of high-touch UX to walk the user through the process</p>
+        </div>
+
+        <meta itemprop='headline' content='Suggestion: a custom URL scheme handler as a streamlined UX for cross-instance interactions on the web'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/thebaer.html'><span itemprop='name'>thebaer</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="504.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-02-06T18:28:43Z' class='post-time'>
+                February 6, 2020,  6:28pm
+              </time>
+              <meta itemprop='dateModified' content='2020-02-06T18:28:43Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>This is something I’m very very interested in solving, as the UX around cross-instance interactions is so painful. We’d be more than willing to experiment with any ideas in WriteFreely to help move this along.</p>
+<p>URL protocol handlers sound like a potential option, but I can imagine that they’ll fall short for people who have multiple accounts, including across various fedi platforms, since only one instance could be registered to handle the protocol. (I believe that’s the case? Correct me if I’m wrong.)</p>
+<p>But maybe we could combine this with something else I was thinking: a browser extension. My idea was to create one that would let you authenticate with all of your fediverse accounts, so when you want to perform a remote action, it would simply let you choose from your list of accounts to interact from. This way, you could also perform certain lightweight actions within the extension itself, and skip loading up your entire instance – such as for follows, likes, or boosts.</p>
+<p>Maybe then the <em>browser extension</em> would register as the handler for this custom protocol?</p>
+        </div>
+
+        <meta itemprop='headline' content='Suggestion: a custom URL scheme handler as a streamlined UX for cross-instance interactions on the web'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="504.html">
+
+            <link itemprop="image" href="../../uploads/default/original/1X/afd44843c539005c179fd2c6ad1e838c9b26bdcc.png">
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-02-07T09:08:41Z' class='post-time'>
+                February 7, 2020,  9:08am
+              </time>
+              <meta itemprop='dateModified' content='2020-02-07T09:08:41Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="3" data-topic="504">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/thebaer/40/131_2.png" class="avatar"> thebaer:</div>
+<blockquote>
+<p>But maybe we could combine this with something else I was thinking: a browser extension.</p>
+</blockquote>
+</aside>
+<p>I was thinking about this too, but the problem is that most mobile web browsers don’t support any kind of extensions. Granted, Safari on iOS doesn’t support URL scheme handlers either, but at least everything on Android does.</p>
+<p>Also, if you do go with the extension approach, how would the websites communicate with the extension? There isn’t a universal identifier, because each extension has its own ID (at least in Chrome), and so you’d have to refer to it as <code>chrome-extension://a bunch of random letters</code>, and each website would have to know about each extension that implements this thing. Firefox extensions probably work another way entirely, haven’t looked into that. Injecting JS into each page that provides a standardized API is <em>a way</em>, but IMO not a very good one.</p>
+<aside class="quote no-group" data-post="3" data-topic="504">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/thebaer/40/131_2.png" class="avatar"> thebaer:</div>
+<blockquote>
+<p>since only one instance could be registered to handle the protocol. (I believe that’s the case? Correct me if I’m wrong.)</p>
+</blockquote>
+</aside>
+<p>I tested it — and yes, it is like that at least in Chrome (doesn’t work at all in Vivaldi, probably have to file a bug report).<br>
+<img src="../../uploads/default/original/1X/afd44843c539005c179fd2c6ad1e838c9b26bdcc.png" alt="Снимок экрана 2020-02-07 в 12.04.37" data-base62-sha1="p5smWnf2kuxX2uLOiqWF7PZ1HyY" width="535" height="178"><br>
+This says</p>
+<blockquote>
+<p>Site <a href="http://vk.com" rel="nofollow noopener">vk.com</a> asks permission to: process all links of type “web+test” instead of <a href="http://friends.grishka.me" rel="nofollow noopener">friends.grishka.me</a> service</p>
+</blockquote>
+        </div>
+
+        <meta itemprop='headline' content='Suggestion: a custom URL scheme handler as a streamlined UX for cross-instance interactions on the web'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="504.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-02-07T10:57:15Z' class='post-time'>
+                February 7, 2020, 10:57am
+              </time>
+              <meta itemprop='dateModified' content='2020-02-07T10:57:15Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>On the multiple accounts/instances issue: it’s certainly solvable. The could be an aggregation service that registers itself as the scheme handler, and presents you with a list to select which account you’d like to use this time. Something like how Google does when you’re logged in to multiple accounts. It would then redirect you to the appropriate instance as if it was registered as the scheme handler.</p>
+        </div>
+
+        <meta itemprop='headline' content='Suggestion: a custom URL scheme handler as a streamlined UX for cross-instance interactions on the web'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/thebaer.html'><span itemprop='name'>thebaer</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="504.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-02-07T12:19:04Z' class='post-time'>
+                February 7, 2020, 12:19pm
+              </time>
+              <meta itemprop='dateModified' content='2020-02-07T12:19:04Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="4" data-topic="504">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/grishka/40/196_2.png" class="avatar"> grishka:</div>
+<blockquote>
+<p>I was thinking about this too, but the problem is that most mobile web browsers don’t support any kind of extensions.</p>
+</blockquote>
+</aside>
+<p>Yeah, I’m mostly thinking for the desktop. On mobile you have apps, including ones that support multiple accounts, so I think this is less of an issue. Otherwise for the mobile web, you might create the aggregation service you mention:</p>
+<aside class="quote no-group" data-post="5" data-topic="504">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/grishka/40/196_2.png" class="avatar"> grishka:</div>
+<blockquote>
+<p>The could be an aggregation service that registers itself as the scheme handler, and presents you with a list to select which account you’d like to use this time.</p>
+</blockquote>
+</aside>
+<hr>
+<aside class="quote no-group" data-post="4" data-topic="504">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/grishka/40/196_2.png" class="avatar"> grishka:</div>
+<blockquote>
+<p>Also, if you do go with the extension approach, how would the websites communicate with the extension?</p>
+</blockquote>
+</aside>
+<p>The browser extension would <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/protocol_handlers" rel="nofollow noopener">register for the custom protocol</a>, instead of the website doing it. So AP platforms could just include links with the custom protocol, and the extension would handle them. That way, you can also have a variety of extensions that handle this – they simply need to handle the protocol. And extension APIs are pretty standardized between Chrome and Firefox these days; it should be trivial to build an extension that works across both.</p>
+        </div>
+
+        <meta itemprop='headline' content='Suggestion: a custom URL scheme handler as a streamlined UX for cross-instance interactions on the web'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="504.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-02-07T20:47:45Z' class='post-time'>
+                February 7, 2020,  8:47pm
+              </time>
+              <meta itemprop='dateModified' content='2020-02-07T20:47:45Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>There is no doubt that protocolHandlers are the answer.<br>
+We talked on that this year in sessions at 36c3 and OFFDEM.<br>
+<a href="https://youtu.be/W70wd56i0Bg?t=2043">Video from my demo on protocolHandlers 2016 here</a></p>
+<p><strong>But some major browser vendors all called Chrome are not listening.</strong><br>
+Some show a light grey nearly invisible icon in the browsers white location bar.<br>
+Some do not allow to deregister the handler.<br>
+<a href="https://sammacbeth-fosdem.hashbase.io/#/7/2">Some do it partly wrong</a> *slide from last week FOSDEM</p>
+        </div>
+
+        <meta itemprop='headline' content='Suggestion: a custom URL scheme handler as a streamlined UX for cross-instance interactions on the web'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cochise.html'><span itemprop='name'>cochise</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="504.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-02-25T17:06:16Z' class='post-time'>
+                February 25, 2020,  5:06pm
+              </time>
+              <meta itemprop='dateModified' content='2020-02-25T17:06:16Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I like the way Firendica/Hubzilla/Zap handle this: remote authentication.<br>
+You put your WebFinger on a form on the remote server, and can interact with content, like you are on your home server.<br>
+<a href="https://zotlabs.org/rmagic" class="onebox" target="_blank" rel="nofollow noopener">https://zotlabs.org/rmagic</a></p>
+<p>I don’t like they hide UI bits for interacting until you are logged (local or remote). The best UI would be showing the like button and asking for authentication as Mastodon do, but storing the remote login, like Hubzilla does.</p>
+        </div>
+
+        <meta itemprop='headline' content='Suggestion: a custom URL scheme handler as a streamlined UX for cross-instance interactions on the web'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="504.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-02-25T17:19:10Z' class='post-time'>
+                February 25, 2020,  5:19pm
+              </time>
+              <meta itemprop='dateModified' content='2020-02-25T17:19:10Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>The URL scheme can solve discovery and not entering anything,<br>
+you need to store the remote login and the URL to it directly in the browser (see demo).</p>
+<p>When it comes to remote authentication I really like the selfauth portion of <a href="https://indieauth.net">https://indieauth.net</a><br>
+The things also known as rel-me-auth <a href="https://indieweb.org/RelMeAuth">https://indieweb.org/RelMeAuth</a></p>
+        </div>
+
+        <meta itemprop='headline' content='Suggestion: a custom URL scheme handler as a streamlined UX for cross-instance interactions on the web'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cochise.html'><span itemprop='name'>cochise</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="504.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-02-25T17:49:23Z' class='post-time'>
+                February 25, 2020,  5:49pm
+              </time>
+              <meta itemprop='dateModified' content='2020-02-25T17:49:23Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>The URL scheme can’t handle multiple accounts, as already pointed, and not all browsers have a good user experience for URL schemes.</p>
+<p>I use rel-me, and I still need to point my home domain to remote system. It’s not different from typing a webfinger today. If I do this via URL Scheme I’m limited to one identity browser wide, unless I have some identity provider that agregatte all my accounts, and register the URL scheme to this provider.</p>
+        </div>
+
+        <meta itemprop='headline' content='Suggestion: a custom URL scheme handler as a streamlined UX for cross-instance interactions on the web'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="504.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-02-25T20:34:01Z' class='post-time'>
+                February 25, 2020,  8:34pm
+              </time>
+              <meta itemprop='dateModified' content='2020-02-25T20:34:01Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <blockquote>
+<p>not all browsers have a good user experience for URL schemes.</p>
+</blockquote>
+<p>This is what I show in the above posted video demo …<br>
+Well, it currently can’t handle multiple accounts from different AP parties because these parties did not agree on a common auth standard.<br>
+I mean it depends what we call “multiple accounts”.</p>
+<p>For example in <a href="../../c/software/redaktor-me.html">redaktor</a> one user (accounts) can have multiple AP Actors and the OAuth endpoint would auth the user and the user can select the Actor then.</p>
+        </div>
+
+        <meta itemprop='headline' content='Suggestion: a custom URL scheme handler as a streamlined UX for cross-instance interactions on the web'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="504.html">
+
+            <link itemprop="image" href="../../uploads/default/original/1X/6b26397ad3d4ce150c390c39f34307bf78c3e8ec.png">
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-03-04T13:30:51Z' class='post-time'>
+                March 4, 2020,  1:30pm
+              </time>
+              <meta itemprop='dateModified' content='2020-03-04T13:30:51Z'>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>A new API regarding “me in the browser” pops out,<br>
+<em>W3C WebAppSec WG IsLoggedIn</em> – see <a href="https://github.com/WebKit/explainers/tree/master/IsLoggedIn#federated-logins"> Federated Logins</a> explained by WebKit :</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://github.githubassets.com/favicon.ico" class="site-icon" width="32" height="32">
+      <a href="https://github.com/WebKit/explainers/tree/master/IsLoggedIn" target="_blank">GitHub</a>
+  </header>
+  <article class="onebox-body">
+    <img src="../../uploads/default/original/1X/6b26397ad3d4ce150c390c39f34307bf78c3e8ec.png" class="thumbnail onebox-avatar" width="400" height="400">
+
+<h3><a href="https://github.com/WebKit/explainers/tree/master/IsLoggedIn" target="_blank">WebKit/explainers</a></h3>
+
+<p>Explainers from WebKit contributors. Contribute to WebKit/explainers development by creating an account on GitHub.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+        </div>
+
+        <meta itemprop='headline' content='Suggestion: a custom URL scheme handler as a streamlined UX for cross-instance interactions on the web'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nightpool.html'><span itemprop='name'>nightpool</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="504.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-03-07T15:23:56Z' class='post-time'>
+                March 7, 2020,  3:23pm
+              </time>
+              <meta itemprop='dateModified' content='2020-03-07T15:23:56Z'>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>WICG has been discussing a streamlined protocol handler UX for progressive web apps recently, which seems related to this discussion: <a href="https://discourse.wicg.io/t/proposal-url-protocol-handler-registration-for-pwas/4276">https://discourse.wicg.io/t/proposal-url-protocol-handler-registration-for-pwas/4276</a></p>
+        </div>
+
+        <meta itemprop='headline' content='Suggestion: a custom URL scheme handler as a streamlined UX for cross-instance interactions on the web'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

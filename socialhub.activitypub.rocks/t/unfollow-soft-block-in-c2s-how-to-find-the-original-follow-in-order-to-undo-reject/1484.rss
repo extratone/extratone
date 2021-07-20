@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Unfollow &amp; soft block in c2s - how to find the original Follow in order to undo / reject?</title>
+    <link>https://socialhub.activitypub.rocks/t/unfollow-soft-block-in-c2s-how-to-find-the-original-follow-in-order-to-undo-reject/1484</link>
+    <description>If I want to stop following someone, I believe I should send an Undo whose object is the Follow that I sent them in the past. Likewise, if I want to rescind permission to follow me, I should either Reject the Follow they originally sent me or perhaps Undo my Accept. 
+
+In all those cases, I need a reference to a potentially very old activity to be the object of my new activity. How can I find that within a client-to-server implementation? 
+
+The way `activitypub-express` works, I am actually looking up those old Follows whenever I&#39;m fetching `Following` &amp; `Followers` collections, but spec says those endpoints return actors rather than activities, so the activity id I need does not reach the client.
+
+The only other option I see that is strictly C2S spec would be to crawl my inbox or outbox page-by-page until I find the Follow I seek, but this could be a really long journey. 
+
+Am I missing something obvious? If I implement a custom unfollow endpoint, is my implementation no longer a true Client-to-Server AP implementation?</description>
+    
+    <lastBuildDate>Mon, 08 Mar 2021 06:07:40 +0000</lastBuildDate>
+    <category>Client to Server</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/unfollow-soft-block-in-c2s-how-to-find-the-original-follow-in-order-to-undo-reject/1484.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Unfollow &amp; soft block in c2s - how to find the original Follow in order to undo / reject?</title>
+        <dc:creator><![CDATA[kaniini]]></dc:creator>
+        <description><![CDATA[
+            <p>In Jejune, the general idea is that you would perform an Undo Follow that describes the original follow, and then not care about the <code>id</code>.  This works because it’s really the side effect we’re after (removal from followers collection).</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/unfollow-soft-block-in-c2s-how-to-find-the-original-follow-in-order-to-undo-reject/1484/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/unfollow-soft-block-in-c2s-how-to-find-the-original-follow-in-order-to-undo-reject/1484/5</link>
+        <pubDate>Mon, 08 Mar 2021 06:07:40 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1484-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/unfollow-soft-block-in-c2s-how-to-find-the-original-follow-in-order-to-undo-reject/1484.rss">Unfollow &amp; soft block in c2s - how to find the original Follow in order to undo / reject?</source>
+      </item>
+      <item>
+        <title>Unfollow &amp; soft block in c2s - how to find the original Follow in order to undo / reject?</title>
+        <dc:creator><![CDATA[lanodan]]></dc:creator>
+        <description><![CDATA[
+            <p>Add/Remove from follow* collections makes sense but I’m not so sure about how well it’s going to be supported as it’s a workaround that requires extraneous transformation <em>just</em> for AP C2S.</p>
+<p>I think the filtering extensions in <a href="https://github.com/go-ap/fedbox/blob/76081eb477da9819f3f344ea6530ad5a6ef8c788/doc/c2s.md" rel="noopener nofollow ugc">https://github.com/go-ap/fedbox/blob/76081eb477da9819f3f344ea6530ad5a6ef8c788/doc/c2s.md</a> by <a class="mention" href="/u/marius">@marius</a> are much better for this kind of thing (related fediverse thread: <a href="https://metalhead.club/@mariusor/105802934292952905" rel="noopener nofollow ugc">https://metalhead.club/@mariusor/105802934292952905</a>).<br>
+(haven’t tried to implement them in pleroma yet but should be easy enough)</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/unfollow-soft-block-in-c2s-how-to-find-the-original-follow-in-order-to-undo-reject/1484/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/unfollow-soft-block-in-c2s-how-to-find-the-original-follow-in-order-to-undo-reject/1484/4</link>
+        <pubDate>Sun, 07 Mar 2021 20:21:33 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1484-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/unfollow-soft-block-in-c2s-how-to-find-the-original-follow-in-order-to-undo-reject/1484.rss">Unfollow &amp; soft block in c2s - how to find the original Follow in order to undo / reject?</source>
+      </item>
+      <item>
+        <title>Unfollow &amp; soft block in c2s - how to find the original Follow in order to undo / reject?</title>
+        <dc:creator><![CDATA[datatitian]]></dc:creator>
+        <description><![CDATA[
+            <p>While “remove from follow[ers/ing]” makes a lot of semantic sense, when implementing it was going to take a lot of special casing to get it to work with the existing validation and logic for “Remove” (i.e. removing an object from an actor’s miscellaneous streams).</p>
+<p>So instead I added special casing to the validation for “Reject” &amp; “Undo” that allows the client to send an Actor ID as the object and the server then finds and substitutes the related Follow</p>
+<aside class="onebox githubpullrequest">
+  <header class="source">
+      <a href="https://github.com/immers-space/activitypub-express/pull/36" target="_blank" rel="noopener nofollow ugc">github.com/immers-space/activitypub-express</a>
+  </header>
+  <article class="onebox-body">
+    <div class="github-row">
+  <div class="github-icon-container" title="Pull Request">
+    <svg width="60" height="60" class="github-icon" viewBox="0 0 12 16" aria-hidden="true"><path d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+  </div>
+
+  <div class="github-info-container">
+    <h4>
+      <a href="https://github.com/immers-space/activitypub-express/pull/36" target="_blank" rel="noopener nofollow ugc">client-to-server Unfollow</a>
+    </h4>
+
+    <div class="branches">
+      <code>immers-space:master</code> ← <code>immers-space:c2s-unfollow</code>
+    </div>
+
+    <div class="github-info">
+      <div class="date">
+        opened <span class="discourse-local-date" data-format="ll" data-date="2021-03-06" data-time="15:16:47" data-timezone="UTC">03:16PM - 06 Mar 21 UTC</span>
+      </div>
+
+      <div class="user">
+        <a href="https://github.com/wmurphyrd" target="_blank" rel="noopener nofollow ugc">
+          <img alt="wmurphyrd" src="https://socialhub.activitypub.rocks/uploads/default/original/1X/aebd6028bb334d338d43251e407801fd196a5cfc.jpeg" class="onebox-avatar-inline" width="20" height="20">
+          wmurphyrd
+        </a>
+      </div>
+
+      <div class="lines" title="2 commits changed 6 files with 122 additions and 5 deletions">
+        <a href="https://github.com/immers-space/activitypub-express/pull/36/files" target="_blank" rel="noopener nofollow ugc">
+          <span class="added">+122</span>
+          <span class="removed">-5</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/unfollow-soft-block-in-c2s-how-to-find-the-original-follow-in-order-to-undo-reject/1484/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/unfollow-soft-block-in-c2s-how-to-find-the-original-follow-in-order-to-undo-reject/1484/3</link>
+        <pubDate>Sat, 06 Mar 2021 15:21:19 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1484-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/unfollow-soft-block-in-c2s-how-to-find-the-original-follow-in-order-to-undo-reject/1484.rss">Unfollow &amp; soft block in c2s - how to find the original Follow in order to undo / reject?</source>
+      </item>
+      <item>
+        <title>Unfollow &amp; soft block in c2s - how to find the original Follow in order to undo / reject?</title>
+        <dc:creator><![CDATA[datatitian]]></dc:creator>
+        <description><![CDATA[
+            <p>Answer via <a href="https://gup.pe/u/activitypub" rel="noopener nofollow ugc">ActivityPub Guppe group</a>:</p>
+<blockquote>
+<p><a href="https://banana.dog/@yaaps/105839457031509053" rel="noopener nofollow ugc">22m</a><a href="https://banana.dog/@yaaps" rel="noopener nofollow ugc"> <strong>yaaps :verified:</strong> @yaaps@banana.dog</a><br>
+When undo or reject is the correct semantics to change a follower or following status, then the original activity will be in scope. If the original activity isn’t trivial to reference, e.g. because the client is referencing the actor in a collection, then the client should remove the actor from the collection</p>
+</blockquote>
+<blockquote>
+<p><a href="https://social.coop/@datatitian" rel="noopener nofollow ugc"> <strong>Will <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/rose.png?v=9" title=":rose:" class="emoji" alt=":rose:"><img src="https://socialhub.activitypub.rocks/images/emoji/twitter/waving_black_flag.png?v=9" title=":waving_black_flag:" class="emoji" alt=":waving_black_flag:"></strong> @datatitian</a><br>
+<a href="https://banana.dog/@yaaps" rel="noopener nofollow ugc">@yaaps</a> <a href="https://gup.pe/u/activitypub" rel="noopener nofollow ugc">@activitypub</a> ohhhhh. Client sends type: “Remove”, object: actorId, target: followers - and the server handles building the undo or reject to publish? That would work</p>
+</blockquote>
+          <p><a href="https://socialhub.activitypub.rocks/t/unfollow-soft-block-in-c2s-how-to-find-the-original-follow-in-order-to-undo-reject/1484/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/unfollow-soft-block-in-c2s-how-to-find-the-original-follow-in-order-to-undo-reject/1484/2</link>
+        <pubDate>Fri, 05 Mar 2021 22:29:53 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1484-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/unfollow-soft-block-in-c2s-how-to-find-the-original-follow-in-order-to-undo-reject/1484.rss">Unfollow &amp; soft block in c2s - how to find the original Follow in order to undo / reject?</source>
+      </item>
+      <item>
+        <title>Unfollow &amp; soft block in c2s - how to find the original Follow in order to undo / reject?</title>
+        <dc:creator><![CDATA[datatitian]]></dc:creator>
+        <description><![CDATA[
+            <p>If I want to stop following someone, I believe I should send an Undo whose object is the Follow that I sent them in the past. Likewise, if I want to rescind permission to follow me, I should either Reject the Follow they originally sent me or perhaps Undo my Accept.</p>
+<p>In all those cases, I need a reference to a potentially very old activity to be the object of my new activity. How can I find that within a client-to-server implementation?</p>
+<p>The way <code>activitypub-express</code> works, I am actually looking up those old Follows whenever I’m fetching <code>Following</code> &amp; <code>Followers</code> collections, but spec says those endpoints return actors rather than activities, so the activity id I need does not reach the client.</p>
+<p>The only other option I see that is strictly C2S spec would be to crawl my inbox or outbox page-by-page until I find the Follow I seek, but this could be a really long journey.</p>
+<p>Am I missing something obvious? If I implement a custom unfollow endpoint, is my implementation no longer a true Client-to-Server AP implementation?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/unfollow-soft-block-in-c2s-how-to-find-the-original-follow-in-order-to-undo-reject/1484/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/unfollow-soft-block-in-c2s-how-to-find-the-original-follow-in-order-to-undo-reject/1484/1</link>
+        <pubDate>Fri, 05 Mar 2021 21:30:40 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1484-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/unfollow-soft-block-in-c2s-how-to-find-the-original-follow-in-order-to-undo-reject/1484.rss">Unfollow &amp; soft block in c2s - how to find the original Follow in order to undo / reject?</source>
+      </item>
+  </channel>
+</rss>

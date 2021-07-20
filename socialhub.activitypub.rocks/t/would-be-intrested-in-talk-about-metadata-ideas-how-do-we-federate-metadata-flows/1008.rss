@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Would be intrested in talk about metadata ideas -How do we federate metadata flows</title>
+    <link>https://socialhub.activitypub.rocks/t/would-be-intrested-in-talk-about-metadata-ideas-how-do-we-federate-metadata-flows/1008</link>
+    <description>How do we federate metadata flows
+
+folksonomy and categories – bottom up/top down – open/closed
+
+Each has advantages and disadvantages.
+
+Can we be creative and bridge this divide
+
+The OMN and indymedia reboot are both grassroots bottom up projects, so we obviously start with a folksonomy.
+
+Recognising the is some use for categories a draft proposal.
+
+We only have 5 functions 🙂
+
+Allow instances to put folksonomy items into category groups, these can be added as extra folksonomy  tags into the flow.
+
+Allow instances to subscribe to this category groups as a flow (basic tool of OMN)
+
+Build it out of based on trust.</description>
+    
+    <lastBuildDate>Fri, 02 Oct 2020 15:59:17 +0000</lastBuildDate>
+    <category>ActivityPub Conference 2020</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/would-be-intrested-in-talk-about-metadata-ideas-how-do-we-federate-metadata-flows/1008.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Would be intrested in talk about metadata ideas -How do we federate metadata flows</title>
+        <dc:creator><![CDATA[hamishcampbell]]></dc:creator>
+        <description><![CDATA[
+            <p>How do we federate metadata flows</p>
+<p>folksonomy and categories – bottom up/top down – open/closed</p>
+<p>Each has advantages and disadvantages.</p>
+<p>Can we be creative and bridge this divide</p>
+<p>The OMN and indymedia reboot are both grassroots bottom up projects, so we obviously start with a folksonomy.</p>
+<p>Recognising the is some use for categories a draft proposal.</p>
+<p>We only have 5 functions <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slightly_smiling_face.png?v=9" title=":slightly_smiling_face:" class="emoji" alt=":slightly_smiling_face:"></p>
+<p>Allow instances to put folksonomy items into category groups, these can be added as extra folksonomy  tags into the flow.</p>
+<p>Allow instances to subscribe to this category groups as a flow (basic tool of OMN)</p>
+<p>Build it out of based on trust.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/would-be-intrested-in-talk-about-metadata-ideas-how-do-we-federate-metadata-flows/1008/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/would-be-intrested-in-talk-about-metadata-ideas-how-do-we-federate-metadata-flows/1008/1</link>
+        <pubDate>Fri, 02 Oct 2020 15:49:01 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1008-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/would-be-intrested-in-talk-about-metadata-ideas-how-do-we-federate-metadata-flows/1008.rss">Would be intrested in talk about metadata ideas -How do we federate metadata flows</source>
+      </item>
+  </channel>
+</rss>

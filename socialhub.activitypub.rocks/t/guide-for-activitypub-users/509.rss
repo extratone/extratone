@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Guide for ActivityPub users</title>
+    <link>https://socialhub.activitypub.rocks/t/guide-for-activitypub-users/509</link>
+    <description>This collaboratively-edited guide provides information on how to become an ActivityPub user. Adopting ActivityPub as a user can be a great way to start putting a more people-centred Internet into practice.
+
+&lt;div data-theme-toc=&quot;true&quot;&gt; &lt;/div&gt;
+
+## Find and join a Fediverse site
+
+The easiest way to get started with ActivityPub and the Fediverse is to join a site and start participating.
+
+### Finding projects
+
+If you&#39;re looking for alternatives to specific corporate social media sites, [switching.software](https://switching.software) is a great place to start. They offer a set of &quot;ethical, easy-to-use and privacy-conscious alternatives&quot; handily arranged according to the corporate site or software you&#39;re looking to get off, such as Facebook or Twitter. While not all software alternatives there are ActivityPub based, it includes a great selection of ones that are.
+
+Another good place to start is [Fediverse.Party](https://fediverse.party). This site offers a ton of information about Fediverse software projects, many of which support ActivityPub. You can find information in two places:
+
+* The [home page](https://fediverse.party) has links to a curated list of Fediverse projects. Click on each to find very detailed information on the projects.
+* A list of [more apps](https://fediverse.party/en/miscellaneous) has more basic information on a bunch of other projects. On this page you can filter to see only apps that support ActivityPub.
+
+### Discovering instances
+
+Unlike corporate social media such as Twitter or What&#39;s App, where there&#39;s a single website that all users sign up for, a Fediverse platform is usually more than a single site. A project like the Mastodon microblogging platform has multiple sites--called *instances*. First you find an instance you want to join, then you join it.
+
+While this model means an extra step of selecting an instance, it has a lot of advantages. You can find and join an instance that reflects your values, interests, and commitments.
+
+The various instances are *federated*, meaning they communicate with each other in ways that allow users to share information and connections across instances.
+
+Many people start by joining the most prominent instance of a particular Fediverse platform. For example, for Mastodon, the [mastodon.social site](https://mastodon.social/about) is the one hosted by the Mastodon founders. While this may be a great place to start, it&#39;s also worth taking the time to look for an instance that is a specially good fit.
+
+The [Fediverse.Party](https://fediverse.party) home page listings include links for each project on how to find instances; see the &quot;Join the network&quot; section on project pages.
+
+## Using ActivityPub in your organizations
+
+If you are a member or staff of an organization like a nonprofit, community group, school, or business, the Fediverse and the various projects that make it up can provide a common platform for your collaborative and outreach projects.
+
+Depending on your organization&#39;s capacity and resources, you could consider hosting a dedicated instance of a Fediverse software. The [Fediverse.Party](https://fediverse.party) home page listings include a link for each project on how to host an instance; see the &quot;Contributing&quot; section on project pages.
+
+## Going further
+
+Besides joining Fediverse sites, there are lots of other ways to participate and contribute.
+
+The [Fediverse.Party](https://fediverse.party) home page listings include links for each project on how to contribute; see the &quot;Contributing&quot; section on project pages.
+
+### Help moderate an instance
+
+Many Fediverse instances have volunteer moderators. You may be able to reach out to the administrators of an instance and offer to help out.
+
+### Contribute to documentation or translations
+
+Most projects welcome help with documentation, translation, and similar needs.
+
+### Tool up
+
+Besides Fediverse sites, there are also a set of tools and approaches that can help you use the Fediverse effectively.
+
+* If you have a profile on other sites, or a website of your own, link there to your Fediverse profile(s).
+* If you are a cel phone user, start using a Fediverse client such as [Fedilab](https://fedilab.app) to access the Fediverse.
+
+### Spread the word
+
+The most effective way to promote a decentralized internet is by using it and encouraging others to do likewise.
+
+## More information
+
+See the accompanying guides:
+
+* [Introduction to ActivityPub](https://socialhub.activitypub.rocks/t/introduction-to-activitypub/508)
+* [Guide for new ActivityPub implementers](https://socialhub.activitypub.rocks/t/draft-guide-for-new-activitypub-implementers/479)
+
+Other user guides found on the web:
+
+* [An Increasingly Less-Brief Guide to Mastodon](https://github.com/joyeusenoelle/GuideToMastodon)</description>
+    
+    <lastBuildDate>Mon, 03 Aug 2020 06:59:44 +0000</lastBuildDate>
+    <category>ActivityPub</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/guide-for-activitypub-users/509.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Guide for ActivityPub users</title>
+        <dc:creator><![CDATA[nedjo]]></dc:creator>
+        <description><![CDATA[
+            <p>This collaboratively-edited guide provides information on how to become an ActivityPub user. Adopting ActivityPub as a user can be a great way to start putting a more people-centred Internet into practice.</p>
+<div data-theme-toc="true"> </div>
+<h2>Find and join a Fediverse site</h2>
+<p>The easiest way to get started with ActivityPub and the Fediverse is to join a site and start participating.</p>
+<h3>Finding projects</h3>
+<p>If you’re looking for alternatives to specific corporate social media sites, <a href="https://switching.software" rel="nofollow noopener">switching.software</a> is a great place to start. They offer a set of “ethical, easy-to-use and privacy-conscious alternatives” handily arranged according to the corporate site or software you’re looking to get off, such as Facebook or Twitter. While not all software alternatives there are ActivityPub based, it includes a great selection of ones that are.</p>
+<p>Another good place to start is <a href="https://fediverse.party" rel="nofollow noopener">Fediverse.Party</a>. This site offers a ton of information about Fediverse software projects, many of which support ActivityPub. You can find information in two places:</p>
+<ul>
+<li>The <a href="https://fediverse.party" rel="nofollow noopener">home page</a> has links to a curated list of Fediverse projects. Click on each to find very detailed information on the projects.</li>
+<li>A list of <a href="https://fediverse.party/en/miscellaneous" rel="nofollow noopener">more apps</a> has more basic information on a bunch of other projects. On this page you can filter to see only apps that support ActivityPub.</li>
+</ul>
+<h3>Discovering instances</h3>
+<p>Unlike corporate social media such as Twitter or What’s App, where there’s a single website that all users sign up for, a Fediverse platform is usually more than a single site. A project like the Mastodon microblogging platform has multiple sites–called <em>instances</em>. First you find an instance you want to join, then you join it.</p>
+<p>While this model means an extra step of selecting an instance, it has a lot of advantages. You can find and join an instance that reflects your values, interests, and commitments.</p>
+<p>The various instances are <em>federated</em>, meaning they communicate with each other in ways that allow users to share information and connections across instances.</p>
+<p>Many people start by joining the most prominent instance of a particular Fediverse platform. For example, for Mastodon, the <a href="https://mastodon.social/about" rel="nofollow noopener">mastodon.social site</a> is the one hosted by the Mastodon founders. While this may be a great place to start, it’s also worth taking the time to look for an instance that is a specially good fit.</p>
+<p>The <a href="https://fediverse.party" rel="nofollow noopener">Fediverse.Party</a> home page listings include links for each project on how to find instances; see the “Join the network” section on project pages.</p>
+<h2>Using ActivityPub in your organizations</h2>
+<p>If you are a member or staff of an organization like a nonprofit, community group, school, or business, the Fediverse and the various projects that make it up can provide a common platform for your collaborative and outreach projects.</p>
+<p>Depending on your organization’s capacity and resources, you could consider hosting a dedicated instance of a Fediverse software. The <a href="https://fediverse.party" rel="nofollow noopener">Fediverse.Party</a> home page listings include a link for each project on how to host an instance; see the “Contributing” section on project pages.</p>
+<h2>Going further</h2>
+<p>Besides joining Fediverse sites, there are lots of other ways to participate and contribute.</p>
+<p>The <a href="https://fediverse.party" rel="nofollow noopener">Fediverse.Party</a> home page listings include links for each project on how to contribute; see the “Contributing” section on project pages.</p>
+<h3>Help moderate an instance</h3>
+<p>Many Fediverse instances have volunteer moderators. You may be able to reach out to the administrators of an instance and offer to help out.</p>
+<h3>Contribute to documentation or translations</h3>
+<p>Most projects welcome help with documentation, translation, and similar needs.</p>
+<h3>Tool up</h3>
+<p>Besides Fediverse sites, there are also a set of tools and approaches that can help you use the Fediverse effectively.</p>
+<ul>
+<li>If you have a profile on other sites, or a website of your own, link there to your Fediverse profile(s).</li>
+<li>If you are a cel phone user, start using a Fediverse client such as <a href="https://fedilab.app" rel="nofollow noopener">Fedilab</a> to access the Fediverse.</li>
+</ul>
+<h3>Spread the word</h3>
+<p>The most effective way to promote a decentralized internet is by using it and encouraging others to do likewise.</p>
+<h2>More information</h2>
+<p>See the accompanying guides:</p>
+<ul>
+<li><a href="https://socialhub.activitypub.rocks/t/introduction-to-activitypub/508">Introduction to ActivityPub</a></li>
+<li><a href="https://socialhub.activitypub.rocks/t/draft-guide-for-new-activitypub-implementers/479">Guide for new ActivityPub implementers</a></li>
+</ul>
+<p>Other user guides found on the web:</p>
+<ul>
+<li><a href="https://github.com/joyeusenoelle/GuideToMastodon" rel="nofollow noopener">An Increasingly Less-Brief Guide to Mastodon</a></li>
+</ul>
+          <p><a href="https://socialhub.activitypub.rocks/t/guide-for-activitypub-users/509/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/guide-for-activitypub-users/509/1</link>
+        <pubDate>Sat, 08 Feb 2020 17:39:10 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-509-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/guide-for-activitypub-users/509.rss">Guide for ActivityPub users</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Solid Application Interoperability Draft - Presentation videos</title>
+    <link>https://socialhub.activitypub.rocks/t/solid-application-interoperability-draft-presentation-videos/1739</link>
+    <description>Justin Bingham of Inrupt and admin of Solid forum recently posted some info on the draft specification for **Solid Application Interoperability**.
+
+[quote=&quot;justin, post:3, topic:4291, full:true&quot;]
+[quote=&quot;ludwigschubi, post:1, topic:4291&quot;]
+As I understand, seamless interoperability and data portability is one of the key advantages/promises of Solid. However, I have the impression that the effort put into making it a reality is not proportional to it’s importance.
+[/quote]
+
+Hi @ludwigschubi - there’s actually considerable effort put forth in this area. I’d encourage you to look over the work underway in the [data interoperability panel ](https://github.com/solid/data-interoperability-panel/), in particular the [draft specification on application interoperability ](https://solid.github.io/data-interoperability-panel/specification/).
+
+We recently did some live presentations that were recorded (note that each are 90 minutes long - but they cover the vast majority of the draft spec):
+
+* [Application Interoperability Walkthrough - Part 1 ](https://solid-interop-public.s3.amazonaws.com/application-interoperability-walkthrough-part-1.mp4)
+* [Application Interoperability Walkthrough - Part 2 ](https://solid-interop-public.s3.amazonaws.com/application-interoperability-walkthrough-part-2.mp4)
+
+If this is a topic you’re interested in - you’d be most welcome at the weekly [panel session ](https://github.com/solid/data-interoperability-panel/#meetings).
+[/quote]
+
+They represent Solid&#39;s perspective on interoperability. Summarising from [problems &amp; goals](https://github.com/solid/data-interoperability-panel/blob/c20059fcde16c084c991c2618b3290b6a725ea1f/problems-and-goals.md) for this specification:
+
+1 - Seamless data interoperability across disparate applications
+2- Use intuitive data boundaries to provide human to machine interoperability
+3 - Secure collaboration over intuitive data boundaries
+4 - Standard and flexible organizing model for data
+5 - Flexibility and support for different and evolving query mechanisms
+6 - Optimize and extend, but do not change Solid fundamentals</description>
+    
+    <lastBuildDate>Thu, 13 May 2021 18:04:22 +0000</lastBuildDate>
+    <category>Fediversity</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/solid-application-interoperability-draft-presentation-videos/1739.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Solid Application Interoperability Draft - Presentation videos</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Justin Bingham of Inrupt and admin of Solid forum recently posted some info on the draft specification for <strong>Solid Application Interoperability</strong>.</p>
+<aside class="quote no-group quote-modified" data-username="justin" data-post="3" data-topic="4291" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+</div>
+<blockquote>
+<aside class="quote no-group quote-modified" data-username="ludwigschubi" data-post="1" data-topic="4291">
+<div class="title">
+<div class="quote-controls"></div>
+</div>
+<blockquote>
+<p>As I understand, seamless interoperability and data portability is one of the key advantages/promises of Solid. However, I have the impression that the effort put into making it a reality is not proportional to it’s importance.</p>
+</blockquote>
+</aside>
+<p>Hi <span class="mention">@ludwigschubi</span> - there’s actually considerable effort put forth in this area. I’d encourage you to look over the work underway in the <a href="https://github.com/solid/data-interoperability-panel/">data interoperability panel </a>, in particular the <a href="https://solid.github.io/data-interoperability-panel/specification/">draft specification on application interoperability </a>.</p>
+<p>We recently did some live presentations that were recorded (note that each are 90 minutes long - but they cover the vast majority of the draft spec):</p>
+<ul>
+<li><a href="https://solid-interop-public.s3.amazonaws.com/application-interoperability-walkthrough-part-1.mp4">Application Interoperability Walkthrough - Part 1 </a></li>
+<li><a href="https://solid-interop-public.s3.amazonaws.com/application-interoperability-walkthrough-part-2.mp4">Application Interoperability Walkthrough - Part 2 </a></li>
+</ul>
+<p>If this is a topic you’re interested in - you’d be most welcome at the weekly <a href="https://github.com/solid/data-interoperability-panel/#meetings">panel session </a>.</p>
+</blockquote>
+</aside>
+<p>They represent Solid’s perspective on interoperability. Summarising from <a href="https://github.com/solid/data-interoperability-panel/blob/c20059fcde16c084c991c2618b3290b6a725ea1f/problems-and-goals.md">problems &amp; goals</a> for this specification:</p>
+<p>1 - Seamless data interoperability across disparate applications<br>
+2- Use intuitive data boundaries to provide human to machine interoperability<br>
+3 - Secure collaboration over intuitive data boundaries<br>
+4 - Standard and flexible organizing model for data<br>
+5 - Flexibility and support for different and evolving query mechanisms<br>
+6 - Optimize and extend, but do not change Solid fundamentals</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/solid-application-interoperability-draft-presentation-videos/1739/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/solid-application-interoperability-draft-presentation-videos/1739/1</link>
+        <pubDate>Thu, 13 May 2021 18:04:22 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1739-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/solid-application-interoperability-draft-presentation-videos/1739.rss">Solid Application Interoperability Draft - Presentation videos</source>
+      </item>
+  </channel>
+</rss>

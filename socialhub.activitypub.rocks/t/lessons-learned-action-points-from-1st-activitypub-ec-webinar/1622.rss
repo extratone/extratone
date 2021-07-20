@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</title>
+    <link>https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622</link>
+    <description>_(This is a wiki post that anyone can edit, by clicking the &#39;Edit&#39; link in bottom-right corner)_
+
+---
+
+Hi everyone,
+
+Thanks again @CristinaDeLisle @how @aschrijver @hamishcampbell and many more for your contributions to (in my eyes) a solid and lively gathering! Here I wanted to bring together the lessons learned and action points from the discussion (wanted to make a wiki post, don&#39;t know how to yet):
+
+### Things to improve
+
+What can we improve in the next events and for meetups in general.
+
+- @aschrijver: There were worrying problems with TU Delft BBB (black screens). We should consider moving elsewhere for next event.
+
+- @aschrijver: It was not clear to me there was a Notes thing, where people could introduce themselves. So I am not on the list.
+
+- @aschrijver: We need a list of people that are responsible for places where SocialHub has a presence, and probably a place where we keep credentials for these. Right now it is unclear, who has the AP account for conf.tube (@how is finding out).
+
+### Topics to address
+
+- @j8ter: Discuss user experience and expectations in fediverse for institutions-instances (Nuno / @nunoantunes )
+  - @aschrijver: We had a discussion after recording ended, on how the fediverse works differently and you shouldn&#39;t follow the global timelines in most cases, but build your own by collecting Followers/Following. In Twitter the algorithm kicks in to drive engagement. In Fedi you are in charge yourself to do that. Communication style is also different in fedi, where more of a 2-way conversation works very well, instead of just broadcasting stuff out to the world.
+
+- @j8ter: Security aspects of ActivityPub and fediverse-tech (Gijs and others)
+  - @aschrijver: I addressed this in the chat. Security audits are responsibility for projects themselves, and they are independent in their policy choices here. I think most apps are &#39;security-hardened&#39; in the way their open source code is scrutinized, but I don&#39;t think many formal audits have (as yet) been conducted. SocialHub might play a role here.
+
+- @aschrijver: Piotr mentioned [netCommons](https://netcommons.eu) Horizon 2020 project has expressed an interest in the Fediverse.
+  - @aschrijver: I approached Piotr on LinkedIn, and sent a [tweet to netCommonsEU](https://twitter.com/humane_tech_now/status/1384411933969952768) inviting them to join discussion here.
+
+### (Possible) Follow-ups / action points
+
+List actions to be taken for the next events, or ideas to be considered.
+
+- @aschrijver: I have the list of participants. We might provide it somewhere, and we might ask Jean-Luc Dorel to add more info on EC roles these people have (iff possible).
+
+- @aschrijver: We may provide the text of the chat roll, maybe on conf.tube together with the video (as suggested by @hamishcampbell).
+  - @j8ter made a recording of the BBB-stream including the chat (screen record) that was sent to @how to put on conf.tube. @j8ter will embed (if possible) on ngi.eu/event-psge Wednesday 21 (done, @aschrijver  and @how could you test, I get some weird issues w Chromium and not with Firefox).
+- @aschrijver: We can reiterate the video and extract all the things that came up, especially in the chat. Then create a sort of a FAQ summary article from it, where we provide very clear, concise answers to them and offer it as handout / input to the next event (could use pad.public.cat for this -&gt; https://pad.public.cat/faq-webinar-activitypub-for-administrations?view).  @j8ter we could kickoff the discussion with action points from the 1st webinar. I have added them to my introductory presentation -&gt; https://pad.public.cat/ngi0-ec-activitypub-liaison-presentation-2021-04-26-intro
+- @j8ter: Start the 2nd webinar with  a brief explanation of venue features (shared notes for introduction, public chat for questions. suggestions and relevant links), possibly in the first/background slide, which I will update for this.
+
+-@how, @aschrijver &amp; @j8ter: decide on title for second webinar (or stick with &quot;ActivityPub for Administrations). @j8ter suggests &quot;Understand ActivityPub&quot;, so the workshop can be something like &quot;Use ActivityPub&quot;.
+
+---
+
+_(Note, this post had some replies that were included here and then removed, otherwise edits to this wiki do not become clear to forum visistors)_</description>
+    
+    <lastBuildDate>Fri, 23 Apr 2021 11:56:53 +0000</lastBuildDate>
+    <category>Meeting</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/27">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/27</link>
+        <pubDate>Thu, 29 Apr 2021 09:35:07 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1622-27</guid>
+        <source url="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622.rss">Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</source>
+      </item>
+      <item>
+        <title>Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>You are pointing to a wiki post that I proposed to fill in for our presentation prep, but was never used in the end. In <a href="https://socialhub.activitypub.rocks/t/scaling-up-cooperation/837/5" class="inline-onebox">Scaling Up Cooperation - #5 by how</a> you see (incomplete list of) funded projects, and a bunch of those were mentioned during the webinar.</p>
+<p>Note too that the main focus wasn’t on funding in this introductory talk + discussion, but in general we mentioned and highlighted the dedication and support of NGI and by extension the EU/EC for the future of the fediverse. And this is very much a collaborative event, organized together.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/25</link>
+        <pubDate>Fri, 23 Apr 2021 09:51:06 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1622-25</guid>
+        <source url="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622.rss">Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</source>
+      </item>
+      <item>
+        <title>Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Hm, but it said always <strong>“Funded Projects”</strong> – and <em>none</em> [0/zero/null/zéro] of these projects received funding.<br>
+See e.g. <a href="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/20" class="inline-onebox">Webinar with the European Commission and AP Community - #20</a></p>
+<p>Only immers was funded but by Coil/Mozilla …</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/24</link>
+        <pubDate>Fri, 23 Apr 2021 09:38:11 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1622-24</guid>
+        <source url="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622.rss">Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</source>
+      </item>
+      <item>
+        <title>Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-redaktor.me" data-username="Sebastian" data-post="11" data-topic="1640">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar"> Sebastian:</div>
+<blockquote>
+<p>As said there are many projects which would make sense to the EU, e.g.<br>
+skohub, learnawesome, bookwyrm, writefreely, immers, go-fed, Smithereen, epicyon, bonfirenetworks etc.</p>
+</blockquote>
+</aside>
+<p>This is up to the community to engage with the institutions during the webinar and workshop. As you know we made a lot of effort to show the diversity of implementations and not single one out. Probably the focus on Mastodon comes from the perceived demand from the institution, because it’s the ‘flag ship’.  But I’m also better touched by flags when they burn, when the symbol becomes a show of the diversity once the smoke dissipates.</p>
+<p>Joost and other have contacted a number of people who would like to participate in the webinar and workshop. As you can see from the participant’s list, no Mastodon here, but a few others. I know that Castopod, Hubzilla, and Kazarma already showed up and demonstrated interest in sharing this.</p>
+<p>Personally I do not intend to demonstrate Mastodon during the workshop because:</p>
+<ol>
+<li>nobody showed interest from their community to our activities here</li>
+<li>the implementation has always been shifting away from the specification instead of sharing their intents with the community</li>
+<li>I’d rather have the EC experiment with something some attendants have experience with (e.g., Peertube) or something that we can ensure will be complementary and interoperable.</li>
+<li>I would love that software developers from your list show up, simply because it’s much easier to do a workshop with knowledgeable people, and because it would help attendees figure out the opportunities at their hand if they’re willing to pursue.</li>
+</ol>
+<p>In the end Mastodon is perceived as a low-hanging fruit because it replicates ‘known’ (dis-)services like Fakebooz and Gaggle. But focusing on it, IMO, would be a mistake because there’s so much more that can be done with ActivityPub than just <em>publishing posts</em>. The workshop is an opportunity to show-case the system, and the community should be working on figuring out ways to demonstrate means to ends, instead of the <em>perceived need</em> of the EC. E.g., when people mentioned “publishing without responding”, the application is <em>not</em> microblogging but <em>announcements</em>, so maybe there are other ways to announce on the Fediverse than the M.</p>
+<p>As my old friend Howard Rheingold keeps saying:</p>
+<h3>
+<a name="what-it-is-is-up-to-us-1" class="anchor" href="#what-it-is-is-up-to-us-1"></a><code>what it is --&gt; is ---&gt; up to us</code>.</h3>
+          <p><a href="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/23</link>
+        <pubDate>Fri, 23 Apr 2021 07:39:57 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1622-23</guid>
+        <source url="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622.rss">Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</source>
+      </item>
+      <item>
+        <title>Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Nice,<br>
+I have sent hellekin our first contact yesterday but that was not so successful.<br>
+We will see.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/22</link>
+        <pubDate>Fri, 23 Apr 2021 04:56:07 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1622-22</guid>
+        <source url="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622.rss">Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</source>
+      </item>
+      <item>
+        <title>Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>9 posts were split to a new topic: <a href="/t/community-communication-and-collaboration/1640">Community communication and collaboration</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/21</link>
+        <pubDate>Thu, 22 Apr 2021 16:54:34 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1622-21</guid>
+        <source url="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622.rss">Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</source>
+      </item>
+      <item>
+        <title>Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-redaktor.me" data-username="Sebastian" data-post="19" data-topic="1622">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar"> Sebastian:</div>
+<blockquote>
+<p>Those, making sense. We wanted to deliver for ridiculous low-cost and with e.g. a research part and this was why I talked to the professors and became astonished how high the enthusiasm for ActivityPub is at European universities and how much this is ignored.</p>
+</blockquote>
+</aside>
+<p>I think this is a VERY important topic and opportunity for SocialHub, AP and Fedi. Not just universities, but involving Education initiatives of all kinds. Something I want to make part of <a href="https://socialhub.activitypub.rocks/t/organizing-for-socialhub-community-empowerment/1529" class="inline-onebox">Organizing for SocialHub Community Empowerment</a>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/20</link>
+        <pubDate>Thu, 22 Apr 2021 08:37:37 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1622-20</guid>
+        <source url="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622.rss">Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</source>
+      </item>
+      <item>
+        <title>Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Well, redaktor was planned as a one of these solution you seeked in the webinar.<br>
+Those, making sense. We wanted to deliver for ridiculous low-cost and with e.g. a research part and this was why I talked to the professors and became astonished how high the enthusiasm for ActivityPub is at European universities and how much this is ignored.<br>
+However, now that I do the project in a VC-context, I can’t do both.<br>
+On the other hand and as described in the DM, I think that master thesis’ of a European major uni adds a great benefit.</p>
+<p>Funders, please note: The decisions you recently made in a time of a worldwide pandemic shocked me.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/19</link>
+        <pubDate>Thu, 22 Apr 2021 07:18:09 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1622-19</guid>
+        <source url="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622.rss">Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</source>
+      </item>
+      <item>
+        <title>Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-redaktor.me" data-username="Sebastian" data-post="17" data-topic="1622">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar"> Sebastian:</div>
+<blockquote>
+<p>We have to cancel all the cooperations because of NGI0</p>
+</blockquote>
+</aside>
+<p>Why is that? How is it related to the topic?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/18</link>
+        <pubDate>Thu, 22 Apr 2021 05:58:03 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1622-18</guid>
+        <source url="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622.rss">Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</source>
+      </item>
+      <item>
+        <title>Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Welcome.<br>
+Have you seen my DM about the cooperations with universities?<br>
+We have to cancel all the cooperations because of NGI0 <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/roll_eyes.png?v=9" title=":roll_eyes:" class="emoji" alt=":roll_eyes:"> but I think, the contact which I sent would be a good opportunity for ActivityPub …</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/17</link>
+        <pubDate>Thu, 22 Apr 2021 05:40:11 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1622-17</guid>
+        <source url="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622.rss">Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</source>
+      </item>
+      <item>
+        <title>Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you for adding <a href="https://conf.tube/videos/watch/1c4558a0-89e6-4099-beaf-be1acd555d5d" class="inline-onebox">ActivityPub For Administrations (with chat) 2021-04-19 - ConfTube</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/16</link>
+        <pubDate>Wed, 21 Apr 2021 17:27:17 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1622-16</guid>
+        <source url="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622.rss">Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</source>
+      </item>
+      <item>
+        <title>Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>see edit above, currently importing via URL …</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/15</link>
+        <pubDate>Wed, 21 Apr 2021 15:36:16 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1622-15</guid>
+        <source url="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622.rss">Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</source>
+      </item>
+      <item>
+        <title>Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>The last one is 5 posts above, and I’m pretty sure I and others have mentioned conf.tube for a while in different places. So if you like to push the videos to this account it would be great. I still have the hope conf.tube admins will end up responding so we can have a <code>socialhub</code> account there to share more videos than just <a class="hashtag" href="/tag/apconf">#<span>apconf</span></a>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/14</link>
+        <pubDate>Wed, 21 Apr 2021 15:35:47 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1622-14</guid>
+        <source url="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622.rss">Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</source>
+      </item>
+      <item>
+        <title>Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Hm, the people with “credentials” are Morgan/Chris and me.<br>
+I did not get any question.</p>
+<p>[edit]<br>
+I saw the above <em>now</em> - I did not get a notification.<br>
+The only notification was about Social CG.<br>
+Maybe a bug with strikethrough text?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/13</link>
+        <pubDate>Wed, 21 Apr 2021 15:31:07 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1622-13</guid>
+        <source url="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622.rss">Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</source>
+      </item>
+      <item>
+        <title>Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Yeah, but conf.tube admin did not respond, and neither did the people who have the credentials for the apconf account. So the math is irrelevant here <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/12</link>
+        <pubDate>Wed, 21 Apr 2021 15:25:32 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1622-12</guid>
+        <source url="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622.rss">Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</source>
+      </item>
+      <item>
+        <title>Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Just want to mention that the channel where the video is posted has 4 subscribers.<br>
+Official channels have more, e.g. 412 subscribers</p><aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/0f5c2fbd38b386c92ac4bb651286712f07ea1074.png" class="site-icon" width="32" height="32">
+      <a href="https://conf.tube/accounts/apconf/video-channels" target="_blank" rel="noopener">ConfTube</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://socialhub.activitypub.rocks/uploads/default/original/2X/b/b27854dc6771d7030867a9abec685be14f77a729.png" class="thumbnail onebox-avatar" width="120" height="120">
+
+<h3><a href="https://conf.tube/accounts/apconf/video-channels" target="_blank" rel="noopener">ActivityPub Conference</a></h3>
+
+<p>October 2nd - October 5th 2020
+A conference about the present and future of ActivityPub, the world’s leading federated social web standard.
+
+The 2020 virtual conference will include
+• pre-recorded talks with live question and answer sessions
+• birds...</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/11</link>
+        <pubDate>Wed, 21 Apr 2021 15:11:17 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1622-11</guid>
+        <source url="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622.rss">Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</source>
+      </item>
+      <item>
+        <title>Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>I did not sort, but took significant time to format all fedi addresses appropriately <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/grin.png?v=9" title=":grin:" class="emoji" alt=":grin:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/10</link>
+        <pubDate>Tue, 20 Apr 2021 19:45:54 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1622-10</guid>
+        <source url="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622.rss">Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</source>
+      </item>
+      <item>
+        <title>Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, why not. You may also order the names by alphabetical order. <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/9</link>
+        <pubDate>Tue, 20 Apr 2021 19:08:52 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1622-9</guid>
+        <source url="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622.rss">Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</source>
+      </item>
+      <item>
+        <title>Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Done. Great that you have the video available on public.cat, thanks!</p>
+<p><strong>Update</strong>: Shall I also include the more detailed Notes with people’s introduction to the participants section?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/8</link>
+        <pubDate>Tue, 20 Apr 2021 18:42:49 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1622-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622.rss">Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</source>
+      </item>
+      <item>
+        <title>Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>In the meantime I uploaded the videos to peertube.public.cat and they are visible on the agenda. I also updated the slides metadata on HedgeDoc to show rich links, and uploaded <a class="mention" href="/u/j8ter">@j8ter</a>’s slides as well.</p>
+<p>It would be nice to update the participants list and upload the chat log to <a href="https://socialhub.activitypub.rocks/t/ec-ngi0-liaison-webinars-and-workshop-april-2021/1539" class="inline-onebox">EC - NGI0 Liaison -- Webinars and Workshop April 2021</a>, <a class="mention" href="/u/aschrijver">@aschrijver</a> would you do it? Maybe use the <code>[details="chat log"]</code> feature to avoid cluttering the page.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/7</link>
+        <pubDate>Tue, 20 Apr 2021 18:26:21 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1622-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622.rss">Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</source>
+      </item>
+      <item>
+        <title>Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="j8ter" data-post="1" data-topic="1622">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/letter_avatar_proxy/v4/letter/j/c4cdca/40.png" class="avatar"> j8ter:</div>
+<blockquote>
+<p>There were worrying problems with TU Delft BBB (black screens). We should consider moving elsewhere for next event.</p>
+</blockquote>
+</aside>
+<p>I sent an email to the w3.social admin to see if he can fix the TURN service issue.</p>
+<p>Maybe FOSShost can redeploy the one that was used for APconf, <a class="mention" href="/u/eth01">@eth01</a>? BTW, the conf.activitypub.rocks SSL certificate expired more than a month ago, it’s not very nice… But I do not know who handles this server. <a class="mention" href="/u/mlemweb">@mlemweb</a> would you happen to know this?</p>
+<aside class="quote no-group" data-username="j8ter" data-post="1" data-topic="1622">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/letter_avatar_proxy/v4/letter/j/c4cdca/40.png" class="avatar"> j8ter:</div>
+<blockquote>
+<p>It was not clear to me there was a Notes thing, where people could introduce themselves. So I am not on the list.</p>
+</blockquote>
+</aside>
+<p>This can be announced at the beginning, like one would introduce key facilities in a place.</p>
+<aside class="quote no-group" data-username="j8ter" data-post="1" data-topic="1622">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/letter_avatar_proxy/v4/letter/j/c4cdca/40.png" class="avatar"> j8ter:</div>
+<blockquote>
+<p>We need a list of people that are responsible for places where SocialHub has a presence, and probably a place where we keep credentials for these. Right now it is unclear, who has the AP account for conf.tube (<a class="mention" href="/u/how">@how</a> is finding out).</p>
+</blockquote>
+</aside>
+<p><s>That would be <a class="mention" href="/u/mlemweb">@mlemweb</a> and <a class="mention" href="/u/sebastian">@Sebastian</a> I suppose.</s> Since this was an ‘apconf’ account, I requested a ‘socialhub’ account so we can use it more specifically for videos related to here.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/6</link>
+        <pubDate>Tue, 20 Apr 2021 07:54:01 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1622-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622.rss">Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</source>
+      </item>
+      <item>
+        <title>Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</title>
+        <dc:creator><![CDATA[j8ter]]></dc:creator>
+        <description><![CDATA[
+            <p><em>(This is a wiki post that anyone can edit, by clicking the ‘Edit’ link in bottom-right corner)</em></p>
+<hr>
+<p>Hi everyone,</p>
+<p>Thanks again <a class="mention" href="/u/cristinadelisle">@CristinaDeLisle</a> <a class="mention" href="/u/how">@how</a> <a class="mention" href="/u/aschrijver">@aschrijver</a> <a class="mention" href="/u/hamishcampbell">@hamishcampbell</a> and many more for your contributions to (in my eyes) a solid and lively gathering! Here I wanted to bring together the lessons learned and action points from the discussion (wanted to make a wiki post, don’t know how to yet):</p>
+<h3>
+<a name="things-to-improve-1" class="anchor" href="#things-to-improve-1"></a>Things to improve</h3>
+<p>What can we improve in the next events and for meetups in general.</p>
+<ul>
+<li>
+<p><a class="mention" href="/u/aschrijver">@aschrijver</a>: There were worrying problems with TU Delft BBB (black screens). We should consider moving elsewhere for next event.</p>
+</li>
+<li>
+<p><a class="mention" href="/u/aschrijver">@aschrijver</a>: It was not clear to me there was a Notes thing, where people could introduce themselves. So I am not on the list.</p>
+</li>
+<li>
+<p><a class="mention" href="/u/aschrijver">@aschrijver</a>: We need a list of people that are responsible for places where SocialHub has a presence, and probably a place where we keep credentials for these. Right now it is unclear, who has the AP account for conf.tube (<a class="mention" href="/u/how">@how</a> is finding out).</p>
+</li>
+</ul>
+<h3>
+<a name="topics-to-address-2" class="anchor" href="#topics-to-address-2"></a>Topics to address</h3>
+<ul>
+<li>
+<p><a class="mention" href="/u/j8ter">@j8ter</a>: Discuss user experience and expectations in fediverse for institutions-instances (Nuno / <a class="mention" href="/u/nunoantunes">@nunoantunes</a> )</p>
+<ul>
+<li>
+<a class="mention" href="/u/aschrijver">@aschrijver</a>: We had a discussion after recording ended, on how the fediverse works differently and you shouldn’t follow the global timelines in most cases, but build your own by collecting Followers/Following. In Twitter the algorithm kicks in to drive engagement. In Fedi you are in charge yourself to do that. Communication style is also different in fedi, where more of a 2-way conversation works very well, instead of just broadcasting stuff out to the world.</li>
+</ul>
+</li>
+<li>
+<p><a class="mention" href="/u/j8ter">@j8ter</a>: Security aspects of ActivityPub and fediverse-tech (Gijs and others)</p>
+<ul>
+<li>
+<a class="mention" href="/u/aschrijver">@aschrijver</a>: I addressed this in the chat. Security audits are responsibility for projects themselves, and they are independent in their policy choices here. I think most apps are ‘security-hardened’ in the way their open source code is scrutinized, but I don’t think many formal audits have (as yet) been conducted. SocialHub might play a role here.</li>
+</ul>
+</li>
+<li>
+<p><a class="mention" href="/u/aschrijver">@aschrijver</a>: Piotr mentioned <a href="https://netcommons.eu" rel="noopener nofollow ugc">netCommons</a> Horizon 2020 project has expressed an interest in the Fediverse.</p>
+<ul>
+<li>
+<a class="mention" href="/u/aschrijver">@aschrijver</a>: I approached Piotr on LinkedIn, and sent a <a href="https://twitter.com/humane_tech_now/status/1384411933969952768" rel="noopener nofollow ugc">tweet to netCommonsEU</a> inviting them to join discussion here.</li>
+</ul>
+</li>
+</ul>
+<h3>
+<a name="possible-follow-ups-action-points-3" class="anchor" href="#possible-follow-ups-action-points-3"></a>(Possible) Follow-ups / action points</h3>
+<p>List actions to be taken for the next events, or ideas to be considered.</p>
+<ul>
+<li>
+<p><a class="mention" href="/u/aschrijver">@aschrijver</a>: I have the list of participants. We might provide it somewhere, and we might ask Jean-Luc Dorel to add more info on EC roles these people have (iff possible).</p>
+</li>
+<li>
+<p><a class="mention" href="/u/aschrijver">@aschrijver</a>: We may provide the text of the chat roll, maybe on conf.tube together with the video (as suggested by <a class="mention" href="/u/hamishcampbell">@hamishcampbell</a>).</p>
+<ul>
+<li>
+<a class="mention" href="/u/j8ter">@j8ter</a> made a recording of the BBB-stream including the chat (screen record) that was sent to <a class="mention" href="/u/how">@how</a> to put on conf.tube. <a class="mention" href="/u/j8ter">@j8ter</a> will embed (if possible) on ngi.eu/event-psge Wednesday 21 (done, <a class="mention" href="/u/aschrijver">@aschrijver</a>  and <a class="mention" href="/u/how">@how</a> could you test, I get some weird issues w Chromium and not with Firefox).</li>
+</ul>
+</li>
+<li>
+<p><a class="mention" href="/u/aschrijver">@aschrijver</a>: We can reiterate the video and extract all the things that came up, especially in the chat. Then create a sort of a FAQ summary article from it, where we provide very clear, concise answers to them and offer it as handout / input to the next event (could use pad.public.cat for this → <a href="https://pad.public.cat/faq-webinar-activitypub-for-administrations?view" class="inline-onebox" rel="noopener nofollow ugc">HedgeDoc - Collaborative markdown notes</a>).  <a class="mention" href="/u/j8ter">@j8ter</a> we could kickoff the discussion with action points from the 1st webinar. I have added them to my introductory presentation → <a href="https://pad.public.cat/ngi0-ec-activitypub-liaison-presentation-2021-04-26-intro" class="inline-onebox" rel="noopener nofollow ugc">HedgeDoc - Collaborative markdown notes</a></p>
+</li>
+<li>
+<p><a class="mention" href="/u/j8ter">@j8ter</a>: Start the 2nd webinar with  a brief explanation of venue features (shared notes for introduction, public chat for questions. suggestions and relevant links), possibly in the first/background slide, which I will update for this.</p>
+</li>
+</ul>
+<p>-<a class="mention" href="/u/how">@how</a>, <a class="mention" href="/u/aschrijver">@aschrijver</a> &amp; <a class="mention" href="/u/j8ter">@j8ter</a>: decide on title for second webinar (or stick with "ActivityPub for Administrations). <a class="mention" href="/u/j8ter">@j8ter</a> suggests “Understand ActivityPub”, so the workshop can be something like “Use ActivityPub”.</p>
+<hr>
+<p><em>(Note, this post had some replies that were included here and then removed, otherwise edits to this wiki do not become clear to forum visistors)</em></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622/1</link>
+        <pubDate>Mon, 19 Apr 2021 10:42:57 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1622-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622.rss">Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</source>
+      </item>
+  </channel>
+</rss>

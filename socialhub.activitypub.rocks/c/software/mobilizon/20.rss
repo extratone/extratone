@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Mobilizon - SocialHub</title>
+    <link>https://socialhub.activitypub.rocks/c/software/mobilizon/20</link>
+    <description>Topics in the &#39;Mobilizon&#39; category Together, we go further.</description>
+    
+      <lastBuildDate>Tue, 27 Oct 2020 23:04:00 +0000</lastBuildDate>
+      <atom:link href="https://socialhub.activitypub.rocks/c/software/mobilizon/20.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Shout out to Mobilizon for version 1.0.0!</title>
+          <dc:creator><![CDATA[jarofgreen]]></dc:creator>
+          <category>Mobilizon</category>
+          <description><![CDATA[
+            <p><a href="https://framablog.org/2020/10/27/mobilizon-your-events-your-groups-your-data/" class="onebox" target="_blank" rel="noopener nofollow ugc">https://framablog.org/2020/10/27/mobilizon-your-events-your-groups-your-data/</a></p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/shout-out-to-mobilizon-for-version-1-0-0/1115">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/shout-out-to-mobilizon-for-version-1-0-0/1115</link>
+          <pubDate>Tue, 27 Oct 2020 23:04:00 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1115</guid>
+          <source url="https://socialhub.activitypub.rocks/t/shout-out-to-mobilizon-for-version-1-0-0/1115.rss">Shout out to Mobilizon for version 1.0.0!</source>
+        </item>
+        <item>
+          <title>How to represent Places in an event</title>
+          <dc:creator><![CDATA[tcit]]></dc:creator>
+          <category>Mobilizon</category>
+          <description><![CDATA[
+            <p>ActivityStreams vocabulary says <a href="https://www.w3.org/TR/activitystreams-vocabulary/#places" rel="nofollow noopener">about Places</a>:</p>
+<blockquote>
+<p>The Place object is intentionally flexible. It can, for instance, be used to identify a location simply by name […] or, by <code>longitude</code> and <code>latitude</code> […]</p>
+</blockquote>
+<blockquote>
+<p>While publishers are not required to use these specific properties and <em>MAY</em> make use of other mechanisms for describing locations, consuming implementations that support the <code>Place</code> object <em>MUST</em> support the use of these properties.</p>
+</blockquote>
+<p>For instance, Honk <a href="https://humungus.tedunangst.com/r/honk/m/activitypub.7#METADATA" rel="nofollow noopener">seems</a> to use this.</p>
+<pre><code class="lang-json">"location": {
+    "latitude": 39.95,
+    "longitude": -75.17,
+    "name": "Joe Rittenhouse",
+    "type": "Place"
+  },
+</code></pre>
+<p>In that specific case Mobilizon needs to specify address data (street, locality, …) which are not covered by basic AS <code>Place</code> type. Mobilizon replaces AS <code>Place</code> type with <a href="https://schema.org/Place" rel="nofollow noopener">Schema.org <code>Place</code> type</a> (and specifies it in <code>@context</code>).</p>
+<pre><code class="lang-json">"location": {
+    "address": {
+      "addressCountry": "France",
+      "addressLocality": "Lyon",
+      "addressRegion": "Auvergne-Rhône-Alpes",
+      "postalCode": "69007",
+      "streetAddress": "10 Rue Jangot",
+      "type": "PostalAddress"
+    },
+    "geo": {
+      "latitude": 4.8425657,
+      "longitude": 45.7517141,
+      "type": "GeoCoordinates"
+    },
+    "id": "http://mobilizon2.com/address/bdf7fb53-7177-46f3-8fb3-93c25a802522",
+    "name": "10 Rue Jangot",
+    "type": "Place"
+  },
+</code></pre>
+<p>However, it might not be the best way. Maybe adding needed <a href="http://Schema.org" rel="nofollow noopener">Schema.org</a> <code>Place</code> properties (in our case: address) on top of the AS <code>Place</code> type is better. It would at least allow implementations that don’t support everything to grab a subset of the data, such as geographic coordinates for instance.</p>
+<p>What do you think ?</p>
+            <p><small>8 posts - 5 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/how-to-represent-places-in-an-event/413">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/how-to-represent-places-in-an-event/413</link>
+          <pubDate>Wed, 18 Dec 2019 09:35:33 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-413</guid>
+          <source url="https://socialhub.activitypub.rocks/t/how-to-represent-places-in-an-event/413.rss">How to represent Places in an event</source>
+        </item>
+        <item>
+          <title>About Mobilizon</title>
+          <dc:creator><![CDATA[tcit]]></dc:creator>
+          <category>Mobilizon</category>
+          <description><![CDATA[
+            <p>Together, we go further.</p>
+<p><a href="https://joinmobilizon.org" rel="nofollow noopener">Mobilizon</a> is software that, once installed on a server, will create a website where people can create events, similar to Facebook events or MeetUp.</p>
+<p>Although it can be used to organize a simple birthday party or a karate competition, Mobilizon will be developed to meet the needs of activists, who require specific tools to organize themselves in an autonomous and sustainable way.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/about-mobilizon/73">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/about-mobilizon/73</link>
+          <pubDate>Thu, 03 Oct 2019 08:45:54 +0000</pubDate>
+          <discourse:topicPinned>Yes</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-73</guid>
+          <source url="https://socialhub.activitypub.rocks/t/about-mobilizon/73.rss">About Mobilizon</source>
+        </item>
+  </channel>
+</rss>

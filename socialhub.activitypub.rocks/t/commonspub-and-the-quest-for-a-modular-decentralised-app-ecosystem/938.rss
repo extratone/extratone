@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>CommonsPub and the quest for a modular decentralised app ecosystem</title>
+    <link>https://socialhub.activitypub.rocks/t/commonspub-and-the-quest-for-a-modular-decentralised-app-ecosystem/938</link>
+    <description>*Mayel de Borniol, with the participation of the CommonsPub Team &amp; Contributors.*
+
+https://conf.tube/videos/watch/d66cf9ea-e8bf-452e-bb36-e88a402e3da2
+
+*The goal: empower people to create and self-manage social spaces and tools tailored to their needs.*
+
+ActivityPub gave us interoperability at the data level, and we’d like to do the same on the software level with [CommonsPub](https://commonspub.org/). Instead of a top-down “product design” approach to building an app or platform, we’d like a world where even non-technical users and communities can do it themselves: being able to piece together custom experiences from an ecosystem of apps and plugins developed by different groups who all contribute to (and benefit from) a pool of interdependent software libraries, while each focusing on different use cases, features and user experiences.
+
+We have implemented groups (to further decentralise the fediverse by rendering users and communities independent from the instance they’re on), and decoupled the federation and storage of ActivityStreams activities/objects from the app’s relational database, backend logic, APIs and frontend interfaces. This means users can have one fediverse identity and a timeline which shows all types of content and activities in one place, while participating in multiple communities and using specialised apps for different activities.
+
+After presenting what’s available to be hacked on and deployed, we’ll discuss some of our ongoing projects, such as:
+
+1. [ValueFlows](https://valueflo.ws/) to facilitate and federate mutual aid and circular economies.
+2. [HAHA Academy](https://haha.academy/) to share educational knowledge and encourage lifelong learning.
+3. Federated taxonomies for topic-based search and discovery across instances.
+4. Plus one more thing which touches on self-hosting, privacy, portability and network neutrality: **[Bonfire](https://bonfire.cafe/)!**
+
+## Questions &amp; Answers available!
+**[Q&amp;A Session – CommonsPub and the quest for a modular decentralised app ecosystem](https://conf.tube/videos/watch/a1097f46-b0db-48bf-be3f-55ac20b2a66f)**
+⬡ Hooray, the live Questions &amp; Answers are available here
+https://conf.tube/videos/watch/a1097f46-b0db-48bf-be3f-55ac20b2a66f</description>
+    
+    <lastBuildDate>Tue, 06 Oct 2020 12:22:13 +0000</lastBuildDate>
+    <category>ActivityPub Conference 2020</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/commonspub-and-the-quest-for-a-modular-decentralised-app-ecosystem/938.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>CommonsPub and the quest for a modular decentralised app ecosystem</title>
+        <dc:creator><![CDATA[pukkamustard]]></dc:creator>
+        <description><![CDATA[
+            <p>Just watched the Q&amp;A session, which I unfortunately missed in live. Thanks for the answer <a class="mention" href="/u/mayel">@mayel</a>.</p>
+<p>For future reference the answer to the question on C2S protocol (in my own words):</p>
+<ul>
+<li>CommonsPub does not currently support C2S. CommonsPub implements a GraphQL client protocol. They are open for this to be implemented. Up to now it was not needed and thus not implemented.</li>
+</ul>
+<p>Thanks to <a class="mention" href="/u/mlemweb">@mlemweb</a> and <a class="mention" href="/u/how">@how</a> for relaying the question.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/commonspub-and-the-quest-for-a-modular-decentralised-app-ecosystem/938/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/commonspub-and-the-quest-for-a-modular-decentralised-app-ecosystem/938/6</link>
+        <pubDate>Tue, 06 Oct 2020 12:22:13 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-938-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/commonspub-and-the-quest-for-a-modular-decentralised-app-ecosystem/938.rss">CommonsPub and the quest for a modular decentralised app ecosystem</source>
+      </item>
+      <item>
+        <title>CommonsPub and the quest for a modular decentralised app ecosystem</title>
+        <dc:creator><![CDATA[pukkamustard]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/mayel">@mayel</a>! Thanks for the talk!</p>
+<p>I appreciate the “generality” of CommonsPub (and was very much inspired by it). I feel that the ActivityPub C2S protocol is an essential part of this generality and a DIY system for communities. Does CommonsPub support the ActivityPub C2S protocol? How does that/would that work with LiveView (which does not need an API at all)?</p>
+<p>I am also working on a “general” ActivityPub backend called <a href="https://gitlab.com/openengiadina/cpub" rel="nofollow noopener">CPub</a>…name inspired by CommonsPub! The technical approach is different (use RDF as internal data model) and it is now also a testbed for some other experiments. In any case, look forward to the Q&amp;A and discussing further!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/commonspub-and-the-quest-for-a-modular-decentralised-app-ecosystem/938/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/commonspub-and-the-quest-for-a-modular-decentralised-app-ecosystem/938/5</link>
+        <pubDate>Fri, 02 Oct 2020 16:22:37 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-938-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/commonspub-and-the-quest-for-a-modular-decentralised-app-ecosystem/938.rss">CommonsPub and the quest for a modular decentralised app ecosystem</source>
+      </item>
+      <item>
+        <title>CommonsPub and the quest for a modular decentralised app ecosystem</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-commonspub" data-username="mayel" data-post="3" data-topic="938">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/mayel/40/120_2.png" class="avatar"> mayel:</div>
+<blockquote>
+<p>What funding? Are you offering?</p>
+</blockquote>
+</aside>
+<p>Well, yes <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/smiley.png?v=9" title=":smiley:" class="emoji" alt=":smiley:"><br>
+<aside class="quote quote-modified" data-post="5" data-topic="837">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/how/40/94_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/scaling-up-cooperation/837/5">Scaling Up Cooperation</a> <a class="badge-wrapper  box" href="/c/meeting/apconf2020/53"><span class="badge-category-parent-bg" style="background-color: #0E76BD;"></span><span class="badge-category-bg" style="background-color: #ff7a00;"></span><span style="color: #ffffff" data-drop-close="true" class="badge-category clear-badge" title="Add your proposals for the Conf by creating a New Topic –
+Tag it #bof for Birds of Feather sessions or #hackathon for Hack proposals …">ActivityPub Conference 2020</span></a>
+  </div>
+  <blockquote>
+    2. Achievements and ways to gather more funding to develop ActivityPub software.
+This is a wiki so we can prepare the BoF. A dedicated pad will be used during the live session to take notes and report them here later on, or you can use replies. 
+ActivityPub-related Funding
+Feel free to add to the table 
+15 ActivityPub projects were funded so far (PixelFed received 2 grants) through NGI0 Discovery, and there’s still an opportunity to get some funding: next deadline is December 1st 2020. 
+
+
+
+
+Soft…
+  </blockquote>
+</aside>
+</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/commonspub-and-the-quest-for-a-modular-decentralised-app-ecosystem/938/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/commonspub-and-the-quest-for-a-modular-decentralised-app-ecosystem/938/4</link>
+        <pubDate>Fri, 02 Oct 2020 13:05:59 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-938-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/commonspub-and-the-quest-for-a-modular-decentralised-app-ecosystem/938.rss">CommonsPub and the quest for a modular decentralised app ecosystem</source>
+      </item>
+      <item>
+        <title>CommonsPub and the quest for a modular decentralised app ecosystem</title>
+        <dc:creator><![CDATA[mayel]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>you mention taxonomy… I can see a use-case where an application could announce activities with a specific taxonomy that would be implemented using SKOS, and as such be compatible with SkoHub. Do you think that would make sense, and could be implemented from what you have now? As I understand it, the categories you mention can act as channels to follow.</p>
+</blockquote>
+<p>I have yet to watch the SkoHub presentation, but as I understand we should be able to interoperate. Our categories are exposed as AP actors, so they can be tagged and followed as-is even on Mastodon. We’re also planning to do that for other data types you may want to mention or follow, like geolocations or threads.</p>
+<blockquote>
+<p>I see you chose Raspberry Pi. What about <a href="https://www.olimex.com/Products/OLinuXino/open-source-hardware" rel="nofollow noopener">some Olinuxino </a>? OLIMEX people are really friendly, they’re based in Europe, and would probably be interested in helping around.</p>
+</blockquote>
+<p>Yeah that’s interesting, we’re definitely exploring any relevant options, and if we can use open hardware all the better!</p>
+<blockquote>
+<p>sister projects you might want to get involved with: YUNoHost, MAZI, FreedomBox… Did you consider any of them?</p>
+</blockquote>
+<p>Yeah we may use something like that on the device, to handle deployments/upgrades but also make it easier for users to install 3rd party apps, as long as it’s simple enough to use and especially maintain for not-very-technical users. Have you got experience with any of them? (I’m personally more used to Docker, but it’s not very well liked for some good reasons).</p>
+<blockquote>
+<p>what about getting some funding for Bonfire instead of doing a crowdfunding?</p>
+</blockquote>
+<p>What funding? Are you offering? <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/stuck_out_tongue.png?v=9" title=":stuck_out_tongue:" class="emoji" alt=":stuck_out_tongue:"></p>
+<blockquote>
+<p>you didn’t mention a timeline for the various projects: do you have any already?</p>
+</blockquote>
+<p>It really depends on how things go. There’s 4 core contributors plus several more participants working on this (part time at the moment, so we’re looking to at least sustain that and not be pulled away by new day jobs).</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/commonspub-and-the-quest-for-a-modular-decentralised-app-ecosystem/938/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/commonspub-and-the-quest-for-a-modular-decentralised-app-ecosystem/938/3</link>
+        <pubDate>Fri, 02 Oct 2020 07:34:06 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-938-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/commonspub-and-the-quest-for-a-modular-decentralised-app-ecosystem/938.rss">CommonsPub and the quest for a modular decentralised app ecosystem</source>
+      </item>
+      <item>
+        <title>CommonsPub and the quest for a modular decentralised app ecosystem</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>Technology is not neutral. We’re inside of what we make, and it’s inside of us. We’re living in a world of connections – and it matters which ones get made of unmade.<br>
+– Donna Haraway</p>
+</blockquote>
+<p>Ha! Thank you <a class="mention" href="/u/mayel">@mayel</a> for starting with this. Indeed it’s critical to be able to think not only in terms of <em>progress</em> (what can be added to the existing) but also in terms of what can be removed, to paraphrase Antoine de Saint-Exupéry.</p>
+<p>Instead of transcribing, I’ll go directly into questions, <a class="mention" href="/u/mayel">@mayel</a>:</p>
+<ul>
+<li>you mention taxonomy… I can see a use-case where an application could announce activities with a specific taxonomy that would be implemented using SKOS, and as such be compatible with SkoHub. Do you think that would make sense, and could be implemented from what you have now? As I understand it, the categories you mention can act as channels to follow.</li>
+<li>about Bonfire, the device: I see you chose Raspberry Pi. What about <a href="https://www.olimex.com/Products/OLinuXino/open-source-hardware">some Olinuxino</a>? OLIMEX people are really friendly, they’re based in Europe, and would probably be interested in helping around.</li>
+<li>there are also sister projects you might want to get involved with: YUNoHost, MAZI, FreedomBox… Did you consider any of them?</li>
+<li>what about getting some funding for Bonfire instead of doing a crowdfunding? Or both?</li>
+<li>you didn’t mention a timeline for the various projects: do you have any already?</li>
+</ul>
+<p>I’d be really interested in helping you, I’m really happy at the way you’re taking.</p>
+<p>If it makes sense, I’d like to see, during the conference or after, maybe during the hackathon, some connection between <a class="hashtag" href="/c/software/commonspub/25">#<span>software:commonspub</span></a> and <a class="mention" href="/u/pukkamustard">@pukkamustard</a>’s <a href="https://gitlab.com/openengiadina/cpub">CPub</a>. I don’t know how you have been keeping in touch or not, but it definitely sounds like there’s some common vibes.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/commonspub-and-the-quest-for-a-modular-decentralised-app-ecosystem/938/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/commonspub-and-the-quest-for-a-modular-decentralised-app-ecosystem/938/2</link>
+        <pubDate>Thu, 01 Oct 2020 20:39:17 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-938-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/commonspub-and-the-quest-for-a-modular-decentralised-app-ecosystem/938.rss">CommonsPub and the quest for a modular decentralised app ecosystem</source>
+      </item>
+      <item>
+        <title>CommonsPub and the quest for a modular decentralised app ecosystem</title>
+        <dc:creator><![CDATA[mayel]]></dc:creator>
+        <description><![CDATA[
+            <p><em>Mayel de Borniol, with the participation of the CommonsPub Team &amp; Contributors.</em></p>
+<p><iframe width="560" height="315" src="https://conf.tube/videos/embed/d66cf9ea-e8bf-452e-bb36-e88a402e3da2" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+<p><em>The goal: empower people to create and self-manage social spaces and tools tailored to their needs.</em></p>
+<p>ActivityPub gave us interoperability at the data level, and we’d like to do the same on the software level with <a href="https://commonspub.org/" rel="noopener nofollow ugc">CommonsPub</a>. Instead of a top-down “product design” approach to building an app or platform, we’d like a world where even non-technical users and communities can do it themselves: being able to piece together custom experiences from an ecosystem of apps and plugins developed by different groups who all contribute to (and benefit from) a pool of interdependent software libraries, while each focusing on different use cases, features and user experiences.</p>
+<p>We have implemented groups (to further decentralise the fediverse by rendering users and communities independent from the instance they’re on), and decoupled the federation and storage of ActivityStreams activities/objects from the app’s relational database, backend logic, APIs and frontend interfaces. This means users can have one fediverse identity and a timeline which shows all types of content and activities in one place, while participating in multiple communities and using specialised apps for different activities.</p>
+<p>After presenting what’s available to be hacked on and deployed, we’ll discuss some of our ongoing projects, such as:</p>
+<ol>
+<li>
+<a href="https://valueflo.ws/" rel="noopener nofollow ugc">ValueFlows</a> to facilitate and federate mutual aid and circular economies.</li>
+<li>
+<a href="https://haha.academy/" rel="noopener nofollow ugc">HAHA Academy</a> to share educational knowledge and encourage lifelong learning.</li>
+<li>Federated taxonomies for topic-based search and discovery across instances.</li>
+<li>Plus one more thing which touches on self-hosting, privacy, portability and network neutrality: <strong><a href="https://bonfire.cafe/" rel="noopener nofollow ugc">Bonfire</a>!</strong>
+</li>
+</ol>
+<h2>Questions &amp; Answers available!</h2>
+<p><strong><a href="https://conf.tube/videos/watch/a1097f46-b0db-48bf-be3f-55ac20b2a66f" rel="noopener nofollow ugc">Q&amp;A Session – CommonsPub and the quest for a modular decentralised app ecosystem</a></strong><br>
+⬡ Hooray, the live Questions &amp; Answers are available here<br>
+<iframe width="560" height="315" src="https://conf.tube/videos/embed/a1097f46-b0db-48bf-be3f-55ac20b2a66f" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/commonspub-and-the-quest-for-a-modular-decentralised-app-ecosystem/938/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/commonspub-and-the-quest-for-a-modular-decentralised-app-ecosystem/938/1</link>
+        <pubDate>Wed, 30 Sep 2020 14:11:28 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-938-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/commonspub-and-the-quest-for-a-modular-decentralised-app-ecosystem/938.rss">CommonsPub and the quest for a modular decentralised app ecosystem</source>
+      </item>
+  </channel>
+</rss>

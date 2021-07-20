@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>ActivityStreams protocol spec question</title>
+    <link>https://socialhub.activitypub.rocks/t/activitystreams-protocol-spec-question/1401</link>
+    <description>I am confused about something in the activity streams specification
+in the Activity Vocabulary doc a *Collection.Current* can be a *PagedCollection* **or** a *Link*
+[Activity Vocabulary (w3.org)](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-current)
+
+However their example 75 (at link above) current has the &quot;summary&quot; element which is not avalable to something of         type &quot;Link&quot; (see below).  Am I misunderstanding that current is not an Object or Link but Object **AND** Link?  What do other implementations do with summary in this case?
+
+         &quot;current&quot;: {
+            &quot;type&quot;: &quot;Link&quot;,
+            &quot;summary&quot;: &quot;Most Recent Items&quot;,
+            &quot;href&quot;: &quot;http://example.org/collection&quot;
+          },</description>
+    
+    <lastBuildDate>Wed, 12 May 2021 07:29:17 +0000</lastBuildDate>
+    <category>ActivityPub</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/activitystreams-protocol-spec-question/1401.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>ActivityStreams protocol spec question</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>In general I think, the W3C Social CG will take it up when tackling ActivityStreams Vocabulary 3.0 …</p>
+<p>Then the examples can be corrected.<br>
+There are some minor bugs which should be investigated too, recently I found out the property “closed” in the ActivityPub Vocabulary is not marked as Functional …</p>
+<p>So, in theory it could be [true, false] or [false, true] which doese not make sense <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>So, I asked Dr. rhiaro about the future and <a href="https://toot.cat/@rhiaro/106011680227589321">the answer was</a><br>
+“So we’d be looking at AS3. In any case yes, this is something the SocialCG is well positioned to iterate on and making sure we’re set up to do that in a sensible way has been on my list for ages. Might take some time of day job later this month to make space to think about it properly.”</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/activitystreams-protocol-spec-question/1401/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/activitystreams-protocol-spec-question/1401/4</link>
+        <pubDate>Wed, 12 May 2021 07:29:17 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1401-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/activitystreams-protocol-spec-question/1401.rss">ActivityStreams protocol spec question</source>
+      </item>
+      <item>
+        <title>ActivityStreams protocol spec question</title>
+        <dc:creator><![CDATA[mathew_001]]></dc:creator>
+        <description><![CDATA[
+            <p>Didn’t know about the github issue tracker for activitystreams.  Thank you!!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/activitystreams-protocol-spec-question/1401/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/activitystreams-protocol-spec-question/1401/3</link>
+        <pubDate>Wed, 03 Feb 2021 21:52:38 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1401-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/activitystreams-protocol-spec-question/1401.rss">ActivityStreams protocol spec question</source>
+      </item>
+      <item>
+        <title>ActivityStreams protocol spec question</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>This is already mentioned in an issue on the tracker, but it is never addressed. I think you can best assume it is erronous, and belongs to Object.</p>
+<aside class="onebox githubissue">
+  <header class="source">
+      <a href="https://github.com/w3c/activitystreams/issues/496" target="_blank" rel="noopener">github.com/w3c/activitystreams</a>
+  </header>
+  <article class="onebox-body">
+    <div class="github-row">
+  <div class="github-icon-container" title="Issue">
+	  <svg width="60" height="60" class="github-icon" viewBox="0 0 14 16" aria-hidden="true"><path d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
+  </div>
+
+  <div class="github-info-container">
+    <h4>
+      <a href="https://github.com/w3c/activitystreams/issues/496" target="_blank" rel="noopener">Example 75, 77 and 87 use property summary on a Link</a>
+    </h4>
+
+    <div class="github-info">
+      <div class="date">
+        opened <span class="discourse-local-date" data-format="ll" data-date="2018-12-07" data-time="15:23:48" data-timezone="UTC">03:23PM - 07 Dec 18 UTC</span>
+      </div>
+
+
+      <div class="user">
+        <a href="https://github.com/alexcastano" target="_blank" rel="noopener">
+          <img alt="alexcastano" src="https://socialhub.activitypub.rocks/uploads/default/original/1X/8b5d6a0676ce1bf163aecb564057b3a8b74a88b8.jpeg" class="onebox-avatar-inline" width="20" height="20">
+          alexcastano
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="github-row">
+  <p class="github-content">Please Indicate One:
+ Editorial
+ Question
+ Feedback
+ Blocking Issue
+ Non-Blocking Issue
+The property summary domain is Object, however, is used in those examples:
+https://www.w3.org/TR/activitystreams-vocabulary/#dfn-last
+https://www.w3.org/TR/activitystreams-vocabulary/#dfn-first
+https://www.w3.org/TR/activitystreams-vocabulary/#dfn-current...</p>
+</div>
+
+<div class="labels">
+</div>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p><strong>Update</strong>: Changes <a href="https://github.com/TGNThump/ActivityStreams4J/commit/94a237d5cbdf88babeb53c28863ea5491cee80a4">are staged</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/activitystreams-protocol-spec-question/1401/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/activitystreams-protocol-spec-question/1401/2</link>
+        <pubDate>Wed, 03 Feb 2021 21:35:33 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1401-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/activitystreams-protocol-spec-question/1401.rss">ActivityStreams protocol spec question</source>
+      </item>
+      <item>
+        <title>ActivityStreams protocol spec question</title>
+        <dc:creator><![CDATA[mathew_001]]></dc:creator>
+        <description><![CDATA[
+            <p>I am confused about something in the activity streams specification<br>
+in the Activity Vocabulary doc a <em>Collection.Current</em> can be a <em>PagedCollection</em> <strong>or</strong> a <em>Link</em><br>
+<a href="https://www.w3.org/TR/activitystreams-vocabulary/#dfn-current" rel="noopener nofollow ugc">Activity Vocabulary (w3.org)</a></p>
+<p>However their example 75 (at link above) current has the “summary” element which is not avalable to something of         type “Link” (see below).  Am I misunderstanding that current is not an Object or Link but Object <strong>AND</strong> Link?  What do other implementations do with summary in this case?</p>
+<pre><code>     "current": {
+        "type": "Link",
+        "summary": "Most Recent Items",
+        "href": "http://example.org/collection"
+      },</code></pre>
+          <p><a href="https://socialhub.activitypub.rocks/t/activitystreams-protocol-spec-question/1401/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/activitystreams-protocol-spec-question/1401/1</link>
+        <pubDate>Wed, 03 Feb 2021 21:16:48 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1401-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/activitystreams-protocol-spec-question/1401.rss">ActivityStreams protocol spec question</source>
+      </item>
+  </channel>
+</rss>

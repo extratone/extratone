@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Common code: Webfinger Library</title>
+    <link>https://socialhub.activitypub.rocks/t/common-code-webfinger-library/657</link>
+    <description>Hello folks!
+
+I have to admit lately I&#39;ve not taken the time to check out other people&#39;s libraries properly. I&#39;m sure we can benefit a lot from sharing our knowledge and code. With that in mind I thought I&#39;d put out feelers for settling on a shared Webfinger implementation - whether that be an existing one or something we come up with. If nothing else this exercise could get us talking with each other more, which is no bad thing.
+
+I picked webfinger because it&#39;s not core ActivityPub and it has potential use for other authors too - plus a higher chance of an existing implementation we can use/adapt.
+
+I wonder if the other node project authors would like to tell everyone a little about their implementation, whether it&#39;s a dependency or home brewed?
+
+In the case of my library, I&#39;ve written a fairly naïve implementation that does little more than look up an actor and return the most basic json template with a link to their profile.</description>
+    
+    <lastBuildDate>Sat, 16 May 2020 16:19:53 +0000</lastBuildDate>
+    <category>NodeJS</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/common-code-webfinger-library/657.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Common code: Webfinger Library</title>
+        <dc:creator><![CDATA[birdsofpraise]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve been having a look at a few node AP projects and how they handle webfinger. I think there’s subtle differences but it might make sense to create a connect library for responding to webfinger requests, which can be used with express, koa, and node’s native http server without much pain.</p>
+<p>The library could handle parsing the query, check the hostname, 404 responses, setting the correct headers, writing the response, etc etc. An example API might look like this:</p>
+<pre><code class="lang-javascript">const webfingerMiddleware = webfinger(
+  // The first argument looks up the user and returns the links. Can return the user's url for a shortcut.
+  async username =&gt; {
+    const user = await myApi.lookupUser(username);
+    if(!user) { return null; } // Triggers the 404 case
+    return user.href;
+  },
+  {
+    // Options object allows for more control, like using a custom regex
+    matcher: /^acct:[@~]?([^@]+)@(.+)$/
+  }
+);
+</code></pre>
+<p><a class="mention" href="/u/datatitian">@datatitian</a>  so far I think your library is the only one I’ve found that uses webfinger with express. What do you think of this idea? I notice your library splits webfinger requests into three - request parsing, 404 handling, and response generation. I think this connect middleware could handle all of these for most use cases without any extra configuration than I’ve shown above.</p>
+<p>The only reservation I have here is that a webfinger specific library might be too small/specific to make it a library of its own. But the payoff of new AP implementors not having to read up on webfinger could be worth it?</p>
+<p>Any thoughts?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/common-code-webfinger-library/657/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/common-code-webfinger-library/657/5</link>
+        <pubDate>Sat, 16 May 2020 16:19:53 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-657-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/common-code-webfinger-library/657.rss">Common code: Webfinger Library</source>
+      </item>
+      <item>
+        <title>Common code: Webfinger Library</title>
+        <dc:creator><![CDATA[yvolk]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/birdsofpraise">@birdsofpraise</a> Agree, Webfinger protocol may be used on a client side also to discover unknown Actor’s profile. E.g. when a User types the Actor’s URI (Webfinger ID) manually…</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/common-code-webfinger-library/657/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/common-code-webfinger-library/657/4</link>
+        <pubDate>Wed, 06 May 2020 07:22:18 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-657-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/common-code-webfinger-library/657.rss">Common code: Webfinger Library</source>
+      </item>
+      <item>
+        <title>Common code: Webfinger Library</title>
+        <dc:creator><![CDATA[birdsofpraise]]></dc:creator>
+        <description><![CDATA[
+            <p>The topic you’re linking to talks about C2S - I take it webfinger is still required for most S2S implementations? In which case I think a common webfinger library still makes sense.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/common-code-webfinger-library/657/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/common-code-webfinger-library/657/3</link>
+        <pubDate>Tue, 05 May 2020 16:17:05 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-657-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/common-code-webfinger-library/657.rss">Common code: Webfinger Library</source>
+      </item>
+      <item>
+        <title>Common code: Webfinger Library</title>
+        <dc:creator><![CDATA[yvolk]]></dc:creator>
+        <description><![CDATA[
+            <p>Regarding discovering the Authenticated Actor’s profile I think that we should use “WhoAmI” endpoint, provided by a server during authentication, and not any webfinger method.<br>
+We had the discussion on this, it’s implemented in Pleroma, see here and below: <a href="https://github.com/andstatus/andstatus/issues/499#issuecomment-459088285" rel="nofollow noopener">https://github.com/andstatus/andstatus/issues/499#issuecomment-459088285</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/common-code-webfinger-library/657/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/common-code-webfinger-library/657/2</link>
+        <pubDate>Tue, 05 May 2020 12:54:43 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-657-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/common-code-webfinger-library/657.rss">Common code: Webfinger Library</source>
+      </item>
+      <item>
+        <title>Common code: Webfinger Library</title>
+        <dc:creator><![CDATA[birdsofpraise]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello folks!</p>
+<p>I have to admit lately I’ve not taken the time to check out other people’s libraries properly. I’m sure we can benefit a lot from sharing our knowledge and code. With that in mind I thought I’d put out feelers for settling on a shared Webfinger implementation - whether that be an existing one or something we come up with. If nothing else this exercise could get us talking with each other more, which is no bad thing.</p>
+<p>I picked webfinger because it’s not core ActivityPub and it has potential use for other authors too - plus a higher chance of an existing implementation we can use/adapt.</p>
+<p>I wonder if the other node project authors would like to tell everyone a little about their implementation, whether it’s a dependency or home brewed?</p>
+<p>In the case of my library, I’ve written a fairly naïve implementation that does little more than look up an actor and return the most basic json template with a link to their profile.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/common-code-webfinger-library/657/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/common-code-webfinger-library/657/1</link>
+        <pubDate>Sat, 02 May 2020 11:27:30 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-657-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/common-code-webfinger-library/657.rss">Common code: Webfinger Library</source>
+      </item>
+  </channel>
+</rss>

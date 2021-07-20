@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>A proposal for signature algorithm specification - Server to Server - SocialHub</title>
+    <meta name="description" content="(following on from https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/8) 
+The current version of the HTTP Signatures spec requires that the signature algorithm be “derived from metadata associated with ‘k&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="819.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;A proposal for signature algorithm specification&#39;" href="819.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/a-proposal-for-signature-algorithm-specification/819" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/a-proposal-for-signature-algorithm-specification/819" />
+<meta property="og:title" content="A proposal for signature algorithm specification" />
+<meta name="twitter:title" content="A proposal for signature algorithm specification" />
+<meta property="og:description" content="(following on from State of HTTP Signatures?)  The current version of the HTTP Signatures spec requires that the signature algorithm be “derived from metadata associated with ‘keyId’”. As far as I know, no implementation actually did this, and instead assumed all signatures were rsa-sha256 (of those that even updated to the new drafts).  Note that older versions of the spec included the algorithm in the signature, but this is insecure as malicious actors could specify a weaker algorithm than the..." />
+<meta name="twitter:description" content="(following on from State of HTTP Signatures?)  The current version of the HTTP Signatures spec requires that the signature algorithm be “derived from metadata associated with ‘keyId’”. As far as I know, no implementation actually did this, and instead assumed all signatures were rsa-sha256 (of those that even updated to the new drafts).  Note that older versions of the spec included the algorithm in the signature, but this is insecure as malicious actors could specify a weaker algorithm than the..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="1 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="1 ❤" />
+<meta property="article:published_time" content="2020-07-25T20:15:34+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="819.html">A proposal for signature algorithm specification</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/activitypub.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #0088CC'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>ActivityPub</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/activitypub/s2s/7.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #808281'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Server to Server</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/vpzom.html'><span itemprop='name'>vpzom</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="819.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-07-25T20:15:34Z'>
+              <time itemprop='dateModified' datetime='2020-07-25T20:20:00Z' class='post-time'>
+                July 25, 2020,  8:20pm
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>(following on from <a href="../state-of-http-signatures/754/8.html" class="inline-onebox">State of HTTP Signatures?</a>)</p>
+<p>The current version of the HTTP Signatures spec requires that the signature algorithm be “derived from metadata associated with ‘keyId’”. As far as I know, no implementation actually did this, and instead assumed all signatures were rsa-sha256 (of those that even updated to the new drafts).</p>
+<p>Note that older versions of the spec included the algorithm in the signature, but this is insecure as malicious actors could specify a weaker algorithm than the real sender intended.</p>
+<p>I propose the following solution, <em>roughly</em> based on the CCG’s <a href="https://w3c-ccg.github.io/security-vocab/#signatureAlgorithm" rel="nofollow noopener">Security Vocabulary</a>:</p>
+<ul>
+<li>Add a <code>signatureAlgorithm</code> field to the <code>publicKey</code> field on Actors, with a value chosen from the list in RFC 6931, most likely <code>http://www.w3.org/2001/04/xmldsig-more#rsa-sha256 </code>
+</li>
+<li>Parse incoming signatures based on the <code>signatureAlgorithm</code> value, with a subset of possible algorithms defined by the implementation. If the key is not present, default to rsa-sha256, since this is what current implementations use.</li>
+</ul>
+<p>I’ve implemented this with support for both rsa-sha256 and rsa-sha512 for incoming signatures in lotide, but would like to hear from other implementers in case there’s a better path. Additionally, what other signature algorithms would be worthwhile to add support for?</p>
+        </div>
+
+        <meta itemprop='headline' content='A proposal for signature algorithm specification'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="819.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-07-26T10:33:04Z' class='post-time'>
+                July 26, 2020, 10:33am
+              </time>
+              <meta itemprop='dateModified' content='2020-07-26T10:33:04Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I don’t like this approach for two reasons:</p>
+<aside class="quote no-group" data-username="vpzom" data-post="1" data-topic="819">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../letter_avatar_proxy/v4/letter/v/a698b9/40.png" class="avatar"> vpzom:</div>
+<blockquote>
+<p>Add a <code>signatureAlgorithm</code> field to the <code>publicKey</code> field on Actors</p>
+</blockquote>
+</aside>
+<ol>
+<li>As you note, this proposal doesn’t adhere to the CCG’s proposed Security Vocabulary. The Domain of <code>signatureAlgorithm</code> is rightfully on a <code>Signature</code>, not a <code>PublicKey</code>. There doesn’t appear to be a good reason for breaking this besides convenience and ease-of-implmentation.</li>
+<li>A public key’s use can be for more than just digital signatures in HTTP-Sigs. When adding this property that should be on a Signature onto the PublicKey instead, it begins to restrict this public key’s usefulness for other use cases. Those don’t exist now, because how different key management schemes interact is not really fully thought through in AP. There’s been lots of isolated high-level ideas for sure in the key management space (AP-over-SSB, avoiding HTTP Signatures entirely, using an OCAP implementation), and for developers that want to support more-than-one for different compatibility reasons (ex: being a library, or a bridge-like app) it would be nice to not start from the awkward baseline of having to consider a vocabulary violation on one side.</li>
+</ol>
+<p>I do appreciate you starting this discussion though, and experimenting with a live solution! As you also are aware of (I think this was you commenting on the issue), <a href="https://github.com/tootsuite/mastodon/issues/10638" rel="nofollow noopener">I had at one point supported SHA512 in my blog but mastodon could not verify them at the time</a> but I opted to drop it entirely.</p>
+<p>It’s not clear to me that the benefits of enabling something like SHA512 instead of SHA256 is worth the above costs when instead we can try to coordinate pushing something much more fundamentally better in the key management space.</p>
+        </div>
+
+        <meta itemprop='headline' content='A proposal for signature algorithm specification'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/vpzom.html'><span itemprop='name'>vpzom</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="819.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-07-28T23:10:34Z' class='post-time'>
+                July 28, 2020, 11:10pm
+              </time>
+              <meta itemprop='dateModified' content='2020-07-28T23:10:34Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Fair points. So perhaps a solution should instead:</p>
+<ul>
+<li>Create new keys since the security vocabulary doesn’t actually cover this situation</li>
+<li>Be specific to HTTP Signatures so it’s not confused with any other uses of the key</li>
+</ul>
+<p>Maybe something like this?</p>
+<pre><code class="lang-auto">"publicKey": {
+    /* ...normal fields */,
+    "httpSignaturesConfig": {
+        "signatureAlgorithm": "http://www.w3.org/2001/04/xmldsig-more#rsa-sha256",
+        "minimalHeaders": "(request-target) host digest"
+    }
+}
+</code></pre>
+        </div>
+
+        <meta itemprop='headline' content='A proposal for signature algorithm specification'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nightpool.html'><span itemprop='name'>nightpool</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="819.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-07-28T23:25:32Z'>
+              <time itemprop='dateModified' datetime='2020-07-28T23:28:56Z' class='post-time'>
+                July 28, 2020, 11:28pm
+              </time>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I don’t understand why adding the signature algorithm to the publicKey field would reduce that key’s usefulness for other purposes. couldn’t you just list an additional signature algorithm if you wanted to use it?</p>
+        </div>
+
+        <meta itemprop='headline' content='A proposal for signature algorithm specification'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nightpool.html'><span itemprop='name'>nightpool</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="819.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-07-28T23:26:58Z'>
+              <time itemprop='dateModified' datetime='2020-07-28T23:28:57Z' class='post-time'>
+                July 28, 2020, 11:28pm
+              </time>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I would recommend against creating a nested JSON structure for most things, if we want to use a separate key, perhaps httpSignatureAlgorithm would be clearer?</p>
+        </div>
+
+        <meta itemprop='headline' content='A proposal for signature algorithm specification'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="819.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-07-29T05:54:50Z' class='post-time'>
+                July 29, 2020,  5:54am
+              </time>
+              <meta itemprop='dateModified' content='2020-07-29T05:54:50Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote group-mastodon" data-username="nightpool" data-post="4" data-topic="819" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/nightpool/40/36_2.png" class="avatar"> nightpool:</div>
+<blockquote>
+<p>I don’t understand why adding the signature algorithm to the publicKey field would reduce that key’s usefulness for other purposes. couldn’t you just list an additional signature algorithm if you wanted to use it?</p>
+</blockquote>
+</aside>
+<p>Possibly. In the spirit of infinite-flexibility the RDF definition in theory would let us list as many <code>signatureAlgorithm</code> as we wish.</p>
+<p>In practice, adding it in a quick and speedy way means there will be software out there that will be written to not be able to handle more than one, much like the current state of the <code>type</code> property. Then there’s also the practical question of attempting to disambiguate which value in the <code>signatureAlgorithm</code> list corresponds to which use case.</p>
+<p>IMO, what is missing is a one-to-many mapping from a <code>publicKey</code> to key-use-cases, and then a one-to-one mapping from each key-use-case to metadata (<code>signatureAlgorithm</code> in the HTTP Signatures use-case). And it’s a matter of finding an expression that makes it clear to implementing devs that these are the N-ary expectations.</p>
+        </div>
+
+        <meta itemprop='headline' content='A proposal for signature algorithm specification'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

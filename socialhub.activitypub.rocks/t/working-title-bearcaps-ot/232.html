@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bearcaps OT - ActivityPub - SocialHub</title>
+    <meta name="description" content="I am curious now regarding the content that lead to bearcaps and it’s suggested usage in AP / AS / JSON-LD. 
+
+I am looking at it right now from a perspective where the nodes in the federation are the lowest level of trus&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="232.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Bearcaps OT&#39;" href="https://socialhub.activitypub.rocks/t/bearcaps-ot/232.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/bearcaps-ot/232" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/bearcaps-ot/232" />
+<meta property="og:title" content="Bearcaps OT" />
+<meta name="twitter:title" content="Bearcaps OT" />
+<meta property="og:description" content="I am curious now regarding the content that lead to bearcaps and it’s suggested usage in AP / AS / JSON-LD.   I am looking at it right now from a perspective where the nodes in the federation are the lowest level of trust. (like, S2S only, leaving out C2S for the moment.)  Given the use-case that it should be enforceable to stop objects from spreading outside of the follower-followed relationship boundary, e.g. when I post a note to my followers them, and only them, should be able to read the no..." />
+<meta name="twitter:description" content="I am curious now regarding the content that lead to bearcaps and it’s suggested usage in AP / AS / JSON-LD.   I am looking at it right now from a perspective where the nodes in the federation are the lowest level of trust. (like, S2S only, leaving out C2S for the moment.)  Given the use-case that it should be enforceable to stop objects from spreading outside of the follower-followed relationship boundary, e.g. when I post a note to my followers them, and only them, should be able to read the no..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="6 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="2 ❤" />
+<meta property="article:published_time" content="2019-10-25T13:21:12+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="232.html">Bearcaps OT</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/activitypub.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #0088CC'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>ActivityPub</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/criztovyl.html'><span itemprop='name'>criztovyl</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="232.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-10-25T13:21:12Z'>
+              <time itemprop='dateModified' datetime='2019-10-25T17:01:24Z' class='post-time'>
+                October 25, 2019,  5:01pm
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I am curious now regarding the content that lead to <a href="../bearer-capabilities-internet-draft/167.html">bearcaps</a> and it’s suggested usage in AP / AS / JSON-LD.</p>
+
+<p>I am looking at it right now from a perspective where the nodes in the federation are the lowest level of trust. (like, S2S only, leaving out C2S for the moment.)</p>
+<p>Given the use-case that it should be enforceable to stop objects from spreading outside of the follower-followed relationship boundary, e.g. when I post a note to my followers them, and only them, should be able to read the note. For the moment I would like to exclude Announce.</p>
+<p>The naive way would be that when I compose the note and my server federates it via S2S, it will be sent to the servers of my followers. The receiving server will add the note to it’s internal storage and I trust the receiving server to show this note only to the users it was addressed to.<br>
+To ensure on our side that the note not (accidentally) is readable from the outside, we would protect it by authentication.<br>
+This then is it.<br>
+Because we trust the remote server not showing the note to people that are not the recipients, we can just give it the full note (<code>Create</code>?) , <code>object</code> being embedded and not a reference. Because the note is embedded the remote server does not need to care about that it cannot dereference the ID; it has everything it needs.</p>
+<p>Now bringing in <code>Announce</code>, <code>Announce</code> and private note somehow are incompatible. Unless you Announce it just to the followers that are allowed to see the note. This announce then would only include an <code>object</code> reference, because I think one can assume the receiving user’s servers already have the note. (More about what not later.)</p>
+<p>Now reading the public outbox of the followed, the private note won’t be included there, because it’s the public outbox  and private notes are inherently incompatible with public outboxes. Unless you are somehow authenticated and authorized. C2S could be impacted by this.<br>
+Thinking about authorization, only followers are allowed to see the note. So, for authentication it would be enough to prove I am a follower. The first thing that comes to my mind here is to prove it by signing the request using http signatures and (one of) my keys from my profile.<br>
+Now, authentication now can also happen via <code>Authorization: Bearer ...</code> header, which is where a <code>bearcap</code> could come into play. But this would mean that I somehow need a token from remote server, me the user, not my instance. The remote instance could give my instance a token and my instance could give the token to me. But it’s the stil the token <em>of my instance</em>.<br>
+This sounds strange to me. Why impersonating my instance when I also can prove that I am a follower / recipient?</p>
+<p>Coming back to what happens if the sever receiving the <code>Announce</code> does not have the object.<br>
+It will try dereferencing it and will fail with 403 or 404, due to missing authentication.<br>
+Knowing that private objects can exists, the server can retry with authentication.<br>
+But which? Above, for C2S proving to be a follower. Now, for S2S, the server is not a follower, but proving that it is the instance it says it is (via http signature) the remote server can authorize the server based on whether there are recipients on that instance.<br>
+Authentication could be via <code>bearcap</code> again, but why use a token when I can prove who I am fine without a token?</p>
+<p>Looking back at the <a href="https://blog.joinmastodon.org/2018/06/how-to-implement-a-basic-activitypub-server/" rel="nofollow noopener">Mastodon example</a> it seems like the note has the recipients, if that’s wrong my argumentation will fall. (Because then I have no idea how the authentication who is allowed to see the note would work.)</p>
+<p>So, if this is a use-case for <code>bearcap</code>, why using <code>bearcap</code> here?</p>
+<p>This is out of curiosity, trying to understand the background, not really saying it’s all wrong how it’s done. <img src="../../images/emoji/twitter/slight_smile.png@v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>For me it’s easier to think about it when trying to solve the problem myself.</p>
+        </div>
+
+        <meta itemprop='headline' content='Bearcaps OT'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/kaniini.html'><span itemprop='name'>kaniini</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="232.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-10-25T13:29:56Z' class='post-time'>
+                October 25, 2019,  1:29pm
+              </time>
+              <meta itemprop='dateModified' content='2019-10-25T13:29:56Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>You’re focusing on a single use-case.  The primary use-case in ActivityPub is that inboxes can become <code>bearcap</code> URIs, but that’s too invasive right now.  Hardened access-control on AS2 objects is what is possible in the short term, but that’s not the only use case, and that’s all I am going to say on it.  If you want to know more, somebody else can surely link you to the literally dozens of documents that have lead to this point.</p>
+        </div>
+
+        <meta itemprop='headline' content='Bearcaps OT'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/criztovyl.html'><span itemprop='name'>criztovyl</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="232.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-10-25T13:40:29Z' class='post-time'>
+                October 25, 2019,  1:40pm
+              </time>
+              <meta itemprop='dateModified' content='2019-10-25T13:40:29Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote group-pleroma" data-post="2" data-topic="232">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/kaniini/40/89_2.png" class="avatar"> kaniini:</div>
+<blockquote>
+<p>If you want to know more, somebody else can surely link you to the literally dozens of documents that have lead to this point.</p>
+</blockquote>
+</aside>
+<p>I want to know more, yes. If someone could drop me some hints, I would be really happy. <img src="../../images/emoji/twitter/slight_smile.png@v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>I tried searching, but it’s a challenge finding the right keywords for that. ^^<br>
+But I found some of your blog posts, I think that’s a start. <img src="../../images/emoji/twitter/smiley.png@v=9" title=":smiley:" class="emoji" alt=":smiley:"></p>
+        </div>
+
+        <meta itemprop='headline' content='Bearcaps OT'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/kaniini.html'><span itemprop='name'>kaniini</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="232.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-10-25T14:02:13Z'>
+              <time itemprop='dateModified' datetime='2019-10-25T14:10:03Z' class='post-time'>
+                October 25, 2019,  2:10pm
+              </time>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Since I don’t want to work on LDAP I will give another example where this construction is useful.</p>
+<p>Mastodon (and Pleroma because of Mastodon API compatibility) has a followers-only scope that presently works like this:</p>
+<ol>
+<li>Alice sends a post to her followers collection.</li>
+<li>Bob replies to Alice’s post.  Bob’s post goes to Bob’s followers collection.</li>
+</ol>
+<p>When in reality, both posts should probably go to Alice’s followers collection, since one is a reply to the other.  But because of the way signatures work, this is not really easily accomplished.</p>
+<p>However, with a bearcap, it is possible for Alice to forward Bob’s post onward to her followers collection, as the post can be kept private with access restricted only to those Alice chooses to forward directly to.  This can be enforced by expiring the access token fairly quickly (within a few minutes of issuing it to Alice), so Bob’s reply couldn’t be forwarded further through the network by Alice’s followers, as access has been revoked after a short amount of time.</p>
+<p>But really this stuff’s main advantage is removing the bottleneck of HTTP Signatures in the delivery path while still ensuring that authority is present, e.g. pre-authentication of peers.</p>
+<p>(Yes, I assure you, I have heard the GOOD NEWS about Linked Data Signatures.  Needless to say, they aren’t so great for confidentiality.)</p>
+        </div>
+
+        <meta itemprop='headline' content='Bearcaps OT'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/criztovyl.html'><span itemprop='name'>criztovyl</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="232.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-10-25T14:29:49Z'>
+              <time itemprop='dateModified' datetime='2019-10-25T14:36:53Z' class='post-time'>
+                October 25, 2019,  2:36pm
+              </time>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote group-pleroma" data-post="4" data-topic="232">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/kaniini/40/89_2.png" class="avatar"> kaniini:</div>
+<blockquote>
+<ol>
+<li>Alice sends a post to her followers collection.</li>
+<li>Bob replies to Alice’s post. Bob’s post goes to Bob’s followers collection.</li>
+</ol>
+<p>When in reality, both posts should probably go to Alice’s followers collection, since one is a reply to the other. But because of the way signatures work, this is not really easily accomplished.</p>
+</blockquote>
+</aside>
+<p>Similar to if Alice had an AP-enabled blog?</p>
+<ol>
+<li>Alice writes an blog post, which is addressed to Alice blog’s follower collection</li>
+<li>Bob adds a comments. Bob’s comment is addressed to Bob’s followers. (And Alice, as the author?)</li>
+</ol>
+<p>Now, the problem here is that the comment additionally should be addressed to Alice blog’s followers too?</p>
+<hr>
+<p>And curiosity question(s) below. <img src="../../images/emoji/twitter/slight_smile.png@v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<aside class="quote group-pleroma" data-post="4" data-topic="232">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/kaniini/40/89_2.png" class="avatar"> kaniini:</div>
+<blockquote>
+<p>But because of the way signatures work, this is not really easily accomplished.</p>
+</blockquote>
+</aside>
+<p>I do not understand where the problem with the signatures lies. Like, the signature says “this request came from $user”.<br>
+So, couldn’t you add the follower collection to the recipients, and forward the reply/comment using the collections inbox?<br>
+When the remote server receives the request, sees the author (and can verify it by the signature), that it is a reply to an object that was also address to that collection, it could accept that as authorization?</p>
+<p>(Edit: From my understanding right now you want to completely replace http signatures for normal object federation, so this is kind of a stupid question.)</p>
+<p>But I guess that’s going to deep into the details of a specific use-case <img src="../../images/emoji/twitter/smiley.png@v=9" title=":smiley:" class="emoji" alt=":smiley:"></p>
+<aside class="quote group-pleroma" data-post="4" data-topic="232">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/kaniini/40/89_2.png" class="avatar"> kaniini:</div>
+<blockquote>
+<p>But really this stuff’s main advantage is removing the bottleneck of HTTP Signatures in the delivery path while still ensuring that authority is present, e.g. pre-authentication of peers.</p>
+</blockquote>
+</aside>
+<p>So instead of federating objec / message passing via POSTing to inboxes having an <code>Signature</code> in the http header, the object would contain an <code>Authorization: Bearer ...</code> header based on an inbox <code>bearcap</code> URI?<br>
+<s>How do you get that bearcap URI?</s> <a href="https://blog.dereferenced.org/what-is-ocap-and-why-should-i-care" rel="nofollow noopener">nvm</a></p>
+        </div>
+
+        <meta itemprop='headline' content='Bearcaps OT'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/kaniini.html'><span itemprop='name'>kaniini</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="232.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-10-25T14:40:38Z'>
+              <time itemprop='dateModified' datetime='2019-10-25T14:51:55Z' class='post-time'>
+                October 25, 2019,  2:51pm
+              </time>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="5" data-topic="232">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/criztovyl/40/127_2.png" class="avatar"> criztovyl:</div>
+<blockquote>
+<p>Similar to if Alice had an AP-enabled blog?</p>
+<ol>
+<li>Alice writes an blog post, which is addressed to Alice blog’s follower collection</li>
+<li>Bob adds a comments. Bob’s comment is addressed to Bob’s followers. (And Alice, as the author?)</li>
+</ol>
+<p>Now, the problem here is that the comment additionally should be addressed to Alice blog’s followers too?</p>
+</blockquote>
+</aside>
+<p>Yes, precisely.  That way the conversation thread remains consistent, instead of broken by access violations.</p>
+<aside class="quote no-group" data-post="5" data-topic="232">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/criztovyl/40/127_2.png" class="avatar"> criztovyl:</div>
+<blockquote>
+<p>I do not understand where the problem with the signatures lies. Like, the signature says “this request came from $user”.<br>
+So, couldn’t you add the follower collection to the recipients, and forward the reply/comment using the collections inbox?<br>
+When the remote server receives the request, sees the author (and can verify it by the signature), that it is a reply to an object that was also address to that collection, it could accept that as authorization?</p>
+</blockquote>
+</aside>
+<p>Alice’s signature doesn’t prove Bob actually wrote the message.  To prove that Bob actually wrote the message, the inline version either has to have an LDS signature (not ever happening in several implementations due to confidentiality concerns) or it has to be discarded and refetched from Bob’s server.  That’s where the bearcap comes into play in this case.</p>
+<aside class="quote no-group" data-post="5" data-topic="232">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/criztovyl/40/127_2.png" class="avatar"> criztovyl:</div>
+<blockquote>
+<p>So instead of federating objec / message passing via POSTing to inboxes having an <code>Signature</code> in the http header, the object would contain an <code>Authorization: Bearer ...</code> header based on an inbox <code>bearcap</code> URI?</p>
+</blockquote>
+</aside>
+<p>When using <code>bearcap</code> with inboxes, yes, that’s the idea.  And yes, that blog post has a very rough sketch on how a capability reference would be acquired, however it predated the conception of the bearcap construct, so where you see capability URLs in that example, think bearcap URIs instead.</p>
+        </div>
+
+        <meta itemprop='headline' content='Bearcaps OT'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/criztovyl.html'><span itemprop='name'>criztovyl</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="232.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-10-25T14:54:47Z' class='post-time'>
+                October 25, 2019,  2:54pm
+              </time>
+              <meta itemprop='dateModified' content='2019-10-25T14:54:47Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote group-pleroma" data-post="6" data-topic="232">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/kaniini/40/89_2.png" class="avatar"> kaniini:</div>
+<blockquote>
+<p>Alice’s signature doesn’t prove Bob actually wrote the message.</p>
+</blockquote>
+</aside>
+<p>Ah, yes, I forgot about the relaying to other instances <img src="../../images/emoji/twitter/smiley.png@v=9" title=":smiley:" class="emoji" alt=":smiley:"></p>
+        </div>
+
+        <meta itemprop='headline' content='Bearcaps OT'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/criztovyl.html'><span itemprop='name'>criztovyl</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="232.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-10-25T17:33:46Z' class='post-time'>
+                October 25, 2019,  5:33pm
+              </time>
+              <meta itemprop='dateModified' content='2019-10-25T17:33:46Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote group-pleroma" data-post="6" data-topic="232">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/kaniini/40/89_2.png" class="avatar"> kaniini:</div>
+<blockquote>
+<p>Alice’s signature doesn’t prove Bob actually wrote the message.</p>
+</blockquote>
+</aside>
+<p>So how would look this with bearcaps/OCAP?</p>
+<ol>
+<li>Alice posts a note, addressed to her followers<br>
+1.1. relayed to their instances by her instance</li>
+<li>Bob posts a reply, addressed to his followers, Alice and Alice’ followers<br>
+2.1. relayed to his followers instances and and Alice instance by his instance<br>
+2.2. relayed to Alice’ followers instances by Alice’ instance</li>
+</ol>
+<p>Alice’ instance relaying is validated by other instances by a capability Bob attached to the reply that allows Alice’ instance to relay his reply to Alice’ followers on his behalf.</p>
+<p>Let me mess up some things:</p>
+<p>The capability</p>
+<pre><code class="lang-auto">{
+  "id": "https://instance-b.com/cap/abc-def-ghi",
+  "type": "Capability",
+  "capability": [
+    {
+      "object": "https://instance-b.com/bob/reply",
+      "capability": "relay"
+    }
+  ],
+  "scope": "https://instance-a.com",
+  "actor": "https://instance-b.com"
+}
+</code></pre>
+<p>The reply, as sent from Bob’s instance to Alice’ instance and from Alice’ instance to other instances.</p>
+<pre><code class="lang-auto">{
+  "type": "Create",
+  "actor": "https://instance-b.com/bob",
+  "object": {
+    "id": "https://instance-b.com/bob/reply",
+    "inReplyTo": "https://instance-a.com/alice/note",
+    "to": [
+      "https://instance-a.com/alice",
+      "https://instance-b.com/bob/followers",
+      "https://instance-a.com/alice/followers"
+    ],
+    // [...]
+  },
+  "capabilities": [
+    "https://instance-b.com/cap/abc-def-ghi"
+  ]
+}
+</code></pre>
+        </div>
+
+        <meta itemprop='headline' content='Bearcaps OT'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="232.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-10-25T18:11:40Z'>
+              <time itemprop='dateModified' datetime='2019-10-25T18:21:41Z' class='post-time'>
+                October 25, 2019,  6:21pm
+              </time>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Taking a step back from your detailed analysis, the ActivityPub protocol itself only has two behaviors: POST (to in- and out-boxes) and GET (to any IRI), I’ll just call them “delivery” and “fetch” for my sanity. (It specifies a lot of <em>application side effects</em> for the Social Media domain, but I view that as a separate “spec-within-a-spec”, so I’ll be ignoring those). The delivery aspect is immediate, causes application side effects based on the ActivityStreams value, and the owner of the data now has copies floating about. Nothing then stops the Byzantine Generals Problem: malicious actors, once having data, can do as they please. What we do control is what <em>cooperative</em> nodes do (isolate &amp; defederate malicious nodes). Anyway, a fetch can happen at a later point in time to get a canonical copy of an ActivityStreams payload. Also, importantly, a delivery could be for an application <em>reaction</em> to a previous action, which can include a different scope or capability than the original action.</p>
+<p>So let’s dive into HTTP Signatures and try to empower a user with them.</p>
+<p>Fundamentally, HTTP Signatures are used today to tie a specific HTTP fetch or delivery to a specific user. It is a “push” mechanism where the one doing the action (fetch, delivery) is pushing their authorization and identity (however they define it) onto the receiving server. The receiving server can always build access controls on top of this to solve their problems, but it will always be built on top of the fetcher/deliverer’s concepts (Like how they manage keys), not their own. An HTTP signature does not let the receiver do finer grained permissions than the peer lets them. If, say, a peer server decides a group of 1 nice person and 10 assholes are identified by the same key, the receiving server can’t do much about that.</p>
+<p>Additionally, when fetching, the receiving server must apply the HTTP signature key to some sort of access control list, and change it if it is granted/denied at a later time. Doable, but subject to the previous major caveat / security loophole (sender smearing a key across multiple users).</p>
+<p>But! Even though it’s doable and bad already! If a user is delivering a <em>reaction</em>, then the receiving server must roll a custom access-control based solution to map whether a key can do a certain re-action (<code>Announce</code>, <code>Create</code> in response, etc). <em>And then federate that ACL to peers</em>. Because reactions being delivered to other peers don’t necessarily include the original-acting-server, so peers don’t know locally how to verify if reactions are legitimate! Ew.</p>
+<p>So the problems are:</p>
+<ol>
+<li>Senders control who-gets-what key (key management) for fetches and deliveries, not data originators</li>
+<li>Data originators must roll their own ACLs, on top of this shaky ground</li>
+<li>Everyone needs to ask their peer if this HTTP Signature can indeed do this action.</li>
+</ol>
+<p>So, that led to <a href="https://web.archive.org/web/20190615162359/https://w3c-ccg.github.io/ocap-ld" rel="nofollow noopener">OCAP-LD (archive link)</a>. This involves sticking an object capability in the ActivityStreams payload itself. Object capabilities solve mainly the first problem above:</p>
+<ol>
+<li>Data originators manage keys, and can delegate – but can revoke any of these, including delegation!</li>
+<li>Data originators use <em>revocation</em> instead of ACLs. Time-based revocation are trivially supportable.</li>
+<li>Peers can simply validate signatures, and if more complex revocation logic is needed, be supported.</li>
+</ol>
+<p>However, OCAP-LD stuck these capabilities on the JSON-LD object itself:</p>
+<pre><code class="lang-auto">{
+  "@id": "https://example.com/very_malicious_to_deserialize",
+  ...
+  // Pick &gt;= 1: 5 TB of noise, known attack against network libs, etc
+  ...
+  "proof": ...
+}
+</code></pre>
+<p>…and depends on JSON-LD Signatures! Which requires processing the <em>entire</em> JSON-LD document. Which is <em>computationally expensive</em>. And I’m willing to bet, somehow Turing complete. So for these reasons, trying to modify the <em>ActivityPub protocol</em> behavior based on the <em>value in a payload</em> instead of leveraging the next-down OSI layer is problematic, design-wise.</p>
+<p>Also! Fetching this object itself is problematic, as adding/removing/changing OCAP on this object necessitates <code>Update</code> Activities on the object itself, which presents challenges in delegation (ex: can delegate, but cannot give <code>Update</code>s?). So this adds two new problems:</p>
+<ol start="4">
+<li>JSON-LD processing for JSON-LD Signatures</li>
+<li>Key delegation (protocol side effect) and <code>Update</code> ActivityStreams vocabulary (application side effect)!</li>
+</ol>
+<p>So, OCAP is still a great concept, just having it in the JSON-LD payload is a bad idea. What is next?</p>
+<p>Well, when delivering a <em>reaction</em> or fetching, both require an <code>@id</code>:</p>
+<ul>
+<li>reactions require an <code>@id</code> to respond to</li>
+<li>fetching requires an <code>@id</code> to dereference</li>
+</ul>
+<p>In this case, it makes sense to use JSON-LD’s very-purposefully-loose <code>@id</code>, to build on something new that can leverage OCAP. Then upon a network request, <em>without requiring knowing anything about the payload</em>, a receiver can then somehow get a token that represents an OCAP and apply reasonable rulings.</p>
+<p>But! And this is the keen insight that <a class="mention" href="../../u/kaniini.html">@kaniini</a> (and <a class="mention" href="../../u/cwebber.html">@cwebber</a>?) and others have worked on, it instead of being an OCAP directly, can be an OAuth2 bearer token and the receiver manages the <code>scope</code> of the bearer like any other OCAP. I myself am a little fuzzy on the specific details on how bearer scopes and such will align with peering for certain activities (<code>Resource Owners</code> and <code>Resource Servers</code> in OAuth2 parlance). Hence, <code>bearcap</code>: stuffing an OCAP in an <code>@id</code>. <img src="../../images/emoji/twitter/slight_smile.png@v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"> So revisiting all problems, 1-5, again:</p>
+<ol>
+<li>Data owners control key management</li>
+<li>Management is just OAuth2.</li>
+<li>Checking a peer for more OCAP details is all that’s left <em>for me (a non participating member)</em> as an unknown solution</li>
+<li>No deserialization/processing of JSON-LD required.</li>
+<li>Modifying/removing/creating OCAPs is simply bearer token management, independent of application side effects.</li>
+</ol>
+<p>Hopefully this provides enough background to answer some questions.</p>
+<p>Also, I’m welcome to being corrected by other members of the community who more actively participated in these discussions.</p>
+        </div>
+
+        <meta itemprop='headline' content='Bearcaps OT'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/kaniini.html'><span itemprop='name'>kaniini</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="232.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-10-26T01:54:26Z' class='post-time'>
+                October 26, 2019,  1:54am
+              </time>
+              <meta itemprop='dateModified' content='2019-10-26T01:54:26Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="8" data-topic="232">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/criztovyl/40/127_2.png" class="avatar"> criztovyl:</div>
+<blockquote>
+<p>Alice’ instance relaying is validated by other instances by a capability Bob attached to the reply that allows Alice’ instance to relay his reply to Alice’ followers on his behalf.</p>
+</blockquote>
+</aside>
+<p>You’re overthinking this.  Servers right now refetch the object when the actor (which must match the signature) does not match the object they are acting on.  That’s all that really matters here – authenticity is verifiable because they can go refetch the object, and this behaviour is useful, because, well, you can’t get any more authentic than if Bob’s own server is serving the object to you.  So, in short, what Alice is <em>actually doing</em> is advising her followers that a reply exists on Bob’s server, and that you can use a <code>bearcap</code> URI to retrieve it.</p>
+<aside class="quote no-group" data-post="9" data-topic="232">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/cjs/40/35_2.png" class="avatar"> cjs:</div>
+<blockquote>
+<p>But! And this is the keen insight that <a class="mention" href="../../u/kaniini.html">@kaniini</a> (and <a class="mention" href="../../u/cwebber.html">@cwebber</a>?) and others have worked on, it instead of being an OCAP directly, can be an OAuth2 bearer token and the receiver manages the <code>scope</code> of the bearer like any other OCAP.</p>
+</blockquote>
+</aside>
+<p>It is important to note that a <code>bearcap</code> access token is not necessarily an OAuth2 bearer token.  We just reuse the same mechanism.  It is, however, possible to leverage an OAuth2 system with <code>bearcap</code> URIs.</p>
+<p>At any rate, the use of a <code>bearcap</code> as a referent URI is built on the feature of JSON-LD that a referent URI does not have to match the final <code>id</code> of the object.</p>
+        </div>
+
+        <meta itemprop='headline' content='Bearcaps OT'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>About the SocialHub Policy category</title>
+    <link>https://socialhub.activitypub.rocks/t/about-the-socialhub-policy-category/14</link>
+    <description>Members of the ActivityPub SocialHub community practice collective governance and co-construct shared policies to reflect common norms.
+
+Each topic matches a given policy that is proposed, debated and eventually adopted or rejected.
+
+Only @staff can start a policy topic. If you&#39;re interested in proposing one, please open a new topic under #community.
+
+## Using the Policy Feature
+
+The policy feature is available to @staff members and can be set with a special markup:
+
+```plain
+[policy group=staff reminder=daily]
+We strive to be excellent to each other.
+[/policy]
+```
+
+In the example above, the policy applies to members of the @staff group, who are reminded every day -- nagged -- to adopt it. In order to propose a policy for everyone, the `trust_level_0` group can be used.
+
+For more detailed information about this feature, you can see the [discourse-policy topic on Meta](https://meta.discourse.org/t/discourse-policy/88557).
+
+And for good measure...
+
+[policy group=staff reminder=daily]
+We strive to be excellent to each other.
+[/policy]</description>
+    
+    <lastBuildDate>Fri, 13 Sep 2019 13:28:43 +0000</lastBuildDate>
+    <category>SocialHub Policy</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/about-the-socialhub-policy-category/14.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>About the SocialHub Policy category</title>
+        <dc:creator><![CDATA[system]]></dc:creator>
+        <description><![CDATA[
+            <p>Members of the ActivityPub SocialHub community practice collective governance and co-construct shared policies to reflect common norms.</p>
+<p>Each topic matches a given policy that is proposed, debated and eventually adopted or rejected.</p>
+<p>Only <span class="mention">@staff</span> can start a policy topic. If you’re interested in proposing one, please open a new topic under <a class="hashtag" href="/c/2-community">#<span>community</span></a>.</p>
+<h2>Using the Policy Feature</h2>
+<p>The policy feature is available to <span class="mention">@staff</span> members and can be set with a special markup:</p>
+<pre><code class="lang-nohighlight">[policy group=staff reminder=daily]
+We strive to be excellent to each other.
+[/policy]
+</code></pre>
+<p>In the example above, the policy applies to members of the <span class="mention">@staff</span> group, who are reminded every day – nagged – to adopt it. In order to propose a policy for everyone, the <code>trust_level_0</code> group can be used.</p>
+<p>For more detailed information about this feature, you can see the <a href="https://meta.discourse.org/t/discourse-policy/88557" rel="nofollow noopener">discourse-policy topic on Meta</a>.</p>
+<p>And for good measure…</p>
+<div class="policy" data-group="staff" data-version="1" data-reminder="daily">
+<p>We strive to be excellent to each other.</p>
+</div>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-the-socialhub-policy-category/14/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-the-socialhub-policy-category/14/1</link>
+        <pubDate>Thu, 12 Sep 2019 15:38:46 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-14-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-the-socialhub-policy-category/14.rss">About the SocialHub Policy category</source>
+      </item>
+  </channel>
+</rss>

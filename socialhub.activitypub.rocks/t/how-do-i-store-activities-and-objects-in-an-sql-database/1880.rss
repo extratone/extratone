@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How do I store activities and objects in an SQL database?</title>
+    <link>https://socialhub.activitypub.rocks/t/how-do-i-store-activities-and-objects-in-an-sql-database/1880</link>
+    <description>There are two ways of doing that I can think about:
+
+1. Have a table for each activity type and store them there.
+2. Have a one big `activities` table and store activities as JSON.
+
+Both of those options seem to have some serious disadvantages, the former one makes it difficult to get all activities from one actor in the chronological order and is not very scalable, the latter one doesn&#39;t allow me to know what actor created the activity and other data without parsing JSON first.
+
+Is there a better way than using those two option? Or is there a way to &quot;fix&quot; disadvantages that I mentioned?</description>
+    
+    <lastBuildDate>Wed, 30 Jun 2021 10:11:20 +0000</lastBuildDate>
+    <category>ActivityPub</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/how-do-i-store-activities-and-objects-in-an-sql-database/1880.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How do I store activities and objects in an SQL database?</title>
+        <dc:creator><![CDATA[koehn]]></dc:creator>
+        <description><![CDATA[
+            <p>I did an experiment using a document database (CouchDB). The ease of storing a <em>very</em> flexible schema like ActivityPub, combined with high scalability made for a powerful combination. Otherwise you need to pre-determine all the crazy ways ActivityPub allows you to specify things (e.g., images) and convert every format to match your database schema when the message is received. If (when) you get a message that doesn’t conform, you have a real problem. By always working in the original JSON, you can eliminate that problem.</p>
+<aside class="onebox allowlistedgeneric" data-onebox-src="https://gitlab.koehn.com/mammoth">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/c2911d91c1567acaf78af4212b7669f2f61f67c1.png" class="site-icon" width="32" height="32">
+
+      <a href="https://gitlab.koehn.com/mammoth" target="_blank" rel="noopener nofollow ugc">GitLab</a>
+  </header>
+
+  <article class="onebox-body">
+    <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/10f2d759dce6ea753e1e0b2bf9dc52b57a2f433b.png" class="thumbnail onebox-avatar" width="128" height="128">
+
+<h3><a href="https://gitlab.koehn.com/mammoth" target="_blank" rel="noopener nofollow ugc">mammoth</a></h3>
+
+  <p>Mammoth is a federated social media platform implementing the ActivityPub specification for client/server and server/server communications. It's broken into two projects, mammoth-ui and mammoth-server.</p>
+
+
+  </article>
+
+  <div class="onebox-metadata">
+    
+    
+  </div>
+
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/how-do-i-store-activities-and-objects-in-an-sql-database/1880/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/how-do-i-store-activities-and-objects-in-an-sql-database/1880/11</link>
+        <pubDate>Wed, 30 Jun 2021 10:11:20 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1880-11</guid>
+        <source url="https://socialhub.activitypub.rocks/t/how-do-i-store-activities-and-objects-in-an-sql-database/1880.rss">How do I store activities and objects in an SQL database?</source>
+      </item>
+      <item>
+        <title>How do I store activities and objects in an SQL database?</title>
+        <dc:creator><![CDATA[weex]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/protheory8">@protheory8</a> Do any of the above answers solve your question?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/how-do-i-store-activities-and-objects-in-an-sql-database/1880/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/how-do-i-store-activities-and-objects-in-an-sql-database/1880/10</link>
+        <pubDate>Tue, 29 Jun 2021 20:29:35 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1880-10</guid>
+        <source url="https://socialhub.activitypub.rocks/t/how-do-i-store-activities-and-objects-in-an-sql-database/1880.rss">How do I store activities and objects in an SQL database?</source>
+      </item>
+      <item>
+        <title>How do I store activities and objects in an SQL database?</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="naturzukunft" data-post="7" data-topic="1880">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/naturzukunft/40/983_2.png" class="avatar"> naturzukunft:</div>
+<blockquote>
+<p>In my eyes an SQL Database is the wrong way.</p>
+</blockquote>
+</aside>
+<p>Again, that depends on what you’re trying to achieve. In my opinion, it doesn’t matter much what happens <em>inside</em> your server, as long as the right bits come out of it for any given input. It’s much more convenient for me to treat ActivityPub like an API and let my presentation (UI) dictate the storage. Though I’m thinking about adding a separate table that would map ActivityPub object IDs to their types so I wouldn’t have to query several tables until I find the thing I’m looking for. That would allow retrieving any object in 2 queries and getting a definitive “not found” answer in one.</p>
+<p>If you do want to store the original JSON, you could use a NoSQL database like MongoDB or ElasticSearch instead.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/how-do-i-store-activities-and-objects-in-an-sql-database/1880/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/how-do-i-store-activities-and-objects-in-an-sql-database/1880/9</link>
+        <pubDate>Tue, 29 Jun 2021 19:41:51 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1880-9</guid>
+        <source url="https://socialhub.activitypub.rocks/t/how-do-i-store-activities-and-objects-in-an-sql-database/1880.rss">How do I store activities and objects in an SQL database?</source>
+      </item>
+      <item>
+        <title>How do I store activities and objects in an SQL database?</title>
+        <dc:creator><![CDATA[heluecht]]></dc:creator>
+        <description><![CDATA[
+            <p>BTW: Friendica is “slightly” more complicated, due to the fact that we support multiple protocols: <a href="https://github.com/friendica/friendica/blob/2021.06-rc/database.sql" rel="noopener nofollow ugc">https://github.com/friendica/friendica/blob/a44a9e73c3b70523f38ec960b153673d96de425d/database.sql</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/how-do-i-store-activities-and-objects-in-an-sql-database/1880/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/how-do-i-store-activities-and-objects-in-an-sql-database/1880/8</link>
+        <pubDate>Tue, 29 Jun 2021 10:58:28 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1880-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/how-do-i-store-activities-and-objects-in-an-sql-database/1880.rss">How do I store activities and objects in an SQL database?</source>
+      </item>
+      <item>
+        <title>How do I store activities and objects in an SQL database?</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <p>In my eyes an SQL Database is the wrong way.<br>
+But if you rally want to do it, you should store triples!<br>
+So your table(s) has the columns subject, predicate(property), object(value)</p>
+<p>search for: <a href="https://www.startpage.com/do/dsearch?query=storing+rdf+in+sql+database&amp;cat=web&amp;pl=ext-ff&amp;language=deutsch&amp;extVersion=1.3.0" class="inline-onebox" rel="noopener nofollow ugc">Startpage Suchergebnisse</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/how-do-i-store-activities-and-objects-in-an-sql-database/1880/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/how-do-i-store-activities-and-objects-in-an-sql-database/1880/7</link>
+        <pubDate>Tue, 29 Jun 2021 09:43:26 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1880-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/how-do-i-store-activities-and-objects-in-an-sql-database/1880.rss">How do I store activities and objects in an SQL database?</source>
+      </item>
+      <item>
+        <title>How do I store activities and objects in an SQL database?</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t store the activities themselves, and I treat ActivityPub like an API. I synthesize the objects and activities as needed from my data. This does mean that I can’t return the original JSON later should that be needed, but that’s fine for me since I don’t implement c2s and don’t plan to.</p>
+<p>Here’s my database schema if you’re curious:</p><aside class="onebox githubblob" data-onebox-src="https://github.com/grishka/Smithereen/blob/a9b92f3a3fb876b380082fdbbc7ea90ea82d35d6/schema.sql">
+  <header class="source">
+
+      <a href="https://github.com/grishka/Smithereen/blob/a9b92f3a3fb876b380082fdbbc7ea90ea82d35d6/schema.sql" target="_blank" rel="noopener nofollow ugc">github.com</a>
+  </header>
+
+  <article class="onebox-body">
+    <h4><a href="https://github.com/grishka/Smithereen/blob/a9b92f3a3fb876b380082fdbbc7ea90ea82d35d6/schema.sql" target="_blank" rel="noopener nofollow ugc">grishka/Smithereen/blob/a9b92f3a3fb876b380082fdbbc7ea90ea82d35d6/schema.sql</a></h4>
+
+
+    <pre><code class="lang-sql"># ************************************************************
+# Sequel Pro SQL dump
+# Version 5446
+#
+# https://www.sequelpro.com/
+# https://github.com/sequelpro/sequelpro
+#
+# Host: localhost (MySQL 5.7.9)
+# Database: smithereen
+# Generation Time: 2021-05-25 05:56:55 +0000
+# ************************************************************
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+SET NAMES utf8mb4;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+</code></pre>
+
+
+  This file has been truncated. <a href="https://github.com/grishka/Smithereen/blob/a9b92f3a3fb876b380082fdbbc7ea90ea82d35d6/schema.sql" target="_blank" rel="noopener nofollow ugc">show original</a>
+
+  </article>
+
+  <div class="onebox-metadata">
+    
+    
+  </div>
+
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/how-do-i-store-activities-and-objects-in-an-sql-database/1880/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/how-do-i-store-activities-and-objects-in-an-sql-database/1880/6</link>
+        <pubDate>Sat, 26 Jun 2021 18:40:20 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1880-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/how-do-i-store-activities-and-objects-in-an-sql-database/1880.rss">How do I store activities and objects in an SQL database?</source>
+      </item>
+      <item>
+        <title>How do I store activities and objects in an SQL database?</title>
+        <dc:creator><![CDATA[weex]]></dc:creator>
+        <description><![CDATA[
+            <p>There are plenty of implementations that you could use as a template, but I guess the bigger question is, what do you plan to do with the data? You could certainly store the json and a selection of parsed fields (with indexes) to be able to retrieve the data you need.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/how-do-i-store-activities-and-objects-in-an-sql-database/1880/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/how-do-i-store-activities-and-objects-in-an-sql-database/1880/5</link>
+        <pubDate>Sat, 26 Jun 2021 03:34:09 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1880-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/how-do-i-store-activities-and-objects-in-an-sql-database/1880.rss">How do I store activities and objects in an SQL database?</source>
+      </item>
+      <item>
+        <title>How do I store activities and objects in an SQL database?</title>
+        <dc:creator><![CDATA[heluecht]]></dc:creator>
+        <description><![CDATA[
+            <p>I guess we store the raw data for a month.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/how-do-i-store-activities-and-objects-in-an-sql-database/1880/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/how-do-i-store-activities-and-objects-in-an-sql-database/1880/4</link>
+        <pubDate>Sat, 26 Jun 2021 03:21:16 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1880-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/how-do-i-store-activities-and-objects-in-an-sql-database/1880.rss">How do I store activities and objects in an SQL database?</source>
+      </item>
+      <item>
+        <title>How do I store activities and objects in an SQL database?</title>
+        <dc:creator><![CDATA[protheory8]]></dc:creator>
+        <description><![CDATA[
+            <p>What period, what do you mean?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/how-do-i-store-activities-and-objects-in-an-sql-database/1880/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/how-do-i-store-activities-and-objects-in-an-sql-database/1880/3</link>
+        <pubDate>Fri, 25 Jun 2021 17:04:41 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1880-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/how-do-i-store-activities-and-objects-in-an-sql-database/1880.rss">How do I store activities and objects in an SQL database?</source>
+      </item>
+      <item>
+        <title>How do I store activities and objects in an SQL database?</title>
+        <dc:creator><![CDATA[heluecht]]></dc:creator>
+        <description><![CDATA[
+            <p>In Friendica we only store the processed data for a longer period. We store the raw JSON only for some days for caching purposes.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/how-do-i-store-activities-and-objects-in-an-sql-database/1880/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/how-do-i-store-activities-and-objects-in-an-sql-database/1880/2</link>
+        <pubDate>Fri, 25 Jun 2021 15:54:35 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1880-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/how-do-i-store-activities-and-objects-in-an-sql-database/1880.rss">How do I store activities and objects in an SQL database?</source>
+      </item>
+      <item>
+        <title>How do I store activities and objects in an SQL database?</title>
+        <dc:creator><![CDATA[protheory8]]></dc:creator>
+        <description><![CDATA[
+            <p>There are two ways of doing that I can think about:</p>
+<ol>
+<li>Have a table for each activity type and store them there.</li>
+<li>Have a one big <code>activities</code> table and store activities as JSON.</li>
+</ol>
+<p>Both of those options seem to have some serious disadvantages, the former one makes it difficult to get all activities from one actor in the chronological order and is not very scalable, the latter one doesn’t allow me to know what actor created the activity and other data without parsing JSON first.</p>
+<p>Is there a better way than using those two option? Or is there a way to “fix” disadvantages that I mentioned?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/how-do-i-store-activities-and-objects-in-an-sql-database/1880/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/how-do-i-store-activities-and-objects-in-an-sql-database/1880/1</link>
+        <pubDate>Fri, 25 Jun 2021 14:39:46 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1880-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/how-do-i-store-activities-and-objects-in-an-sql-database/1880.rss">How do I store activities and objects in an SQL database?</source>
+      </item>
+  </channel>
+</rss>

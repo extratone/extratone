@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Welcome to SocialHub</title>
+    <link>https://socialhub.activitypub.rocks/t/welcome-to-socialhub/7</link>
+    <description>SocialHub.ActivityPub.Rocks hosts ActivityPub free software developers and enthusiasts to study and share knowledge, specify functionality together, steer the course of ActivityPub W3C Recommendation through code, conversation, consistency, cooperation...
+
+We welcome both technical and non-technical discussion. Non-technical discussion should focus on cooperation across, between, and beyond projects; governance of the commons; ethics and aesthetics; etc.
+
+_Is it your first time using Discourse? Try sending a message to @discobot._
+ 
+Each category has a pinned topic (tagged with #about)  which explains the expected norms and limits of the category. This facilitates keeping discussion on topic. Don&#39;t worry about _drifting_ though: we can always move topics and posts around if needed. Let the conversation be respectful and reproductive!
+
+You can get started with the #welcome topics to get an bird&#39;s eye view and feeling about how to engage with this community. Other tags of interest for starters: #faq, #about.
+
+## List of Top-Level Categories
+
+| Category | Purpose
+|-|-
+| #activitypub | Protocol interpretation, implementation, and extension
+| #community | Collective governance of this forum
+| #fediversity | Understanding and discovering communities in the Fediverse
+| #meeting  | SocialCG meeting announcements and in-person events related to ActivityPub and the Fediverse
+| #packaging | Distributing federated applications for accessible self-hosting
+| #software | Several ActivityPub implementation software-focused topics
+| Missing category? | Please see http://socialhub.activitypub.rocks/t/where-in-socialhub-can-i-talk-about/15
+
+## Caring and Support
+
+If you encounter any problem on SocialHub, you may contact the hosts of the relevant category, the general [contact team](/g/contact), or the [well-being team](/g/well-being.team). You may also [post anonymously](/t/how-to-use-the-anonymous-post-feature/16) to the dedicated [community well-being category](/t/community-well-being/17).
+
+## Want to Help?
+
+Check #todo, read around, reply, join [host groups](/g?filter=hosts), participate in the #meeting:socialcg and feel free to start new topics!</description>
+    
+    <lastBuildDate>Tue, 11 May 2021 20:25:31 +0000</lastBuildDate>
+    <category>Uncategorized</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/welcome-to-socialhub/7.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Welcome to SocialHub</title>
+        <dc:creator><![CDATA[hamishcampbell]]></dc:creator>
+        <description><![CDATA[
+            <p>I invited the crew from this event here.</p>
+<blockquote>
+<p>OK am starting to feel like am trolling “Reimagine the Internet” as its all academic and <a href="https://activism.openworlds.info/tags/dotcons" rel="noopener nofollow ugc">#dotcons</a> history.</p>
+<p>The same people and the same story we have heard for the last wasted 10 years.</p>
+<p>Nothing so far touching on the <a href="https://activism.openworlds.info/tags/Fediverse" rel="noopener nofollow ugc">#Fediverse</a> let alone the <a href="https://activism.openworlds.info/tags/openweb" rel="noopener nofollow ugc">#openweb</a>.</p>
+<p>It’s off TOPIC I feel like shouting though out the oneway ZOOM video presentation - you can find their video’s on youtube.  After proding they are talking about putting them on <a href="https://activism.openworlds.info/tags/peertube" rel="noopener nofollow ugc">#peertube</a> <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+</blockquote>
+          <p><a href="https://socialhub.activitypub.rocks/t/welcome-to-socialhub/7/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/welcome-to-socialhub/7/3</link>
+        <pubDate>Tue, 11 May 2021 18:02:42 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-7-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/welcome-to-socialhub/7.rss">Welcome to SocialHub</source>
+      </item>
+      <item>
+        <title>Welcome to SocialHub</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Welcome to the SocialHub!</p>
+<p>In the last month you joined the ActivityPub community forum, so you might be overwhelmed by all the conversations sprouting around, and it’s normal.  The <a class="hashtag" href="/tag/welcome">#<span>welcome</span></a> and <a class="hashtag" href="/tag/about">#<span>about</span></a> tags might come handy.</p>
+<p>You can use the notification system to avoid having to dive in topics that might not interest you: click the <code>notifications</code> word below for details.</p>
+<details>
+<summary>
+notifications</summary>
+<p>in each category and topic, you can see a bell icon that, once clicked, will reveal a notification menu:</p>
+<p><img src="https://socialhub.activitypub.rocks/uploads/default/original/2X/1/17a1d1236114927165cdaeb561a653c1d83e322d.png" alt="image" data-base62-sha1="3n3FJ7vX8GONv7bQA287touVv3v" width="484" height="338"></p>
+<p>If you cannot <em>see</em>, the user interface will be different, maybe keyboard shortcuts will be more useful:<br>
+typing <code>m</code> while the focus in on the page (not in the composer) will interact with topic notifications, you must type another letter to mute a topic (<code>m</code> again), track a topic (<code>t</code>), or watch a topic (<code>w</code>) ; <code>r</code> will reset the notification for this topic to normal, i.e., you will only receive notifications if you are <code>@mentioned</code> by name. When you participate in a topic, you automatically <code>watch</code> it, when you read it, you automatically <code>track</code> it.</p>
+<p><img src="https://socialhub.activitypub.rocks/uploads/default/original/2X/8/86ca5c7bccf99c583d3fdb2a667149e6ab06aff7.png" alt="image" data-base62-sha1="jepxmg6DYuOIzv90faCzKasykWH" width="296" height="140"></p>
+</details>
+<p>If you’re affiliated with a free <a class="hashtag" href="/c/software/14">#<span>software</span></a> team, please chime in <a href="https://socialhub.activitypub.rocks/t/about-the-software-category/27/1" class="inline-onebox">About the Software category</a> topic so we can setup <a href="/g">groups</a> and a dedicated category for your team!</p>
+<p>If you’re not a technician, you might want to mute some topics to avoid information overload, and focus on participating in <a class="hashtag" href="/c/fediversity/10">#<span>fediversity</span></a>. Policy-makers might be interested in participating to <a class="hashtag" href="/c/meeting/fediverse-policy/59">#<span>meeting:fediverse-policy</span></a>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/welcome-to-socialhub/7/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/welcome-to-socialhub/7/2</link>
+        <pubDate>Tue, 20 Apr 2021 14:56:53 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-7-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/welcome-to-socialhub/7.rss">Welcome to SocialHub</source>
+      </item>
+      <item>
+        <title>Welcome to SocialHub</title>
+        <dc:creator><![CDATA[system]]></dc:creator>
+        <description><![CDATA[
+            <p>SocialHub.ActivityPub.Rocks hosts ActivityPub free software developers and enthusiasts to study and share knowledge, specify functionality together, steer the course of ActivityPub W3C Recommendation through code, conversation, consistency, cooperation…</p>
+<p>We welcome both technical and non-technical discussion. Non-technical discussion should focus on cooperation across, between, and beyond projects; governance of the commons; ethics and aesthetics; etc.</p>
+<p><em>Is it your first time using Discourse? Try sending a message to <a class="mention" href="/u/discobot">@discobot</a>.</em></p>
+<p>Each category has a pinned topic (tagged with <a class="hashtag" href="https://socialhub.activitypub.rocks/tag/about">#<span>about</span></a>)  which explains the expected norms and limits of the category. This facilitates keeping discussion on topic. Don’t worry about <em>drifting</em> though: we can always move topics and posts around if needed. Let the conversation be respectful and reproductive!</p>
+<p>You can get started with the <a class="hashtag" href="https://socialhub.activitypub.rocks/tag/welcome">#<span>welcome</span></a> topics to get an bird’s eye view and feeling about how to engage with this community. Other tags of interest for starters: <a class="hashtag" href="https://socialhub.activitypub.rocks/tag/faq">#<span>faq</span></a>, <a class="hashtag" href="https://socialhub.activitypub.rocks/tag/about">#<span>about</span></a>.</p>
+<h2>List of Top-Level Categories</h2>
+<div class="md-table">
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="hashtag" href="/c/activitypub/5">#<span>activitypub</span></a></td>
+<td>Protocol interpretation, implementation, and extension</td>
+</tr>
+<tr>
+<td><a class="hashtag" href="/c/community/2">#<span>community</span></a></td>
+<td>Collective governance of this forum</td>
+</tr>
+<tr>
+<td><a class="hashtag" href="/c/fediversity/10">#<span>fediversity</span></a></td>
+<td>Understanding and discovering communities in the Fediverse</td>
+</tr>
+<tr>
+<td><a class="hashtag" href="/c/meeting/11">#<span>meeting</span></a></td>
+<td>SocialCG meeting announcements and in-person events related to ActivityPub and the Fediverse</td>
+</tr>
+<tr>
+<td><a class="hashtag" href="/c/packaging/13">#<span>packaging</span></a></td>
+<td>Distributing federated applications for accessible self-hosting</td>
+</tr>
+<tr>
+<td><a class="hashtag" href="/c/software/14">#<span>software</span></a></td>
+<td>Several ActivityPub implementation software-focused topics</td>
+</tr>
+<tr>
+<td>Missing category?</td>
+<td>Please see <a href="http://socialhub.activitypub.rocks/t/where-in-socialhub-can-i-talk-about/15" class="inline-onebox">Where in SocialHub Can I Talk about ...?</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div><h2>Caring and Support</h2>
+<p>If you encounter any problem on SocialHub, you may contact the hosts of the relevant category, the general <a href="/g/contact">contact team</a>, or the <a href="/g/well-being.team">well-being team</a>. You may also <a href="/t/how-to-use-the-anonymous-post-feature/16">post anonymously</a> to the dedicated <a href="/t/community-well-being/17">community well-being category</a>.</p>
+<h2>Want to Help?</h2>
+<p>Check <a class="hashtag" href="https://socialhub.activitypub.rocks/tag/todo">#<span>todo</span></a>, read around, reply, join <a href="/g?filter=hosts">host groups</a>, participate in the <a class="hashtag" href="/c/meeting/socialcg/15">#<span>meeting:socialcg</span></a> and feel free to start new topics!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/welcome-to-socialhub/7/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/welcome-to-socialhub/7/1</link>
+        <pubDate>Wed, 11 Sep 2019 09:33:34 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-7-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/welcome-to-socialhub/7.rss">Welcome to SocialHub</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>ActivityStreams protocol spec question - ActivityPub - SocialHub</title>
+    <meta name="description" content="I am confused about something in the activity streams specification 
+in the Activity Vocabulary doc a Collection.Current can be a PagedCollection or a Link 
+Activity Vocabulary (w3.org) 
+However their example 75 (at link&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="1401.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;ActivityStreams protocol spec question&#39;" href="1401.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/activitystreams-protocol-spec-question/1401" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/activitystreams-protocol-spec-question/1401" />
+<meta property="og:title" content="ActivityStreams protocol spec question" />
+<meta name="twitter:title" content="ActivityStreams protocol spec question" />
+<meta property="og:description" content="I am confused about something in the activity streams specification  in the Activity Vocabulary doc a Collection.Current can be a PagedCollection or a Link  Activity Vocabulary (w3.org)  However their example 75 (at link above) current has the “summary” element which is not avalable to something of         type “Link” (see below).  Am I misunderstanding that current is not an Object or Link but Object AND Link?  What do other implementations do with summary in this case?       &quot;current&quot;: {      ..." />
+<meta name="twitter:description" content="I am confused about something in the activity streams specification  in the Activity Vocabulary doc a Collection.Current can be a PagedCollection or a Link  Activity Vocabulary (w3.org)  However their example 75 (at link above) current has the “summary” element which is not avalable to something of         type “Link” (see below).  Am I misunderstanding that current is not an Object or Link but Object AND Link?  What do other implementations do with summary in this case?       &quot;current&quot;: {      ..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="1 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="2 ❤" />
+<meta property="article:published_time" content="2021-02-03T21:16:48+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="1401.html">ActivityStreams protocol spec question</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/activitypub.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #0088CC'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>ActivityPub</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/mathew_001.html'><span itemprop='name'>mathew_001</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1401.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-02-03T21:16:48Z'>
+              <time itemprop='dateModified' datetime='2021-02-03T21:24:10Z' class='post-time'>
+                February 3, 2021,  9:24pm
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I am confused about something in the activity streams specification<br>
+in the Activity Vocabulary doc a <em>Collection.Current</em> can be a <em>PagedCollection</em> <strong>or</strong> a <em>Link</em><br>
+<a href="https://www.w3.org/TR/activitystreams-vocabulary/#dfn-current" rel="noopener nofollow ugc">Activity Vocabulary (w3.org)</a></p>
+<p>However their example 75 (at link above) current has the “summary” element which is not avalable to something of         type “Link” (see below).  Am I misunderstanding that current is not an Object or Link but Object <strong>AND</strong> Link?  What do other implementations do with summary in this case?</p>
+<pre><code>     "current": {
+        "type": "Link",
+        "summary": "Most Recent Items",
+        "href": "http://example.org/collection"
+      },</code></pre>
+        </div>
+
+        <meta itemprop='headline' content='ActivityStreams protocol spec question'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/aschrijver.html'><span itemprop='name'>aschrijver</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1401.html">
+
+            <link itemprop="image" href="../../uploads/default/original/1X/8b5d6a0676ce1bf163aecb564057b3a8b74a88b8.jpeg">
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-02-03T21:35:33Z'>
+              <time itemprop='dateModified' datetime='2021-02-03T21:46:12Z' class='post-time'>
+                February 3, 2021,  9:46pm
+              </time>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>This is already mentioned in an issue on the tracker, but it is never addressed. I think you can best assume it is erronous, and belongs to Object.</p>
+<aside class="onebox githubissue">
+  <header class="source">
+      <a href="https://github.com/w3c/activitystreams/issues/496" target="_blank" rel="noopener">github.com/w3c/activitystreams</a>
+  </header>
+  <article class="onebox-body">
+    <div class="github-row">
+  <div class="github-icon-container" title="Issue">
+	  <svg width="60" height="60" class="github-icon" viewBox="0 0 14 16" aria-hidden="true"><path d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
+  </div>
+
+  <div class="github-info-container">
+    <h4>
+      <a href="https://github.com/w3c/activitystreams/issues/496" target="_blank" rel="noopener">Example 75, 77 and 87 use property summary on a Link</a>
+    </h4>
+
+    <div class="github-info">
+      <div class="date">
+        opened <span class="discourse-local-date" data-format="ll" data-date="2018-12-07" data-time="15:23:48" data-timezone="UTC">03:23PM - 07 Dec 18 UTC</span>
+      </div>
+
+
+      <div class="user">
+        <a href="https://github.com/alexcastano" target="_blank" rel="noopener">
+          <img alt="alexcastano" src="../../uploads/default/original/1X/8b5d6a0676ce1bf163aecb564057b3a8b74a88b8.jpeg" class="onebox-avatar-inline" width="20" height="20">
+          alexcastano
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="github-row">
+  <p class="github-content">Please Indicate One:
+ Editorial
+ Question
+ Feedback
+ Blocking Issue
+ Non-Blocking Issue
+The property summary domain is Object, however, is used in those examples:
+https://www.w3.org/TR/activitystreams-vocabulary/#dfn-last
+https://www.w3.org/TR/activitystreams-vocabulary/#dfn-first
+https://www.w3.org/TR/activitystreams-vocabulary/#dfn-current...</p>
+</div>
+
+<div class="labels">
+</div>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p><strong>Update</strong>: Changes <a href="https://github.com/TGNThump/ActivityStreams4J/commit/94a237d5cbdf88babeb53c28863ea5491cee80a4">are staged</a></p>
+        </div>
+
+        <meta itemprop='headline' content='ActivityStreams protocol spec question'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/mathew_001.html'><span itemprop='name'>mathew_001</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1401.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-02-03T21:52:38Z' class='post-time'>
+                February 3, 2021,  9:52pm
+              </time>
+              <meta itemprop='dateModified' content='2021-02-03T21:52:38Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Didn’t know about the github issue tracker for activitystreams.  Thank you!!</p>
+        </div>
+
+        <meta itemprop='headline' content='ActivityStreams protocol spec question'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1401.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-05-12T07:29:17Z' class='post-time'>
+                May 12, 2021,  7:29am
+              </time>
+              <meta itemprop='dateModified' content='2021-05-12T07:29:17Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>In general I think, the W3C Social CG will take it up when tackling ActivityStreams Vocabulary 3.0 …</p>
+<p>Then the examples can be corrected.<br>
+There are some minor bugs which should be investigated too, recently I found out the property “closed” in the ActivityPub Vocabulary is not marked as Functional …</p>
+<p>So, in theory it could be [true, false] or [false, true] which doese not make sense <img src="../../images/emoji/twitter/slight_smile.png@v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>So, I asked Dr. rhiaro about the future and <a href="https://toot.cat/@rhiaro/106011680227589321">the answer was</a><br>
+“So we’d be looking at AS3. In any case yes, this is something the SocialCG is well positioned to iterate on and making sure we’re set up to do that in a sensible way has been on my list for ages. Might take some time of day job later this month to make space to think about it properly.”</p>
+        </div>
+
+        <meta itemprop='headline' content='ActivityStreams protocol spec question'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

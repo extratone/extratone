@@ -1,0 +1,1467 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>SocialHub - Top topics</title>
+    <link>https://socialhub.activitypub.rocks/top</link>
+    <description>Top topics</description>
+    
+      <lastBuildDate>Wed, 17 Mar 2021 14:31:20 +0000</lastBuildDate>
+      <atom:link href="https://socialhub.activitypub.rocks/top.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Webinar with the European Commission and AP Community</title>
+          <dc:creator><![CDATA[how]]></dc:creator>
+          <category>Meeting</category>
+          <description><![CDATA[
+            <div align="center">
+<p><img src="https://socialhub.activitypub.rocks/uploads/default/original/2X/c/ccac078cfbd98794f26e79afc439e1b6269f8ecb.svg" alt="fediverse-european-commission-event-2021-square4" data-base62-sha1="tcBYtGzxHooA8wdzxmJEVkm9Fq3" width="405" height="358"></p>
+</div>
+<p>Recently the NGI0 consortium reached out to relay a request from the European Commission to organize a <em>Webinar</em> with the ActivityPub community to discuss the protocols and how they could become a standard for EU institutions to use, with the idea of removing some dependency on centralized networks and the companies promoting them.</p>
+<p>This would be a maximum of 2 hours, and we certainly could use the opportunity to use the new <em>live</em> feature of <a class="hashtag" href="/c/software/peertube/27">#<span>software:peertube</span></a> to host the webinar.</p>
+<p>I would like to propose that we start with having a preparation conversation here to summarize the points we could use to demonstrate why the EC should consider ActivityPub, and then take a moment to <em>eat our own dog food</em> and test drive this Peertube Live feature (which so far did not work for me).</p>
+<h3>
+<a name="update-13-april" class="anchor" href="#update-13-april"></a>Update 13 April:</h3>
+<p>For newcomers to this very long thread some links:</p>
+<ul>
+<li>
+<p>Planning preparation meetups: <a href="https://socialhub.activitypub.rocks/t/preparation-meetups-for-ec-events-editable-wiki/1587" class="inline-onebox">Preparation meetups for EC Events (Editable Wiki)</a></p>
+</li>
+<li>
+<p>These are the presentations we are currently improving:</p>
+<ul>
+<li>
+<p>Introductory presentation: <a href="https://pad.public.cat/ngi0-ec-activitypub-liaison-presentation-2021-04-19-intro#" class="inline-onebox">ActivityPub for Administrations - HedgeDoc</a></p>
+</li>
+<li>
+<p>ActivityPub for Administrations: <a href="https://pad.public.cat/ngi0-ec-activitypub-liaison-presentation-2021-04-19?both#" class="inline-onebox">HedgeDoc - Collaborative markdown notes</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p>This is where we keep general notes: <a href="https://pad.public.cat/ngi0-ec-activitypub-liaison?both#" class="inline-onebox">NGI0 European Commission / ActivityPub Liaison - HedgeDoc</a></p>
+</li>
+<li>
+<p>This is the NGI Zero announcement you can share: <a href="https://www.ngi.eu/event/ngi-breaks-down-walls-decentralize-social-networking-with-activitypub/" class="inline-onebox">NGI breaks down walls: decentralize social networking with ActivityPub - Next Generation Internet</a></p>
+</li>
+<li>
+<p>This is our own announcement page you can share: <a href="https://socialhub.activitypub.rocks/pub/ec-ngi0-liaison-webinars-and-workshop-april-2021" class="inline-onebox">EC - NGI0 Liaison -- Webinars and Workshop April 2021 - SocialHub</a></p>
+</li>
+</ul>
+<hr>
+<p>(Besides on this thread, there’s other comments on: <a href="https://socialhub.activitypub.rocks/t/meeting-notes-for-prep-call-ec-webinar-19-april/1567" class="inline-onebox">Meeting notes for prep call EC Webinar 19 April</a>)</p>
+            <p><small>269 posts - 15 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507</link>
+          <pubDate>Wed, 17 Mar 2021 14:31:20 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>Yes</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1507</guid>
+          <source url="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507.rss">Webinar with the European Commission and AP Community</source>
+        </item>
+        <item>
+          <title>Fediverse logo or icon proposal</title>
+          <dc:creator><![CDATA[eudaimon]]></dc:creator>
+          <category>Fediversity</category>
+          <description><![CDATA[
+            <p>Hi everyone,</p>
+<p>Some of you might already be aware of it, some might not: there exists a Fediverse logo/icon proposal, which was created with the idea of trying to convey in a single image the idea of Fediverse, which could be used in many contexts, including as a small icon. The fediverse is diverse, for sure, but it is <em>something</em>, and the idea is to express this <em>somethingness</em> with one image.</p>
+<p>This image is already featured in <a href="https://en.wikipedia.org/wiki/Fediverse" rel="noopener nofollow ugc">Wikipedia’s entry for Fediverse</a>.</p>
+<p>The image was a collective creation. <a href="https://traboone.com/objects/dd21d57d-c65a-4259-902a-f7693fe3d3eb" rel="noopener nofollow ugc">You can see here a conversation</a> where its origin is more or less explained.</p>
+<p>I would ask two things about it:</p>
+<ol>
+<li>Do you think it is a good idea to try to create such logo/icon?</li>
+<li>Do you like it and/or think this one is useful for its purpose?</li>
+</ol>
+<p>Personally I like the idea of creating such logo (i am very visual). I think it can help to abstract the concept of Fediverse from the different types of nodes available (such as Mastodon, Diaspora, etc.), or even protocols.</p>
+<p>Enjoy it!</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/1X/bb51eb34be6a99eb4c6c4db3e33accd4e0063e58.png" data-download-href="https://socialhub.activitypub.rocks/uploads/default/bb51eb34be6a99eb4c6c4db3e33accd4e0063e58" title="imatge"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/bb51eb34be6a99eb4c6c4db3e33accd4e0063e58_2_500x500.png" alt="imatge" data-base62-sha1="qJ6Nqc2hS234KauLOiEHz0CJZK8" width="500" height="500" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/bb51eb34be6a99eb4c6c4db3e33accd4e0063e58_2_500x500.png, https://socialhub.activitypub.rocks/uploads/default/original/1X/bb51eb34be6a99eb4c6c4db3e33accd4e0063e58.png 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/1X/bb51eb34be6a99eb4c6c4db3e33accd4e0063e58.png 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/bb51eb34be6a99eb4c6c4db3e33accd4e0063e58_2_10x10.png"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">imatge</span><span class="informations">600×600 36.7 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg></div></a></div></p>
+            <p><small>29 posts - 9 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/fediverse-logo-or-icon-proposal/1057">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/fediverse-logo-or-icon-proposal/1057</link>
+          <pubDate>Sun, 04 Oct 2020 11:09:48 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1057</guid>
+          <source url="https://socialhub.activitypub.rocks/t/fediverse-logo-or-icon-proposal/1057.rss">Fediverse logo or icon proposal</source>
+        </item>
+        <item>
+          <title>Are we ready for the threats to the Fediverse and decentralization movement?</title>
+          <dc:creator><![CDATA[aschrijver]]></dc:creator>
+          <category>Fediversity</category>
+          <description><![CDATA[
+            <p>Yesterday for quite some time an excellent article <a href="https://news.ycombinator.com/item?id=23872004" rel="nofollow noopener">featured on Hacker News</a> written by <a href="https://shiba.computer/" rel="nofollow noopener">Cade Diehm</a>. It didn’t get much attention, maybe due to its title, but it contained a very urgent message to anyone involved in evolving The Decentralized Web. So I am posting here for you to read.</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://newdesigncongress.org/assets/i/favicon.ico" class="site-icon" width="16" height="16">
+      <a href="https://newdesigncongress.org/en/pub/this-is-fine/" target="_blank" rel="nofollow noopener">newdesigncongress.org</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:478/480;"><img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/de7dbb20eed8b027d64fdc2d32fa8094416cec49.png" class="thumbnail" width="478" height="480"></div>
+
+<h3><a href="https://newdesigncongress.org/en/pub/this-is-fine/" target="_blank" rel="nofollow noopener">This is Fine: Optimism &amp; Emergency in the P2P Network | The New Design...</a></h3>
+
+<p>As we enter the 2020s, centralised power and decentralised communities are on the verge of outright conflict for the control of the digital public space. The resilience of centralised networks and the political organisation of their owners remains...</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>Some quotes from the article:</p>
+<blockquote>
+<p>The resilience of centralised networks and the political organisation of their owners remains significantly underestimated by protocol activists. At the same time, the decentralised networks and the communities they serve have never been more vulnerable. The peer-to-peer community is dangerously unprepared for a crisis-fuelled future that has very suddenly arrived at their door.</p>
+</blockquote>
+<p>The article details about the demise of early P2P applications such as Napster which seemed at one time poised to win the Copyright War, and mentions BitTorrent that exposed its users to litigators.</p>
+<p>Then it goes into the optimism we now feel for new decentralized protocols, and which attract a large user base of people with often outspoken, non-mainstream, rather activist opinions that embrace new platforms as safe havens to express themselves. But…</p>
+<blockquote>
+<p>As we can see from history, blind faith in technically resilient network protocols is naïve and misplaced.</p>
+</blockquote>
+<p>And further on the article goes specifically into detail on DAT, SSB - which I leave to the reader - and ActivityPub:</p>
+<blockquote>
+<p>The Fediverse – a network comprised of Mastodon, Pleroma and other adjacent projects – suffers from the same glaring contradiction. Similar to email nodes, servers (known as <em>Instances</em> within this network) are branded around common interests, political beliefs or sexualities. […]</p>
+<p>This collection of networks offers no end to end encryption. Anyone with administrator access to an Instance can read anything that travels through that Instance’s infrastructure – including direct messages. The level of risk correlates with the number of cross-Instance interactions between users.</p>
+</blockquote>
+<p>Of course that is a known issue. <a href="https://news.ycombinator.com/item?id=23890244" rel="nofollow noopener">One HN commenter</a> points out, e2ee is being worked on in Mastodon. Article also mentions:</p>
+<blockquote>
+<p>The Fediverse has also grappled with its own limitations in threat modelling, such as failing to collectively anticipate the establishment of far right and fascist political Instances – deplatformed refugees from dominant social media platforms.</p>
+</blockquote>
+<p>So what is needed?</p>
+<blockquote>
+<p>[The current] global instability demands platform reform. Peer-to-peer networks theoretically offer a level of resilience, safety and community determination that may no longer be possible with these incumbent powers. The moment demands not another protocol, not another manifesto, not another social network, but a savvy understanding of the political dynamics of protocols and the nakedness of today’s networks. By embracing a reverse <em>Shock Doctrine as a Service</em> , developing clear, historically-grounded narratives, and building sensitivity to the user’s abilities and safety, these new decentralisation reformists can succeed where others have failed.</p>
+</blockquote>
+<p>How?</p>
+<blockquote>
+<p>There is a rich but incomplete field of emergent work to draw from: New frameworks such as <em>Socio-technical Security</em> , and <em>Decentralization off the shelf</em> , exist to assist protocol designers understand and model interfaces and threats more completely and realistically. We must draw from groups that resist the Californian Ideology’s definition of identity, from the 1970s civil-rights aligned student activists who fought against digitised student records, to today’s Decolonise Design movement. Reformists must cede space for decision-making and expertise to under-represented or assailed communities.</p>
+</blockquote>
+<p>The article concludes (emphasis mine):</p>
+<blockquote>
+<p>We can no longer marvel at the novel interactions afforded by peer-to-peer technologies, nor perform political theatrics within these networks. We need to lay aside our delusions that decentralisation grants us immunity – any ground ceded to the commons will be met with amplified resistance from those who already own these spaces. […]</p>
+<p><strong>Without cohesive organisation, mobilisation to harden security and privacy and without a sincere commitment from protocol designers to revise their collective assumptions, the push back from incumbent power will leverage each and every socio-technical flaw in each and every network.</strong></p>
+</blockquote>
+            <p><small>20 posts - 8 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810</link>
+          <pubDate>Mon, 20 Jul 2020 16:43:10 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-810</guid>
+          <source url="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810.rss">Are we ready for the threats to the Fediverse and decentralization movement?</source>
+        </item>
+        <item>
+          <title>Implementing ActivityPub Client-to-Server</title>
+          <dc:creator><![CDATA[lanodan]]></dc:creator>
+          <category>ActivityPub Conference 2020</category>
+          <description><![CDATA[
+            <p>ActivityPub Client-to-Server (AP C2S) API compared to other APIs allows to have more flexibility and control of the activities/objects, plus proper multi-instance abilities (origin URIs instead of IDs local to the instance).</p>
+<p>Pleroma Backend has the ground layer of AP C2S and has been almost not progressing from it for a while.<br>
+AndStatus is a standalone client which does AP C2S among other APIs.</p>
+<p>And so far that’s what I’m aware of.<br>
+I think we should see how to effectively kickstart this API into one that can be effectively used (adding some endpoints/fields, standardizing the different auth methods, …).</p>
+<p>Proposed by: Haelwenn (lanodan) Monnier</p>
+            <p><small>22 posts - 11 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/implementing-activitypub-client-to-server/981">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/implementing-activitypub-client-to-server/981</link>
+          <pubDate>Wed, 30 Sep 2020 15:15:42 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-981</guid>
+          <source url="https://socialhub.activitypub.rocks/t/implementing-activitypub-client-to-server/981.rss">Implementing ActivityPub Client-to-Server</source>
+        </item>
+        <item>
+          <title>Standardizing on a common Community domain as AP extension?</title>
+          <dc:creator><![CDATA[aschrijver]]></dc:creator>
+          <category>Fediverse Futures</category>
+          <description><![CDATA[
+            <p>ActivityStreams has defined and standardized a set of Social concepts, that has given rise to the <em>Microblogging-oriented</em> Fediverse we have today. It worked great to integrate diverse microblogging apps, model lightweight discussion threads, give Likes and Boosts, etc. It does not work so great when squeezing all kinds of entirely different apps into this business domain to facilitate interoperability.</p>
+<blockquote>
+<p><strong>Threat</strong>: Stretching the applicability of currently available Social concepts too much results in semantic incompatibilities</p>
+</blockquote>
+<p>To a man with only a hammer, everything looks like a nail. “Yeah, this must be an <code>as:Note</code> if you want to federate.” and later on we’ll find that “Hey, my <code>as:Note</code> is not your <code>as:Note</code>.” and clients will have a hard time making sense of it all. Additionally:</p>
+<blockquote>
+<p><strong>Threat</strong>: Sticking to mostly Microblogging domain, not benefiting from Linked Data versatility, means we are easily disrupted.</p>
+</blockquote>
+<p>One new ActivityStreams type we are starting to explore and adopt is the <code>as:Group</code> and there is <a href="https://socialhub.activitypub.rocks/t/groups-implementation/591">not yet consensus</a> how it should be implemented in a compatible way.</p>
+<p>But what I notice is that - in many cases - it is more than merely a Group actor we are trying to model. It is part of a larger domain.</p>
+<blockquote>
+<p><strong>Observation</strong>: We are trying to model Community domains instead of merely Groups.</p>
+</blockquote>
+<p>Communities are <em>everywhere</em> in our society and we all participate in many different ones at the same time. They are more than simply groups, and often have intricate and complex social organization structures.</p>
+<p>This forum, and all Discourse forums for that matter, also define a Community, which consists of the forum members. Many other softwares (like e.g. the new and innovative <a href="https://www.pubpub.org/">PubPub</a> Collaborative Publishing platform) also are community oriented. Are the new Fediverse applications that investigate using <code>as:Group</code> type also actually defining broader community concepts? If they do then each of these projects has at least one thing in common. They all:</p>
+<ul>
+<li><strong>Reinvent the wheel of how a Community should be defined</strong></li>
+</ul>
+<p>And as a result all of these will be incompatible with each other, creating community islands that may never share features and members of other communities / community-based softwares. Where they do share, the integrations will be bolt-ons via bridges and adapters.</p>
+<p>As  part of my Fediverse advocacy and setting up <a href="https://socialhub.activitypub.rocks/c/fediversity/fediverse-futures/58">Fediverse Futures</a> initiative I was making the case to both Discourse and PubPub that <strong>Community Has No Boundary</strong>. See the discussions I started for more background:</p>
+<ul>
+<li><a href="https://meta.discourse.org/t/174578">Community has no boundary: Discourse-as-a-Fabric</a></li>
+<li><a href="https://github.com/pubpub/pubpub/discussions/1249">Federating PubPub. Community Has No Boundary</a></li>
+</ul>
+<p>But I now realize that I was advocating on an application-by-application basis, and this is a common issue. The question is, shouldn’t we avoid all this duplicate work and the incompatibility?</p>
+<blockquote>
+<p><strong>Opportunity</strong>: Standardize a set of common Community concepts as an extension of ActivityStreams / ActivityPub.</p>
+</blockquote>
+<p>Besides talking community there are currently many discussion on adopting more powerful Moderation tools for Fediverse instances. The outcome of these discussion may lead to the adoption of one or more <a href="https://socialhub.activitypub.rocks/c/activitypub/fep/54">Fediverse Enhancement Proposals</a>.</p>
+<blockquote>
+<p><strong>Question</strong>: If Moderation FEP’s are adopted, should they be based on current ActivityStreams model, or part of a Community domain?</p>
+</blockquote>
+<h2>
+<a name="standardizing-a-community-domain-1" class="anchor" href="#standardizing-a-community-domain-1"></a>Standardizing a Community domain?</h2>
+<p>There are many ways to approach defining Community in a standard way. The definition can focus on just the organizational aspects, or on the complete model of how communities are usually represented in online web interfaces. I don’t know what the best approach is in this regard, though I am in favor to focus on organizational structures first.</p>
+<blockquote>
+<p><strong>Discussion topic</strong>: Do you see the merits in defining a Community domain, and if so then what should it contain?</p>
+</blockquote>
+<p>I will present some prior work I found that may inspire the discussion.</p>
+<h3>
+<a name="sociocracy-30-evolve-effective-collaboration-at-any-scale-2" class="anchor" href="#sociocracy-30-evolve-effective-collaboration-at-any-scale-2"></a>Sociocracy 3.0: Evolve Effective Collaboration At Any Scale</h3>
+<p>That a community organization structure is more than just a group is very well demonstrated by <a href="https://sociocracy30.org/">Sociocracy 3.0</a>. This CC-BY-SA pattern library that advertises itself as “free social technology for growing agile and resilient organizations”. Here are group structures supported by it:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/1X/2904ee105d9969b30a166bc448f13df8501b8bc9.jpeg" data-download-href="https://socialhub.activitypub.rocks/uploads/default/2904ee105d9969b30a166bc448f13df8501b8bc9" title="Sociocracy organization structures"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/2904ee105d9969b30a166bc448f13df8501b8bc9_2_690x414.jpeg" alt="Sociocracy organization structures" data-base62-sha1="5QS8ATshAct5zxrjtGuMaSKU2bT" width="690" height="414" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/2904ee105d9969b30a166bc448f13df8501b8bc9_2_690x414.jpeg, https://socialhub.activitypub.rocks/uploads/default/optimized/1X/2904ee105d9969b30a166bc448f13df8501b8bc9_2_1035x621.jpeg 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/1X/2904ee105d9969b30a166bc448f13df8501b8bc9.jpeg 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/2904ee105d9969b30a166bc448f13df8501b8bc9_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Sociocracy organization structures</span><span class="informations">1056×634 91.1 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>The group structures lend themselves well to model communities, but the pattern library itself defines many organization patterns / different domains that can be modeled on top of them. Here’s the overview of its patterns:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/1X/58ec6d951953525cd91f50876c6d77513b84e9d3.png" data-download-href="https://socialhub.activitypub.rocks/uploads/default/58ec6d951953525cd91f50876c6d77513b84e9d3" title="Sociocracy pattern library"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/58ec6d951953525cd91f50876c6d77513b84e9d3_2_690x373.png" alt="Sociocracy pattern library" data-base62-sha1="cGEyQZOdOltjxJha3a2SZ0jTpvR" width="690" height="373" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/58ec6d951953525cd91f50876c6d77513b84e9d3_2_690x373.png, https://socialhub.activitypub.rocks/uploads/default/optimized/1X/58ec6d951953525cd91f50876c6d77513b84e9d3_2_1035x559.png 1.5x, https://socialhub.activitypub.rocks/uploads/default/optimized/1X/58ec6d951953525cd91f50876c6d77513b84e9d3_2_1380x746.png 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/58ec6d951953525cd91f50876c6d77513b84e9d3_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Sociocracy pattern library</span><span class="informations">3440×1860 690 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p><strong>Important</strong>: The idea of the pattern library is that you only adopt what you need. Nothing less, nothing more.</p>
+<h3>
+<a name="sioc-semantically-interlinked-online-communities-3" class="anchor" href="#sioc-semantically-interlinked-online-communities-3"></a>SIOC: Semantically-Interlinked Online Communities</h3>
+<p>SIOC defines an entire range of RDF classes on how communities might be represented online.</p>
+<p>On the <a href="https://fedeproxy">Fedeproxy</a> forum of <a class="mention" href="/u/dachary">@dachary</a> someone <a href="https://forum.fedeproxy.eu/t/fedeproxy-great-case-study-for-fediverse-futures/44/3">pointed out</a> the <a href="http://sioc-project.org/">SIOC project</a> linked data ontologies. This is an example of a Forum-oriented model that can be defined based on the ontology (though it lacks SIOC classes like <code>Community</code> and <code>Thread</code>):</p>
+<p><img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/dc3dcf06cb31a0b018f918fe61f77a83f01f24ce.png" alt="semantically-interlinked-online-community-ontology" data-base62-sha1="vqlt14OfQyoNRMTE87WvxYY5ebk" width="465" height="299"></p>
+<p>These are some additional classes that can be used (there are more):</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/1X/519fc76da8be8818c748e851aed0745387ff709a.png" data-download-href="https://socialhub.activitypub.rocks/uploads/default/519fc76da8be8818c748e851aed0745387ff709a" title="sioc-ontology-types"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/519fc76da8be8818c748e851aed0745387ff709a_2_503x500.png" alt="sioc-ontology-types" data-base62-sha1="bE500h39X11ZjbQfWUYf1BHg8FY" width="503" height="500" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/519fc76da8be8818c748e851aed0745387ff709a_2_503x500.png, https://socialhub.activitypub.rocks/uploads/default/optimized/1X/519fc76da8be8818c748e851aed0745387ff709a_2_754x750.png 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/1X/519fc76da8be8818c748e851aed0745387ff709a.png 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/519fc76da8be8818c748e851aed0745387ff709a_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">sioc-ontology-types</span><span class="informations">905×898 205 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<hr>
+<p><strong>Edit</strong>:</p>
+<p>In addition to the above I would like to remark that…</p>
+<blockquote>
+<p><strong>Best-practice</strong>: ActivityStreams should be considered more as a <strong>Core Ontology</strong> and not as THE ontology of the Fediverse.</p>
+</blockquote>
+            <p><small>29 posts - 6 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/standardizing-on-a-common-community-domain-as-ap-extension/1353">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/standardizing-on-a-common-community-domain-as-ap-extension/1353</link>
+          <pubDate>Tue, 26 Jan 2021 08:29:09 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1353</guid>
+          <source url="https://socialhub.activitypub.rocks/t/standardizing-on-a-common-community-domain-as-ap-extension/1353.rss">Standardizing on a common Community domain as AP extension?</source>
+        </item>
+        <item>
+          <title>Hello from a software developer and social adventurist</title>
+          <dc:creator><![CDATA[weex]]></dc:creator>
+          <category>Uncategorized</category>
+          <description><![CDATA[
+            <p>Hi all,</p>
+<p>I’ve spent the last decade working on software and attempting to understand decentralization as a social phenomenon. I come to this community in search of understanding, opportunity and a desire to do something that matters.</p>
+<p>My journey started a couple decades ago with the free software movement and the four freedoms. I learned then that my thinking is particularly oriented toward the user, or the person, and ultimately humanity. That led me to support lots of people with their computers and technology and later developing software since it scales so damn well.</p>
+<p>After noticing the astronomical value users were creating for proprietary software developers, and seeing social networks as more of the same, I wondered how users could benefit from the value they were creating in the form of a user-owned social network. If it was going to happen, the system would need to handle money to pay for servers at least, and PayPal came to mind. It was at this time though that PayPal shut down Wikileaks. I went looking for other ways to send money online which could not be shutdown and found Bitcoin.</p>
+<p>This took me on another important leg of the journey toward understanding decentralization, when it works, how it works, what are the tradeoffs, and how it can be fostered. Fast forward to today, I wish to spend my free time on something truly important and again I return to this orientation toward humanity.</p>
+<p>Many of today’s problems have been developing for decades as corporate power grew consistently putting profits over people. It is my belief that the most effective tools for reasserting sovereignty in the future will come through open source software and decentralization which returns privacy and agency to the individual.</p>
+<p>The last couple of weeks, I’ve been doing a deep dive on the fediverse, examining Mastodon and Diaspora code and the AP spec, thinking about how I can best help these and other federated free software platforms and networks.</p>
+<p>I’m glad to be joining you all and looking forward to what we can all do together.</p>
+<p>Thanks,</p>
+<p>David (<a class="mention" href="/u/weex">@weex</a> / <a class="mention" href="/u/weex">@weex</a>@mstdn.social)</p>
+            <p><small>27 posts - 5 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/hello-from-a-software-developer-and-social-adventurist/1829">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/hello-from-a-software-developer-and-social-adventurist/1829</link>
+          <pubDate>Wed, 02 Jun 2021 20:00:59 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1829</guid>
+          <source url="https://socialhub.activitypub.rocks/t/hello-from-a-software-developer-and-social-adventurist/1829.rss">Hello from a software developer and social adventurist</source>
+        </item>
+        <item>
+          <title>Let&#39;s Play and Win Our Own Game</title>
+          <dc:creator><![CDATA[system]]></dc:creator>
+          <category>ActivityPub Conference 2020</category>
+          <description><![CDATA[
+            <p><em>I’m Darius Kazemi (<a class="mention" href="/u/darius">@darius</a>)  <a href="https://friend.camp/@darius">@darius@friend.camp</a>, and I’m an independent researcher, programmer, and artist. I’m the maintainer of Hometown, a fork of Mastodon with community-enhancing features, and I added AcitvityPub support to the open source event organizing software Gathio. I was a Mozilla Open Web Fellow in 2018-2019</em></p>
+<p><iframe width="560" height="315" src="https://conf.tube/videos/embed/b8d6c88a-0e73-46dd-9e35-d4645bb12db8" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+<p>As creators of federated social software, we have a choice: we can compete with social media giants on their own terms, or we can play our own game, one that’s impossible for the giants to play in the first place. If we want to do the latter, we need to identify the fundamental assumptions that constrain the giants and ask ourselves what we can do when we throw those assumptions out entirely.</p>
+<p>In this talk, I am going to try and inspire you to make things that would be literally impossible to make on the centralized web. I am going to talk about both the advantages and disadvantages of doing this kind of thing. Expect to hear concrete examples of software that already exists, and also examples of software that could conceivably exist in the very near future.</p>
+<h2>Questions &amp; Answers available!</h2>
+<p><strong><a href="https://conf.tube/videos/watch/ee874639-6f5d-4fbc-a63f-ca9cfebdb1ab">Q&amp;A Session – Closing Keynote, “Let’s Play and Win Our Own Game”</a></strong><br>
+⬡ Hooray, the live Questions &amp; Answers are available here<br>
+<iframe width="560" height="315" src="https://conf.tube/videos/embed/ee874639-6f5d-4fbc-a63f-ca9cfebdb1ab" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+            <p><small>13 posts - 6 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/lets-play-and-win-our-own-game/953">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/lets-play-and-win-our-own-game/953</link>
+          <pubDate>Wed, 30 Sep 2020 20:47:06 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-953</guid>
+          <source url="https://socialhub.activitypub.rocks/t/lets-play-and-win-our-own-game/953.rss">Let&#39;s Play and Win Our Own Game</source>
+        </item>
+        <item>
+          <title>Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</title>
+          <dc:creator><![CDATA[j8ter]]></dc:creator>
+          <category>Meeting</category>
+          <description><![CDATA[
+            <p><em>(This is a wiki post that anyone can edit, by clicking the ‘Edit’ link in bottom-right corner)</em></p>
+<hr>
+<p>Hi everyone,</p>
+<p>Thanks again <a class="mention" href="/u/cristinadelisle">@CristinaDeLisle</a> <a class="mention" href="/u/how">@how</a> <a class="mention" href="/u/aschrijver">@aschrijver</a> <a class="mention" href="/u/hamishcampbell">@hamishcampbell</a> and many more for your contributions to (in my eyes) a solid and lively gathering! Here I wanted to bring together the lessons learned and action points from the discussion (wanted to make a wiki post, don’t know how to yet):</p>
+<h3>
+<a name="things-to-improve-1" class="anchor" href="#things-to-improve-1"></a>Things to improve</h3>
+<p>What can we improve in the next events and for meetups in general.</p>
+<ul>
+<li>
+<p><a class="mention" href="/u/aschrijver">@aschrijver</a>: There were worrying problems with TU Delft BBB (black screens). We should consider moving elsewhere for next event.</p>
+</li>
+<li>
+<p><a class="mention" href="/u/aschrijver">@aschrijver</a>: It was not clear to me there was a Notes thing, where people could introduce themselves. So I am not on the list.</p>
+</li>
+<li>
+<p><a class="mention" href="/u/aschrijver">@aschrijver</a>: We need a list of people that are responsible for places where SocialHub has a presence, and probably a place where we keep credentials for these. Right now it is unclear, who has the AP account for conf.tube (<a class="mention" href="/u/how">@how</a> is finding out).</p>
+</li>
+</ul>
+<h3>
+<a name="topics-to-address-2" class="anchor" href="#topics-to-address-2"></a>Topics to address</h3>
+<ul>
+<li>
+<p><a class="mention" href="/u/j8ter">@j8ter</a>: Discuss user experience and expectations in fediverse for institutions-instances (Nuno / <a class="mention" href="/u/nunoantunes">@nunoantunes</a> )</p>
+<ul>
+<li>
+<a class="mention" href="/u/aschrijver">@aschrijver</a>: We had a discussion after recording ended, on how the fediverse works differently and you shouldn’t follow the global timelines in most cases, but build your own by collecting Followers/Following. In Twitter the algorithm kicks in to drive engagement. In Fedi you are in charge yourself to do that. Communication style is also different in fedi, where more of a 2-way conversation works very well, instead of just broadcasting stuff out to the world.</li>
+</ul>
+</li>
+<li>
+<p><a class="mention" href="/u/j8ter">@j8ter</a>: Security aspects of ActivityPub and fediverse-tech (Gijs and others)</p>
+<ul>
+<li>
+<a class="mention" href="/u/aschrijver">@aschrijver</a>: I addressed this in the chat. Security audits are responsibility for projects themselves, and they are independent in their policy choices here. I think most apps are ‘security-hardened’ in the way their open source code is scrutinized, but I don’t think many formal audits have (as yet) been conducted. SocialHub might play a role here.</li>
+</ul>
+</li>
+<li>
+<p><a class="mention" href="/u/aschrijver">@aschrijver</a>: Piotr mentioned <a href="https://netcommons.eu" rel="noopener nofollow ugc">netCommons</a> Horizon 2020 project has expressed an interest in the Fediverse.</p>
+<ul>
+<li>
+<a class="mention" href="/u/aschrijver">@aschrijver</a>: I approached Piotr on LinkedIn, and sent a <a href="https://twitter.com/humane_tech_now/status/1384411933969952768" rel="noopener nofollow ugc">tweet to netCommonsEU</a> inviting them to join discussion here.</li>
+</ul>
+</li>
+</ul>
+<h3>
+<a name="possible-follow-ups-action-points-3" class="anchor" href="#possible-follow-ups-action-points-3"></a>(Possible) Follow-ups / action points</h3>
+<p>List actions to be taken for the next events, or ideas to be considered.</p>
+<ul>
+<li>
+<p><a class="mention" href="/u/aschrijver">@aschrijver</a>: I have the list of participants. We might provide it somewhere, and we might ask Jean-Luc Dorel to add more info on EC roles these people have (iff possible).</p>
+</li>
+<li>
+<p><a class="mention" href="/u/aschrijver">@aschrijver</a>: We may provide the text of the chat roll, maybe on conf.tube together with the video (as suggested by <a class="mention" href="/u/hamishcampbell">@hamishcampbell</a>).</p>
+<ul>
+<li>
+<a class="mention" href="/u/j8ter">@j8ter</a> made a recording of the BBB-stream including the chat (screen record) that was sent to <a class="mention" href="/u/how">@how</a> to put on conf.tube. <a class="mention" href="/u/j8ter">@j8ter</a> will embed (if possible) on ngi.eu/event-psge Wednesday 21 (done, <a class="mention" href="/u/aschrijver">@aschrijver</a>  and <a class="mention" href="/u/how">@how</a> could you test, I get some weird issues w Chromium and not with Firefox).</li>
+</ul>
+</li>
+<li>
+<p><a class="mention" href="/u/aschrijver">@aschrijver</a>: We can reiterate the video and extract all the things that came up, especially in the chat. Then create a sort of a FAQ summary article from it, where we provide very clear, concise answers to them and offer it as handout / input to the next event (could use pad.public.cat for this → <a href="https://pad.public.cat/faq-webinar-activitypub-for-administrations?view" class="inline-onebox" rel="noopener nofollow ugc">HedgeDoc - Collaborative markdown notes</a>).  <a class="mention" href="/u/j8ter">@j8ter</a> we could kickoff the discussion with action points from the 1st webinar. I have added them to my introductory presentation → <a href="https://pad.public.cat/ngi0-ec-activitypub-liaison-presentation-2021-04-26-intro" class="inline-onebox" rel="noopener nofollow ugc">HedgeDoc - Collaborative markdown notes</a></p>
+</li>
+<li>
+<p><a class="mention" href="/u/j8ter">@j8ter</a>: Start the 2nd webinar with  a brief explanation of venue features (shared notes for introduction, public chat for questions. suggestions and relevant links), possibly in the first/background slide, which I will update for this.</p>
+</li>
+</ul>
+<p>-<a class="mention" href="/u/how">@how</a>, <a class="mention" href="/u/aschrijver">@aschrijver</a> &amp; <a class="mention" href="/u/j8ter">@j8ter</a>: decide on title for second webinar (or stick with "ActivityPub for Administrations). <a class="mention" href="/u/j8ter">@j8ter</a> suggests “Understand ActivityPub”, so the workshop can be something like “Use ActivityPub”.</p>
+<hr>
+<p><em>(Note, this post had some replies that were included here and then removed, otherwise edits to this wiki do not become clear to forum visistors)</em></p>
+            <p><small>22 posts - 4 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622</link>
+          <pubDate>Mon, 19 Apr 2021 10:42:57 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>Yes</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1622</guid>
+          <source url="https://socialhub.activitypub.rocks/t/lessons-learned-action-points-from-1st-activitypub-ec-webinar/1622.rss">Lessons learned &amp; action points from 1st ActivityPub-EC-webinar</source>
+        </item>
+        <item>
+          <title>What would a fediverse &quot;governance&quot; body look like?</title>
+          <dc:creator><![CDATA[hamishcampbell]]></dc:creator>
+          <category>Fediverse Futures</category>
+          <description><![CDATA[
+            <p><span class="hashtag">#Bluesky</span> thinking of a “governance” body of the fediverse - If it does not have elephants running around throwing paper planes its likely the wrong structure<br>
+<div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/1X/feb16d9af0a556c5bc54d6b854b17bc45b351562.jpeg" data-download-href="https://socialhub.activitypub.rocks/uploads/default/feb16d9af0a556c5bc54d6b854b17bc45b351562" title="securaty modeal for mastodon"><img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/feb16d9af0a556c5bc54d6b854b17bc45b351562.jpeg" alt="securaty modeal for mastodon" data-base62-sha1="Al7pLlpDcsSFyVW8AikEyovImRA" width="690" height="463" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/feb16d9af0a556c5bc54d6b854b17bc45b351562_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">securaty modeal for mastodon</span><span class="informations">712×478 66 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+            <p><small>116 posts - 13 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/what-would-a-fediverse-governance-body-look-like/1497">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/what-would-a-fediverse-governance-body-look-like/1497</link>
+          <pubDate>Sat, 13 Mar 2021 18:16:33 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1497</guid>
+          <source url="https://socialhub.activitypub.rocks/t/what-would-a-fediverse-governance-body-look-like/1497.rss">What would a fediverse &quot;governance&quot; body look like?</source>
+        </item>
+        <item>
+          <title>Fediverse Futures: Visions &amp; dreams. Feedback wanted</title>
+          <dc:creator><![CDATA[aschrijver]]></dc:creator>
+          <category>Fediverse Futures</category>
+          <description><![CDATA[
+            <div align="center">
+<p><img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/fe29fa6f19ee06b873203d5e189ddda84005eeac.png" alt="fediverse-rising-2021-year-of-the-fedizen" data-base62-sha1="AgrdmmRlxFMZ7Itr4SehOLTxpnK" width="464" height="410"></p>
+</div>
+<h2>Introduction</h2>
+<p>When typing the title for this topic, Discourse suggested this topic with similar title:</p>
+<aside class="quote no-group" data-username="cwebber" data-post="1" data-topic="671">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/cwebber/40/51_2.png" class="avatar"><a href="https://socialhub.activitypub.rocks/t/fediverse-futures-implementer-usergroup/671/1">Fediverse Futures implementer usergroup</a>
+</div>
+<blockquote>
+<p>At <a href="https://socialhub.activitypub.rocks/t/2020-05-09-socialcg-meeting/639">today’s SocialCG </a> meeting, we talked about doing a “future of the fediverse” usergroup that meets maybe every other week or once a month or so. It would take place over video and be like the following:</p>
+<ul>
+<li>An implementer gives a half hour presentation on some topic: what they’re working on, an idea on where things should go, etc.</li>
+<li>Then the next half hour is fellow implementers discussing details of making that happen.</li>
+</ul>
+</blockquote>
+</aside>
+<p>AFAIK the Fediverse Futures group has not been followed-up on. But I want to discuss a different twist to it.</p>
+<p>Everything and everyone involved in evolving the Fediverse is doing so from a highly technical perspective and mindset. This is logical as we are organically discovering the technical foundations for a new social web, based on a technology standard. But I notice this narrow focus is also leading to a general lack of imagination, especially where we advocate Fediverse to people that hadn’t heard of it before. Much of our blogs and articles about this ‘better web’ is about “What currently is” and less so about “What could be”.</p>
+<p>I recently wrote about broadening the way we advocate ActivityPub in <a href="https://socialhub.activitypub.rocks/t/1197">“Positioning ActivityPub: De-Emphasize “Being Part of the Fediverse” as primary USP”</a>. But there’s more to it. We should avoid the technical focus early on, and inspire visions and dreams, to think out-of-the-box and about real innovation and the opportunities that flow from that.</p>
+<p>Here’s how generally speaking a Fedi advocate promotes ActivityPub support to a FOSS project/product maintainer:</p>
+<blockquote>
+<p><strong>Advocate</strong>: You should implement ActivityPub in your project.<br>
+<strong>Maintainer</strong>: Why would I do that? What’s in it for me?<br>
+<strong>Advocate</strong>: Can’t you see it? There’s <em>[microblogging &amp; social use case outside your core business domain / technobabble]</em>.<br>
+<strong>Maintainer</strong>: Hmm, maybe. I will <em>[close the issue for now / put on the backlog]</em> but thanks for your idea.<br>
+<strong>Other advocates</strong>: Yeah, AP support is very cool… <em>[upvote / technobabble]</em>. This other project also has <em>[technobabble]</em>.</p>
+</blockquote>
+<p>Okay, I am painting this a bit black &amp; white, and have been guilty myself in promoting this way.</p>
+<p>I was triggered to write this topic, because of how - despite lotsa effort of advocates - the Discourse team and community does not have much enthusiasm in embracing ActivityPub support. Our case does not manage to make <em><strong>business sense</strong></em> to them. There were plans to implement it and even funding, but - I think due to the type of advocacy described above - they stepped away from it. In <a href="https://meta.discourse.org/t/activitypub-support-phase-1-rfc/132624">ActivityPub Support: Phase 1 RFC</a> the MVP is for a FB-like personal feed facility that has very little to do with forum software.</p>
+<h2>Fediverse Futures visionaries group</h2>
+<p>We’ve talked about this more often. We need a more holistic approach to fedi development / evolution. We need product designers, graphics artists, UX/UI/Interaction designers, futurists and visionaries to join the dev folks.</p>
+<p>I propose to extend the <a class="hashtag" href="/c/meeting/socialcg/15">#<span>meeting:socialcg</span></a> group idea outlined by <a class="mention" href="/u/cwebber">@cwebber</a> to go this holistic route.</p>
+<blockquote>
+<p><strong>Proposal</strong>: Erect a <strong>Fediverse Futures</strong> initiative for elaborating high-level, non-technical perspectives, visions and dreams.</p>
+</blockquote>
+<p>Everyone can join this initiative from whatever background they have. We’ll actively encourage and invite people with diverse and different viewpoints, and stimulate brainstorming, creativity, thinking out-of-the-box and crazy, wild ideas. Current AP devs SHOULD be actively involved, and spin-offs plus follow-ups, technical elaborations will follow afterwards and independent of the initiative.</p>
+<p>The initiative will need a couple of people to be its drivers, but other than that needs no real ‘group’ / membership concept. It can be very loose. I volunteer to be in this driving seat, provided that at least 4 to 5 others join as well. As part of our tasks we can take the whole <a href="https://socialhub.activitypub.rocks/t/onboarding-official-website-implementor-and-user-guides/998">onboarding and community organization + processes</a> thing within our scope.</p>
+<p>Would love your feedback on this proposal.</p>
+<h2>Depicting domain-specific visions &amp; dreams</h2>
+<p>Lastly I would like your feedback on an idea to generalize what I did in response to the <a href="https://meta.discourse.org/t/activitypub-support-phase-1-rfc/132624">Discourse AP RFC</a> proposal. I wrote a bit of a visionary description as input for a brainstorm discussion, outlining what Discourse might be like if it were built from the ground up with federation support.</p>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/1b0984d7ee08bce90572f46a1950e1ced436d028.png" class="site-icon" width="32" height="32">
+      <a href="https://meta.discourse.org/t/community-has-no-boundary-discourse-as-a-fabric-ideation-brainstorm/174578" target="_blank" rel="noopener" title="08:36AM - 30 December 2020">Discourse Meta – 30 Dec 20</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:666/500;"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/5ab9e93fb8d2a2dd8b936a96d9e9613b69d9df6d_2_666x500.jpeg" class="thumbnail" width="666" height="500" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/5ab9e93fb8d2a2dd8b936a96d9e9613b69d9df6d_2_666x500.jpeg, https://socialhub.activitypub.rocks/uploads/default/optimized/1X/5ab9e93fb8d2a2dd8b936a96d9e9613b69d9df6d_2_999x750.jpeg 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/1X/5ab9e93fb8d2a2dd8b936a96d9e9613b69d9df6d.jpeg 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/5ab9e93fb8d2a2dd8b936a96d9e9613b69d9df6d_2_10x10.png"></div>
+
+<h3><a href="https://meta.discourse.org/t/community-has-no-boundary-discourse-as-a-fabric-ideation-brainstorm/174578" target="_blank" rel="noopener">Community has no boundary: Discourse-as-a-Fabric - ideation &amp; brainstorm</a></h3>
+
+<p>In ActivityPub Support: Phase 1 RFC I outlined an ideation exercise to evaluate the business case for having ActivityPub support in Discourse, and think beyond a MVP as-if Discourse was built from the ground up with federation in mind:   So hereby I...</p>
+
+  <p><span class="label1">Reading time: 5 mins 🕑</span>
+    <span class="label2">Likes: 22 ❤</span></p>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>Now, like this post, when writing off the top of my head I tend to be long-winded using lotsa text, which is not smart in our attention-deficit TL;DR savvy world. But the idea is…</p>
+<blockquote>
+<p><strong>Idea</strong>: Select business domains we’d love to see in the fediverse, and write visions / business cases for candidate projects.</p>
+</blockquote>
+<p>I.e. similar to what I wrote for Discourse, better formulated, and generalized for the <strong>Community Communication</strong> business domain. Then publish it at an appropriate location, and use it in our advocacy. Instead of going project by project and filing a rather random story, we point to the Visionary Business Case or whatever, and then follow up with some specifics on how the particular project may tackle its adoption. Here too there are opportunities to just reference ready-made documents, like “Adopting ActivityPub: The Process”, etc.</p>
+<hr>
+<p>I am quite enamoured by Domain Driven Development (DDD) and I think this approach fits excellently to the Linked Data aspects of fediverse. It might be used in the visions / business cases we publish.</p>
+<hr>
+<div align="center">
+<p>All in all, for 2021 …</p>
+<h1>
+<img src="https://socialhub.activitypub.rocks/images/emoji/twitter/sparkles.png?v=9" title=":sparkles:" class="emoji" alt=":sparkles:"> &nbsp;  Let’s create some magic together</h1>
+<p><a href="https://openmoji.org/"><img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/5d95c9f8a9826cbd5cb699aaf5b8c9b080c45171.png" alt="fairy-openmoji_medium-dark-skin-tone_1f9da-1f3fe_1f3fe" data-base62-sha1="dlTkdwkEZbIXUBYbf2KVTsxue1r" width="240" height="240"></a></p>
+<h2>Use our 2021 hashtag: &nbsp; <a>#YearOfTheFediverse</a>
+</h2>
+</div>
+            <p><small>12 posts - 6 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/fediverse-futures-visions-dreams-feedback-wanted/1238">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/fediverse-futures-visions-dreams-feedback-wanted/1238</link>
+          <pubDate>Thu, 31 Dec 2020 10:45:27 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1238</guid>
+          <source url="https://socialhub.activitypub.rocks/t/fediverse-futures-visions-dreams-feedback-wanted/1238.rss">Fediverse Futures: Visions &amp; dreams. Feedback wanted</source>
+        </item>
+        <item>
+          <title>The reboot of the indymedia project</title>
+          <dc:creator><![CDATA[hamishcampbell]]></dc:creator>
+          <category>ActivityPub Conference 2020</category>
+          <description><![CDATA[
+            <p><em>Hamish Campbell</em></p>
+<p><iframe width="560" height="315" src="https://conf.tube/videos/embed/953de898-74dc-4665-95fb-313042f66cc6" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+<p>We are a wide affinity group working to reboot the global indymedia network using modern federated protocols such as <a class="hashtag" href="/c/activitypub/5">#<span>activitypub</span></a>. This reboot will be based on the OMN project code.<br>
+What is the OMN (Open Media Network):<br>
+The project is to shift power to the producers and consumers of media. It’s about good UI and simple empowering <span class="hashtag">#KISS</span> tools to move content, by categorising it with a grassroots folksonomy. This simple approach is balanced by shared site level syntax for the complex crew.<br>
+<a href="https://unite.openworlds.info/explore/organizations" rel="noopener nofollow ugc">Working Project Site</a><br>
+<a href="http://hamishcampbell.com/index.php/tag/indymedia/" rel="noopener nofollow ugc">Background</a><br>
+In the end it’s about bringing trust back into news.</p>
+<h2>Questions &amp; Answers available!</h2>
+<p><strong><a href="https://conf.tube/videos/watch/c694c3ee-bb49-44e0-98a7-960ac176116c" rel="noopener nofollow ugc">Q&amp;A Session – The reboot of the indymedia project</a></strong><br>
+⬡ Hooray, the live Questions &amp; Answers are available here<br>
+<iframe width="560" height="315" src="https://conf.tube/videos/embed/c694c3ee-bb49-44e0-98a7-960ac176116c" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+            <p><small>10 posts - 3 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/the-reboot-of-the-indymedia-project/942">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/the-reboot-of-the-indymedia-project/942</link>
+          <pubDate>Wed, 30 Sep 2020 13:54:27 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-942</guid>
+          <source url="https://socialhub.activitypub.rocks/t/the-reboot-of-the-indymedia-project/942.rss">The reboot of the indymedia project</source>
+        </item>
+        <item>
+          <title>Is your participation in this exchange worth 2 cents? (PonyUPS and PonyXPS)</title>
+          <dc:creator><![CDATA[richardhroth1]]></dc:creator>
+          <category>Fediverse Futures</category>
+          <description><![CDATA[
+            <p>I am a great fan of Henry George and of the <a href="https://en.wikipedia.org/wiki/Community_land_trust" rel="noopener nofollow ugc">Community Land Trust</a> model he is considered the Grandfather of. Along those lines I have been actively working to create a local CLT.</p>
+<p>I am a great fan of open source and growing a variety of public commons.  But particularly here I am interested in rebuilding the web as a user owned community commons, and how that might be done.</p>
+<p>The US Postal Service is a self supporting community resource, and has therefore been under attack. In part, as a counter to that attack it has been proposed that the Services of the USPS be expanded into providing <a href="https://news.bloomberglaw.com/banking-law/california-breathes-new-life-into-public-banking-movement" rel="noopener nofollow ugc">Public Banking</a>.</p>
+<p>My suggestion is to build a web based public banking service that would parallel the  USPS model and take responsibility for security, privacy encryption and civil delivery of personal exchanges.  It does not replace the existing social media, but it severely disrupts them by asking the user a simple question at the beginning of each interaction:</p>
+<p>“Is my participation in this interaction worth 2 cents?”</p>
+<p>If the answer is yes, to acknowledge any personal value to the user’s privacy will change the nature of the entire web.  To send an email to a friend would cost you 2 cents. 1 cent would go to the public service, the other cent would go to the person you are sending it to - to acknowledge the worth you place on having them consider your input. The 2 cents could be considered a stamp or in social terms a handshake or bow.</p>
+<p>I am calling the media exchange portion of the service as “PonyXPS”. The micro to macro currency accounting banking and security system I am referring to as “PonyUps” (or PonyUPS).</p>
+<p>I would sincerely appreciate any suggestions or critical analysis or how such a system might be advanced as I am not a coder/programmer or have connections other than such forums as this one to present this idea as a model.</p>
+<p>I will further elaborate on this in the posts to this topic though I expect there are both minor and major flaws to my reasoning. What I am most interested in is something that works. What do you think?</p>
+<p>Thanks.</p>
+            <p><small>38 posts - 6 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/is-your-participation-in-this-exchange-worth-2-cents-ponyups-and-ponyxps/1381">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/is-your-participation-in-this-exchange-worth-2-cents-ponyups-and-ponyxps/1381</link>
+          <pubDate>Sun, 31 Jan 2021 20:06:49 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1381</guid>
+          <source url="https://socialhub.activitypub.rocks/t/is-your-participation-in-this-exchange-worth-2-cents-ponyups-and-ponyxps/1381.rss">Is your participation in this exchange worth 2 cents? (PonyUPS and PonyXPS)</source>
+        </item>
+        <item>
+          <title>Hospitality exchange community considers moving to the fediverse ;)</title>
+          <dc:creator><![CDATA[mariha]]></dc:creator>
+          <category>Fediverse Futures</category>
+          <description><![CDATA[
+            <p><div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/2X/5/58bdfe7e164ff3423e9b05d67096b537145cc382.jpeg" data-download-href="https://socialhub.activitypub.rocks/uploads/default/58bdfe7e164ff3423e9b05d67096b537145cc382" title="pexels-tim-douglas-6205480"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/5/58bdfe7e164ff3423e9b05d67096b537145cc382_2_690x459.jpeg" alt="pexels-tim-douglas-6205480" data-base62-sha1="cF34PtaaFx9qzC7nor4f4NGw7L4" width="690" height="459" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/5/58bdfe7e164ff3423e9b05d67096b537145cc382_2_690x459.jpeg, https://socialhub.activitypub.rocks/uploads/default/original/2X/5/58bdfe7e164ff3423e9b05d67096b537145cc382.jpeg 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/2X/5/58bdfe7e164ff3423e9b05d67096b537145cc382.jpeg 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/5/58bdfe7e164ff3423e9b05d67096b537145cc382_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">pexels-tim-douglas-6205480</span><span class="informations">800×533 54 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>I outlined the reasons in my into post <a href="https://socialhub.activitypub.rocks/t/hello-from-hospitality-exchange-community-devs/1764" class="inline-onebox">Hello from hospitality exchange community devs!</a></p>
+<p>The idea is drafted here: <a href="https://github.com/mariha/federated-trustroots/discussions/3" rel="noopener nofollow ugc">https://github.com/mariha/federated-trustroots/discussions/3</a></p>
+<p>I’d like to discuss the idea and possibly get some help in the direction where to go next. In particular, I am not sure if ActivityPub is what we should use to implement our federation. We are not social media platforms.</p>
+<p><small><em>(Photo by <strong><a href="https://www.pexels.com/@tim-douglas?utm_content=attributionCopyText&amp;utm_medium=referral&amp;utm_source=pexels" rel="noopener nofollow ugc">Tim Douglas</a></strong> from <strong><a href="https://www.pexels.com/photo/lady-standing-in-cafeteria-and-demonstrating-sign-open-6205480/?utm_content=attributionCopyText&amp;utm_medium=referral&amp;utm_source=pexels" rel="noopener nofollow ugc">Pexels</a></strong>)</em></small></p>
+            <p><small>30 posts - 8 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/hospitality-exchange-community-considers-moving-to-the-fediverse/1765">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/hospitality-exchange-community-considers-moving-to-the-fediverse/1765</link>
+          <pubDate>Mon, 17 May 2021 11:00:46 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1765</guid>
+          <source url="https://socialhub.activitypub.rocks/t/hospitality-exchange-community-considers-moving-to-the-fediverse/1765.rss">Hospitality exchange community considers moving to the fediverse ;)</source>
+        </item>
+        <item>
+          <title>2020-12-11 SocialCG Meeting</title>
+          <dc:creator><![CDATA[Sebastian]]></dc:creator>
+          <category>SocialCG</category>
+          <description><![CDATA[
+            <p>Continuing the discussion from <a href="https://socialhub.activitypub.rocks/t/2020-12-04-socialcg-meeting/1166">the meeting the week before</a> –<br>
+<a href="https://www.w3.org/2020/12/04-social-minutes.html">Log of the 12-04 meeting</a></p>
+<h2>December 2020</h2>
+<p><span data-date="2020-12-11" data-time="15:00:00" class="discourse-local-date" data-timezone="UTC" data-email-preview="2020-12-11T15:00:00Z UTC">2020-12-11T15:00:00Z</span> → <span data-date="2020-12-11" data-time="16:00:00" class="discourse-local-date" data-timezone="UTC" data-email-preview="2020-12-11T16:00:00Z UTC">2020-12-11T16:00:00Z</span></p>
+<h3>
+<a href="https://meet.jit.si/ScatteredConsequencesActRegardless">Join via jitsi</a> – chat and vote in <span class="hashtag">#social</span> on freenode: <a href="https://webchat.freenode.net/#social">Web Chat</a>
+</h3>
+<h1>Agenda</h1>
+<ol>
+<li>
+<p><span class="chcklst-box fa fa-square-o fa-fw"></span> Forming a Lobby,<br>
+the EU Digital Services Act and Interoperability Law (Joost / <a href="https://nlnet.nl">nlnet</a>, Sebastian)</p>
+</li>
+<li>
+<p><span class="chcklst-box fa fa-square-o fa-fw"></span> FEP (pukkamustard, CJ)</p>
+</li>
+<li>
+<p><span class="chcklst-box fa fa-square-o fa-fw"></span> Link relations (Sebastian, rhiaro)</p>
+</li>
+</ol>
+<h2>EU and Interoperability Law</h2>
+<p>Following up the <a href="https://mastodon.social/@sl007/105241868769245847">discussion on mastodon</a>, we need to discuss about EU-supported ActivityPub outreach and funding taking over the <a href="https://www.opentech.fund">OTF</a> that was defunded by Trump.<br>
+<a href="https://mastodon.social/@cjd/105218928131527211">See this long thread</a> …<br>
+<a href="https://netzpolitik.org/2020/interoperabilitaet-wie-die-eu-die-sozialen-netzwerke-aufbrechen-kann/">German Article</a><br>
+We need a lobby and some invited policy advocates, experts and NGOs to the meeting</p>
+<h2>FEP</h2>
+<p>Following up on <a href="https://socialhub.activitypub.rocks/t/fediverse-enhancement-proposal-fep/1059:">https://socialhub.activitypub.rocks/t/fediverse-enhancement-proposal-fep/1059:</a></p>
+<ul>
+<li>
+<p><a href="https://socialhub.activitypub.rocks/t/fep-a4edc7b-the-fediverse-enhancement-proposal-process/1090" class="inline-onebox">FEP-a4edc7b: The Fediverse Enhancement Proposal Process</a> (<a class="mention" href="/u/pukkamustard">@pukkamustard</a>)</p>
+</li>
+<li>
+<p><a href="https://socialhub.activitypub.rocks/t/proposal-mechanism-for-synchronizing-followers-lists-across-servers/852" class="inline-onebox">Proposal: Mechanism for synchronizing followers lists across servers</a> (<a class="mention" href="/u/claire">@Claire</a>)</p>
+</li>
+<li>
+<p><a href="https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097" class="inline-onebox">Come Help: List of FEPs Needed</a> (<a class="mention" href="/u/cjs">@cjs</a>)</p>
+</li>
+<li>
+<p>the <a href="https://socialhub.activitypub.rocks/pub/fediverse-enhancement-proposals#index">FEP Index</a></p>
+</li>
+</ul>
+<h2>Link Relations</h2>
+<p>Following up on <a href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/9" class="inline-onebox">Defining alsoKnownAs</a><br>
+but also on the <a href="https://socialhub.activitypub.rocks/t/2020-12-04-socialcg-meeting/1166/2">adhoc discussion in SocialCG IRC</a> [sorry for the mess]</p>
+            <p><small>16 posts - 7 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/2020-12-11-socialcg-meeting/1180">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/2020-12-11-socialcg-meeting/1180</link>
+          <pubDate>Mon, 07 Dec 2020 20:06:23 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1180</guid>
+          <source url="https://socialhub.activitypub.rocks/t/2020-12-11-socialcg-meeting/1180.rss">2020-12-11 SocialCG Meeting</source>
+        </item>
+        <item>
+          <title>EC -- Workshop 2021-04-29</title>
+          <dc:creator><![CDATA[how]]></dc:creator>
+          <category>Meeting</category>
+          <description><![CDATA[
+            <p>Continuing the discussion from <a href="https://socialhub.activitypub.rocks/t/ec-ngi0-liaison-webinars-and-workshop-april-2021/1539">EC - NGI0 Liaison – Webinars and Workshop April 2021</a>:</p>
+<h1>
+<a name="preparing-the-wokshop-1" class="anchor" href="#preparing-the-wokshop-1"></a>Preparing the wokshop</h1>
+<ul>
+<li>
+<span class="chcklst-box checked fa fa-check-square-o fa-fw"></span> Access server</li>
+<li>
+<span class="chcklst-box checked fa fa-check-square-o fa-fw"></span> Set up server</li>
+</ul>
+<h2>
+<a name="access-server-2" class="anchor" href="#access-server-2"></a>Access server</h2>
+<p>In order to participate in the workshop it would be useful that attendants provide a public SSH key in advance (e.g., the <code>id_ed25519.pub</code> from running <code>ssh-keygen -t ed25519</code>.</p>
+<p>Please send a private message to <a class="mention" href="/u/how">@how</a>. Number of keys received: 2</p>
+<h3>
+<a name="ssh-configuration-3" class="anchor" href="#ssh-configuration-3"></a>SSH configuration:</h3>
+<pre><code class="lang-auto"># demo
+Host demo.activitypub.eu
+     HostName          159.69.23.59
+     CheckHostIP       yes
+     Port              22
+     User              workshop
+     IdentityFile      ~/.ssh/id_ed25519
+     LogLevel          info
+</code></pre>
+<h2>
+<a name="set-up-server-4" class="anchor" href="#set-up-server-4"></a>Set up server</h2>
+<p><a class="mention" href="/u/how">@how</a> provisioned a machine for the workshop.</p>
+<p>One idea would be to make this happen <em>during</em> the workshop so that attendees can see for themselves how fast it can be.</p>
+<p>workshop@demo:~$ cat README</p>
+<p>Welcome to the ActivityPub workshop!</p>
+<p>By the end of the workshop, the following sites should be running:</p>
+<ul>
+<li>Drupal with ActivityPub support:<br>
+<a href="https://drupal.demo.activitypub.eu/">https://drupal.demo.activitypub.eu/</a>
+</li>
+<li>A Peertube instance:<br>
+<a href="https://tube.demo.activitypub.eu/">https://tube.demo.activitypub.eu/</a>
+</li>
+<li>A Mastodon instance:<br>
+<a href="https://masto.demo.activitypub.eu/">https://masto.demo.activitypub.eu/</a>
+</li>
+</ul>
+<p>To follow the installations, please type:</p>
+<p>tmux attach</p>
+<ul>
+<li>
+</li>
+</ul>
+<p>More at <a href="https://socialhub.activitypub.rocks/t/ec-workshop-2021-04-29/1660" class="inline-onebox">EC -- Workshop 2021-04-29</a></p>
+            <p><small>38 posts - 7 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/ec-workshop-2021-04-29/1660">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/ec-workshop-2021-04-29/1660</link>
+          <pubDate>Mon, 26 Apr 2021 09:28:22 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>Yes</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1660</guid>
+          <source url="https://socialhub.activitypub.rocks/t/ec-workshop-2021-04-29/1660.rss">EC -- Workshop 2021-04-29</source>
+        </item>
+        <item>
+          <title>Defining alsoKnownAs</title>
+          <dc:creator><![CDATA[rhiaro]]></dc:creator>
+          <category>ActivityPub</category>
+          <description><![CDATA[
+            <p>Hi everyone,</p>
+<p>Over in the Decentralized Identifiers (DID) W3C Working Group, we noticed that Mastondon uses the property <code>alsoKnownAs</code> (<a href="https://docs.joinmastodon.org/spec/activitypub/#profile" rel="nofollow noopener">docs</a>) for account migration. It’s <a href="https://github.com/tootsuite/mastodon/commit/0f938ff29c2e9bf92e3eb9c23be8d4ba3a1b97f7#diff-3a3f1efd0fd25ad768a79fb685938c1dR13" rel="nofollow noopener">implemented as though it’s part of the ActivityStreams 2.0 vocabulary</a> although it isn’t actually in there. We also want a property like this for DIDs. In the interest of not duplicating work and to help make Mastodon’s use of the term ‘legit’ we were hoping to agree on a formal definition of <code>alsoKnownAs</code> (which we can publish in the <a href="https://w3c.github.io/did-core/" rel="nofollow noopener">DID Core</a> specification which is on track to become a W3C REC this year) and then add it properly as an ActivityStreams 2.0 extension (via a SocialCG resolution).</p>
+<p>So we’re drafting a definition that we hope is agreeable to both the DID and ActivityPub communities:</p>
+<blockquote>
+<p>The value of <code>alsoKnownAs</code> MUST be a list (per [[<a href="https://infra.spec.whatwg.org/#lists" rel="nofollow noopener">INFRA</a>]]) where each item in the list is a URI conforming to [[<a href="https://tools.ietf.org/html/rfc3986" rel="nofollow noopener">RFC3986</a>]].</p>
+<p>This relationship is a statement that the subject of this identifier is also identified by one or more other identifiers.</p>
+</blockquote>
+<p>(Note that the [[INFRA]] spec is a set of abstract definitions of foundational concepts - like lists - so that they can be used in specs regardless of the actual concrete syntax used.)</p>
+<p>I’d love feedback from anyone who implements or uses or otherwise has an opinion on this.</p>
+<p>Amy</p>
+            <p><small>29 posts - 8 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/defining-alsoknownas/907</link>
+          <pubDate>Mon, 07 Sep 2020 09:52:19 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-907</guid>
+          <source url="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907.rss">Defining alsoKnownAs</source>
+        </item>
+        <item>
+          <title>Appealing to Users With Examples in Software Demos</title>
+          <dc:creator><![CDATA[how]]></dc:creator>
+          <category>Fediversity</category>
+          <description><![CDATA[
+            <p>What is it with the war plane on your example? <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/frog.png?v=9" title=":frog:" class="emoji" alt=":frog:"></p>
+<hr>
+<p>The purpose of this topic is to engage ActivityPub developers into thinking about how their language (textual or visual) affects their users. The objective is to inspire the community to develop best practice <em>taking care of users</em> with carefully chosen examples in demos and great documentation, and to come up with recommendations in this direction, <strong>so that our software can be inviting to people we want to serve</strong>.</p>
+            <p><small>14 posts - 5 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/appealing-to-users-with-examples-in-software-demos/1020">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/appealing-to-users-with-examples-in-software-demos/1020</link>
+          <pubDate>Fri, 02 Oct 2020 17:24:01 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1020</guid>
+          <source url="https://socialhub.activitypub.rocks/t/appealing-to-users-with-examples-in-software-demos/1020.rss">Appealing to Users With Examples in Software Demos</source>
+        </item>
+        <item>
+          <title>Organizing for SocialHub Community Empowerment</title>
+          <dc:creator><![CDATA[aschrijver]]></dc:creator>
+          <category>Fediverse Futures</category>
+          <description><![CDATA[
+            <p><em>(<strong>Note</strong>: The first four posts in this thread have been moved from <a href="https://socialhub.activitypub.rocks/t/what-would-a-fediverse-governance-body-look-like/1497" class="inline-onebox">What would a fediverse "governance" body look like?</a>)</em></p>
+<p>I’d like to start at looking what triggered this topic, a <a href="https://mastodon.social/web/statuses/105876132191612591">fedi discussion</a> with lotsa interesting background (started by me pointing to reasons why Signal chose to be centralized and <a href="https://mastodon.social/@rysiek">@rysiek</a> following-up)</p>
+<p>Some important points as I see them:</p>
+<ul>
+<li>Fediverse is evolving quite slowly, our greatest strength (decentralization) is our weakness too (fragmentation).</li>
+<li>Our developer base is quite small, and SocialCG / SocialHub has low activity. Time is our most precious commodity.</li>
+<li>Many open issues stay open, things drag on, onboarding is really bad, documentation is lagging, involvement is ad-hoc.</li>
+</ul>
+<p>In theory <strong>this is all fine</strong>. After all, most devs are here for the fun, passion, and excitement to run cool FOSS projects.</p>
+<p>But it also makes us weak in a rapidly evolving world of tech. There’s a real danger we are outmanouvered, become irrelevant or even tombstoned in the long term.</p>
+<p>I’ll copy some text from <a href="https://socialhub.activitypub.rocks/t/rationale-for-participation-in-socialhub/1486" class="inline-onebox">Rationale for participation in SocialHub</a> now:</p>
+<details><summary>My collapsed argument that AP/Fedi evolution too slow, making us weak and needing focal points of coordination (click to expand).</summary>
+<p>On AP / Fedi itself I notice that - while its install base is healthy-ish - its dev community overall is very small and thus quite weak-ish in upholding innovation pace. And the fragmentation by which development takes place is hampering fedi + standards evolution, imho.</p>
+<p>Though we are proponents of decentralized technology our community needs central focal points to coordinate, where “the family” comes together, so to say. In this we only really have SocialCG and SocialHub (plus <span class="hashtag">#social</span> irc channel, and some matrix rooms, but they are less effective for knowledge gathering and coordination). A metric ton of useful developer information goes lost each day, because it happens on isolated islands and others aren’t aware. The onboarding experience for new devs that want their apps to federate and make sense of the technology is horrible.</p>
+<p>And as a result AP / Fediverse innovation &amp; evolution speed is lagging imho, when compared to other decentralized technologies. Even though we have truly production-ready platforms, tested to reality, slowly other tech may become the more attractive candidates. Solid project, though doing zero community-building and having no apps in production is 3x as large as SocialHub, and SAFE community is 16x as large, IPFS 10x exceeds our little group.</p>
+<p>There was excitement and trepidation about Jack Dorsey’s Bluesky report. But the questions are a) if they’d choose AP could we handle it and b) if they’d choose another tech could we handle it? We should not become irrelevant, folks. We want to lobby the EU to become a recognized interop standard, but we currently simply have no good story.  Finally I wan to once more point to <a href="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810" class="inline-onebox">Are we ready for the threats to the Fediverse and decentralization movement?</a></p>
+</details>
+<h2>Community engagement</h2>
+<p>The above leads me to conclude that we need more <em>community engagement</em>:</p>
+<p><img src="https://socialhub.activitypub.rocks/images/emoji/twitter/loudspeaker.png?v=9" title=":loudspeaker:" class="emoji" alt=":loudspeaker:">   <strong>We urgently need a stronger SocialHub to reinforce the ActivityPub ecosystem !</strong></p>
+<p>The problem with this is that rallying of the community, advocating, housekeeping (besides in general being an unthankful job) takes really a humongous amount of time! And here it was raised that:</p>
+<blockquote>
+<p>Maybe the community needs a <strong>donation-funded foundation</strong> that enables people to spend more time on these things. Most devs lack bandwidth. Such foundation could have very exciting way in which it is set up, i.e. as a real <strong>innovation center</strong> that truly involves people from all walks of life, and stimulates to think about tech differently.</p>
+</blockquote>
+<p>Rysiekúr then brought the discussion to our <a href="https://socialhub.activitypub.rocks/c/meeting/fediverse-policy/59">Fediverse Policy Special Interest Group</a> (where things stalled after 1st meetups) with:</p>
+<blockquote>
+<p>How do we get policymakers etc. to know about fediverse and treat fediverse seriously? […] the pitch to users, developers, mastohosters and other fedifolk would be:</p>
+<blockquote>
+<p>Important fedi-affecting legislation is being passed or discussed:</p>
+<ul>
+<li>implementation of the Copyright Directive</li>
+<li>discussion on Digital Services Act and Digital Markets Act</li>
+</ul>
+</blockquote>
+</blockquote>
+<p>Ending the argument by stating:</p>
+<blockquote>
+<p><img src="https://socialhub.activitypub.rocks/images/emoji/twitter/speaking_head.png?v=9" title=":speaking_head:" class="emoji" alt=":speaking_head:">   <strong>Fediverse needs to have a loud, well-resourced voice.</strong></p>
+</blockquote>
+<p>My argument on this point is that our Interoperability ‘sales pitch’ to e.g. politicians is also quite weak:</p>
+<ul>
+<li>The good part: We have 2 great W3C Recommendations with AS/AP that build on other standards!</li>
+<li>Then we have some de-facto standards, where you have to figure out how they are implemented across the board.</li>
+<li>Then you’d have to find out all the hidden complexities of federation by literally digging through code bases and issue trackers!</li>
+<li>Then we have no good places where to ask for support, no process guidance, a very early-days FEP process, etc.</li>
+<li>And most of our interop experiences are limited to a Microblogging domain.</li>
+</ul>
+<p>Interoperability constitutes a complete package, that just doesn’t exist at the moment.</p>
+<h2>Fediverse foundation</h2>
+<p>“We need a foundation, you say?”. Yes, I think so. The “governance” body - even though in scare quotes - is a bit of a formal start.</p>
+<blockquote>
+<p>From The Free Dictionary: <a href="https://www.thefreedictionary.com/foundation"><strong>Foundation</strong></a></p>
+<ul>
+<li>that on which something is founded; basis</li>
+<li>the base on which something stands</li>
+<li>an institution supported by an endowment, often one that provides funds for charities, research, etc</li>
+<li>the charter incorporating or establishing a society or institution and the statutes or rules governing its affairs</li>
+</ul>
+</blockquote>
+<p>I think its main tasks should be:</p>
+<ol>
+<li>Organizer of ‘focal points’ where community comes together, coordinates and becomes stronger (e.g. by rallying, advocacy).</li>
+<li>Presenting a unified face, our ‘official’ front office to the outside world.</li>
+<li>Be a collector and distributor of funds to any people playing active roles in evolving the fediverse.</li>
+</ol>
+<p>This foundation would be really something that belongs to all of us, representing and defending the fediverse’s interests. It needs not have a very formal organization structure / governance model.</p>
+<ul>
+<li>It wouldn’t be authoritative in tech decisions (SocialCG + SocialHub are for that).</li>
+<li>Certainly not have Presidents and Board of Directors and all that jazz.</li>
+<li>It would not be co-opted by accepting big tech money.</li>
+<li>It’d be totally transparent in how it operates, and where funds are spent.</li>
+</ul>
+<p>Maybe some people heavily involved on a daily basis may earn some sort of modest income from their efforts. Other than that:</p>
+<ul>
+<li>The foundation might crowdsource their activities</li>
+<li>Activities are prioritized based on their merits to the community</li>
+<li>A bounty model of funding might serve to reward those carrying them out</li>
+</ul>
+<h2>Humane technology</h2>
+<p><em>(<strong>Note</strong>: This was originally posted <a href="https://socialhub.activitypub.rocks/t/what-would-a-fediverse-governance-body-look-like/1497/17">here</a>)</em></p>
+<p>I have another discussion going with members of the Humane Tech Community about <a href="https://community.humanetech.com/t/what-makes-a-humane-technologist/5174">“What makes a Humane Technologist?”</a> that is quite interesting and has relevancy to how a foundation can position itself:</p>
+<ul>
+<li>While <a href="https://mastodon.social/@humanetech/105492005146865341">pondering fedi slogans</a> I think <em>“Social Media Reimagined”</em> can be a true paradigm to follow, and a rallying cry too.</li>
+<li>With that Fediverse can be a veritable playground, makers space and innovation labs for <em>would-be</em> humane technologists.</li>
+<li>As it evolves around its community values and culture, embracing best practices, it’ll be an <em>exemplar of humane technology</em>.</li>
+</ul>
+            <p><small>36 posts - 7 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/organizing-for-socialhub-community-empowerment/1529">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/organizing-for-socialhub-community-empowerment/1529</link>
+          <pubDate>Sat, 13 Mar 2021 21:43:51 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1529</guid>
+          <source url="https://socialhub.activitypub.rocks/t/organizing-for-socialhub-community-empowerment/1529.rss">Organizing for SocialHub Community Empowerment</source>
+        </item>
+        <item>
+          <title>2021-05-01 Fediverse Interest Group Meeting</title>
+          <dc:creator><![CDATA[bengo]]></dc:creator>
+          <category>SocialCG</category>
+          <description><![CDATA[
+            <p>Per <a href="https://cloud.w3c.social/apps/calendar/p/GzxsDfE6CKtp9MHX/dayGridMonth/now" rel="noopener nofollow ugc">the calendar</a>, this meeting will be at:</p>
+<ul>
+<li>2pm UTC</li>
+<li>10am EST</li>
+<li>7am PDT</li>
+</ul>
+<p><span data-date="2021-05-01" data-time="15:00:00" class="discourse-local-date" data-timezone="Europe/London" data-email-preview="2021-05-01T14:00:00Z UTC">2021-05-01T14:00:00Z</span> → <span data-date="2021-04-30" data-time="16:00:00" class="discourse-local-date" data-timezone="Europe/London" data-email-preview="2021-04-30T15:00:00Z UTC">2021-04-30T15:00:00Z</span></p>
+<h1>
+<a name="agenda-1" class="anchor" href="#agenda-1"></a>Agenda:</h1>
+<ul>
+<li>5min - 30s introductions/reintroductions</li>
+</ul>
+<h1>
+<a name="candidate-agenda-items-2" class="anchor" href="#candidate-agenda-items-2"></a>Candidate Agenda Items</h1>
+<p>Please reply below to propose an agenda item. Please consider doing some ahead-of-time work to articulate the item, and linking it in your proposal so others can come prepared to build consensus or raise objections that we can discuss in our limited time together.</p>
+<h2>
+<a name="example-agenda-proposal-3" class="anchor" href="#example-agenda-proposal-3"></a>Example Agenda Proposal</h2>
+<blockquote>
+<p>PROPOSAL: <a class="mention" href="/u/bengo">@bengo</a>  - 5min - Project update, demo, and call for testers on <a href="https://github.com/gobengo/distbin" rel="noopener nofollow ugc">distbin</a> project. (then include link to blog post about project update)</p>
+</blockquote>
+<p>Read <a href="https://theanarchistlibrary.org/library/c-t-butler-and-amy-rothstein-on-conflict-and-consensus-a-handbook-on-formal-consensus-decisionm#toc62" rel="noopener nofollow ugc">this for more on agendas</a>.</p>
+            <p><small>20 posts - 8 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/2021-05-01-fediverse-interest-group-meeting/1649">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/2021-05-01-fediverse-interest-group-meeting/1649</link>
+          <pubDate>Fri, 23 Apr 2021 17:48:53 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1649</guid>
+          <source url="https://socialhub.activitypub.rocks/t/2021-05-01-fediverse-interest-group-meeting/1649.rss">2021-05-01 Fediverse Interest Group Meeting</source>
+        </item>
+        <item>
+          <title>Indymedia reboot and epicyon codeing - hackathon</title>
+          <dc:creator><![CDATA[hamishcampbell]]></dc:creator>
+          <category>ActivityPub Conference 2020</category>
+          <description><![CDATA[
+            <p>Template and back end work on the epicyon <a href="https://epicyon.net/" rel="noopener nofollow ugc">https://epicyon.net/</a> activertypub code base to make a village/street level indymedia news site based on the OMN project.</p>
+<p>We plan to get a test activertypub news site online by the end of the week, if your not sure how it should work watch the video <a href="https://conf.tube/videos/watch/953de898-74dc-4665-95fb-313042f66cc6?start=" class="inline-onebox" rel="noopener nofollow ugc">The reboot of the indymedia project - ConfTube</a></p>
+<p><strong>Todo:</strong></p>
+<ul>
+<li>
+<p>Add or check emoji. Many are implemented, but it might not be very comprehensive.</p>
+</li>
+<li>
+<p>Figure out the workflow for incoming moderated posts.</p>
+</li>
+<li>
+<p>Artwork for themes. Backgrounds, banners, icon sets, fonts. Get as creative as you want. Instance appearance doesn’t retain users but it’s an initial “this might be interesting” sign.</p>
+</li>
+<li>
+<p>Fix polls, which currently don’t work very well. How are polls supposed to work at the protocol level?</p>
+</li>
+<li>
+<p>Add or fix translations. Translate the website or the Gemini site.</p>
+</li>
+<li>
+<p>Testing with i2p. Are there any new bugs?</p>
+</li>
+<li>
+<p>Change the way that events are displayed, also ideas for how rsvp should be implemented. Is there any consensus on this?</p>
+</li>
+</ul>
+<p>We need to think about a database driven activertypub code base for bigger sites as well<a href="/uploads/short-url/38d1GfRQ9hQcGALyk4agZ2aqSYI.jpeg"></a></p>
+<aside class="quote quote-modified" data-post="1" data-topic="942">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/hamishcampbell/40/284_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/the-reboot-of-the-indymedia-project/942">The reboot of the indymedia project</a> <a class="badge-wrapper  box" href="/c/meeting/apconf2020/53"><span class="badge-category-parent-bg" style="background-color: #0E76BD;"></span><span class="badge-category-bg" style="background-color: #ff7a00;"></span><span style="color: #ffffff" data-drop-close="true" class="badge-category clear-badge" title="Add your proposals for the Conf by creating a New Topic –
+Tag it #bof for Birds of Feather sessions or #hackathon for Hack proposals …">ActivityPub Conference 2020</span></a>
+  </div>
+  <blockquote>
+    Hamish Campbell 
+ 
+We are a wide affinity group working to reboot the global indymedia network using modern federated protocols such as <a class="hashtag" href="/c/activitypub/5">#activitypub</a>. This reboot will be based on the OMN project code. 
+What is the OMN (Open Media Network): 
+The project is to shift power to the producers and consumers of media. It’s about good UI and simple empowering #KISS tools to move content, by categorising it with a grassroots folksonomy. This simple approach is balanced by shared site level syntax for the …
+  </blockquote>
+</aside>
+
+            <p><small>16 posts - 5 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987</link>
+          <pubDate>Thu, 01 Oct 2020 20:58:44 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-987</guid>
+          <source url="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987.rss">Indymedia reboot and epicyon codeing - hackathon</source>
+        </item>
+        <item>
+          <title>United Software Development: A new paradigm?</title>
+          <dc:creator><![CDATA[aschrijver]]></dc:creator>
+          <category>Fediverse Futures</category>
+          <description><![CDATA[
+            <h1>
+<a name="coderglue-lets-code-together-1" class="anchor" href="#coderglue-lets-code-together-1"></a>CoderGlue: Let’s Code Together <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:">
+</h1>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/2X/5/59fe2ad0c3a5a59c929d21db0940afb0a926893b.jpeg" data-download-href="https://socialhub.activitypub.rocks/uploads/default/59fe2ad0c3a5a59c929d21db0940afb0a926893b" title="Spotify Engineering Culture excerpt showing: &amp;quot;You are the culture&amp;quot;"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/5/59fe2ad0c3a5a59c929d21db0940afb0a926893b_2_690x431.jpeg" alt='Spotify Engineering Culture excerpt showing: "You are the culture"' data-base62-sha1="cQ72PCzw0TJY3EfPYO3vfPYyfXB" width="690" height="431" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/5/59fe2ad0c3a5a59c929d21db0940afb0a926893b_2_690x431.jpeg, https://socialhub.activitypub.rocks/uploads/default/optimized/2X/5/59fe2ad0c3a5a59c929d21db0940afb0a926893b_2_1035x646.jpeg 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/2X/5/59fe2ad0c3a5a59c929d21db0940afb0a926893b.jpeg 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/5/59fe2ad0c3a5a59c929d21db0940afb0a926893b_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Spotify Engineering Culture excerpt showing: &amp;quot;You are the culture&amp;quot;</span><span class="informations">1080×675 56.5 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>This topic was inspired by <a href="https://fedeproxy.eu">FedeProxy</a> project, and my interactions on their <a href="https://forum.fedeproxy.eu">forum</a>. There’s a wink in the title, because “CoderGlue” name and icon design is just a proposal I made, as alternative more descriptive project name. Nothing more than that.</p>
+<h2>
+<a name="culture-and-process-2" class="anchor" href="#culture-and-process-2"></a>Culture and process</h2>
+<p>I really like how the team is setting up the FedeProxy project organisation. A thorough approach, deep thought, and proper preparation. So too on diversity:</p>
+<blockquote>
+<p><a class="mention" href="/u/dachary">@dachary</a>: <a href="https://forum.fedeproxy.eu/t/diversity-first-action/98">Diversity: First action</a></p>
+<p>I’d like to propose that a first action is done to improve the diversity in the fedeproxy community. It is still tiny and it should not be too difficult <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"> Two ideas:</p>
+<ul>
+<li>Add a <strong>Diversity</strong> section on <a href="https://fedeproxy.eu">https://fedeproxy.eu </a>
+</li>
+<li>Call for ideas on mastodon</li>
+</ul>
+</blockquote>
+<p>Referring to two other topics on FedeProxy forum and knitting things together:</p>
+<ul>
+<li>Your toot (or ‘post’) in <a href="https://forum.fedeproxy.eu/t/how-and-why-do-you-use-multiple-software-forges/88/8" class="inline-onebox">How and why do you use multiple software forges? - UX / User Research - Fedeproxy</a>
+</li>
+<li>
+<a class="mention" href="/u/dachary">@dachary</a>’s statement <em>“I woke up this morning thinking that fedeproxy/coderglue should (must?) be developed in a federated way, from the beginning.”</em> in <a href="https://forum.fedeproxy.eu/t/a-better-project-name/103/20" class="inline-onebox">A better project name - Fedeproxy</a>
+</li>
+</ul>
+<p>There’s some great feedback on the toot already, right? Loïc, you’ve got your audience right there on the fedi <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/blush.png?v=9" title=":blush:" class="emoji" alt=":blush:"><br>
+Also we’ve got diversity in abundunce in fedi culture.</p>
+<p>At <a href="https://socialhub.activitypub.rocks">SocialHub</a> we just presented in our first <a href="https://socialhub.activitypub.rocks/t/ec-ngi0-liaison-webinars-and-workshop-april-2021/1539">“ActivityPub for Administrations”</a> event the slogan and rallying cry  <strong>“Social Networking Reimagined”</strong>, and described fedi culture as <strong>“United in Diversity”</strong>.</p>
+<p>These two things can be embraced by FedeProxy, and become deeply engrained in your approach. First of all for your own project development. Here you can…</p>
+<blockquote>
+<p>Dogfood your own development process that you’ll learn along the way, while dogfooding the fediverse.</p>
+</blockquote>
+<p>And incorporate that in your ‘product experience’ i.e. as product features. I think your ‘proposition’ can be strongest the more you think about the Domain, and the less about the technical reality of what the software does (i.e. a bridge / proxy between code forges). In software development things all starts with <strong>culture and process</strong>.</p>
+<p>I’ve worked with (scaled) agile in the past, as tech lead and product owner in quite large (200+ devs, 100+ consultants), quite diverse (60+ natiionalities) environment, where we adopted a <a href="https://engineering.atspotify.com/2014/03/27/spotify-engineering-culture-part-1/">Spotify Engineering Culture</a>. I have also seen during my whole tech career (which has been mostly FOSS, fedi, humanetech advocacy &amp; community volunteering for the past couple of years… not much ‘career’ in that. It’s all humble pie <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"> ) plenty of times where processes, culture and communication are the bottlenecks to successful projects. Not the tech itself.</p>
+<p>Here can be the <strong>absolute strong points</strong> of FedeProxy, that might make it a killer app! By thinking holistically about what the objective is, and go from there:</p>
+<blockquote>
+<p><strong>Facilitating great, open to anyone, community-driven, successful free software projects that can sustain themselves.</strong></p>
+</blockquote>
+<p>Now Spotify Engineering Culture is interesting. You can go for something similar, <strong>yet entirely different</strong> at the same time. Imagine if FedeProxy could deliver their own vision to open software development culture + processes with videos similar to these (look through the specifics, those are <em>unimportant</em>):</p>
+<p>          <iframe width="640" height="360" src="https://player.vimeo.com/video/94950270" data-original-href="https://vimeo.com/94950270" frameborder="0" allowfullscreen="" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe>
+</p>
+<p>(and here’s <a href="https://vimeo.com/85490944">the video</a> of Part 1, more focused on Scrum / agile)</p>
+<h2>
+<a name="discover-the-domain-3" class="anchor" href="#discover-the-domain-3"></a>Discover the Domain</h2>
+<p>Now, is it worthwhile to go the extra mile and explore the above? It will certainly consume part of your funding in extra time spent.</p>
+<p>But what you have to do anyway is to analyse and elaborate the application / ‘business’ domain where you want to reach your project objectives. Right now, FedeProxy is conducting User Research. Very good and utterly important to gather as much feedback as possible.</p>
+<p>But there’s a possible pitfall too. What users are you researching? For what domain? Currently on the forum this occurs in the <a href="https://forum.fedeproxy.eu/c/user-research/8">“UX / User research”</a> category. But UX is a step too far, if you do not know the domain. There’s a risk to start thinking about concrete features and functionality, UI widgets even, way too fast.</p>
+<p>Note that there’s no need to search for a new paradigm - which I have named “United Software Development” - in a full deep-dive either. Just determine if it can be in your Vision! Then from there you can work backwards, find stuff that may be Roadmap items, skin further… until you drill-down to a MVP.</p>
+<p>I feel that with a proper approach, FedeProxy may not be alone in chasing the paradigm. A host of other projects might spring up. This is the reason why I posted to <a class="hashtag" href="/c/fediversity/fediverse-futures/58">#<span>fediversity:fediverse-futures</span></a> instead of on the FedeProxy forum.</p>
+<h2>
+<a name="the-united-software-development-paradigm-4" class="anchor" href="#the-united-software-development-paradigm-4"></a>The “United Software Development” paradigm</h2>
+<p>To conclude this brainstorm topic, I’ll try to come up with a first definition of the new paradigm that I feel tingling below the surface, just waiting to be uncovered…</p>
+<blockquote>
+<h3>United Software Development</h3>
+<p><em>“Free, libre software development, processes and culture united,. Sustainable, open and accessible to anyone.”</em></p>
+</blockquote>
+<p>Open source software has eaten the world. Free software is still struggling. FOSS maintainers have a very hard time to manage their projects, let alone sustain their own life with a decent income.</p>
+<p>United software development leverages the decentralized web, and combines all the best-practices and lessons-learned in the past decades to shape a way forwards. To facilitate a collective crafting of humane technology where people are in control, and that is to the benefit of humanity.</p>
+            <p><small>13 posts - 3 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/united-software-development-a-new-paradigm/1632">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/united-software-development-a-new-paradigm/1632</link>
+          <pubDate>Wed, 21 Apr 2021 07:27:31 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1632</guid>
+          <source url="https://socialhub.activitypub.rocks/t/united-software-development-a-new-paradigm/1632.rss">United Software Development: A new paradigm?</source>
+        </item>
+        <item>
+          <title>Spritely at the hackathon</title>
+          <dc:creator><![CDATA[cwebber]]></dc:creator>
+          <category>ActivityPub Conference 2020</category>
+          <description><![CDATA[
+            <p>I’m trying to decide what to work on at the hackathon.  I’m also interested if others are interested in learning Spritely fundamentals and helping them over the week, if there’s interest.</p>
+<p>As for me, I think the most interesting and immediately useful thing would be the Mandy layer of Spritely, since that’s the most ActivityPub relevant: <a href="https://spritelyproject.org/#mandy" rel="nofollow noopener">https://spritelyproject.org/#mandy</a></p>
+<p>I have lots of ideas of things to work on though; I’ve also been very interested in the serialization layer, Aurie, since that’s what I’ve been most recently reading papers on and thus am itching to implement: <a href="https://spritelyproject.org/#aurie" rel="nofollow noopener">https://spritelyproject.org/#aurie</a></p>
+<p>Also, I guess I could either hack on Terminal Phase (my space shooter game thing) because that would be a nice “break”, and it does use Spritely Goblins, but it might not be as useful as an “APConf” style contribution.</p>
+<p>If others are interested in learning Spritely stuff over the course of this hackathon, maybe weigh in… maybe we can talk ahead of time.  One thing you can already do is go through the Goblins tutorial: <a href="https://docs.racket-lang.org/goblins/index.html" rel="nofollow noopener">https://docs.racket-lang.org/goblins/index.html</a></p>
+<p>But I would also be happy to help people learn.  Thoughts?</p>
+            <p><small>10 posts - 2 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/spritely-at-the-hackathon/1032">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/spritely-at-the-hackathon/1032</link>
+          <pubDate>Sat, 03 Oct 2020 15:51:00 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1032</guid>
+          <source url="https://socialhub.activitypub.rocks/t/spritely-at-the-hackathon/1032.rss">Spritely at the hackathon</source>
+        </item>
+        <item>
+          <title>Next Generation Internet</title>
+          <dc:creator><![CDATA[how]]></dc:creator>
+          <category>Fediverse Futures</category>
+          <description><![CDATA[
+            <p>This topic is to discuss funding opportunity for ActivityPub-related software within the European Commission’s NGI initiative. Currently there are several opportunities that were mentioned during APConf 2020 (note: other sources of funding are mentioned in that post as well):</p>
+<aside class="quote no-group" data-username="how" data-post="5" data-topic="837">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/how/40/94_2.png" class="avatar"><a href="https://socialhub.activitypub.rocks/t/scaling-up-cooperation/837/5">Scaling Up Cooperation</a>
+</div>
+<blockquote>
+<h3>ActivityPub-related Funding</h3>
+<p><em>Feel free to add to the table</em></p>
+<p>15 ActivityPub projects were funded so far (PixelFed received 2 grants) through NGI0 Discovery, and there’s still an opportunity to get some funding: next deadline is <strong>December 1st 2020</strong> .</p>
+</blockquote>
+</aside>
+<p>This topic is for people, NGI0 grantees and developers willing to take a chance and get funded, to share their experience with NGI0, review each other proposals, form teams, discuss strategies, etc.</p>
+            <p><small>16 posts - 5 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/next-generation-internet/1149">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/next-generation-internet/1149</link>
+          <pubDate>Tue, 24 Nov 2020 17:15:17 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1149</guid>
+          <source url="https://socialhub.activitypub.rocks/t/next-generation-internet/1149.rss">Next Generation Internet</source>
+        </item>
+        <item>
+          <title>2021-04-23 Social CG meeting</title>
+          <dc:creator><![CDATA[rhiaro]]></dc:creator>
+          <category>SocialCG</category>
+          <description><![CDATA[
+            <p>Hi all,</p>
+<p>We’ll have a SocialCG meeting this week, which will take the form of an unstructured chat about fediverse topics of interest and whatever related things you’re working on, hosted by <a class="mention" href="/u/bengo">@bengo</a>. We can also reflect on this week’s <a href="https://socialhub.activitypub.rocks/t/ec-ngi0-liaison-webinars-and-workshop-april-2021">EC Activitypub Webinar</a> and think about what we’d like to cover at the next one.</p>
+<p>All welcome!</p>
+<p><strong>Date: <span data-date="2021-04-23" data-time="17:00:00" class="discourse-local-date" data-timezone="Europe/London" data-email-preview="2021-04-23T16:00:00Z UTC">2021-04-23T16:00:00Z</span></strong></p>
+<p><strong>Join:</strong></p>
+<ul>
+<li><a href="https://bbb.w3c.social/b/rhi-vp1-fv6-vn7">BBB</a></li>
+<li><a href="http://irc.w3.org/?channels=social">IRC</a></li>
+</ul>
+<p>Amy</p>
+            <p><small>26 posts - 6 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621</link>
+          <pubDate>Mon, 19 Apr 2021 10:41:08 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1621</guid>
+          <source url="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621.rss">2021-04-23 Social CG meeting</source>
+        </item>
+        <item>
+          <title>Fediverse Enhancement Proposal (FEP)</title>
+          <dc:creator><![CDATA[pukkamustard]]></dc:creator>
+          <category>ActivityPub Conference 2020</category>
+          <description><![CDATA[
+            <p>As discussed in <a href="https://socialhub.activitypub.rocks/t/scaling-up-cooperation/837">Scalling Up Cooperation BoF</a> We’d like to try and put together a Git repository and templates for writing up documents that describe how things work on the Fediverse.</p>
+<p>This builds upon work done by <a class="mention" href="/u/cjs">@cjs</a> on <a href="https://library.activitypub.dev/" rel="noopener nofollow ugc">https://library.activitypub.dev/</a> (see also <a href="https://socialhub.activitypub.rocks/t/library-of-non-tech-and-technical-works/866">post on SocialHub</a>).</p>
+<p>It might also be something that be used in context of what was discussed in the <a href="https://socialhub.activitypub.rocks/t/activitypub-experimentation-towards-ap-v2/840/2">Experiments towards V2 BoF</a>.</p>
+            <p><small>18 posts - 6 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/fediverse-enhancement-proposal-fep/1059">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/fediverse-enhancement-proposal-fep/1059</link>
+          <pubDate>Sun, 04 Oct 2020 12:38:54 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1059</guid>
+          <source url="https://socialhub.activitypub.rocks/t/fediverse-enhancement-proposal-fep/1059.rss">Fediverse Enhancement Proposal (FEP)</source>
+        </item>
+        <item>
+          <title>Proposal: New top-level forum section for Domains</title>
+          <dc:creator><![CDATA[aschrijver]]></dc:creator>
+          <category>Community</category>
+          <description><![CDATA[
+            <p>With a host of <a href="https://socialhub.activitypub.rocks/t/hospitality-exchange-community-considers-moving-to-the-fediverse/1765">Hospitality platforms</a> now considering federation, and already a bunch of different application categories being covered by various apps (Microblogging, of course, Blogging, Media platforms, etc.) I would like to propose adding a new top-level forum section “Domains” for this. A subcategory would then be “Domains/Hospitality”.</p>
+<p>Though <a class="hashtag" href="/c/fediversity/fediverse-futures/58">#<span>fediversity:fediverse-futures</span></a> can be used for general-purpose discussion, these domain subcategories are meant to deep-dive into e.g. specific vocabulary extensions, messaging patterns and all kinds of other interop issues that are specific to apps within that domain.</p>
+<p>cc <a class="mention" href="/u/how">@how</a></p>
+            <p><small>17 posts - 5 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/proposal-new-top-level-forum-section-for-domains/1797">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/proposal-new-top-level-forum-section-for-domains/1797</link>
+          <pubDate>Mon, 24 May 2021 18:09:45 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1797</guid>
+          <source url="https://socialhub.activitypub.rocks/t/proposal-new-top-level-forum-section-for-domains/1797.rss">Proposal: New top-level forum section for Domains</source>
+        </item>
+        <item>
+          <title>Meeting notes for prep call EC Webinar 19 April</title>
+          <dc:creator><![CDATA[aschrijver]]></dc:creator>
+          <category>Meeting</category>
+          <description><![CDATA[
+            <p>My (hastily) typed notes related to <a class="mention" href="/u/cristinadelisle">@CristinaDeLisle</a> <a href="https://pad.public.cat/ngi0-ec-activitypub-liaison-presentation-2021-04-19?both">Presentation</a> … (will make this a wiki post):</p>
+<hr>
+<h2>
+<a name="ec-event-presentation-notes" class="anchor" href="#ec-event-presentation-notes"></a>EC Event Presentation Notes</h2>
+<p>For prep meetup Friday 9 April</p>
+<h3>
+<a name="general-remarks" class="anchor" href="#general-remarks"></a>General remarks</h3>
+<ul>
+<li>Add slide numbering, add slide chrome (AP logo)?</li>
+<li>Add title instead of “Webinar I”?</li>
+<li>Too much text on slides e.g. ‘Context and Purpose’ and ‘Overview’?</li>
+<li>Introductary section too many slides</li>
+</ul>
+<h3>
+<a name="structure-proposal" class="anchor" href="#structure-proposal"></a>Structure proposal</h3>
+<ul>
+<li>
+<p>Webinar I title (1 slide + context &amp; purpose)</p>
+</li>
+<li>
+<p>Overview &amp; today’s agenda (1 slide)</p>
+</li>
+<li>
+<p>Today’s Technology Landscape</p>
+<ul>
+<li>Centralization, Walled Gardens, Proprietary Platforms (1 slide, diagram)</li>
+<li>Big Tech Dominance, Corporate internet, Harms to Society (1 slide, bullet list)</li>
+<li> → We need openness, access for all, involve citizens (1 slide, direction / mission)</li>
+</ul>
+</li>
+<li>
+<p>Activitypub and the Fediverse</p>
+<ul>
+<li>History and current state (1 slide)</li>
+<li>How we address the problems (1 slide, diagram)</li>
+<li> → Decentralization, free software, humane technology (1 slide)</li>
+<li> → Unique diverse culture that fosters healthy evolution ^^</li>
+</ul>
+</li>
+<li>
+<p>What is ActivityPub?</p>
+<ul>
+<li>Communication concept (diagram, 1 slide)</li>
+<li>‘Techstack’ of standards (1 slide, diagram, includes Purpose: Interoperability)</li>
+</ul>
+</li>
+<li>
+<p>Use cases for Administrations</p>
+<ul>
+<li>General benefits (1 slide)</li>
+<li>Domain-specific:
+<ul>
+<li>News &amp; Articles → Wordpress, Write.as (1 slide)</li>
+<li>Websites → CMS’es Drupal, Redaktor (1 slide)</li>
+<li>Microblogging → external (outside world), internal (informal ‘intrachat’) (1 slide)</li>
+<li>Events / RSVP’s → deployed within any institution, access control (1 slide)</li>
+<li>Video → all webinars, meetings, etc. accessible to the public (1 slide)</li>
+<li>Images → all official imagery, interconnected, easily navigable (1 slide)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Future, visionary ideas</p>
+<ul>
+<li>… (2 slides max, bullet lists)</li>
+</ul>
+</li>
+<li>
+<p>Follow up to next meeting (1 slide)</p>
+</li>
+</ul>
+            <p><small>22 posts - 6 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/meeting-notes-for-prep-call-ec-webinar-19-april/1567">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/meeting-notes-for-prep-call-ec-webinar-19-april/1567</link>
+          <pubDate>Fri, 09 Apr 2021 12:52:37 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1567</guid>
+          <source url="https://socialhub.activitypub.rocks/t/meeting-notes-for-prep-call-ec-webinar-19-april/1567.rss">Meeting notes for prep call EC Webinar 19 April</source>
+        </item>
+        <item>
+          <title>FEP-a4ed: The Fediverse Enhancement Proposal Process</title>
+          <dc:creator><![CDATA[system]]></dc:creator>
+          <category>Fediverse Enhancement Proposals</category>
+          <description><![CDATA[
+            <p>source: <a href="https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/src/branch/main/feps/fep-a4ed.md">https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/src/branch/main/feps/fep-a4ed.md</a></p>
+<hr>
+<p>authors: <a class="mention" href="/u/pukkamustard">@pukkamustard</a><br>
+status: FINAL<br>
+dateReceived: 2020-10-16<br>
+dateFinalized: 2021-01-18</p>
+<h1>FEP-a4ed: The Fediverse Enhancement Proposal Process</h1>
+<h2>Summary</h2>
+<p>A Fediverse Enhancement Proposal (FEP) is a document that provides information to the Fediverse community. The goal of a FEP is to improve interoperability and well-being of diverse services, applications and communities that form the Fediverse.</p>
+<p>This document describes the scope, format and process of publishing Fediverse Enhancement Proposals.</p>
+<h2>Scope and Objectives</h2>
+<p>A Fediverse Enhancement Proposal (FEP) should be a concise and focused documentation of a specific topic that is of interest to the Fediverse community.</p>
+<p>A proposal should always have the intention of improving the interoperability and well-being of diverse services, applications and community of the Fediverse.</p>
+<p>The Fediverse includes applications, services and communities using the ActivityPub protocol and other protocols that foster decentralized and diverse social media and culture.</p>
+<p>Proposals may include descriptions of technical protocols and mechanism, documentation of experimental work or current best practices.</p>
+<p>Proposals are not limited to technical topics and may focus on social and cultural aspects.</p>
+<p>Proposals may be entertaining and humorous (unlike this proposal).</p>
+<h2>Language, Document Structure and Format</h2>
+<p>All Fediverse Enhancement Proposals must be written in English, be properly formatted as CommonMark [CommonMark] and be reasonably grammatical.</p>
+<p>Authors should use inclusive language and examples and refrain from using oppressive terminology [Internet-Draft-terminology].</p>
+<h3>Proposal Title and Identifier</h3>
+<p>Every Fediverse Enhancement Proposals must have a descriptive title.</p>
+<p>An identifier is computed from the proposal title as the first 7 digits of the sha256 hash (in hex). The identifier can be computed from the title with standard Unix tools:</p>
+<pre><code class="lang-auto">$ echo -n "The Fediverse Enhancement Proposal Process" | sha256sum | cut -c-4
+a4ed
+</code></pre>
+<p>By using the hash of the title as identifier we reduce the burden on editors to assign unique ids. This require proposal titles to be unique.</p>
+<h3>Metadata</h3>
+<p>Proposal metadata is placed at the top of the document as key-value pairs between opening and closing ~—~.</p>
+<p>Following metadata key-value pairs may be placed at the top of a proposal:</p>
+<ul>
+<li>
+<code>authors</code>: A comma separated list of authors of the proposal.</li>
+<li>
+<code>status</code>: Indicates the proposal status. Can be either <code>DRAFT</code>, <code>WITHDRAWN</code> or <code>FINAL</code>.</li>
+<li>
+<code>dateReceived</code>: Date of when the proposal was added to the repository (when status is set to <code>DRAFT</code>).</li>
+<li>
+<code>dateWithdrawn</code>: Date of when the proposal status was set to <code>WITHDRAWN</code> (only for proposals with status <code>WITHDRAWN</code>).</li>
+<li>
+<code>dateFinalized</code>: Date of when the proposal status was set to <code>FINAL</code> (only for proposals with status <code>FINAL</code>).</li>
+<li>
+<code>relatedFeps</code>: A comma separated list of related FEPs (e.g. <code>FEP-a4ed, FEP-141a, FEP-686f</code>).</li>
+</ul>
+<p>Future FEPs may specify additional metadata fields.</p>
+<h3>Required Sections</h3>
+<p>Every FEP should include at least following sections:</p>
+<ul>
+<li>Summary: A short (no more than 200 words) summary of the proposal.</li>
+<li>Copyright: Indicating that the proposal has been placed in the public domain.</li>
+</ul>
+<p>Following sections may be included in a proposal:</p>
+<ul>
+<li>History: An overview of previous related efforts and how they relate to the proposal.</li>
+<li>Implementations: If applicable an overview of services or applications that implement the proposal at time of submission.</li>
+<li>References: A list of documents and resources referenced by the proposal.</li>
+</ul>
+<h3>Copyright</h3>
+<p>Fediverse Enhancement Proposals must be placed in the public domain by the authors with a CC0 1.0 Universal (CC0 1.0) Public Domain Dedication.</p>
+<h2>The Fediverse Enhancement Proposals Process</h2>
+<pre><code class="lang-auto">                                     +-------+
+                           +-------&gt; | FINAL | 
+                           |         +-------+
+         +-------+         |
+--------&gt;| DRAFT | --------+
+         +-------+         |
+             ^             |         +-----------+
+             |             +-------&gt; | WITHDRAWN |
+             |                       +-----------+
+             |                             |
+             +-----------------------------+
+</code></pre>
+<ol>
+<li>A Fediverse Enhancement Proposal can be submitted by individuals or groups of individuals (authors). See the <code>SUBMISSION.md</code> file for a list of accepted submission methods.</li>
+<li>Within seven days one of the editors will read and respond to the proposal. The editor checks if the proposal conforms to the required structure and fits the scope and objective of the FEPs. The editor may request the authors to clarify, justify, or withdraw the proposal. Such a request must not reflect the personal bias of an editor. Rather, it will be made strictly to maintain a high quality of submissions. The editors reserve the right to reject a submission when a proposal amounts to blatant misuse of the process. The authors may seek feedback from the wider community if the submitted proposal is rejected or clarifications are requested.</li>
+<li>If a FEP editor approves a submission it receives the status <code>DRAFT</code> and is added to the repository.</li>
+<li>While a proposal has the status <code>DRAFT</code>:
+<ul>
+<li>Authors are responsible for initiating community discussion and collecting feedback.</li>
+<li>Authors may submit updates to the proposal which will be checked in to the repository by an editor.</li>
+<li>Authors may withdraw the submission upon which an editor will set the status of the submission to <code>WITHDRAWN</code>.</li>
+</ul>
+</li>
+<li>After at least 60 days the authors may request the proposal to be finalized. This is done by requesting final comments on the proposal.
+<ul>
+<li>If there are no community objections within 14 days and the authors can show that they have initiated sufficient awareness and discussion of the proposal, an editor will set the status of the submission to <code>FINAL</code>.</li>
+</ul>
+</li>
+<li>If after 120 days the authors have not requested the proposal to be finalized or there is no community consensus, an editor will set the status of the submission to <code>WITHDRAWN</code>.</li>
+<li>A proposal with status <code>FINAL</code> can not be changed or updated.</li>
+<li>A proposal with status <code>WITHDRAWN</code> remains in the repository and can be resubmitted.</li>
+</ol>
+<h3>Editors</h3>
+<p>A list of editors is maintained in the <code>EDITORS.md</code> file at the root of the FEP repository.</p>
+<h3>Submission Methods</h3>
+<p>A list of methods in which a proposal may be submitted is maintained in the <code>SUBMISSION.md</code> file at the root of the FEP repository.</p>
+<h2>History</h2>
+<p>The process and format described in this proposal is influenced by other community driven documentation efforts such as the BitTorrent Enhancement Proposal Process [BEP-1], Scheme Request for Implementation [SRFI] and the IETF RFC Series [RFC-8729].</p>
+<h2>References</h2>
+<ul>
+<li>[SRFI] Dave Mason, <a href="https://srfi.schemers.org/srfi-process.html">Scheme Request For Implementation - Process</a>
+</li>
+<li>[BEP-1] David Harrison, <a href="http://bittorrent.org/beps/bep_0001.html">The BitTorrent Enhancement Proposal Process</a>, 2008</li>
+<li>[RFC-8729] Housley, R., Ed., and L. Daigle, Ed., <a href="https://www.rfc-editor.org/info/rfc8729">The RFC Series and RFC Editor</a>, 2020</li>
+<li>[CommonMark] John MacFarlane, <a href="https://spec.commonmark.org/0.29/">CommonMark Spec</a> Version 0.29, 2019</li>
+<li>[Internet-Draft-terminology] Mallory Knodel, <a href="https://tools.ietf.org/html/draft-knodel-terminology">Terminology, Power and Oppressive Language</a>
+</li>
+</ul>
+<h2>Copyright</h2>
+<p>CC0 1.0 Universal (CC0 1.0) Public Domain Dedication</p>
+<p>To the extent possible under law, the authors of this Fediverse Enhancement Proposal have waived all copyright and related or neighboring rights to this work.</p>
+            <p><small>33 posts - 9 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/fep-a4ed-the-fediverse-enhancement-proposal-process/1171">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/fep-a4ed-the-fediverse-enhancement-proposal-process/1171</link>
+          <pubDate>Tue, 01 Dec 2020 17:19:20 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1171</guid>
+          <source url="https://socialhub.activitypub.rocks/t/fep-a4ed-the-fediverse-enhancement-proposal-process/1171.rss">FEP-a4ed: The Fediverse Enhancement Proposal Process</source>
+        </item>
+        <item>
+          <title>Rethinking Humanity and Role of the Fediverse?</title>
+          <dc:creator><![CDATA[richardhroth1]]></dc:creator>
+          <category>Fediverse Futures</category>
+          <description><![CDATA[
+            <p>(<a class="mention" href="/u/aschrijver">@aschrijver</a>: I moved this to a new topic.  This follow-up is inspired by discussion on the <a href="https://socialhub.activitypub.rocks/t/is-your-participation-in-this-exchange-worth-2-cents-ponyups-and-ponyxps/1381">PonyUPS micropayments</a> concept)</p>
+<aside class="quote group-redaktor.me" data-username="Sebastian" data-post="24" data-topic="1381">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar"><a href="https://socialhub.activitypub.rocks/t/is-your-participation-in-this-exchange-worth-2-cents-ponyups-and-ponyxps/1381/24">Is your participation in this exchange worth 2 cents? (PonyUPS and PonyXPS)</a>
+</div>
+<blockquote>
+<p>I doubt that paying with energy is better than with money!<br>
+Cause of climate crisis.</p>
+</blockquote>
+</aside>
+<p>I do not know if this directly applies to what you are saying, but just watched a video of Toby Seba “Rethinking Humanity.”  He addresses the both the issues of climate crisis and the very desperate need for local (decentralized) independent self-sufficient <strong>manufacture</strong>,  <strong>exchange</strong>, and <strong>governance</strong>.</p>
+<p>All of which seem to be the recognized cornerstone and philosophy of all things Fediverse. I would love to hear what your thoughts and responses are after viewing.</p>
+<div class="onebox lazyYT lazyYT-container" data-youtube-id="uS5K9KBHTnM" data-youtube-title="&quot;Rethinking Humanity.&quot; An extraordinary interview with American futurist Tony Seba of RethinkX" data-parameters="feature=oembed&amp;wmode=opaque">
+  <a href="https://www.youtube.com/watch?v=uS5K9KBHTnM" target="_blank" rel="noopener nofollow ugc">
+    <img class="ytp-thumbnail-image" src="https://socialhub.activitypub.rocks/uploads/default/original/1X/dfcee47520d7cb7f1483b02b9bbf52a656be4f44.jpeg" title="&quot;Rethinking Humanity.&quot; An extraordinary interview with American futurist Tony Seba of RethinkX" width="480" height="360">
+  </a>
+</div>
+
+            <p><small>17 posts - 6 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/rethinking-humanity-and-role-of-the-fediverse/1456">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/rethinking-humanity-and-role-of-the-fediverse/1456</link>
+          <pubDate>Sun, 21 Feb 2021 01:10:41 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1456</guid>
+          <source url="https://socialhub.activitypub.rocks/t/rethinking-humanity-and-role-of-the-fediverse/1456.rss">Rethinking Humanity and Role of the Fediverse?</source>
+        </item>
+        <item>
+          <title>Exploring semantic knowledge base solutions</title>
+          <dc:creator><![CDATA[aschrijver]]></dc:creator>
+          <category>Fediverse Futures</category>
+          <description><![CDATA[
+            <h3>
+<a name="the-wikilibrary-manifesto-1" class="anchor" href="#the-wikilibrary-manifesto-1"></a>The WikiLibrary Manifesto</h3>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/f4c4e607faf300114fc961a806d903424ac2b39b.png" class="site-icon" width="32" height="32">
+      <a href="https://www.wikimedia.de/the-wikilibrary-manifesto/" target="_blank" rel="noopener">Wikimedia</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:646/77;"><img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/9aabd297ffa04660b25682603dd74ddc7c7fdb63.png" class="thumbnail" width="646" height="77"></div>
+
+<h3><a href="https://www.wikimedia.de/the-wikilibrary-manifesto/" target="_blank" rel="noopener">The WikiLibrary Manifesto - Wikimedia</a></h3>
+
+<p>Sign up now! The WikiLibrary Manifesto Our vision is to create a reliable, machine-readable, collaboratively maintained Linked Open Data network for the arts, …</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<blockquote>
+<h1>The WikiLibrary Manifesto</h1>
+<p>Our vision is to create a reliable, machine-readable, collaboratively maintained Linked Open Data network for the arts, culture and science as a solid base for FAIR knowledge. Yet fully applying the<a href="https://en.wikipedia.org/wiki/FAIR_data"> FAIR data</a> principles to knowledge requires a shared framework. The signers of the Wikimedia Library Manifesto will work together to achieve the vision of a common knowledge graph embedded in a shared framework. They will do so by respecting the principles listed below and by taking specific measures to fulfil their vision, also outlined below.</p>
+<h2><strong><strong>Principles</strong></strong></h2>
+<ul>
+<li>
+<p>Promoting free licenses for data and their software environment.</p>
+</li>
+<li>
+<p>Shaping spaces where diverse communities thrive. (Community gardening).</p>
+</li>
+<li>
+<p>Providing structured data based on FAIR data principles in order to be able to transparently transform data into information to create <a href="https://en.wikipedia.org/wiki/FAIR_data">FAIR</a> knowledge.</p>
+</li>
+<li>
+<p>Promoting common core standards created consensually and collaboratively.</p>
+</li>
+<li>
+<p>Providing open governance structures and embedding them into existing systems.</p>
+</li>
+<li>
+<p>Dedicating resources to obtain user interfaces that are accessible to and user‑friendly for everybody who wants to contribute and actively care for data and knowledge.</p>
+</li>
+<li>
+<p>Fostering data literacy in the digital transformation on the three stages: data, information and knowledge.</p>
+</li>
+</ul>
+</blockquote>
+<p>This initiative is driven from Germany. <a class="mention" href="/u/sebastian">@Sebastian</a> this seems on first glance a very interesting take on things <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+            <p><small>16 posts - 4 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399</link>
+          <pubDate>Tue, 02 Feb 2021 10:59:35 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1399</guid>
+          <source url="https://socialhub.activitypub.rocks/t/exploring-semantic-knowledge-base-solutions/1399.rss">Exploring semantic knowledge base solutions</source>
+        </item>
+  </channel>
+</rss>

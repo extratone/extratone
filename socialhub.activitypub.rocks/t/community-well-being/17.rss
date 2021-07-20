@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Community Well-Being</title>
+    <link>https://socialhub.activitypub.rocks/t/community-well-being/17</link>
+    <description>Sometimes you need to reach out to someone else, anyone, for advice or support. You may do so in the dedicated #community:well-being category. This category is only available to members (users with [trust level](https://blog.discourse.org/2018/06/understanding-discourse-trust-levels/) 2 or higher), and you may post anonymously there.
+
+Please see https://socialhub.activitypub.rocks/t/welcome-to-socialhub/7/1 for alternatives to posting anonymously if you need support.
+
+When replying to this topic and any topic under the #community:well-being category, you should take extra care for using inclusive, welcoming language, and avoid impulsive reaction -- even more so than anywhere else on this forum. You are bound to community norms for civilized discourse and a decent attitude towards yourself and others.
+
+If you cannot see the Well-Being category, that means you did not participate enough in this community to reach the required trust level. If you think this is an error, please contact @staff. You can see who&#39;s staff on the [about page](/about).</description>
+    
+    <lastBuildDate>Sun, 19 Apr 2020 11:00:27 +0000</lastBuildDate>
+    <category>SocialHub Policy</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/community-well-being/17.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Community Well-Being</title>
+        <dc:creator><![CDATA[system]]></dc:creator>
+        <description><![CDATA[
+            <p>Sometimes you need to reach out to someone else, anyone, for advice or support. You may do so in the dedicated <a class="hashtag" href="/c/community/well-being/9">#<span>community:well-being</span></a> category. This category is only available to members (users with <a href="https://blog.discourse.org/2018/06/understanding-discourse-trust-levels/">trust level</a> 2 or higher), and you may post anonymously there.</p>
+<p>Please see <a href="https://socialhub.activitypub.rocks/t/welcome-to-socialhub/7/1" class="inline-onebox">Welcome to SocialHub</a> for alternatives to posting anonymously if you need support.</p>
+<p>When replying to this topic and any topic under the <a class="hashtag" href="/c/community/well-being/9">#<span>community:well-being</span></a> category, you should take extra care for using inclusive, welcoming language, and avoid impulsive reaction – even more so than anywhere else on this forum. You are bound to community norms for civilized discourse and a decent attitude towards yourself and others.</p>
+<p>If you cannot see the Well-Being category, that means you did not participate enough in this community to reach the required trust level. If you think this is an error, please contact <a class="mention-group" href="/groups/staff">@staff</a>. You can see who’s staff on the <a href="/about">about page</a>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/community-well-being/17/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/community-well-being/17/1</link>
+        <pubDate>Thu, 12 Sep 2019 17:04:09 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-17-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/community-well-being/17.rss">Community Well-Being</source>
+      </item>
+  </channel>
+</rss>

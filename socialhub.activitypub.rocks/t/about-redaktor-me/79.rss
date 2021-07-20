@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>About Redaktor.me</title>
+    <link>https://socialhub.activitypub.rocks/t/about-redaktor-me/79</link>
+    <description>The multimedia **CMS** for the Fediverse – 
+redaktor will be a web content management system to setup 
+your social connected website in minutes.
+On your own server.
+redaktor helps you with telling your stories.
+
+With all the possibilities of ActivityPub, the world’s leading federated social web standard.
+Its ethical bots work permanently in the background to find your interests in 3 million ActivityPub accounts.
+You can safely add contacts from (or share to) many social networks (also your data SILOS).
+
+**This is the idea, folks.**
+
+redaktor would love some FLOSS help :
+
+It is not ready. The (general purpose) server is about 60% ready and webcomponents are nice and they are about 40% ready. All the framework is pretty modular.
+
+So : It is TypeScript and hell yes, Node.js …
+But we trust only dependencies by persons or orgs we &quot;know in person&quot;, so it&#39;s a littlebit more complicated.
+
+However : I&#39;d like to build a german Bürgerstiftung (&quot;foundation&quot;, statute ready), apply for grants (partly done) and give money back.
+
+**If that makes sense or if you&#39;re able to contribute, please contact @sebastian**
+:raised_hands:</description>
+    
+    <lastBuildDate>Thu, 20 Aug 2020 10:18:02 +0000</lastBuildDate>
+    <category>redaktor.me</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/about-redaktor-me/79.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>About Redaktor.me</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>The multimedia <strong>CMS</strong> for the Fediverse –<br>
+redaktor will be a web content management system to setup<br>
+your social connected website in minutes.<br>
+On your own server.<br>
+redaktor helps you with telling your stories.</p>
+<p>With all the possibilities of ActivityPub, the world’s leading federated social web standard.<br>
+Its ethical bots work permanently in the background to find your interests in 3 million ActivityPub accounts.<br>
+You can safely add contacts from (or share to) many social networks (also your data SILOS).</p>
+<p><strong>This is the idea, folks.</strong></p>
+<p>redaktor would love some FLOSS help :</p>
+<p>It is not ready. The (general purpose) server is about 60% ready and webcomponents are nice and they are about 40% ready. All the framework is pretty modular.</p>
+<p>So : It is TypeScript and hell yes, Node.js …<br>
+But we trust only dependencies by persons or orgs we “know in person”, so it’s a littlebit more complicated.</p>
+<p>However : I’d like to build a german Bürgerstiftung (“foundation”, statute ready), apply for grants (partly done) and give money back.</p>
+<p><strong>If that makes sense or if you’re able to contribute, please contact <a class="mention" href="/u/sebastian">@sebastian</a></strong><br>
+<img src="https://socialhub.activitypub.rocks/images/emoji/twitter/raised_hands.png?v=9" title=":raised_hands:" class="emoji only-emoji" alt=":raised_hands:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-redaktor-me/79/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-redaktor-me/79/1</link>
+        <pubDate>Fri, 04 Oct 2019 20:03:41 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-79-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-redaktor-me/79.rss">About Redaktor.me</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>From silo-first to task-oriented federated app design - #5 by aschrijver - Fediverse Futures - SocialHub</title>
+    <meta name="description" content="What if we considered ActivityPub less as enabling ‘distributed Microblogging’, and more as a universal interoperability standard to knit together any kind of business and application domain? 
+In Fediverse Futures unt&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="../1457.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;From silo-first to task-oriented federated app design&#39;" href="../1457.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/0843a94c85214de04c1eebeb10ca7d1ecb0fda02.jpeg" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/0843a94c85214de04c1eebeb10ca7d1ecb0fda02.jpeg" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/from-silo-first-to-task-oriented-federated-app-design/1457/5" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/from-silo-first-to-task-oriented-federated-app-design/1457/5" />
+<meta property="og:title" content="From silo-first to task-oriented federated app design" />
+<meta name="twitter:title" content="From silo-first to task-oriented federated app design" />
+<meta property="og:description" content="I sent another toot this morning pointing to this topic (with an example of Shopping and Shipping domains in a federated app).   And to that I 100% agree. We have this thread Scaling Up Cooperation that’s really not much more than one of the Open Issues of this community at this moment in time. A missed opportunity, while different groups are reinventing wheels.  Currently I believe less in a full-blown semantic web, but I do believe in standardizing on a whole bunch of small closed vocabularies..." />
+<meta name="twitter:description" content="I sent another toot this morning pointing to this topic (with an example of Shopping and Shipping domains in a federated app).   And to that I 100% agree. We have this thread Scaling Up Cooperation that’s really not much more than one of the Open Issues of this community at this moment in time. A missed opportunity, while different groups are reinventing wheels.  Currently I believe less in a full-blown semantic web, but I do believe in standardizing on a whole bunch of small closed vocabularies..." />
+<meta property="article:published_time" content="2021-04-02T07:23:35+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="../1457.html">From silo-first to task-oriented federated app design</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../../c/fediversity.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #92278F'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Fediversity</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../../c/fediversity/fediverse-futures/58.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #92278F'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Fediverse Futures</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+      <div class="topic-category">
+        <div class='discourse-tags list-tags'>
+            <a href='../../../tag/ideation.html' class='discourse-tag' rel="tag">ideation</a>
+        </div>
+      </div>
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/aschrijver.html'><span itemprop='name'>aschrijver</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1457.html">
+
+            <link itemprop="image" href="../../../uploads/default/original/1X/0843a94c85214de04c1eebeb10ca7d1ecb0fda02.jpeg">
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-02-21T10:11:00Z'>
+              <time itemprop='dateModified' datetime='2021-05-04T19:06:07Z' class='post-time'>
+                May 4, 2021,  7:06pm
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><div class="lightbox-wrapper"><a class="lightbox" href="../../../uploads/default/original/1X/0843a94c85214de04c1eebeb10ca7d1ecb0fda02.jpeg" data-download-href="https://socialhub.activitypub.rocks/uploads/default/0843a94c85214de04c1eebeb10ca7d1ecb0fda02" title="task-oriented-fedi-development"><img src="../../../uploads/default/optimized/1X/0843a94c85214de04c1eebeb10ca7d1ecb0fda02_2_670x500.jpeg" alt="task-oriented-fedi-development" data-base62-sha1="1b6MzHy9zucxZFFGWg8PpEKvBw6" width="670" height="500" srcset="../../../uploads/default/optimized/1X/0843a94c85214de04c1eebeb10ca7d1ecb0fda02_2_670x500.jpeg, ../../../uploads/default/original/1X/0843a94c85214de04c1eebeb10ca7d1ecb0fda02.jpeg 1.5x, ../../../uploads/default/original/1X/0843a94c85214de04c1eebeb10ca7d1ecb0fda02.jpeg 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/0843a94c85214de04c1eebeb10ca7d1ecb0fda02_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">task-oriented-fedi-development</span><span class="informations">800×597 71.8 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>What if we considered ActivityPub less as enabling ‘distributed Microblogging’, and more as a universal interoperability standard to knit together any kind of business and application domain?</p>
+<p>In <a href="../../../c/fediversity/fediverse-futures/58.html">Fediverse Futures</a> until now I have highlighted the opportunities to extend federated capabilities to many different domains (making more use of AP’s Linked Data foundations). Another thing then to address is how these domains are working together. The interoperability story, let’s say…</p>
+<p>Now the AS/AP specs lend themself very well in interoperable application designs… witness the Fediverse. But they are only a small part in the overall picture. As we are planning to pitch ActivityPub to the European Union as <em>the</em> interoperability standard to be chosen for the EU Services Act (see: <a class="hashtag" href="../../../c/meeting/fediverse-policy/59.html">#<span>meeting:fediverse-policy</span></a>) we have to admit that interop is very, very hard to achieve, atm.</p>
+<p><strong>We are now at a stage where the grassroots and ad-hoc evolution of the Fediverse starts to work against us!</strong></p>
+<p>There is ever growing (accidental) complexity if we continue this way. At this moment:</p>
+<ul>
+<li>Onboarding has new devs following the steepest of learning curves (by experimenting, hearsay, and studying codebases).</li>
+<li>Documentation materials, tutorials, reference material is sorely lacking or incomplete.</li>
+<li>The very small SocialHub community currently simply lacks the time to improve things. We move at a crawl.</li>
+</ul>
+<p>I digress. This is not new, of course, we know this very well. What I want to address in this topic is the way in which we design federated apps.</p>
+<h3>
+<a name="silo-based-application-design-1" class="anchor" href="5.html#silo-based-application-design-1"></a>Silo-based application design</h3>
+<p>I co-maintain the very interesting and ever growing <a href="https://git.feneas.org/feneas/fediverse/-/wikis/watchlist-for-activitypub-apps">ActivityPub application watchlist</a>, and what I observe is that - while federated apps are the goal - application design approach is more or less as follows:</p>
+<ul>
+<li>I want forum → I develop forum → How can forum federate?</li>
+<li>I want video → I develop video → How can video federate?</li>
+</ul>
+<p>And because the federation is mostly a Microblogging domain, the last step boils down to “How can I map my domain to microblogging?”. App domains being added are pictured as boxed sets of features. They are application silo’s still, and the federation is mostly a bolt-on capability.</p>
+<h3>
+<a name="task-oriented-application-design-2" class="anchor" href="5.html#task-oriented-application-design-2"></a>Task-oriented application design</h3>
+<p>Wouldn’t it be great if from the outset we’d design for the tasks (workflows, procedures, whatever…) we’d like people to achieve with our app, and be able to easily knit things together that are already out there, choosing from a growing ‘library’ of federated capabilities and services?</p>
+<p>Isn’t that what we are working towards in the end? A situation where the individual application boundaries are no longer visible in the end result for the people performing these tasks?</p>
+<p>I would like to dedicate this thread to discuss what is possible here, what already exists, and where we can make progress.</p>
+<hr>
+<p>(For this topic also see a <a href="https://mastodon.social/web/statuses/105768334114724391">related set of toots</a> posted on the <a href="../../rethinking-humanity-and-role-of-the-fediverse/1456.html" class="inline-onebox">Rethinking Humanity and Role of the Fediverse?</a> toot thread)</p>
+        </div>
+
+        <meta itemprop='headline' content='From silo-first to task-oriented federated app design'>
+          <meta itemprop='keywords' content='ideation'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="3" />
+           <span class='post-likes'>3 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../what-would-a-fediverse-governance-body-look-like/1497/47.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/what-would-a-fediverse-governance-body-look-like/1497/47'>
+                      <span itemprop='name'>What would a fediverse &quot;governance&quot; body look like?</span>
+                    </a>
+                    <meta itemprop='position' content='7'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../2021-04-17-social-cg-meeting/1607/2.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/2021-04-17-social-cg-meeting/1607/2'>
+                      <span itemprop='name'>2021-04-17 Social CG Meeting</span>
+                    </a>
+                    <meta itemprop='position' content='8'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../fediverse-netcommons-and-the-blueprint-for-p2p-society/1654/3.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/fediverse-netcommons-and-the-blueprint-for-p2p-society/1654/3'>
+                      <span itemprop='name'>Fediverse, NetCommons and the blueprint for P2P society?</span>
+                    </a>
+                    <meta itemprop='position' content='9'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../ec-ngi0-liaison-webinars-and-workshop-april-2021.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/ec-ngi0-liaison-webinars-and-workshop-april-2021/1539'>
+                      <span itemprop='name'>EC - NGI0 Liaison -- Webinars and Workshop April 2021</span>
+                    </a>
+                    <meta itemprop='position' content='10'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../federated-moderation-towards-delegated-moderation/1580/10.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/federated-moderation-towards-delegated-moderation/1580/10'>
+                      <span itemprop='name'>Federated Moderation: Towards Delegated Moderation?</span>
+                    </a>
+                    <meta itemprop='position' content='11'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../hospitality-exchange-community-considers-moving-to-the-fediverse/1765/3.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/hospitality-exchange-community-considers-moving-to-the-fediverse/1765/3'>
+                      <span itemprop='name'>Hospitality exchange community considers moving to the fediverse ;)</span>
+                    </a>
+                    <meta itemprop='position' content='12'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../rethinking-humanity-and-role-of-the-fediverse/1456/5.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/rethinking-humanity-and-role-of-the-fediverse/1456/5'>
+                      <span itemprop='name'>Rethinking Humanity and Role of the Fediverse?</span>
+                    </a>
+                    <meta itemprop='position' content='13'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../united-software-development-a-new-paradigm/1632/4.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/united-software-development-a-new-paradigm/1632/4'>
+                      <span itemprop='name'>United Software Development: A new paradigm?</span>
+                    </a>
+                    <meta itemprop='position' content='14'>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1457.html">
+
+            <link itemprop="image" href="../../../uploads/default/original/1X/5b894d188c505a482ea30671a975101697167b7f.png">
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-02-21T20:41:44Z'>
+              <time itemprop='dateModified' datetime='2021-02-21T21:55:44Z' class='post-time'>
+                February 21, 2021,  9:55pm
+              </time>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Overall Ack and Thank You for this post.<br>
+Just some remarks</p>
+<aside class="quote no-group" data-username="aschrijver" data-post="1" data-topic="1457">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/aschrijver/40/278_2.png" class="avatar"> aschrijver:</div>
+<blockquote>
+<p>Now the AS/AP specs lend themself very well in interoperable application designs… witness the Fediverse.</p>
+</blockquote>
+</aside>
+<p>The specs do but certain “Actors” do not.<br>
+For the felt 1000th times I am linking the</p>
+<h1><a href="https://www.w3.org/TR/activitypub/#conformance">SECTION 2 OF THE SPECS: “Conformance”</a></h1>
+<blockquote>
+<p>ActivityPub conformant Client<br>
+This designation applies to any implementation of the <strong>entirety</strong> of the client portion of the client to server protocol.</p>
+</blockquote>
+<blockquote>
+<p>ActivityPub conformant Server<br>
+This designation applies to any implementation of the <strong>entirety</strong> of the server portion of the client to server protocol.</p>
+</blockquote>
+<blockquote>
+<p>ActivityPub conformant Federated Server<br>
+This designation applies to any implementation of the <strong>entirety</strong> of the federation protocols.</p>
+</blockquote>
+<blockquote>
+<p>It is called out whenever a portion of the specification only applies to implementation of the federation protocol. In addition, whenever requirements are specified, it is called out whether they apply to the client or server (for the client-to-server protocol) or whether referring to a sending or receiving server in the server-to-server protocol.</p>
+</blockquote>
+<p>So can we, can the authors <strong>PLEASE DEFINE</strong></p>
+<h1>entirety ???</h1>
+<hr>
+<blockquote>
+<p>As we are planning to pitch ActivityPub to the European Union as <em>the</em> interoperability standard to be chosen for the EU Services Act (see: <a class="hashtag" href="../../../c/meeting/fediverse-policy/59.html">#<span>meeting:fediverse-policy</span></a>) we have to admit that interop is very, very hard to achieve, atm.</p>
+</blockquote>
+<p>If I understand “entirety” like I do, interop is easy if we speak (talk) more and <em>not</em> less like now again with the SocialCG which otherwise makes no sense at all.</p>
+<p>We should say “webstandards” and W3C recommendations (hard to understand for politicians) and then name ActivityPub as the probably best matching “interoperability standard” see <a href="https://twitter.com/sandhawke/status/1337024696706080768">Sandro’s tweet to Evan</a></p>
+<p>What I favour in first place is what MdB Anke Domscheit-Berg demanded in the German Parliament and several MEPs support:<br>
+<a href="https://mastodon.social/@sl007/105633896279416126">An EU funded fediverse</a></p>
+<hr>
+<p>And I would like to leave here:</p>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://alistapart.com/wp-content/uploads/2019/03/cropped-icon_navigation-laurel-512.jpg?fit=32%2C32" class="site-icon" width="32" height="32">
+      <a href="https://alistapart.com/article/designing-inclusive-content-models/" target="_blank" rel="noopener" title="03:00PM - 18 February 2021">A List Apart – 18 Feb 21</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/348;"><img src="../../../uploads/default/optimized/1X/5b894d188c505a482ea30671a975101697167b7f_2_690x348.png" class="thumbnail" width="690" height="348" srcset="../../../uploads/default/optimized/1X/5b894d188c505a482ea30671a975101697167b7f_2_690x348.png, ../../../uploads/default/original/1X/5b894d188c505a482ea30671a975101697167b7f.png 1.5x, ../../../uploads/default/original/1X/5b894d188c505a482ea30671a975101697167b7f.png 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/5b894d188c505a482ea30671a975101697167b7f_2_10x10.png"></div>
+
+<h3><a href="https://alistapart.com/article/designing-inclusive-content-models/" target="_blank" rel="noopener">Designing Inclusive Content Models</a></h3>
+
+<p>You may not realize it, but your site might be actively discouraging user engagement because your content models are shaped by bias. Daniel Carter and Carra Martinez are here to help you to underst…</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>and</p>
+<p><a href="https://ethicsfordesign.com" class="onebox" target="_blank" rel="noopener">https://ethicsfordesign.com</a></p>
+<p>and unfortunately</p>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="../../../uploads/default/original/1X/92e539050eb89a3f7233dce20fb41e4340adf290.png" class="site-icon" width="32" height="32">
+      <a href="https://matthewstrom.com/writing/copying/" target="_blank" rel="noopener" title="12:00AM - 28 October 2020">matthewstrom.com – 28 Oct 20</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/388;"><img src="../../../uploads/default/original/1X/13461def7526956c52ed4b129cd42bdc4db05c64.jpeg" class="thumbnail" width="690" height="388" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/13461def7526956c52ed4b129cd42bdc4db05c64_2_10x10.png"></div>
+
+<h3><a href="https://matthewstrom.com/writing/copying/" target="_blank" rel="noopener">Copying is the way design works</a></h3>
+
+<p>What exists in the space between riffing and ripping</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+        </div>
+
+        <meta itemprop='headline' content='From silo-first to task-oriented federated app design'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../bonfire-and-redaktor-introduction-alignment-meeting/1463/9.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/bonfire-and-redaktor-introduction-alignment-meeting/1463/9'>
+                      <span itemprop='name'>Bonfire and Redaktor introduction &amp; alignment meeting</span>
+                    </a>
+                    <meta itemprop='position' content='8'>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/aschrijver.html'><span itemprop='name'>aschrijver</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1457.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-02-22T06:13:46Z'>
+              <time itemprop='dateModified' datetime='2021-04-02T06:29:51Z' class='post-time'>
+                April 2, 2021,  6:29am
+              </time>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote group-redaktor.me" data-username="Sebastian" data-post="2" data-topic="1457">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar"> Sebastian:</div>
+<blockquote>
+<p>If I understand “entirety” like I do, interop is easy if we speak (talk) more and <em>not</em> less like now again with the SocialCG which otherwise makes no sense at all.</p>
+<p>We should say “webstandards” and W3C recommendations (hard to understand for politicians) and then name ActivityPub as the probably best matching “interoperability standard”</p>
+</blockquote>
+</aside>
+<p>Both a healthy and active SocialCG as well as strong SocialHub community are vital, imho, to get anywhere in this effort. One of the big hurdles in this is: People doing the chores of community-building and knitting things together. An EU-funded fediverse is a great idea, and we should consider having a funded community commons, to alleviate time investment and commitment issues.</p>
+<p>Think the focus should be on “standards and processes”, offering the methods and practices to ease interoperable implemention of the standards.</p>
+<p>(wow, the Ethics for Design page is horribly designed for unusability)</p>
+<p><strong>Update</strong>: See also the discussion in <a href="../../organizing-for-socialhub-community-empowerment/1529.html" class="inline-onebox">Organizing for SocialHub Community Empowerment</a></p>
+        </div>
+
+        <meta itemprop='headline' content='From silo-first to task-oriented federated app design'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/bengo.html'><span itemprop='name'>bengo</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1457.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-04-01T23:30:38Z'>
+              <time itemprop='dateModified' datetime='2021-04-01T23:35:45Z' class='post-time'>
+                April 1, 2021, 11:35pm
+              </time>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>THIS IS SO IMPORTANT. Thank you for posting.</p>
+<p>I was chatting with <a class="mention" href="../../../u/rhiaro.html">@rhiaro</a> recently…</p>
+<blockquote>
+<p>I think we can share product and design planning across protocol-specific ecosystems</p>
+<p>eg the same “reference design” for a given use case can be an input to [many ecosystems (e.g. socialhub, web3)]</p>
+<p>What is the “north star” of “What should it look like to use the fediverse?” Regardless of whether ActivityPub is the implementation detail 100% of the time.</p>
+<p>IMO it’s obvious that the fediverse must be multi-protocol and (in blockchain jargon) “multi-chain”. ActivityPub is only a tool for certain use cases, but <strong>the goal isn’t ActivityPub its serving the humans trying to communicate.</strong></p>
+<p>I think one way of organizing community around this is to go back to <a href="https://www.w3.org/wiki/Socialwg#Use_Cases" rel="noopener nofollow ugc">SocialWG use cases document</a> and “<a href="https://en.wikipedia.org/wiki/Genchi_Genbutsu" rel="noopener nofollow ugc">see how we’ve done</a> [so far]”.</p>
+<p>Crowdsource feedback on each one, celebrate the “done” ones (and solicit champions to evangelize/document).</p>
+<p>Reprioritize the “not done” ones and have their be <em>ONE SINGLE TOP PRIORITY</em> that people are encouraged to work on if they just want to do a high value small thing (<span class="hashtag">#good-first-issue</span>)</p>
+<p>Organizations or individuals with funds can the place bounties on the use cases…</p>
+</blockquote>
+<p>The idea is to cooperate on ‘reference designs’ for important use cases for social computing. And prioritize that as its own end over code. It’s making what needs to be coded easier to code when the time is right.</p>
+<p>The idea is to avoid doing anything about any particular protocol, and to cooperatively design our social computation.</p>
+<p>I’m quite optimistic that ActivityStreams and ActivityPub <strong>can</strong> represent all kinds of things, not just a ‘general purpose’ social network or twitdeck-style UI.</p>
+<p>I’d like to work more on brainstorming which specific <em>experiences</em> we should prioritize actually proving out that are valuable, and subsequently people can propose candidate solutions with specific UML or protocols.</p>
+<p>These kinds of <a href="https://en.wikipedia.org/wiki/Human-centered_design" rel="noopener nofollow ugc">design</a> artifacts (e.g. ‘use cases’ or ‘jobs to be done’ or ‘frequently asked question’) may be the most valuable encoding of information out there. If we can articulate those, then they will be useful to all kinds of stakeholders, inside socialhub, EC, and beyond. Those design artifacts could inspired hundreds or millions of different ‘homegrown’ solutions that make sense in their natural/local context (or jurisdiction).</p>
+<p>Inspiration:</p>
+<ul>
+<li><a href="https://cdn.who.int/media/docs/default-source/documents/interim-guidance-svc_20210319_final.pdf" rel="noopener nofollow ugc">https://cdn.who.int/media/docs/default-source/documents/interim-guidance-svc_20210319_final.pdf</a></li>
+</ul>
+<p>Backstory:</p>
+<p>You know, I first heard about ‘activity streams’ in 2010 from a <a href="https://groups.google.com/g/activity-streams/c/F2nG2sGSnaI/m/ioWGO_zdxoQJ" rel="noopener nofollow ugc">handful of Google, Microsoft, and Facebook employees</a>…</p>
+<p>In 2010, things weren’t quite like they were now. Everyday people consumed ‘news’ in a very different way than they do now…<br>
+Upstart news products had to bootstrap their Activity dataset somehow so the Activity Streams weren’t empty. It made sense to cooperate and interoperate to gain early traction… (this was also at a time when gchat and fb chat used XMPP…).</p>
+<p>Early versions of Facebooks Open API used ActivityStreams XML. Same with MySpace and Microsoft products. Google Buzz tech may have been quite similar to Open Social tech. Google indexer understands a lot about JSON-LD.</p>
+<p>Over the last 10+ years, many of these companies have made some quite successful products that everyday people like to use <em>in part</em> <em>because</em> the product marketing does not focus on protocols or theoretical use cases that don’t work in practice. Instead, a lot of those people worked on products that <em>if not decentralized</em> (nee ‘distributed’ e.g. ‘DiSo’), were often <em>useful to people</em> and helped them perform their daily <strong>activities</strong> in the easiest way available. Let’s learn from that.</p>
+<p>These same early ideators about activity streams syntax also talked about various semantics. For example, one presentation around 2011 is where I first learned about “Activity Theory” (<a href="https://en.wikipedia.org/wiki/Activity_theory#Systemic-structural_activity_theory_(SSAT)" rel="noopener nofollow ugc">SSAT</a> or <a href="https://en.wikipedia.org/wiki/Cultural-historical_activity_theory" rel="noopener nofollow ugc">CHAT</a>).</p>
+<p><a class="mention" href="../../../u/aschrijver.html">@aschrijver</a> What you describe in this thread reminds me of “<a href="https://en.wikipedia.org/wiki/Activity-centered_design" rel="noopener nofollow ugc">Activity-Centered Design</a>”. I think there’s something awesome about the genealogy of ideas looping back on itself as it does in this <a href="https://en.wikipedia.org/wiki/Strange_loop" rel="noopener nofollow ugc">strange</a> loop.</p>
+<blockquote>
+<p><strong>Activity-centered design</strong> ( <strong>ACD</strong> ) is an extension of the Human-centered design paradigm in <a href="https://en.wikipedia.org/wiki/Interaction_design" rel="noopener nofollow ugc">interaction design</a>.<a href="https://en.wikipedia.org/wiki/Activity-centered_design#cite_note-1" rel="noopener nofollow ugc">[1]</a> ACD features heavier emphasis on the activities that a <a href="https://en.wikipedia.org/wiki/User_(system)" rel="noopener nofollow ugc">user</a> would perform with a given piece of technology. ACD has its theoretical underpinnings in <a href="https://en.wikipedia.org/wiki/Activity_theory" rel="noopener nofollow ugc">activity theory</a>,<a href="https://en.wikipedia.org/wiki/Activity-centered_design#cite_note-2" rel="noopener nofollow ugc">[2]</a> from which activities can be defined as actions taken by a user to achieve a goal.<a href="https://en.wikipedia.org/wiki/Activity-centered_design#cite_note-3" rel="noopener nofollow ugc">[3]</a></p>
+<p>When working with activity-centered design, the designers use <a href="https://en.wikipedia.org/wiki/Research" rel="noopener nofollow ugc">research</a> to get insights of the users. Observations and interviews are typical approaches to learn more about the users’ <a href="https://en.wikipedia.org/wiki/Behavior" rel="noopener nofollow ugc">behavior</a>. By mapping users’ activities and tasks, the designer may notice missing tasks for the activity to become more easy to perform, and thus design solutions to accomplish those tasks.</p>
+</blockquote>
+        </div>
+
+        <meta itemprop='headline' content='From silo-first to task-oriented federated app design'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../what-would-a-fediverse-governance-body-look-like/1497/42.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/what-would-a-fediverse-governance-body-look-like/1497/42'>
+                      <span itemprop='name'>What would a fediverse &quot;governance&quot; body look like?</span>
+                    </a>
+                    <meta itemprop='position' content='18'>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/aschrijver.html'><span itemprop='name'>aschrijver</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1457.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-04-02T07:23:35Z'>
+              <time itemprop='dateModified' datetime='2021-04-02T15:04:12Z' class='post-time'>
+                April 2, 2021,  3:04pm
+              </time>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I sent <a href="https://mastodon.social/web/statuses/105994253016095527">another toot</a> this morning pointing to this topic (with an example of Shopping and Shipping domains in a federated app).</p>
+<aside class="quote no-group" data-username="bengo" data-post="4" data-topic="1457">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../letter_avatar_proxy/v4/letter/b/59ef9b/40.png" class="avatar"> bengo:</div>
+<blockquote>
+<p>I think we can share product and design planning across protocol-specific ecosystems</p>
+<p>eg the same “reference design” for a given use case can be an input to [many ecosystems (e.g. socialhub, web3)]</p>
+<p>What is the “north star” of “What should it look like to use the fediverse?” Regardless of whether ActivityPub is the implementation detail 100% of the time.</p>
+</blockquote>
+</aside>
+<p>And to that I 100% agree. We have this thread <a href="../../scaling-up-cooperation/837.html" class="inline-onebox">Scaling Up Cooperation</a> that’s really not much more than one of the Open Issues of this community at this moment in time. A missed opportunity, while different groups are reinventing wheels.</p>
+<p>Currently I believe less in a full-blown semantic web, but I do believe in standardizing on a whole bunch of small closed vocabularies in the Linked Data space. Well, maybe not even standardizing as in ‘adopting a spec’, but move about having a library of design patterns for different domains, where vocabularies are part of the best-practice for each pattern.</p>
+<p>For instance on <a href="../../standardizing-on-a-common-community-domain-as-ap-extension/1353/16.html">Community</a> and aligning to ValueFlows with <a class="mention" href="../../../u/lynnfoster.html">@lynnfoster</a> and <a class="mention" href="../../../u/bhaugen.html">@bhaugen</a> or - say - entire new fields like <a href="../../is-your-participation-in-this-exchange-worth-2-cents-ponyups-and-ponyxps/1381.html">PonyUPS</a>, and aforementioned Shopping and Shipping may be library patterns.</p>
+<p>The patterns themselves are just knowledge in a growing knowledge base, but they each have a growing list of implementations in various programming languages, API’s and UI component designs (where <a class="mention" href="../../../u/sebastian.html">@Sebastian</a> is also focusing for <a class="hashtag" href="../../../c/software/redaktor-me.html">#<span>software:redaktor-me</span></a>).</p>
+<p>Great that you point to the Use Cases document <a class="mention" href="../../../u/bengo.html">@bengo</a> - this text had slipped my notice thus far - because, as I see it:</p>
+<blockquote>
+<p><strong>Pattern library</strong>: Contains both <em>process + artifacts</em> to design building blocks for Devs representing domain-specific use cases.</p>
+</blockquote>
+<p><em>(Continuing from earlier today)</em></p>
+<p>The focus on use cases that’s combined in the pattern library is a more hands-on approach than the initial WG document, because we have a fediverse in production to build on and any activity is directly related to practice in the field. It should be ideal for crowdsourcing.</p>
+<p>When it is tied to this community (the forum) we can facilitate social interaction here. The community aspect is really important, and indeed championing success / advocating direction. For instance we have a <a href="../../fep-a4ed-the-fediverse-enhancement-proposal-process/1171.html">FEP initiative</a> now (thanks to great efforts of <a class="mention" href="../../../u/cjs.html">@cjs</a> and <a class="mention" href="../../../u/pukkamustard.html">@pukkamustard</a>), but arguably the process is hard to get under steam without people actively monitoring and rallying things up. But this is time-consuming.</p>
+<p>Other than that the use case pursuit can be less bound to direct standards evolution. There are other holes in the fediverse interoperability story where we can place attention in this regard (e.g. privacy, encryption, identity, p2p), probably in different standards.</p>
+<aside class="quote no-group quote-modified" data-username="bengo" data-post="4" data-topic="1457">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../letter_avatar_proxy/v4/letter/b/59ef9b/40.png" class="avatar"> bengo:</div>
+<blockquote>
+<p>The idea is to cooperate on ‘reference designs’ for important use cases for social computing. And prioritize that as its own end over code. […] brainstorming which specific <em>experiences</em> we should prioritize actually proving out that are valuable, and subsequently people can propose candidate solutions with specific UML or protocols.</p>
+</blockquote>
+</aside>
+<p>Exactly. I created <a class="hashtag" href="../../../c/fediversity/fediverse-futures/58.html">#<span>fediversity:fediverse-futures</span></a> to address the ideation part of this, encourage ‘thinking out of the box’… as a starter. We can just bring stuff up here, and see which ideas are inspiring enough to stick. I see that work <a href="https://invidious.snopyta.org/watch?v=NugRZGDbPFU">like this</a> (video).</p>
+<p>The pattern library approach then, is a follow-up that encompasses all the above. Where documents such as a “Smart Vaccination Certificate” - if there’s community interest for that - are gradually elaborated further via crowdsourcing. At top-level there’s only domain knowledge, and a drilldown involves choosing technological directions.</p>
+<aside class="quote no-group" data-username="bengo" data-post="4" data-topic="1457">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../letter_avatar_proxy/v4/letter/b/59ef9b/40.png" class="avatar"> bengo:</div>
+<blockquote>
+<p>Google indexer understands a lot about JSON-LD.</p>
+</blockquote>
+</aside>
+<p>Yes, so should we, AP devs. As it gets too little attention still.</p>
+<aside class="quote no-group quote-modified" data-username="bengo" data-post="4" data-topic="1457">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../letter_avatar_proxy/v4/letter/b/59ef9b/40.png" class="avatar"> bengo:</div>
+<blockquote>
+<p>“Activity Theory” (<a href="https://en.wikipedia.org/wiki/Activity_theory#Systemic-structural_activity_theory_(SSAT)">SSAT</a> or <a href="https://en.wikipedia.org/wiki/Cultural-historical_activity_theory">CHAT</a>) […] “<a href="https://en.wikipedia.org/wiki/Activity-centered_design">Activity-Centered Design</a>”.</p>
+</blockquote>
+</aside>
+<p>Here it gets really interesting to me. So far, even while we reached out above deeply technical matters, we haven’t <em>really</em> addressed some very important aspects to evolving the Fediverse to a ubiquitous interoperable “social fabric” and that is: the <strong>Processes</strong> and <strong>Methods</strong> by which things are woven and stitched together.</p>
+<p>I really like those links you mentioned, and - in terms of both involving non-technical people and focus on functionality that truly match their needs - I’d like to introduce another term to  this mix, and that is <a href="https://en.wikipedia.org/wiki/Domain-driven_design">Domain Driven Design</a>. I feel this is a really good match when working with closed vocabularies modeled as AP (or Solid, or what-have-you) extensions.</p>
+        </div>
+
+        <meta itemprop='headline' content='From silo-first to task-oriented federated app design'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../federated-processes-combining-valueflows-and-activitypub/1559.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/federated-processes-combining-valueflows-and-activitypub/1559'>
+                      <span itemprop='name'>Federated Processes: Combining Valueflows and ActivityPub</span>
+                    </a>
+                    <meta itemprop='position' content='10'>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/aschrijver.html'><span itemprop='name'>aschrijver</span></a>
+            
+              split this topic 
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1457.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-04-06T14:11:18Z'>
+              <time itemprop='dateModified' datetime='2021-04-06T14:11:18Z' class='post-time'>
+                April 6, 2021,  2:11pm
+              </time>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>3 posts were split to a new topic: <a href="../../federated-processes-combining-valueflows-and-activitypub/1559.html">Federated Processes: Combining Valueflows and ActivityPub</a></p>
+        </div>
+
+        <meta itemprop='headline' content='From silo-first to task-oriented federated app design'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/aschrijver.html'><span itemprop='name'>aschrijver</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1457.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-05-05T08:42:23Z' class='post-time'>
+                May 5, 2021,  8:42am
+              </time>
+              <meta itemprop='dateModified' content='2021-05-05T08:42:23Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <h1>
+<a name="ddd-cqrs-event-sourcing-actor-model-oh-my-1" class="anchor" href="5.html#ddd-cqrs-event-sourcing-actor-model-oh-my-1"></a>DDD, CQRS, Event Sourcing, Actor Model… Oh, my!</h1>
+<p>A lot of concepts come together in this thread. Luckily they fit perfectly together. In the following video Vaughn Vernon, who is an export in DDD, Actor model and designing of Reactive systems, explain how they fit together.</p>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="../../../uploads/default/original/1X/e08e7dabdd899475139bed7f2e89fee9cbb83970.png" class="site-icon" width="32" height="32">
+      <a href="https://yewtu.be/watch?v=rMv4sul0RwU" target="_blank" rel="noopener">Invidious</a>
+  </header>
+  <article class="onebox-body">
+    
+
+<h3><a href="https://yewtu.be/watch?v=rMv4sul0RwU" target="_blank" rel="noopener">Using the Actor Model with Domain-Driven Design (DDD) in Reactive Systems</a></h3>
+
+<p>Is the Actor Model just a new "shiny object" for developers to chase after, a fad soon to be abandoned? In fact, the Actor Model was first designed in 1973–o...</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>The video is about one hour, but - if you are impatient - you can skip to 32.30min to get the gist and then to 55.30min to learn a bit more about <strong>Event Storming</strong>.</p>
+<hr>
+<p>CC <a class="mention" href="../../../u/dachary.html">@dachary</a> <a class="mention" href="../../../u/hamishcampbell.html">@hamishcampbell</a> in follow-up to DDD-related discussion <a href="../../united-software-development-a-new-paradigm/1632/9.html">here</a> and <a href="../../what-would-a-fediverse-governance-body-look-like/1497/57.html">here</a> (among others). And <a class="mention" href="../../../u/cjs.html">@cjs</a> in relation to <a class="hashtag" href="../../../c/software/go-fed/18.html">#<span>software:go-fed</span></a> (and <a href="../../delivery/1694/5.html">sharedInbox</a>, but that’s for another topic)</p>
+        </div>
+
+        <meta itemprop='headline' content='From silo-first to task-oriented federated app design'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>EC Webinar Prep: ActivityPub beyond Microblogging --&gt; Exploring Domains</title>
+    <link>https://socialhub.activitypub.rocks/t/ec-webinar-prep-activitypub-beyond-microblogging-exploring-domains/1531</link>
+    <description>_(This is a wiki post that anyone can edit, by clicking the &#39;Edit&#39; link in the bottom-left corner)_
+
+[quote=&quot;how, post:15, topic:1507&quot;]
+@aschrijver thank you for your presence. Since you mentioned schemas, can you describe some you have in mind? Maybe using the [diagram feature](https://pad.public.cat/features#Diagrams) of HedgeDoc or images.
+[/quote]
+
+The Fediverse has evolved mainly around Mastodon - a microblogging app - but with AS/AP as core specs and based on Linked Data it can be the foundation for Federated Apps in numerous different application/business domains.
+
+In this wiki post we can collect some of the apps being developed that go beyond microblogging, and ideate on some other exciting future apps that could enrich the Fediverse.
+
+This is in preparation for the https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507?u=aschrijver. Results from this topic will be moved to the https://pad.public.cat/ngi0-ec-activitypub-liaison?view# pad.
+
+---
+
+[TODO: Discuss &amp; Extend]
+
+## Beyond microblogging
+
+Some existing applications and protocols under development (see also: [AP apps watchlist](https://git.feneas.org/feneas/fediverse/-/wikis/Watchlist-for-ActivityPub-apps) and [AP dev watchlist](https://git.feneas.org/feneas/fediverse/-/wikis/Watchlist-for-ActivityPub-developer-resources)):
+
+- ForgeFed
+- OpenEngiadina
+
+Future app domains?
+
+- Community vocabulary extension (e.g. federated Discourse forums)</description>
+    
+    <lastBuildDate>Sun, 28 Mar 2021 12:26:53 +0000</lastBuildDate>
+    <category>Fediverse Futures</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/ec-webinar-prep-activitypub-beyond-microblogging-exploring-domains/1531.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>EC Webinar Prep: ActivityPub beyond Microblogging --&gt; Exploring Domains</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p><em>(This is a wiki post that anyone can edit, by clicking the ‘Edit’ link in the bottom-left corner)</em></p>
+<aside class="quote no-group" data-username="how" data-post="15" data-topic="1507">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/how/40/94_2.png" class="avatar"><a href="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/15">Webinar with the European Commission and AP Community</a>
+</div>
+<blockquote>
+<p><a class="mention" href="/u/aschrijver">@aschrijver</a> thank you for your presence. Since you mentioned schemas, can you describe some you have in mind? Maybe using the <a href="https://pad.public.cat/features#Diagrams">diagram feature</a> of HedgeDoc or images.</p>
+</blockquote>
+</aside>
+<p>The Fediverse has evolved mainly around Mastodon - a microblogging app - but with AS/AP as core specs and based on Linked Data it can be the foundation for Federated Apps in numerous different application/business domains.</p>
+<p>In this wiki post we can collect some of the apps being developed that go beyond microblogging, and ideate on some other exciting future apps that could enrich the Fediverse.</p>
+<p>This is in preparation for the <a href="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507" class="inline-onebox">Webinar with the European Commission and AP Community</a>. Results from this topic will be moved to the <a href="https://pad.public.cat/ngi0-ec-activitypub-liaison?view#" class="inline-onebox">NGI0 European Commission / ActivityPub Liaison - HedgeDoc</a> pad.</p>
+<hr>
+<p>[TODO: Discuss &amp; Extend]</p>
+<h2>Beyond microblogging</h2>
+<p>Some existing applications and protocols under development (see also: <a href="https://git.feneas.org/feneas/fediverse/-/wikis/Watchlist-for-ActivityPub-apps">AP apps watchlist</a> and <a href="https://git.feneas.org/feneas/fediverse/-/wikis/Watchlist-for-ActivityPub-developer-resources">AP dev watchlist</a>):</p>
+<ul>
+<li>ForgeFed</li>
+<li>OpenEngiadina</li>
+</ul>
+<p>Future app domains?</p>
+<ul>
+<li>Community vocabulary extension (e.g. federated Discourse forums)</li>
+</ul>
+          <p><a href="https://socialhub.activitypub.rocks/t/ec-webinar-prep-activitypub-beyond-microblogging-exploring-domains/1531/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/ec-webinar-prep-activitypub-beyond-microblogging-exploring-domains/1531/1</link>
+        <pubDate>Sun, 28 Mar 2021 12:26:53 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1531-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/ec-webinar-prep-activitypub-beyond-microblogging-exploring-domains/1531.rss">EC Webinar Prep: ActivityPub beyond Microblogging --&gt; Exploring Domains</source>
+      </item>
+  </channel>
+</rss>

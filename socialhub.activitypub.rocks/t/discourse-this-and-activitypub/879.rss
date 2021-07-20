@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Discourse [this] and ActivityPub</title>
+    <link>https://socialhub.activitypub.rocks/t/discourse-this-and-activitypub/879</link>
+    <description>https://nlnet.nl/project/DiscourseActivityPub/ *says*
+“This project was funded through the [NGI0 Discovery ](https://nlnet.nl/discovery)Fund, a fund established by NLnet with financial support from the European Commission&#39;s [Next Generation Internet](https://ngi.eu/) programme”
+
+**As a citizen of the European Union I demand an official statement ;)** 
+
+What is the current state of ActivityPub support in discourse and thus for this forum?
+Do people need help?</description>
+    
+    <lastBuildDate>Thu, 17 Dec 2020 07:34:32 +0000</lastBuildDate>
+    <category>Community</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/discourse-this-and-activitypub/879.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Discourse [this] and ActivityPub</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>I just provided a follow-up to the discussion with the advice to take current reality into account, and to start following a different approach to gauging the value of AP support.</p>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/1b0984d7ee08bce90572f46a1950e1ced436d028.png" class="site-icon" width="32" height="32">
+      <a href="https://meta.discourse.org/t/activitypub-support-phase-1-rfc/132624/30?u=aschrijver" target="_blank" rel="noopener" title="07:07AM - 17 December 2020">Discourse Meta – 17 Dec 20</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/ecc92a52ee7353e03d5c0d1ea6521ce4541d9c25_2_500x500.png" class="thumbnail onebox-avatar" width="500" height="500" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/ecc92a52ee7353e03d5c0d1ea6521ce4541d9c25_2_500x500.png, https://socialhub.activitypub.rocks/uploads/default/original/1X/ecc92a52ee7353e03d5c0d1ea6521ce4541d9c25.png 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/1X/ecc92a52ee7353e03d5c0d1ea6521ce4541d9c25.png 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/ecc92a52ee7353e03d5c0d1ea6521ce4541d9c25_2_10x10.png">
+
+<h3><a href="https://meta.discourse.org/t/activitypub-support-phase-1-rfc/132624/30?u=aschrijver" target="_blank" rel="noopener">ActivityPub Support: Phase 1 RFC</a></h3>
+
+<p>Hi there @rishabh, @riking, @codinghorror,   Some time ago I understood from @sl007 and @hellekin that you won’t be pursuing this Phase 1 in the short term, even with the NGI0 funding. As a fellow promoter of interop based on ActivityPub I too find...</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>Here’s the gist of my proposal:</p>
+<blockquote>
+<h2>TL;DR</h2>
+<p>In summary I am arguing that, given current stance on having ActivityPub support, it may be prudent to go from a short-term MVP-like focus, to a more broad evaluation of what ActivityPub interoperability could bring Discourse in terms of USP’s and positioning in the longer run. I.e. to <strong>elaborate the business case of ActivityPub adoption</strong>, starting with an ideation phase.</p>
+</blockquote>
+<p>The conclusion of the Phase 1 RFC at Discourse is obviously that the proposed ‘FB-like aggregated timeline’ feature does not make enough business sense to be pursued. So then let’s step out of the narrow vision and investigate ALL of the many ways that ActivityPub adoption might lead to worthwhile and logical features to have in a forum software.</p>
+<p>In addition I highlighted the imho too often made misconception by so many people that implementing ActivityPub is done primarily for the purpose to ‘become part of the Fediverse’. While this is a very good incentive, it is selling ActivityPub short! I think I will create a separate topic to bring this to attention.</p>
+<p>As an incentive to Discourse to investigate AP more broadly I mentioned this opportunity:</p>
+<blockquote>
+<p><strong>Opportunity</strong>: Discourse is uniquely positioned to take the lead in setting interoperability standards for forum software, and shape the standard in such way that it aligns perfectly with current Discourse feature set.</p>
+</blockquote>
+<p>And also I mentioned that the opportunity might turn into a threat, if competitors would take the lead here, or even the Big Tech platforms driven by EU Digital Services Act and creating overlap with forum federation in their standard.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/discourse-this-and-activitypub/879/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/discourse-this-and-activitypub/879/5</link>
+        <pubDate>Thu, 17 Dec 2020 07:34:32 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-879-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/discourse-this-and-activitypub/879.rss">Discourse [this] and ActivityPub</source>
+      </item>
+      <item>
+        <title>Discourse [this] and ActivityPub</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Can they give the money to someone who is working meanwhile ?<br>
+</p><aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/1b0984d7ee08bce90572f46a1950e1ced436d028.png" class="site-icon" width="32" height="32">
+      <a href="https://meta.discourse.org/t/activitypub-support-phase-1-rfc/132624/14" target="_blank" title="12:26PM - 16 August 2020">Discourse Meta – 16 Aug 20</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/ecc92a52ee7353e03d5c0d1ea6521ce4541d9c25_2_500x500.png" class="thumbnail onebox-avatar" width="500" height="500" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/ecc92a52ee7353e03d5c0d1ea6521ce4541d9c25_2_500x500.png, https://socialhub.activitypub.rocks/uploads/default/original/1X/ecc92a52ee7353e03d5c0d1ea6521ce4541d9c25.png 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/1X/ecc92a52ee7353e03d5c0d1ea6521ce4541d9c25.png 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/ecc92a52ee7353e03d5c0d1ea6521ce4541d9c25_2_10x10.png">
+
+<h3><a href="https://meta.discourse.org/t/activitypub-support-phase-1-rfc/132624/14" target="_blank">ActivityPub Support: Phase 1 RFC</a></h3>
+
+<p>Congrats for the EU money!  https://nlnet.nl/project/DiscourseActivityPub/  Is there a roadmap?  Anyone from Discourse team coming to the ActivityPub Conf?  It would be a great moment to meet and match with other AP implementors. ...</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/discourse-this-and-activitypub/879/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/discourse-this-and-activitypub/879/4</link>
+        <pubDate>Sun, 16 Aug 2020 11:55:50 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-879-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/discourse-this-and-activitypub/879.rss">Discourse [this] and ActivityPub</source>
+      </item>
+      <item>
+        <title>Discourse [this] and ActivityPub</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>The Discourse team decided to postpone implementation.</p>
+<p>(Attachment 0x0B1496B7E33603EB.asc is missing)</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/discourse-this-and-activitypub/879/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/discourse-this-and-activitypub/879/3</link>
+        <pubDate>Sun, 16 Aug 2020 10:55:33 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-879-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/discourse-this-and-activitypub/879.rss">Discourse [this] and ActivityPub</source>
+      </item>
+      <item>
+        <title>Discourse [this] and ActivityPub</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Something to ask on <a href="http://meta.discourse.org" rel="nofollow noopener">meta.discourse.org</a>?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/discourse-this-and-activitypub/879/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/discourse-this-and-activitypub/879/2</link>
+        <pubDate>Sat, 15 Aug 2020 11:24:05 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-879-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/discourse-this-and-activitypub/879.rss">Discourse [this] and ActivityPub</source>
+      </item>
+      <item>
+        <title>Discourse [this] and ActivityPub</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="https://nlnet.nl/project/DiscourseActivityPub/">https://nlnet.nl/project/DiscourseActivityPub/</a> <em>says</em><br>
+“This project was funded through the <a href="https://nlnet.nl/discovery">NGI0 Discovery </a>Fund, a fund established by NLnet with financial support from the European Commission’s <a href="https://ngi.eu/">Next Generation Internet</a> programme”</p>
+<p><strong>As a citizen of the European Union I demand an official statement <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></strong></p>
+<p>What is the current state of ActivityPub support in discourse and thus for this forum?<br>
+Do people need help?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/discourse-this-and-activitypub/879/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/discourse-this-and-activitypub/879/1</link>
+        <pubDate>Sat, 15 Aug 2020 09:33:58 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-879-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/discourse-this-and-activitypub/879.rss">Discourse [this] and ActivityPub</source>
+      </item>
+  </channel>
+</rss>

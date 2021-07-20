@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>About Pleroma</title>
+    <link>https://socialhub.activitypub.rocks/t/about-pleroma/59</link>
+    <description>Pleroma is a free, federated social networking server built on open protocols (ActivityPub and OStatus). It&#39;s ressource usage is lightweight (can run on a Raspberry Pi) and is easy to deploy (only requires PostgreSQL for releases).
+
+* Homepage: https://pleroma.social/
+* Source code: https://git.pleroma.social/pleroma
+* Documentation: [url=https://docs.pleroma.social/]master[/url], [url=https://docs-develop.pleroma.social/]develop[/url]
+* Releases: https://git.pleroma.social/pleroma/pleroma/-/tags
+* Chatrooms: `#pleroma` and `#pleroma-dev` on Freenode IRC, also available on Matrix via https://matrix.heldscal.la/#/room/#freenode_#pleroma:matrix.org</description>
+    
+    <lastBuildDate>Sun, 22 Sep 2019 22:41:24 +0000</lastBuildDate>
+    <category>Pleroma</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/about-pleroma/59.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>About Pleroma</title>
+        <dc:creator><![CDATA[lanodan]]></dc:creator>
+        <description><![CDATA[
+            <p>Pleroma is a free, federated social networking server built on open protocols (ActivityPub and OStatus). It’s ressource usage is lightweight (can run on a Raspberry Pi) and is easy to deploy (only requires PostgreSQL for releases).</p>
+<ul>
+<li>Homepage: <a href="https://pleroma.social/" rel="nofollow noopener">https://pleroma.social/</a>
+</li>
+<li>Source code: <a href="https://git.pleroma.social/pleroma" rel="nofollow noopener">https://git.pleroma.social/pleroma</a>
+</li>
+<li>Documentation: <a href="https://docs.pleroma.social/" data-bbcode="true" rel="nofollow noopener">master</a>, <a href="https://docs-develop.pleroma.social/" data-bbcode="true" rel="nofollow noopener">develop</a>
+</li>
+<li>Releases: <a href="https://git.pleroma.social/pleroma/pleroma/-/tags" rel="nofollow noopener">https://git.pleroma.social/pleroma/pleroma/-/tags</a>
+</li>
+<li>Chatrooms: <code>#pleroma</code> and <code>#pleroma-dev</code> on Freenode IRC, also available on Matrix via <a href="https://matrix.heldscal.la/#/room/#freenode_#pleroma:matrix.org" rel="nofollow noopener">https://matrix.heldscal.la/#/room/#freenode_#pleroma:matrix.org</a>
+</li>
+</ul>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-pleroma/59/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-pleroma/59/1</link>
+        <pubDate>Thu, 19 Sep 2019 14:21:54 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-59-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-pleroma/59.rss">About Pleroma</source>
+      </item>
+  </channel>
+</rss>

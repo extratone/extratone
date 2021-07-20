@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Does an Actor *have to have* their own inbox, or is a sharedInbox enough?</title>
+    <link>https://socialhub.activitypub.rocks/t/does-an-actor-have-to-have-their-own-inbox-or-is-a-sharedinbox-enough/1091</link>
+    <description>If Actor @Alice@A has one follower @Bob@B, then addressing a message to Bob&#39;s inbox means the message is sent once. But when Bob&#39;s friend @Rob@B also follows Alice, the next post addressed at followers will be sent twice by default. Taking up twice the bandwidth.
+
+I understand that the sharedInbox is meant to solve this, but that there&#39;s some contention over how it&#39;s specified or implemented..? Under which circumstances is the sharedInbox used? Can a receiving server opt to use it exclusively (or would that break interoperability with existing systems)?
+
+If you find the sharedInbox problematic, can you explain your issues with it and how it might be improved?</description>
+    
+    <lastBuildDate>Tue, 20 Oct 2020 14:20:37 +0000</lastBuildDate>
+    <category>ActivityPub</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/does-an-actor-have-to-have-their-own-inbox-or-is-a-sharedinbox-enough/1091.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Does an Actor *have to have* their own inbox, or is a sharedInbox enough?</title>
+        <dc:creator><![CDATA[tinyrabbit]]></dc:creator>
+        <description><![CDATA[
+            <p>Would these issues be circumvented with explicit addressing? Or does that introduce other side effects?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/does-an-actor-have-to-have-their-own-inbox-or-is-a-sharedinbox-enough/1091/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/does-an-actor-have-to-have-their-own-inbox-or-is-a-sharedinbox-enough/1091/7</link>
+        <pubDate>Tue, 20 Oct 2020 14:20:37 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1091-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/does-an-actor-have-to-have-their-own-inbox-or-is-a-sharedinbox-enough/1091.rss">Does an Actor *have to have* their own inbox, or is a sharedInbox enough?</source>
+      </item>
+      <item>
+        <title>Does an Actor *have to have* their own inbox, or is a sharedInbox enough?</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p>This is one of the few times you’ll see me agree with <a class="mention" href="/u/cjs">@cjs</a>, but sharedInbox is underspecificed, buggy, and prone to desynchronization issues. It makes sense for some type of content, and it’s unavoidable when you’re talking about accounts like Gargron who have up to half a million followers, but I think it’s good to avoid relying on it, because it can introduce surprising and hard to debug issues in your application when two servers disagree on what members a collection has (among other things).</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/does-an-actor-have-to-have-their-own-inbox-or-is-a-sharedinbox-enough/1091/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/does-an-actor-have-to-have-their-own-inbox-or-is-a-sharedinbox-enough/1091/6</link>
+        <pubDate>Tue, 20 Oct 2020 13:25:22 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1091-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/does-an-actor-have-to-have-their-own-inbox-or-is-a-sharedinbox-enough/1091.rss">Does an Actor *have to have* their own inbox, or is a sharedInbox enough?</source>
+      </item>
+      <item>
+        <title>Does an Actor *have to have* their own inbox, or is a sharedInbox enough?</title>
+        <dc:creator><![CDATA[tinyrabbit]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ll implement both kinds for maximum compatibility, I guess <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>While I find it noble and good in general to stick to the model, performance takes precedent for me in almost all cases. From that perspective it seems wasteful to send several more copies of a message than needed.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/does-an-actor-have-to-have-their-own-inbox-or-is-a-sharedinbox-enough/1091/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/does-an-actor-have-to-have-their-own-inbox-or-is-a-sharedinbox-enough/1091/5</link>
+        <pubDate>Tue, 20 Oct 2020 06:57:46 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1091-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/does-an-actor-have-to-have-their-own-inbox-or-is-a-sharedinbox-enough/1091.rss">Does an Actor *have to have* their own inbox, or is a sharedInbox enough?</source>
+      </item>
+      <item>
+        <title>Does an Actor *have to have* their own inbox, or is a sharedInbox enough?</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>For me, there’s no difference between the two kinds of inboxes on the receiving end. <a href="https://github.com/grishka/Smithereen/blob/2782cd7afeb65a2135bbbcb62bef2a8a135dfe55/src/main/java/smithereen/routes/ActivityPubRoutes.java#L456" rel="noopener nofollow ugc">They’re literally handled by the same function.</a> When sending, however, I usually send activities that are only intended for one user (Follow, Like, etc) to their own inbox, and activities that are public, like Create, to the shared inbox if available. I deduplicate inbox URLs so if there are multiple actors on the same server that doesn’t have a shared inbox, I’ll end up sending as many copies of the same thing as there are target actors on that server.</p>
+<p>If one were to follow the spec letter-to-letter, then it could become possible for different actors on the same server to have different views of the same object (e.g. one user did receive a Like, but another did not). In practice, I’ve yet to see a project that would implement its database to do this.</p>
+<p>Most implementations have a UI-centric database schema and all the ActivityPub concepts only exist for the purpose of server-to-server communication. As in, no one (I know of) is actually storing an inbox or outbox as a list of activities, and AP objects are generated on the fly from available data whenever needed.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/does-an-actor-have-to-have-their-own-inbox-or-is-a-sharedinbox-enough/1091/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/does-an-actor-have-to-have-their-own-inbox-or-is-a-sharedinbox-enough/1091/4</link>
+        <pubDate>Mon, 19 Oct 2020 23:35:34 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1091-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/does-an-actor-have-to-have-their-own-inbox-or-is-a-sharedinbox-enough/1091.rss">Does an Actor *have to have* their own inbox, or is a sharedInbox enough?</source>
+      </item>
+      <item>
+        <title>Does an Actor *have to have* their own inbox, or is a sharedInbox enough?</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <p>I have a strong opinion. <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Don’t use shared inbox unless you want to support instances of tens of thousands of users, and even then there are other ways to scale. As I understand, it was only introduced so that Gargron could easily scale his flagship instance.</p>
+<p>It’s the <em>only</em> ActivityPub feature that breaks the Actor model. If you don’t give Actors their own inbox, then you’re doubling down on breaking the Actor model. I don’t recommend breaking the actor model.</p>
+<p>Edit to add: convention is some software supports shared inbox, but all software supports the Actor model.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/does-an-actor-have-to-have-their-own-inbox-or-is-a-sharedinbox-enough/1091/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/does-an-actor-have-to-have-their-own-inbox-or-is-a-sharedinbox-enough/1091/3</link>
+        <pubDate>Mon, 19 Oct 2020 14:32:27 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1091-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/does-an-actor-have-to-have-their-own-inbox-or-is-a-sharedinbox-enough/1091.rss">Does an Actor *have to have* their own inbox, or is a sharedInbox enough?</source>
+      </item>
+      <item>
+        <title>Does an Actor *have to have* their own inbox, or is a sharedInbox enough?</title>
+        <dc:creator><![CDATA[tinyrabbit]]></dc:creator>
+        <description><![CDATA[
+            <p>Sorry for the accidental mention, <a class="mention" href="/u/alice">@Alice</a>!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/does-an-actor-have-to-have-their-own-inbox-or-is-a-sharedinbox-enough/1091/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/does-an-actor-have-to-have-their-own-inbox-or-is-a-sharedinbox-enough/1091/2</link>
+        <pubDate>Mon, 19 Oct 2020 12:38:47 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1091-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/does-an-actor-have-to-have-their-own-inbox-or-is-a-sharedinbox-enough/1091.rss">Does an Actor *have to have* their own inbox, or is a sharedInbox enough?</source>
+      </item>
+      <item>
+        <title>Does an Actor *have to have* their own inbox, or is a sharedInbox enough?</title>
+        <dc:creator><![CDATA[tinyrabbit]]></dc:creator>
+        <description><![CDATA[
+            <p>If Actor <a class="mention" href="/u/alice">@Alice</a>@A has one follower <span class="mention">@Bob</span>@B, then addressing a message to Bob’s inbox means the message is sent once. But when Bob’s friend <span class="mention">@Rob</span>@B also follows Alice, the next post addressed at followers will be sent twice by default. Taking up twice the bandwidth.</p>
+<p>I understand that the sharedInbox is meant to solve this, but that there’s some contention over how it’s specified or implemented…? Under which circumstances is the sharedInbox used? Can a receiving server opt to use it exclusively (or would that break interoperability with existing systems)?</p>
+<p>If you find the sharedInbox problematic, can you explain your issues with it and how it might be improved?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/does-an-actor-have-to-have-their-own-inbox-or-is-a-sharedinbox-enough/1091/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/does-an-actor-have-to-have-their-own-inbox-or-is-a-sharedinbox-enough/1091/1</link>
+        <pubDate>Mon, 19 Oct 2020 12:37:44 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1091-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/does-an-actor-have-to-have-their-own-inbox-or-is-a-sharedinbox-enough/1091.rss">Does an Actor *have to have* their own inbox, or is a sharedInbox enough?</source>
+      </item>
+  </channel>
+</rss>

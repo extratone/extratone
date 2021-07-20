@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Is json-ld compatibe to json-ld and what does activityPub understand with json-ld - #3 by naturzukunft - ActivityPub - SocialHub</title>
+    <meta name="description" content="unfortunately i keep running into problems with parsing json-ld and the problem that others can’t interpret “my” json-ld. if i take “my” json-ld and paste it into JSON-LD Playground everything seems to be ok. 
+So it look&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="../1841.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Is json-ld compatibe to json-ld and what does activityPub understand with json-ld&#39;" href="../1841.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/is-json-ld-compatibe-to-json-ld-and-what-does-activitypub-understand-with-json-ld/1841/3" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/is-json-ld-compatibe-to-json-ld-and-what-does-activitypub-understand-with-json-ld/1841/3" />
+<meta property="og:title" content="Is json-ld compatibe to json-ld and what does activityPub understand with json-ld" />
+<meta name="twitter:title" content="Is json-ld compatibe to json-ld and what does activityPub understand with json-ld" />
+<meta property="og:description" content="Today i found a way to be more compatible. titanium seems to do it’s job well!  Converting my RDF Model into the compact format like that:  import java.io.IOException; import java.io.StringReader; import java.io.StringWriter; import java.io.Writer; import java.util.HashMap; import java.util.Map;  import org.eclipse.rdf4j.model.Model; import org.eclipse.rdf4j.rio.RDFFormat; import org.eclipse.rdf4j.rio.Rio; import org.springframework.core.io.ClassPathResource;  import com.apicatalog.jsonld.JsonLd..." />
+<meta name="twitter:description" content="Today i found a way to be more compatible. titanium seems to do it’s job well!  Converting my RDF Model into the compact format like that:  import java.io.IOException; import java.io.StringReader; import java.io.StringWriter; import java.io.Writer; import java.util.HashMap; import java.util.Map;  import org.eclipse.rdf4j.model.Model; import org.eclipse.rdf4j.rio.RDFFormat; import org.eclipse.rdf4j.rio.Rio; import org.springframework.core.io.ClassPathResource;  import com.apicatalog.jsonld.JsonLd..." />
+<meta property="article:published_time" content="2021-06-08T09:56:41+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="../1841.html">Is json-ld compatibe to json-ld and what does activityPub understand with json-ld</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../../c/activitypub.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #0088CC'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>ActivityPub</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/naturzukunft.html'><span itemprop='name'>naturzukunft</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1841.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-06-07T19:25:17Z' class='post-time'>
+                June 7, 2021,  7:25pm
+              </time>
+              <meta itemprop='dateModified' content='2021-06-07T19:25:17Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>unfortunately i keep running into problems with parsing json-ld and the problem that others can’t interpret “my” json-ld. if i take “my” json-ld and paste it into <a href="https://json-ld.org/playground/" class="inline-onebox" rel="noopener nofollow ugc">JSON-LD Playground</a> everything seems to be ok.<br>
+So it looks like activityPub implementations speak a different json-ld. But I have the feeling that this json-ld is not specified.<br>
+Am I the only one with this problem?<br>
+I don’t want to write a json-ld parser/generator, but use libraries that exist and are provided in the RDF context. At the moment I rely on <a href="https://github.com/jsonld-java/jsonld-java" class="inline-onebox" rel="noopener nofollow ugc">GitHub - jsonld-java/jsonld-java: JSON-LD implementation for Java</a> which is used in the context of rdf4j.</p>
+<p>Framing does not seem to solve the problem either. At least it didn’t with Pleroma.</p>
+        </div>
+
+        <meta itemprop='headline' content='Is json-ld compatibe to json-ld and what does activityPub understand with json-ld'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/nightpool.html'><span itemprop='name'>nightpool</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1841.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-06-07T20:40:28Z' class='post-time'>
+                June 7, 2021,  8:40pm
+              </time>
+              <meta itemprop='dateModified' content='2021-06-07T20:40:28Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a href="https://www.w3.org/TR/activitystreams-core">https://www.w3.org/TR/activitystreams-core</a> (section 2.1) specifies the rules that ActivityPub documents need to conform to be considered valid. Tl;dr: It’s a specific subset of JSON-LD based on compacting it to the normative context “<code>http://www.w3.org/ns/activitystreams</code>”</p>
+        </div>
+
+        <meta itemprop='headline' content='Is json-ld compatibe to json-ld and what does activityPub understand with json-ld'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/naturzukunft.html'><span itemprop='name'>naturzukunft</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1841.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-06-08T09:56:41Z' class='post-time'>
+                June 8, 2021,  9:56am
+              </time>
+              <meta itemprop='dateModified' content='2021-06-08T09:56:41Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Today i found a way to be more compatible. <a href="https://github.com/filip26/titanium-json-ld" rel="noopener nofollow ugc">titanium</a> seems to do it’s job well!</p>
+<p>Converting my RDF Model into the compact format like that:</p>
+<pre><code class="lang-auto">import java.io.IOException;
+import java.io.StringReader;
+import java.io.StringWriter;
+import java.io.Writer;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.eclipse.rdf4j.model.Model;
+import org.eclipse.rdf4j.rio.RDFFormat;
+import org.eclipse.rdf4j.rio.Rio;
+import org.springframework.core.io.ClassPathResource;
+
+import com.apicatalog.jsonld.JsonLd;
+import com.apicatalog.jsonld.document.Document;
+import com.apicatalog.jsonld.document.JsonDocument;
+
+import jakarta.json.Json;
+import jakarta.json.JsonObject;
+import jakarta.json.JsonWriter;
+import jakarta.json.JsonWriterFactory;
+import jakarta.json.stream.JsonGenerator;
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+public class ApModelTools {
+
+	/**
+	 * Converts the passed model into a ActivityPub optimized string.
+	 * @param model The RDF4J Model
+	 * @param rdfFormat The format to convert to
+	 * @return The model as string.
+	 */
+	public static String toString(Model model, RDFFormat rdfFormat) {
+		
+		String modelAsString = modelToString(model, rdfFormat);
+		if(RDFFormat.JSONLD.equals(rdfFormat)) {
+			modelAsString = compact(modelAsString);	
+		}
+		return modelAsString;
+	}
+
+	/**
+	 * Converts the passed model into a string.
+	 * That can be a none optimized string for example in case of json-ld.
+	 * @param model The RDF4J Model
+	 * @param rdfFormat The format to convert to
+	 * @return The model as string.
+	 */
+	private static String modelToString(Model model, RDFFormat rdfFormat) {
+		StringWriter sw = new StringWriter();
+		Rio.write(model, sw, rdfFormat);
+		String modelAsString = sw.toString();
+		return modelAsString;
+	}
+		
+	/**
+	 * Converts the passed json-ld string into a &lt;a href="https://www.w3.org/TR/json-ld/#compacted-document-form"&gt;compact&lt;/a&gt; one.
+	 * @param rdf4jJsonLd string to be compacted
+	 * @return the compacted string or the input stream, if there was an error while converting. The error will be logged!
+	 */
+	private static String compact(String rdf4jJsonLd) {
+		try {
+			Document document = JsonDocument.of(new StringReader(rdf4jJsonLd));
+			Document frame = JsonDocument.of(new ClassPathResource("as.jsonld").getInputStream());
+			return jsonObjectToString(JsonLd.compact(document, frame)
+		      .ordered()
+		      .get());
+		} catch (Exception e) {
+			log.error("error compacting jsonLd", e);
+			return rdf4jJsonLd;
+		}
+	}
+	
+	/**
+	 * Converts the passed {@link JsonObject} into a pretty printed string.
+	 * @param json object to convert
+	 * @return a pretty printed string
+	 * @throws IOException
+	 */
+	private static String jsonObjectToString(JsonObject json) throws IOException	{
+	    Map&lt;String,Boolean&gt; config = new HashMap&lt;&gt;();
+	    config.put(JsonGenerator.PRETTY_PRINTING, true);
+	 
+	    JsonWriterFactory writerFactory = Json.createWriterFactory(config);
+	    try (Writer stringWriter = new StringWriter(); 
+	         JsonWriter jsonWriter = writerFactory.createWriter(stringWriter)) {
+	        jsonWriter.write(json);
+	        return stringWriter.toString();
+	    }
+	}		
+}
+</code></pre>
+<p>as.jsonld is more or less the same as:</p>
+<pre><code class="lang-auto">curl --location --request GET 'http://www.w3.org/ns/activitystreams' \
+--header 'Accept: application/ld+json'
+</code></pre>
+<p>Just with a small fix from <a class="mention" href="../../../u/pukkamustard.html">@pukkamustard</a></p>
+<p>So i’m again motivated to try some stuff with e.g. pleroma.</p>
+<p>Thanks to <a class="mention" href="../../../u/cjs.html">@cjs</a></p>
+        </div>
+
+        <meta itemprop='headline' content='Is json-ld compatibe to json-ld and what does activityPub understand with json-ld'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../rdf-to-json-ld/1842.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/rdf-to-json-ld/1842'>
+                      <span itemprop='name'>RDF to json-ld</span>
+                    </a>
+                    <meta itemprop='position' content='2'>
+                  </div>
+            </div>
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

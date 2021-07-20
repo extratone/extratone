@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Introducing FediDB - DevTools for ActivityPub</title>
+    <link>https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660</link>
+    <description># Introducing FediDB - DevTools for ActivityPub
+
+Hello Everyone!
+
+I am the lead developer of [Pixelfed](https://pixelfed.org) and know how challenging ActivityPub can be to implement.
+
+[FediDB](https://fedidb.org/about) is a suite of tools for AP devs to help make it easier to test and validate your implementation with existing implementations like Mastodon, PeerTube, Pixelfed and Pleroma.
+
+We have 3 main features in development:
+
+- **Request Bin** - HTTP Bin with valid AP Actor to test federation support (HTTP Sig, Verb + Actors and more)
+
+- **Verb Validator** - Validate objects with coverage report for known implementations
+
+- **Signature Checker** - HTTP Signature validation helper
+
+We look forward to adding support for more implementations and working with other projects to shape the direction of this project.
+
+The project is in private beta while we fix bugs, will be open to everyone soon!</description>
+    
+    <lastBuildDate>Sun, 27 Jun 2021 12:51:37 +0000</lastBuildDate>
+    <category>ActivityPub</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Introducing FediDB - DevTools for ActivityPub</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>I <a href="https://mastodon.social/@humanetech/106482722980107794">sent a toot replying to Daniel</a> and pointed to this discussion (I moved some posts from the Query AP topic to this more appropriate place).</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/32">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/32</link>
+        <pubDate>Sun, 27 Jun 2021 12:51:37 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-660-32</guid>
+        <source url="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660.rss">Introducing FediDB - DevTools for ActivityPub</source>
+      </item>
+      <item>
+        <title>Introducing FediDB - DevTools for ActivityPub</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Was the same for me.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/31">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/31</link>
+        <pubDate>Sun, 27 Jun 2021 12:38:30 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-660-31</guid>
+        <source url="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660.rss">Introducing FediDB - DevTools for ActivityPub</source>
+      </item>
+      <item>
+        <title>Introducing FediDB - DevTools for ActivityPub</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>Yeah now that the heat has subsided and my brain is capable of thinking again, I could really use some debugging tools with my friends/groups collections I’m now adding to actors. I did ask Daniel several times about access to <a href="http://fedidb.org" rel="noopener nofollow ugc">fedidb.org</a> but was mostly ignored ¯\_(ツ)_/¯</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/30">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/30</link>
+        <pubDate>Sun, 27 Jun 2021 11:56:06 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-660-30</guid>
+        <source url="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660.rss">Introducing FediDB - DevTools for ActivityPub</source>
+      </item>
+      <item>
+        <title>Introducing FediDB - DevTools for ActivityPub</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Ah, I see. Our 8 people and also 4 who commented on the forum are all waiting for access after we submitted our data.<br>
+I haven’t met anybody yet who got access.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/29">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/29</link>
+        <pubDate>Sun, 27 Jun 2021 07:53:28 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-660-29</guid>
+        <source url="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660.rss">Introducing FediDB - DevTools for ActivityPub</source>
+      </item>
+      <item>
+        <title>Introducing FediDB - DevTools for ActivityPub</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-redaktor.me" data-username="Sebastian" data-post="27" data-topic="660">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar"> Sebastian:</div>
+<blockquote>
+<p>Are you talking about the site?</p>
+</blockquote>
+</aside>
+<p>Yes, only from the description that is there (which looks promising, but very concise as to how it works after signup).</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/28">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/28</link>
+        <pubDate>Sun, 27 Jun 2021 07:23:39 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-660-28</guid>
+        <source url="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660.rss">Introducing FediDB - DevTools for ActivityPub</source>
+      </item>
+      <item>
+        <title>Introducing FediDB - DevTools for ActivityPub</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Moved from <a href="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866" class="inline-onebox">Querying ActivityPub collections</a> in response to:</p>
+<aside class="quote no-group" data-username="aschrijver" data-post="19" data-topic="1866" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/aschrijver/40/278_2.png" class="avatar"><a href="https://socialhub.activitypub.rocks/t/querying-activitypub-collections/1866/19">Querying ActivityPub collections</a>
+</div>
+<blockquote>
+<p>I didn’t verify if/how handled, but this is where <a class="mention" href="/u/dansup">@dansup</a>’s <a href="http://fedidb.org" rel="noopener nofollow ugc">fedidb.org</a> and <a class="mention" href="/u/cjs">@cjs</a> <a href="https://test.activitypub.dev/" rel="noopener nofollow ugc">testsuite</a> can be very useful in conformance reporting. We should encourage app devs to run these.</p>
+</blockquote>
+</aside>
+<hr>
+<p>Ehm, <a href="http://fedidb.org" rel="noopener nofollow ugc">fedidb.org</a> ?<br>
+Did anyone get access meanwhile?<br>
+The repository is an empty laravel app for now, so:<br>
+Are you talking about the site? Do you have access?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/27">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/27</link>
+        <pubDate>Sat, 26 Jun 2021 19:01:59 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-660-27</guid>
+        <source url="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660.rss">Introducing FediDB - DevTools for ActivityPub</source>
+      </item>
+      <item>
+        <title>Introducing FediDB - DevTools for ActivityPub</title>
+        <dc:creator><![CDATA[dansup]]></dc:creator>
+        <description><![CDATA[
+            <p>I have released the source code <a href="https://github.com/fedidb/fedidb-ce" rel="noopener nofollow ugc">here</a> and will be opening up <a href="https://fedidb.org" rel="noopener nofollow ugc">https://fedidb.org</a> to everyone in the coming days.</p>
+<p><a href="http://FediDB.org" rel="noopener nofollow ugc">FediDB.org</a> has grown beyond just developer tools, you can <a href="https://fedidb.org/network" rel="noopener nofollow ugc">browse the network</a>, <a href="https://fedidb.org/software" rel="noopener nofollow ugc">discover ActivityPub projects</a> or <a href="https://fedidb.org/community-resources" rel="noopener nofollow ugc">find other community resources</a>!</p>
+<p>The more I work on this, the more I realize that I cannot do it alone. This project has a lot of potential and should be stewarded by a community organization once it’s more stable.</p>
+<p>Have a nice day <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/smiley.png?v=9" title=":smiley:" class="emoji" alt=":smiley:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/26">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/26</link>
+        <pubDate>Tue, 25 May 2021 08:51:29 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-660-26</guid>
+        <source url="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660.rss">Introducing FediDB - DevTools for ActivityPub</source>
+      </item>
+      <item>
+        <title>Introducing FediDB - DevTools for ActivityPub</title>
+        <dc:creator><![CDATA[dansup]]></dc:creator>
+        <description><![CDATA[
+            <p>Apologies for the delay, I have been pretty busy lately.</p>
+<p>I have been refactoring FediDB so it can be used without an account/registration as that was requested a lot. I hope to release it this weekend along with the source code!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/25</link>
+        <pubDate>Fri, 30 Apr 2021 18:38:45 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-660-25</guid>
+        <source url="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660.rss">Introducing FediDB - DevTools for ActivityPub</source>
+      </item>
+      <item>
+        <title>Introducing FediDB - DevTools for ActivityPub</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>In theory, if we would get a confirmation mail, do you know what FediDB would offer ?</p>
+<p>I am asking because 3 years ago, I wrote these ActivityPub validation schemas …<br>
+They are language independent and there are several validators where you simply could save tests.<br>
+Could go on with that …</p>
+<aside class="onebox githubfolder">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/bad3e5f9ad67c1ddf145107ce7032ac1d7b22563.svg" class="site-icon" width="32" height="32">
+      <a href="https://github.com/redaktor/ActivityPubSchema" target="_blank" rel="noopener">github.com</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/345;"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/3/3815b324c4a6d55918317eea6b53a5e56e99e45b_2_690x345.png" class="thumbnail" width="690" height="345" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/3/3815b324c4a6d55918317eea6b53a5e56e99e45b_2_690x345.png, https://socialhub.activitypub.rocks/uploads/default/optimized/2X/3/3815b324c4a6d55918317eea6b53a5e56e99e45b_2_1035x517.png 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/2X/3/3815b324c4a6d55918317eea6b53a5e56e99e45b.png 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/3/3815b324c4a6d55918317eea6b53a5e56e99e45b_2_10x10.png"></div>
+
+<h3><a href="https://github.com/redaktor/ActivityPubSchema" target="_blank" rel="noopener">redaktor/ActivityPubSchema</a></h3>
+
+
+  <p><span class="label1">An inofficial proposal for ActivityPub - JSON Schemas (draft 07)</span></p>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/24</link>
+        <pubDate>Thu, 29 Apr 2021 10:28:04 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-660-24</guid>
+        <source url="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660.rss">Introducing FediDB - DevTools for ActivityPub</source>
+      </item>
+      <item>
+        <title>Introducing FediDB - DevTools for ActivityPub</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Update by the EU funding programme for FediDB:</p>
+<p><em>“So we cannot force people to work with other people - especially if</em><br>
+<em>there is conflict between individuals involved that can be inconvenient.</em></p>
+<p><em>The source code becomes incrementally available for you to use, so you</em><br>
+<em>could set up your own instance.”</em></p>
+<p>I did not know there is a difference after the “selected developer phase” then between “becoming public” and “becoming Open Source”, sorry!</p>
+<p>So, let’s wait …</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/23</link>
+        <pubDate>Thu, 15 Apr 2021 01:20:53 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-660-23</guid>
+        <source url="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660.rss">Introducing FediDB - DevTools for ActivityPub</source>
+      </item>
+      <item>
+        <title>Introducing FediDB - DevTools for ActivityPub</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Well, <em>I</em> know this. Just <code>Unlike</code> is not in the vocabulary.<br>
+This is a project which received big nlnet funding, so I hope, Dan will answer.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/22</link>
+        <pubDate>Sun, 11 Apr 2021 04:53:55 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-660-22</guid>
+        <source url="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660.rss">Introducing FediDB - DevTools for ActivityPub</source>
+      </item>
+      <item>
+        <title>Introducing FediDB - DevTools for ActivityPub</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>They are different things. Unlike is the removal of a like, <code>Undo{Like}</code>. Dislike is a downvote. And, consequently, undislike would be the removal of a dislike, <code>Undo{Dislike}</code>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/21</link>
+        <pubDate>Sun, 11 Apr 2021 03:32:38 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-660-21</guid>
+        <source url="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660.rss">Introducing FediDB - DevTools for ActivityPub</source>
+      </item>
+      <item>
+        <title>Introducing FediDB - DevTools for ActivityPub</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Sorry, <a class="mention" href="/u/dansup">@dansup</a> started this, so is informed about replies anywhere.<br>
+Discourse is a SILO software, not federated. So mentioning does the same as answering (?)<br>
+Apart from that, Sven applied with another email to FediDB and wrote it in the remarks box …</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/20</link>
+        <pubDate>Sat, 10 Apr 2021 05:43:09 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-660-20</guid>
+        <source url="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660.rss">Introducing FediDB - DevTools for ActivityPub</source>
+      </item>
+      <item>
+        <title>Introducing FediDB - DevTools for ActivityPub</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>On hindsight Like and Dislike were maybe just two of a wide range of social interactions with some content, that were popular / common at the time. Currently many platforms use a broader range of emotions you can express. For example both Github and LinkedIn using “Reactions”, so maybe e.g. a <code>React</code> activity with either an emoji representing the reaction, or a vocabulary of reaction types would be a good extension.</p>
+<p>Other than that, I agree. Unlike should be <code>Undo{Like}</code> (and usually a single button, but I understand if FediDB wants to make it more explicit what you are sending based on UI interactions, but maybe the button label should be ‘Undo Like’ as well then).</p>
+<p>PS. No one tagged <a class="mention" href="/u/dansup">@dansup</a> here, until now, with the notification email issue you are having… (which is most likely to give email notification)</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/19</link>
+        <pubDate>Sat, 10 Apr 2021 04:16:28 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-660-19</guid>
+        <source url="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660.rss">Introducing FediDB - DevTools for ActivityPub</source>
+      </item>
+      <item>
+        <title>Introducing FediDB - DevTools for ActivityPub</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes but this single button should be named <a href="https://www.w3.org/TR/activitystreams-vocabulary/#dfn-dislike"><code>Dislike</code></a> which is in fact an ActivityPub Activity!</p>
+<p>If people read “Unlike” on the front page (!) of an ActivityPub test suite then it bakes in the heads of users, it “crabs” brains (“crabs” as in “f.”) …</p>
+<p>The problem is really again an again:<br>
+We are talking about a <strong>protocol</strong>.<br>
+We can debate if Unlike or Dislike is a nicer word (maybe let’s watch Life of Brian in between).<br>
+Let us just NOT use the wrong word with the protocol, Pöhse Puben (don’t know french Life of Brian) …</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/18</link>
+        <pubDate>Fri, 09 Apr 2021 19:12:41 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-660-18</guid>
+        <source url="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660.rss">Introducing FediDB - DevTools for ActivityPub</source>
+      </item>
+      <item>
+        <title>Introducing FediDB - DevTools for ActivityPub</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>I’d assume you should be able to make custom activities and objects (or even templates for them?) and name them whatever you want. The “+” button suggests that. But, yeah, we’ll never know until we’re able to receive those emails.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/17</link>
+        <pubDate>Thu, 08 Apr 2021 01:52:35 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-660-17</guid>
+        <source url="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660.rss">Introducing FediDB - DevTools for ActivityPub</source>
+      </item>
+      <item>
+        <title>Introducing FediDB - DevTools for ActivityPub</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-redaktor.me" data-username="Sebastian" data-post="15" data-topic="660">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar"> Sebastian:</div>
+<blockquote>
+<p>While I can assume that “Unlike” is probably <code>Undo Like</code> (as specified),</p>
+</blockquote>
+</aside>
+<p>If this was the case I would expect a single button.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/16</link>
+        <pubDate>Wed, 07 Apr 2021 11:55:11 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-660-16</guid>
+        <source url="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660.rss">Introducing FediDB - DevTools for ActivityPub</source>
+      </item>
+      <item>
+        <title>Introducing FediDB - DevTools for ActivityPub</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>While waiting for access, thank you and my 2 cents from seeing this image :</p>
+<p><img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/79ede1b287a2b0963d47dac8d950f3bb7286b747.png" alt="Bildschirmfoto 2021-04-04 um 11.30.28" data-base62-sha1="hoDqQk91y4RFNtH7SBHRCsVHeT5" width="219" height="213"></p>
+<p>While I can assume that “Unlike” is probably  <code>Undo Like</code> (as specified),</p>
+<p>I can also assume “Photo” is the ActivityPub <code>Image</code> type.</p>
+<p>But totally wonder what “Text” or “Poll” means as they do not exist in AP.<br>
+“Poll” is probably <code>Question</code> but with “Text” you can either be like Trump and send <code>Note</code> or you can be clever and write <code>Article</code> while also <code>Document</code> could be “Text”…</p>
+<p>Could this become conformant?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/15</link>
+        <pubDate>Sun, 04 Apr 2021 16:37:09 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-660-15</guid>
+        <source url="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660.rss">Introducing FediDB - DevTools for ActivityPub</source>
+      </item>
+      <item>
+        <title>Introducing FediDB - DevTools for ActivityPub</title>
+        <dc:creator><![CDATA[Alamantus]]></dc:creator>
+        <description><![CDATA[
+            <p>I was wondering the same <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/14</link>
+        <pubDate>Sun, 04 Apr 2021 04:56:53 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-660-14</guid>
+        <source url="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660.rss">Introducing FediDB - DevTools for ActivityPub</source>
+      </item>
+      <item>
+        <title>Introducing FediDB - DevTools for ActivityPub</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Any chance to get access to FediDB  (“confirmation mail”)?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/13</link>
+        <pubDate>Sat, 03 Apr 2021 12:39:17 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-660-13</guid>
+        <source url="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660.rss">Introducing FediDB - DevTools for ActivityPub</source>
+      </item>
+      <item>
+        <title>Introducing FediDB - DevTools for ActivityPub</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Congratulations <a class="mention" href="/u/dansup">@dansup</a> the UI looks great, clean and crisp. You probably noticed, but yesterday FediDB featured on HN at <a href="https://news.ycombinator.com/item?id=26539292" class="inline-onebox">FediDB – Developer Tools for ActivityPub | Hacker News</a>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/12</link>
+        <pubDate>Tue, 23 Mar 2021 13:10:08 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-660-12</guid>
+        <source url="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660.rss">Introducing FediDB - DevTools for ActivityPub</source>
+      </item>
+      <item>
+        <title>Introducing FediDB - DevTools for ActivityPub</title>
+        <dc:creator><![CDATA[dansup]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you! We are using a generic Terms and Privacy policy similar to the one we used on Pixelfed. The project is free, and I will work on replacing those pages with better policies that reflect the project.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/11</link>
+        <pubDate>Sun, 21 Mar 2021 15:00:43 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-660-11</guid>
+        <source url="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660.rss">Introducing FediDB - DevTools for ActivityPub</source>
+      </item>
+      <item>
+        <title>Introducing FediDB - DevTools for ActivityPub</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey <a class="mention" href="/u/dansup">@dansup</a>, congratulations on launching FediDB. I see that the <a href="https://fedidb.org/terms">license</a> is not free, can you explain why? I thought FediDB was a tool to help ActivityPub developers to test their applications. How can that be non-free?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/10</link>
+        <pubDate>Sun, 21 Mar 2021 09:52:01 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-660-10</guid>
+        <source url="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660.rss">Introducing FediDB - DevTools for ActivityPub</source>
+      </item>
+      <item>
+        <title>Introducing FediDB - DevTools for ActivityPub</title>
+        <dc:creator><![CDATA[dansup]]></dc:creator>
+        <description><![CDATA[
+            <p>FediDB is now available for everyone!</p>
+<p><a href="https://fedidb.org" class="onebox" target="_blank" rel="noopener nofollow ugc">https://fedidb.org</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/9</link>
+        <pubDate>Sun, 21 Mar 2021 08:21:53 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-660-9</guid>
+        <source url="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660.rss">Introducing FediDB - DevTools for ActivityPub</source>
+      </item>
+      <item>
+        <title>Introducing FediDB - DevTools for ActivityPub</title>
+        <dc:creator><![CDATA[jarofgreen]]></dc:creator>
+        <description><![CDATA[
+            <p>Cool! Would dev tools in general be a good topic for one of the regular meetings? <a href="https://socialhub.activitypub.rocks/c/meeting/socialcg/15" class="inline-onebox">SocialCG - SocialHub</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/8</link>
+        <pubDate>Sat, 06 Mar 2021 19:49:23 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-660-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660.rss">Introducing FediDB - DevTools for ActivityPub</source>
+      </item>
+  </channel>
+</rss>

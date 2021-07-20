@@ -1,0 +1,36 @@
+<!DOCTYPE html><head><meta charset="utf-8" /><title>Mastodon launches their ActivityPub support, and a new CR! -- ActivityPub Rocks!</title><link rel="stylesheet" href="../static/css/main.css" /><link rel="alternate" title="ActivityPub news" type="application/atom+xml" href="../feed.xml" /></head><body><div class="main-wrapper"><header id="site-header"><a href="../index.html"><img src="../static/images/ActivityPub-logo.svg" /></a></header><div class="site-main-content"><div class="content-box blogpost"><header class="post-title">Mastodon launches their ActivityPub support, and a new CR!</header><div class="post-about"><span class="by-line">Christopher Lemmer Webber</span> -- Sun 10 September 2017</div><div class="post-body"><p>Greetings!
+     Big news this week, from multiple directions!</p><h2>Mastodon and ActivityPub, together at last!</h2><p>First of all,
+     <a href="https://joinmastodon.org/">Mastodon</a>
+     has
+     <a href="https://hackernoon.com/mastodon-and-the-w3c-f75f376f422">launched version 1.6 with ActivityPub support</a>!
+     This is a <em>huge</em> piece of news.
+     While Mastodon is not the first implementer of ActivityPub, they
+     are by far the largest existing implementation, with approximately
+     850k registered users.
+     We're excited to have them on board!</p><h2>A new Candidate Recommendation!</h2><p>This week we published a
+     <a href="https://www.w3.org/TR/2017/CR-activitypub-20170907/">new Candidate Recommendation</a>
+     (aka &quot;CR&quot;) of
+     <a href="https://www.w3.org/TR/activitypub/">ActivityPub</a>.
+     This release contains two major changes:</p><ul><li><code><a href="https://www.w3.org/TR/activitypub/#follow-activity-inbox">Follow</a></code>
+          requests are now explicitly replied to with either an
+          <code><a href="https://www.w3.org/TR/activitypub/#accept-activity-inbox">Accept</a></code>
+          or
+          <code><a href="https://www.w3.org/TR/activitypub/#reject-activity-inbox">Reject</a></code>.</li><li><code>publicInbox</code>
+          is now renamed to
+          <code><a href="https://www.w3.org/TR/activitypub/#shared-inbox-delivery">sharedInbox</a></code>
+          and in addition to being used for distributing and reading public
+          posts, it may also be used to deliver posts to followers to reduce
+          the number of HTTP requests made on followers-only posts between federated
+          servers.</li></ul><p>These changes are normative, so update your implementations!</p><p>The Candidate Recommendation is the period in which we try to
+     stabilize the standard and get enough implementation to make it to
+     Recommendation status.
+     We don't take normative changes lightly, but sometimes we such changes
+     are found to be necessary in this stage... in this case, we found that
+     both of these changes were necessary for Mastodon, and projects the
+     size of Mastodon, to adopt ActivityPub.</p><h2>What's next?</h2><p>We've quietly launched the
+     <a href="https://test.activitypub.rocks/">test suite</a>...
+     very quietly, because not all test suite functionality is added yet!
+     Only the &quot;client-to-server server&quot; section is yet working.
+     However, we're working on the rest of it and hope to have it up
+     sometime within the next few weeks.</p><p>That's it for now.
+     Happy implementing, everyone!</p></div></div></div></div><div class="footer"><a href="https://gitlab.com/dustyweb/activitypub.rocks">Site contents</a> dual licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-Sharealike 4.0 International</a> and <a href="http://www.gnu.org/licenses/gpl-3.0.en.html">the GNU GPL, version 3 or any later version</a>.  ActivityPub logo by mray, released into public domain under <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>. Powered by <a href="http://haunt.dthompson.us/">Haunt</a>.</div></body>

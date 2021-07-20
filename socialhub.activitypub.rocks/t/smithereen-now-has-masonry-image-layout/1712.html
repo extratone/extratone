@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Smithereen now has Masonry Image layout - Smithereen - SocialHub</title>
+    <meta name="description" content="Interesting. I implemented VK’s variant of “masonry layout” (ab)using CSS grid a while ago. It’s generated fully on the backend, the layout keeps its aspect ratio when resized and requires zero JS. Here’s one and anothe&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="1712.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Smithereen now has Masonry Image layout&#39;" href="1712.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/smithereen-now-has-masonry-image-layout/1712" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/smithereen-now-has-masonry-image-layout/1712" />
+<meta property="og:title" content="Smithereen now has Masonry Image layout" />
+<meta name="twitter:title" content="Smithereen now has Masonry Image layout" />
+<meta property="og:description" content="Interesting. I implemented VK’s variant of “masonry layout” (ab)using CSS grid a while ago. It’s generated fully on the backend, the layout keeps its aspect ratio when resized and requires zero JS. Here’s one and another post as an example. (I just now realized that I don’t have any posts with many photos on my live instance, but the algorithm supports up to 10)" />
+<meta name="twitter:description" content="Interesting. I implemented VK’s variant of “masonry layout” (ab)using CSS grid a while ago. It’s generated fully on the backend, the layout keeps its aspect ratio when resized and requires zero JS. Here’s one and another post as an example. (I just now realized that I don’t have any posts with many photos on my live instance, but the algorithm supports up to 10)" />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="1 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="3 ❤" />
+<meta property="article:published_time" content="2021-05-06T01:14:49+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="1712.html">Smithereen now has Masonry Image layout</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/software/index.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #3AB54A'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Software</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/software/smithereen/52.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #AAB42F'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Smithereen</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1712.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-05-06T01:14:49Z'>
+              <time itemprop='dateModified' datetime='2021-05-07T14:16:47Z' class='post-time'>
+                May 7, 2021,  2:16pm
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote group-redaktor.me" data-username="Sebastian" data-post="4" data-topic="1697">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar"> Sebastian:</div>
+<blockquote>
+<p>In this week <a class="mention-group" href="../../groups/redaktor.me.html">@redaktor.me</a> implemented support for the <a href="https://drafts.csswg.org/css-grid-3/" rel="noopener nofollow ugc">native CSS masonry grid layout</a></p>
+</blockquote>
+</aside>
+<p>Interesting. I implemented VK’s variant of “masonry layout” (ab)using CSS grid a while ago. It’s generated fully on the backend, the layout keeps its aspect ratio when resized and requires zero JS. Here’s <a href="https://friends.grishka.me/posts/14616" rel="noopener nofollow ugc">one</a> and <a href="https://friends.grishka.me/posts/6442" rel="noopener nofollow ugc">another</a> post as an example. (I just now realized that I don’t have any posts with many photos on my live instance, but the algorithm supports up to 10)</p>
+        </div>
+
+        <meta itemprop='headline' content='Smithereen now has Masonry Image layout'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="3" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../2021-05-07-socialcg-meeting/1697/5.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/2021-05-07-socialcg-meeting/1697/5'>
+                      <span itemprop='name'>2021-05-07 SocialCG Meeting</span>
+                    </a>
+                    <meta itemprop='position' content='3'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../opinions-on-images/1695/2.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/opinions-on-images/1695/2'>
+                      <span itemprop='name'>Opinions on `images`?</span>
+                    </a>
+                    <meta itemprop='position' content='4'>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1712.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-05-06T02:36:35Z'>
+              <time itemprop='dateModified' datetime='2021-05-07T14:16:47Z' class='post-time'>
+                May 7, 2021,  2:16pm
+              </time>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>This is nice.<br>
+In general I know that we can do without JS, this is why I support the mentioned native CSS which we can already use today in FF behind a flag.</p>
+<p>I would do it with a similar CSS fallback than yours but then not all of the following would be met …</p>
+<p>There are some constraint for redaktor and one is the<br>
+<code>grid-auto-rows: var(--line, 16px);</code> in my CSS<br>
+which is adjusting the thing to redaktors’ solid baseline, everything multicolumn will regardless of font sizes have the same typographic baseline everywhere.<br>
+If people look at <a href="https://github.com/redaktor/widgets-preview/blob/d593028bebfe5948c814cc95a1d90652c91e3040/src/theme/material/_typo.css" class="inline-onebox">widgets-preview/_typo.css at d593028bebfe5948c814cc95a1d90652c91e3040 · redaktor/widgets-preview · GitHub</a> they would probably think I am crazy with these strange numbers <img src="../../images/emoji/twitter/slight_smile.png@v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"> but the reason is that when you build a theme in redaktor CMS, you can define a rythm (like when playing guitar) and base size for your typography.<br>
+And so anything containing media must snap …</p>
+<p>The other thing is that the layout is fully responsive 240px - 4K and so the number of “columns” in the masonry will vary …</p>
+<p>However, Firefox has it and Safari in the Technology Preview so I think, browser support should be ready soon …</p>
+<p>btw: There is also a post on images: <a href="../opinions-on-images/1695.html" class="inline-onebox">Opinions on `images`?</a><br>
+What would interest me looking at your markup:<br>
+How can we define picture srcset from ActivityPub input?</p>
+<p>I guess this could be a task for AS3 because at least density is not supported while width/height is …</p>
+        </div>
+
+        <meta itemprop='headline' content='Smithereen now has Masonry Image layout'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1712.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-05-06T07:45:51Z'>
+              <time itemprop='dateModified' datetime='2021-05-07T14:16:47Z' class='post-time'>
+                May 7, 2021,  2:16pm
+              </time>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>What I meant with <code>&lt;picture&gt;</code> / <code>srcset</code> is:<br>
+Would that be a srcset ?</p>
+<p>Spec. Example 51 but with width …</p>
+<pre><code>{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "type": "Image",
+  "name": "Cat Jumping on Wagon",
+  "url": [
+    {
+      "type": "Link",
+      "href": "http://example.org/image.jpeg",
+      "mediaType": "image/jpeg",
+      "width": 400
+    },
+    {
+      "type": "Link",
+      "href": "http://example.org/image.png",
+      "mediaType": "image/jpeg",
+      "width": 1920
+    }
+  ]
+}</code></pre>
+        </div>
+
+        <meta itemprop='headline' content='Smithereen now has Masonry Image layout'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1712.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-05-06T09:06:32Z'>
+              <time itemprop='dateModified' datetime='2021-05-07T14:16:47Z' class='post-time'>
+                May 7, 2021,  2:16pm
+              </time>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote group-redaktor.me" data-username="Sebastian" data-post="2" data-topic="1712">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar"> Sebastian:</div>
+<blockquote>
+<p>What would interest me looking at your markup:<br>
+How can we define picture srcset from ActivityPub input?</p>
+</blockquote>
+</aside>
+<p>Right now I simply put links to full-size jpegs into my ActivityPub objects because that’s what everyone understands. Internally I store images as a single webp file (for space savings) and generate other formats and sizes on-the-fly using <a href="https://github.com/imgproxy/imgproxy" rel="noopener nofollow ugc">imgproxy</a> and store them in a fixed-size nginx cache — so an image going from one Smithereen instance to another would be recompressed many times along the way: webp → jpg → webp (and then again → jpg if you’re on safari).</p>
+<p>Yes, it would indeed be nice to serve webp to those who can deal with it. It would also be nice to serve multiple image sizes for the receiving side to choose from — this would be especially beneficial to those implementing c2s.</p>
+        </div>
+
+        <meta itemprop='headline' content='Smithereen now has Masonry Image layout'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1712.html">
+
+            <link itemprop="image" href="../../uploads/default/original/2X/6/6ada28320bc174c0dd819471f897c7b5e75864d1.jpeg">
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-05-07T12:34:18Z'>
+              <time itemprop='dateModified' datetime='2021-05-07T14:16:47Z' class='post-time'>
+                May 7, 2021,  2:16pm
+              </time>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../u/grishka.html">@grishka</a><br>
+Hello,</p>
+<p>I found a small bug <img src="../../images/emoji/twitter/bug.png@v=9" title=":bug:" class="emoji" alt=":bug:">   in the masonry you posted which is, the gaps are different horizontally and vertically.<br>
+This is cause <code>&lt;img&gt;</code> is <code>inline</code> by default but should be <code>block</code> …</p>
+<p>See e.g. <a href="https://friends.grishka.me/posts/14616" class="inline-onebox">Город понемногу возвращается к жизни. @rf@mastodon.ml | Григорий Клюшников</a></p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="../../uploads/default/original/2X/6/6ada28320bc174c0dd819471f897c7b5e75864d1.jpeg" data-download-href="https://socialhub.activitypub.rocks/uploads/default/6ada28320bc174c0dd819471f897c7b5e75864d1" title="Bildschirmfoto 2021-05-07 um 14.30.22"><img src="../../uploads/default/optimized/2X/6/6ada28320bc174c0dd819471f897c7b5e75864d1_2_345x132.jpeg" alt="Bildschirmfoto 2021-05-07 um 14.30.22" data-base62-sha1="ffg0GIHMLknuUO6epdE6aAppe7v" width="345" height="132" srcset="../../uploads/default/optimized/2X/6/6ada28320bc174c0dd819471f897c7b5e75864d1_2_345x132.jpeg, ../../uploads/default/optimized/2X/6/6ada28320bc174c0dd819471f897c7b5e75864d1_2_517x198.jpeg 1.5x, ../../uploads/default/optimized/2X/6/6ada28320bc174c0dd819471f897c7b5e75864d1_2_690x264.jpeg 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/6/6ada28320bc174c0dd819471f897c7b5e75864d1_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Bildschirmfoto 2021-05-07 um 14.30.22</span><span class="informations">972×372 55.4 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div> <div class="lightbox-wrapper"><a class="lightbox" href="../../uploads/default/original/2X/d/d5d583d4ccc2b61cb650d2a376ff217421568e8d.jpeg" data-download-href="https://socialhub.activitypub.rocks/uploads/default/d5d583d4ccc2b61cb650d2a376ff217421568e8d" title="Bildschirmfoto 2021-05-07 um 14.30.38"><img src="../../uploads/default/optimized/2X/d/d5d583d4ccc2b61cb650d2a376ff217421568e8d_2_345x245.jpeg" alt="Bildschirmfoto 2021-05-07 um 14.30.38" data-base62-sha1="uvF9Btqz2pdev15jVovRxkIjB6t" width="345" height="245" srcset="../../uploads/default/optimized/2X/d/d5d583d4ccc2b61cb650d2a376ff217421568e8d_2_345x245.jpeg, ../../uploads/default/optimized/2X/d/d5d583d4ccc2b61cb650d2a376ff217421568e8d_2_517x367.jpeg 1.5x, ../../uploads/default/optimized/2X/d/d5d583d4ccc2b61cb650d2a376ff217421568e8d_2_690x490.jpeg 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/d/d5d583d4ccc2b61cb650d2a376ff217421568e8d_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Bildschirmfoto 2021-05-07 um 14.30.38</span><span class="informations">1116×794 132 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+        </div>
+
+        <meta itemprop='headline' content='Smithereen now has Masonry Image layout'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1712.html">
+
+            <link itemprop="image" href="../../uploads/default/original/2X/f/fef0e47ce9a013e98a85f59d000573c62f5d3e91.jpeg">
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-05-07T12:48:21Z'>
+              <time itemprop='dateModified' datetime='2021-05-07T14:16:47Z' class='post-time'>
+                May 7, 2021,  2:16pm
+              </time>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote group-redaktor.me" data-username="Sebastian" data-post="5" data-topic="1712">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar"> Sebastian:</div>
+<blockquote>
+<p>This is cause <code>&lt;img&gt;</code> is <code>inline</code> by default but should be <code>block</code> …</p>
+</blockquote>
+</aside>
+<p>Ugh. Those stray paddings for text descenders ruin everything again. Also interesting that it <em>only</em> happens in Safari. And actually, this isn’t the only thing Safari renders wrong (look at the height):<br>
+<div class="lightbox-wrapper"><a class="lightbox" href="../../uploads/default/original/2X/f/fef0e47ce9a013e98a85f59d000573c62f5d3e91.jpeg" data-download-href="https://socialhub.activitypub.rocks/uploads/default/fef0e47ce9a013e98a85f59d000573c62f5d3e91" title="Снимок экрана 2021-05-07 в 15.46.42"><img src="../../uploads/default/optimized/2X/f/fef0e47ce9a013e98a85f59d000573c62f5d3e91_2_690x330.jpeg" alt="Снимок экрана 2021-05-07 в 15.46.42" data-base62-sha1="Anjo115t4V0kRKgakEGfbZzPLDH" width="690" height="330" srcset="../../uploads/default/optimized/2X/f/fef0e47ce9a013e98a85f59d000573c62f5d3e91_2_690x330.jpeg, ../../uploads/default/optimized/2X/f/fef0e47ce9a013e98a85f59d000573c62f5d3e91_2_1035x495.jpeg 1.5x, ../../uploads/default/optimized/2X/f/fef0e47ce9a013e98a85f59d000573c62f5d3e91_2_1380x660.jpeg 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/f/fef0e47ce9a013e98a85f59d000573c62f5d3e91_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Снимок экрана 2021-05-07 в 15.46.42</span><span class="informations">1408×675 133 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div><br>
+Thanks for pointing this out <img src="../../images/emoji/twitter/+1.png@v=9" title=":+1:" class="emoji" alt=":+1:"></p>
+        </div>
+
+        <meta itemprop='headline' content='Smithereen now has Masonry Image layout'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1712.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-05-07T12:55:46Z'>
+              <time itemprop='dateModified' datetime='2021-05-07T14:16:47Z' class='post-time'>
+                May 7, 2021,  2:16pm
+              </time>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Yes. Safari is currently very “funny” and makes my life “interesting”, also  <code>¯\_(ツ)_/¯</code>:</p><aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="../../uploads/default/original/1X/fd156fff11fc042ed3ec6355c45f37e207e35839.ico" class="site-icon" width="45" height="48">
+      <a href="https://mastodon.social/@sl007/106176286506019269" target="_blank" rel="noopener" title="09:45AM - 04 May 2021">Mastodon – 4 May 21</a>
+  </header>
+  <article class="onebox-body">
+    <img src="../../uploads/default/original/1X/2793fdde08594c06074835645b3924a20275eb07.png" class="thumbnail onebox-avatar" width="146" height="146">
+
+<h3><a href="https://mastodon.social/@sl007/106176286506019269" target="_blank" rel="noopener">Sebastian Lasse, redaktor.me (@sl007@mastodon.social)</a></h3>
+
+<p>moin moin 
+localStorage is broken in Safari 14.1 #alleskaputt 
+
+Jake Archibald sums up:
+“Tabs end up with seperate localStorage for reading, but the same localStorage for writing. This will likely result in data loss for...</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+        </div>
+
+        <meta itemprop='headline' content='Smithereen now has Masonry Image layout'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1712.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-05-07T13:55:38Z'>
+              <time itemprop='dateModified' datetime='2021-05-07T14:16:47Z' class='post-time'>
+                May 7, 2021,  2:16pm
+              </time>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Okay, so Safari for some bizarre reason still wants to determine the size of those divs by deriving it from the intrinsic size of their contents, even though I did everything I could think of to prevent this exact thing from happening. Simple test: add <code>display: none</code> to those <code>&lt;img&gt;</code>'s and see the surrounding divs magically disappear. FWIW it does exactly what I want in Chrome and Firefox.</p>
+<p>Sigh. Safari is really the IE of the modern ages.</p>
+        </div>
+
+        <meta itemprop='headline' content='Smithereen now has Masonry Image layout'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1712.html">
+
+            <link itemprop="image" href="../../uploads/default/original/2X/6/6e72b4e087a28168c0b1a273db04196619daa421.png">
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-05-08T13:29:00Z' class='post-time'>
+                May 8, 2021,  1:29pm
+              </time>
+              <meta itemprop='dateModified' content='2021-05-08T13:29:00Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Fixed it by wrapping an additional div around the grid. Apparently it didn’t like how the height of the parent was 0 because of the padding-in-percent trick.</p>
+<p><img src="../../uploads/default/original/2X/6/6e72b4e087a28168c0b1a273db04196619daa421.png" alt="Снимок экрана 2021-05-08 в 16.26.54" data-base62-sha1="fL4hk1dZPFl2ndS3eIbFqpxjLFv" width="276" height="79"></p>
+        </div>
+
+        <meta itemprop='headline' content='Smithereen now has Masonry Image layout'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1712.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-05-09T09:49:15Z' class='post-time'>
+                May 9, 2021,  9:49am
+              </time>
+              <meta itemprop='dateModified' content='2021-05-09T09:49:15Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote group-smithereen" data-username="grishka" data-post="1" data-topic="1712">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/grishka/40/196_2.png" class="avatar"> grishka:</div>
+<blockquote>
+<p>I just now realized that I don’t have any posts with many photos on my live instance</p>
+</blockquote>
+</aside>
+<p>Just in case, you need more photos <img src="../../images/emoji/twitter/wink.png@v=9" title=":wink:" class="emoji" alt=":wink:"><br>
+Feel free to use any of my archive stuff. I am currently thinking anyway about a model to release any material where the syndication by the customer ended &gt;5 years ago as Creative Commons (and how to automate this) …</p>
+<p>For example, some reportage from the archives is on (sorry) diaspora<br>
+<a href="https://pluspora.com/posts/8f7603c03817013703de005056264835">Climate Refugees</a><br>
+<a href="https://pluspora.com/posts/7f17c500390701377c19005056264835">Tsunami</a><br>
+<a href="https://pluspora.com/posts/7a160eb0399c01377c1d005056264835">Gun City</a><br>
+but there are also “positive” ones <img src="../../images/emoji/twitter/wink.png@v=9" title=":wink:" class="emoji" alt=":wink:"><br>
+<a href="https://pluspora.com/posts/ba43e9603b4401377c23005056264835">By balloon across the alps</a><br>
+<a href="https://pluspora.com/posts/6f60e3c0546d013723b5005056264835">A farm for kids</a></p>
+        </div>
+
+        <meta itemprop='headline' content='Smithereen now has Masonry Image layout'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

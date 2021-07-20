@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Come Help: List of FEPs Needed</title>
+    <link>https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097</link>
+    <description>Building off @pukkamustard&#39;s [FEP](https://socialhub.activitypub.rocks/t/fediverse-enhancement-proposal-fep/1059) and the [initial proposed process](https://socialhub.activitypub.rocks/t/fep-a4edc7b-the-fediverse-enhancement-proposal-process/1090) over at https://git.activitypub.dev, there&#39;s a list of FEPs that are missing that could document the current Fediverse better:
+
+* webfinger: @tinyrabbit + ?
+* http signatures: ?
+* federating Block activities: ?
+* custom emojis: ?
+* e2e encryption: ?
+* nodeinfo2: ?
+* federating.md: @darius 
+* chat: @lain 
+* ...?
+
+(I am not here to say which of these I do/don&#39;t endorse, just figured all should be considered for FEP)
+
+I&#39;ve &quot;volunteered&quot; a few folks I think that had expressed something before. If I&#39;m wrong, let me know. :) 
+
+Anyone else want to sign up / pair up for writing these? Also, what other topics are we missing?</description>
+    
+    <lastBuildDate>Mon, 25 Jan 2021 06:57:42 +0000</lastBuildDate>
+    <category>Fediverse Enhancement Proposals</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Come Help: List of FEPs Needed</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>In Smithereen, I do it the same way as Diaspora. I only send the reply to the authors of the top-level post and the reply that’s being replied to, if any. The server of the author of the top-level post is then supposed to forward it to everyone who might have the thread.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097/11</link>
+        <pubDate>Mon, 25 Jan 2021 06:57:42 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1097-11</guid>
+        <source url="https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097.rss">Come Help: List of FEPs Needed</source>
+      </item>
+      <item>
+        <title>Come Help: List of FEPs Needed</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, the idea of a advisory flag is not a new one, it was discussed on the thread you linked. it has a major problem though: If I (on cybre.space) reply to Gargron’s “followers replies only” post (on mastodon.social) and send it to all of my followers, and he doesn’t allow my reply, all of my followers on mastodon.online, glitch.social, and every other instance will still display it, right underneath Gargron’s post (because they have no way of knowing whether I’m allowed to reply or not).</p>
+<p>From an anti-harrassment perspective, this is regarded by many, many users we’ve talked to as worse then not having the setting at all.</p>
+<p>A software I know of that gets this right is Diaspora, but they do this by requiring that all replies are federated out the instance of the <em>original</em> post, rather then the post author</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097/10</link>
+        <pubDate>Mon, 25 Jan 2021 00:55:09 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1097-10</guid>
+        <source url="https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097.rss">Come Help: List of FEPs Needed</source>
+      </item>
+      <item>
+        <title>Come Help: List of FEPs Needed</title>
+        <dc:creator><![CDATA[MediaFormat]]></dc:creator>
+        <description><![CDATA[
+            <p>From the <strong>original</strong> issue queue:<br>
+</p><aside class="onebox githubissue">
+  <header class="source">
+      <a href="https://github.com/w3c/activitypub/issues/319" target="_blank" rel="noopener nofollow ugc">github.com/w3c/activitypub</a>
+  </header>
+  <article class="onebox-body">
+    <div class="github-row">
+  <div class="github-icon-container" title="Issue">
+	  <svg width="60" height="60" class="github-icon" viewBox="0 0 14 16" aria-hidden="true"><path d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
+  </div>
+
+  <div class="github-info-container">
+    <h4>
+      <a href="https://github.com/w3c/activitypub/issues/319" target="_blank" rel="noopener nofollow ugc">Disable replies</a>
+    </h4>
+
+    <div class="github-info">
+      <div class="date">
+        opened <span class="discourse-local-date" data-format="ll" data-date="2018-09-03" data-time="17:04:59" data-timezone="UTC">05:04PM - 03 Sep 18 UTC</span>
+      </div>
+
+
+      <div class="user">
+        <a href="https://github.com/nclm" target="_blank" rel="noopener nofollow ugc">
+          <img alt="nclm" src="https://socialhub.activitypub.rocks/uploads/default/original/1X/45bddd02798cdf2b73d69b67052c8f927fa5a513.png" class="onebox-avatar-inline" width="20" height="20">
+          nclm
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="github-row">
+  <p class="github-content">Almost all blogging platforms and a few social networks (for instance Dribbble) allow the author to disable replies on their post....</p>
+</div>
+
+<div class="labels">
+</div>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>It is one of the most asked for features by Mastodon users, which <a href="https://github.com/tootsuite/mastodon/issues/8565#issuecomment-684950080" rel="noopener nofollow ugc">Eugene wants</a> standardized before implementing.</p>
+<p>Working in the CMS space with <a href="https://socialhub.activitypub.rocks/t/about-the-wordpress-category/1235">WordPress</a> I am also keen to implement this in a standard way, as wp already has native Comment Policy options.</p>
+<p>EDIT: Thanks for pointing out the problem with advisory flags <a class="mention" href="/u/nightpool">@nightpool</a>, going back over the original issue it appears that this is where OCAPs would come into play.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097/9</link>
+        <pubDate>Sun, 24 Jan 2021 19:28:29 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1097-9</guid>
+        <source url="https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097.rss">Come Help: List of FEPs Needed</source>
+      </item>
+      <item>
+        <title>Come Help: List of FEPs Needed</title>
+        <dc:creator><![CDATA[tfardet]]></dc:creator>
+        <description><![CDATA[
+            <p>Once thing that I would especially like to see is full migration capability across the Fediverse (or at least between all platforms where it makes sense).<br>
+Because Fediverse aims at empowering users, enabling them to choose their home instance and change it, I feel an additional step would be to enable users to test and change platforms, moving from Pleroma to Mastodon, to Misskey, and back.</p>
+<p>It seems to me (but maybe I’m being naive), that such a possibility is not a major hurdle and would “simply” require:</p>
+<ul>
+<li>to decide upon a list of platforms that can be made interoperable (Masto, Pleroma, Friendica, Hubzilla, Zap, Pixelfed… others?)</li>
+<li>come up with a list of common features that exist on all platforms (username, bio, followers, follow, block…) and agree on a standard import/export format</li>
+<li>implement a generic <code>moved-to</code>/<code>moved-from</code> mechanism that builds on existing implementations in Mastodon, Pleroma, and Zap (at least I know they provide something along those lines)</li>
+</ul>
+<p>To the best of my knowledge, this does not currently work though there have been some effort within the Pleroma community but I think that was for full servers (see <a href="https://git.pleroma.social/pleroma/pleroma/-/issues/162" rel="noopener nofollow ugc">this issue</a>), though I heard about people investigating single user migration, I did not find any information about that.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097/8</link>
+        <pubDate>Tue, 19 Jan 2021 09:06:00 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1097-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097.rss">Come Help: List of FEPs Needed</source>
+      </item>
+      <item>
+        <title>Come Help: List of FEPs Needed</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <p>So this is more of a heads up…</p>
+<p>A new FEP that will need to be written in the future, depending on how standardization goes: <a href="https://tools.ietf.org/html/draft-lodderstedt-oauth-rar-03" rel="noopener nofollow ugc">OAuth2 Rich Authorization Requests</a> (aka “OAuth2 dynamic scopes”). It is <em>a possible</em> solution for the category of problem exemplified "<code>@jessie@foo.example.com</code> visits <code>bar.example.com</code> and wants to boost a post they’re viewing on <code>bar.example.com</code>". That particular example may be contrived, so I wouldn’t get stuck on it specifically, there’s a lot other interactions one could dream up where this is helpful.</p>
+<p>Where the FEP comes in is: these Rich Authorizations are going to need… you guessed it… community-managed ontology/understanding.</p>
+<p>Then, I’m sure lots more FEPs will come about as different software projects want to provide peers’ users a near-first-party kind of experiences, where it makes sense, <em>if</em> it makes sense to (as compatibility is once again showing it is the foundational problem).</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097/7</link>
+        <pubDate>Tue, 15 Dec 2020 21:05:32 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1097-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097.rss">Come Help: List of FEPs Needed</source>
+      </item>
+      <item>
+        <title>Come Help: List of FEPs Needed</title>
+        <dc:creator><![CDATA[MediaFormat]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="https://socialhub.activitypub.rocks/t/represent-endpoint-for-remote-interaction/480/3">Remote interactions</a> (Follow, Reply, Share…)</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097/6</link>
+        <pubDate>Mon, 14 Dec 2020 15:11:53 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1097-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097.rss">Come Help: List of FEPs Needed</source>
+      </item>
+      <item>
+        <title>Come Help: List of FEPs Needed</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ll try at least some of these.</p>
+<ul>
+<li>unambiguous capability negotiation/announcement
+<ul>
+<li>privacy settings can be included in that — you can do X to this user but only if they follow you</li>
+</ul>
+</li>
+<li>wall posts</li>
+<li>groups, especially membership</li>
+<li>cross-instance data consistency, probably just document what I’ve been doing in Smithereen with LD-signed activity forwarding for a while already</li>
+</ul>
+          <p><a href="https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097/5</link>
+        <pubDate>Mon, 14 Dec 2020 01:41:38 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1097-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097.rss">Come Help: List of FEPs Needed</source>
+      </item>
+      <item>
+        <title>Come Help: List of FEPs Needed</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>I wonder if there should also be a FEP detailing best-practices on how to deal with Linked Data?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097/4</link>
+        <pubDate>Sat, 12 Dec 2020 05:33:22 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1097-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097.rss">Come Help: List of FEPs Needed</source>
+      </item>
+      <item>
+        <title>Come Help: List of FEPs Needed</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <p>Since I just finished adding NodeInfo2 to <code>apcore</code> I’m happy to write up the current state as a FEP.</p>
+<p>EDIT: That FEP is <a href="https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/pulls/8" rel="noopener nofollow ugc">now written</a>. I’ll create a dedicated feedback thread once it is merged in.</p>
+<p>That leaves the following:</p>
+<ul>
+<li>webfinger</li>
+<li>http signatures</li>
+<li>federating Block activities</li>
+<li>custom emojis</li>
+<li>e2e encryption</li>
+<li>federating.md</li>
+<li>chat</li>
+</ul>
+          <p><a href="https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097/3</link>
+        <pubDate>Fri, 11 Dec 2020 16:38:05 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1097-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097.rss">Come Help: List of FEPs Needed</source>
+      </item>
+      <item>
+        <title>Come Help: List of FEPs Needed</title>
+        <dc:creator><![CDATA[tinyrabbit]]></dc:creator>
+        <description><![CDATA[
+            <p>Since I just implemented webfinger I could co-write that with someone more experienced.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097/2</link>
+        <pubDate>Wed, 21 Oct 2020 06:42:52 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1097-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097.rss">Come Help: List of FEPs Needed</source>
+      </item>
+      <item>
+        <title>Come Help: List of FEPs Needed</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <p>Building off <a class="mention" href="/u/pukkamustard">@pukkamustard</a>’s <a href="https://socialhub.activitypub.rocks/t/fediverse-enhancement-proposal-fep/1059">FEP</a> and the <a href="https://socialhub.activitypub.rocks/t/fep-a4edc7b-the-fediverse-enhancement-proposal-process/1090">initial proposed process</a> over at <a href="https://git.activitypub.dev" rel="noopener nofollow ugc">https://git.activitypub.dev</a>, there’s a list of FEPs that are missing that could document the current Fediverse better:</p>
+<ul>
+<li>webfinger: <a class="mention" href="/u/tinyrabbit">@tinyrabbit</a> + ?</li>
+<li>http signatures: ?</li>
+<li>federating Block activities: ?</li>
+<li>custom emojis: ?</li>
+<li>e2e encryption: ?</li>
+<li>nodeinfo2: ?</li>
+<li>federating.md: <a class="mention" href="/u/darius">@darius</a>
+</li>
+<li>chat: <a class="mention" href="/u/lain">@lain</a>
+</li>
+<li>…?</li>
+</ul>
+<p>(I am not here to say which of these I do/don’t endorse, just figured all should be considered for FEP)</p>
+<p>I’ve “volunteered” a few folks I think that had expressed something before. If I’m wrong, let me know. <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Anyone else want to sign up / pair up for writing these? Also, what other topics are we missing?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097/1</link>
+        <pubDate>Tue, 20 Oct 2020 15:56:52 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1097-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097.rss">Come Help: List of FEPs Needed</source>
+      </item>
+  </channel>
+</rss>

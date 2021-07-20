@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Experiences and aspirations about content moderation in the fediverse</title>
+    <link>https://socialhub.activitypub.rocks/t/experiences-and-aspirations-about-content-moderation-in-the-fediverse/1093</link>
+    <description>Hi everyone,
+
+I&#39;m starting a research project about content moderation in the fediverse. One aim of this work is to help administrators define an ethical framework for their instance through a set of values and norms, then translate this model into rules as well as parameters and technical features on their instance, and to provide them with the most appropriate moderation tools possible to enforce those rules. 
+
+The first step for me is to better understand how moderation is being conducted in the fediverse, how you, as an administrator, handle problematic cases (be it spam, aggressiveness, harassment, potentially disturbing or illegal content), which moderation features you use most often, and what tools are currently lacking and would have been helpful in a situation that you encountered. 
+
+If you&#39;d like to share one or more stories about your moderation experience, and optionally tell how an ideal tool or configuration of your instance could have helped you deal with the situation more easily, or if you have some resources that I could use to better understand the pros and cons of the decentralized and federated model regarding content moderation, your contribution would be a great help.
+
+If you&#39;re interested by the progress of the work, if you&#39;d like to take part in future experiments or collaborate more closely if you&#39;re already working on similar questions, just let me know in your comment, and I&#39;ll do my best to keep you informed and shortly come back to you with more specific questions, hypothesis and/or prototypes to test :)
+
+Thank you!</description>
+    
+    <lastBuildDate>Thu, 04 Feb 2021 21:23:01 +0000</lastBuildDate>
+    <category>Fediversity</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/experiences-and-aspirations-about-content-moderation-in-the-fediverse/1093.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Experiences and aspirations about content moderation in the fediverse</title>
+        <dc:creator><![CDATA[robertwgehl]]></dc:creator>
+        <description><![CDATA[
+            <p>Agreed. I did not see this. <a class="mention" href="/u/audrey">@Audrey</a>, if I can help, please let me know.</p>
+<p>A few years back, some colleagues and I collected a lot of Code of Conduct documents here – <a href="https://www.socialmediaalternatives.org/archive/collections/show/32" rel="noopener nofollow ugc">https://www.socialmediaalternatives.org/archive/collections/show/32</a></p>
+<p>That’s a static collection, so it’s not moderation in practice, but it does reveal a range of Codes of Conduct.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/experiences-and-aspirations-about-content-moderation-in-the-fediverse/1093/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/experiences-and-aspirations-about-content-moderation-in-the-fediverse/1093/5</link>
+        <pubDate>Thu, 04 Feb 2021 21:23:01 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1093-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/experiences-and-aspirations-about-content-moderation-in-the-fediverse/1093.rss">Experiences and aspirations about content moderation in the fediverse</source>
+      </item>
+      <item>
+        <title>Experiences and aspirations about content moderation in the fediverse</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>I wish I had given <a class="mention" href="/u/audrey">@Audrey</a> the attention I gave to <a class="mention" href="/u/robertwgehl">@robertwgehl</a>.</p>
+<p><a class="mention" href="/u/audrey">@Audrey</a> what is the status of your research?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/experiences-and-aspirations-about-content-moderation-in-the-fediverse/1093/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/experiences-and-aspirations-about-content-moderation-in-the-fediverse/1093/4</link>
+        <pubDate>Tue, 02 Feb 2021 14:40:39 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1093-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/experiences-and-aspirations-about-content-moderation-in-the-fediverse/1093.rss">Experiences and aspirations about content moderation in the fediverse</source>
+      </item>
+      <item>
+        <title>Experiences and aspirations about content moderation in the fediverse</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Sorry, missed this !<br>
+I want to do exactly the same.</p>
+<p>May you want to speak to a real super-expert?<br>
+It’s <a href="https://mastodon.technology/@Argus">Derek Caelin @Argus@mastodon.technology</a> and the story is here</p>
+<p><iframe width="560" height="315" src="https://conf.tube/videos/embed/d8c8ed69-79f0-4987-bafe-84c01f38f966" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+<p>Please talk to him.<br>
+I do not know how you want the site to look but this could be a good start<br>
+</p><aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://mastodon.social/favicon.ico" class="site-icon" width="45" height="48">
+      <a href="https://mastodon.social/@fediversespace/105474087419721620" target="_blank" rel="noopener" title="09:27AM - 31 December 2020">Mastodon – 31 Dec 20</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/efe13be1a72e4316c0270b7921289947776521a0.png" class="thumbnail onebox-avatar" width="81" height="81">
+
+<h3><a href="https://mastodon.social/@fediversespace/105474087419721620" target="_blank" rel="noopener">fediverse.space (@fediversespace@mastodon.social)</a></h3>
+
+<p>I'm stopping hosting fediverse.space, but the code lives on! The project's README has basic deployment instructions if someone feels like taking it on: https://gitlab.com/fediverse.space/fediverse.space#deployment</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/experiences-and-aspirations-about-content-moderation-in-the-fediverse/1093/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/experiences-and-aspirations-about-content-moderation-in-the-fediverse/1093/3</link>
+        <pubDate>Sat, 02 Jan 2021 15:13:51 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1093-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/experiences-and-aspirations-about-content-moderation-in-the-fediverse/1093.rss">Experiences and aspirations about content moderation in the fediverse</source>
+      </item>
+      <item>
+        <title>Experiences and aspirations about content moderation in the fediverse</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p>been handling content moderation for <a href="http://cybre.space">cybre.space</a> as part of a two person team since 2017 (and a three person team since earlier this year), so I’ve seen a lot of different mastodon instances and moderation approaches. Don’t have time to type up a long response right this minute, but definitely feel free to let me know if you have any specific questions.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/experiences-and-aspirations-about-content-moderation-in-the-fediverse/1093/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/experiences-and-aspirations-about-content-moderation-in-the-fediverse/1093/2</link>
+        <pubDate>Tue, 20 Oct 2020 03:31:18 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1093-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/experiences-and-aspirations-about-content-moderation-in-the-fediverse/1093.rss">Experiences and aspirations about content moderation in the fediverse</source>
+      </item>
+      <item>
+        <title>Experiences and aspirations about content moderation in the fediverse</title>
+        <dc:creator><![CDATA[Audrey]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi everyone,</p>
+<p>I’m starting a research project about content moderation in the fediverse. One aim of this work is to help administrators define an ethical framework for their instance through a set of values and norms, then translate this model into rules as well as parameters and technical features on their instance, and to provide them with the most appropriate moderation tools possible to enforce those rules.</p>
+<p>The first step for me is to better understand how moderation is being conducted in the fediverse, how you, as an administrator, handle problematic cases (be it spam, aggressiveness, harassment, potentially disturbing or illegal content), which moderation features you use most often, and what tools are currently lacking and would have been helpful in a situation that you encountered.</p>
+<p>If you’d like to share one or more stories about your moderation experience, and optionally tell how an ideal tool or configuration of your instance could have helped you deal with the situation more easily, or if you have some resources that I could use to better understand the pros and cons of the decentralized and federated model regarding content moderation, your contribution would be a great help.</p>
+<p>If you’re interested by the progress of the work, if you’d like to take part in future experiments or collaborate more closely if you’re already working on similar questions, just let me know in your comment, and I’ll do my best to keep you informed and shortly come back to you with more specific questions, hypothesis and/or prototypes to test <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Thank you!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/experiences-and-aspirations-about-content-moderation-in-the-fediverse/1093/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/experiences-and-aspirations-about-content-moderation-in-the-fediverse/1093/1</link>
+        <pubDate>Mon, 19 Oct 2020 21:16:07 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1093-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/experiences-and-aspirations-about-content-moderation-in-the-fediverse/1093.rss">Experiences and aspirations about content moderation in the fediverse</source>
+      </item>
+  </channel>
+</rss>

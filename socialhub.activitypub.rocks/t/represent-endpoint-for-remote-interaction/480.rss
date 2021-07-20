@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Represent endpoint for remote interaction</title>
+    <link>https://socialhub.activitypub.rocks/t/represent-endpoint-for-remote-interaction/480</link>
+    <description># Problematic
+Users discover content publicly accessible (such as a public message or video…) on remote instances and wish to interact with on their own instance.
+
+# Solutions
+## The &quot;paste URL way&quot;
+Easiest (and probably earliest) solution is to copy the URL of the content and paste it in the search bar. 
+AFAIK, Mastodon, Pleroma and PeerTube support this, but very probably many more.
+
+## The ostatus way
+* Mastodon also supports asking your federated ID `profile@instance.tld` when you try to interact with the content and redirecting to your own instance depending on your input. It uses **the same endpoint** as for following users, taken from ostatus `http://ostatus.org/schema/1.0/subscribe` and available through WebFinger. The path is `/authorize_interaction?acct={uri}`.
+* PeerTube does the same for comments under videos on other instances, but doesn&#39;t support the redirection for interacting itself.
+* Pleroma supports the redirection to the same endpoint for interaction, but doesn&#39;t suggest interacting with it&#39;s own public content. The path is `/ostatus_subscribe?acct={uri}`.
+
+Note : This solution can be improved with a browser addon such as https://github.com/rugk/mastodon-simplified-federation
+
+## The protocol handlers way
+* Mastodon [had](https://github.com/tootsuite/mastodon/pull/4511) protocol handlers `web+mastodon` but [they were removed](https://github.com/tootsuite/mastodon/pull/8127). 
+* Diaspora has [registered](https://www.iana.org/assignments/uri-schemes/prov/diaspora) the [`diaspora://` URI scheme](https://diaspora.github.io/diaspora_federation/federation/diaspora_scheme.html) but it seems they aren&#39;t really using it.
+
+Even though it seems a good fit, there&#39;s not much support for it, so…
+
+# Remarks
+The &quot;paste URL in search field&quot; solution seems commonly used but users usually don&#39;t know about and AFAIK no software makes any effort in this direction to let users know that you can put URLs in their search fields, so it&#39;s more a hack than anything else.
+
+As of now, the second solution seems more appropriate (even though quite laborious). What bothers me though, is having to use the same endpoint to remote follow someone and interact with some content.
+I think it would be appropriate to have the equivalent of `http://ostatus.org/schema/1.0/subscribe` for interactions (not sure whether it should use the ostatus namespace) and have it as well exposed through Webfinger.
+
+Please tell me what you think about this and what I&#39;ve probably missed on the subject.
+
+# Additional Links
+
+Issues at Pleroma: https://git.pleroma.social/pleroma/pleroma-meta/issues/1 https://git.pleroma.social/pleroma/pleroma/issues/978
+Issue at Pixelfed https://github.com/pixelfed/pixelfed/issues/1276
+
+# P.S: about sharing external content
+It&#39;s not really the same thing, but let&#39;s note that Diaspora* uses the centralized service https://share.diasporafoundation.org to provide share buttons that ask for your federated ID (and store it locally afterwards) to redirect you to the content on your instance. But that&#39;s for external content, not for internal one.
+There&#39;s https://aly-ve.github.io/Mastodon-share-button/ that kinda does the same for Mastodon.</description>
+    
+    <lastBuildDate>Tue, 21 Jan 2020 20:17:56 +0000</lastBuildDate>
+    <category>ActivityPub</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/represent-endpoint-for-remote-interaction/480.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Represent endpoint for remote interaction</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>I have a clear view on this since in the early stages of <a class="mention-group" href="/groups/redaktor.me">@redaktor.me</a> I did demos on protocol handlers e.g. in 2016 : <a href="https://indieweb.org/2016/Brighton/Demos">https://indieweb.org/2016/Brighton/Demos</a></p>
+<p>It would be THE solution !<br>
+There is a single reason WHY they are not much supported :<br>
+Chrome and Edge treat them like shit.<br>
+I raised many issues there but I was unheard.</p>
+<p>Chrome shows a nearly invisible icon for the user consent in the right of the url bar and does not allow to deregister handlers.<br>
+Edge is, well Edge …</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/represent-endpoint-for-remote-interaction/480/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/represent-endpoint-for-remote-interaction/480/4</link>
+        <pubDate>Tue, 21 Jan 2020 20:17:56 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-480-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/represent-endpoint-for-remote-interaction/480.rss">Represent endpoint for remote interaction</source>
+      </item>
+      <item>
+        <title>Represent endpoint for remote interaction</title>
+        <dc:creator><![CDATA[tcit]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="2" data-topic="480">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/heluecht/40/195_2.png" class="avatar"> heluecht:</div>
+<blockquote>
+<p>And I think the OStatus endpoint in webfinger is a good solution.</p>
+</blockquote>
+</aside>
+<p>What I wanted to discuss is the fact that this OStatus endpoint was indended for account subscription, not for providing a way to interact with content, as Mastodon and other have started to do.</p>
+<blockquote>
+<p>The user’s XRD document MAY have an additional link template with Rel equal to <a href="http://ostatus.org/schema/1.0/subscribe" rel="nofollow noopener">http://ostatus.org/schema/1.0/subscribe</a> to indicate the endpoint to use for initiating a subscription on the user’s subscription server. The template should take a single argument, uri, for the account to subscribe to.</p>
+</blockquote>
+<aside class="onebox pdf">
+  <header class="source">
+      <a href="https://www.w3.org/community/ostatus/wiki/images/9/93/OStatus_1.0_Draft_2.pdf" target="_blank" rel="nofollow noopener">w3.org</a>
+  </header>
+  <article class="onebox-body">
+    <a href="https://www.w3.org/community/ostatus/wiki/images/9/93/OStatus_1.0_Draft_2.pdf" target="_blank" rel="nofollow noopener"><span class="pdf-onebox-logo"></span></a>
+<h3><a href="https://www.w3.org/community/ostatus/wiki/images/9/93/OStatus_1.0_Draft_2.pdf" target="_blank" rel="nofollow noopener">OStatus_1.0_Draft_2.pdf</a></h3>
+
+<p class="filesize">57.82 KB</p>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/represent-endpoint-for-remote-interaction/480/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/represent-endpoint-for-remote-interaction/480/3</link>
+        <pubDate>Tue, 21 Jan 2020 17:35:54 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-480-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/represent-endpoint-for-remote-interaction/480.rss">Represent endpoint for remote interaction</source>
+      </item>
+      <item>
+        <title>Represent endpoint for remote interaction</title>
+        <dc:creator><![CDATA[heluecht]]></dc:creator>
+        <description><![CDATA[
+            <p>Friendica does 1 and 2 as well. And I think the OStatus endpoint in webfinger is a good solution.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/represent-endpoint-for-remote-interaction/480/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/represent-endpoint-for-remote-interaction/480/2</link>
+        <pubDate>Tue, 21 Jan 2020 17:01:15 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-480-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/represent-endpoint-for-remote-interaction/480.rss">Represent endpoint for remote interaction</source>
+      </item>
+      <item>
+        <title>Represent endpoint for remote interaction</title>
+        <dc:creator><![CDATA[tcit]]></dc:creator>
+        <description><![CDATA[
+            <h1>Problematic</h1>
+<p>Users discover content publicly accessible (such as a public message or video…) on remote instances and wish to interact with on their own instance.</p>
+<h1>Solutions</h1>
+<h2>The “paste URL way”</h2>
+<p>Easiest (and probably earliest) solution is to copy the URL of the content and paste it in the search bar.<br>
+AFAIK, Mastodon, Pleroma and PeerTube support this, but very probably many more.</p>
+<h2>The ostatus way</h2>
+<ul>
+<li>Mastodon also supports asking your federated ID <code>profile@instance.tld</code> when you try to interact with the content and redirecting to your own instance depending on your input. It uses <strong>the same endpoint</strong> as for following users, taken from ostatus <code>http://ostatus.org/schema/1.0/subscribe</code> and available through WebFinger. The path is <code>/authorize_interaction?acct={uri}</code>.</li>
+<li>PeerTube does the same for comments under videos on other instances, but doesn’t support the redirection for interacting itself.</li>
+<li>Pleroma supports the redirection to the same endpoint for interaction, but doesn’t suggest interacting with it’s own public content. The path is <code>/ostatus_subscribe?acct={uri}</code>.</li>
+</ul>
+<p>Note : This solution can be improved with a browser addon such as <a href="https://github.com/rugk/mastodon-simplified-federation" rel="nofollow noopener">https://github.com/rugk/mastodon-simplified-federation</a></p>
+<h2>The protocol handlers way</h2>
+<ul>
+<li>Mastodon <a href="https://github.com/tootsuite/mastodon/pull/4511" rel="nofollow noopener">had</a> protocol handlers <code>web+mastodon</code> but <a href="https://github.com/tootsuite/mastodon/pull/8127" rel="nofollow noopener">they were removed</a>.</li>
+<li>Diaspora has <a href="https://www.iana.org/assignments/uri-schemes/prov/diaspora" rel="nofollow noopener">registered</a> the <a href="https://diaspora.github.io/diaspora_federation/federation/diaspora_scheme.html" rel="nofollow noopener"><code>diaspora://</code> URI scheme</a> but it seems they aren’t really using it.</li>
+</ul>
+<p>Even though it seems a good fit, there’s not much support for it, so…</p>
+<h1>Remarks</h1>
+<p>The “paste URL in search field” solution seems commonly used but users usually don’t know about and AFAIK no software makes any effort in this direction to let users know that you can put URLs in their search fields, so it’s more a hack than anything else.</p>
+<p>As of now, the second solution seems more appropriate (even though quite laborious). What bothers me though, is having to use the same endpoint to remote follow someone and interact with some content.<br>
+I think it would be appropriate to have the equivalent of <code>http://ostatus.org/schema/1.0/subscribe</code> for interactions (not sure whether it should use the ostatus namespace) and have it as well exposed through Webfinger.</p>
+<p>Please tell me what you think about this and what I’ve probably missed on the subject.</p>
+<h1>Additional Links</h1>
+<p>Issues at Pleroma: <a href="https://git.pleroma.social/pleroma/pleroma-meta/issues/1" rel="nofollow noopener">https://git.pleroma.social/pleroma/pleroma-meta/issues/1</a> <a href="https://git.pleroma.social/pleroma/pleroma/issues/978" rel="nofollow noopener">https://git.pleroma.social/pleroma/pleroma/issues/978</a><br>
+Issue at Pixelfed <a href="https://github.com/pixelfed/pixelfed/issues/1276" rel="nofollow noopener">https://github.com/pixelfed/pixelfed/issues/1276</a></p>
+<h1>P.S: about sharing external content</h1>
+<p>It’s not really the same thing, but let’s note that Diaspora* uses the centralized service <a href="https://share.diasporafoundation.org" rel="nofollow noopener">https://share.diasporafoundation.org</a> to provide share buttons that ask for your federated ID (and store it locally afterwards) to redirect you to the content on your instance. But that’s for external content, not for internal one.<br>
+There’s <a href="https://aly-ve.github.io/Mastodon-share-button/" rel="nofollow noopener">https://aly-ve.github.io/Mastodon-share-button/</a> that kinda does the same for Mastodon.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/represent-endpoint-for-remote-interaction/480/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/represent-endpoint-for-remote-interaction/480/1</link>
+        <pubDate>Tue, 21 Jan 2020 16:07:39 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-480-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/represent-endpoint-for-remote-interaction/480.rss">Represent endpoint for remote interaction</source>
+      </item>
+  </channel>
+</rss>

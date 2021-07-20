@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Federating events of an existing calender</title>
+    <link>https://socialhub.activitypub.rocks/t/federating-events-of-an-existing-calender/1116</link>
+    <description>Hi all,
+first of all: I&#39;m not programming very much. But I&#39;ve the idea of implementing federation to the [calendar of my local hackspace](https://metalab.at/calendar/) since the go live of [Mobilizon](https://mobilizon.org/en/) (yesterday MET).
+
+The [MOS (Metalab Operating System)](https://github.com/Metalab/mos/tree/master/cal) is coded in Python, so I started looking for a Python library. And I found [one](https://github.com/dsblank/activitypub)! But I didn&#39;t find a helpful documentation for it. But since [Events are similar to Objects](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-event) in ActivityStream, it should be as easy as the example? On the other hand Mobilizon added some Attributes to [their implementation of federated events](https://docs.joinmobilizon.org/contribute/activity_pub/#event_1). But I don&#39;t see how I could realize this further attributes (especially the `repliesModeration` and the `ical:status` attributes) with this library. I also don&#39;t see which attributes are mandatory to federate own events with Mobilizon Instances.
+
+In case my questions are drawn by all my explanations and links:
+* Which attributes are mandatory for events to federate with Mobilizon?
+* Are there better suited python libraries for my use case?
+  * If not, how to implement additional attributes like `repliesModeration`?
+* Help! /o\</description>
+    
+    <lastBuildDate>Tue, 17 Nov 2020 06:41:59 +0000</lastBuildDate>
+    <category>Python</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/federating-events-of-an-existing-calender/1116.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Federating events of an existing calender</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Re. python I recommend</p>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://github.githubassets.com/favicons/favicon.svg" class="site-icon" width="32" height="32">
+      <a href="https://github.com/bashrc2/epicyon" target="_blank" rel="noopener">GitHub</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/345;"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/0c82c700c43468073e2bd1cacb2620787917faeb_2_690x345.jpeg" class="thumbnail" width="690" height="345" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/0c82c700c43468073e2bd1cacb2620787917faeb_2_690x345.jpeg, https://socialhub.activitypub.rocks/uploads/default/optimized/1X/0c82c700c43468073e2bd1cacb2620787917faeb_2_1035x517.jpeg 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/1X/0c82c700c43468073e2bd1cacb2620787917faeb.jpeg 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/0c82c700c43468073e2bd1cacb2620787917faeb_2_10x10.png"></div>
+
+<h3><a href="https://github.com/bashrc2/epicyon" target="_blank" rel="noopener">bashrc2/epicyon</a></h3>
+
+<p>Modern ActivityPub compliant server, designed for simplicity and accessibility. Includes calendar, news and sharing economy features to empower your federated community. - bashrc2/epicyon</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>Talk to <a href="https://mastodon.social/web/accounts/895533#">@bob@epicyon.freedombone.net</a><br>
+Also indymedia currently uses it for the reboot.</p>
+<p>I would help if it would be about nodeJS cause with python my help would probably not be helpful <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federating-events-of-an-existing-calender/1116/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federating-events-of-an-existing-calender/1116/4</link>
+        <pubDate>Tue, 17 Nov 2020 06:41:59 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1116-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federating-events-of-an-existing-calender/1116.rss">Federating events of an existing calender</source>
+      </item>
+      <item>
+        <title>Federating events of an existing calender</title>
+        <dc:creator><![CDATA[eest9]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi,<br>
+great thank u. I think this helps a lot! I will have a deeper look into it when I’ve more time again. <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federating-events-of-an-existing-calender/1116/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federating-events-of-an-existing-calender/1116/3</link>
+        <pubDate>Tue, 17 Nov 2020 02:09:51 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1116-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federating-events-of-an-existing-calender/1116.rss">Federating events of an existing calender</source>
+      </item>
+      <item>
+        <title>Federating events of an existing calender</title>
+        <dc:creator><![CDATA[tcit]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi,</p>
+<blockquote>
+<p>Which attributes are mandatory for events to federate with Mobilizon?</p>
+</blockquote>
+<p>Right now, the following:</p>
+<ul>
+<li>either <code>actor</code> or <code>attributedTo</code> to identify the creator of the event (which should point to an <code>Actor</code>)</li>
+<li><code>name</code></li>
+<li><code>startTime</code></li>
+<li>
+<code>id</code> (which Mobilizon assumes has also a html representation)</li>
+</ul>
+<p>To use Python you could have a look on how <a href="https://funkwhale.audio/" rel="noopener nofollow ugc">https://funkwhale.audio/</a> and <a href="https://olki.loria.fr/platform/index.html" rel="noopener nofollow ugc">https://olki.loria.fr/platform/index.html</a> handle ActivityPub.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federating-events-of-an-existing-calender/1116/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federating-events-of-an-existing-calender/1116/2</link>
+        <pubDate>Mon, 16 Nov 2020 10:18:18 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1116-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federating-events-of-an-existing-calender/1116.rss">Federating events of an existing calender</source>
+      </item>
+      <item>
+        <title>Federating events of an existing calender</title>
+        <dc:creator><![CDATA[eest9]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all,<br>
+first of all: I’m not programming very much. But I’ve the idea of implementing federation to the <a href="https://metalab.at/calendar/" rel="noopener nofollow ugc">calendar of my local hackspace</a> since the go live of <a href="https://mobilizon.org/en/" rel="noopener nofollow ugc">Mobilizon</a> (yesterday MET).</p>
+<p>The <a href="https://github.com/Metalab/mos/tree/master/cal" rel="noopener nofollow ugc">MOS (Metalab Operating System)</a> is coded in Python, so I started looking for a Python library. And I found <a href="https://github.com/dsblank/activitypub" rel="noopener nofollow ugc">one</a>! But I didn’t find a helpful documentation for it. But since <a href="https://www.w3.org/TR/activitystreams-vocabulary/#dfn-event" rel="noopener nofollow ugc">Events are similar to Objects</a> in ActivityStream, it should be as easy as the example? On the other hand Mobilizon added some Attributes to <a href="https://docs.joinmobilizon.org/contribute/activity_pub/#event_1" rel="noopener nofollow ugc">their implementation of federated events</a>. But I don’t see how I could realize this further attributes (especially the <code>repliesModeration</code> and the <code>ical:status</code> attributes) with this library. I also don’t see which attributes are mandatory to federate own events with Mobilizon Instances.</p>
+<p>In case my questions are drawn by all my explanations and links:</p>
+<ul>
+<li>Which attributes are mandatory for events to federate with Mobilizon?</li>
+<li>Are there better suited python libraries for my use case?
+<ul>
+<li>If not, how to implement additional attributes like <code>repliesModeration</code>?</li>
+</ul>
+</li>
+<li>Help! /o\</li>
+</ul>
+          <p><a href="https://socialhub.activitypub.rocks/t/federating-events-of-an-existing-calender/1116/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federating-events-of-an-existing-calender/1116/1</link>
+        <pubDate>Wed, 28 Oct 2020 16:27:32 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1116-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federating-events-of-an-existing-calender/1116.rss">Federating events of an existing calender</source>
+      </item>
+  </channel>
+</rss>

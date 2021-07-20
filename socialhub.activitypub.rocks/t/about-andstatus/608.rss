@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>About AndStatus</title>
+    <link>https://socialhub.activitypub.rocks/t/about-andstatus/608</link>
+    <description>**ActivityPub C2S Client** for Android that not only has basic implementation of the ActivityPub Client-to-Server spec, but which has internal data model close to the ActivityPub/ActivityStreams data model.
+
+And yet AndStatus is an Open Source multiple accounts client for **multiple social networks**, including [GNU social](http://gnu.io/social/), [Mastodon](https://github.com/tootsuite/documentation), [Twitter](https://twitter.com) and [Pump.io](http://pump.io). AndStatus can combine your feeds from all networks into one Timeline, and it allows you to read and post even when you are offline.
+
+This category focuses on the ActivityPub Client-to-Server (C2S) implementation. Initial discussions and description of this implementation are here: https://github.com/andstatus/andstatus/issues/499
+
+Another related discussion on Groups/Lists support with comparison of these notions in different Social Networks (from Client app point of view): https://github.com/andstatus/andstatus/issues/248</description>
+    
+    <lastBuildDate>Sun, 12 Apr 2020 17:57:03 +0000</lastBuildDate>
+    <category>AndStatus</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/about-andstatus/608.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>About AndStatus</title>
+        <dc:creator><![CDATA[yvolk]]></dc:creator>
+        <description><![CDATA[
+            <p><strong>ActivityPub C2S Client</strong> for Android that not only has basic implementation of the ActivityPub Client-to-Server spec, but which has internal data model close to the ActivityPub/ActivityStreams data model.</p>
+<p>And yet AndStatus is an Open Source multiple accounts client for <strong>multiple social networks</strong>, including <a href="http://gnu.io/social/" rel="nofollow noopener">GNU social</a>, <a href="https://github.com/tootsuite/documentation" rel="nofollow noopener">Mastodon</a>, <a href="https://twitter.com" rel="nofollow noopener">Twitter</a> and <a href="http://pump.io" rel="nofollow noopener">Pump.io</a>. AndStatus can combine your feeds from all networks into one Timeline, and it allows you to read and post even when you are offline.</p>
+<p>This category focuses on the ActivityPub Client-to-Server (C2S) implementation. Initial discussions and description of this implementation are here: <a href="https://github.com/andstatus/andstatus/issues/499" rel="nofollow noopener">https://github.com/andstatus/andstatus/issues/499</a></p>
+<p>Another related discussion on Groups/Lists support with comparison of these notions in different Social Networks (from Client app point of view): <a href="https://github.com/andstatus/andstatus/issues/248" rel="nofollow noopener">https://github.com/andstatus/andstatus/issues/248</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-andstatus/608/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-andstatus/608/1</link>
+        <pubDate>Sun, 12 Apr 2020 11:36:09 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-608-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-andstatus/608.rss">About AndStatus</source>
+      </item>
+  </channel>
+</rss>

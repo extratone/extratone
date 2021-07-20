@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>SocialCG meetings calendar</title>
+    <link>https://socialhub.activitypub.rocks/t/socialcg-meetings-calendar/1308</link>
+    <description>We have a calendar with CG meetings. We can also put any other events here as we need!
+
+You can [view in browser](https://cloud.w3c.social/apps/calendar/p/GzxsDfE6CKtp9MHX) or [subscribe/download ics link](webcals://cloud.w3c.social/remote.php/dav/public-calendars/GzxsDfE6CKtp9MHX/?export).
+
+If you are organising events or other meetings, tell me if you want write access to the calendar (or tell me the details and I can add things).</description>
+    
+    <lastBuildDate>Tue, 02 Feb 2021 00:00:14 +0000</lastBuildDate>
+    <category>SocialCG</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/socialcg-meetings-calendar/1308.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>SocialCG meetings calendar</title>
+        <dc:creator><![CDATA[jarofgreen]]></dc:creator>
+        <description><![CDATA[
+            <p>Been hacking this weekend. Now if you follow</p>
+<blockquote>
+<p><span class="mention">@w3_social_web_incubator_community_group</span>@denof.theoccasionoctopus.net</p>
+</blockquote>
+<p>you’ll get a public note appearing in your timeline on the morning of events. So even if your software doesn’t support Event objects, you will still get a reminder. Tested successfully with Mastodon - other software may need tweaking but happy to chat.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/socialcg-meetings-calendar/1308/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/socialcg-meetings-calendar/1308/6</link>
+        <pubDate>Tue, 02 Feb 2021 00:00:14 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1308-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/socialcg-meetings-calendar/1308.rss">SocialCG meetings calendar</source>
+      </item>
+      <item>
+        <title>SocialCG meetings calendar</title>
+        <dc:creator><![CDATA[jarofgreen]]></dc:creator>
+        <description><![CDATA[
+            <p>Ok, so after some chat in the IRC group last night I ended up setting up something for me to use. If others find it useful too that’s cool.</p>
+<p><a href="https://denof.theoccasionoctopus.net/a/w3_social_web_incubator_community_group/event" rel="noopener nofollow ugc">https://denof.theoccasionoctopus.net/a/w3_social_web_incubator_community_group/event</a> is events for next 2 months.</p>
+<p>In the footer of that page you can click a link and set the timezone you want to view in (I can’t see that on the NextCloud Web calendar?)</p>
+<p>It will automatically add more according to the pattern, always for the next 2 months - this Python bots does that <a href="https://github.com/theoccasionoctopus/theoccasionoctopus-bots-import/blob/95de5a3f10910207682c99c0e47601d9b232a80c/theoccasionoctopusbotsimport/spiders/w3socialwebincubatorcommunitygroup.py" rel="noopener nofollow ugc">https://github.com/theoccasionoctopus/theoccasionoctopus-bots-import/blob/95de5a3f10910207682c99c0e47601d9b232a80c/theoccasionoctopusbotsimport/spiders/w3socialwebincubatorcommunitygroup.py</a> You can see it strictly adds in UTC and I’ve tested on my dev machine - when summer comes, events in the UK timezone shift an hour.</p>
+<p>ICAL feed: <a href="https://denof.theoccasionoctopus.net/api/v1/account/534a0d07-918b-48e0-9235-3ced151cd45e/events.ical" rel="noopener nofollow ugc">https://denof.theoccasionoctopus.net/api/v1/account/534a0d07-918b-48e0-9235-3ced151cd45e/events.ical</a></p>
+<p>JSON feed: <a href="https://denof.theoccasionoctopus.net/api/v1/account/534a0d07-918b-48e0-9235-3ced151cd45e/events.json" rel="noopener nofollow ugc">https://denof.theoccasionoctopus.net/api/v1/account/534a0d07-918b-48e0-9235-3ced151cd45e/events.json</a></p>
+<p>ActivityPub outbox: <a href="https://denof.theoccasionoctopus.net/activitystreams/534a0d07-918b-48e0-9235-3ced151cd45e/outbox" rel="noopener nofollow ugc">https://denof.theoccasionoctopus.net/activitystreams/534a0d07-918b-48e0-9235-3ced151cd45e/outbox</a> with each event</p>
+<p>And following <span class="mention">@w3_social_web_incubator_community_group</span>@denof.theoccasionoctopus.net miggggghhhhhhht give you Event objects sent to your inbox - I’ll admit my ActivityPub interop has not been fully tested … but if anyone wants to follow that, and is prepared for a bit of chat with me, I’m happy to make that work better in the future.</p>
+<p>And finally, if <a class="mention" href="/u/rhiaro">@rhiaro</a>  or other chairs want they can create a login and I’ll give them access to edit events - so more details can be added - special one-off changes can be made - etc. PM me.</p>
+<p>(BTW this software does do reoccurring events, but I’ve deliberately not used that feature here for several reasons - a key one being the ActivityPub event object doesn’t support them [ I’ll post more on that later <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"> ] and I wanted something that had fuller ActivityPub support, given the subject! )</p>
+<p>For keeping things on the forum,</p>
+<aside class="quote no-group" data-username="aschrijver" data-post="4" data-topic="1308">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/aschrijver/40/278_2.png" class="avatar"> aschrijver:</div>
+<blockquote>
+<p>I prefer keeping things together, i.e. on the forum.</p>
+</blockquote>
+</aside>
+<aside class="quote no-group" data-username="rhiaro" data-post="3" data-topic="1308">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/rhiaro/40/712_2.png" class="avatar"> rhiaro:</div>
+<blockquote>
+<p>(because the forum doesn’t do repeating events afaik, and having the holding events into the future before the meeting is announced can be helpful.)</p>
+</blockquote>
+</aside>
+<p>Maybe an approach similar to what I’ve done here, with a bot that makes holding issues for future meetings a few months in advance? Or would that just get spammy? But if we do go down that road, I can set up an Forum iCal -&gt; ActivityPub actor interface so people can follow on ActivityPub (my software already does iCal import.)</p>
+<p>Anyway, very happy to delete what I’ve done if we work out something else good - it already made me improve some things in my software last night so that’s always good! <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/socialcg-meetings-calendar/1308/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/socialcg-meetings-calendar/1308/5</link>
+        <pubDate>Mon, 18 Jan 2021 17:37:45 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1308-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/socialcg-meetings-calendar/1308.rss">SocialCG meetings calendar</source>
+      </item>
+      <item>
+        <title>SocialCG meetings calendar</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>I prefer keeping things together, i.e. on the forum. But on the other hand things on the forum might be improved to keep the overview. I created <a href="https://socialhub.activitypub.rocks/t/improving-forum-overall-community-accessibility/1265" class="inline-onebox">Improving forum + overall community accessibility</a> for that (one improvement here is if <a class="mention" href="/u/how">@how</a> installs a plugin to give us a dropdown menu showing all the various locations where AP activity is ongoing, fep, socialcg, bbb, jitsi, gh, conf, etcetera).</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/socialcg-meetings-calendar/1308/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/socialcg-meetings-calendar/1308/4</link>
+        <pubDate>Mon, 18 Jan 2021 06:25:07 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1308-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/socialcg-meetings-calendar/1308.rss">SocialCG meetings calendar</source>
+      </item>
+      <item>
+        <title>SocialCG meetings calendar</title>
+        <dc:creator><![CDATA[rhiaro]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/jarofgreen">@jarofgreen</a>, I’ve fixed the nextcloud calendar timezones, and sneaky google ids.</p>
+<p>The calendar links have <strong>changed</strong> - I’ve updated the links in the original post. Sorry to anyone who already subscribed, you’ll just have to grab it again.</p>
+<p>I <em>totally</em> did not realise that socialhub generates its own ICS, until <a class="mention" href="/u/how">@how</a> mentioned it elsewhere recently. So now i’m wondering if I should drop the nextcloud calendar and we rely on the forum? Or have both (because the forum doesn’t do repeating events afaik, and having the holding events into the future before the meeting is announced can be helpful.)</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/socialcg-meetings-calendar/1308/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/socialcg-meetings-calendar/1308/3</link>
+        <pubDate>Sun, 17 Jan 2021 22:16:28 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1308-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/socialcg-meetings-calendar/1308.rss">SocialCG meetings calendar</source>
+      </item>
+      <item>
+        <title>SocialCG meetings calendar</title>
+        <dc:creator><![CDATA[jarofgreen]]></dc:creator>
+        <description><![CDATA[
+            <p>Previously the meetings were at UTC timezones; but these are recurring events set to London time zone - in other words, for some people the meetings will shift an hour with the UK’s summer time. Is this intentional?</p>
+<p>(Also, just curious, why in the iCal files are the UID’s “<a href="mailto:id@google.com">id@google.com</a>”? Should be “id@cloud.w3c.social” I think?)</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/socialcg-meetings-calendar/1308/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/socialcg-meetings-calendar/1308/2</link>
+        <pubDate>Sun, 17 Jan 2021 17:21:36 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1308-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/socialcg-meetings-calendar/1308.rss">SocialCG meetings calendar</source>
+      </item>
+      <item>
+        <title>SocialCG meetings calendar</title>
+        <dc:creator><![CDATA[rhiaro]]></dc:creator>
+        <description><![CDATA[
+            <p>We have a calendar with CG meetings. We can also put any other events here as we need!</p>
+<p>You can <a href="https://cloud.w3c.social/apps/calendar/p/GzxsDfE6CKtp9MHX">view in browser</a> or <a>subscribe/download ics link</a>.</p>
+<p>If you are organising events or other meetings, tell me if you want write access to the calendar (or tell me the details and I can add things).</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/socialcg-meetings-calendar/1308/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/socialcg-meetings-calendar/1308/1</link>
+        <pubDate>Fri, 15 Jan 2021 19:26:42 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1308-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/socialcg-meetings-calendar/1308.rss">SocialCG meetings calendar</source>
+      </item>
+  </channel>
+</rss>

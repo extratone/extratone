@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Creating a template for software implementation categories</title>
+    <link>https://socialhub.activitypub.rocks/t/creating-a-template-for-software-implementation-categories/39</link>
+    <description>The idea is to have, for each software implementation, a sub-category here. Each category comes with a pinned topic that would be a generic &quot;identification card&quot; for the project, maintained by the project&#39;s team.
+
+Many such projects already have their own community space, and won&#39;t maintain presence here beyond that &quot;identification card&quot;.
+
+Others will benefit from having a strong presence here and use the category for their own community.
+
+This topic is to define the template that could be used across projects to create a consistent &quot;identification card&quot;.
+
+[quote=&quot;how, post:10, topic:19&quot;]
+I would imagine an “id card” that would include:
+
+* what the software is about
+* language and license info
+* a bit of branding
+* team info
+* where is:
+  * the source code
+  * documentation
+  * communication channels including security reports and announcement feeds
+  * community norms
+[/quote]</description>
+    
+    <lastBuildDate>Sun, 06 Oct 2019 12:33:51 +0000</lastBuildDate>
+    <category>Software</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/creating-a-template-for-software-implementation-categories/39.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Creating a template for software implementation categories</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>I guess <a class="mention" href="/u/tao">@tao</a> would be providing that on fediverse.space (see <a class="hashtag" href="/c/10-fediversity">#<span>fediversity</span></a>).</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/creating-a-template-for-software-implementation-categories/39/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/creating-a-template-for-software-implementation-categories/39/4</link>
+        <pubDate>Sun, 06 Oct 2019 12:33:51 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-39-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/creating-a-template-for-software-implementation-categories/39.rss">Creating a template for software implementation categories</source>
+      </item>
+      <item>
+        <title>Creating a template for software implementation categories</title>
+        <dc:creator><![CDATA[rigelk]]></dc:creator>
+        <description><![CDATA[
+            <p>Server implementations could also provide a list of a few live instances (potentially demo instances).</p>
+<p>I don’t know if it is for the forum, but it would be nice having the card data in a machine-readable format too at some point.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/creating-a-template-for-software-implementation-categories/39/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/creating-a-template-for-software-implementation-categories/39/3</link>
+        <pubDate>Sun, 06 Oct 2019 12:32:16 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-39-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/creating-a-template-for-software-implementation-categories/39.rss">Creating a template for software implementation categories</source>
+      </item>
+      <item>
+        <title>Creating a template for software implementation categories</title>
+        <dc:creator><![CDATA[rigelk]]></dc:creator>
+        <description><![CDATA[
+            <p>Rather than documentation (or in addition to), I would rather see a link to the normative dialect documentation. There is no standard way to extend ActivityPub (or at least describe them) yet, but having at least a link to the section in the documentation that best describes it would be interesting.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/creating-a-template-for-software-implementation-categories/39/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/creating-a-template-for-software-implementation-categories/39/2</link>
+        <pubDate>Sat, 21 Sep 2019 18:52:55 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-39-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/creating-a-template-for-software-implementation-categories/39.rss">Creating a template for software implementation categories</source>
+      </item>
+      <item>
+        <title>Creating a template for software implementation categories</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>The idea is to have, for each software implementation, a sub-category here. Each category comes with a pinned topic that would be a generic “identification card” for the project, maintained by the project’s team.</p>
+<p>Many such projects already have their own community space, and won’t maintain presence here beyond that “identification card”.</p>
+<p>Others will benefit from having a strong presence here and use the category for their own community.</p>
+<p>This topic is to define the template that could be used across projects to create a consistent “identification card”.</p>
+<aside class="quote no-group" data-post="10" data-topic="19">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/how/40/8_2.png" class="avatar"><a href="https://socialhub.activitypub.rocks/t/things-to-be-done-before-announcing-the-forum/19/10">Things to be done before announcing the forum</a>
+</div>
+<blockquote>
+<p>I would imagine an “id card” that would include:</p>
+<ul>
+<li>what the software is about</li>
+<li>language and license info</li>
+<li>a bit of branding</li>
+<li>team info</li>
+<li>where is:
+<ul>
+<li>the source code</li>
+<li>documentation</li>
+<li>communication channels including security reports and announcement feeds</li>
+<li>community norms</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</aside>
+          <p><a href="https://socialhub.activitypub.rocks/t/creating-a-template-for-software-implementation-categories/39/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/creating-a-template-for-software-implementation-categories/39/1</link>
+        <pubDate>Fri, 13 Sep 2019 10:03:24 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-39-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/creating-a-template-for-software-implementation-categories/39.rss">Creating a template for software implementation categories</source>
+      </item>
+  </channel>
+</rss>

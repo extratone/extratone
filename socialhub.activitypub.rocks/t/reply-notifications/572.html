@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Reply notifications - Server to Server - SocialHub</title>
+    <meta name="description" content="Is anyone using an Update activity to notify actors that a reply collection has been updated? 
+This is the use case that I was thinking about. 
+
+actors foo.social/nick and bar.social/mattie follow each other
+actors foo.s&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="572.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Reply notifications&#39;" href="https://socialhub.activitypub.rocks/t/reply-notifications/572.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/reply-notifications/572" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/reply-notifications/572" />
+<meta property="og:title" content="Reply notifications" />
+<meta name="twitter:title" content="Reply notifications" />
+<meta property="og:description" content="Is anyone using an Update activity to notify actors that a reply collection has been updated?  This is the use case that I was thinking about.   actors foo.social/nick and bar.social/mattie follow each other actors foo.social/nick and baz.town/vanessa follow each other foo.social/nick creates a note and both folowers receive the create note activity bar.social/mattie replies to the note and foo.social/nick receives the create note activity foo.social/nick creates an Update activity with the repl..." />
+<meta name="twitter:description" content="Is anyone using an Update activity to notify actors that a reply collection has been updated?  This is the use case that I was thinking about.   actors foo.social/nick and bar.social/mattie follow each other actors foo.social/nick and baz.town/vanessa follow each other foo.social/nick creates a note and both folowers receive the create note activity bar.social/mattie replies to the note and foo.social/nick receives the create note activity foo.social/nick creates an Update activity with the repl..." />
+<meta property="article:published_time" content="2020-03-15T15:41:05+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="572.html">Reply notifications</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/activitypub.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #0088CC'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>ActivityPub</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/activitypub/s2s/7.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #808281'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Server to Server</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/ngerakines.html'><span itemprop='name'>ngerakines</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="572.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-03-15T15:41:05Z'>
+              <time itemprop='dateModified' datetime='2020-03-15T17:18:06Z' class='post-time'>
+                March 15, 2020,  5:18pm
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Is anyone using an Update activity to notify actors that a reply collection has been updated?</p>
+<p>This is the use case that I was thinking about.</p>
+<ol>
+<li>actors foo.social/nick and bar.social/mattie follow each other</li>
+<li>actors foo.social/nick and baz.town/vanessa follow each other</li>
+<li>foo.social/nick creates a note and both folowers receive the create note activity</li>
+<li>bar.social/mattie replies to the note and foo.social/nick receives the create note activity</li>
+<li>foo.social/nick creates an <code>Update</code> activity with the replies collection as the object to all followers</li>
+<li>baz.town/vanessa receives the update activity, connects that the replies collection is associated with the conversation, and requests collection to fill out missing objects of interest</li>
+</ol>
+<pre><code class="lang-auto">{
+  "type": "Update",
+  "actor": "https://tavern.town/users/nick",
+  "object": "https://tavern.town/objects/799b9617-dace-4510-9b95-7b84f747008a/replies",
+  "to": [
+    "https://www.w3.org/ns/activitystreams#Public",
+    "https://tavern.town/users/nick/followers"
+  ]
+}
+</code></pre>
+        </div>
+
+        <meta itemprop='headline' content='Reply notifications'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/ngerakines.html'><span itemprop='name'>ngerakines</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="572.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-03-15T17:17:11Z'>
+              <time itemprop='dateModified' datetime='2020-03-15T17:18:16Z' class='post-time'>
+                March 15, 2020,  5:18pm
+              </time>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Alternatively, the <code>Add</code> activity could be used.</p>
+<pre><code class="lang-json">{
+  "id": "https://tavern.town/activities/a7433405-a063-4699-b5f8-83785cec838e",
+  "type": "Add",
+  "actor": "https://tavern.town/users/nick",
+  "object": "https://foo.town/objects/8e45a0ff-a957-4165-aaee-e01a56f443ce",
+  "target": "https://tavern.town/objects/799b9617-dace-4510-9b95-7b84f747008a/replies",
+  "to": [
+    "https://www.w3.org/ns/activitystreams#Public",
+    "https://tavern.town/users/nick/followers"
+  ]
+}
+</code></pre>
+<p>In the above example, the actor is the “owner” of the replies collection that the object is being added to.</p>
+        </div>
+
+        <meta itemprop='headline' content='Reply notifications'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="572.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-03-15T17:45:48Z' class='post-time'>
+                March 15, 2020,  5:45pm
+              </time>
+              <meta itemprop='dateModified' content='2020-03-15T17:45:48Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’m not aware of any because this doesn’t look like it would scale well – I can DDOS someone else by replying to all the people they follow.</p>
+        </div>
+
+        <meta itemprop='headline' content='Reply notifications'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="572.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-03-15T17:49:28Z' class='post-time'>
+                March 15, 2020,  5:49pm
+              </time>
+              <meta itemprop='dateModified' content='2020-03-15T17:49:28Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Plus, I’m not understanding the use case here. The inbox forwarding machanism in ActivityPub should already notify followers of new replies by others.</p>
+        </div>
+
+        <meta itemprop='headline' content='Reply notifications'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/ngerakines.html'><span itemprop='name'>ngerakines</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="572.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-03-15T18:26:30Z' class='post-time'>
+                March 15, 2020,  6:26pm
+              </time>
+              <meta itemprop='dateModified' content='2020-03-15T18:26:30Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="cjs" data-post="3" data-topic="572" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/cjs/40/35_2.png" class="avatar"> cjs:</div>
+<blockquote>
+<p>I’m not aware of any because this doesn’t look like it would scale well – I can DDOS someone else by replying to all the people they follow.</p>
+</blockquote>
+</aside>
+<p>I think it’s worth pointing out that practically any network activity could look like a DDOS attack. I think performance considerations like that should be left to operators. Between server inboxes and deferred activities (activities should be sent +5 minutes from time to allow batching to occur, etc.), reasonable measures can be taken.</p>
+<aside class="quote no-group" data-username="cjs" data-post="4" data-topic="572" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/cjs/40/35_2.png" class="avatar"> cjs:</div>
+<blockquote>
+<p>Plus, I’m not understanding the use case here. The inbox forwarding machanism in ActivityPub should already notify followers of new replies by others.</p>
+</blockquote>
+</aside>
+<p>The use case is to allow for actors interested in the activity of a conversation, but who aren’t followers of everyone involved in the conversation. Inbox forwarding is another option, yes, and it is worth considering. I would say that an <code>Update</code> or <code>Add</code> activity would be less “noise” because it comes directly from the origin actor that the local actor is following.</p>
+        </div>
+
+        <meta itemprop='headline' content='Reply notifications'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/heluecht.html'><span itemprop='name'>heluecht</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="572.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-03-16T05:39:21Z'>
+              <time itemprop='dateModified' datetime='2020-03-16T05:39:29Z' class='post-time'>
+                March 16, 2020,  5:39am
+              </time>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>To follow a conversation in Friendica we are sending the “Follow” activity where the object is the starting post. This then triggers the inbox forwarding.</p>
+        </div>
+
+        <meta itemprop='headline' content='Reply notifications'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/ngerakines.html'><span itemprop='name'>ngerakines</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="572.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-03-16T12:48:26Z' class='post-time'>
+                March 16, 2020, 12:48pm
+              </time>
+              <meta itemprop='dateModified' content='2020-03-16T12:48:26Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Oh interesting. Does that happen automatically or is that an explicit action by the user/actor?</p>
+        </div>
+
+        <meta itemprop='headline' content='Reply notifications'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/ngerakines.html'><span itemprop='name'>ngerakines</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="572.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-03-17T19:48:53Z' class='post-time'>
+                March 17, 2020,  7:48pm
+              </time>
+              <meta itemprop='dateModified' content='2020-03-17T19:48:53Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="heluecht" data-post="6" data-topic="572" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/heluecht/40/195_2.png" class="avatar"> heluecht:</div>
+<blockquote>
+<p>To follow a conversation in Friendica we are sending the “Follow” activity where the object is the starting post. This then triggers the inbox forwarding.</p>
+</blockquote>
+</aside>
+<p>I was thinking about this more and have an issue. It doesn’t provide any context as to why the thing is forwarded. My thought was that an actor may not “accept” someone’s comment as an official reply to their object/note/article/whatever, therefor wouldn’t want it to be relevant to the conversation. The inbox forwarding mechanic is interesting, but it doesn’t help forward the context of the side effects the activity/object had on the actor forwarding it that may be relevant to the audience.</p>
+        </div>
+
+        <meta itemprop='headline' content='Reply notifications'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="572.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-03-18T07:00:28Z'>
+              <time itemprop='dateModified' datetime='2020-03-18T07:38:19Z' class='post-time'>
+                March 18, 2020,  7:38am
+              </time>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="ngerakines" data-post="8" data-topic="572">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/ngerakines/40/296_2.png" class="avatar"> ngerakines:</div>
+<blockquote>
+<p>My thought was that an actor may not “accept” someone’s comment as an official reply to their object/note/article/whatever, therefor wouldn’t want it to be relevant to the conversation.</p>
+</blockquote>
+</aside>
+<p>That’s by design. It could be due to spam/DDOS protections on the forwarding server’s side so it doesn’t become a spam zombie on behalf of another server. Or because the forwarding server (or actor on that instance) has determined that the content is harmful and doesn’t want to propagate it.</p>
+<p>Once OCAP is in ActivityPub, the latter becomes even easier to enforce and reject system wide.</p>
+<aside class="quote no-group" data-username="ngerakines" data-post="5" data-topic="572">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/ngerakines/40/296_2.png" class="avatar"> ngerakines:</div>
+<blockquote>
+<p>I think it’s worth pointing out that practically any network activity could look like a DDOS attack.</p>
+</blockquote>
+</aside>
+<p>Sure. Everything is known to the state of California to cause cancer, too. But you’re discarding a well-established solution with big warning signs printed in the spec about it (inbox forwarding), and going with a custom solution where you’ll have to rethink all of these interactions.</p>
+<aside class="quote no-group" data-username="ngerakines" data-post="5" data-topic="572">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/ngerakines/40/296_2.png" class="avatar"> ngerakines:</div>
+<blockquote>
+<p>The use case is to allow for actors interested in the activity of a conversation, but who aren’t followers of everyone involved in the conversation.</p>
+</blockquote>
+</aside>
+<p>This is the exact definition of the “ghost reply problem” that inbox forwarding intends to solve.</p>
+<aside class="quote no-group" data-username="ngerakines" data-post="5" data-topic="572">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/ngerakines/40/296_2.png" class="avatar"> ngerakines:</div>
+<blockquote>
+<p>I would say that an <code>Update</code> or <code>Add</code> activity would be less “noise” because it comes directly from the origin actor that the local actor is following.</p>
+</blockquote>
+</aside>
+<p>Inbox forwarding <em>does</em> have the origin actor that the local actor is following, send the Activity to that local actor. However, it’s someone else’s Activity. That’s good because the local actor can now fetch that Activity on the remote peer to make sure it’s not a lie, and process its raw side effects in situ.</p>
+<p>ActivityPub is built on the premise of processing linked data piecemeal, but it sounds like you want to have two conflicting source of truths for a conversation: you have the raw incoming Activities on the one hand, which builds the tree as you go, and on the other you want to have this Collection of everything in the conversation in a linear form. Which begs the question: why? If it’s to easily find all messages in a thread without recursive lookup, others have solved this by using a conversation token (it might look like an IRI, but it’s nothing, not even a collection) for easy DB lookup by index.</p>
+<p>I think this is where I see the approach causing technical friction.</p>
+<aside class="quote no-group" data-username="ngerakines" data-post="8" data-topic="572">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/ngerakines/40/296_2.png" class="avatar"> ngerakines:</div>
+<blockquote>
+<p>The inbox forwarding mechanic is interesting, but it doesn’t help forward the context of the side effects the activity/object had on the actor forwarding it that may be relevant to the audience.</p>
+</blockquote>
+</aside>
+<p>And that’s kind of the point, no? The ActivityPub model is that Activities are easy data to interoperate, but implementations <em>can</em> do different things side effect wise. The ones that interoperate <em>well</em> all agree to a baseline that “Create means at least adding it to a cache”, etc, but the other side effect details may differ.</p>
+<p>The activity encapsulates this single side effect idea.</p>
+<p>Trying to force your apps’ <em>single</em> side effect details into <em>multiple</em> Activities breaks this encapsulation. It is not great design for the health of the ecosystem.</p>
+<p>EDIT: There’s also a practical argument to be had: you can’t expect every other federated peer out there to send an <code>Update</code> or <code>Add</code> to you in the manner you want, so you have to solve your reply-problem without these Activities being sent anyway.</p>
+        </div>
+
+        <meta itemprop='headline' content='Reply notifications'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/ngerakines.html'><span itemprop='name'>ngerakines</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="572.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-03-18T13:05:52Z' class='post-time'>
+                March 18, 2020,  1:05pm
+              </time>
+              <meta itemprop='dateModified' content='2020-03-18T13:05:52Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>That all makes a lot of sense. I appreciate your thorough reply.</p>
+        </div>
+
+        <meta itemprop='headline' content='Reply notifications'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

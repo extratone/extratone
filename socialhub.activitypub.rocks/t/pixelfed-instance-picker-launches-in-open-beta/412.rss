@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Pixelfed Instance Picker launches in Open Beta</title>
+    <link>https://socialhub.activitypub.rocks/t/pixelfed-instance-picker-launches-in-open-beta/412</link>
+    <description>Hey Folks!
+
+We launched our Instance Picker in open beta a few hours ago! You can check it out at https://beta.joinpixelfed.org/
+
+Anyone is welcome to apply for their Pixelfed instance be listed by sending an email to hello@pixelfed.org with the subject of &quot;Instance Picker&quot; and the following information:
+- Domain
+- Contact Email (not public)
+
+If you have any questions, feel free to reply to this thread!</description>
+    
+    <lastBuildDate>Thu, 04 Feb 2021 10:44:33 +0000</lastBuildDate>
+    <category>Pixelfed</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/pixelfed-instance-picker-launches-in-open-beta/412.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Pixelfed Instance Picker launches in Open Beta</title>
+        <dc:creator><![CDATA[cats-shadow]]></dc:creator>
+        <description><![CDATA[
+            <p>Hmm… Looks great!<br>
+There are some questions:<br>
+How to switch to the next page of filtered results? (There are only 20 of them on the first page of selection)<br>
+89 instances are in the list. How to set filter to see all of them? I got maximum 84 instances in selection.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/pixelfed-instance-picker-launches-in-open-beta/412/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/pixelfed-instance-picker-launches-in-open-beta/412/3</link>
+        <pubDate>Thu, 04 Feb 2021 10:44:33 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-412-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/pixelfed-instance-picker-launches-in-open-beta/412.rss">Pixelfed Instance Picker launches in Open Beta</source>
+      </item>
+      <item>
+        <title>Pixelfed Instance Picker launches in Open Beta</title>
+        <dc:creator><![CDATA[wakest]]></dc:creator>
+        <description><![CDATA[
+            <p>This looks great! Congrats.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/pixelfed-instance-picker-launches-in-open-beta/412/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/pixelfed-instance-picker-launches-in-open-beta/412/2</link>
+        <pubDate>Wed, 18 Dec 2019 03:47:06 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-412-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/pixelfed-instance-picker-launches-in-open-beta/412.rss">Pixelfed Instance Picker launches in Open Beta</source>
+      </item>
+      <item>
+        <title>Pixelfed Instance Picker launches in Open Beta</title>
+        <dc:creator><![CDATA[dansup]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey Folks!</p>
+<p>We launched our Instance Picker in open beta a few hours ago! You can check it out at <a href="https://beta.joinpixelfed.org/" rel="nofollow noopener">https://beta.joinpixelfed.org/</a></p>
+<p>Anyone is welcome to apply for their Pixelfed instance be listed by sending an email to <a href="mailto:hello@pixelfed.org">hello@pixelfed.org</a> with the subject of “Instance Picker” and the following information:</p>
+<ul>
+<li>Domain</li>
+<li>Contact Email (not public)</li>
+</ul>
+<p>If you have any questions, feel free to reply to this thread!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/pixelfed-instance-picker-launches-in-open-beta/412/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/pixelfed-instance-picker-launches-in-open-beta/412/1</link>
+        <pubDate>Wed, 18 Dec 2019 03:37:22 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-412-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/pixelfed-instance-picker-launches-in-open-beta/412.rss">Pixelfed Instance Picker launches in Open Beta</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>About SkoHub</title>
+    <link>https://socialhub.activitypub.rocks/t/about-skohub/356</link>
+    <description>SkoHub – Simple Knowledge Organization Hub
+
+[SkoHub](https://skohub.io) supports a novel approach for finding content on the web. The general idea is to extend the scope of Knowledge Organization Systems (KOS) to also act as communication hubs for publishers and information seekers. In effect, SkoHub allows to follow specific subjects in order to be notified when new content about that subject is published.</description>
+    
+    <lastBuildDate>Thu, 01 Oct 2020 22:02:02 +0000</lastBuildDate>
+    <category>SkoHub</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/about-skohub/356.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>About SkoHub</title>
+        <dc:creator><![CDATA[acka47]]></dc:creator>
+        <description><![CDATA[
+            <p>This brings me to the question: If people would collaboratively create, maintain and use a controlled taxonomy on the web, shouldn’t we call that a folksonomy?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-skohub/356/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-skohub/356/5</link>
+        <pubDate>Thu, 01 Oct 2020 22:02:02 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-356-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-skohub/356.rss">About SkoHub</source>
+      </item>
+      <item>
+        <title>About SkoHub</title>
+        <dc:creator><![CDATA[hamishcampbell]]></dc:creator>
+        <description><![CDATA[
+            <p>will do… yep it’s an interesting subject.our project is grassroots up so based on tag folksonomy but no reason not to build something more complex on top of this.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-skohub/356/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-skohub/356/4</link>
+        <pubDate>Thu, 01 Oct 2020 21:50:25 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-356-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-skohub/356.rss">About SkoHub</source>
+      </item>
+      <item>
+        <title>About SkoHub</title>
+        <dc:creator><![CDATA[acka47]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Hamish, I just watched <a href="https://conf.tube/videos/watch/953de898-74dc-4665-95fb-313042f66cc6" class="inline-onebox" rel="nofollow noopener">The reboot of the indymedia project - ConfTube</a>. I also think SkoHub could be useful in the project. Will you join the SkoHub Q&amp;A tomorrow?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-skohub/356/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-skohub/356/3</link>
+        <pubDate>Thu, 01 Oct 2020 21:43:56 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-356-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-skohub/356.rss">About SkoHub</source>
+      </item>
+      <item>
+        <title>About SkoHub</title>
+        <dc:creator><![CDATA[hamishcampbell]]></dc:creator>
+        <description><![CDATA[
+            <p>Am intrested in talking about taging and catogorys for the OMN project with you guys.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-skohub/356/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-skohub/356/2</link>
+        <pubDate>Mon, 28 Sep 2020 12:23:34 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-356-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-skohub/356.rss">About SkoHub</source>
+      </item>
+      <item>
+        <title>About SkoHub</title>
+        <dc:creator><![CDATA[acka47]]></dc:creator>
+        <description><![CDATA[
+            <p>SkoHub – Simple Knowledge Organization Hub</p>
+<p><a href="https://skohub.io" rel="nofollow noopener">SkoHub</a> supports a novel approach for finding content on the web. The general idea is to extend the scope of Knowledge Organization Systems (KOS) to also act as communication hubs for publishers and information seekers. In effect, SkoHub allows to follow specific subjects in order to be notified when new content about that subject is published.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-skohub/356/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-skohub/356/1</link>
+        <pubDate>Wed, 27 Nov 2019 11:29:02 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-356-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-skohub/356.rss">About SkoHub</source>
+      </item>
+  </channel>
+</rss>

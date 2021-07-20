@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>About Discourse</title>
+    <link>https://socialhub.activitypub.rocks/t/about-discourse/102</link>
+    <description>Discussion on Federation support for Discourse.
+
+https://meta.discourse.org/t/federation-support-for-discourse/90921/21</description>
+    
+    <lastBuildDate>Tue, 05 Nov 2019 23:57:30 +0000</lastBuildDate>
+    <category>Discourse</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/about-discourse/102.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>About Discourse</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p>thanks for the link here, really excited to see Discourse moving in this direction.</p>
+<p>Reading what you’re hoping to achieve for v1, here are some quick thoughts:</p>
+<p>ActivityPub (server to server) is a push-based, actor-based protocol. like WebSub, which it partially evolved out of, it’s based around users <strong>subscribing</strong> to activities (using Follow) and getting <strong>notified</strong> when they occur (using inbox distribution). there are other ways for actors to interact, but this is the most fundamental and the lowest common denominator in terms of what is actually implemented.</p>
+<p>so just providing ActivitySteams 2.0 versions of your content, while a good first step, isn’t enough to get things federating to another platform—you’ll also need a concept of remote users and allow those remote users to Follow local actors</p>
+<p>another assumption that might be a little tricky for discourse is that most current ActivityPub implementations assume that the actors create content and then distribute it to their own followers list—discourse works slightly differently, where actors (users) create content and then distribute it to another actor’s following list (the forum’s or thread’s). Making this work correctly, and with the right semantics, is a little tricky, and it’s something other projects have taken a stab at, but I think we’ll probably need to hash out a good, solid  solution for this going forward, and it’ll require some tweaking of existing implementations.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-discourse/102/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-discourse/102/3</link>
+        <pubDate>Tue, 05 Nov 2019 23:57:30 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-102-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-discourse/102.rss">About Discourse</source>
+      </item>
+      <item>
+        <title>About Discourse</title>
+        <dc:creator><![CDATA[rishabh]]></dc:creator>
+        <description><![CDATA[
+            <aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/1b0984d7ee08bce90572f46a1950e1ced436d028.png" class="site-icon" width="32" height="32">
+      <a href="https://meta.discourse.org/t/activitypub-support-phase-1-rfc/132624?u=rishabh" target="_blank" title="08:38AM - 05 November 2019" rel="nofollow noopener">Discourse Meta – 5 Nov 19</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/ecc92a52ee7353e03d5c0d1ea6521ce4541d9c25.png" class="thumbnail onebox-avatar" width="500" height="500">
+
+<h3><a href="https://meta.discourse.org/t/activitypub-support-phase-1-rfc/132624?u=rishabh" target="_blank" rel="nofollow noopener">ActivityPub Support: Phase 1 RFC</a></h3>
+
+<p>Continuing from Federation support for Discourse, Tools to "aggregate" many Discourse forums? and ActivityPub Implementation for Discourse,  Why? A common problem that many Discourse users face is the inability to show an aggregation of all the...</p>
+
+  <p><span class="label1">Reading time: 1 mins 🕑</span>
+    <span class="label2">Likes: 13 ❤</span></p>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/about-discourse/102/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-discourse/102/2</link>
+        <pubDate>Tue, 05 Nov 2019 09:09:59 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-102-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-discourse/102.rss">About Discourse</source>
+      </item>
+      <item>
+        <title>About Discourse</title>
+        <dc:creator><![CDATA[rishabh]]></dc:creator>
+        <description><![CDATA[
+            <p>Discussion on Federation support for Discourse.</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/1b0984d7ee08bce90572f46a1950e1ced436d028.png" class="site-icon" width="32" height="32">
+      <a href="https://meta.discourse.org/t/federation-support-for-discourse/90921/21" target="_blank" title="10:11AM - 26 August 2019" rel="nofollow noopener">Discourse Meta – 26 Aug 19</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/3257605a46a4075ea4e980dae62fe83785b09381.jpeg" class="thumbnail onebox-avatar" width="180" height="180">
+
+<h3><a href="https://meta.discourse.org/t/federation-support-for-discourse/90921/21" target="_blank" rel="nofollow noopener">Federation support for Discourse</a></h3>
+
+<p>Before we can re-open that topic, I think the community should decide on functional spec here that someone could get started with.  As the term “ActivityPub Implementation for Discourse” is extremely broad, the team strongly believes that we should...</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/about-discourse/102/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-discourse/102/1</link>
+        <pubDate>Thu, 10 Oct 2019 11:12:08 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-102-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-discourse/102.rss">About Discourse</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>2021-01-15 SocialCG Meeting - Building a Policy Special Interest Group</title>
+    <link>https://socialhub.activitypub.rocks/t/2021-01-15-socialcg-meeting-building-a-policy-special-interest-group/1261</link>
+    <description>[date=2021-01-15 time=18:00:00 timezone=&quot;Europe/Berlin&quot;]
+
+## [Join here directly with BigBlueButton](https://bbb.w3c.social/b/rhi-vp1-fv6-vn7)
+
+---
+**Topic**
+
+# Policy Group
+
+We want to follow the discussions we had about the EU Commissions Proposal of the “Digital Markets Act” and build a Special Interest Group about Interoperability, Interconnection and Data Portability Policy !
+
+Unfortunately suboptimal incidents happen in the USA, so **personally** may I suggest to reach a group concencus in the beginning, what we now want to speak about too?
+
+Initial minutes
+https://www.w3.org/2020/12/04-social-minutes.html
+
+Relevant minutes
+https://www.w3.org/2020/12/11-social-minutes.html
+
+and our
+
+https://socialhub.activitypub.rocks/t/rc3-roundtable-interoperability-interconnection-and-portability/1216
+
+[Overview](https://love.public.cat/t/what-is-at-stake-with-interoperability/96) and more in the PUBLIC forum 
+[Subsequent Analysis by Dr. Ian Brown](https://www.ianbrown.tech/2020/12/16/438/)
+
+
+We are 14 people so far. I will sent invitations as DM.
+If you want to join the Group, write me a DM here or reply.</description>
+    
+    <lastBuildDate>Mon, 01 Feb 2021 01:25:48 +0000</lastBuildDate>
+    <category>SocialCG</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/2021-01-15-socialcg-meeting-building-a-policy-special-interest-group/1261.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>2021-01-15 SocialCG Meeting - Building a Policy Special Interest Group</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>I created the <a class="mention-group" href="/groups/policy">@policy</a> group and associated <a class="hashtag" href="/c/meeting/fediverse-policy/59">#<span>meeting:fediverse-policy</span></a> category to replace the remote <a href="https://love.public.cat/g/interop">@interop group</a> with a closer focus on the Fediverse.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-01-15-socialcg-meeting-building-a-policy-special-interest-group/1261/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-01-15-socialcg-meeting-building-a-policy-special-interest-group/1261/10</link>
+        <pubDate>Mon, 01 Feb 2021 01:25:48 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1261-10</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-01-15-socialcg-meeting-building-a-policy-special-interest-group/1261.rss">2021-01-15 SocialCG Meeting - Building a Policy Special Interest Group</source>
+      </item>
+      <item>
+        <title>2021-01-15 SocialCG Meeting - Building a Policy Special Interest Group</title>
+        <dc:creator><![CDATA[rhiaro]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you all who attended today! We got some very good outcomes. <a href="https://www.w3.org/2021/01/15-social-minutes.html" rel="noopener nofollow ugc">Here are the minutes</a></p>
+<p>We resolved:</p>
+<ul>
+<li>the remit of the Policy Group is primarily to liase with existing digital/tech political lobbying groups to bring awareness of relevant standards and W3C recommendations which can then be relayed at the right times and in the right places to politicians and policy makers. As part of this, the Policy Group may organise events, briefings, draft documentation, proposals, or open letters which can be co-signed by the SocialCG.</li>
+<li>the Policy group can use its best judgement to decide which relevant groups to reach out to in its efforts</li>
+<li>the Policy Group establishes a regular schedule to update the wider SocialCG with anything new.</li>
+<li>the Policy Group will coordinate activities publicly on the SocialHub forum.</li>
+</ul>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-01-15-socialcg-meeting-building-a-policy-special-interest-group/1261/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-01-15-socialcg-meeting-building-a-policy-special-interest-group/1261/9</link>
+        <pubDate>Fri, 15 Jan 2021 18:24:09 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1261-9</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-01-15-socialcg-meeting-building-a-policy-special-interest-group/1261.rss">2021-01-15 SocialCG Meeting - Building a Policy Special Interest Group</source>
+      </item>
+      <item>
+        <title>2021-01-15 SocialCG Meeting - Building a Policy Special Interest Group</title>
+        <dc:creator><![CDATA[rhiaro]]></dc:creator>
+        <description><![CDATA[
+            <h1>Meeting location</h1>
+<p>Important update: we will use the new social BBB instance for this meeting. You don’t need an account, and can join directly <a href="https://bbb.w3c.social/b/rhi-vp1-fv6-vn7" rel="noopener nofollow ugc">here</a>.</p>
+<p>We will still take notes in <a href="http://irc.w3.org/?channels=social" rel="noopener nofollow ugc">w3c #social IRC</a> because we can publish that directly to w3c servers.</p>
+<h1>Agenda (draft)</h1>
+<ol>
+<li>Introductions</li>
+<li>Creating the Policy Group
+<ul>
+<li>What is the scope and purpose?</li>
+<li>What actions can they take?</li>
+<li>Can/should/do they speak for SocialCG, or to what extent?</li>
+<li>Who leads the group (2 people at least)</li>
+<li>How does the group coordinate? Regular meeting? SocialHub threads? Email list?</li>
+<li>How/when to report back to others in SocialCG?</li>
+<li>…</li>
+</ul>
+</li>
+<li>Influx of new fediverse users (“the wave”)</li>
+<li>Next meeting</li>
+</ol>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-01-15-socialcg-meeting-building-a-policy-special-interest-group/1261/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-01-15-socialcg-meeting-building-a-policy-special-interest-group/1261/7</link>
+        <pubDate>Thu, 14 Jan 2021 10:34:39 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1261-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-01-15-socialcg-meeting-building-a-policy-special-interest-group/1261.rss">2021-01-15 SocialCG Meeting - Building a Policy Special Interest Group</source>
+      </item>
+      <item>
+        <title>2021-01-15 SocialCG Meeting - Building a Policy Special Interest Group</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-01-15-socialcg-meeting-building-a-policy-special-interest-group/1261/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-01-15-socialcg-meeting-building-a-policy-special-interest-group/1261/5</link>
+        <pubDate>Mon, 11 Jan 2021 08:24:15 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1261-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-01-15-socialcg-meeting-building-a-policy-special-interest-group/1261.rss">2021-01-15 SocialCG Meeting - Building a Policy Special Interest Group</source>
+      </item>
+      <item>
+        <title>2021-01-15 SocialCG Meeting - Building a Policy Special Interest Group</title>
+        <dc:creator><![CDATA[rhiaro]]></dc:creator>
+        <description><![CDATA[
+            <p>We have this topic on the agenda for the 2021-01-15 meeting (1700 UTC, Friday). <a class="mention" href="/u/sebastian">@Sebastian</a> and <a class="mention" href="/u/how">@how</a> do you think the people who have expressed interest to you so far will be able to make that?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-01-15-socialcg-meeting-building-a-policy-special-interest-group/1261/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-01-15-socialcg-meeting-building-a-policy-special-interest-group/1261/4</link>
+        <pubDate>Sat, 09 Jan 2021 16:53:42 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1261-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-01-15-socialcg-meeting-building-a-policy-special-interest-group/1261.rss">2021-01-15 SocialCG Meeting - Building a Policy Special Interest Group</source>
+      </item>
+      <item>
+        <title>2021-01-15 SocialCG Meeting - Building a Policy Special Interest Group</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Patrick Breyer, EU MEP, <a href="https://chaos.social/@echo_pbreyer/105513254182306442">tooted just now</a>:</p>
+<blockquote>
+<p><em>“[…] Corporate censorship of what a head of state can say is totally inacceptable! When will our institutions finally set up their own interoperable social media nodes (fediverse) and force big tech to interconnect?”</em></p>
+</blockquote>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <a href="https://www.europarl.europa.eu/doceo/document/E-9-2020-005987_EN.html" target="_blank" rel="noopener">europarl.europa.eu</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:600/315;"><img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/0134cd899b007bd85e02fe753db0ccb51298d2d3.jpeg" class="thumbnail" width="600" height="315"></div>
+
+<h3><a href="https://www.europarl.europa.eu/doceo/document/E-9-2020-005987_EN.html" target="_blank" rel="noopener">Use and support of open-source interconnected social media platforms by the...</a></h3>
+
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-01-15-socialcg-meeting-building-a-policy-special-interest-group/1261/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-01-15-socialcg-meeting-building-a-policy-special-interest-group/1261/3</link>
+        <pubDate>Thu, 07 Jan 2021 08:03:35 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1261-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-01-15-socialcg-meeting-building-a-policy-special-interest-group/1261.rss">2021-01-15 SocialCG Meeting - Building a Policy Special Interest Group</source>
+      </item>
+      <item>
+        <title>2021-01-15 SocialCG Meeting - Building a Policy Special Interest Group</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Also, if you want to join the group, you can do so here, using your SocialHub account:</p>
+<h1>⇨ <a href="https://love.public.cat/g/Interop">https://love.public.cat/g/Interop</a>
+</h1>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-01-15-socialcg-meeting-building-a-policy-special-interest-group/1261/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-01-15-socialcg-meeting-building-a-policy-special-interest-group/1261/2</link>
+        <pubDate>Tue, 05 Jan 2021 18:21:52 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1261-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-01-15-socialcg-meeting-building-a-policy-special-interest-group/1261.rss">2021-01-15 SocialCG Meeting - Building a Policy Special Interest Group</source>
+      </item>
+      <item>
+        <title>2021-01-15 SocialCG Meeting - Building a Policy Special Interest Group</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p><span data-date="2021-01-15" data-time="18:00:00" class="discourse-local-date" data-timezone="Europe/Berlin" data-email-preview="2021-01-15T17:00:00Z UTC">2021-01-15T17:00:00Z</span></p>
+<h2><a href="https://bbb.w3c.social/b/rhi-vp1-fv6-vn7">Join here directly with BigBlueButton</a></h2>
+<hr>
+<p><strong>Topic</strong></p>
+<h1>Policy Group</h1>
+<p>We want to follow the discussions we had about the EU Commissions Proposal of the “Digital Markets Act” and build a Special Interest Group about Interoperability, Interconnection and Data Portability Policy !</p>
+<p>Unfortunately suboptimal incidents happen in the USA, so <strong>personally</strong> may I suggest to reach a group concencus in the beginning, what we now want to speak about too?</p>
+<p>Initial minutes<br>
+</p><aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <a href="https://www.w3.org/2020/12/04-social-minutes.html" target="_blank" rel="noopener">w3.org</a>
+  </header>
+  <article class="onebox-body">
+    <img src="" class="thumbnail" width="" height="">
+
+<h3><a href="https://www.w3.org/2020/12/04-social-minutes.html" target="_blank" rel="noopener">Social CG Telecon -- 04 Dec 2020</a></h3>
+
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>Relevant minutes<br>
+</p><aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <a href="https://www.w3.org/2020/12/11-social-minutes.html" target="_blank" rel="noopener">w3.org</a>
+  </header>
+  <article class="onebox-body">
+    <img src="" class="thumbnail" width="" height="">
+
+<h3><a href="https://www.w3.org/2020/12/11-social-minutes.html" target="_blank" rel="noopener">Social Web Incubator Community Group Teleconference -- 11
+  Dec 2020</a></h3>
+
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>and our</p>
+<aside class="quote quote-modified" data-post="1" data-topic="1216">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/rc3-roundtable-interoperability-interconnection-and-portability/1216">rC3 – Roundtable Interoperability, Interconnection and Portability</a> <a class="badge-wrapper  box" href="/c/meeting/rc3/56"><span class="badge-category-parent-bg" style="background-color: #0E76BD;"></span><span class="badge-category-bg" style="background-color: #b239ff;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="(Virtual) Chaos Communication Congress 2020">Remote Chaos Experience</span></a>
+  </div>
+  <blockquote>
+    2020-12-29T17:30:00Z (UTC) 
+This round table event will connect experts, civil society organisations and users to discuss how increased interoperability could be a future-proof way to solve some of the most intractable issues of the Internet. And what else is needed, for example interconnection and data portability. 
+<a href="https://meet.jit.si/ScatteredConsequencesActRegardless">Join via jitsi</a>
+Dr. Ian Brown (CyberBRICS Visiting Professor, Fundação Getulio Vargas in Rio de Janeiro) elaborated on his research which explores interoperability as a tool for comp…
+  </blockquote>
+</aside>
+
+<p><a href="https://love.public.cat/t/what-is-at-stake-with-interoperability/96">Overview</a> and more in the PUBLIC forum<br>
+<a href="https://www.ianbrown.tech/2020/12/16/438/">Subsequent Analysis by Dr. Ian Brown</a></p>
+<p>We are 14 people so far. I will sent invitations as DM.<br>
+If you want to join the Group, write me a DM here or reply.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-01-15-socialcg-meeting-building-a-policy-special-interest-group/1261/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-01-15-socialcg-meeting-building-a-policy-special-interest-group/1261/1</link>
+        <pubDate>Tue, 05 Jan 2021 00:16:46 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1261-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-01-15-socialcg-meeting-building-a-policy-special-interest-group/1261.rss">2021-01-15 SocialCG Meeting - Building a Policy Special Interest Group</source>
+      </item>
+  </channel>
+</rss>

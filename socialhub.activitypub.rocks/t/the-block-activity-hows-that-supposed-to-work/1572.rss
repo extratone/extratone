@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>The Block activity, how&#39;s that supposed to work?</title>
+    <link>https://socialhub.activitypub.rocks/t/the-block-activity-hows-that-supposed-to-work/1572</link>
+    <description>I&#39;m now at the point where I&#39;m satisfied with my main features and almost ready to make my first release. Though in order to be a feasible fediverse server, I need to implement some sort of user blocking. So here goes.
+
+The spec says that the Block activity is c2s only. Mastodon does send Block and Undo{Block} activities when you block and unblock a remote actor. What am I meant to do upon receipt of these activities? Remove all follow relationships and disallow the blocked actor any interactions with the originating actor and their content? Something else?
+
+(I&#39;m not really a fan of the whole &quot;you see more if you log out&quot; approach most social media implementations out there take, both centralized and not. I won&#39;t be hiding anything publicly viewable if its author blocked you.)</description>
+    
+    <lastBuildDate>Mon, 24 May 2021 01:43:49 +0000</lastBuildDate>
+    <category>Server to Server</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/the-block-activity-hows-that-supposed-to-work/1572.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>The Block activity, how&#39;s that supposed to work?</title>
+        <dc:creator><![CDATA[trwnh]]></dc:creator>
+        <description><![CDATA[
+            <p>You basically have two options:</p>
+<ul>
+<li>Send a Block to the remote server, and the remote server will interpret it however it wishes (remote-side signaling)</li>
+<li>Do not send a Block, and simply discard any incoming activities received from the blocked actor (local-side filtering)</li>
+</ul>
+<p>The C2S Block is the latter, and this is what was probably intended when the AP spec was being written; however, in reality, S2S Block (the former) is quite prevalent. The general semantics of the S2S Block are the following:</p>
+<ul>
+<li>Do not allow the blocked actor to follow (it is also implied that the follow relationship should be broken even if an explicit Reject Follow is not sent, although it is probably good practice to do so)</li>
+<li>Disallow any interactions with the blocker or the blocker’s objects (it is implied that any such interactions will simply be discarded if received<sup class="footnote-ref"><a href="#footnote-7276-1" id="footnote-ref-7276-1">[1]</a></sup>)</li>
+</ul>
+<hr class="footnotes-sep">
+
+<ol class="footnotes-list">
+<li id="footnote-7276-1" class="footnote-item">
+<p>Note that Mastodon e.g. currently doesn’t actually do this – blocked users can still reply and have their reply show up beneath the posts of someone who blocked them, but this is probably a bug; <a href="https://github.com/tootsuite/mastodon/issues/10916" class="inline-onebox" rel="noopener nofollow ugc">Do not process side effects of incoming activities from blocked users · Issue #10916 · tootsuite/mastodon · GitHub</a> should contain more information about this behavior. <a href="#footnote-ref-7276-1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+          <p><a href="https://socialhub.activitypub.rocks/t/the-block-activity-hows-that-supposed-to-work/1572/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-block-activity-hows-that-supposed-to-work/1572/2</link>
+        <pubDate>Mon, 24 May 2021 01:43:49 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1572-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-block-activity-hows-that-supposed-to-work/1572.rss">The Block activity, how&#39;s that supposed to work?</source>
+      </item>
+      <item>
+        <title>The Block activity, how&#39;s that supposed to work?</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m now at the point where I’m satisfied with my main features and almost ready to make my first release. Though in order to be a feasible fediverse server, I need to implement some sort of user blocking. So here goes.</p>
+<p>The spec says that the Block activity is c2s only. Mastodon does send Block and Undo{Block} activities when you block and unblock a remote actor. What am I meant to do upon receipt of these activities? Remove all follow relationships and disallow the blocked actor any interactions with the originating actor and their content? Something else?</p>
+<p>(I’m not really a fan of the whole “you see more if you log out” approach most social media implementations out there take, both centralized and not. I won’t be hiding anything publicly viewable if its author blocked you.)</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/the-block-activity-hows-that-supposed-to-work/1572/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-block-activity-hows-that-supposed-to-work/1572/1</link>
+        <pubDate>Sun, 11 Apr 2021 17:32:38 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1572-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-block-activity-hows-that-supposed-to-work/1572.rss">The Block activity, how&#39;s that supposed to work?</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Client to Server - SocialHub</title>
+    <link>https://socialhub.activitypub.rocks/c/activitypub/c2s/6</link>
+    <description>Topics in the &#39;Client to Server&#39; category This protocol permits a client to act &lt;em&gt;on behalf&lt;/em&gt; of a user. E.g., a mobile app to interact with a social stream of the user’s actor.</description>
+    
+      <lastBuildDate>Fri, 05 Mar 2021 21:30:40 +0000</lastBuildDate>
+      <atom:link href="https://socialhub.activitypub.rocks/c/activitypub/c2s/6.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Unfollow &amp; soft block in c2s - how to find the original Follow in order to undo / reject?</title>
+          <dc:creator><![CDATA[datatitian]]></dc:creator>
+          <category>Client to Server</category>
+          <description><![CDATA[
+            <p>If I want to stop following someone, I believe I should send an Undo whose object is the Follow that I sent them in the past. Likewise, if I want to rescind permission to follow me, I should either Reject the Follow they originally sent me or perhaps Undo my Accept.</p>
+<p>In all those cases, I need a reference to a potentially very old activity to be the object of my new activity. How can I find that within a client-to-server implementation?</p>
+<p>The way <code>activitypub-express</code> works, I am actually looking up those old Follows whenever I’m fetching <code>Following</code> &amp; <code>Followers</code> collections, but spec says those endpoints return actors rather than activities, so the activity id I need does not reach the client.</p>
+<p>The only other option I see that is strictly C2S spec would be to crawl my inbox or outbox page-by-page until I find the Follow I seek, but this could be a really long journey.</p>
+<p>Am I missing something obvious? If I implement a custom unfollow endpoint, is my implementation no longer a true Client-to-Server AP implementation?</p>
+            <p><small>5 posts - 3 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/unfollow-soft-block-in-c2s-how-to-find-the-original-follow-in-order-to-undo-reject/1484">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/unfollow-soft-block-in-c2s-how-to-find-the-original-follow-in-order-to-undo-reject/1484</link>
+          <pubDate>Fri, 05 Mar 2021 21:30:40 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1484</guid>
+          <source url="https://socialhub.activitypub.rocks/t/unfollow-soft-block-in-c2s-how-to-find-the-original-follow-in-order-to-undo-reject/1484.rss">Unfollow &amp; soft block in c2s - how to find the original Follow in order to undo / reject?</source>
+        </item>
+        <item>
+          <title>ActivityPub C2S and CORS headers</title>
+          <dc:creator><![CDATA[kaniini]]></dc:creator>
+          <category>Client to Server</category>
+          <description><![CDATA[
+            <p>I am working on <a href="https://github.com/kaniini/jejune" rel="noopener nofollow ugc">Jejune</a>, a personal ActivityPub server that has a featureset similar to Tumblr.</p>
+<p>As part of this, <a href="https://github.com/kaniini/jejune-client" rel="noopener nofollow ugc">Jejune Client</a> is an ActivityPub C2S client which runs in the browser to allow the user to manage her instance, read posts in her inbox and publish new posts to her friends.</p>
+<p>As part of this process, I have discovered that many AP servers do not consistently provide CORS headers when fetching ActivityPub objects.</p>
+<p>For example, SocialHome does not provide any CORS headers when fetching ActivityStreams objects, which means that posts from SocialHome users do not appear in a correctly attributed way (as we can’t fetch the attributed actor), and Mastodon only provides CORS headers when fetching actors, but not posts and activities, which causes problems with building functionality where a user may want to examine a thread.</p>
+<p>These can be mitigated by proxying the requests through the local AP server, but I don’t think this is a good design – if I can fetch something with curl on the commandline, I believe I should be able to fetch the same content with a browser.</p>
+<p>So, I think it may be good to document the use of CORS headers when interacting with ActivityStreams/ActivityPub objects and endpoints over HTTP.  What do people think?</p>
+            <p><small>5 posts - 4 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/activitypub-c2s-and-cors-headers/1418">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/activitypub-c2s-and-cors-headers/1418</link>
+          <pubDate>Sat, 06 Feb 2021 22:22:09 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1418</guid>
+          <source url="https://socialhub.activitypub.rocks/t/activitypub-c2s-and-cors-headers/1418.rss">ActivityPub C2S and CORS headers</source>
+        </item>
+        <item>
+          <title>Activity specification turtle documents</title>
+          <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+          <category>Client to Server</category>
+          <description><![CDATA[
+            <p>I found this one: (not easy to find, ask me why!)</p>
+<ul>
+<li><a href="https://www.w3.org/ns/activitystreams-owl" rel="noopener nofollow ugc">https://www.w3.org/ns/activitystreams-owl</a></li>
+</ul>
+<p>But i miss the turtle file for <a href="https://www.w3.org/ns/activitystreams#activitypub" rel="noopener nofollow ugc">https://www.w3.org/ns/activitystreams#activitypub</a></p>
+<p>Any idea ?<br>
+Thanks</p>
+            <p><small>4 posts - 3 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/activity-specification-turtle-documents/1293">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/activity-specification-turtle-documents/1293</link>
+          <pubDate>Thu, 14 Jan 2021 14:46:14 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1293</guid>
+          <source url="https://socialhub.activitypub.rocks/t/activity-specification-turtle-documents/1293.rss">Activity specification turtle documents</source>
+        </item>
+        <item>
+          <title>Notify an actor about new activities by email</title>
+          <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+          <category>Client to Server</category>
+          <description><![CDATA[
+            <p>Hi there, is there a sample, etc. how to handle email notification about new activities?</p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/notify-an-actor-about-new-activities-by-email/1272">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/notify-an-actor-about-new-activities-by-email/1272</link>
+          <pubDate>Fri, 08 Jan 2021 09:09:21 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1272</guid>
+          <source url="https://socialhub.activitypub.rocks/t/notify-an-actor-about-new-activities-by-email/1272.rss">Notify an actor about new activities by email</source>
+        </item>
+        <item>
+          <title>Inbox: mark as read</title>
+          <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+          <category>Client to Server</category>
+          <description><![CDATA[
+            <p>Hi all, is there a recommendation how to mark a activity as read ?</p>
+            <p><small>3 posts - 2 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/inbox-mark-as-read/1271">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/inbox-mark-as-read/1271</link>
+          <pubDate>Fri, 08 Jan 2021 09:06:40 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1271</guid>
+          <source url="https://socialhub.activitypub.rocks/t/inbox-mark-as-read/1271.rss">Inbox: mark as read</source>
+        </item>
+        <item>
+          <title>Posting to Pleroma inbox</title>
+          <dc:creator><![CDATA[tonda]]></dc:creator>
+          <category>Client to Server</category>
+          <description><![CDATA[
+            <p>Hi, is it possible to POST e.g. a note to Pleroma user’s inbox using C2S API? I am not sure from reading the AP specs and even not sure after investigating the Pleroma code.</p>
+<p>I’m trying to do POST like this:</p>
+<pre><code class="lang-auto">curl --location --request POST 'https://greenish.red/users/nokton/inbox' \
+--header 'Content-Type: application/activity+json' \
+--header 'Authorization: Basic ...' \
+--data-raw '{"@context": "https://www.w3.org/ns/activitystreams",
+ "type": "Create",
+ "to": ["https://greenish.red/users/nokton"],
+ "actor": "https://greenish.red/users/nokton",
+ "object": {"type": "Note",
+            "attributedTo": "https://greenish.red/users/nokton",
+            "to": ["https://greenish.red/users/nokton"],
+            "content": "do I need id??"}}'
+</code></pre>
+<p>I guess the problem is there is no HTTP signature (<code>{valid_signature: true}</code> from the Pleroma source code), but I was hoping I could avoid it when using credentials (Basic auth).</p>
+<p>So is there a way to somehow easily POST to user inbox using C2S AP? I’m sure <a class="mention" href="/u/lanodan">@lanodan</a> will know <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+            <p><small>29 posts - 8 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/posting-to-pleroma-inbox/1184">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/posting-to-pleroma-inbox/1184</link>
+          <pubDate>Wed, 09 Dec 2020 15:12:17 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1184</guid>
+          <source url="https://socialhub.activitypub.rocks/t/posting-to-pleroma-inbox/1184.rss">Posting to Pleroma inbox</source>
+        </item>
+        <item>
+          <title>Existing/running AP server supporting C2S to develop against?</title>
+          <dc:creator><![CDATA[tonda]]></dc:creator>
+          <category>Client to Server</category>
+          <description><![CDATA[
+            <p>Hi, I am trying to develop an AP client in angular. I need an AP server for that, are there any running public AP servers with implemented C2S API?</p>
+<p>AFAIK Mastodon has not C2S implemented (<a href="https://socialhub.activitypub.rocks/t/client-to-server-support-in-mastodon/644" class="inline-onebox">Client to Server support in Mastodon</a>), neither has Pleroma (however we’re discussing this at <a href="https://socialhub.activitypub.rocks/t/want-to-build-an-activitypub-client-where-to-start/993/13" class="inline-onebox">Want to build an ActivityPub client; where to start?</a>).</p>
+<p>Please tell me if you have any tip, thank you!</p>
+            <p><small>3 posts - 2 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/existing-running-ap-server-supporting-c2s-to-develop-against/1108">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/existing-running-ap-server-supporting-c2s-to-develop-against/1108</link>
+          <pubDate>Sun, 25 Oct 2020 19:31:42 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1108</guid>
+          <source url="https://socialhub.activitypub.rocks/t/existing-running-ap-server-supporting-c2s-to-develop-against/1108.rss">Existing/running AP server supporting C2S to develop against?</source>
+        </item>
+        <item>
+          <title>as:uploadMedia specification proposal</title>
+          <dc:creator><![CDATA[lanodan]]></dc:creator>
+          <category>Client to Server</category>
+          <description><![CDATA[
+            <p>Based on content available in ActivityPub specification before <a href="https://github.com/w3c/activitypub/commit/fae6a56a8dcba9de69374aa7ae0bef565217e5c7" rel="noopener nofollow ugc">https://github.com/w3c/activitypub/commit/fae6a56a8dcba9de69374aa7ae0bef565217e5c7</a></p>
+<p>Servers MAY implement this feature. To accomplish this, a client must submit a <code>multipart/form-data</code> request to the <code>uploadMedia</code> user's endpoint on their ActivityStreams actor object.</p>
+<p>A client should expect that it must be properly authenticated in order to be able to upload media.</p><p>
+</p><p>The submitted form data should contain two parts / fields:</p>
+<dl>
+	<dt>file</dt>	<dd>The file being uploaded</dd>
+	<dt>object</dt>	<dd>An optional skeleton for an ActivityStreams object to be finalized by the server</dd>
+</dl>
+<p>
+	Assuming that the server accepts the request and that the user was appropriately authorized to upload media, servers MUST respond with a
+	<code>201 Created</code> if the submitted media is immediately available or a
+	<code>202 Accepted</code> if the server is still processing the submitted media.
+	The response MUST contain a <code>Location</code> header pointing to the new or to be created object's <code>id</code>,<br>
+	OR if considered a temporary transient object by the implementation, a copy of the object into the response body.
+</p>
+<p>
+	The server, having done any appropriate processing on the received <code>file</code> and putting it in place, transforms the <code>object</code>.
+	In particular, servers SHOULD include the uploaded and/or processed file paths in the object's <code>url</code> property.
+</p>
+<p>(Examples to be included; implementation-side documentation example: <a href="https://git.pleroma.social/pleroma/pleroma/-/merge_requests/3056/diffs" rel="noopener nofollow ugc">https://git.pleroma.social/pleroma/pleroma/-/merge_requests/3056/diffs</a>)</p>
+            <p><small>2 posts - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/as-uploadmedia-specification-proposal/1068">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/as-uploadmedia-specification-proposal/1068</link>
+          <pubDate>Mon, 05 Oct 2020 15:59:50 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1068</guid>
+          <source url="https://socialhub.activitypub.rocks/t/as-uploadmedia-specification-proposal/1068.rss">as:uploadMedia specification proposal</source>
+        </item>
+        <item>
+          <title>Want to build an ActivityPub client; where to start?</title>
+          <dc:creator><![CDATA[tinyrabbit]]></dc:creator>
+          <category>Client to Server</category>
+          <description><![CDATA[
+            <p>I’d like to build an ActivityPub client, but to start off I feel that I need to define a Minimum Viable Product. What’s the absolute minimum a client needs, in order to follow an Actor and receive posts? Do I need to start by implementing OAuth2?</p>
+            <p><small>20 posts - 5 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/want-to-build-an-activitypub-client-where-to-start/993">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/want-to-build-an-activitypub-client-where-to-start/993</link>
+          <pubDate>Fri, 02 Oct 2020 09:37:54 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-993</guid>
+          <source url="https://socialhub.activitypub.rocks/t/want-to-build-an-activitypub-client-where-to-start/993.rss">Want to build an ActivityPub client; where to start?</source>
+        </item>
+        <item>
+          <title>Discussion: Post / Link / Share Code Objects?</title>
+          <dc:creator><![CDATA[wooster]]></dc:creator>
+          <category>Client to Server</category>
+          <description><![CDATA[
+            <p>Wacky idea: add a <code>code</code> Object Type that would consist of WebAssembly <a href="https://webassembly.github.io/spec/core/binary/modules.html" rel="nofollow noopener">modules</a> and optional source code. The <code>code</code> Object would potentially have imports and exports, allowing a user to link together multiple <code>code</code> posts into another executable (either statically or by “dynamically” linking against the <code>code</code> IRI) or library.<br>
+Would really open up new avenues for experimentation and social coding taking advantage of the cool new possibilities afforded by WASM and ActivityPub.</p>
+<p>Totally insane idea? Could be cool? Maybe even useful?</p>
+            <p><small>3 posts - 2 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/discussion-post-link-share-code-objects/696">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/discussion-post-link-share-code-objects/696</link>
+          <pubDate>Sun, 17 May 2020 09:39:26 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-696</guid>
+          <source url="https://socialhub.activitypub.rocks/t/discussion-post-link-share-code-objects/696.rss">Discussion: Post / Link / Share Code Objects?</source>
+        </item>
+        <item>
+          <title>Fetching restricted remote activities</title>
+          <dc:creator><![CDATA[lanodan]]></dc:creator>
+          <category>Client to Server</category>
+          <description><![CDATA[
+            <p>In ActivityPub you can have activities/actors/objects that need to be authenticated to fetch (to get url-referenced objects in the client, for example actors) and I was wondering how it should be done.</p>
+<p>I can think of two ways it could be done:</p>
+<ul>
+<li>via a proxying endpoint on your own server (not verified but maybe HTTP Proxy could simply be reused)</li>
+<li>by fetching on the remote server (not a fan of that) via HTTP Signatures</li>
+</ul>
+<p>cc: <a class="mention" href="/u/yvolk">@yvolk</a></p>
+            <p><small>10 posts - 5 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/fetching-restricted-remote-activities/661">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/fetching-restricted-remote-activities/661</link>
+          <pubDate>Wed, 06 May 2020 10:22:10 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-661</guid>
+          <source url="https://socialhub.activitypub.rocks/t/fetching-restricted-remote-activities/661.rss">Fetching restricted remote activities</source>
+        </item>
+        <item>
+          <title>CORS restrictions</title>
+          <dc:creator><![CDATA[koehn]]></dc:creator>
+          <category>Client to Server</category>
+          <description><![CDATA[
+            <p>I’m noticing that many servers (Mastodon, Friendica, et al) restrict access via CORS that effectively prevents C2S web applications from resolving ActivityPub objects. For example, if a client being served from any domain that is not <code>example.com</code> receives the following from the user’s <code>inbox</code> Collection:</p>
+<pre><code class="lang-auto">{
+  "id": "https://example.com/123",
+  "type": "Note",
+  "content": "Hello, world!",
+  "attributedTo": "https://example.com/actor/456"
+}
+</code></pre>
+<p>A web-based client cannot display any information about the actor to who the note is attributed beyond their ID, unless the CORS headers for <code>https://example.com/actor/456</code> allows cross-origin <code>GET</code> requests. Without those permissions, C2S applications cannot be written using browsers, because browsers will prevent significant functionality.</p>
+<p>As a workaround I’m using an API on my server application that takes an ActivityPub ID and performs a GET instruction on the ID, bypassing CORS requirements. This degrades performance unneccisarily, and provides a gaping hole through the CORS requirement in the first place.</p>
+<p>ActivityPub servers should serve <code>GET</code> requests to their object endpoints by all comers.</p>
+            <p><small>9 posts - 4 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/cors-restrictions/658">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/cors-restrictions/658</link>
+          <pubDate>Mon, 04 May 2020 15:16:55 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-658</guid>
+          <source url="https://socialhub.activitypub.rocks/t/cors-restrictions/658.rss">CORS restrictions</source>
+        </item>
+        <item>
+          <title>Client to Server support in Mastodon</title>
+          <dc:creator><![CDATA[yvolk]]></dc:creator>
+          <category>Client to Server</category>
+          <description><![CDATA[
+            <p>This topic is to shed a light on <a class="hashtag" href="/c/software/mastodon/17">#<span>software:mastodon</span></a> 's abilities to work with <a class="hashtag" href="/c/activitypub/c2s/6">#<span>activitypub:c2s</span></a> clients. Maybe someone has more info on supported C2S API, knows better on what we can or cannot expect in the upcoming Mastodon releases.</p>
+<p>My experience is below. You can check yourself using the latest <a class="hashtag" href="/c/software/andstatus/51">#<span>software:andstatus</span></a> beta builds from here:  <a href="https://github.com/andstatus/andstatus/issues/456" rel="nofollow noopener">https://github.com/andstatus/andstatus/issues/456</a></p>
+<p>While experimenting <a class="hashtag" href="/c/activitypub/c2s/6">#<span>activitypub:c2s</span></a> between <a class="hashtag" href="/c/software/andstatus/51">#<span>software:andstatus</span></a> client and <a class="hashtag" href="/c/software/pleroma/19">#<span>software:pleroma</span></a> server I started to receive Activities, created by Actors, having IDs at non-Pleroma hosts.<br>
+Client app cannot know if any concrete server supports <a class="hashtag" href="/c/activitypub/c2s/6">#<span>activitypub:c2s</span></a> protocol or not, so it requests Actor’s profile from the Actor’s host (using Actor’s id) and fails or succeeds depending on the protocol’s support by that server.<br>
+And I was surprised that I’m getting valid ActivityPub responses from Mastodon servers. I can get Actor and Actor’s endpoints, and some of that endpoints work also: outbox, following, followers.<br>
+I even managed (using hackish way…) to login to Mastodon server as to “ActivityPub” type Social network (i.e. as if it really supports <a class="hashtag" href="/c/activitypub/c2s/6">#<span>activitypub:c2s</span></a>), but “inbox” and posting new activities don’t work (I’m getting 404 Not found error).</p>
+            <p><small>3 posts - 2 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/client-to-server-support-in-mastodon/644">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/client-to-server-support-in-mastodon/644</link>
+          <pubDate>Sun, 26 Apr 2020 16:20:35 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-644</guid>
+          <source url="https://socialhub.activitypub.rocks/t/client-to-server-support-in-mastodon/644.rss">Client to Server support in Mastodon</source>
+        </item>
+        <item>
+          <title>Are there any C2S libraries which work with S2C in Pleroma?</title>
+          <dc:creator><![CDATA[bamfic]]></dc:creator>
+          <category>Client to Server</category>
+          <description><![CDATA[
+            <p>I’m told that Pleroma now has AP C2S support in addition to its Mastodon API support.</p>
+<p>Are there any libraries that support this? I’m told that there are a few pioneering apps like Tusky which support it, but I’m looking for a library.</p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/are-there-any-c2s-libraries-which-work-with-s2c-in-pleroma/587">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/are-there-any-c2s-libraries-which-work-with-s2c-in-pleroma/587</link>
+          <pubDate>Sun, 29 Mar 2020 02:20:17 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-587</guid>
+          <source url="https://socialhub.activitypub.rocks/t/are-there-any-c2s-libraries-which-work-with-s2c-in-pleroma/587.rss">Are there any C2S libraries which work with S2C in Pleroma?</source>
+        </item>
+        <item>
+          <title>Update Activity on remote object</title>
+          <dc:creator><![CDATA[fr33domlover]]></dc:creator>
+          <category>Client to Server</category>
+          <description><![CDATA[
+            <p>In ActivityPub C2S, the client sends a partial update, which the server applies on top of the object being updated.</p>
+<p>What if you want to update an object that is hosted remotely, on a different server? Does a partial update make sense there?</p>
+<p>Options:</p>
+<ol>
+<li>Partial update, server applies the update to a locally cached version of the remote object</li>
+<li>Partial update, server HTTP GETs remote object and applies update to it</li>
+<li>Full update, client is responsible for sending the server the full object</li>
+</ol>
+<p>Option 3 makes the most sense to me. If the client does the update based on a view of the object that it got by HTTP GETing it (which is the common case to expect?), then a full update would safely preserve the author’s intentions.</p>
+<p>Thoughts?</p>
+            <p><small>6 posts - 5 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/update-activity-on-remote-object/501">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/update-activity-on-remote-object/501</link>
+          <pubDate>Tue, 04 Feb 2020 14:17:29 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-501</guid>
+          <source url="https://socialhub.activitypub.rocks/t/update-activity-on-remote-object/501.rss">Update Activity on remote object</source>
+        </item>
+        <item>
+          <title>Question about ActivityPub inbox</title>
+          <dc:creator><![CDATA[ayorosmage]]></dc:creator>
+          <category>Client to Server</category>
+          <description><![CDATA[
+            <p>Hi everybody, I’m new here.<br>
+I discovered ActivityPub recently. After reading the spec, I have a question concerning the inbox.<br>
+As far as I have understood, when the client is reading his inbox, he reads the activities that have been posted by a server in the exact same format. I find that quite surprising. For me, when the servers receives an activity, it performs some operation and when the client query the server, the response should have an Ad Hoc format specific for the client.<br>
+Did I miss something ?</p>
+<p>Thanks for reading.</p>
+            <p><small>10 posts - 4 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/question-about-activitypub-inbox/350">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/question-about-activitypub-inbox/350</link>
+          <pubDate>Tue, 26 Nov 2019 16:06:16 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-350</guid>
+          <source url="https://socialhub.activitypub.rocks/t/question-about-activitypub-inbox/350.rss">Question about ActivityPub inbox</source>
+        </item>
+        <item>
+          <title>Extensible client-to-server applications</title>
+          <dc:creator><![CDATA[cwebber]]></dc:creator>
+          <category>Client to Server</category>
+          <description><![CDATA[
+            <p><a class="mention" href="/u/nightpool">@nightpool</a> and I had kind of a micro-meeting today and discussed client-to-server applications.  We identified two areas of work of use to the AP community:</p>
+<ul>
+<li>“specific” clients like Mastodon’s (microblogging) or eg a “youtube/instagram/etc” type client.  <a class="mention" href="/u/nightpool">@nightpool</a> <a href="https://socialhub.activitypub.rocks/t/content-text-plain-and-fallback-behaviors-for-limited-clients/340">started a thread about this</a>
+</li>
+<li>“General purpose” C2S clients which can be pluggable to understand new activity / object types.  There’s general interest in this, but how to dispatch different UI patterns for both composing / rendering / interacting with those different types?  In reality, whoever ends up making one that becomes reasonably popular will realistically be in effect developing those “guidelines” in practice of how to do this route.</li>
+</ul>
+            <p><small>4 posts - 4 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/extensible-client-to-server-applications/341">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/extensible-client-to-server-applications/341</link>
+          <pubDate>Sat, 23 Nov 2019 17:41:37 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-341</guid>
+          <source url="https://socialhub.activitypub.rocks/t/extensible-client-to-server-applications/341.rss">Extensible client-to-server applications</source>
+        </item>
+        <item>
+          <title>C2S: Client to Server Interactions</title>
+          <dc:creator><![CDATA[system]]></dc:creator>
+          <category>Client to Server</category>
+          <description><![CDATA[
+            <blockquote>
+<p>This protocol permits a client to act <em>on behalf</em> of a user. E.g., a mobile app to interact with a social stream of the user’s actor.</p>
+</blockquote>
+<h2>Client to Server Interactions</h2>
+<p>This category covers <a href="https://www.w3.org/TR/activitypub/#client-to-server-interactions" rel="nofollow noopener">Client to Server Interactions</a> of the specification.</p>
+<ul>
+<li><a href="https://www.w3.org/TR/activitypub/#client-addressing" rel="nofollow noopener">6.1 Client Addressing</a></li>
+<li>
+<a href="https://www.w3.org/TR/activitypub/#create-activity-outbox" rel="nofollow noopener">6.2 Create Activity</a>
+<ol>
+<li><a href="https://www.w3.org/TR/activitypub/#object-without-create" rel="nofollow noopener">6.2.1 Object creation without a Create Activity</a></li>
+</ol>
+</li>
+<li>
+<a href="https://www.w3.org/TR/activitypub/#update-activity-outbox" rel="nofollow noopener">6.3 Update Activity</a>
+<ol>
+<li><a href="https://www.w3.org/TR/activitypub/#partial-updates" rel="nofollow noopener">6.3.1 Partial Updates</a></li>
+</ol>
+</li>
+<li><a href="https://www.w3.org/TR/activitypub/#delete-activity-outbox" rel="nofollow noopener">6.4 Delete Activity</a></li>
+<li><a href="https://www.w3.org/TR/activitypub/#follow-activity-outbox" rel="nofollow noopener">6.5 Follow Activity</a></li>
+<li><a href="https://www.w3.org/TR/activitypub/#add-activity-outbox" rel="nofollow noopener">6.6 Add Activity</a></li>
+<li><a href="https://www.w3.org/TR/activitypub/#remove-activity-outbox" rel="nofollow noopener">6.7 Remove Activity</a></li>
+<li><a href="https://www.w3.org/TR/activitypub/#like-activity-outbox" rel="nofollow noopener">6.8 Like Activity</a></li>
+<li><a href="https://www.w3.org/TR/activitypub/#block-activity-outbox" rel="nofollow noopener">6.9 Block Activity</a></li>
+<li><a href="https://www.w3.org/TR/activitypub/#undo-activity-outbox" rel="nofollow noopener">6.10 Undo Activity</a></li>
+<li><a href="https://www.w3.org/TR/activitypub/#client-to-server-outbox-delivery" rel="nofollow noopener">6.11 Delivery</a></li>
+<li><a href="https://www.w3.org/TR/activitypub/#uploading-media" rel="nofollow noopener">6.12 Uploading Media</a></li>
+</ul>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/c2s-client-to-server-interactions/12">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/c2s-client-to-server-interactions/12</link>
+          <pubDate>Thu, 12 Sep 2019 15:08:13 +0000</pubDate>
+          <discourse:topicPinned>Yes</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-12</guid>
+          <source url="https://socialhub.activitypub.rocks/t/c2s-client-to-server-interactions/12.rss">C2S: Client to Server Interactions</source>
+        </item>
+  </channel>
+</rss>

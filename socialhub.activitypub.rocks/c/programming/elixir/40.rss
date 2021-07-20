@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Elixir - SocialHub</title>
+    <link>https://socialhub.activitypub.rocks/c/programming/elixir/40</link>
+    <description>Topics in the &#39;Elixir&#39; category Programming ActivityPub in Elixir.</description>
+    
+      <lastBuildDate>Sat, 16 Nov 2019 17:22:04 +0000</lastBuildDate>
+      <atom:link href="https://socialhub.activitypub.rocks/c/programming/elixir/40.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>About Elixir</title>
+          <dc:creator><![CDATA[system]]></dc:creator>
+          <category>Elixir</category>
+          <description><![CDATA[
+            <p>Programming ActivityPub in Elixir.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/about-elixir/322">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/about-elixir/322</link>
+          <pubDate>Sat, 16 Nov 2019 17:22:04 +0000</pubDate>
+          <discourse:topicPinned>Yes</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-322</guid>
+          <source url="https://socialhub.activitypub.rocks/t/about-elixir/322.rss">About Elixir</source>
+        </item>
+  </channel>
+</rss>

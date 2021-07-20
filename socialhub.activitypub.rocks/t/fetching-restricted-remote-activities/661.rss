@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Fetching restricted remote activities</title>
+    <link>https://socialhub.activitypub.rocks/t/fetching-restricted-remote-activities/661</link>
+    <description>In ActivityPub you can have activities/actors/objects that need to be authenticated to fetch (to get url-referenced objects in the client, for example actors) and I was wondering how it should be done.
+
+I can think of two ways it could be done:
+- via a proxying endpoint on your own server (not verified but maybe HTTP Proxy could simply be reused)
+- by fetching on the remote server (not a fan of that) via HTTP Signatures
+
+cc: @yvolk</description>
+    
+    <lastBuildDate>Fri, 08 May 2020 21:52:38 +0000</lastBuildDate>
+    <category>Client to Server</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/fetching-restricted-remote-activities/661.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Fetching restricted remote activities</title>
+        <dc:creator><![CDATA[schmittlauch]]></dc:creator>
+        <description><![CDATA[
+            <p>Right now there are some efforts in Mastodon about <em><strong>removing the ability of fetching non-public objects</strong></em> at all, relying fully on getting those pushed: <a href="https://github.com/tootsuite/mastodon/pull/13584" rel="nofollow noopener">https://github.com/tootsuite/mastodon/pull/13584</a></p>
+<p>I find stripping those relatively essential parts of ActivityPub away a bit concerning, although I can understand the point of complexity.<br>
+But I think before deciding to do so because of the lack of usage <em>right now</em>, it should at least be discussed in the protocol and implementers community.</p>
+<p>So should I invite <span class="mention">@ThibG</span> over here?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/fetching-restricted-remote-activities/661/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/fetching-restricted-remote-activities/661/10</link>
+        <pubDate>Fri, 08 May 2020 21:52:38 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-661-10</guid>
+        <source url="https://socialhub.activitypub.rocks/t/fetching-restricted-remote-activities/661.rss">Fetching restricted remote activities</source>
+      </item>
+      <item>
+        <title>Fetching restricted remote activities</title>
+        <dc:creator><![CDATA[koehn]]></dc:creator>
+        <description><![CDATA[
+            <p>There are a number of weaknesses in the current model that will need to be addressed for this to work in the long term; you’ve identified a good one. I can imagine a resolution where the URL scope of the client key is included in the actor; but there should also be authentication that the message came from the server, so a PKI for servers should also be developed.</p>
+<p>Basically we’re solving many of the same problems we have with email, which shouldn’t be very surprising since both systems are distributed, federated message systems.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/fetching-restricted-remote-activities/661/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/fetching-restricted-remote-activities/661/9</link>
+        <pubDate>Thu, 07 May 2020 13:40:21 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-661-9</guid>
+        <source url="https://socialhub.activitypub.rocks/t/fetching-restricted-remote-activities/661.rss">Fetching restricted remote activities</source>
+      </item>
+      <item>
+        <title>Fetching restricted remote activities</title>
+        <dc:creator><![CDATA[koehn]]></dc:creator>
+        <description><![CDATA[
+            <p>OK, I think I’m caught up now. You’re imagining a scenario where there’s an activity with the <code>id</code> <code>https://example.com/bob/123</code> on the <code>example.com</code> server, and that malicious actor Alice can create and sign a message with the same <code>id</code> and send it to another server, thereby corrupting its cache of the Activity with that <code>id</code>.</p>
+<p>Since server developers cannot rely on other implementations not leaking private keys (intentionally or not), it would seem that this is a scenario that must be handled in any case. Therefore, servers should not trust the object they receive in the <code>POST</code> request, and should instead <code>GET</code> their own copy from the remote server, using the <code>id</code> of the Activity they received and the recipient’s signing key.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/fetching-restricted-remote-activities/661/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/fetching-restricted-remote-activities/661/8</link>
+        <pubDate>Thu, 07 May 2020 13:20:59 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-661-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/fetching-restricted-remote-activities/661.rss">Fetching restricted remote activities</source>
+      </item>
+      <item>
+        <title>Fetching restricted remote activities</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="koehn" data-post="6" data-topic="661">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/koehn/40/311_2.png" class="avatar"> koehn:</div>
+<blockquote>
+<p>If you’re going to allow users to create IDs, you should isolate them so that they <em>cannot</em> collide.</p>
+</blockquote>
+</aside>
+<p>correct. that is not, however, a restriction the remote server can currently impose, because it has no knowledge of the origin server’s URI structure. Therefore, it is not safe to allow individual users access to the private keys tied to their actor on your server, since otherwise they would be able to bypass the ID creation requirements of your server.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/fetching-restricted-remote-activities/661/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/fetching-restricted-remote-activities/661/7</link>
+        <pubDate>Thu, 07 May 2020 12:50:34 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-661-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/fetching-restricted-remote-activities/661.rss">Fetching restricted remote activities</source>
+      </item>
+      <item>
+        <title>Fetching restricted remote activities</title>
+        <dc:creator><![CDATA[koehn]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-mastodon" data-username="nightpool" data-post="2" data-topic="661">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/nightpool/40/36_2.png" class="avatar"> nightpool:</div>
+<blockquote>
+<p>(there’s a DOS vulnerability if you let individual clients sign their own activities—they can create activities with an <code>id</code> on their own domain but matching the <code>id</code> of another user’s activity on the same domain, and prevent other servers from receiving that user’s activity)</p>
+</blockquote>
+</aside>
+<p>If you’re going to allow users to create IDs, you should isolate them so that they <em>cannot</em> collide. E.g., user <code>bob</code> can create activities with IDs in <code>https://example.com/bob/activities</code> and user <code>alice</code> can create activities with IDs in <code>https://example.com/alice/activities</code>. If <code>alice</code> tries to create an ID in <code>bob</code>'s namespace, she gets <code>Forbidden</code>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/fetching-restricted-remote-activities/661/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/fetching-restricted-remote-activities/661/6</link>
+        <pubDate>Thu, 07 May 2020 11:59:05 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-661-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/fetching-restricted-remote-activities/661.rss">Fetching restricted remote activities</source>
+      </item>
+      <item>
+        <title>Fetching restricted remote activities</title>
+        <dc:creator><![CDATA[yvolk]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-pleroma" data-username="lanodan" data-post="4" data-topic="661">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/lanodan/40/40_2.png" class="avatar"> lanodan:</div>
+<blockquote>
+<p>I don’t think we should ever fetch from a foreign server so (4.1) shouldn’t be attempted. (</p>
+</blockquote>
+</aside>
+<p><img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"> I wrote the whole scenario exactly in order to show that point 4.1. exists. My view is that ability for a client app to request (at least public…) resources directly from their sources is a key feature that ActivityPub C2S gives us. Please read also related thread <a href="https://socialhub.activitypub.rocks/t/cors-restrictions/658/3" class="inline-onebox">CORS restrictions</a><br>
+<a class="mention-group" href="/groups/andstatus">@andstatus</a> app actively uses this feature, which allows it to get information from the first hands, without a bottleneck of a server, to which app is logged in…</p>
+<p>Regarding objects with restricted access, a client app could (as I see now…) also access Server2 directly using OAuth tokens obtained from Server1 (with authenticating Server1 having some trust relation with Server2… )</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/fetching-restricted-remote-activities/661/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/fetching-restricted-remote-activities/661/5</link>
+        <pubDate>Thu, 07 May 2020 04:56:00 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-661-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/fetching-restricted-remote-activities/661.rss">Fetching restricted remote activities</source>
+      </item>
+      <item>
+        <title>Fetching restricted remote activities</title>
+        <dc:creator><![CDATA[lanodan]]></dc:creator>
+        <description><![CDATA[
+            <p>[2020-05-06 18:51:48+0000] Yuri Volkov via SocialHub:</p>
+<blockquote>
+<p><a class="mention" href="/u/lanodan">@lanodan</a> <a class="mention" href="/u/nightpool">@nightpool</a>  In order for us all to understand the case, let’s start with a usage scenario.<br>
+As I understand, we could start with this:</p>
+<ol>
+<li>
+<p>Client app is logged into Server1 as Actor1.</p>
+</li>
+<li>
+<p>Client app receives Activity1 from Server1. Activity1 refers ( inReplyTo ) to Activity2 on Server2 by URL2 (id) of that Activity2.</p>
+</li>
+<li>
+<p>Client app requests Activity2 object from its original URL2 without any authentication.</p>
+</li>
+</ol>
+<p>4.1. If Activity2 is publicly accessible, Server2 responses with the activity’s object.<br>
+4.1.1. Success</p>
+<p>4.2. If Activity2 is NOT publicly accessible, Server2 responses with HTTP 403 error ?!<br>
+4.2.1. Client app needs another way to get Activity2.<br>
+4.2.2. ???</p>
+<p>Are we talking about this?<br>
+…</p>
+</blockquote>
+<p>Yes, exactly this, with also the thing that I don’t think we should ever fetch from a foreign server so (4.1) shouldn’t be attempted. (privacy concerns but potentially security ones as well because you could use that for essentially turning the network into a http-get botnet, which we already quite have but with few limits)</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/fetching-restricted-remote-activities/661/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/fetching-restricted-remote-activities/661/4</link>
+        <pubDate>Thu, 07 May 2020 00:13:25 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-661-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/fetching-restricted-remote-activities/661.rss">Fetching restricted remote activities</source>
+      </item>
+      <item>
+        <title>Fetching restricted remote activities</title>
+        <dc:creator><![CDATA[yvolk]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/lanodan">@lanodan</a> <a class="mention" href="/u/nightpool">@nightpool</a>  In order for us all to understand the case, let’s start with a usage scenario.<br>
+As I understand, we could start with this:</p>
+<ol>
+<li>
+<p>Client app is logged into Server1 as Actor1.</p>
+</li>
+<li>
+<p>Client app receives Activity1 from Server1. Activity1 refers ( inReplyTo ) to Activity2 on Server2 by URL2 (id) of that Activity2.</p>
+</li>
+<li>
+<p>Client app requests Activity2 object from its original URL2 without any authentication.</p>
+</li>
+</ol>
+<p>4.1. If Activity2 is publicly accessible, Server2 responds with the activity’s object.<br>
+4.1.1. Success</p>
+<p>4.2. If Activity2 is NOT publicly accessible, Server2 responds with HTTP 403 error ?!<br>
+4.2.1. Client app needs another way to get Activity2.<br>
+4.2.2. ???</p>
+<p>Are we talking about this?<br>
+…</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/fetching-restricted-remote-activities/661/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/fetching-restricted-remote-activities/661/3</link>
+        <pubDate>Wed, 06 May 2020 18:41:41 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-661-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/fetching-restricted-remote-activities/661.rss">Fetching restricted remote activities</source>
+      </item>
+      <item>
+        <title>Fetching restricted remote activities</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p>Currently, it’s not safe for servers to expose the private keys they use to sign activities to individual clients or users, so 1. is the only possible solution.</p>
+<p>(there’s a DOS vulnerability if you let individual clients sign their own activities—they can create activities with an <code>id</code> on their own domain but matching the <code>id</code> of another user’s activity on the same domain, and prevent other servers from receiving that user’s activity)</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/fetching-restricted-remote-activities/661/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/fetching-restricted-remote-activities/661/2</link>
+        <pubDate>Wed, 06 May 2020 13:38:03 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-661-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/fetching-restricted-remote-activities/661.rss">Fetching restricted remote activities</source>
+      </item>
+      <item>
+        <title>Fetching restricted remote activities</title>
+        <dc:creator><![CDATA[lanodan]]></dc:creator>
+        <description><![CDATA[
+            <p>In ActivityPub you can have activities/actors/objects that need to be authenticated to fetch (to get url-referenced objects in the client, for example actors) and I was wondering how it should be done.</p>
+<p>I can think of two ways it could be done:</p>
+<ul>
+<li>via a proxying endpoint on your own server (not verified but maybe HTTP Proxy could simply be reused)</li>
+<li>by fetching on the remote server (not a fan of that) via HTTP Signatures</li>
+</ul>
+<p>cc: <a class="mention" href="/u/yvolk">@yvolk</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/fetching-restricted-remote-activities/661/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/fetching-restricted-remote-activities/661/1</link>
+        <pubDate>Wed, 06 May 2020 10:22:10 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-661-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/fetching-restricted-remote-activities/661.rss">Fetching restricted remote activities</source>
+      </item>
+  </channel>
+</rss>

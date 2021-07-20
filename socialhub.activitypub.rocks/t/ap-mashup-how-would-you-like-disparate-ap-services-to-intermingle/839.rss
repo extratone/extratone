@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>AP Mashup? How would you like disparate AP services to intermingle?</title>
+    <link>https://socialhub.activitypub.rocks/t/ap-mashup-how-would-you-like-disparate-ap-services-to-intermingle/839</link>
+    <description>Activity Pub passes objects. It’s up to the servers and clients to determine what to do with the objects.
+
+How would you like microblogging services such as Mastodon and Pleroma interact with image sharing services like PixelFed?
+
+How and where do you want image content, podcasts, videos? How can we integrate AP into other Free Software projects?</description>
+    
+    <lastBuildDate>Fri, 02 Oct 2020 12:02:30 +0000</lastBuildDate>
+    <category>ActivityPub Conference 2020</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/ap-mashup-how-would-you-like-disparate-ap-services-to-intermingle/839.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>AP Mashup? How would you like disparate AP services to intermingle?</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>I guess the topic of this BoF is what <a class="mention" href="/u/rhiaro">@rhiaro</a> mentioned in <a href="https://socialhub.activitypub.rocks/t/the-activitypub-panel/929" class="inline-onebox">The ActivityPub Panel</a> and I described elsewhere:</p>
+<aside class="quote no-group" data-username="how" data-post="6" data-topic="981">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/how/40/94_2.png" class="avatar"><a href="https://socialhub.activitypub.rocks/t/implementing-activitypub-client-to-server/981/6">Implementing ActivityPub Client-to-Server</a>
+</div>
+<blockquote>
+<p>Another example: it would be awesome to write a blog about a new song, attaching a video clip to it and have the client:</p>
+<ul>
+<li>extract audio from the video clip and upload to Funkwhale</li>
+<li>upload the video to peertube</li>
+<li>post the whole piece to WriteFreely (including the link to the video and audio files, as one URL each<a href="#footnote-3122-1">[1]</a>)</li>
+<li>extract the first paragraph including the video link and post a Note to Pleroma</li>
+<li>etc. ditto for other servers the user wants to use.</li>
+</ul>
+</blockquote>
+</aside>
+          <p><a href="https://socialhub.activitypub.rocks/t/ap-mashup-how-would-you-like-disparate-ap-services-to-intermingle/839/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/ap-mashup-how-would-you-like-disparate-ap-services-to-intermingle/839/6</link>
+        <pubDate>Fri, 02 Oct 2020 12:02:30 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-839-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/ap-mashup-how-would-you-like-disparate-ap-services-to-intermingle/839.rss">AP Mashup? How would you like disparate AP services to intermingle?</source>
+      </item>
+      <item>
+        <title>AP Mashup? How would you like disparate AP services to intermingle?</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Did that quite a while ago.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/ap-mashup-how-would-you-like-disparate-ap-services-to-intermingle/839/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/ap-mashup-how-would-you-like-disparate-ap-services-to-intermingle/839/5</link>
+        <pubDate>Thu, 01 Oct 2020 15:18:48 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-839-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/ap-mashup-how-would-you-like-disparate-ap-services-to-intermingle/839.rss">AP Mashup? How would you like disparate AP services to intermingle?</source>
+      </item>
+      <item>
+        <title>AP Mashup? How would you like disparate AP services to intermingle?</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/sebastian">@Sebastian</a> can you please invite Der.hans?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/ap-mashup-how-would-you-like-disparate-ap-services-to-intermingle/839/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/ap-mashup-how-would-you-like-disparate-ap-services-to-intermingle/839/4</link>
+        <pubDate>Mon, 28 Sep 2020 08:45:21 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-839-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/ap-mashup-how-would-you-like-disparate-ap-services-to-intermingle/839.rss">AP Mashup? How would you like disparate AP services to intermingle?</source>
+      </item>
+      <item>
+        <title>AP Mashup? How would you like disparate AP services to intermingle?</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>FLOX Advocate<br>
+</p><aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://floss.social/favicon.ico" class="site-icon" width="45" height="48">
+      <a href="https://floss.social/@FLOX_advocate" target="_blank">FLOSS.social</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/3540060031c8eb2477827ef66a2c7ff1fddea6f3.jpeg" class="thumbnail onebox-avatar" width="400" height="400">
+
+<h3><a href="https://floss.social/@FLOX_advocate" target="_blank">FLOX Advocate (@FLOX_advocate@floss.social)</a></h3>
+
+<p>2.43K Toots, 139 Following, 168 Followers Â· FLOX: everything you think necessary for your personal freedom, privacy and security (even things we have not yet created)
+
+FLOX - Free Libre Open X(everything)</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/ap-mashup-how-would-you-like-disparate-ap-services-to-intermingle/839/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/ap-mashup-how-would-you-like-disparate-ap-services-to-intermingle/839/3</link>
+        <pubDate>Fri, 14 Aug 2020 14:16:49 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-839-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/ap-mashup-how-would-you-like-disparate-ap-services-to-intermingle/839.rss">AP Mashup? How would you like disparate AP services to intermingle?</source>
+      </item>
+      <item>
+        <title>AP Mashup? How would you like disparate AP services to intermingle?</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p>(Who is the organizer for this BOF session? I’m assuming they don’t have an account on this forum, but no other information is given to identify them. Is it possible to add some extra information to this post to identify the organizer?)</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/ap-mashup-how-would-you-like-disparate-ap-services-to-intermingle/839/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/ap-mashup-how-would-you-like-disparate-ap-services-to-intermingle/839/2</link>
+        <pubDate>Mon, 10 Aug 2020 14:34:09 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-839-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/ap-mashup-how-would-you-like-disparate-ap-services-to-intermingle/839.rss">AP Mashup? How would you like disparate AP services to intermingle?</source>
+      </item>
+      <item>
+        <title>AP Mashup? How would you like disparate AP services to intermingle?</title>
+        <dc:creator><![CDATA[system]]></dc:creator>
+        <description><![CDATA[
+            <p>Activity Pub passes objects. It’s up to the servers and clients to determine what to do with the objects.</p>
+<p>How would you like microblogging services such as Mastodon and Pleroma interact with image sharing services like PixelFed?</p>
+<p>How and where do you want image content, podcasts, videos? How can we integrate AP into other Free Software projects?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/ap-mashup-how-would-you-like-disparate-ap-services-to-intermingle/839/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/ap-mashup-how-would-you-like-disparate-ap-services-to-intermingle/839/1</link>
+        <pubDate>Sun, 02 Aug 2020 11:29:38 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-839-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/ap-mashup-how-would-you-like-disparate-ap-services-to-intermingle/839.rss">AP Mashup? How would you like disparate AP services to intermingle?</source>
+      </item>
+  </channel>
+</rss>

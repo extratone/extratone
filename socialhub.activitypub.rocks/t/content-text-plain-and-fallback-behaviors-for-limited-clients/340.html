@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Content, text/plain, and fallback behaviors for limited clients - ActivityPub - SocialHub</title>
+    <meta name="description" content="Right now, content is always by default text/html, but different clients (including server-clients like Mastodon) have support for different subsets of it. For example, some clients, like SocialHome and Friendica, suppor&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="340.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Content, text/plain, and fallback behaviors for limited clients&#39;" href="340.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/content-text-plain-and-fallback-behaviors-for-limited-clients/340" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/content-text-plain-and-fallback-behaviors-for-limited-clients/340" />
+<meta property="og:title" content="Content, text/plain, and fallback behaviors for limited clients" />
+<meta name="twitter:title" content="Content, text/plain, and fallback behaviors for limited clients" />
+<meta property="og:description" content="Right now, content is always by default text/html, but different clients (including server-clients like Mastodon) have support for different subsets of it. For example, some clients, like SocialHome and Friendica, support embedded images, while some do not.  Publishers would like to be able to specify fallback behaviors by explicitly federating “limited” representations, like text/plain, while consumers want to be able to gracefully handle many different systems without compromising the focus of..." />
+<meta name="twitter:description" content="Right now, content is always by default text/html, but different clients (including server-clients like Mastodon) have support for different subsets of it. For example, some clients, like SocialHome and Friendica, support embedded images, while some do not.  Publishers would like to be able to specify fallback behaviors by explicitly federating “limited” representations, like text/plain, while consumers want to be able to gracefully handle many different systems without compromising the focus of..." />
+<meta property="article:published_time" content="2019-11-23T17:22:54+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="340.html">Content, text/plain, and fallback behaviors for limited clients</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/activitypub.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #0088CC'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>ActivityPub</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nightpool.html'><span itemprop='name'>nightpool</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="340.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-23T17:22:54Z' class='post-time'>
+                November 23, 2019,  5:22pm
+              </time>
+              <meta itemprop='dateModified' content='2019-11-23T17:22:54Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Right now, content is always by default <code>text/html</code>, but different clients (including server-clients like Mastodon) have support for different subsets of it. For example, some clients, like SocialHome and Friendica, support embedded images, while some do not.</p>
+<p>Publishers would like to be able to specify fallback behaviors by explicitly federating “limited” representations, like <code>text/plain</code>, while consumers want to be able to gracefully handle many different systems without compromising the focus of their clients. Friendica has started federating a contentMap property with <code>text/html</code> to provide a more “fully featured” HTML representation.</p>
+<p>My contention is that the best way forward is to make <code>content</code> as fully featured as possible, and explicitly define fallback behaviors, including text and image representations, for clients that don’t want to support those features. This would include both suggested HTML representations for things that the HTML spec doesn’t handle well natively, like block-level images, and suggested plain-text and image representations for clients that don’t want to support those features.</p>
+<p>Does that make sense? What do people thing about this idea?</p>
+        </div>
+
+        <meta itemprop='headline' content='Content, text/plain, and fallback behaviors for limited clients'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../extensible-client-to-server-applications/341.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/extensible-client-to-server-applications/341'>
+                      <span itemprop='name'>Extensible client-to-server applications</span>
+                    </a>
+                    <meta itemprop='position' content='1'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../2019-12-07-socialcg-meeting/339.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/2019-12-07-socialcg-meeting/339'>
+                      <span itemprop='name'>2019-12-07 SocialCG Meeting</span>
+                    </a>
+                    <meta itemprop='position' content='2'>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/trwnh.html'><span itemprop='name'>trwnh</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="340.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-11-23T18:27:19Z'>
+              <time itemprop='dateModified' datetime='2019-11-25T13:14:40Z' class='post-time'>
+                November 25, 2019,  1:14pm
+              </time>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>re: prior art: this sounds a lot like how email messages can be sent as text/plain and text/html. however, i’m concerned about using <code>contentMap</code> for this. the intention for contentMap seems to have been to allow for multiple language representations, and i’m not sure how that would interact with doing a contentMap by mimetype instead of by language.</p>
+<p>therefore, i’d like to raise the following points:</p>
+<ol>
+<li>semantically, <code>mediaType</code> is the property that is intended to be used for this, but this assumes <code>content</code> instead of <code>contentMap</code>. how might it be adapted to apply to objects with a map?</li>
+<li>what realistic limits or best practices should apply to the keys of the map? the activity vocab spec uses MAY for language-tagged keys. afaik, the MAY indicates that implementations should be prepared to interoperate with contentMap containing language keys, but not anything else? the defined range is xsd:string or rdf:langString, so…</li>
+<li>what is the recommendation for choosing which of the keys to use as content out of the map? if the keys were languages, then it would be simple, but a simple hashmap isn’t expressive enough to express both mimetype and language unless some standardized behavior were introduced to the spec in a revision.</li>
+<li>to what extent should we prioritize or emphasize plaintext or html? note that in the email network, html messages have grown to be very annoying and mainly used for invasive ads and tracking, even leading several people to declare that html emails were a mistake and that emails should have remained plaintext. is a similar advisory prudent for activitypub? or is sanitization enough? and if sanitizing is enough, then surely only one html representation is needed per language? or are we going to see text/html and text/html-noblock?</li>
+</ol>
+        </div>
+
+        <meta itemprop='headline' content='Content, text/plain, and fallback behaviors for limited clients'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../place-to-discuss-general-issues-of-interop-between-implementations/362/2.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/place-to-discuss-general-issues-of-interop-between-implementations/362/2'>
+                      <span itemprop='name'>Place to discuss general issues of interop between implementations?</span>
+                    </a>
+                    <meta itemprop='position' content='1'>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nightpool.html'><span itemprop='name'>nightpool</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="340.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-11-23T18:42:50Z'>
+              <time itemprop='dateModified' datetime='2019-11-23T19:08:18Z' class='post-time'>
+                November 23, 2019,  7:08pm
+              </time>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>While conversation to date has focused on, yeah, basically re-inventing multipart/alternative, I don’t think that that’s a good or sustainable way forward. Like you said—are we going to see <code>text/html</code> as well as <code>text/html; noblock</code>? I think it’s a lot more tractable to attack the problem from the <em>other</em> side, and define a better types of sanitization and fallback behavior that clients like Mastodon can implement.</p>
+        </div>
+
+        <meta itemprop='headline' content='Content, text/plain, and fallback behaviors for limited clients'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/melody.html'><span itemprop='name'>melody</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="340.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-25T00:15:06Z' class='post-time'>
+                November 25, 2019, 12:15am
+              </time>
+              <meta itemprop='dateModified' content='2019-11-25T00:15:06Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I also don’t like the idea of using <code>contentMap</code> for this, but I think trying to define fallback behaviors will never realistically work - we cannot predict what clients will want to do, and any set of fallback behaviors would ultimately end up privileging a very specific subset of what it should be possible to develop, especially from the direction of trying to represent “recommended” HTML representations.</p>
+<p>I think my preference would be to extend <code>source</code> instead as <code>sourceMap</code> which is a less serious semantic violation of intent than using <code>contentMap</code> for media types instead of language, and would have the added benefit of clients being able to do a limited amount of type negotiation for things like editing posts where maybe they don’t support the actual original source (like the org mode example in the spec document), but this makes the relationship between <code>source</code> and <code>contentMap</code> (for languages) even less clear, and could have complications for updating multiple source formats from a single “real” source format, where the internal content for some formats could lag behind others if the client or server doesn’t support one of the sources stored.</p>
+<p>End of the day, I don’t think there’s any ideal options here, but I don’t think there’s any reasonable way to handle specifying fallback behaviors for full-featured HTML in <code>content</code> - we’d need some additional way to know which subset of HTML the thing is targeting, and even knowing that you’d implicitly also need to know what type of app it is – the structure of the HTML is always going to reflect the type of application that the HTML was generated for/by which may not apply in an app that may have an easier time coping with the result if alternative representations were provided.</p>
+<p>The only other option I can see is using additional parameters with HTTP content negotiation to allow requesting json-ld documents with specific types in the content fields, which may also work and would avoid exploding the json representation with a bunch of types, but we’d need to pick a scheme for representing the types there, and make sure that there’s a way for clients to detect that they got back a different type than they requested if the server falls back to HTML.</p>
+        </div>
+
+        <meta itemprop='headline' content='Content, text/plain, and fallback behaviors for limited clients'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../2021-05-01-fediverse-interest-group-meeting/1649/13.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/2021-05-01-fediverse-interest-group-meeting/1649/13'>
+                      <span itemprop='name'>2021-05-01 Fediverse Interest Group Meeting</span>
+                    </a>
+                    <meta itemprop='position' content='1'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../2021-05-01-fediverse-interest-group-meeting/1649/24.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/2021-05-01-fediverse-interest-group-meeting/1649/24'>
+                      <span itemprop='name'>2021-05-01 Fediverse Interest Group Meeting</span>
+                    </a>
+                    <meta itemprop='position' content='2'>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/trwnh.html'><span itemprop='name'>trwnh</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="340.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-11-25T12:59:27Z'>
+              <time itemprop='dateModified' datetime='2019-11-25T13:13:47Z' class='post-time'>
+                November 25, 2019,  1:13pm
+              </time>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><code>sourceMap</code> sounds like it could make sense for this, yeah. but that does raise the question of how <code>source</code> currently interacts with <code>contentMap</code>? from <a href="https://www.w3.org/TR/activitypub/#source-property" rel="nofollow noopener">AP Example 8</a> it looks like the <code>source</code> object contains both <code>content</code> and <code>mediaType</code>, and this is really what i’d like to see ideally, i think – if we could declare a <code>mediaType</code> next to each value of the <code>contentMap</code>, that’d be best. maybe we could use arrays? i.e., let <code>source</code> be an array:</p>
+<pre><code class="lang-auto">{
+  "@context": ["https://www.w3.org/ns/activitystreams",
+               {"@language": "en"}],
+  "type": "Note",
+  "id": "http://postparty.example/p/2415",
+  "content": "&lt;p&gt;I &lt;em&gt;really&lt;/em&gt; like strawberries!&lt;/p&gt;",
+  "source": [
+    {"content": "I *really* like strawberries!",
+    "mediaType": "text/markdown"},
+    {"content": "I [i]really[/i] like strawberries!",
+    "mediaType": "text/bbcode"}
+  ]
+}
+</code></pre>
+<p>it just seems kind of redundant as currently stated… (sidenote fwiw i’d also like to see a dedicated <code>lang</code> property, as we only really have <code>hreflang</code> for links)</p>
+<p>really, i think the bigger issue here is that there isn’t a defined mimetype for “text/html but without block elements”. you’d have to define a parameter maybe? “text/html;inlineOnly=true”? whatever parameter name it is, it needs to be standardized.</p>
+        </div>
+
+        <meta itemprop='headline' content='Content, text/plain, and fallback behaviors for limited clients'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nightpool.html'><span itemprop='name'>nightpool</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="340.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-25T13:56:23Z' class='post-time'>
+                November 25, 2019,  1:56pm
+              </time>
+              <meta itemprop='dateModified' content='2019-11-25T13:56:23Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="4" data-topic="340">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/melody/40/91_2.png" class="avatar"> melody:</div>
+<blockquote>
+<p>but I think trying to define fallback behaviors will never realistically work - we cannot predict what clients will want to do, and any set of fallback behaviors would ultimately end up privileging a very specific subset of what it should be possible to develop, especially from the direction of trying to represent “recommended” HTML representations</p>
+</blockquote>
+</aside>
+<p>Sure—i’m not saying we should specify that <em>only</em> the HTML representations we’ve agreed upon are valid. I’m just thinking of a “best practice” document for very common types of formatting, especially in cases where they’re not always well-represented by the HTML spec. (for example, tumblr has font colors as a native formatting option—should federating clients use inline styles, which are hard to sanitize, or the deprecated <code>&lt;font&gt;</code> element to represent these?)</p>
+<p>I think an extensible spec that would provide us the framework for coming to a consensus on these types of options would be really useful right now.</p>
+<blockquote>
+<p>End of the day, I don’t think there’s any ideal options here, but I don’t think there’s any reasonable way to handle specifying fallback behaviors for full-featured HTML in  <code>content</code>  - we’d need some additional way to know which subset of HTML the thing is targeting</p>
+</blockquote>
+<p>Maybe we’re getting tripped up over the usage of the word “specify”? I’m picturing a spec document that talks about these things, not a way to specify these things within activitystreams itself.</p>
+<p>I have two concerns with <code>sourceMap</code>:</p>
+<ol>
+<li>
+<p>If means that <code>source</code> no longer actually represents the <em>canonical</em>, user-authored representation of the post, and means that we will either have to sacrifice lossless editing or say that you can only provide “alternative” content for formats you can losslessly convert between (defeating the whole point of providing a fallback!)</p>
+</li>
+<li>
+<p>It doesn’t work when there are more then 2 systems involved. You can federate a “mastodon-compatible” representation, but what happens now that pleroma has support for limited rich-text rendering, but without as much flexibility as friendica and socialhub?</p>
+</li>
+</ol>
+<p>I think it’s a lot more reasonable to say, like, “if you want to embed an inline image, you should use this format, if you don’t want to embed inline images, here’s a guideline for fallback behavior and a reference implementation.” This serves two purposes: as well as providing guidelines on fallback behavior, it allows us to explore the list rich text formats that even <em>need</em> fallback behavior. Again, I don’t believe any spec can cover <em>everything</em> someone might want to do, but a light-weight, extensible spec can help us give guidance on the right ways of federating at least <em>some</em> types of rich text content.</p>
+        </div>
+
+        <meta itemprop='headline' content='Content, text/plain, and fallback behaviors for limited clients'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

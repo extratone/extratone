@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Testing HttpSignatures (mastodon)</title>
+    <link>https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760</link>
+    <description>Hi there, i try to post an activity to mastodon as described [here](https://blog.joinmastodon.org/2018/06/how-to-implement-a-basic-activitypub-server/)
+But get a &quot;401 Unauthorized from POST https://mastodon.social/inbox&quot;
+
+I think there are problems with the signature, but have no idea. Does anybody have an idea, how i can test whats wrong (without setting up / debugging  a mastodon instance)
+
+I&#39;m using https://github.com/tomitribe/http-signatures-java
+
+Thanks Fredy</description>
+    
+    <lastBuildDate>Mon, 17 May 2021 19:44:51 +0000</lastBuildDate>
+    <category>Uncategorized</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Testing HttpSignatures (mastodon)</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <p>I tried to verify the generated request before sending it. This is indeed a very dirty hack. The result is</p>
+<p><code>Failed sig string: '(request-target): post https://friends.grishka.me/activitypub/sharedInbox</code></p>
+<p>I don’t understand where the full path comes from, but I think in the request we just write the path <em>/activitypub/sharedInbox.</em></p>
+<p>Do you have the same error in the server log?</p>
+<p>Fredy</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/39">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/39</link>
+        <pubDate>Mon, 17 May 2021 19:44:51 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1760-39</guid>
+        <source url="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760.rss">Testing HttpSignatures (mastodon)</source>
+      </item>
+      <item>
+        <title>Testing HttpSignatures (mastodon)</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <p>Puh, i replaced now the httpPost and the signing with <a href="https://gitlab.com/naturzukunft.de/public/activitypub/basic-activitypub-server/-/blob/master/src/main/java/de/naturzukunft/activitypub/basicactivitypubserver/Smithereen.java" rel="noopener nofollow ugc">your code</a> with minimum changes.</p>
+<p>But still get an error<br>
+<code>Bad request: java.lang.IllegalArgumentException: Signature failed to verify</code></p>
+<p>The call is <a href="https://gitlab.com/naturzukunft.de/public/activitypub/basic-activitypub-server/-/blob/master/src/main/java/de/naturzukunft/activitypub/basicactivitypubserver/Controller.java#L173" rel="noopener nofollow ugc">here</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/38">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/38</link>
+        <pubDate>Mon, 17 May 2021 18:50:58 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1760-38</guid>
+        <source url="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760.rss">Testing HttpSignatures (mastodon)</source>
+      </item>
+      <item>
+        <title>Testing HttpSignatures (mastodon)</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <p>In your <a href="https://github.com/grishka/Smithereen/blob/55abb26c9526b897072f57d0820380b3402436ac/src/main/java/smithereen/activitypub/ActivityPub.java#L123" rel="noopener nofollow ugc">code</a> the <code>host</code> is not in the header right ?</p>
+<p>In the tutorial it is:</p>
+<pre><code class="lang-auto">HTTP.headers({ 'Host': 'mastodon.social', 'Date': date, 'Signature': header })
+    .post('https://mastodon.social/inbox', body: document)
+</code></pre>
+<p>Isn’t it necessary ?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/37">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/37</link>
+        <pubDate>Mon, 17 May 2021 18:05:40 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1760-37</guid>
+        <source url="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760.rss">Testing HttpSignatures (mastodon)</source>
+      </item>
+      <item>
+        <title>Testing HttpSignatures (mastodon)</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>Uh. Could you <em>please</em> read the tutorial, my code that generates valid signatures, or both?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/36">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/36</link>
+        <pubDate>Mon, 17 May 2021 16:50:10 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1760-36</guid>
+        <source url="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760.rss">Testing HttpSignatures (mastodon)</source>
+      </item>
+      <item>
+        <title>Testing HttpSignatures (mastodon)</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <p>“(request-target)” should also be a header attribute ?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/35">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/35</link>
+        <pubDate>Mon, 17 May 2021 16:49:19 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1760-35</guid>
+        <source url="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760.rss">Testing HttpSignatures (mastodon)</source>
+      </item>
+      <item>
+        <title>Testing HttpSignatures (mastodon)</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>The order is also important. The headers in the string you sign have to be in the same order they are in the <code>headers</code> parameter.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/34">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/34</link>
+        <pubDate>Mon, 17 May 2021 16:35:56 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1760-34</guid>
+        <source url="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760.rss">Testing HttpSignatures (mastodon)</source>
+      </item>
+      <item>
+        <title>Testing HttpSignatures (mastodon)</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>It’s again failed to verify. I suppose you just aren’t generating it correctly. As there’s hashing involved, it’s important that there’s a bit-exact match between the strings on both sides.</p>
+<p>(I added the check for algorithm btw)</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/33">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/33</link>
+        <pubDate>Mon, 17 May 2021 16:33:39 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1760-33</guid>
+        <source url="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760.rss">Testing HttpSignatures (mastodon)</source>
+      </item>
+      <item>
+        <title>Testing HttpSignatures (mastodon)</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-smithereen" data-username="grishka" data-post="31" data-topic="1760">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/grishka/40/196_2.png" class="avatar"> grishka:</div>
+<blockquote>
+<p>hs2019</p>
+</blockquote>
+</aside>
+<p>ah, i was changing that, because in the meanwhile i again “fired” against mastodon and they told me, that my algorithm is not supported. so i switched to “RSA_SHA256”, but there was a still a wrong peace.<br>
+I removed that  " <code>hs2019</code> now. can you check again ?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/32">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/32</link>
+        <pubDate>Mon, 17 May 2021 16:30:17 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1760-32</guid>
+        <source url="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760.rss">Testing HttpSignatures (mastodon)</source>
+      </item>
+      <item>
+        <title>Testing HttpSignatures (mastodon)</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>Okay, you’ve got further this time. I see this in my log:</p>
+<p><code>Failed sig: keyId="https://naturzukunft.ddnss.de/actor#main-key",created=1621268496,algorithm="hs2019",headers="digest host date (request-target)",signature="h2AAAX3Eq0qtFG7QTUI2b7sIOZKBqwCSRUDlT4Il7W7YJxtZ3XEo5nuvhcs+hzy7MDBcfYcCxAWQNRkmJGzWoFW2uW5rjBrrD+e6qay+fhQruODkRV9J5FCHtp9WXOu3ACmFcpuz/mtLbvVrk/Ahf2cdV9Ie1DX7Yn5vZSJSw1546igQw6kvHxcomHGGuCO0YGtYbkfq3GfM29hmMTAnryT2W/gZXf2LkYFsGM5d9qoAOP5GUIKVgzz6t9hO18u/823nXEKetqbyQD+3G7TQ8eFuW64Ha+IsfZkRhfDsUevG7f9QmFPH3guchRxpxTU7Z7QKFR0uI6tmVxjnDRJseQ=="</code></p>
+<pre><code class="lang-auto">Failed sig string: 'digest: SHA-256=ANFl5Jso9ixM2+G+KXGz/eRg16ED+3J2ZZz6yDf34vE=
+host: friends.grishka.me
+date: Mon, 17 May 2021 16:21:36 GMT
+(request-target): post /activitypub/sharedInbox'
+</code></pre>
+<blockquote>
+<p>algorithm=“hs2019”</p>
+</blockquote>
+<p>I honestly have no idea what this is. It’s supposed to be “rsa-sha256”. I should really be checking this and returning an appropriate error.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/31">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/31</link>
+        <pubDate>Mon, 17 May 2021 16:26:59 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1760-31</guid>
+        <source url="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760.rss">Testing HttpSignatures (mastodon)</source>
+      </item>
+      <item>
+        <title>Testing HttpSignatures (mastodon)</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-smithereen" data-username="grishka" data-post="29" data-topic="1760">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/grishka/40/196_2.png" class="avatar"> grishka:</div>
+<blockquote>
+<p><a href="https://naturzukunft.ddnss.de/actor#main-key" rel="noopener nofollow ugc">https://naturzukunft.ddnss.de/actor#main-key</a></p>
+</blockquote>
+</aside>
+<p>I tried to add a second representation, not sure if it is as you like.<br>
+Get: <code>400,Bad request: java.lang.IllegalArgumentException: Signature failed to verify</code></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/30">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/30</link>
+        <pubDate>Mon, 17 May 2021 16:22:40 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1760-30</guid>
+        <source url="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760.rss">Testing HttpSignatures (mastodon)</source>
+      </item>
+      <item>
+        <title>Testing HttpSignatures (mastodon)</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>Okay, try changing your keyId to something like <code>https://naturzukunft.ddnss.de/actor#main-key</code>… That’s kinda my laziness because I don’t really support arbitrary key IDs.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/29">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/29</link>
+        <pubDate>Mon, 17 May 2021 16:04:18 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1760-29</guid>
+        <source url="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760.rss">Testing HttpSignatures (mastodon)</source>
+      </item>
+      <item>
+        <title>Testing HttpSignatures (mastodon)</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <p>I have no idea! The description of the library says:</p>
+<p><strong>"The returned Signature object represents a full HTTP Signature. Simply call toString() on it to get a fully formatted Authorization header value."</strong></p>
+<p>There is no mention of a header attribute Signature.<br>
+I have adapted this anyway and also filled the Authorization header.</p>
+<p>Now it’s:</p>
+<pre><code>Authorization - [Signature keyId="https://naturzukunft.ddnss.de/key",created=1621264456,algorithm="hmac-sha256",headers="digest host date (request-target)",signature="4P0BA77xUg0mwzlaH4Wtf8RaUE3MlfklejiqzecXAsQ="]
+Signature - [keyId="https://naturzukunft.ddnss.de/key",created=1621264456,algorithm="hmac-sha256",headers="digest host date (request-target)",signature="4P0BA77xUg0mwzlaH4Wtf8RaUE3MlfklejiqzecXAsQ="]
+digest - [SHA-256=ANFl5Jso9ixM2+G+KXGz/eRg16ED+3J2ZZz6yDf34vE=]
+Host - [friends.grishka.me]
+Date - [Mon, 17 May 2021 15:14:16 GMT]
+</code></pre>
+<p>Error:</p>
+<p><code>&lt;400,Bad request: smithereen.exceptions.ObjectNotFoundException: Can't resolve remote object: https://naturzukunft.ddnss.de,[Server:"nginx/1.16.1", Date:"Mon, 17 May 2021 15:26:23 GMT", Content-Type:"text/html;charset=utf-8", Transfer-Encoding:"chunked", Connection:"keep-alive", Set-Cookie:"JSESSIONID=node086q4ruywoty41ez4s2klfh59a7584.node0;Path=/;HttpOnly", Expires:"Thu, 01 Jan 1970 00:00:00 GMT"]&gt; </code></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/28">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/28</link>
+        <pubDate>Mon, 17 May 2021 15:26:43 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1760-28</guid>
+        <source url="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760.rss">Testing HttpSignatures (mastodon)</source>
+      </item>
+      <item>
+        <title>Testing HttpSignatures (mastodon)</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="naturzukunft" data-post="26" data-topic="1760">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/naturzukunft/40/983_2.png" class="avatar"> naturzukunft:</div>
+<blockquote>
+<p>Signature - [Qp3j8go0xK2xSeGkBwpfvP3cyjfQACLvemQQTzqyTnM=]</p>
+</blockquote>
+</aside>
+<p>It’s supposed to be a key-value thing, like this</p>
+<p><code>Signature: keyId="http://smithereen.local:8080/users/1#main-key",headers="(request-target) host date digest",algorithm="rsa-sha256",signature="hfB6do4LmGgD2Fi7+tNcscy1hYbuC3/AAcRbOpLaBLPq3mv30Vq472Z0eXYVfkptDiP+zB80ZzoKUuv+bATTzUaLJePFCf7rbSekUvbSECoBCIvjoEYVwgPPyoRd+s4m8UJGtewad7u+Ftk9BnEmXduc8lUrxzv0I6H+WfxceN4VUERwgDvDQa31pyeXWRpsK9zZ2eIW4oOR7EQ21MFEt1QvV4OYGj0nQ79r+SXUaJxI7TKcIkyx3qqzgHLUxmLkbyU9wLfTpiKy+J4B6NGjSrOMEa9Na82+rsn0oefIj5cpE7gPH32MBasAbC0+I8m5Hd17HD5xnEm0ELeNjta1NQ=="</code></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/27">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/27</link>
+        <pubDate>Mon, 17 May 2021 14:32:05 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1760-27</guid>
+        <source url="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760.rss">Testing HttpSignatures (mastodon)</source>
+      </item>
+      <item>
+        <title>Testing HttpSignatures (mastodon)</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m not sure, if i understand you<br>
+Signature - [Qp3j8go0xK2xSeGkBwpfvP3cyjfQACLvemQQTzqyTnM=]<br>
+digest - [SHA-256=ANFl5Jso9ixM2+G+KXGz/eRg16ED+3J2ZZz6yDf34vE=]<br>
+Host - [<a href="http://friends.grishka.me" rel="noopener nofollow ugc">friends.grishka.me</a>]<br>
+Date - [Mon, 17 May 2021 13:34:58 GMT]</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/26">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/26</link>
+        <pubDate>Mon, 17 May 2021 13:37:06 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1760-26</guid>
+        <source url="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760.rss">Testing HttpSignatures (mastodon)</source>
+      </item>
+      <item>
+        <title>Testing HttpSignatures (mastodon)</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>Show me your signature header. Or I could enable additional logging on my side.</p>
+<p>(I need to handle errors better, too)</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/25</link>
+        <pubDate>Mon, 17 May 2021 12:38:58 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1760-25</guid>
+        <source url="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760.rss">Testing HttpSignatures (mastodon)</source>
+      </item>
+      <item>
+        <title>Testing HttpSignatures (mastodon)</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <p>ok, now.<br>
+<code>Bad request: java.lang.StringIndexOutOfBoundsException: String index out of range: 0</code></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/24</link>
+        <pubDate>Mon, 17 May 2021 12:35:30 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1760-24</guid>
+        <source url="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760.rss">Testing HttpSignatures (mastodon)</source>
+      </item>
+      <item>
+        <title>Testing HttpSignatures (mastodon)</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>You aren’t using a json library, are you? So, do <code>publicKey.replace("\n", "\\n")</code> while adding the key to the json string.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/23</link>
+        <pubDate>Mon, 17 May 2021 10:24:34 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1760-23</guid>
+        <source url="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760.rss">Testing HttpSignatures (mastodon)</source>
+      </item>
+      <item>
+        <title>Testing HttpSignatures (mastodon)</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <p>good morning,<br>
+for this testcase i generate the keyPair in my Controller Class like that:</p>
+<pre><code>import java.security.Key;
+import java.security.KeyPair;
+import java.security.KeyPairGenerator;
+import java.security.NoSuchAlgorithmException;
+import java.util.Base64;
+
+private static String privateKey;
+private static String publicKey;
+
+static {
+	try {
+		KeyPairGenerator kpg = KeyPairGenerator.getInstance("RSA");
+		kpg.initialize(2048);
+		KeyPair kp = kpg.generateKeyPair();
+		
+		Base64.Encoder encoder = Base64.getEncoder();
+		StringBuilder sb = new StringBuilder();
+		sb.append("-----BEGIN RSA PRIVATE KEY-----\n");
+		sb.append(encoder.encodeToString(kp.getPrivate().getEncoded()));
+		sb.append("\n-----END RSA PRIVATE KEY-----\n");
+		privateKey = sb.toString();
+		
+		sb = new StringBuilder();
+		sb.append("-----BEGIN RSA PUBLIC KEY-----\n");
+		sb.append(encoder.encodeToString(kp.getPublic().getEncoded()));
+		sb.append("\n-----END RSA PUBLIC KEY-----\n");
+		publicKey = sb.toString();
+	} catch (NoSuchAlgorithmException e) {
+		throw new RuntimeException(e);
+	}	
+}
+</code></pre>
+<p> → <code>Unhandled exception&lt;/h1&gt;&lt;pre&gt;org.json.JSONException: Unterminated string at 417 [character 0 line 16]</code></p>
+<p>I have to switch of the server because of my ressources. Please send me a message, if i should start it.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/22</link>
+        <pubDate>Mon, 17 May 2021 06:17:52 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1760-22</guid>
+        <source url="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760.rss">Testing HttpSignatures (mastodon)</source>
+      </item>
+      <item>
+        <title>Testing HttpSignatures (mastodon)</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>Yeah exactly as I suspected.</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/2X/4/416133cc53dc917e13958dcc41fb136cb738f857.png" data-download-href="https://socialhub.activitypub.rocks/uploads/default/416133cc53dc917e13958dcc41fb136cb738f857" title="Снимок экрана 2021-05-16 в 23.48.40"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/4/416133cc53dc917e13958dcc41fb136cb738f857_2_491x500.png" alt="Снимок экрана 2021-05-16 в 23.48.40" data-base62-sha1="9kni1a1cwEKhxR6fI3vZMYtxpWv" width="491" height="500" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/4/416133cc53dc917e13958dcc41fb136cb738f857_2_491x500.png, https://socialhub.activitypub.rocks/uploads/default/original/2X/4/416133cc53dc917e13958dcc41fb136cb738f857.png 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/2X/4/416133cc53dc917e13958dcc41fb136cb738f857.png 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/4/416133cc53dc917e13958dcc41fb136cb738f857_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Снимок экрана 2021-05-16 в 23.48.40</span><span class="informations">519×528 86.9 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>And this isn’t a public key, it’s a certificate. You’re supposed to generate an RSA key pair.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/21</link>
+        <pubDate>Sun, 16 May 2021 20:51:33 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1760-21</guid>
+        <source url="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760.rss">Testing HttpSignatures (mastodon)</source>
+      </item>
+      <item>
+        <title>Testing HttpSignatures (mastodon)</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <p>ah, i see. there is a mismatch now. the public key is the old one. and the private is a new one. i’ve to fix that! But enough for today <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"><br>
+Thank you!!</p>
+<p>btw. i added the digest, but mastodon still says it has problems parsing the headers.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/20</link>
+        <pubDate>Sun, 16 May 2021 19:55:21 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1760-20</guid>
+        <source url="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760.rss">Testing HttpSignatures (mastodon)</source>
+      </item>
+      <item>
+        <title>Testing HttpSignatures (mastodon)</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <p>no, the public key should be “dynamic” it’s not hardcoded.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/19</link>
+        <pubDate>Sun, 16 May 2021 19:48:49 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1760-19</guid>
+        <source url="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760.rss">Testing HttpSignatures (mastodon)</source>
+      </item>
+      <item>
+        <title>Testing HttpSignatures (mastodon)</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-smithereen" data-username="grishka" data-post="16" data-topic="1760">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/grishka/40/196_2.png" class="avatar"> grishka:</div>
+<blockquote>
+<p>you turned your server off.</p>
+</blockquote>
+</aside>
+<p>the server is up again</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/18</link>
+        <pubDate>Sun, 16 May 2021 19:48:08 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1760-18</guid>
+        <source url="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760.rss">Testing HttpSignatures (mastodon)</source>
+      </item>
+      <item>
+        <title>Testing HttpSignatures (mastodon)</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>My guess would be that you wrote the json by hand and pasted the public key with line breaks without replacing them with <code>\n</code></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/17</link>
+        <pubDate>Sun, 16 May 2021 19:28:25 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1760-17</guid>
+        <source url="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760.rss">Testing HttpSignatures (mastodon)</source>
+      </item>
+      <item>
+        <title>Testing HttpSignatures (mastodon)</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>Actually it’s parsing the activity itself just fine, it’s the actor that fails. Though I can’t look at it right now because you turned your server off.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/16</link>
+        <pubDate>Sun, 16 May 2021 19:23:51 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1760-16</guid>
+        <source url="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760.rss">Testing HttpSignatures (mastodon)</source>
+      </item>
+      <item>
+        <title>Testing HttpSignatures (mastodon)</title>
+        <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+        <description><![CDATA[
+            <p>you don’t like my json:</p>
+<pre><code>&lt;500,&lt;h1 style='color: red;'&gt;Unhandled exception&lt;/h1&gt;&lt;pre&gt;org.json.JSONException: Unterminated string at 414 [character 0 line 16]
+	at smithereen.activitypub.ActivityPub.fetchRemoteObject(ActivityPub.java:90)
+	at smithereen.ObjectLinkResolver.resolve(ObjectLinkResolver.java:83)
+	at smithereen.routes.ActivityPubRoutes.inbox(ActivityPubRoutes.java:569)
+	at smithereen.routes.ActivityPubRoutes.sharedInbox(ActivityPubRoutes.java:256)
+	at spark.RouteImpl$1.handle(RouteImpl.java:72)
+	at spark.http.matching.Routes.execute(Routes.java:61)
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:134)
+	at spark.embeddedserver.jetty.JettyHandler.doHandle(JettyHandler.java:50)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1671)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</code></pre>
+<p>i expect, that you receive:</p>
+<pre><code>{
+	"@context": "https://www.w3.org/ns/activitystreams",
+
+	"id": "https://naturzukunft.ddnss.de/create-hello-world",
+	"type": "Create",
+	"actor": "https://naturzukunft.ddnss.de/actor",
+
+	"object": {
+		"id": "https://naturzukunft.ddnss.de/hello-world",
+		"type": "Note",
+		"published": "2018-06-23T17:17:11Z",
+		"attributedTo": "https://naturzukunft.ddnss.de/actor",
+		"inReplyTo": "https://mastodon.social/@Gargron/100254678717223630",
+		"content": "&lt;p&gt;Hello world&lt;/p&gt;",
+		"to": "https://www.w3.org/ns/activitystreams#Public"
+	}
+}</code></pre>
+          <p><a href="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760/15</link>
+        <pubDate>Sun, 16 May 2021 18:32:59 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1760-15</guid>
+        <source url="https://socialhub.activitypub.rocks/t/testing-httpsignatures-mastodon/1760.rss">Testing HttpSignatures (mastodon)</source>
+      </item>
+  </channel>
+</rss>

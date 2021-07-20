@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>How to handle Webfinger for group discovery - Server to Server - SocialHub</title>
+    <meta name="description" content="Hi everyone, I’m a contributor to Lemmy, and have recently implemented Webfinger support for the project. That was already hard enough without any proper spec of how Webfinger is used by ActivityPub implementations. Now &amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="418.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;How to handle Webfinger for group discovery&#39;" href="418.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/how-to-handle-webfinger-for-group-discovery/418" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/how-to-handle-webfinger-for-group-discovery/418" />
+<meta property="og:title" content="How to handle Webfinger for group discovery" />
+<meta name="twitter:title" content="How to handle Webfinger for group discovery" />
+<meta property="og:description" content="Hi everyone, I’m a contributor to Lemmy, and have recently implemented Webfinger support for the project. That was already hard enough without any proper spec of how Webfinger is used by ActivityPub implementations. Now the problem is, Lemmy is mainly focused on groups (its a reddit alternative), but I am not aware of any other ActivityPub projects that support groups.  So my question is, what is the best way to handle Webfinger for groups? Webfinger URLs for user accounts look like this:  https..." />
+<meta name="twitter:description" content="Hi everyone, I’m a contributor to Lemmy, and have recently implemented Webfinger support for the project. That was already hard enough without any proper spec of how Webfinger is used by ActivityPub implementations. Now the problem is, Lemmy is mainly focused on groups (its a reddit alternative), but I am not aware of any other ActivityPub projects that support groups.  So my question is, what is the best way to handle Webfinger for groups? Webfinger URLs for user accounts look like this:  https..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="2 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="4 ❤" />
+<meta property="article:published_time" content="2019-12-22T00:31:39+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="418.html">How to handle Webfinger for group discovery</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/activitypub.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #0088CC'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>ActivityPub</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/activitypub/s2s/7.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #808281'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Server to Server</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nutomic.html'><span itemprop='name'>nutomic</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="418.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-12-22T00:31:39Z'>
+              <time itemprop='dateModified' datetime='2019-12-22T00:36:16Z' class='post-time'>
+                December 22, 2019, 12:36am
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi everyone, I’m a contributor to <a href="https://github.com/dessalines/lemmy" rel="nofollow noopener">Lemmy</a>, and have recently implemented Webfinger support for the project. That was already hard enough without any proper spec of how Webfinger is used by ActivityPub implementations. Now the problem is, Lemmy is mainly focused on groups (its a reddit alternative), but I am not aware of any other ActivityPub projects that support groups.</p>
+<p>So my question is, what is the best way to handle Webfinger for groups? Webfinger URLs for user accounts look like this:</p>
+<pre><code class="lang-auto">https://radical.town/.well-known/webfinger?resource=acct:felix@radical.town
+</code></pre>
+<p>The easiest option that will most likely be supported by all existing projects is to use the same URL format for groups. But that will result in problems as soon as we also make users discoverable over webfinger, as users and groups with the same name will collide.</p>
+<p>So I guess the next best option is to replace <code>acct:</code> with something else, like <code>group:</code>, like this:</p>
+<pre><code class="lang-auto">https://radical.town/.well-known/webfinger?resource=group:main@dev.lemmy.ml
+</code></pre>
+<p>Is there already some existing de-facto standard for this, or any other suggestion that would make compatiblity with other projects easier?</p>
+        </div>
+
+        <meta itemprop='headline' content='How to handle Webfinger for group discovery'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../how-to-use-groups/1005.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/how-to-use-groups/1005'>
+                      <span itemprop='name'>How to use Groups</span>
+                    </a>
+                    <meta itemprop='position' content='2'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../planning-the-next-socialcg-meeting-when/481/17.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/planning-the-next-socialcg-meeting-when/481/17'>
+                      <span itemprop='name'>Planning the next SocialCG meeting: when?</span>
+                    </a>
+                    <meta itemprop='position' content='3'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../planning-the-next-socialcg-meeting-when/481/16.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/planning-the-next-socialcg-meeting-when/481/16'>
+                      <span itemprop='name'>Planning the next SocialCG meeting: when?</span>
+                    </a>
+                    <meta itemprop='position' content='4'>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nightpool.html'><span itemprop='name'>nightpool</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="418.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-12-22T01:04:08Z'>
+              <time itemprop='dateModified' datetime='2019-12-22T01:08:03Z' class='post-time'>
+                December 22, 2019,  1:08am
+              </time>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>what would be the purpose of implementing webfinger for groups? what do you gain over, e.g., a URI?</p>
+        </div>
+
+        <meta itemprop='headline' content='How to handle Webfinger for group discovery'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nutomic.html'><span itemprop='name'>nutomic</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="418.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-12-22T01:15:26Z' class='post-time'>
+                December 22, 2019,  1:15am
+              </time>
+              <meta itemprop='dateModified' content='2019-12-22T01:15:26Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>As far as I know, webfinger is required to support eg discovery through the Mastodon search, so that something like <code>!main@dev.lemmy.ml</code> can be turned into the actual URI that is used for ActivityPub. Sure we could always use the URI, but that would not be consistent with the functionality for discovering users, and also more complicated for end users.</p>
+        </div>
+
+        <meta itemprop='headline' content='How to handle Webfinger for group discovery'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/wakest.html'><span itemprop='name'>wakest</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="418.html">
+
+            <link itemprop="image" href="../../uploads/default/original/1X/cee1823d5a11b5d718a0b7583b4ef6fc8ab86604.png">
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-12-22T08:28:40Z' class='post-time'>
+                December 22, 2019,  8:28am
+              </time>
+              <meta itemprop='dateModified' content='2019-12-22T08:28:40Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>this was just merged into mainline Mastodon<br>
+<aside class="onebox githubpullrequest">
+  <header class="source">
+      <a href="https://github.com/tootsuite/mastodon/pull/12071" target="_blank" rel="nofollow noopener">github.com/tootsuite/mastodon</a>
+  </header>
+  <article class="onebox-body">
+    <div class="github-row">
+  <div class="github-icon-container" title="Pull Request">
+    <svg width="60" height="60" class="github-icon" viewbox="0 0 12 16" aria-hidden="true"><path d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+  </div>
+
+  <div class="github-info-container">
+    <h4>
+      <a href="https://github.com/tootsuite/mastodon/pull/12071" target="_blank" rel="nofollow noopener">Add basic support for group actors</a>
+    </h4>
+
+    <div class="branches">
+      <code>tootsuite:master</code> ← <code>fedibird:add-basic-support-for-group-actor</code>
+    </div>
+
+    <div class="github-info">
+      <div class="date">
+        opened <span class="discourse-local-date" data-format="ll" data-date="2019-10-03" data-time="18:31:26" data-timezone="UTC">06:31PM - 03 Oct 19 UTC</span>
+      </div>
+
+      <div class="user">
+        <a href="https://github.com/noellabo" target="_blank" rel="nofollow noopener">
+          <img alt="noellabo" src="../../uploads/default/original/1X/cee1823d5a11b5d718a0b7583b4ef6fc8ab86604.png" class="onebox-avatar-inline" width="20" height="20">
+          noellabo
+        </a>
+      </div>
+
+      <div class="lines" title="7 commits changed 8 files with 118 additions and 9 deletions">
+        <a href="https://github.com/tootsuite/mastodon/pull/12071/files" target="_blank" rel="nofollow noopener">
+          <span class="added">+118</span>
+          <span class="removed">-9</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+<br>
+thought I would pass this info here as it seems relevant</p>
+        </div>
+
+        <meta itemprop='headline' content='How to handle Webfinger for group discovery'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nutomic.html'><span itemprop='name'>nutomic</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="418.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-12-22T10:51:42Z' class='post-time'>
+                December 22, 2019, 10:51am
+              </time>
+              <meta itemprop='dateModified' content='2019-12-22T10:51:42Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I actually saw this PR before, but it doesnt include anything about webfinger.</p>
+        </div>
+
+        <meta itemprop='headline' content='How to handle Webfinger for group discovery'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="418.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-12-24T20:36:15Z' class='post-time'>
+                December 24, 2019,  8:36pm
+              </time>
+              <meta itemprop='dateModified' content='2019-12-24T20:36:15Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’m planning to have groups in Smithereen, but thought they shouldn’t be any different from users on webfinger level, it’s just that the ActivityPub object that you’d fetch would be <code>Group</code> instead of <code>Person</code> <img src="../../images/emoji/twitter/thinking.png@v=9" title=":thinking:" class="emoji" alt=":thinking:"></p>
+<p>It makes sense to do it as <code>acct:</code> because groups and users share the username namespace (for how I see it, anyway). You can’t have both a user and a group with the same username on the same instance.</p>
+<p>It also makes sense to do it as <code>group:</code> because I’m going to store users and groups in separate tables in my database. This way I’ll know which one to select from, and whoever is sending the request can be sure that looking up a user won’t unexpectedly return a group and vice versa.</p>
+        </div>
+
+        <meta itemprop='headline' content='How to handle Webfinger for group discovery'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nutomic.html'><span itemprop='name'>nutomic</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="418.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-12-25T16:37:45Z' class='post-time'>
+                December 25, 2019,  4:37pm
+              </time>
+              <meta itemprop='dateModified' content='2019-12-25T16:37:45Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Well in Lemmy, users and groups are completely seperate, so you can have a group and a user with the same name of <code>test</code>. I also dont see anything in the activitypub spec that would prohibit this.</p>
+<p>Can you post a link to your project? Search didnt bring anything up.</p>
+        </div>
+
+        <meta itemprop='headline' content='How to handle Webfinger for group discovery'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="418.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-12-25T16:51:01Z' class='post-time'>
+                December 25, 2019,  4:51pm
+              </time>
+              <meta itemprop='dateModified' content='2019-12-25T16:51:01Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I haven’t published anything yet because it’s currently too far from being useful, and I haven’t even started implementing groups so most of this is theoretical. <a href="https://friends.grishka.me/grishka" rel="nofollow noopener">There is a live instance I mostly use for testing</a> that successfully federates with the existing microblogging software.</p>
+        </div>
+
+        <meta itemprop='headline' content='How to handle Webfinger for group discovery'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nedjo.html'><span itemprop='name'>nedjo</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="418.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-01-10T01:36:48Z' class='post-time'>
+                January 10, 2020,  1:36am
+              </time>
+              <meta itemprop='dateModified' content='2020-01-10T01:36:48Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’ve been considering this question too for Drupal, where as well as users there can be groups through use of plugins like the Groups module.</p>
+<p>Options I’ve come up with are:</p>
+<ul>
+<li>
+<strong>Prevent name collisions.</strong> User and group names are globally unique. Probably not an option in many cases.</li>
+<li>
+<strong>Allow groups and users to have the same name, but assign an alias in the case of collisions.</strong> For example if a user is created with the name “example” on a site where there is already an “example” group, the user is assigned the alias “example-1” which leads to the handle <span class="mention">@example-1</span>@somedomain.org.</li>
+<li>
+<strong>For handles, use a convention where a string is appended to all group handles.</strong> A user “example” is <span class="mention">@example</span>@somedomain.org while a group “example” is something like <span class="mention">@example-group</span>@somedomain.org.</li>
+</ul>
+        </div>
+
+        <meta itemprop='headline' content='How to handle Webfinger for group discovery'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/trwnh.html'><span itemprop='name'>trwnh</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="418.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-01-10T07:36:41Z'>
+              <time itemprop='dateModified' datetime='2020-01-10T07:38:40Z' class='post-time'>
+                January 10, 2020,  7:38am
+              </time>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>option 3 is probably the most transparent and consistent way to handle things, i think? but also, if you want to avoid namespace collisions then it does make sense to have the URI handle this. Perhaps something like <code>acct:group:</code> as a subset of <code>acct:</code>?</p>
+<p>the thing you will have to keep in mind is that mastodon et al expect <code>acct:username@domain</code>, but it is your decision whether you want to force this compatibility or not. if you do, then option 3 will work.</p>
+        </div>
+
+        <meta itemprop='headline' content='How to handle Webfinger for group discovery'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nedjo.html'><span itemprop='name'>nedjo</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="418.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-01-10T18:13:44Z' class='post-time'>
+                January 10, 2020,  6:13pm
+              </time>
+              <meta itemprop='dateModified' content='2020-01-10T18:13:44Z'>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <blockquote>
+<p>the thing you will have to keep in mind is that mastodon et al expect <code>acct:username@domain</code> , but it is your decision whether you want to force this compatibility or not</p>
+</blockquote>
+<p>Yeah, good point. The workarounds I suggested above are going to cause more problems than they solve.</p>
+<p>It seems to come down to the non-ActivityPub convention of a handle in the form <span class="mention">@actorname</span>@domain.name, rather than the AP <code>id</code> URI. <span class="mention">@actorname</span>@domain.name <em>assumes</em> that all actors are users, and so can be looked up (again, by convention, using Webfinger) using the <code>acct</code> schema, which as the <a href="https://tools.ietf.org/html/draft-ietf-appsawg-acct-uri-06" rel="nofollow noopener">acct draft</a> makes explicit is:</p>
+<blockquote>
+<p>a way to identify a user’s account at a service provider</p>
+</blockquote>
+<p>And therefore limited, in most cases, to <code>Person</code> actors. (Sure, a <code>Group</code> <em>could</em> be a user on a site, but most often that’s not going to be the case.)</p>
+<p>Yes, we <em>could</em> mess with the <span class="mention">@actorname</span>@domain.name format, injecting a schema in there somewhere (<span class="mention">@acct</span>:actorname@domain.name), but (a) that’s not supported anywhere and (b) it pretty much defeats the original reason for the <span class="mention">@actorname</span>@domain.name format and corresponding Webfinger workaround–that it’s considered intuitive.</p>
+<p>So probably we’re left with:</p>
+<ul>
+<li>For all actor types, the <code>id</code> URI works. <code>Group</code> actors use the <code>id</code>, not the <span class="mention">@actorname</span>@domain.name format, for their handle. Webfinger doesn’t come into play.</li>
+<li>For <code>Person</code> actor types only, and where the <code>Person</code> represents a user with an account on the site, <span class="mention">@actorname</span>@domain.name is a secondary, alternate handle format, but one that isn’t guaranteed to be supported by all ActivityPub implementations.</li>
+</ul>
+        </div>
+
+        <meta itemprop='headline' content='How to handle Webfinger for group discovery'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/trwnh.html'><span itemprop='name'>trwnh</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="418.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-01-10T19:37:05Z' class='post-time'>
+                January 10, 2020,  7:37pm
+              </time>
+              <meta itemprop='dateModified' content='2020-01-10T19:37:05Z'>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Another thing to consider: Webfinger in Mastodon is used primarily to allow mentions. Is your project going to use mentions of groups? If not, <code>acct:</code> lookup isn’t necessary – you can use the HTTPS URL, either transparently proxied/routed to the ID if the proper Accept header is provided, or you can still use Webfinger but with <code>https:</code> instead.</p>
+<p>There’s nothing limiting <code>acct:</code> to Persons instead of Groups – what it represents in Mastodon’s expectations is a single shared namespace for actors according to a certain domain.</p>
+        </div>
+
+        <meta itemprop='headline' content='How to handle Webfinger for group discovery'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="418.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-01-10T22:34:18Z' class='post-time'>
+                January 10, 2020, 10:34pm
+              </time>
+              <meta itemprop='dateModified' content='2020-01-10T22:34:18Z'>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Still, I don’t understand why would any of you want to make group and user aliases be different namespaces and so allow there to be a user and a group with the same alias on the same instance. This would be very confusing UX.</p>
+        </div>
+
+        <meta itemprop='headline' content='How to handle Webfinger for group discovery'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

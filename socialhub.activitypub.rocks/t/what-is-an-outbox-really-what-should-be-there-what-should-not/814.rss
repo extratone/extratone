@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>What is an outbox, really? What should be there? What should not?</title>
+    <link>https://socialhub.activitypub.rocks/t/what-is-an-outbox-really-what-should-be-there-what-should-not/814</link>
+    <description>I&#39;ve been thinking about walls and groups and whatnot and I realized I have more questions than I do answers. The spec says this:
+
+&gt; The outbox stream contains activities the user has published, subject to the ability of the requestor to retrieve the activity (that is, the contents of the outbox are filtered by the permissions of the person reading it). If a user submits a request without [Authorization](https://www.w3.org/TR/activitypub/#authorization) the server should respond with all of the [Public](https://www.w3.org/TR/activitypub/#public-addressing) posts.
+
+My understanding:
+* Outbox absolutely should contain actor&#39;s own posts as `Create{Note}`, if they&#39;re capable of posting.
+* Outbox should contain `Announce` activities for those implementations that use them for reposting.
+* Outbox *may* contain actor&#39;s comments, especially for implementations that don&#39;t draw much of a line between top-level posts and replies.
+
+My questions up for discussion:
+* Should an outbox contain likes? Likes on public posts are public in the sense that anyone who sees the post is in principle supposed to see the list of the actors who liked it.
+(consistency isn&#39;t that great on the existing fediverse but I&#39;ve improved it on my side a bit by LD-signing the likes and forwarding them to any instance that might have the post)
+* I implement Facebook-style walls and currently outboxes contain wall posts as well — these are activities made by actors other than the owner of the outbox. Is this okay? Is this not okay? Should I create a separate collection instead under `collections`? Is there an even better way?
+* Suppose an implementation has photo albums in addition to posts, as separate entities visible in the profiles of its actors in the UI. When an actor uploads a photo to their album, this produces an `Add{Photo}` or `Create{Photo}` activity. Should these activities be part of their outbox? Should these activities be part of *any* collection, or it&#39;s enough to expose a collection of photo albums each of which then contains a collection of photos, each of which then contains collections of tags and comments and so on?
+* When a member of a public group does something, anything, that needs to be known by all members of the group in order to keep their local states in sync, does that activity go into the group&#39;s outbox? Or maybe it doesn&#39;t the way it is, maybe it makes sense to wrap it into another activity of a purpose-made type that&#39;s on behalf of the group actor? See also https://socialhub.activitypub.rocks/t/groups-implementation/591/56 for a lengthy discussion on the subject.</description>
+    
+    <lastBuildDate>Sun, 09 Aug 2020 17:51:21 +0000</lastBuildDate>
+    <category>Server to Server</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/what-is-an-outbox-really-what-should-be-there-what-should-not/814.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>What is an outbox, really? What should be there? What should not?</title>
+        <dc:creator><![CDATA[trwnh]]></dc:creator>
+        <description><![CDATA[
+            <p>The outbox contains whatever the implementation decides it should include, and upon request, the implementation should serve only the activities that the requester is authorized to view. This usually means anything addressed to <code>as:Public</code>, but you still have the freedom to decide what is relevant to publish here – posts, comments, likes, etc. are all up to each implementation to interpret.</p>
+<p>For example, Mastodon does not publish Like activities, because Likes are private to the person who made them and the person who received them. Pleroma sends Like activities to as:Public, but does not publish them via outbox. These two implementations have decided that outbox should represent “posts made by the user” – note that activities can still be sent without a persistent presence in the outbox. In email, a direct message is removed from the outbox as soon as it is sent; in ActivityPub, keeping an activity in the outbox implies some sort of persistence or continued relevance.</p>
+<p>More generally, though, I’d say that the outbox should represent the “activity stream”, i.e., whatever you think should be visible in a feed. If you publish Like activities, this can be interpreted by implementations as either showing your profile next to “who liked this”, or it could even mean “x liked this” entries, a la Facebook.</p>
+<p>With this kind of thinking, I think your other questions become a bit clearer. Add/Create Photo should be in the outbox if you think that information is relevant for an activity stream, e.g. “x added 12 photos to an album”. It’s a little interesting because there’s a difference in what an activity represents for C2S vs. S2S – perhaps a changelog of sorts is more relevant to clients, which can store these activities in a collection by their own logic. But perhaps you want to expose this information on the “profile” as well.</p>
+<hr>
+<p>Walls and groups are a bit of a branch in the discussion because that is a question of whether the outbox should contain an actor’s own activities or other actors’ activities. I think you should be using inbox forwarding for this. It is then up to other implementations to “validate” this potentially cross-domain activity. I think some current implementations validate that the activity is <code>attributedTo</code> the same actor, but don’t quote me on this.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/what-is-an-outbox-really-what-should-be-there-what-should-not/814/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/what-is-an-outbox-really-what-should-be-there-what-should-not/814/3</link>
+        <pubDate>Sun, 09 Aug 2020 17:51:21 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-814-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/what-is-an-outbox-really-what-should-be-there-what-should-not/814.rss">What is an outbox, really? What should be there? What should not?</source>
+      </item>
+      <item>
+        <title>What is an outbox, really? What should be there? What should not?</title>
+        <dc:creator><![CDATA[koehn]]></dc:creator>
+        <description><![CDATA[
+            <p>The outbox my server produces contains literally all activities from the user addressed publicly, without regard to their type.</p>
+<p>WRT a wall, I suppose you could include activities from other users there if you chose to; it’s a novel case. I think I would create a <code>wall</code> collection instead.</p>
+<p>WRT photos, see above. If the add activity is addressed publicly, then I’d put it into the outbox. If you choose not to address it publicly, then I wouldn’t.</p>
+<p>WRT groups, I plan to put items into the group outbox that will help new members synchronize to the group’s current state.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/what-is-an-outbox-really-what-should-be-there-what-should-not/814/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/what-is-an-outbox-really-what-should-be-there-what-should-not/814/2</link>
+        <pubDate>Fri, 24 Jul 2020 13:23:20 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-814-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/what-is-an-outbox-really-what-should-be-there-what-should-not/814.rss">What is an outbox, really? What should be there? What should not?</source>
+      </item>
+      <item>
+        <title>What is an outbox, really? What should be there? What should not?</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve been thinking about walls and groups and whatnot and I realized I have more questions than I do answers. The spec says this:</p>
+<blockquote>
+<p>The outbox stream contains activities the user has published, subject to the ability of the requestor to retrieve the activity (that is, the contents of the outbox are filtered by the permissions of the person reading it). If a user submits a request without <a href="https://www.w3.org/TR/activitypub/#authorization" rel="nofollow noopener">Authorization</a> the server should respond with all of the <a href="https://www.w3.org/TR/activitypub/#public-addressing" rel="nofollow noopener">Public</a> posts.</p>
+</blockquote>
+<p>My understanding:</p>
+<ul>
+<li>Outbox absolutely should contain actor’s own posts as <code>Create{Note}</code>, if they’re capable of posting.</li>
+<li>Outbox should contain <code>Announce</code> activities for those implementations that use them for reposting.</li>
+<li>Outbox <em>may</em> contain actor’s comments, especially for implementations that don’t draw much of a line between top-level posts and replies.</li>
+</ul>
+<p>My questions up for discussion:</p>
+<ul>
+<li>Should an outbox contain likes? Likes on public posts are public in the sense that anyone who sees the post is in principle supposed to see the list of the actors who liked it.<br>
+(consistency isn’t that great on the existing fediverse but I’ve improved it on my side a bit by LD-signing the likes and forwarding them to any instance that might have the post)</li>
+<li>I implement Facebook-style walls and currently outboxes contain wall posts as well — these are activities made by actors other than the owner of the outbox. Is this okay? Is this not okay? Should I create a separate collection instead under <code>collections</code>? Is there an even better way?</li>
+<li>Suppose an implementation has photo albums in addition to posts, as separate entities visible in the profiles of its actors in the UI. When an actor uploads a photo to their album, this produces an <code>Add{Photo}</code> or <code>Create{Photo}</code> activity. Should these activities be part of their outbox? Should these activities be part of <em>any</em> collection, or it’s enough to expose a collection of photo albums each of which then contains a collection of photos, each of which then contains collections of tags and comments and so on?</li>
+<li>When a member of a public group does something, anything, that needs to be known by all members of the group in order to keep their local states in sync, does that activity go into the group’s outbox? Or maybe it doesn’t the way it is, maybe it makes sense to wrap it into another activity of a purpose-made type that’s on behalf of the group actor? See also <a href="https://socialhub.activitypub.rocks/t/groups-implementation/591/56" class="inline-onebox">Groups implementation</a> for a lengthy discussion on the subject.</li>
+</ul>
+          <p><a href="https://socialhub.activitypub.rocks/t/what-is-an-outbox-really-what-should-be-there-what-should-not/814/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/what-is-an-outbox-really-what-should-be-there-what-should-not/814/1</link>
+        <pubDate>Wed, 22 Jul 2020 21:55:54 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-814-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/what-is-an-outbox-really-what-should-be-there-what-should-not/814.rss">What is an outbox, really? What should be there? What should not?</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Discovery for Interoperability - #4 by Sebastian - ActivityPub Conference 2020 - SocialHub</title>
+    <meta name="description" content="Some of the Talks show the missing opportunity for machine-readable discovery of remote AP supporting type … 
+ 
+ 
+You can see this in Come Together Right Now - A design approach to interoperability - ConfTube 
+and users &amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="../992.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Discovery for Interoperability&#39;" href="../992.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/discovery-for-interoperability/992/4" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/discovery-for-interoperability/992/4" />
+<meta property="og:title" content="Discovery for Interoperability" />
+<meta name="twitter:title" content="Discovery for Interoperability" />
+<meta property="og:description" content="I would not do this, please note that already this was merged Getting extensions into the ActivityStreams 2.0 namespace and there is incredible much input in “Towards AP v2” now.  This session should really be about how we could optimize federation.md towards machine readable discovery. redaktor is currently desperate and sad cause of missing interoperability and only a few caring about https://www.w3.org/TR/activitypub/#conformance 😉" />
+<meta name="twitter:description" content="I would not do this, please note that already this was merged Getting extensions into the ActivityStreams 2.0 namespace and there is incredible much input in “Towards AP v2” now.  This session should really be about how we could optimize federation.md towards machine readable discovery. redaktor is currently desperate and sad cause of missing interoperability and only a few caring about https://www.w3.org/TR/activitypub/#conformance 😉" />
+<meta property="article:published_time" content="2020-10-03T07:35:53+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="../992.html">Discovery for Interoperability</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="https://socialhub.activitypub.rocks/c/meeting/11" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #0E76BD'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Meeting</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../../c/meeting/apconf2020/53.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #ff7a00'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>ActivityPub Conference 2020</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+      <div class="topic-category">
+        <div class='discourse-tags list-tags'>
+            <a href='../../../tag/apconf.html' class='discourse-tag' rel="tag">apconf</a>, 
+            <a href='../../../tag/2020.html' class='discourse-tag' rel="tag">2020</a>, 
+            <a href='../../../tag/bof.html' class='discourse-tag' rel="tag">bof</a>
+        </div>
+      </div>
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../992.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-10-02T09:33:43Z'>
+              <time itemprop='dateModified' datetime='2020-10-03T09:43:19Z' class='post-time'>
+                October 3, 2020,  9:43am
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Some of the Talks show the missing opportunity for <strong>machine-readable discovery</strong> of remote AP supporting <code>type</code> …<br>
+<aside class="quote quote-modified" data-post="1" data-topic="630">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/koehn/40/311_2.png" class="avatar">
+    <a href="../../service-capability-discovery/630.html">Service Capability Discovery</a> <a class="badge-wrapper  box" href="../../../c/activitypub/s2s/7.html"><span class="badge-category-parent-bg" style="background-color: #0088CC;"></span><span class="badge-category-bg" style="background-color: #808281;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="This protocol is used to distribute activities between actors on different servers, tying them into the same social graph.">Server to Server</span></a>
+  </div>
+  <blockquote>
+    The S2S specification doesn’t appear to have an API for discovering what capabilities an Actor’s server supports. As an example, I happen to know that right now Mastodon doesn’t support AP features such as relationships, so I shouldn’t offer my users an option to use those features with actors running on Mastodon. If I did, the experience for my user would be confusing (“I sent Bob an Offer activity (friend request), but Bob never responded,” when Mastodon never presented Bob with the activity). …
+  </blockquote>
+</aside>
+</p>
+<p>You can see this in <a href="https://conf.tube/videos/watch/4102f53a-3f91-46c1-bb9b-fb954990f023" class="inline-onebox">Come Together Right Now - A design approach to interoperability - ConfTube</a><br>
+and users are working on solutions.<br>
+<a class="mention" href="../../../u/darius.html">@darius</a> with <a href="../../documenting-federation-behavior-in-a-semi-standard-way/453.html" class="inline-onebox">Documenting federation behavior in a semi-standard way?</a><br>
+and <a class="mention" href="../../../u/cjs.html">@cjs</a> in the Talk <a href="https://conf.tube/videos/watch/952f9cef-3b97-45e4-a248-199772a23f62" class="inline-onebox">Go-Fed: Past, Present, and Future - ConfTube</a></p>
+<p>Let us debate on how to discover …</p>
+        </div>
+
+        <meta itemprop='headline' content='Discovery for Interoperability'>
+          <meta itemprop='keywords' content='apconf, 2020, bof'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../birds-of-feather-planning-session/930/2.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/birds-of-feather-planning-session/930/2'>
+                      <span itemprop='name'>Birds of feather planning session</span>
+                    </a>
+                    <meta itemprop='position' content='5'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../2021-05-01-fediverse-interest-group-meeting/1649/13.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/2021-05-01-fediverse-interest-group-meeting/1649/13'>
+                      <span itemprop='name'>2021-05-01 Fediverse Interest Group Meeting</span>
+                    </a>
+                    <meta itemprop='position' content='6'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../lightning-round-talks/955.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/lightning-round-talks/955'>
+                      <span itemprop='name'>Lightning Round Talks</span>
+                    </a>
+                    <meta itemprop='position' content='7'>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../992.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-02T09:50:53Z' class='post-time'>
+                October 2, 2020,  9:50am
+              </time>
+              <meta itemprop='dateModified' content='2020-10-02T09:50:53Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Also this will be related to the “towards ap v2” session, I highly recommend attending both. Reason is, the ability to provide structural data to do discovery can also be used to generate human documentation for the community on how that software interoperates.</p>
+        </div>
+
+        <meta itemprop='headline' content='Discovery for Interoperability'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/how.html'><span itemprop='name'>how</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../992.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-02T11:40:33Z' class='post-time'>
+                October 2, 2020, 11:40am
+              </time>
+              <meta itemprop='dateModified' content='2020-10-02T11:40:33Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>What about merging the two sessions? This one could become one topic of <a href="../../activitypub-experimentation-towards-ap-v2/840.html" class="inline-onebox">ActivityPub Experimentation: Towards AP v2</a>.</p>
+        </div>
+
+        <meta itemprop='headline' content='Discovery for Interoperability'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../992.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-10-03T07:35:53Z'>
+              <time itemprop='dateModified' datetime='2020-10-03T07:36:08Z' class='post-time'>
+                October 3, 2020,  7:36am
+              </time>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I would not do this, please note that already this was merged <a href="../../getting-extensions-into-the-activitystreams-2-0-namespace/1001/2.html" class="inline-onebox">Getting extensions into the ActivityStreams 2.0 namespace</a> and there is incredible much input in “Towards AP v2” now.</p>
+<p>This session should really be about how we could optimize federation.md towards machine readable discovery. redaktor is currently desperate and sad cause of missing interoperability and only a few caring about <a href="https://www.w3.org/TR/activitypub/#conformance">https://www.w3.org/TR/activitypub/#conformance</a> <img src="../../../images/emoji/twitter/wink.png@v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+        </div>
+
+        <meta itemprop='headline' content='Discovery for Interoperability'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/how.html'><span itemprop='name'>how</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../992.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-03T08:41:25Z' class='post-time'>
+                October 3, 2020,  8:41am
+              </time>
+              <meta itemprop='dateModified' content='2020-10-03T08:41:25Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Yes, it’s already scheduled for the first slot in Room B.</p>
+        </div>
+
+        <meta itemprop='headline' content='Discovery for Interoperability'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../992.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-10-04T11:14:26Z'>
+              <time itemprop='dateModified' datetime='2020-10-05T09:08:12Z' class='post-time'>
+                October 5, 2020,  9:08am
+              </time>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <h1>Shared Notes from the session</h1>
+<p>Session: Discovery for Interoperability<br>
+Mod: cj<br>
+Participants: Michael, lain, Sebastian, Morgan, pukkamustard</p>
+<p>What information should be machine readable?<br>
+Ex:</p>
+<ul>
+<li>Mastodon + Article</li>
+<li>Friendica posts ugly on Pleroma</li>
+</ul>
+<p>Actors acting upon each other, not servers.<br>
+Proposal: capabilities on the Actor, not Server (somewhat superfulous)<br>
+Ex:</p>
+<ul>
+<li>Pleroma has chat messages, added field to show “this actor supports chat messages”</li>
+<li>System actor in Friendica.</li>
+</ul>
+<p><em>[ Some agreement there. ]</em></p>
+<p>Next question: Where to document this behavior?</p>
+<pre><code>Social working group?
+
+Under what namespaces?
+
+What process to get it documented?
+</code></pre>
+<p>Proposal: Follow-up discussion for Federation.md, described in our summary <a href="../992.html" class="inline-onebox">Discovery for Interoperability</a><br>
+and specifying it at socialhub forum first to move it to a refactored W3C Social CG</p>
+<p>What level of detail? “This Actor accepts these exact Activities” vs “This Actor generally supports this feature”?</p>
+<ul>
+<li>Actor says “I accept this activity”</li>
+<li>Hard to say what the best granularity is.</li>
+<li>Should cover main Activity and object.</li>
+</ul>
+<p>How to cover reactive types?<br>
+Ex:</p>
+<ul>
+<li>For an invitation: Accept, Reject, TentativeAccept, TentativeReject</li>
+<li>Friendica allows Follow on a discussion.</li>
+</ul>
+<p><em>Consensus around initial Activities being in-scope.</em><br>
+<em>Reactive Activities requires further thinking.</em></p>
+<p>There should be a mechanism to explicitly say “this Activity interaction is NOT supported”.</p>
+<p>Omitted capabilities are unknown. Because existing capabilities may already be supported, but not guaranteed. May indicate will be a SHOULD definition.</p>
+<p>Theme: How to technically do this?<br>
+Q: Is this fetched from the Actor every time? Best practice?</p>
+<ul>
+<li>System could send Update on Actor when capabilities change.</li>
+<li>Existing systems cache profile information (on order of days)</li>
+<li>Receiving an Update can be a cache invalidation mechanism</li>
+<li>Not needed for S2S mechanism, but really good for user experience and C2S.</li>
+</ul>
+<p>Q: List of capabilities</p>
+<ul>
+<li>Friendica shares comments w/ Actors, and is redistributed amongst other Actors</li>
+</ul>
+<p>• Pleroma:</p>
+<pre><code>"capabilities" : {
+    "acceptsChatMessages" : true
+}
+</code></pre>
+<ul>
+<li>Redaktor uses type’s ability to be an array: A collection is not just a collection but an additional ActivityStreams “type”, whose “items” are listed.</li>
+<li>Feedback: multiple types not well-supported in Fediverse</li>
+<li>List then becomes a list of types and links to their documentation.</li>
+<li>Types should have “full URLs” like <a href="https://www.w3.org/ns/activitystreams#Question">https://www.w3.org/ns/activitystreams#Question</a>
+</li>
+</ul>
+<p>Ex: “capabilities”: [{type1}, {type2}]<br>
+Q: What granularity of types? Activity and Object type? Create{Note} or Create?</p>
+<ul>
+<li>
+<p>Need two levels: Create is level1, Create{Note} is level 2</p>
+</li>
+<li>
+<p>But is it really three levels: do something in reply to Create{Note} level 3?</p>
+</li>
+<li>
+<p>Ex: Like (in reply to something) is already level 1.</p>
+</li>
+<li>
+<p>Ex: Accept, Reject is back to level 2 or 3?</p>
+<p>Does this risk over-thinking? If just focusing on client interactions, just initial (re)actions are needed. But if server to server interactions, focus on complete description of actions/re-actions.</p>
+</li>
+<li>
+<p>Linked Data has complicated concept called SHACL (<a href="https://www.w3.org/TR/shacl/">https://www.w3.org/TR/shacl/</a>), but may not be needed in a client-focused area.</p>
+</li>
+<li>
+<p>When fetching an object from a remote system, can understand capabilities of the remote (fetching) system. But, may incur problems</p>
+</li>
+</ul>
+<p>Q: Permissions view? Do we show “general capabilities” or show a “permissions view of capabilities”?</p>
+<pre><code>+1 for general view
+</code></pre>
+<p>Q: How to show capabilities such as “direct message”?</p>
+<ul>
+<li>Generally not easy to deal with in Pleroma, hence push for Chat.</li>
+<li>Friendica’s Direct Message code is 10 years old and quite complex</li>
+</ul>
+<p>Linked Data vs non-Linked Data solutions.</p>
+<p>In towards V2 session (to get things such as this standardized): <a href="../../activitypub-experimentation-towards-ap-v2/840.html" class="inline-onebox">ActivityPub Experimentation: Towards AP v2</a><br>
+In Room A: <a href="https://bbb.fosshost.org/b/mor-fee-7b4-2nh">https://bbb.fosshost.org/b/mor-fee-7b4-2nh</a></p>
+<p><img src="../../../images/emoji/twitter/partying_face.png@v=9" title=":partying_face:" class="emoji" alt=":partying_face:"> <em>We all thank CJ for the moderation</em></p>
+        </div>
+
+        <meta itemprop='headline' content='Discovery for Interoperability'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../2021-05-01-fediverse-interest-group-meeting/1649/24.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/2021-05-01-fediverse-interest-group-meeting/1649/24'>
+                      <span itemprop='name'>2021-05-01 Fediverse Interest Group Meeting</span>
+                    </a>
+                    <meta itemprop='position' content='5'>
+                  </div>
+            </div>
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

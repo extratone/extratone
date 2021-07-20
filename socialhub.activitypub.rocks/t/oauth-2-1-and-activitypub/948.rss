@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>OAuth 2.1 and ActivityPub</title>
+    <link>https://socialhub.activitypub.rocks/t/oauth-2-1-and-activitypub/948</link>
+    <description>*Aaron Parecki*
+
+https://conf.tube/videos/watch/32351956-89d7-4887-b6b0-f1a32f91dc36
+
+OAuth is the foundation of most of modern online security, used everywhere from signing in to mobile apps to protecting your bank accounts.
+
+This session will cover what’s new in OAuth 2.1 and how ActivityPub can take advantage of some of the newest features of OAuth to better support a wide range of interoperable ActivityPub clients.
+
+## Questions &amp; Answers available!
+See also https://aaronparecki.com/2020/10/03/10/apconf
+
+**[Q&amp;A Session – OAuth 2.1 and ActivityPub](https://conf.tube/videos/watch/f9e0856e-3825-476c-8cad-84f4331c04f5)**
+⬡ Hooray, the live Questions &amp; Answers are available here
+https://conf.tube/videos/watch/f9e0856e-3825-476c-8cad-84f4331c04f5</description>
+    
+    <lastBuildDate>Sat, 17 Apr 2021 07:10:26 +0000</lastBuildDate>
+    <category>ActivityPub Conference 2020</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/oauth-2-1-and-activitypub/948.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>OAuth 2.1 and ActivityPub</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, it is something worth addressing, as the issue comes up in various places, like recently in <a href="https://socialhub.activitypub.rocks/t/implementing-activitypub-client-to-server/981/20" class="inline-onebox">Implementing ActivityPub Client-to-Server - #20 by macgirvin</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/oauth-2-1-and-activitypub/948/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/oauth-2-1-and-activitypub/948/5</link>
+        <pubDate>Sat, 17 Apr 2021 07:10:26 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-948-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/oauth-2-1-and-activitypub/948.rss">OAuth 2.1 and ActivityPub</source>
+      </item>
+      <item>
+        <title>OAuth 2.1 and ActivityPub</title>
+        <dc:creator><![CDATA[MediaFormat]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="aaronpk" data-post="3" data-topic="948">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/aaronpk/40/484_2.png" class="avatar"> aaronpk:</div>
+<blockquote>
+<p>Personally I’d love to see ActivityPub drop Webfinger in favor of discovery methods that don’t rely on hardcoded URLs, but that’s a different discussion.</p>
+</blockquote>
+</aside>
+<p>Would you care to expand on this discussion in a new thread?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/oauth-2-1-and-activitypub/948/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/oauth-2-1-and-activitypub/948/4</link>
+        <pubDate>Sat, 17 Apr 2021 03:00:53 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-948-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/oauth-2-1-and-activitypub/948.rss">OAuth 2.1 and ActivityPub</source>
+      </item>
+      <item>
+        <title>OAuth 2.1 and ActivityPub</title>
+        <dc:creator><![CDATA[aaronpk]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the comments!</p>
+<aside class="quote no-group" data-username="pukkamustard" data-post="2" data-topic="948">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/pukkamustard/40/111_2.png" class="avatar"> pukkamustard:</div>
+<blockquote>
+<p>IndieAuth (by using URL as client_id) and PKCE both solve problem of client registration. PKCE seems to be the more modern (and secure) way of doing this. Are there plans for IndieAuth v2 with PKCE?</p>
+</blockquote>
+</aside>
+<p>Client registration does a couple things. One part is the security gained by the client being able to authenticate, the other is providing metadata about the client such as the application name and logo.</p>
+<p>IndieAuth skips the need for client registration for metadata purposes by using URLs as client IDs and having the metadata published at that URL. PKCE is still a necessary step to provide an alternative to the authentication part of client registration. In fact, the <a href="https://indieauth.spec.indieweb.org/#authorization-request" rel="nofollow noopener">latest version of the IndieAuth spec</a> recommends that clients also use PKCE! There isn’t a need for a v2 spec because PKCE can be added to existing OAuth systems in a backwards compatible way, which was one of the design goals of PKCE.</p>
+<aside class="quote no-group" data-username="pukkamustard" data-post="2" data-topic="948">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/pukkamustard/40/111_2.png" class="avatar"> pukkamustard:</div>
+<blockquote>
+<p>Given how WebFinger is already widely used in ActivityPub implementations and almost a de-facto requirement for federation, would it make sense to use WebFinger like OpenID Connect?</p>
+</blockquote>
+</aside>
+<p>Interestingly, ActivityPub doesn’t actually need Webfinger, and in fact one of the principles of the W3C SocialCG (where ActivityPub was developed) was to take a “follow-your-nose” approach to spec design, which specifically avoids approaches like Webfinger with hardcoded URLs. Personally I’d love to see ActivityPub drop Webfinger in favor of discovery methods that don’t rely on hardcoded URLs, but that’s a different discussion.</p>
+<aside class="quote no-group" data-username="pukkamustard" data-post="2" data-topic="948">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/pukkamustard/40/111_2.png" class="avatar"> pukkamustard:</div>
+<blockquote>
+<p>I think a definite document specifying how authentication/authorization should be implemented on the Fediverse would be immensely helpful. Would you suggest just agreeing on IndieAuth or writing up something new (IndieAuth v2 or FediAuth)?</p>
+</blockquote>
+</aside>
+<p>Creating an maintaining a spec is not a small undertaking, I wouldn’t recommend creating something new if at all possible. Over the years, we’ve been trying to make IndieAuth closer and closer to plain OAuth 2 so that it has less functionality that is different, just to make it easier to understand and maintain.</p>
+<p>I’m pretty sure it would be possible for a developer to pick up IndieAuth and use it with ActivityPub clients and servers today exactly as written!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/oauth-2-1-and-activitypub/948/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/oauth-2-1-and-activitypub/948/3</link>
+        <pubDate>Fri, 02 Oct 2020 15:42:18 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-948-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/oauth-2-1-and-activitypub/948.rss">OAuth 2.1 and ActivityPub</source>
+      </item>
+      <item>
+        <title>OAuth 2.1 and ActivityPub</title>
+        <dc:creator><![CDATA[pukkamustard]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you <a class="mention" href="/u/aaronpk">@aaronpk</a> for the very insightful talk!</p>
+<p>I really appreciate the slimming down in OAuth 2.1 and learnt a lot about PKCE (and how to pronounce it) and IndieAuth.</p>
+<p>IndieAuth (by using URL as client_id) and PKCE both solve problem of client registration. PKCE seems to be the more modern (and secure) way of doing this. Are there plans for IndieAuth v2 with PKCE?</p>
+<p>IndieAuth does authorization endpoint discovery by GET/HEAD request to the user profile. <a href="https://openid.net/specs/openid-connect-discovery-1_0.html" rel="nofollow noopener">OpenID Connect Discovery</a> does this via WebFinger and a special relation. Given how WebFinger is already widely used in ActivityPub implementations and almost a de-facto requirement for federation, would it make sense to use WebFinger like OpenID Connect?</p>
+<p>I think a definite document specifying how authentication/authorization should be implemented on the Fediverse would be immensely helpful. Would you suggest just agreeing on IndieAuth or writing up something new (IndieAuth v2 or FediAuth)?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/oauth-2-1-and-activitypub/948/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/oauth-2-1-and-activitypub/948/2</link>
+        <pubDate>Fri, 02 Oct 2020 05:30:12 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-948-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/oauth-2-1-and-activitypub/948.rss">OAuth 2.1 and ActivityPub</source>
+      </item>
+      <item>
+        <title>OAuth 2.1 and ActivityPub</title>
+        <dc:creator><![CDATA[aaronpk]]></dc:creator>
+        <description><![CDATA[
+            <p><em>Aaron Parecki</em></p>
+<p><iframe width="560" height="315" src="https://conf.tube/videos/embed/32351956-89d7-4887-b6b0-f1a32f91dc36" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+<p>OAuth is the foundation of most of modern online security, used everywhere from signing in to mobile apps to protecting your bank accounts.</p>
+<p>This session will cover what’s new in OAuth 2.1 and how ActivityPub can take advantage of some of the newest features of OAuth to better support a wide range of interoperable ActivityPub clients.</p>
+<h2>Questions &amp; Answers available!</h2>
+<p>See also <a href="https://aaronparecki.com/2020/10/03/10/apconf" rel="noopener nofollow ugc">https://aaronparecki.com/2020/10/03/10/apconf</a></p>
+<p><strong><a href="https://conf.tube/videos/watch/f9e0856e-3825-476c-8cad-84f4331c04f5" rel="noopener nofollow ugc">Q&amp;A Session – OAuth 2.1 and ActivityPub</a></strong><br>
+⬡ Hooray, the live Questions &amp; Answers are available here<br>
+<iframe width="560" height="315" src="https://conf.tube/videos/embed/f9e0856e-3825-476c-8cad-84f4331c04f5" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/oauth-2-1-and-activitypub/948/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/oauth-2-1-and-activitypub/948/1</link>
+        <pubDate>Tue, 29 Sep 2020 22:23:50 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-948-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/oauth-2-1-and-activitypub/948.rss">OAuth 2.1 and ActivityPub</source>
+      </item>
+  </channel>
+</rss>

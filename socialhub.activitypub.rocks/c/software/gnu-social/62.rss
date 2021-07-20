@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>GNU social - SocialHub</title>
+    <link>https://socialhub.activitypub.rocks/c/software/gnu-social/62</link>
+    <description>Topics in the &#39;GNU social&#39; category The free/libre software social networking platform.</description>
+    
+      <lastBuildDate>Tue, 30 Mar 2021 17:51:27 +0000</lastBuildDate>
+      <atom:link href="https://socialhub.activitypub.rocks/c/software/gnu-social/62.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>About GNU social</title>
+          <dc:creator><![CDATA[diogo]]></dc:creator>
+          <category>GNU social</category>
+          <description><![CDATA[
+            <p>The free/libre software social networking platform.</p>
+<p><a href="https://gnusocial.rocks" rel="noopener nofollow ugc">https://gnusocial.rocks</a></p>
+<p>GNU social is the eldest free social networking platform for public and private communications used in federated social networks. It’s versatile, extensible and privacy focused. We’ve been modernizing the existing codebase, ensuring inter-operationality as defined by the IndieWeb and we’re developing a modern frontend. This makes GNU social accessible: easy to install and use, and follows AnyBrowser and A11Y guidelines. Our objective is to further differentiate GNU social from the alternative software available, either FOSS or Proprietary/Centralized while setting an example of how a secure, performant and plug-and-play software should be in modern day’s web.</p>
+<p>The <a href="https://notabug.org/diogo/gnu-social/src/nightly/plugins/ActivityPub" rel="noopener nofollow ugc">ActivityPub plugin</a> is available!</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/about-gnu-social/1542">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/about-gnu-social/1542</link>
+          <pubDate>Tue, 30 Mar 2021 17:51:27 +0000</pubDate>
+          <discourse:topicPinned>Yes</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1542</guid>
+          <source url="https://socialhub.activitypub.rocks/t/about-gnu-social/1542.rss">About GNU social</source>
+        </item>
+  </channel>
+</rss>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>About ForgeFed</title>
+    <link>https://socialhub.activitypub.rocks/t/about-forgefed/1480</link>
+    <description>[ForgeFed](https://forgefed.peers.community) is a set of extensions to ActivityPub for federation of project management and source code hosting web services.
+
+See [here](https://notabug.org/peers/forgefed/src/master/doc/README.md) for a detailed introduction.
+
+This is the place for discussing, asking, answering and brainstorming about ForgeFed. Other places include:
+
+* If you have a specific self-contained work item or bug in mind, you can [open an issue](https://notabug.org/peers/forgefed/issues).
+* Specific software projects have their own repos and issue trackers, e.g. [Vervis](https://dev.angeley.es/s/fr33domlover/p/vervis) and [MCFI](https://notabug.org/zPlus/mcfi). If unsure though, use this forum or the ForgeFed repo/issues :slight_smile:
+* For general casual conversation, you can write [on the fediverse](https://floss.social/@forgefed).
+* For instant messaging, there’s an [IRC channel](https://kiwiirc.com/nextclient/irc.freenode.net/#peers) (#peers on Freenode), bridged to a [Matrix room](https://matrix.to/#/#peers:matrix.org) (#peers:matrix.org)</description>
+    
+    <lastBuildDate>Mon, 01 Mar 2021 07:17:07 +0000</lastBuildDate>
+    <category>ForgeFed</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/about-forgefed/1480.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>About ForgeFed</title>
+        <dc:creator><![CDATA[fr33domlover]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="https://forgefed.peers.community" rel="noopener nofollow ugc">ForgeFed</a> is a set of extensions to ActivityPub for federation of project management and source code hosting web services.</p>
+<p>See <a href="https://notabug.org/peers/forgefed/src/master/doc/README.md" rel="noopener nofollow ugc">here</a> for a detailed introduction.</p>
+<p>This is the place for discussing, asking, answering and brainstorming about ForgeFed. Other places include:</p>
+<ul>
+<li>If you have a specific self-contained work item or bug in mind, you can <a href="https://notabug.org/peers/forgefed/issues" rel="noopener nofollow ugc">open an issue</a>.</li>
+<li>Specific software projects have their own repos and issue trackers, e.g. <a href="https://dev.angeley.es/s/fr33domlover/p/vervis" rel="noopener nofollow ugc">Vervis</a> and <a href="https://notabug.org/zPlus/mcfi" rel="noopener nofollow ugc">MCFI</a>. If unsure though, use this forum or the ForgeFed repo/issues <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:">
+</li>
+<li>For general casual conversation, you can write <a href="https://floss.social/@forgefed" rel="noopener nofollow ugc">on the fediverse</a>.</li>
+<li>For instant messaging, there’s an <a href="https://kiwiirc.com/nextclient/irc.freenode.net/#peers" rel="noopener nofollow ugc">IRC channel</a> (<span class="hashtag">#peers</span> on Freenode), bridged to a <a href="https://matrix.to/#/#peers:matrix.org" rel="noopener nofollow ugc">Matrix room</a> (<span class="hashtag">#peers:matrix</span>.org)</li>
+</ul>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-forgefed/1480/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-forgefed/1480/1</link>
+        <pubDate>Mon, 01 Mar 2021 07:15:14 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1480-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-forgefed/1480.rss">About ForgeFed</source>
+      </item>
+  </channel>
+</rss>

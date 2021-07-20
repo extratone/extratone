@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Intermapping</title>
+    <link>https://socialhub.activitypub.rocks/t/intermapping/838</link>
+    <description>Intermapping proposes to gather people and organizations interested Mapping the Commons. ActivityPub has been discussed during the session held at FSMET as the pathway for a minimal interoperability between different projects developing cartography of the Commons that are discussed on the [IN COMMON](https://talk.incommon.cc/c/intermapping/45) platform.
+
+This session is to present and discuss the different existing models and see what are the possibilities for implementing event notification, that would support their coordination. Problematics are diverse, including being true to the different views on information, facilitating the actualization of information by the concerned communities or supporting the detection of redundant information.
+
+The live session will happen in Room A: https://bbb.fosshost.org/b/mor-fee-7b4-2nh</description>
+    
+    <lastBuildDate>Sun, 04 Oct 2020 15:59:43 +0000</lastBuildDate>
+    <category>ActivityPub Conference 2020</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/intermapping/838.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Intermapping</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <h1>Notes</h1>
+<p><strong>Intermapping</strong></p>
+<aside class="quote quote-modified" data-post="1" data-topic="838">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/letter_avatar_proxy/v4/letter/n/8491ac/40.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/intermapping/838">Intermapping</a> <a class="badge-wrapper  box" href="/c/meeting/apconf2020/53"><span class="badge-category-parent-bg" style="background-color: #0E76BD;"></span><span class="badge-category-bg" style="background-color: #ff7a00;"></span><span style="color: #ffffff" data-drop-close="true" class="badge-category clear-badge" title="Add your proposals for the Conf by creating a New Topic –
+Tag it #bof for Birds of Feather sessions or #hackathon for Hack proposals …">ActivityPub Conference 2020</span></a>
+  </div>
+  <blockquote>
+    Intermapping proposes to gather people and organizations interested Mapping the Commons. ActivityPub has been discussed during the session held at FSMET as the pathway for a minimal interoperability between different projects developing cartography of the Commons that are discussed on the <a href="https://talk.incommon.cc/c/intermapping/45" rel="nofollow noopener">IN COMMON</a> platform. 
+This session is to present and discuss the different existing models and see what are the possibilities for implementing event notification, that would support their coordination. Problemat…
+  </blockquote>
+</aside>
+
+<p><a href="https://talk.incommon.cc/">https://</a><a href="https://talk.incommon.cc/">talk.incommon.cc</a></p>
+<h2>A long history of cartography</h2>
+<p>“The map is not the territory” (Alfred Korzybsky)</p>
+<p><a href="https://www.aadtp.be/blog-post/marches-communs-2017">https://</a><a href="https://www.aadtp.be/blog-post/marches-communs-2017">www.aadtp.b</a><a href="https://www.aadtp.be/blog-post/marches-communs-2017">e</a><a href="https://www.aadtp.be/blog-post/marches-communs-2017">/blog-post/marches-communs-2017</a></p>
+<p>Many activist organizations who have lots of social tools and (organizational) knowledge do not know how to use free software. InterMapping wants to make this connection.</p>
+<h2>Mapping Software</h2>
+<ul>
+<li>
+<p>openEngiadina: LD-native</p>
+</li>
+<li>
+<p>GoGoCarto: nice input interface</p>
+</li>
+<li>
+<p><a href="https://murmurations.network/">https://murmurations.network/</a>: very simple format to embed metadata about an organization</p>
+</li>
+<li>
+<p>EJ Atlas: <a href="https://www.ejatlas.org/">https://www.ejatlas.org/</a></p>
+</li>
+<li>
+<p><a href="https://civics.cc/">https://</a><a href="https://civics.cc/">civics.cc</a></p>
+</li>
+<li>
+<p><a href="https://communecter.org/">https://communecter.org</a></p>
+</li>
+<li>
+<p><a href="http://transformap.co/">http://transformap.co/</a></p>
+</li>
+<li>
+<p><a href="https://kartenvonmorgen.org/">https://kartenvonmorgen.org/</a></p>
+</li>
+<li>
+<p><a href="https://peermaps.org/">https://peermaps.org</a> (decentralized, based on Dat)</p>
+</li>
+<li>
+<p><a href="https://protestmap.raceandpolicing.com/">https://protestmap.raceandpolicing.com/</a></p>
+</li>
+<li>
+<p><a href="https://www.communecter.org/">https://www.communecter.org</a></p>
+</li>
+</ul>
+<h2>Needed Tools</h2>
+<ul>
+<li>
+<p>Tools to update information</p>
+</li>
+<li>
+<p>Tools to link to social media</p>
+</li>
+</ul>
+<h2>Role of social information &amp; interconnection/ ActivityPub</h2>
+<ul>
+<li>curating social events on a map:</li>
+</ul>
+<ul>
+<li>
+<ul>
+<li>having more metadata in posts can make curating and discovery of relevant events easier</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<p>jointly creating/ editing a map:</p>
+<ul>
+<li>social relations make it possible to pass both the views and also editing capabilities along social connections</li>
+</ul>
+</li>
+</ul>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <a href="https://www.w3.org/TR/activitystreams-vocabulary/#dfn-place" target="_blank" rel="noopener">w3.org</a>
+  </header>
+  <article class="onebox-body">
+    <img src="" class="thumbnail" width="20" height="20">
+
+<h3><a href="https://www.w3.org/TR/activitystreams-vocabulary/#dfn-place" target="_blank" rel="noopener">Activity Vocabulary</a></h3>
+
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<h3>Hackathon Proposals</h3>
+<ul>
+<li>Low-hanging fruits:
+<ul>
+<li>replay existing announcements, enrich them with location attributes (longitude, latitude), and repost (with Group actor to simulate Agents)</li>
+<li>subscribe to geo-enhanced announcements and display on a map</li>
+</ul>
+</li>
+</ul>
+          <p><a href="https://socialhub.activitypub.rocks/t/intermapping/838/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/intermapping/838/6</link>
+        <pubDate>Sun, 04 Oct 2020 15:59:43 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-838-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/intermapping/838.rss">Intermapping</source>
+      </item>
+      <item>
+        <title>Intermapping</title>
+        <dc:creator><![CDATA[strypey]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="https://murmurations.network/" rel="noopener nofollow ugc">Murmurations seems <em>very</em> relevant to this</a>. It’s been discussed here in this thread:<br>
+<aside class="quote quote-modified" data-post="1" data-topic="609">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/strypey/40/224_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609">Murmurations protocol for directories and maps</a> <a class="badge-wrapper  box" href="/c/activitypub/s2s/7"><span class="badge-category-parent-bg" style="background-color: #0088CC;"></span><span class="badge-category-bg" style="background-color: #808281;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="This protocol is used to distribute activities between actors on different servers, tying them into the same social graph.">Server to Server</span></a>
+  </div>
+  <blockquote>
+    I wonder if this is or could be compatible with AP? 
+"Rather than creating centralised data sets, The Murmurations protocol makes it easy for Organisations to host data about themselves on their own web sites. 
+The data is structured in a way that it can be automatically ‘crawled’ and aggregated, based on specific filterable criteria, so that directories and maps are automatically updated about an organisation from a single authoritative source. That source being the organisation itself!" 
+<a href="https://murmurations.network/" class="onebox" target="_blank" rel="noopener nofollow ugc">https…</a>
+  </blockquote>
+</aside>
+</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/intermapping/838/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/intermapping/838/5</link>
+        <pubDate>Sun, 04 Oct 2020 15:13:22 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-838-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/intermapping/838.rss">Intermapping</source>
+      </item>
+      <item>
+        <title>Intermapping</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>This is also related to <a href="https://socialhub.activitypub.rocks/t/events-in-activitypub/999" class="inline-onebox">Events in ActivityPub</a>, although the former may be more technical. But I’m sure <a class="mention" href="/u/mayel">@mayel</a> and <a class="mention" href="/u/sebastian">@Sebastian</a> would agree with the above <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/intermapping/838/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/intermapping/838/4</link>
+        <pubDate>Fri, 02 Oct 2020 16:33:36 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-838-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/intermapping/838.rss">Intermapping</source>
+      </item>
+      <item>
+        <title>Intermapping</title>
+        <dc:creator><![CDATA[natacha]]></dc:creator>
+        <description><![CDATA[
+            <p>yes this is certainly what we should get to as we see more and more censorship on centralised plateforms, we should find time to discuss this.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/intermapping/838/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/intermapping/838/3</link>
+        <pubDate>Fri, 02 Oct 2020 16:15:14 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-838-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/intermapping/838.rss">Intermapping</source>
+      </item>
+      <item>
+        <title>Intermapping</title>
+        <dc:creator><![CDATA[schmittlauch]]></dc:creator>
+        <description><![CDATA[
+            <p>One aspect I’d like to bring into this, <a class="mention" href="/u/how">@how</a> said this might suit: <em>The Fediverse as a platform for coordinating social movements</em>, both from a sociological perspective on what is needed and how to bring people over, and about looking what technology is already available.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/intermapping/838/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/intermapping/838/2</link>
+        <pubDate>Fri, 02 Oct 2020 15:55:16 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-838-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/intermapping/838.rss">Intermapping</source>
+      </item>
+      <item>
+        <title>Intermapping</title>
+        <dc:creator><![CDATA[natacha]]></dc:creator>
+        <description><![CDATA[
+            <p>Intermapping proposes to gather people and organizations interested Mapping the Commons. ActivityPub has been discussed during the session held at FSMET as the pathway for a minimal interoperability between different projects developing cartography of the Commons that are discussed on the <a href="https://talk.incommon.cc/c/intermapping/45" rel="noopener nofollow ugc">IN COMMON</a> platform.</p>
+<p>This session is to present and discuss the different existing models and see what are the possibilities for implementing event notification, that would support their coordination. Problematics are diverse, including being true to the different views on information, facilitating the actualization of information by the concerned communities or supporting the detection of redundant information.</p>
+<p>The live session will happen in Room A: <a href="https://bbb.fosshost.org/b/mor-fee-7b4-2nh" rel="noopener nofollow ugc">https://bbb.fosshost.org/b/mor-fee-7b4-2nh</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/intermapping/838/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/intermapping/838/1</link>
+        <pubDate>Sun, 02 Aug 2020 11:28:48 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-838-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/intermapping/838.rss">Intermapping</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Getting Started with ActivityPub in PHP</title>
+    <link>https://socialhub.activitypub.rocks/t/getting-started-with-activitypub-in-php/526</link>
+    <description>&gt; I read this, but I actually understood less by reading more :smiley: 
+
+I hear ya, in another context (PHP) it&#39;s taking me a lot of study to start to get a handle on what all&#39;s involved. Not Rails-specific, but some more places I&#39;ve found useful as I try to understand ActivityPub and how to implement support for it:
+
+* [FunkWhale Federation](https://docs.funkwhale.audio/federation/index.html)
+* [What is ActivityPub?](https://blog.moodle.net/2018/what-is-activitypub/) (MoodleNet)
+* [Video intro to WriteFreely fediverse integration](https://video.writeas.org/videos/watch/cc55e615-d204-417c-9575-7b57674cc6f3)
+* [ActivityPub as it has been understood](https://flak.tedunangst.com/post/ActivityPub-as-it-has-been-understood)--includes lots of relevant links.
+* [LibreLounge](https://librelounge.org) podcast
+    * [Episode 12: ActivityPub Part 1](https://librelounge.org/episodes/episode-12-activitypub-part-1.html)
+    * [Episode 17: ActivityPub Part 2](https://librelounge.org/episodes/episode-17-activitypub-part-2.html)
+    * [Episode 20: ActivityPub Part 3](https://librelounge.org/episodes/episode-20-activitypub-part-3.html)</description>
+    
+    <lastBuildDate>Sun, 23 Feb 2020 13:17:45 +0000</lastBuildDate>
+    <category>PHP</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/getting-started-with-activitypub-in-php/526.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Getting Started with ActivityPub in PHP</title>
+        <dc:creator><![CDATA[nedjo]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>I read this, but I actually understood less by reading more <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/smiley.png?v=9" title=":smiley:" class="emoji" alt=":smiley:"></p>
+</blockquote>
+<p>I hear ya, in another context (PHP) it’s taking me a lot of study to start to get a handle on what all’s involved. Not Rails-specific, but some more places I’ve found useful as I try to understand ActivityPub and how to implement support for it:</p>
+<ul>
+<li><a href="https://docs.funkwhale.audio/federation/index.html" rel="nofollow noopener">FunkWhale Federation</a></li>
+<li>
+<a href="https://blog.moodle.net/2018/what-is-activitypub/" rel="nofollow noopener">What is ActivityPub?</a> (MoodleNet)</li>
+<li><a href="https://video.writeas.org/videos/watch/cc55e615-d204-417c-9575-7b57674cc6f3" rel="nofollow noopener">Video intro to WriteFreely fediverse integration</a></li>
+<li>
+<a href="https://flak.tedunangst.com/post/ActivityPub-as-it-has-been-understood" rel="nofollow noopener">ActivityPub as it has been understood</a>–includes lots of relevant links.</li>
+<li>
+<a href="https://librelounge.org" rel="nofollow noopener">LibreLounge</a> podcast
+<ul>
+<li><a href="https://librelounge.org/episodes/episode-12-activitypub-part-1.html" rel="nofollow noopener">Episode 12: ActivityPub Part 1</a></li>
+<li><a href="https://librelounge.org/episodes/episode-17-activitypub-part-2.html" rel="nofollow noopener">Episode 17: ActivityPub Part 2</a></li>
+<li><a href="https://librelounge.org/episodes/episode-20-activitypub-part-3.html" rel="nofollow noopener">Episode 20: ActivityPub Part 3</a></li>
+</ul>
+</li>
+</ul>
+          <p><a href="https://socialhub.activitypub.rocks/t/getting-started-with-activitypub-in-php/526/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/getting-started-with-activitypub-in-php/526/1</link>
+        <pubDate>Mon, 13 Jan 2020 20:15:03 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-526-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/getting-started-with-activitypub-in-php/526.rss">Getting Started with ActivityPub in PHP</source>
+      </item>
+  </channel>
+</rss>

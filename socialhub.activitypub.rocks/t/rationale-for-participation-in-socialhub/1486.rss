@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Rationale for participation in SocialHub</title>
+    <link>https://socialhub.activitypub.rocks/t/rationale-for-participation-in-socialhub/1486</link>
+    <description>This is a reaction to #software:forgefed intention to move from Feneas to SocialHub and [@bill-auger](https://talk.feneas.org/u/bill-auger)&#39;s observation in [Moving to SocialHub](https://talk.feneas.org/t/moving-to-socialhub/389/10?u=aschrijver) arguing that ForgeFed might as well be stand-alone, rather than &quot;be with family&quot; on SocialHub. This because of its differrent nature to most other federated social apps. I started typing on Feneas, then moved here because there are important points I want to make re:Community, namely that:
+
+**We at Fediverse and ActivityPub ecosystem should not overestimate ourselves: We are still but weak!**
+
+---
+
+I am a big AP / Fediverse advocate, taking much spare time to promote it, because I strongly believe in its all-FOSS, humanetech, and &quot;social media reimagined&quot; potential. I have name-dropped ForgeFed + URL&#39;s at least 100+ times, including on occasion to people with &quot;Sigh, it&#39;s dead&quot; reactions, explaining this is not the case.
+
+&lt;details&gt;&lt;summary&gt;My collapsed argument that AP/Fedi evolution too slow, making us weak and needing focal points of coordination (click to expand).&lt;/summary&gt;
+
+On AP / Fedi itself I notice that - while its install base is healthy-ish - its dev community overall is very small and thus quite weak-ish in upholding innovation pace. And the fragmentation by which development takes place is hampering fedi + standards evolution, imho.
+
+Though we are proponents of decentralized technology our community needs central focal points to coordinate, where &quot;the family&quot; comes together, so to say. In this we only really have SocialCG and SocialHub (plus #social irc channel, and some matrix rooms, but they are less effective for knowledge gathering and coordination). A metric ton of useful developer information goes lost each day, because it happens on isolated islands and others aren&#39;t aware. The onboarding experience for new devs that want their apps to federate and make sense of the technology is horrible.
+
+And as a result AP / Fediverse innovation &amp; evolution speed is lagging imho, when compared to other decentralized technologies. Even though we have truly production-ready platforms, tested to reality, slowly other tech may become the more attractive candidates. Solid project, though doing zero community-building and having no apps in production is 3x as large as SocialHub, and SAFE community is 16x as large, IPFS 10x exceeds our little group.
+
+There was excitement and trepidation about Jack Dorsey&#39;s Bluesky report. But the questions are a) if they&#39;d choose AP could we handle it and b) if they&#39;d choose another tech could we handle it? We should not become irrelevant, folks. We want to lobby the EU to become a recognized interop standard, but we currently simply have no good story.  Finally I wan to once more point to https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810 My conclusion:
+
+&lt;/details&gt;
+
+:loudspeaker: &amp;nbsp; **We urgently need a stronger SocialHub to reinforce the ActivityPub ecosystem !**
+
+Now as for ForgeFed, an AP extension: This community is all about ActivityPub, the standard specifications itself and their extensions. Even though at times it may appear to be more about Fediverse and Social Apps. With that focus we are losing the Linked Data aspects of AP out of sight sometimes, and I&#39;ve argued to https://socialhub.activitypub.rocks/t/positioning-activitypub-de-emphasize-being-part-of-the-fediverse-as-primary-usp/1197.
+
+ForgeFed is an exemplar of this broader perspective on the use of AP, and a most welcome addition in the range of AP apps already present here. Also, while ForgeFed is otherwise catering to code forge projects, there are also other AP projects with relations to ForgeFed, like #software:go-fed that does code generation from ForgeFed vocabulary and is eyed by Gitea for implementing. Similarly if code forges start to investigate ForgeFed, where better to do that than on an active forum that is chock-full of AP info and helpful hands?
+
+So I for one truly hope ForgeFed will come/stay here. You are great, you are needed, and represent the new way of federating apps, even beyond social realms.
+
+### Welcome ForgeFed :pray: :heart:</description>
+    
+    <lastBuildDate>Sat, 06 Mar 2021 18:39:11 +0000</lastBuildDate>
+    <category>Community</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/rationale-for-participation-in-socialhub/1486.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Rationale for participation in SocialHub</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>This is a reaction to <a class="hashtag" href="/c/software/forgefed/60">#<span>software:forgefed</span></a> intention to move from Feneas to SocialHub and <a href="https://talk.feneas.org/u/bill-auger">@bill-auger</a>’s observation in <a href="https://talk.feneas.org/t/moving-to-socialhub/389/10?u=aschrijver">Moving to SocialHub</a> arguing that ForgeFed might as well be stand-alone, rather than “be with family” on SocialHub. This because of its differrent nature to most other federated social apps. I started typing on Feneas, then moved here because there are important points I want to make re:Community, namely that:</p>
+<p><strong>We at Fediverse and ActivityPub ecosystem should not overestimate ourselves: We are still but weak!</strong></p>
+<hr>
+<p>I am a big AP / Fediverse advocate, taking much spare time to promote it, because I strongly believe in its all-FOSS, humanetech, and “social media reimagined” potential. I have name-dropped ForgeFed + URL’s at least 100+ times, including on occasion to people with “Sigh, it’s dead” reactions, explaining this is not the case.</p>
+<details><summary>My collapsed argument that AP/Fedi evolution too slow, making us weak and needing focal points of coordination (click to expand).</summary>
+<p>On AP / Fedi itself I notice that - while its install base is healthy-ish - its dev community overall is very small and thus quite weak-ish in upholding innovation pace. And the fragmentation by which development takes place is hampering fedi + standards evolution, imho.</p>
+<p>Though we are proponents of decentralized technology our community needs central focal points to coordinate, where “the family” comes together, so to say. In this we only really have SocialCG and SocialHub (plus <span class="hashtag">#social</span> irc channel, and some matrix rooms, but they are less effective for knowledge gathering and coordination). A metric ton of useful developer information goes lost each day, because it happens on isolated islands and others aren’t aware. The onboarding experience for new devs that want their apps to federate and make sense of the technology is horrible.</p>
+<p>And as a result AP / Fediverse innovation &amp; evolution speed is lagging imho, when compared to other decentralized technologies. Even though we have truly production-ready platforms, tested to reality, slowly other tech may become the more attractive candidates. Solid project, though doing zero community-building and having no apps in production is 3x as large as SocialHub, and SAFE community is 16x as large, IPFS 10x exceeds our little group.</p>
+<p>There was excitement and trepidation about Jack Dorsey’s Bluesky report. But the questions are a) if they’d choose AP could we handle it and b) if they’d choose another tech could we handle it? We should not become irrelevant, folks. We want to lobby the EU to become a recognized interop standard, but we currently simply have no good story.  Finally I wan to once more point to <a href="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810" class="inline-onebox">Are we ready for the threats to the Fediverse and decentralization movement?</a> My conclusion:</p>
+</details>
+<p><img src="https://socialhub.activitypub.rocks/images/emoji/twitter/loudspeaker.png?v=9" title=":loudspeaker:" class="emoji" alt=":loudspeaker:"> &nbsp; <strong>We urgently need a stronger SocialHub to reinforce the ActivityPub ecosystem !</strong></p>
+<p>Now as for ForgeFed, an AP extension: This community is all about ActivityPub, the standard specifications itself and their extensions. Even though at times it may appear to be more about Fediverse and Social Apps. With that focus we are losing the Linked Data aspects of AP out of sight sometimes, and I’ve argued to <a href="https://socialhub.activitypub.rocks/t/positioning-activitypub-de-emphasize-being-part-of-the-fediverse-as-primary-usp/1197" class="inline-onebox">Positioning ActivityPub: De-Emphasize "Being Part of the Fediverse" as primary USP</a>.</p>
+<p>ForgeFed is an exemplar of this broader perspective on the use of AP, and a most welcome addition in the range of AP apps already present here. Also, while ForgeFed is otherwise catering to code forge projects, there are also other AP projects with relations to ForgeFed, like <a class="hashtag" href="/c/software/go-fed/18">#<span>software:go-fed</span></a> that does code generation from ForgeFed vocabulary and is eyed by Gitea for implementing. Similarly if code forges start to investigate ForgeFed, where better to do that than on an active forum that is chock-full of AP info and helpful hands?</p>
+<p>So I for one truly hope ForgeFed will come/stay here. You are great, you are needed, and represent the new way of federating apps, even beyond social realms.</p>
+<h3>Welcome ForgeFed <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/pray.png?v=9" title=":pray:" class="emoji" alt=":pray:"> <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/heart.png?v=9" title=":heart:" class="emoji" alt=":heart:">
+</h3>
+          <p><a href="https://socialhub.activitypub.rocks/t/rationale-for-participation-in-socialhub/1486/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/rationale-for-participation-in-socialhub/1486/1</link>
+        <pubDate>Sat, 06 Mar 2021 18:39:11 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1486-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/rationale-for-participation-in-socialhub/1486.rss">Rationale for participation in SocialHub</source>
+      </item>
+  </channel>
+</rss>

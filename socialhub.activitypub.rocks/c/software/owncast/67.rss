@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Owncast - SocialHub</title>
+    <link>https://socialhub.activitypub.rocks/c/software/owncast/67</link>
+    <description>Topics in the &#39;Owncast&#39; category &lt;a href=&quot;https://owncast.online&quot;&gt;Owncast&lt;/a&gt; is a self-hosted live video and web chat server for use with existing popular broadcasting software.</description>
+    
+      <lastBuildDate>Mon, 28 Jun 2021 23:47:18 +0000</lastBuildDate>
+      <atom:link href="https://socialhub.activitypub.rocks/c/software/owncast/67.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>I&#39;m excited to start this journey!</title>
+          <dc:creator><![CDATA[gabek]]></dc:creator>
+          <category>Owncast</category>
+          <description><![CDATA[
+            <p>Owncast recently hit it’s 1 year anniversary of being a project.  Federation has been on the todo list since day one, but I always wanted to do it for the right reasons, to solve real problems.  Once enough features bubbled up that all felt like they all fell into the ActivityPub bucket the time has come.</p>
+<p>Seems like SocialHub is the place to be to post progress, questions and to learn what everyone else is up to.  So while I’m a newbie to the scene, I’m looking forward to becoming more embedded in it all.</p>
+<p>Thanks for everyone who have been so positive about Owncast and our future plans.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/im-excited-to-start-this-journey/1887">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/im-excited-to-start-this-journey/1887</link>
+          <pubDate>Mon, 28 Jun 2021 23:47:18 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1887</guid>
+          <source url="https://socialhub.activitypub.rocks/t/im-excited-to-start-this-journey/1887.rss">I&#39;m excited to start this journey!</source>
+        </item>
+        <item>
+          <title>About Owncast</title>
+          <dc:creator><![CDATA[gabek]]></dc:creator>
+          <category>Owncast</category>
+          <description><![CDATA[
+            <p><a href="https://owncast.online" rel="noopener nofollow ugc">Owncast</a> is a self-hosted live video and web chat server for use with existing popular broadcasting software.</p>
+<p>Owncast is for people who are live streamers, or who wants to host live streams for others. It’s a <em>“one to many”</em> broadcast.</p>
+<p>source code: <a href="https://github.com/owncast/owncast" rel="noopener nofollow ugc">https://github.com/owncast/owncast</a><br>
+documentation: <a href="https://owncast.online/docs/" rel="noopener nofollow ugc">https://owncast.online/docs/</a></p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/about-owncast/1886">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/about-owncast/1886</link>
+          <pubDate>Mon, 28 Jun 2021 18:54:27 +0000</pubDate>
+          <discourse:topicPinned>Yes</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1886</guid>
+          <source url="https://socialhub.activitypub.rocks/t/about-owncast/1886.rss">About Owncast</source>
+        </item>
+  </channel>
+</rss>

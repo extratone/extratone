@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Federating events of an existing calender - Python - SocialHub</title>
+    <meta name="description" content="Hi all, 
+first of all: I’m not programming very much. But I’ve the idea of implementing federation to the calendar of my local hackspace since the go live of Mobilizon (yesterday MET). 
+The MOS (Metalab Operating System) &amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="1116.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Federating events of an existing calender&#39;" href="1116.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/federating-events-of-an-existing-calender/1116" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/federating-events-of-an-existing-calender/1116" />
+<meta property="og:title" content="Federating events of an existing calender" />
+<meta name="twitter:title" content="Federating events of an existing calender" />
+<meta property="og:description" content="Hi all,  first of all: I’m not programming very much. But I’ve the idea of implementing federation to the calendar of my local hackspace since the go live of Mobilizon (yesterday MET).  The MOS (Metalab Operating System) is coded in Python, so I started looking for a Python library. And I found one! But I didn’t find a helpful documentation for it. But since Events are similar to Objects in ActivityStream, it should be as easy as the example? On the other hand Mobilizon added some Attributes to t..." />
+<meta name="twitter:description" content="Hi all,  first of all: I’m not programming very much. But I’ve the idea of implementing federation to the calendar of my local hackspace since the go live of Mobilizon (yesterday MET).  The MOS (Metalab Operating System) is coded in Python, so I started looking for a Python library. And I found one! But I didn’t find a helpful documentation for it. But since Events are similar to Objects in ActivityStream, it should be as easy as the example? On the other hand Mobilizon added some Attributes to t..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="1 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="2 ❤" />
+<meta property="article:published_time" content="2020-10-28T16:27:32+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="1116.html">Federating events of an existing calender</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="https://socialhub.activitypub.rocks/c/programming/33" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #B3B5B4'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Programming</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/programming/python/38.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #376f9e'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Python</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/eest9.html'><span itemprop='name'>eest9</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1116.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-28T16:27:32Z' class='post-time'>
+                October 28, 2020,  4:27pm
+              </time>
+              <meta itemprop='dateModified' content='2020-10-28T16:27:32Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi all,<br>
+first of all: I’m not programming very much. But I’ve the idea of implementing federation to the <a href="https://metalab.at/calendar/" rel="noopener nofollow ugc">calendar of my local hackspace</a> since the go live of <a href="https://mobilizon.org/en/" rel="noopener nofollow ugc">Mobilizon</a> (yesterday MET).</p>
+<p>The <a href="https://github.com/Metalab/mos/tree/master/cal" rel="noopener nofollow ugc">MOS (Metalab Operating System)</a> is coded in Python, so I started looking for a Python library. And I found <a href="https://github.com/dsblank/activitypub" rel="noopener nofollow ugc">one</a>! But I didn’t find a helpful documentation for it. But since <a href="https://www.w3.org/TR/activitystreams-vocabulary/#dfn-event" rel="noopener nofollow ugc">Events are similar to Objects</a> in ActivityStream, it should be as easy as the example? On the other hand Mobilizon added some Attributes to <a href="https://docs.joinmobilizon.org/contribute/activity_pub/#event_1" rel="noopener nofollow ugc">their implementation of federated events</a>. But I don’t see how I could realize this further attributes (especially the <code>repliesModeration</code> and the <code>ical:status</code> attributes) with this library. I also don’t see which attributes are mandatory to federate own events with Mobilizon Instances.</p>
+<p>In case my questions are drawn by all my explanations and links:</p>
+<ul>
+<li>Which attributes are mandatory for events to federate with Mobilizon?</li>
+<li>Are there better suited python libraries for my use case?
+<ul>
+<li>If not, how to implement additional attributes like <code>repliesModeration</code>?</li>
+</ul>
+</li>
+<li>Help! /o\</li>
+</ul>
+        </div>
+
+        <meta itemprop='headline' content='Federating events of an existing calender'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/tcit.html'><span itemprop='name'>tcit</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1116.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-11-16T10:18:18Z' class='post-time'>
+                November 16, 2020, 10:18am
+              </time>
+              <meta itemprop='dateModified' content='2020-11-16T10:18:18Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi,</p>
+<blockquote>
+<p>Which attributes are mandatory for events to federate with Mobilizon?</p>
+</blockquote>
+<p>Right now, the following:</p>
+<ul>
+<li>either <code>actor</code> or <code>attributedTo</code> to identify the creator of the event (which should point to an <code>Actor</code>)</li>
+<li><code>name</code></li>
+<li><code>startTime</code></li>
+<li>
+<code>id</code> (which Mobilizon assumes has also a html representation)</li>
+</ul>
+<p>To use Python you could have a look on how <a href="https://funkwhale.audio/" rel="noopener nofollow ugc">https://funkwhale.audio/</a> and <a href="https://olki.loria.fr/platform/index.html" rel="noopener nofollow ugc">https://olki.loria.fr/platform/index.html</a> handle ActivityPub.</p>
+        </div>
+
+        <meta itemprop='headline' content='Federating events of an existing calender'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/eest9.html'><span itemprop='name'>eest9</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1116.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-11-17T02:09:51Z' class='post-time'>
+                November 17, 2020,  2:09am
+              </time>
+              <meta itemprop='dateModified' content='2020-11-17T02:09:51Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi,<br>
+great thank u. I think this helps a lot! I will have a deeper look into it when I’ve more time again. <img src="../../images/emoji/twitter/slight_smile.png@v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+        </div>
+
+        <meta itemprop='headline' content='Federating events of an existing calender'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1116.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-11-17T06:41:59Z' class='post-time'>
+                November 17, 2020,  6:41am
+              </time>
+              <meta itemprop='dateModified' content='2020-11-17T06:41:59Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Re. python I recommend</p>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://github.githubassets.com/favicons/favicon.svg" class="site-icon" width="32" height="32">
+      <a href="https://github.com/bashrc2/epicyon" target="_blank" rel="noopener">GitHub</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/345;"><img src="../../uploads/default/optimized/1X/0c82c700c43468073e2bd1cacb2620787917faeb_2_690x345.jpeg" class="thumbnail" width="690" height="345" srcset="../../uploads/default/optimized/1X/0c82c700c43468073e2bd1cacb2620787917faeb_2_690x345.jpeg, ../../uploads/default/optimized/1X/0c82c700c43468073e2bd1cacb2620787917faeb_2_1035x517.jpeg 1.5x, ../../uploads/default/original/1X/0c82c700c43468073e2bd1cacb2620787917faeb.jpeg 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/0c82c700c43468073e2bd1cacb2620787917faeb_2_10x10.png"></div>
+
+<h3><a href="https://github.com/bashrc2/epicyon" target="_blank" rel="noopener">bashrc2/epicyon</a></h3>
+
+<p>Modern ActivityPub compliant server, designed for simplicity and accessibility. Includes calendar, news and sharing economy features to empower your federated community. - bashrc2/epicyon</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>Talk to <a href="https://mastodon.social/web/accounts/895533#">@bob@epicyon.freedombone.net</a><br>
+Also indymedia currently uses it for the reboot.</p>
+<p>I would help if it would be about nodeJS cause with python my help would probably not be helpful <img src="../../images/emoji/twitter/wink.png@v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+        </div>
+
+        <meta itemprop='headline' content='Federating events of an existing calender'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

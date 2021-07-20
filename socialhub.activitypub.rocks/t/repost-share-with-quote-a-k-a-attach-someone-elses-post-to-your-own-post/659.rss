@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Repost/share with quote a.k.a. attach someone else&#39;s post to your own post</title>
+    <link>https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659</link>
+    <description>I thought I was going to be the first one to make these but as it turns out, Misskey already has this functionality, but it&#39;s implemented in a weird way. Here&#39;s the test post I made: https://misskey.io/notes/86wfb5uayv
+
+And here&#39;s it as an AP object:
+```json
+{
+  &quot;@context&quot;: [
+    &quot;https://www.w3.org/ns/activitystreams&quot;,
+    &quot;https://w3id.org/security/v1&quot;,
+    {
+      &quot;Hashtag&quot;: &quot;as:Hashtag&quot;
+    }
+  ],
+  &quot;id&quot;: &quot;https://misskey.io/notes/86wfb5uayv&quot;,
+  &quot;type&quot;: &quot;Note&quot;,
+  &quot;attributedTo&quot;: &quot;https://misskey.io/users/81qo6ts4l7&quot;,
+  &quot;summary&quot;: null,
+  &quot;content&quot;: &quot;&lt;p&gt;&lt;span&gt;TIL that some fediverse software already allows reposts with quotes.&lt;br&gt;&lt;br&gt;RE: &lt;/span&gt;&lt;a href=\&quot;https://friends.grishka.me/posts/12082\&quot;&gt;https://friends.grishka.me/posts/12082&lt;/a&gt;&lt;/p&gt;&quot;,
+  &quot;_misskey_content&quot;: &quot;TIL that some fediverse software already allows reposts with quotes.&quot;,
+  &quot;_misskey_quote&quot;: &quot;https://friends.grishka.me/posts/12082&quot;,
+  &quot;quoteUrl&quot;: &quot;https://friends.grishka.me/posts/12082&quot;,
+  &quot;published&quot;: &quot;2020-05-04T19:10:39.442Z&quot;,
+  &quot;to&quot;: [
+    &quot;https://www.w3.org/ns/activitystreams#Public&quot;
+  ],
+  &quot;cc&quot;: [
+    &quot;https://misskey.io/users/81qo6ts4l7/followers&quot;
+  ],
+  &quot;inReplyTo&quot;: null,
+  &quot;attachment&quot;: [],
+  &quot;sensitive&quot;: false,
+  &quot;tag&quot;: []
+}
+```
+
+As you see, it does two things:
+* There&#39;s the URL for the quoted post, but for some reason it&#39;s in two different fields. Of course the `_misskey` ones are completely custom, but I can&#39;t seem to figure out where `quoteUrl` comes from and what it&#39;s used by — it&#39;s not in the ActivityStreams vocabulary.
+* There&#39;s also this URL in the content, presumably for backwards compatibility with Mastodon, Pleroma etc.
+
+Anyway, let&#39;s figure out the best way to standardize these reposts.</description>
+    
+    <lastBuildDate>Tue, 19 May 2020 16:15:13 +0000</lastBuildDate>
+    <category>Server to Server</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Repost/share with quote a.k.a. attach someone else&#39;s post to your own post</title>
+        <dc:creator><![CDATA[yvolk]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-mastodon" data-username="nightpool" data-post="14" data-topic="659">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/nightpool/40/36_2.png" class="avatar"> nightpool:</div>
+<blockquote>
+<p>the first implementation I had did use a content field on Announce, basically duplicating all of the properties a Note can have, but it felt like it was muddying the distinction between Objects and Activities, it led to a ton of special case processing and a lot of code like (attributedTo || actor) where I had to handle the complexities of processing both types of object.</p>
+</blockquote>
+</aside>
+<p>I thought about this approach another time, and it looks like adding your “quote / notes” (“content” in terms of ActivityPub) directly to the “Announce” (Activity) object is the best way to implement “Repost with a quote”:</p>
+<ol>
+<li>
+<p>“content” (like “name” and “summary”) in the Announce (activity) object is not a hack, but normal property. E.g. Activity Vocabulary spec shows summary (which also could serve as a comment to announced note!) in the “Announce” activity example <a href="https://www.w3.org/TR/activitystreams-vocabulary/#dfn-announce" rel="nofollow noopener">https://www.w3.org/TR/activitystreams-vocabulary/#dfn-announce</a></p>
+</li>
+<li>
+<p>Semantically “announcing” that “quoted” object (and not OUR own notes on that) IS the activity that is supposed to be used here. From spec: “Indicates that the  <code>actor</code>  is calling the  <code>target</code> 's attention the  <code>object</code>.” - And we really mean that! We call attention and make our comment / quote…</p>
+</li>
+</ol>
+<p>We are NOT “replying” to that “someone else’s post”. Instead, we create new discussion context, for the new audience.</p>
+<ol start="3">
+<li>Both our comments/quotes (in the Announce activity’s name, summary and content properties) AND the “someone else’s post” are contained in ONE activity / message sent over the network / between systems. This is really important in order not to lose context of our “quotes” AND simply for a target audience to be able to see that “someone else’s post”.</li>
+</ol>
+<p>?!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659/17</link>
+        <pubDate>Sun, 17 May 2020 04:06:18 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-659-17</guid>
+        <source url="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659.rss">Repost/share with quote a.k.a. attach someone else&#39;s post to your own post</source>
+      </item>
+      <item>
+        <title>Repost/share with quote a.k.a. attach someone else&#39;s post to your own post</title>
+        <dc:creator><![CDATA[rinpatch]]></dc:creator>
+        <description><![CDATA[
+            <p>How would one determine if this is a “reblog with note” or a reply when having just the object? For example if someone I don’t follow posts a “reblog with note” and then someone I do follow replies to it (putting the object uri into <code>inReplyTo</code> as every implementation does now), my server will fetch the object and assume it’s a reply, since it doesn’t have the activity type context</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659/16</link>
+        <pubDate>Fri, 15 May 2020 16:56:05 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-659-16</guid>
+        <source url="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659.rss">Repost/share with quote a.k.a. attach someone else&#39;s post to your own post</source>
+      </item>
+      <item>
+        <title>Repost/share with quote a.k.a. attach someone else&#39;s post to your own post</title>
+        <dc:creator><![CDATA[lain]]></dc:creator>
+        <description><![CDATA[
+            <p>Well, that’s a hack. We can not keep adding compatibility hacks for every basic feature.</p>
+<p>To elaborate a bit, Mastodon is not an abandoned project, they should be expected to code support for or accept contributions for new, sensible features.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659/15</link>
+        <pubDate>Fri, 15 May 2020 13:43:53 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-659-15</guid>
+        <source url="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659.rss">Repost/share with quote a.k.a. attach someone else&#39;s post to your own post</source>
+      </item>
+      <item>
+        <title>Repost/share with quote a.k.a. attach someone else&#39;s post to your own post</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p>the first implementation I had did use a content field on Announce, basically duplicating all of the properties a Note can have, but it felt like it was muddying the distinction between Objects and Activities, it led to a ton of special case processing and a lot of code like (attributedTo || actor) where I had to handle the complexities of processing both types of object. ultimately, I think using inReplyTo and Announce makes a lot more sense when considering the actual difference between reblog-with-note and reply-to-thread—the expected audience and context of the reply</p>
+<p>So ultimately I decided on the Announced object here actually being your own post, which I think works well. in more thread-based forms of microblogging this would translate to replying to a thread and then boosting your own reply into your timeline, which is basically exactly what you’re doing semantically.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659/14</link>
+        <pubDate>Fri, 15 May 2020 13:20:30 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-659-14</guid>
+        <source url="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659.rss">Repost/share with quote a.k.a. attach someone else&#39;s post to your own post</source>
+      </item>
+      <item>
+        <title>Repost/share with quote a.k.a. attach someone else&#39;s post to your own post</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="lain" data-post="12" data-topic="659">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/lain/40/349_2.png" class="avatar"> lain:</div>
+<blockquote>
+<p>Why not just add a “content” field to the “Announce”? Seems rather straightforward.</p>
+</blockquote>
+</aside>
+<p>Then implementations like Mastodon would display these as simple <s>retoots</s> boosts, losing the additional content. The way Misskey does it is actually rather smart in that Mastodon displays everything that’s in there, and Misskey itself strips the link and replaces it with its own richer UI.</p>
+<p><img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/bd823bafc20aad0aaa47733f62ea68eff7c32a88.png" alt="image" data-base62-sha1="r2tgrfqKAgmJPo7g8qLnDXmY98k" width="607" height="223"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659/13</link>
+        <pubDate>Fri, 15 May 2020 12:47:03 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-659-13</guid>
+        <source url="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659.rss">Repost/share with quote a.k.a. attach someone else&#39;s post to your own post</source>
+      </item>
+      <item>
+        <title>Repost/share with quote a.k.a. attach someone else&#39;s post to your own post</title>
+        <dc:creator><![CDATA[lain]]></dc:creator>
+        <description><![CDATA[
+            <p>Seems a bit weird, to be honest. The object of the Announce is supposed to be the announced object, but here it is the newly created object, so i don’t think it works out too well, semantically.</p>
+<p>Why not just add a “content” field to the “Announce”? Seems rather straightforward.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659/12</link>
+        <pubDate>Fri, 15 May 2020 10:34:00 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-659-12</guid>
+        <source url="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659.rss">Repost/share with quote a.k.a. attach someone else&#39;s post to your own post</source>
+      </item>
+      <item>
+        <title>Repost/share with quote a.k.a. attach someone else&#39;s post to your own post</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p>In Java, I might do something like this to access the different values:</p>
+<pre><code class="lang-java">class Activity implements Create, Announce {
+    Optional&lt;Create&gt; asCreate {
+        if (this.typeIncludes('Create')) {
+            return Optional.some(this);
+        } else {
+            return Optional.none();
+        }
+    }
+
+    Optional&lt;Announce&gt; asAnnounce {
+        if (this.typeIncludes('Announce')) {
+            return Optional.some(this);
+        } else {
+            return Optional.none();
+        }
+    }
+};
+
+class Inbox {
+    void handleActivity(Activity activity) {
+        activity.asCreate().ifPresent(create =&gt; {
+            create.getNote().doSomething();
+        });
+
+        activity.asAnnounce().ifPresent(announce =&gt; {
+            announce.getObject().doSomething();
+        });
+    }
+}
+</code></pre>
+<p>But, honestly, I probably wouldn’t bother with the different interfaces, considering that the only types in ActivityStreams that affect the properties objects are allowed to have are <code>Link</code>, <code>Object</code>, and <code>Activity</code>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659/11</link>
+        <pubDate>Wed, 06 May 2020 20:00:37 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-659-11</guid>
+        <source url="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659.rss">Repost/share with quote a.k.a. attach someone else&#39;s post to your own post</source>
+      </item>
+      <item>
+        <title>Repost/share with quote a.k.a. attach someone else&#39;s post to your own post</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-mastodon" data-username="nightpool" data-post="9" data-topic="659">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/nightpool/40/36_2.png" class="avatar"> nightpool:</div>
+<blockquote>
+<p>In Java, you could do this by having an object that implements both the Create and Announce interfaces.</p>
+</blockquote>
+</aside>
+<p>Of course you can. I can as well map <code>[Create, Announce]</code> to an internal activity type like <code>Repost</code> which extends <code>Create</code>. My point was that all possible type combinations have to be known at compile time.</p>
+<p>But then what use it is if you’re able to parse an activity but still don’t know what to do with it? I’m not making much sense with this. Sorry. Quarantine is taking its toll.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659/10</link>
+        <pubDate>Wed, 06 May 2020 14:35:46 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-659-10</guid>
+        <source url="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659.rss">Repost/share with quote a.k.a. attach someone else&#39;s post to your own post</source>
+      </item>
+      <item>
+        <title>Repost/share with quote a.k.a. attach someone else&#39;s post to your own post</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="grishka" data-post="7" data-topic="659">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/grishka/40/196_2.png" class="avatar"> grishka:</div>
+<blockquote>
+<p>This can’t possibly work with a statically-typed language.</p>
+</blockquote>
+</aside>
+<p>Actually, most statically-typed languages let values have multiple types. In Java, you could do this by having an object that implements both the Create and Announce interfaces.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659/9</link>
+        <pubDate>Wed, 06 May 2020 13:38:51 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-659-9</guid>
+        <source url="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659.rss">Repost/share with quote a.k.a. attach someone else&#39;s post to your own post</source>
+      </item>
+      <item>
+        <title>Repost/share with quote a.k.a. attach someone else&#39;s post to your own post</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <p>I disagree. Go-fed’s approach was explicitly designed to handle use cases like this, where things can be of multiple types.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659/8</link>
+        <pubDate>Wed, 06 May 2020 13:05:38 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-659-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659.rss">Repost/share with quote a.k.a. attach someone else&#39;s post to your own post</source>
+      </item>
+      <item>
+        <title>Repost/share with quote a.k.a. attach someone else&#39;s post to your own post</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-mastodon" data-username="nightpool" data-post="5" data-topic="659">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/nightpool/40/36_2.png" class="avatar"> nightpool:</div>
+<blockquote>
+<p>it shouldn’t break any spec compliant implementations, any JSON-LD value can be an array, unless it’s marked as a functional property.</p>
+</blockquote>
+</aside>
+<p>Yeah well, <em>technically</em> it’s valid JSON-LD and it would, of course, work with my implementation of JSON-LD processing algorithms, but further down the line I map ActivityPub types to Java classes for convenience and deserialize the whole thing into an object of that class. This can’t possibly work with a statically-typed language.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659/7</link>
+        <pubDate>Wed, 06 May 2020 11:32:09 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-659-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659.rss">Repost/share with quote a.k.a. attach someone else&#39;s post to your own post</source>
+      </item>
+      <item>
+        <title>Repost/share with quote a.k.a. attach someone else&#39;s post to your own post</title>
+        <dc:creator><![CDATA[yvolk]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="grishka" data-post="4" data-topic="659">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/grishka/40/196_2.png" class="avatar"> grishka:</div>
+<blockquote>
+<p>How would software tell the difference between repost with quote as one action and announce/boost + reply as two distinct actions? What if there’s a network error and only one of the activities makes it to the other side?</p>
+</blockquote>
+</aside>
+<p>I see, actually you are thinking about some kind of a transaction, a composition of two activities sent in one network message.<br>
+Interesting. But we should find out a general way to do this, and not inventing a new format for any new combination. E.g. simply send a collection of two (or more…) activities as one message…</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659/6</link>
+        <pubDate>Wed, 06 May 2020 07:38:16 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-659-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659.rss">Repost/share with quote a.k.a. attach someone else&#39;s post to your own post</source>
+      </item>
+      <item>
+        <title>Repost/share with quote a.k.a. attach someone else&#39;s post to your own post</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="grishka" data-post="4" data-topic="659">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/grishka/40/196_2.png" class="avatar"> grishka:</div>
+<blockquote>
+<p>This is going to break many implementations, including mine <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/thinking.png?v=9" title=":thinking:" class="emoji" alt=":thinking:"></p>
+</blockquote>
+</aside>
+<p>it shouldn’t break any spec compliant implementations, any JSON-LD value can be an array, unless it’s marked as a functional property.</p>
+<aside class="quote no-group" data-username="grishka" data-post="4" data-topic="659">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/grishka/40/196_2.png" class="avatar"> grishka:</div>
+<blockquote>
+<p>What does Mastodon do when it receives such an activity?</p>
+</blockquote>
+</aside>
+<p>I believe Mastodon currently parses it as a Create, taking the first value, but I’m writing the C2S side first so I haven’t tested it extensively yet.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659/5</link>
+        <pubDate>Wed, 06 May 2020 02:39:35 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-659-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659.rss">Repost/share with quote a.k.a. attach someone else&#39;s post to your own post</source>
+      </item>
+      <item>
+        <title>Repost/share with quote a.k.a. attach someone else&#39;s post to your own post</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="yvolk" data-post="2" data-topic="659">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/yvolk/40/310_2.png" class="avatar"> yvolk:</div>
+<blockquote>
+<p>I would suggest to send two activities: Announce a post and then Create a reply to that post.</p>
+</blockquote>
+</aside>
+<p>How would software tell the difference between repost with quote as one action and announce/boost + reply as two distinct actions? What if there’s a network error and only one of the activities makes it to the other side?</p>
+<aside class="quote group-mastodon quote-modified" data-username="nightpool" data-post="3" data-topic="659">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/nightpool/40/36_2.png" class="avatar"> nightpool:</div>
+<blockquote>
+<p>“type”: [“Create”, “Announce”]</p>
+</blockquote>
+</aside>
+<p>This is going to break many implementations, including mine <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/thinking.png?v=9" title=":thinking:" class="emoji" alt=":thinking:"><br>
+What does Mastodon do when it receives such an activity?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659/4</link>
+        <pubDate>Wed, 06 May 2020 02:12:19 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-659-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659.rss">Repost/share with quote a.k.a. attach someone else&#39;s post to your own post</source>
+      </item>
+      <item>
+        <title>Repost/share with quote a.k.a. attach someone else&#39;s post to your own post</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p>I sat down to translate tumblr posts into an ActivityPub format a little while ago, and i settled on doing “reblog with note” this way as well, although for ease of client consumption, i combined both types into one activity:</p>
+<pre><code class="lang-json">{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "type": ["Create", "Announce"],
+  "actor": "https://example.com/users/nightpool",
+  "id": "https://example.com/activity/my-reblog",
+  "object": {
+    "type": "Note",
+    "id": "https://example.com/note/my-reblog"
+    "content": "this is my reply note!",
+    "inReplyTo": {
+      "id": "https://example.com/note/first-in-trail",
+      "type": "Note",
+      "content": "the first note!",
+      "attributedTo": "https://example.com/user/original-user"
+    },
+   },
+   "origin": "https://example.com/activity/reblogged-from"
+  }
+</code></pre>
+<p>This would translate into this UI:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/1X/03c7f171d48ac6cfa2ae8498ab07a07f6d45ad55.png" data-download-href="https://socialhub.activitypub.rocks/uploads/default/03c7f171d48ac6cfa2ae8498ab07a07f6d45ad55" title="image"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/03c7f171d48ac6cfa2ae8498ab07a07f6d45ad55_2_517x252.png" alt="image" data-base62-sha1="xrO8kLEmSW0U9Ve6Qe1bmyRjJH" width="517" height="252" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/03c7f171d48ac6cfa2ae8498ab07a07f6d45ad55_2_517x252.png, https://socialhub.activitypub.rocks/uploads/default/optimized/1X/03c7f171d48ac6cfa2ae8498ab07a07f6d45ad55_2_775x378.png 1.5x, https://socialhub.activitypub.rocks/uploads/default/optimized/1X/03c7f171d48ac6cfa2ae8498ab07a07f6d45ad55_2_1034x504.png 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/03c7f171d48ac6cfa2ae8498ab07a07f6d45ad55_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">image</span><span class="informations">1316×644 68.4 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659/3</link>
+        <pubDate>Wed, 06 May 2020 00:22:18 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-659-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659.rss">Repost/share with quote a.k.a. attach someone else&#39;s post to your own post</source>
+      </item>
+      <item>
+        <title>Repost/share with quote a.k.a. attach someone else&#39;s post to your own post</title>
+        <dc:creator><![CDATA[yvolk]]></dc:creator>
+        <description><![CDATA[
+            <p>I would suggest to send two activities: Announce a post and then Create a reply to that post. That way we don’t need any custom fields or actions. This pair ensures that all references/quotes in the Reply will be correctly understood by recipients: they will see exactly the same post as the “reposting with a quote” Actor sees.<br>
+Client app (including Web site) seeing this pair of posts can show it as it wish…</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659/2</link>
+        <pubDate>Tue, 05 May 2020 12:48:26 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-659-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659.rss">Repost/share with quote a.k.a. attach someone else&#39;s post to your own post</source>
+      </item>
+      <item>
+        <title>Repost/share with quote a.k.a. attach someone else&#39;s post to your own post</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>I thought I was going to be the first one to make these but as it turns out, Misskey already has this functionality, but it’s implemented in a weird way. Here’s the test post I made: <a href="https://misskey.io/notes/86wfb5uayv" rel="nofollow noopener">https://misskey.io/notes/86wfb5uayv</a></p>
+<p>And here’s it as an AP object:</p>
+<pre><code class="lang-json">{
+  "@context": [
+    "https://www.w3.org/ns/activitystreams",
+    "https://w3id.org/security/v1",
+    {
+      "Hashtag": "as:Hashtag"
+    }
+  ],
+  "id": "https://misskey.io/notes/86wfb5uayv",
+  "type": "Note",
+  "attributedTo": "https://misskey.io/users/81qo6ts4l7",
+  "summary": null,
+  "content": "&lt;p&gt;&lt;span&gt;TIL that some fediverse software already allows reposts with quotes.&lt;br&gt;&lt;br&gt;RE: &lt;/span&gt;&lt;a href=\"https://friends.grishka.me/posts/12082\"&gt;https://friends.grishka.me/posts/12082&lt;/a&gt;&lt;/p&gt;",
+  "_misskey_content": "TIL that some fediverse software already allows reposts with quotes.",
+  "_misskey_quote": "https://friends.grishka.me/posts/12082",
+  "quoteUrl": "https://friends.grishka.me/posts/12082",
+  "published": "2020-05-04T19:10:39.442Z",
+  "to": [
+    "https://www.w3.org/ns/activitystreams#Public"
+  ],
+  "cc": [
+    "https://misskey.io/users/81qo6ts4l7/followers"
+  ],
+  "inReplyTo": null,
+  "attachment": [],
+  "sensitive": false,
+  "tag": []
+}
+</code></pre>
+<p>As you see, it does two things:</p>
+<ul>
+<li>There’s the URL for the quoted post, but for some reason it’s in two different fields. Of course the <code>_misskey</code> ones are completely custom, but I can’t seem to figure out where <code>quoteUrl</code> comes from and what it’s used by — it’s not in the ActivityStreams vocabulary.</li>
+<li>There’s also this URL in the content, presumably for backwards compatibility with Mastodon, Pleroma etc.</li>
+</ul>
+<p>Anyway, let’s figure out the best way to standardize these reposts.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659/1</link>
+        <pubDate>Mon, 04 May 2020 20:39:37 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-659-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/repost-share-with-quote-a-k-a-attach-someone-elses-post-to-your-own-post/659.rss">Repost/share with quote a.k.a. attach someone else&#39;s post to your own post</source>
+      </item>
+  </channel>
+</rss>

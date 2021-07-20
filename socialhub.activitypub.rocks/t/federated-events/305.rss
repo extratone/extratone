@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Federated Events</title>
+    <link>https://socialhub.activitypub.rocks/t/federated-events/305</link>
+    <description>LONG story SHORT: **I think it&#39;s time to federate events**! :smiley: :palm_tree: 
+
+**CURRENT SITUATION** 
+* we have a great decentralised events platform &quot;Meetup like&quot; called **GetTogether** (Python)
+https://gettogether.community
+* someone started already to write a standalone AP Python library
+https://github.com/dsblank/activitypub
+* things seems a bit stuck... :P
+https://github.com/GetTogetherComm/GetTogether/issues/60 
+
+**FEDEVENT**
+* [somebody](https://snowcreations.voltihost.com) already created an experimental **FedEvent** but no source code is yet available (I just contacted him, let&#39;s see)
+http://fedevent.herokuapp.com
+
+**WORDPRESS PLUGIN**
+I never touched Python so I&#39;m waiting news about an AP PHP library, especially because I think would be great if we can have a simple plugin that people can install in their WordPress and share automagically their events in the Fediverse: like [Pterotype](https://getpterotype.com/) for posts!
+* right now we&#39;ve two standalone PHP libraries in development to make easier the &quot;ActivityPubification&quot; of the web :smiley:
+  * https://github.com/pterotype-project/activitypub-php (@jdormit the **Pterotype** dev)
+  * https://github.com/landrok/activitypub
+
+Anybody willing to help pushing this topic forward? ;)
+
+:deciduous_tree::deciduous_tree::deciduous_tree:</description>
+    
+    <lastBuildDate>Mon, 18 May 2020 03:43:17 +0000</lastBuildDate>
+    <category>ActivityPub</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/federated-events/305.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Federated Events</title>
+        <dc:creator><![CDATA[strypey]]></dc:creator>
+        <description><![CDATA[
+            <p>A couple of months ago I did a <a href="https://mastodon.nzoss.nz/@strypey/103696683904165823" rel="nofollow noopener">UX test of various free code platforms for promoting events</a>, including Mobilizon, Gath, Gancio, and GetTogether. Reporting my experiences in a series of fediverse posts kicked off some insightful discussions with devs from a few of those projects, which may be of interest to anyone following this topic.</p>
+<p>EDIT: the Zebras Unite network are working towards getting <a href="http://MeetUp.com" rel="nofollow noopener">MeetUp.com</a> to “exist to community”:<br>
+<a href="https://medium.com/@sexandstartups/meetup-to-the-people-how-a-zebra-could-rise-from-a-unicorns-fall-cfa93d83bcdc" rel="nofollow noopener">https://medium.com/@sexandstartups/meetup-to-the-people-how-a-zebra-could-rise-from-a-unicorns-fall-cfa93d83bcdc</a></p>
+<p>EDIT: Here’s a list of free code projects working on MeetUp alternatives, some of which have already been discussed here, but some of the others may be interesting in federating social events:<br>
+</p><aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://github.githubassets.com/favicons/favicon.svg" class="site-icon" width="32" height="32">
+      <a href="https://github.com/coderbyheart/open-source-meetup-alternatives" target="_blank" rel="nofollow noopener">GitHub</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/abcba6f0018128b9b219bd5fe483740f116fbbde.jpeg" class="thumbnail onebox-avatar" width="400" height="400">
+
+<h3><a href="https://github.com/coderbyheart/open-source-meetup-alternatives" target="_blank" rel="nofollow noopener">coderbyheart/open-source-meetup-alternatives</a></h3>
+
+<p>Open-Source Alternatives to Meetup. Contribute to coderbyheart/open-source-meetup-alternatives development by creating an account on GitHub.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/federated-events/305/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federated-events/305/20</link>
+        <pubDate>Mon, 18 May 2020 02:35:14 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-305-20</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federated-events/305.rss">Federated Events</source>
+      </item>
+      <item>
+        <title>Federated Events</title>
+        <dc:creator><![CDATA[MediaFormat]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/strypey">@strypey</a>, I will check this out!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federated-events/305/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federated-events/305/19</link>
+        <pubDate>Thu, 12 Dec 2019 21:55:55 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-305-19</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federated-events/305.rss">Federated Events</source>
+      </item>
+      <item>
+        <title>Federated Events</title>
+        <dc:creator><![CDATA[strypey]]></dc:creator>
+        <description><![CDATA[
+            <p>That is interesting. I recently met some of the people promoting Maskbook:<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/edc2a8990d4a0c2245ced725daafe78093e4c766.png" class="site-icon" width="128" height="128">
+      <a href="https://maskbook.com/" target="_blank" rel="nofollow noopener">maskbook.com</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/362;"><img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/98b468cd602a9d8eba37d33bfd3dd9e5fd0cc03f.png" class="thumbnail"></div>
+
+<h3><a href="https://maskbook.com/" target="_blank" rel="nofollow noopener">Maskbook — Make Privacy Protected Again</a></h3>
+
+<p>The Natural Law of Privacy, Now Being Enforced.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+<p>It provides a privacy-respecting UI for users to access their FB data. The longer term goal is to allow them to interact P2P with other Maskbook users, the strategy being to gradually liberate users from FB by riding the coat-tailing of its own network effect. I haven’t tested it yet, as I don’t have a FB account, but I’m actually tempted to set one up just to see what using Maskbook is like. ATM Maskbook is only available as a Chrome extension (probably aimed at Android users), so I’ll wait and watch for now.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federated-events/305/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federated-events/305/18</link>
+        <pubDate>Thu, 12 Dec 2019 08:25:34 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-305-18</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federated-events/305.rss">Federated Events</source>
+      </item>
+      <item>
+        <title>Federated Events</title>
+        <dc:creator><![CDATA[Emphack]]></dc:creator>
+        <description><![CDATA[
+            <p>I found something interesting:<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://github.githubassets.com/favicons/favicon.svg" class="site-icon" width="32" height="32">
+      <a href="https://github.com/comatory/fb2iCal" target="_blank" rel="nofollow noopener">GitHub</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/f861d6a69b27d7defefce34f0185c7bae4edced5.png" class="thumbnail onebox-avatar" width="259" height="259">
+
+<h3><a href="https://github.com/comatory/fb2iCal" target="_blank" rel="nofollow noopener">comatory/fb2iCal</a></h3>
+
+<p>Convert Facebook events to iCal files. Contribute to comatory/fb2iCal development by creating an account on GitHub.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+<p>Would be awesome to free Fb events through AP! <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/smiley_cat.png?v=9" title=":smiley_cat:" class="emoji" alt=":smiley_cat:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federated-events/305/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federated-events/305/17</link>
+        <pubDate>Mon, 18 Nov 2019 21:42:06 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-305-17</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federated-events/305.rss">Federated Events</source>
+      </item>
+      <item>
+        <title>Federated Events</title>
+        <dc:creator><![CDATA[strypey]]></dc:creator>
+        <description><![CDATA[
+            <p>Reading <a class="mention" href="/u/les">@les</a>’ thoughts about the goals of Gancio reminded me of ideas about online events calendars I’ve been chewing over since my days working with Aotearoa Indymedia. There are a number of <em>very</em> different groups of event types, with different requirements. Off the top of my head:</p>
+<ul>
+<li>
+<strong>protest activism events;</strong> meetings, demonstrations etc whose organizers want to publicly announce them for open participation, while being discreet about who they are.</li>
+<li>
+<strong>community activist events open to all comers;</strong> everything from an open day at a community garden or opening hours for a radical library, to a hackathon or a gratis workshop etc, where their success depends mainly on reaching particular communities of interest/ practice, and organizers may or may not mind being publicly identifiable</li>
+<li>
+<strong>open access public events;</strong> public meetings, free concerts and street theatre, school fairs, art openings etc, where their success depends on being promoted as widely as possible and organizers don’t mind being publicly identifiable</li>
+<li>
+<strong>ticketed open access public events;</strong> gigs and music festivals, theatre shows, conference with registration fees, practical workshops with expense fees etc, where their success depends on being promoted as widely as possible and organizers want to be publicly identifiable as the legitimate source of tickets/ registrations</li>
+<li>
+<strong>private events;</strong> everything from birthday parties and family reunions, to house parties and workplace parties, to invite-only political meetings and conferences etc, where only a select group are invited, and the details of time and location are private.</li>
+</ul>
+<p>In each of these event meta-types, the geographical scope of events could be local or municipal, or as mentioned by <a class="mention" href="/u/les">@les</a>, regional, national, international or global. These meta-types and geographies can be combined in different way to come up with a wide range of use cases for federated events. For example</p>
+<ul>
+<li>within one city, a range of organizations might want to have their own events calender each, under their own controls, where their public events are federated to allied groups, gig guides, community calendars etc, and they can subscribe to events from the calendars of allied groups, coalitions they join etc.</li>
+<li>a global network of political groups might want to be able to call private, invite-only conferences, using a shared events calendar run by the network’s geeks to federate out the details of each conference to member groups, receive RSVPS etc.</li>
+</ul>
+<p>So as well as all the usual reasons for having multiple free code projects in the same space (language preferences, trying different technical approaches etc), there is plenty of room for a range of federated events UIs, each targeting a group of use case(s) needed by specific user groups. The more the merrier <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+<p>What I’m hoping though is that all the free code projects working on different kinds of events systems can see the benefit of having a certain amount of shared infrastructure. Not only a standard set of protocols for how to represent and transmit event data across a federated network, reusing existing protocols and formats as much as possible, but also standardized libraries/ modules/ plugins for implementing that standard in each of the languages being used for events software. That way developers can focus most of their energy on making great UI for the specific user groups and use cases their projects were set up to serve, and share the work of maintaining the plumbing that links their users and events data together as and when appropriate.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federated-events/305/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federated-events/305/16</link>
+        <pubDate>Fri, 15 Nov 2019 16:39:23 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-305-16</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federated-events/305.rss">Federated Events</source>
+      </item>
+      <item>
+        <title>Federated Events</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Welcome <a class="mention" href="/u/les">@les</a>!</p>
+<p>I really appreciate the features you came up with, especially:</p>
+<aside class="quote no-group quote-modified" data-post="14" data-topic="305">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/letter_avatar_proxy/v4/letter/l/db5fbb/40.png" class="avatar"> les:</div>
+<blockquote>
+<ul>
+<li>focus on content not on people</li>
+<li>anon events</li>
+<li>not interested in making hits</li>
+</ul>
+</blockquote>
+</aside>
+<p>I think these are very important and distinctive features from the mainstream understanding that ActivityPub software is replicating existing GMAFIA software and services. Instead, focusing on content allows to move away from the “personality challenge”, where one’s “identity” depends on visibility, presence, and popularity ; support for anonymous contributions in your case makes a lot of sense, since it’s about announcing events, not about exchanging data or else – in other cases it could be problematic, and even there I can see an entry for what I would call <em>confusion of service</em>, since it could enable antagonist forces to announce non-existent or honeypot events ; not making hits is definitely a statement that I share, in line with the original idea of the web, where linked data is here to compose. Looking forward to using your software, and seeing more of it in the ActivityPub space.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federated-events/305/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federated-events/305/15</link>
+        <pubDate>Fri, 15 Nov 2019 08:11:23 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-305-15</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federated-events/305.rss">Federated Events</source>
+      </item>
+      <item>
+        <title>Federated Events</title>
+        <dc:creator><![CDATA[les]]></dc:creator>
+        <description><![CDATA[
+            <p><span class="hashtag">#introduction</span><br>
+Hi, I am the main developer of <a href="https://gancio.org" rel="nofollow noopener">gancio</a>, a shared agenda of events that supports AP.</p>
+<p><strong>TLDR;</strong></p>
+<p>All of you know that “supports AP” means everything and nothing, so I’ll try to explain what it supports and why.</p>
+<p>Gancio was born in Italy from political hacking movements, in particular from the hacklab underscore, a place that crosses the social movements and squats here in Turin (north-west italy).</p>
+<p>We have set up a “radical local server” <code>cisti dot org</code> that hosts services explicitly designed and reasoned for people / movements / groups / collectives to whom we feel similar here in the vicinity, so it is NOT our intention to grow and indeed, we believe that one of the main issues of technology is the scale and disconnection from reality and territory.</p>
+<p>Since we liked the idea of the federation very much and there is a discussion about the social networks in Italy rather strong within the movements, shaken by the experience of indymedia (for example, in the last month FB italy has closed many accounts of groups that dealt with rojava and Syria) we have set up a local instance of mastodon, following the example of brothers / sisters hackers of bologna collective bida.im.</p>
+<p>The next step, was to think of a <strong>shared calendar</strong> so last year we looked for solutions but none liked us and so we decided to write it ourselves and gancio was born.</p>
+<p>It now has about a year of life, two instances (one in Turin and one in Florence), about 600 published events, some new instances coming and much positive feedback from the communities.</p>
+<p>Our background is therefore that of hackmeeting (a three days national hosted annually in a different place, often a squat, which brings together all groups that do hacking / hacktivism in Italy for over 20 years) and that of projects such as <a href="http://autistici.org" rel="nofollow noopener">autistici.org</a></p>
+<p>Some relevant and particular features inside gancio:</p>
+<ul>
+<li>
+<p>focus on content not on people:<br>
+nowhere on gancio appears the identity of who published the event, not even under a nickname, not even to administrators (except in the db). this is not an ego friendly platform.</p>
+</li>
+<li>
+<p>visitors first! we do not want logged user to get more features than random visitors. we do not want users to register, except to publish events and even in this case …</p>
+</li>
+<li>
+<p>anon events: optionally a visitor can create events without being registered (an admin has to confirm them)</p>
+</li>
+<li>
+<p>We are not interested in making hits so we export events in many ways, via RSS feeds, via global or individual ics, incorporating lists of events or single events via iframe on other websites. Notification via mail is coming.</p>
+</li>
+</ul>
+<h2>AP support, what’s up to now</h2>
+<p>Each instance has only one “Actor” that publishes each event when it is published.<br>
+We are considering the introduction of other “Actor” but they will not be linked to users, rather to places or tags/categories.<br>
+There are no personal homes with a timeline of people I follow, everyone has a sort of local timeline of the instance, it’s an anti filter-bubble feature.</p>
+<p>Events are not published with the type <code>Event</code> but with type <code>Note</code> because we wanted to add the possibility to interact with events from our mastodon instance (boost / bookmark and “comments” that we call resources because we don’t want it to become a place of debate, but more a place where to keep a historical memory of events, e.g. an audio recording of a talk).</p>
+<p>When mastodon will support <code>Event</code> object type we will change for sure.</p>
+<p>We are also currently testing instances and users’s moderation.</p>
+<h2>AP support, what’s boiling in the pot</h2>
+<p>As some more instances are coming, the ideas we are thinking about was the possibility to share events with these instances. The main idea was that the administrators would follow their respective instances that trusts and that in the publication of the events there would be the possibility to specify the geographical relevance and the importance of an event (I had imagined 4 levels, regional, national, international and global) and that the other instances would publish the events coming from trusted instances for the events of geo-competence.</p>
+<h2>money money</h2>
+<p>Who’s paying you? You know well that to develop software today is one of the most privileged job that exists, so we decided to use this privilege to devote time and space to projects explicitly outside and against the logic of profit. We steal time from capital, we work for money as little as possible because we can afford it.<br>
+We do not want to make gancio our job because it is not. So no, no sponsors, advertising, donations.<br>
+It would not change the time to devote or the quality of the software, for us.</p>
+<p>Of course any help or feedback, is appreciated.<br>
+Sorry for the length but I think context matters</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federated-events/305/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federated-events/305/14</link>
+        <pubDate>Thu, 14 Nov 2019 23:37:23 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-305-14</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federated-events/305.rss">Federated Events</source>
+      </item>
+      <item>
+        <title>Federated Events</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p><em>This was drafted months ago. After this message, we’re up to date.</em></p>
+<p><span class="mention">@360fun</span> would you update the first post with the current situation with existing free software projects doing AP events? I’d rather see cooperation than competitive projects. It’s easier to work together in this context.</p>
+<p><a class="mention" href="/u/tcit">@tcit</a> would you like to share the Mobilizon vision in the context of existing AP eventing projects? How will you interoperate or join forces? (Note: this discussion is happening in <a class="hashtag" href="/c/software/mobilizon/20">#<span>software:mobilizon</span></a> and  <a href="https://ps.zoethical.org/t/let-s-take-back-control-of-our-events-joinmobilizon/2732" rel="nofollow noopener">https://ps.zoethical.org/t/let-s-take-back-control-of-our-events-joinmobilizon/2732</a>)</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federated-events/305/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federated-events/305/13</link>
+        <pubDate>Wed, 13 Nov 2019 12:21:19 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-305-13</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federated-events/305.rss">Federated Events</source>
+      </item>
+      <item>
+        <title>Federated Events</title>
+        <dc:creator><![CDATA[strypey]]></dc:creator>
+        <description><![CDATA[
+            <p>Diaspora folks have also put some thought into how federated events could work, in association with a dev from Friendica. Initial discussion: <a href="https://github.com/diaspora/diaspora_federation/pull/44" rel="nofollow noopener">https://github.com/diaspora/diaspora_federation/pull/44</a></p>
+<p>Proposed spec: <a href="https://diaspora.github.io/diaspora_federation/entities/event.html" rel="nofollow noopener">https://diaspora.github.io/diaspora_federation/entities/event.html</a></p>
+<p>It would be awesome if a federated events standard could be defined in such a way that it could be used as an AP extension, and an extension to the Diaspora standard, and potentially in other federated systems (social web clients using XMPP, Matrix etc).</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federated-events/305/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federated-events/305/11</link>
+        <pubDate>Wed, 13 Nov 2019 12:09:00 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-305-11</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federated-events/305.rss">Federated Events</source>
+      </item>
+      <item>
+        <title>Federated Events</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Osada has federated events and attendance over ActivityPub; though there were no other known implementations to test against when this work was completed last year. The project itself is no longer being maintained, though there are still a number of active instances.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federated-events/305/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federated-events/305/10</link>
+        <pubDate>Wed, 13 Nov 2019 12:06:23 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-305-10</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federated-events/305.rss">Federated Events</source>
+      </item>
+      <item>
+        <title>Federated Events</title>
+        <dc:creator><![CDATA[tcit]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="8" data-topic="305">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/mediaformat/40/148_2.png" class="avatar"> mediaformat:</div>
+<blockquote>
+<p>I was curious about this too and tested out the events in Friendica, but from what I can tell the events don’t federate (there is no attached json or rss related to the event). Maybe in a future version.</p>
+</blockquote>
+</aside>
+<p>That’s odd. I didn’t test, but they explicitly told me it worked. <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/thinking.png?v=9" title=":thinking:" class="emoji" alt=":thinking:"></p>
+<aside class="quote no-group" data-post="8" data-topic="305">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/mediaformat/40/148_2.png" class="avatar"> mediaformat:</div>
+<blockquote>
+<p>NextCloud also has a calendar app, and has started federating, so it may just be a question of time before we see more implementations!</p>
+</blockquote>
+</aside>
+<p>I’m also it’s maintainer <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:">.<br>
+Indeed Federated Calendar Sharing is <a href="https://github.com/nextcloud/calendar/pull/878" rel="nofollow noopener">in the works</a>, but Nextcloud federation is not compatible at the moment with ActivityPub, only the Social app does.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federated-events/305/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federated-events/305/9</link>
+        <pubDate>Wed, 13 Nov 2019 12:05:40 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-305-9</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federated-events/305.rss">Federated Events</source>
+      </item>
+      <item>
+        <title>Federated Events</title>
+        <dc:creator><![CDATA[MediaFormat]]></dc:creator>
+        <description><![CDATA[
+            <p>Glad to have found this thread, Events is something I have been thinking for a while.</p>
+<p>Ultimately I’d like to incorporate ActivityPub Events into a wordpress plugin, I am currently waiting for a PHP ActivityPub library to finish developing : <a href="https://github.com/pterotype-project/activitypub-php" rel="nofollow noopener">Pterotype</a></p>
+<p>When I was searching before I had also found  this project which seems to have stalled<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/e96071ab96a5e76fc14e8098123273b2bc357025.png" class="site-icon" width="180" height="180">
+      <a href="https://gitea.polonkai.eu/gergely/calendar-social" target="_blank" rel="nofollow noopener">Gitea of Gergely Polonkai</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/498ee6f9d670fb6ebb60eda532499112c97822ad.png" class="thumbnail onebox-avatar" width="80" height="80">
+
+<h3><a href="https://gitea.polonkai.eu/gergely/calendar-social" target="_blank" rel="nofollow noopener">calendar-social</a></h3>
+
+<p>Federated calendar and event organiser over ActivityPub</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+<aside class="quote no-group" data-post="4" data-topic="305">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/tcit/40/49_2.png" class="avatar"> tcit:</div>
+<blockquote>
+<p>Friendica that has events and recently implemented ActivityPub (that is, to my knowledge, the only project federating events over ActivityPub to this day)</p>
+</blockquote>
+</aside>
+<p>I was curious about this too and tested out the events in Friendica, but from what I can tell the events don’t federate (there is no attached json or rss related to the event). Maybe in a future version.</p>
+<p>NextCloud also has a calendar app, and has started federating, so it may just be a question of time before we see more implementations!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federated-events/305/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federated-events/305/8</link>
+        <pubDate>Wed, 13 Nov 2019 12:04:17 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-305-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federated-events/305.rss">Federated Events</source>
+      </item>
+      <item>
+        <title>Federated Events</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>I agree with you: the login should not be needed if the user just wanna see the events! <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"><br>
+Especially multiple identities is something that needs to be fixed in the future, MoodleNet team wrote an interesting article about it: <a href="https://blog.moodle.net/2018/what-is-emoji-id/" rel="nofollow noopener">https://blog.moodle.net/2018/what-is-emoji-id/</a></p>
+<p>Right now I’m not touching much code so I cannot help in that side, but I’m into a lot of different project so I’m trying to move things forward putting people together and bringing ideas! <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/tanabata_tree.png?v=9" title=":tanabata_tree:" class="emoji" alt=":tanabata_tree:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federated-events/305/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federated-events/305/7</link>
+        <pubDate>Wed, 13 Nov 2019 12:02:36 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-305-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federated-events/305.rss">Federated Events</source>
+      </item>
+      <item>
+        <title>Federated Events</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="4" data-topic="305">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/tcit/40/49_2.png" class="avatar"> tcit:</div>
+<blockquote>
+<p>There’s also Friendica that has events and recently implemented ActivityPub (that is, to my knowledge, the only project federating events over ActivityPub to this day).</p>
+</blockquote>
+</aside>
+<p>Friendica’s events page immediately requires a login to even see it, I find it very uninviting on a fediverse scope. FedEvent and GetTogether do not require logins to browse the site (however GT has a login process on their own side – something I avoided experimentally with FE). There are a couple design challenges in any such system:</p>
+<ul>
+<li>Supporting the broadest range of protocols (Mastodon bridges APub and GNUS, the major players basically)</li>
+<li>Authenticating Fediverse users: While I’ve <em>seen</em> OAuth style sign-in done on the very popular Tusky client for Masto, I cannot imagine every service implements this. By the same token, I find most social instances support private or direct messages for 2FA-like auth codes. Otherwise any notification system would be able to ping users without their consent repeatedly because fediverse doesn’t have an “identity” system in place.</li>
+</ul>
+<p>Please note: Not requiring a login is a philosophy I had building FE to try to write a system catering exclusively to fediverse users, but I can see GT implements their login system and linking a server-side login to an APub identity would probably be a lot less hassle on the end users.</p>
+<p><span class="mention">@360fun</span> I had challenges implementing leaflet to geolocate events on FE just because I didn’t have much time to implement it, if you have a better tool to implement that would be useful.</p>
+<p><em>Some notes on the subject while I’m away from my desk.</em></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federated-events/305/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federated-events/305/6</link>
+        <pubDate>Wed, 13 Nov 2019 12:00:40 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-305-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federated-events/305.rss">Federated Events</source>
+      </item>
+      <item>
+        <title>Federated Events</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p><span class="mention">@mxb</span> cannot wait!!! <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/smile.png?v=9" title=":smile:" class="emoji" alt=":smile:"></p>
+<aside class="quote no-group" data-post="3" data-topic="305">
+<div class="title">
+<div class="quote-controls"></div>
+ shiburizu:</div>
+<blockquote>
+<p>t I will translate and deliberate on how FedEvent works and we’ll talk integration to existing projects as I get the time to analyze them. open-sourcing is what I can do on short notice, but basically Fedevent is a front-end for a bot account on Mastodon to send out notifications.</p>
+</blockquote>
+</aside>
+<p><span class="mention">@shiburizu</span> wow that was superfast, great thanks!!! <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+<p><a class="mention" href="/u/tcit">@tcit</a> I didn’t know that! <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/smiley.png?v=9" title=":smiley:" class="emoji" alt=":smiley:"> Do you plan also to decentralise maps  like I proposed in <a href="https://socialhub.network/t/collaborative-maps-with-activitypub/164/3" rel="nofollow noopener">https://socialhub.network/t/collaborative-maps-with-activitypub/164/3</a> as well?<br>
+I’m looking for tools to use in my local community, Mobilizon sounds promising! <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/sunny.png?v=9" title=":sunny:" class="emoji" alt=":sunny:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federated-events/305/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federated-events/305/5</link>
+        <pubDate>Wed, 13 Nov 2019 12:00:13 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-305-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federated-events/305.rss">Federated Events</source>
+      </item>
+      <item>
+        <title>Federated Events</title>
+        <dc:creator><![CDATA[tcit]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi there,</p>
+<p>We at Framasoft (the non-profit backing PeerTube) launched the <a href="https://joinmobilizon.org/" rel="nofollow noopener">Mobilizon</a> project that will also federate events.</p>
+<p>There’s also Friendica that has events and recently implemented ActivityPub (that is, to my knowledge, the only project federating events over ActivityPub to this day).</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federated-events/305/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federated-events/305/4</link>
+        <pubDate>Wed, 13 Nov 2019 11:59:35 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-305-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federated-events/305.rss">Federated Events</source>
+      </item>
+      <item>
+        <title>Federated Events</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey! I’m that <a href="https://snowcreations.voltihost.com/" rel="nofollow noopener">somebody</a> and I’m very interested in helping the idea get around into a much more wholesome implementation and not a prototype.</p>
+<p>To that end, FedEvent is available under MIT license now: <a href="https://github.com/shiburizu/fedevent" rel="nofollow noopener">https://github.com/shiburizu/fedevent</a></p>
+<p>And if you need to drop me a line directly on fediverse I’ve set up a new account shiburizu@niu.moe.</p>
+<p>I have a whitepaper that had the ideas of the implementation (written in spanish) that I will translate and deliberate on how FedEvent works and we’ll talk integration to existing projects as I get the time to analyze them. open-sourcing is what I can do on short notice, but basically Fedevent is a front-end for a bot account on Mastodon to send out notifications.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federated-events/305/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federated-events/305/3</link>
+        <pubDate>Wed, 13 Nov 2019 11:53:10 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-305-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federated-events/305.rss">Federated Events</source>
+      </item>
+      <item>
+        <title>Federated Events</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>That was my goal to write such project (heavily inspired by facebook events) after making prismo stable and finishing the AP Rails plugin <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federated-events/305/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federated-events/305/2</link>
+        <pubDate>Wed, 13 Nov 2019 11:50:48 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-305-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federated-events/305.rss">Federated Events</source>
+      </item>
+      <item>
+        <title>Federated Events</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>LONG story SHORT: <strong>I think it’s time to federate events</strong>! <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/smiley.png?v=9" title=":smiley:" class="emoji" alt=":smiley:"> <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/palm_tree.png?v=9" title=":palm_tree:" class="emoji" alt=":palm_tree:"></p>
+<p><strong>CURRENT SITUATION</strong></p>
+<ul>
+<li>we have a great decentralised events platform “Meetup like” called <strong>GetTogether</strong> (Python)<br>
+<a href="https://gettogether.community" rel="nofollow noopener">https://gettogether.community</a>
+</li>
+<li>someone started already to write a standalone AP Python library<br>
+<a href="https://github.com/dsblank/activitypub" rel="nofollow noopener">https://github.com/dsblank/activitypub</a>
+</li>
+<li>things seems a bit stuck… <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/stuck_out_tongue.png?v=9" title=":stuck_out_tongue:" class="emoji" alt=":stuck_out_tongue:"><br>
+<a href="https://github.com/GetTogetherComm/GetTogether/issues/60" rel="nofollow noopener">https://github.com/GetTogetherComm/GetTogether/issues/60</a>
+</li>
+</ul>
+<p><strong>FEDEVENT</strong></p>
+<ul>
+<li>
+<a href="https://snowcreations.voltihost.com" rel="nofollow noopener">somebody</a> already created an experimental <strong>FedEvent</strong> but no source code is yet available (I just contacted him, let’s see)<br>
+<a href="http://fedevent.herokuapp.com" rel="nofollow noopener">http://fedevent.herokuapp.com</a>
+</li>
+</ul>
+<p><strong>WORDPRESS PLUGIN</strong><br>
+I never touched Python so I’m waiting news about an AP PHP library, especially because I think would be great if we can have a simple plugin that people can install in their WordPress and share automagically their events in the Fediverse: like <a href="https://getpterotype.com/" rel="nofollow noopener">Pterotype</a> for posts!</p>
+<ul>
+<li>right now we’ve two standalone PHP libraries in development to make easier the “ActivityPubification” of the web <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/smiley.png?v=9" title=":smiley:" class="emoji" alt=":smiley:">
+<ul>
+<li>
+<a href="https://github.com/pterotype-project/activitypub-php" rel="nofollow noopener">https://github.com/pterotype-project/activitypub-php</a> (<span class="mention">@jdormit</span> the <strong>Pterotype</strong> dev)</li>
+<li><a href="https://github.com/landrok/activitypub" rel="nofollow noopener">https://github.com/landrok/activitypub</a></li>
+</ul>
+</li>
+</ul>
+<p>Anybody willing to help pushing this topic forward? <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+<p><img src="https://socialhub.activitypub.rocks/images/emoji/twitter/deciduous_tree.png?v=9" title=":deciduous_tree:" class="emoji" alt=":deciduous_tree:"><img src="https://socialhub.activitypub.rocks/images/emoji/twitter/deciduous_tree.png?v=9" title=":deciduous_tree:" class="emoji" alt=":deciduous_tree:"><img src="https://socialhub.activitypub.rocks/images/emoji/twitter/deciduous_tree.png?v=9" title=":deciduous_tree:" class="emoji" alt=":deciduous_tree:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federated-events/305/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federated-events/305/1</link>
+        <pubDate>Wed, 13 Nov 2019 11:47:14 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-305-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federated-events/305.rss">Federated Events</source>
+      </item>
+  </channel>
+</rss>

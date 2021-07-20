@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Event Sourcing the ActivityPub Server - #9 by aschrijver - Software - SocialHub</title>
+    <meta name="description" content="I’ve been investigating a, what I deem, very good match: Event Sourcing and ActivityPub. 
+Event Sourcing (Fowler has a more in-depth explanation) is mentioned on this forum only once and some DuckDuckGo research brings n&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="../972.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Event Sourcing the ActivityPub Server&#39;" href="../972.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/event-sourcing-the-activitypub-server/972/9" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/event-sourcing-the-activitypub-server/972/9" />
+<meta property="og:title" content="Event Sourcing the ActivityPub Server" />
+<meta name="twitter:title" content="Event Sourcing the ActivityPub Server" />
+<meta property="og:description" content="Yes, can imagine that’s a challenge, as it will be for me too. @cjs plans to work further on apcore which has all the basics in place for an AP server, and I intend to (maybe) build from this and first create a ‘Groundwork’ project that allows for pluggable modules (DDD, CQRS, maybe ES). I’ve described a bit more about this in my comment to Go-Fed: Past, Present, and Future." />
+<meta name="twitter:description" content="Yes, can imagine that’s a challenge, as it will be for me too. @cjs plans to work further on apcore which has all the basics in place for an AP server, and I intend to (maybe) build from this and first create a ‘Groundwork’ project that allows for pluggable modules (DDD, CQRS, maybe ES). I’ve described a bit more about this in my comment to Go-Fed: Past, Present, and Future." />
+<meta property="article:published_time" content="2020-10-02T09:28:01+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="../972.html">Event Sourcing the ActivityPub Server</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../../c/software/index.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #3AB54A'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Software</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/berkes.html'><span itemprop='name'>berkes</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../972.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-09-30T09:55:56Z'>
+              <time itemprop='dateModified' datetime='2020-09-30T09:57:37Z' class='post-time'>
+                September 30, 2020,  9:57am
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’ve been investigating a, what I deem, very good match: Event Sourcing and ActivityPub.</p>
+<p><a href="https://developer.ibm.com/technologies/messaging/articles/event-sourcing-introduction" rel="nofollow noopener">Event Sourcing</a> (Fowler has a <a href="https://martinfowler.com/eaaDev/EventSourcing.html" rel="nofollow noopener">more in-depth explanation</a>) is mentioned on this forum <a href="../../socialhub-at-offdem/456/3.html">only once</a> and some DuckDuckGo research brings nothing forward WRT activilitypub and Event Sourcing.</p>
+<p>The reason why I think it works well, is because it would allow a generic Inbox/Outbox “framework” that stores all the items placed in the inbox or the outbox in an event-queue and event storage.<br>
+From thereon, implementors would build Projectors, Reactors (or whatever you call the "things that listen to incoming events and process them) based on their domain.</p>
+<p>There would be some internal events, processors and projectors, to store your in- and outbox in a way that the server can serve them to clients and to manage the delivery, the federation.</p>
+<p>From there, the implemnter would be free: A NotifyChatGroup reactor would notify your favorite chatgroup. A PublishComment would publish an incoming comment on your blog, and a UserTimelineProjector would store the incoming statuses in a database where the user/app/api can read the timeline from and so on. This is why I think such a basis would be extremely useful for developers.</p>
+<p>There are “event sourcing” framworks (often labeled CQRS, ES etc) for almost all languages.</p>
+<p>I can see a lot of pro’s, but also some cons:<br>
+Privacy could be a concern: when your server keeps a log of all your “activitypub-activity”, rather than “just the current state” as with most MVC implementations (like mastodon), you are building up valuable data.<br>
+GDPR complience is a common challenge in ES setups: ES dictates “no events are ever modified or deleted”, yet GDPR dictates you delete all data for a user when requested.</p>
+<p>So, did anyone investigate AP and ES combinations already? Is there an eventsourced implementation or PoC of AP out there, that I missed? Do you think this might work at all?</p>
+        </div>
+
+        <meta itemprop='headline' content='Event Sourcing the ActivityPub Server'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../hospitality-exchange-community-considers-moving-to-the-fediverse/1765/3.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/hospitality-exchange-community-considers-moving-to-the-fediverse/1765/3'>
+                      <span itemprop='name'>Hospitality exchange community considers moving to the fediverse ;)</span>
+                    </a>
+                    <meta itemprop='position' content='4'>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/pukkamustard.html'><span itemprop='name'>pukkamustard</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../972.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-09-30T10:24:06Z' class='post-time'>
+                September 30, 2020, 10:24am
+              </time>
+              <meta itemprop='dateModified' content='2020-09-30T10:24:06Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="berkes" data-post="1" data-topic="972">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../letter_avatar_proxy/v4/letter/b/7feea3/40.png" class="avatar"> berkes:</div>
+<blockquote>
+<p>what I deem, very good match: Event Sourcing and ActivityPub.</p>
+</blockquote>
+</aside>
+<p>I completely agree. I think ActivityPub can be seen as Event Sourcing system with Activities as Events.</p>
+<p>We are experimenting with the idea in the openEngiadina project. For example a users Inbox is not a relation but a query on all Activities: <a href="https://gitlab.com/openengiadina/cpub/-/blob/develop/lib/cpub/schemas/user.ex#L128-139" rel="nofollow noopener">https://gitlab.com/openengiadina/cpub/-/blob/develop/lib/cpub/schemas/user.ex#L128-139</a></p>
+<aside class="quote no-group" data-username="berkes" data-post="1" data-topic="972">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../letter_avatar_proxy/v4/letter/b/7feea3/40.png" class="avatar"> berkes:</div>
+<blockquote>
+<p>Privacy could be a concern: when your server keeps a log of all your “activitypub-activity”, rather than “just the current state” as with most MVC implementations (like mastodon), you are building up valuable data.<br>
+GDPR complience is a common challenge in ES setups: ES dictates “no events are ever modified or deleted”, yet GDPR dictates you delete all data for a user when requested.</p>
+</blockquote>
+</aside>
+<p>Again, I agree. The system becomes an append-only log of Activities. We are working towards fixing that as well by allowing “garbage-collection”. More on that soon…</p>
+<p>I highly recommend the talk in the ActivityPub Conference by <a class="mention" href="../../../u/cjd.html">@cjd</a>, which I feel is related:</p>
+<p><iframe width="560" height="315" src="https://conf.tube/videos/embed/ccad21f7-6bc7-489e-886f-ba0fb8d20647" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+        </div>
+
+        <meta itemprop='headline' content='Event Sourcing the ActivityPub Server'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/pukkamustard.html'><span itemprop='name'>pukkamustard</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../972.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-09-30T10:26:38Z' class='post-time'>
+                September 30, 2020, 10:26am
+              </time>
+              <meta itemprop='dateModified' content='2020-09-30T10:26:38Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="berkes" data-post="1" data-topic="972">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../letter_avatar_proxy/v4/letter/b/7feea3/40.png" class="avatar"> berkes:</div>
+<blockquote>
+<p><a href="https://developer.ibm.com/technologies/messaging/articles/event-sourcing-introduction" rel="nofollow noopener">Event Sourcing</a> (Fowler has a <a href="https://martinfowler.com/eaaDev/EventSourcing.html" rel="nofollow noopener">more in-depth explanation</a>) is mentioned on this forum <a href="../../socialhub-at-offdem/456/3.html">only once</a> and some DuckDuckGo research brings nothing forward WRT activilitypub and Event Sourcing.</p>
+</blockquote>
+</aside>
+<p>Did you stumble upon this: <a href="https://dustycloud.org/misc/2019-05-03-convo-with-tmarble.txt" rel="nofollow noopener">https://dustycloud.org/misc/2019-05-03-convo-with-tmarble.txt</a></p>
+<p>A nice exchange between <a class="mention" href="../../../u/tmarble.html">@tmarble</a> and <a class="mention" href="../../../u/cwebber.html">@cwebber</a> about Event Sourcing/CQRS and OCAP, which I found very enlightening (and incredibly foresightful of <a class="mention" href="../../../u/cwebber.html">@cwebber</a> to preserve!).</p>
+        </div>
+
+        <meta itemprop='headline' content='Event Sourcing the ActivityPub Server'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/cjd.html'><span itemprop='name'>cjd</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../972.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-09-30T10:41:38Z'>
+              <time itemprop='dateModified' datetime='2020-09-30T10:42:18Z' class='post-time'>
+                September 30, 2020, 10:42am
+              </time>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I do most everything using this event sourcing model, because I keep messing up state and being able to rebuild is quite nice.<br>
+I’ll comment that for the purposes of privacy, even without the perfect database/language of the future, there’s a quick&amp;dirty method which would solve a lot of problems:  Attach an expiration date to every piece of content in activitypub, plus a URL which can be hit to check if the content creator / data subject continues to consent to that content existing (in which case the URL contains a new expiration date). This changes deletion from being an “act” to being an “omission”, if a server goes down then the default is for all of the data to go away rather than sitting forever.</p>
+        </div>
+
+        <meta itemprop='headline' content='Event Sourcing the ActivityPub Server'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/berkes.html'><span itemprop='name'>berkes</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../972.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-09-30T11:02:55Z' class='post-time'>
+                September 30, 2020, 11:02am
+              </time>
+              <meta itemprop='dateModified' content='2020-09-30T11:02:55Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>First: thanks for the reply and the pointer to <a class="mention" href="../../../u/cjd.html">@cjd</a>’s talk. Watching it now.</p>
+<aside class="quote no-group" data-username="pukkamustard" data-post="2" data-topic="972">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/pukkamustard/40/111_2.png" class="avatar"> pukkamustard:</div>
+<blockquote>
+<p>For example a users Inbox is not a relation but a query on all Activities: <a href="https://gitlab.com/openengiadina/cpub/-/blob/develop/lib/cpub/schemas/user.ex#L128-139" rel="nofollow noopener">https://gitlab.com/openengiadina/cpub/-/blob/develop/lib/cpub/schemas/user.ex#L128-139 </a></p>
+</blockquote>
+</aside>
+<p>Out of curiosity: would it not make sense to store the inbox events, but then use a Projector to store the “inbox” in an easily retrievable storage? The most simple implemenation, for example, would be a per-actor json file <code>actors/1337/inbox.json</code>, which is the properly formed <code>OrderedCollection</code> JSON for that actor’s inbox already. I probably miss some context though, and my elixir is poor enough that I cannot extract that context from the code.</p>
+        </div>
+
+        <meta itemprop='headline' content='Event Sourcing the ActivityPub Server'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/pukkamustard.html'><span itemprop='name'>pukkamustard</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../972.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-01T06:45:14Z' class='post-time'>
+                October 1, 2020,  6:45am
+              </time>
+              <meta itemprop='dateModified' content='2020-10-01T06:45:14Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="berkes" data-post="5" data-topic="972">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/berkes/40/493_2.png" class="avatar"> berkes:</div>
+<blockquote>
+<p>Out of curiosity: would it not make sense to store the inbox events, but then use a Projector to store the “inbox” in an easily retrievable storage? The most simple implemenation, for example, would be a per-actor json file <code>actors/1337/inbox.json</code> , which is the properly formed <code>OrderedCollection</code> JSON for that actor’s inbox already. I probably miss some context though, and my elixir is poor enough that I cannot extract that context from the code.</p>
+</blockquote>
+</aside>
+<p>I only have limited knowledge of Event-Sourcing/CQRS lingo - I don’t exactly know what a Projector is.</p>
+<p>But I think that is pretty much what happens - at different times. The “Projector” is the query that transforms the events into an ActivityStreams collection?</p>
+<p>Instead of doing the transformation to the <code>actors/1337/inbox.json</code> file when activities are received, this file is generated when it is queried.</p>
+        </div>
+
+        <meta itemprop='headline' content='Event Sourcing the ActivityPub Server'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/aschrijver.html'><span itemprop='name'>aschrijver</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../972.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-10-01T08:40:49Z'>
+              <time itemprop='dateModified' datetime='2020-10-01T08:46:21Z' class='post-time'>
+                October 1, 2020,  8:46am
+              </time>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="pukkamustard" data-post="6" data-topic="972">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/pukkamustard/40/111_2.png" class="avatar"> pukkamustard:</div>
+<blockquote>
+<p>I only have limited knowledge of Event-Sourcing/CQRS lingo - I don’t exactly know what a Projector is</p>
+</blockquote>
+</aside>
+<p>The common name is ‘projection’ and I guess a Projector is what creates them (e.g. for a specific domain aggregate). You will get a valid instance of the aggregate by hydrating it with all the Events that occurred either from the time of its creation, or - e.g. in case the number of events is too large for this - going from a Snapshot of the aggregate’s state at a certain moment in time, and applying Events from there.</p>
+<p>Didn’t give this much thought, but there’s no 1-to-1 mapping conceptually to the event sourcing paradigm with regards to using ActivityStreams Objects + Activities as the events themselves. In ES an event only needs to contain the state changes, and some metadata (like an <code>aggregateId</code>). Many things in AP sent over the wire contain much more than just this state, and may contain nested objects/activities.</p>
+<p>The match is still a very good one. I would go from a CQRS/ES architecture where incoming messages on the C2S/S2S api’s trigger commands that are executed, e.g. <code>FollowPerson</code>, <code>FavoriteToot</code>. A successful follow request then triggers a <code>PersonFollowed</code> event on the <code>Person</code> actor (an aggregate root in DDD terminology).</p>
+<p>But I think <a class="mention" href="../../../u/berkes.html">@berkes</a> has given this some thought already when mentioning ‘internal events’. There needs to be some translation from e.g. an incoming ‘Like’ activity to a ‘Liked’ event applied to a specific ‘Note’ or ‘Actor’ or whatever aggregate root, which is subsequently persisted in the event store. One incoming AP message may trigger multiple events. Besides executing separate commands, the events may trigger sagas (workflows) that invoke other commands in turn.</p>
+<p>Note that CQRS and ES are different concepts and can be implemented independently of each other. CQRS means separating the ‘reads’ from the writes’, typically by having Command classes (writes) and Query classes (reads). Without Event Sourcing executing a command might lead to persisting data in a normalized relational DB model, and - when querying - consulting denormalized views that are optimized for quickly loading specific UI layouts. But that last bit is not required either.</p>
+<p>With ES in the mix, you could still do with just one DB. With CQRS/ES you get things like: <code>CreateUserCommand</code> (a use case / feature) ➜ <code>UserCreatedEvent</code>. When fully separating write-side and read-side and having 2 databases things get most interesting, but also most complex. When storing events in a single table, or a specialized eventstore, you can now reproduce the state of the system in any moment of time, do time-travel, etc. Plus no data gets deleted, whereas in a relational CRUD system with every update you lose history.</p>
+<p>Though it has a lot of advantages, the cons - apart from deletion being harder - are also added complexity due to eventual consistency, where the state of the read side lags behind that of the write side. It can be harder to trace what is happening in your system e.g. when this creates timing-related issues.</p>
+<p>Btw, am no expert either, but very interested in a DDD / CQRS and maybe ES and maybe Actor Model (yes, all the buzzwords <img src="../../../images/emoji/twitter/yum.png@v=9" title=":yum:" class="emoji" alt=":yum:"> )  based architecture for a fediverse application. Note that for testing behavior-driven design (BDD) is very well suited, and you can have executable tests based on plaintext feature descriptions (very nice to get non-technical people in the loop).</p>
+<p>I am looking to implement with <a class="mention" href="../../../u/cjs.html">@cjs</a> <a href="https://go-fed.org" rel="nofollow noopener"><strong>go-fed</strong></a> due to the solid AS/AP foundation it delivers, and how it supports modularity and extendability where AP extensions are defined in a JSON-LD-formatted OWL2-subset vocabulary definition. (I am no Go programmer yet, so that’s a challenge).</p>
+<p>Finally, what’s also interesting if you go DDD/CQRS/ES is to apply Clean Architecture in your project structure, i.e. browsing the code repo should immediately make clear which file contains what. It communicates the architecture. I just finished a follow-up to a discussion I have about this. See <a href="https://github.com/eminetto/clean-architecture-go-v2/issues/3" rel="nofollow noopener"><strong>Clean architecture folder structure</strong></a> on github.</p>
+<p><a class="mention" href="../../../u/berkes.html">@berkes</a> what kind of app do you have in mind? And what language / frameworks do you want to use?</p>
+        </div>
+
+        <meta itemprop='headline' content='Event Sourcing the ActivityPub Server'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/berkes.html'><span itemprop='name'>berkes</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../972.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-10-02T09:20:45Z'>
+              <time itemprop='dateModified' datetime='2020-10-02T09:22:43Z' class='post-time'>
+                October 2, 2020,  9:22am
+              </time>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks for the elaborate reply!</p>
+<aside class="quote no-group quote-modified" data-username="aschrijver" data-post="7" data-topic="972">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/aschrijver/40/278_2.png" class="avatar"> aschrijver:</div>
+<blockquote>
+<p>Didn’t give this much thought, but there’s no 1-to-1 mapping conceptually to the event sourcing paradigm with regards to using ActivityStreams Objects + Activities as the events themselves. […]</p>
+<p>But I think <a class="mention" href="../../../u/berkes.html">@berkes</a> has given this some thought already when mentioning ‘internal events’. There needs to be some translation from […]</p>
+</blockquote>
+</aside>
+<p>Indeed, and good that you explicitely bring this up. Two things are impoortant, IMHO:</p>
+<ul>
+<li>AP is not event-sourced (nor is it MVC or Reactive or anything), so an important part of such software would be to translate from and to ActivityPub-isms to Events: e.g. POSTing an activity in your outbox, would result in an “internal” <code>ActivityAddedToOutbox</code>. And a federated POST into your Inbox would result in a <code>ActivityAddedToInbox</code>. Those are <em>not</em> in your case or implementations’ domain; they are merely a mechanism to hook AP up to an event-sourced system.</li>
+<li>From there, the Domain should use Domain language and not ActivityPub-isms. So, if, in e.g. your “actity-pub-enabled office collaboration suite” someone shares a document, a <code>DocumentShared</code>-event is emitted. <em>One</em> of the handlers of that event would then wrap the data and emit that as an <code>ActivityAddedToOutbox</code>. Reversed, a <code>notification_service</code> would probably listen to incoming <code>ActivityAddedToInbox</code> and emit <code>PushNotificationSent</code> or <code>NotificationEmailSent</code> event; or <code>DocumentThumbnailCreated</code>; whatever your domain needs.</li>
+</ul>
+<blockquote>
+<p><a class="mention" href="../../../u/berkes.html">@berkes</a> what kind of app do you have in mind? And what language / frameworks do you want to use?</p>
+</blockquote>
+<p>I’m building <a href="https://flockingbird.social" rel="nofollow noopener">https://flockingbird.social</a>. Also discussed <a href="../../early-feedback-and-presentation-of-a-federated-professional-business-network/743/10.html">on this forum</a>. When I say “building”: I’m not yet writing code (unfortunately) but exploring, interviewing, wireframing and whatnot.</p>
+<p>WRT languages and frameworks, I’ve narrowed it down to either Ruby or Rust. Because I am fluent in Ruby and because that allows me to steal/use a lot from Mastodon. Rust, because I know that too, and it would make the core (and possibly the entire software) a <em>lot</em> easier to distribute and run. Dropping it on a Raspberry-pi is nearly impossible with a ruby-suite (even more so if, like mastodon, you need sidekiq, redis, postgres, nodejs, elasticsearch and whatnot to run it). But dropping a binary on your Pi, and then running it, is perfectly doable. I do lean towards Ruby, with event_sourcery (framework I’m familiar with) or Sequent (framework I’ve not yet used) because of my familiarity, for the the MVC and PoC.</p>
+<p>Go (go-fed) and .net (kroeg) is, unfortunately, no option for me, I can read and hack me some go, but not architecture a full product in it. Same with .net.</p>
+        </div>
+
+        <meta itemprop='headline' content='Event Sourcing the ActivityPub Server'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/aschrijver.html'><span itemprop='name'>aschrijver</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../972.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-10-02T09:28:01Z'>
+              <time itemprop='dateModified' datetime='2020-10-02T09:33:40Z' class='post-time'>
+                October 2, 2020,  9:33am
+              </time>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="berkes" data-post="8" data-topic="972">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/berkes/40/493_2.png" class="avatar"> berkes:</div>
+<blockquote>
+<p>Go (go-fed) and .net (kroeg) is, unfortunately, no option for me, I can read and hack me some go, but not architecture a full product in it. Same with .net.</p>
+</blockquote>
+</aside>
+<p>Yes, can imagine that’s a challenge, as it will be for me too. <a class="mention" href="../../../u/cjs.html">@cjs</a> plans to work further on <a href="https://github.com/go-fed/apcore" rel="nofollow noopener">apcore</a> which has all the basics in place for an AP server, and I intend to (maybe) build from this and first create a ‘Groundwork’ project that allows for pluggable modules (DDD, CQRS, maybe ES). I’ve described a bit more about this in my comment to <a href="../../go-fed-past-present-and-future/949/2.html" class="inline-onebox">Go-Fed: Past, Present, and Future</a>.</p>
+        </div>
+
+        <meta itemprop='headline' content='Event Sourcing the ActivityPub Server'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/aschrijver.html'><span itemprop='name'>aschrijver</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../972.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-05-17T22:07:44Z'>
+              <time itemprop='dateModified' datetime='2021-05-17T22:24:19Z' class='post-time'>
+                May 17, 2021, 10:24pm
+              </time>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>For anyone interested in the topics addressed in this thread, you should take a look at the Proof of Concept that Flockingbird has been building, which contains aspects of a DDD/CQRS/ES architecture:</p>
+<aside class="onebox githubfolder">
+  <header class="source">
+      <img src="../../../uploads/default/original/1X/bad3e5f9ad67c1ddf145107ce7032ac1d7b22563.svg" class="site-icon" width="32" height="32">
+      <a href="https://github.com/Flockingbird/roost" target="_blank" rel="noopener">github.com</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/230;"><img src="../../../uploads/default/optimized/2X/b/b6fc53867a82530ad6d2c3686b38d28ee2b9a72d_2_690x230.jpeg" class="thumbnail" width="690" height="230" srcset="../../../uploads/default/optimized/2X/b/b6fc53867a82530ad6d2c3686b38d28ee2b9a72d_2_690x230.jpeg, ../../../uploads/default/optimized/2X/b/b6fc53867a82530ad6d2c3686b38d28ee2b9a72d_2_1035x345.jpeg 1.5x, ../../../uploads/default/optimized/2X/b/b6fc53867a82530ad6d2c3686b38d28ee2b9a72d_2_1380x460.jpeg 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/b/b6fc53867a82530ad6d2c3686b38d28ee2b9a72d_2_10x10.png"></div>
+
+<h3><a href="https://github.com/Flockingbird/roost" target="_blank" rel="noopener">Flockingbird/roost</a></h3>
+
+
+  <p><span class="label1">Proof of Concept for Eventsourced backend. Contribute to Flockingbird/roost development by creating an account on GitHub.</span></p>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>Regarding Behavior Driven Design (BDD) the folks at TrustBloc ORB have some nice examples in their ActivityPub app. Here and excerpt of a <a href="https://github.com/trustbloc/orb/blob/ced153e7b2f81044679ebe10596123937da794c5/test/bdd/features/activitypub.feature">BDD test for ActivityPub</a> itself:</p>
+<pre><code class="lang-auto">  Scenario: Get service public key
+    When an HTTP GET is sent to "https://orb.domain1.com/services/orb/keys/main-key"
+    Then the JSON path "id" of the response equals "https://orb.domain1.com/services/orb/keys/main-key"
+    Then the JSON path "owner" of the response equals "https://orb.domain1.com/services/orb"
+    Then the JSON path "publicKeyPem" of the response is not empty
+
+    When an HTTP GET is sent to "https://orb.domain2.com/services/orb/keys/main-key"
+    Then the JSON path "id" of the response equals "https://orb.domain2.com/services/orb/keys/main-key"
+    Then the JSON path "owner" of the response equals "https://orb.domain2.com/services/orb"
+    Then the JSON path "publicKeyPem" of the response is not empty
+</code></pre>
+<p>For the record, these tests are part of the codebase, and are directly executed. And still readable to non-technical users (though AP federation in this case is not the best example for that).</p>
+        </div>
+
+        <meta itemprop='headline' content='Event Sourcing the ActivityPub Server'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

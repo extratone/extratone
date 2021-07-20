@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Birds of feather planning session</title>
+    <link>https://socialhub.activitypub.rocks/t/birds-of-feather-planning-session/930</link>
+    <description>https://conf.activitypub.rocks/#bof
+
+A meeting to organize [all the Birds of a feather sessions](https://socialhub.activitypub.rocks/tag/bof)</description>
+    
+    <lastBuildDate>Fri, 02 Oct 2020 21:34:19 +0000</lastBuildDate>
+    <category>ActivityPub Conference 2020</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/birds-of-feather-planning-session/930.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Birds of feather planning session</title>
+        <dc:creator><![CDATA[mlemweb]]></dc:creator>
+        <description><![CDATA[
+            <p>Here are the links the the BBB rooms for the BoF sessions:</p>
+<p>Room A: <a href="https://bbb.fosshost.org/b/mor-fee-7b4-2nh" rel="nofollow noopener">https://bbb.fosshost.org/b/mor-fee-7b4-2nh</a></p>
+<p>Room B: <a href="https://bbb.fosshost.org/b/mor-nhi-rdx-5ag" rel="nofollow noopener">https://bbb.fosshost.org/b/mor-nhi-rdx-5ag</a></p>
+<p>Room C: <a href="https://bbb.fosshost.org/b/mor-6kc-xbg-csu" rel="nofollow noopener">https://bbb.fosshost.org/b/mor-6kc-xbg-csu</a></p>
+<p>Room D: <a href="https://bbb.fosshost.org/b/mor-czl-akt-nyx" rel="nofollow noopener">https://bbb.fosshost.org/b/mor-czl-akt-nyx</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/birds-of-feather-planning-session/930/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/birds-of-feather-planning-session/930/3</link>
+        <pubDate>Fri, 02 Oct 2020 21:34:19 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-930-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/birds-of-feather-planning-session/930.rss">Birds of feather planning session</source>
+      </item>
+      <item>
+        <title>Birds of feather planning session</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>If not done yet, please add your Fediverse handles here: <a href="https://socialhub.activitypub.rocks/t/rsvp-meet-and-greet/1009" class="inline-onebox">RSVP - Meet and Greet</a></p>
+<hr>
+<p>BoF proposals can be found here: <a href="https://socialhub.activitypub.rocks/tag/bof">https://socialhub.activitypub.rocks/tag/bof</a></p>
+<p>(Moderators are in <strong>bold</strong>, Times are UTC)</p>
+<p>10:00-11:00<br>
+Room A: The fediverse as an educational platform ( <strong>morgan</strong> ; mayel; jfred; der.hans; Adrian (I can’t make it this early) Chris) <a href="https://socialhub.activitypub.rocks/t/the-fediverse-as-an-educational-platform/983" class="inline-onebox">The fediverse as an educational platform</a></p>
+<p>Room B: <a href="https://socialhub.activitypub.rocks/t/discovery-for-interoperability/992/" class="inline-onebox">Discovery for Interoperability</a> sebastian  <strong>cj</strong>  michael</p>
+<p>Room C:</p>
+<p>Room D:</p>
+<hr>
+<p>11:00-12:00</p>
+<p>Room A:  (merged two sessions) <a href="https://socialhub.activitypub.rocks/t/activitypub-experimentation-towards-ap-v2/840" class="inline-onebox">ActivityPub Experimentation: Towards AP v2</a> and <a href="https://socialhub.activitypub.rocks/t/getting-extensions-into-the-activitystreams-2-0-namespace/1001" class="inline-onebox">Getting extensions into the ActivityStreams 2.0 namespace</a>  rhiaro <strong>Chris</strong> hellekin pukkamustard mayel cj, Michael</p>
+<p>Room B</p>
+<p>Room C</p>
+<p>Room D</p>
+<hr>
+<p>12:00-13:00</p>
+<p>Room A: <a href="https://socialhub.activitypub.rocks/t/scaling-up-cooperation/837" class="inline-onebox">Scaling Up Cooperation</a>  <strong>hellekin</strong> mayel cj</p>
+<p>Room B</p>
+<p>Room C</p>
+<p>Room D Spritely (or ocaps or virtual worlds) BoF? ( <strong>Chris</strong> , jfred, mayel, rzr?) <a href="https://socialhub.activitypub.rocks/t/spritely-or-ocaps-or-virtual-worlds-bof/985" class="inline-onebox">Spritely (or ocaps or virtual worlds) BoF?</a></p>
+<hr>
+<p>13:00-14:00</p>
+<p>Room A <a href="https://socialhub.activitypub.rocks/t/how-to-use-groups/1005" class="inline-onebox">How to use Groups</a> (mayel, jfred, sebastian,  <strong>chris</strong> ) michael</p>
+<p>Room B</p>
+<p>Room C: <a href="https://socialhub.activitypub.rocks/t/events-in-activitypub/999" class="inline-onebox">Events in ActivityPub</a> mayel, Michael, Sebastian, der.hans</p>
+<p>Room D: <a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/996" class="inline-onebox">The ActivityPub Test suite</a>  <strong>cj</strong></p>
+<hr>
+<p>14:00-15:00<br>
+Room A <a href="https://socialhub.activitypub.rocks/t/ap-mashup-how-would-you-like-disparate-ap-services-to-intermingle/839" class="inline-onebox">AP Mashup? How would you like disparate AP services to intermingle?</a>  <strong>der.hans</strong> , jfred,  <strong>Chris</strong></p>
+<p>Room B <a href="https://socialhub.activitypub.rocks/t/topics-and-services-we-can-subscribe-to/995" class="inline-onebox">"Topics" and Services we can subscribe to</a> |  <strong>schmittlauch</strong> , sebastian, mayel, Adrian, Michael</p>
+<p>Room C</p>
+<p>Room D</p>
+<hr>
+<p>15:00-16:00</p>
+<p>Room A <a href="https://socialhub.activitypub.rocks/t/intermapping/838" class="inline-onebox">Intermapping</a>  see Also: <a href="https://talk.incommon.cc/t/about-intermapping/619">https://talk.incommon.cc/t/about-intermapping/619</a> <strong>natacha</strong> schmittlauch hellekin pukkamustard Morgan Chris</p>
+<p>Room B <a href="https://socialhub.activitypub.rocks/t/implementing-activitypub-client-to-server/981" class="inline-onebox">Implementing ActivityPub Client-to-Server</a> moderated by CJ, Sebastian</p>
+<p>Room C</p>
+<p>Room D</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/birds-of-feather-planning-session/930/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/birds-of-feather-planning-session/930/2</link>
+        <pubDate>Fri, 02 Oct 2020 16:12:36 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-930-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/birds-of-feather-planning-session/930.rss">Birds of feather planning session</source>
+      </item>
+      <item>
+        <title>Birds of feather planning session</title>
+        <dc:creator><![CDATA[system]]></dc:creator>
+        <description><![CDATA[
+            <aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <a href="https://conf.activitypub.rocks/#bof" target="_blank">#apconf</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/345;"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/36abcb49fe32ac5223d5ae2433a12a8673619fc7_2_690x345.png" class="thumbnail" width="690" height="345" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/36abcb49fe32ac5223d5ae2433a12a8673619fc7_2_690x345.png, https://socialhub.activitypub.rocks/uploads/default/optimized/1X/36abcb49fe32ac5223d5ae2433a12a8673619fc7_2_1035x517.png 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/1X/36abcb49fe32ac5223d5ae2433a12a8673619fc7.png 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/36abcb49fe32ac5223d5ae2433a12a8673619fc7_2_10x10.png"></div>
+
+<h3><a href="https://conf.activitypub.rocks/#bof" target="_blank">ActivityPub Conference 2020 Virtual</a></h3>
+
+<p>A conference about the present and future of ActivityPub, the world’s leading federated social web standard. Presentations of prepared talks followed by a loosely structured unconference. #apconf</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>A meeting to organize <a href="https://socialhub.activitypub.rocks/tag/bof">all the Birds of a feather sessions</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/birds-of-feather-planning-session/930/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/birds-of-feather-planning-session/930/1</link>
+        <pubDate>Wed, 30 Sep 2020 13:45:02 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-930-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/birds-of-feather-planning-session/930.rss">Birds of feather planning session</source>
+      </item>
+  </channel>
+</rss>

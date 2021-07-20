@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Olki - SocialHub</title>
+    <link>https://socialhub.activitypub.rocks/c/software/olki/23</link>
+    <description>Topics in the &#39;Olki&#39; category Self-hosted science: corpora, peer reviews, alerts, all in one simple gateway to the fediverse for a science that is more open to the public.</description>
+    
+      <lastBuildDate>Sat, 05 Oct 2019 14:38:59 +0000</lastBuildDate>
+      <atom:link href="https://socialhub.activitypub.rocks/c/software/olki/23.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>About OLKi</title>
+          <dc:creator><![CDATA[rigelk]]></dc:creator>
+          <category>Olki</category>
+          <description><![CDATA[
+            <p><img src="https://socialhub.activitypub.rocks/images/emoji/twitter/alembic.png?v=9" title=":alembic:" class="emoji" alt=":alembic:"> Self-hosted science: corpora, peer reviews, alerts, all in one simple gateway to the fediverse for a science that is more open to the public.</p>
+<p>OLKi aims to bring scientific interactions to the fediverse, and be a platform of choice to host datasets and related assets necessary to reproduce and analyze all kind of scientific data, but also interact (comment, annotate, poll and more) with them. See the <a href="https://olki.loria.fr/blog/usecase/" rel="nofollow noopener">use cases</a>.</p>
+<p>The whole platform focuses on <em>corpora</em> (any set of files from single preprint pdfs to multi-GB datasets, usually but not limited to scientific output) and <em>interactions</em> around them.</p>
+<p>OLKi is <em>alpha software not ready for production yet,</em> in the meantime read more about it in:</p>
+<ul>
+<li>the <a href="https://olki.loria.fr/platform/" rel="nofollow noopener">landing page</a> (short information)</li>
+<li>the <a href="https://framagit.org/synalp/olki/olki/wikis/Frequently-Asked-Questions" rel="nofollow noopener">wiki F.A.Q.</a> (various questions answered)</li>
+<li>the <a href="https://framagit.org/synalp/olki/olki" rel="nofollow noopener">source code</a>
+</li>
+</ul>
+<p>You can reach the community on this sub-forum regarding all questions, except technical ones that should be put on the <a href="https://framagit.org/synalp/olki/olki" rel="nofollow noopener">issue tracker</a>.</p>
+<p>OLKi extends the ActivityStreams vocabulary to fit scientific uses cases. See its extension specification, <a href="https://synalp.frama.io/olki/scifed" rel="nofollow noopener">SciFed</a>.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/about-olki/84">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/about-olki/84</link>
+          <pubDate>Sat, 05 Oct 2019 14:38:59 +0000</pubDate>
+          <discourse:topicPinned>Yes</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-84</guid>
+          <source url="https://socialhub.activitypub.rocks/t/about-olki/84.rss">About OLKi</source>
+        </item>
+  </channel>
+</rss>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Minimum Viable ActivityPub Implementation</title>
+    <link>https://socialhub.activitypub.rocks/t/minimum-viable-activitypub-implementation/1790</link>
+    <description>Hello, I&#39;m working with the [Open Metaverse Interoperability Group](https://github.com/omigroup/OMI) (OMI) on figuring out how we might use ActivityPub to represent identity across multiple virtual worlds. Identity in this case being, at a minimum, display name and a url to the person&#39;s avatar model.
+
+Our definition of the metaverse aligns pretty closely with the fediverse. We believe that the metaverse is composed of a series of interconnected virtual worlds. No one organization can control the metaverse and anyone can create and host a connected virtual world. We&#39;re focused on determining pieces that can be interoperable and this identity spec is the first of one of those possible points of interoperability.
+
+I attended the W3C SocialWeb CG meeting this morning and brought up a concern from some people in our community. ActivityPub is a large spec, creating a full implementation is a lot of work. Right now we could get away with only requiring the data expressed in the Actor object and a small extension for the avatar model. Would encouraging members of our community to focus on supporting this small subset of the spec and allowing for servers that only implement the inbox/outbox and activities that modify the Actor object be in line with the views of this community? I&#39;ve seen ActivityPub servers that only support certain subsets of the spec, but this is a very extreme case. Would we be creating a mess if we encouraged people to do this?
+
+I don&#39;t see how we can require users wishing to develop their own server implementations for our use case to implement the whole ActivityPub spec. Certainly, some will take the existing full implementations like Mastodon and extend it to support OMI&#39;s specs. But people want to be able to implement the whole stack themselves. Removing requirements for additional complexity that we won&#39;t use seems like a good way to get people on board with ActivityPub in our field.
+
+Curious to hear your feedback, thank you!</description>
+    
+    <lastBuildDate>Wed, 26 May 2021 13:23:07 +0000</lastBuildDate>
+    <category>ActivityPub</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/minimum-viable-activitypub-implementation/1790.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Minimum Viable ActivityPub Implementation</title>
+        <dc:creator><![CDATA[datatitian]]></dc:creator>
+        <description><![CDATA[
+            <p>This is a great suggestion for <a class="mention" href="/u/robertlong">@robertlong</a> . ActivityPub is a bit of a turducken of specs, inside is ActivityStreams 2 which gives you the actor model &amp; vocabulary, and ActivityPub on top is pretty much just adding a few properties to the Actor for federated pub/sub endpoints (inbox, outbox, followers, following, et c) and the implementation details of those endpoints.</p>
+<p>It makes sense as a starting point. I think you’ll find pretty quickly that you want ActivityPub as well to make it functional.  e.g. You’ve got an actor object, but how does one change their current avatar? ActivityPub client-to-server offers a standardized protocol (post an Update activity to one’s outbox) and then ActivityPub server-to-server distributes it so that your contacts are made aware of your new avatar.</p>
+<p>However, if you start with ActivityStreams 2, then any progression into ActivityPub can be smooth and incremental, so it makes sense as a starting point.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/minimum-viable-activitypub-implementation/1790/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/minimum-viable-activitypub-implementation/1790/7</link>
+        <pubDate>Wed, 26 May 2021 13:23:07 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1790-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/minimum-viable-activitypub-implementation/1790.rss">Minimum Viable ActivityPub Implementation</source>
+      </item>
+      <item>
+        <title>Minimum Viable ActivityPub Implementation</title>
+        <dc:creator><![CDATA[robertlong]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>If you’re talking only about <em>identity</em> , then you don’t even need a server application, strictly speaking — a static json file with the actor would suffice.</p>
+</blockquote>
+<blockquote>
+<p>It sounds like what you want isn’t an actor-based publish/subscribe framework, and instead you just want to use ActivityStreams 2 for representing information about your social network.</p>
+</blockquote>
+<p>Thank you both for pointing that out! I get caught up with the inbox/outbox concepts of ActivityPub, but you’re right, we’re looking at the Actor’s data more than the federated pub/sub aspect of it. But even still, it can be fairly simple to implement. I’ll go back to our community with these responses and see what people think.</p>
+<p>Also, that conformance thread is very helpful, thank you <a class="mention" href="/u/aschrijver">@aschrijver</a>!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/minimum-viable-activitypub-implementation/1790/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/minimum-viable-activitypub-implementation/1790/6</link>
+        <pubDate>Mon, 24 May 2021 21:00:21 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1790-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/minimum-viable-activitypub-implementation/1790.rss">Minimum Viable ActivityPub Implementation</source>
+      </item>
+      <item>
+        <title>Minimum Viable ActivityPub Implementation</title>
+        <dc:creator><![CDATA[kube]]></dc:creator>
+        <description><![CDATA[
+            <p>This is neato! I spent a while pondering, and my thinking goes: pub/sub is useful for mesh behavior that is <em>client-driven</em>, as opposed to <em>server-driven</em>.</p>
+<ul>
+<li>Accounts publish links to datastreams that import meshes and their transforms.</li>
+<li>Subscribing to an account means rendering that account’s meshes in 3D space.</li>
+</ul>
+<p>Under this framework, even avatars are client-driven meshes.</p>
+<p>There’s no existing metaverse this robust and extensible. ActivityPub-conforming interoperability is practical only if you’re willing to navigate the unfamiliar territory of a novel metaverse framework.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/minimum-viable-activitypub-implementation/1790/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/minimum-viable-activitypub-implementation/1790/5</link>
+        <pubDate>Sat, 22 May 2021 17:27:32 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1790-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/minimum-viable-activitypub-implementation/1790.rss">Minimum Viable ActivityPub Implementation</source>
+      </item>
+      <item>
+        <title>Minimum Viable ActivityPub Implementation</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>In light of this discussion I would like to cross-reference this related thread:</p>
+<aside class="quote quote-modified" data-post="1" data-topic="1733">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/aschrijver/40/278_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/what-does-activitystreams-conformance-mean/1733">What does ActivityStreams Conformance mean?</a> <a class="badge-wrapper  box" href="/c/activitypub/5"><span class="badge-category-bg" style="background-color: #0088CC;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Discuss the ActivityPub Recommendation, how to implement it, how to extend it. Home of the ActivityPub SIG.">ActivityPub</span></a>
+  </div>
+  <blockquote>
+    I see a lot of times the conformance of applications being brought up in topics, e.g: 
+
+Indeed, what is “the entirety” and in that light what is Conformant? 
+
+It seems to me that ‘conformance’ (as applying to AS vocab) has a very broad range: 
+
+All properties are optional (including the id and type ).
+Most properties are defined on the root Object type, applying to all sub-types.
+Applications are free to define the semantics, e.g. choose to use Document for images.
+And this applies to activities…
+  </blockquote>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/minimum-viable-activitypub-implementation/1790/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/minimum-viable-activitypub-implementation/1790/4</link>
+        <pubDate>Sat, 22 May 2021 04:07:05 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1790-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/minimum-viable-activitypub-implementation/1790.rss">Minimum Viable ActivityPub Implementation</source>
+      </item>
+      <item>
+        <title>Minimum Viable ActivityPub Implementation</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey! First off, welcome! Sorry I couldn’t be at the meeting this morning, since it’s during my working hours, but this is a very interesting space and I’m really glad to see more standardization around it!</p>
+<p>However, I’m a little confused about this question—the server to server spec is already very minimal, doing almost the bare minimum needed to set up a actor-based publish/subscribe framework.</p>
+<p>It sounds like what you want isn’t an actor-based publish/subscribe framework, and instead you just want to use ActivityStreams 2 for representing information about your social network. AS2 is a separate spec defining the data model that ActivityPub implements its pub/sub functionality on top of. If you’re not looking for any of the publish/subscribe functionality of ActivityPub, then maybe starting with as2 is a better bet?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/minimum-viable-activitypub-implementation/1790/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/minimum-viable-activitypub-implementation/1790/3</link>
+        <pubDate>Fri, 21 May 2021 22:52:46 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1790-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/minimum-viable-activitypub-implementation/1790.rss">Minimum Viable ActivityPub Implementation</source>
+      </item>
+      <item>
+        <title>Minimum Viable ActivityPub Implementation</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>If you’re talking only about <em>identity</em>, then you don’t even need a server application, strictly speaking — a static json file with the actor would suffice. You only need the inbox if you want to receive activities. And I can’t recommend my own approach enough: treat ActivityPub as an API you expose for other servers to interact with.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/minimum-viable-activitypub-implementation/1790/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/minimum-viable-activitypub-implementation/1790/2</link>
+        <pubDate>Fri, 21 May 2021 22:34:10 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1790-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/minimum-viable-activitypub-implementation/1790.rss">Minimum Viable ActivityPub Implementation</source>
+      </item>
+      <item>
+        <title>Minimum Viable ActivityPub Implementation</title>
+        <dc:creator><![CDATA[robertlong]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello, I’m working with the <a href="https://github.com/omigroup/OMI" rel="noopener nofollow ugc">Open Metaverse Interoperability Group</a> (OMI) on figuring out how we might use ActivityPub to represent identity across multiple virtual worlds. Identity in this case being, at a minimum, display name and a url to the person’s avatar model.</p>
+<p>Our definition of the metaverse aligns pretty closely with the fediverse. We believe that the metaverse is composed of a series of interconnected virtual worlds. No one organization can control the metaverse and anyone can create and host a connected virtual world. We’re focused on determining pieces that can be interoperable and this identity spec is the first of one of those possible points of interoperability.</p>
+<p>I attended the W3C SocialWeb CG meeting this morning and brought up a concern from some people in our community. ActivityPub is a large spec, creating a full implementation is a lot of work. Right now we could get away with only requiring the data expressed in the Actor object and a small extension for the avatar model. Would encouraging members of our community to focus on supporting this small subset of the spec and allowing for servers that only implement the inbox/outbox and activities that modify the Actor object be in line with the views of this community? I’ve seen ActivityPub servers that only support certain subsets of the spec, but this is a very extreme case. Would we be creating a mess if we encouraged people to do this?</p>
+<p>I don’t see how we can require users wishing to develop their own server implementations for our use case to implement the whole ActivityPub spec. Certainly, some will take the existing full implementations like Mastodon and extend it to support OMI’s specs. But people want to be able to implement the whole stack themselves. Removing requirements for additional complexity that we won’t use seems like a good way to get people on board with ActivityPub in our field.</p>
+<p>Curious to hear your feedback, thank you!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/minimum-viable-activitypub-implementation/1790/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/minimum-viable-activitypub-implementation/1790/1</link>
+        <pubDate>Fri, 21 May 2021 20:33:16 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1790-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/minimum-viable-activitypub-implementation/1790.rss">Minimum Viable ActivityPub Implementation</source>
+      </item>
+  </channel>
+</rss>

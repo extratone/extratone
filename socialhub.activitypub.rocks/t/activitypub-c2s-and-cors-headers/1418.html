@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>ActivityPub C2S and CORS headers - Client to Server - SocialHub</title>
+    <meta name="description" content="I am working on Jejune, a personal ActivityPub server that has a featureset similar to Tumblr. 
+As part of this, Jejune Client is an ActivityPub C2S client which runs in the browser to allow the user to manage her instan&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="1418.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;ActivityPub C2S and CORS headers&#39;" href="1418.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/activitypub-c2s-and-cors-headers/1418" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/activitypub-c2s-and-cors-headers/1418" />
+<meta property="og:title" content="ActivityPub C2S and CORS headers" />
+<meta name="twitter:title" content="ActivityPub C2S and CORS headers" />
+<meta property="og:description" content="I am working on Jejune, a personal ActivityPub server that has a featureset similar to Tumblr.  As part of this, Jejune Client is an ActivityPub C2S client which runs in the browser to allow the user to manage her instance, read posts in her inbox and publish new posts to her friends.  As part of this process, I have discovered that many AP servers do not consistently provide CORS headers when fetching ActivityPub objects.  For example, SocialHome does not provide any CORS headers when fetching ..." />
+<meta name="twitter:description" content="I am working on Jejune, a personal ActivityPub server that has a featureset similar to Tumblr.  As part of this, Jejune Client is an ActivityPub C2S client which runs in the browser to allow the user to manage her instance, read posts in her inbox and publish new posts to her friends.  As part of this process, I have discovered that many AP servers do not consistently provide CORS headers when fetching ActivityPub objects.  For example, SocialHome does not provide any CORS headers when fetching ..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="1 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="2 ❤" />
+<meta property="article:published_time" content="2021-02-06T22:22:09+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="1418.html">ActivityPub C2S and CORS headers</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/activitypub.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #0088CC'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>ActivityPub</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/activitypub/c2s/6.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #ED207B'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Client to Server</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/kaniini.html'><span itemprop='name'>kaniini</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1418.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-02-06T22:22:09Z'>
+              <time itemprop='dateModified' datetime='2021-02-09T20:31:30Z' class='post-time'>
+                February 9, 2021,  8:31pm
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I am working on <a href="https://github.com/kaniini/jejune" rel="noopener nofollow ugc">Jejune</a>, a personal ActivityPub server that has a featureset similar to Tumblr.</p>
+<p>As part of this, <a href="https://github.com/kaniini/jejune-client" rel="noopener nofollow ugc">Jejune Client</a> is an ActivityPub C2S client which runs in the browser to allow the user to manage her instance, read posts in her inbox and publish new posts to her friends.</p>
+<p>As part of this process, I have discovered that many AP servers do not consistently provide CORS headers when fetching ActivityPub objects.</p>
+<p>For example, SocialHome does not provide any CORS headers when fetching ActivityStreams objects, which means that posts from SocialHome users do not appear in a correctly attributed way (as we can’t fetch the attributed actor), and Mastodon only provides CORS headers when fetching actors, but not posts and activities, which causes problems with building functionality where a user may want to examine a thread.</p>
+<p>These can be mitigated by proxying the requests through the local AP server, but I don’t think this is a good design – if I can fetch something with curl on the commandline, I believe I should be able to fetch the same content with a browser.</p>
+<p>So, I think it may be good to document the use of CORS headers when interacting with ActivityStreams/ActivityPub objects and endpoints over HTTP.  What do people think?</p>
+        </div>
+
+        <meta itemprop='headline' content='ActivityPub C2S and CORS headers'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1418.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-02-08T18:34:57Z'>
+              <time itemprop='dateModified' datetime='2021-02-08T18:35:31Z' class='post-time'>
+                February 8, 2021,  6:35pm
+              </time>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Yep. Totally agree here.<br>
+CORS caused a lot of headache already at the watertower hackathon with Chris for an IPFS example with my minimal server (by that time) and the conduit “realworld” UI. However:</p>
+<p>CORS was on my list for last SocialCG. I had proposed the topic for last meeting.<br>
+Wanted to speak about how we can document a kind of reference for a generic server which anyone could implement in the sense of interconnection.<br>
+There was “no time anymore” … … …</p>
+<p>Documenting it would be very good.</p>
+        </div>
+
+        <meta itemprop='headline' content='ActivityPub C2S and CORS headers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Claire.html'><span itemprop='name'>Claire</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1418.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-02-09T15:05:17Z'>
+              <time itemprop='dateModified' datetime='2021-02-09T16:53:42Z' class='post-time'>
+                February 9, 2021,  4:53pm
+              </time>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>While I can see the point of setting CORS headers for public AS objects and activities, I’m wary of clients being able to sign their requests.</p>
+<p>Indeed, if a browser-based software can sign their request, it means the end-user has access to the signing keys. This is fine for domains serving a single user, but it becomes an issue with domains serving multiple users as there would then be no way of guaranteeing two users of the same domain aren’t using the same identifiers for their objects.</p>
+<p>For instance, if users <code>a@foo.com</code> and <code>b@foo.com</code> both have access to their private signing key, <code>a@foo.com</code> can create a <code>Note</code> with <code>id</code> <code>https://foo.com/notes/12345</code> and <code>b@foo.com</code> could do the same, meaning a third-party instance <code>bar.com</code> may have different contents for <code>https://foo.com/notes/12345</code> depending on who sent a <code>Create</code> activity first to <code>bar.com</code>.</p>
+<p>Therefore, I’d advise against allowing the <code>Signature</code> header for such queries to objects, as well as disallowing queries to inboxes.</p>
+<p>In the end, that would mean CORS is useful for public posts, but not private posts, nor instances requiring signed fetches.</p>
+        </div>
+
+        <meta itemprop='headline' content='ActivityPub C2S and CORS headers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nightpool.html'><span itemprop='name'>nightpool</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1418.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-02-09T16:00:18Z' class='post-time'>
+                February 9, 2021,  4:00pm
+              </time>
+              <meta itemprop='dateModified' content='2021-02-09T16:00:18Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Yeah, I agree with everything Claire is saying here, and for this and other reasons I don’t think it’s feasible to have any serious C2S server that doesn’t come with an authenticated proxy server for AP requests. Toy c2s apps for now can use one of the many numerous open CORS proxies that can be found on the internet (I’ve been using <a href="https://github.com/Freeboard/thingproxy">https://github.com/Freeboard/thingproxy</a> and its public instances), but those toy apps are going to run into issues with Mastodon Secure Mode / Pleroma’s <code>as:authenticated</code> objects.</p>
+        </div>
+
+        <meta itemprop='headline' content='ActivityPub C2S and CORS headers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1418.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-02-10T15:10:41Z'>
+              <time itemprop='dateModified' datetime='2021-02-10T15:13:40Z' class='post-time'>
+                February 10, 2021,  3:13pm
+              </time>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>There are also open issues in the mastodon issue tracker.<br>
+It would be very nice if m. users and the other implementors would know about the opinions.<br>
+The last <strong>feature request</strong> is <a href="https://github.com/tootsuite/mastodon/issues/10400">https://github.com/tootsuite/mastodon/issues/10400</a></p>
+<p>The use of CORS in alternate m. clients like Pinafore is partly documented, e.g.<br>
+see <a href="https://nolanlawson.com/2018/04/09/introducing-pinafore-for-mastodon/">https://nolanlawson.com/2018/04/09/introducing-pinafore-for-mastodon/</a><br>
+“Privacy is the key:<br>
+Thanks to the magic of <a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing">CORS</a>, Pinafore is an almost purely client-side web app”</p>
+<p>Since the vast majority of people seem to use CORS (also e.g. peertube since 2.2.0 or pixelfed) and specs like remotestorage or SOLID make it mandatory:<br>
+Maybe I should write a comparison.<br>
+We will document CORS use for <em>redaktor</em> too.</p>
+<p>As far as I remember, the author of geopub pukkamustard wanted to talk about CORS to, so maybe we can inform him when we documented.</p>
+        </div>
+
+        <meta itemprop='headline' content='ActivityPub C2S and CORS headers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Cross-instance interactions: determining the kind of action user wants to perform to a remote object - ActivityPub - SocialHub</title>
+    <meta name="description" content="At least Mastodon and Pleroma have this UI to follow users and interact with posts from another instance: 
+ 
+The “API” this feature uses isn’t (wasn’t?) documented anywhere. After you enter your username@domain, it tries&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="734.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Cross-instance interactions: determining the kind of action user wants to perform to a remote object&#39;" href="https://socialhub.activitypub.rocks/t/cross-instance-interactions-determining-the-kind-of-action-user-wants-to-perform-to-a-remote-object/734.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/95760f49aaecdb8a13a714c70df618ea5decd432.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/95760f49aaecdb8a13a714c70df618ea5decd432.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/cross-instance-interactions-determining-the-kind-of-action-user-wants-to-perform-to-a-remote-object/734" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/cross-instance-interactions-determining-the-kind-of-action-user-wants-to-perform-to-a-remote-object/734" />
+<meta property="og:title" content="Cross-instance interactions: determining the kind of action user wants to perform to a remote object" />
+<meta name="twitter:title" content="Cross-instance interactions: determining the kind of action user wants to perform to a remote object" />
+<meta property="og:description" content="At least Mastodon and Pleroma have this UI to follow users and interact with posts from another instance:     The “API” this feature uses isn’t (wasn’t?) documented anywhere. After you enter your username@domain, it tries to resolve it using webfinger. Then, it looks for the object containing &quot;rel&quot;: &quot;http://ostatus.org/schema/1.0/subscribe&quot; in the links array in the webfinger response. This object must also contain a URI template in template field, with {uri} substring to be replaced with the ob..." />
+<meta name="twitter:description" content="At least Mastodon and Pleroma have this UI to follow users and interact with posts from another instance:     The “API” this feature uses isn’t (wasn’t?) documented anywhere. After you enter your username@domain, it tries to resolve it using webfinger. Then, it looks for the object containing &quot;rel&quot;: &quot;http://ostatus.org/schema/1.0/subscribe&quot; in the links array in the webfinger response. This object must also contain a URI template in template field, with {uri} substring to be replaced with the ob..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="2 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="4 ❤" />
+<meta property="article:published_time" content="2020-06-03T23:47:56+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="734.html">Cross-instance interactions: determining the kind of action user wants to perform to a remote object</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/activitypub.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #0088CC'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>ActivityPub</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="734.html">
+
+            <link itemprop="image" href="../../uploads/default/original/1X/95760f49aaecdb8a13a714c70df618ea5decd432.png">
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-06-03T23:47:56Z' class='post-time'>
+                June 3, 2020, 11:47pm
+              </time>
+              <meta itemprop='dateModified' content='2020-06-03T23:47:56Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>At least Mastodon and Pleroma have this UI to follow users and interact with posts from another instance:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="../../uploads/default/original/1X/95760f49aaecdb8a13a714c70df618ea5decd432.png" data-download-href="https://socialhub.activitypub.rocks/uploads/default/95760f49aaecdb8a13a714c70df618ea5decd432" title="Снимок экрана 2020-06-04 в 2.29.03"><img src="../../uploads/default/optimized/1X/95760f49aaecdb8a13a714c70df618ea5decd432_2_416x500.png" alt="Снимок экрана 2020-06-04 в 2.29.03" data-base62-sha1="lkc5gghopqZGiHARo4Dmo3MHEKC" width="416" height="500" srcset="../../uploads/default/optimized/1X/95760f49aaecdb8a13a714c70df618ea5decd432_2_416x500.png, ../../uploads/default/original/1X/95760f49aaecdb8a13a714c70df618ea5decd432.png 1.5x, ../../uploads/default/original/1X/95760f49aaecdb8a13a714c70df618ea5decd432.png 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/95760f49aaecdb8a13a714c70df618ea5decd432_2_10x10.png"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Снимок экрана 2020-06-04 в 2.29.03</span><span class="informations">500×600 42.5 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg></div></a></div><br>
+The “API” this feature uses isn’t (wasn’t?) documented anywhere. After you enter your username@domain, it tries to resolve it using webfinger. Then, it looks for the object containing <code>"rel": "http://ostatus.org/schema/1.0/subscribe"</code> in the <code>links</code> array in the webfinger response. This object must also contain a URI template in <code>template</code> field, with <code>{uri}</code> substring to be replaced with the object URI to be interacted with. After all this is done, the user is redirected to that URI, where their home instance shows its own UI to interact with the object.</p>
+<p>How does the home instance know what kind of interaction the user has requested? Sure I <em>can</em> get that from the referrer, but this feels like an unreliable dirty hack. Is there a better way? Mastodon simply opens the remote post, right in that popup, regardless of what you clicked previously. You click a large button that says “proceed to favorite” and are shown the post again and you have to click the star again — this kind of UX is below the bar I’ve set for myself.</p>
+<p><em>(is it okay that I keep posting my dumb questions about weird edge cases on this forum?)</em></p>
+        </div>
+
+        <meta itemprop='headline' content='Cross-instance interactions: determining the kind of action user wants to perform to a remote object'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/aschrijver.html'><span itemprop='name'>aschrijver</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="734.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-06-04T04:29:59Z'>
+              <time itemprop='dateModified' datetime='2020-06-04T04:30:33Z' class='post-time'>
+                June 4, 2020,  4:30am
+              </time>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote group-smithereen" data-username="grishka" data-post="1" data-topic="734">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/grishka/40/196_2.png" class="avatar"> grishka:</div>
+<blockquote>
+<p>(is it okay that I keep posting my dumb questions about weird edge cases on this forum?)</p>
+</blockquote>
+</aside>
+<p>While I can’t help you with the answer, I think this is more than okay: finding these, and maybe improving on legacy hacks that crept in (if that’s the case here), will make it ever easier for the next AP implementer that comes afterwards.</p>
+        </div>
+
+        <meta itemprop='headline' content='Cross-instance interactions: determining the kind of action user wants to perform to a remote object'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/yvolk.html'><span itemprop='name'>yvolk</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="734.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-06-04T05:59:52Z'>
+              <time itemprop='dateModified' datetime='2020-06-04T06:29:13Z' class='post-time'>
+                June 4, 2020,  6:29am
+              </time>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Mastodon initially reused server-to-server protocol from GNU Social. Unfortunately, from a technical point of view…<br>
+In particular, “Remote follow” feature in Mastodon still looks (and I suspect is implemented) the same way as in GNU Social 10 years ago. And this exactly Remote follow feature doesn’t work reliably between Mastodon and Pleroma now, as I experienced a couple of weeks ago, trying to follow an actor of Pleroma instance from a Mastodon instance.</p>
+<p>On the other hand, <a href="http://Pump.io" rel="nofollow noopener">Pump.io</a> ( <a href="https://github.com/pump-io/pump.io/blob/9dc4d06276cd628556427bf03d3d79d062824a7f/API.md" rel="nofollow noopener">https://github.com/pump-io/pump.io/blob/9dc4d06276cd628556427bf03d3d79d062824a7f/API.md</a> ), created as a GNU Social successor by the developer of GNU Social in 2013 (and which is very close to ActivityPub…), allows e.g. “remote follow” transparently for a client app and its user. It doesn’t work there 100% smoothly also, as I noticed, but at least it doesn’t require manual steps like you described.</p>
+<p>So my advice is to lookup <a href="http://Pump.io" rel="nofollow noopener">Pump.io</a> implementation.</p>
+<p>And another, more general note on <a href="http://Pump.io" rel="nofollow noopener">Pump.io</a> role in ActivityPub development.<br>
+<a class="mention-group" href="../../groups/andstatus.html">@andstatus</a> app that I’m developing supports <a href="http://Pump.io" rel="nofollow noopener">Pump.io</a> since 2013. ActivityPub support is being added since last year only. And you know, almost every feature that I add to ActivityPub in the client app, I add (or improve) and at least check and compare with <a href="http://pump.io" rel="nofollow noopener">pump.io</a>. Simply because this is live social network, based on ActivityStreams, that has working instances and that actually works.</p>
+        </div>
+
+        <meta itemprop='headline' content='Cross-instance interactions: determining the kind of action user wants to perform to a remote object'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="734.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-06-04T09:46:53Z' class='post-time'>
+                June 4, 2020,  9:46am
+              </time>
+              <meta itemprop='dateModified' content='2020-06-04T09:46:53Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’m not sure you understand my question <img src="../../images/emoji/twitter/wink.png@v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+<p>The scope of this is the web and only the web. Server-side-rendered pages, not web apps even. There’s no “client app” involved, this interaction is between instance servers.</p>
+        </div>
+
+        <meta itemprop='headline' content='Cross-instance interactions: determining the kind of action user wants to perform to a remote object'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="734.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-06-04T10:26:58Z' class='post-time'>
+                June 4, 2020, 10:26am
+              </time>
+              <meta itemprop='dateModified' content='2020-06-04T10:26:58Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’ve tested the way other popular implementations handle this.</p>
+<ul>
+<li>
+<strong>Mastodon</strong> allows both following and interacting with posts, as discussed above.</li>
+<li>
+<strong>Pleroma</strong> only allows remote following. Action icons in posts are displayed but don’t do anything unless you’re logged in on that instance.</li>
+<li>
+<strong>Misskey</strong> doesn’t support any such interactions at all.</li>
+<li>
+<strong>Friendica</strong> is weird. There is a form for you to put your username@domain in to follow someone remotely, but it doesn’t work for me. It does work for Mastodon. There are no reply/like/share buttons on posts unless you log in.</li>
+</ul>
+<p>Since Mastodon is the only implementation to support this for post interactions, I suggest to do the following:</p>
+<ul>
+<li>Use the referrer to detect the kind of interaction the user requested when it’s originated from a Mastodon instance.</li>
+<li>Invent a better and 100% reliable way of communicating that across instances going forward.
+<ul>
+<li>Add an additional parameter to the existing URI template?</li>
+<li>Also add a new <code>rel</code> to <code>links</code> to maintain perfect backwards compatibility?</li>
+<li>Does this need to be extensible? For example, do we want to be able to perform arbitrary activities remotely, passing them in as JSON objects? The user would of course see the activity on their home instance and confirm sending it.</li>
+</ul>
+</li>
+</ul>
+        </div>
+
+        <meta itemprop='headline' content='Cross-instance interactions: determining the kind of action user wants to perform to a remote object'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/yvolk.html'><span itemprop='name'>yvolk</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="734.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-06-04T16:03:32Z'>
+              <time itemprop='dateModified' datetime='2020-06-04T17:32:30Z' class='post-time'>
+                June 4, 2020,  5:32pm
+              </time>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I understood you, I think <img src="../../images/emoji/twitter/slight_smile.png@v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"><br>
+I only told you the “interaction” story from a Client app’s User point of view. But when I sent “follow that Actor” command to my account’s server, the server interacted with a server of that “remote actor”. - And this was done without any need in opening web UI!</p>
+        </div>
+
+        <meta itemprop='headline' content='Cross-instance interactions: determining the kind of action user wants to perform to a remote object'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/yvolk.html'><span itemprop='name'>yvolk</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="734.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-06-10T06:01:04Z' class='post-time'>
+                June 10, 2020,  6:01am
+              </time>
+              <meta itemprop='dateModified' content='2020-06-10T06:01:04Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote group-smithereen" data-username="grishka" data-post="4" data-topic="734">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/grishka/40/196_2.png" class="avatar"> grishka:</div>
+<blockquote>
+<p>The scope of this is the web and only the web. Server-side-rendered pages, not web apps even. There’s no “client app” involved, this interaction is between instance servers.</p>
+</blockquote>
+</aside>
+<p>“Web” notion is orthogonal to “Client” notion in terms of ActivityPub.<br>
+So “Server-side-rendered pages” may be a part of a Client or a Server in terms of ActivityPub.</p>
+<p>I’m telling that Client activity, e.g. “Follow”, should NOT require additional User’s involvement (neither via “Web” nor via other UI) no matter which Server hosts another Actor’s data.</p>
+<p>Confusion in this thread comes from an approach, when Web UI of a Social network (conceptually - a kind of a Client) is being developed as a part of a Server and interacts with its Server in a undocumented way, so developers may even forget that this IS a Client…</p>
+        </div>
+
+        <meta itemprop='headline' content='Cross-instance interactions: determining the kind of action user wants to perform to a remote object'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="734.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-06-10T09:49:42Z' class='post-time'>
+                June 10, 2020,  9:49am
+              </time>
+              <meta itemprop='dateModified' content='2020-06-10T09:49:42Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Well. We have real-world problems for which we need real-world concrete solutions. Theoretical concepts are nice but they won’t do anything to displace corporate-controlled social media, neither would they improve the UX of real fediverse projects.</p>
+        </div>
+
+        <meta itemprop='headline' content='Cross-instance interactions: determining the kind of action user wants to perform to a remote object'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/yvolk.html'><span itemprop='name'>yvolk</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="734.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-06-10T17:11:17Z'>
+              <time itemprop='dateModified' datetime='2020-06-10T17:49:31Z' class='post-time'>
+                June 10, 2020,  5:49pm
+              </time>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I see that now we understand each other <img src="../../images/emoji/twitter/slight_smile.png@v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Whether or not theoretical concepts can help Open Source / Free software development? - Good topic. Seriously.<br>
+Maybe we should start one at this site?!</p>
+        </div>
+
+        <meta itemprop='headline' content='Cross-instance interactions: determining the kind of action user wants to perform to a remote object'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="734.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-06-11T20:43:23Z'>
+              <time itemprop='dateModified' datetime='2020-06-11T20:44:16Z' class='post-time'>
+                June 11, 2020,  8:44pm
+              </time>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>If I understand correctly – and I really doubt I do – the question is whether peer Federating servers using S2S ActivityPub could also leverage a C2S ActivityPub relationship in order to do something like:</p>
+<ul>
+<li>User finds a user they want to follow on the Fediverse residing on a federating peer’s server, via a C2S-enabled browser, app, etc</li>
+<li>User clicks “follow” on that page.</li>
+<li>Federating peer’s server tells the user’s AP Client enough information to construct a “Follow”</li>
+<li>User’s AP Client sends their server the C2S “Follow”</li>
+<li>User’s server does the “S” in C2S <em>and</em> S2S ActivityPub protocol to send the “Follow” to the federating peer’s server</li>
+<li>User gets notified of the result</li>
+</ul>
+<p>That would be a 1-click, 1 new follow. Repeat for “like” and other federating actions.</p>
+<p>This would definitely require a community convention and modification of browsers / apps to be the “C” in AP C2S, and convince existing AP S2S software implementations to support AP C2S, and then adopt this specific use case.</p>
+        </div>
+
+        <meta itemprop='headline' content='Cross-instance interactions: determining the kind of action user wants to perform to a remote object'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

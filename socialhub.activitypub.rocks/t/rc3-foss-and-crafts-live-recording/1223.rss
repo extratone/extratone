@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>rC3 – FOSS and Crafts Live Recording</title>
+    <link>https://socialhub.activitypub.rocks/t/rc3-foss-and-crafts-live-recording/1223</link>
+    <description>[date=2020-12-30 time=15:00:00 timezone=&quot;Europe/Berlin&quot;]
+
+## [FOSS and Crafts](https://fossandcrafts.org)
+
+**Morgan Lemmer-Webber and Christopher Lemmer Webber record a &#39;live&#39; episode of their podcast, FOSS and Crafts.** 
+
+The podcast uses an interdisciplinary approach to explore the intersections of software freedom, user freedom, and freedom of expression. In this live episode we will discuss the relationship between traditional and digital crafts as a roundtable discussion. We invite audience participation.
+
+You can listen to the first episode at our beach.
+
+# [Join via jitsi](https://meet.jit.si/ScatteredConsequencesActRegardless)</description>
+    
+    <lastBuildDate>Wed, 30 Dec 2020 13:08:28 +0000</lastBuildDate>
+    <category>Remote Chaos Experience</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/rc3-foss-and-crafts-live-recording/1223.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>rC3 – FOSS and Crafts Live Recording</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p><span data-date="2020-12-30" data-time="15:00:00" class="discourse-local-date" data-timezone="Europe/Berlin" data-email-preview="2020-12-30T14:00:00Z UTC">2020-12-30T14:00:00Z</span></p>
+<h2><a href="https://fossandcrafts.org">FOSS and Crafts</a></h2>
+<p><strong>Morgan Lemmer-Webber and Christopher Lemmer Webber record a ‘live’ episode of their podcast, FOSS and Crafts.</strong></p>
+<p>The podcast uses an interdisciplinary approach to explore the intersections of software freedom, user freedom, and freedom of expression. In this live episode we will discuss the relationship between traditional and digital crafts as a roundtable discussion. We invite audience participation.</p>
+<p>You can listen to the first episode at our beach.</p>
+<h1><a href="https://meet.jit.si/ScatteredConsequencesActRegardless">Join via jitsi</a></h1>
+          <p><a href="https://socialhub.activitypub.rocks/t/rc3-foss-and-crafts-live-recording/1223/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/rc3-foss-and-crafts-live-recording/1223/1</link>
+        <pubDate>Sun, 27 Dec 2020 18:57:01 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1223-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/rc3-foss-and-crafts-live-recording/1223.rss">rC3 – FOSS and Crafts Live Recording</source>
+      </item>
+  </channel>
+</rss>

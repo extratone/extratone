@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Content-addressing and URN resolution</title>
+    <link>https://socialhub.activitypub.rocks/t/content-addressing-and-urn-resolution/1674</link>
+    <description>[CPub](https://gitlab.com/openengiadina/cpub/) as a general semantic ActivityPub server is using content-addressable RDF with [ERIS](https://inqlab.net/projects/eris/).
+
+Object&#39;s `id` should be de-referencable URI. There is no problem with loading a content using HTTP for URLs. However URNs require some another way for it.
+
+Any existing ActivityPub client will be surprised to see something like this:
+```
+{
+  &quot;@context&quot;: &quot;https://www.w3.org/ns/activitystreams#&quot;,
+  &quot;id&quot;: &quot;urn:erisx2:AAADAF4BGFGNTYG65ZX3JW7A75VBCMRWN7B2WGIQ7PAQGBHOKYGMRESC2QZVSBDYW5P45R6FRRPBZYGZ5H6XTWSNR6HEXKOD735UG3B7IQ&quot;,
+  &quot;object&quot;: &quot;urn:erisx2:AAAFVNIJDY22FZJZBL2LEWM7XR6P7GHUJ52NWP2E4EBR4O2LSBAOSW2YHA5DA5726X53KPABXYYO5ZRWLIOOLTEXNPE6FIBQW23LDEEMEM&quot;,
+  &quot;to&quot;: &quot;local:rustra&quot;,
+  &quot;type&quot;: &quot;Create&quot;
+}
+```
+
+For that reason we need a mechanism to resolve URNs to URLs / resources.
+
+One of the proposal could be an agreement about exact endpoints similar to `/.well-known`. [RFC2169](https://tools.ietf.org/html/rfc2169) describes a trivial convention for using HTTP in URN resolution.
+
+The general approach used to encode resolution service requests is quite simple:
+`GET /uri-res/&lt;service&gt;?&lt;uri&gt;  HTTP/1.0`
+
+Examples of services:
+- N2L (URN to URL);
+- N2Ls (URN to URLs);
+- N2R (URN to Resource);
+- N2Rs (URN to Resources).
+
+Please share your opinion according to RFC2169 and ideas about any possible ways of URN resolution.</description>
+    
+    <lastBuildDate>Fri, 30 Apr 2021 08:34:42 +0000</lastBuildDate>
+    <category>ActivityPub</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/content-addressing-and-urn-resolution/1674.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Content-addressing and URN resolution</title>
+        <dc:creator><![CDATA[rustra]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/macgirvin">@macgirvin</a>, I suppose that it’s a question of mutability in general, immutable Magnet URIs are just consequence of immutable data.</p>
+<p><a class="mention" href="/u/pukkamustard">@pukkamustard</a> is researching data structures based on immutable data and allowing mutability in scope of <a href="https://dream.public.cat/t/d1-1-dromedar-data-model-specification/146" rel="noopener nofollow ugc">DREAM / DROMEDAR</a> project. And your concern should be addressed there as well.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/content-addressing-and-urn-resolution/1674/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/content-addressing-and-urn-resolution/1674/9</link>
+        <pubDate>Fri, 30 Apr 2021 08:34:42 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1674-9</guid>
+        <source url="https://socialhub.activitypub.rocks/t/content-addressing-and-urn-resolution/1674.rss">Content-addressing and URN resolution</source>
+      </item>
+      <item>
+        <title>Content-addressing and URN resolution</title>
+        <dc:creator><![CDATA[macgirvin]]></dc:creator>
+        <description><![CDATA[
+            <ul>
+<li>can never be edited/updated. This may not concern some people, but is a deal-breaker for others.</li>
+</ul>
+          <p><a href="https://socialhub.activitypub.rocks/t/content-addressing-and-urn-resolution/1674/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/content-addressing-and-urn-resolution/1674/8</link>
+        <pubDate>Thu, 29 Apr 2021 19:52:52 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1674-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/content-addressing-and-urn-resolution/1674.rss">Content-addressing and URN resolution</source>
+      </item>
+      <item>
+        <title>Content-addressing and URN resolution</title>
+        <dc:creator><![CDATA[rustra]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks everybody for your opinions! Now I see the direction to move later.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/content-addressing-and-urn-resolution/1674/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/content-addressing-and-urn-resolution/1674/7</link>
+        <pubDate>Thu, 29 Apr 2021 19:09:12 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1674-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/content-addressing-and-urn-resolution/1674.rss">Content-addressing and URN resolution</source>
+      </item>
+      <item>
+        <title>Content-addressing and URN resolution</title>
+        <dc:creator><![CDATA[yvolk]]></dc:creator>
+        <description><![CDATA[
+            <p>My current opinion, after brief reading of the linked sources, is that Magnet URI:</p>
+<ul>
+<li>is not for making URIs shorter,</li>
+<li>does not require us to agree immediately on “URI to URL” resolution / content discovery services.</li>
+</ul>
+<p>on the contrary:</p>
+<ul>
+<li>it is packed content metadata needed for its identification and retrieval.</li>
+<li>in the simplest case it contains one or more URLs, where the content may be found, so it easily replaces content id in the form of URL,</li>
+<li>it contains content hash allowing to identify and deduplicate content, referred to by different sources (e.g. the same image sent by different Actors), maybe even without an immediate need to implement hash calculation (just by comparing hashes of two Magnet URIs…)</li>
+<li>it is a compromise between pointing to the concrete location and at least potential ability to search and retrieve content from anywhere…</li>
+</ul>
+<p>So I think that minimal support of Magnet URI containing actual download URL can be added easily to a Client application, with a bonus of getting much more from it in the future, step by step.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/content-addressing-and-urn-resolution/1674/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/content-addressing-and-urn-resolution/1674/6</link>
+        <pubDate>Thu, 29 Apr 2021 18:47:36 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1674-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/content-addressing-and-urn-resolution/1674.rss">Content-addressing and URN resolution</source>
+      </item>
+      <item>
+        <title>Content-addressing and URN resolution</title>
+        <dc:creator><![CDATA[rustra]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m kindly asking <a class="mention" href="/u/yvolk">@yvolk</a> to share your thoughts related to possible support of Magnet URIs.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/content-addressing-and-urn-resolution/1674/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/content-addressing-and-urn-resolution/1674/5</link>
+        <pubDate>Thu, 29 Apr 2021 11:37:29 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1674-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/content-addressing-and-urn-resolution/1674.rss">Content-addressing and URN resolution</source>
+      </item>
+      <item>
+        <title>Content-addressing and URN resolution</title>
+        <dc:creator><![CDATA[rustra]]></dc:creator>
+        <description><![CDATA[
+            <p>Looking at Christopher’s <a href="https://gitlab.com/dustyweb/magenc/blob/master/magenc/scribblings/intro.org" rel="noopener nofollow ugc">Magenc introduction</a> I’ve found that Magnet URIs is the most probably what we need. <em>They can be generated by anyone who already has the content, without the need for a central authority to issue them.</em> The standard for Magnet URIs provides different parameters like <code>as (Acceptable Source)</code> and <code>xs (eXact Source)</code> which will allow to point out to initial ActivityPub instance generated the content.</p>
+<p>By the way an <code>xs</code> <a href="https://en.wikipedia.org/wiki/Magnet_URI_scheme" rel="noopener nofollow ugc">example</a> from Wikipedia use the mentioned above endpoints from RFC2169:<br>
+<code>xs=http://192.0.2.27:6346/uri-res/N2R?urn:sha1:FINYVGHENTHSMNDSQQYDNLPONVBZTICF</code></p>
+<p>So a Magnet URI for ERIS-encoded content could be like:<br>
+<code>magnet:?xt=urn:erisx2:AAADAF4BGFGNTYG65ZX3JW7A75VBCMRWN7B2WGIQ7PAQGBHOKYGMRESC2QZVSBDYW5P45R6FRRPBZYGZ5H6XTWSNR6HEXKOD735UG3B7IQ&amp;xs=https://openEngiadina.example/uri-res/N2R?urn:erisx2:AAADAF4BGFGNTYG65ZX3JW7A75VBCMRWN7B2WGIQ7PAQGBHOKYGMRESC2QZVSBDYW5P45R6FRRPBZYGZ5H6XTWSNR6HEXKOD735UG3B7IQ</code></p>
+<p>And together with <code>text/uri-list</code> it’s possible to refer to another ways to access the content (e.g. IPFS).</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/content-addressing-and-urn-resolution/1674/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/content-addressing-and-urn-resolution/1674/4</link>
+        <pubDate>Thu, 29 Apr 2021 00:19:38 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1674-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/content-addressing-and-urn-resolution/1674.rss">Content-addressing and URN resolution</source>
+      </item>
+      <item>
+        <title>Content-addressing and URN resolution</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <p>In addition to what <a class="mention" href="/u/how">@how</a> said, it would be nice to fully understand if such an adoption entrenches HTTP as being the single ActivityPub transmission protocol and makes extending to other protocols <em>not</em> dependent on DNS harder to support in the future.</p>
+<p>That is, if the solution to map <code>URN =(http)=&gt; URL</code> makes it harder for other mappings to be adopted/developed (ex: <code>URN =(ssb)=&gt; SSBID"</code>)</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/content-addressing-and-urn-resolution/1674/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/content-addressing-and-urn-resolution/1674/3</link>
+        <pubDate>Wed, 28 Apr 2021 21:10:26 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1674-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/content-addressing-and-urn-resolution/1674.rss">Content-addressing and URN resolution</source>
+      </item>
+      <item>
+        <title>Content-addressing and URN resolution</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="https://www.w3.org/TR/rdf11-concepts/#section-skolemization">RDF 1.1 Concepts section on skolemization</a> mentions the <code>genid</code> well-known IRI:</p>
+<blockquote>
+<p>Systems that want Skolem IRIs to be recognizable outside of the system boundaries <em>SHOULD</em> use a well-known IRI [<a href="https://www.w3.org/TR/rdf11-concepts/#bib-RFC5785">RFC5785</a>] with the registered name <code>genid</code> . This is an IRI that uses the HTTP or HTTPS scheme, or another scheme that has been specified to use well-known IRIs; and whose path component starts with <code>/.well-known/genid/</code> .</p>
+<p>For example, the authority responsible for the domain <code>example.com</code> could mint the following recognizable Skolem IRI:</p>
+<p><code>http://example.com/.well-known/genid/d26a2d0e98334696f4ad70a677abc1f6</code></p>
+</blockquote>
+<p>I could imagine exploiting this well-known endpoint to address ERIS URNs:</p>
+<p><code>https://openEngiadina.example/.well-known/genid/urn:erisx2:AAADAF4BGFGNTYG65ZX3JW7A75VBCMRWN7B2WGIQ7PAQGBHOKYGMRESC2QZVSBDYW5P45R6FRRPBZYGZ5H6XTWSNR6HEXKOD735UG3B7IQ</code></p>
+<p>This would avoid having to provide a template such as WebFinger, to register a new well-known IRI or to use <code>uri-lists</code>. Any conformant server could have such URI and send the decoded version of the URN.</p>
+<p>This way, the simplest solution would be for implementations to try this on the origin server if they do not implement ERIS URN resolution locally, or use their own.</p>
+<p>Of course that does not solve the problem if the activity is received from a server that did not dereference it and simply forwards it, and does not support ERIS.</p>
+<p>There MAY be a known service that will implement this, but it would kind of re-centralize the service. E.g., we could agree to host a URN to URI resolver at a known URL, but the idea makes me shiver. What’s the point of using content-addressing if it is to fall back to a single domain?</p>
+<p>Other resources might be useful:</p>
+<ul>
+<li>
+<a href="http://nodeinfo.diaspora.software/schema.html" class="inline-onebox">NodeInfo</a> (e.g., use the <code>metadata</code> to indicate your URN resolvers)</li>
+<li>
+<a href="https://tools.ietf.org/html/rfc2169" class="inline-onebox">RFC 2169 - A Trivial Convention for using HTTP in URN Resolution</a> (see Appendix A on text/uri-list proposal)</li>
+<li>
+<a href="https://tools.ietf.org/html/rfc2483#section-5" class="inline-onebox">RFC 2483 - URI Resolution Services Necessary for URN Resolution</a> (for text/uri-list specification)</li>
+<li>
+<a href="https://www.iana.org/assignments/well-known-uris/well-known-uris.xhtml" class="inline-onebox">Well-Known URIs</a> for a complete list of potential candidates for squatting <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:">
+</li>
+</ul>
+<hr>
+<p>Another idea would be to use the URN as the identifier, and use <a href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907">AlsoKnownAs</a> for the URI (maybe the <code>genid</code>).</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/content-addressing-and-urn-resolution/1674/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/content-addressing-and-urn-resolution/1674/2</link>
+        <pubDate>Wed, 28 Apr 2021 20:35:42 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1674-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/content-addressing-and-urn-resolution/1674.rss">Content-addressing and URN resolution</source>
+      </item>
+      <item>
+        <title>Content-addressing and URN resolution</title>
+        <dc:creator><![CDATA[rustra]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="https://gitlab.com/openengiadina/cpub/" rel="noopener nofollow ugc">CPub</a> as a general semantic ActivityPub server is using content-addressable RDF with <a href="https://inqlab.net/projects/eris/" rel="noopener nofollow ugc">ERIS</a>.</p>
+<p>Object’s <code>id</code> should be de-referencable URI. There is no problem with loading a content using HTTP for URLs. However URNs require some another way for it.</p>
+<p>Any existing ActivityPub client will be surprised to see something like this:</p>
+<pre><code class="lang-auto">{
+  "@context": "https://www.w3.org/ns/activitystreams#",
+  "id": "urn:erisx2:AAADAF4BGFGNTYG65ZX3JW7A75VBCMRWN7B2WGIQ7PAQGBHOKYGMRESC2QZVSBDYW5P45R6FRRPBZYGZ5H6XTWSNR6HEXKOD735UG3B7IQ",
+  "object": "urn:erisx2:AAAFVNIJDY22FZJZBL2LEWM7XR6P7GHUJ52NWP2E4EBR4O2LSBAOSW2YHA5DA5726X53KPABXYYO5ZRWLIOOLTEXNPE6FIBQW23LDEEMEM",
+  "to": "local:rustra",
+  "type": "Create"
+}
+</code></pre>
+<p>For that reason we need a mechanism to resolve URNs to URLs / resources.</p>
+<p>One of the proposal could be an agreement about exact endpoints similar to <code>/.well-known</code>. <a href="https://tools.ietf.org/html/rfc2169" rel="noopener nofollow ugc">RFC2169</a> describes a trivial convention for using HTTP in URN resolution.</p>
+<p>The general approach used to encode resolution service requests is quite simple:<br>
+<code>GET /uri-res/&lt;service&gt;?&lt;uri&gt;  HTTP/1.0</code></p>
+<p>Examples of services:</p>
+<ul>
+<li>N2L (URN to URL);</li>
+<li>N2Ls (URN to URLs);</li>
+<li>N2R (URN to Resource);</li>
+<li>N2Rs (URN to Resources).</li>
+</ul>
+<p>Please share your opinion according to RFC2169 and ideas about any possible ways of URN resolution.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/content-addressing-and-urn-resolution/1674/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/content-addressing-and-urn-resolution/1674/1</link>
+        <pubDate>Wed, 28 Apr 2021 18:28:23 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1674-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/content-addressing-and-urn-resolution/1674.rss">Content-addressing and URN resolution</source>
+      </item>
+  </channel>
+</rss>

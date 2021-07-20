@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Posting to Pleroma inbox - #21 by aschrijver - Client to Server - SocialHub</title>
+    <meta name="description" content="Hi, is it possible to POST e.g. a note to Pleroma user’s inbox using C2S API? I am not sure from reading the AP specs and even not sure after investigating the Pleroma code. 
+I’m trying to do POST like this: 
+curl --loca&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="../1184@page=2.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Posting to Pleroma inbox&#39;" href="../1184.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/posting-to-pleroma-inbox/1184/21" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/posting-to-pleroma-inbox/1184/21" />
+<meta property="og:title" content="Posting to Pleroma inbox" />
+<meta name="twitter:title" content="Posting to Pleroma inbox" />
+<meta property="og:description" content="Hi @naturzukunft. I unfortunately don’t have the solution, but would like to point you to Guide for new ActivityPub implementers, which is a wiki post for anyone to edit. Once you fix this issue, it might be helpful to add to this tutorial for the next person that comes after you, if you can spare a couple of minutes to update 😊" />
+<meta name="twitter:description" content="Hi @naturzukunft. I unfortunately don’t have the solution, but would like to point you to Guide for new ActivityPub implementers, which is a wiki post for anyone to edit. Once you fix this issue, it might be helpful to add to this tutorial for the next person that comes after you, if you can spare a couple of minutes to update 😊" />
+<meta property="article:published_time" content="2021-02-10T09:13:24+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+        <link rel="prev" href="../1184.html">
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="../1184.html">Posting to Pleroma inbox</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../../c/activitypub.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #0088CC'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>ActivityPub</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../../c/activitypub/c2s/6.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #ED207B'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Client to Server</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/kaniini.html'><span itemprop='name'>kaniini</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1184.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-02-07T04:51:07Z' class='post-time'>
+                February 7, 2021,  4:51am
+              </time>
+              <meta itemprop='dateModified' content='2021-02-07T04:51:07Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote group-mastodon" data-username="nightpool" data-post="8" data-topic="1184">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/nightpool/40/36_2.png" class="avatar"> nightpool:</div>
+<blockquote>
+<p>I think this phrasing it a little misleading. C2S is a term that’s used by the specification to mean a client communicating with its authoritative server using the <code>outbox</code> endpoint.</p>
+</blockquote>
+</aside>
+<p>Yes I don’t really have a good way of phrasing it.  It would be a “hybrid” approach basically in this situation, where your client acts both as a client (for checking an inbox in a more reliable location) while sending messages directly without using that server.</p>
+        </div>
+
+        <meta itemprop='headline' content='Posting to Pleroma inbox'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1184.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-02-08T18:48:54Z' class='post-time'>
+                February 8, 2021,  6:48pm
+              </time>
+              <meta itemprop='dateModified' content='2021-02-08T18:48:54Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>If anything is still unclear feel free to describe your use case.</p>
+<blockquote>
+<p>I was building a new AP client (only C2S) application, how would I send a message to some other AP implementation using C2S API?</p>
+</blockquote>
+<p>Do you want to use ActivityPub in a peer to peer context without servers?</p>
+<hr>
+<p>For me <a href="https://www.w3.org/TR/activitypub/#x1-overview">the graphics and this recap</a> helped:</p>
+<h1>“</h1>
+<p>Hey nice, so just as a recap:</p>
+<ul>
+<li>You can POST to someone’s inbox to send them a message (server-to-server / federation only… this <em>is</em> federation!)</li>
+<li>You can GET from your inbox to read your latest messages (client-to-server; this is like reading your social network stream)</li>
+<li>You can POST to your outbox to send messages to the world (client-to-server)</li>
+<li>You can GET from someone’s outbox to see what messages they’ve posted (or at least the ones you’re authorized to see). (client-to-server and/or server-to-server)</li>
+</ul>
+<p>Of course, if that last one (GET’ing from someone’s outbox) was the only way to see what people have sent, this wouldn’t be a very efficient federation protocol! Indeed, federation happens usually by servers posting messages sent by actors to actors on other servers’ inboxes.</p>
+<h1>”</h1>
+        </div>
+
+        <meta itemprop='headline' content='Posting to Pleroma inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/naturzukunft.html'><span itemprop='name'>naturzukunft</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1184.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-02-08T19:40:01Z' class='post-time'>
+                February 8, 2021,  7:40pm
+              </time>
+              <meta itemprop='dateModified' content='2021-02-08T19:40:01Z'>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hm, found this example today and tried to post this activity:</p>
+<p>{<br>
+“<span class="mention">@context</span>”: “<a href="https://www.w3.org/ns/activitystreams" rel="noopener nofollow ugc">https://www.w3.org/ns/activitystreams</a>”,<br>
+“type”: “Create”,<br>
+“actor”: “<a href="https://social.liberta.vip/users/" rel="noopener nofollow ugc">https://social.liberta.vip/users/</a>”,<br>
+“object”: {<br>
+“type”: “Note”,<br>
+“content”: “Test”<br>
+}<br>
+}</p>
+<p>to a pleroma instane.</p>
+<p>Response:<br>
+“Unhandled activity type”</p>
+<p>That should also be possibel ??</p>
+<p>curl --location --request POST ‘<a href="https://social.liberta.vip/users/r" rel="noopener nofollow ugc">https://social.liberta.vip/users/r</a>/outbox’ <br>
+–header ‘Content-Type: application/activity+json’ <br>
+–header ‘Authorization: Basic xxxxxxxxxx’ <br>
+–header ‘Cookie: __Host…’ <br>
+–data-raw ‘{<br>
+“<span class="mention">@context</span>”: “<a href="https://www.w3.org/ns/activitystreams" rel="noopener nofollow ugc">https://www.w3.org/ns/activitystreams</a>”,<br>
+“type”: “Note”,<br>
+“content”: “Test”<br>
+}’</p>
+<p>Response:<br>
+“Unhandled activity type”</p>
+<p>Does anybody see my problem ?<br>
+Thanks</p>
+        </div>
+
+        <meta itemprop='headline' content='Posting to Pleroma inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/lanodan.html'><span itemprop='name'>lanodan</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1184.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-02-08T22:34:33Z'>
+              <time itemprop='dateModified' datetime='2021-02-08T22:35:08Z' class='post-time'>
+                February 8, 2021, 10:35pm
+              </time>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>The second snippet isn’t going to work, you’re sending in an object and<br>
+at the moment pleroma doesn’t auto-wraps them into <code>Create</code>s.<br>
+And it seems quite weird that you’re using Auth Basic <em>and</em> cookies,<br>
+shouldn’t cause this error message but not entirely ruling it out.</p>
+<p>For the first one it’s weird to have this message, another one wouldn’t have<br>
+surprised me as it’s missing addressing(<code>to</code> or <code>cc</code>).</p>
+        </div>
+
+        <meta itemprop='headline' content='Posting to Pleroma inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/naturzukunft.html'><span itemprop='name'>naturzukunft</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1184.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-02-09T06:15:06Z'>
+              <time itemprop='dateModified' datetime='2021-02-09T08:00:13Z' class='post-time'>
+                February 9, 2021,  8:00am
+              </time>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>what is the correct address to use for “to” ? e.g. <code>https://chaos.social/@naturzukunft</code></p>
+        </div>
+
+        <meta itemprop='headline' content='Posting to Pleroma inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/kaniini.html'><span itemprop='name'>kaniini</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1184.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-02-09T10:45:44Z' class='post-time'>
+                February 9, 2021, 10:45am
+              </time>
+              <meta itemprop='dateModified' content='2021-02-09T10:45:44Z'>
+          <span itemprop='position'>#15</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>It must be the <code>id</code> of the actor in that case, e.g. <code>https://chaos.social/users/naturzukunft</code>.  The URI you are using is instead the actor’s <code>url</code> property.</p>
+        </div>
+
+        <meta itemprop='headline' content='Posting to Pleroma inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/naturzukunft.html'><span itemprop='name'>naturzukunft</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1184.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-02-09T10:54:25Z' class='post-time'>
+                February 9, 2021, 10:54am
+              </time>
+              <meta itemprop='dateModified' content='2021-02-09T10:54:25Z'>
+          <span itemprop='position'>#16</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>curl --location --request POST ‘<a href="https://social.liberta.vip/users/rdf4j7340/outbox" rel="noopener nofollow ugc">https://social.liberta.vip/users/rdf4j7340/outbox</a>’ <br>
+–header ‘Content-Type: application/activity+json’ <br>
+–header ‘profile: <a href="https://www.w3.org/ns/activitystreams" rel="noopener nofollow ugc">https://www.w3.org/ns/activitystreams</a>"’ <br>
+–header ‘Authorization: Basic xxxxxxxxxxxxxx’ <br>
+–data-raw ‘{<br>
+“<span class="mention">@context</span>”: “<a href="https://www.w3.org/ns/activitystreams%E2%80%9D" rel="noopener nofollow ugc">https://www.w3.org/ns/activitystreams”</a>,<br>
+“type”: “Create”,<br>
+“actor”: “<a href="https://social.liberta.vip/users/rdf4j7340%E2%80%9D" rel="noopener nofollow ugc">https://social.liberta.vip/users/rdf4j7340”</a>,<br>
+“to”: “<a href="https://chaos.social/users/naturzukunft" rel="noopener nofollow ugc">https://chaos.social/users/naturzukunft</a>”,<br>
+“object”: {<br>
+“type”: “Note”,<br>
+“content”: “Test”<br>
+}<br>
+}’</p>
+<p>-&gt; Internal Server Error</p>
+<p>;-(</p>
+        </div>
+
+        <meta itemprop='headline' content='Posting to Pleroma inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/kaniini.html'><span itemprop='name'>kaniini</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1184.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-02-09T10:58:52Z' class='post-time'>
+                February 9, 2021, 10:58am
+              </time>
+              <meta itemprop='dateModified' content='2021-02-09T10:58:52Z'>
+          <span itemprop='position'>#17</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Pleroma probably wants <code>to</code> to be a list.</p>
+        </div>
+
+        <meta itemprop='headline' content='Posting to Pleroma inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/naturzukunft.html'><span itemprop='name'>naturzukunft</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1184.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-02-09T12:16:34Z' class='post-time'>
+                February 9, 2021, 12:16pm
+              </time>
+              <meta itemprop='dateModified' content='2021-02-09T12:16:34Z'>
+          <span itemprop='position'>#18</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>curl --location --request POST ‘<a href="https://social.liberta.vip/users/rdf4j7340/outbox" rel="noopener nofollow ugc">https://social.liberta.vip/users/rdf4j7340/outbox</a>’ <br>
+–header ‘Content-Type: application/activity+json’ <br>
+–header ‘profile: <a href="https://www.w3.org/ns/activitystreams" rel="noopener nofollow ugc">https://www.w3.org/ns/activitystreams</a>"’ <br>
+–header ‘Authorization: Basic cmRmNGo3MzQwOkhhbGJlR2xhczI4Iw==’ <br>
+–data-raw ‘{<br>
+“<span class="mention">@context</span>”: “<a href="https://www.w3.org/ns/activitystreams%E2%80%9D" rel="noopener nofollow ugc">https://www.w3.org/ns/activitystreams”</a>,<br>
+“type”: “Create”,<br>
+“actor”: “<a href="https://social.liberta.vip/users/rdf4j7340%E2%80%9D" rel="noopener nofollow ugc">https://social.liberta.vip/users/rdf4j7340”</a>,<br>
+“to”: [<br>
+“<a href="https://chaos.social/users/naturzukunft" rel="noopener nofollow ugc">https://chaos.social/users/naturzukunft</a>”<br>
+],<br>
+“object”: {<br>
+“type”: “Note”,<br>
+“content”: “Test”<br>
+}<br>
+}’</p>
+<p>–&gt;</p>
+<p>{<br>
+“errors”: {<br>
+“detail”: “Internal server error”<br>
+}<br>
+}</p>
+        </div>
+
+        <meta itemprop='headline' content='Posting to Pleroma inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/kaniini.html'><span itemprop='name'>kaniini</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1184.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-02-09T20:42:19Z' class='post-time'>
+                February 9, 2021,  8:42pm
+              </time>
+              <meta itemprop='dateModified' content='2021-02-09T20:42:19Z'>
+          <span itemprop='position'>#19</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Probably should also have an empty list for cc.</p>
+        </div>
+
+        <meta itemprop='headline' content='Posting to Pleroma inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/naturzukunft.html'><span itemprop='name'>naturzukunft</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1184.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-02-10T07:19:04Z'>
+              <time itemprop='dateModified' datetime='2021-02-10T07:20:16Z' class='post-time'>
+                February 10, 2021,  7:20am
+              </time>
+          <span itemprop='position'>#20</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>{<br>
+“<span class="mention">@context</span>”: “<a href="https://www.w3.org/ns/activitystreams%E2%80%9D" rel="noopener nofollow ugc">https://www.w3.org/ns/activitystreams”</a>,<br>
+“type”: “Create”,<br>
+“actor”: “<a href="https://social.liberta.vip/users/rdf4j7340%E2%80%9D" rel="noopener nofollow ugc">https://social.liberta.vip/users/rdf4j7340”</a>,<br>
+“to”: [<br>
+“<a href="https://chaos.social/users/naturzukunft" rel="noopener nofollow ugc">https://chaos.social/users/naturzukunft</a>”<br>
+],<br>
+“cc”: <code>[]</code>,<br>
+“object”: {<br>
+“type”: “Note”,<br>
+“content”: “Test”<br>
+}<br>
+}</p>
+<p>-&gt; Internal server error</p>
+        </div>
+
+        <meta itemprop='headline' content='Posting to Pleroma inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/aschrijver.html'><span itemprop='name'>aschrijver</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1184.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-02-10T09:13:24Z' class='post-time'>
+                February 10, 2021,  9:13am
+              </time>
+              <meta itemprop='dateModified' content='2021-02-10T09:13:24Z'>
+          <span itemprop='position'>#21</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi <a class="mention" href="../../../u/naturzukunft.html">@naturzukunft</a>. I unfortunately don’t have the solution, but would like to point you to <a href="../../draft-guide-for-new-activitypub-implementers/479.html" class="inline-onebox">Guide for new ActivityPub implementers</a>, which is a wiki post for anyone to edit. Once you fix this issue, it might be helpful to add to this tutorial for the next person that comes after you, if you can spare a couple of minutes to update <img src="../../../images/emoji/twitter/blush.png@v=9" title=":blush:" class="emoji" alt=":blush:"></p>
+        </div>
+
+        <meta itemprop='headline' content='Posting to Pleroma inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/kaniini.html'><span itemprop='name'>kaniini</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1184.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-02-13T05:04:30Z' class='post-time'>
+                February 13, 2021,  5:04am
+              </time>
+              <meta itemprop='dateModified' content='2021-02-13T05:04:30Z'>
+          <span itemprop='position'>#22</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’m not sure, that object is a valid AS object as far as Pleroma 1.x is concerned, but Pleroma 2 has a different validation engine which may actually be too strict here.  I would suggest filing a bug though, as this is a conformance issue.</p>
+        </div>
+
+        <meta itemprop='headline' content='Posting to Pleroma inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/naturzukunft.html'><span itemprop='name'>naturzukunft</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1184.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-02-13T12:33:23Z' class='post-time'>
+                February 13, 2021, 12:33pm
+              </time>
+              <meta itemprop='dateModified' content='2021-02-13T12:33:23Z'>
+          <span itemprop='position'>#23</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Do you no a pleroma instance that is well maintained and the newest version is deployed? i don’t know how this is at <a href="https://social.liberta.vip" rel="noopener nofollow ugc">https://social.liberta.vip</a>.<br>
+Fredy</p>
+        </div>
+
+        <meta itemprop='headline' content='Posting to Pleroma inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/lanodan.html'><span itemprop='name'>lanodan</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1184.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-02-13T15:53:03Z'>
+              <time itemprop='dateModified' datetime='2021-02-13T15:54:27Z' class='post-time'>
+                February 13, 2021,  3:54pm
+              </time>
+          <span itemprop='position'>#24</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <pre><code class="lang-auto">$ curl -sSL https://social.liberta.vip/api/v1/instance | jq .version
+"2.7.2 (compatible; Pleroma 2.2.2)"
+</code></pre>
+<p>And with checking at <a href="https://git.pleroma.social/pleroma/pleroma/-/releases" rel="noopener nofollow ugc">https://git.pleroma.social/pleroma/pleroma/-/releases</a>, you can see that it’s the latest version.</p>
+<p>What would more likely help you is to have the server logs, “Internal Server Error” often means “check/ask for server logs”.</p>
+        </div>
+
+        <meta itemprop='headline' content='Posting to Pleroma inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/naturzukunft.html'><span itemprop='name'>naturzukunft</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1184.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-02-25T17:50:06Z' class='post-time'>
+                February 25, 2021,  5:50pm
+              </time>
+              <meta itemprop='dateModified' content='2021-02-25T17:50:06Z'>
+          <span itemprop='position'>#25</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Are there any examples out there, preferably with curl, from someone who has already played with pleroma ?</p>
+        </div>
+
+        <meta itemprop='headline' content='Posting to Pleroma inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/naturzukunft.html'><span itemprop='name'>naturzukunft</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1184.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-02-25T19:57:53Z'>
+              <time itemprop='dateModified' datetime='2021-02-25T20:15:11Z' class='post-time'>
+                February 25, 2021,  8:15pm
+              </time>
+          <span itemprop='position'>#26</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I managed to post activites to pleroma. When I query my outbox afterwards, I get a json. unfortunately, you can’t attach files here.</p>
+<p>When I run this through my parser, I get:</p>
+<pre><code>com.github.jsonldjava.core.JsonLdError: recursive context inclusion: https://www.w3.org/ns/activitystreams
+</code></pre>
+<p>Maybe this works: <a href="https://board.net/p/pleroma_tests" class="inline-onebox" rel="noopener nofollow ugc">board.net</a></p>
+<p>Error occurs in <a href="https://github.com/jsonld-java/jsonld-java/blob/69aee572c2b8c7e9bed6ab32869cc36ce17d89d7/core/src/main/java/com/github/jsonldjava/core/Context.java" rel="noopener nofollow ugc">Line 194</a></p>
+<p>See also the following id’s in <a href="https://w3c.github.io/json-ld-api/tests/toRdf-manifest.html" rel="noopener nofollow ugc">this document</a></p>
+<ul>
+<li><span class="hashtag">#ter02</span></li>
+<li><span class="hashtag">#ter03</span></li>
+</ul>
+<p>I’m not able to post a bug report (yet), because i need a <a href="https://git.pleroma.social" rel="noopener nofollow ugc">https://git.pleroma.social</a> account.</p>
+<p>Conclusion: Playing with activityPub is somehow annoying and anything but fun</p>
+        </div>
+
+        <meta itemprop='headline' content='Posting to Pleroma inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/naturzukunft.html'><span itemprop='name'>naturzukunft</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1184.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-02-25T20:54:51Z' class='post-time'>
+                February 25, 2021,  8:54pm
+              </time>
+              <meta itemprop='dateModified' content='2021-02-25T20:54:51Z'>
+          <span itemprop='position'>#27</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>^ <a href="https://git.pleroma.social/pleroma/pleroma/-/issues/2540" class="inline-onebox" rel="noopener nofollow ugc">[ActivityPub C2S] JsonLdError: recursive context inclusion (users outbox) (#2540) · Issues · Pleroma / pleroma · GitLab</a></p>
+        </div>
+
+        <meta itemprop='headline' content='Posting to Pleroma inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/nightpool.html'><span itemprop='name'>nightpool</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1184.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-02-27T19:08:36Z'>
+              <time itemprop='dateModified' datetime='2021-02-27T19:08:56Z' class='post-time'>
+                February 27, 2021,  7:08pm
+              </time>
+          <span itemprop='position'>#28</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Agree with <a class="mention" href="../../../u/lanodan.html">@lanodan</a> that this seem to be a bug in jsonld-java’s recursive context parsing—it maintains a global list of all remote contexts defined in the entire document, and errors whenever a remote context is referenced twice. It looks like this was fixed in this PR: <a href="https://github.com/jsonld-java/jsonld-java/pull/303" class="inline-onebox">Throw RECURSIVE_CONTEXT_INCLUSION only when cyclic dependency exists by umbreak · Pull Request #303 · jsonld-java/jsonld-java · GitHub</a>, which doesn’t appear to be included in the version you linked. However, for parsing Pleroma’s output, this issue may also be relevant: <a href="https://github.com/jsonld-java/jsonld-java/issues/288" class="inline-onebox">JSON-LD 1.1 missing scoped context support · Issue #288 · jsonld-java/jsonld-java · GitHub</a></p>
+        </div>
+
+        <meta itemprop='headline' content='Posting to Pleroma inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/naturzukunft.html'><span itemprop='name'>naturzukunft</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1184.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-04-25T15:07:48Z' class='post-time'>
+                April 25, 2021,  3:07pm
+              </time>
+              <meta itemprop='dateModified' content='2021-04-25T15:07:48Z'>
+          <span itemprop='position'>#29</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Yesterday i had the same issue by reading a pleromas actor profile. i upgraded to the newest version of <em>jsonld-java</em> and it worked!</p>
+<p>no i’m struggling with other “issues”. It seems to be a long way ;-(</p>
+<p>And the C2S Issues are a little bit old: <a href="https://git.pleroma.social/pleroma/pleroma/-/issues?label_name%5B%5D=AP+C2S" class="inline-onebox" rel="noopener nofollow ugc">Issues · Pleroma / pleroma · GitLab</a></p>
+<p>My next problem: <a href="https://git.pleroma.social/pleroma/pleroma/-/issues/2638" class="inline-onebox" rel="noopener nofollow ugc">[ActivityPub C2S] json+ld type vs. @type (#2638) · Issues · Pleroma / pleroma · GitLab</a></p>
+        </div>
+
+        <meta itemprop='headline' content='Posting to Pleroma inbox'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+    <div role='navigation' itemscope itemtype='http://schema.org/SiteNavigationElement' class="topic-body crawler-post">
+        <span itemprop='name'><a rel="prev" itemprop="url" href="../1184.html">← previous page</a></span>
+    </div>
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

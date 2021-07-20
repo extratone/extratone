@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>2021-01-23 SocialCG meeting - new fediverse users</title>
+    <link>https://socialhub.activitypub.rocks/t/2021-01-23-socialcg-meeting-new-fediverse-users/1305</link>
+    <description>**Date:** [date=2021-01-23 time=16:00:00 timezone=&quot;Europe/Berlin&quot;]
+
+**Topic:** The wave of new fediverse users who have been displaced from centralized social media recently. 
+* How should we handle culture changes, communities who provide bad content or harassment, moderation, etc.
+
+**Join:**
+* [BBB](https://bbb.w3c.social/b/rhi-vp1-fv6-vn7)
+* [IRC](http://irc.w3.org/?channels=social)
+
+Many people have things to say about this. If you are working or thinking and can prepare something to propose at the meeting, it can be really helpful to look for clear outcomes or next steps. 
+
+Feel free to discuss the topic in this thread (or other threads) and link to things you have written already here.</description>
+    
+    <lastBuildDate>Sat, 23 Jan 2021 16:43:56 +0000</lastBuildDate>
+    <category>SocialCG</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/2021-01-23-socialcg-meeting-new-fediverse-users/1305.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>2021-01-23 SocialCG meeting - new fediverse users</title>
+        <dc:creator><![CDATA[rhiaro]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks all! <a href="https://www.w3.org/2021/01/23-social-minutes.html">Minutes are here</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-01-23-socialcg-meeting-new-fediverse-users/1305/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-01-23-socialcg-meeting-new-fediverse-users/1305/6</link>
+        <pubDate>Sat, 23 Jan 2021 16:43:56 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1305-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-01-23-socialcg-meeting-new-fediverse-users/1305.rss">2021-01-23 SocialCG meeting - new fediverse users</source>
+      </item>
+      <item>
+        <title>2021-01-23 SocialCG meeting - new fediverse users</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Also leaving this here (by the main author of the bluesky report)</p>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <a href="https://jaygraber.medium.com/designing-decentralized-moderation-a76430a8eab" target="_blank" rel="noopener" title="08:32PM - 21 January 2021">Medium – 21 Jan 21</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:666/500;"><img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/0b50a27deb3ca41a82a78b5f371ca928e60561df.jpeg" class="thumbnail" width="666" height="500" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/0b50a27deb3ca41a82a78b5f371ca928e60561df_2_10x10.png"></div>
+
+<h3><a href="https://jaygraber.medium.com/designing-decentralized-moderation-a76430a8eab" target="_blank" rel="noopener">Designing decentralized moderation</a></h3>
+
+<p>In decentralized social networks, moderation decisions are made locally by users, servers, or other network entities. This basic…</p>
+
+  <p><span class="label1">Reading time: 6 min read</span>
+    </p>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-01-23-socialcg-meeting-new-fediverse-users/1305/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-01-23-socialcg-meeting-new-fediverse-users/1305/5</link>
+        <pubDate>Fri, 22 Jan 2021 12:43:29 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1305-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-01-23-socialcg-meeting-new-fediverse-users/1305.rss">2021-01-23 SocialCG meeting - new fediverse users</source>
+      </item>
+      <item>
+        <title>2021-01-23 SocialCG meeting - new fediverse users</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Personally I <strong>started</strong> to think about how we can prepare by</p>
+<ul>
+<li>limiting instance sizes</li>
+<li>helping moderators</li>
+<li>improving truth</li>
+<li>building a federated governance structure</li>
+</ul>
+<p>See<br>
+<aside class="quote quote-modified" data-post="1" data-topic="1298">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/intervention-after-2021-storming-of-the-united-states-capitol-wip/1298">Intervention after 2021 storming of the United States Capitol - WIP</a> <a class="badge-wrapper  box" href="/c/software/redaktor-me/22"><span class="badge-category-parent-bg" style="background-color: #3AB54A;"></span><span class="badge-category-bg" style="background-color: #ff7a00;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="The multimedia CMS for the Fediverse –
+redaktor will be a web content management system to setup
+your social connected website in minutes.
+On your own server.
+redaktor helps you with telling your stories.">redaktor.me</span></a>
+  </div>
+  <blockquote>
+    In remembrance of Stanley Greene
+Open Wound
+After the Capitol Storm I try to describe immediate interventions for the redaktor architecture. 
+A summary from 3 brainstorming-meeting logs … 
+In the last four years, Social Media Monopolies caused wounds. Open wounds. 
+
+How can we optimize truth in a Social Network?
+How can we distribute governance and create a guarantor for internal diversity in the fediverse?
+
+In German probably the nice untranslatable word “binnenplurale Gruppenstruktur” … 
+ 
+
+We…
+  </blockquote>
+</aside>
+</p>
+<p>These are the things where Eunomia was funded to improve “information hygiene routines” in ActivityPub and the most popular decentralised social media networks.<br>
+I am just sad that now I <a href="https://www.eunomia.social/partners">do not find the word “ActivityPub” or “protocol” anywhere</a>.</p>
+<p>Also I am inviting Prof. Zuckerman:<br>
+<strong>“It would be pretty simple for Trump to set up a Mastodon node and slap his name on it, …”</strong><br>
+Ethan Zuckerman, an associate professor of public policy, information and communication at the University of Massachusetts at Amherst, tells Mic.<br>
+</p><aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <a href="https://www.mic.com/p/trump-is-threatening-to-start-his-own-social-network-could-it-actually-work-55158513" target="_blank" rel="noopener">Mic</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/362;"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/8c65cedd0cc9640d68d09db9234affcb5441e582_2_690x362.jpeg" class="thumbnail" width="690" height="362" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/8c65cedd0cc9640d68d09db9234affcb5441e582_2_690x362.jpeg, https://socialhub.activitypub.rocks/uploads/default/optimized/1X/8c65cedd0cc9640d68d09db9234affcb5441e582_2_1035x543.jpeg 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/1X/8c65cedd0cc9640d68d09db9234affcb5441e582.jpeg 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/8c65cedd0cc9640d68d09db9234affcb5441e582_2_10x10.png"></div>
+
+<h3><a href="https://www.mic.com/p/trump-is-threatening-to-start-his-own-social-network-could-it-actually-work-55158513" target="_blank" rel="noopener">A Trump-owned social media company is a terrifying thought, but could it...</a></h3>
+
+<p>Donald Trump once seemed omnipresent on social media, an unavoidable source of eye rolls, dread, and norm-breaking lunacy that left us all wondering if he was immune to accountability. That came to an end after last week’s attempted coup, instigated…</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>but please watch also his series “Reimagining the Internet”<br>
+</p><div class="onebox lazyYT lazyYT-container" data-youtube-id="P0H1m14Krmc" data-youtube-title="Reimagining the Internet 10: Amy Zhang, University of Washington" data-parameters="feature=oembed&amp;wmode=opaque">
+  <a href="https://www.youtube.com/watch?v=P0H1m14Krmc" target="_blank" rel="noopener">
+    <img class="ytp-thumbnail-image" src="https://socialhub.activitypub.rocks/uploads/default/original/1X/fcfdaeb95fcc7b2c27490d67cb4533784edaec5a.jpeg" title="Reimagining the Internet 10: Amy Zhang, University of Washington" width="690" height="388">
+  </a>
+</div>
+
+<p>and also stuff by <a href="http://themarkup.org">themarkup.org</a> like<br>
+<a href="https://themarkup.org/events/browsing-disinformation">https://themarkup.org/events/browsing-disinformation</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-01-23-socialcg-meeting-new-fediverse-users/1305/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-01-23-socialcg-meeting-new-fediverse-users/1305/3</link>
+        <pubDate>Sun, 17 Jan 2021 09:20:55 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1305-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-01-23-socialcg-meeting-new-fediverse-users/1305.rss">2021-01-23 SocialCG meeting - new fediverse users</source>
+      </item>
+      <item>
+        <title>2021-01-23 SocialCG meeting - new fediverse users</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-01-23-socialcg-meeting-new-fediverse-users/1305/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-01-23-socialcg-meeting-new-fediverse-users/1305/2</link>
+        <pubDate>Fri, 15 Jan 2021 19:14:06 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1305-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-01-23-socialcg-meeting-new-fediverse-users/1305.rss">2021-01-23 SocialCG meeting - new fediverse users</source>
+      </item>
+      <item>
+        <title>2021-01-23 SocialCG meeting - new fediverse users</title>
+        <dc:creator><![CDATA[rhiaro]]></dc:creator>
+        <description><![CDATA[
+            <p><strong>Date:</strong> <span data-date="2021-01-23" data-time="16:00:00" class="discourse-local-date" data-timezone="Europe/Berlin" data-email-preview="2021-01-23T15:00:00Z UTC">2021-01-23T15:00:00Z</span></p>
+<p><strong>Topic:</strong> The wave of new fediverse users who have been displaced from centralized social media recently.</p>
+<ul>
+<li>How should we handle culture changes, communities who provide bad content or harassment, moderation, etc.</li>
+</ul>
+<p><strong>Join:</strong></p>
+<ul>
+<li><a href="https://bbb.w3c.social/b/rhi-vp1-fv6-vn7">BBB</a></li>
+<li><a href="http://irc.w3.org/?channels=social">IRC</a></li>
+</ul>
+<p>Many people have things to say about this. If you are working or thinking and can prepare something to propose at the meeting, it can be really helpful to look for clear outcomes or next steps.</p>
+<p>Feel free to discuss the topic in this thread (or other threads) and link to things you have written already here.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-01-23-socialcg-meeting-new-fediverse-users/1305/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-01-23-socialcg-meeting-new-fediverse-users/1305/1</link>
+        <pubDate>Fri, 15 Jan 2021 18:30:07 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1305-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-01-23-socialcg-meeting-new-fediverse-users/1305.rss">2021-01-23 SocialCG meeting - new fediverse users</source>
+      </item>
+  </channel>
+</rss>

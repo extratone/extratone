@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>FEP-f1d5: NodeInfo in Fediverse Software</title>
+    <link>https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190</link>
+    <description>source: https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/src/branch/main/feps/fep-f1d5.md</description>
+    
+    <lastBuildDate>Tue, 01 Jun 2021 20:08:46 +0000</lastBuildDate>
+    <category>Fediverse Enhancement Proposals</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>FEP-f1d5: NodeInfo in Fediverse Software</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="cjs" data-post="10" data-topic="1190">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/cjs/40/584_2.png" class="avatar"> cjs:</div>
+<blockquote>
+<p>If I remember right, NodeInfo’s author seems particularly keen on making all fields closed bounded enumerations instead of free field text in the specification.</p>
+</blockquote>
+</aside>
+<p>I remember that the name of the software was specified as an enum. Obviously, that one was never respected.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190/12</link>
+        <pubDate>Tue, 01 Jun 2021 20:08:46 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1190-12</guid>
+        <source url="https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190.rss">FEP-f1d5: NodeInfo in Fediverse Software</source>
+      </item>
+      <item>
+        <title>FEP-f1d5: NodeInfo in Fediverse Software</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="tfardet" data-post="9" data-topic="1190">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/tfardet/40/753_2.png" class="avatar"> tfardet:</div>
+<blockquote>
+<p>I wrote about this a bit <a href="https://scicomm.xyz/@tfardet/106250358111291465" rel="noopener nofollow ugc">on Mastodon </a>, including a <a href="https://fediscience.org/@tfardet/106263095529189021" rel="noopener nofollow ugc">specific proposal </a> for server information that would complement Mastodon’s “peer” and “activity” information in the API.</p>
+<p>Basically the idea would be to provide a privacy-preserving method to show an instance’s connectivity / the Fediverse structure, without accessing individual information.</p>
+</blockquote>
+</aside>
+<p>Also, the above deserves its own topic.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190/11</link>
+        <pubDate>Tue, 01 Jun 2021 20:07:43 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1190-11</guid>
+        <source url="https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190.rss">FEP-f1d5: NodeInfo in Fediverse Software</source>
+      </item>
+      <item>
+        <title>FEP-f1d5: NodeInfo in Fediverse Software</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="tfardet" data-post="9" data-topic="1190">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/tfardet/40/753_2.png" class="avatar"> tfardet:</div>
+<blockquote>
+<p>I’m not sure this is the right place to discuss this, but how fixed is the list of elements that would be made available in NodeInfo?</p>
+</blockquote>
+</aside>
+<p>If I remember right, NodeInfo’s author seems particularly keen on making all fields closed bounded enumerations instead of free field text in the specification. Hence the (temporary) NodeInfo2 fork.</p>
+<aside class="quote no-group" data-username="tfardet" data-post="9" data-topic="1190">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/tfardet/40/753_2.png" class="avatar"> tfardet:</div>
+<blockquote>
+<p>Where should I discuss potential addition of new entries?</p>
+</blockquote>
+</aside>
+<p>Probably the NodeInfo repository. But once that is completed, then to get fediverse software to adopt it, the appropriate software repositories possibly.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190/10</link>
+        <pubDate>Tue, 01 Jun 2021 20:05:38 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1190-10</guid>
+        <source url="https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190.rss">FEP-f1d5: NodeInfo in Fediverse Software</source>
+      </item>
+      <item>
+        <title>FEP-f1d5: NodeInfo in Fediverse Software</title>
+        <dc:creator><![CDATA[tfardet]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m not sure this is the right place to discuss this, but how fixed is the list of elements that would be made available in NodeInfo?<br>
+Where should I discuss potential addition of new entries?</p>
+<p>I have been wondering about how to decrease the incentives for various people to use the APIs or to scrap Fediverse platforms to get information about the network structure (or specific subparts of it).</p>
+<p>I wrote about this a bit <a href="https://scicomm.xyz/@tfardet/106250358111291465" rel="noopener nofollow ugc">on Mastodon</a>, including a <a href="https://fediscience.org/@tfardet/106263095529189021" rel="noopener nofollow ugc">specific proposal</a> for server information that would complement Mastodon’s “peer” and “activity” information in the API.</p>
+<p>Basically the idea would be to provide a privacy-preserving method to show an instance’s connectivity / the Fediverse structure, without accessing individual information.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190/9</link>
+        <pubDate>Tue, 01 Jun 2021 16:38:49 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1190-9</guid>
+        <source url="https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190.rss">FEP-f1d5: NodeInfo in Fediverse Software</source>
+      </item>
+      <item>
+        <title>FEP-f1d5: NodeInfo in Fediverse Software</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>Another interesting thing about instance metadata — Mastodon’s /api/v1/instance has kinda become the de-facto standard for whatever isn’t representable in nodeinfo.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190/8</link>
+        <pubDate>Mon, 24 May 2021 09:51:13 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1190-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190.rss">FEP-f1d5: NodeInfo in Fediverse Software</source>
+      </item>
+      <item>
+        <title>FEP-f1d5: NodeInfo in Fediverse Software</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>And this is how we come to the need to have some sort of capability negotiation between servers <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+<p>Imagine people hardcoding checks for software names and versions. This can’t end well.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190/7</link>
+        <pubDate>Mon, 14 Dec 2020 22:01:55 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1190-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190.rss">FEP-f1d5: NodeInfo in Fediverse Software</source>
+      </item>
+      <item>
+        <title>FEP-f1d5: NodeInfo in Fediverse Software</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>I guess <code>software.version</code> is required as a way to ensure compatiblity. If it could be replaced with some protocol or API version, it might alleviate the security issue, i.e., by telling machines : expect this API, instead of telling attackers: I’m running that vulnerable version. Since AP has a stable version, indeed, this field is currently unnecessary in AP context.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190/6</link>
+        <pubDate>Mon, 14 Dec 2020 21:38:08 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1190-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190.rss">FEP-f1d5: NodeInfo in Fediverse Software</source>
+      </item>
+      <item>
+        <title>FEP-f1d5: NodeInfo in Fediverse Software</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <p>To update: I agree with Mike that <code>software.version</code> should not be a required field. It is unnecessarily strict. I just was hoping to avoid citing “potential security issue” as the specific reason. I don’t feel that strongly about it as others, so I’ve gone ahead and included it with that specific rationale.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190/5</link>
+        <pubDate>Mon, 14 Dec 2020 20:02:10 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1190-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190.rss">FEP-f1d5: NodeInfo in Fediverse Software</source>
+      </item>
+      <item>
+        <title>FEP-f1d5: NodeInfo in Fediverse Software</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/grishka">@grishka</a>, I’ll update the FEP to add Smithereen – an oversight on my part (sorry!). Hopefully the bullet in the FEP that reads…</p>
+<blockquote>
+<ul>
+<li>The <code>localPosts</code> and <code>localComments</code> are not denormalized into pairs of <code>(kind, counts)</code> for software that, for example, hosts audio files, hosts videos, or software that does not have comments, or does not have posts.</li>
+</ul>
+</blockquote>
+<p>…captures your comments around photo albums. You’re correct that ideas like <code>(kind, count)</code> I’m trying to not be too technically prescriptive/dictatorial in solutions, just give a general sense of what alternatives could look like. I can update the FEP to make that clearer.</p>
+<p>Additionally, Mike provided the following feedback to me <a href="https://z.macgirvin.com/item/384346b3-0072-410c-8cbe-164b2900256c" rel="noopener nofollow ugc">here</a>:</p>
+<blockquote>
+<ul>
+<li>Providing the version should never be mandatory (this is potentially a critical security issue).</li>
+<li>Count of “users” should likewise not be mandatory, and if it is, the concept needs to be better defined.</li>
+</ul>
+<p>In my projects, a single user can be the controlling party behind an unlimited number of communication channels which may or may not be related. The same account registrant can also create groups and “collections” (aka sub-channels). They can also clone any of these communication channels to multiple servers. It isn’t always obvious what percentage of that user’s overall activity was actually carried out on a different website. Should they be able to claim this as some percentage of a single user’s activity? If not, the counts will be wrong. Either one site will claim 100% of the user and the others will have to remove that user from their own tallies (resulting in a fictional total for any of these sites), or they will each claim 1 user and the tallies will likewise be fictional.</p>
+</blockquote>
+<p>I’m inclined to disagree on the first bullet, but fully agree on the rest.</p>
+<p>My disagreement on the first bullet rests on the assumption that the “critical security issue” is disclosing of a software version number that identifies software as having a vulnerability (that may be patched at a later version). Simply removing the version number is obscuring the problem, not solving it, and is security-by-obscurity. Adversaries will simply try the exploit on a server that hasn’t disclosed a version anyway, and I would argue now non-malicious users and developers alike would have less information available to themselves to identify how many servers are still vulnerable, and contact admins to upgrade ASAP. Which is a net detriment, in my opinion.</p>
+<p>As such, I’d like to avoid putting the first bullet in the FEP.</p>
+<p>Mike’s second bullet and elaboration I agree with and would like to modify the FEP to include.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190/4</link>
+        <pubDate>Mon, 14 Dec 2020 07:40:51 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1190-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190.rss">FEP-f1d5: NodeInfo in Fediverse Software</source>
+      </item>
+      <item>
+        <title>FEP-f1d5: NodeInfo in Fediverse Software</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>Smithereen also implements NodeInfo <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/eyes.png?v=9" title=":eyes:" class="emoji" alt=":eyes:"></p>
+<p>(partially — I don’t keep track of account activity, at least not yet)</p>
+<p>However. The concept of posts and comments fits my presentation nicely because I have both and they are very distinct in the UI, but what if there are different kinds of content? For example, what if I add photo albums? How would I count these and photos within, or would I ignore them entirely? The idea of “kind, count” pairs does indeed feel like the way to go.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190/3</link>
+        <pubDate>Mon, 14 Dec 2020 00:31:42 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1190-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190.rss">FEP-f1d5: NodeInfo in Fediverse Software</source>
+      </item>
+      <item>
+        <title>FEP-f1d5: NodeInfo in Fediverse Software</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/cjs">@cjs</a> the draft is now available in the <a href="https://socialhub.activitypub.rocks/t/about-the-fediverse-enhancement-proposals/1168">FEP Index</a>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190/2</link>
+        <pubDate>Sun, 13 Dec 2020 21:43:54 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1190-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190.rss">FEP-f1d5: NodeInfo in Fediverse Software</source>
+      </item>
+      <item>
+        <title>FEP-f1d5: NodeInfo in Fediverse Software</title>
+        <dc:creator><![CDATA[system]]></dc:creator>
+        <description><![CDATA[
+            <p>source: <a href="https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/src/branch/main/feps/fep-f1d5.md">https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/src/branch/main/feps/fep-f1d5.md</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190/1</link>
+        <pubDate>Sun, 13 Dec 2020 21:39:59 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1190-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/fep-f1d5-nodeinfo-in-fediverse-software/1190.rss">FEP-f1d5: NodeInfo in Fediverse Software</source>
+      </item>
+  </channel>
+</rss>

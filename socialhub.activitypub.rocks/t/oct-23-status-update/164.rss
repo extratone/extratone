@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Oct 23: Status Update</title>
+    <link>https://socialhub.activitypub.rocks/t/oct-23-status-update/164</link>
+    <description>The past month has been:
+
+* Implementing more of `apcore`, the FLOSS ActivityPub server framework in Go. Goal is to basically be plug-in-your-mux for web handling, plug in functions for ActivityPub processing, and just launch (with either S2S / C2S or both). Provides lots of sensible behavioral defaults for the `activity` library, lets admins have lots of configuration options, etc...
+* Improving `activity/astool` code generation. This has been a big one, formally supporting the `security` ontology (which has type-less &quot;types&quot;), and trying to cram JSON-LD&#39;s square peg into static typing&#39;s round hole, but investing early on in the multi-vocabulary understanding of the tool paid off rather well otherwise. Code generation as metaprogramming still is a sucky problem.
+* Fixed a hash sum bug in `httpsig` for Digests. Proof that the `hash.Hash` interface in go was foot-gun designed.  Yes, `httpsig` now does both HTTP Signatures and Digests, but still behind a very simple interface.
+
+I&#39;d like to thank Ben for stepping up and filing issues against Go-fed as he&#39;s been building out a Guild Wars 2  guild application of some sort.
+
+Also I am slightly late to the topic [here](https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145) but apparently go-fed&#39;s serialization strategy of non-functional properties can cause problems in pleroma. That&#39;s a TODO of some sort for someone, I&#39;m sure.
+
+This winter I hope to get the `apcore/example` live.
+
+No matter if it is the `activity`, `httpsig`, `apcore`, or any sub-packages, always open to collaboration.</description>
+    
+    <lastBuildDate>Tue, 22 Oct 2019 22:24:11 +0000</lastBuildDate>
+    <category>Go-Fed</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/oct-23-status-update/164.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Oct 23: Status Update</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <p>The past month has been:</p>
+<ul>
+<li>Implementing more of <code>apcore</code>, the FLOSS ActivityPub server framework in Go. Goal is to basically be plug-in-your-mux for web handling, plug in functions for ActivityPub processing, and just launch (with either S2S / C2S or both). Provides lots of sensible behavioral defaults for the <code>activity</code> library, lets admins have lots of configuration options, etc…</li>
+<li>Improving <code>activity/astool</code> code generation. This has been a big one, formally supporting the <code>security</code> ontology (which has type-less “types”), and trying to cram JSON-LD’s square peg into static typing’s round hole, but investing early on in the multi-vocabulary understanding of the tool paid off rather well otherwise. Code generation as metaprogramming still is a sucky problem.</li>
+<li>Fixed a hash sum bug in <code>httpsig</code> for Digests. Proof that the <code>hash.Hash</code> interface in go was foot-gun designed.  Yes, <code>httpsig</code> now does both HTTP Signatures and Digests, but still behind a very simple interface.</li>
+</ul>
+<p>I’d like to thank Ben for stepping up and filing issues against Go-fed as he’s been building out a Guild Wars 2  guild application of some sort.</p>
+<p>Also I am slightly late to the topic <a href="https://socialhub.activitypub.rocks/t/help-needed-with-pherephone-development-boosts-not-federating-to-pleroma/145">here</a> but apparently go-fed’s serialization strategy of non-functional properties can cause problems in pleroma. That’s a TODO of some sort for someone, I’m sure.</p>
+<p>This winter I hope to get the <code>apcore/example</code> live.</p>
+<p>No matter if it is the <code>activity</code>, <code>httpsig</code>, <code>apcore</code>, or any sub-packages, always open to collaboration.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/oct-23-status-update/164/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/oct-23-status-update/164/1</link>
+        <pubDate>Tue, 22 Oct 2019 22:24:11 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-164-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/oct-23-status-update/164.rss">Oct 23: Status Update</source>
+      </item>
+  </channel>
+</rss>

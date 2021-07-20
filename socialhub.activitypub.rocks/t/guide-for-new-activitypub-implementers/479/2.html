@@ -1,0 +1,1972 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Guide for new ActivityPub implementers - #2 by nedjo - ActivityPub - SocialHub</title>
+    <meta name="description" content="This wiki post is a place for collaboratively drafting ActivityPub documentation with the hope that this material may be incorporated into proposed improvements to the activitypub.rocks site, see the conversation about t&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="../../draft-guide-for-new-activitypub-implementers/479.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Guide for new ActivityPub implementers&#39;" href="../479.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/guide-for-new-activitypub-implementers/479/2" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/guide-for-new-activitypub-implementers/479/2" />
+<meta property="og:title" content="Guide for new ActivityPub implementers" />
+<meta name="twitter:title" content="Guide for new ActivityPub implementers" />
+<meta property="og:description" content="And an addendum   The ActivityPub spec, in checkboxes! While the ActivityPub implementation report is outdated due to the test instance being down, the first column in that report is a valuable list of implementation details that comprise the ActivityPub spec.  Starting with what’s defined in the code driving the implementation report page, the following lists are designed to be easily copied into a set of tasks in an issue management system that supports GitHub flavoured Markdown, such as GitLa..." />
+<meta name="twitter:description" content="And an addendum   The ActivityPub spec, in checkboxes! While the ActivityPub implementation report is outdated due to the test instance being down, the first column in that report is a valuable list of implementation details that comprise the ActivityPub spec.  Starting with what’s defined in the code driving the implementation report page, the following lists are designed to be easily copied into a set of tasks in an issue management system that supports GitHub flavoured Markdown, such as GitLa..." />
+<meta property="article:published_time" content="2020-01-21T04:24:19+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="../../draft-guide-for-new-activitypub-implementers/479.html">Guide for new ActivityPub implementers</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../../c/activitypub.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #0088CC'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>ActivityPub</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+      <div class="topic-category">
+        <div class='discourse-tags list-tags'>
+            <a href='../../../tag/draft.html' class='discourse-tag' rel="tag">draft</a>
+        </div>
+      </div>
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/nedjo.html'><span itemprop='name'>nedjo</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../../draft-guide-for-new-activitypub-implementers/479.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-01-21T04:21:35Z'>
+              <time itemprop='dateModified' datetime='2021-04-16T05:31:20Z' class='post-time'>
+                April 16, 2021,  5:31am
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>This wiki post is a place for collaboratively drafting ActivityPub documentation with the hope that this material may be incorporated into proposed improvements to the activitypub.rocks site, see <a href="../../discussing-the-evolution-of-the-activitypub-rocks-site/142.html">the conversation about the new main page</a> and the <a href="https://rigelk.gitlab.io/activitypub.rocks/" rel="noopener nofollow ugc">demonstration </a>.</p>
+<div data-theme-toc="true"> </div>
+<h2>
+<a name="about-this-guide" class="anchor" href="2.html#about-this-guide"></a>About this guide</h2>
+<p>This is an informal guide to help new implementers get up to speed with the <a href="https://www.w3.org/TR/activitypub" rel="noopener nofollow ugc">ActivityPub specification</a> and how to built projects with ActivityPub support.</p>
+<h3>
+<a name="why-choose-activitypub" class="anchor" href="2.html#why-choose-activitypub"></a>Why choose ActivityPub?</h3>
+<p>Why might you choose to implement ActivityPub in your project? Possible reasons include:</p>
+<ul>
+<li>“to move beyond the silos of social media sites run by individual companies” (<a href="https://flak.tedunangst.com/post/ActivityPub-as-it-has-been-understood" rel="noopener nofollow ugc">ActivityPub as it has been understood</a>)</li>
+<li>Interoperability with other software supporting the same protocols.</li>
+<li>Ability to build off existing implementations.</li>
+<li>Collaboration opportunities.</li>
+</ul>
+<h3>
+<a name="disclaimers" class="anchor" href="2.html#disclaimers"></a>Disclaimers</h3>
+<p>This guide includes lots of links to various projects. The point is not “this is the best implementation” so much as “here’s some stuff that could be useful”.</p>
+<p>This guide is intended to <em>supplement</em> and expand on what’s in the relevant specs. Those specs remain the primary sources and will cover a lot that isn’t covered here.</p>
+<p>Before deep-diving into technical details it is recommended to read <a href="https://cjslep.com/c/blog/an-activitypub-philosophy" rel="noopener nofollow ugc">An ActivityPub Philosophy</a> which places the ActivityPub standard in its proper context, and helps taking the proper approach when building extensions.</p>
+<h2>
+<a name="resources" class="anchor" href="2.html#resources"></a>Resources</h2>
+<p>If you’re used to specifications that are written in obscure technospeak, you may be pleasantly surprised when you look at the <a href="https://www.w3.org/TR/activitypub" rel="noopener nofollow ugc">ActivityPub specification</a>. The authors put in a lot of effort to try to make the spec readable and easy to understand. A good starting place is the <a href="https://www.w3.org/TR/activitypub/#Overview" rel="noopener nofollow ugc">overview</a>.</p>
+<h3>
+<a name="specifications" class="anchor" href="2.html#specifications"></a>Specifications</h3>
+<p>Sooner or later as an ActivityPub implementer you’ll find yourself spending some time with many or most of the relevant specifications.</p>
+<ul>
+<li>Specification for <a href="https://www.w3.org/TR/activitypub" rel="noopener nofollow ugc">ActivityPub</a>
+</li>
+<li>Specification for <a href="https://www.w3.org/TR/activitystreams-core" rel="noopener nofollow ugc">ActivityStreams</a>, the basis of ActivityPub.</li>
+<li>Specification for <a href="https://www.w3.org/TR/activitystreams-vocabulary" rel="noopener nofollow ugc">Activity Vocabulary</a>, which details “extended types” for ActivityStreams actors and object such as Person and Note.</li>
+<li>Some work has been done towards <a href="https://litepub.social/litepub" rel="noopener nofollow ugc">Litepub</a>, a set of protocols extending ActivityPub. At time of writing (January 2020), that work appears to be on pause.</li>
+<li>ActivityPub and its two related specs, Activity Streams and Activity Vocabulary, all structure their data in JSON-LD. The <a href="https://www.w3.org/TR/json-ld" rel="noopener nofollow ugc">JSON-LD specification</a> is a hefty one and if you’re new to the format you may want to start with introductory material, such as:
+<ul>
+<li><a href="https://json-ld.org/primer/latest" rel="noopener nofollow ugc">JSON-LD Primer</a></li>
+<li><a href="https://blog.jonm.dev/posts/intro-json-ld" rel="noopener nofollow ugc">An Introduction to JSON-LD</a></li>
+</ul>
+</li>
+</ul>
+<h3>
+<a name="tutorials" class="anchor" href="2.html#tutorials"></a>Tutorials</h3>
+<ul>
+<li>
+<a href="https://blog.joinmastodon.org/2018/06/how-to-implement-a-basic-activitypub-server" rel="noopener nofollow ugc">How to implement a basic ActivityPub server</a> (Mastodon)</li>
+<li><a href="https://hacks.mozilla.org/2018/11/decentralizing-social-interactions-with-activitypub" rel="noopener nofollow ugc">Decentralizing Social Interactions with ActivityPub</a></li>
+<li><a href="https://tinysubversions.com/notes/reading-activitypub/" rel="noopener nofollow ugc">A Highly Opinionated Guide to Learning About ActivityPub</a></li>
+<li>Video (in Spanish), <a href="https://vimeo.com/256483933" rel="noopener nofollow ugc">Mini implementación de ActivityPub en Ruby</a>
+</li>
+</ul>
+<p>          <iframe width="640" height="360" src="https://player.vimeo.com/video/256483933" data-original-href="https://vimeo.com/256483933" frameborder="0" allowfullscreen="" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe>
+</p>
+<h3>
+<a name="technical-activitypub-introductions" class="anchor" href="2.html#technical-activitypub-introductions"></a>Technical ActivityPub introductions</h3>
+<ul>
+<li>
+<a href="https://librelounge.org" rel="noopener nofollow ugc">LibreLounge podcast</a>
+<ul>
+<li><a href="https://librelounge.org/episodes/episode-12-activitypub-part-1.html" rel="noopener nofollow ugc">Episode 12: ActivityPub Part 1</a></li>
+<li><a href="https://librelounge.org/episodes/episode-17-activitypub-part-2.html" rel="noopener nofollow ugc">Episode 17: ActivityPub Part 2</a></li>
+<li><a href="https://librelounge.org/episodes/episode-20-activitypub-part-3.html" rel="noopener nofollow ugc">Episode 20: ActivityPub Part 3</a></li>
+</ul>
+</li>
+<li>
+<a href="https://flak.tedunangst.com/post/ActivityPub-as-it-has-been-understood" rel="noopener nofollow ugc">ActivityPub as it has been understood</a>–includes lots of relevant links.</li>
+<li>
+<a href="https://blog.soykaf.com/post/activity-pub-in-pleroma" rel="noopener nofollow ugc">ActivityPub in Pleroma</a>.</li>
+</ul>
+<h3>
+<a name="api-documentation-for-specific-implementations" class="anchor" href="2.html#api-documentation-for-specific-implementations"></a>API documentation for specific implementations</h3>
+<ul>
+<li>
+<a href="https://docs.joinpeertube.org/#/api-activitypub" rel="noopener nofollow ugc">PeerTube ActivityPub API</a>.</li>
+<li><a href="https://docs.funkwhale.audio/federation/index.html" rel="noopener nofollow ugc">FunkWhale Federation</a></li>
+<li>
+<a href="https://blog.moodle.net/2018/what-is-activitypub/" rel="noopener nofollow ugc">What is ActivityPub?</a> (MoodleNet)</li>
+<li><a href="https://docs.joinmastodon.org/spec/activitypub" rel="noopener nofollow ugc">Mastodon ActivityPub API</a></li>
+</ul>
+<h3>
+<a name="areas-of-critique-and-debate" class="anchor" href="2.html#areas-of-critique-and-debate"></a>Areas of critique and debate</h3>
+<p>As you assess the work of implementing in ActivityPub it can help to be up on some of the areas of discussion within the community.</p>
+<h4>
+<a name="decisions-against-adopting-activitypub" class="anchor" href="2.html#decisions-against-adopting-activitypub"></a>Decisions against adopting ActivityPub</h4>
+<p>The Diaspora project has effectively decided against integrating with ActivityPub, see <a href="https://github.com/diaspora/diaspora/issues/7422" rel="noopener nofollow ugc">this issue</a> which includes some critiques of the protocol. See also <a href="https://schub.wtf/blog/2019/01/13/activitypub-final-thoughts-one-year-later.html" rel="noopener nofollow ugc">ActivityPub - Final thoughts, one year later</a>.</p>
+<h4>
+<a name="private-content-and-trust" class="anchor" href="2.html#private-content-and-trust"></a>Private content and trust</h4>
+<p>At <a href="https://blog.dereferenced.org" rel="noopener nofollow ugc">https://blog.dereferenced.org</a> and elsewhere, Ariadne Conill has critiqued the ActivityPub specification from a trust and safety perspective. See <a href="https://blog.dereferenced.org/activitypub-the-worse-is-better-approach-to-federated-social-networking" rel="noopener nofollow ugc">ActivityPub: The “Worse Is Better” Approach to Federated Social Networking</a> and subsequent posts.</p>
+<p>Others have critiqued the ActivityPub federation model’s reliance on external sites maintaining privacy restrictions. One commenter <a href="https://beesbuzz.biz/blog/4379-Im-warming-up-to-ActivityPub" rel="noopener nofollow ugc">noted</a>:</p>
+<blockquote>
+<p>For the sake of privacy and safety I think that private posts should still only be pushed in stub/notification form (mostly because I don’t trust most ActivityPub implementations to keep private stuff private)</p>
+</blockquote>
+<h4>
+<a name="federation-issues" class="anchor" href="2.html#federation-issues"></a>Federation issues</h4>
+<p>From <a href="https://wiki.freedombone.net/view/welcome-visitors/view/a-peoples-history-of-the-fediverse/view/protocol-wars/view/views-on-activitypub" rel="noopener nofollow ugc">A People’s History of the Fediverse</a></p>
+<blockquote>
+<p>ActivityPub didn’t solve the longstanding federation issues which had been known about since before its creation, such as nomadic identity, key based identity rather than domain based identity and the ability to easily migrate accounts between instances.</p>
+</blockquote>
+<h2>
+<a name="whats-already-out-there" class="anchor" href="2.html#whats-already-out-there"></a>What’s already out there?</h2>
+<p>As you start in, it’s useful to get a sense of what ActivityPub implementations and code projects already exist. Doing so will help you:</p>
+<ul>
+<li>Identify opportunities to collaborate and combine efforts.</li>
+<li>Identify examples and models to work from.</li>
+<li>See how your project relates to others.</li>
+<li>Connect with the ActivityPub community.</li>
+</ul>
+<p>A wiki page on the Fediverse.Party site, <a href="https://git.feneas.org/feneas/fediverse/-/wikis/watchlist-for-activitypub-apps" rel="noopener nofollow ugc">watchlist for ActivityPub apps</a>, contains one of the most extensive listings of ActivityPub projects. See in particular the <a href="https://git.feneas.org/feneas/fediverse/-/wikis/watchlist-for-activitypub-apps#developer-tools" rel="noopener nofollow ugc">developer tools</a> section for lots of packages, libraries, and other software useful to ActivityPub implementers.</p>
+<p>Additional places to look include:</p>
+<ul>
+<li>The <a href="../../../c/software/index.html">Software category</a> and <a href="https://socialhub.activitypub.rocks/c/programming/33">Programming category</a> on the <a href="https://socialhub.activitypub.rocks">ActivityPub SocialHub forum</a>.</li>
+<li>A <a href="https://ethercalc.org/fediverse-stacks" rel="noopener nofollow ugc">web spreadsheet of AP apps</a> and their characteristics by <a href="https://socialhub.activitypub.rocks/mayel">@mayel</a> from Social.coop.</li>
+<li>Fediverse.Party, which lists Fediverse projects including ones that support ActivityPub. You can find information in two places:
+<ul>
+<li>The <a href="https://fediverse.party" rel="noopener nofollow ugc">home page</a> has links to a curated list of Fediverse projects. Click on each to find very detailed information on the projects, including the languages they’re written in.</li>
+<li>A list of <a href="https://fediverse.party/en/miscellaneous" rel="noopener nofollow ugc">more apps</a> has more basic information on a bunch of other projects. On this page you can filter to see only apps that support ActivityPub.</li>
+</ul>
+</li>
+<li>The various Fediverse aggregators, some of which include information on the software running each instance.</li>
+</ul>
+<h2>
+<a name="implementing-activitypub" class="anchor" href="2.html#implementing-activitypub"></a>Implementing ActivityPub</h2>
+<p>The ActivityPub, Activity Streams, and Activity Vocabulary specifications are the main places to look for details on what’s required to implement ActivityPub support. The notes here are intended to give pointers on areas not covered by the specs or where clarification or subsequent work is relevant.</p>
+<h3>
+<a name="activitypub-objects-and-activities" class="anchor" href="2.html#activitypub-objects-and-activities"></a>ActivityPub objects and activities</h3>
+<p>While formally there are eight <a href="https://www.w3.org/TR/activitystreams-vocabulary/#types" rel="noopener nofollow ugc">core object types</a> defined in the Activity Vocabulary spec, with many <a href="https://www.w3.org/TR/activitystreams-vocabulary/#extendedtypes" rel="noopener nofollow ugc">“extended” types</a>, it can help to think of these objects as falling into four main groups:</p>
+<ul>
+<li>
+<a href="https://www.w3.org/TR/activitystreams-vocabulary/#dfn-activity" rel="noopener nofollow ugc"><code>Activity</code></a> objects like <code>Follow</code> or <code>Announce</code>. An activity is an action undertaken by an actor.</li>
+<li>
+<a href="https://www.w3.org/TR/activitystreams-vocabulary/#dfn-activity" rel="noopener nofollow ugc">Actor objects</a>, like a <code>Person</code> or <code>Group</code>. Actors undertake activities like following or creating content.</li>
+<li>
+<a href="https://www.w3.org/TR/activitystreams-vocabulary/#object-types" rel="noopener nofollow ugc">Object (and link) types</a> such as a <code>Note</code> or a <code>Video</code>. These objects types usually represent content of some sort.</li>
+<li>
+<a href="https://www.w3.org/TR/activitystreams-core/#collections" rel="noopener nofollow ugc"><code>Collection</code></a> objects. These are groupings or listings of multiple other objects, such as a list of followers of a particular person or a list of public posts.</li>
+</ul>
+<p>Implementing ActivityPub support is about letting actors like site members on your application or site - in the Fediverse, often called an <em>instance</em> - have back and forth exchanges with actors on other instances. As discussed in <a href="https://librelounge.org/episodes/episode-12-activitypub-part-1.html" rel="noopener nofollow ugc">Episode 12: ActivityPub Part 1</a> of the <a href="https://librelounge.org" rel="noopener nofollow ugc">LibreLounge podcast</a> (15:26 - 20:24), ActivityPub structures these exchanges in a way that’s analogous to a simple subject-verb-object statement. In every message that’s sent server-to-server:</p>
+<blockquote>
+<p><em>Somebody</em> is doing <em>something</em> to some <em>object</em>. In ActivityPub terms, that’s an <em>Actor</em> is performing an <em>Activity</em> on an <em>Object</em>.</p>
+</blockquote>
+<p>In ActivityPub, two servers are federated with each other when there is a relationship between one or more actors on each. A common relationship is <em>following</em>: an actor on one server follows an actor on another server. From there, a whole set of other activities are opened up, like when the followed actor posts a <code>Note</code> or <code>Video</code>, the follower’s account receives a notification (in the form of a <code>Create</code> activity).</p>
+<p>Some data are tracked on both sides of the relationship. For example, if <code>@chris@example1.org</code> follows <code>@georgie@example2.net</code>, that relationship is tracked both as a record on <a href="http://example1.org" rel="noopener nofollow ugc">example1.org</a> (georgie is in chris’s following collection) and on <a href="http://example2.net" rel="noopener nofollow ugc">example2.net</a> (chris is in georgie’s followers collection).</p>
+<p>ActivityPub URIs serve a dual role depending on the HTTP method used. Pretty much, a given URI such as the <code>id</code> URI of a <code>Person</code> or the URI of an actor’s <code>inbox</code>supports two types of operations:</p>
+<ul>
+<li>GET <em>fetches</em> an object or collection of objects.</li>
+<li>POST <em>receives</em> an activity in JSON-LD format.</li>
+</ul>
+<p>Note that instead of the other standard HTTP methods - PATCH, PUT, DELETE - there are different activity types (<code>Create</code>, <code>Update</code>, <code>Delete</code>).</p>
+<p>The <code>id</code> of an object is a URI that can be “dereferenced”–that is, assuming appropriate access authorization, a GET request to the URI will look up and return the full object.</p>
+<p>So URIs that are the <code>id</code> of a single object such as an <code>Actor</code> return data about that object. Other URIs, such as that of an actor’s <code>outbox</code>, can return a <code>Collection</code> of objects.</p>
+<h3>
+<a name="json-ld" class="anchor" href="2.html#json-ld"></a>JSON-LD</h3>
+<p>If you’re developing for ActivityPub, you’re going to be dealing with JSON-LD, since that’s the format ActivityPub JSON is in. While JSON-LD <em>can</em> be handled as regular JSON, there are also specialized tools in JSON-LD that may be valuable to your application.</p>
+<h4>
+<a name="expansion-compaction-flattening" class="anchor" href="2.html#expansion-compaction-flattening"></a>Expansion, compaction, flattening</h4>
+<p>One thing you’ll quickly notice when reading through code examples in the ActivityPub specifications is that the JSON-LD can be super variable in its format. Add to that the fact it will be coming from any number of different implementations and you’ve got a big challenge when it comes to parsing the incoming information.</p>
+<p>So it’s worth noting that JSON-LD supports compacted and expanded formats as well as flattening of either. To avoid having to directly manage the inconsistencies of the compact format, you may want to standardize on <a href="https://w3c.github.io/json-ld-api/#expansion" rel="noopener nofollow ugc">expanded</a> and flattened, then compact before returning. <a href="https://w3c.github.io/json-ld-api/#flattening" rel="noopener nofollow ugc">Flattening</a>:</p>
+<blockquote>
+<p>may drastically simplify the code required to process JSON-LD data in certain applications.</p>
+</blockquote>
+<p>Discussion: <a href="https://jeremydormitzer.com/blog/more-than-json.html" rel="noopener nofollow ugc">More than JSON: ActivityPub and JSON-LD</a>.</p>
+<h4>
+<a name="conversion-to-and-from-rdf" class="anchor" href="2.html#conversion-to-and-from-rdf"></a>Conversion to and from RDF</h4>
+<p>If you’re working in an environment where there’s existing support for <a href="https://www.w3.org/2001/sw/wiki/RDF" rel="noopener nofollow ugc">RDF</a>, you might want to look at JSON-LD support for <a href="https://w3c.github.io/json-ld-api/#rdf-serialization-deserialization" rel="noopener nofollow ugc">RDF serialization and deserialization</a>.</p>
+<h4>
+<a name="json-ld-libraries-and-packages" class="anchor" href="2.html#json-ld-libraries-and-packages"></a>JSON-LD libraries and packages</h4>
+<p>The JSON-LD specification is widely supported and you may find an implementation in your programming language that will provide basic functionality such as methods to expand, compact, and flatten. Packages include:</p>
+<ul>
+<li>PHP
+<ul>
+<li><a href="https://github.com/lanthaler/JsonLD" rel="noopener nofollow ugc">JsonLD</a></li>
+<li><a href="https://github.com/digitalbazaar/php-json-ld" rel="noopener nofollow ugc">php-json-ld</a></li>
+</ul>
+</li>
+<li>Python
+<ul>
+<li><a href="https://github.com/digitalbazaar/pyld" rel="noopener nofollow ugc">PyLD</a></li>
+</ul>
+</li>
+<li>Ruby
+<ul>
+<li><a href="https://github.com/ruby-rdf/json-ld/" rel="noopener nofollow ugc">JSON-LD reader/writer</a></li>
+</ul>
+</li>
+</ul>
+<h3>
+<a name="validation" class="anchor" href="2.html#validation"></a>Validation</h3>
+<p>There’s an unofficial <a href="https://github.com/redaktor/ActivityPubSchema" rel="noopener nofollow ugc">ActivityPubSchema</a> that may be useful if you’re validating the JSON-LD of ActivityPub requests and responses.</p>
+<h3>
+<a name="developer-vs-user-terminology" class="anchor" href="2.html#developer-vs-user-terminology"></a>Developer vs. user terminology</h3>
+<p>While “ActivityPub” may mean something to people with a technical bent, it’s probably not the best way to convey to site members what your software is and does.</p>
+<p>“Fediverse” is probably a <em>bit</em> better, in that at least if you look it up you’re slightly more likely to find something basically readable. Still, it’s worth looking around at how other software are handling the question of presenting the ideas of federation and ActivityPub to their users.</p>
+<h3>
+<a name="the-missing-pieces" class="anchor" href="2.html#the-missing-pieces"></a>The “missing” pieces</h3>
+<p>While the ActivityPub specification covers a lot, there are also areas that aren’t spelled out and left to implementers to decide. As <a href="https://blog.emacsen.net" rel="noopener nofollow ugc">Serge Wroclawski</a> put it in an <a href="https://librelounge.org/episodes/episode-20-activitypub-part-3.html" rel="noopener nofollow ugc">episode of the Libre Lounge podcast</a> (1:38 - 1:52):</p>
+<blockquote>
+<p>If you’re an implementer and you first look at ActivityPub, it seems like there’s a lot missing, and there absolutely is. And so what you have to do is you have to look at best practices at the time, which aren’t necessarily in the standard itself.</p>
+</blockquote>
+<p>This section is about those current practices.</p>
+<h4>
+<a name="discovery-webfinger" class="anchor" href="2.html#discovery-webfinger"></a>Discovery: Webfinger</h4>
+<p>How to look up actor accounts on another server?</p>
+<p>In ActivityPub, an <code>Actor</code> such as a <code>Person</code> (often, a user with an account on a given site) is identified by an ID in the form of a URI. That URI <em>could</em> be what’s used to identify the actor on other ActivityPub sites. But URIs can be hard to work with and understand. A much more familiar format is <code>user@domain.tld</code> (or, by convention in the Fediverse, <code>@user@domain.tld</code>, to distinguish the handle from an email address).</p>
+<p>The ActivityPub spec doesn’t cover profile discovery, that is, the ability to look up a handle like <code>@user@domain.tld</code> and find the URI for the account’s profile. However, per <a href="https://feneas.org/activitypub-well-its-not-that-bad/#missing-specification-for-profile-discovery" rel="noopener nofollow ugc">ActivityPub? Well, it’s not that bad</a>:</p>
+<blockquote>
+<p>Most current implementers have integrated <a href="https://tools.ietf.org/html/rfc7033" rel="noopener nofollow ugc">Webfinger</a> for that purpose, since users like to work with handles rather than URLs.</p>
+</blockquote>
+<p>For example, Webfinger is implemented in Mastodon and is the recommended way to implement interoperability. See the <a href="https://docs.joinmastodon.org/spec/webfinger" rel="noopener nofollow ugc">Mastodon documentation on Webfinger</a> and <a href="https://blog.joinmastodon.org/2018/06/how-to-implement-a-basic-activitypub-server/#webfinger" rel="noopener nofollow ugc">this tutorial</a>.</p>
+<h4>
+<a name="authentication-and-authorization" class="anchor" href="2.html#authentication-and-authorization"></a>Authentication and authorization</h4>
+<p>ActivityPub doesn’t itself specify how to handle server to server user authentication, but it provides some hints in a wiki page, <a href="https://www.w3.org/wiki/SocialCG/ActivityPub/Authentication_Authorization" rel="noopener nofollow ugc">SocialCG/ActivityPub/Authentication Authorization</a>. In your implementation you’ll probably find yourself implementing at least one of the solutions they point to.</p>
+<h5>
+<a name="client-to-server" class="anchor" href="2.html#client-to-server"></a>Client to server</h5>
+<p>As <a href="https://www.w3.org/wiki/SocialCG/ActivityPub/Authentication_Authorization#Client_to_Server" rel="noopener nofollow ugc">noted in the SocialCG wiki</a>:</p>
+<blockquote>
+<p>ActivityPub clients authenticate against a server using <a href="https://oauth.net/2" rel="noopener nofollow ugc">OAuth 2.0</a> bearer tokens.</p>
+</blockquote>
+<p>So if you’re building a client app, or if you’re building a server app that supports client connections, you’ll need to build in OAuth 2.0 support.</p>
+<p>Note: There are a lot of intricacies to C2S authentication. See this <a href="https://andstatus.org" rel="noopener nofollow ugc">AndStatus</a> issue <a href="https://github.com/andstatus/andstatus/issues/499" rel="noopener nofollow ugc">Basic implementation of “client to server” ActivityPub protocol (#499)</a> for a detailed discussion with many cross-references.</p>
+<h5>
+<a name="server-to-server" class="anchor" href="2.html#server-to-server"></a>Server to server</h5>
+<h6>
+<a name="http-signatures" class="anchor" href="2.html#http-signatures"></a>HTTP Signatures</h6>
+<p><a href="https://tools.ietf.org/html/draft-cavage-http-signatures-08" rel="noopener nofollow ugc">HTTP Signatures</a> is the approach taken in most current implementations.</p>
+<p>Usually you’ll need to both:</p>
+<ul>
+<li>Support HTTP signature verification from remote instances.</li>
+<li>Verify HTTP signatures on incoming activities.</li>
+</ul>
+<p>The tutorial <a href="https://blog.joinmastodon.org/2018/06/how-to-implement-a-basic-activitypub-server" rel="noopener nofollow ugc">How to implement a basic ActivityPub server</a> includes a good introduction to HTTP Signatures and how to use them, including how to add a <code>publicKey</code> attribute to an actor object.</p>
+<h6>
+<a name="linked-data-signatures" class="anchor" href="2.html#linked-data-signatures"></a>Linked Data Signatures</h6>
+<p><a href="https://w3c-dvcg.github.io/ld-signatures" rel="noopener nofollow ugc">Linked Data Signatures</a> are <a href="https://www.w3.org/wiki/SocialCG/ActivityPub/Authentication_Authorization#Linked_Data_Signatures" rel="noopener nofollow ugc">recommended when</a>:</p>
+<blockquote>
+<p>it is important to be able to verify that the actors specified in the <code>actor</code> and <code>attributedTo</code> fields really did author the objects they are being claimed to have authored.</p>
+</blockquote>
+<h4>
+<a name="information-about-the-instancenode" class="anchor" href="2.html#information-about-the-instancenode"></a>Information about the instance/node</h4>
+<p>ActivityPub is all about actors, activities, and objects, but doesn’t say anything about the instance itself–the site that’s hosting all this. Various approaches are filling this gap.</p>
+<h5>
+<a name="nodeinfo" class="anchor" href="2.html#nodeinfo"></a>NodeInfo</h5>
+<p>There is a <a href="https://github.com/jhass/nodeinfo" rel="noopener nofollow ugc">NodeInfo standard</a> adopted by many ActivityPub implementations.</p>
+<p>NodeInfo <a href="http://nodeinfo.diaspora.software" rel="noopener nofollow ugc">is</a>:</p>
+<blockquote>
+<p>an effort to create a standardized way of exposing metadata about a server running one of the distributed social networks. The two key goals are being able to get better insights into the user base of distributed social networking and the ability to build tools that allow users to choose the best fitting software and server for their needs.</p>
+</blockquote>
+<p>There is an alternate <a href="https://github.com/jaywink/nodeinfo2" rel="noopener nofollow ugc">NodeInfo2</a> standard.</p>
+<blockquote>
+<p>NodeInfo2 is a fork of NodeInfo which was seen as too complex for the problem it is solving.</p>
+</blockquote>
+<p>There has also been discussion about the <a href="../../discussing-onboarding-for-developers/61/4.html">possibility of ActivityPub-specific discovery</a>.</p>
+<h5>
+<a name="federationmd" class="anchor" href="2.html#federationmd"></a>Federation.md</h5>
+<p>Complementary to NodeInfo, some implementations have introduced a federation.md file to describe instance capabilities in a human readable way. See <a href="../../documenting-federation-behavior-in-a-semi-standard-way/453.html">this discussion</a> for more information. The federation.md files are a good way to get a sense of how different projects are using and adapting ActivityPub. Examples include:</p>
+<ul>
+<li><a href="https://github.com/dariusk/gathio/blob/master/FEDERATION.md" rel="noopener nofollow ugc">gathio</a></li>
+<li><a href="https://github.com/writefreely/documentation/blob/master/writer/federation.md" rel="noopener nofollow ugc">WriteFreely</a></li>
+<li><a href="https://codeberg.org/zot/zap/src/branch/release/FEDERATION.md" rel="noopener nofollow ugc">Zap</a></li>
+<li><a href="https://gitlab.com/ngerakines/tavern/-/blob/master/FEDERATION.md" rel="noopener nofollow ugc">Tavern</a></li>
+<li><a href="https://github.com/grishka/Smithereen/blob/master/FEDERATION.md" rel="noopener nofollow ugc">Smithereen</a></li>
+<li><a href="https://github.com/lesion/gancio/blob/gh/docs/federation.md" rel="noopener nofollow ugc">gancio</a></li>
+<li><a href="https://join.lemmy.ml/docs/en/federation/overview.html" rel="noopener nofollow ugc">Lemmy</a></li>
+</ul>
+<h4>
+<a name="filtering-out-abuse-and-hate" class="anchor" href="2.html#filtering-out-abuse-and-hate"></a>Filtering out abuse and hate</h4>
+<p>ActivityPub provides a way to connect to other instances. But what if there are instances a particular site’s administrators don’t want to connect to? How to deal with the fact that the Fediverse is by default unfiltered and there are nodes that permit or actively encourage hate speech and abuse?</p>
+<p>Background on the problem and proposed solutions:</p>
+<ul>
+<li><a href="https://github.com/WebOfTrustInfo/rwot9-prague/blob/1c4c3f81bb5dc018cd05910b8b249f9657e72743/topics-and-advance-readings/ap-unwanted-messages.md" rel="noopener nofollow ugc">Keeping Unwanted Messages off the Fediverse</a></li>
+<li><a href="https://gitlab.com/spritely/ocappub" rel="noopener nofollow ugc">OcapPub: Towards networks of consent</a></li>
+</ul>
+<p>A very basic approach is to enable whitelisting/blacklisting of ActivityPub domains so that an individual site’s admins can decide who to or not to federate with. That’s what’s supported in Mastodon.</p>
+<p>Relevant background from the Mastodon project:</p>
+<ul>
+<li><a href="https://www.theverge.com/2019/7/12/20691957/mastodon-decentralized-social-network-gab-migration-fediverse-app-blocking" rel="noopener nofollow ugc">How the biggest decentralized social network is dealing with its Nazi problem</a></li>
+<li><a href="https://blog.joinmastodon.org/2019/07/statement-on-gabs-fork-of-mastodon" rel="noopener nofollow ugc">Statement on Gab’s fork of Mastodon</a></li>
+<li><a href="https://docs.joinmastodon.org/admin/moderation#server-wide-moderation" rel="noopener nofollow ugc">Documentation on server-wide moderation</a></li>
+<li><a href="https://github.com/Gargron/mastodon.social-misc" rel="noopener nofollow ugc">List of instances blocked by mastodon.social</a></li>
+<li><a href="https://awoo.space/about/more" rel="noopener nofollow ugc">Mastondon instance with a forked codebase allowing whitelisting of domains rather than the default blacklist</a></li>
+</ul>
+<h4>
+<a name="extensions" class="anchor" href="2.html#extensions"></a>Extensions</h4>
+<p>While you may find the set of objects and properties spelled out in the Activity Streams specs is sufficient for your use case, in many cases it won’t be.</p>
+<p>The upside of custom extensions is they meet a specific need. The downside is they limit interoperability with other ActivityPub implementations.</p>
+<p>While you can definitely create your own extensions, it’s worth getting familiar with what other implementers have already done.</p>
+<ul>
+<li>Mastodon uses an <a href="https://docs.joinmastodon.org/spec/activitypub/#namespaces" rel="noopener nofollow ugc">extensive set of non-ActivityPub extensions</a>.</li>
+</ul>
+<h2>
+<a name="frequently-asked-questions-tips-tricks" class="anchor" href="2.html#frequently-asked-questions-tips-tricks"></a>Frequently asked questions, tips, tricks</h2>
+<p>Designed to address the most common questions, this section is a compendium of tips, suggestions, and ideas around specific implementation questions.</p>
+<h3>
+<a name="what-do-i-need-to-present-to-my-users" class="anchor" href="2.html#what-do-i-need-to-present-to-my-users"></a>What do I need to present to my users?</h3>
+<p>For starters, if you’re building a server app, you’ll probably want to display the ID of the user’s ActivityPub profile, since this is the way that others can interact with them in the Fediverse. If you’re using Webfinger, you may also want to display the <code>@username@example.com</code> format so that users on other instances can use that to mention or look up your users.</p>
+<h3>
+<a name="what-document-object-types-to-use" class="anchor" href="2.html#what-document-object-types-to-use"></a>What document object types to use?</h3>
+<p>Activity Vocabulary defines several types of objects, such as <code>Note</code>, <code>Article</code>, and <code>Video</code>. Currently there is some tension between interoperability, on the one hand, and adherence the spec, on the other. Some implementers are focusing on what’s currently supported in Mastodon, where a <code>Note</code> will be fully displayed (minus certain markup) while an <code>Article</code>, for example, will appear as a link.</p>
+<h3>
+<a name="how-to-handle-public-content" class="anchor" href="2.html#how-to-handle-public-content"></a>How to handle public content?</h3>
+<p>ActivityPub content may be <a href="https://www.w3.org/TR/activitypub/#public-addressing" rel="noopener nofollow ugc">publicly addressed</a>. It’s left to implementers to decide how to handle such content.</p>
+<p>Questions to consider include:</p>
+<ul>
+<li>Should any locally generated public content be posted to all known <code>sharedInbox</code> URIs?</li>
+<li>If you’ve implemented a <code>sharedInbox</code>, what if anything do you want to do with publicly addressed content that arrives there?</li>
+</ul>
+<h3>
+<a name="whats-special-about-the-sharedinbox" class="anchor" href="2.html#whats-special-about-the-sharedinbox"></a>What’s special about the <code>sharedInbox</code>?</h3>
+<p>Among other uses, a shared inbox can optionally be used to send a single post to multiple actors who would otherwise need to each be messaged separately. When you are sending an activity to remote instances, instead of sending one per <code>Actor</code>, you can instead iterate through all your actors and post to the list of unique <code>sharedInbox</code> URIs. The ActivityPub spec notes:</p>
+<blockquote>
+<p>in this scenario, the remote/receiving server participates in determining targeting and performing delivery to specific inboxes.</p>
+</blockquote>
+<p>Participates? How?</p>
+<p>The idea here is that in theory a following relationship is tracked on both sides: as part of a <code>followers</code> collection associated with the actor on the originating server <em>and</em> as part of a <code>followed</code> collection associated with the actor on the receiving server. So the originating server doesn’t need to explicitly list recipients. Instead, the receiving server can take the ID of the activity’s <code>actor</code>, look up its own list of who’s following that actor, and deliver the object to each member of that list.</p>
+<h3>
+<a name="what-data-do-i-need-to-store-locally" class="anchor" href="2.html#what-data-do-i-need-to-store-locally"></a>What data do I need to store locally?</h3>
+<p>Many web application developers will be used to a model where there’s a clear separation between (a) what’s created and managed within the application and (b) any data objects that are externally hosted. For example, in the most simple case, you might have your own <code>User</code> and <code>Article</code> entities which you store locally. If you also, say, display remote content from an RSS feed, you might might model and store that content and its authors quite differently than your own <code>User</code> and <code>Article</code> data.</p>
+<p>With ActivityPub, there’s at least the potential to use the same models for both local and remote objects. For example, if a user on your site both (a) posts <code>Article</code> content of their own and (b) follows actors on remote instances and so gets content when those remote actors make <code>Article</code> posts, you <em>may</em> decide to handle both local and remote articles in the same local model.</p>
+<h3>
+<a name="how-can-i-add-activitypub-support-to-my-existing-software-project" class="anchor" href="2.html#how-can-i-add-activitypub-support-to-my-existing-software-project"></a>How can I add ActivityPub support to my existing software project?</h3>
+<p>If you have an existing software and want to add ActivityPub support to it, it may help to look at what that’s looked like for projects that have already done it. Places to look include:</p>
+<ul>
+<li>The issue to <a href="https://github.com/tootsuite/mastodon/issues/1557#issuecomment-294529696" rel="noopener nofollow ugc">add ActivityPub support to Mastodon</a>.</li>
+</ul>
+<h2>
+<a name="improving-activitypub" class="anchor" href="2.html#improving-activitypub"></a>Improving ActivityPub</h2>
+<p>Aided by a culture of collaboration among Fediverse advocates and participants, there is ongoing work to improve both the ActivityPub specification and interoperability among different ActivityPub implementations.</p>
+<h3>
+<a name="complimentary-initiatives" class="anchor" href="2.html#complimentary-initiatives"></a>Complimentary initiatives</h3>
+<p>There are initiatives towards complimentary standards that could help address issues left unresolved in ActivityPub.</p>
+<h4>
+<a name="datashards" class="anchor" href="2.html#datashards"></a>Datashards</h4>
+<p><a href="https://datashards.net" rel="noopener nofollow ugc">Datashards</a>:</p>
+<blockquote>
+<p>brings secure storage foundations to the modern web. It allows users and application developers to reason about secure, private data online or offline.</p>
+</blockquote>
+<p>Datashards might help with ActivityPub issues like account migration.</p>
+<h3>
+<a name="join-the-conversation" class="anchor" href="2.html#join-the-conversation"></a>Join the conversation</h3>
+<p>Initiatives like <a href="https://fediconf.org" rel="noopener nofollow ugc">FediConf</a>, <a href="https://feneas.org" rel="noopener nofollow ugc">Feneas </a>, and the <a href="https://socialhub.activitypub.rocks">ActivityPub forum on Activitypub.Rocks</a> are great places to connect with other implementers and help move things forward.</p>
+<h2>
+<a name="more-information" class="anchor" href="2.html#more-information"></a>More information</h2>
+<p>See the accompanying guides:</p>
+<ul>
+<li><a href="../../introduction-to-activitypub/508.html">Introduction to ActivityPub</a></li>
+<li><a href="../../guide-for-activitypub-users/509.html">Guide for ActivityPub users</a></li>
+</ul>
+        </div>
+
+        <meta itemprop='headline' content='Guide for new ActivityPub implementers'>
+          <meta itemprop='keywords' content='draft'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="4" />
+           <span class='post-likes'>4 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../introduction-to-activitypub/508.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/introduction-to-activitypub/508'>
+                      <span itemprop='name'>Introduction to ActivityPub</span>
+                    </a>
+                    <meta itemprop='position' content='96'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../guide-for-activitypub-users/509.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/guide-for-activitypub-users/509'>
+                      <span itemprop='name'>Guide for ActivityPub users</span>
+                    </a>
+                    <meta itemprop='position' content='97'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../socialhub-gazette-1/390.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/socialhub-gazette-1/390'>
+                      <span itemprop='name'>SocialHub Gazette #1</span>
+                    </a>
+                    <meta itemprop='position' content='98'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../activitypub-experimentation-towards-ap-v2/840/9.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/activitypub-experimentation-towards-ap-v2/840/9'>
+                      <span itemprop='name'>ActivityPub Experimentation: Towards AP v2</span>
+                    </a>
+                    <meta itemprop='position' content='99'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../activitypub-how-to-start/1330/2.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/activitypub-how-to-start/1330/2'>
+                      <span itemprop='name'>ActivityPub - How to start?</span>
+                    </a>
+                    <meta itemprop='position' content='100'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../documenting-federation-behavior-in-a-semi-standard-way/453/14.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453/14'>
+                      <span itemprop='name'>Documenting federation behavior in a semi-standard way?</span>
+                    </a>
+                    <meta itemprop='position' content='101'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../socialhub-at-offdem/456/5.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/socialhub-at-offdem/456/5'>
+                      <span itemprop='name'>SocialHub at OFFDEM</span>
+                    </a>
+                    <meta itemprop='position' content='102'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../discussing-onboarding-for-developers/61/16.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/discussing-onboarding-for-developers/61/16'>
+                      <span itemprop='name'>Discussing onboarding for developers</span>
+                    </a>
+                    <meta itemprop='position' content='103'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../implementing-activitypub-client-to-server/981/22.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/implementing-activitypub-client-to-server/981/22'>
+                      <span itemprop='name'>Implementing ActivityPub Client-to-Server</span>
+                    </a>
+                    <meta itemprop='position' content='104'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../improvement-to-federation-md-convention-murmurations/1573.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/improvement-to-federation-md-convention-murmurations/1573'>
+                      <span itemprop='name'>Improvement to FEDERATION.md convention: Murmurations</span>
+                    </a>
+                    <meta itemprop='position' content='105'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../2020-02-08-socialcg-meeting/507.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/2020-02-08-socialcg-meeting/507'>
+                      <span itemprop='name'>2020-02-08 SocialCG Meeting</span>
+                    </a>
+                    <meta itemprop='position' content='106'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../important-forum-topics/848.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/important-forum-topics/848'>
+                      <span itemprop='name'>Important Forum Topics</span>
+                    </a>
+                    <meta itemprop='position' content='107'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../easing-the-onboarding-of-new-developers-to-the-fediverse/847.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/easing-the-onboarding-of-new-developers-to-the-fediverse/847'>
+                      <span itemprop='name'>Easing the onboarding of new developers to the Fediverse</span>
+                    </a>
+                    <meta itemprop='position' content='108'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../shaping-up-a-business-use-case-for-activitypub-in-discourse/1321/4.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/shaping-up-a-business-use-case-for-activitypub-in-discourse/1321/4'>
+                      <span itemprop='name'>Shaping Up a Business Use-Case for ActivityPub in Discourse</span>
+                    </a>
+                    <meta itemprop='position' content='109'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../socialcg-meeting/679/5.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/socialcg-meeting/679/5'>
+                      <span itemprop='name'>SocialCG Meeting</span>
+                    </a>
+                    <meta itemprop='position' content='110'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../publish-pages-for-ap-guides-on-activitypub-rocks/638.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/publish-pages-for-ap-guides-on-activitypub-rocks/638'>
+                      <span itemprop='name'>Publish pages for AP guides on activitypub.rocks</span>
+                    </a>
+                    <meta itemprop='position' content='111'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../data-storage-questions/579/8.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/data-storage-questions/579/8'>
+                      <span itemprop='name'>Data storage questions</span>
+                    </a>
+                    <meta itemprop='position' content='112'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../improving-fediverse-culture-and-social-behavior/1397/5.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/improving-fediverse-culture-and-social-behavior/1397/5'>
+                      <span itemprop='name'>Improving fediverse culture and social behavior</span>
+                    </a>
+                    <meta itemprop='position' content='113'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../posting-to-pleroma-inbox/1184/21.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/posting-to-pleroma-inbox/1184/21'>
+                      <span itemprop='name'>Posting to Pleroma inbox</span>
+                    </a>
+                    <meta itemprop='position' content='114'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../how-solid-and-activitypub-complement-each-other-best/727/9.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/how-solid-and-activitypub-complement-each-other-best/727/9'>
+                      <span itemprop='name'>How Solid and ActivityPub complement each other best</span>
+                    </a>
+                    <meta itemprop='position' content='115'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../onboarding-official-website-implementor-and-user-guides/998.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/onboarding-official-website-implementor-and-user-guides/998'>
+                      <span itemprop='name'>Onboarding, Official Website, Implementor and User Guides</span>
+                    </a>
+                    <meta itemprop='position' content='116'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../state-of-http-signatures/754.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/state-of-http-signatures/754'>
+                      <span itemprop='name'>State of HTTP Signatures?</span>
+                    </a>
+                    <meta itemprop='position' content='117'>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/nedjo.html'><span itemprop='name'>nedjo</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../../draft-guide-for-new-activitypub-implementers/479.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-01-21T04:24:19Z'>
+              <time itemprop='dateModified' datetime='2021-05-08T21:50:51Z' class='post-time'>
+                May 8, 2021,  9:50pm
+              </time>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><em>And an addendum</em></p>
+<h2>
+<a name="the-activitypub-spec-in-checkboxes-1" class="anchor" href="2.html#the-activitypub-spec-in-checkboxes-1"></a>The ActivityPub spec, in checkboxes!</h2>
+<p>While the <a href="../../../../activitypub.rocks/implementation-report.html">ActivityPub implementation report</a> is outdated due to the test instance being down, the first column in that report is a valuable list of implementation details that comprise the ActivityPub spec.</p>
+<p>Starting with what’s defined in the <a href="https://gitlab.com/dustyweb/activitypub.rocks/blob/master/www/reports.scm" rel="noopener nofollow ugc">code driving the implementation report page</a>, the following lists are designed to be easily copied into a set of tasks in an issue management system that supports <a href="https://guides.github.com/features/mastering-markdown/#GitHub-flavored-markdown" rel="noopener nofollow ugc">GitHub flavoured Markdown</a>, such as GitLab or GitHub.</p>
+<p>Per the ActivityPub spec:</p>
+<blockquote>
+<p>The key words <em>MAY</em>, <em>MUST</em>, <em>MUST NOT</em>, <em>SHOULD</em>, and <em>SHOULD NOT</em> are to be interpreted as described in <a href="https://tools.ietf.org/html/rfc2119" rel="noopener nofollow ugc">RFC2119</a>.</p>
+</blockquote>
+<p>If implementing everything in these lists look like a ton of work, it’s worth noting that you may be able to skip whole sections. For example, if you’re focused on server to server support, you might be able to skip the entire client to server section. Also keep in mind this note from the <a href="https://www.w3.org/TR/activitystreams-vocabulary/#extendedtypes" rel="noopener nofollow ugc">Activity Vocabulary spec</a>:</p>
+<blockquote>
+<p>Support for specific extended vocabulary types is expected to vary, with implementations only selecting the extended types and properties that make sense within the specific context and requirements of those applications.</p>
+</blockquote>
+<p>In short, while some stuff is needed across the board, there’s a lot you only have to worry about if you choose to support it.</p>
+<p>For extra clarity and in case it’s handy, the lists include in parentheses the machine name assigned in the ActivityPub test suite to each item.</p>
+<p><em>todo: coverage for <a href="2.html#the-missing-pieces">“missing pieces”</a> of the spec, such as authentication through HTTP Signatures.</em></p>
+<h3>
+<a name="client-to-server-interactionshttpswwww3orgtractivitypubclient-to-server-interactions-2" class="anchor" href="2.html#client-to-server-interactionshttpswwww3orgtractivitypubclient-to-server-interactions-2"></a><a href="https://www.w3.org/TR/activitypub/#client-to-server-interactions" rel="noopener nofollow ugc">Client to server interactions</a>
+</h3>
+<ul>
+<li>
+<code>Actor</code> object’s <code>outbox</code>
+<ul>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Accepts Activity Objects (<code>outbox:accepts-activities</code>) <em>MUST</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Accepts non-Activity Objects, and converts to Create Activities per 7.1.1 (<code>outbox:accepts-non-activity-objects</code>) <em>MUST</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Removes the <code>bto</code> and <code>bcc</code> properties from Objects before storage and delivery (<code>outbox:removes-bto-and-bcc</code>) <em>MUST</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Ignores <code>id</code> on submitted objects, and generates a new id instead (<code>outbox:ignores-id</code>) <em>MUST</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Responds with status code 201 Created (<code>outbox:responds-201-created</code>) <em>MUST</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Response includes Location header whose value is id of new object, unless the Activity is transient (<code>outbox:location-header</code>)</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Accepts Uploaded Media in submissions (<code>outbox:upload-media</code>) <em>MUST</em>
+<ul>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Accepts <code>uploadedMedia</code> file parameter (<code>outbox:upload-media:file-parameter</code>) <em>MUST</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Accepts <code>uploadedMedia</code> object parameter (<code>outbox:upload-media:object-parameter</code>) <em>MUST</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Responds with status code of 201 Created or 202 Accepted as described in 6. (<code>outbox:upload-media:201-or-202-status</code>) <em>MUST</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Response contains a Location header pointing to the to-be-created object’s id (<code>outbox:upload-media:location-header</code>) <em>MUST</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Appends an <code>id</code> property to the new object (<code>outbox:upload-media:appends-id</code>) <em>MUST</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> After receiving submission with uploaded media, the server should include the upload’s new URL in the submitted object’s <code>url</code> property (<code>outbox:upload-media:url</code>) <em>SHOULD</em>
+</li>
+</ul>
+</li>
+<li>
+<code>Update</code>
+<ul>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Server takes care to be sure that the Update is authorized to modify its object before modifying the server’s stored copy (<code>outbox:update:check-authorized</code>) <em>MUST</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Supports partial updates in client-to-server protocol (but not server-to-server) (<code>outbox:update:partial</code>) <em>NON-NORMATIVE</em>
+</li>
+</ul>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Server does not trust client submitted content (<code>outbox:not-trust-submitted</code>) <em>SHOULD</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Validate the content they receive to avoid content spoofing attacks (<code>outbox:validate-content</code>) <em>SHOULD</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Take care not to overload other servers with delivery submissions (<code>outbox:do-not-overload</code>) <em>SHOULD</em>
+</li>
+<li>
+<code>Create</code>
+<ul>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Merges audience properties (to, bto, cc, bcc, audience) with the Create’s object’s audience properties (<code>outbox:create:merges-audience-properties</code>) <em>SHOULD</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Create’s <code>actor</code> property is copied to be the value of <code>.object.attributedTo</code> (<code>outbox:create:actor-to-attributed-to</code>) <em>SHOULD</em>
+</li>
+</ul>
+</li>
+<li>
+<code>Follow</code>
+<ul>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Adds followed object to the actor’s Following Collection (<code>outbox:follow:adds-followed-object</code>) <em>SHOULD</em>
+</li>
+</ul>
+</li>
+<li>
+<code>Add</code>
+<ul>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Adds object to the target Collection, unless not allowed due to requirements in 7.5 (<code>outbox:add:adds-object-to-target</code>) <em>SHOULD</em>
+</li>
+</ul>
+</li>
+<li>
+<code>Remove</code>
+<ul>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Remove object from the target Collection, unless not allowed due to requirements in 7.5 (<code>outbox:remove:removes-from-target</code>) <em>SHOULD</em>
+</li>
+</ul>
+</li>
+<li>
+<code>Like</code>
+<ul>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Adds the object to the actor’s Liked Collection (<code>outbox:like:adds-object-to-liked</code>) <em>SHOULD</em>
+</li>
+</ul>
+</li>
+<li>
+<code>Block</code>
+<ul>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Prevent the blocked object from interacting with any object posted by the actor (<code>outbox:block:prevent-interaction-with-actor</code>) <em>SHOULD</em>
+</li>
+</ul>
+</li>
+<li>
+<code>Undo</code>
+<ul>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Supports the Undo activity in the client-to-server protocol (<code>outbox:undo</code>) <em>NON-NORMATIVE</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Ensures that the actor in the activity actor is the same in activity being undone (<code>outbox:undo:ensures-activity-and-actor-are-same</code>) <em>MUST</em>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<code>Actor</code> object’s <code>inbox</code>
+<ul>
+<li>Delivery
+<ul>
+<li>[*] Performs delivery on all Activities posted to the outbox (<code>inbox:delivery:performs-delivery</code>) <em>MUST</em>
+<ul>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> "Utilizes <code>to</code>, <code>bto</code>, <code>cc</code>, and <code>bcc</code> to determine delivery recipients. (<code>inbox:delivery:addressing</code>) <em>MUST</em>
+</li>
+</ul>
+</li>
+<li>
+<span class="chcklst-box checked fa fa-check-square-o fa-fw"></span> Provides an <code>id</code> all Activities sent to other servers, unless the activity is intentionally transient (<code>inbox:delivery:adds-id</code>) <em>MUST</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Dereferences delivery targets with the submitting user’s credentials (<code>inbox:delivery:submit-with-credentials</code>) <em>MUST</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Delivers to all items in recipients that are Collections or OrderedCollections (<code>inbox:delivery:deliver-to-collection</code>) <em>MUST</em>
+<ul>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Applies the above, recursively if the Collection contains Collections, and limits recursion depth &gt;= 1 (<code>inbox:delivery:deliver-to-collection:recursively</code>) <em>MUST</em>
+</li>
+</ul>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Delivers activity with <code>object</code> property if the Activity <code>type</code> is one of <code>Create</code>, <code>Update</code>, <code>Delete</code>, <code>Follow</code>, <code>Add</code>, <code>Remove</code>, <code>Like</code>, <code>Block</code>, <code>Undo</code> (<code>inbox:delivery:delivers-with-object-for-certain-activities</code>) <em>MUST</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Delivers activity with ‘target’ property if the Activity type is one of Add, Remove (<code>inbox:delivery:delivers-with-target-for-certain-activities</code>) <em>MUST</em>
+</li>
+<li>Deduplicates final recipient list (<code>inbox:delivery:deduplicates-final-recipient-list</code>) <em>MUST</em>
+</li>
+<li>Does not deliver to recipients which are the same as the actor of the Activity being notified about (<code>inbox:delivery:do-not-deliver-to-actor</code>) <em>MUST</em>
+</li>
+<li>SHOULD NOT deliver Block Activities to their object (<code>inbox:delivery:do-not-deliver-block</code>) <em>SHOULD NOT</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Delivers to sharedInbox endpoints to reduce the number of receiving actors delivered to by identifying all followers which share the same sharedInbox who would otherwise be individual recipients and instead deliver objects to said sharedInbox (<code>inbox:delivery:sharedInbox</code>) <em>MAY</em>
+<ul>
+<li>(For servers which deliver to sharedInbox:) Deliver to actor inboxes and collections otherwise addressed which do not have a sharedInbox (<code>inbox:delivery:sharedInbox:deliver-to-inbox-if-no-sharedInbox</code>) <em>MUST</em>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Accept
+<ul>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Deduplicates activities returned by the inbox by comparing activity <code>id</code>s") (<code>inbox:accept:deduplicate</code>) <em>MUST</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Forwards incoming activities to the values of to, bto, cc, bcc, audience if and only if criteria in 7.1.2 are met (<code>inbox:accept:special-forward</code>) <em>MUST</em>
+<ul>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Recurse through to, bto, cc, bcc, audience object values to determine whether/where to forward according to criteria in 7.1.2 (<code>inbox:accept:special-forward:recurses</code>) <em>SHOULD</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Limit recursion in this process (<code>inbox:accept:special-forward:limits-recursion</code>) <em>SHOULD</em>
+</li>
+</ul>
+</li>
+<li>
+<code>Create</code>
+<ul>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Supports receiving a Create object in an actor’s inbox (<code>inbox:accept:create</code>) <em>NON-NORMATIVE</em>
+</li>
+</ul>
+</li>
+<li>
+<code>Delete</code>
+<ul>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Assuming object is owned by sending actor/server, removes object’s representation (<code>inbox:accept:delete</code>) <em>SHOULD</em>
+<ul>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> replace object’s representation with a Tombstone object (<code>inbox:accept:delete:tombstone</code>) <em>MAY</em>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<code>Update</code>
+<ul>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Take care to be sure that the Update is authorized to modify its object (<code>inbox:accept:update:is-authorized</code>) <em>MUST</em>
+</li>
+</ul>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Completely replace its copy of the activity with the newly received value<code>) (</code>inbox:accept:update:completely-replace`) <em>SHOULD</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Don’t trust content received from a server other than the content’s origin without some form of verification (<code>inbox:accept:dont-blindly-trust</code>) <em>SHOULD</em>
+</li>
+<li>`Follow
+<ul>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Add the actor to the object user’s Followers Collection (<code>inbox:accept:follow:add-actor-to-users-followers</code>) <em>SHOULD</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Generates either an Accept or Reject activity with Follow as object and deliver to actor of the Follow (<code>inbox:accept:follow:generate-accept-or-reject</code>) <em>SHOULD</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> If in reply to a Follow activity, adds actor to receiver’s Following Collection (<code>inbox:accept:accept:add-actor-to-users-following</code>) <em>SHOULD</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> If in reply to a Follow activity, MUST NOT add actor to receiver’s Following Collection (<code>inbox:accept:reject:does-not-add-actor-to-users-following</code>) <em>MUST</em>
+</li>
+</ul>
+</li>
+<li>
+<code>Add</code>
+<ul>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Add the object to the Collection specified in the target property, unless not allowed to per requirements in 7.8 (<code>inbox:accept:add:to-collection</code>) <em>SHOULD</em>
+</li>
+</ul>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Remove the object from the Collection specified in the target property, unless not allowed per requirements in 7.9 (<code>inbox:accept:remove:from-collection</code>) <em>SHOULD</em>
+</li>
+<li>
+<code>Like</code>
+<ul>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Perform appropriate indication of the like being performed (See 7.10 for examples) (<code>inbox:accept:like:indicate-like-performed</code>) <em>SHOULD</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Increments object’s count of shares by adding the received activity to the ‘shares’ collection if this collection is present (<code>inbox:accept:announce:add-to-shares-collection</code>) <em>SHOULD</em>
+</li>
+</ul>
+</li>
+<li>
+<code>Undo</code>
+<ul>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Performs Undo of object in federated context (<code>inbox:accept:undo</code>) <em>NON-NORMATIVE</em>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Validate the content they receive to avoid content spoofing attacks (<code>inbox:accept:validate-content</code>) <em>SHOULD</em>
+</li>
+</ul>
+</li>
+</ul>
+<h3>
+<a name="common-server-support-3" class="anchor" href="2.html#common-server-support-3"></a>Common server support</h3>
+<ul>
+<li>Inbox retrieval
+<ul>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Server responds to GET request at inbox URL (<code>server:inbox:responds-to-get</code>) <em>NON-NORMATIVE</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> inbox is an OrderedCollection (<code>server:inbox:is-orderedcollection</code>) <em>MUST</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Server filters inbox content according to the requester’s permission (<code>server:inbox:filtered-per-permissions</code>) <em>SHOULD</em>
+</li>
+</ul>
+</li>
+<li>Object retrieval
+<ul>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Allow dereferencing Object <code>id</code>s by responding to HTTP GET requests with a representation of the Object (<code>server:object-retrieval:get-id</code>) <em>MAY</em>
+<ul>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Respond with the ActivityStreams object representation in response to requests that primarily Accept the media type <code>application/ld+json; profile=\https://www.w3.org/ns/activitystreams\</code> (<code>server:object-retrieval:respond-with-as2-re-ld-json</code>) <em>MUST</em>
+</li>
+</ul>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Respond with the ActivityStreams object representation in response to requests that primarily Accept the media type <code>application/activity+json</code> (<code>server:object-retrieval:respond-with-as2-re-activity-json</code>) <em>SHOULD</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Responds with response body that is an ActivityStreams Object of type <code>Tombstone</code> (if the server is choosing to disclose that the object has been removed) (<code>server:object-retrieval:deleted-object:tombstone</code>) <em>MAY</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Respond with 410 Gone status code if Tombstone is in response body, otherwise responds with 404 Not Found (<code>server:object-retrieval:deleted-object:410-status</code>) <em>SHOULD</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Respond with 404 status code for Object URIs that have never existed (<code>server:object-retrieval:deleted-object:404-status</code>) <em>SHOULD</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Respond with a 403 Forbidden status code to all requests that access Objects considered Private (or 404 if the server does not want to disclose the existence of the object, or another HTTP status code if specified by the authorization method)<code>) (</code>server:object-retrieval:private-403-or-404`) <em>SHOULD</em>
+</li>
+</ul>
+</li>
+<li>Security considerations
+<ul>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span>  <a href="https://w3c.github.io/activitypub/#security-verification" rel="noopener nofollow ugc">B.1</a><code>), Server verifies that the new content is really posted by the actor indicated in Objects received in inbox and outbox (</code>server:security-considerations:actually-posted-by-actor`) <em>NON-NORMATIVE</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> By default, implementation does not make HTTP requests to localhost when delivering Activities (<code>server:security-considerations:do-not-post-to-localhost</code>) <em>NON-NORMATIVE</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Implementation applies a whitelist of allowed URI protocols before issuing requests, e.g. for inbox delivery (<code>server:security-considerations:uri-scheme-whitelist</code>) <em>NON-NORMATIVE</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Server filters incoming content both by local untrusted users and any remote users through some sort of spam filter (<code>server:security-considerations:filter-incoming-content</code>) <em>NON-NORMATIVE</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Implementation takes care to sanitize fields containing markup to prevent cross site scripting attacks) (<code>server:security-considerations:sanitize-fields</code>) <em>NON-NORMATIVE</em>
+</li>
+</ul>
+</li>
+</ul>
+<h3>
+<a name="client-applications-4" class="anchor" href="2.html#client-applications-4"></a>Client applications</h3>
+<ul>
+<li>Submission
+<ul>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Client discovers the URL of a user’s outbox from their profile (client:submission:discovers-url-from-profile`) <em>MUST</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Client submits activity by sending an HTTP post request to the outbox URL with the Content-Type of application/ld+json; profile=\<a href="https://www.w3.org/ns/activitystreams%5C" rel="noopener nofollow ugc">https://www.w3.org/ns/activitystreams\</a> (<code>client:submission:submit-post-with-content-type</code>) <em>MUST</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Client submission request body is either a single Activity or a single non-Activity Object (<code>client:submission:submit-objects</code>) <em>MUST</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Clients provide the object property when submitting the following activity types to an outbox: Create, Update, Delete, Follow, Add, Remove, Like, Block, Undo (<code>client:submission:submit-objects:provide-object</code>) <em>MUST</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Clients provide the target property when submitting the following activity types to an outbox: Add, Remove. (<code>client:submission:submit-objects:provide-target</code>) <em>MUST</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Client submission request is authenticated with the credentials of the user to whom the outbox belongs (client:submission:authenticated`) <em>MUST</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Client supports <a href="https://www.w3.org/TR/activitypub/#uploading-media" rel="noopener nofollow ugc">uploading media</a> by sending a multipart/form-data request body (<code>client:submission:uploading-media</code>) <em>MUST</em>
+</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Before submitting a new activity or object, Client infers appropriate target audience by recursively looking at certain properties (e.g. <code>inReplyTo</code>, See Section 7), and adds these targets to the new submission’s audience (<code>client:submission:recursively-add-targets</code>) <em>SHOULD</em>
+<ul>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> Client limits depth of this recursion (<code>client:submission:recursively-add-targets:limits-depth</code>) <em>SHOULD</em>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Retrieval
+<ul>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> When retrieving objects, Client specifies an Accept header with the <code>application/ld+json; profile=\https://www.w3.org/ns/activitystreams\</code> media type (<a href="https://w3c.github.io/activitypub/#retrieving-objects" rel="noopener nofollow ugc">3.2</a>) (<code>client:retrieval:accept-header</code>) <em>MUST</em>
+</li>
+</ul>
+</li>
+</ul>
+        </div>
+
+        <meta itemprop='headline' content='Guide for new ActivityPub implementers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="8" />
+           <span class='post-likes'>8 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../whats-actually-in-the-special-collections-causal-activity-or-target-object/651.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/whats-actually-in-the-special-collections-causal-activity-or-target-object/651'>
+                      <span itemprop='name'>What&#39;s actually in the special collections, causal activity or target object?</span>
+                    </a>
+                    <meta itemprop='position' content='11'>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/lanodan.html'><span itemprop='name'>lanodan</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../../draft-guide-for-new-activitypub-implementers/479.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-01-21T14:06:25Z'>
+              <time itemprop='dateModified' datetime='2020-01-21T14:11:00Z' class='post-time'>
+                January 21, 2020,  2:11pm
+              </time>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>[2020-01-21 04:31:44+0000] nedjo via SocialHub:</p>
+<blockquote>
+<h3>JSON-LD</h3>
+<p>If you’re developing for ActivityPub, you’re going to be dealing with JSON-LD, since that’s the format ActivityPub JSON is in.</p>
+</blockquote>
+<p>Not so much actually, AFAIK only Mastodon and Friendica actually uses JSON-LD, the other projects just treat it as JSON and maybe with some additionnal schema declaration for compatibility.</p>
+<p>Which means that most implementations will probably tend to stick to some well-known types as the namespacing part of JSON-LD just goes away.</p>
+        </div>
+
+        <meta itemprop='headline' content='Guide for new ActivityPub implementers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../does-generic-activitypub-node-software-exist/1837/3.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/does-generic-activitypub-node-software-exist/1837/3'>
+                      <span itemprop='name'>Does generic ActivityPub node software exist?</span>
+                    </a>
+                    <meta itemprop='position' content='1'>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../../draft-guide-for-new-activitypub-implementers/479.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-01-22T08:02:44Z' class='post-time'>
+                January 22, 2020,  8:02am
+              </time>
+              <meta itemprop='dateModified' content='2020-01-22T08:02:44Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><strong>Thank you so much for this nice elaborate guide !</strong></p>
+<aside class="quote no-group" data-post="1" data-topic="479">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../letter_avatar_proxy/v4/letter/n/da6949/40.png" class="avatar"> nedjo:</div>
+<blockquote>
+<p>Is this meeting a need?</p>
+</blockquote>
+</aside>
+<p>Yes, very much.<br>
+Do you come to OFFDEM Brussels in 9 days ?</p>
+<p>I would like to add some points :<br>
+Please see <a href="../../discussing-the-evolution-of-the-activitypub-rocks-site/142.html">the post about the new main page</a> and the <a href="https://rigelk.gitlab.io/activitypub.rocks/">demonstration</a> -<br>
+<a class="mention" href="../../../u/rigelk.html">@rigelk</a> : I would love to see this guide at the page.<br>
+The new page tries to reach “implementers” and “end users”, so we could split the guide in 2 parts, the introduction, terminology, why and some resources are for “end-users” and we can make the rest for “implementers” and in the beginning link the userguide.</p>
+<p>You questioned <em>“Areas of critique and debate”</em> and <em>“What’s already out there?”</em> and I would like to collect/add <em>“FAQ”</em> and <em>“How to make it better”</em> later.</p>
+<aside class="quote no-group" data-post="1" data-topic="479">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../letter_avatar_proxy/v4/letter/n/da6949/40.png" class="avatar"> nedjo:</div>
+<blockquote>
+<p>Potential models and building blocks</p>
+</blockquote>
+</aside>
+<p>should have a beginning link to <a href="../../../c/software.html">https://socialhub.activitypub.rocks/c/software</a></p>
+<p>This is just my initial input, thank you again.<br>
+btw: If you want you can also make the post a wiki (keep a copy of the original then). This would make the guid directly editable for everyone.</p>
+        </div>
+
+        <meta itemprop='headline' content='Guide for new ActivityPub implementers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/nedjo.html'><span itemprop='name'>nedjo</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../../draft-guide-for-new-activitypub-implementers/479.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-01-23T01:44:50Z' class='post-time'>
+                January 23, 2020,  1:44am
+              </time>
+              <meta itemprop='dateModified' content='2020-01-23T01:44:50Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../../u/lanodan.html">@lanodan</a> thanks, makes sense, I’ll make changes in the next draft.</p>
+        </div>
+
+        <meta itemprop='headline' content='Guide for new ActivityPub implementers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/nedjo.html'><span itemprop='name'>nedjo</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../../draft-guide-for-new-activitypub-implementers/479.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-01-23T01:53:27Z' class='post-time'>
+                January 23, 2020,  1:53am
+              </time>
+              <meta itemprop='dateModified' content='2020-01-23T01:53:27Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../../u/sebastian.html">@Sebastian</a></p>
+<blockquote>
+<p>Please see <a href="../../discussing-the-evolution-of-the-activitypub-rocks-site/142.html">the post about the new main page</a> and the <a href="https://rigelk.gitlab.io/activitypub.rocks/" rel="nofollow noopener">demonstration</a> -</p>
+</blockquote>
+<p>Wow, the demonstration has some really great improvements!</p>
+<blockquote>
+<p>The new page tries to reach “implementers” and “end users”, so we could split the guide in 2 parts, the introduction, terminology, why and some resources are for “end-users” and we can make the rest for “implementers” and in the beginning link the userguide.</p>
+</blockquote>
+<p>I’d love to contribute to that. I’ll start by dividing up what I’ve drafted and filling in some additional pieces. I might try three parts: a general intro for everyone, a section for end users, and a section for implementers. I’ll draw on your and others’ suggestions, including those at <a href="../../discussing-the-evolution-of-the-activitypub-rocks-site/142.html" class="inline-onebox">Discussing the evolution of the activitypub.rocks site</a>.</p>
+<blockquote>
+<p>If you want you can also make the post a wiki (keep a copy of the original then). This would make the guid directly editable for everyone.</p>
+</blockquote>
+<p>I looked for a way to post a wiki but didn’t find it. Can you point me in the right direction? Thx!</p>
+        </div>
+
+        <meta itemprop='headline' content='Guide for new ActivityPub implementers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../../draft-guide-for-new-activitypub-implementers/479.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-01-23T07:03:15Z' class='post-time'>
+                January 23, 2020,  7:03am
+              </time>
+              <meta itemprop='dateModified' content='2020-01-23T07:03:15Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Cool.<br>
+The wiki should be at the more icon ••• and then at the <img src="../../../images/emoji/twitter/hammer_and_wrench.png@v=9" title=":hammer_and_wrench:" class="emoji" alt=":hammer_and_wrench:"> (without the hammer) – maybe only admins can do – then we can work it out after splitting.<br>
+Thank You.</p>
+        </div>
+
+        <meta itemprop='headline' content='Guide for new ActivityPub implementers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../../draft-guide-for-new-activitypub-implementers/479.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-01-24T17:30:50Z' class='post-time'>
+                January 24, 2020,  5:30pm
+              </time>
+              <meta itemprop='dateModified' content='2020-01-24T17:30:50Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Go-fed? Also go-ap link for me is broken for some reason (may be on my end).</p>
+        </div>
+
+        <meta itemprop='headline' content='Guide for new ActivityPub implementers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/nedjo.html'><span itemprop='name'>nedjo</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../../draft-guide-for-new-activitypub-implementers/479.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-01-25T03:26:35Z' class='post-time'>
+                January 25, 2020,  3:26am
+              </time>
+              <meta itemprop='dateModified' content='2020-01-25T03:26:35Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I don’t have the required permission. I’ll contact a site admin and see what we can do.</p>
+        </div>
+
+        <meta itemprop='headline' content='Guide for new ActivityPub implementers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../../draft-guide-for-new-activitypub-implementers/479.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-01-25T06:21:59Z' class='post-time'>
+                January 25, 2020,  6:21am
+              </time>
+              <meta itemprop='dateModified' content='2020-01-25T06:21:59Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>If you want it to be a wiki now: I can change it.</p>
+        </div>
+
+        <meta itemprop='headline' content='Guide for new ActivityPub implementers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/nedjo.html'><span itemprop='name'>nedjo</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../../draft-guide-for-new-activitypub-implementers/479.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-01-27T19:01:08Z' class='post-time'>
+                January 27, 2020,  7:01pm
+              </time>
+              <meta itemprop='dateModified' content='2020-01-27T19:01:08Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Yes please! I’d like to divide this into three separate pieces:</p>
+<ul>
+<li>An introduction to ActivityPub (for everyone, including users and implementers)</li>
+<li>An ActivityPub users guide</li>
+<li>An ActivityPub users implementers guide (this one)</li>
+</ul>
+<p>Are you okay to create placeholder wikis for the other two as well as converting this one into a wiki?</p>
+<p>And a couple of followup notes…</p>
+<p>I’ve opened a couple of issues on the repo that powers Fediverse.Party:</p>
+<ul>
+<li><a href="https://git.feneas.org/feneas/fediverse/issues/12" rel="nofollow noopener">Add code language to app data</a></li>
+<li><a href="https://git.feneas.org/feneas/fediverse/issues/13" rel="nofollow noopener">Consider partial or full merging of “miscellaneous” and home page project data + listings</a></li>
+</ul>
+<p>I think that’s a better place for listings of projects than trying to replicate all that here.</p>
+<blockquote>
+<p>Do you come to OFFDEM Brussels in 9 days ?</p>
+</blockquote>
+<p>No, I’m too far away (west coast of Canada).</p>
+        </div>
+
+        <meta itemprop='headline' content='Guide for new ActivityPub implementers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../../draft-guide-for-new-activitypub-implementers/479.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-01-30T09:31:18Z' class='post-time'>
+                January 30, 2020,  9:31am
+              </time>
+              <meta itemprop='dateModified' content='2020-01-30T09:31:18Z'>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Both first posts (also “addendum”) are now wikis –<br>
+everybody should be able to edit them now.<br>
+Placeholders are not possible I think.</p>
+        </div>
+
+        <meta itemprop='headline' content='Guide for new ActivityPub implementers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/nedjo.html'><span itemprop='name'>nedjo</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../../draft-guide-for-new-activitypub-implementers/479.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-02-01T03:20:24Z' class='post-time'>
+                February 1, 2020,  3:20am
+              </time>
+              <meta itemprop='dateModified' content='2020-02-01T03:20:24Z'>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../../u/sebastian.html">@Sebastian</a> thx! I’ve done a first pass at redrafting as three guides. I’ve also pulled out most of what was in the section “Potential models and building blocks”. Instead I’ve pointed to some places to discover ActivityPub implementations and I’ll open an issue on Fediverse.Party to add in the projects I’d compiled that aren’t there already.</p>
+<p>I’d like to start figuring out some next steps. If this is potential content for the draft <a href="https://rigelk.gitlab.io/activitypub.rocks/" rel="nofollow noopener">activitypub.rocks improvements</a>, how do we get from here to there? Maybe we need a documentation team? Maybe there is one already? In any case, I’d be happy to participate.</p>
+        </div>
+
+        <meta itemprop='headline' content='Guide for new ActivityPub implementers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/nightpool.html'><span itemprop='name'>nightpool</span></a>
+            
+              split this topic 
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../../draft-guide-for-new-activitypub-implementers/479.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-02-07T17:18:27Z'>
+              <time itemprop='dateModified' datetime='2020-02-07T17:18:27Z' class='post-time'>
+                February 7, 2020,  5:18pm
+              </time>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>A post was split to a new topic: <a href="../../wiki-posts-and-the-latest-topics-list/506.html">Wiki posts and the latest topics list</a></p>
+        </div>
+
+        <meta itemprop='headline' content='Guide for new ActivityPub implementers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/nedjo.html'><span itemprop='name'>nedjo</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../../draft-guide-for-new-activitypub-implementers/479.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-02-07T19:59:28Z' class='post-time'>
+                February 7, 2020,  7:59pm
+              </time>
+              <meta itemprop='dateModified' content='2020-02-07T19:59:28Z'>
+          <span itemprop='position'>#15</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>We’re hitting the length  limit for posts, so I’ll add here a stub of a last section of the implementers’ guide on how to improve ActivityPub as suggested earlier by <a class="mention" href="../../../u/sebastian.html">@Sebastian</a>:</p>
+<h2>Improving ActivityPub</h2>
+<p>Aided by a culture of collaboration among Fediverse advocates and participants, there is ongoing work to improve both the ActivityPub specification and interoperability among different ActivityPub implementations. Initiatives like <a href="https://fediconf.org" rel="nofollow noopener">FediConf</a>, <a href="https://feneas.org" rel="nofollow noopener">Feneas</a>, and the <a href="https://socialhub.activitypub.rocks">ActivityPub forum on Activitypub.Rocks</a> are great places to connect with other implementers and help move things forward.</p>
+        </div>
+
+        <meta itemprop='headline' content='Guide for new ActivityPub implementers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/nightpool.html'><span itemprop='name'>nightpool</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../../draft-guide-for-new-activitypub-implementers/479.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-02-08T17:06:35Z' class='post-time'>
+                February 8, 2020,  5:06pm
+              </time>
+              <meta itemprop='dateModified' content='2020-02-08T17:06:35Z'>
+          <span itemprop='position'>#16</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../../u/nedjo.html">@nedjo</a>: I’ve gone ahead and upped the post length limit, so at least until we find a better place for it we can continue on with posting here. I think we should also split a couple of these sections out into their own threads, like “Introduction to Activitypub” and “Guide for new Activitypub users”—would you mind making new threads for these? I think that would make this post a lot more navigable.</p>
+        </div>
+
+        <meta itemprop='headline' content='Guide for new ActivityPub implementers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/nedjo.html'><span itemprop='name'>nedjo</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../../draft-guide-for-new-activitypub-implementers/479.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-02-08T18:07:40Z' class='post-time'>
+                February 8, 2020,  6:07pm
+              </time>
+              <meta itemprop='dateModified' content='2020-02-08T18:07:40Z'>
+          <span itemprop='position'>#17</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../../u/nightpool.html">@nightpool</a>: done:</p>
+<ul>
+<li><a href="../../introduction-to-activitypub/508.html" class="inline-onebox">Introduction to ActivityPub</a></li>
+<li><a href="../../guide-for-activitypub-users/509.html" class="inline-onebox">Guide for ActivityPub users</a></li>
+</ul>
+<p>When you get a chance, please convert those other two pages into wikis. Thx!</p>
+        </div>
+
+        <meta itemprop='headline' content='Guide for new ActivityPub implementers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/nightpool.html'><span itemprop='name'>nightpool</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../../draft-guide-for-new-activitypub-implementers/479.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-02-08T18:09:30Z' class='post-time'>
+                February 8, 2020,  6:09pm
+              </time>
+              <meta itemprop='dateModified' content='2020-02-08T18:09:30Z'>
+          <span itemprop='position'>#18</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>done! </p>
+        </div>
+
+        <meta itemprop='headline' content='Guide for new ActivityPub implementers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../../draft-guide-for-new-activitypub-implementers/479.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-02-15T18:32:44Z' class='post-time'>
+                February 15, 2020,  6:32pm
+              </time>
+              <meta itemprop='dateModified' content='2020-02-15T18:32:44Z'>
+          <span itemprop='position'>#19</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote group-pleroma" data-post="3" data-topic="479">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/lanodan/40/40_2.png" class="avatar"> lanodan:</div>
+<blockquote>
+<p>AFAIK only Mastodon and Friendica actually uses JSON-LD, the other projects just treat it as JSON and maybe with some additionnal schema declaration for compatibility</p>
+</blockquote>
+</aside>
+<p>I use it too. Mostly because of LD-signatures.</p>
+        </div>
+
+        <meta itemprop='headline' content='Guide for new ActivityPub implementers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/aschrijver.html'><span itemprop='name'>aschrijver</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../../draft-guide-for-new-activitypub-implementers/479.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-08-03T08:59:31Z' class='post-time'>
+                August 3, 2020,  8:59am
+              </time>
+              <meta itemprop='dateModified' content='2020-08-03T08:59:31Z'>
+          <span itemprop='position'>#20</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="nedjo" data-post="13" data-topic="479">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../letter_avatar_proxy/v4/letter/n/da6949/40.png" class="avatar"> nedjo:</div>
+<blockquote>
+<p>I’d like to start figuring out some next steps. If this is potential content for the draft <a href="https://rigelk.gitlab.io/activitypub.rocks/" rel="nofollow noopener">activitypub.rocks improvements </a>, how do we get from here to there? Maybe we need a documentation team? Maybe there is one already? In any case, I’d be happy to participate.</p>
+</blockquote>
+</aside>
+<p>I created a topic to discuss this again: <a href="../../easing-the-onboarding-of-new-developers-to-the-fediverse/847.html" class="inline-onebox">Easing the onboarding of new developers to the Fediverse</a> (and this post will bump the wiki guide to the top again, which is also good for attention <img src="../../../images/emoji/twitter/wink.png@v=9" title=":wink:" class="emoji" alt=":wink:"> )</p>
+        </div>
+
+        <meta itemprop='headline' content='Guide for new ActivityPub implementers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

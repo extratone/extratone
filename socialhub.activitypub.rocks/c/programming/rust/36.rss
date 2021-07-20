@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Rust - SocialHub</title>
+    <link>https://socialhub.activitypub.rocks/c/programming/rust/36</link>
+    <description>Topics in the &#39;Rust&#39; category Programming ActivityPub in Rust.</description>
+    
+      <lastBuildDate>Mon, 19 Apr 2021 09:06:48 +0000</lastBuildDate>
+      <atom:link href="https://socialhub.activitypub.rocks/c/programming/rust/36.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>OAuth2&#39;s place in activitypub server apps</title>
+          <dc:creator><![CDATA[SelectSweet]]></dc:creator>
+          <category>Rust</category>
+          <description><![CDATA[
+            <p>I am having a bit of trouble understanding how to implement OAuth in the web app I am creating,<br>
+so I am wondering if you know of any resources that explains how to add OAuth support to a activitypub server app, without being dependent on external services in the context of authenticating users and/or client apps, if you know of any the rust programming language that would be amazing as I am creating my project in rust but any resource that helps to simplify OAuth in the context of authenticating users and/or client apps is helpful</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/oauth2s-place-in-activitypub-server-apps/1619">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/oauth2s-place-in-activitypub-server-apps/1619</link>
+          <pubDate>Mon, 19 Apr 2021 09:06:48 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1619</guid>
+          <source url="https://socialhub.activitypub.rocks/t/oauth2s-place-in-activitypub-server-apps/1619.rss">OAuth2&#39;s place in activitypub server apps</source>
+        </item>
+        <item>
+          <title>About Rust</title>
+          <dc:creator><![CDATA[system]]></dc:creator>
+          <category>Rust</category>
+          <description><![CDATA[
+            <p>Programming ActivityPub in Rust.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/about-rust/317">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/about-rust/317</link>
+          <pubDate>Sat, 16 Nov 2019 15:22:16 +0000</pubDate>
+          <discourse:topicPinned>Yes</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-317</guid>
+          <source url="https://socialhub.activitypub.rocks/t/about-rust/317.rss">About Rust</source>
+        </item>
+  </channel>
+</rss>

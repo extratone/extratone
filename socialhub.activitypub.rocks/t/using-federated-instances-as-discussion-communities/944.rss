@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Using federated instances as discussion communities</title>
+    <link>https://socialhub.activitypub.rocks/t/using-federated-instances-as-discussion-communities/944</link>
+    <description>*José Manuel Meza Cano*
+
+https://conf.tube/videos/watch/2b43c03e-b5d7-420d-b30d-fe16fda7f498
+
+versión en español / Spanish version:
+https://conf.tube/videos/watch/e2923ad5-afc5-49e7-afa3-613eef44adb6
+
+From the field of psychology, specifically cultural psychology, emphasis is placed on the construction of discussion spaces that have traditionally been seen as the physical classroom, however, since the emergence of social networks, these digital spaces have been used to try to generate communities of discussion and that later lead to learning.
+
+Unfortunately, as it is known, the most used social networks have serious privacy problems, which leads to the voluntary delivery of data to large corporations. It is for this reason that a small project has been started where the use of Mastodon is proposed for the development of online discussions on specific topics with psychology students, which could result in experiences that generate data on what elements to consider for unleash the discussion and how the participants relate in this type of scenario.
+Fortunately, Mastodon and its mobile applications favor the development of activities without problems for users, which could be successfully developed by a small community of psychologists.
+
+## Questions &amp; Answers available!
+**[Q&amp;A Session – Using federated instances as discussion communities](https://conf.tube/videos/watch/cdbccd5f-f7d3-4d1f-a778-e45f9c876f66)**
+⬡ Hooray, the live Questions &amp; Answers are available here
+https://conf.tube/videos/watch/cdbccd5f-f7d3-4d1f-a778-e45f9c876f66</description>
+    
+    <lastBuildDate>Mon, 05 Oct 2020 03:08:20 +0000</lastBuildDate>
+    <category>ActivityPub Conference 2020</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/using-federated-instances-as-discussion-communities/944.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Using federated instances as discussion communities</title>
+        <dc:creator><![CDATA[jmanumeza]]></dc:creator>
+        <description><![CDATA[
+            <p>thanks for all the advices.<br>
+Maybe we need to probe this technologies and make and effort to integrate that to our learning environments.<br>
+Is there any way to add a domain to federate, in a list, instead of add a list of domains to block to avoid federation?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/using-federated-instances-as-discussion-communities/944/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/using-federated-instances-as-discussion-communities/944/9</link>
+        <pubDate>Mon, 05 Oct 2020 03:08:20 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-944-9</guid>
+        <source url="https://socialhub.activitypub.rocks/t/using-federated-instances-as-discussion-communities/944.rss">Using federated instances as discussion communities</source>
+      </item>
+      <item>
+        <title>Using federated instances as discussion communities</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p>ah, yes, my mistake, we renamed it to “LIMITED_FEDERATION_MODE” in June</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/using-federated-instances-as-discussion-communities/944/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/using-federated-instances-as-discussion-communities/944/8</link>
+        <pubDate>Sat, 03 Oct 2020 18:34:30 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-944-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/using-federated-instances-as-discussion-communities/944.rss">Using federated instances as discussion communities</source>
+      </item>
+      <item>
+        <title>Using federated instances as discussion communities</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Ah! I had forgotten about this I-D., thank you for the reminder. Since it had expired with no follow-up it slipped out of my mind, even though Niels ten Oever told me they were planning to revive the discussion. Here, done. <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+<p><em>Deception Patterns</em> sound clear and to the point, to me.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/using-federated-instances-as-discussion-communities/944/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/using-federated-instances-as-discussion-communities/944/7</link>
+        <pubDate>Sat, 03 Oct 2020 08:43:48 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-944-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/using-federated-instances-as-discussion-communities/944.rss">Using federated instances as discussion communities</source>
+      </item>
+      <item>
+        <title>Using federated instances as discussion communities</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>This is even per <a href="https://tools.ietf.org/id/draft-knodel-terminology-00.html#rfc.section.1.1.1" rel="nofollow noopener">IETF Recommendation</a>. I have changed most my repo’s to use <code>main</code> instead of <code>master</code> (default in Gitea, will be default in Github). Indeed, <code>blocklist/allowlist</code>, and to <a href="https://twitter.com/darkpatterns" rel="nofollow noopener">@darkpatterns</a> on birdsite I suggested ‘deception patterns’ (best I could come up with, and no response <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:">  )</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/using-federated-instances-as-discussion-communities/944/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/using-federated-instances-as-discussion-communities/944/6</link>
+        <pubDate>Sat, 03 Oct 2020 08:23:57 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-944-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/using-federated-instances-as-discussion-communities/944.rss">Using federated instances as discussion communities</source>
+      </item>
+      <item>
+        <title>Using federated instances as discussion communities</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve noticed <a href="https://duckduckgo.com/?q=replace+whitelist+with+allowlist&amp;ia=web">a trend in software</a>, since Black Lives Matter, to replace vocabulary based on prejudice (white/black) with less sensitive terms. I find it interesting since it uses language to shift mindsets. (hint <a class="mention" href="/u/wclayferguson">@WClayFerguson</a>) In this case, <a class="mention" href="/u/nightpool">@nightpool</a>: WHITELIST_MODE could become ALLOWLIST_MODE for example. In many cultures, white is associated with death and loss, not with purity or protection.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/using-federated-instances-as-discussion-communities/944/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/using-federated-instances-as-discussion-communities/944/5</link>
+        <pubDate>Sat, 03 Oct 2020 08:09:49 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-944-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/using-federated-instances-as-discussion-communities/944.rss">Using federated instances as discussion communities</source>
+      </item>
+      <item>
+        <title>Using federated instances as discussion communities</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="how" data-post="2" data-topic="944">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/how/40/94_2.png" class="avatar"> how:</div>
+<blockquote>
+<p>the ability to isolate instances (using an allowlist – isn’t it implemented already</p>
+</blockquote>
+</aside>
+<p>Yes, I think the more recent Mastodon versions have this built in as SECURE_MODE and WHITELIST_MODE</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/using-federated-instances-as-discussion-communities/944/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/using-federated-instances-as-discussion-communities/944/4</link>
+        <pubDate>Sat, 03 Oct 2020 05:18:43 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-944-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/using-federated-instances-as-discussion-communities/944.rss">Using federated instances as discussion communities</source>
+      </item>
+      <item>
+        <title>Using federated instances as discussion communities</title>
+        <dc:creator><![CDATA[jmanumeza]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/how">@how</a> thanks for your comments.<br>
+I think that it’s possible to use the CHAT framework to collaborate between developers and no-developers. If we see the CHAT model (triangle) we are at the same time subjets and community members. The effort to adapt  the Fediverse to an educational application will be our outcome.<br>
+I consider that for now the obstacle would be to find the nucleus of people (from the educational field) sufficiently interested for this type of collaboration, but I believe that these times of pandemic have focused on technologies to improve learning</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/using-federated-instances-as-discussion-communities/944/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/using-federated-instances-as-discussion-communities/944/3</link>
+        <pubDate>Fri, 02 Oct 2020 15:50:24 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-944-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/using-federated-instances-as-discussion-communities/944.rss">Using federated instances as discussion communities</source>
+      </item>
+      <item>
+        <title>Using federated instances as discussion communities</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>After a brief introduction demonstrating the problem that some students may face when their university forces them to use Fakebooz and they get banned from the asocial platform for spurious reasons, <a class="mention" href="/u/jmanumeza">@jmanumeza</a> introduces the second generation of <em><a href="https://en.wikipedia.org/wiki/Cultural-historical_activity_theory">Cultural-Historical Activity Theory</a> (CHAT)</em> to explore how different academic environments can take back control over their electronic interactions without the need to recourse to the mainstream commercial social platforms that are not suited for such use.</p>
+<p>He then proceed to list the advantages, as a psychologist, for academia using their own federated social tools for students: ease of access, non-abusive definition of user and research data usage, social network analysis, discourse analysis and psychological research that can be made from it, e.g. for hashtag usage per discipline and evaluation from evidence and participation.</p>
+<p>What’s needed by the users that’s currently missing for their Mastodon-based platform?</p>
+<ul>
+<li>the ability to attach PDF or ODT files to Mastodon posts<sup class="footnote-ref"><a href="#footnote-3115-1" id="footnote-ref-3115-1">[1]</a></sup>
+</li>
+<li>the ability to isolate instances (using an allowlist – isn’t it implemented already <a class="mention" href="/u/nightpool">@nightpool</a>?)</li>
+<li>to improve mobile client apps</li>
+<li>to make server installation easier for non-technical people</li>
+</ul>
+<p>He proposes to contribute to documentation for students and teachers and to provide educative implementations.</p>
+<p><a class="mention" href="/u/jmanumeza">@jmanumeza</a> I’m curious if the CHAT can be useful here in the Fediverse to help developers cooperate better, and to help developers and activists (or educators) cooperate as well, since they usually don’t practice the same languages!</p>
+<p>Looking forward to keep track of your experiments in the <a class="hashtag" href="/c/fediversity/10">#<span>fediversity</span></a>!</p>
+<hr class="footnotes-sep">
+
+<ol class="footnotes-list">
+<li id="footnote-3115-1" class="footnote-item">
+<p>this request matches the use-case of a client posting to several server implementations: in this case the client would post the Note to Mastodon or Pleroma, and link attached files from a NextCloud for example. <a href="#footnote-ref-3115-1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+          <p><a href="https://socialhub.activitypub.rocks/t/using-federated-instances-as-discussion-communities/944/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/using-federated-instances-as-discussion-communities/944/2</link>
+        <pubDate>Fri, 02 Oct 2020 00:06:37 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-944-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/using-federated-instances-as-discussion-communities/944.rss">Using federated instances as discussion communities</source>
+      </item>
+      <item>
+        <title>Using federated instances as discussion communities</title>
+        <dc:creator><![CDATA[jmanumeza]]></dc:creator>
+        <description><![CDATA[
+            <p><em>José Manuel Meza Cano</em></p>
+<p><iframe width="560" height="315" src="https://conf.tube/videos/embed/2b43c03e-b5d7-420d-b30d-fe16fda7f498" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+<p>versión en español / Spanish version:<br>
+<iframe width="560" height="315" src="https://conf.tube/videos/embed/e2923ad5-afc5-49e7-afa3-613eef44adb6" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+<p>From the field of psychology, specifically cultural psychology, emphasis is placed on the construction of discussion spaces that have traditionally been seen as the physical classroom, however, since the emergence of social networks, these digital spaces have been used to try to generate communities of discussion and that later lead to learning.</p>
+<p>Unfortunately, as it is known, the most used social networks have serious privacy problems, which leads to the voluntary delivery of data to large corporations. It is for this reason that a small project has been started where the use of Mastodon is proposed for the development of online discussions on specific topics with psychology students, which could result in experiences that generate data on what elements to consider for unleash the discussion and how the participants relate in this type of scenario.<br>
+Fortunately, Mastodon and its mobile applications favor the development of activities without problems for users, which could be successfully developed by a small community of psychologists.</p>
+<h2>Questions &amp; Answers available!</h2>
+<p><strong><a href="https://conf.tube/videos/watch/cdbccd5f-f7d3-4d1f-a778-e45f9c876f66" rel="noopener nofollow ugc">Q&amp;A Session – Using federated instances as discussion communities</a></strong><br>
+⬡ Hooray, the live Questions &amp; Answers are available here<br>
+<iframe width="560" height="315" src="https://conf.tube/videos/embed/cdbccd5f-f7d3-4d1f-a778-e45f9c876f66" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/using-federated-instances-as-discussion-communities/944/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/using-federated-instances-as-discussion-communities/944/1</link>
+        <pubDate>Wed, 30 Sep 2020 13:53:59 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-944-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/using-federated-instances-as-discussion-communities/944.rss">Using federated instances as discussion communities</source>
+      </item>
+  </channel>
+</rss>

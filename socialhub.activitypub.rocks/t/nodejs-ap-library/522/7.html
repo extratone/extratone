@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>NodeJS AP library - #7 by birdsofpraise - NodeJS - SocialHub</title>
+    <meta name="description" content="Hi folks, I’ve been working on a general NodeJS library for ActivityPub. It’s not ready for production but there is a basic example which just about works. I haven’t tested it federating with any real servers or other se&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="../522.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;NodeJS AP library&#39;" href="../522.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/c2911d91c1567acaf78af4212b7669f2f61f67c1.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/c2911d91c1567acaf78af4212b7669f2f61f67c1.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/nodejs-ap-library/522/7" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/nodejs-ap-library/522/7" />
+<meta property="og:title" content="NodeJS AP library" />
+<meta name="twitter:title" content="NodeJS AP library" />
+<meta property="og:description" content="Good to see so many people developing with node!  I’ve started another topic here to try and get a bit more of a structured discussion going in regards to sharing code:" />
+<meta name="twitter:description" content="Good to see so many people developing with node!  I’ve started another topic here to try and get a bit more of a structured discussion going in regards to sharing code:" />
+<meta property="article:published_time" content="2020-05-02T11:29:24+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="../522.html">NodeJS AP library</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="https://socialhub.activitypub.rocks/c/programming/33" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #B3B5B4'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Programming</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../../c/programming/nodejs.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #3e863d'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>NodeJS</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/birdsofpraise.html'><span itemprop='name'>birdsofpraise</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../522.html">
+
+            <link itemprop="image" href="../../../uploads/default/original/1X/c2911d91c1567acaf78af4212b7669f2f61f67c1.png">
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-02-19T16:14:29Z' class='post-time'>
+                February 19, 2020,  4:14pm
+              </time>
+              <meta itemprop='dateModified' content='2020-02-19T16:14:29Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi folks, I’ve been working on a general NodeJS library for ActivityPub. It’s not ready for production but there is a basic example which just about works. I haven’t tested it federating with any real servers or other services yet, nor integrated it into any significantly sized project.</p>
+<p>If anybody is willing to lend a hand, or just raise some issues about things like unclear documentation, I’d appreciate it.</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="../../../uploads/default/original/1X/c2911d91c1567acaf78af4212b7669f2f61f67c1.png" class="site-icon" width="32" height="32">
+      <a href="https://gitlab.com/paulkiddle/node-activitypub/" target="_blank" rel="nofollow noopener">GitLab</a>
+  </header>
+  <article class="onebox-body">
+    <img src="../../../uploads/default/original/1X/10f2d759dce6ea753e1e0b2bf9dc52b57a2f433b.png" class="thumbnail onebox-avatar" width="128" height="128">
+
+<h3><a href="https://gitlab.com/paulkiddle/node-activitypub/" target="_blank" rel="nofollow noopener">Paul Kiddle / Node ActivityPub</a></h3>
+
+<p>HTTP router + utility classes to allow easy activitypub integration into any project</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+        </div>
+
+        <meta itemprop='headline' content='NodeJS AP library'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="3" />
+           <span class='post-likes'>3 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/srosset81.html'><span itemprop='name'>srosset81</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../522.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-02-19T21:48:40Z' class='post-time'>
+                February 19, 2020,  9:48pm
+              </time>
+              <meta itemprop='dateModified' content='2020-02-19T21:48:40Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Nice project <a class="mention" href="../../../u/birdsofpraise.html">@birdsofpraise</a> !<br>
+I haven’t had time to post about this here, but I’m working on a project called SemApps, and we are also implementing an ActivityPub library in NodeJS. It’s based on microservices, using the <a href="https://moleculer.services/" rel="nofollow noopener">Moleculer</a> library. I don’t know if we will have the opportunity to work together but I guess it’s important to keep an eye on each others’ projects <img src="../../../images/emoji/twitter/wink.png@v=9" title=":wink:" class="emoji" alt=":wink:"><br>
+The ActivityPub package is here: <a href="https://github.com/assemblee-virtuelle/semapps/tree/master/src/middleware/packages/activitypub" rel="nofollow noopener">https://github.com/assemblee-virtuelle/semapps/tree/master/src/middleware/packages/activitypub</a></p>
+        </div>
+
+        <meta itemprop='headline' content='NodeJS AP library'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../522.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-02-21T07:15:53Z'>
+              <time itemprop='dateModified' datetime='2020-02-21T07:16:19Z' class='post-time'>
+                February 21, 2020,  7:16am
+              </time>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Also <a href="../../../c/software/redaktor-me.html">redaktor</a> /me is working on a generic ActivityPub server …<br>
+It will take a while cause we want to support the complete C2S API with the S.<br>
+It is written in TypeScript and <a href="https://nestjs.com">NestJS</a> and <a href="https://dojo.io">Dojo</a> help us.</p>
+<p>I hope all of us NodeJS people will have the opportunity to work together in the future …</p>
+        </div>
+
+        <meta itemprop='headline' content='NodeJS AP library'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/birdsofpraise.html'><span itemprop='name'>birdsofpraise</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../522.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-02-21T09:46:37Z' class='post-time'>
+                February 21, 2020,  9:46am
+              </time>
+              <meta itemprop='dateModified' content='2020-02-21T09:46:37Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Great, sounds like there’s more activity in this area than I had previously thought! I will have to check out these projects</p>
+        </div>
+
+        <meta itemprop='headline' content='NodeJS AP library'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/datatitian.html'><span itemprop='name'>datatitian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../522.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-05T21:37:04Z' class='post-time'>
+                April 5, 2020,  9:37pm
+              </time>
+              <meta itemprop='dateModified' content='2020-04-05T21:37:04Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’m also working in this area. <a href="https://github.com/wmurphyrd/activitypub-express" rel="nofollow noopener">activitypub-express</a> is a modular, customizable implementation as ExpressJS middleware functions.</p>
+<p>It will be complete S2S and C2S APIs, but with no front-end. It is intended as a reusable library to simplify creating fediverse apps or adding the standard to an existing project. I’m including a MongoDB denormalized storage model, but planning on making the model easily interchangeable. I’ve based it on code from <a href="https://gup.pe" rel="nofollow noopener">gup.pe</a>, my simple social groups fedi app that is in production now.</p>
+        </div>
+
+        <meta itemprop='headline' content='NodeJS AP library'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/koehn.html'><span itemprop='name'>koehn</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../522.html">
+
+            <link itemprop="image" href="../../../uploads/default/original/1X/10f2d759dce6ea753e1e0b2bf9dc52b57a2f433b.png">
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-10T20:11:11Z' class='post-time'>
+                April 10, 2020,  8:11pm
+              </time>
+              <meta itemprop='dateModified' content='2020-04-10T20:11:11Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>FWIW I have another project going. I’m using TypeScript on the back end to manage the type complexity, and wrote a library of all the AP/AS types along with resolvers to handle all the different types of identifiers it supports. I’m also building a UI that uses the C2S interface on the server. Storage is CouchDB, message queueing uses Redis.</p>
+<p>The front-end is written in Vue/Nuxt, and follows a Diaspora/Facebook post-oriented paradigm.</p>
+<p>Would love to share ideas and implementation.</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="../../../uploads/default/original/1X/c2911d91c1567acaf78af4212b7669f2f61f67c1.png" class="site-icon" width="32" height="32">
+      <a href="https://gitlab.koehn.com/mammoth" target="_blank" rel="nofollow noopener">GitLab</a>
+  </header>
+  <article class="onebox-body">
+    <img src="../../../uploads/default/original/1X/10f2d759dce6ea753e1e0b2bf9dc52b57a2f433b.png" class="thumbnail onebox-avatar" width="128" height="128">
+
+<h3><a href="https://gitlab.koehn.com/mammoth" target="_blank" rel="nofollow noopener">mammoth</a></h3>
+
+<p>Mammoth is a federated social media platform implementing the ActivityPub specification for client/server and server/server communications. It's broken into two projects, mammoth-ui and mammoth-server.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+        </div>
+
+        <meta itemprop='headline' content='NodeJS AP library'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/birdsofpraise.html'><span itemprop='name'>birdsofpraise</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../522.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-05-02T11:29:24Z' class='post-time'>
+                May 2, 2020, 11:29am
+              </time>
+              <meta itemprop='dateModified' content='2020-05-02T11:29:24Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Good to see so many people developing with node!</p>
+<p>I’ve started another topic here to try and get a bit more of a structured discussion going in regards to sharing code:</p>
+<aside class="quote quote-modified" data-post="1" data-topic="657">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="../../../letter_avatar_proxy/v4/letter/b/9f8e36/40.png" class="avatar">
+    <a href="../../common-code-webfinger-library/657.html">Common code: Webfinger Library</a> <a class="badge-wrapper  box" href="../../../c/programming/nodejs.html"><span class="badge-category-parent-bg" style="background-color: #B3B5B4;"></span><span class="badge-category-bg" style="background-color: #3e863d;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Programming ActivityPub in NodeJS.">NodeJS</span></a>
+  </div>
+  <blockquote>
+    Hello folks! 
+I have to admit lately I’ve not taken the time to check out other people’s libraries properly. I’m sure we can benefit a lot from sharing our knowledge and code. With that in mind I thought I’d put out feelers for settling on a shared Webfinger implementation - whether that be an existing one or something we come up with. If nothing else this exercise could get us talking with each other more, which is no bad thing. 
+I picked webfinger because it’s not core ActivityPub and it has p…
+  </blockquote>
+</aside>
+
+        </div>
+
+        <meta itemprop='headline' content='NodeJS AP library'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

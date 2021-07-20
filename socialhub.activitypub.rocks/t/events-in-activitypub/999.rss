@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Events in ActivityPub</title>
+    <link>https://socialhub.activitypub.rocks/t/events-in-activitypub/999</link>
+    <description>LONG story SHORT:  **It&#39;s an oldie, I think the same:**
+
+https://socialhub.activitypub.rocks/t/federated-events/305
+
+What is the best flow to federate events and which interactions might be involved …
+
+[related toots](https://mastodon.social/@sl007/104805879842814985) @darius
+
+related 
+https://socialhub.activitypub.rocks/t/federated-events/305/14
+and
+https://socialhub.activitypub.rocks/t/how-to-represent-places-in-an-event/413/8</description>
+    
+    <lastBuildDate>Mon, 05 Oct 2020 09:39:05 +0000</lastBuildDate>
+    <category>ActivityPub Conference 2020</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/events-in-activitypub/999.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Events in ActivityPub</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>This was a smaller group due to overlapping subjects but to less timeslots.<br>
+The group talked about federating Events and played with <a href="http://gath.io">gath.io</a> where you can see this live result<br>
+<a href="https://mastodon.social/web/accounts/1288867#">https://mastodon.social/web/accounts/1288867#</a><br>
+<code>=</code> <a href="https://gath.io/k5rT8u3GbjmQsy1NHWLMT/m/featuredPost">https://gath.io/k5rT8u3GbjmQsy1NHWLMT/m/featuredPost</a></p>
+<h1>Shared Notes from the session</h1>
+<p>Generic ActivityStreams 2.0 Event:</p>
+<blockquote>
+<pre><code>{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "type": "Event",
+  "name": "Movie Night",
+  "startTime": "2014-12-31T23:00:00-08:00",
+  "endTime": "2015-01-01T06:00:00-08:00"
+}
+</code></pre>
+</blockquote>
+<p><a href="https://gath.io/">https://gath.io</a><br>
+<a href="https://events.friend.camp/">https://events.friend.camp</a></p>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/0f130bf81c9d9e8207d823ef3d0c78c7e905838d.png" class="site-icon" width="32" height="32">
+      <a href="https://gath.io/k5rT8u3GbjmQsy1NHWLMT" target="_blank" rel="noopener">gath.io</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/4451393a32d3d51edae3e41eb94c9bb56346402c.jpeg" class="thumbnail onebox-avatar" width="260" height="260">
+
+<h3><a href="https://gath.io/k5rT8u3GbjmQsy1NHWLMT" target="_blank" rel="noopener">Testevent · gathio</a></h3>
+
+<p>test event</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<aside class="onebox githubblob">
+  <header class="source">
+      <a href="https://github.com/lowercasename/gathio/blob/6eae89562c56aa5d2b6fcd8435c2f85089b316b0/FEDERATION.md" target="_blank" rel="noopener">github.com</a>
+  </header>
+  <article class="onebox-body">
+    <h4><a href="https://github.com/lowercasename/gathio/blob/6eae89562c56aa5d2b6fcd8435c2f85089b316b0/FEDERATION.md" target="_blank" rel="noopener">lowercasename/gathio/blob/6eae89562c56aa5d2b6fcd8435c2f85089b316b0/FEDERATION.md</a></h4>
+<pre><code class="lang-md"># Federation
+
+This document is meant to be a reference for all the ActivityPub federation-related behavior that gath.io has. This means: every user action that can trigger an Activity, every Object that is created and sent out and/or stored.
+
+## Documentation conventions
+
+To keep things simple, sometimes you will see things formatted like `Create/Note` or `Delete/Event` or `Undo/Follow`. The thing before the slash is the Activity, and the thing after the slash is the Object inside the Activity, in an `object` property. So these are to be read as follows:
+
+* `Create/Note`: a `Create` activity containing a `Note` in the `object` field 
+* `Delete/Event`: a `Delete` activity containing an `Event` in the `object` field
+* `Undo/Follow`: an `Undo` activity containing a `Follow` in the `object` field
+
+When the word "broadcast" is used in this document, it means to send an Activity to individual inbox of each of the followers of a given Actor.
+
+This document has four main sections:
+
+* __Federation philosophy__ lays out the general model of how this is intended to federate
+* __General Actor information__ contains the basics of what to expect from our `Actor` objects
+* __Inbox behavior__ lists every incoming ActivityPub activity that the server recognizes, and tells you what it does in response to that activity, including any other ActivityPub activities it sends back out.
+* __Activities triggered from the web app__ tells you what circumstances on the web application cause the server to emit ActivityPub activities. (For example, when an event is updated via the web application, it lets all the ActivityPub followers know that the event has been updated.)
+</code></pre>
+
+  This file has been truncated. <a href="https://github.com/lowercasename/gathio/blob/6eae89562c56aa5d2b6fcd8435c2f85089b316b0/FEDERATION.md" target="_blank" rel="noopener">show original</a>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/events-in-activitypub/999/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/events-in-activitypub/999/3</link>
+        <pubDate>Mon, 05 Oct 2020 09:39:05 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-999-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/events-in-activitypub/999.rss">Events in ActivityPub</source>
+      </item>
+      <item>
+        <title>Events in ActivityPub</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>FYI: <a href="https://git.feneas.org/feneas/fediverse/-/wikis/watchlist-for-activitypub-apps#events-and-meetups" rel="nofollow noopener">Here</a> are all events-related AP apps. If there are more, ping me on <a href="https://mastodon.social/@humanetech" rel="nofollow noopener">@humanetech</a> and I’ll add them to the list.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/events-in-activitypub/999/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/events-in-activitypub/999/2</link>
+        <pubDate>Fri, 02 Oct 2020 10:45:41 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-999-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/events-in-activitypub/999.rss">Events in ActivityPub</source>
+      </item>
+      <item>
+        <title>Events in ActivityPub</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>LONG story SHORT:  <strong>It’s an oldie, I think the same:</strong></p>
+<aside class="quote quote-modified" data-post="1" data-topic="305">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/how/40/94_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/federated-events/305">Federated Events</a> <a class="badge-wrapper  box" href="/c/activitypub/5"><span class="badge-category-bg" style="background-color: #0088CC;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Discuss the ActivityPub Recommendation, how to implement it, how to extend it. Home of the ActivityPub SIG.">ActivityPub</span></a>
+  </div>
+  <blockquote>
+    LONG story SHORT: I think it’s time to federate events! <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/smiley.png?v=9" title="smiley" alt="smiley" class="emoji"> <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/palm_tree.png?v=9" title="palm_tree" alt="palm_tree" class="emoji"> 
+CURRENT SITUATION 
+
+we have a great decentralised events platform “Meetup like” called GetTogether (Python) 
+<a href="https://gettogether.community" rel="nofollow noopener">https://gettogether.community</a>
+
+someone started already to write a standalone AP Python library 
+<a href="https://github.com/dsblank/activitypub" rel="nofollow noopener">https://github.com/dsblank/activitypub</a>
+
+things seems a bit stuck… <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/stuck_out_tongue.png?v=9" title="stuck_out_tongue" alt="stuck_out_tongue" class="emoji"> 
+<a href="https://github.com/GetTogetherComm/GetTogether/issues/60" rel="nofollow noopener">https://github.com/GetTogetherComm/GetTogether/issues/60</a>
+
+
+FEDEVENT 
+
+
+<a href="https://snowcreations.voltihost.com" rel="nofollow noopener">somebody</a> already created an experimental FedEvent but no sou…
+  </blockquote>
+</aside>
+
+<p>What is the best flow to federate events and which interactions might be involved …</p>
+<p><a href="https://mastodon.social/@sl007/104805879842814985">related toots</a> <a class="mention" href="/u/darius">@darius</a></p>
+<p>related<br>
+<aside class="quote quote-modified" data-post="14" data-topic="305">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/letter_avatar_proxy/v4/letter/l/db5fbb/40.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/federated-events/305/14">Federated Events</a> <a class="badge-wrapper  box" href="/c/activitypub/5"><span class="badge-category-bg" style="background-color: #0088CC;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Discuss the ActivityPub Recommendation, how to implement it, how to extend it. Home of the ActivityPub SIG.">ActivityPub</span></a>
+  </div>
+  <blockquote>
+    #introduction 
+Hi, I am the main developer of <a href="https://gancio.org" rel="nofollow noopener">gancio</a>, a shared agenda of events that supports AP. 
+TLDR; 
+All of you know that “supports AP” means everything and nothing, so I’ll try to explain what it supports and why. 
+Gancio was born in Italy from political hacking movements, in particular from the hacklab underscore, a place that crosses the social movements and squats here in Turin (north-west italy). 
+We have set up a “radical local server” cisti dot org that hosts services explicitly desi…
+  </blockquote>
+</aside>
+<br>
+and<br>
+<aside class="quote quote-modified" data-post="8" data-topic="413">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/letter_avatar_proxy/v4/letter/e/5e9695/40.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/how-to-represent-places-in-an-event/413/8">How to represent Places in an event</a> <a class="badge-wrapper  box" href="/c/software/mobilizon/20"><span class="badge-category-parent-bg" style="background-color: #3AB54A;"></span><span class="badge-category-bg" style="background-color: #FAAF2D;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Together, we go further.">Mobilizon</span></a>
+  </div>
+  <blockquote>
+    This is in part a follow-up to above and in part a reply to <a href="https://socialhub.activitypub.rocks/u/heluecht">heluecht</a> from another thread because it makes more sense here. 
+This is what I have in an outbox (part sample, and some things I’m still doubting, some json formatting might be broken too from the cut, snip, paste, and formatting here). Anyway now looks like:- 
+"@context": [
+  "https://www.w3.org/ns/activitystreams",
+  "https://w3id.org/security/v1",
+{
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "schema": "http://schema.org#",
+  "uu…
+  </blockquote>
+</aside>
+</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/events-in-activitypub/999/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/events-in-activitypub/999/1</link>
+        <pubDate>Fri, 02 Oct 2020 10:41:28 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-999-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/events-in-activitypub/999.rss">Events in ActivityPub</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>GDPR compliance</title>
+    <link>https://socialhub.activitypub.rocks/t/gdpr-compliance/1380</link>
+    <description>Please note: 
+
+If a user wants to be deleted, this means “deleted” in the sense of GDPR.
+
+# It does **NOT** mean : “anonymise the user in 1 place only” !!!
+
+Everybody can still be identified by the eldest journo helper in the Internet, the google cache:
+---
+https://webcache.googleusercontent.com/search?q=cache:FIDPsWLZVr4J:https://socialhub.activitypub.rocks/t/articles-about-activitypub/404+&amp;cd=1&amp;hl=de&amp;ct=clnk&amp;gl=de&amp;lr=lang_de%7Clang_en%7Clang_fr&amp;client=safari</description>
+    
+    <lastBuildDate>Mon, 01 Feb 2021 08:11:36 +0000</lastBuildDate>
+    <category>SocialHub Policy</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/gdpr-compliance/1380.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>GDPR compliance</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>noindex tag for anonymised result is the minimum.</p>
+<p>Since GDPR is different in every country, I am referring to §17 german DSGVO and “right to be forgotten”.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/gdpr-compliance/1380/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/gdpr-compliance/1380/4</link>
+        <pubDate>Mon, 01 Feb 2021 08:11:36 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1380-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/gdpr-compliance/1380.rss">GDPR compliance</source>
+      </item>
+      <item>
+        <title>GDPR compliance</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>As far as I understand (but IANAL bla bla…) Discourse has been made to be GDPR compliant.</p>
+<p>Anonymisation is a valid means of ‘account removal’ if it is done correctly. See: <a href="https://www.gdprsummary.com/anonymization-and-gdpr/">Anonymisation and GDPR</a>. There’s one issue in a forum context, namely that the content of your posts may contain PII. For this reason I ask the member to check and edit their posts. When the member indicates they are satisfied I anonymize.</p>
+<p>Note that there is another option: full account removal, including deletion of all posts of the member. This is potentially highly disruptive to the forum if the member was very active. It will leave holes in many threads, and erase the responses of other members if the action cause topics to be deleted. After the removal, quoted text of the member by others still remains. My understanding is that forum staff do not have to offer this option, but for new members with only a few posts this might be provided as an alternative to anonymisation.</p>
+<p>With regards to other external parties that collect PII from the public forum, there are 2 distinct situations: 1) You used these parties deliberately (e.g. Google Analytics) --&gt; you must mention them in your Privacy Policy with a link to their privacy policy (which must be GDPR-compliant), list PII collected, cookies used, etc. 2) Party is beyond your control. In most cases the external party is responsible for informing the party from which it collects PII on a case-by-case basis. See: <a href="https://foxredrisk.com/public-information-gdpr/">Public data &amp; GDPR</a>. (That this doesn’t happen is probably either due to legal loopholes being used or the harvester just being non-compliant, but all this is beyond the responsibility of the forum).</p>
+<p>As for SocialHub itself. There’s the <a href="https://socialhub.activitypub.rocks/tos">Terms of Services</a> and <a href="https://socialhub.activitypub.rocks/privacy">Privacy Policy</a>. I think these are the standard ones that Discourse provides with their software installation, which cover the ‘Public Forum’ use case, but unfortunately especially the ToS uses a lot of legalese and might be worded in more friendly, understandable manner. I think (not an expert) it might also specify the default license to be used for posts on the forum (e.g. CC-BY-SA), as well as a more explicit warning that your content will be public and what that implies (technically the forum settings might avoid search engine indexing, but that may not be desirable for a technology forum, and is not watertight anyway).</p>
+<p><strong>Note</strong>: The Solid forum has an ongoing GDPR discussion: <a href="https://forum.solidproject.org/t/gdpr-in-this-forum/2966">GDPR in this forum</a>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/gdpr-compliance/1380/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/gdpr-compliance/1380/3</link>
+        <pubDate>Mon, 01 Feb 2021 06:45:02 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1380-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/gdpr-compliance/1380.rss">GDPR compliance</source>
+      </item>
+      <item>
+        <title>GDPR compliance</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>What are you suggesting? I don’t have power over the Internet.</p>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/1b0984d7ee08bce90572f46a1950e1ced436d028.png" class="site-icon" width="32" height="32">
+      <a href="https://meta.discourse.org/t/summary-of-current-state-of-gdpr-compliance/85893" target="_blank" rel="noopener" title="09:08AM - 22 April 2018">Discourse Meta – 22 Apr 18</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/ecc92a52ee7353e03d5c0d1ea6521ce4541d9c25_2_500x500.png" class="thumbnail onebox-avatar" width="500" height="500" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/ecc92a52ee7353e03d5c0d1ea6521ce4541d9c25_2_500x500.png, https://socialhub.activitypub.rocks/uploads/default/original/1X/ecc92a52ee7353e03d5c0d1ea6521ce4541d9c25.png 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/1X/ecc92a52ee7353e03d5c0d1ea6521ce4541d9c25.png 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/ecc92a52ee7353e03d5c0d1ea6521ce4541d9c25_2_10x10.png">
+
+<h3><a href="https://meta.discourse.org/t/summary-of-current-state-of-gdpr-compliance/85893" target="_blank" rel="noopener">Summary of current state of GDPR compliance</a></h3>
+
+<p>We (diem25.org) are in the process of GDPR-proofing our operations. As others pointed out, the danger is not the authorities but the Abmahnanwälte, who are suing e.g. small personal blogs for lacking the legally-mandated two distinct ways of...</p>
+
+  <p><span class="label1">Reading time: 2 mins 🕑</span>
+    <span class="label2">Likes: 32 ❤</span></p>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/1X/eaf92efd265d26e23d022a3684504808d56458cb.png" data-download-href="https://socialhub.activitypub.rocks/uploads/default/eaf92efd265d26e23d022a3684504808d56458cb" title="image"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/eaf92efd265d26e23d022a3684504808d56458cb_2_690x173.png" alt="image" data-base62-sha1="xwFBhHwNTVw9Ut2srsU58C8yu8P" width="690" height="173" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/eaf92efd265d26e23d022a3684504808d56458cb_2_690x173.png, https://socialhub.activitypub.rocks/uploads/default/optimized/1X/eaf92efd265d26e23d022a3684504808d56458cb_2_1035x259.png 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/1X/eaf92efd265d26e23d022a3684504808d56458cb.png 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/eaf92efd265d26e23d022a3684504808d56458cb_2_10x10.png"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">image</span><span class="informations">1110×279 23.4 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg></div></a></div></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/gdpr-compliance/1380/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/gdpr-compliance/1380/2</link>
+        <pubDate>Sun, 31 Jan 2021 22:29:48 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1380-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/gdpr-compliance/1380.rss">GDPR compliance</source>
+      </item>
+      <item>
+        <title>GDPR compliance</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Please note:</p>
+<p>If a user wants to be deleted, this means “deleted” in the sense of GDPR.</p>
+<h1>It does <strong>NOT</strong> mean : “anonymise the user in 1 place only” !!!</h1>
+<h2>Everybody can still be identified by the eldest journo helper in the Internet, the google cache:</h2>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/0e9c57ab6a2587bad663758ebd11b5999aaa2a28.png" class="site-icon" width="32" height="32">
+      <a href="https://webcache.googleusercontent.com/search?q=cache:FIDPsWLZVr4J:https:%2F%2Fsocialhub.activitypub.rocks%2Ft%2Farticles-about-activitypub%2F404%2B&amp;cd=1&amp;hl=de&amp;ct=clnk&amp;gl=de&amp;lr=lang_de%7Clang_en%7Clang_fr&amp;client=safari" target="_blank" rel="noopener" title="07:36PM - 14 December 2019">SocialHub – 14 Dec 19</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_500x500.png" class="thumbnail onebox-avatar" width="500" height="500" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_500x500.png, https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_10x10.png">
+
+<h3><a href="https://webcache.googleusercontent.com/search?q=cache:FIDPsWLZVr4J:https:%2F%2Fsocialhub.activitypub.rocks%2Ft%2Farticles-about-activitypub%2F404%2B&amp;cd=1&amp;hl=de&amp;ct=clnk&amp;gl=de&amp;lr=lang_de%7Clang_en%7Clang_fr&amp;client=safari" target="_blank" rel="noopener">Articles about ActivityPub</a></h3>
+
+<p>Hello everyone,  I searched a bit where to post this as everything seemed to be only developers related, so I hope my intervention will not bother to much, I didn’t really find anywhere to post this, so maybe here…  For the purpose of a possible...</p>
+
+  <p><span class="label1">Reading time: 1 mins 🕑</span>
+    <span class="label2">Likes: 2 ❤</span></p>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/gdpr-compliance/1380/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/gdpr-compliance/1380/1</link>
+        <pubDate>Sun, 31 Jan 2021 04:34:31 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1380-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/gdpr-compliance/1380.rss">GDPR compliance</source>
+      </item>
+  </channel>
+</rss>

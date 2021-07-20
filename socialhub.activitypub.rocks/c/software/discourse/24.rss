@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Discourse - SocialHub</title>
+    <link>https://socialhub.activitypub.rocks/c/software/discourse/24</link>
+    <description>Topics in the &#39;Discourse&#39; category Discussion on Federation support for Discourse.</description>
+    
+      <lastBuildDate>Mon, 05 Jul 2021 09:05:59 +0000</lastBuildDate>
+      <atom:link href="https://socialhub.activitypub.rocks/c/software/discourse/24.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Federating Discourse</title>
+          <dc:creator><![CDATA[keunes]]></dc:creator>
+          <category>Discourse</category>
+          <description><![CDATA[
+            <p>I just created my first post on this Discourse instance, and because I’m new here I can only post two links. Understandable, but rather annoying. So I was thinking: isn’t there a way to fediversify Discourse, particularly my Reputation?</p>
+<p>E.g. in the AntennaPod forum we could set SocialHub as a ‘trusted trust source’ and allow users to benefit from their trust levels gained elsewhere.</p>
+<p>Just throwing out the idea here <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/federating-discourse/1910">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/federating-discourse/1910</link>
+          <pubDate>Mon, 05 Jul 2021 09:05:59 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1910</guid>
+          <source url="https://socialhub.activitypub.rocks/t/federating-discourse/1910.rss">Federating Discourse</source>
+        </item>
+        <item>
+          <title>Discourse Invented Spaghetti Forums!</title>
+          <dc:creator><![CDATA[how]]></dc:creator>
+          <category>Discourse</category>
+          <description><![CDATA[
+            <p>Continuing the discussion from <a href="https://socialhub.activitypub.rocks/t/which-links-between-activitypub-and-solid-project/529/10">Which links between ActivityPub and Solid project?</a>:</p>
+<p>Hey <a class="mention" href="/u/rishabh">@rishabh</a>, <a class="mention" href="/u/falco">@Falco</a>: we have more and more the case that discussions spread across Discourse instances, it would be <em>very nice™</em> to have something that helps us federate those topics over ActivityPub. I’ve seen that ActivityPub support is not on the menu for the upcoming version 2.5 that just started. Do you have any plans moving forward? Do you need help?</p>
+            <p><small>3 posts - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/discourse-invented-spaghetti-forums/544">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/discourse-invented-spaghetti-forums/544</link>
+          <pubDate>Fri, 28 Feb 2020 08:49:42 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>Yes</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-544</guid>
+          <source url="https://socialhub.activitypub.rocks/t/discourse-invented-spaghetti-forums/544.rss">Discourse Invented Spaghetti Forums!</source>
+        </item>
+        <item>
+          <title>Discourse federation</title>
+          <dc:creator><![CDATA[marnanel]]></dc:creator>
+          <category>Discourse</category>
+          <description><![CDATA[
+            <p>Is it possible to read Discourse instances (and particularly this one) via ActivityPub?</p>
+<p>If not, how might it work?</p>
+            <p><small>3 posts - 2 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/discourse-federation/248">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/discourse-federation/248</link>
+          <pubDate>Tue, 29 Oct 2019 17:56:48 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-248</guid>
+          <source url="https://socialhub.activitypub.rocks/t/discourse-federation/248.rss">Discourse federation</source>
+        </item>
+        <item>
+          <title>About Discourse</title>
+          <dc:creator><![CDATA[rishabh]]></dc:creator>
+          <category>Discourse</category>
+          <description><![CDATA[
+            <p>Discussion on Federation support for Discourse.</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/1b0984d7ee08bce90572f46a1950e1ced436d028.png" class="site-icon" width="32" height="32">
+      <a href="https://meta.discourse.org/t/federation-support-for-discourse/90921/21" target="_blank" title="10:11AM - 26 August 2019" rel="nofollow noopener">Discourse Meta – 26 Aug 19</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/3257605a46a4075ea4e980dae62fe83785b09381.jpeg" class="thumbnail onebox-avatar" width="180" height="180">
+
+<h3><a href="https://meta.discourse.org/t/federation-support-for-discourse/90921/21" target="_blank" rel="nofollow noopener">Federation support for Discourse</a></h3>
+
+<p>Before we can re-open that topic, I think the community should decide on functional spec here that someone could get started with.  As the term “ActivityPub Implementation for Discourse” is extremely broad, the team strongly believes that we should...</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+            <p><small>3 posts - 2 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/about-discourse/102">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/about-discourse/102</link>
+          <pubDate>Thu, 10 Oct 2019 11:12:08 +0000</pubDate>
+          <discourse:topicPinned>Yes</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-102</guid>
+          <source url="https://socialhub.activitypub.rocks/t/about-discourse/102.rss">About Discourse</source>
+        </item>
+  </channel>
+</rss>

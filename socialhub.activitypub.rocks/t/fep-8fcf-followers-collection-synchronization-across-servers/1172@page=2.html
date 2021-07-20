@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>FEP-8fcf: Followers collection synchronization across servers - Fediverse Enhancement Proposals - SocialHub</title>
+    <meta name="description" content="source: https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/src/branch/main/feps/fep-8fcf.md">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="1172@page=2.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;FEP-8fcf: Followers collection synchronization across servers&#39;" href="1172.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/fep-8fcf-followers-collection-synchronization-across-servers/1172?page=2" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/fep-8fcf-followers-collection-synchronization-across-servers/1172?page=2" />
+<meta property="og:title" content="FEP-8fcf: Followers collection synchronization across servers" />
+<meta name="twitter:title" content="FEP-8fcf: Followers collection synchronization across servers" />
+<meta property="og:description" content="I don’t think there’s any security issue in my proposal? The only thing you’d potentially leak is support for the synchronization mechanism. Maybe domains where someone has followers (if using the “inline all domains in a single payload”), but not he individual followers.  Furthermore, in the proposed implementation, those properties would only be set on the Create and Announce of followers-only posts, so not things that are usually shared, and in case of Mastodon, not things that are LDSigned.  ..." />
+<meta name="twitter:description" content="I don’t think there’s any security issue in my proposal? The only thing you’d potentially leak is support for the synchronization mechanism. Maybe domains where someone has followers (if using the “inline all domains in a single payload”), but not he individual followers.  Furthermore, in the proposed implementation, those properties would only be set on the Create and Announce of followers-only posts, so not things that are usually shared, and in case of Mastodon, not things that are LDSigned.  ..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="21 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="11 ❤" />
+<meta property="article:published_time" content="2020-09-05T15:27:49+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+        <link rel="prev" href="1172.html">
+        <link rel="next" href="1172@page=3.html">
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="1172.html">FEP-8fcf: Followers collection synchronization across servers</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/activitypub.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #0088CC'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>ActivityPub</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/activitypub/fep/54.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #0088CC'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Fediverse Enhancement Proposals</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+      <div class="topic-category">
+        <div class='discourse-tags list-tags'>
+            <a href='../../tag/fep-8fcf.html' class='discourse-tag' rel="tag">fep-8fcf</a>, 
+            <a href='../../tag/draft.html' class='discourse-tag' rel="tag">draft</a>, 
+            <a href='../../tag/fep.html' class='discourse-tag' rel="tag">fep</a>
+        </div>
+      </div>
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Claire.html'><span itemprop='name'>Claire</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1172.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-09-05T15:27:49Z'>
+              <time itemprop='dateModified' datetime='2020-12-01T17:28:32Z' class='post-time'>
+                December 1, 2020,  5:28pm
+              </time>
+          <span itemprop='position'>#21</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I don’t think there’s any security issue in my proposal? The only thing you’d potentially leak is support for the synchronization mechanism. Maybe domains where someone has followers (if using the “inline all domains in a single payload”), but not he individual followers.</p>
+<p>Furthermore, in the proposed implementation, those properties would only be set on the <code>Create</code> and <code>Announce</code> of followers-only posts, so not things that are usually shared, and in case of Mastodon, not things that are LDSigned.</p>
+<p>I don’t have a strong opinion wrt. AS attribute VS HTTP header, although I think it’s slightly dubious to push extension stuff outside of AP, which is made to be extensible in the first place.</p>
+        </div>
+
+        <meta itemprop='headline' content='FEP-8fcf: Followers collection synchronization across servers'>
+          <meta itemprop='keywords' content='fep-8fcf, draft, fep'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nightpool.html'><span itemprop='name'>nightpool</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1172.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-09-05T15:38:49Z'>
+              <time itemprop='dateModified' datetime='2020-12-01T17:28:32Z' class='post-time'>
+                December 1, 2020,  5:28pm
+              </time>
+          <span itemprop='position'>#22</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I also don’t understand what information leakage may exist. are you saying the hash of the followers list may expose some information? (if you have a guess at the full complete followers list for a domain and wish to confirm it?)</p>
+        </div>
+
+        <meta itemprop='headline' content='FEP-8fcf: Followers collection synchronization across servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1172.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-09-05T15:43:40Z'>
+              <time itemprop='dateModified' datetime='2020-12-01T17:28:32Z' class='post-time'>
+                December 1, 2020,  5:28pm
+              </time>
+          <span itemprop='position'>#23</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote group-mastodon" data-username="Claire" data-post="21" data-topic="1172">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../letter_avatar_proxy/v4/letter/c/f6c823/40.png" class="avatar"> Claire:</div>
+<blockquote>
+<p>I don’t think there’s any security issue in my proposal?</p>
+</blockquote>
+</aside>
+<p>I think I see what Chris is saying:</p>
+<p>If big-instance leaks a <code>digest</code> of a <code>collectionSynchronization</code> field of some small instance X, and the attacker enumerates all the N users of small instance X, the attacker can simply create <code>N!</code> permutations of users in their alphabetical order and find the colliding <code>digest</code> and know who is following the person on big-instance.</p>
+<p>Illustration: SHA-256 hashing performance is pretty good in the age of Bitcoin. I’ll assume a very rough 1 million h/s for illustrative purposes. Note: speed does depend on input size, but we’re not talking about MB of data here for a small instance. A single hash for a 14-user instance or smaller is crackable in 1 day or less compute time <em>worst</em> case (not average case). So small instances suffer the most, in this case. The smaller the instance, the more likely someone could reconstruct the specific folks one follows.</p>
+<p>Chris, is this what you had in mind?</p>
+<p>EDIT: Updated to hopefully be more clear.</p>
+        </div>
+
+        <meta itemprop='headline' content='FEP-8fcf: Followers collection synchronization across servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Claire.html'><span itemprop='name'>Claire</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1172.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-09-05T15:48:28Z'>
+              <time itemprop='dateModified' datetime='2020-12-01T17:28:32Z' class='post-time'>
+                December 1, 2020,  5:28pm
+              </time>
+          <span itemprop='position'>#24</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Indeed, if the hash is leaked, assuming an attacker has a way to enumerate users of the target domain, they can indeed recover the list. This is a good case against the “inline multiple <code>SynchronizationItem</code> point I made in my proposal.</p>
+<p>However, the proposed implementation sets only one <code>SynchronizationItem</code> and only sets it to <code>Create</code> and <code>Announce</code> activities which should be considered private.</p>
+        </div>
+
+        <meta itemprop='headline' content='FEP-8fcf: Followers collection synchronization across servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cwebber.html'><span itemprop='name'>cwebber</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1172.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-09-05T15:48:56Z'>
+              <time itemprop='dateModified' datetime='2020-12-01T17:28:32Z' class='post-time'>
+                December 1, 2020,  5:28pm
+              </time>
+          <span itemprop='position'>#25</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="cjs" data-post="23" data-topic="1172">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/cjs/40/584_2.png" class="avatar"> cjs:</div>
+<blockquote>
+<p>Chris, is this what you had in mind?</p>
+</blockquote>
+</aside>
+<p>Yes, that’s it.</p>
+<p>You also don’t need to fully enumerate everyone if you have a reasonable guess; many cases can be done in shorter attempts.</p>
+        </div>
+
+        <meta itemprop='headline' content='FEP-8fcf: Followers collection synchronization across servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1172.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-09-05T15:57:09Z'>
+              <time itemprop='dateModified' datetime='2020-12-01T17:28:32Z' class='post-time'>
+                December 1, 2020,  5:28pm
+              </time>
+          <span itemprop='position'>#26</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote group-mastodon" data-username="Claire" data-post="24" data-topic="1172">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../letter_avatar_proxy/v4/letter/c/f6c823/40.png" class="avatar"> Claire:</div>
+<blockquote>
+<p>assuming an attacker has a way to enumerate users of the target domain</p>
+</blockquote>
+</aside>
+<p>This is possible on mastodon, it’ll respond with a HTTP payload if a user exists with that username.</p>
+<p>Plus, as Chris said, if it is just one individual being targeted, or just one specific case to be checked, potentially any-size instance is vulnerable (I don’t know how many usernames fit into a 1-second SHA-256 hash of ~200MB).</p>
+<p>I wasn’t worried about this before… but now… <img src="../../images/emoji/twitter/frowning.png@v=9" title=":frowning:" class="emoji" alt=":frowning:"></p>
+        </div>
+
+        <meta itemprop='headline' content='FEP-8fcf: Followers collection synchronization across servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Claire.html'><span itemprop='name'>Claire</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1172.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-09-05T16:17:49Z'>
+              <time itemprop='dateModified' datetime='2020-12-01T17:28:32Z' class='post-time'>
+                December 1, 2020,  5:28pm
+              </time>
+          <span itemprop='position'>#27</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Again, I really don’t think that’s an issue at all in my proposed implementation (the info is only inlined to <code>Create</code> and <code>Announce</code> activities, not the objects themselves, and only to that associated with private objects, with each domain receiving its <code>SynchronizationItem</code> and no other), but it’s worth making that issue clear in the protocol proposal itself (though I can’t edit my first post in this thread anymore, apparently).</p>
+        </div>
+
+        <meta itemprop='headline' content='FEP-8fcf: Followers collection synchronization across servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1172.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-09-05T16:30:37Z'>
+              <time itemprop='dateModified' datetime='2020-12-01T17:28:32Z' class='post-time'>
+                December 1, 2020,  5:28pm
+              </time>
+          <span itemprop='position'>#28</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote group-mastodon" data-username="Claire" data-post="27" data-topic="1172">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../letter_avatar_proxy/v4/letter/c/f6c823/40.png" class="avatar"> Claire:</div>
+<blockquote>
+<p>Again, I really don’t think that’s an issue at all in my proposed implementation (the info is only inlined to <code>Create</code> and <code>Announce</code> activities, not the objects themselves, and only to that associated with private objects, with each domain receiving its <code>SynchronizationItem</code> and no other)</p>
+</blockquote>
+</aside>
+<p>I understand you don’t believe so, but I want to really impress what this means. “Inlining” properties into the delivered objects means peer federated servers are liable to just cache the entire thing without sanitizing it, and treating it as their entry in an <code>inbox</code>. Once something leaves your server, you have no control what the other software does with it, and now your software (or a peer’s software) is one <code>Announce</code>-using-the-inlined-object away from sharing this with the world (no maliciousness required by anyone), precisely <em>because</em> your proposal is the first which makes a JSON-LD field security-sensitive if leaked. So not only does Mastodon need to scrub this JSON-LD property from incoming requests before re-boosting, but <em>so do peer server software as well</em>.</p>
+        </div>
+
+        <meta itemprop='headline' content='FEP-8fcf: Followers collection synchronization across servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Claire.html'><span itemprop='name'>Claire</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1172.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-09-05T16:39:03Z'>
+              <time itemprop='dateModified' datetime='2020-12-01T17:28:32Z' class='post-time'>
+                December 1, 2020,  5:28pm
+              </time>
+          <span itemprop='position'>#29</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Yes, but those properties are only inlined into activities that are <em>private</em>. If those activities get leaked by other servers, you have a much bigger problem: private conversations being leaked.</p>
+        </div>
+
+        <meta itemprop='headline' content='FEP-8fcf: Followers collection synchronization across servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1172.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-09-05T16:49:07Z'>
+              <time itemprop='dateModified' datetime='2020-12-01T17:28:32Z' class='post-time'>
+                December 1, 2020,  5:28pm
+              </time>
+          <span itemprop='position'>#30</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote group-mastodon" data-username="Claire" data-post="29" data-topic="1172" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../letter_avatar_proxy/v4/letter/c/f6c823/40.png" class="avatar"> Claire:</div>
+<blockquote>
+<p>Yes, but those properties are only inlined into activities that are <em>private</em> . If those activities get leaked by other servers, you have a much bigger problem: private conversations being leaked.</p>
+</blockquote>
+</aside>
+<p>You’re basically saying: “If non-Mastodon servers don’t understand the non-AP Mastodon-specific <em>private-and-followers-only</em> concept, they’re the ones broken”.</p>
+<p>I am saying as a writer of non-Mastodon software that doesn’t have the concept of “private-and-followers-only” that it’s not a reasonable assumption to make. Just because I included followers and omitted <code>as:public</code> does not mean it is private (privacy is not a binary concept), and I don’t want to be accidentally leaking security fields because of a Mastodon-specific interpretation, and then be told my software is the problematic one.</p>
+        </div>
+
+        <meta itemprop='headline' content='FEP-8fcf: Followers collection synchronization across servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Claire.html'><span itemprop='name'>Claire</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1172.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-09-05T18:09:04Z'>
+              <time itemprop='dateModified' datetime='2020-12-01T17:28:32Z' class='post-time'>
+                December 1, 2020,  5:28pm
+              </time>
+          <span itemprop='position'>#31</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>It is true that ActivityPub doesn’t explicitly define anything about who is allowed to see an object, beyond its initial addressing. The only thing it says is that objects addressed to <code>as:Public</code> should be accessible to everyone without authentication. But I’m not sure what you’re getting at. If you consider that software would be right to treat anything it sees as public because AS doesn’t explicitly specify that something should not be displayed to someone it isn’t addressed to… then it means you shouldn’t use ActivityPub for anything private at all ever, regardless of the addressing.</p>
+        </div>
+
+        <meta itemprop='headline' content='FEP-8fcf: Followers collection synchronization across servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/nightpool.html'><span itemprop='name'>nightpool</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1172.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-09-05T18:30:23Z'>
+              <time itemprop='dateModified' datetime='2020-12-01T17:28:32Z' class='post-time'>
+                December 1, 2020,  5:28pm
+              </time>
+          <span itemprop='position'>#32</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="cjs" data-post="30" data-topic="1172">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/cjs/40/584_2.png" class="avatar"> cjs:</div>
+<blockquote>
+<p>Just because I included followers and omitted <code>as:public</code> does not mean it is private (privacy is not a binary concept),</p>
+</blockquote>
+</aside>
+<p>If a post doesn’t have as:public, it shouldn’t be visible to anyone outside of it’s authorized recipients. That seems like it’s pretty clear from the spec? It talks about this restriction in a couple of different locations. (but never in the context of the receiving server in a s2s system because AP doesn’t specify that kind of “lookup” interface for the receiving server)</p>
+<p>there aren’t any rules preventing you from Announcing that post to a different audience or whatever but it seems like a mistake to inline the full object without being aware of the individual properties, I would expect nearly all system to just reference the post by id or inline a couple of properties that they know are relevant</p>
+        </div>
+
+        <meta itemprop='headline' content='FEP-8fcf: Followers collection synchronization across servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1172.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-09-05T18:35:20Z'>
+              <time itemprop='dateModified' datetime='2020-12-01T17:28:32Z' class='post-time'>
+                December 1, 2020,  5:28pm
+              </time>
+          <span itemprop='position'>#33</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote group-mastodon" data-username="Claire" data-post="29" data-topic="1172" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../letter_avatar_proxy/v4/letter/c/f6c823/40.png" class="avatar"> Claire:</div>
+<blockquote>
+<p>Yes, but those properties are only inlined into activities that are <em>private</em> . If those activities get leaked by other servers, you have a much bigger problem: private conversations being leaked.</p>
+</blockquote>
+</aside>
+<p>Perhaps inverting my argument will make it clearer: having this synchronization option <em>only</em> be available for a <em>private</em> Activity is problematic; a synchronization solution <em>should</em> work independently of visibility/privacy-model/addressing of the Activity it is attached-to/associated-with (including publicly-available ones).</p>
+<p>The fact that the security flaw’s best defense is by appealing to the specificities of this particular solution’s coupling of these concerns, which <em>should</em> be separated concerns, will not convince me of it as “solving” or “not being” a security problem as a matter of software engineering principles, especially as a matter of principle.</p>
+<aside class="quote group-mastodon quote-modified" data-username="Claire" data-post="30" data-topic="852">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../letter_avatar_proxy/v4/letter/c/f6c823/40.png" class="avatar"><a href="../proposal-mechanism-for-synchronizing-followers-lists-across-servers/852/30.html">Proposal: Mechanism for synchronizing followers lists across servers</a>
+</div>
+<blockquote>
+<p>But I’m not sure what you’re getting at. If you consider that software would be right to treat anything it sees as public because AS doesn’t explicitly specify that something should not be displayed to someone it isn’t addressed to… then it means you shouldn’t use ActivityPub for anything private at all ever, regardless of the addressing.</p>
+</blockquote>
+</aside>
+<p>What is “private”? An account that automatically approves its follower requests (I know this too is optional in Mastodon but it is <strong>not encoded into the Activities you send out</strong> and therefore is not documented as part of the delivery scope) and sends a non-<code>as:public</code> message to potentially thousands of followers does not mean it is “private”, to me. You may think differently. That’s how Mastodon operates today. I believe it is deceiving to tell users it is a “private” message. You’re right, perhaps I’m more paranoid than the average user, but that’s survivorship bias (I treat <em>all</em> my Mastodon content – including DMs and follower-only – as fully public; people who can’t accept that don’t use Mastodon, which skews your average to those that accept it).</p>
+<aside class="quote group-mastodon quote-modified" data-username="nightpool" data-post="31" data-topic="852">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/nightpool/40/36_2.png" class="avatar"><a href="../proposal-mechanism-for-synchronizing-followers-lists-across-servers/852/31.html">Proposal: Mechanism for synchronizing followers lists across servers</a>
+</div>
+<blockquote>
+<p>as:public, it shouldn’t be visible to anyone outside of it’s authorized recipients.</p>
+</blockquote>
+</aside>
+<p>Correct, which is not the same as the message being “private”.</p>
+<p>Do we really want to go down this privacy discussion road? I’d prefer to just agree to disagree and save everyone’s time, rather than have y’all try to convince me I am wrong. I’m not trying to convince either of you that you’re wrong. It’s just a different interpretation.</p>
+<p>I’m just trying to say “here is a security problem Chris identified” and our viewpoint is rejected. I can see your viewpoint, I would just prefer a no-bullshit answer of “we’re not going to address that” than y’all trying to force y’alls particular privacy model on everyone else (<em>“We introduce this generalized AP solution to synchronosity but it requires Mastodon’s interpretation of privacy to address security concerns”</em>). My interpretation of the spec may be stricter, but I’m not going to force y’all into my world view either. Woo, peering &amp; federation! Unfortunately, this non-reciprocal listening of viewpoints is where I am growing a current source of frustration. <img src="../../images/emoji/twitter/frowning.png@v=9" title=":frowning:" class="emoji" alt=":frowning:"> I am sorry if I come across as upset, it is just that the optional AP leeway of <em>having different</em> privacy guarantees in AP is something I would like to effectively preserve in the ecosystem. Mastodon should want that too, or else a different AP-based Fediverse could be made that is fundamentally un-interoperable.</p>
+        </div>
+
+        <meta itemprop='headline' content='FEP-8fcf: Followers collection synchronization across servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Claire.html'><span itemprop='name'>Claire</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1172.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-10-19T12:48:55Z'>
+              <time itemprop='dateModified' datetime='2020-12-01T17:28:32Z' class='post-time'>
+                December 1, 2020,  5:28pm
+              </time>
+          <span itemprop='position'>#34</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>So, I’m sad we still haven’t managed to reach an agreement on such a protocol, especially since, due to issues on our (Mastodon’s) end, it is sorely needed.</p>
+<p>To sum up the disagreements with my proposal, I think there are basically two of them:</p>
+<ul>
+<li>it entrenches the domain-based thing further. I understand this (this goes slightly beyond the existing security considerations, and assumes that software managing one account on a domain manages all accounts on that same domain), and I regret it, but I’m afraid the alternative is too difficult and error-prone to handle. In the extremely unlikely event one handle dispatches accounts to several different software implementations, we can allow disabling that feature, or enabling the implementations to collaborate.</li>
+<li>privacy concerns regarding implementations that would store/relay “private” activities to platforms/actors that don’t need to know that information. The “fix” for that being to use an HTTP header instead of additional AS attributes. I think that’s also an unlikely edge case, and I’m not happy with pushing extensibility outside of ActivityStreams and using an HTTP header instead, but I have no fundamental opposition to that.</li>
+</ul>
+<p>I can work on changing the proposal/PR to use an HTTP header instead of custom AS attributes. Would that work for you?</p>
+        </div>
+
+        <meta itemprop='headline' content='FEP-8fcf: Followers collection synchronization across servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Claire.html'><span itemprop='name'>Claire</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1172.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-10-19T16:43:50Z'>
+              <time itemprop='dateModified' datetime='2020-12-01T17:28:32Z' class='post-time'>
+                December 1, 2020,  5:28pm
+              </time>
+          <span itemprop='position'>#35</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I have now added a commit to the PR to replace the <code>collectionSynchronization</code> attribute in activities with the <code>Collection-Synchronization</code> HTTP header, with the same grammar as the <code>Signature</code> header and the following fields:</p>
+<ul>
+<li>
+<code>collectionId</code>: the collection this header refers to (the only one supported at that point is the sender’s collection)</li>
+<li>
+<code>digest</code>: hexadecimal representation of XORed digests of the actor ids on the receiver’s instance, joined by newlines</li>
+<li>
+<code>url</code>: the URL of the endpoint returning a <code>Collection</code>
+</li>
+</ul>
+<p>In the current implementation of the PR, the list of followers is the list of followers whose actor <code>id</code> shares the same URI <code>scheme</code> and <code>netloc</code> as the <code>inbox</code> being delivered to. I’m afraid this introduces, again, a new constraint on the <code>inbox</code> and actor <code>id</code> needing to be on the same domain, and I’m not too sure what to do about that.</p>
+        </div>
+
+        <meta itemprop='headline' content='FEP-8fcf: Followers collection synchronization across servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1172.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-10-20T15:46:53Z'>
+              <time itemprop='dateModified' datetime='2020-12-01T17:28:32Z' class='post-time'>
+                December 1, 2020,  5:28pm
+              </time>
+          <span itemprop='position'>#36</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote group-mastodon" data-username="Claire" data-post="34" data-topic="1172">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../letter_avatar_proxy/v4/letter/c/f6c823/40.png" class="avatar"> Claire:</div>
+<blockquote>
+<p>So, I’m sad we still haven’t managed to reach an agreement on such a protocol, especially since, due to issues on our (Mastodon’s) end, it is sorely needed.</p>
+</blockquote>
+</aside>
+<p>I am sorry. <img src="../../images/emoji/twitter/frowning.png@v=9" title=":frowning:" class="emoji" alt=":frowning:">  I do want to thank you for enabling this discussion in the first place. I have learned a lot even when the discussions get tough. I know you put a lot of effort into the PR, and didn’t have to come here in the first place, and didn’t have to come back to revisit it. I am also sorry to <a class="mention" href="../../u/nightpool.html">@nightpool</a> – I know we often see things differently, and I genuinely appreciate your persistent willingness to push back against me.</p>
+<p>I’m not intending to block y’all doing what you need to do to fix the problems you’re seeing day-to-day. I just wanted to be sure objections were heard, they were recognized, even if not addressed. I am sorry that I got a bit upset around this, I do think y’all recognized them but in the moment it didn’t feel that way.</p>
+<p>In that spirit, I don’t think I have any new objections, and don’t feel the need to revisit old ones. Feel empowered to carry on as you see fit.</p>
+<p>Whichever course you choose (submitting the PR as-is with the HTTP header, reverting back to the original proposal, or something else), I hope I haven’t soured the thread so badly that y’all aren’t considering trying out a <a href="../fep-a4edc7b-the-fediverse-enhancement-proposal-process/1090.html">FEP</a>. Since you’re breaking new ground it would be nice if it existed as a FEP so others could use your solution in an interoperable way.</p>
+        </div>
+
+        <meta itemprop='headline' content='FEP-8fcf: Followers collection synchronization across servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Claire.html'><span itemprop='name'>Claire</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1172.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-10-21T15:22:41Z'>
+              <time itemprop='dateModified' datetime='2020-12-01T17:28:32Z' class='post-time'>
+                December 1, 2020,  5:28pm
+              </time>
+          <span itemprop='position'>#37</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="cjs" data-post="36" data-topic="1172">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/cjs/40/584_2.png" class="avatar"> cjs:</div>
+<blockquote>
+<p>I am sorry. <img src="../../images/emoji/twitter/frowning.png@v=9" title=":frowning:" class="emoji" alt=":frowning:"> I do want to thank you for enabling this discussion in the first place. I have learned a lot even when the discussions get tough. I know you put a lot of effort into the PR, and didn’t have to come here in the first place, and didn’t have to come back to revisit it. I am also sorry to <a class="mention" href="../../u/nightpool.html">@nightpool</a> – I know we often see things differently, and I genuinely appreciate your persistent willingness to push back against me.</p>
+<p>I’m not intending to block y’all doing what you need to do to fix the problems you’re seeing day-to-day. I just wanted to be sure objections were heard, they were recognized, even if not addressed. I am sorry that I got a bit upset around this, I do think y’all recognized them but in the moment it didn’t feel that way.</p>
+</blockquote>
+</aside>
+<p>It’s fine. I’m in the process of writing a FEP regarding this extension. Hopefully I’ll have that ready soon.</p>
+        </div>
+
+        <meta itemprop='headline' content='FEP-8fcf: Followers collection synchronization across servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Claire.html'><span itemprop='name'>Claire</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1172.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-10-25T10:25:03Z'>
+              <time itemprop='dateModified' datetime='2020-12-01T17:28:32Z' class='post-time'>
+                December 1, 2020,  5:28pm
+              </time>
+          <span itemprop='position'>#38</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Just an update that it has been implemented in the development version of Mastodon and has been formalized as <a href="https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/src/branch/main/feps/fep-8fcf1f0.md" rel="noopener nofollow ugc">FEP-8fc1f0: Followers collection synchronization across servers</a></p>
+        </div>
+
+        <meta itemprop='headline' content='FEP-8fcf: Followers collection synchronization across servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/RaphJ.html'><span itemprop='name'>RaphJ</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1172.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-11-25T08:57:29Z'>
+              <time itemprop='dateModified' datetime='2020-12-01T17:28:32Z' class='post-time'>
+                December 1, 2020,  5:28pm
+              </time>
+          <span itemprop='position'>#39</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thinking about performances, I wonder whether we should introduce a mechanism of <a href="https://jack-vanlightly.com/blog/2016/10/24/exploring-the-use-of-hash-trees-for-data-synchronization-part-1" rel="noopener nofollow ugc">hash-tree syncing</a> for large collections of followers ?</p>
+<p>I mean, if the sending account has 20k followers, is the receiving instance supposed to fetch it all again (or even a subset of 10k for a large instance), while only a single follower mismatches ?</p>
+<p>I guess this could be a separate generic proposal in order to optimize synchronizing of any collection, as an alternative to <a href="https://www.w3.org/TR/activitystreams-core/#paging" rel="noopener nofollow ugc">collection paging</a></p>
+<p>BTW: Do you have any statistics about the topology of the Fediverse and the performance of ActivityPub ? Like :</p>
+<ul>
+<li>The distribution of number of followers (average, max, percentiles, …)</li>
+<li>How much followers tend to be spread among several instances ?</li>
+<li>Number of AP requests for each instance, type of requests that consume most resources (CPU, bandwidth, etc)</li>
+</ul>
+        </div>
+
+        <meta itemprop='headline' content='FEP-8fcf: Followers collection synchronization across servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Claire.html'><span itemprop='name'>Claire</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1172.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-12-01T09:08:59Z'>
+              <time itemprop='dateModified' datetime='2020-12-01T17:28:32Z' class='post-time'>
+                December 1, 2020,  5:28pm
+              </time>
+          <span itemprop='position'>#40</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’m not worried about performances wrt. detecting issues (which should remain a rare occurrence), but indeed the current proposal is not very efficient for fixing them when large sets of followers are involved, as the receiving instance will fetch the whole list (filtered so it only contains followers on the receiving instance).</p>
+<p>Unfortunately, I do not have any statistics about the topology of the Fediverse.</p>
+        </div>
+
+        <meta itemprop='headline' content='FEP-8fcf: Followers collection synchronization across servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+    <div role='navigation' itemscope itemtype='http://schema.org/SiteNavigationElement' class="topic-body crawler-post">
+        <span itemprop='name'><a rel="prev" itemprop="url" href="1172.html">← previous page</a></span>
+        <span itemprop='name'><b><a rel="next" itemprop="url" href="1172@page=3.html">next page →</a></b></span>
+    </div>
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

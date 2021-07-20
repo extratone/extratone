@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>SkoHub: Supporting topic-based content syndication &amp; discovery in a federated environment</title>
+    <link>https://socialhub.activitypub.rocks/t/skohub-supporting-topic-based-content-syndication-discovery-in-a-federated-environment/931</link>
+    <description>*Adrian Pohl (@acka47), @literarymachine*
+
+https://conf.tube/videos/watch/85a7d230-7e75-48fd-b399-d182ddece030
+
+
+SkoHub implements an approach to resource discovery in a federated environment that is based on subscription and push notification instead of crawling, indexing and search.
+To enable this, it combines ActivityPub with SKOS (Simple Knowledge Organization Systems), a long-lived W3C standard for publishing classifications, thesauri and other controlled vocabularies on the web. The core idea is to make the terms of a Knowledge Organization Systems ActivityPub actors. Thus, people can follow topics and receive notifications about newly published resources via a topic-based channel. The initial SkoHub project has been carried out in 2019/20 by the hbz in cooperation with graphthinking GmbH.
+
+See #software:skohub
+
+## Questions &amp; Answers available!
+**[Q&amp;A Session – SkoHub: Supporting topic-based content syndication &amp; discovery in a federated environment](https://conf.tube/videos/watch/a29cc101-08ab-4b18-b208-c2258b46c5bd)**
+⬡ Hooray, the live Questions &amp; Answers are available here
+https://conf.tube/videos/watch/a29cc101-08ab-4b18-b208-c2258b46c5bd</description>
+    
+    <lastBuildDate>Thu, 01 Oct 2020 16:40:50 +0000</lastBuildDate>
+    <category>ActivityPub Conference 2020</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/skohub-supporting-topic-based-content-syndication-discovery-in-a-federated-environment/931.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>SkoHub: Supporting topic-based content syndication &amp; discovery in a federated environment</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>This talk introduces the work of <a class="hashtag" href="/c/software/skohub/42">#<span>software:skohub</span></a> to facilitate topic-based channel discovery over ActivityPub instead of sharing vocabularies through Git repositories – which is already a great improvement over some pre-standard practices to share non-machine-readable taxonomies – or in addition to publishing, e.g., videos on Peertube (here in order to facilitate search across instances and go beyond the statically-compiled list of categories in <a class="hashtag" href="/c/software/peertube/27">#<span>software:peertube</span></a>).</p>
+<p>It really inspires me to use SkoHub to publish controlled-vocabularies in the context of mapping the Commons (see the <a href="https://socialhub.activitypub.rocks/t/intermapping/838" class="inline-onebox">Intermapping</a> <a class="hashtag" href="https://socialhub.activitypub.rocks/tag/bof">#<span>bof</span></a> next Sunday) instead of coupling it to the software (or more precisely in this case: to the database).</p>
+<p>SkoHub currently requires publishers to send Linked Data Notes, but their goal is to allow ActivityPub announcements for this part as well.</p>
+<p>Thank you <a class="mention" href="/u/acka47">@acka47</a> and <a class="mention" href="/u/literarymachine">@literarymachine</a>!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/skohub-supporting-topic-based-content-syndication-discovery-in-a-federated-environment/931/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/skohub-supporting-topic-based-content-syndication-discovery-in-a-federated-environment/931/2</link>
+        <pubDate>Thu, 01 Oct 2020 16:40:50 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-931-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/skohub-supporting-topic-based-content-syndication-discovery-in-a-federated-environment/931.rss">SkoHub: Supporting topic-based content syndication &amp; discovery in a federated environment</source>
+      </item>
+      <item>
+        <title>SkoHub: Supporting topic-based content syndication &amp; discovery in a federated environment</title>
+        <dc:creator><![CDATA[acka47]]></dc:creator>
+        <description><![CDATA[
+            <p><em>Adrian Pohl (<a class="mention" href="/u/acka47">@acka47</a>), <a class="mention" href="/u/literarymachine">@literarymachine</a></em></p>
+<p><iframe width="560" height="315" src="https://conf.tube/videos/embed/85a7d230-7e75-48fd-b399-d182ddece030" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+<p>SkoHub implements an approach to resource discovery in a federated environment that is based on subscription and push notification instead of crawling, indexing and search.<br>
+To enable this, it combines ActivityPub with SKOS (Simple Knowledge Organization Systems), a long-lived W3C standard for publishing classifications, thesauri and other controlled vocabularies on the web. The core idea is to make the terms of a Knowledge Organization Systems ActivityPub actors. Thus, people can follow topics and receive notifications about newly published resources via a topic-based channel. The initial SkoHub project has been carried out in 2019/20 by the hbz in cooperation with graphthinking GmbH.</p>
+<p>See <a class="hashtag" href="/c/software/skohub/42">#<span>software:skohub</span></a></p>
+<h2>Questions &amp; Answers available!</h2>
+<p><strong><a href="https://conf.tube/videos/watch/a29cc101-08ab-4b18-b208-c2258b46c5bd" rel="noopener nofollow ugc">Q&amp;A Session – SkoHub: Supporting topic-based content syndication &amp; discovery in a federated environment</a></strong><br>
+⬡ Hooray, the live Questions &amp; Answers are available here<br>
+<iframe width="560" height="315" src="https://conf.tube/videos/embed/a29cc101-08ab-4b18-b208-c2258b46c5bd" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/skohub-supporting-topic-based-content-syndication-discovery-in-a-federated-environment/931/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/skohub-supporting-topic-based-content-syndication-discovery-in-a-federated-environment/931/1</link>
+        <pubDate>Wed, 30 Sep 2020 20:50:37 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-931-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/skohub-supporting-topic-based-content-syndication-discovery-in-a-federated-environment/931.rss">SkoHub: Supporting topic-based content syndication &amp; discovery in a federated environment</source>
+      </item>
+  </channel>
+</rss>

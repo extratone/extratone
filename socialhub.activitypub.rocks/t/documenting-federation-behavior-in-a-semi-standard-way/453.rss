@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Documenting federation behavior in a semi-standard way?</title>
+    <link>https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453</link>
+    <description>TL;DR, please check out [FEDERATION.md](https://github.com/dariusk/gathio/blob/7fc93dbe9d4d99457a0e85c6c532112f415b7af2/FEDERATION.md) and tell me what you think about it.
+
+Context: I am in the process of federating an existing service for organizing events and meetups called [gath.io](https://gath.io). The federated currently version lives at [events.tinysubversions.com](https://events.tinysubversions.com), and the source code for my branch is [available here](https://github.com/dariusk/gathio/).
+
+Because I&#39;m building a federated service, I felt like I should add the documentation that I wish other federated services had: namely, something that describes how the server responds to and generates ActivityPub activities!
+
+As a first pass, I have created a `FEDERATION.md` file that lives in the root of the repo. It is divided into three main sections:
+
+* Federation philosophy
+* Inbox behavior
+* Activities triggered from the web application
+
+[You can read the full thing here.](https://github.com/dariusk/gathio/blob/7fc93dbe9d4d99457a0e85c6c532112f415b7af2/FEDERATION.md)
+
+I would like to see other implementations write up something similar to this. Maybe putting it in a FEDERATION.md file in the root could be a de facto standard.
+
+Any thoughts on this? What&#39;s missing that other ActivityPub implementors would like to know about the server? (I&#39;m sure plenty is missing, as I just wrote this up in an hour.)</description>
+    
+    <lastBuildDate>Fri, 02 Oct 2020 15:16:54 +0000</lastBuildDate>
+    <category>Server to Server</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Documenting federation behavior in a semi-standard way?</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, I saw the commit and already updated <a href="https://socialhub.activitypub.rocks/t/guide-for-new-activitypub-implementers/479" class="inline-onebox">Guide for new ActivityPub implementers</a> that has a list of impls with a <code>FEDERATION.md</code> (or similar) <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/smiley.png?v=9" title=":smiley:" class="emoji" alt=":smiley:"> And I added Smithereen earlier. If anyone else has one, pls update the wiki post.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453/14</link>
+        <pubDate>Fri, 02 Oct 2020 15:16:54 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-453-14</guid>
+        <source url="https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453.rss">Documenting federation behavior in a semi-standard way?</source>
+      </item>
+      <item>
+        <title>Documenting federation behavior in a semi-standard way?</title>
+        <dc:creator><![CDATA[nutomic]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="https://github.com/LemmyNet/lemmy/blob/e596ea6e3ab3f0ee8a583612dae8ea6553e97052/docs/src/contributing_federation_overview.md" rel="nofollow noopener">I have written up something like this for Lemmy</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453/13</link>
+        <pubDate>Fri, 02 Oct 2020 14:14:38 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-453-13</guid>
+        <source url="https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453.rss">Documenting federation behavior in a semi-standard way?</source>
+      </item>
+      <item>
+        <title>Documenting federation behavior in a semi-standard way?</title>
+        <dc:creator><![CDATA[dessalines]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/nutomic">@nutomic</a> and I will add one to lemmy once we get some time.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453/12</link>
+        <pubDate>Wed, 03 Jun 2020 21:54:12 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-453-12</guid>
+        <source url="https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453.rss">Documenting federation behavior in a semi-standard way?</source>
+      </item>
+      <item>
+        <title>Documenting federation behavior in a semi-standard way?</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="https://github.com/grishka/Smithereen/blob/19e1317593b2792b254f3fc28ce291b9b20bd302/FEDERATION.md" rel="nofollow noopener">I made one, too</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453/11</link>
+        <pubDate>Thu, 21 May 2020 19:51:09 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-453-11</guid>
+        <source url="https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453.rss">Documenting federation behavior in a semi-standard way?</source>
+      </item>
+      <item>
+        <title>Documenting federation behavior in a semi-standard way?</title>
+        <dc:creator><![CDATA[ngerakines]]></dc:creator>
+        <description><![CDATA[
+            <p>I added one to <a href="https://gitlab.com/ngerakines/tavern/" rel="nofollow noopener">tavern</a> and plan on keeping it updated: <a href="https://gitlab.com/ngerakines/tavern/-/blob/4ab38d77306d0c1ab6cfaef4d1431216911b8c13/FEDERATION.md" rel="nofollow noopener">FEDERATION.md</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453/10</link>
+        <pubDate>Thu, 05 Mar 2020 19:01:24 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-453-10</guid>
+        <source url="https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453.rss">Documenting federation behavior in a semi-standard way?</source>
+      </item>
+      <item>
+        <title>Documenting federation behavior in a semi-standard way?</title>
+        <dc:creator><![CDATA[wakest]]></dc:creator>
+        <description><![CDATA[
+            <p>just updating this thread because I came across Zot’s new <a href="https://framagit.org/zot/zap/blob/master/FEDERATION.md" rel="nofollow noopener">FEDERATION.md</a> they just added and thought this would be a good place to post it…</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453/9</link>
+        <pubDate>Tue, 04 Feb 2020 19:22:32 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-453-9</guid>
+        <source url="https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453.rss">Documenting federation behavior in a semi-standard way?</source>
+      </item>
+      <item>
+        <title>Documenting federation behavior in a semi-standard way?</title>
+        <dc:creator><![CDATA[wakest]]></dc:creator>
+        <description><![CDATA[
+            <p>WriteFreely just added <a href="https://github.com/writefreely/documentation/pull/11" rel="nofollow noopener">federation.md to their repo</a> after I <a href="https://discuss.write.as/t/warn-user-about-changing-username-on-federated-instances/1008/3" rel="nofollow noopener">started a question</a> about the behavior of what happens when one changes ones username.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453/8</link>
+        <pubDate>Thu, 09 Jan 2020 04:38:03 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-453-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453.rss">Documenting federation behavior in a semi-standard way?</source>
+      </item>
+      <item>
+        <title>Documenting federation behavior in a semi-standard way?</title>
+        <dc:creator><![CDATA[darius]]></dc:creator>
+        <description><![CDATA[
+            <p>Btw, the above todo items are done, and have been documented in <code>FEDERATION.md</code> <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453/7</link>
+        <pubDate>Wed, 08 Jan 2020 16:49:34 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-453-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453.rss">Documenting federation behavior in a semi-standard way?</source>
+      </item>
+      <item>
+        <title>Documenting federation behavior in a semi-standard way?</title>
+        <dc:creator><![CDATA[darius]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="4" data-topic="453">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/grishka/40/196_2.png" class="avatar"> grishka:</div>
+<blockquote>
+<p>Is <code>Event</code> an actor after all? I’ve only ever seen it in the wild in Friendica, and there it’s used as an attachment to a post. I was going to have events myself so representing them in ActivityPub is still an open question. I personally was thinking about a <code>Group</code> with an <code>Event</code> in its <code>attachments</code> . <code>Event</code> isn’t an actor as per the spec, it’s an “object”.</p>
+</blockquote>
+</aside>
+<p>An <code>Event</code> is not an actor in my implementation. I try to be careful in the document about capital-E <code>Event</code> per the spec, versus an “event”, which is the thing that gathio describes. So:</p>
+<ul>
+<li>an <code>Event</code> is an Object that is attached to an Activity and conforms to the AP spec</li>
+<li>an event-the-thing-that-people-attend is an Actor; in this case I am representing it the actor as a <code>Person</code> because I don’t see a better choice (though maybe <a href="https://www.w3.org/TR/activitystreams-vocabulary/#dfn-service" rel="nofollow noopener"><code>Service</code></a>? I’m not sure that most implementations know how to represent that right now)
+<ul>
+<li>at this juncture I choose to interpret <code>Person</code> as an individual agent, rather than as an “individual person” per the AS Vocab spec</li>
+</ul>
+</li>
+</ul>
+<aside class="quote no-group" data-post="4" data-topic="453">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/grishka/40/196_2.png" class="avatar"> grishka:</div>
+<blockquote>
+<p>How is this going to work with implementations that deliberately don’t support direct messages, like mine? As of yesterday’s update, I return 400 Bad Request to any <code>Create{Note}</code> that doesn’t contain <code>as:Public</code> in either <code>to</code> or <code>cc</code> .</p>
+</blockquote>
+</aside>
+<p>Great question. I’ll have to think about that. Right now your actors could still follow my actor and get normal public updates. But some correspondence between the human-actor and the event-actor should be private. I think they would simply have to go to the page and manually RSVP rather than doing it via federation.</p>
+<aside class="quote no-group" data-post="4" data-topic="453">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/grishka/40/196_2.png" class="avatar"> grishka:</div>
+<blockquote>
+<p>Also since I was going to have events and the spec specifies the proper way of RSVPing to events ( <code>Invite{Event}</code> and then <code>Accept/Reject/TentativeAccept{Invite}</code> ), are there any plans to support that?</p>
+</blockquote>
+</aside>
+<p>Yes, definitely.</p>
+<p>I will add the Accept/Reject/TentativeAccept Invite as a TODO to my list, along with the boosting that nightpool mentioned above.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453/6</link>
+        <pubDate>Sun, 05 Jan 2020 21:33:56 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-453-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453.rss">Documenting federation behavior in a semi-standard way?</source>
+      </item>
+      <item>
+        <title>Documenting federation behavior in a semi-standard way?</title>
+        <dc:creator><![CDATA[darius]]></dc:creator>
+        <description><![CDATA[
+            <p>You’re absolutely right, I should just be boost/Announce-ing those posts!! I just hadn’t thought of it.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453/5</link>
+        <pubDate>Sun, 05 Jan 2020 21:20:48 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-453-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453.rss">Documenting federation behavior in a semi-standard way?</source>
+      </item>
+      <item>
+        <title>Documenting federation behavior in a semi-standard way?</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>This is great and I think every federated service needs to do this. I will do this too. I have some questions however.</p>
+<p>Is <code>Event</code> an actor after all? I’ve only ever seen it in the wild in Friendica, and there it’s used as an attachment to a post. I was going to have events myself so representing them in ActivityPub is still an open question. I personally was thinking about a <code>Group</code> with an <code>Event</code> in its <code>attachments</code>. <code>Event</code> isn’t an actor as per the spec, it’s an “object”.</p>
+<p>How is this going to work with implementations that deliberately don’t support direct messages, like mine? As of yesterday’s update, I return 400 Bad Request to any <code>Create{Note}</code> that doesn’t contain <code>as:Public</code> in either <code>to</code> or <code>cc</code>.</p>
+<p>Also since I was going to have events and the spec specifies the proper way of RSVPing to events (<code>Invite{Event}</code> and then <code>Accept/Reject/TentativeAccept{Invite}</code>), are there any plans to support that?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453/4</link>
+        <pubDate>Sun, 05 Jan 2020 17:50:07 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-453-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453.rss">Documenting federation behavior in a semi-standard way?</source>
+      </item>
+      <item>
+        <title>Documenting federation behavior in a semi-standard way?</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p>This looks really cool! One high-level thing I noticed is that it might make more sense to <em>start</em> with the activities triggered by the web application (after the short federation philosophy/intro section), and then move into Inbox behavior. This makes the document flow better from a user-centric perspective, I think, which has two main benefits: 1) <a href="http://gath.io">gath.io</a> implementors reading it who may not be entirely familiar with federation have concrete user actions to ground them, and 2) activitypub implementors who may not be familar with <a href="http://gath.io">gath.io</a> have a clearer idea of the scope/scale of expected user behaviors.</p>
+<p>The second thing that strikes me about gath’s federation (and this may be in complete contradiction to my first paragraph) is that it’s almost a “server-to-client” model—that is, you’re using the limited vocabulary of some existing federated clientservers to take tangible actions as a user on another application. That is, you’re almost using federation as a pure “front end” for gathio. This is interesting, and it’s something I’ve thought about doing before, but it’s definitely something not considered by any of the specs we have and even kind of flies in contradiction to the idealized activitypub “specialized clients, generic servers” model. I don’t think this is a bad decision! it seems like a logical but awkward conclusion to the world of specialized servers we’ve found ourselves in, and it definitely has value in the world today. I just wanted to note it as a point of general discussion.</p>
+<p><em>(this is in contradiction to what I said above because if activitypub is a “front end” client for the imagined gath user, then incoming and outgoing actions are</em> both <em>user behaviors, so it doesn’t make as much difference which one comes first)</em></p>
+<p>On specifics, the only thing I noticed that seemed kind of weird is the usage of Create/Note to denote replies to the event—most people have been using an Announce activity to handle “posting to a group” or similar events. What are your thoughts there? Why not just boost the original reply instead of duplicating it?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453/3</link>
+        <pubDate>Sun, 05 Jan 2020 14:23:59 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-453-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453.rss">Documenting federation behavior in a semi-standard way?</source>
+      </item>
+      <item>
+        <title>Documenting federation behavior in a semi-standard way?</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>I very much agree that we need a solid place where we discuss the Codes and Codices of Interoperability.</p>
+<p>For me this is the goal of the ActivityPub Events series itself.<br>
+If you read my 36c3 reflection there are some hints.<br>
+My personal opinion is to have it face to face or at least voice to voice.</p>
+<p><em>My fear is about the balance of power :</em><br>
+History proved that when big players step in they try to set the Codices.</p>
+<p>/me still suffering from a virus after a hackerconf but for sure I will write the same for<br>
+<a href="https://socialhub.activitypub.rocks/c/software/redaktor-me/22">redaktor</a> – thank You.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453/2</link>
+        <pubDate>Sun, 05 Jan 2020 07:31:18 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-453-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453.rss">Documenting federation behavior in a semi-standard way?</source>
+      </item>
+      <item>
+        <title>Documenting federation behavior in a semi-standard way?</title>
+        <dc:creator><![CDATA[darius]]></dc:creator>
+        <description><![CDATA[
+            <p>TL;DR, please check out <a href="https://github.com/dariusk/gathio/blob/7fc93dbe9d4d99457a0e85c6c532112f415b7af2/FEDERATION.md" rel="nofollow noopener">FEDERATION.md</a> and tell me what you think about it.</p>
+<p>Context: I am in the process of federating an existing service for organizing events and meetups called <a href="https://gath.io" rel="nofollow noopener">gath.io</a>. The federated currently version lives at <a href="https://events.tinysubversions.com" rel="nofollow noopener">events.tinysubversions.com</a>, and the source code for my branch is <a href="https://github.com/dariusk/gathio/" rel="nofollow noopener">available here</a>.</p>
+<p>Because I’m building a federated service, I felt like I should add the documentation that I wish other federated services had: namely, something that describes how the server responds to and generates ActivityPub activities!</p>
+<p>As a first pass, I have created a <code>FEDERATION.md</code> file that lives in the root of the repo. It is divided into three main sections:</p>
+<ul>
+<li>Federation philosophy</li>
+<li>Inbox behavior</li>
+<li>Activities triggered from the web application</li>
+</ul>
+<p><a href="https://github.com/dariusk/gathio/blob/7fc93dbe9d4d99457a0e85c6c532112f415b7af2/FEDERATION.md" rel="nofollow noopener">You can read the full thing here.</a></p>
+<p>I would like to see other implementations write up something similar to this. Maybe putting it in a FEDERATION.md file in the root could be a de facto standard.</p>
+<p>Any thoughts on this? What’s missing that other ActivityPub implementors would like to know about the server? (I’m sure plenty is missing, as I just wrote this up in an hour.)</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453/1</link>
+        <pubDate>Sun, 05 Jan 2020 07:00:26 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-453-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453.rss">Documenting federation behavior in a semi-standard way?</source>
+      </item>
+  </channel>
+</rss>

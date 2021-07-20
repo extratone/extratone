@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Implementing ActivityPub Client-to-Server - #20 by macgirvin - ActivityPub Conference 2020 - SocialHub</title>
+    <meta name="description" content="ActivityPub Client-to-Server (AP C2S) API compared to other APIs allows to have more flexibility and control of the activities/objects, plus proper multi-instance abilities (origin URIs instead of IDs local to the instan&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="../981.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Implementing ActivityPub Client-to-Server&#39;" href="../981.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/implementing-activitypub-client-to-server/981/20" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/implementing-activitypub-client-to-server/981/20" />
+<meta property="og:title" content="Implementing ActivityPub Client-to-Server" />
+<meta name="twitter:title" content="Implementing ActivityPub Client-to-Server" />
+<meta property="og:description" content="As mentioned in that issue, I don’t care if Webfinger is supported or un-supported. I asked the andStatus maintainer to support lookup of oauth endpoints per the AP specification and was asked how best to support that. As that app insists on a webfinger address for the account, I responded that Webfinger should probably be consulted to locate the AP record - and fetch the AP record to find the OAuth endpoints.  Many of the subsequent comments in that thread basically ridiculed me for suggesting ..." />
+<meta name="twitter:description" content="As mentioned in that issue, I don’t care if Webfinger is supported or un-supported. I asked the andStatus maintainer to support lookup of oauth endpoints per the AP specification and was asked how best to support that. As that app insists on a webfinger address for the account, I responded that Webfinger should probably be consulted to locate the AP record - and fetch the AP record to find the OAuth endpoints.  Many of the subsequent comments in that thread basically ridiculed me for suggesting ..." />
+<meta property="article:published_time" content="2021-04-16T01:57:24+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="../981.html">Implementing ActivityPub Client-to-Server</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="https://socialhub.activitypub.rocks/c/meeting/11" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #0E76BD'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Meeting</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../../c/meeting/apconf2020/53.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #ff7a00'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>ActivityPub Conference 2020</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+      <div class="topic-category">
+        <div class='discourse-tags list-tags'>
+            <a href='../../../tag/apconf.html' class='discourse-tag' rel="tag">apconf</a>, 
+            <a href='../../../tag/2020.html' class='discourse-tag' rel="tag">2020</a>, 
+            <a href='../../../tag/bof.html' class='discourse-tag' rel="tag">bof</a>
+        </div>
+      </div>
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/marnanel.html'><span itemprop='name'>marnanel</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../981.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-02T00:52:39Z' class='post-time'>
+                October 2, 2020, 12:52am
+              </time>
+              <meta itemprop='dateModified' content='2020-10-02T00:52:39Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Great idea.</p>
+<p>I’m also concerned about apps. What can we do to encourage the authors of apps like <a href="https://tusky.app/" rel="nofollow noopener">Tusky</a> to add AP C2S support?</p>
+        </div>
+
+        <meta itemprop='headline' content='Implementing ActivityPub Client-to-Server'>
+          <meta itemprop='keywords' content='apconf, 2020, bof'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/lanodan.html'><span itemprop='name'>lanodan</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../981.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-10-02T01:31:03Z'>
+              <time itemprop='dateModified' datetime='2020-10-02T01:32:14Z' class='post-time'>
+                October 2, 2020,  1:32am
+              </time>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="AceNovo" data-post="2" data-topic="981">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/acenovo/40/113_2.png" class="avatar"> AceNovo:</div>
+<blockquote>
+<p>I recommend recycling the Mastodon authentication API for limited clients, eg. apps like AndStatus with a limited repertoire of supported media and object types. The endpoints object in the actor can reference these endpoints as long as the server doesn’t differentiate between Mastodon API and AP C2S clients. C2S clients with open ended mechanisms like providing a raw format or leveraging OS mechanisms to open unknown media types should use the actor endpoints object for discovery and fall back to Mastodon endpoints. Servers offering capabilities that might not display well on a limited client can detect this limitation and provide an appropriate presentation. Clients currently supporting the Mastodon API would have a path to incrementally add AP C2S support</p>
+</blockquote>
+</aside>
+<p>Yeah, Pleroma allows to use the existing MastodonAPI authentication for AP C2S endpoints, as well as basic auth (which I wouldn’t recommend much using as it doesn’t support 2FA and you can end up storing a password rather than a token).</p>
+<aside class="quote no-group" data-username="AceNovo" data-post="2" data-topic="981">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/acenovo/40/113_2.png" class="avatar"> AceNovo:</div>
+<blockquote>
+<p>Scope ::= Activity [ “:” , Object type [ “:” , Media Type ]]<br>
+Virtual ::= “ANY” | “ADMIN” | “ALL”<br>
+Virtual Media ::= “TEXT” | “BIN” | Virtual</p>
+</blockquote>
+</aside>
+<p>Could you elaborate a bit on the media type? Is it something like MimeType? And not really sure where Virtual and Virtual Media fit in the scoping.</p>
+<p>And while your proposition really makes sense I’m not so sure about it, like pleroma added <code>EmojiReact</code> activity which works like a <code>Like</code> plus an Unicode Emoji and added <code>ChatMessage</code> object for the ability to have nicely private-scoped messages between users.<br>
+Same goes for the rare ones where ActivityStreams isn’t the root namespace (and so tend to have <code>{"type": "as:Note", …}</code> instead of the more usual <code>{"type": "Note", …}</code>).</p>
+<hr>
+<aside class="quote group-kepi" data-username="marnanel" data-post="3" data-topic="981">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/marnanel/40/136_2.png" class="avatar"> marnanel:</div>
+<blockquote>
+<p>I’m also concerned about apps. What can we do to encourage the authors of apps like <a href="https://tusky.app/" rel="nofollow noopener">Tusky</a> to add AP C2S support?</p>
+</blockquote>
+</aside>
+<p>Elaborating a bit on the activity/object part, Mastodon API basically doesn’t allows to create an object other than Note, Question(polls) and sort-of Answer. So Article, Video, Image, Page, … goes away.</p>
+<p>And one thing that I think app devs could end up liking in ActivityStreams is how orthogonal it is: known and quite limited set of endpoints and one kind of format for both sending and receiving.<br>
+Sad part is that ActivityStreams can be a bit of an adventure to support as it’s quite too flexible in it’s presentation (Pleroma normalizes it to one format btw so could make it easier to bootstrap a new client).</p>
+<p>Meanwhile Mastodon API: Something like <code>O(3n)</code> kind of formats, at bare minimum <code>O(n)</code> endpoints. Where <code>n</code> is an action done (like, bookmark, …).</p>
+        </div>
+
+        <meta itemprop='headline' content='Implementing ActivityPub Client-to-Server'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="3" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/marnanel.html'><span itemprop='name'>marnanel</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../981.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-02T02:21:58Z' class='post-time'>
+                October 2, 2020,  2:21am
+              </time>
+              <meta itemprop='dateModified' content='2020-10-02T02:21:58Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote group-pleroma" data-username="lanodan" data-post="4" data-topic="981">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/lanodan/40/40_2.png" class="avatar"> lanodan:</div>
+<blockquote>
+<p>Mastodon API basically doesn’t allows to create an object other than Note, Question(polls) and sort-of Answer.</p>
+</blockquote>
+</aside>
+<p>Right. I think it’s usually worth repeating that the Mastodon API works very well if you’re Mastodon, but less and less well the less like Mastodon you are.</p>
+        </div>
+
+        <meta itemprop='headline' content='Implementing ActivityPub Client-to-Server'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/how.html'><span itemprop='name'>how</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../981.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-10-02T05:18:42Z'>
+              <time itemprop='dateModified' datetime='2020-10-02T05:19:37Z' class='post-time'>
+                October 2, 2020,  5:19am
+              </time>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote group-pleroma" data-username="lanodan" data-post="4" data-topic="981">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/lanodan/40/40_2.png" class="avatar"> lanodan:</div>
+<blockquote>
+<p>Mastodon API basically doesn’t allows to create an object other than Note, Question(polls) and sort-of Answer. So Article, Video, Image, Page, … goes away.</p>
+</blockquote>
+</aside>
+<p>I don’t think it’s a problem. It would be more interesting for clients to be able to split a post into the various types and send the relevant objects to the right servers. E.g., a post containing an image could send the Note to Mastodon, and the image to PixelFed. Then you’d have generic clients that can dispatch the objects according to their types, so that server implementations can concentrate on doing one thing and doing it well. And users would then be able to choose their favorite platform for each type. I’m all for moving away from this one big thing that does it all and evolves into a huge piece of bloatware: the Web was not intended that way, and that’s how you build centralization.</p>
+<p>Another example: it would be awesome to write a blog about a new song, attaching a video clip to it and have the client:</p>
+<ul>
+<li>extract audio from the video clip and upload to Funkwhale</li>
+<li>upload the video to peertube</li>
+<li>post the whole piece to WriteFreely (including the link to the video and audio files, as one URL each<sup class="footnote-ref"><a href="20.html#footnote-3122-1" id="footnote-ref-3122-1">[1]</a></sup>)</li>
+<li>extract the first paragraph including the video link and post a Note to Pleroma</li>
+<li>etc. ditto for other servers the user wants to use.</li>
+</ul>
+<p><a class="mention" href="../../../u/rhiaro.html">@rhiaro</a> is that close to what you described in <a href="../../the-activitypub-panel/929.html" class="inline-onebox">The ActivityPub Panel</a>? In other words, move away from the app paradigm, make it possible to cooperate among ActivityPub software implementations rather than to compete.</p>
+<hr class="footnotes-sep">
+
+<ol class="footnotes-list">
+<li id="footnote-3122-1" class="footnote-item">
+<p>the video and audio could be attached to the post and also posted as is, on their own lines into the post, to be interpreted by WriteFreely as a “OneBox” – much like in Discourse where a video URL is turned into a full-blown video player, etc. <a href="20.html#footnote-ref-3122-1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+        </div>
+
+        <meta itemprop='headline' content='Implementing ActivityPub Client-to-Server'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../ap-mashup-how-would-you-like-disparate-ap-services-to-intermingle/839/6.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/ap-mashup-how-would-you-like-disparate-ap-services-to-intermingle/839/6'>
+                      <span itemprop='name'>AP Mashup? How would you like disparate AP services to intermingle?</span>
+                    </a>
+                    <meta itemprop='position' content='2'>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/rhiaro.html'><span itemprop='name'>rhiaro</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../981.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-02T12:25:01Z' class='post-time'>
+                October 2, 2020, 12:25pm
+              </time>
+              <meta itemprop='dateModified' content='2020-10-02T12:25:01Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I imagine it more like servers being agnostic to the type so you can authenticate with and post to your preferred (for whatever reason) server from <em>any</em> client. I see the server as a simple storage device. It’s then other <em>clients</em> which present the data back to you. Clients may be read only (like a feed reader) or may be integrated read-write clients (like you’d expect from a fully fledged system like Mastodon or Pixelfed) but they’re fetching data from your outbox on the server you’ve authenticated with. The client can then choose to display the activity/object types they know how to handle. Basically I’d like to see UI/presentation for both reading and writing completely separate from the backend/storage.</p>
+<p>None of this is new - <a href="https://remotestorage.io/" rel="nofollow noopener">remoteStorage</a> and Solid operate this way.</p>
+<p>I totally see that this gets more complicated where media is concerned, and special endpoints (endpoints, rather than servers) for things like photos and videos may need to be defined. Which was <a href="https://www.w3.org/TR/activitypub/#uploading-media" rel="nofollow noopener">totally a thing in ActivityPub</a> but proper handling of it got postponed due to time constraints.</p>
+        </div>
+
+        <meta itemprop='headline' content='Implementing ActivityPub Client-to-Server'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="5" />
+           <span class='post-likes'>5 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../activitypub-experimentation-towards-ap-v2/840/3.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/activitypub-experimentation-towards-ap-v2/840/3'>
+                      <span itemprop='name'>ActivityPub Experimentation: Towards AP v2</span>
+                    </a>
+                    <meta itemprop='position' content='3'>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/lanodan.html'><span itemprop='name'>lanodan</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../981.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-10-02T17:40:03Z'>
+              <time itemprop='dateModified' datetime='2020-10-02T17:46:19Z' class='post-time'>
+                October 2, 2020,  5:46pm
+              </time>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>It could make sense to have some kind of an ActivityPub C2S proxy but outside of Mastodon, there isn’t much Activity/Object mangling and they could support a large chunk of ActivityPub when it’s not implementation-specific (Funkwhale’s Track) or niche (most of ForgeFed I believe).</p>
+<p>For example I think an AP C2S client for Pleroma/Friendica/… could look like Tumblr’s dashboard where you could choose to post between Text, Quote, Link, Chat, Audio, Video.</p>
+<p>And I think it would be better for clients to have multi-server abilities themselves, so for example a quick&amp;dirty picture goes to Pleroma but a nice shot goes to PixelFed (or different accounts on the same software like some folks do on Youtube).</p>
+        </div>
+
+        <meta itemprop='headline' content='Implementing ActivityPub Client-to-Server'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/AceNovo.html'><span itemprop='name'>AceNovo</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../981.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-02T22:55:28Z' class='post-time'>
+                October 2, 2020, 10:55pm
+              </time>
+              <meta itemprop='dateModified' content='2020-10-02T22:55:28Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>My suggested approach was very much informed by the sensible progress already made in pleroma working with AndStatus. That was good work. I just inferred the completion of the pattern and suggested it for general application</p>
+<p>As for the specific starting point for dynamically describing scopes, I didn’t expect it to hold in detail, but make the final compilation ‘Scope ::= Name Space [ “:” , Activity [ “:” , Object type [ “:” , Media Type ]]]’ and we’re still looking good. I forgot to mention that Activity also needs a READ type. There should probably be a convention for the server to describe supported scopes</p>
+<p>Yes, Media Type is the same as MIME Type. I’m just using the same terminology as was used in the Social WG docs to avoid problems if someone ends up doing a copy and paste to bootstrap a formal description</p>
+<p>Virtual* is just a macro to reuse some allowed exceptions to compose an EBNF because I’m a lazy typist</p>
+        </div>
+
+        <meta itemprop='headline' content='Implementing ActivityPub Client-to-Server'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/aschrijver.html'><span itemprop='name'>aschrijver</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../981.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-10-04T14:41:28Z' class='post-time'>
+                October 4, 2020,  2:41pm
+              </time>
+              <meta itemprop='dateModified' content='2020-10-04T14:41:28Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>This great post from <a class="mention" href="../../../u/erincandescent.html">@erincandescent</a> should be mentioned here (<code>as:copyOfPost</code>: <a href="../../the-activitypub-panel/929.html">The ActivityPub Panel</a>)</p>
+<hr>
+<aside class="quote no-group" data-username="how" data-post="2" data-topic="929">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/how/40/8_2.png" class="avatar"><a href="../../the-activitypub-panel/929/2.html">The ActivityPub Panel</a>
+</div>
+<blockquote>
+<p>Finally my <strong>prime takeaway</strong> from this panel, that I deem very important: It may be time to focus on <a class="hashtag" href="../../../c/activitypub/c2s/6.html">#<span>activitypub:c2s</span></a>, especially if we can make a single ID compose posts going to several server implementations (e.g., text goes to Mastodon, video to Peertube, image to PixelFed, sound to Funkwhale…) so that a completely different experience from proprietary platforms can arise. Chris concluded on a discussion he had with Evan regarding the “borrowed assumptions” from corporate platforms: indeed, free software is in a different position when it comes to its objectives, and some (or many) assumptions of surveillance capitalists simply do not match the requirements for freedom. I think it’s critical to think why we do things, and the ActivityPub community has been quite aware of this for a long time, e.g., with the demise of showing follower counts and other quantitative, addictive markers that do not participate in sociality but in keeping people separate from each other. Pursuing this self-awareness work may be key to continuous success of the Fediverse.</p>
+</blockquote>
+</aside>
+<p>One thing that I think is key but maybe not obvious from the spec: The AP Client-to-Server API isn’t just aimed at mobile or desktop apps. That’s the obvious and straightforward use case, but not the only one.</p>
+<p>What the C2S API gives you is delegation. It lets some other agent - which might be a mobile app, or might be a web app - act on your behalf. And, importantly, it gives those agents effectively equal power to the server itself has.</p>
+<p>In the extreme, you could have a server which has no UI of its own - it only exposes ActivityStreams JSON. Maybe not the most user friendly, but permitted.</p>
+<p>With the C2S spec you can build a PeerTube which acts as a true adjunct to your “primary” AP server - you upload videos to it, but they get posted to your main identity hosted elswhere. Thinking about things on-the-wire, you can envisage an entry in your outbox which might look like</p>
+<pre><code class="lang-auto">{
+    "id": "https://example.com/me/activity293048",
+    "type": "Create",
+    "actor": "https://example.com/me/",
+    "object": {
+        "id": "https://peertube.example.com/me/video/3",
+        ...
+    },
+    ...
+}
+</code></pre>
+<p>AP C2S allows an additional degree of federation and decentralisation. And it doesn’t involve e.g. PeerTube giving up features either - it can still give you a timeline and all of those sorts of things</p>
+<p>Some of the difficulty comes from the world and mental models that exist. In the Q&amp;A, Chris commented on the trouble he had convincing any of the existing social networks to come to the SocialWG, and commented on the interoperability troubles we might have had trying to bring the existing worlds (the “old guard” of federated social networks, almost) together.</p>
+<p>In some ways, I think Mastodon is the “last of the old guard”. Mastodon’s data model isn’t (or wasn’t) ActivityStreams, and its’ worldview isn’t the same either. They’re building something which follows the same basica model as Twitter (With their own twist), and that’s fine, but it’s intentionally limited.</p>
+<p>However, when that intentionally limited implementation is 90% of the population of your network, it can colour perceptions of it. ActivityPub can support things wildly different from Mastodon, but when people think ActivityPub they also think Mastodon-likes. Some of the functionality can cause interoperability issues also. However, just in terms of the major proprietary social networks, there shouldn’t be anything stopping you from building something in the model of Facebook or Google+, or any number of other designs on top of it. And in terms of something much older, you should totally be able to have an ActivityPub enabled blog and you should also be able to blend all of these things together into one cohesive whole.</p>
+<p>Systems built since tend to target AP directly, and have data models which more directly correspond to AS2 and its functionality. It would be a lot easier for these to implement the AP C2S spec, and it would be a great world where things did.</p>
+<p>(In case my comments above might be misinterpreted: I do think that Mastodon adopting AP is perhaps the best thing that has happened to the spec; without it, the AP fediverse would almost certainly be a lot smaller and less successful. So while I lament here some of the downsides of having Mastodon as the “de facto standard” AP implementation, I’m still thankful for it. If we’d have built the most elegant social networking protocol in the world but there had been nobody to talk to, it would have all been for naught)</p>
+        </div>
+
+        <meta itemprop='headline' content='Implementing ActivityPub Client-to-Server'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../981.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-10-04T15:56:15Z'>
+              <time itemprop='dateModified' datetime='2020-10-05T09:07:36Z' class='post-time'>
+                October 5, 2020,  9:07am
+              </time>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <h1>Shared Notes from the session</h1>
+<p>AndStatus has implemented some C2S with Pleroma.</p>
+<ul>
+<li>pump io</li>
+</ul>
+<p><strong>Pleroma</strong>  can:</p>
+<ul>
+<li>
+<p>Create Notes</p>
+</li>
+<li>
+<p>Likes</p>
+</li>
+<li>
+<p>But not really keen on opening it up due to large surface area</p>
+</li>
+</ul>
+<p>Validation…</p>
+<ul>
+<li>
+<p>Used to be that messages would pass through Transmogrifier</p>
+</li>
+<li>
+<p>Also has standard Mastodon API</p>
+</li>
+<li>
+<p>These were 2 ways of validating</p>
+</li>
+<li>
+<p>Now has per-type(?) fine grained validators</p>
+</li>
+<li>
+<p>Still missing 1 big validator: Notes</p>
+</li>
+</ul>
+<p>Current status/future:</p>
+<ul>
+<li>
+<p>Interested in using OAuth</p>
+</li>
+<li>
+<p>Uploads are similar to Mastodon API (1 parameter to make an object)</p>
+</li>
+<li>
+<p>Pleroma piggypacks on the Mastodon flow</p>
+</li>
+<li>
+<p>Pleroma does update the object with ‘id’ and ‘published’ and other fields before federating</p>
+</li>
+</ul>
+<p><strong>Friendica</strong> :</p>
+<ul>
+<li>
+<p>has a challenge with LD-Signatures. For ex: C creating an object (and being signed) which makes it hard for S to add the ‘id’ and ‘published’</p>
+</li>
+<li>
+<p>Friendica could do LD-Sig on the Server side in the C2S communication</p>
+</li>
+<li>
+<p>Key management challenge</p>
+</li>
+</ul>
+<p>On Media upload…</p>
+<ul>
+<li>
+<p>pictures are always cached today</p>
+</li>
+<li>
+<p>How to handle media upload when sharing the AS payload?</p>
+</li>
+<li>
+<p>How to properly proxy media (remote URLs) when client views federated message.</p>
+</li>
+</ul>
+<p>Q: What motivating examples need additional endpoints and/or auth?</p>
+<ul>
+<li>
+<p>Uploads may require an additional endpoint.</p>
+</li>
+<li>
+<p>End to end encryption is exposing ActivityPub objects to the client.</p>
+</li>
+<li>
+<p>Key management? (maybe not)</p>
+</li>
+<li>
+<p>How to do search properly (messages, hashtags), so that the client can properly “view” the data it cares about</p>
+</li>
+<li>
+<p>How to properly search inbox/outbox to properly build state and filter.</p>
+</li>
+<li>
+<p>…</p>
+</li>
+</ul>
+<p>Q: What about auth? OAuth 2.1?</p>
+<ul>
+<li>
+<p>Oauth has no well-known scopes defined. (what about <a href="https://oauth.net/2/rich-authorization-requests/" rel="noopener nofollow ugc">https://oauth.net/2/rich-authorization-requests/</a> ?)</p>
+</li>
+<li>
+<p>…</p>
+</li>
+</ul>
+<p>Q: How about storing the /me aka my AP-handle in the browser?</p>
+<ul>
+<li>
+<p>registerProtocolHandler FAILED - website could have browser ask user to save handle information</p>
+</li>
+<li>
+<p>C2S allows interacting with different instances with the same software</p>
+</li>
+<li>
+<p>In indieweb they have indieauth to remember common handles</p>
+</li>
+<li>
+<p><a href="https://git.pleroma.social/pleroma/pleroma-meta/-/issues/1" rel="noopener nofollow ugc">https://git.pleroma.social/pleroma/pleroma-meta/-/issues/1</a></p>
+</li>
+<li>
+<p>…</p>
+</li>
+</ul>
+<p>How the term “C2S” makes you think of your own client:</p>
+<ul>
+<li>
+<p>Services can be C2S of one another</p>
+</li>
+<li>
+<p>Does not need to be a UI</p>
+</li>
+<li>
+<p>Really a conceptual</p>
+</li>
+<li>
+<p>Is this related to ‘micropub’? How does Hubzilla do this use case?</p>
+</li>
+<li>
+<p>Instead of OAuth, capabilities (OCAP) may fit really well, allowing posting on behalf</p>
+</li>
+<li>
+<p>Quote from <a class="mention" href="../../../u/erincandescent.html">@erincandescent</a>:</p>
+</li>
+</ul>
+<p>“What the C2S API gives you is delegation. It lets some other agent - which might be a mobile app, or might be a web app - act on your behalf. And, importantly, it gives those agents effectively equal power to the server itself has […] AP C2S allows an additional degree of federation and decentralisation.”</p>
+<p>C2S has chicken-and-egg problem.Hackathon opportunity! cj “volunteered” lain to track.</p>
+<p>“C2S is still a heck of a discovery process”: <a href="https://github.com/andstatus/andstatus/issues/499" rel="noopener nofollow ugc">https://github.com/andstatus/andstatus/issues/499</a></p>
+<p>Q: How to do search with AP C2S?</p>
+<ul>
+<li>
+<p>Doesn’t fit well into REST (maybe GraphQL)</p>
+</li>
+<li>
+<p>“How to get all X messages” in the inbox/outbox</p>
+</li>
+<li>
+<p>How to provide state to the user from a stream?</p>
+</li>
+<li>
+<p>Referenced data could make it easier by providing some more stateful information about the actor.</p>
+</li>
+<li>
+<p>Could have implicit collections, or dynamically-generated collections</p>
+</li>
+</ul>
+<p>Q: How does C2S following another contact work? Problem: when client sends “Accept” message, must include id on client?</p>
+<p>Next steps:</p>
+<ul>
+<li>
+<p>Hackathon</p>
+</li>
+<li>
+<p>Really want feedback from AP authors on C2S and how it should work (particularly with filtering the inbox/outbox to build a “meaningful” view)</p>
+</li>
+</ul>
+        </div>
+
+        <meta itemprop='headline' content='Implementing ActivityPub Client-to-Server'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../981.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-02-26T09:03:44Z' class='post-time'>
+                February 26, 2021,  9:03am
+              </time>
+              <meta itemprop='dateModified' content='2021-02-26T09:03:44Z'>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="cjs" data-post="11" data-topic="981">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/cjs/40/584_2.png" class="avatar"> cjs:</div>
+<blockquote>
+<p>Next steps:</p>
+<ul>
+<li>Hackathon</li>
+</ul>
+</blockquote>
+</aside>
+<p>Do we do this and when?</p>
+        </div>
+
+        <meta itemprop='headline' content='Implementing ActivityPub Client-to-Server'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../create-activity-object-or-objects/1470/2.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/create-activity-object-or-objects/1470/2'>
+                      <span itemprop='name'>Create Activity (Object or Objects)</span>
+                    </a>
+                    <meta itemprop='position' content='1'>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/naturzukunft.html'><span itemprop='name'>naturzukunft</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../981.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-04-06T10:16:18Z' class='post-time'>
+                April 6, 2021, 10:16am
+              </time>
+              <meta itemprop='dateModified' content='2021-04-06T10:16:18Z'>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Great discussions and ideas here.<br>
+I decided to convince my customer that AP is exactly the right thing to solve many of his problems.<br>
+And I am still &gt; 100% convinced of that! Instead of seeing an application that is extended by AP, I see UseCases that I solve with AP.</p>
+<p>I see our AP server as a kind of “messaging bus”, in which our own system is also an actor. Just like the admin (person) and the user (person).</p>
+<p>For example, one of our applications sends a todo that is addressed to the admin. And the system listens to the admin’s inbox and then generates a sendMail activity. which in turn is processed by the mail service and delegated to the mail server(SMTP).</p>
+<p>System and admin tasks are our first UseCases. Later, communication between users will certainly play a role.<br>
+It will be exciting when more applications are added, which will probably act as application actors. But each will also have an admin (person).</p>
+<p>A main reason why I am interested in system tasks is e.g. statistics. This will become an essential use case to be able to assess what the system is used for and how often.<br>
+And to map these activities as RDF in AP seems to me to be more than reasonable. Especially since I am able to search activities and objects with SPARQL</p>
+<p>We’re kind of building a platform for managing applications.<br>
+And we are relying on AP C2S for this. AP S2S is not an issue for the time being because there are no business cases for it at the moment.</p>
+<p>I’m quite happy with the fact that the spec calls for OAuth2, since that’s our SSO solution anyway.</p>
+<p>What frustrates me a bit is that I feel like there are a lot of unanswered questions and there are no answers and no reference implementations. Worse, there are actually no contact persons either ,-)</p>
+<p>So we’ll probably build our own little AP C2S world and just make assumptions that help us solve problems.<br>
+Because that’s what we have to do. Create solutions to problems. And we want to do that as AP C2S compatible as possible.</p>
+<p>Existing AP implementations are of little help to me so far, because they are often developed in languages I don’t understand and don’t want to learn. And on the other hand, mostly only a few useCases are implemented, which are of little help to me. I am very, very excited what the result of our work will be and hope for many interesting discussions here <img src="../../../images/emoji/twitter/wink.png@v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+<p>We implement in Java based on Spring-Boot and use an RDF4J server as storage.<br>
+Distribution of objects to different AP servers is currently not an issue for us.</p>
+<p>The project is still closed-source, because the OSS strategy is being worked on. I estimate the probability of it becoming OSS to be close to 100%.</p>
+<p>One difficulty I have is to separate the AP part of the overall application from the rest, so that AP is/remains reusable without containing non-AP UseCases.</p>
+<p>There are no problems, only challenges <img src="../../../images/emoji/twitter/wink.png@v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+<p>My current biggest challenge is <a href="../../create-activity-object-or-objects/1470.html" class="inline-onebox">Create Activity (Object or Objects)</a></p>
+<p>best regards<br>
+Fredy</p>
+        </div>
+
+        <meta itemprop='headline' content='Implementing ActivityPub Client-to-Server'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/aschrijver.html'><span itemprop='name'>aschrijver</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../981.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-04-06T11:11:56Z' class='post-time'>
+                April 6, 2021, 11:11am
+              </time>
+              <meta itemprop='dateModified' content='2021-04-06T11:11:56Z'>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group quote-modified" data-username="naturzukunft" data-post="13" data-topic="981">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../letter_avatar_proxy/v4/letter/n/ba9def/40.png" class="avatar"> naturzukunft:</div>
+<blockquote>
+<p>I see our AP server as a kind of “messaging bus” […] We’re kind of building a platform for managing applications.</p>
+</blockquote>
+</aside>
+<p>Love this. It is very on-topic for <a class="hashtag" href="../../../c/fediversity/fediverse-futures/58.html">#<span>fediversity:fediverse-futures</span></a> and I invite you to create a topic there to explore concepts.</p>
+<aside class="quote no-group" data-username="naturzukunft" data-post="13" data-topic="981">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../letter_avatar_proxy/v4/letter/n/ba9def/40.png" class="avatar"> naturzukunft:</div>
+<blockquote>
+<p>What frustrates me a bit is that I feel like there are a lot of unanswered questions and there are no answers and no reference implementations. Worse, there are actually no contact persons either ,-)</p>
+</blockquote>
+</aside>
+<p>OT in this topic, but discussed in <a href="../../organizing-for-socialhub-community-empowerment/1529.html" class="inline-onebox">Organizing for SocialHub Community Empowerment</a></p>
+        </div>
+
+        <meta itemprop='headline' content='Implementing ActivityPub Client-to-Server'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../981.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-04-09T17:57:12Z'>
+              <time itemprop='dateModified' datetime='2021-04-09T17:59:39Z' class='post-time'>
+                April 9, 2021,  5:59pm
+              </time>
+          <span itemprop='position'>#15</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="naturzukunft" data-post="13" data-topic="981">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../letter_avatar_proxy/v4/letter/n/ba9def/40.png" class="avatar"> naturzukunft:</div>
+<blockquote>
+<p>What frustrates me a bit is that I feel like there are a lot of unanswered questions and there are no answers and no reference implementations. Worse, there are actually no contact persons either ,-)</p>
+</blockquote>
+</aside>
+<p>Oh, yes !<br>
+This is what frustrates me the most …</p>
+<blockquote>
+<p>I decided to convince my customer that AP is exactly the right thing</p>
+</blockquote>
+<p>Very nice! I did the same last days (unfortunately for the thing which would have been a reference implementation, the generic server).<br>
+The Open Source ecosystem is a problem here, they fund crazy things saying “I am ActivityPub” - although it is totally non conformant. They don’t seem to fund reference implementations.<br>
+In terms of a Server now Smithereen or go-fed are nice examples of conformance.<br>
+For a Client I don’t know either while I am creating a client featuring “the entirety” (see Conformance Section of the spec.)</p>
+<blockquote>
+<p>I see our AP server as a kind of “messaging bus”, in which our own system is also an actor</p>
+</blockquote>
+<p>Yep, that is what redaktor does too.<br>
+It seemed to me nobody noticed before that most properties can have multiple values and so can have <code>type</code><br>
+Also Groups or Events are Actors here like [“Event”, “Service”] –</p>
+<blockquote>
+<p>SMTP</p>
+</blockquote>
+<p>ActivityPub has exactly the same addressing mechanism than eMail with <code>to</code> and <code>cc</code> and <code>bcc</code> which is also a thing which was much underestimated yet.</p>
+<blockquote>
+<p>We’re kind of building a platform for managing applications.<br>
+And we are relying on AP C2S for this.</p>
+</blockquote>
+<p>Very nice!</p>
+<blockquote>
+<p>in languages I don’t understand</p>
+</blockquote>
+<p>Here: TypeScript / JavaScript / nodeJS but however, the <a href="https://github.com/grishka/Smithereen" class="inline-onebox">GitHub - grishka/Smithereen: Federated, ActivityPub-compatible social network server with friends, walls, and groups.</a> is Java. Grishka is around here.</p>
+<p>and</p>
+<p>re. unanswered questions, my advice is to use the search function here.</p>
+        </div>
+
+        <meta itemprop='headline' content='Implementing ActivityPub Client-to-Server'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/yvolk.html'><span itemprop='name'>yvolk</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../981.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-04-13T06:25:29Z' class='post-time'>
+                April 13, 2021,  6:25am
+              </time>
+              <meta itemprop='dateModified' content='2021-04-13T06:25:29Z'>
+          <span itemprop='position'>#16</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Regarding implementation of OAuth and initial server endpoints discovery this new discussion may be interesting, started between RedMatrix/Hubzilla  (Server) and  AndStatus (Client): <a href="https://github.com/andstatus/andstatus/issues/528" class="inline-onebox" rel="noopener nofollow ugc">Debug assistance (low priority) · Issue #528 · andstatus/andstatus · GitHub</a></p>
+        </div>
+
+        <meta itemprop='headline' content='Implementing ActivityPub Client-to-Server'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../981.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-04-13T09:34:46Z'>
+              <time itemprop='dateModified' datetime='2021-04-13T11:55:06Z' class='post-time'>
+                April 13, 2021, 11:55am
+              </time>
+          <span itemprop='position'>#17</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Nice discussion</p>
+<blockquote>
+<p>You are not the first who mentions webfinger in the context of ActivityPub. My opinion is that webfinger is not an ActivityPub way of doing things. Moreover, ActorID doesn’t have to be a WebfingerID.</p>
+</blockquote>
+<p>We need to say this again and again.<br>
+Mastodon dictates “use webfinger”, it has nothing to do with ActivityPub.<br>
+It totally limits the protocol.<br>
+Unfortunately the people with money do not care.</p>
+<p>I will read the whole issue in detail later!<br>
+redaktor is also interested how we can use the new W3C DID specifications with ActivityPub.<br>
+E.g. “Orb has the ability to enable use cases where a public blockchain is not acceptable to stakeholders and also avoids lock-in to a single DLT.”<br>
+The ORB method: <a href="https://trustbloc.github.io/did-method-orb/"> A DID Method for a fediverse of interconnected nodes and witnesses</a></p>
+<p>However:<br>
+I want to highlight that we have a member of the OAuth WG “on board”.<br>
+Aaron Parecki (IndieWebcamp founder and Security Architect).<br>
+Invited him for this supernice talk at ActivityPub Conf (if open questions)</p>
+<p><strong>OAuth 2.1 and ActivityPub</strong>, Discovery 11:00 ff<br>
+<iframe width="560" height="315" src="https://conf.tube/videos/embed/32351956-89d7-4887-b6b0-f1a32f91dc36" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+        </div>
+
+        <meta itemprop='headline' content='Implementing ActivityPub Client-to-Server'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/aschrijver.html'><span itemprop='name'>aschrijver</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../981.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-04-13T11:37:35Z' class='post-time'>
+                April 13, 2021, 11:37am
+              </time>
+              <meta itemprop='dateModified' content='2021-04-13T11:37:35Z'>
+          <span itemprop='position'>#18</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote group-redaktor.me" data-username="Sebastian" data-post="17" data-topic="981">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar"> Sebastian:</div>
+<blockquote>
+<p>Orb has the ability to enable use cases where a public blockchain is not acceptable to stakeholders and also avoids lock-in to a single DLT.</p>
+</blockquote>
+</aside>
+<p>Dunno if helpful to you, but I once informed for non-blockchain DID/SSI: <a href="https://github.com/w3c-ccg/did-spec/issues/113" class="inline-onebox">DID and SSI without blockchain / DLT? · Issue #113 · w3c-ccg/did-spec · GitHub</a></p>
+        </div>
+
+        <meta itemprop='headline' content='Implementing ActivityPub Client-to-Server'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../981.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-04-13T11:48:36Z' class='post-time'>
+                April 13, 2021, 11:48am
+              </time>
+              <meta itemprop='dateModified' content='2021-04-13T11:48:36Z'>
+          <span itemprop='position'>#19</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Well, from the issue:<br>
+IPFS / IPNS was yet indeed what we considered as an option.<br>
+At the very first event with Chris, I did an ActivityPub via IPFS proof of concept which later worked but the problem is that even if you use the minimal nodeJS IPFS things, you add a real huge dependency chain to your app.<br>
+Which was mostly fine in small projects but I am not sure for redaktor.</p>
+<p>The Orb method which I mentioned is only using the Activity Streams vocabulary and an ActivityPub profile for propagating batches. Plus the sidetree protocol.<br>
+So: no dependencies …</p>
+        </div>
+
+        <meta itemprop='headline' content='Implementing ActivityPub Client-to-Server'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/macgirvin.html'><span itemprop='name'>macgirvin</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../981.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-04-16T01:57:24Z' class='post-time'>
+                April 16, 2021,  1:57am
+              </time>
+              <meta itemprop='dateModified' content='2021-04-16T01:57:24Z'>
+          <span itemprop='position'>#20</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>As mentioned in that issue, I don’t care if Webfinger is supported or un-supported. I asked the andStatus maintainer to support lookup of oauth endpoints per the AP specification and was asked how best to support that. As that app insists on a webfinger address for the account, I responded that Webfinger should probably be consulted to locate the AP record - and fetch the AP record to find the OAuth endpoints.</p>
+<p>Many of the subsequent comments in that thread basically ridiculed me for suggesting webfinger and defended the use of undocumented platform specific APIs and ignored the many real compatibility issues I raised.</p>
+<p>I don’t care if a project uses webfinger or not, but if said project asks specifically for a webfinger address as identification of an account, that project might need to use webfinger. I don’t know how else one would reliably obtain the AP actor URL if the only information you have available is a webfinger identity.  We support webfinger if you require it. We don’t actually require it for ActivityPub communications.</p>
+<p>In any event, if you look at the issues raised, the andStatus C2S implementation requires a number of additional pieces from a number of platform specific APIs just to function, so I no longer plan to use it as a test implementation for our C2S work, and may be unable to use it at all.  My queries for documentation on these extra required pieces did not provide me enough information to be able to implement or respond to those platform specific API calls, so I really have no choice.</p>
+<p>It’s not that hard to make oauth2 requests so I’ll probably finish off the C2S bits using a Python script for testing and leave andStatus compatibility to others.</p>
+<p>Does any project currently have a proposal for naming the dynamic client registration endpoint (and perhaps a list of attributes it requires) in the actor record? If so, I’d like to re-use it. If not, I’ll come up with something and stick it our FEDERATION.md; although there are already facilities like .well-known/oauth-authorization-server and .well-known/openid-configuration; and maybe this stuff doesn’t belong in the ActivityPub actor record at all.</p>
+        </div>
+
+        <meta itemprop='headline' content='Implementing ActivityPub Client-to-Server'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../oauth-2-1-and-activitypub/948/5.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/oauth-2-1-and-activitypub/948/5'>
+                      <span itemprop='name'>OAuth 2.1 and ActivityPub</span>
+                    </a>
+                    <meta itemprop='position' content='1'>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/macgirvin.html'><span itemprop='name'>macgirvin</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../981.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-04-16T02:31:03Z' class='post-time'>
+                April 16, 2021,  2:31am
+              </time>
+              <meta itemprop='dateModified' content='2021-04-16T02:31:03Z'>
+          <span itemprop='position'>#21</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Followup: it appears that Pleroma is using</p>
+<p><a href="http://litepub.social/ns#oauthRegistrationEndpoint" class="onebox" target="_blank" rel="noopener nofollow ugc">http://litepub.social/ns#oauthRegistrationEndpoint</a></p>
+<p>so I’ll just go with that.</p>
+        </div>
+
+        <meta itemprop='headline' content='Implementing ActivityPub Client-to-Server'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/aschrijver.html'><span itemprop='name'>aschrijver</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../981.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-04-16T05:34:14Z' class='post-time'>
+                April 16, 2021,  5:34am
+              </time>
+              <meta itemprop='dateModified' content='2021-04-16T05:34:14Z'>
+          <span itemprop='position'>#22</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>(OT: I updated FEDERATION.md url to point to Codeberg in <a href="../../draft-guide-for-new-activitypub-implementers/479.html">AP implementers guide</a>. Great that you keep it updated! Also posted earlier <a href="../../improvement-to-federation-md-convention-murmurations/1573.html">an idea</a> to improve on the mechanism.)</p>
+        </div>
+
+        <meta itemprop='headline' content='Implementing ActivityPub Client-to-Server'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

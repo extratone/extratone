@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>The sustainability network</title>
+    <link>https://socialhub.activitypub.rocks/t/the-sustainability-network/643</link>
+    <description>Hi there, great to have found this place
+
+I&#39;m an environmental engineer doing my bachelor thesis about a sustainability network idea I had half a year ago and evolved quite a bit since then. Here is a quick rundown on how the idea evolved.
+
+Inicially the idea was to develop an application where participants of a conference could asses their environmental impact, see the how it is composed, compare in a ranking then compete with each other through challenges. The app would have been very basic and simple and I would have programmed in C# using Unity. (Would&#39;ve been a really big challenge for me still)
+
+With this concept and an idea on how people could, with the same app, network and collaborate on environmental issues in their region, I went to a Startup Course. (organised by Startup Campus funded by Innosuisse, Switzerland) There I had to pitch the idea in front of my group. It got choosen (5 from 13) and I could develop it further with a team and experts helping us. We had to make a Business Model Canvas, Finance Template and Fundraising strategy, IP Strategy, all the while getting comments from experts and discussing with the team. The course started in February and the idea evolved a lot since then as i looked for feedback from a lot of different sources. In less than a month I have to pitch the idea again in front of a bigger audience with investors and other rather important people. A professional poster will be designed for the idea, which serves as a promotion and inicial interest. Just this morning a friend from uni contacted me and said the marketing department would like to do a short doku about students working on cool projects during covid. So the idea would be getting quite a bit of attention and I&#39;m nervous as f***.  
+
+I just read about ActivityPub half a week ago and it instantly clicked that I would want to cooperate with this open-source project. Here is the thing though: I&#39;m not very much into coding (basic C# in Unity) and I don&#39;t know how to wrap my head around how my idea could fit within the fediverse. That&#39;s why I started this Topic, I would be very thankfull for any kind of inputs, comments, questions, critical thoughts. So here is the idea:
+
+A platform where users can assess their environmental impact and then get regional and general challenges which show them how to lower their impact. They can form clubs together, and share their progress with their friends/region/everyone. This part is very similar to Strava(Fitness-Platform). Furthermore people can share their thoughts in the form of reports, where they can share environmental problems (dirty river, trash, bad farming practices,etc.). These reports should have certain requirements to locate them within the database, like (Sustainable Development Goals, stakeholders involved, local/regional/global problem, etc.) . Also Solutions to certain problems or best practices to mitigate bad outcomes should be specified or linked to a certain problem. The goal is to set up a comprehensive database where problems/solutions would be listed and could be commented on by the community. Users would also be able to create events or initiatives helping them connect with the environmental movement in their region and maybe even find funding. The data generated should be stored in a data cooperative (like MIDATA) so research groups, uni&#39;s or companies could get access and run algorithms on the database but protecion is still granted.
+
+That is the concept which is still really vague and undefined, the part which is still very unclear for me is the combination of activity pub and a data cooperation. My questions about the technological development part are of the kind: Dear professor, I don&#39;t know what to ask because I have pretty much no clue not because I understood. But some inicial questions might be:
+
+-How much would it cost to set up such an platform? 
+
+-Does it make sense out of a coders eye or am I talking complete bulls***?
+
+The goal of this post is really to find a community with which I can reflect on these ideas and get feedback. In some form it is also a call for help, because it&#39;d be embarrassing presenting these ideas in front of an audience without really knowing what I&#39;m talking about. I am very grateful for any kind of feedback so please share your opinion and ideas. I am also looking for potential collaborators so if you see how you could add value to this project please contact me as well. I&#39;m based close to Zürich, Switzerland also happy for real life meet-ups. 
+
+Thanks a lot for your attention and greetings
+
+Tim</description>
+    
+    <lastBuildDate>Sun, 26 Apr 2020 21:08:17 +0000</lastBuildDate>
+    <category>Fediversity</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/the-sustainability-network/643.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>The sustainability network</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Tim, welcome!</p>
+<p>I think your idea is an interesting challenge. So far, in the general free software and assorted technical community I only know of very few initiatives tackling the energetic costs of tech usage. Greenhost is one of the ISPs interested in this challenge, and I saw an ISP evaluation program based on such criteria. INCOMMON is a collective interested in identifying, promoting and defending the Commons, so it’s a good match as well – and here I would guess <a class="mention" href="/u/pukkamustard">@pukkamustard</a> and <a class="mention" href="/u/sebastian">@Sebastian</a> could be interested as well. I know a few software projects, unrelated to ActivityPub that are putting a lot of attention into energy consumption, such as <a href="http://Robur.io">Robur.io</a> for example. But indeed there’s no systematic approach that I know of that would help users tackle this required aspect of our global survival – keeping in mind <a href="https://en.wikipedia.org/wiki/Jevons_paradox">Jevon’s paradox</a> since most technological processes – not to say advances – will bring more energy consumption in a way or another. Petites Singularités, and a number of sister networks are also interested in this topic, but as we do not have academic resources, we tend to keep it on our radar.</p>
+<p>I’d be interested in knowing more about what you’re trying to do with your platform. For example I’d like to know:</p>
+<ul>
+<li>how is your technology (prospect) aligned with your goals?</li>
+<li>the above also makes sense in the economic model: you talk about startups, but it sounds like a cooperative that you want.</li>
+<li>can you share a bit more of your initial pitch so we can understand how you approach the problem?</li>
+</ul>
+<p>I would recommend that you have a look at <a class="hashtag" href="/c/software/openengiadina/50">#<span>software:openengiadina</span></a> for the distributed database is part of the relevant research and at <a class="hashtag" href="/c/software/redaktor-me/22">#<span>software:redaktor-me</span></a> for the journalist network behind it might also become an ally.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/the-sustainability-network/643/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-sustainability-network/643/2</link>
+        <pubDate>Sun, 26 Apr 2020 21:08:17 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-643-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-sustainability-network/643.rss">The sustainability network</source>
+      </item>
+      <item>
+        <title>The sustainability network</title>
+        <dc:creator><![CDATA[giegie]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi there, great to have found this place</p>
+<p>I’m an environmental engineer doing my bachelor thesis about a sustainability network idea I had half a year ago and evolved quite a bit since then. Here is a quick rundown on how the idea evolved.</p>
+<p>Inicially the idea was to develop an application where participants of a conference could asses their environmental impact, see the how it is composed, compare in a ranking then compete with each other through challenges. The app would have been very basic and simple and I would have programmed in C# using Unity. (Would’ve been a really big challenge for me still)</p>
+<p>With this concept and an idea on how people could, with the same app, network and collaborate on environmental issues in their region, I went to a Startup Course. (organised by Startup Campus funded by Innosuisse, Switzerland) There I had to pitch the idea in front of my group. It got choosen (5 from 13) and I could develop it further with a team and experts helping us. We had to make a Business Model Canvas, Finance Template and Fundraising strategy, IP Strategy, all the while getting comments from experts and discussing with the team. The course started in February and the idea evolved a lot since then as i looked for feedback from a lot of different sources. In less than a month I have to pitch the idea again in front of a bigger audience with investors and other rather important people. A professional poster will be designed for the idea, which serves as a promotion and inicial interest. Just this morning a friend from uni contacted me and said the marketing department would like to do a short doku about students working on cool projects during covid. So the idea would be getting quite a bit of attention and I’m nervous as f***.</p>
+<p>I just read about ActivityPub half a week ago and it instantly clicked that I would want to cooperate with this open-source project. Here is the thing though: I’m not very much into coding (basic C# in Unity) and I don’t know how to wrap my head around how my idea could fit within the fediverse. That’s why I started this Topic, I would be very thankfull for any kind of inputs, comments, questions, critical thoughts. So here is the idea:</p>
+<p>A platform where users can assess their environmental impact and then get regional and general challenges which show them how to lower their impact. They can form clubs together, and share their progress with their friends/region/everyone. This part is very similar to Strava(Fitness-Platform). Furthermore people can share their thoughts in the form of reports, where they can share environmental problems (dirty river, trash, bad farming practices,etc.). These reports should have certain requirements to locate them within the database, like (Sustainable Development Goals, stakeholders involved, local/regional/global problem, etc.) . Also Solutions to certain problems or best practices to mitigate bad outcomes should be specified or linked to a certain problem. The goal is to set up a comprehensive database where problems/solutions would be listed and could be commented on by the community. Users would also be able to create events or initiatives helping them connect with the environmental movement in their region and maybe even find funding. The data generated should be stored in a data cooperative (like MIDATA) so research groups, uni’s or companies could get access and run algorithms on the database but protecion is still granted.</p>
+<p>That is the concept which is still really vague and undefined, the part which is still very unclear for me is the combination of activity pub and a data cooperation. My questions about the technological development part are of the kind: Dear professor, I don’t know what to ask because I have pretty much no clue not because I understood. But some inicial questions might be:</p>
+<p>-How much would it cost to set up such an platform?</p>
+<p>-Does it make sense out of a coders eye or am I talking complete bulls***?</p>
+<p>The goal of this post is really to find a community with which I can reflect on these ideas and get feedback. In some form it is also a call for help, because it’d be embarrassing presenting these ideas in front of an audience without really knowing what I’m talking about. I am very grateful for any kind of feedback so please share your opinion and ideas. I am also looking for potential collaborators so if you see how you could add value to this project please contact me as well. I’m based close to Zürich, Switzerland also happy for real life meet-ups.</p>
+<p>Thanks a lot for your attention and greetings</p>
+<p>Tim</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/the-sustainability-network/643/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/the-sustainability-network/643/1</link>
+        <pubDate>Sun, 26 Apr 2020 08:10:24 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-643-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/the-sustainability-network/643.rss">The sustainability network</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>About Programming</title>
+    <link>https://socialhub.activitypub.rocks/t/about-programming/314</link>
+    <description>Discuss ActivityPub implementations in your favorite programming language.
+
+[Fediverse.party](https://fediverse.party) lists Fediverse software by programming language, which inspired this category. Here you can talk about the specificity of ActivityPub implementation by language. It is recommended to _mute_ categories you are not interested in, to avoid information overload.
+
+### Missing Language?
+
+Please ask!</description>
+    
+    <lastBuildDate>Thu, 12 Dec 2019 08:49:53 +0000</lastBuildDate>
+    <category>Programming</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/about-programming/314.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>About Programming</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>There you go <a class="hashtag" href="/c/programming/java/44">#<span>programming:java</span></a>! Please edit the wiki above when you’re set.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-programming/314/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-programming/314/4</link>
+        <pubDate>Thu, 12 Dec 2019 08:49:53 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-314-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-programming/314.rss">About Programming</source>
+      </item>
+      <item>
+        <title>About Programming</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="1" data-topic="314">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/system/40/11_2.png" class="avatar"> system:</div>
+<blockquote>
+<h3>Missing Language?</h3>
+<p>Please ask!</p>
+</blockquote>
+</aside>
+<p>What about Java? <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+<p>I’m probably the first person to write an AP implementation in it.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-programming/314/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-programming/314/3</link>
+        <pubDate>Wed, 11 Dec 2019 23:09:16 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-314-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-programming/314.rss">About Programming</source>
+      </item>
+      <item>
+        <title>About Programming</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p><em>This is a wiki.</em></p>
+<h1>Programming Languages by Software</h1>
+<p>Here’s a reminder of what languages are used by various <a class="hashtag" href="/c/14-software">#<span>software</span></a> implementations:</p>
+<div class="md-table">
+<table>
+<thead>
+<tr>
+<th>Language</th>
+<th>Software</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="hashtag" href="/c/programming/elixir/40">#<span>programming:elixir</span></a></td>
+<td>
+<a class="hashtag" href="/c/software/pleroma/19">#<span>software:pleroma</span></a>, <a class="hashtag" href="/c/software/mobilizon/20">#<span>software:mobilizon</span></a>
+</td>
+</tr>
+<tr>
+<td><a class="hashtag" href="/c/programming/java/44">#<span>programming:java</span></a></td>
+<td></td>
+</tr>
+<tr>
+<td><a class="hashtag" href="/c/programming/go/37">#<span>programming:go</span></a></td>
+<td>honk, <a class="hashtag" href="/c/software/go-fed/18">#<span>software:go-fed</span></a>, <a class="hashtag" href="/c/software/writefreely/29">#<span>software:writefreely</span></a>
+</td>
+</tr>
+<tr>
+<td><a class="hashtag" href="/c/programming/nodejs/34">#<span>programming:nodejs</span></a></td>
+<td>
+<a class="hashtag" href="/c/software/peertube/27">#<span>software:peertube</span></a>, <a class="hashtag" href="/c/software/writefreely/29">#<span>software:writefreely</span></a>
+</td>
+</tr>
+<tr>
+<td><a class="hashtag" href="/c/programming/php/39">#<span>programming:php</span></a></td>
+<td><a class="hashtag" href="/c/software/pixelfed/28">#<span>software:pixelfed</span></a></td>
+</tr>
+<tr>
+<td><a class="hashtag" href="/c/programming/python/38">#<span>programming:python</span></a></td>
+<td>
+<a class="hashtag" href="/c/software/anfora/21">#<span>software:anfora</span></a>, <a class="hashtag" href="/c/software/funkwhale/16">#<span>software:funkwhale</span></a>
+</td>
+</tr>
+<tr>
+<td><a class="hashtag" href="/c/programming/ruby/35">#<span>programming:ruby</span></a></td>
+<td><a class="hashtag" href="/c/software/mastodon/17">#<span>software:mastodon</span></a></td>
+</tr>
+<tr>
+<td><a class="hashtag" href="/c/programming/rust/36">#<span>programming:rust</span></a></td>
+<td>Kibou</td>
+</tr>
+</tbody>
+</table>
+</div>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-programming/314/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-programming/314/2</link>
+        <pubDate>Sat, 16 Nov 2019 18:23:24 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-314-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-programming/314.rss">About Programming</source>
+      </item>
+      <item>
+        <title>About Programming</title>
+        <dc:creator><![CDATA[system]]></dc:creator>
+        <description><![CDATA[
+            <p>Discuss ActivityPub implementations in your favorite programming language.</p>
+<p><a href="https://fediverse.party">Fediverse.party</a> lists Fediverse software by programming language, which inspired this category. Here you can talk about the specificity of ActivityPub implementation by language. It is recommended to <em>mute</em> categories you are not interested in, to avoid information overload.</p>
+<h3>Missing Language?</h3>
+<p>Please ask!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-programming/314/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-programming/314/1</link>
+        <pubDate>Sat, 16 Nov 2019 15:18:38 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-314-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-programming/314.rss">About Programming</source>
+      </item>
+  </channel>
+</rss>

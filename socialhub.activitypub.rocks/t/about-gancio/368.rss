@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>About Gancio</title>
+    <link>https://socialhub.activitypub.rocks/t/about-gancio/368</link>
+    <description>A shared agenda for local communities with AP support.
+
+https://gancio.org/</description>
+    
+    <lastBuildDate>Sun, 01 Dec 2019 19:49:32 +0000</lastBuildDate>
+    <category>Gancio</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/about-gancio/368.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>About Gancio</title>
+        <dc:creator><![CDATA[les]]></dc:creator>
+        <description><![CDATA[
+            <p>A shared agenda for local communities with AP support.</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      
+      <a href="https://gancio.org/" target="_blank" rel="nofollow noopener">Gancio</a>
+  </header>
+  <article class="onebox-body">
+    <img src="" class="thumbnail" width="" height="">
+
+<h3><a href="https://gancio.org/" target="_blank" rel="nofollow noopener">Home</a></h3>
+
+<p>Gancio is a shared agenda for local communities.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/about-gancio/368/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-gancio/368/1</link>
+        <pubDate>Sun, 01 Dec 2019 19:48:29 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-368-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-gancio/368.rss">About Gancio</source>
+      </item>
+  </channel>
+</rss>

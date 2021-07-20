@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How should anonymized Likes work?</title>
+    <link>https://socialhub.activitypub.rocks/t/how-should-anonymized-likes-work/628</link>
+    <description>Link aggregation sites typically work by sorting posts using anonymous likes. How should this work in ActivityPub, where Likes are associated with users? Could we somehow federate numbers instead of individual objects for this? Or at least send likes without revealing the liker?</description>
+    
+    <lastBuildDate>Wed, 22 Apr 2020 22:53:46 +0000</lastBuildDate>
+    <category>Server to Server</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/how-should-anonymized-likes-work/628.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How should anonymized Likes work?</title>
+        <dc:creator><![CDATA[nutomic]]></dc:creator>
+        <description><![CDATA[
+            <p>Agreed, accepting activities without HTTP signature, coming from nobody, is just asking for trouble. Like instances creating fake votes would get even easier.</p>
+<p>Guess there could be a special user on the instance that replaces the real actor. But that wouldnt help for single user instances.</p>
+<p>Or we could think about votes that are only visible to followers, so different people see it differently. But thats probably too complicated.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/how-should-anonymized-likes-work/628/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/how-should-anonymized-likes-work/628/3</link>
+        <pubDate>Wed, 22 Apr 2020 22:51:46 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-628-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/how-should-anonymized-likes-work/628.rss">How should anonymized Likes work?</source>
+      </item>
+      <item>
+        <title>How should anonymized Likes work?</title>
+        <dc:creator><![CDATA[koehn]]></dc:creator>
+        <description><![CDATA[
+            <p>There’s nothing in the specification preventing anyone from <em>sending</em> a <code>Like</code> activity without any <code>actor</code> associated with it. Many services (including mine) would not <em>accept</em> it, because (speaking for myself) I don’t want to bombard my users with unattributed (or even unauthenticated) information.</p>
+<p>That’s a values-based decision, and different people can and do have different values. The spec is flexible enough to allow for it; it will come down to whether enough people believe it’s valuable.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/how-should-anonymized-likes-work/628/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/how-should-anonymized-likes-work/628/2</link>
+        <pubDate>Tue, 21 Apr 2020 13:08:49 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-628-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/how-should-anonymized-likes-work/628.rss">How should anonymized Likes work?</source>
+      </item>
+      <item>
+        <title>How should anonymized Likes work?</title>
+        <dc:creator><![CDATA[vpzom]]></dc:creator>
+        <description><![CDATA[
+            <p>Link aggregation sites typically work by sorting posts using anonymous likes. How should this work in ActivityPub, where Likes are associated with users? Could we somehow federate numbers instead of individual objects for this? Or at least send likes without revealing the liker?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/how-should-anonymized-likes-work/628/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/how-should-anonymized-likes-work/628/1</link>
+        <pubDate>Tue, 21 Apr 2020 00:24:06 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-628-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/how-should-anonymized-likes-work/628.rss">How should anonymized Likes work?</source>
+      </item>
+  </channel>
+</rss>

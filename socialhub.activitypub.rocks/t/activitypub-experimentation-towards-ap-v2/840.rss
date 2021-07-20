@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>ActivityPub Experimentation: Towards AP v2</title>
+    <link>https://socialhub.activitypub.rocks/t/activitypub-experimentation-towards-ap-v2/840</link>
+    <description>**New Description:**
+
+Thanks, the list of topics that I’ve tracked that the moderator can discuss are:
+
+* Expanding beyond HTTP protocol
+* Structured documents for server behavior
+* Uploading Media
+
+And this topic can be moved to Scaling Up Cooperation:
+
+* How to build a community process for adoption &amp; encourage executing those adoptions
+
+The live session will happen in Room A: https://bbb.fosshost.org/b/mor-fee-7b4-2nh
+
+**Old Description:**
+
+ActivityPub has helped spawn a diverse set of software, while also leaving fertile ground for further improvements in the protocol. It seems like the grassroots community has done an excellent job of identifying problems. A great deal of energy by end-users and developers alike has been spent pointing out problematic patterns of software-enabled harassment, the lack of privacy and security protections, the lack of software tooling for community-building, identifying the line where software doesn’t solve people-problems, and many many others.
+
+Why in 2 years has there been no major momentum towards an ActivityPub evolution? This has already been identified by the community: inherent with the grassroots nature of the community is the simple fact that any Fediverse software’s high user count grants that software’s developer/organization high influence in enacting, or avoiding, change on behalf of the Fediverse community.
+
+There are two concrete problems that the BoF could address. There is the &quot;meta&quot; problem of how to get the community organized just enough to identify a path towards consensus, yet doing so without developing institutions since they stifle voices. Then, there is the &quot;execution&quot; problem where, once the community has a procedure to build consensus on a &quot;yes, let’s adopt this&quot; change, how do they entice software developers to build this out in new or existing applications.</description>
+    
+    <lastBuildDate>Mon, 05 Oct 2020 09:03:38 +0000</lastBuildDate>
+    <category>ActivityPub Conference 2020</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/activitypub-experimentation-towards-ap-v2/840.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>ActivityPub Experimentation: Towards AP v2</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <h1>Shared Notes from the session</h1>
+<ul>
+<li>Current Vocabulary Process /
+<ul>
+<li>VCWG/DIDWG Extension Process</li>
+</ul>
+</li>
+<li>Vocabulary extensions / content-addressed-vocab*</li>
+<li>Decentralized Identifiers WG needs for alsoKnownAs</li>
+<li>“Hostile take overs” of ActivityPub vocab? What happens if people name squat?</li>
+<li>Discoverability of Actor understanding (method to come to consensus on that)</li>
+<li>ActivityPub acknowledge protocols beyond HTTP
+<ul>
+<li>eg: DID Comm <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/frowning.png?v=9" title=":frowning:" class="emoji" alt=":frowning:">
+</li>
+</ul>
+</li>
+<li>Uploading media</li>
+<li>How do we all work together</li>
+<li>Paths to ocappy-stuff</li>
+</ul>
+<p><em>Manu Sporny</em> on processes in other groups:</p>
+<p>It takes a lot more care than anyone understands. This has happend successfully in: JSON-LD WG, maintained by W3C staff. Everyone was already on the same page on how to do it, least contentious way of doing extensions.</p>
+<p>Next was the Verifiable Credentials WG who had no process when the group finished, and kicked it over to the Credentials CG to figure it out. Almost didn’t happen becaus eit was plumbing nobody wants to do. A chair and an editor got together, defined a process that took 3-4 months.</p>
+<p>The Decentralized Identifier WG is the one that cared the most about having an extensions registry, great debate, but more and more stuff has been pushed into the registry in that group.</p>
+<p>These groups aren’t necessariy all friendly and everybody gets along… Many of the discussions in VCs and DIDs was pretty… great debate around many things.</p>
+<p>These are examples of it being possible. The biggeset thing that could limit it working are the social dynamics of the group. Very heavily driven by social dynamics, many people dont’ want to be stepped on and that’s what makes them back into their corner and do their own thing.</p>
+<p>One of the things pushing me to this meeting … we need alsoKnownAs in the DID WG. The first proposal was let’s just define it and put it out there. AP communities got it but we can’t wait for them, let’s define our own. Which means the exact same thing as what’s used in mastodon. We’re trying to convince the group to do the right thing and work with other communities and all of us come to an agreement on what alsoKnownAs is. My concern is that if we can’t find a way to do this in AP the WG is going to go and redefine the term. A failure to standardise.</p>
+<p>My hope is we are able to reuse the AP vocab instead of redefining core parts of it in the DID group.</p>
+<p>Could just namesquat in the AS vocabulary but would rather not</p>
+<p>In the bioinformatics databases, people are already using hashes, so the content addressed vocabulary stuff is already relevant… they’re describing the identifier and hashing it</p>
+<p><em>Lain</em>: I don’t care as an implementor so much whether or not it’s standardized, I just want a way to see where it is and implement it, not wait on a standards body</p>
+<p><em>Chris</em>: endorses alsoKnownAs as already in-use and it should be simple enough to get it officially recognised. We should set up a socialCG meeting and put it to a vote. This one can be an indicator of where things might go, or could not be. But could help a group that needs it now.</p>
+<p><em>Lain</em>: right now when we come up with our own vocabulary we put things in our own namespace… something I think would be nice is if we had something like a template, right now if we had something like a federation.md file, if we had templates to make it look like it does on activitypub.rocks or whatever to fill in our info, it doesn’t have to be in the AS2 namespace it could be helpful.  If we could do a PR with a repository with all the stuff and what they support</p>
+<p>ACTION ITEM: Explore a community group report where we collect “known” activitypub-related vocab extensions and how used, and hand commit rights to well acting implementors to allow them to actually get terms in it.  Lain is interested in being a committer to help curate that document</p>
+<p><em>Manu</em>: converstation reminds me of w3cid service;<br>
+we put it up for people to have URLs for linked data vocabs, and it was a simple process…<br>
+if you want something in there, create a directory, put your PRs in there, and when merged it’s just automatically pushed to the servers.<br>
+We were not expecting as many people to contribute as they have.<br>
+There are over 4k contributons and we have no idea who is behind ~4k of them.<br>
+We mostly just make sure the url redirection works. So 2 people have been able to process 4k+ extensions to this namespace.<br>
+If the fediverse wants an area where everyone can go and look and see what’s available, that’s a super powerful thing.<br>
+w3cid is a good example of that working. The downside is that everyone plays in their own sandbox and we don’t get everyone to play in their own namespace.<br>
+That’s better than where you are now though.  +1 to a lightweight process, +1 to it being as simple as a PR, +1 to not allow things to be held back.<br>
+Allow people to manage their own subpages, and only when you talk about elevating to the toplevel namespace.  That’s also what talked about alsoKnownAs…<br>
+anyway these things can absolutely work at scale and I believe it’s absolutely a cultural thing.<br>
+As you all know changing culture is the hardest thing</p>
+<p><em>Manu</em>: I don’t think that it’s an either/or for CAS URLs or human-readable URLs</p>
+<p>Actor discoverability<br>
+•	<br>
+<em>CJ</em>: what’s the proper way to standardize on “what abilities / interfaces does this actor understand”?</p>
+<p><em>CJ</em>: Pleroma has a prototypical solution for their chat use case, I’d imagine as a community we’d like to make this more usable… is it “post it on socialhub”, or is it “make a vocabulary change with the CG” or what?</p>
+<p><em>CJ</em>: it’s a conversation of where do we discuss</p>
+<p><em>Chris</em>: What do people want in terms of reaching out?</p>
+<p><em>CJ</em>: I think litepub resulted in people droping out from frustration of not being recognized and that’s something I don’t want to see</p>
+<p><em>Lain</em>: I think the one on one system can work, and we won’t get rid of it, so we will always have that… the bigger problem is that when that’s all we have.  So I think that something like we talked about earlier where we have the community actually do this… that would already help a lot.  So it’s not in the head of two people and two codebases</p>
+<p><em>Michael</em>: I’m a bit complicated in that I’m not in the official stuff… I’m not as much into the SHOULD MUST stuff, etc… I’m just an implementor who says “hm ah, ok, looks fine”… so the formalistic stuff can be a problem for me</p>
+<p><em>Chris</em>: what about more of a show-and-tell type structure of the CG?</p>
+<p><em>Manu</em>: the proposal sounds like show-and-tell followed by a handful of meetings to get things done and then you fall into that pattern in the interim with the current communication patterns</p>
+<p><em>Lain</em>: It sounds like a good idea, the way we do these conferences always feels super productive, so we can have meetings in this kind of format with show and tell, I show off how chat works and etc I think that’s a good idea</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/activitypub-experimentation-towards-ap-v2/840/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/activitypub-experimentation-towards-ap-v2/840/10</link>
+        <pubDate>Mon, 05 Oct 2020 09:03:38 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-840-10</guid>
+        <source url="https://socialhub.activitypub.rocks/t/activitypub-experimentation-towards-ap-v2/840.rss">ActivityPub Experimentation: Towards AP v2</source>
+      </item>
+      <item>
+        <title>ActivityPub Experimentation: Towards AP v2</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-pleroma" data-username="lanodan" data-post="7" data-topic="840">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/lanodan/40/40_2.png" class="avatar"> lanodan:</div>
+<blockquote>
+<p>aka <code>federation.md</code> , I don’t know if it went further</p>
+</blockquote>
+</aside>
+<p><a class="mention" href="/u/aschrijver">@aschrijver</a> keeps updating this part of the <a href="https://socialhub.activitypub.rocks/t/guide-for-new-activitypub-implementers/479" class="inline-onebox">Guide for new ActivityPub implementers</a> :</p>
+<aside class="quote no-group" data-username="nedjo" data-post="1" data-topic="479">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/letter_avatar_proxy/v4/letter/n/da6949/40.png" class="avatar"><a href="https://socialhub.activitypub.rocks/t/guide-for-new-activitypub-implementers/479/1">Guide for new ActivityPub implementers</a>
+</div>
+<blockquote>
+<h5>Federation.md</h5>
+<p>Complementary to NodeInfo, some implementations have introduced a federation.md file to describe instance capabilities in a human readable way. See <a href="https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453">this discussion </a> for more information. The federation.md files are a good way to get a sense of how different projects are using and adapting ActivityPub. Examples include:</p>
+<ul>
+<li><a href="https://github.com/dariusk/gathio/blob/783a5fbc270452148a6bcc92cb37469e6da349d7/FEDERATION.md">gathio</a></li>
+<li><a href="https://github.com/writefreely/documentation/blob/63dadbfd3654696f8539b7532f8df54512f2854b/writer/federation.md">WriteFreely </a></li>
+<li><a href="https://framagit.org/zot/zap/blob/master/FEDERATION.md">Zap</a></li>
+<li><a href="https://gitlab.com/ngerakines/tavern/-/blob/master/FEDERATION.md">Tavern</a></li>
+<li><a href="https://github.com/grishka/Smithereen/blob/2782cd7afeb65a2135bbbcb62bef2a8a135dfe55/FEDERATION.md">Smithereen</a></li>
+<li><a href="https://github.com/lesion/gancio/blob/f9601492dc37681b2e07399811d8a3a7d38ca3e6/docs/federation.md">gancio</a></li>
+<li><a href="https://github.com/LemmyNet/lemmy/blob/e596ea6e3ab3f0ee8a583612dae8ea6553e97052/docs/src/contributing_federation_overview.md">Lemmy</a></li>
+</ul>
+</blockquote>
+</aside>
+          <p><a href="https://socialhub.activitypub.rocks/t/activitypub-experimentation-towards-ap-v2/840/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/activitypub-experimentation-towards-ap-v2/840/9</link>
+        <pubDate>Fri, 02 Oct 2020 21:18:03 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-840-9</guid>
+        <source url="https://socialhub.activitypub.rocks/t/activitypub-experimentation-towards-ap-v2/840.rss">ActivityPub Experimentation: Towards AP v2</source>
+      </item>
+      <item>
+        <title>ActivityPub Experimentation: Towards AP v2</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Quoting from the merged <a href="https://socialhub.activitypub.rocks/t/getting-extensions-into-the-activitystreams-2-0-namespace/1001:">https://socialhub.activitypub.rocks/t/getting-extensions-into-the-activitystreams-2-0-namespace/1001:</a></p>
+<aside class="quote no-group" data-username="rhiaro" data-post="1" data-topic="1001" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/rhiaro/40/17_2.png" class="avatar"><a href="https://socialhub.activitypub.rocks/t/getting-extensions-into-the-activitystreams-2-0-namespace/1001/1">Getting extensions into the ActivityStreams 2.0 namespace</a>
+</div>
+<blockquote>
+<p>There have been multiple attempts at a process for getting well-used extensions into the <a href="https://www.w3.org/ns/activitystreams">official ActivityStreams 2.0 namespace</a> - doing so helps with discoverability and interop, as people can use each others extension terms, rather than reinventing things over and over. But none of the processes proposed could get consensus, and so nothing has been formalised.</p>
+<p>I’m invested in this because <a href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907">there is a property used by mastodon that the DID WG also want to use that we need to see in the namespace </a>, but also because it’d be nice if extensions work properly for everyone.</p>
+<p>A lightweight process could be something like:</p>
+<ol>
+<li>Two or more implementations are sharing a term (either a property or activity/object type), and using it in the same way.</li>
+<li>An agreed definition is written up in some sort of authoritative document - another W3C spec, a CG report, or something else stable and persistent (and ideally versioned).</li>
+<li>A PR is made to the AS2 namespace to add the link and JSON-LD context definition.</li>
+<li>The SocialCG convenes a meeting to agree to merge the PR, or if there are changes that would improve the status of the extension so it can be merged, or if there is some reason to definitely not merge it (eg. it is offensive, deliberately misleading, violates someone else’s copyright, the definition really doesn’t make sense, etc).</li>
+</ol>
+<p>I’d love to hear from others, particularly those of you who are using your own vocabularies to complement AS2.</p>
+</blockquote>
+</aside>
+          <p><a href="https://socialhub.activitypub.rocks/t/activitypub-experimentation-towards-ap-v2/840/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/activitypub-experimentation-towards-ap-v2/840/8</link>
+        <pubDate>Fri, 02 Oct 2020 21:14:56 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-840-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/activitypub-experimentation-towards-ap-v2/840.rss">ActivityPub Experimentation: Towards AP v2</source>
+      </item>
+      <item>
+        <title>ActivityPub Experimentation: Towards AP v2</title>
+        <dc:creator><![CDATA[lanodan]]></dc:creator>
+        <description><![CDATA[
+            <p>Some notes, specially in case I can’t attend the live session (should be fine but who knows).</p>
+<aside class="quote no-group" data-username="cjs" data-post="4" data-topic="840">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/cjs/40/35_2.png" class="avatar"> cjs:</div>
+<blockquote>
+<ul>
+<li>Expanding beyond HTTP protocol</li>
+</ul>
+</blockquote>
+</aside>
+<p>Pleroma was thinking on getting WebSocket-based Federation (still HTTP in a way but still) and we’re doing the stabilization part of it currently. I haven’t worked on it.</p>
+<aside class="quote no-group" data-username="cjs" data-post="4" data-topic="840">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/cjs/40/35_2.png" class="avatar"> cjs:</div>
+<blockquote>
+<ul>
+<li>Structured documents for server behavior</li>
+</ul>
+</blockquote>
+</aside>
+<p>This reminds me of <a href="https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453/6">https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453/6</a> aka <code>federation.md</code>, I don’t know if it went further, we have yet to use it ourselves.</p>
+<aside class="quote no-group" data-username="cjs" data-post="4" data-topic="840">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/cjs/40/35_2.png" class="avatar"> cjs:</div>
+<blockquote>
+<ul>
+<li>Uploading Media</li>
+</ul>
+</blockquote>
+</aside>
+<p>I’m going to extract the documentation into a proper document (it’s currently in <a href="https://git.pleroma.social/pleroma/pleroma/-/blob/241f7cb1ed91a8d6855dbd03517e85c98c08edb7/lib/pleroma/web/activity_pub/activity_pub_controller.ex#L526-538" rel="nofollow noopener">https://git.pleroma.social/pleroma/pleroma/-/blob/241f7cb1ed91a8d6855dbd03517e85c98c08edb7/lib/pleroma/web/activity_pub/activity_pub_controller.ex#L526-538</a>) but we got it to work between Pleroma and AndStatus.<br>
+(if you wonder why we don’t have the <code>object</code> parameter: <a href="https://git.pleroma.social/pleroma/pleroma/-/merge_requests/1810" rel="nofollow noopener">https://git.pleroma.social/pleroma/pleroma/-/merge_requests/1810</a>, could be re-evaluated for standardization)</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/activitypub-experimentation-towards-ap-v2/840/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/activitypub-experimentation-towards-ap-v2/840/7</link>
+        <pubDate>Fri, 02 Oct 2020 18:37:57 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-840-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/activitypub-experimentation-towards-ap-v2/840.rss">ActivityPub Experimentation: Towards AP v2</source>
+      </item>
+      <item>
+        <title>ActivityPub Experimentation: Towards AP v2</title>
+        <dc:creator><![CDATA[rhiaro]]></dc:creator>
+        <description><![CDATA[
+            <p>We said earlier we’d merge <a href="https://socialhub.activitypub.rocks/t/getting-extensions-into-the-activitystreams-2-0-namespace/1001/2">Getting extensions into the AS2 namespace</a> into this session. This is perhaps a shorter term means toward iterating on / evolving the AP spec, and possibly a way to practice getting the community organised around consensus type decisions.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/activitypub-experimentation-towards-ap-v2/840/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/activitypub-experimentation-towards-ap-v2/840/6</link>
+        <pubDate>Fri, 02 Oct 2020 18:28:31 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-840-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/activitypub-experimentation-towards-ap-v2/840.rss">ActivityPub Experimentation: Towards AP v2</source>
+      </item>
+      <item>
+        <title>ActivityPub Experimentation: Towards AP v2</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks, the list of topics that I’ve tracked that the moderator can discuss are:</p>
+<ul>
+<li>How to build a community process for adoption &amp; encourage executing those adoptions</li>
+<li>Expanding beyond HTTP protocol</li>
+<li>Structured documents for server behavior</li>
+<li>Uploading Media</li>
+</ul>
+<p>Which can be merged/broken apart.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/activitypub-experimentation-towards-ap-v2/840/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/activitypub-experimentation-towards-ap-v2/840/4</link>
+        <pubDate>Fri, 02 Oct 2020 15:41:05 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-840-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/activitypub-experimentation-towards-ap-v2/840.rss">ActivityPub Experimentation: Towards AP v2</source>
+      </item>
+      <item>
+        <title>ActivityPub Experimentation: Towards AP v2</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/rhiaro">@rhiaro</a> mentioned  Uploading Media which I guess should be part of APv2 as well:</p>
+<aside class="quote no-group" data-username="rhiaro" data-post="7" data-topic="981">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/rhiaro/40/17_2.png" class="avatar"><a href="https://socialhub.activitypub.rocks/t/implementing-activitypub-client-to-server/981/7">Implementing ActivityPub Client-to-Server</a>
+</div>
+<blockquote>
+<p>I totally see that this gets more complicated where media is concerned, and special endpoints (endpoints, rather than servers) for things like photos and videos may need to be defined. Which was <a href="https://www.w3.org/TR/activitypub/#uploading-media">totally a thing in ActivityPub</a> but proper handling of it got postponed due to time constraints.</p>
+</blockquote>
+</aside>
+          <p><a href="https://socialhub.activitypub.rocks/t/activitypub-experimentation-towards-ap-v2/840/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/activitypub-experimentation-towards-ap-v2/840/3</link>
+        <pubDate>Fri, 02 Oct 2020 12:31:19 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-840-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/activitypub-experimentation-towards-ap-v2/840.rss">ActivityPub Experimentation: Towards AP v2</source>
+      </item>
+      <item>
+        <title>ActivityPub Experimentation: Towards AP v2</title>
+        <dc:creator><![CDATA[pukkamustard]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="cjs" data-post="1" data-topic="840">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/cjs/40/35_2.png" class="avatar"> cjs:</div>
+<blockquote>
+<p>There are two concrete problems that the BoF could address. There is the “meta” problem of how to get the community organized just enough to identify a path towards consensus, yet doing so without developing institutions since they stifle voices. Then, there is the “execution” problem where, once the community has a procedure to build consensus on a “yes, let’s adopt this” change, how do they entice software developers to build this out in new or existing applications.</p>
+</blockquote>
+</aside>
+<p>+1</p>
+<p>I believe documenting behavior is key, whether current best practices (use of WebFinger, NodeInfo, Federation.md, …) or more experimental stuff towards v2. I think a light-weight community-driven editorial process for such documents could be a way. Maybe this is something we could discuss here? (Moving some ideas from <a href="https://socialhub.activitypub.rocks/t/scaling-up-cooperation/837/4" class="inline-onebox">Scaling Up Cooperation</a> to this BoF).</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/activitypub-experimentation-towards-ap-v2/840/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/activitypub-experimentation-towards-ap-v2/840/2</link>
+        <pubDate>Fri, 02 Oct 2020 05:49:14 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-840-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/activitypub-experimentation-towards-ap-v2/840.rss">ActivityPub Experimentation: Towards AP v2</source>
+      </item>
+      <item>
+        <title>ActivityPub Experimentation: Towards AP v2</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <p><strong>New Description:</strong></p>
+<p>Thanks, the list of topics that I’ve tracked that the moderator can discuss are:</p>
+<ul>
+<li>Expanding beyond HTTP protocol</li>
+<li>Structured documents for server behavior</li>
+<li>Uploading Media</li>
+</ul>
+<p>And this topic can be moved to Scaling Up Cooperation:</p>
+<ul>
+<li>How to build a community process for adoption &amp; encourage executing those adoptions</li>
+</ul>
+<p>The live session will happen in Room A: <a href="https://bbb.fosshost.org/b/mor-fee-7b4-2nh" rel="nofollow noopener">https://bbb.fosshost.org/b/mor-fee-7b4-2nh</a></p>
+<p><strong>Old Description:</strong></p>
+<p>ActivityPub has helped spawn a diverse set of software, while also leaving fertile ground for further improvements in the protocol. It seems like the grassroots community has done an excellent job of identifying problems. A great deal of energy by end-users and developers alike has been spent pointing out problematic patterns of software-enabled harassment, the lack of privacy and security protections, the lack of software tooling for community-building, identifying the line where software doesn’t solve people-problems, and many many others.</p>
+<p>Why in 2 years has there been no major momentum towards an ActivityPub evolution? This has already been identified by the community: inherent with the grassroots nature of the community is the simple fact that any Fediverse software’s high user count grants that software’s developer/organization high influence in enacting, or avoiding, change on behalf of the Fediverse community.</p>
+<p>There are two concrete problems that the BoF could address. There is the “meta” problem of how to get the community organized just enough to identify a path towards consensus, yet doing so without developing institutions since they stifle voices. Then, there is the “execution” problem where, once the community has a procedure to build consensus on a “yes, let’s adopt this” change, how do they entice software developers to build this out in new or existing applications.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/activitypub-experimentation-towards-ap-v2/840/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/activitypub-experimentation-towards-ap-v2/840/1</link>
+        <pubDate>Sun, 02 Aug 2020 11:31:36 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-840-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/activitypub-experimentation-towards-ap-v2/840.rss">ActivityPub Experimentation: Towards AP v2</source>
+      </item>
+  </channel>
+</rss>

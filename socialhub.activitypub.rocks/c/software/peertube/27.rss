@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>PeerTube - SocialHub</title>
+    <link>https://socialhub.activitypub.rocks/c/software/peertube/27</link>
+    <description>Topics in the &#39;PeerTube&#39; category Take back control of your videos</description>
+    
+      <lastBuildDate>Fri, 05 Feb 2021 06:10:01 +0000</lastBuildDate>
+      <atom:link href="https://socialhub.activitypub.rocks/c/software/peertube/27.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Peertube wiki : Discover PeerTubers</title>
+          <dc:creator><![CDATA[Sebastian]]></dc:creator>
+          <category>PeerTube</category>
+          <description><![CDATA[
+            <p>There is a new wiki out to <strong>discover peertubes and peertubers</strong></p>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/423dc8c96b32bedb8547f65ce17f0f5f464afb2b.ico" class="site-icon" width="48" height="48">
+      <a href="https://peertubers.frama.wiki" target="_blank" rel="noopener">peertubers.frama.wiki</a>
+  </header>
+  <article class="onebox-body">
+    <img src="" class="thumbnail" width="" height="">
+
+<h3><a href="https://peertubers.frama.wiki" target="_blank" rel="noopener">start [Discover 'PeerTubers' !]</a></h3>
+
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/peertube-wiki-discover-peertubers/1412">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/peertube-wiki-discover-peertubers/1412</link>
+          <pubDate>Fri, 05 Feb 2021 06:10:01 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1412</guid>
+          <source url="https://socialhub.activitypub.rocks/t/peertube-wiki-discover-peertubers/1412.rss">Peertube wiki : Discover PeerTubers</source>
+        </item>
+        <item>
+          <title>About PeerTube</title>
+          <dc:creator><![CDATA[chocobozzz]]></dc:creator>
+          <category>PeerTube</category>
+          <description><![CDATA[
+            <p>Take back control of your videos</p>
+<p><a href="https://joinpeertube.org" rel="nofollow noopener">PeerTube</a> is a decentralized video hosting network, based on free/libre software.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/about-peertube/156">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/about-peertube/156</link>
+          <pubDate>Mon, 21 Oct 2019 10:59:44 +0000</pubDate>
+          <discourse:topicPinned>Yes</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-156</guid>
+          <source url="https://socialhub.activitypub.rocks/t/about-peertube/156.rss">About PeerTube</source>
+        </item>
+  </channel>
+</rss>

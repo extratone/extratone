@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Wiki posts and the latest topics list</title>
+    <link>https://socialhub.activitypub.rocks/t/wiki-posts-and-the-latest-topics-list/506</link>
+    <description>Note that creating a wiki like this (wiki + comments in one thread) does not work as expected. If there are comments following the wiki post, then any subsequent edits to the wiki _will not_ bump it to the top of the latest topics list. An edit can then be easily overlooked. I [reported](https://meta.discourse.org/t/should-an-edit-to-any-wiki-post-bump-the-entire-topic/104228) this to Meta in the past.
+
+There are 2 ways to fix this:
+
+1. If you want 2 wiki&#39;s and a discussion thread where wiki edits bump the topic to the top, then you should create 3 separate topics: one for discussion, 2 for the wiki&#39;s. The wiki topics should be _immediately_ closed after the wiki post. You could start the topics with a normal (non-editable) post that serves as the ToC linking the topics together and give some general info.
+2. Alternatively (works for your current setup) every user interested in the wiki must explicitly [_watch_](https://meta.discourse.org/t/should-an-edit-to-any-wiki-post-bump-the-entire-topic/104228/43?u=aschrijver) the topic. These users will be notified when edits occur, while others will be unaware.
+
+(PS You can delete this post after reading, because it is OT to the wiki content itself)</description>
+    
+    <lastBuildDate>Fri, 07 Feb 2020 18:29:16 +0000</lastBuildDate>
+    <category>Community</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/wiki-posts-and-the-latest-topics-list/506.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Wiki posts and the latest topics list</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>It is just so you know. We had a lot of wiki posts one time inviting all our members to contribute, make corrections, etc. With most members not noticing activity and watchers having notifications off, we found wiki posts not as useful as we thought.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/wiki-posts-and-the-latest-topics-list/506/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/wiki-posts-and-the-latest-topics-list/506/3</link>
+        <pubDate>Fri, 07 Feb 2020 18:29:16 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-506-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/wiki-posts-and-the-latest-topics-list/506.rss">Wiki posts and the latest topics list</source>
+      </item>
+      <item>
+        <title>Wiki posts and the latest topics list</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p>I split this out of the existing thread since, as you say, it’s off topic for that thread.</p>
+<p>Personally, I believe this to be expected behavior. The “latest” page should only contain the threads on which <em>new</em> discussion has taken place, and not edits to wiki posts. The fact that locked wiki posts on which there are no replies bump to the top of the latest list is IMO an edge-case and not behavior that should be relied on.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/wiki-posts-and-the-latest-topics-list/506/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/wiki-posts-and-the-latest-topics-list/506/2</link>
+        <pubDate>Fri, 07 Feb 2020 17:23:02 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-506-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/wiki-posts-and-the-latest-topics-list/506.rss">Wiki posts and the latest topics list</source>
+      </item>
+      <item>
+        <title>Wiki posts and the latest topics list</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Note that creating a wiki like this (wiki + comments in one thread) does not work as expected. If there are comments following the wiki post, then any subsequent edits to the wiki <em>will not</em> bump it to the top of the latest topics list. An edit can then be easily overlooked. I <a href="https://meta.discourse.org/t/should-an-edit-to-any-wiki-post-bump-the-entire-topic/104228" rel="nofollow noopener">reported</a> this to Meta in the past.</p>
+<p>There are 2 ways to fix this:</p>
+<ol>
+<li>If you want 2 wiki’s and a discussion thread where wiki edits bump the topic to the top, then you should create 3 separate topics: one for discussion, 2 for the wiki’s. The wiki topics should be <em>immediately</em> closed after the wiki post. You could start the topics with a normal (non-editable) post that serves as the ToC linking the topics together and give some general info.</li>
+<li>Alternatively (works for your current setup) every user interested in the wiki must explicitly <a href="https://meta.discourse.org/t/should-an-edit-to-any-wiki-post-bump-the-entire-topic/104228/43?u=aschrijver" rel="nofollow noopener"><em>watch</em></a> the topic. These users will be notified when edits occur, while others will be unaware.</li>
+</ol>
+<p>(PS You can delete this post after reading, because it is OT to the wiki content itself)</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/wiki-posts-and-the-latest-topics-list/506/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/wiki-posts-and-the-latest-topics-list/506/1</link>
+        <pubDate>Sun, 02 Feb 2020 11:53:25 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-506-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/wiki-posts-and-the-latest-topics-list/506.rss">Wiki posts and the latest topics list</source>
+      </item>
+  </channel>
+</rss>

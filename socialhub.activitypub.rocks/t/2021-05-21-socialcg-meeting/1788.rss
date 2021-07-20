@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>2021-05-21 SocialCG Meeting</title>
+    <link>https://socialhub.activitypub.rocks/t/2021-05-21-socialcg-meeting/1788</link>
+    <description>Per [the wiki](https://www.w3.org/wiki/SocialCG#Meetings) and [the calendar ](https://cloud.w3c.social/apps/calendar/p/GzxsDfE6CKtp9MHX/dayGridMonth/now), this meeting will be at:
+
+* 5pm UTC
+* 1pm EDT
+* 10am PDT
+
+2021-05-21T17:00:00Z → 2021-05-21T18:00:00Z
+
+## Location
+https://bbb.w3c.social/b/rhi-vp1-fv6-vn7 
+
+## Fallback Location
+(if people have connection trouble to bbb above):
+tba
+
+# Agenda:
+
+* 5min - quick introductions/reintroductions
+* 5min - @codenamedmitri - update on Metaverse Interoperability CG ([process](https://github.com/omigroup/OMI/blob/a4c3c19fde1fabc2dfb0224b207a54b5f962c82d/PROCESS.md), [CG Chair Nominations](https://github.com/omigroup/OMI/discussions/17) -- SocialCG members wanted!)
+* 5-10min - @codenamedmitri - update on https://socialhub.activitypub.rocks/t/proposal-rank-choice-meeting-times-for-the-weekend-socialcg-meeting/1713 
+* 50min - free-form</description>
+    
+    <lastBuildDate>Fri, 21 May 2021 16:42:22 +0000</lastBuildDate>
+    <category>SocialCG</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/2021-05-21-socialcg-meeting/1788.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>2021-05-21 SocialCG Meeting</title>
+        <dc:creator><![CDATA[codenamedmitri]]></dc:creator>
+        <description><![CDATA[
+            <p>Per <a href="https://www.w3.org/wiki/SocialCG#Meetings" rel="noopener nofollow ugc">the wiki</a> and <a href="https://cloud.w3c.social/apps/calendar/p/GzxsDfE6CKtp9MHX/dayGridMonth/now" rel="noopener nofollow ugc">the calendar </a>, this meeting will be at:</p>
+<ul>
+<li>5pm UTC</li>
+<li>1pm EDT</li>
+<li>10am PDT</li>
+</ul>
+<p>2021-05-21T17:00:00Z → 2021-05-21T18:00:00Z</p>
+<h2>
+<a name="location-1" class="anchor" href="#location-1"></a>Location</h2>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/5a461134f23795b9c624db5a85410ef119bb6ef2.png" class="site-icon" width="32" height="32">
+      <a href="https://bbb.w3c.social/b/rhi-vp1-fv6-vn7" target="_blank" rel="noopener nofollow ugc">bbb.w3c.social</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:330/71;"><img src="https://socialhub.activitypub.rocks/uploads/default/original/2X/2/2b1384da70a67d723ae4111d33c72b39bbc2e405.png" class="thumbnail" width="330" height="71"></div>
+
+<h3><a href="https://bbb.w3c.social/b/rhi-vp1-fv6-vn7" target="_blank" rel="noopener nofollow ugc">Social Web Incubator CG</a></h3>
+
+<p>You have been invited to join Social Web Incubator CG using BigBlueButton. To join, click the link above and enter your name.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<h2>
+<a name="fallback-location-2" class="anchor" href="#fallback-location-2"></a>Fallback Location</h2>
+<p>(if people have connection trouble to bbb above):<br>
+tba</p>
+<h1>
+<a name="agenda-3" class="anchor" href="#agenda-3"></a>Agenda:</h1>
+<ul>
+<li>5min - quick introductions/reintroductions</li>
+<li>5min - <a class="mention" href="/u/codenamedmitri">@codenamedmitri</a> - update on Metaverse Interoperability CG (<a href="https://github.com/omigroup/OMI/blob/a4c3c19fde1fabc2dfb0224b207a54b5f962c82d/PROCESS.md" rel="noopener nofollow ugc">process</a>, <a href="https://github.com/omigroup/OMI/discussions/17" rel="noopener nofollow ugc">CG Chair Nominations</a> – SocialCG members wanted!)</li>
+<li>5-10min - <a class="mention" href="/u/codenamedmitri">@codenamedmitri</a> - update on <a href="https://socialhub.activitypub.rocks/t/proposal-rank-choice-meeting-times-for-the-weekend-socialcg-meeting/1713" class="inline-onebox">PROPOSAL: Rank choice meeting times for the weekend SocialCG Meeting</a>
+</li>
+<li>50min - free-form</li>
+</ul>
+          <p><a href="https://socialhub.activitypub.rocks/t/2021-05-21-socialcg-meeting/1788/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/2021-05-21-socialcg-meeting/1788/1</link>
+        <pubDate>Fri, 21 May 2021 16:38:33 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1788-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/2021-05-21-socialcg-meeting/1788.rss">2021-05-21 SocialCG Meeting</source>
+      </item>
+  </channel>
+</rss>

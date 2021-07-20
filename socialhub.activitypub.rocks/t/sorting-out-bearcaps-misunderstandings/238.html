@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sorting out bearcaps misunderstandings - Server to Server - SocialHub</title>
+    <meta name="description" content="I understand the example with an password reset link (e.g. bearcap:?u=https://example.com/pwreset&amp;amp;t=123456) the bearcap: handler would be the browser and the browser would then transform this into an GET /pwreset HTTP/1.&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="238.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Sorting out bearcaps misunderstandings&#39;" href="https://socialhub.activitypub.rocks/t/sorting-out-bearcaps-misunderstandings/238.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/sorting-out-bearcaps-misunderstandings/238" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/sorting-out-bearcaps-misunderstandings/238" />
+<meta property="og:title" content="Sorting out bearcaps misunderstandings" />
+<meta name="twitter:title" content="Sorting out bearcaps misunderstandings" />
+<meta property="og:description" content="I understand the example with an password reset link (e.g. bearcap:?u=https://example.com/pwreset&amp;t=123456) the bearcap: handler would be the browser and the browser would then transform this into an GET /pwreset HTTP/1.1 with an Authorization: Bearer 123456 request.  So, if I understand corretcly, unless the browser vendors include this, it’s not feasible to use on the client / end user layer.  Because I am not that deeply involved in the Fediverse to think of an example where you could use it ..." />
+<meta name="twitter:description" content="I understand the example with an password reset link (e.g. bearcap:?u=https://example.com/pwreset&amp;t=123456) the bearcap: handler would be the browser and the browser would then transform this into an GET /pwreset HTTP/1.1 with an Authorization: Bearer 123456 request.  So, if I understand corretcly, unless the browser vendors include this, it’s not feasible to use on the client / end user layer.  Because I am not that deeply involved in the Fediverse to think of an example where you could use it ..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="3 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="6 ❤" />
+<meta property="article:published_time" content="2019-10-24T13:21:47+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="238.html">Sorting out bearcaps misunderstandings</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/activitypub.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #0088CC'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>ActivityPub</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/activitypub/s2s/7.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #808281'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Server to Server</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/criztovyl.html'><span itemprop='name'>criztovyl</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="238.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-10-24T13:21:47Z'>
+              <time itemprop='dateModified' datetime='2019-11-02T14:18:40Z' class='post-time'>
+                November 2, 2019,  2:18pm
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I understand the example with an password reset link (e.g. <code>bearcap:?u=https://example.com/pwreset&amp;t=123456</code>) the <code>bearcap:</code> handler would be the browser and the browser would then transform this into an <code>GET /pwreset HTTP/1.1</code> with an <code>Authorization: Bearer 123456</code> request.</p>
+<p>So, if I understand corretcly, unless the browser vendors include this, it’s not feasible to use on the client / end user layer.</p>
+<p>Because I am not <em>that</em> deeply involved in the Fediverse to think of an example where you could use it in the fediverse then instead, could you maybe provide one? Just out of curiosity. <img src="../../images/emoji/twitter/slight_smile.png@v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+        </div>
+
+        <meta itemprop='headline' content='Sorting out bearcaps misunderstandings'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="https://socialhub.activitypub.rocks/t/bearer-capabilities-internet-draft/167/4" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/bearer-capabilities-internet-draft/167/4'>
+                      <span itemprop='name'>Bearer capabilities internet draft</span>
+                    </a>
+                    <meta itemprop='position' content='1'>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/how.html'><span itemprop='name'>how</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="238.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-10-24T13:30:40Z'>
+              <time itemprop='dateModified' datetime='2019-10-27T17:27:49Z' class='post-time'>
+                October 27, 2019,  5:27pm
+              </time>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Not exactly <a class="mention" href="../../u/criztovyl.html">@criztovyl</a>: the idea is that the <em>server</em> knows what to do with the token in <code>t</code>.</p>
+<p>So a password reset example would be: <code>bearcap:?u=https://example.com&amp;t=123456</code></p>
+        </div>
+
+        <meta itemprop='headline' content='Sorting out bearcaps misunderstandings'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/kaniini.html'><span itemprop='name'>kaniini</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="238.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-10-24T13:32:53Z'>
+              <time itemprop='dateModified' datetime='2019-10-27T17:27:49Z' class='post-time'>
+                October 27, 2019,  5:27pm
+              </time>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="4" data-topic="167">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/criztovyl/40/127_2.png" class="avatar"> criztovyl:</div>
+<blockquote>
+<p>Because I am not <em>that</em> deeply involved in the Fediverse to think of an example where you could use it in the fediverse then instead, could you maybe provide one? Just out of curiosity. <img src="../../images/emoji/twitter/slight_smile.png@v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+</blockquote>
+</aside>
+<p>In the fediverse, you would use it as an <code>object</code> reference.  For example, a non-public post could have a <code>bearcap</code> ID with a token.</p>
+<aside class="quote no-group" data-post="5" data-topic="167" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/how/40/8_2.png" class="avatar"> how:</div>
+<blockquote>
+<p>Not exactly <a class="mention" href="../../u/criztovyl.html">@criztovyl</a>: the idea is that the <em>server</em> knows what to do with the token in <code>t</code> .</p>
+<p>So a password reset example would be: <code>bearcap:?u=https://example.com&amp;t=123456</code></p>
+</blockquote>
+</aside>
+<p>This isn’t part of the idea at all, actually – it is just something that an implementation <em>could</em> do if it wanted.  All a bearcap is a method for combining a URI with an access token.  That’s it.</p>
+        </div>
+
+        <meta itemprop='headline' content='Sorting out bearcaps misunderstandings'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/how.html'><span itemprop='name'>how</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="238.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-10-24T13:37:21Z'>
+              <time itemprop='dateModified' datetime='2019-10-27T17:27:49Z' class='post-time'>
+                October 27, 2019,  5:27pm
+              </time>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>In my head the token is a Capability URL, but indeed, the endpoint does not need to be the top-level domain: this way makes it a bit more private, since usually, an HTTPS request does not leak the path as it establishes the connection to the server before asking for it.</p>
+        </div>
+
+        <meta itemprop='headline' content='Sorting out bearcaps misunderstandings'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/criztovyl.html'><span itemprop='name'>criztovyl</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="238.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-10-24T14:24:32Z'>
+              <time itemprop='dateModified' datetime='2019-10-27T17:27:49Z' class='post-time'>
+                October 27, 2019,  5:27pm
+              </time>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote group-pleroma" data-post="6" data-topic="167">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/kaniini/40/89_2.png" class="avatar"> kaniini:</div>
+<blockquote>
+<p>In the fediverse, you would use it as an <code>object</code> reference. For example, a non-public post could have a <code>bearcap</code> ID with a token.</p>
+</blockquote>
+</aside>
+<p>This means that possessing the object containing the reference is enough for getting access.<br>
+So in the end it’s then only a tool for keeping the token out of the log of the remote server?</p>
+<p>Hmm, but the ID becomes invalid if the token is revoked.<br>
+Why not extend the AP Object and Link types with an attribute that indicates the authentication to be used to access the referenced object?<br>
+This would keep the ID URI stable.</p>
+        </div>
+
+        <meta itemprop='headline' content='Sorting out bearcaps misunderstandings'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/trwnh.html'><span itemprop='name'>trwnh</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="238.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-10-24T20:02:22Z'>
+              <time itemprop='dateModified' datetime='2019-10-27T17:27:49Z' class='post-time'>
+                October 27, 2019,  5:27pm
+              </time>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="8" data-topic="167">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/criztovyl/40/127_2.png" class="avatar"> criztovyl:</div>
+<blockquote>
+<p>Hmm, but the ID becomes invalid if the token is revoked.</p>
+</blockquote>
+</aside>
+<p>I think this is desirable in cases of authorization. You do not want a stable ID without an authorization token; being able to refer to such an ID means you can make unauthorized references that can be passed around insecure implementations. Yes, you could extract the <code>u</code> parameter, but that would be an invalid ID technically (effectively a forgery).</p>
+        </div>
+
+        <meta itemprop='headline' content='Sorting out bearcaps misunderstandings'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/criztovyl.html'><span itemprop='name'>criztovyl</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="238.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-10-24T22:04:22Z'>
+              <time itemprop='dateModified' datetime='2019-10-27T17:27:49Z' class='post-time'>
+                October 27, 2019,  5:27pm
+              </time>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I do not understand what you mean by “unauthorized references”.<br>
+I do not think that you can forbid anyone (at least not technically effective) to reference specific URIs.</p>
+<p>Without the token you should get a 403 (or 404, depending on the implementation), so nothing is lost. And if you can retrieve the content without an token, why give out one in the first place?</p>
+<p>Maybe it’s worth discussing what problem is to be addressed. To me this is very abstract.<br>
+I can imagine this being about something like posting a note to followers only, and only them, enforcing that using authentication and authorization somehow.<br>
+I think the “trust boundary” (?) here is the receiving server then; if you cannot trust that server to only allow the addressed users to see that note, don’t send the note there. I would even say everything else cannot be guaranteed unless you apply E2E encryption.</p>
+        </div>
+
+        <meta itemprop='headline' content='Sorting out bearcaps misunderstandings'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/kaniini.html'><span itemprop='name'>kaniini</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="238.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-10-25T01:05:16Z'>
+              <time itemprop='dateModified' datetime='2019-10-27T17:27:49Z' class='post-time'>
+                October 27, 2019,  5:27pm
+              </time>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="8" data-topic="167">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/criztovyl/40/127_2.png" class="avatar"> criztovyl:</div>
+<blockquote>
+<p>Hmm, but the ID becomes invalid if the token is revoked.</p>
+</blockquote>
+</aside>
+<p>That’s the point entirely.</p>
+<aside class="quote no-group" data-post="10" data-topic="167">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/criztovyl/40/127_2.png" class="avatar"> criztovyl:</div>
+<blockquote>
+<p>Without the token you should get a 403 (or 404, depending on the implementation), so nothing is lost. And if you can retrieve the content without an token, why give out one in the first place?</p>
+</blockquote>
+</aside>
+<p>You give a separate token to each peer.  If a peer does something with the token that you dislike, you can revoke that specific peer’s token.  The underlying object has a stable ID, it’s not the same ID as the <code>bearcap</code> ID.  It is allowed in JSON-LD to use references that redirect to more stable URIs.</p>
+<p>This also allows for things like one-time-use access tokens, meaning that once an implementation has fetched the object, future fetches with that <code>bearcap</code> URI will not work.  That means you <em>can</em> enforce things like making sure posts cannot be announced to new peers.</p>
+<p>While it is true that you cannot guarantee that a given peer will not ignore the recipient list and just make the supplied object publicly visible, that object does not have a publicly accessible IDs and therefore is deniable as a spoof.  It does let you guarantee that any attempt to Announce the object further through the network will fail, as neither the bearcap URI nor the stable URI are usable to fetch the object again.</p>
+<p>Hopefully this provides a tangible example of how the construction can be used as a hardening measure.</p>
+<p>More importantly, you can issue individualized <code>bearcap</code> URIs for things like inboxes upon creation of a relationship, either a server-to-server peering relationship or a person-to-person relationship (like a <code>Follow</code> activity).  The possession of a <code>bearcap</code> URI to use as an inbox allows for things like very simple greylisting: if a peer (or person) possesses a <code>bearcap</code>, then that means they are already trusted, and we can simply bypass other forms of authentication – like HTTP signatures, which are expensive.</p>
+        </div>
+
+        <meta itemprop='headline' content='Sorting out bearcaps misunderstandings'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/criztovyl.html'><span itemprop='name'>criztovyl</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="238.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-10-25T10:03:44Z'>
+              <time itemprop='dateModified' datetime='2019-10-27T17:27:49Z' class='post-time'>
+                October 27, 2019,  5:27pm
+              </time>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I still don’t get why doing it on ID level and not AP level is better.</p>
+<p>Like, why not just add an <code>authentication</code> attribute to Object (and Link; as the basic AP objects) and including the token there?</p>
+<pre><code class="lang-auto">{
+    "object": "bearcap:?u=https://example.com/secretpost&amp;t=123456"
+}
+</code></pre>
+<pre><code class="lang-auto">{
+   "object": "https://example.com/secretpost",
+   "authentication": {
+     "token": "123456"
+   }
+}
+</code></pre>
+<p>Like in the latter one the ID also becomes invalid as soon as the token expires because you cannot retrieve it anymore.</p>
+        </div>
+
+        <meta itemprop='headline' content='Sorting out bearcaps misunderstandings'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/kaniini.html'><span itemprop='name'>kaniini</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="238.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-10-25T10:15:17Z'>
+              <time itemprop='dateModified' datetime='2019-10-27T17:27:49Z' class='post-time'>
+                October 27, 2019,  5:27pm
+              </time>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>One has uses outside ActivityPub.  Your proposal does not.</p>
+<p>It is better to use tools that can be shared across multiple related concerns.</p>
+<p>If you do not have any interest in this construction, then that is fine, you are not required to implement it.  I will, however, be implementing this in Pleroma.  If that’s not important to you, great, then don’t implement it, but I’m not going to sit here and try to sell you on something that you clearly have no interest in.</p>
+        </div>
+
+        <meta itemprop='headline' content='Sorting out bearcaps misunderstandings'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="238.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-10-25T11:36:38Z'>
+              <time itemprop='dateModified' datetime='2019-10-27T17:27:50Z' class='post-time'>
+                October 27, 2019,  5:27pm
+              </time>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="12" data-topic="167">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/criztovyl/40/127_2.png" class="avatar"> criztovyl:</div>
+<blockquote>
+<p>Like, why not just add an <code>authentication</code> attribute to Object (and Link; as the basic AP objects) and including the token there?</p>
+</blockquote>
+</aside>
+<p>FYI, this is similar to some JSON-LD signatures and previous ideas of naiively supporting object capabilities about a year ago. There was a lot of heated arguments. But the TL;DR is that the community is trying much less to shove ActivityPub <strong>protocol</strong> side effects into ActivityStreams itself, which presents all sorts of problems with JSON-LD parsing and understanding in order to close by-design attack vectors, and instead the community tends towards strategically leaving ActivityStreams as “simply application data” (and <strong>application</strong> side effects) and tries to improve the actual underlying protocol by utilizing orthogonal tooling to any ontology (hence efforts like Datashards, bearcap, adoption of HTTPSignatures, etc).</p>
+<p>I think the latter is better strategically. Your idea requires parsing payloads to understand and proceed with protocol which is not a good design strategy for long term stability.</p>
+<p>You’re free to continue going down this route in a separate thread, but to warn you, you’ll probably be treading ground where previous battles have already been resolved.</p>
+        </div>
+
+        <meta itemprop='headline' content='Sorting out bearcaps misunderstandings'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/kaniini.html'><span itemprop='name'>kaniini</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="238.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-10-25T11:41:47Z'>
+              <time itemprop='dateModified' datetime='2019-10-27T17:27:50Z' class='post-time'>
+                October 27, 2019,  5:27pm
+              </time>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>To be absolutely clear, I consider discussing alternatives to bearcaps to be off-topic for this thread.  If you’re not interested in the technique, then feel free to develop alternatives.  If they are better, we will consider using them.  Nothing is set in stone.</p>
+<p>But I will say that we are now <em>two years into developing bearcaps and related technology</em>, and that they’ve gotten a lot of people who have put a lot of effort into developing the techniques, and you’re looking at a very minor primitive of the entire package.  But we want to build things that can be shared with others, so that all of the <em>specification labor</em> can be distributed across a wider group of participants.  Specification labor requires very precise thinking, so it is good to distribute it across as wide an audience as possible.</p>
+        </div>
+
+        <meta itemprop='headline' content='Sorting out bearcaps misunderstandings'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/criztovyl.html'><span itemprop='name'>criztovyl</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="238.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-10-25T11:45:59Z'>
+              <time itemprop='dateModified' datetime='2019-10-27T17:27:50Z' class='post-time'>
+                October 27, 2019,  5:27pm
+              </time>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Okay, I think I got confused by this being posted to <a class="hashtag" href="https://socialhub.activitypub.rocks/c/5-activitypub">#<span>activitypub</span></a>, (ignorantly) discussing it in that context.</p>
+<p>Sorry for wasting (?) your time. ._.</p>
+        </div>
+
+        <meta itemprop='headline' content='Sorting out bearcaps misunderstandings'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/kaniini.html'><span itemprop='name'>kaniini</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="238.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-10-25T11:52:11Z'>
+              <time itemprop='dateModified' datetime='2019-10-27T17:27:50Z' class='post-time'>
+                October 27, 2019,  5:27pm
+              </time>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I posted it to <a class="hashtag" href="https://socialhub.activitypub.rocks/c/5-activitypub">#<span>activitypub</span></a> <em>because</em> it is related to ActivityPub, namely it is a primitive that many implementations have expressed interest in using.  I hope you can understand my frustration, however.</p>
+        </div>
+
+        <meta itemprop='headline' content='Sorting out bearcaps misunderstandings'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/criztovyl.html'><span itemprop='name'>criztovyl</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="238.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-10-25T11:56:12Z'>
+              <time itemprop='dateModified' datetime='2019-10-27T17:27:50Z' class='post-time'>
+                October 27, 2019,  5:27pm
+              </time>
+          <span itemprop='position'>#15</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I can understand you are frustrated about that, yes.</p>
+<p>I am still missing too much context it seems.</p>
+        </div>
+
+        <meta itemprop='headline' content='Sorting out bearcaps misunderstandings'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/how.html'><span itemprop='name'>how</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="238.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-10-27T08:35:27Z'>
+              <time itemprop='dateModified' datetime='2019-10-27T17:27:50Z' class='post-time'>
+                October 27, 2019,  5:27pm
+              </time>
+          <span itemprop='position'>#16</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I recommend starting with <a class="mention" href="../../u/cwebber.html">@cwebber</a>’s presentation found at <a href="../ocappub/133.html" class="inline-onebox">OcapPub</a></p>
+        </div>
+
+        <meta itemprop='headline' content='Sorting out bearcaps misunderstandings'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

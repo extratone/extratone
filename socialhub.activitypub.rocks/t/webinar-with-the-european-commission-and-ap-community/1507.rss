@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Webinar with the European Commission and AP Community</title>
+    <link>https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507</link>
+    <description>&lt;div align=&quot;center&quot;&gt;
+
+![fediverse-european-commission-event-2021-square4|405x358](upload://tcBYtGzxHooA8wdzxmJEVkm9Fq3.svg) 
+
+&lt;/div&gt;
+
+Recently the NGI0 consortium reached out to relay a request from the European Commission to organize a _Webinar_ with the ActivityPub community to discuss the protocols and how they could become a standard for EU institutions to use, with the idea of removing some dependency on centralized networks and the companies promoting them.
+
+This would be a maximum of 2 hours, and we certainly could use the opportunity to use the new _live_ feature of #software:peertube to host the webinar.
+
+I would like to propose that we start with having a preparation conversation here to summarize the points we could use to demonstrate why the EC should consider ActivityPub, and then take a moment to _eat our own dog food_ and test drive this Peertube Live feature (which so far did not work for me).
+
+### Update 13 April:
+
+For newcomers to this very long thread some links:
+
+- Planning preparation meetups: https://socialhub.activitypub.rocks/t/preparation-meetups-for-ec-events-editable-wiki/1587
+
+- These are the presentations we are currently improving:
+
+  - Introductory presentation: https://pad.public.cat/ngi0-ec-activitypub-liaison-presentation-2021-04-19-intro#
+
+  - ActivityPub for Administrations: https://pad.public.cat/ngi0-ec-activitypub-liaison-presentation-2021-04-19?both#
+
+- This is where we keep general notes: https://pad.public.cat/ngi0-ec-activitypub-liaison?both#
+
+- This is the NGI Zero announcement you can share: https://www.ngi.eu/event/ngi-breaks-down-walls-decentralize-social-networking-with-activitypub/
+
+- This is our own announcement page you can share: https://socialhub.activitypub.rocks/pub/ec-ngi0-liaison-webinars-and-workshop-april-2021
+
+---
+
+(Besides on this thread, there&#39;s other comments on: https://socialhub.activitypub.rocks/t/meeting-notes-for-prep-call-ec-webinar-19-april/1567)</description>
+    
+    <lastBuildDate>Thu, 29 Apr 2021 14:45:10 +0000</lastBuildDate>
+    <category>Meeting</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Webinar with the European Commission and AP Community</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/272">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/272</link>
+        <pubDate>Thu, 29 Apr 2021 14:45:17 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1507-272</guid>
+        <source url="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507.rss">Webinar with the European Commission and AP Community</source>
+      </item>
+      <item>
+        <title>Webinar with the European Commission and AP Community</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Please follow up to <a href="https://socialhub.activitypub.rocks/t/ec-ngi0-liaison-webinars-and-workshop-april-2021/1539" class="inline-onebox">EC - NGI0 Liaison -- Webinars and Workshop April 2021</a>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/271">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/271</link>
+        <pubDate>Thu, 29 Apr 2021 14:45:10 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1507-271</guid>
+        <source url="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507.rss">Webinar with the European Commission and AP Community</source>
+      </item>
+      <item>
+        <title>Webinar with the European Commission and AP Community</title>
+        <dc:creator><![CDATA[tfardet]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks a lot for the nice 2nd part of this webinar series!<br>
+I will probably not join the hands-on workshop but just let us know on Fedi if you need live interactions from there I guess?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/270">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/270</link>
+        <pubDate>Mon, 26 Apr 2021 10:18:25 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1507-270</guid>
+        <source url="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507.rss">Webinar with the European Commission and AP Community</source>
+      </item>
+      <item>
+        <title>Webinar with the European Commission and AP Community</title>
+        <dc:creator><![CDATA[j8ter]]></dc:creator>
+        <description><![CDATA[
+            <p>Done, link here, will be there in and out (dinner now) →   <a href="https://bbb.tbm.tudelft.nl/b/joo-ijf-xcy-cil" class="inline-onebox" rel="noopener nofollow ugc">FediverseWebinars</a><br>
+<a class="mention" href="/u/cwebber">@cwebber</a> let me know if everyone works, I changed the room settings so you should enter as moderator enabling you to take presenter and try out screen sharing.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/269">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/269</link>
+        <pubDate>Sun, 25 Apr 2021 16:23:44 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1507-269</guid>
+        <source url="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507.rss">Webinar with the European Commission and AP Community</source>
+      </item>
+      <item>
+        <title>Webinar with the European Commission and AP Community</title>
+        <dc:creator><![CDATA[cwebber]]></dc:creator>
+        <description><![CDATA[
+            <p>Opening it today for tests would be a good idea, I think.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/268">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/268</link>
+        <pubDate>Sun, 25 Apr 2021 16:17:24 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1507-268</guid>
+        <source url="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507.rss">Webinar with the European Commission and AP Community</source>
+      </item>
+      <item>
+        <title>Webinar with the European Commission and AP Community</title>
+        <dc:creator><![CDATA[j8ter]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="cwebber" data-post="266" data-topic="1507">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/cwebber/40/51_2.png" class="avatar"> cwebber:</div>
+<blockquote>
+<ul>
+<li>Introduction</li>
+<li>Social Centralization, Social Harm</li>
+<li>Federation, Past and Present</li>
+<li>The Future of Decentralization</li>
+<li>Essential Infrastructure</li>
+</ul>
+</blockquote>
+</aside>
+<p>Works really well I think, because it both repeats themes fro  the 1st gathering and introduces some technical depth as well. Logistically I will simply introduce the event, after which I give you the floor (and make you presenter, so you can share your screen). The room will be open an hour before (9 am CEST), if you want I can open it today as well for audio/video tests, whatever you like.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/267">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/267</link>
+        <pubDate>Sun, 25 Apr 2021 16:08:43 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1507-267</guid>
+        <source url="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507.rss">Webinar with the European Commission and AP Community</source>
+      </item>
+      <item>
+        <title>Webinar with the European Commission and AP Community</title>
+        <dc:creator><![CDATA[cwebber]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey there…</p>
+<p>I thought the stuff added to the hedgedoc text was good.  FYI I’ll be actually presenting starting from a different document; I only have so much time left to prepare, and it’s easiest to build the best presentation I can using the software I usually use (Racket’s Slideshow, that way I can reuse useful components from previous talks quickly).</p>
+<p>I’m borrowing most of the structure from the HedgeDoc writeup, but I have a new title, building on a theme I think is appropriate for this talk: “Decentralized Networked Communities as Essential Infrastructure”</p>
+<p>Here is the high-level outline, which you can see as fairly similar to the Hedgedoc one:</p>
+<ul>
+<li>Introduction</li>
+<li>Social Centralization, Social Harm</li>
+<li>Federation, Past and Present</li>
+<li>The Future of Decentralization</li>
+<li>Essential Infrastructure</li>
+</ul>
+<p>The end then is where I think the EU/EC can collaborate with the fediverse on a direction that is healthy for countries and their citizens/residents, bringing it home in  a way that is positive and actionable, I hope.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/266">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/266</link>
+        <pubDate>Sun, 25 Apr 2021 15:45:46 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1507-266</guid>
+        <source url="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507.rss">Webinar with the European Commission and AP Community</source>
+      </item>
+      <item>
+        <title>Webinar with the European Commission and AP Community</title>
+        <dc:creator><![CDATA[j8ter]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Chris, just wanted to let you know, I added some thoughts/suggestions to the Hedgedoc-texts (as speaker notes). Will revisit it this evening/tomorrow if I have any more. The points you drafted out are relevant and interesting I think, there was some talk on moderation, trust and security, the slide titles and notes reflect that I think (as well as provide insight into how ActivityPub is actually developed and where it’s going). Looking forward to it, is what I’m saying with too many words <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/+1.png?v=9" title=":+1:" class="emoji" alt=":+1:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/265">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/265</link>
+        <pubDate>Sat, 24 Apr 2021 15:08:26 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1507-265</guid>
+        <source url="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507.rss">Webinar with the European Commission and AP Community</source>
+      </item>
+      <item>
+        <title>Webinar with the European Commission and AP Community</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>It has been a very pleasant experience for me as well, Cristina. Thanks to you too!! The presentation was great, the discussion lively, and the feedback was all good <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/264">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/264</link>
+        <pubDate>Fri, 23 Apr 2021 13:32:34 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1507-264</guid>
+        <source url="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507.rss">Webinar with the European Commission and AP Community</source>
+      </item>
+      <item>
+        <title>Webinar with the European Commission and AP Community</title>
+        <dc:creator><![CDATA[CristinaDeLisle]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello all,</p>
+<p>I want to say a big thank you for all your involvement regarding the presentation from the first webinar! I’m adding it here, since this place is a statement of our work together. <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/hugs.png?v=9" title=":hugs:" class="emoji" alt=":hugs:"></p>
+<p>It was a very interesting experience for me and I think we managed to create together a content which is valuable to the community. I did my best to integrate all feedbacks / ideas received and I think we all did an amazing job working together. <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/+1.png?v=9" title=":+1:" class="emoji" alt=":+1:"></p>
+<p>Thank you and fingers crossed for the following webinar! <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/crossed_fingers.png?v=9" title=":crossed_fingers:" class="emoji" alt=":crossed_fingers:"></p>
+<p>Kind regards,<br>
+Cristina</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/263">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/263</link>
+        <pubDate>Fri, 23 Apr 2021 12:55:43 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1507-263</guid>
+        <source url="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507.rss">Webinar with the European Commission and AP Community</source>
+      </item>
+      <item>
+        <title>Webinar with the European Commission and AP Community</title>
+        <dc:creator><![CDATA[j8ter]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Chris, no problem, would you be okay if we would still go over the presentation slides and add suggestions/ideas in the speaker notes? My idea was to have the same setup as during the 1st webinar, where I do a brief introduction of the event and its origins, after which I leave the floor to you for the presentation. That way I can do most of the recapping and you can focus on the content. You can find my introduction slides here → <a href="https://pad.public.cat/ngi0-ec-activitypub-liaison-presentation-2021-04-26-intro#" class="inline-onebox" rel="noopener nofollow ugc">HedgeDoc - Collaborative markdown notes</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/262">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/262</link>
+        <pubDate>Fri, 23 Apr 2021 12:31:06 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1507-262</guid>
+        <source url="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507.rss">Webinar with the European Commission and AP Community</source>
+      </item>
+      <item>
+        <title>Webinar with the European Commission and AP Community</title>
+        <dc:creator><![CDATA[cwebber]]></dc:creator>
+        <description><![CDATA[
+            <p>Heya… regarding the preview presentation of my talk for Monday, I don’t have time to do it today… too much going on.  But I will be there on Monday, super bright &amp; early, to give my talk, and will be spending most of my weekend preparing for it.</p>
+<p>Sorry if you set aside time to attend this morning!  I’m struggling under the load of tasks I’m on, and couldn’t do adequate preparation during the week, hence prep getting shunted to the weekend for me.  Sorry!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/261">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/261</link>
+        <pubDate>Fri, 23 Apr 2021 12:24:20 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1507-261</guid>
+        <source url="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507.rss">Webinar with the European Commission and AP Community</source>
+      </item>
+      <item>
+        <title>Webinar with the European Commission and AP Community</title>
+        <dc:creator><![CDATA[mathewlowry]]></dc:creator>
+        <description><![CDATA[
+            <p>Interesting perspective. Noted, with thanks.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/260">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/260</link>
+        <pubDate>Tue, 20 Apr 2021 07:43:40 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1507-260</guid>
+        <source url="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507.rss">Webinar with the European Commission and AP Community</source>
+      </item>
+      <item>
+        <title>Webinar with the European Commission and AP Community</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="mathewlowry" data-post="258" data-topic="1507">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/mathewlowry/40/744_2.png" class="avatar"> mathewlowry:</div>
+<blockquote>
+<p>it would probably work with the audience I have in mind, I can understand others not appreciating it</p>
+</blockquote>
+</aside>
+<p>It’s not because your audience expects caricature and polarization that you should lower your discourse to such simplification. In doing so, you encourage such behavior. It’s impossibly hard to work from “Us and Them” to “just us”.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/259">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/259</link>
+        <pubDate>Tue, 20 Apr 2021 07:35:50 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1507-259</guid>
+        <source url="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507.rss">Webinar with the European Commission and AP Community</source>
+      </item>
+      <item>
+        <title>Webinar with the European Commission and AP Community</title>
+        <dc:creator><![CDATA[mathewlowry]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for that. Yes, I will avoid geekdom, although it would probably work with the audience I have in mind, I can understand others not appreciating it. But the main thing I wanted was confirmation that there was nothing technically wrong with the way it presents the USP.</p>
+<p>I’ll make the video essentially so I can send it to my contacts to explain why they should get up to speed and investigate further. A small fraction will, at best.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/258">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/258</link>
+        <pubDate>Tue, 20 Apr 2021 07:12:50 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1507-258</guid>
+        <source url="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507.rss">Webinar with the European Commission and AP Community</source>
+      </item>
+      <item>
+        <title>Webinar with the European Commission and AP Community</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/257">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/257</link>
+        <pubDate>Tue, 20 Apr 2021 06:40:49 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1507-257</guid>
+        <source url="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507.rss">Webinar with the European Commission and AP Community</source>
+      </item>
+      <item>
+        <title>Webinar with the European Commission and AP Community</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>As I said in <a href="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/152">prior feedback</a> I especially love the part “how we go forwards” and explain the USP of a federated landscape. I think there’s nothing particularly wrong with the entire video, but as <a class="mention" href="/u/how">@how</a> says there’s different ways to present it. It needs to be quite condensed, so need to necessarily pick &amp; choose the perspective that most appeals to you.</p>
+<p>I personally wouldn’t use the term ‘geekdom’. Though some are very fond of the word, to people not knowing the term it may have negative connotation.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/256">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/256</link>
+        <pubDate>Tue, 20 Apr 2021 05:36:13 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1507-256</guid>
+        <source url="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507.rss">Webinar with the European Commission and AP Community</source>
+      </item>
+      <item>
+        <title>Webinar with the European Commission and AP Community</title>
+        <dc:creator><![CDATA[mathewlowry]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello again. As a followup to today’s webinar, I’m trying to stimulate interest in attending next Monday’s webinar among social media teams across the EC. I’m thinking of adapting the video I put together last week to help them understand what this is about.</p>
+<p>So I just wanted to repeat the question I asked last week: was there anything <em>technically wrong</em> with those slides?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/255">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/255</link>
+        <pubDate>Mon, 19 Apr 2021 18:23:52 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1507-255</guid>
+        <source url="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507.rss">Webinar with the European Commission and AP Community</source>
+      </item>
+      <item>
+        <title>Webinar with the European Commission and AP Community</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <ul>
+<li><a href="https://bbb.tbm.tudelft.nl/b/joo-ijf-xcy-cil" class="inline-onebox">FediverseWebinars</a></li>
+</ul>
+          <p><a href="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/254">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/254</link>
+        <pubDate>Mon, 19 Apr 2021 08:07:33 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1507-254</guid>
+        <source url="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507.rss">Webinar with the European Commission and AP Community</source>
+      </item>
+      <item>
+        <title>Webinar with the European Commission and AP Community</title>
+        <dc:creator><![CDATA[hamishcampbell]]></dc:creator>
+        <description><![CDATA[
+            <p>Can you post the current link agen as it might have accidentally changed - if you start and stop meetings in non proscribed ways this happens sometimes</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/253">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/253</link>
+        <pubDate>Mon, 19 Apr 2021 08:05:33 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1507-253</guid>
+        <source url="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507.rss">Webinar with the European Commission and AP Community</source>
+      </item>
+      <item>
+        <title>Webinar with the European Commission and AP Community</title>
+        <dc:creator><![CDATA[j8ter]]></dc:creator>
+        <description><![CDATA[
+            <p>It is indeed open, are you waiting for some confirmation on the echo/microphone test (that can sometimes take a bit)?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/252">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/252</link>
+        <pubDate>Mon, 19 Apr 2021 07:56:25 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1507-252</guid>
+        <source url="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507.rss">Webinar with the European Commission and AP Community</source>
+      </item>
+      <item>
+        <title>Webinar with the European Commission and AP Community</title>
+        <dc:creator><![CDATA[hamishcampbell]]></dc:creator>
+        <description><![CDATA[
+            <p>Is the room open as am getting a spinning waiting icon <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/251">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/251</link>
+        <pubDate>Mon, 19 Apr 2021 07:54:32 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1507-251</guid>
+        <source url="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507.rss">Webinar with the European Commission and AP Community</source>
+      </item>
+      <item>
+        <title>Webinar with the European Commission and AP Community</title>
+        <dc:creator><![CDATA[mathewlowry]]></dc:creator>
+        <description><![CDATA[
+            <p>2 quick clarifications:</p>
+<aside class="quote no-group quote-modified" data-username="CristinaDeLisle" data-post="224" data-topic="1507">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/cristinadelisle/40/522_2.png" class="avatar"> CristinaDeLisle:</div>
+<blockquote>
+<p>His main criticism was that current big platform spend a lot of resources to invest in outreching citizens and they are doing a good job from the perspective of the audience. It does not matter much that it’s a direct approach or a mediated one…  I’ve seen this idea with direct outreach as an important point mentioned in some other places</p>
+</blockquote>
+</aside>
+<p>The main problem I <em>had</em> with Unmediated Citizen Engagement is this:<br>
+a) the EC spends a lot of time using social media platforms to reach citizens. I am not a fan of this approach, but at the time they saw it as a lot easier than the alternative - making their own website interactive and building a community there (more here: <a href="https://mathewlowry.medium.com/from-ep2009-to-ep2019-a-lost-decade-ccba4205ebbc" rel="noopener nofollow ugc">From #EP2009 to #EP2019: a lost decade?</a>)<br>
+b) this slide (<em>seems</em> to) argues that the EC can reach citizens <em>now</em> via the Fediverse . This is not true, yet. We could use their help in making it happen, but from the perspective of the EC’s social media teams, spending resources on the Fediverse would appear to be a waste of time, as almost noone is there.</p>
+<p>So all that’s really needed is to:</p>
+<ul>
+<li>emphasise the benefits of having unmediated access - ie, the benefits to them of a successful Fediverse</li>
+<li>emphasise that they can help make the Fediverse successful by posting there anyway.</li>
+</ul>
+<aside class="quote no-group" data-username="CristinaDeLisle" data-post="224" data-topic="1507">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/cristinadelisle/40/522_2.png" class="avatar"> CristinaDeLisle:</div>
+<blockquote>
+<p> At Inter-department communication he said it does not reflect how the EU works and people will laugh at us. </p>
+</blockquote>
+</aside>
+<p>As I said in a meeting, the EC has been enduring an internal debate on what internal comms tools to use for many years. They won’t want to open that up again. There’s no chance they’ll use the Fediverse for internal comms. Trying to sell that simply looks naive, sorry.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/250">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/250</link>
+        <pubDate>Mon, 19 Apr 2021 07:34:04 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1507-250</guid>
+        <source url="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507.rss">Webinar with the European Commission and AP Community</source>
+      </item>
+      <item>
+        <title>Webinar with the European Commission and AP Community</title>
+        <dc:creator><![CDATA[bengo]]></dc:creator>
+        <description><![CDATA[
+            <p>I plan to attend. I’m not a EU citizen (though some of my family are), though I’m still happy to observe or participate in the discussion.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/249">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/249</link>
+        <pubDate>Sun, 18 Apr 2021 17:15:05 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1507-249</guid>
+        <source url="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507.rss">Webinar with the European Commission and AP Community</source>
+      </item>
+      <item>
+        <title>Webinar with the European Commission and AP Community</title>
+        <dc:creator><![CDATA[j8ter]]></dc:creator>
+        <description><![CDATA[
+            <p>Jup, works fine. I think this resembles the Hedgedoc-format sufficiently, but that may just be my lacking graphical skills <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/248">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507/248</link>
+        <pubDate>Sun, 18 Apr 2021 12:57:29 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1507-248</guid>
+        <source url="https://socialhub.activitypub.rocks/t/webinar-with-the-european-commission-and-ap-community/1507.rss">Webinar with the European Commission and AP Community</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>A system allowing existing user to vouch for new invitees</title>
+    <link>https://socialhub.activitypub.rocks/t/a-system-allowing-existing-user-to-vouch-for-new-invitees/1891</link>
+    <description>I mentioned this **feature idea** over [on Mastodon](https://merveilles.town/@lrhodes/106495932606975203), and a few people suggested I suggest it here as well: Some sort of semantic relation between accounts, built into an instance&#39;s invitation and/or registration function, indicating that the newer account was admitted at the request of the older.
+
+You can think of it as a profile-based system for recording when one user *vouched for* adding another. On the one hand, this would add a slightly different way of mapping the semantic relationships between accounts, on top of the follows, which are more gregarious. The vouched-for/by linkage between accounts would imply some measure of trust and entail some measure of responsibility. As such, fostering those relations could encourage community-building.
+
+That&#39;s somewhat aspirational, though. The more immediate practical effect is that baking vouched-for/by relationships into profiles would give moderators a tool for working through mediation procedures.
+
+An example:
+&gt; Suppose you moderate an invite-only instance. An active member  — call her Helga — DMs you and asks, &quot;Hey, can my pal Ogbar get an invite?&quot; Sure thing. You go into the mod panel to generate the invite. One of the options is a checkbox labelled &quot;Vouched by…&quot; or something to that effect. Checking that activates a text field/drop down. From that, you select Helga&#39;s account name. Now, when Ogbar uses the invite link, the account he creates will be permanently linked to Helga&#39;s account in a semantic relationship that&#39;s visible to moderators.
+&gt; 
+&gt; Weeks pass. One day, Ogbar does something that requires moderation. A glance at his account would tell you who requested their invite. So rather than jumping straight to a ban or some other heavy-handed measure, you can ask Helga to mediate. You may not even need to ask — maybe just knowing that that act of having vouched for Ogbar is baked into their accounts encourages Helga to feel just a little responsible for Ogbar&#39;s behavior, and she steps in of her own volition.
+&gt; 
+&gt; But let&#39;s say that things don&#39;t work out that way. Helga never steps in and is unresponsive to friendly requests for mediation. Ogbar&#39;s behavior worsens, and eventually you feel compelled to ban him. Then, a year later, Helga DMs you and asks,  &quot;Hey, can my pal Ryuchi get an invite?&quot; The Ogbar episode is no longer fresh in your mind, so you look at her profile for a refresher. Oh, right… Maybe her vouching for a prospective user shouldn&#39;t count for so much, huh? Informed, you can better weigh how to handle her request — whether that means turning it down flat, basing your decision on some other factor (like Ryuchi&#39;s social media history elsewhere), or warning Helga that banning another user she vouched for will mean tighter restrictions on her account in the future.
+
+There are some implementation questions that need to be worked out (e.g. would these relations be public, or visible only to the moderators and the accounts linked by vouching?), but I think it&#39;s an idea worth exploring.</description>
+    
+    <lastBuildDate>Wed, 30 Jun 2021 20:34:50 +0000</lastBuildDate>
+    <category>Fediverse Futures</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/a-system-allowing-existing-user-to-vouch-for-new-invitees/1891.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>A system allowing existing user to vouch for new invitees</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>Also how invitations work in Smithereen. I could, in theory, expose that in ActivityPub, except it would be a bit of a pain in the ass because this data is in a different table (I have users and accounts as separate entities).</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/2X/b/bd90b1166bc8404d58b16aff7b940256be73b5df.png" data-download-href="https://socialhub.activitypub.rocks/uploads/default/bd90b1166bc8404d58b16aff7b940256be73b5df" title="image"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/b/bd90b1166bc8404d58b16aff7b940256be73b5df_2_690x274.png" alt="image" data-base62-sha1="r2Yf2nTySGUDK9AH1sa83OuLD9J" width="690" height="274" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/b/bd90b1166bc8404d58b16aff7b940256be73b5df_2_690x274.png, https://socialhub.activitypub.rocks/uploads/default/optimized/2X/b/bd90b1166bc8404d58b16aff7b940256be73b5df_2_1035x411.png 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/2X/b/bd90b1166bc8404d58b16aff7b940256be73b5df.png 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/b/bd90b1166bc8404d58b16aff7b940256be73b5df_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">image</span><span class="informations">1319×525 73.2 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>You can add a custom field to your actors to specify who invited them. You can also, in theory, have a custom activity type in your own namespace to vouch for someone, but that’s a somewhat uncharted territory.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/a-system-allowing-existing-user-to-vouch-for-new-invitees/1891/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/a-system-allowing-existing-user-to-vouch-for-new-invitees/1891/3</link>
+        <pubDate>Wed, 30 Jun 2021 20:34:50 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1891-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/a-system-allowing-existing-user-to-vouch-for-new-invitees/1891.rss">A system allowing existing user to vouch for new invitees</source>
+      </item>
+      <item>
+        <title>A system allowing existing user to vouch for new invitees</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p>For the record, this is currently how invites work on Mastodon—the inviting user is visible to the admin when looking at the admin version of the profile. Obviously this isn’t really a “vouch” but socially it can act the same way—if someone is making trouble, I’m going to start looking at who invited them and why, and what other users they’ve been inviting.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/a-system-allowing-existing-user-to-vouch-for-new-invitees/1891/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/a-system-allowing-existing-user-to-vouch-for-new-invitees/1891/2</link>
+        <pubDate>Wed, 30 Jun 2021 14:47:51 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1891-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/a-system-allowing-existing-user-to-vouch-for-new-invitees/1891.rss">A system allowing existing user to vouch for new invitees</source>
+      </item>
+      <item>
+        <title>A system allowing existing user to vouch for new invitees</title>
+        <dc:creator><![CDATA[lrhodes]]></dc:creator>
+        <description><![CDATA[
+            <p>I mentioned this <strong>feature idea</strong> over <a href="https://merveilles.town/@lrhodes/106495932606975203" rel="noopener nofollow ugc">on Mastodon</a>, and a few people suggested I suggest it here as well: Some sort of semantic relation between accounts, built into an instance’s invitation and/or registration function, indicating that the newer account was admitted at the request of the older.</p>
+<p>You can think of it as a profile-based system for recording when one user <em>vouched for</em> adding another. On the one hand, this would add a slightly different way of mapping the semantic relationships between accounts, on top of the follows, which are more gregarious. The vouched-for/by linkage between accounts would imply some measure of trust and entail some measure of responsibility. As such, fostering those relations could encourage community-building.</p>
+<p>That’s somewhat aspirational, though. The more immediate practical effect is that baking vouched-for/by relationships into profiles would give moderators a tool for working through mediation procedures.</p>
+<p>An example:</p>
+<blockquote>
+<p>Suppose you moderate an invite-only instance. An active member  — call her Helga — DMs you and asks, “Hey, can my pal Ogbar get an invite?” Sure thing. You go into the mod panel to generate the invite. One of the options is a checkbox labelled “Vouched by…” or something to that effect. Checking that activates a text field/drop down. From that, you select Helga’s account name. Now, when Ogbar uses the invite link, the account he creates will be permanently linked to Helga’s account in a semantic relationship that’s visible to moderators.</p>
+<p>Weeks pass. One day, Ogbar does something that requires moderation. A glance at his account would tell you who requested their invite. So rather than jumping straight to a ban or some other heavy-handed measure, you can ask Helga to mediate. You may not even need to ask — maybe just knowing that that act of having vouched for Ogbar is baked into their accounts encourages Helga to feel just a little responsible for Ogbar’s behavior, and she steps in of her own volition.</p>
+<p>But let’s say that things don’t work out that way. Helga never steps in and is unresponsive to friendly requests for mediation. Ogbar’s behavior worsens, and eventually you feel compelled to ban him. Then, a year later, Helga DMs you and asks,  “Hey, can my pal Ryuchi get an invite?” The Ogbar episode is no longer fresh in your mind, so you look at her profile for a refresher. Oh, right… Maybe her vouching for a prospective user shouldn’t count for so much, huh? Informed, you can better weigh how to handle her request — whether that means turning it down flat, basing your decision on some other factor (like Ryuchi’s social media history elsewhere), or warning Helga that banning another user she vouched for will mean tighter restrictions on her account in the future.</p>
+</blockquote>
+<p>There are some implementation questions that need to be worked out (e.g. would these relations be public, or visible only to the moderators and the accounts linked by vouching?), but I think it’s an idea worth exploring.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/a-system-allowing-existing-user-to-vouch-for-new-invitees/1891/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/a-system-allowing-existing-user-to-vouch-for-new-invitees/1891/1</link>
+        <pubDate>Wed, 30 Jun 2021 14:34:02 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1891-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/a-system-allowing-existing-user-to-vouch-for-new-invitees/1891.rss">A system allowing existing user to vouch for new invitees</source>
+      </item>
+  </channel>
+</rss>

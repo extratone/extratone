@@ -1,0 +1,31 @@
+---
+layout: post
+title: Full bleed examples and issues.
+description: A few images that demonstrate why we need full bleed backgrounds
+---
+
+
+
+<p>I&#8217;ve included a few very simple and silly examples below, just in case I need to justify the need for full bleed backgrounds. Full bleed backgrounds are something that really does have a dramatic effect on the emotions and context of a design.</p>
+
+<p>None of these examples should be problematic to implement in CSS as it is. The question that remains is how it would work in practice with something as non-standard as your average ebook reading system&#8217;s paginated view.</p>
+
+<p>First of all, taking away the designer&#8217;s ability to override the page&#8217;s margin severely limits their ability to apply backgrounds that extend to the page&#8217;s borders.</p>
+
+<p>Where the basic page margins originate also dictate where we attach our backgrounds. If the margins are on the HTML element and not the body, then the backgrounds need to go on the HTML element.</p>
+
+<p>There also needs to be some consideration as to how repeating background images are treated on subsequent pages.</p>
+
+<p>Personally, I think a paginated HTML file should be treated as a multicolumn, single-window, area for background purposes.</p>
+
+<p>Also, a very useful addition would be if they added a &#8216;cover-page&#8217; value to the <a href="http://www.w3.org/TR/css3-background/#the-background-size">background-size</a> property. This would, to use the terminology from the spec, scale the image, while preserving its intrinsic aspect ratio (if any), to the smallest size such that both its width and its height can completely cover the current page without flowing into the next page. This would let us easily do full-bleed designs for the openings of chapters in the style of my fourth example.</p>
+
+<p>You could do the fourth example without extending CSS, but the ebook developer would have to create a separate XHTML file for the opening titles of the chapter.</p>
+
+<div><img id="anexamplepagewithawhitebackground" src="fullpageexample-white.png" alt="An example page with a white background" title="" /></div>
+
+<div><img id="anexamplepagewithagreybackground" src="fullpageexample-grey.png" alt="An example page with a grey background" title="" /></div>
+
+<div><img id="anexamplepagewithapastelbackground" src="fullpageexample-pastel.png" alt="An example page with a pastel background" title="" /></div>
+
+<div><img id="anexamplepagewithaphotobackground" src="fullpageexample-photo.jpg" alt="An example page with a photo background" title="" /></div>

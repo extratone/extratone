@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Online Meeting 2019-09-28</title>
+    <link>https://socialhub.activitypub.rocks/t/online-meeting-2019-09-28/47</link>
+    <description>Next meeting is set to [date=2019-09-28 time=15:00:00 format=&quot;YYYY-MM-DD HH:MM&quot; timezone=&quot;UTC&quot;].
+
+We meet on IRC: ircs://irc.w3.org:6679/#social and on Mumble: dustycloud.org (default server port).
+[details=&quot;Mumble password&quot;]
+goblincamp
+[/details]
+
+See SocialCG Wiki: https://www.w3.org/wiki/SocialCG/2019-09-28
+
+Next meeting: https://socialhub.activitypub.rocks/t/online-meeting-2019-10-09/63.</description>
+    
+    <lastBuildDate>Wed, 02 Oct 2019 07:09:17 +0000</lastBuildDate>
+    <category>SocialCG</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/online-meeting-2019-09-28/47.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Online Meeting 2019-09-28</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://socialhub.activitypub.rocks/t/online-meeting-2019-09-28/47/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/online-meeting-2019-09-28/47/3</link>
+        <pubDate>Mon, 04 Jan 2021 13:00:42 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-47-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/online-meeting-2019-09-28/47.rss">Online Meeting 2019-09-28</source>
+      </item>
+      <item>
+        <title>Online Meeting 2019-09-28</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Oops, I missed that one. I have read the minutes. Interestingly, if it are all waiting on me to get started, you should know that I am waiting on you to launch the forum: so far must of what was proposed at <a href="https://socialhub.activitypub.rocks/t/things-to-be-done-before-announcing-the-forum/19/1" class="inline-onebox">Things to be done before announcing the forum</a> was fine, except what requires collective decision, and who is taking charge of which groups.</p>
+<p>I guess if nobody takes charge at this point we might as well pick up the other remaining tasks and launch as soon as we can.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/online-meeting-2019-09-28/47/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/online-meeting-2019-09-28/47/2</link>
+        <pubDate>Wed, 02 Oct 2019 07:09:17 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-47-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/online-meeting-2019-09-28/47.rss">Online Meeting 2019-09-28</source>
+      </item>
+      <item>
+        <title>Online Meeting 2019-09-28</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Next meeting is set to <span data-date="2019-09-28" data-time="15:00:00" class="discourse-local-date" data-format="YYYY-MM-DD HH:MM" data-timezone="UTC" data-email-preview="2019-09-28T15:00:00Z UTC">2019-09-28 15:09</span>.</p>
+<p>We meet on IRC: ircs://irc.w3.org:6679/<span class="hashtag">#social</span> and on Mumble: <a href="http://dustycloud.org" rel="nofollow noopener">dustycloud.org</a> (default server port).</p>
+<details>
+<summary>
+Mumble password</summary>
+<p>goblincamp</p>
+</details>
+<p>See SocialCG Wiki: <a href="https://www.w3.org/wiki/SocialCG/2019-09-28" rel="nofollow noopener">https://www.w3.org/wiki/SocialCG/2019-09-28</a></p>
+<p>Next meeting: <a href="https://socialhub.activitypub.rocks/t/online-meeting-2019-10-09/63" class="inline-onebox">Online Meeting 2019-10-09</a>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/online-meeting-2019-09-28/47/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/online-meeting-2019-09-28/47/1</link>
+        <pubDate>Fri, 13 Sep 2019 14:43:59 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-47-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/online-meeting-2019-09-28/47.rss">Online Meeting 2019-09-28</source>
+      </item>
+  </channel>
+</rss>

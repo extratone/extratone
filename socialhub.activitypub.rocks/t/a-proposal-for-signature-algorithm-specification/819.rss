@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>A proposal for signature algorithm specification</title>
+    <link>https://socialhub.activitypub.rocks/t/a-proposal-for-signature-algorithm-specification/819</link>
+    <description>(following on from https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/8)
+
+The current version of the HTTP Signatures spec requires that the signature algorithm be &quot;derived from metadata associated with &#39;keyId&#39;&quot;. As far as I know, no implementation actually did this, and instead assumed all signatures were rsa-sha256 (of those that even updated to the new drafts).
+
+Note that older versions of the spec included the algorithm in the signature, but this is insecure as malicious actors could specify a weaker algorithm than the real sender intended.
+
+I propose the following solution, _roughly_ based on the CCG&#39;s [Security Vocabulary](https://w3c-ccg.github.io/security-vocab/#signatureAlgorithm):
+
+- Add a `signatureAlgorithm` field to the `publicKey` field on Actors, with a value chosen from the list in RFC 6931, most likely `http://www.w3.org/2001/04/xmldsig-more#rsa-sha256
+`
+- Parse incoming signatures based on the `signatureAlgorithm` value, with a subset of possible algorithms defined by the implementation. If the key is not present, default to rsa-sha256, since this is what current implementations use.
+
+I&#39;ve implemented this with support for both rsa-sha256 and rsa-sha512 for incoming signatures in lotide, but would like to hear from other implementers in case there&#39;s a better path. Additionally, what other signature algorithms would be worthwhile to add support for?</description>
+    
+    <lastBuildDate>Wed, 29 Jul 2020 05:54:50 +0000</lastBuildDate>
+    <category>Server to Server</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/a-proposal-for-signature-algorithm-specification/819.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>A proposal for signature algorithm specification</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote group-mastodon" data-username="nightpool" data-post="4" data-topic="819" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/nightpool/40/36_2.png" class="avatar"> nightpool:</div>
+<blockquote>
+<p>I don’t understand why adding the signature algorithm to the publicKey field would reduce that key’s usefulness for other purposes. couldn’t you just list an additional signature algorithm if you wanted to use it?</p>
+</blockquote>
+</aside>
+<p>Possibly. In the spirit of infinite-flexibility the RDF definition in theory would let us list as many <code>signatureAlgorithm</code> as we wish.</p>
+<p>In practice, adding it in a quick and speedy way means there will be software out there that will be written to not be able to handle more than one, much like the current state of the <code>type</code> property. Then there’s also the practical question of attempting to disambiguate which value in the <code>signatureAlgorithm</code> list corresponds to which use case.</p>
+<p>IMO, what is missing is a one-to-many mapping from a <code>publicKey</code> to key-use-cases, and then a one-to-one mapping from each key-use-case to metadata (<code>signatureAlgorithm</code> in the HTTP Signatures use-case). And it’s a matter of finding an expression that makes it clear to implementing devs that these are the N-ary expectations.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/a-proposal-for-signature-algorithm-specification/819/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/a-proposal-for-signature-algorithm-specification/819/6</link>
+        <pubDate>Wed, 29 Jul 2020 05:54:50 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-819-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/a-proposal-for-signature-algorithm-specification/819.rss">A proposal for signature algorithm specification</source>
+      </item>
+      <item>
+        <title>A proposal for signature algorithm specification</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p>I would recommend against creating a nested JSON structure for most things, if we want to use a separate key, perhaps httpSignatureAlgorithm would be clearer?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/a-proposal-for-signature-algorithm-specification/819/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/a-proposal-for-signature-algorithm-specification/819/5</link>
+        <pubDate>Tue, 28 Jul 2020 23:26:58 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-819-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/a-proposal-for-signature-algorithm-specification/819.rss">A proposal for signature algorithm specification</source>
+      </item>
+      <item>
+        <title>A proposal for signature algorithm specification</title>
+        <dc:creator><![CDATA[nightpool]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t understand why adding the signature algorithm to the publicKey field would reduce that key’s usefulness for other purposes. couldn’t you just list an additional signature algorithm if you wanted to use it?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/a-proposal-for-signature-algorithm-specification/819/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/a-proposal-for-signature-algorithm-specification/819/4</link>
+        <pubDate>Tue, 28 Jul 2020 23:25:32 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-819-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/a-proposal-for-signature-algorithm-specification/819.rss">A proposal for signature algorithm specification</source>
+      </item>
+      <item>
+        <title>A proposal for signature algorithm specification</title>
+        <dc:creator><![CDATA[vpzom]]></dc:creator>
+        <description><![CDATA[
+            <p>Fair points. So perhaps a solution should instead:</p>
+<ul>
+<li>Create new keys since the security vocabulary doesn’t actually cover this situation</li>
+<li>Be specific to HTTP Signatures so it’s not confused with any other uses of the key</li>
+</ul>
+<p>Maybe something like this?</p>
+<pre><code class="lang-auto">"publicKey": {
+    /* ...normal fields */,
+    "httpSignaturesConfig": {
+        "signatureAlgorithm": "http://www.w3.org/2001/04/xmldsig-more#rsa-sha256",
+        "minimalHeaders": "(request-target) host digest"
+    }
+}
+</code></pre>
+          <p><a href="https://socialhub.activitypub.rocks/t/a-proposal-for-signature-algorithm-specification/819/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/a-proposal-for-signature-algorithm-specification/819/3</link>
+        <pubDate>Tue, 28 Jul 2020 23:10:34 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-819-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/a-proposal-for-signature-algorithm-specification/819.rss">A proposal for signature algorithm specification</source>
+      </item>
+      <item>
+        <title>A proposal for signature algorithm specification</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t like this approach for two reasons:</p>
+<aside class="quote no-group" data-username="vpzom" data-post="1" data-topic="819">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/letter_avatar_proxy/v4/letter/v/a698b9/40.png" class="avatar"> vpzom:</div>
+<blockquote>
+<p>Add a <code>signatureAlgorithm</code> field to the <code>publicKey</code> field on Actors</p>
+</blockquote>
+</aside>
+<ol>
+<li>As you note, this proposal doesn’t adhere to the CCG’s proposed Security Vocabulary. The Domain of <code>signatureAlgorithm</code> is rightfully on a <code>Signature</code>, not a <code>PublicKey</code>. There doesn’t appear to be a good reason for breaking this besides convenience and ease-of-implmentation.</li>
+<li>A public key’s use can be for more than just digital signatures in HTTP-Sigs. When adding this property that should be on a Signature onto the PublicKey instead, it begins to restrict this public key’s usefulness for other use cases. Those don’t exist now, because how different key management schemes interact is not really fully thought through in AP. There’s been lots of isolated high-level ideas for sure in the key management space (AP-over-SSB, avoiding HTTP Signatures entirely, using an OCAP implementation), and for developers that want to support more-than-one for different compatibility reasons (ex: being a library, or a bridge-like app) it would be nice to not start from the awkward baseline of having to consider a vocabulary violation on one side.</li>
+</ol>
+<p>I do appreciate you starting this discussion though, and experimenting with a live solution! As you also are aware of (I think this was you commenting on the issue), <a href="https://github.com/tootsuite/mastodon/issues/10638" rel="nofollow noopener">I had at one point supported SHA512 in my blog but mastodon could not verify them at the time</a> but I opted to drop it entirely.</p>
+<p>It’s not clear to me that the benefits of enabling something like SHA512 instead of SHA256 is worth the above costs when instead we can try to coordinate pushing something much more fundamentally better in the key management space.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/a-proposal-for-signature-algorithm-specification/819/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/a-proposal-for-signature-algorithm-specification/819/2</link>
+        <pubDate>Sun, 26 Jul 2020 10:33:04 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-819-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/a-proposal-for-signature-algorithm-specification/819.rss">A proposal for signature algorithm specification</source>
+      </item>
+      <item>
+        <title>A proposal for signature algorithm specification</title>
+        <dc:creator><![CDATA[vpzom]]></dc:creator>
+        <description><![CDATA[
+            <p>(following on from <a href="https://socialhub.activitypub.rocks/t/state-of-http-signatures/754/8" class="inline-onebox">State of HTTP Signatures?</a>)</p>
+<p>The current version of the HTTP Signatures spec requires that the signature algorithm be “derived from metadata associated with ‘keyId’”. As far as I know, no implementation actually did this, and instead assumed all signatures were rsa-sha256 (of those that even updated to the new drafts).</p>
+<p>Note that older versions of the spec included the algorithm in the signature, but this is insecure as malicious actors could specify a weaker algorithm than the real sender intended.</p>
+<p>I propose the following solution, <em>roughly</em> based on the CCG’s <a href="https://w3c-ccg.github.io/security-vocab/#signatureAlgorithm" rel="nofollow noopener">Security Vocabulary</a>:</p>
+<ul>
+<li>Add a <code>signatureAlgorithm</code> field to the <code>publicKey</code> field on Actors, with a value chosen from the list in RFC 6931, most likely <code>http://www.w3.org/2001/04/xmldsig-more#rsa-sha256 </code>
+</li>
+<li>Parse incoming signatures based on the <code>signatureAlgorithm</code> value, with a subset of possible algorithms defined by the implementation. If the key is not present, default to rsa-sha256, since this is what current implementations use.</li>
+</ul>
+<p>I’ve implemented this with support for both rsa-sha256 and rsa-sha512 for incoming signatures in lotide, but would like to hear from other implementers in case there’s a better path. Additionally, what other signature algorithms would be worthwhile to add support for?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/a-proposal-for-signature-algorithm-specification/819/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/a-proposal-for-signature-algorithm-specification/819/1</link>
+        <pubDate>Sat, 25 Jul 2020 20:15:34 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-819-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/a-proposal-for-signature-algorithm-specification/819.rss">A proposal for signature algorithm specification</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>2021-01-09 SocialCG Meeting - FEP - #6 - SocialCG - SocialHub</title>
+    <meta name="description" content="2021-01-09T15:00:00Z (UTC) 
+Topic 
+FEP
+@pukkamustard 
+and @cjs 
+https://socialhub.activitypub.rocks/t/fep-a4ed-the-fediverse-enhancement-proposal-process/1171/2 
+which started probably here: https://socialhub.activitypub&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="../1246.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;2021-01-09 SocialCG Meeting - FEP&#39;" href="../1246.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/2021-01-09-socialcg-meeting-fep/1246/6" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/2021-01-09-socialcg-meeting-fep/1246/6" />
+<meta property="og:title" content="2021-01-09 SocialCG Meeting - FEP" />
+<meta name="twitter:title" content="2021-01-09 SocialCG Meeting - FEP" />
+<meta property="og:description" content="2021-01-09T15:00:00Z (UTC)  Topic  FEP @pukkamustard  and @cjs    which started probably here: https://socialhub.activitypub.rocks/t/fediverse-enhancement-proposal-fep/1059:    FEP-a4edc7b: The Fediverse Enhancement Proposal Process @pukkamustard    Proposal: Mechanism for synchronizing followers lists across servers @Claire    Come Help: List of FEPs Needed @cjs    the FEP Index    …  …   &lt;personalOpinion&gt;  and there were many things many people wanted to talk about in 2020 but  were censored d..." />
+<meta name="twitter:description" content="2021-01-09T15:00:00Z (UTC)  Topic  FEP @pukkamustard  and @cjs    which started probably here: https://socialhub.activitypub.rocks/t/fediverse-enhancement-proposal-fep/1059:    FEP-a4edc7b: The Fediverse Enhancement Proposal Process @pukkamustard    Proposal: Mechanism for synchronizing followers lists across servers @Claire    Come Help: List of FEPs Needed @cjs    the FEP Index    …  …   &lt;personalOpinion&gt;  and there were many things many people wanted to talk about in 2020 but  were censored d..." />
+<meta property="article:published_time" content="2021-01-02T16:24:52+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="../1246.html">2021-01-09 SocialCG Meeting - FEP</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="https://socialhub.activitypub.rocks/c/meeting/11" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #0E76BD'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Meeting</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../../c/meeting/socialcg.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #9EB83B'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>SocialCG</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1246.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-01-02T16:24:52Z'>
+              <time itemprop='dateModified' datetime='2021-01-05T09:24:21Z' class='post-time'>
+                January 5, 2021,  9:24am
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><span data-date="2021-01-09" data-time="16:00:00" class="discourse-local-date" data-timezone="Europe/Berlin" data-email-preview="2021-01-09T15:00:00Z UTC">2021-01-09T15:00:00Z</span></p>
+<p><strong>Topic</strong></p>
+<h2>FEP</h2>
+<p><a class="mention" href="../../../u/pukkamustard.html">@pukkamustard</a><br>
+and <a class="mention" href="../../../u/cjs.html">@cjs</a></p>
+<aside class="quote quote-modified" data-post="2" data-topic="1171">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/pukkamustard/40/111_2.png" class="avatar">
+    <a href="../../fep-a4ed-the-fediverse-enhancement-proposal-process/1171/2.html">FEP-a4ed: The Fediverse Enhancement Proposal Process</a> <a class="badge-wrapper  box" href="../../../c/activitypub/fep/54.html"><span class="badge-category-parent-bg" style="background-color: #0088CC;"></span><span class="badge-category-bg" style="background-color: #0088CC;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Fediverse Enhancement Proposals (FEP) index and discussion.">Fediverse Enhancement Proposals</span></a>
+  </div>
+  <blockquote>
+    Hello Fediverse, 
+This is call for feedback and comments on the initial Fediverse Enhancement Proposal (FEP): 
+
+<a href="https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/src/branch/main/feps/fep-a4ed.md" rel="noopener nofollow ugc">FEP-a4ed: The Fediverse Enhancement Proposal Process</a>.
+Summary: 
+
+A Fediverse Enhancement Proposal (FEP) is a document that provides information to the Fediverse community. The goal of a FEP is to improve interoperability and well-being of diverse services, applications and communities that form the Fediverse. 
+This document describes the scope, format and process of publishing Fedivers…
+  </blockquote>
+</aside>
+
+<p>which started probably here: <a href="https://socialhub.activitypub.rocks/t/fediverse-enhancement-proposal-fep/1059:">https://socialhub.activitypub.rocks/t/fediverse-enhancement-proposal-fep/1059:</a></p>
+<ul>
+<li>
+<p><a href="../../fep-a4edc7b-the-fediverse-enhancement-proposal-process/1090.html" class="inline-onebox">FEP-a4edc7b: The Fediverse Enhancement Proposal Process</a> <a class="mention" href="../../../u/pukkamustard.html">@pukkamustard</a></p>
+</li>
+<li>
+<p><a href="../../proposal-mechanism-for-synchronizing-followers-lists-across-servers/852.html" class="inline-onebox">Proposal: Mechanism for synchronizing followers lists across servers</a> <a class="mention" href="../../../u/claire.html">@Claire</a></p>
+</li>
+<li>
+<p><a href="../../come-help-list-of-feps-needed/1097.html" class="inline-onebox">Come Help: List of FEPs Needed</a> <a class="mention" href="../../../u/cjs.html">@cjs</a></p>
+</li>
+<li>
+<p>the <a href="../../../pub/fediverse-enhancement-proposals.html#index">FEP Index</a></p>
+</li>
+</ul>
+<p>…<br>
+…</p>
+<hr>
+<p><code>&lt;personalOpinion&gt;</code><br>
+and there were many things <strong>many</strong> people wanted to talk about in 2020 but<br>
+were censored due to “time constraints” - I could understand if users like <a class="mention" href="../../../u/nedjo.html">@nedjo</a><br>
+who gave us all the nice thoughts and writings are very disappointed.<br>
+I would like to talk 12 hours this time.<br>
+<code>&lt;/personalOpinion&gt;</code></p>
+<h1>The waitlist</h1>
+<hr>
+<h2>alsoKnownAs and Link Relations</h2>
+<p>Following up on <a href="../../defining-alsoknownas/907/9.html" class="inline-onebox">Defining alsoKnownAs</a><br>
+<a class="mention" href="../../../u/rhiaro.html">@rhiaro</a><br>
+but also on the <a href="../../2020-12-04-socialcg-meeting/1166/2.html">adhoc discussion in SocialCG IRC</a> [sorry for the mess]</p>
+<hr>
+<h2>Structure of W3C Social CG and official site</h2>
+<ul>
+<li>guides</li>
+<li>site<br>
+<a href="https://rigelk.gitlab.io/activitypub.rocks/"><strong>Please see Look and feel</strong></a> by<br>
+<a class="mention" href="../../../u/rigelk.html">@rigelk</a>
+</li>
+<li>wiki</li>
+<li>OpenCollective</li>
+<li>Official fediverse account (some days ago made <a href="https://gup.pe/u/activitypub">https://gup.pe/u/activitypub</a> for rC3)</li>
+<li>fediverse.space</li>
+</ul>
+<p><a class="mention" href="../../../u/how.html">@how</a> asked “Is there a way to communicate to W3C that promoting decentralization and using Microsoft services are antithetical?” /me added “and using google captcha and putting forms what a computer thinks we do and not giving the community space and getting EFF back in the boat and …”</p>
+<hr>
+<h2>Building the Policy Group</h2>
+<p>16 people want to join the Policy Group, we need a meeting time, how to ?</p>
+<hr>
+<h2>Fediverse Futures</h2>
+<p>agree to <a class="mention" href="../../../u/aschrijver.html">@aschrijver</a></p>
+<blockquote>
+<p>AFAIK the Fediverse Futures group has not been followed-up on.</p>
+</blockquote>
+<p>Here is a diferent twist <img src="../../../images/emoji/twitter/slight_smile.png@v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"><br>
+<aside class="quote quote-modified" data-post="1" data-topic="1238">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/aschrijver/40/278_2.png" class="avatar">
+    <a href="../../fediverse-futures-visions-dreams-feedback-wanted/1238.html">Fediverse Futures: Visions &amp; dreams. Feedback wanted</a> <a class="badge-wrapper  box" href="../../../c/fediversity.html"><span class="badge-category-bg" style="background-color: #92278F;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Understanding and discovering communities on this emerging social network that is the Fediverse.">Fediversity</span></a>
+  </div>
+  <blockquote>
+    When typing the title, Discourse suggest this topic with similar title: 
+
+AFAIK the Fediverse Futures group has not been followed-up on. But I want to discuss a different twist to it. 
+Everything and everyone involved in evolving the Fediverse is doing so from a highly technical perspective and mindset. This is logical as we are organically discovering the technical foundations for a new social web, based on a technology standard. But I notice this narrow focus is also leading to a general lack …
+  </blockquote>
+</aside>
+</p>
+<p>related: We want to talk about how we can make our clients work together and how we get generic servers so that users content does not get lost and that we do not have our life fragmented between 9 services<br>
+(for example here mastodon.social [sl007], chaos.social [redaktor], octodon.social [secret], conf.tube [apconf], pixelfed.social [apconf], gup.pe [activitypub], redaktor alpha, immers.space [sl007], funkwhale etc.)</p>
+<hr>
+<h1>The not existing official Test Suite and making the inofficial an official</h1>
+<p>We wanted to talk about that in 3 different Social CGs but it whas concensus that we do not have time.<br>
+November 19<br>
+<aside class="quote quote-modified" data-post="1" data-topic="290">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/cwebber/40/51_2.png" class="avatar">
+    <a href="../../the-activitypub-test-suite/290.html">The ActivityPub test suite</a> 
+  </div>
+  <blockquote>
+    test.activitypub.rocks has been down for a long time, as pretty much everyone knows.  More or less it’s server issues, and I can be blamed since I run the server (and wrote the test suite). 
+Why hasn’t it gone back up though?  Mainly because I’m a) very busy b) know how poor the test suite is at fulfilling the needs of the community and that makes it hard to feel motivated to put in the work. 
+Here are some quirks about test.activitypub.rocks: 
+
+It was done in a rush to meet the standards deadli…
+  </blockquote>
+</aside>
+<br>
+July 2020 – A heavy thank you <a class="mention" href="../../../u/cjs.html">@cjs</a> for “Just Do It!”<br>
+<aside class="quote quote-modified" data-post="5" data-topic="805">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/cjs/40/584_2.png" class="avatar">
+    <a href="../../unofficial-test-suite-go-fed-testsuite/805/5.html">Unofficial Test Suite (go-fed/testsuite)</a> <a class="badge-wrapper  box" href="../../../c/software/go-fed/18.html"><span class="badge-category-parent-bg" style="background-color: #3AB54A;"></span><span class="badge-category-bg" style="background-color: #ff0000;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Discussion about the suite of Golang ActivityPub libraries and tools.">Go-Fed</span></a>
+  </div>
+  <blockquote>
+    Sneak peek: <a href="https://test.activitypub.dev/" rel="nofollow noopener">https://test.activitypub.dev/</a> 
+Please feel free to <a href="https://github.com/go-fed/testsuite" rel="nofollow noopener">file issues</a>. 
+Caveats: 
+
+UI is ugly
+The “C2S” option in the “new test” page does nothing. You’ll probably want to check the “S2S” one.
+Once you begin the test, you’ll have to refresh the page manually to get updates. Once instructions show, testing is paused and awaiting your input
+Did I mention the UI is ugly? I haven’t done but the bare minimum for the instructions, etc.
+Known problem with the “done” button for the one test that ha…
+  </blockquote>
+</aside>
+</p>
+<p>and now:<br>
+How does it become official? The lack is a very hindering reason for some of us <img src="../../../images/emoji/twitter/wink.png@v=9" title=":wink:" class="emoji" alt=":wink:"><br>
+There is also <a href="../../introducing-fedidb-devtools-for-activitypub/660/6.html">FediDB</a> by<br>
+<a class="mention" href="../../../u/dansup.html">@dansup</a></p>
+<p>After that: Somebody but not CJ, dansup or me <em>should</em> answer the <a href="../../../search@q=test.html">80 questions</a> about this …</p>
+<hr>
+<h1>Generic Server for diverse clients</h1>
+<p>We wanted to talk about generic servers. It is only solvable by talking to each other.<br>
+pleroma: <a class="mention" href="../../../u/lanodan.html">@lanodan</a><br>
+and <a href="https://web.immers.space">https://web.immers.space</a> 3D: <a class="mention" href="../../../u/datatitian.html">@datatitian</a><br>
+and <a class="mention" href="../../../u/birdsofpraise.html">@birdsofpraise</a><br>
+and <span class="mention">@loweel</span>@boseburo.ddns.net and <a class="mention" href="../../../u/marius.html">@marius</a></p>
+<p><a href="../../extensible-client-to-server-applications/341.html">related 1</a><br>
+<a href="../../want-to-build-an-activitypub-client-where-to-start/993.html">related 2</a><br>
+more related <a href="../../../search@q=client.html">100 posts</a></p>
+<p>thank you, by random I noticed a solution to a “bug”, mastodon makes <code>preferredUsername</code> a MUST ::   ¯\__(ツ)_/¯</p>
+<hr>
+<h1>Making <a href="../../topics-and-services-we-can-subscribe-to/995/4.html">Hashtag an extension</a>
+</h1>
+<p>as Chris noted for the first November meeting, we should talk about this<br>
+<aside class="quote quote-modified" data-post="4" data-topic="995">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/acka47/40/164_2.png" class="avatar">
+    <a href="../../topics-and-services-we-can-subscribe-to/995/4.html">"Topics" and Services we can subscribe to</a> <a class="badge-wrapper  box" href="../../../c/meeting/apconf2020/53.html"><span class="badge-category-parent-bg" style="background-color: #0E76BD;"></span><span class="badge-category-bg" style="background-color: #ff7a00;"></span><span style="color: #ffffff" data-drop-close="true" class="badge-category clear-badge" title="Add your proposals for the Conf by creating a New Topic –
+Tag it #bof for Birds of Feather sessions or #hackathon for Hack proposals …">ActivityPub Conference 2020</span></a>
+  </div>
+  <blockquote>
+    At the end of the bof session I had a question about the type Hashtag and where it comes from. I was curious as we where thinking about adding another type (e.g. Category) to refer to a topic from a controlled vocabulary. 
+Taking an <a href="https://octodon.social/@mlemweb/104976859469572967.json" rel="noopener nofollow ugc">example toot</a> one finds the following in the <a href="https://octodon.social/@mlemweb/104976859469572967.json" rel="noopener nofollow ugc">JSON</a>: 
+{
+   "@context":[
+      "https://www.w3.org/ns/activitystreams",
+      {
+         "ostatus":"http://ostatus.org#",
+         "atomUri":"ostatus:atomUri",
+         "inReplyToAtomUri":"ostatus:inReplyToAtomUri",
+       …
+  </blockquote>
+</aside>
+</p>
+<hr>
+<h1>Groups in AP</h1>
+<p>is, what we should also talk about …</p>
+<p><a class="mention" href="../../../u/grishka.html">@grishka</a><br>
+and<br>
+<a class="mention" href="../../../u/ngerakines.html">@ngerakines</a></p>
+<hr>
+<p>btw:<br>
+I do not remember the elder things we promised to talk about, but did not, so I stop here.</p>
+<hr>
+<p><strong>Wiki</strong></p>
+<p>[sorry, no preview available, unable cause “wgIsProbablyEditable”:false ]<br>
+</p><aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="../../../uploads/default/original/1X/d48129d0948532ab9fabb5b14281b33df26706b3.ico" class="site-icon" width="32" height="32">
+      <a href="https://www.w3.org/wiki/SocialCG" target="_blank" rel="noopener">w3.org</a>
+  </header>
+  <article class="onebox-body">
+    <img src="6.html" class="thumbnail" width="" height="">
+
+<h3><a href="https://www.w3.org/wiki/SocialCG" target="_blank" rel="noopener">SocialCG - W3C Wiki</a></h3>
+
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p><span data-date="2021-01-09" data-time="16:00:00" class="discourse-local-date" data-timezone="Europe/Berlin" data-email-preview="2021-01-09T15:00:00Z UTC">2021-01-09T15:00:00Z</span></p>
+<h1>Join the meeting everybody:</h1>
+<h3>
+<a href="https://meet.jit.si/ScatteredConsequencesActRegardless">Join via jitsi</a> – chat and vote in <span class="hashtag">#social</span> on freenode: <a href="https://webchat.freenode.net/#social">Web Chat</a>
+</h3>
+<hr>
+<p><code>&lt;personalOpinion&gt;</code><br>
+1 hour is ridiculuous –  <em>the list goes on and on and on</em><br>
+P.S</p>
+<ul>
+<li><a href="../../funkwhale-is-looking-for-new-maintainers/1140.html">funkwhale is looking for new maintainers</a></li>
+<li><a>fediverse.space is looking for somebody to overtake</a></li>
+<li><a href="https://rhiaro.co.uk/2020/11/tag-statement">vote amy</a></li>
+</ul>
+<p>Personally I would be interested if we can break free from clones of hypercapitalist services because I do not like kings. If we can begin to use ActivityPub as described in the specification and use the users server with diverse clients. Personally I do not have any interest in the data of my users. A client is fine for me.<br>
+<code>&lt;/personalOpinion&gt;</code></p>
+        </div>
+
+        <meta itemprop='headline' content='2021-01-09 SocialCG Meeting - FEP'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../a-popularization-article-on-the-solid-project/1147/10.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/a-popularization-article-on-the-solid-project/1147/10'>
+                      <span itemprop='name'>A popularization article on the Solid project</span>
+                    </a>
+                    <meta itemprop='position' content='26'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../a-popularization-article-on-the-solid-project/1147/20.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/a-popularization-article-on-the-solid-project/1147/20'>
+                      <span itemprop='name'>A popularization article on the Solid project</span>
+                    </a>
+                    <meta itemprop='position' content='27'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../upcoming-socialcg-meetings/1257.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/upcoming-socialcg-meetings/1257'>
+                      <span itemprop='name'>Upcoming SocialCG meetings</span>
+                    </a>
+                    <meta itemprop='position' content='28'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../single-sign-on-for-fediverse/712/8.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://socialhub.activitypub.rocks/t/single-sign-on-for-fediverse/712/8'>
+                      <span itemprop='name'>Single Sign-On for Fediverse</span>
+                    </a>
+                    <meta itemprop='position' content='29'>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/how.html'><span itemprop='name'>how</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1246.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-01-03T17:50:09Z' class='post-time'>
+                January 3, 2021,  5:50pm
+              </time>
+              <meta itemprop='dateModified' content='2021-01-03T17:50:09Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote group-redaktor.me" data-username="Sebastian" data-post="1" data-topic="1246">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar"> Sebastian:</div>
+<blockquote>
+<h2>Building the Policy Group</h2>
+<p>16 people want to join the Policy Group, we need a meeting time, how to ?</p>
+</blockquote>
+</aside>
+<p>AFAIK the group is open, and I’ve been talking to external people about joining it as well (e.g., Amelia Andersdotter and Rysiek from the IGF).</p>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="../../../uploads/default/original/1X/737fabe2d511f2bd292b0a4c77486c9b7e68eac1.png" class="site-icon" width="32" height="32">
+      <a href="https://love.public.cat/g/Interop" target="_blank" rel="noopener">PUBLIC</a>
+  </header>
+  <article class="onebox-body">
+    <img src="../../../uploads/default/optimized/1X/c115814089db86aa368cfad3366cf2b8b7a8760a_2_500x500.png" class="thumbnail onebox-avatar" width="500" height="500" srcset="../../../uploads/default/optimized/1X/c115814089db86aa368cfad3366cf2b8b7a8760a_2_500x500.png, ../../../uploads/default/original/1X/c115814089db86aa368cfad3366cf2b8b7a8760a.png 1.5x, ../../../uploads/default/original/1X/c115814089db86aa368cfad3366cf2b8b7a8760a.png 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/c115814089db86aa368cfad3366cf2b8b7a8760a_2_10x10.png">
+
+<h3><a href="https://love.public.cat/g/Interop" target="_blank" rel="noopener">Interoperability in europe</a></h3>
+
+<p>This group is interested in lobbying the European Union to provide free software developer insights on the topic of interoperability, notably within the scope of the Digital Services Act and more broadly the European Digital Strategy. 
+The working...</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+<br>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="../../../uploads/default/original/1X/737fabe2d511f2bd292b0a4c77486c9b7e68eac1.png" class="site-icon" width="32" height="32">
+      <a href="https://love.public.cat/t/about-the-interoperability-category/95" target="_blank" rel="noopener" title="04:19PM - 14 December 2020">PUBLIC – 14 Dec 20</a>
+  </header>
+  <article class="onebox-body">
+    <img src="../../../uploads/default/optimized/1X/c115814089db86aa368cfad3366cf2b8b7a8760a_2_500x500.png" class="thumbnail onebox-avatar" width="500" height="500" srcset="../../../uploads/default/optimized/1X/c115814089db86aa368cfad3366cf2b8b7a8760a_2_500x500.png, ../../../uploads/default/original/1X/c115814089db86aa368cfad3366cf2b8b7a8760a.png 1.5x, ../../../uploads/default/original/1X/c115814089db86aa368cfad3366cf2b8b7a8760a.png 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/c115814089db86aa368cfad3366cf2b8b7a8760a_2_10x10.png">
+
+<h3><a href="https://love.public.cat/t/about-the-interoperability-category/95" target="_blank" rel="noopener">About the Interoperability category</a></h3>
+
+<p>Promoting Interoperability in Europe  Purpose This category is a working group to discuss interoperability issues within the scope of the European Digital Strategy.  It follows a discussion within the W3 Social Community Group:   Following up the...</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+        </div>
+
+        <meta itemprop='headline' content='2021-01-09 SocialCG Meeting - FEP'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/rhiaro.html'><span itemprop='name'>rhiaro</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1246.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-01-03T18:05:06Z' class='post-time'>
+                January 3, 2021,  6:05pm
+              </time>
+              <meta itemprop='dateModified' content='2021-01-03T18:05:06Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks, <a class="mention" href="../../../u/sebastian.html">@Sebastian</a>, for keeping track of the meeting topics waitlist for all of this time.</p>
+<p>Perhaps we can set a meeting schedule including each topic, for coming months, so we know they won’t get pushed back forever? We could alternate Fridays and Saturdays, since we haven’t managed to fix a preference for everyone who wants to get involved. I can write a draft schedule to start with, arbitrarily assigning topics to dates, and anyone who wants to swap them around to make sure they can attend meetings of particular interest can ask to do so. Does that sound like a reasonable step forward?</p>
+<p>Also keep in mind, some of these topics can be progressed in between meetings and while we wait for a designated meeting to come up. So don’t feel like a distant meeting means work is ‘paused’. It’s best if we do as much as possible asynchronously anyway.</p>
+        </div>
+
+        <meta itemprop='headline' content='2021-01-09 SocialCG Meeting - FEP'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/aschrijver.html'><span itemprop='name'>aschrijver</span></a>
+            
+              split this topic 
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1246.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-01-04T11:37:34Z'>
+              <time itemprop='dateModified' datetime='2021-01-04T11:37:34Z' class='post-time'>
+                January 4, 2021, 11:37am
+              </time>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>3 posts were split to a new topic: <a href="../../erect-an-opencollective-for-the-socialcg-group/1258.html">Erect an OpenCollective for the SocialCG group?</a></p>
+        </div>
+
+        <meta itemprop='headline' content='2021-01-09 SocialCG Meeting - FEP'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Sebastian.html'><span itemprop='name'>Sebastian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1246.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-01-06T15:06:10Z' class='post-time'>
+                January 6, 2021,  3:06pm
+              </time>
+              <meta itemprop='dateModified' content='2021-01-06T15:06:10Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Regarding <strong>FEP</strong> :<br>
+Please also note there were immediate questions in this thread<br>
+</p><aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="../../../uploads/default/original/1X/fd156fff11fc042ed3ec6355c45f37e207e35839.ico" class="site-icon" width="45" height="48">
+      <a href="https://mastodon.social/@sl007/105509019457459171" target="_blank" rel="noopener" title="01:31PM - 06 January 2021">Mastodon – 6 Jan 21</a>
+  </header>
+  <article class="onebox-body">
+    <img src="../../../uploads/default/original/1X/2793fdde08594c06074835645b3924a20275eb07.png" class="thumbnail onebox-avatar" width="146" height="146">
+
+<h3><a href="https://mastodon.social/@sl007/105509019457459171" target="_blank" rel="noopener">Sebastian Lasse, redaktor.me (@sl007@mastodon.social)</a></h3>
+
+<p>@activitypub@gup.pe 
+#SocialCG 
+
+Social. People. Solidarity.
+
+Everyone: 
+The next meeting is next Saturday, 
+4 PM CET or 10 AM EST or …
+
+We will learn about and debate Fediverse Enhancement Proposals 
+@pukkamustard@chaos.social...</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p><a class="mention" href="../../../u/pukkamustard.html">@pukkamustard</a><br>
+<a class="mention" href="../../../u/cjs.html">@cjs</a></p>
+        </div>
+
+        <meta itemprop='headline' content='2021-01-09 SocialCG Meeting - FEP'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/rhiaro.html'><span itemprop='name'>rhiaro</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1246.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-01-09T13:00:44Z' class='post-time'>
+                January 9, 2021,  1:00pm
+              </time>
+              <meta itemprop='dateModified' content='2021-01-09T13:00:44Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi all! Reminder that we’ll talk about FEP today in two hours <a href="https://meet.jit.si/ScatteredConsequencesActRegardless" rel="noopener nofollow ugc">in jitsi</a> and in <a href="http://irc.w3.org/?channels=social" rel="noopener nofollow ugc">w3c #social IRC</a></p>
+        </div>
+
+        <meta itemprop='headline' content='2021-01-09 SocialCG Meeting - FEP'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/rhiaro.html'><span itemprop='name'>rhiaro</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1246.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-01-09T16:09:29Z' class='post-time'>
+                January 9, 2021,  4:09pm
+              </time>
+              <meta itemprop='dateModified' content='2021-01-09T16:09:29Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks to all those who came along today! <a href="https://www.w3.org/2021/01/09-social-minutes.html" rel="noopener nofollow ugc">Minutes are here</a></p>
+        </div>
+
+        <meta itemprop='headline' content='2021-01-09 SocialCG Meeting - FEP'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

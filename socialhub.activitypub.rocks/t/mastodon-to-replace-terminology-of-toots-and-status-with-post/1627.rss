@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Mastodon to replace terminology of &quot;Toots&quot; and &quot;Status&quot; with &quot;Post&quot;</title>
+    <link>https://socialhub.activitypub.rocks/t/mastodon-to-replace-terminology-of-toots-and-status-with-post/1627</link>
+    <description>Just found this out via [@trwnh@mastodon.social](https://mastodon.social/web/statuses/106096545167262876) who pointed to this #software:mastodon Pull Request by Eugen:
+
+https://github.com/tootsuite/mastodon/pull/16080
+
+It is quite a change, probably for the better in terms of familiatity with a broader audience. But I used &#39;toot&#39; a lot, even though I learned it means something of a small fart. Found the use of &#39;status&#39; ever confusing, so pleased to see that go.</description>
+    
+    <lastBuildDate>Thu, 22 Apr 2021 11:15:36 +0000</lastBuildDate>
+    <category>Mastodon</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/mastodon-to-replace-terminology-of-toots-and-status-with-post/1627.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Mastodon to replace terminology of &quot;Toots&quot; and &quot;Status&quot; with &quot;Post&quot;</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>I still think it’s very unfortunate that reposts weren’t called retoots <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/mastodon-to-replace-terminology-of-toots-and-status-with-post/1627/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/mastodon-to-replace-terminology-of-toots-and-status-with-post/1627/7</link>
+        <pubDate>Thu, 22 Apr 2021 11:15:36 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1627-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/mastodon-to-replace-terminology-of-toots-and-status-with-post/1627.rss">Mastodon to replace terminology of &quot;Toots&quot; and &quot;Status&quot; with &quot;Post&quot;</source>
+      </item>
+      <item>
+        <title>Mastodon to replace terminology of &quot;Toots&quot; and &quot;Status&quot; with &quot;Post&quot;</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="tfardet" data-post="5" data-topic="1627">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/tfardet/40/753_2.png" class="avatar"> tfardet:</div>
+<blockquote>
+<p>I personally dislike “branding” (“tweeting”, “tooting”, or “googling” is something that I try to fight actively, especially for the last one)</p>
+</blockquote>
+</aside>
+<p>Yes, me too. But sometimes you are not in control. According to <a href="https://news.ycombinator.com/item?id=26882682">this HN comment</a> “tweeting” was invented by the community, then later popularized by a 3rd-party app, before Twitter adopted it themselves. I don’t know about “googling” but it may have a similar history.</p>
+<p>PS. That doesn’t mean you need to incorporate it in the UI, of course. On the other hand, if the community likes it best, why wouldn’t you use it? In a FOSS world it is more accurate to talk about “alignment” rather than the more biz-like “branding”, I guess.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/mastodon-to-replace-terminology-of-toots-and-status-with-post/1627/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/mastodon-to-replace-terminology-of-toots-and-status-with-post/1627/6</link>
+        <pubDate>Wed, 21 Apr 2021 06:51:12 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1627-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/mastodon-to-replace-terminology-of-toots-and-status-with-post/1627.rss">Mastodon to replace terminology of &quot;Toots&quot; and &quot;Status&quot; with &quot;Post&quot;</source>
+      </item>
+      <item>
+        <title>Mastodon to replace terminology of &quot;Toots&quot; and &quot;Status&quot; with &quot;Post&quot;</title>
+        <dc:creator><![CDATA[tfardet]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>we use “Post” for <code>Page</code> , while we call <code>Note</code> which Mastodon uses as “Comment”</p>
+</blockquote>
+<p>I did not know that (not a Lemmy user yet).<br>
+Is this something you imported from Reddit terminology or is it Lemmy-specific.<br>
+I would have expected something like SO, with OP (original post) and follow-up posts.</p>
+<p>I personally dislike “branding” (“tweeting”, “tooting”, or “googling” is something that I try to fight actively, especially for the last one) and I think it makes sense to have something as consistent as possible across platforms to avoid “cultural/terminology” lock-in/out where people that are not from the platform may feel alienated.</p>
+<p>In that respect, while Mastodon is probably the bigger fraction of the micro-blogging Fediverse, it is not the only platform at all, and other platforms do have no reasons to call their posts “toots”.<br>
+So it seems to me that, from a cultural perspective (plus having in mind some form of unity across the Fediverse) leaving “toots” as a past fondly remembered among elders may be a smart move.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/mastodon-to-replace-terminology-of-toots-and-status-with-post/1627/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/mastodon-to-replace-terminology-of-toots-and-status-with-post/1627/5</link>
+        <pubDate>Wed, 21 Apr 2021 06:42:26 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1627-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/mastodon-to-replace-terminology-of-toots-and-status-with-post/1627.rss">Mastodon to replace terminology of &quot;Toots&quot; and &quot;Status&quot; with &quot;Post&quot;</source>
+      </item>
+      <item>
+        <title>Mastodon to replace terminology of &quot;Toots&quot; and &quot;Status&quot; with &quot;Post&quot;</title>
+        <dc:creator><![CDATA[nutomic]]></dc:creator>
+        <description><![CDATA[
+            <p>This is confusing with Lemmy because we use “Post” for <code>Page</code>, while we call <code>Note</code> which Mastodon uses as “Comment”. How do other projects translate these terms?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/mastodon-to-replace-terminology-of-toots-and-status-with-post/1627/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/mastodon-to-replace-terminology-of-toots-and-status-with-post/1627/4</link>
+        <pubDate>Tue, 20 Apr 2021 22:54:01 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1627-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/mastodon-to-replace-terminology-of-toots-and-status-with-post/1627.rss">Mastodon to replace terminology of &quot;Toots&quot; and &quot;Status&quot; with &quot;Post&quot;</source>
+      </item>
+      <item>
+        <title>Mastodon to replace terminology of &quot;Toots&quot; and &quot;Status&quot; with &quot;Post&quot;</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>There was a discussion on fedi about also changing “favourite”, which is a bit confusing and is used both to Like and to Bookmark (see <a href="https://community.humanetech.com/t/fediverse-socialhub-and-humane-tech-spiral-island-analogy/5206/2">my humanetech post</a> for details).</p>
+<p>I really liked what <a class="mention" href="/u/sebastian">@Sebastian</a> came up with for <a class="hashtag" href="/c/software/redaktor-me/22">#<span>software:redaktor-me</span></a> namely “<strong>Respect</strong>”. And he designed this icon for it:</p>
+<p><img src="https://socialhub.activitypub.rocks/uploads/default/original/2X/7/75129f8bf3205591f8ca45337d731ba6c5e0498e.png" alt='"Respect" icon' data-base62-sha1="gHFLniSWjrWifhcV8CZUvymAs1w" width="236" height="202"></p>
+<p>Cool!</p>
+<p><strong>Update</strong>: The change to “post” is discussed on HN <a href="https://news.ycombinator.com/item?id=26882318" class="inline-onebox">Mastodon Renaming “Toots” to “Posts” | Hacker News</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/mastodon-to-replace-terminology-of-toots-and-status-with-post/1627/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/mastodon-to-replace-terminology-of-toots-and-status-with-post/1627/3</link>
+        <pubDate>Tue, 20 Apr 2021 20:21:52 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1627-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/mastodon-to-replace-terminology-of-toots-and-status-with-post/1627.rss">Mastodon to replace terminology of &quot;Toots&quot; and &quot;Status&quot; with &quot;Post&quot;</source>
+      </item>
+      <item>
+        <title>Mastodon to replace terminology of &quot;Toots&quot; and &quot;Status&quot; with &quot;Post&quot;</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>I think ‘toot’ was very strange at first, but made its way into Fediverse culture. I find ‘post’ confusing, since it’s neither a ‘toot’, the cultural thing, nor a ‘note’, the specified thing.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/mastodon-to-replace-terminology-of-toots-and-status-with-post/1627/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/mastodon-to-replace-terminology-of-toots-and-status-with-post/1627/2</link>
+        <pubDate>Tue, 20 Apr 2021 20:01:37 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1627-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/mastodon-to-replace-terminology-of-toots-and-status-with-post/1627.rss">Mastodon to replace terminology of &quot;Toots&quot; and &quot;Status&quot; with &quot;Post&quot;</source>
+      </item>
+      <item>
+        <title>Mastodon to replace terminology of &quot;Toots&quot; and &quot;Status&quot; with &quot;Post&quot;</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Just found this out via <a href="https://mastodon.social/web/statuses/106096545167262876">@trwnh@mastodon.social</a> who pointed to this <a class="hashtag" href="/c/software/mastodon/17">#<span>software:mastodon</span></a> Pull Request by Eugen:</p>
+<aside class="onebox githubpullrequest">
+  <header class="source">
+      <a href="https://github.com/tootsuite/mastodon/pull/16080" target="_blank" rel="noopener">github.com/tootsuite/mastodon</a>
+  </header>
+  <article class="onebox-body">
+    <div class="github-row">
+  <div class="github-icon-container" title="Pull Request">
+    <svg width="60" height="60" class="github-icon" viewbox="0 0 12 16" aria-hidden="true"><path d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+  </div>
+
+  <div class="github-info-container">
+
+      <details class="onebox-details">
+        <summary class="onebox-details-summary">
+          <h4>
+            <a href="https://github.com/tootsuite/mastodon/pull/16080" target="_blank" rel="noopener">Change the nouns "toot" and "status" to "post"</a>
+          </h4>
+        </summary>
+        <p class="onebox-details-body">As far as I can tell, "posts" were first changed to "toots" in #4608, and I think that was a mistake. It was originally spurred by a never-ending stream of questions of "what do we call posts here?", but I don't think every platform needs a cutesy branded name for whatever is on it. Videos on YouTube aren't yeets, they are just videos. Posts on facebook are just posts. Twitter is an exception. I was also not originally aware that "toot" was slang for "fart" in some regions. It makes Mastodon harder to take seriously.
+
+In this PR, the publish button still says "Toot!" but it's worth thinking about as well.</p>
+      </details>
+
+    <div class="branches">
+      <code>tootsuite:main</code> ← <code>tootsuite:fix-change-toots-to-posts</code>
+    </div>
+
+    <div class="github-info">
+      <div class="date">
+        opened <span class="discourse-local-date" data-format="ll" data-date="2021-04-20" data-time="02:24:30" data-timezone="UTC">02:24AM - 20 Apr 21 UTC</span>
+      </div>
+
+      <div class="user">
+        <a href="https://github.com/Gargron" target="_blank" rel="noopener">
+          <img alt="Gargron" src="https://socialhub.activitypub.rocks/uploads/default/original/2X/1/1ff82b7a832f648266f4797bffa1baea5e7e086a.jpeg" class="onebox-avatar-inline" width="20" height="20">
+          Gargron
+        </a>
+      </div>
+
+      <div class="lines" title="1 commits changed 2 files with 77 additions and 77 deletions">
+        <a href="https://github.com/tootsuite/mastodon/pull/16080/files" target="_blank" rel="noopener">
+          <span class="added">+77</span>
+          <span class="removed">-77</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>It is quite a change, probably for the better in terms of familiatity with a broader audience. But I used ‘toot’ a lot, even though I learned it means something of a small fart. Found the use of ‘status’ ever confusing, so pleased to see that go.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/mastodon-to-replace-terminology-of-toots-and-status-with-post/1627/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/mastodon-to-replace-terminology-of-toots-and-status-with-post/1627/1</link>
+        <pubDate>Tue, 20 Apr 2021 08:20:37 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1627-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/mastodon-to-replace-terminology-of-toots-and-status-with-post/1627.rss">Mastodon to replace terminology of &quot;Toots&quot; and &quot;Status&quot; with &quot;Post&quot;</source>
+      </item>
+  </channel>
+</rss>

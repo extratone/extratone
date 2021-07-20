@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Content-addressing and URN resolution - #2 by how - ActivityPub - SocialHub</title>
+    <meta name="description" content="CPub as a general semantic ActivityPub server is using content-addressable RDF with ERIS. 
+Object’s id should be de-referencable URI. There is no problem with loading a content using HTTP for URLs. However URNs require s&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="../1674.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Content-addressing and URN resolution&#39;" href="../1674.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/content-addressing-and-urn-resolution/1674/2" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/content-addressing-and-urn-resolution/1674/2" />
+<meta property="og:title" content="Content-addressing and URN resolution" />
+<meta name="twitter:title" content="Content-addressing and URN resolution" />
+<meta property="og:description" content="RDF 1.1 Concepts section on skolemization mentions the genid well-known IRI:   Systems that want Skolem IRIs to be recognizable outside of the system boundaries SHOULD use a well-known IRI [RFC5785] with the registered name genid . This is an IRI that uses the HTTP or HTTPS scheme, or another scheme that has been specified to use well-known IRIs; and whose path component starts with /.well-known/genid/ .  For example, the authority responsible for the domain example.com could mint the following ..." />
+<meta name="twitter:description" content="RDF 1.1 Concepts section on skolemization mentions the genid well-known IRI:   Systems that want Skolem IRIs to be recognizable outside of the system boundaries SHOULD use a well-known IRI [RFC5785] with the registered name genid . This is an IRI that uses the HTTP or HTTPS scheme, or another scheme that has been specified to use well-known IRIs; and whose path component starts with /.well-known/genid/ .  For example, the authority responsible for the domain example.com could mint the following ..." />
+<meta property="article:published_time" content="2021-04-28T20:35:42+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="../1674.html">Content-addressing and URN resolution</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../../c/activitypub.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #0088CC'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>ActivityPub</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/rustra.html'><span itemprop='name'>rustra</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1674.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-04-28T18:28:23Z'>
+              <time itemprop='dateModified' datetime='2021-04-28T19:54:19Z' class='post-time'>
+                April 28, 2021,  7:54pm
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a href="https://gitlab.com/openengiadina/cpub/" rel="noopener nofollow ugc">CPub</a> as a general semantic ActivityPub server is using content-addressable RDF with <a href="https://inqlab.net/projects/eris/" rel="noopener nofollow ugc">ERIS</a>.</p>
+<p>Object’s <code>id</code> should be de-referencable URI. There is no problem with loading a content using HTTP for URLs. However URNs require some another way for it.</p>
+<p>Any existing ActivityPub client will be surprised to see something like this:</p>
+<pre><code class="lang-auto">{
+  "@context": "https://www.w3.org/ns/activitystreams#",
+  "id": "urn:erisx2:AAADAF4BGFGNTYG65ZX3JW7A75VBCMRWN7B2WGIQ7PAQGBHOKYGMRESC2QZVSBDYW5P45R6FRRPBZYGZ5H6XTWSNR6HEXKOD735UG3B7IQ",
+  "object": "urn:erisx2:AAAFVNIJDY22FZJZBL2LEWM7XR6P7GHUJ52NWP2E4EBR4O2LSBAOSW2YHA5DA5726X53KPABXYYO5ZRWLIOOLTEXNPE6FIBQW23LDEEMEM",
+  "to": "local:rustra",
+  "type": "Create"
+}
+</code></pre>
+<p>For that reason we need a mechanism to resolve URNs to URLs / resources.</p>
+<p>One of the proposal could be an agreement about exact endpoints similar to <code>/.well-known</code>. <a href="https://tools.ietf.org/html/rfc2169" rel="noopener nofollow ugc">RFC2169</a> describes a trivial convention for using HTTP in URN resolution.</p>
+<p>The general approach used to encode resolution service requests is quite simple:<br>
+<code>GET /uri-res/&lt;service&gt;?&lt;uri&gt;  HTTP/1.0</code></p>
+<p>Examples of services:</p>
+<ul>
+<li>N2L (URN to URL);</li>
+<li>N2Ls (URN to URLs);</li>
+<li>N2R (URN to Resource);</li>
+<li>N2Rs (URN to Resources).</li>
+</ul>
+<p>Please share your opinion according to RFC2169 and ideas about any possible ways of URN resolution.</p>
+        </div>
+
+        <meta itemprop='headline' content='Content-addressing and URN resolution'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/how.html'><span itemprop='name'>how</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1674.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-04-28T20:35:42Z'>
+              <time itemprop='dateModified' datetime='2021-04-28T20:46:27Z' class='post-time'>
+                April 28, 2021,  8:46pm
+              </time>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a href="https://www.w3.org/TR/rdf11-concepts/#section-skolemization">RDF 1.1 Concepts section on skolemization</a> mentions the <code>genid</code> well-known IRI:</p>
+<blockquote>
+<p>Systems that want Skolem IRIs to be recognizable outside of the system boundaries <em>SHOULD</em> use a well-known IRI [<a href="https://www.w3.org/TR/rdf11-concepts/#bib-RFC5785">RFC5785</a>] with the registered name <code>genid</code> . This is an IRI that uses the HTTP or HTTPS scheme, or another scheme that has been specified to use well-known IRIs; and whose path component starts with <code>/.well-known/genid/</code> .</p>
+<p>For example, the authority responsible for the domain <code>example.com</code> could mint the following recognizable Skolem IRI:</p>
+<p><code>http://example.com/.well-known/genid/d26a2d0e98334696f4ad70a677abc1f6</code></p>
+</blockquote>
+<p>I could imagine exploiting this well-known endpoint to address ERIS URNs:</p>
+<p><code>https://openEngiadina.example/.well-known/genid/urn:erisx2:AAADAF4BGFGNTYG65ZX3JW7A75VBCMRWN7B2WGIQ7PAQGBHOKYGMRESC2QZVSBDYW5P45R6FRRPBZYGZ5H6XTWSNR6HEXKOD735UG3B7IQ</code></p>
+<p>This would avoid having to provide a template such as WebFinger, to register a new well-known IRI or to use <code>uri-lists</code>. Any conformant server could have such URI and send the decoded version of the URN.</p>
+<p>This way, the simplest solution would be for implementations to try this on the origin server if they do not implement ERIS URN resolution locally, or use their own.</p>
+<p>Of course that does not solve the problem if the activity is received from a server that did not dereference it and simply forwards it, and does not support ERIS.</p>
+<p>There MAY be a known service that will implement this, but it would kind of re-centralize the service. E.g., we could agree to host a URN to URI resolver at a known URL, but the idea makes me shiver. What’s the point of using content-addressing if it is to fall back to a single domain?</p>
+<p>Other resources might be useful:</p>
+<ul>
+<li>
+<a href="http://nodeinfo.diaspora.software/schema.html" class="inline-onebox">NodeInfo</a> (e.g., use the <code>metadata</code> to indicate your URN resolvers)</li>
+<li>
+<a href="https://tools.ietf.org/html/rfc2169" class="inline-onebox">RFC 2169 - A Trivial Convention for using HTTP in URN Resolution</a> (see Appendix A on text/uri-list proposal)</li>
+<li>
+<a href="https://tools.ietf.org/html/rfc2483#section-5" class="inline-onebox">RFC 2483 - URI Resolution Services Necessary for URN Resolution</a> (for text/uri-list specification)</li>
+<li>
+<a href="https://www.iana.org/assignments/well-known-uris/well-known-uris.xhtml" class="inline-onebox">Well-Known URIs</a> for a complete list of potential candidates for squatting <img src="../../../images/emoji/twitter/slight_smile.png@v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:">
+</li>
+</ul>
+<hr>
+<p>Another idea would be to use the URN as the identifier, and use <a href="../../defining-alsoknownas/907.html">AlsoKnownAs</a> for the URI (maybe the <code>genid</code>).</p>
+        </div>
+
+        <meta itemprop='headline' content='Content-addressing and URN resolution'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/cjs.html'><span itemprop='name'>cjs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1674.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-04-28T21:10:26Z' class='post-time'>
+                April 28, 2021,  9:10pm
+              </time>
+              <meta itemprop='dateModified' content='2021-04-28T21:10:26Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>In addition to what <a class="mention" href="../../../u/how.html">@how</a> said, it would be nice to fully understand if such an adoption entrenches HTTP as being the single ActivityPub transmission protocol and makes extending to other protocols <em>not</em> dependent on DNS harder to support in the future.</p>
+<p>That is, if the solution to map <code>URN =(http)=&gt; URL</code> makes it harder for other mappings to be adopted/developed (ex: <code>URN =(ssb)=&gt; SSBID"</code>)</p>
+        </div>
+
+        <meta itemprop='headline' content='Content-addressing and URN resolution'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="3" />
+           <span class='post-likes'>3 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/rustra.html'><span itemprop='name'>rustra</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1674.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2021-04-29T00:19:38Z'>
+              <time itemprop='dateModified' datetime='2021-04-29T00:31:31Z' class='post-time'>
+                April 29, 2021, 12:31am
+              </time>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Looking at Christopher’s <a href="https://gitlab.com/dustyweb/magenc/blob/master/magenc/scribblings/intro.org" rel="noopener nofollow ugc">Magenc introduction</a> I’ve found that Magnet URIs is the most probably what we need. <em>They can be generated by anyone who already has the content, without the need for a central authority to issue them.</em> The standard for Magnet URIs provides different parameters like <code>as (Acceptable Source)</code> and <code>xs (eXact Source)</code> which will allow to point out to initial ActivityPub instance generated the content.</p>
+<p>By the way an <code>xs</code> <a href="https://en.wikipedia.org/wiki/Magnet_URI_scheme" rel="noopener nofollow ugc">example</a> from Wikipedia use the mentioned above endpoints from RFC2169:<br>
+<code>xs=http://192.0.2.27:6346/uri-res/N2R?urn:sha1:FINYVGHENTHSMNDSQQYDNLPONVBZTICF</code></p>
+<p>So a Magnet URI for ERIS-encoded content could be like:<br>
+<code>magnet:?xt=urn:erisx2:AAADAF4BGFGNTYG65ZX3JW7A75VBCMRWN7B2WGIQ7PAQGBHOKYGMRESC2QZVSBDYW5P45R6FRRPBZYGZ5H6XTWSNR6HEXKOD735UG3B7IQ&amp;xs=https://openEngiadina.example/uri-res/N2R?urn:erisx2:AAADAF4BGFGNTYG65ZX3JW7A75VBCMRWN7B2WGIQ7PAQGBHOKYGMRESC2QZVSBDYW5P45R6FRRPBZYGZ5H6XTWSNR6HEXKOD735UG3B7IQ</code></p>
+<p>And together with <code>text/uri-list</code> it’s possible to refer to another ways to access the content (e.g. IPFS).</p>
+        </div>
+
+        <meta itemprop='headline' content='Content-addressing and URN resolution'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/rustra.html'><span itemprop='name'>rustra</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1674.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-04-29T11:37:29Z' class='post-time'>
+                April 29, 2021, 11:37am
+              </time>
+              <meta itemprop='dateModified' content='2021-04-29T11:37:29Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’m kindly asking <a class="mention" href="../../../u/yvolk.html">@yvolk</a> to share your thoughts related to possible support of Magnet URIs.</p>
+        </div>
+
+        <meta itemprop='headline' content='Content-addressing and URN resolution'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/yvolk.html'><span itemprop='name'>yvolk</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1674.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-04-29T18:47:36Z' class='post-time'>
+                April 29, 2021,  6:47pm
+              </time>
+              <meta itemprop='dateModified' content='2021-04-29T18:47:36Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>My current opinion, after brief reading of the linked sources, is that Magnet URI:</p>
+<ul>
+<li>is not for making URIs shorter,</li>
+<li>does not require us to agree immediately on “URI to URL” resolution / content discovery services.</li>
+</ul>
+<p>on the contrary:</p>
+<ul>
+<li>it is packed content metadata needed for its identification and retrieval.</li>
+<li>in the simplest case it contains one or more URLs, where the content may be found, so it easily replaces content id in the form of URL,</li>
+<li>it contains content hash allowing to identify and deduplicate content, referred to by different sources (e.g. the same image sent by different Actors), maybe even without an immediate need to implement hash calculation (just by comparing hashes of two Magnet URIs…)</li>
+<li>it is a compromise between pointing to the concrete location and at least potential ability to search and retrieve content from anywhere…</li>
+</ul>
+<p>So I think that minimal support of Magnet URI containing actual download URL can be added easily to a Client application, with a bonus of getting much more from it in the future, step by step.</p>
+        </div>
+
+        <meta itemprop='headline' content='Content-addressing and URN resolution'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/rustra.html'><span itemprop='name'>rustra</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1674.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-04-29T19:09:12Z' class='post-time'>
+                April 29, 2021,  7:09pm
+              </time>
+              <meta itemprop='dateModified' content='2021-04-29T19:09:12Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks everybody for your opinions! Now I see the direction to move later.</p>
+        </div>
+
+        <meta itemprop='headline' content='Content-addressing and URN resolution'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/macgirvin.html'><span itemprop='name'>macgirvin</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1674.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-04-29T19:52:52Z' class='post-time'>
+                April 29, 2021,  7:52pm
+              </time>
+              <meta itemprop='dateModified' content='2021-04-29T19:52:52Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <ul>
+<li>can never be edited/updated. This may not concern some people, but is a deal-breaker for others.</li>
+</ul>
+        </div>
+
+        <meta itemprop='headline' content='Content-addressing and URN resolution'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/rustra.html'><span itemprop='name'>rustra</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1674.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-04-30T08:34:42Z' class='post-time'>
+                April 30, 2021,  8:34am
+              </time>
+              <meta itemprop='dateModified' content='2021-04-30T08:34:42Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../../u/macgirvin.html">@macgirvin</a>, I suppose that it’s a question of mutability in general, immutable Magnet URIs are just consequence of immutable data.</p>
+<p><a class="mention" href="../../../u/pukkamustard.html">@pukkamustard</a> is researching data structures based on immutable data and allowing mutability in scope of <a href="https://dream.public.cat/t/d1-1-dromedar-data-model-specification/146" rel="noopener nofollow ugc">DREAM / DROMEDAR</a> project. And your concern should be addressed there as well.</p>
+        </div>
+
+        <meta itemprop='headline' content='Content-addressing and URN resolution'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

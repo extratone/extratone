@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>ForgeFed - SocialHub</title>
+    <link>https://socialhub.activitypub.rocks/c/software/forgefed/60</link>
+    <description>Topics in the &#39;ForgeFed&#39; category &lt;a href=&quot;https://forgefed.peers.community&quot;&gt;ForgeFed&lt;/a&gt; is a set of extensions to ActivityPub for federation of project management and source code hosting web services.</description>
+    
+      <lastBuildDate>Thu, 01 Jul 2021 07:49:50 +0000</lastBuildDate>
+      <atom:link href="https://socialhub.activitypub.rocks/c/software/forgefed/60.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>ForgeFed site is down</title>
+          <dc:creator><![CDATA[aschrijver]]></dc:creator>
+          <category>ForgeFed</category>
+          <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/fr33domlover">@fr33domlover</a> <a class="mention-group" href="/groups/forgefed">@forgefed</a> apparently the site at <a href="https://forgefed.peers.community">https://forgefed.peers.community</a> is down.</p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/forgefed-site-is-down/1899">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/forgefed-site-is-down/1899</link>
+          <pubDate>Thu, 01 Jul 2021 07:49:50 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1899</guid>
+          <source url="https://socialhub.activitypub.rocks/t/forgefed-site-is-down/1899.rss">ForgeFed site is down</source>
+        </item>
+        <item>
+          <title>About ForgeFed</title>
+          <dc:creator><![CDATA[fr33domlover]]></dc:creator>
+          <category>ForgeFed</category>
+          <description><![CDATA[
+            <p><a href="https://forgefed.peers.community" rel="noopener nofollow ugc">ForgeFed</a> is a set of extensions to ActivityPub for federation of project management and source code hosting web services.</p>
+<p>See <a href="https://notabug.org/peers/forgefed/src/master/doc/README.md" rel="noopener nofollow ugc">here</a> for a detailed introduction.</p>
+<p>This is the place for discussing, asking, answering and brainstorming about ForgeFed. Other places include:</p>
+<ul>
+<li>If you have a specific self-contained work item or bug in mind, you can <a href="https://notabug.org/peers/forgefed/issues" rel="noopener nofollow ugc">open an issue</a>.</li>
+<li>Specific software projects have their own repos and issue trackers, e.g. <a href="https://dev.angeley.es/s/fr33domlover/p/vervis" rel="noopener nofollow ugc">Vervis</a> and <a href="https://notabug.org/zPlus/mcfi" rel="noopener nofollow ugc">MCFI</a>. If unsure though, use this forum or the ForgeFed repo/issues <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:">
+</li>
+<li>For general casual conversation, you can write <a href="https://floss.social/@forgefed" rel="noopener nofollow ugc">on the fediverse</a>.</li>
+<li>For instant messaging, there’s an <a href="https://kiwiirc.com/nextclient/irc.freenode.net/#peers" rel="noopener nofollow ugc">IRC channel</a> (<span class="hashtag">#peers</span> on Freenode), bridged to a <a href="https://matrix.to/#/#peers:matrix.org" rel="noopener nofollow ugc">Matrix room</a> (<span class="hashtag">#peers:matrix</span>.org)</li>
+</ul>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/about-forgefed/1480">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/about-forgefed/1480</link>
+          <pubDate>Mon, 01 Mar 2021 07:15:14 +0000</pubDate>
+          <discourse:topicPinned>Yes</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1480</guid>
+          <source url="https://socialhub.activitypub.rocks/t/about-forgefed/1480.rss">About ForgeFed</source>
+        </item>
+  </channel>
+</rss>

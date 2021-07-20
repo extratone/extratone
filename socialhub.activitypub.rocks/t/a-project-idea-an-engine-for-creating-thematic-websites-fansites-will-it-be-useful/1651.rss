@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>A project idea: An engine for creating thematic websites, fansites. Will it be useful?</title>
+    <link>https://socialhub.activitypub.rocks/t/a-project-idea-an-engine-for-creating-thematic-websites-fansites-will-it-be-useful/1651</link>
+    <description>I want to propose an idea for a project that I want to implement, but I don&#39;t know if it will be useful to anyone.
+- It will be an engine for creating thematic websites, fansites, etc.
+- The main section will be a place where users can post their submissions (it will be possible to turn on pre-moderation or turn off ability to submit posts at all).
+- There will be ability to make multiple &quot;sections&quot; - for example first for user-submitted posts and discussions, second for site news, third for pictures gallery, etc.
+- You&#39;ll be able to change the appearance of the sections - it can look like a forum, like a newsfeed (as in social networks), maybe something else.
+- The tech stack will be based on PHP/MySQL - i want it to be installable on any shared hosting.
+- The process of installation and configuration also will be simpler than in other fediverse projects.
+- It will be compatible and federating with other ActivityPub-based projects, at least with Mastodon.
+
+sorry for mistakes in English, it&#39;s not my native language :( Also, sorry if this kind of topics isn&#39;t allowed here.</description>
+    
+    <lastBuildDate>Wed, 28 Apr 2021 19:00:27 +0000</lastBuildDate>
+    <category>Fediverse Futures</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/a-project-idea-an-engine-for-creating-thematic-websites-fansites-will-it-be-useful/1651.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>A project idea: An engine for creating thematic websites, fansites. Will it be useful?</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>I completely agree with bringing new types of audiences, but wouldn’t it be easier to find the audience first and then figure out what they want? Thematic websites sound interesting but they’re not addressing an audience, they’re addressing <em>some virtual audiences</em>. Is displaying more information on the Web is what people really want, or do they want to organize better together? That is the difference between confronting your abstract ideas to a real audience and comforting your ideas with an abstract audience.</p>
+<p>Anyway good luck with your endeavor!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/a-project-idea-an-engine-for-creating-thematic-websites-fansites-will-it-be-useful/1651/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/a-project-idea-an-engine-for-creating-thematic-websites-fansites-will-it-be-useful/1651/8</link>
+        <pubDate>Wed, 28 Apr 2021 19:00:27 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1651-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/a-project-idea-an-engine-for-creating-thematic-websites-fansites-will-it-be-useful/1651.rss">A project idea: An engine for creating thematic websites, fansites. Will it be useful?</source>
+      </item>
+      <item>
+        <title>A project idea: An engine for creating thematic websites, fansites. Will it be useful?</title>
+        <dc:creator><![CDATA[mrcatmann]]></dc:creator>
+        <description><![CDATA[
+            <p>A few folks from Russian Mastodon said that the idea is interesting and it’ll be good to have something like this. Yes, i know that’s not enough…So…I understand you, but i think your thesis works the other way too.<br>
+Like, someone discovers an interesting project and then tries to use it.</p>
+<p>I also think that any attempt to bring new types of audiences into Fediverse is useful.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/a-project-idea-an-engine-for-creating-thematic-websites-fansites-will-it-be-useful/1651/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/a-project-idea-an-engine-for-creating-thematic-websites-fansites-will-it-be-useful/1651/7</link>
+        <pubDate>Wed, 28 Apr 2021 18:45:17 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1651-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/a-project-idea-an-engine-for-creating-thematic-websites-fansites-will-it-be-useful/1651.rss">A project idea: An engine for creating thematic websites, fansites. Will it be useful?</source>
+      </item>
+      <item>
+        <title>A project idea: An engine for creating thematic websites, fansites. Will it be useful?</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <p>You could try to hash out a very quick mostly-functionless mocked static webpage for a few friends with their particular interests, show it to them, and see if the idea is still appealing to them.</p>
+<p>If you get positive feedback, great! If not, at least you didn’t sink too many hours into the idea.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/a-project-idea-an-engine-for-creating-thematic-websites-fansites-will-it-be-useful/1651/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/a-project-idea-an-engine-for-creating-thematic-websites-fansites-will-it-be-useful/1651/6</link>
+        <pubDate>Wed, 28 Apr 2021 16:44:03 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1651-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/a-project-idea-an-engine-for-creating-thematic-websites-fansites-will-it-be-useful/1651.rss">A project idea: An engine for creating thematic websites, fansites. Will it be useful?</source>
+      </item>
+      <item>
+        <title>A project idea: An engine for creating thematic websites, fansites. Will it be useful?</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>I mean, do you have actual people interested in this, who are willing to use it? It sounds to me that you’re interested in creating software for the sake of it, instead of responding to a need. If you’re doing the former, you’re better use your time contributing to an ongoing project that spend your time on something that you will move away from in a couple years when you’re bored and lonely.</p>
+<p>Maybe adding ActivityPub support to <a href="https://hotglue.me">HotGlue</a> could serve you better in this precise case.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/a-project-idea-an-engine-for-creating-thematic-websites-fansites-will-it-be-useful/1651/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/a-project-idea-an-engine-for-creating-thematic-websites-fansites-will-it-be-useful/1651/5</link>
+        <pubDate>Mon, 26 Apr 2021 07:41:53 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1651-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/a-project-idea-an-engine-for-creating-thematic-websites-fansites-will-it-be-useful/1651.rss">A project idea: An engine for creating thematic websites, fansites. Will it be useful?</source>
+      </item>
+      <item>
+        <title>A project idea: An engine for creating thematic websites, fansites. Will it be useful?</title>
+        <dc:creator><![CDATA[mrcatmann]]></dc:creator>
+        <description><![CDATA[
+            <p>Mainly for groups by interests, fansites, etc. (from non-IT sphere). I don’t know about western Internet, but in our country (Russia) the format of “sites by interests” was rather popular before the monopoly of big social networks.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/a-project-idea-an-engine-for-creating-thematic-websites-fansites-will-it-be-useful/1651/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/a-project-idea-an-engine-for-creating-thematic-websites-fansites-will-it-be-useful/1651/4</link>
+        <pubDate>Sat, 24 Apr 2021 14:22:15 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1651-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/a-project-idea-an-engine-for-creating-thematic-websites-fansites-will-it-be-useful/1651.rss">A project idea: An engine for creating thematic websites, fansites. Will it be useful?</source>
+      </item>
+      <item>
+        <title>A project idea: An engine for creating thematic websites, fansites. Will it be useful?</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Who are you designing for?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/a-project-idea-an-engine-for-creating-thematic-websites-fansites-will-it-be-useful/1651/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/a-project-idea-an-engine-for-creating-thematic-websites-fansites-will-it-be-useful/1651/3</link>
+        <pubDate>Fri, 23 Apr 2021 21:45:03 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1651-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/a-project-idea-an-engine-for-creating-thematic-websites-fansites-will-it-be-useful/1651.rss">A project idea: An engine for creating thematic websites, fansites. Will it be useful?</source>
+      </item>
+      <item>
+        <title>A project idea: An engine for creating thematic websites, fansites. Will it be useful?</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>I think the idea is interesting and - when looking at the <a href="https://git.feneas.org/feneas/fediverse/-/wikis/watchlist-for-activitypub-apps">full list of known ActivityPub projects</a> - think may well be a need for it. Though to find that out the best way I think would be to ask on fediverse itself in a bunch of toots.</p>
+<p>Besides having a Mastodon integration there are other federated capabilities you can consider. I have moved your post to the <a class="hashtag" href="/c/fediversity/fediverse-futures/58">#<span>fediversity:fediverse-futures</span></a> category, which is better suited for more ideation-like (though still rather technical) things. This category has a companion brainstorming space to discuss from non-technical perspective. It is brand new, and you may post the idea there as well. It is on Lemmy (federated Reddit alternative) at <a href="https://lemmy.ml/c/fediversefutures">Fediverse Futures</a>.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/a-project-idea-an-engine-for-creating-thematic-websites-fansites-will-it-be-useful/1651/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/a-project-idea-an-engine-for-creating-thematic-websites-fansites-will-it-be-useful/1651/2</link>
+        <pubDate>Fri, 23 Apr 2021 20:59:24 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1651-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/a-project-idea-an-engine-for-creating-thematic-websites-fansites-will-it-be-useful/1651.rss">A project idea: An engine for creating thematic websites, fansites. Will it be useful?</source>
+      </item>
+      <item>
+        <title>A project idea: An engine for creating thematic websites, fansites. Will it be useful?</title>
+        <dc:creator><![CDATA[mrcatmann]]></dc:creator>
+        <description><![CDATA[
+            <p>I want to propose an idea for a project that I want to implement, but I don’t know if it will be useful to anyone.</p>
+<ul>
+<li>It will be an engine for creating thematic websites, fansites, etc.</li>
+<li>The main section will be a place where users can post their submissions (it will be possible to turn on pre-moderation or turn off ability to submit posts at all).</li>
+<li>There will be ability to make multiple “sections” - for example first for user-submitted posts and discussions, second for site news, third for pictures gallery, etc.</li>
+<li>You’ll be able to change the appearance of the sections - it can look like a forum, like a newsfeed (as in social networks), maybe something else.</li>
+<li>The tech stack will be based on PHP/MySQL - i want it to be installable on any shared hosting.</li>
+<li>The process of installation and configuration also will be simpler than in other fediverse projects.</li>
+<li>It will be compatible and federating with other ActivityPub-based projects, at least with Mastodon.</li>
+</ul>
+<p>sorry for mistakes in English, it’s not my native language <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/frowning.png?v=9" title=":frowning:" class="emoji" alt=":frowning:"> Also, sorry if this kind of topics isn’t allowed here.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/a-project-idea-an-engine-for-creating-thematic-websites-fansites-will-it-be-useful/1651/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/a-project-idea-an-engine-for-creating-thematic-websites-fansites-will-it-be-useful/1651/1</link>
+        <pubDate>Fri, 23 Apr 2021 20:42:39 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1651-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/a-project-idea-an-engine-for-creating-thematic-websites-fansites-will-it-be-useful/1651.rss">A project idea: An engine for creating thematic websites, fansites. Will it be useful?</source>
+      </item>
+  </channel>
+</rss>

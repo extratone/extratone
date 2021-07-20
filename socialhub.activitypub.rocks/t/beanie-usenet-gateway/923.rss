@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>[beanie] Usenet gateway</title>
+    <link>https://socialhub.activitypub.rocks/t/beanie-usenet-gateway/923</link>
+    <description>I promised Brion Vibber some thoughts on how a gateway between Usenet and ActivityPub might work. This is very blue-sky thinking at present; let&#39;s give it the codename &quot;beanie&quot;.
+
+The idea here is to represent Usenet as ActivityPub, not to run ActivityPub over NNTP or whatever.
+
+(Usenet doesn&#39;t get all that much traffic these days, so I make no claim that this is actually useful...)
+
+**Representations of Usenet entities on the ActivityPub side**
+
+**Article:** Every Usenet article posted to monitored groups is turned into a Note on the gateway. Quoted sections at the top and bottom of the text are trimmed, but the sig stays intact. *Is there a length issue with existing ActivityPub clients?*
+
+**Poster:** Every poster to Usenet is represented by an ActivityPub Actor (probably a Person), @u-123@example.com (where 123 is an arbitrary number, and example.com is the ActivityPub server). [I&#39;m giving the webfinger form as might be used by Mastodon, but the URL is easily derivable.] The ActivityPub object at that URL is minimal. Attempts to follow it are immediately rejected. *Direct messages are discarded?* The HTML version includes a note that the page is only a gateway placeholder, and information on how the poster can opt out of their posts passing this gateway.
+
+**Group:** *Here I&#39;m not sure. Options include a magic Actor which can be followed, which only boosts articles from the group, or some sort of timeline. In any case must be discoverable, it must be followable, and it must be possible to post an article to the group which isn&#39;t a reply. Initially we only support alt.test.*
+
+**newsrc:** &lt;em&gt;Again, I don&#39;t know.&lt;/em&gt;
+
+&lt;strong&gt;Representations of ActivityPub entities on the Usenet side
+
+Actors:&lt;/strong&gt; If an ActivityPub Actor posts to Usenet, we represent them as &quot;username%server@example.com&quot;. There is no relay of direct messages.
+
+&lt;strong&gt;Notes:&lt;/strong&gt; Notes become articles. If they are replies (to other Notes which were originally generated from Usenet articles, or to other Notes which have already become Articles), the article will be a reply to that note. &lt;em&gt;How on earth do we enforce setting Subject lines?&lt;/em&gt;</description>
+    
+    <lastBuildDate>Mon, 21 Sep 2020 18:45:22 +0000</lastBuildDate>
+    <category>Software</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/beanie-usenet-gateway/923.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>[beanie] Usenet gateway</title>
+        <dc:creator><![CDATA[marnanel]]></dc:creator>
+        <description><![CDATA[
+            <p>I promised Brion Vibber some thoughts on how a gateway between Usenet and ActivityPub might work. This is very blue-sky thinking at present; let’s give it the codename “beanie”.</p>
+<p>The idea here is to represent Usenet as ActivityPub, not to run ActivityPub over NNTP or whatever.</p>
+<p>(Usenet doesn’t get all that much traffic these days, so I make no claim that this is actually useful…)</p>
+<p><strong>Representations of Usenet entities on the ActivityPub side</strong></p>
+<p><strong>Article:</strong> Every Usenet article posted to monitored groups is turned into a Note on the gateway. Quoted sections at the top and bottom of the text are trimmed, but the sig stays intact. <em>Is there a length issue with existing ActivityPub clients?</em></p>
+<p><strong>Poster:</strong> Every poster to Usenet is represented by an ActivityPub Actor (probably a Person), <span class="mention">@u-123</span>@example.com (where 123 is an arbitrary number, and <a href="http://example.com" rel="nofollow noopener">example.com</a> is the ActivityPub server). [I’m giving the webfinger form as might be used by Mastodon, but the URL is easily derivable.] The ActivityPub object at that URL is minimal. Attempts to follow it are immediately rejected. <em>Direct messages are discarded?</em> The HTML version includes a note that the page is only a gateway placeholder, and information on how the poster can opt out of their posts passing this gateway.</p>
+<p><strong>Group:</strong> <em>Here I’m not sure. Options include a magic Actor which can be followed, which only boosts articles from the group, or some sort of timeline. In any case must be discoverable, it must be followable, and it must be possible to post an article to the group which isn’t a reply. Initially we only support alt.test.</em></p>
+<p><strong>newsrc:</strong> <em>Again, I don’t know.</em></p>
+<p><strong>Representations of ActivityPub entities on the Usenet side</strong></p><strong>
+</strong><p><strong>Actors:</strong> If an ActivityPub Actor posts to Usenet, we represent them as “username%server@example.com”. There is no relay of direct messages.</p>
+<p><strong>Notes:</strong> Notes become articles. If they are replies (to other Notes which were originally generated from Usenet articles, or to other Notes which have already become Articles), the article will be a reply to that note. <em>How on earth do we enforce setting Subject lines?</em></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/beanie-usenet-gateway/923/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/beanie-usenet-gateway/923/1</link>
+        <pubDate>Mon, 21 Sep 2020 18:45:22 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-923-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/beanie-usenet-gateway/923.rss">[beanie] Usenet gateway</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Updating instance not work</title>
+    <link>https://socialhub.activitypub.rocks/t/updating-instance-not-work/785</link>
+    <description>Hi!
+
+When I do &quot;yarn global add gancio&quot;, no new locales show in my instance but in git master branch, I can see new locales.
+
+How can I update to master branch in framagit?
+
+Regards</description>
+    
+    <lastBuildDate>Sun, 12 Jul 2020 08:44:01 +0000</lastBuildDate>
+    <category>Gancio</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/updating-instance-not-work/785.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Updating instance not work</title>
+        <dc:creator><![CDATA[hacklabkelo]]></dc:creator>
+        <description><![CDATA[
+            <p>Good work! Thanks for mention in changelog <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/updating-instance-not-work/785/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/updating-instance-not-work/785/5</link>
+        <pubDate>Sun, 12 Jul 2020 08:44:01 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-785-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/updating-instance-not-work/785.rss">Updating instance not work</source>
+      </item>
+      <item>
+        <title>Updating instance not work</title>
+        <dc:creator><![CDATA[les]]></dc:creator>
+        <description><![CDATA[
+            <p>v0.24.0 released!<br>
+</p><aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://gancio.org/favicon.ico" class="site-icon" width="16" height="16">
+      <a href="https://gancio.org/changelog#0240" target="_blank" rel="nofollow noopener">Gancio</a>
+  </header>
+  <article class="onebox-body">
+    <img src="" class="thumbnail" width="16" height="16">
+
+<h3><a href="https://gancio.org/changelog#0240" target="_blank" rel="nofollow noopener">Changelog</a></h3>
+
+<p>A shared agenda for local communities with AP support</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/updating-instance-not-work/785/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/updating-instance-not-work/785/4</link>
+        <pubDate>Thu, 09 Jul 2020 14:37:30 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-785-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/updating-instance-not-work/785.rss">Updating instance not work</source>
+      </item>
+      <item>
+        <title>Updating instance not work</title>
+        <dc:creator><![CDATA[hacklabkelo]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks. I will wait for next release.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/updating-instance-not-work/785/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/updating-instance-not-work/785/3</link>
+        <pubDate>Tue, 07 Jul 2020 14:12:34 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-785-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/updating-instance-not-work/785.rss">Updating instance not work</source>
+      </item>
+      <item>
+        <title>Updating instance not work</title>
+        <dc:creator><![CDATA[les]]></dc:creator>
+        <description><![CDATA[
+            <p>While you can use any branch you want, using git in production is not suggested and you’ll have to wait for a new release (this will happen this week).<br>
+<code>yarn global add gancio</code> pulls from npm repository not from git.</p>
+<p>ciaoo</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/updating-instance-not-work/785/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/updating-instance-not-work/785/2</link>
+        <pubDate>Sun, 05 Jul 2020 23:02:02 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-785-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/updating-instance-not-work/785.rss">Updating instance not work</source>
+      </item>
+      <item>
+        <title>Updating instance not work</title>
+        <dc:creator><![CDATA[hacklabkelo]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi!</p>
+<p>When I do “yarn global add gancio”, no new locales show in my instance but in git master branch, I can see new locales.</p>
+<p>How can I update to master branch in framagit?</p>
+<p>Regards</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/updating-instance-not-work/785/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/updating-instance-not-work/785/1</link>
+        <pubDate>Sun, 05 Jul 2020 10:01:56 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-785-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/updating-instance-not-work/785.rss">Updating instance not work</source>
+      </item>
+  </channel>
+</rss>

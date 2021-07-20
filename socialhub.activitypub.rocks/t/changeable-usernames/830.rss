@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Changeable usernames?</title>
+    <link>https://socialhub.activitypub.rocks/t/changeable-usernames/830</link>
+    <description>It&#39;s me and my weird edge cases again ;)
+
+In the spec, there&#39;s nothing that inherently prevents one from changing their username, yet the very idea of it seems to be very much opposed by most of the community — or, at least, the Mastodon team. So I&#39;m trying to understand why is that.
+
+Here&#39;s my understanding of the problem:
+* The uniqueness of an AP object, internet-wide, is determined by its `id` a.k.a. `@id`. This is supposed to remain constant throughout the object lifetime.
+* The rest of the fields in an object can be changed, added, or removed with an `Update` containing that object, as long as the `id` remains the same. These fields include `url` and `preferredUsername` for actors.
+* So, as long as the `id` remains unchanged, there isn&#39;t technically anything preventing one from changing their username.
+  * Some implementations (again, Mastodon) use the username for both the `id` and the `url`. This means that Mastodon users won&#39;t ever be able to change their usernames.
+  * But, this would be effortless to implement in Smithereen — I already use database row IDs to generate my `id` URLs. It should already work as intended if another server does it this way.
+
+So what is it, then, that prevents us from having changeable usernames?</description>
+    
+    <lastBuildDate>Fri, 14 Aug 2020 16:59:33 +0000</lastBuildDate>
+    <category>Server to Server</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/changeable-usernames/830.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Changeable usernames?</title>
+        <dc:creator><![CDATA[Claire]]></dc:creator>
+        <description><![CDATA[
+            <p>A <code>Move</code> activity, like all ActivityPub stuff, references an ActivityPub <code>id</code>, which I suppose here, wouldn’t change, so I’m not sure how that could help (the <code>Move</code> would just serialize a move from one’s identifier… to the same identifier?)</p>
+<p>What would currently happen in Mastodon is that it’ll re-fetch the remote actor definition, find the new username, and then… create a new user with the same uri (oof)…</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/changeable-usernames/830/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/changeable-usernames/830/12</link>
+        <pubDate>Fri, 14 Aug 2020 16:59:33 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-830-12</guid>
+        <source url="https://socialhub.activitypub.rocks/t/changeable-usernames/830.rss">Changeable usernames?</source>
+      </item>
+      <item>
+        <title>Changeable usernames?</title>
+        <dc:creator><![CDATA[lain]]></dc:creator>
+        <description><![CDATA[
+            <p>What would happen if this where done with a <code>Move</code> activity?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/changeable-usernames/830/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/changeable-usernames/830/11</link>
+        <pubDate>Fri, 14 Aug 2020 16:46:49 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-830-11</guid>
+        <source url="https://socialhub.activitypub.rocks/t/changeable-usernames/830.rss">Changeable usernames?</source>
+      </item>
+      <item>
+        <title>Changeable usernames?</title>
+        <dc:creator><![CDATA[lain]]></dc:creator>
+        <description><![CDATA[
+            <p>Oof, yikes, etc. I know it works on pleroma because i saw it happen by accident <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/changeable-usernames/830/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/changeable-usernames/830/10</link>
+        <pubDate>Wed, 12 Aug 2020 16:44:06 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-830-10</guid>
+        <source url="https://socialhub.activitypub.rocks/t/changeable-usernames/830.rss">Changeable usernames?</source>
+      </item>
+      <item>
+        <title>Changeable usernames?</title>
+        <dc:creator><![CDATA[Claire]]></dc:creator>
+        <description><![CDATA[
+            <p>In theory, nothing prevents you from changing usernames.<br>
+However, doing this is <em>not</em> compatible with Mastodon. Indeed, Mastodon uses the username + domain pair (the acct: URI, really) as the authoritative identifier, <em>not</em> the ActivityPub <code>id</code>. This pre-dates ActivityPub and it’s one of my main gripes with Mastodon, but unfortunately it’s unlikely to ever get better, as it is too deeply ingrained in both its UX and database design…</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/changeable-usernames/830/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/changeable-usernames/830/9</link>
+        <pubDate>Tue, 04 Aug 2020 16:55:08 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-830-9</guid>
+        <source url="https://socialhub.activitypub.rocks/t/changeable-usernames/830.rss">Changeable usernames?</source>
+      </item>
+      <item>
+        <title>Changeable usernames?</title>
+        <dc:creator><![CDATA[cichol]]></dc:creator>
+        <description><![CDATA[
+            <p>Maybe it is off of topic but I think having an unchangeable username(username plus domain) may help migrate account among different instances.</p>
+<p>If a user’s id is bound to some id internal of an instance, then it will be not possible to migrate to another instance while preserving old references. Using username plus domain could decouple this a bit, but still far to be ideal, in current implementations.</p>
+<p>I think maybe in the future we should separate the identity server from the application servers. The id server only takes care of id discovering and routing them to the correct application server. Every resource inside an application is marked by a random uuid. Therefore, we can reference any resource by using (username, domain, uuid) which will preserve well when moving to another instance.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/changeable-usernames/830/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/changeable-usernames/830/8</link>
+        <pubDate>Sat, 01 Aug 2020 12:38:02 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-830-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/changeable-usernames/830.rss">Changeable usernames?</source>
+      </item>
+      <item>
+        <title>Changeable usernames?</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, I mean <code>url</code>. My understanding is that <code>id</code> is internal and never ever surfaced to the users (thus it may contain any kind of sufficiently unique gibberish — database row IDs, UUIDs, random characters, whatever), and <code>url</code> is where there’s a user-visible web page with the profile of that actor.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/changeable-usernames/830/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/changeable-usernames/830/7</link>
+        <pubDate>Fri, 31 Jul 2020 15:48:31 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-830-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/changeable-usernames/830.rss">Changeable usernames?</source>
+      </item>
+      <item>
+        <title>Changeable usernames?</title>
+        <dc:creator><![CDATA[lain]]></dc:creator>
+        <description><![CDATA[
+            <p>what link? the ap <code>id</code> can’t be changed, but the <code>url</code> can.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/changeable-usernames/830/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/changeable-usernames/830/6</link>
+        <pubDate>Fri, 31 Jul 2020 15:07:15 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-830-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/changeable-usernames/830.rss">Changeable usernames?</source>
+      </item>
+      <item>
+        <title>Changeable usernames?</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>The mentions problem can be solved by the receiving side storing the mentions as its internal user IDs (that don’t change) and then substituting the appropriate link at rendering time. You have to sanitize any incoming HTML anyway, so why not process it a bit more?</p>
+<p>This is also what VKontakte does internally: mentions are stored as <code>[id1708231|Gregory]</code> with the numeric ID, but this becomes a link to that user’s current username upon rendering.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/changeable-usernames/830/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/changeable-usernames/830/5</link>
+        <pubDate>Fri, 31 Jul 2020 13:08:03 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-830-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/changeable-usernames/830.rss">Changeable usernames?</source>
+      </item>
+      <item>
+        <title>Changeable usernames?</title>
+        <dc:creator><![CDATA[lain]]></dc:creator>
+        <description><![CDATA[
+            <p>As you said, there are essentially three things one could call a ‘username’</p>
+<ol>
+<li>The activitypub ID.</li>
+<li>The <code>name</code> property</li>
+<li>The <code>username</code> property</li>
+</ol>
+<p>Of these, only the activitypub id has to always stay the same to identify the user. Feel free to change the others any way you like. If you allow something like taking over old users <code>name</code>s, just remember to not let them take the same AP id. Misskey uses random IDs.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/changeable-usernames/830/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/changeable-usernames/830/4</link>
+        <pubDate>Fri, 31 Jul 2020 10:46:52 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-830-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/changeable-usernames/830.rss">Changeable usernames?</source>
+      </item>
+      <item>
+        <title>Changeable usernames?</title>
+        <dc:creator><![CDATA[Alamantus]]></dc:creator>
+        <description><![CDATA[
+            <p>So far as I can tell, it should be fine to change usernames. The only thing that would break is previous mentions of a user and potentially follows…</p>
+<p>One way around that could be to store previous usernames and set up redirects to the new ones, but you’d have to consider whether to keep those old usernames reserved forever or if you allow the next person who comes along and uses them to take over and remove the redirect. Allowing new users to take over old usernames in this way presents the problem that now anyone following the previous owner is now following this new person they don’t know, and in the case of Mastodon (and probably many other implementations), the server wouldn’t know to replace the follow with the new username!</p>
+<p>So I can understand why it could be a problem to allow changing usernames, but it doesn’t seem like an insurmountable problem is you think it through enough!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/changeable-usernames/830/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/changeable-usernames/830/3</link>
+        <pubDate>Fri, 31 Jul 2020 05:37:40 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-830-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/changeable-usernames/830.rss">Changeable usernames?</source>
+      </item>
+      <item>
+        <title>Changeable usernames?</title>
+        <dc:creator><![CDATA[vpzom]]></dc:creator>
+        <description><![CDATA[
+            <p>As you note, many implementations (including Mastodon and Pleroma) use the username as part of their IDs, which limits them in this way.<br>
+However, for a host that doesn’t do this I imagine usernames chould change. Worth testing to see how other implementations react if you do that</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/changeable-usernames/830/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/changeable-usernames/830/2</link>
+        <pubDate>Thu, 30 Jul 2020 04:16:47 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-830-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/changeable-usernames/830.rss">Changeable usernames?</source>
+      </item>
+      <item>
+        <title>Changeable usernames?</title>
+        <dc:creator><![CDATA[grishka]]></dc:creator>
+        <description><![CDATA[
+            <p>It’s me and my weird edge cases again <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+<p>In the spec, there’s nothing that inherently prevents one from changing their username, yet the very idea of it seems to be very much opposed by most of the community — or, at least, the Mastodon team. So I’m trying to understand why is that.</p>
+<p>Here’s my understanding of the problem:</p>
+<ul>
+<li>The uniqueness of an AP object, internet-wide, is determined by its <code>id</code> a.k.a. <code>@id</code>. This is supposed to remain constant throughout the object lifetime.</li>
+<li>The rest of the fields in an object can be changed, added, or removed with an <code>Update</code> containing that object, as long as the <code>id</code> remains the same. These fields include <code>url</code> and <code>preferredUsername</code> for actors.</li>
+<li>So, as long as the <code>id</code> remains unchanged, there isn’t technically anything preventing one from changing their username.
+<ul>
+<li>Some implementations (again, Mastodon) use the username for both the <code>id</code> and the <code>url</code>. This means that Mastodon users won’t ever be able to change their usernames.</li>
+<li>But, this would be effortless to implement in Smithereen — I already use database row IDs to generate my <code>id</code> URLs. It should already work as intended if another server does it this way.</li>
+</ul>
+</li>
+</ul>
+<p>So what is it, then, that prevents us from having changeable usernames?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/changeable-usernames/830/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/changeable-usernames/830/1</link>
+        <pubDate>Wed, 29 Jul 2020 19:01:22 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-830-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/changeable-usernames/830.rss">Changeable usernames?</source>
+      </item>
+  </channel>
+</rss>

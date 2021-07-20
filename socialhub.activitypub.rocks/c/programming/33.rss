@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Programming - SocialHub</title>
+    <link>https://socialhub.activitypub.rocks/c/programming/33</link>
+    <description>Topics in the &#39;Programming&#39; category Discuss ActivityPub implementations in your favorite programming language.</description>
+    
+      <lastBuildDate>Wed, 07 Jul 2021 17:08:35 +0000</lastBuildDate>
+      <atom:link href="https://socialhub.activitypub.rocks/c/programming/33.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Implementing Paginated Inbox Collections</title>
+          <dc:creator><![CDATA[mag]]></dc:creator>
+          <category>Programming</category>
+          <description><![CDATA[
+            <p>Hi All!</p>
+<p>I’ve been enjoying reading through the AS/AP specs, and have started writing my own little project - I might be confident enough to publicise it here once it’s further developed.</p>
+<p>Sorry to drop a question as soon as I join the community; I do plan on interacting with you folks in more than just this topic <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/stuck_out_tongue.png?v=9" title=":stuck_out_tongue:" class="emoji" alt=":stuck_out_tongue:"></p>
+<p>When reading the specs, specifically the portions on inboxes and collections, I’ve been having trouble figuring out how to make paginated collections when the underlying collection is prone to change frequently.</p>
+<p>From the <a href="https://www.w3.org/TR/activitypub/#inbox" rel="noopener nofollow ugc">ActivityPub spec</a>:</p>
+<blockquote>
+<p>The inbox is discovered through the <code>inbox</code> property of an actor’s profile. The <code>inbox</code> <em>MUST</em> be an  <code>OrderedCollection</code>.</p>
+</blockquote>
+<p>I think I understand this: when an authorised client <code>GET</code>s someone’s inbox URL, they’re sent back an <code>OrderedCollection</code> describing that someone’s inbox. If the content of their inbox is small enough, this response could include references to all of the items in someone’s inbox (or maybe it could even include all of the items), but I’m interested in the case where a person’s inbox is too large to include al of the references in a single response: the case where pagination is required.</p>
+<p>Collections with pages can include the properties <code>first</code>, <code>current</code>, and <code>last</code>; the distinction between the first two confuses me.</p>
+<p>From the <a href="https://www.w3.org/TR/activitystreams-vocabulary/" rel="noopener nofollow ugc">ActivityStreams vocabulary</a>:</p>
+<blockquote>
+<p><code>current</code>: Notes: In a paged <code>Collection</code> , indicates the page that contains the most recently updated member items.</p>
+</blockquote>
+<blockquote>
+<p><code>first</code>: Notes: In a paged <code>Collection</code> , indicates the furthest preceeding page of items in the collection.</p>
+</blockquote>
+<p>In an <code>OrderedCollection</code> in reverse chronological order, are these properties different from one another? In my head, “furthest-preceeding” and “contains the most recently updated member items” can both mean two different things in this situation, and so both properties could mean either of:</p>
+<ol>
+<li>The provided reference will always point to the same page of items, as it was the “newest”/“youngest”/“most-recently-updated” page <em>at the time of your <code>GET</code> request to the inbox</em>;</li>
+<li>The provided reference is a reference to content that may change over time, because it is a reference to the “newest”/etc. content <em>at the time of your <code>GET</code> request to the page</em>.</li>
+</ol>
+<p>I can think of two possibilities that seem sensible to me:</p>
+<ul>
+<li>
+<code>first</code> and <code>current</code> both refer to <span class="hashtag">#2:</span> you can include both with the same value, or omit one;</li>
+<li>
+<code>first</code> refers to <span class="hashtag">#1</span>; <code>current</code> refers to <span class="hashtag">#2</span>.</li>
+</ul>
+<p>There are solutions for <span class="hashtag">#1</span> and <span class="hashtag">#2</span>, so really my issue is just down to what these properties are <em>meant</em> to represent. Are there solid examples of these properties in use that I haven’t come across?</p>
+<p>Hopefully there’s enough possible discussion here to warrant this being a “topic” - I’m brand new to Discourse, so I’m not really sure what I’m doing <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/stuck_out_tongue.png?v=9" title=":stuck_out_tongue:" class="emoji" alt=":stuck_out_tongue:"></p>
+            <p><small>3 posts - 2 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/implementing-paginated-inbox-collections/1919">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/implementing-paginated-inbox-collections/1919</link>
+          <pubDate>Wed, 07 Jul 2021 17:08:35 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1919</guid>
+          <source url="https://socialhub.activitypub.rocks/t/implementing-paginated-inbox-collections/1919.rss">Implementing Paginated Inbox Collections</source>
+        </item>
+        <item>
+          <title>RDF to json-ld</title>
+          <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+          <category>Java</category>
+          <description><![CDATA[
+            <p>Today i found a way to convert my RDF4J model into a json-ld representation that looks promising</p>
+<aside class="quote quote-modified" data-post="3" data-topic="1841">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/naturzukunft/40/983_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/is-json-ld-compatibe-to-json-ld-and-what-does-activitypub-understand-with-json-ld/1841/3">Is json-ld compatibe to json-ld and what does activityPub understand with json-ld</a> <a class="badge-wrapper  box" href="/c/activitypub/5"><span class="badge-category-bg" style="background-color: #0088CC;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Discuss the ActivityPub Recommendation, how to implement it, how to extend it. Home of the ActivityPub SIG.">ActivityPub</span></a>
+  </div>
+  <blockquote>
+    Today i found a way to be more compatible. <a href="https://github.com/filip26/titanium-json-ld" rel="noopener nofollow ugc">titanium</a> seems to do it’s job well! 
+Converting my RDF Model into the compact format like that: 
+import java.io.IOException;
+import java.io.StringReader;
+import java.io.StringWriter;
+import java.io.Writer;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.eclipse.rdf4j.model.Model;
+import org.eclipse.rdf4j.rio.RDFFormat;
+import org.eclipse.rdf4j.rio.Rio;
+import org.springframework.core.io.ClassPathResource;
+
+import com.apicatalog.jsonld.JsonLd…
+  </blockquote>
+</aside>
+
+            <p><small>5 posts - 3 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/rdf-to-json-ld/1842">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/rdf-to-json-ld/1842</link>
+          <pubDate>Tue, 08 Jun 2021 09:59:11 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1842</guid>
+          <source url="https://socialhub.activitypub.rocks/t/rdf-to-json-ld/1842.rss">RDF to json-ld</source>
+        </item>
+        <item>
+          <title>Does generic ActivityPub node software exist?</title>
+          <dc:creator><![CDATA[weex]]></dc:creator>
+          <category>NodeJS</category>
+          <description><![CDATA[
+            <p>Does there exist node software that implements only the ActivityPub protocol?</p>
+<p>In some decentralized networks, protocol stuff is taken care of by one piece of software which then exposes an interface for application specific code to use. I’m only some days into an in-depth exploration of AP, but wondering if any such domain-agnostic software exists here.</p>
+            <p><small>10 posts - 5 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/does-generic-activitypub-node-software-exist/1837">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/does-generic-activitypub-node-software-exist/1837</link>
+          <pubDate>Fri, 04 Jun 2021 23:31:36 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1837</guid>
+          <source url="https://socialhub.activitypub.rocks/t/does-generic-activitypub-node-software-exist/1837.rss">Does generic ActivityPub node software exist?</source>
+        </item>
+        <item>
+          <title>OAuth2&#39;s place in activitypub server apps</title>
+          <dc:creator><![CDATA[SelectSweet]]></dc:creator>
+          <category>Rust</category>
+          <description><![CDATA[
+            <p>I am having a bit of trouble understanding how to implement OAuth in the web app I am creating,<br>
+so I am wondering if you know of any resources that explains how to add OAuth support to a activitypub server app, without being dependent on external services in the context of authenticating users and/or client apps, if you know of any the rust programming language that would be amazing as I am creating my project in rust but any resource that helps to simplify OAuth in the context of authenticating users and/or client apps is helpful</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/oauth2s-place-in-activitypub-server-apps/1619">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/oauth2s-place-in-activitypub-server-apps/1619</link>
+          <pubDate>Mon, 19 Apr 2021 09:06:48 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1619</guid>
+          <source url="https://socialhub.activitypub.rocks/t/oauth2s-place-in-activitypub-server-apps/1619.rss">OAuth2&#39;s place in activitypub server apps</source>
+        </item>
+        <item>
+          <title>Detecting Language (i.e. English, Spanish, Russian, etc)</title>
+          <dc:creator><![CDATA[WClayFerguson]]></dc:creator>
+          <category>Programming</category>
+          <description><![CDATA[
+            <p>Does anyone have a good solution to the problem of servers that post content that don’t contain the <span class="mention">@language</span> tag in the <span class="mention">@context</span> for “Note” Objects, for example. That would for example have “en” for English language. I’m noticing that tons of messages in outboxes I’m reading from across the web don’t have language specified, so I get tons of foreign language stuff on my English language server.</p>
+<p>I know I can use a spell checker to impose a rule of like if more than 60% of words are unknown think of it as non-English, but that would be quite a hack.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/detecting-language-i-e-english-spanish-russian-etc/1349">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/detecting-language-i-e-english-spanish-russian-etc/1349</link>
+          <pubDate>Sat, 23 Jan 2021 21:31:46 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1349</guid>
+          <source url="https://socialhub.activitypub.rocks/t/detecting-language-i-e-english-spanish-russian-etc/1349.rss">Detecting Language (i.e. English, Spanish, Russian, etc)</source>
+        </item>
+        <item>
+          <title>Federating events of an existing calender</title>
+          <dc:creator><![CDATA[eest9]]></dc:creator>
+          <category>Python</category>
+          <description><![CDATA[
+            <p>Hi all,<br>
+first of all: I’m not programming very much. But I’ve the idea of implementing federation to the <a href="https://metalab.at/calendar/" rel="noopener nofollow ugc">calendar of my local hackspace</a> since the go live of <a href="https://mobilizon.org/en/" rel="noopener nofollow ugc">Mobilizon</a> (yesterday MET).</p>
+<p>The <a href="https://github.com/Metalab/mos/tree/master/cal" rel="noopener nofollow ugc">MOS (Metalab Operating System)</a> is coded in Python, so I started looking for a Python library. And I found <a href="https://github.com/dsblank/activitypub" rel="noopener nofollow ugc">one</a>! But I didn’t find a helpful documentation for it. But since <a href="https://www.w3.org/TR/activitystreams-vocabulary/#dfn-event" rel="noopener nofollow ugc">Events are similar to Objects</a> in ActivityStream, it should be as easy as the example? On the other hand Mobilizon added some Attributes to <a href="https://docs.joinmobilizon.org/contribute/activity_pub/#event_1" rel="noopener nofollow ugc">their implementation of federated events</a>. But I don’t see how I could realize this further attributes (especially the <code>repliesModeration</code> and the <code>ical:status</code> attributes) with this library. I also don’t see which attributes are mandatory to federate own events with Mobilizon Instances.</p>
+<p>In case my questions are drawn by all my explanations and links:</p>
+<ul>
+<li>Which attributes are mandatory for events to federate with Mobilizon?</li>
+<li>Are there better suited python libraries for my use case?
+<ul>
+<li>If not, how to implement additional attributes like <code>repliesModeration</code>?</li>
+</ul>
+</li>
+<li>Help! /o\</li>
+</ul>
+            <p><small>4 posts - 3 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/federating-events-of-an-existing-calender/1116">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/federating-events-of-an-existing-calender/1116</link>
+          <pubDate>Wed, 28 Oct 2020 16:27:31 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1116</guid>
+          <source url="https://socialhub.activitypub.rocks/t/federating-events-of-an-existing-calender/1116.rss">Federating events of an existing calender</source>
+        </item>
+        <item>
+          <title>Implementing an ActivityPub server in Lumen</title>
+          <dc:creator><![CDATA[tinyrabbit]]></dc:creator>
+          <category>PHP</category>
+          <description><![CDATA[
+            <p>I’ve decided to make my journey towards implementing an ActivityPub server with a web interface (and later a C5S part) public: <a href="https://notabug.org/tinyrabbit/lumen-ap-server" rel="noopener nofollow ugc">https://notabug.org/tinyrabbit/lumen-ap-server</a></p>
+<p>I’ll definitely be asking questions in this forum when I run into issues or don’t understand the protocol or de facto standards <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/smiley.png?v=9" title=":smiley:" class="emoji" alt=":smiley:"> I hope you’ll all help me along.</p>
+            <p><small>2 posts - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/implementing-an-activitypub-server-in-lumen/1074">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/implementing-an-activitypub-server-in-lumen/1074</link>
+          <pubDate>Wed, 07 Oct 2020 08:38:53 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1074</guid>
+          <source url="https://socialhub.activitypub.rocks/t/implementing-an-activitypub-server-in-lumen/1074.rss">Implementing an ActivityPub server in Lumen</source>
+        </item>
+        <item>
+          <title>Delightful Linked Data: Curated list for linked data developers</title>
+          <dc:creator><![CDATA[aschrijver]]></dc:creator>
+          <category>Programming</category>
+          <description><![CDATA[
+            <div align="center">
+<p><a href="https://codeberg.org/teaserbot-labs/delightful" rel="nofollow noopener"><img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/428cab1269efdb8ab67bd2a77f574570de50b6d6.png" alt="delightful-logo" data-base62-sha1="9uIToaAKHpdErSRhqwu4BzVdQJo" width="336" height="250"></a></p>
+<h1>The <a href="https://codeberg.org/teaserbot-labs/delightful" rel="nofollow noopener">delightful project</a> just launched <a href="https://codeberg.org/teaserbot-labs/delightful-linked-data/src/branch/main/README.md" rel="nofollow noopener">delightful linked data</a>.</h1>
+</div>
+<br>
+<p>Delightful Linked Data is curated list of linked data resources for developers. The primary reasons why I launched this list:</p>
+<ol>
+<li>The ActivityPub Fediverse and Solid Project are based on Linked Data.</li>
+<li>The power of Linked Data remains largely untapped in application designs.</li>
+<li>Linked Data plays a vital role to extend the Fediverse / Decentralized Web to new domains.</li>
+<li>Linked Data has a bad vibe in the broader development community that must be overcome.</li>
+</ol>
+<p>The list is still a bit rough at the edges, but I am sure with your help and PR’s it will improve rapidly <code>:)</code></p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/delightful-linked-data-curated-list-for-linked-data-developers/861">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/delightful-linked-data-curated-list-for-linked-data-developers/861</link>
+          <pubDate>Fri, 07 Aug 2020 12:25:52 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-861</guid>
+          <source url="https://socialhub.activitypub.rocks/t/delightful-linked-data-curated-list-for-linked-data-developers/861.rss">Delightful Linked Data: Curated list for linked data developers</source>
+        </item>
+        <item>
+          <title>Common code: Webfinger Library</title>
+          <dc:creator><![CDATA[birdsofpraise]]></dc:creator>
+          <category>NodeJS</category>
+          <description><![CDATA[
+            <p>Hello folks!</p>
+<p>I have to admit lately I’ve not taken the time to check out other people’s libraries properly. I’m sure we can benefit a lot from sharing our knowledge and code. With that in mind I thought I’d put out feelers for settling on a shared Webfinger implementation - whether that be an existing one or something we come up with. If nothing else this exercise could get us talking with each other more, which is no bad thing.</p>
+<p>I picked webfinger because it’s not core ActivityPub and it has potential use for other authors too - plus a higher chance of an existing implementation we can use/adapt.</p>
+<p>I wonder if the other node project authors would like to tell everyone a little about their implementation, whether it’s a dependency or home brewed?</p>
+<p>In the case of my library, I’ve written a fairly naïve implementation that does little more than look up an actor and return the most basic json template with a link to their profile.</p>
+            <p><small>5 posts - 2 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/common-code-webfinger-library/657">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/common-code-webfinger-library/657</link>
+          <pubDate>Sat, 02 May 2020 11:27:29 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-657</guid>
+          <source url="https://socialhub.activitypub.rocks/t/common-code-webfinger-library/657.rss">Common code: Webfinger Library</source>
+        </item>
+        <item>
+          <title>NodeJS AP library</title>
+          <dc:creator><![CDATA[birdsofpraise]]></dc:creator>
+          <category>NodeJS</category>
+          <description><![CDATA[
+            <p>Hi folks, I’ve been working on a general NodeJS library for ActivityPub. It’s not ready for production but there is a basic example which just about works. I haven’t tested it federating with any real servers or other services yet, nor integrated it into any significantly sized project.</p>
+<p>If anybody is willing to lend a hand, or just raise some issues about things like unclear documentation, I’d appreciate it.</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/c2911d91c1567acaf78af4212b7669f2f61f67c1.png" class="site-icon" width="32" height="32">
+      <a href="https://gitlab.com/paulkiddle/node-activitypub/" target="_blank" rel="nofollow noopener">GitLab</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/10f2d759dce6ea753e1e0b2bf9dc52b57a2f433b.png" class="thumbnail onebox-avatar" width="128" height="128">
+
+<h3><a href="https://gitlab.com/paulkiddle/node-activitypub/" target="_blank" rel="nofollow noopener">Paul Kiddle / Node ActivityPub</a></h3>
+
+<p>HTTP router + utility classes to allow easy activitypub integration into any project</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+            <p><small>7 posts - 5 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/nodejs-ap-library/522">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/nodejs-ap-library/522</link>
+          <pubDate>Wed, 19 Feb 2020 16:14:28 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-522</guid>
+          <source url="https://socialhub.activitypub.rocks/t/nodejs-ap-library/522.rss">NodeJS AP library</source>
+        </item>
+        <item>
+          <title>Getting Started with ActivityPub in PHP</title>
+          <dc:creator><![CDATA[nedjo]]></dc:creator>
+          <category>PHP</category>
+          <description><![CDATA[
+            <blockquote>
+<p>I read this, but I actually understood less by reading more <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/smiley.png?v=9" title=":smiley:" class="emoji" alt=":smiley:"></p>
+</blockquote>
+<p>I hear ya, in another context (PHP) it’s taking me a lot of study to start to get a handle on what all’s involved. Not Rails-specific, but some more places I’ve found useful as I try to understand ActivityPub and how to implement support for it:</p>
+<ul>
+<li><a href="https://docs.funkwhale.audio/federation/index.html" rel="nofollow noopener">FunkWhale Federation</a></li>
+<li>
+<a href="https://blog.moodle.net/2018/what-is-activitypub/" rel="nofollow noopener">What is ActivityPub?</a> (MoodleNet)</li>
+<li><a href="https://video.writeas.org/videos/watch/cc55e615-d204-417c-9575-7b57674cc6f3" rel="nofollow noopener">Video intro to WriteFreely fediverse integration</a></li>
+<li>
+<a href="https://flak.tedunangst.com/post/ActivityPub-as-it-has-been-understood" rel="nofollow noopener">ActivityPub as it has been understood</a>–includes lots of relevant links.</li>
+<li>
+<a href="https://librelounge.org" rel="nofollow noopener">LibreLounge</a> podcast
+<ul>
+<li><a href="https://librelounge.org/episodes/episode-12-activitypub-part-1.html" rel="nofollow noopener">Episode 12: ActivityPub Part 1</a></li>
+<li><a href="https://librelounge.org/episodes/episode-17-activitypub-part-2.html" rel="nofollow noopener">Episode 17: ActivityPub Part 2</a></li>
+<li><a href="https://librelounge.org/episodes/episode-20-activitypub-part-3.html" rel="nofollow noopener">Episode 20: ActivityPub Part 3</a></li>
+</ul>
+</li>
+</ul>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/getting-started-with-activitypub-in-php/526">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/getting-started-with-activitypub-in-php/526</link>
+          <pubDate>Mon, 13 Jan 2020 20:15:03 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-526</guid>
+          <source url="https://socialhub.activitypub.rocks/t/getting-started-with-activitypub-in-php/526.rss">Getting Started with ActivityPub in PHP</source>
+        </item>
+        <item>
+          <title>A quick survey of PHP projects in the ActivityPub space, plus comments</title>
+          <dc:creator><![CDATA[nedjo]]></dc:creator>
+          <category>PHP</category>
+          <description><![CDATA[
+            <p>As part of working towards ActivityPub integration for a couple of PHP projects I’ve been looking into PHP ActivityPub-related projects and recently posted a summary in this issue:</p>
+<aside class="onebox githubissue">
+  <header class="source">
+      <a href="https://github.com/philippejadin/agorakit/issues/271" target="_blank" rel="nofollow noopener">github.com/philippejadin/agorakit</a>
+  </header>
+  <article class="onebox-body">
+    <div class="github-row">
+  <div class="github-icon-container" title="Issue">
+	  <svg width="60" height="60" class="github-icon" viewbox="0 0 14 16" aria-hidden="true"><path d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
+  </div>
+
+  <div class="github-info-container">
+    <h4>
+      <a href="https://github.com/philippejadin/agorakit/issues/271" target="_blank" rel="nofollow noopener">Activitypub/Fediverse integration</a>
+    </h4>
+
+    <div class="github-info">
+      <div class="date">
+        opened <span class="discourse-local-date" data-format="ll" data-date="2019-12-11" data-time="17:38:45" data-timezone="UTC">05:38PM - 11 Dec 19 UTC</span>
+      </div>
+
+
+      <div class="user">
+        <a href="https://github.com/nedjo" target="_blank" rel="nofollow noopener">
+          <img alt="nedjo" src="https://socialhub.activitypub.rocks/uploads/default/original/1X/b584186eadd0ac60c2ab0dd0d9899fa0d35633ac.png" class="onebox-avatar-inline" width="20" height="20">
+          nedjo
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="github-row">
+  <p class="github-content">Agorakit seems like a great candidate for integration with the Fediverse through ActivityPub support. This issue outlines what such integration might...</p>
+</div>
+
+<div class="labels">
+    <span style="display:inline-block;margin-top:2px;background-color: #B8B8B8;padding: 2px;border-radius: 4px;color: #fff;margin-left: 3px;">enhancement</span>
+    <span style="display:inline-block;margin-top:2px;background-color: #B8B8B8;padding: 2px;border-radius: 4px;color: #fff;margin-left: 3px;">feature</span>
+    <span style="display:inline-block;margin-top:2px;background-color: #B8B8B8;padding: 2px;border-radius: 4px;color: #fff;margin-left: 3px;">help wanted</span>
+    <span style="display:inline-block;margin-top:2px;background-color: #B8B8B8;padding: 2px;border-radius: 4px;color: #fff;margin-left: 3px;">need more info</span>
+</div>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>As a new user on this SocialHub instance I can’t (yet) repost the info here (too many links) but in that issue see the section “Potential models and building blocks” where I’ve listed the various efforts I found.</p>
+<p>The other PHP project I’m contributing to is a module for Drupal:</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://github.githubassets.com/favicon.ico" class="site-icon" width="32" height="32">
+      <a href="https://github.com/swentel/activitypub/issues" target="_blank" rel="nofollow noopener">GitHub</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/d9cb67e4ad8a7c3ea911f69e73f6c1807bcee536.jpeg" class="thumbnail onebox-avatar" width="400" height="400">
+
+<h3><a href="https://github.com/swentel/activitypub/issues" target="_blank" rel="nofollow noopener">swentel/activitypub</a></h3>
+
+<p>ActivityPub for Drupal. Contribute to swentel/activitypub development by creating an account on GitHub.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>Some of my early impressions:</p>
+<ul>
+<li>There are various projects that are drafts towards general-use PHP packages for ActivityPub integration, including pterotype-project/activitypub-php, landrok/activitypub, dansup/php-activitypub, patbator/activitystreams, and assemblee-virtuelle/ActivityPubBundle (this last one for Synfony 4).</li>
+<li>Of these, landrok/activitypub is probably the farthest along in terms of general applicability and comes with some great documentation. That said, it still has a ways to go and - inevitably - includes some architectural decisions that may conflict with those of specific ActivityPub applications.</li>
+<li>Pixelfed is far and away the furthest developed specific implementation that I found and provides a solid example to work from in terms of grokking what’s involved and how the different pieces interact, including ones that are needed but not in the ActivityPub spec–webfinger, nodeinfo.</li>
+</ul>
+<p>As usual, in theory we’d all stand to benefit from standardising on a set of packages we could collaborate on rather than maintaining a different implementation for each application. But there are challenges in getting there. What level of abstraction is enough to achieve broad applicability but not so much that it conflicts with specific architectures?</p>
+<p>As a fairly arbitrary example, Drupal uses Symfony’s serializer component and accompanying normalizers/denormalizers. So in Drupal this is the API we would probably use for transforming ActivityPub objects to and from Drupal entities. But other implementations naturally will have their own distinct approaches.</p>
+<p>Personally, some of my first steps will be:</p>
+<ul>
+<li>Study Pixelfed–well worth the time.</li>
+<li>See if I can directly use at least parts of, and/or contribute to, landrok/activitypub and delirehberi/webfinger.</li>
+</ul>
+<p>Other tips and ideas very welcome!</p>
+            <p><small>3 posts - 2 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/a-quick-survey-of-php-projects-in-the-activitypub-space-plus-comments/464">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/a-quick-survey-of-php-projects-in-the-activitypub-space-plus-comments/464</link>
+          <pubDate>Fri, 10 Jan 2020 01:24:48 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-464</guid>
+          <source url="https://socialhub.activitypub.rocks/t/a-quick-survey-of-php-projects-in-the-activitypub-space-plus-comments/464.rss">A quick survey of PHP projects in the ActivityPub space, plus comments</source>
+        </item>
+        <item>
+          <title>Any tools and tutorials on rails and activitypub?</title>
+          <dc:creator><![CDATA[RubyGoddess]]></dc:creator>
+          <category>Ruby</category>
+          <description><![CDATA[
+            <p>I recently discovered <a href="https://pump.io" rel="nofollow noopener">pump.io</a>, activitypub and the concept of “federated” networks. One of my friends invited me to the network mastodon.<br>
+I realized mastodon itself is written in ruby. I’m curious, is there anyway to make our rails apps federated? I did a bit of search but I found some of those projects are discontinued. And if yes, is there any tutorials?</p>
+            <p><small>14 posts - 7 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449</link>
+          <pubDate>Fri, 03 Jan 2020 21:22:07 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-449</guid>
+          <source url="https://socialhub.activitypub.rocks/t/any-tools-and-tutorials-on-rails-and-activitypub/449.rss">Any tools and tutorials on rails and activitypub?</source>
+        </item>
+        <item>
+          <title>Activity Streams 2.0 Reference Implementation</title>
+          <dc:creator><![CDATA[naturzukunft]]></dc:creator>
+          <category>Java</category>
+          <description><![CDATA[
+            <p>Maybe an interesting link: <a href="https://github.com/OpenSocial/activitystreams" rel="nofollow noopener">https://github.com/OpenSocial/activitystreams</a></p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/activity-streams-2-0-reference-implementation/426">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/activity-streams-2-0-reference-implementation/426</link>
+          <pubDate>Wed, 25 Dec 2019 11:02:46 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-426</guid>
+          <source url="https://socialhub.activitypub.rocks/t/activity-streams-2-0-reference-implementation/426.rss">Activity Streams 2.0 Reference Implementation</source>
+        </item>
+        <item>
+          <title>About Programming</title>
+          <dc:creator><![CDATA[system]]></dc:creator>
+          <category>Programming</category>
+          <description><![CDATA[
+            <p>Discuss ActivityPub implementations in your favorite programming language.</p>
+<p><a href="https://fediverse.party">Fediverse.party</a> lists Fediverse software by programming language, which inspired this category. Here you can talk about the specificity of ActivityPub implementation by language. It is recommended to <em>mute</em> categories you are not interested in, to avoid information overload.</p>
+<h3>Missing Language?</h3>
+<p>Please ask!</p>
+            <p><small>4 posts - 3 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/about-programming/314">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/about-programming/314</link>
+          <pubDate>Sat, 16 Nov 2019 15:18:38 +0000</pubDate>
+          <discourse:topicPinned>Yes</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-314</guid>
+          <source url="https://socialhub.activitypub.rocks/t/about-programming/314.rss">About Programming</source>
+        </item>
+  </channel>
+</rss>

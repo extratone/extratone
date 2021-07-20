@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Gancio - SocialHub</title>
+    <link>https://socialhub.activitypub.rocks/c/software/gancio/43</link>
+    <description>Topics in the &#39;Gancio&#39; category A shared agenda for local communities with AP support.</description>
+    
+      <lastBuildDate>Mon, 05 Jul 2021 18:03:35 +0000</lastBuildDate>
+      <atom:link href="https://socialhub.activitypub.rocks/c/software/gancio/43.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Nginx Config and Gancio Display</title>
+          <dc:creator><![CDATA[vince]]></dc:creator>
+          <category>Gancio</category>
+          <description><![CDATA[
+            <p>Hello,<br>
+I am new to setting up instances of federated servers. I am trying to set up gancio, but seem to be going wrong somewhere in the servers config. It remains showing the Nginx setup page at my IP address (<a href="http://45.77.164.185/" rel="noopener nofollow ugc">http://45.77.164.185/</a>)  and nothing at our website (thebeehive.events). If anyone is available to help it would be much appreciated! When I’m done, I plan to submit some proposals for the documentation in order to make it more friendly to new users.</p>
+<p>Gancio Config:<br>
+<div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/2X/b/b9ea6ec2405460a5e5521422dec5fb116c04c85b.jpeg" data-download-href="https://socialhub.activitypub.rocks/uploads/default/b9ea6ec2405460a5e5521422dec5fb116c04c85b" title="Screen Shot 2021-07-05 at 12.04.29 PM"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/b/b9ea6ec2405460a5e5521422dec5fb116c04c85b_2_690x451.jpeg" alt="Screen Shot 2021-07-05 at 12.04.29 PM" data-base62-sha1="qwGBiPpPZOR7gcnY2bquWG1XNcT" width="690" height="451" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/b/b9ea6ec2405460a5e5521422dec5fb116c04c85b_2_690x451.jpeg, https://socialhub.activitypub.rocks/uploads/default/original/2X/b/b9ea6ec2405460a5e5521422dec5fb116c04c85b.jpeg 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/2X/b/b9ea6ec2405460a5e5521422dec5fb116c04c85b.jpeg 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/b/b9ea6ec2405460a5e5521422dec5fb116c04c85b_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Screen Shot 2021-07-05 at 12.04.29 PM</span><span class="informations">846×554 45.2 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>Nginx Config<br>
+followed steps here: <a href="https://framagit.org/les/gancio/-/issues/103" class="inline-onebox" rel="noopener nofollow ugc">Need helped with nginx proxy setup (#103) · Issues · les / gancio · GitLab</a><br>
+where a user advised to<br>
+“/etc/nginx/sites-available and adopt the server-name then `ln -s /etc/nginx/sites-available/thebeehive.events /etc/nginx/sites-enabled/”<br>
+although I didn’t do the second step about commenting the line, as it seems the Nginx instructions were updated today by Gancio and that part is no longer there.</p>
+<p>server {<br>
+listen 80;<br>
+listen [::]:80;<br>
+server_name thebeehive.events;</p>
+<p>keepalive_timeout    70;<br>
+sendfile             on;<br>
+client_max_body_size 80m;</p>
+<p>location / {<br>
+try_files $uri <span class="mention">@proxy</span>;<br>
+}</p>
+<p>location <span class="mention">@proxy</span> {<br>
+proxy_set_header Host $host;<br>
+proxy_pass <a href="http://127.0.0.1:13120" rel="noopener nofollow ugc">http://127.0.0.1:13120</a>;<br>
+}<br>
+}</p>
+<p>Thank you to anyone who takes time to help! I am new to all this, but I want to become skilled enough at this to help others set up fediverse instances eventually.</p>
+            <p><small>2 posts - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/nginx-config-and-gancio-display/1913">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/nginx-config-and-gancio-display/1913</link>
+          <pubDate>Mon, 05 Jul 2021 18:03:35 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1913</guid>
+          <source url="https://socialhub.activitypub.rocks/t/nginx-config-and-gancio-display/1913.rss">Nginx Config and Gancio Display</source>
+        </item>
+        <item>
+          <title>Layout personalization</title>
+          <dc:creator><![CDATA[hacklabkelo]]></dc:creator>
+          <category>Gancio</category>
+          <description><![CDATA[
+            <p>We want to change the el-footer in layouts/default.vue. Do we need to clone gancio git repo, change layouts/default.vue in our cloned git repo and then deploy gancio from our cloned git repo? Is it any other simple way to do this?</p>
+<p>Thanks</p>
+            <p><small>4 posts - 2 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/layout-personalization/799">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/layout-personalization/799</link>
+          <pubDate>Sun, 12 Jul 2020 09:49:06 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-799</guid>
+          <source url="https://socialhub.activitypub.rocks/t/layout-personalization/799.rss">Layout personalization</source>
+        </item>
+        <item>
+          <title>Registration on gancio weblate</title>
+          <dc:creator><![CDATA[hacklabkelo]]></dc:creator>
+          <category>Gancio</category>
+          <description><![CDATA[
+            <p>We never receive the confirmation link by e-mail to complete the registration.</p>
+<p>Is it working mail send from <a href="http://weblate.gancio.org" rel="nofollow noopener">weblate.gancio.org</a>?</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/registration-on-gancio-weblate/798">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/registration-on-gancio-weblate/798</link>
+          <pubDate>Sun, 12 Jul 2020 08:49:05 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-798</guid>
+          <source url="https://socialhub.activitypub.rocks/t/registration-on-gancio-weblate/798.rss">Registration on gancio weblate</source>
+        </item>
+        <item>
+          <title>Updating instance not work</title>
+          <dc:creator><![CDATA[hacklabkelo]]></dc:creator>
+          <category>Gancio</category>
+          <description><![CDATA[
+            <p>Hi!</p>
+<p>When I do “yarn global add gancio”, no new locales show in my instance but in git master branch, I can see new locales.</p>
+<p>How can I update to master branch in framagit?</p>
+<p>Regards</p>
+            <p><small>5 posts - 2 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/updating-instance-not-work/785">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/updating-instance-not-work/785</link>
+          <pubDate>Sun, 05 Jul 2020 10:01:56 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-785</guid>
+          <source url="https://socialhub.activitypub.rocks/t/updating-instance-not-work/785.rss">Updating instance not work</source>
+        </item>
+        <item>
+          <title>[Proposal] YunoHost packaging</title>
+          <dc:creator><![CDATA[ViSiKa]]></dc:creator>
+          <category>Gancio</category>
+          <description><![CDATA[
+            <p>It would be nice if someone could package Gancio for YunoHost.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/proposal-yunohost-packaging/590">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/proposal-yunohost-packaging/590</link>
+          <pubDate>Sun, 29 Mar 2020 17:33:13 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-590</guid>
+          <source url="https://socialhub.activitypub.rocks/t/proposal-yunohost-packaging/590.rss">[Proposal] YunoHost packaging</source>
+        </item>
+        <item>
+          <title>V0.20 is coming</title>
+          <dc:creator><![CDATA[les]]></dc:creator>
+          <category>Gancio</category>
+          <description><![CDATA[
+            <p><strong>Gancio <em>0.20-beta is coming</em></strong></p>
+<p>Try it out at <a href="https://demo.gancio.org" rel="nofollow noopener">https://demo.gancio.org</a></p>
+<h3>Main changes</h3>
+<ul>
+<li>New layout (navbar/footer/visible filters)</li>
+<li>two month calendar on large display</li>
+<li>admin could edit title, description, favicon &amp; logo directly form admin panel (you can even edit this about)</li>
+<li>new <code>add event</code> layout =&gt; <a href="https://demo.gancio.org/add" rel="nofollow noopener">https://demo.gancio.org/add</a>
+</li>
+<li>new editor to describe events ( <strong>bold</strong> , <em>italic,</em> <a>link</a>) supported also using copy/paste</li>
+<li>the editor also support <code>live markdown</code> (try using ### at line start)</li>
+<li>
+<strong>oauth2 server</strong> implementation (documentation: <a href="https://gancio.org/dev/oauth" rel="nofollow noopener">https://gancio.org/dev/oauth</a>)</li>
+<li>fediverse moderation</li>
+<li>fix embedding an event via iframe</li>
+<li>images converted in <code>.webp</code>
+</li>
+<li>new catalan translation</li>
+</ul>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/v0-20-is-coming/482">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/v0-20-is-coming/482</link>
+          <pubDate>Tue, 21 Jan 2020 23:48:02 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-482</guid>
+          <source url="https://socialhub.activitypub.rocks/t/v0-20-is-coming/482.rss">V0.20 is coming</source>
+        </item>
+        <item>
+          <title>About Gancio</title>
+          <dc:creator><![CDATA[les]]></dc:creator>
+          <category>Gancio</category>
+          <description><![CDATA[
+            <p>A shared agenda for local communities with AP support.</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      
+      <a href="https://gancio.org/" target="_blank" rel="nofollow noopener">Gancio</a>
+  </header>
+  <article class="onebox-body">
+    <img src="" class="thumbnail" width="" height="">
+
+<h3><a href="https://gancio.org/" target="_blank" rel="nofollow noopener">Home</a></h3>
+
+<p>Gancio is a shared agenda for local communities.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/about-gancio/368">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/about-gancio/368</link>
+          <pubDate>Sun, 01 Dec 2019 19:48:29 +0000</pubDate>
+          <discourse:topicPinned>Yes</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-368</guid>
+          <source url="https://socialhub.activitypub.rocks/t/about-gancio/368.rss">About Gancio</source>
+        </item>
+  </channel>
+</rss>

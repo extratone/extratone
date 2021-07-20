@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Semantic Web and Linked Data - NGI event June 21</title>
+    <link>https://socialhub.activitypub.rocks/t/semantic-web-and-linked-data-ngi-event-june-21/1849</link>
+    <description># https://nlnet.nl/events/20210621/LinkedData/
+
+## Semantic web and metadata solutions
+
+&gt; In this free online event, projects from across the [Next Generation Internet](https://nlnet.nl/NGI) universe present their state-of-the-art work on LinkedData and other forms of metadata. The event is organised by NLnet foundation on **June 21st 2021** at **9.30 CEST** . The webinar brings together innovative projects advancing the state of art in Linked Data. These efforts funded by various funding programs of the Next Generation Internet initiative will share their progress to extract, add and use worthwhile metadata to our data and online information.
+
+Where, among others, @pukkamustard will present #software:openengiadina and DREAM research.
+
+https://conf.tube/videos/watch/acaf2c6c-5533-40ae-9899-b37268ad1767
+
+(For more info ping @j8ter )</description>
+    
+    <lastBuildDate>Fri, 02 Jul 2021 10:12:20 +0000</lastBuildDate>
+    <category>Meeting</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/semantic-web-and-linked-data-ngi-event-june-21/1849.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Semantic Web and Linked Data - NGI event June 21</title>
+        <dc:creator><![CDATA[bashrc]]></dc:creator>
+        <description><![CDATA[
+            <p>The security considerations described in the Meld talk are probably somewhat related to the kinds of things that Spritely is doing with object capabilities. Particularly the authorization of any chain of linked data schemas, beyond just naively trusting urls with mutable things behind them, is an important problem.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/semantic-web-and-linked-data-ngi-event-june-21/1849/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/semantic-web-and-linked-data-ngi-event-june-21/1849/7</link>
+        <pubDate>Fri, 02 Jul 2021 10:12:20 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1849-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/semantic-web-and-linked-data-ngi-event-june-21/1849.rss">Semantic Web and Linked Data - NGI event June 21</source>
+      </item>
+      <item>
+        <title>Semantic Web and Linked Data - NGI event June 21</title>
+        <dc:creator><![CDATA[bashrc]]></dc:creator>
+        <description><![CDATA[
+            <p>On the linked data search presentation, I think there are many factors to be wary about. One thing I would not want to see would be what I call the “reverse Wikileaks” situation in which instead of institutions becoming transparent to the people the opposite happens and people become transparent and machine readable to institutions.</p>
+<p>Also arbitrary search can make things easy for bad actors who are trawling for people to harass.</p>
+<p>So if people’s data is going to be machine readable and searchable then there need to be appropriate authentication/authorization mechanisms built into the protocols to ensure that privacy can be maintained.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/semantic-web-and-linked-data-ngi-event-june-21/1849/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/semantic-web-and-linked-data-ngi-event-june-21/1849/6</link>
+        <pubDate>Fri, 02 Jul 2021 09:47:38 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1849-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/semantic-web-and-linked-data-ngi-event-june-21/1849.rss">Semantic Web and Linked Data - NGI event June 21</source>
+      </item>
+      <item>
+        <title>Semantic Web and Linked Data - NGI event June 21</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Oh, that’s nice. The most important point was to ensure it was on PeerTube too, so that’s great. PS. <a class="mention" href="/u/pukkamustard">@pukkamustard</a> might receive a lot of mail with that video thumbnail now shown <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/semantic-web-and-linked-data-ngi-event-june-21/1849/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/semantic-web-and-linked-data-ngi-event-june-21/1849/5</link>
+        <pubDate>Fri, 02 Jul 2021 08:20:19 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1849-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/semantic-web-and-linked-data-ngi-event-june-21/1849.rss">Semantic Web and Linked Data - NGI event June 21</source>
+      </item>
+      <item>
+        <title>Semantic Web and Linked Data - NGI event June 21</title>
+        <dc:creator><![CDATA[j8ter]]></dc:creator>
+        <description><![CDATA[
+            <p>We’ve already published it on conf.tube (<a href="https://conf.tube/videos/watch/acaf2c6c-5533-40ae-9899-b37268ad1767" class="inline-onebox" rel="noopener nofollow ugc">Next Generation Internet Linked Data Webinar - ConfTube</a>) but feel free to share and publish it elsewhere.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/semantic-web-and-linked-data-ngi-event-june-21/1849/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/semantic-web-and-linked-data-ngi-event-june-21/1849/4</link>
+        <pubDate>Fri, 02 Jul 2021 07:39:12 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1849-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/semantic-web-and-linked-data-ngi-event-june-21/1849.rss">Semantic Web and Linked Data - NGI event June 21</source>
+      </item>
+      <item>
+        <title>Semantic Web and Linked Data - NGI event June 21</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/j8ter">@j8ter</a> since this is also recorded again, we might publish it on the SocialHub PeerTube channel (unless you want to publish in another account)?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/semantic-web-and-linked-data-ngi-event-june-21/1849/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/semantic-web-and-linked-data-ngi-event-june-21/1849/3</link>
+        <pubDate>Mon, 21 Jun 2021 06:19:52 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1849-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/semantic-web-and-linked-data-ngi-event-june-21/1849.rss">Semantic Web and Linked Data - NGI event June 21</source>
+      </item>
+      <item>
+        <title>Semantic Web and Linked Data - NGI event June 21</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://socialhub.activitypub.rocks/t/semantic-web-and-linked-data-ngi-event-june-21/1849/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/semantic-web-and-linked-data-ngi-event-june-21/1849/2</link>
+        <pubDate>Thu, 10 Jun 2021 06:20:26 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1849-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/semantic-web-and-linked-data-ngi-event-june-21/1849.rss">Semantic Web and Linked Data - NGI event June 21</source>
+      </item>
+      <item>
+        <title>Semantic Web and Linked Data - NGI event June 21</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <h1>
+<a name="httpsnlnetnlevents20210621linkeddata-1" class="anchor" href="#httpsnlnetnlevents20210621linkeddata-1"></a><a href="https://nlnet.nl/events/20210621/LinkedData/" class="inline-onebox">NLnet; Next Generation Internet webinar on Linked Data</a>
+</h1>
+<h2>
+<a name="semantic-web-and-metadata-solutions-2" class="anchor" href="#semantic-web-and-metadata-solutions-2"></a>Semantic web and metadata solutions</h2>
+<blockquote>
+<p>In this free online event, projects from across the <a href="https://nlnet.nl/NGI">Next Generation Internet</a> universe present their state-of-the-art work on LinkedData and other forms of metadata. The event is organised by NLnet foundation on <strong>June 21st 2021</strong> at <strong>9.30 CEST</strong> . The webinar brings together innovative projects advancing the state of art in Linked Data. These efforts funded by various funding programs of the Next Generation Internet initiative will share their progress to extract, add and use worthwhile metadata to our data and online information.</p>
+</blockquote>
+<p>Where, among others, <a class="mention" href="/u/pukkamustard">@pukkamustard</a> will present <a class="hashtag" href="/c/software/openengiadina/50">#<span>software:openengiadina</span></a> and DREAM research.</p>
+<p><iframe width="560" height="315" src="https://conf.tube/videos/embed/acaf2c6c-5533-40ae-9899-b37268ad1767" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+<p>(For more info ping <a class="mention" href="/u/j8ter">@j8ter</a> )</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/semantic-web-and-linked-data-ngi-event-june-21/1849/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/semantic-web-and-linked-data-ngi-event-june-21/1849/1</link>
+        <pubDate>Thu, 10 Jun 2021 06:20:05 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1849-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/semantic-web-and-linked-data-ngi-event-june-21/1849.rss">Semantic Web and Linked Data - NGI event June 21</source>
+      </item>
+  </channel>
+</rss>

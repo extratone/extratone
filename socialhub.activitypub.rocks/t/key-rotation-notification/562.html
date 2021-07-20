@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Key rotation notification - Server to Server - SocialHub</title>
+    <meta name="description" content="Is there a best practice in handling key rotation? It seems to be common that all keys are identified as the actor ID  + “#main-key” (or something similar to that), and that probably needs to change. 
+Given that actors a&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta2 - https://github.com/discourse/discourse version c39ab6c0ae3803b6a62501954ae40adb6b73d580">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="562.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://socialhub.activitypub.rocks","potentialAction":{"@type":"SearchAction","target":"https://socialhub.activitypub.rocks/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="SocialHub Search">
+
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_caa977791d50efc800b8ef1bcbafb8a15f082761.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop" />
+      <link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_5_969dd27459c19a0b7620746a3d179b86ef033d7a.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_3_f50bf2f225326f482d56e65e93f1f047d48417a9.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="3"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_8_e3f93470fef56ec97b63f77e16779e328baab8ea.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8"/>
+<link href="https://socialhub.activitypub.rocks/stylesheets/desktop_theme_4_8d506fd22b761a15044193a6d4ebda5f6bde2498.css?__ws=socialhub.activitypub.rocks" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Key rotation notification&#39;" href="https://socialhub.activitypub.rocks/t/key-rotation-notification/562.rss" />
+    <meta property="og:site_name" content="SocialHub" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:image" content="https://socialhub.activitypub.rocks/uploads/default/original/1X/8faac84234dc73d074dadaa2bcf24dc746b8647f.png" />
+<meta property="og:url" content="https://socialhub.activitypub.rocks/t/key-rotation-notification/562" />
+<meta name="twitter:url" content="https://socialhub.activitypub.rocks/t/key-rotation-notification/562" />
+<meta property="og:title" content="Key rotation notification" />
+<meta name="twitter:title" content="Key rotation notification" />
+<meta property="og:description" content="Is there a best practice in handling key rotation? It seems to be common that all keys are identified as the actor ID  + “#main-key” (or something similar to that), and that probably needs to change.  Given that actors are objects, I was wondering sending an Update/Actor activity would be enough to hint that followers and federation peers should update their internal caches and references to that actor, including new keys.  Also, because signed objects will still live on, keys can’t really be re..." />
+<meta name="twitter:description" content="Is there a best practice in handling key rotation? It seems to be common that all keys are identified as the actor ID  + “#main-key” (or something similar to that), and that probably needs to change.  Given that actors are objects, I was wondering sending an Update/Actor activity would be enough to hint that followers and federation peers should update their internal caches and references to that actor, including new keys.  Also, because signed objects will still live on, keys can’t really be re..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="3 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="1 ❤" />
+<meta property="article:published_time" content="2020-03-06T12:39:52+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+<script src="https://socialhub.activitypub.rocks/theme-javascripts/3a68d4ddcab78e923b7c4169708a8f1deb79df66.js?__ws=socialhub.activitypub.rocks"></script>
+    <header>
+      <a href="https://socialhub.activitypub.rocks/">
+          <img src="../../uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png" alt="SocialHub" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="562.html">Key rotation notification</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/activitypub.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #0088CC'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>ActivityPub</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/activitypub/s2s/7.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #808281'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Server to Server</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/ngerakines.html'><span itemprop='name'>ngerakines</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="562.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-03-06T12:39:52Z' class='post-time'>
+                March 6, 2020, 12:39pm
+              </time>
+              <meta itemprop='dateModified' content='2020-03-06T12:39:52Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Is there a best practice in handling key rotation? It seems to be common that all keys are identified as the actor ID  + “<span class="hashtag">#main-key</span>” (or something similar to that), and that probably needs to change.</p>
+<p>Given that actors are objects, I was wondering sending an <code>Update/Actor</code> activity would be enough to hint that followers and federation peers should update their internal caches and references to that actor, including new keys.</p>
+<p>Also, because signed objects will still live on, keys can’t really be removed, but instead should be flagged as not the current/primary key.</p>
+        </div>
+
+        <meta itemprop='headline' content='Key rotation notification'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/schmittlauch.html'><span itemprop='name'>schmittlauch</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="562.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-03-09T21:48:26Z' class='post-time'>
+                March 9, 2020,  9:48pm
+              </time>
+              <meta itemprop='dateModified' content='2020-03-09T21:48:26Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>There are two different kinds of key rotation your software needs to be able to deal with, at least when receiving content:</p>
+<ul>
+<li>
+<strong>signed key rotation</strong>: This is used for regular key updates. An <code>Update</code> activity signed with the old key pushes a new key to all subscribers.</li>
+<li>
+<strong>blind key rotation</strong>: This mechanism just silently changes the local keys <em>without</em> sending a signed <code>Update</code>. This <a href="https://blog.dereferenced.org/the-case-for-blind-key-rotation" rel="nofollow noopener">avoids linkability between the old and the new key and provides plausible deniability for previous posts</a>.<br>
+AFAIK Pleroma does a blind key rotation each time a post is deleted. Mastodon <a href="https://github.com/tootsuite/mastodon/issues/9658" rel="nofollow noopener">can at least handle these blind key rotations</a>, though I do not know whether it uses them for its own posts.</li>
+</ul>
+        </div>
+
+        <meta itemprop='headline' content='Key rotation notification'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/ngerakines.html'><span itemprop='name'>ngerakines</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="562.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-03-10T00:47:35Z' class='post-time'>
+                March 10, 2020, 12:47am
+              </time>
+              <meta itemprop='dateModified' content='2020-03-10T00:47:35Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Yeah, both of those present some interesting challenges.</p>
+<p>With signed key rotation flows, if the old key is compromised, then it doesn’t really make sense to sign a new key with the old key. I understand that this is for the “happy path” where there aren’t bad actors at play, but it is something to consider.</p>
+<p>The blind key rotation makes validating old content practically impossible. If a ld+json signed payload is being referenced and relayed as federated content, if the key is rotated but the new key not identified differently than the old key, validation is going to repeatedly break.</p>
+<p>Either way, it would be great if other developers implemented unique key ids. Using a checksum, like the classic md5 of key bytes, or timestamp would a lot of this a non-issue.</p>
+        </div>
+
+        <meta itemprop='headline' content='Key rotation notification'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/lanodan.html'><span itemprop='name'>lanodan</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="562.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-03-10T11:08:52Z'>
+              <time itemprop='dateModified' datetime='2020-03-10T11:12:44Z' class='post-time'>
+                March 10, 2020, 11:12am
+              </time>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>[2020-03-10 00:57:43+0000] Nick Gerakines via SocialHub:</p>
+<blockquote>
+<p>Yeah, both of those present some interesting challenges.</p>
+<p>With signed key rotation flows, if the old key is compromised, then it doesn’t really make sense to sign a new key with the old key. I understand that this is for the “happy path” where there aren’t bad actors at play, but it is something to consider.</p>
+<p>The blind key rotation makes validating old content practically impossible. If a ld+json signed payload is being referenced and relayed as federated content, if the key is rotated but the new key not identified differently than the old key, validation is going to repeatedly break.</p>
+</blockquote>
+<p>Blind key rotation allows a bunch of privacy features, including plausible deniability. It’s true that from a cryptonerd point of view it makes no sense but on actual usage you need to be able to have past data be non-veriable (it was already verified when it mattered anyway).</p>
+<p>It also allows to just trash most of your instance/user and start from scratch.</p>
+<blockquote>
+<p>Either way, it would be great if other developers implemented unique key ids. Using a checksum, like the classic md5 of key bytes, or timestamp would a lot of this a non-issue.</p>
+</blockquote>
+<p>What? Why?</p>
+        </div>
+
+        <meta itemprop='headline' content='Key rotation notification'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/ngerakines.html'><span itemprop='name'>ngerakines</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="562.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-03-10T14:42:44Z' class='post-time'>
+                March 10, 2020,  2:42pm
+              </time>
+              <meta itemprop='dateModified' content='2020-03-10T14:42:44Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Blind key rotation does allow for some privacy features, sure, but key rotation is a normal thing. Consider the fact that the most commonly encryption systems on the web (TLS certificates, GPG, etc.) make expiration, rotation, and revocation central to how they work. I think it can and will be a normal thing to rotate keys periodically without having to trash all old content because the signatures are no longer verifiable.</p>
+<p>Keys are treated as different from all other objects, which seems really weird. Each object has a unique ID, so why not give keys unique IDs?</p>
+<ol>
+<li>Actor foo with key <span class="hashtag">#mainkey</span> creates note-1234</li>
+<li>Actor foo rotates key <span class="hashtag">#mainkey</span>
+</li>
+<li>Downstream server receives note-1234, attempts to verify it but cannot</li>
+</ol>
+<p>Also, the spec is a little vague about key fetching. If I recall correctly, it says that key ids should be an endpoint that returns the key with a HTTP GET request, but it doesn’t say if the response should be the key body or the ld+json structure that contains the key data.</p>
+<p>Practically, if the expected behavior is that instance, particularly large ones, are expected to trash instance and user data, that’s going to damage the ecosystem and hurt adoption. Not being able to rotate (expire, revoke, notify, etc.) makes it more difficult for users to own their data, instance operators deal with security problems, and deal with bad actors on the federation network.</p>
+<p>It is also worth noting that blind rotation and having unique key identifiers aren’t in opposition to eachother. As an instance operator, I can still rotate a user’s key and not notify anyone, but still have a unique identifier for the newly created key.</p>
+        </div>
+
+        <meta itemprop='headline' content='Key rotation notification'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/lanodan.html'><span itemprop='name'>lanodan</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="562.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-03-10T15:14:44Z'>
+              <time itemprop='dateModified' datetime='2020-03-10T15:16:23Z' class='post-time'>
+                March 10, 2020,  3:16pm
+              </time>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>[2020-03-10 14:52:51+0000] Nick Gerakines via SocialHub:</p>
+<blockquote>
+<p>Blind key rotation does allow for some privacy features, sure, but key rotation is a normal thing. Consider the fact that the most commonly encryption systems on the web (TLS certificates, GPG, etc.) make expiration, rotation, and revocation central to how they work. I think it can and will be a normal thing to rotate keys periodically without having to trash all old content because the signatures are no longer verifiable.</p>
+</blockquote>
+<p>Why would you trash old content? IIRC the only usage of the keys is for HTTP Signatures and JSON-LD Signatures (which are only used in public posts in Mastodon and never in Pleroma/Honk/…).</p>
+<p>In both cases it doesn’t matter, it’s just like TLS certificates in 99% of cases (only one I know is with key-pinning), you can change the key and no one will care.</p>
+<blockquote>
+<p>It is also worth noting that blind rotation and having unique key identifiers aren’t in opposition to eachother. As an instance operator, I can still rotate a user’s key and not notify anyone, but still have a unique identifier for the newly created key.</p>
+</blockquote>
+<p>They’re not but they potentially harm plausible deniability as it makes it very easy to just have a backup of all the keys and have proof that at any point Allysa P. Hacker had posted a content that for example is now illegal in her country.</p>
+        </div>
+
+        <meta itemprop='headline' content='Key rotation notification'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/ngerakines.html'><span itemprop='name'>ngerakines</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="562.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-03-10T15:53:55Z' class='post-time'>
+                March 10, 2020,  3:53pm
+              </time>
+              <meta itemprop='dateModified' content='2020-03-10T15:53:55Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote group-pleroma" data-username="lanodan" data-post="6" data-topic="562">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/lanodan/40/40_2.png" class="avatar"> lanodan:</div>
+<blockquote>
+<p>Why would you trash old content? IIRC the only usage of the keys is for HTTP Signatures and JSON-LD Signatures (which are only used in public posts in Mastodon and never in Pleroma/Honk/…).</p>
+</blockquote>
+</aside>
+<p>I don’t think that is the case. Signatures are also included in the JSON payloads during inbox posts as a mechanism to allow activities to be relayed with their content still verified. There is another thread, <a href="../making-sense-of-rsasignature2017/347.html">Making sense of RsaSignature2017</a>, that I think you’re participating in.</p>
+<aside class="quote group-pleroma" data-username="lanodan" data-post="6" data-topic="562">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/lanodan/40/40_2.png" class="avatar"> lanodan:</div>
+<blockquote>
+<p>In both cases it doesn’t matter, it’s just like TLS certificates in 99% of cases (only one I know is with key-pinning), you can change the key and no one will care.</p>
+</blockquote>
+</aside>
+<p>It isn’t true or accurate to say that it doesn’t matter when certificates change. Certificates are actively checked against revocation lists. Not only is there the OSCP system built into certificate infrastructure, but there are revocation list systems actively developed by Google, Mozilla, Apple, and others for the purpose of actively checking certificate revocation.</p>
+<p>It is also worth pointing out that Apple, a member of the CA/Browser Forum, is also mandating 13 month expiration times for all certificates starting in September. Any certificates that have an expiration time of longer than 13 months will be considered invalid in Safari and the underlying components using Safari in macOS, iOS, etc. Google attempted to introduce a similar measure at a CAB meeting last summer, but it didn’t pass.</p>
+<p>Not that everyone should do what Google and Apple does, but it is generally accepted as a bad practice to have keys that don’t expire. ActivityPub, and the systems that build upon it, should support key expiration and rotation in a way that supports the longevity of the community and it’s users. Not having unique key identifiers makes that more difficult.</p>
+<aside class="quote group-pleroma" data-username="lanodan" data-post="4" data-topic="562">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/lanodan/40/40_2.png" class="avatar"> lanodan:</div>
+<blockquote>
+<p>It also allows to just trash most of your instance/user and start from scratch.</p>
+</blockquote>
+</aside>
+<aside class="quote group-pleroma" data-username="lanodan" data-post="6" data-topic="562">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/socialhub.activitypub.rocks/lanodan/40/40_2.png" class="avatar"> lanodan:</div>
+<blockquote>
+<p>Why would you trash old content?</p>
+</blockquote>
+</aside>
+<p>I was just quoting you? I may have misunderstood what you meant.</p>
+        </div>
+
+        <meta itemprop='headline' content='Key rotation notification'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Petites Singularités'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://socialhub.activitypub.rocks/uploads/default/original/1X/4d2bcc2cd17698f8d3efb8ffaa6983d11bbf3229.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grishka.html'><span itemprop='name'>grishka</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="562.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-03-21T23:40:19Z' class='post-time'>
+                March 21, 2020, 11:40pm
+              </time>
+              <meta itemprop='dateModified' content='2020-03-21T23:40:19Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Key rotation? <em>What</em> key rotation? There isn’t any as far as I can tell.</p>
+        </div>
+
+        <meta itemprop='headline' content='Key rotation notification'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://socialhub.activitypub.rocks/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

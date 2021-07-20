@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>About Ruby</title>
+    <link>https://socialhub.activitypub.rocks/t/about-ruby/316</link>
+    <description>Programming ActivityPub in Ruby.</description>
+    
+    <lastBuildDate>Mon, 18 Nov 2019 12:23:14 +0000</lastBuildDate>
+    <category>Ruby</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/about-ruby/316.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>About Ruby</title>
+        <dc:creator><![CDATA[system]]></dc:creator>
+        <description><![CDATA[
+            <p>Programming ActivityPub in Ruby.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/about-ruby/316/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/about-ruby/316/1</link>
+        <pubDate>Sat, 16 Nov 2019 15:21:48 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-316-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/about-ruby/316.rss">About Ruby</source>
+      </item>
+  </channel>
+</rss>

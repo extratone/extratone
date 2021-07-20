@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Murmurations protocol for directories and maps</title>
+    <link>https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609</link>
+    <description>I wonder if this is or could be compatible with AP?
+
+&quot;Rather than creating centralised data sets, The Murmurations protocol makes it easy for Organisations to host data about themselves on their own web sites.
+
+The data is structured in a way that it can be automatically ‘crawled’ and aggregated, based on specific filterable criteria, so that directories and maps are automatically updated about an organisation from a single authoritative source. That source being the organisation itself!&quot;
+https://murmurations.network/
+
+ Apparently it can speak JSON.
+
+&gt; now we have built a stand-alone .json file creator to enable anyone running any other type of website to create their profile and add their org / project to the index
+https://www.loomio.org/d/xbZAQPDa/murmurations-protocol
+
+White paper here:
+https://murmurations.network/wp-content/uploads/2019/09/murmurations-white-paper-v0.1.0.pdf</description>
+    
+    <lastBuildDate>Fri, 26 Jun 2020 19:39:23 +0000</lastBuildDate>
+    <category>Server to Server</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Murmurations protocol for directories and maps</title>
+        <dc:creator><![CDATA[fosshost]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, go wild!</p>
+<p>The more the merrier.   The more we test, the better</p>
+<p>The instance is currently sat there doing nothing and will be until AP Conf in Oct.  It is a shared service provided by fosshost and it will be repurposed after AP Conf (or used for other causes, prior)</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609/15</link>
+        <pubDate>Fri, 26 Jun 2020 19:38:28 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-609-15</guid>
+        <source url="https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609.rss">Murmurations protocol for directories and maps</source>
+      </item>
+      <item>
+        <title>Murmurations protocol for directories and maps</title>
+        <dc:creator><![CDATA[strypey]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="fosshost" data-post="13" data-topic="609">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/letter_avatar_proxy/v4/letter/f/b2d939/40.png" class="avatar"> fosshost:</div>
+<blockquote>
+<p>I agree we should use <a href="https://bbb.fosshost.org" rel="nofollow noopener">https://bbb.fosshost.org </a> for ActivityPub</p>
+</blockquote>
+</aside>
+<p>Awesome! Does that mean the fediverse.party crew could host a meetup on it?</p>
+<p>The post you replied to was a reply to the comment by <a class="mention" href="/u/how">@how</a> about the IN COMMON meetups (<a href="https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609/9" class="inline-onebox">Murmurations protocol for directories and maps</a>). Would this be in scope for <a href="http://bbb.fosshost.org" rel="nofollow noopener">bbb.fosshost.org</a>? I only brought up meet.coop as one liberating replacement for Zoom I’m aware of, it’s great to know there are more.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609/14</link>
+        <pubDate>Fri, 26 Jun 2020 12:17:34 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-609-14</guid>
+        <source url="https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609.rss">Murmurations protocol for directories and maps</source>
+      </item>
+      <item>
+        <title>Murmurations protocol for directories and maps</title>
+        <dc:creator><![CDATA[fosshost]]></dc:creator>
+        <description><![CDATA[
+            <p>I agree we should use <a href="https://bbb.fosshost.org" rel="nofollow noopener">https://bbb.fosshost.org</a> for ActivityPub - this has been provisioned and is dedicated exclusively.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609/13</link>
+        <pubDate>Thu, 25 Jun 2020 17:55:36 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-609-13</guid>
+        <source url="https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609.rss">Murmurations protocol for directories and maps</source>
+      </item>
+      <item>
+        <title>Murmurations protocol for directories and maps</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="strypey" data-post="11" data-topic="609">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/strypey/40/224_2.png" class="avatar"> strypey:</div>
+<blockquote>
+<p>Meet.coop could be an option for that.</p>
+</blockquote>
+</aside>
+<p>Yes, I was thinking about this or <a class="mention" href="/u/fosshost">@fosshost</a> since we could use the opportunity to trial the BBB installation before the AP Conference.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609/12</link>
+        <pubDate>Thu, 25 Jun 2020 17:17:41 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-609-12</guid>
+        <source url="https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609.rss">Murmurations protocol for directories and maps</source>
+      </item>
+      <item>
+        <title>Murmurations protocol for directories and maps</title>
+        <dc:creator><![CDATA[strypey]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="how" data-post="8" data-topic="609">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/how/40/94_2.png" class="avatar"> how:</div>
+<blockquote>
+<p>Since the next one was scheduled in June in Barcelona, looks like there’s a need to figure out something online.</p>
+</blockquote>
+</aside>
+<p>Meet.coop could be an option for that. They run a Big Blue Button instance as a co-op, formed by a group of existing tech co-ops.</p>
+<aside class="quote no-group" data-username="how" data-post="10" data-topic="609">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/how/40/94_2.png" class="avatar"> how:</div>
+<blockquote>
+<p>This link is not public – and even unavailable when logged-in to Loomio.</p>
+</blockquote>
+</aside>
+<p>My bad. I thought this thread was in the OAE group, which is all public discussion, but it’s actually in the Open Coop group, which (ironically) is mostly private discussions. I’ll ask if that thread can be made public.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609/11</link>
+        <pubDate>Thu, 25 Jun 2020 14:35:04 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-609-11</guid>
+        <source url="https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609.rss">Murmurations protocol for directories and maps</source>
+      </item>
+      <item>
+        <title>Murmurations protocol for directories and maps</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="strypey" data-post="1" data-topic="609">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/strypey/40/224_2.png" class="avatar"> strypey:</div>
+<blockquote>
+<p><a href="https://www.loomio.org/d/xbZAQPDa/murmurations-protocol">https://www.loomio.org/d/xbZAQPDa/murmurations-protocol</a></p>
+</blockquote>
+</aside>
+<p>This link is not public – and even unavailable when logged-in to Loomio.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609/10</link>
+        <pubDate>Thu, 25 Jun 2020 12:39:58 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-609-10</guid>
+        <source url="https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609.rss">Murmurations protocol for directories and maps</source>
+      </item>
+      <item>
+        <title>Murmurations protocol for directories and maps</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/adamm">@AdamM</a>, I uploaded a <a href="https://incommon.cc/.well-known/murmurations_node.json">murmurations_node.json</a> for IN COMMON and <a href="https://talk.incommon.cc/t/murmurations-protocol-for-directories-and-maps/779/2?u=how">compared the current spec with IN COMMON data model</a>. I would be happy to discuss more with you since one of the goals of the IN COMMON collective is to provide solid data foundations for interoperability.</p>
+<p>E.g.,</p>
+<ul>
+<li>there should be a <code>/.well-known/</code> place for the file(s)</li>
+<li>figure out something compatible with <a href="https://lab.libreho.st/librehosters/librehost-api"><code>librehost.json</code></a>
+</li>
+<li>figure out something compatible with IN COMMON resources (especially the <code>Entity</code> class which is a <code>Resource</code> that can describe a <code>Schema.org Organization</code>)</li>
+</ul>
+<p>Tomorrow and the 30th of June are good moments to participate in the related FSMET sessions:<br>
+</p><aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/d7f480f9aa9b62b84dea983fb80d9d1b732cba05.png" class="site-icon" width="32" height="32">
+      <a href="https://talk.incommon.cc/t/fsmet-world-social-forum/781" target="_blank" title="07:08PM - 22 June 2020">IN COMMON – 22 Jun 20</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/6eb0657dd3942709574f1ddff36cb00e0d0b7e66_2_500x500.png" class="thumbnail onebox-avatar" width="500" height="500" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/6eb0657dd3942709574f1ddff36cb00e0d0b7e66_2_500x500.png, https://socialhub.activitypub.rocks/uploads/default/original/1X/6eb0657dd3942709574f1ddff36cb00e0d0b7e66.png 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/1X/6eb0657dd3942709574f1ddff36cb00e0d0b7e66.png 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/6eb0657dd3942709574f1ddff36cb00e0d0b7e66_2_10x10.png">
+
+<h3><a href="https://talk.incommon.cc/t/fsmet-world-social-forum/781" target="_blank">FSMET - World Social Forum</a></h3>
+
+<p>As FSMET has moved the in person encounters in Barcelona to september, this last week of June will be dedicated to online sessions, that will help us to summarize the work done this year towards the planned September meeting.  The year long...</p>
+
+  <p><span class="label1">Reading time: 1 mins 🕑</span>
+    <span class="label2">Likes: 3 ❤</span></p>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609/9</link>
+        <pubDate>Thu, 25 Jun 2020 12:18:35 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-609-9</guid>
+        <source url="https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609.rss">Murmurations protocol for directories and maps</source>
+      </item>
+      <item>
+        <title>Murmurations protocol for directories and maps</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Welcome <a class="mention" href="/u/adamm">@AdamM</a>!</p>
+<p>Indeed Communecter is a great project with nice people. <a class="mention" href="/u/natacha">@natacha</a> has been working on bringing together various mapping-related projects, including CO for <a href="https://talk.incommon.cc/t/lets-intermap-in-april-please-join/743">an InterMapping meeting</a> that had to be canceled due to the current situation. Since the next one was scheduled in June in Barcelona, looks like there’s a need to figure out something online.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609/8</link>
+        <pubDate>Wed, 22 Apr 2020 11:11:34 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-609-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609.rss">Murmurations protocol for directories and maps</source>
+      </item>
+      <item>
+        <title>Murmurations protocol for directories and maps</title>
+        <dc:creator><![CDATA[strypey]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/adamm">@AdamM</a> are you aware of <a href="https://www.communecter.org/" rel="nofollow noopener">Communecter</a>? Their <a href="https://github.com/pixelhumain/communecter" rel="nofollow noopener">code is available on GH</a> and they seem to have similar goals to Murmurations. They might be keen to make their data available using the Murmurations standard and if I remember rightly, they are also interested in implementing AP.</p>
+<p>This may be of interest to you too <a class="mention" href="/u/pukkamustard">@pukkamustard</a></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609/7</link>
+        <pubDate>Fri, 17 Apr 2020 02:14:37 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-609-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609.rss">Murmurations protocol for directories and maps</source>
+      </item>
+      <item>
+        <title>Murmurations protocol for directories and maps</title>
+        <dc:creator><![CDATA[AdamM]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all – It’s great to see Murmurations under discussion among folks in a distributed data community like ActivityPub!</p>
+<p>As <a class="mention" href="/u/pukkamustard">@pukkamustard</a> said, the source code is in various repos under <a href="https://github.com/Photosynthesis/Murmurations" rel="nofollow noopener">https://github.com/Photosynthesis/</a>. We are working on better public specifications. The whitepaper gives an overview, but it’s not very technically satisfying. For the more technically inclined, probably the best place to look for now is the schema repo, and the API spec document inside it (as a new user I can’t link to these, but they’re easy to find under the Photosynthesis account).</p>
+<p>Our original approach was to follow the JSON-LD standard and embed Murmurations data in a site’s HTML.</p>
+<p>But, this requires much more data transfer and parsing on the consumption end. So, we’re currently using a separate URL for the JSON data (either an API endpoint or file). That said, I think including a snippet of embedded JSON-LD with the address of the full Murmurations data is something we should look at.</p>
+<p>If there’s a way to make Murmurations data interoperable with ActivityPub, we’re keen!</p>
+<p>My impression has been that AP is designed for more chronological, feed-like content, while Murmurations is (for now) mostly about more static identity information about organisations. It would be great to hear your suggestions on how we can bridge the gap.</p>
+<p>Cheers,<br>
+Adam</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609/6</link>
+        <pubDate>Tue, 14 Apr 2020 16:32:47 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-609-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609.rss">Murmurations protocol for directories and maps</source>
+      </item>
+      <item>
+        <title>Murmurations protocol for directories and maps</title>
+        <dc:creator><![CDATA[pukkamustard]]></dc:creator>
+        <description><![CDATA[
+            <p>I believe the source code is here: <a href="https://github.com/Photosynthesis/Murmurations" rel="nofollow noopener">https://github.com/Photosynthesis/Murmurations</a></p>
+<p>I don’t think there is real public specification apart from the white paper.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609/5</link>
+        <pubDate>Tue, 14 Apr 2020 15:45:43 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-609-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609.rss">Murmurations protocol for directories and maps</source>
+      </item>
+      <item>
+        <title>Murmurations protocol for directories and maps</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Murmurations sounds cool but where is the source code ? And where is a public specification of the murmurations protocol ?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609/4</link>
+        <pubDate>Tue, 14 Apr 2020 15:37:10 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-609-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609.rss">Murmurations protocol for directories and maps</source>
+      </item>
+      <item>
+        <title>Murmurations protocol for directories and maps</title>
+        <dc:creator><![CDATA[pukkamustard]]></dc:creator>
+        <description><![CDATA[
+            <p>It does look cool! Thanks for the mention <a class="mention" href="/u/aschrijver">@aschrijver</a>!</p>
+<p>I very much like how they use existing data and vocabularies. One that deserves special attention is <a href="https://www.ripess.eu/networking/mapping/" rel="nofollow noopener">ESSGLOBAL</a> for social solidarity economy.</p>
+<aside class="quote no-group" data-username="strypey" data-post="1" data-topic="609">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/strypey/40/224_2.png" class="avatar"> strypey:</div>
+<blockquote>
+<p>I wonder if this is or could be compatible with AP?</p>
+</blockquote>
+</aside>
+<p>From what I understand it is very compatible (or at least can be made very compatible).</p>
+<p>Maybe a quick detour on a very similar idea that is extremely widely used: Embedding structured data on a website so Google can understand it.</p>
+<h2>Structured Data for Google</h2>
+<p>The only thing that needs to be done is add a bit of JSON (actually JSON-LD) to your website. Google has very nice documentation on how exactly: <a href="https://developers.google.com/search/docs/data-types/event" rel="nofollow noopener">Get your event on Google</a> or <a href="https://developers.google.com/search/docs/data-types/local-business" rel="nofollow noopener">Local Business</a>.</p>
+<p>This is a shortened example of an Event embedded on a website:</p>
+<pre><code class="lang-auto">&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My super cool event&lt;/title&gt;
+    &lt;script type="application/ld+json"&gt;
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "My super cool event",
+      "startDate": "2025-07-21T19:00-05:00",
+      "endDate": "2025-07-21T23:00-05:00",
+      "location": {
+        "@type": "Place",
+        "name": "Snickerpark Stadium",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "100 West Snickerpark Dr",
+          "addressLocality": "Snickertown",
+          "postalCode": "19019",
+          "addressRegion": "PA",
+          "addressCountry": "US"
+        }
+      }
+    }
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>Google bot parses this and understands that this JSON describes an Event.</p>
+<p>This is somewhat a similar approach to what Murmurations is doing (as far as I understand). Unlike Google they don’t only use the <a href="https://schema.org" rel="nofollow noopener">schema.org</a> vocabulary but also <a href="https://www.ripess.eu/networking/mapping/" rel="nofollow noopener">ESSGLOBAL</a> which allows description of social solidarity economy initiative.</p>
+<p>The way Google requires JSON to be embedded is a <a href="https://www.w3.org/TR/json-ld/#embedding-json-ld-in-html-documents" rel="nofollow noopener">specified standard</a>. From what I understand Murmuration does not use this embedding (I would recommend them to do so).</p>
+<p>The interesting thing is that tons of websites do this for Google (If you search for JSON-LD the top hits will be about SEO), but nobody except Google uses this data. Time to change this!</p>
+<h2>Using embedded structured data on the Fediverse</h2>
+<p>Usually in ActivityPub one creates a <code>Note</code> or an <code>Article</code>. This is then shared and commented on with more <code>Note</code>s and <code>Announce</code>d. But really any kind of structured content can be created or commented on with ActivityPub.</p>
+<p>For example the website above with embedded event might be hosted at <code>http://example.com/my-super-cool-event/</code>. This URL happens to be the ID of the described event.</p>
+<p>The event can then be <code>Announced</code> via ActivityPub:</p>
+<pre><code class="lang-auto">{
+  "@context": "https://www.w3.org/ns/activitystreams".
+  "type": "Announce",
+  "object": "http://example.com/my-super-cool-event/"
+}
+</code></pre>
+<p>This is exactly how an existing <code>Note</code> would be announced. A client (or server) receiving this <code>Announce</code> activity would fetch “<a href="http://example.com/my-super-cool-event/" rel="nofollow noopener">http://example.com/my-super-cool-event/</a>”, parse it and display the event in the UI.</p>
+<p>Unfortunately not many ActivityPub clients/servers (as far as I know) can fetch arbitrary content -it requires a whole range of parsers.</p>
+<p><a href="https://openengiadina.net" rel="nofollow noopener">openEngiadina</a> is trying to build a server and client that can handle such data and fetch it with a wide range of parsers. We have an initial demo: <a href="https://socialhub.activitypub.rocks/t/geopub-initial-demo/603" class="inline-onebox">GeoPub - initial demo</a> that can do exactly what I describe here.</p>
+<h2>Back to Murmurations</h2>
+<p>I think it is super cool and important that structured content is published not only about things that Google cares about but also about things communities care about.</p>
+<p>Murmurations shows us very nicely that you don’t need an ActivityPub Server or any complicated thing, just embed some structured content on your website. With a couple of tweakst this content can be used with ActivityPub and shared on the Fediverse.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609/3</link>
+        <pubDate>Tue, 14 Apr 2020 08:28:12 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-609-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609.rss">Murmurations protocol for directories and maps</source>
+      </item>
+      <item>
+        <title>Murmurations protocol for directories and maps</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Wow, this looks cool. Also a shout to <a class="mention" href="/u/pukkamustard">@pukkamustard</a> as this may be interesting for openEngiadina.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609/2</link>
+        <pubDate>Mon, 13 Apr 2020 11:20:29 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-609-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609.rss">Murmurations protocol for directories and maps</source>
+      </item>
+      <item>
+        <title>Murmurations protocol for directories and maps</title>
+        <dc:creator><![CDATA[strypey]]></dc:creator>
+        <description><![CDATA[
+            <p>I wonder if this is or could be compatible with AP?</p>
+<p>"Rather than creating centralised data sets, The Murmurations protocol makes it easy for Organisations to host data about themselves on their own web sites.</p>
+<p>The data is structured in a way that it can be automatically ‘crawled’ and aggregated, based on specific filterable criteria, so that directories and maps are automatically updated about an organisation from a single authoritative source. That source being the organisation itself!"<br>
+<a href="https://murmurations.network/" class="onebox" target="_blank" rel="nofollow noopener">https://murmurations.network/</a></p>
+<p>Apparently it can speak JSON.</p>
+<blockquote>
+<p>now we have built a stand-alone .json file creator to enable anyone running any other type of website to create their profile and add their org / project to the index<br>
+<a href="https://www.loomio.org/d/xbZAQPDa/murmurations-protocol" rel="nofollow noopener">https://www.loomio.org/d/xbZAQPDa/murmurations-protocol</a></p>
+</blockquote>
+<p>White paper here:<br>
+<aside class="onebox pdf">
+  <header class="source">
+      <a href="https://murmurations.network/wp-content/uploads/2019/09/murmurations-white-paper-v0.1.0.pdf" target="_blank" rel="nofollow noopener">murmurations.network</a>
+  </header>
+  <article class="onebox-body">
+    <a href="https://murmurations.network/wp-content/uploads/2019/09/murmurations-white-paper-v0.1.0.pdf" target="_blank" rel="nofollow noopener"><span class="pdf-onebox-logo"></span></a>
+<h3><a href="https://murmurations.network/wp-content/uploads/2019/09/murmurations-white-paper-v0.1.0.pdf" target="_blank" rel="nofollow noopener">murmurations-white-paper-v0.1.0.pdf</a></h3>
+
+<p class="filesize">77.39 KB</p>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609/1</link>
+        <pubDate>Mon, 13 Apr 2020 06:54:31 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-609-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/murmurations-protocol-for-directories-and-maps/609.rss">Murmurations protocol for directories and maps</source>
+      </item>
+  </channel>
+</rss>

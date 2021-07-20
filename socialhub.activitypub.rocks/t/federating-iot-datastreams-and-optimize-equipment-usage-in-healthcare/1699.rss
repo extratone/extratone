@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Federating IoT datastreams and optimize equipment usage in Healthcare</title>
+    <link>https://socialhub.activitypub.rocks/t/federating-iot-datastreams-and-optimize-equipment-usage-in-healthcare/1699</link>
+    <description>## Fediverse in Healthcare
+
+![pexels-pixabay-40568|690x460, 75%](upload://4y7Z0YrYyIxYiHTRzTuvun0NKA.jpeg) 
+
+[quote=&quot;zleap, post:2, topic:1238&quot;]
+**Idea** : Select business domains we’d love to see in the fediverse, and write visions / business cases for candidate projects.
+[/quote]
+
+There are two interesting cases I would be happy to *fediversize*, being currently discussed in a team I am part of. 
+1. Secure handling of sensitive IoT data. The case is how to gather and securely process medical telemetry from smartwatches, fitness bands and such (implants being discreetly *undiscussed*).  Following the idea of decentralization, I can imagine a locally hosted server, collecting data, somehow combined with secure backbone (https://friendica.wprzemianie.pl/search?q=%23TheTubes) and some ways to make data available either for an authorized physician or (locally anonymized) for research. But here I got to the limit of my technical imagination and I have no one around here to help me. Anyone?
+2. There are two cases of matching underused assets with their possible uses
+2.1. Medical equipment being left unused once research projects are done and closed with professionals lacking funding to buy/rent it on a commercial basis.
+2.2. Clinical research programs looking for certain specific &quot;cases&quot; -- volunteers for experimental treatment or diagnostics -- and people who cannot afford therapy for their less common conditions.
+I can imagine using fediverse approach to create decentralized exchange, without central database, using tag and categories to find matching pairs.
+
+Do you think it is worth some effort?
+
+&lt;small&gt;_(Image CC0 Credit: [Pixabay on Pexels](https://www.pexels.com/photo/blue-and-silver-stetoscope-40568/))_&lt;/small&gt;</description>
+    
+    <lastBuildDate>Thu, 06 May 2021 17:30:30 +0000</lastBuildDate>
+    <category>Fediverse Futures</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/federating-iot-datastreams-and-optimize-equipment-usage-in-healthcare/1699.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Federating IoT datastreams and optimize equipment usage in Healthcare</title>
+        <dc:creator><![CDATA[pskulski]]></dc:creator>
+        <description><![CDATA[
+            <p>I appreciate you raised the legal aspect of it, which is my usual blind spot.<br>
+As for the technical aspect of privacy, I see e2ee quite possible.<br>
+But indeed, medical data are not really suitable for fediverse model, which is rather about broadcasting than restricted access.</p>
+<p>So, I will go for the fruits hanging lower than that.<br>
+However, outside fediverse itself, it would be great to find a way to process medical data in a decentralised and personally-controlled way. But that’s for another time and place I guess…</p>
+<p>Thanks for your input.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federating-iot-datastreams-and-optimize-equipment-usage-in-healthcare/1699/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federating-iot-datastreams-and-optimize-equipment-usage-in-healthcare/1699/6</link>
+        <pubDate>Thu, 06 May 2021 17:30:30 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1699-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federating-iot-datastreams-and-optimize-equipment-usage-in-healthcare/1699.rss">Federating IoT datastreams and optimize equipment usage in Healthcare</source>
+      </item>
+      <item>
+        <title>Federating IoT datastreams and optimize equipment usage in Healthcare</title>
+        <dc:creator><![CDATA[cjs]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="pskulski" data-post="1" data-topic="1699">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/pskulski/40/1067_2.png" class="avatar"> pskulski:</div>
+<blockquote>
+<p>Do you think it is worth some effort?</p>
+</blockquote>
+</aside>
+<p>Yes, <em>if</em> a massive amount of effort is spent on the security side, probably making it incompatible with today’s Fediverse. The Mastodon/Pleroma/etc-flavor of ActivityPub that exists today is woefully insufficient for handling super private information like medical data.</p>
+<aside class="quote no-group" data-username="pskulski" data-post="1" data-topic="1699">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/pskulski/40/1067_2.png" class="avatar"> pskulski:</div>
+<blockquote>
+<p>There are two cases of matching underused assets with their possible uses<br>
+2.1. Medical equipment being left unused once research projects are done and closed with professionals lacking funding to buy/rent it on a commercial basis.</p>
+</blockquote>
+</aside>
+<p>This is most likely the easiest route. It does not involve the privacy of people, just management of “things”.</p>
+<p>The barriers to “<em>fediversize</em>” super private identifying information such as medical information of people are primarily on the legal obligations (HIPAA in the USA, IDK what in EU or other regions) around informed consent, storage laws, and regulatory oversight (ex: HIPAA &amp; The Patriot Act gives the US government great latitude to obtain medical records without a warrant). For example, I am under the impression that many US based medical practices and hospitals will reject medical records solely given to them by patients and instead say “that’s nice but we also want your old medical providers’ copy directly from them” due to the history of Americans doctoring our own records to attain prescription drugs under a false pretense (this is not the peoples’ fault – the addictiveness of certain prescription drugs pushed heavily by certain pharma companies created this sorry situation). This is a different problem of authentication and authorization that is not solved by technology, but credibility and provenance. That means the federating behaviors may need to be different in different jurisdictions, and therefore lead to cross-digital-border compatibility issues. Simply making things federated does not erase national digital border issues, nor credibility/provenance issues.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federating-iot-datastreams-and-optimize-equipment-usage-in-healthcare/1699/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federating-iot-datastreams-and-optimize-equipment-usage-in-healthcare/1699/5</link>
+        <pubDate>Thu, 06 May 2021 17:12:46 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1699-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federating-iot-datastreams-and-optimize-equipment-usage-in-healthcare/1699.rss">Federating IoT datastreams and optimize equipment usage in Healthcare</source>
+      </item>
+      <item>
+        <title>Federating IoT datastreams and optimize equipment usage in Healthcare</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>For this topic I also created a brainstorming post in our Lemmy Fediverse Futures companion space:</p>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/55b71e37b7983e7a2cc4bd3516669493a331dd03_2_500x500.webp" class="site-icon" width="500" height="500" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/55b71e37b7983e7a2cc4bd3516669493a331dd03_2_500x500.webp, https://socialhub.activitypub.rocks/uploads/default/optimized/1X/55b71e37b7983e7a2cc4bd3516669493a331dd03_2_750x750.webp 1.5x, https://socialhub.activitypub.rocks/uploads/default/optimized/1X/55b71e37b7983e7a2cc4bd3516669493a331dd03_2_1000x1000.webp 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/55b71e37b7983e7a2cc4bd3516669493a331dd03_2_10x10.png">
+      <a href="https://lemmy.ml/post/62715" target="_blank" rel="noopener">lemmy.ml</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/459;"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/8/89466eb2442e6cb6230d81e96b472a95c42da2ef_2_690x459.jpeg" class="thumbnail" width="690" height="459" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/8/89466eb2442e6cb6230d81e96b472a95c42da2ef_2_690x459.jpeg, https://socialhub.activitypub.rocks/uploads/default/original/2X/8/89466eb2442e6cb6230d81e96b472a95c42da2ef.jpeg 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/2X/8/89466eb2442e6cb6230d81e96b472a95c42da2ef.jpeg 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/8/89466eb2442e6cb6230d81e96b472a95c42da2ef_2_10x10.png"></div>
+
+<h3><a href="https://lemmy.ml/post/62715" target="_blank" rel="noopener">Federating IoT datastreams and optimize equipment usage in Healthcare - Lemmy</a></h3>
+
+<p>We have tons of IoT gadgets that stream their data to proprietary platforms. Fitness trackers and other devices send our health data to shady services who will sell it further. We want control of this data, and Fediverse can help.
+…</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/federating-iot-datastreams-and-optimize-equipment-usage-in-healthcare/1699/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federating-iot-datastreams-and-optimize-equipment-usage-in-healthcare/1699/4</link>
+        <pubDate>Wed, 05 May 2021 06:05:32 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1699-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federating-iot-datastreams-and-optimize-equipment-usage-in-healthcare/1699.rss">Federating IoT datastreams and optimize equipment usage in Healthcare</source>
+      </item>
+      <item>
+        <title>Federating IoT datastreams and optimize equipment usage in Healthcare</title>
+        <dc:creator><![CDATA[pskulski]]></dc:creator>
+        <description><![CDATA[
+            <p>I am developing a standard “micro-self-hosting” installation based on Yunohost which is very flexible and scalable. If I find someone to work with, we can start building upon this platform.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federating-iot-datastreams-and-optimize-equipment-usage-in-healthcare/1699/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federating-iot-datastreams-and-optimize-equipment-usage-in-healthcare/1699/3</link>
+        <pubDate>Tue, 04 May 2021 19:10:50 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1699-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federating-iot-datastreams-and-optimize-equipment-usage-in-healthcare/1699.rss">Federating IoT datastreams and optimize equipment usage in Healthcare</source>
+      </item>
+      <item>
+        <title>Federating IoT datastreams and optimize equipment usage in Healthcare</title>
+        <dc:creator><![CDATA[zleap]]></dc:creator>
+        <description><![CDATA[
+            <p>This sounds interesting, also given the popularity of citizen science along with Raspberry Pi , Arduino for projects etc,  it would be great to be able to gather data and share this in real time with selected entities.    Even if this is say local temperature data,  the potential of having a real time data could be useful to others.  I would guess with a ‘bot’ account once all set up it would just require monitoring to keep it working.</p>
+<p>Raspberry Pi + data input + something to glue together + toot (command line tool) could be really useful here.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federating-iot-datastreams-and-optimize-equipment-usage-in-healthcare/1699/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federating-iot-datastreams-and-optimize-equipment-usage-in-healthcare/1699/2</link>
+        <pubDate>Tue, 04 May 2021 15:43:56 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1699-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federating-iot-datastreams-and-optimize-equipment-usage-in-healthcare/1699.rss">Federating IoT datastreams and optimize equipment usage in Healthcare</source>
+      </item>
+      <item>
+        <title>Federating IoT datastreams and optimize equipment usage in Healthcare</title>
+        <dc:creator><![CDATA[pskulski]]></dc:creator>
+        <description><![CDATA[
+            <h2>
+<a name="fediverse-in-healthcare-1" class="anchor" href="#fediverse-in-healthcare-1"></a>Fediverse in Healthcare</h2>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/2X/0/0083aec2247c4143d156e58654324c54fa370e7c.jpeg" data-download-href="https://socialhub.activitypub.rocks/uploads/default/0083aec2247c4143d156e58654324c54fa370e7c" title="pexels-pixabay-40568"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/0/0083aec2247c4143d156e58654324c54fa370e7c_2_517x345.jpeg" alt="pexels-pixabay-40568" data-base62-sha1="4y7Z0YrYyIxYiHTRzTuvun0NKA" width="517" height="345" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/0/0083aec2247c4143d156e58654324c54fa370e7c_2_517x345.jpeg, https://socialhub.activitypub.rocks/uploads/default/optimized/2X/0/0083aec2247c4143d156e58654324c54fa370e7c_2_775x517.jpeg 1.5x, https://socialhub.activitypub.rocks/uploads/default/optimized/2X/0/0083aec2247c4143d156e58654324c54fa370e7c_2_1034x690.jpeg 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/0/0083aec2247c4143d156e58654324c54fa370e7c_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">pexels-pixabay-40568</span><span class="informations">3000×2000 502 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<aside class="quote no-group" data-username="zleap" data-post="2" data-topic="1238">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/letter_avatar_proxy/v4/letter/z/e495f1/40.png" class="avatar"><a href="https://socialhub.activitypub.rocks/t/fediverse-futures-visions-dreams-feedback-wanted/1238/2">Fediverse Futures: Visions &amp; dreams. Feedback wanted</a>
+</div>
+<blockquote>
+<p><strong>Idea</strong> : Select business domains we’d love to see in the fediverse, and write visions / business cases for candidate projects.</p>
+</blockquote>
+</aside>
+<p>There are two interesting cases I would be happy to <em>fediversize</em>, being currently discussed in a team I am part of.</p>
+<ol>
+<li>Secure handling of sensitive IoT data. The case is how to gather and securely process medical telemetry from smartwatches, fitness bands and such (implants being discreetly <em>undiscussed</em>).  Following the idea of decentralization, I can imagine a locally hosted server, collecting data, somehow combined with secure backbone (<a href="https://friendica.wprzemianie.pl/search?q=%23TheTubes" class="inline-onebox" rel="noopener nofollow ugc">TePeWu: Friendica | Search</a>) and some ways to make data available either for an authorized physician or (locally anonymized) for research. But here I got to the limit of my technical imagination and I have no one around here to help me. Anyone?</li>
+<li>There are two cases of matching underused assets with their possible uses<br>
+2.1. Medical equipment being left unused once research projects are done and closed with professionals lacking funding to buy/rent it on a commercial basis.<br>
+2.2. Clinical research programs looking for certain specific “cases” – volunteers for experimental treatment or diagnostics – and people who cannot afford therapy for their less common conditions.<br>
+I can imagine using fediverse approach to create decentralized exchange, without central database, using tag and categories to find matching pairs.</li>
+</ol>
+<p>Do you think it is worth some effort?</p>
+<p><small><em>(Image CC0 Credit: <a href="https://www.pexels.com/photo/blue-and-silver-stetoscope-40568/" rel="noopener nofollow ugc">Pixabay on Pexels</a>)</em></small></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/federating-iot-datastreams-and-optimize-equipment-usage-in-healthcare/1699/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/federating-iot-datastreams-and-optimize-equipment-usage-in-healthcare/1699/1</link>
+        <pubDate>Tue, 04 May 2021 12:48:45 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1699-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/federating-iot-datastreams-and-optimize-equipment-usage-in-healthcare/1699.rss">Federating IoT datastreams and optimize equipment usage in Healthcare</source>
+      </item>
+  </channel>
+</rss>

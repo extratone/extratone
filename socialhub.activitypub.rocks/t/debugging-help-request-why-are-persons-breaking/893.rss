@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Debugging help request — why are Persons breaking?</title>
+    <link>https://socialhub.activitypub.rocks/t/debugging-help-request-why-are-persons-breaking/893</link>
+    <description>I have broken kepi&#39;s ActivityPub implementation somehow. At least, Mastodon isn&#39;t loading user pages any more. I can&#39;t see anything I changed that would make such a difference.
+
+See e.g. https://marnanel.org/users/marnanel .
+
+The preceding webfinger lookup works fine. The MIME types in Accept and Content-Type appear fine. Some of the Collections linked from that Person don&#39;t work properly at present, but they&#39;re never requested so it&#39;s not that.
+
+I&#39;ve been comparing this line by line with Mastodon&#39;s output of a Person, but I&#39;m drawing a blank.
+
+Any thoughts?</description>
+    
+    <lastBuildDate>Thu, 27 Aug 2020 14:46:56 +0000</lastBuildDate>
+    <category>kepi</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/debugging-help-request-why-are-persons-breaking/893.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Debugging help request — why are Persons breaking?</title>
+        <dc:creator><![CDATA[marnanel]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/vpzom">@vpzom</a> solved this: “publicKey” was returned as a string rather than an object.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/debugging-help-request-why-are-persons-breaking/893/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/debugging-help-request-why-are-persons-breaking/893/2</link>
+        <pubDate>Thu, 27 Aug 2020 14:46:56 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-893-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/debugging-help-request-why-are-persons-breaking/893.rss">Debugging help request — why are Persons breaking?</source>
+      </item>
+      <item>
+        <title>Debugging help request — why are Persons breaking?</title>
+        <dc:creator><![CDATA[marnanel]]></dc:creator>
+        <description><![CDATA[
+            <p>I have broken kepi’s ActivityPub implementation somehow. At least, Mastodon isn’t loading user pages any more. I can’t see anything I changed that would make such a difference.</p>
+<p>See e.g. <a href="https://marnanel.org/users/marnanel" rel="nofollow noopener">https://marnanel.org/users/marnanel</a> .</p>
+<p>The preceding webfinger lookup works fine. The MIME types in Accept and Content-Type appear fine. Some of the Collections linked from that Person don’t work properly at present, but they’re never requested so it’s not that.</p>
+<p>I’ve been comparing this line by line with Mastodon’s output of a Person, but I’m drawing a blank.</p>
+<p>Any thoughts?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/debugging-help-request-why-are-persons-breaking/893/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/debugging-help-request-why-are-persons-breaking/893/1</link>
+        <pubDate>Wed, 26 Aug 2020 18:03:32 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-893-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/debugging-help-request-why-are-persons-breaking/893.rss">Debugging help request — why are Persons breaking?</source>
+      </item>
+  </channel>
+</rss>

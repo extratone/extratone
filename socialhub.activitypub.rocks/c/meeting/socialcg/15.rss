@@ -1,0 +1,1241 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>SocialCG - SocialHub</title>
+    <link>https://socialhub.activitypub.rocks/c/meeting/socialcg/15</link>
+    <description>Topics in the &#39;SocialCG&#39; category Announcing, discussing, and keeping track of SocialCG meetings.</description>
+    
+      <lastBuildDate>Fri, 21 May 2021 16:38:33 +0000</lastBuildDate>
+      <atom:link href="https://socialhub.activitypub.rocks/c/meeting/socialcg/15.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>2021-05-21 SocialCG Meeting</title>
+          <dc:creator><![CDATA[codenamedmitri]]></dc:creator>
+          <category>SocialCG</category>
+          <description><![CDATA[
+            <p>Per <a href="https://www.w3.org/wiki/SocialCG#Meetings" rel="noopener nofollow ugc">the wiki</a> and <a href="https://cloud.w3c.social/apps/calendar/p/GzxsDfE6CKtp9MHX/dayGridMonth/now" rel="noopener nofollow ugc">the calendar </a>, this meeting will be at:</p>
+<ul>
+<li>5pm UTC</li>
+<li>1pm EDT</li>
+<li>10am PDT</li>
+</ul>
+<p>2021-05-21T17:00:00Z → 2021-05-21T18:00:00Z</p>
+<h2>
+<a name="location-1" class="anchor" href="#location-1"></a>Location</h2>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/5a461134f23795b9c624db5a85410ef119bb6ef2.png" class="site-icon" width="32" height="32">
+      <a href="https://bbb.w3c.social/b/rhi-vp1-fv6-vn7" target="_blank" rel="noopener nofollow ugc">bbb.w3c.social</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:330/71;"><img src="https://socialhub.activitypub.rocks/uploads/default/original/2X/2/2b1384da70a67d723ae4111d33c72b39bbc2e405.png" class="thumbnail" width="330" height="71"></div>
+
+<h3><a href="https://bbb.w3c.social/b/rhi-vp1-fv6-vn7" target="_blank" rel="noopener nofollow ugc">Social Web Incubator CG</a></h3>
+
+<p>You have been invited to join Social Web Incubator CG using BigBlueButton. To join, click the link above and enter your name.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<h2>
+<a name="fallback-location-2" class="anchor" href="#fallback-location-2"></a>Fallback Location</h2>
+<p>(if people have connection trouble to bbb above):<br>
+tba</p>
+<h1>
+<a name="agenda-3" class="anchor" href="#agenda-3"></a>Agenda:</h1>
+<ul>
+<li>5min - quick introductions/reintroductions</li>
+<li>5min - <a class="mention" href="/u/codenamedmitri">@codenamedmitri</a> - update on Metaverse Interoperability CG (<a href="https://github.com/omigroup/OMI/blob/a4c3c19fde1fabc2dfb0224b207a54b5f962c82d/PROCESS.md" rel="noopener nofollow ugc">process</a>, <a href="https://github.com/omigroup/OMI/discussions/17" rel="noopener nofollow ugc">CG Chair Nominations</a> – SocialCG members wanted!)</li>
+<li>5-10min - <a class="mention" href="/u/codenamedmitri">@codenamedmitri</a> - update on <a href="https://socialhub.activitypub.rocks/t/proposal-rank-choice-meeting-times-for-the-weekend-socialcg-meeting/1713" class="inline-onebox">PROPOSAL: Rank choice meeting times for the weekend SocialCG Meeting</a>
+</li>
+<li>50min - free-form</li>
+</ul>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/2021-05-21-socialcg-meeting/1788">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/2021-05-21-socialcg-meeting/1788</link>
+          <pubDate>Fri, 21 May 2021 16:38:33 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1788</guid>
+          <source url="https://socialhub.activitypub.rocks/t/2021-05-21-socialcg-meeting/1788.rss">2021-05-21 SocialCG Meeting</source>
+        </item>
+        <item>
+          <title>2021-05-15 SocialCG Meeting</title>
+          <dc:creator><![CDATA[bengo]]></dc:creator>
+          <category>SocialCG</category>
+          <description><![CDATA[
+            <p>Per <a href="https://www.w3.org/wiki/SocialCG#Meetings" rel="noopener nofollow ugc">the wiki</a> and <a href="https://cloud.w3c.social/apps/calendar/p/GzxsDfE6CKtp9MHX/dayGridMonth/now" rel="noopener nofollow ugc">the calendar </a>, this meeting will be at:</p>
+<ul>
+<li>5pm UTC</li>
+<li>1pm EDT</li>
+<li>10am PDT</li>
+</ul>
+<p><span data-date="2021-05-15" data-time="15:00:00" class="discourse-local-date" data-timezone="UTC" data-email-preview="2021-05-15T15:00:00Z UTC">2021-05-15T15:00:00Z</span> → <span data-date="2021-05-15" data-time="16:00:00" class="discourse-local-date" data-timezone="UTC" data-email-preview="2021-05-15T16:00:00Z UTC">2021-05-15T16:00:00Z</span></p>
+<h1>
+<a name="agenda-1" class="anchor" href="#agenda-1"></a>Agenda:</h1>
+<ul>
+<li>5min - quick introductions/reintroductions</li>
+<li>5min - <a class="mention" href="/u/bengo">@bengo</a> - reminders
+<ul>
+<li>poll for weekend meeting time <a href="https://socialhub.activitypub.rocks/t/proposal-rank-choice-meeting-times-for-the-weekend-socialcg-meeting/1713" class="inline-onebox">PROPOSAL: Rank choice meeting times for the weekend SocialCG Meeting</a>
+</li>
+</ul>
+</li>
+<li>proposed an agenda item</li>
+</ul>
+<h1>
+<a name="candidate-agenda-items-2" class="anchor" href="#candidate-agenda-items-2"></a>Candidate Agenda Items</h1>
+<p>Please reply below to propose an agenda item. Please consider doing some ahead-of-time work to articulate the item, and linking it in your proposal so others can come prepared to build consensus or raise objections that we can discuss in our limited time together.</p>
+<h2>
+<a name="example-agenda-item-3" class="anchor" href="#example-agenda-item-3"></a>Example Agenda Item</h2>
+<blockquote>
+<p><a class="mention" href="/u/bengo">@bengo</a> - 5min - quick introductions, reintroductions (&lt;= 30 seconds each)</p>
+</blockquote>
+<p>Read <a href="https://theanarchistlibrary.org/library/c-t-butler-and-amy-rothstein-on-conflict-and-consensus-a-handbook-on-formal-consensus-decisionm#toc62" rel="noopener nofollow ugc">this for more on agendas </a>.</p>
+<h3>
+<a name="meeting-urlhttpsbbbw3csocialbrhi-vp1-fv6-vn7-4" class="anchor" href="#meeting-urlhttpsbbbw3csocialbrhi-vp1-fv6-vn7-4"></a><a href="https://bbb.w3c.social/b/rhi-vp1-fv6-vn7" rel="noopener nofollow ugc">Meeting URL</a>
+</h3>
+            <p><small>4 posts - 3 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/2021-05-15-socialcg-meeting/1735">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/2021-05-15-socialcg-meeting/1735</link>
+          <pubDate>Wed, 12 May 2021 16:29:47 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1735</guid>
+          <source url="https://socialhub.activitypub.rocks/t/2021-05-15-socialcg-meeting/1735.rss">2021-05-15 SocialCG Meeting</source>
+        </item>
+        <item>
+          <title>PROPOSAL: Rank choice meeting times for the weekend SocialCG Meeting</title>
+          <dc:creator><![CDATA[bengo]]></dc:creator>
+          <category>SocialCG</category>
+          <description><![CDATA[
+            <p>(via <a href="https://socialhub.activitypub.rocks/t/2021-05-07-socialcg-meeting/1697/7" class="inline-onebox">2021-05-07 SocialCG Meeting - #7 by bengo</a>)</p>
+<p>People can submit votes or ranked choices here.</p>
+<p>PROPOSAL: move Saturday meetings later to accommodate restful Saturday mornings  (and attendance) for US time zones like PDT. Encourage people to rank choice (ignore the date, just time):</p>
+<ol>
+<li>
+<p>status quo <span data-date="2021-05-07" data-time="16:00:00" class="discourse-local-date" data-timezone="UTC" data-email-preview="2021-05-07T16:00:00Z UTC">2021-05-07T16:00:00Z</span></p>
+</li>
+<li>
+<p><span data-date="2021-05-28" data-time="17:00:00" class="discourse-local-date" data-timezone="UTC" data-email-preview="2021-05-28T17:00:00Z UTC">2021-05-28T17:00:00Z</span></p>
+</li>
+<li>
+<p><span data-date="2021-05-28" data-time="18:00:00" class="discourse-local-date" data-timezone="UTC" data-email-preview="2021-05-28T18:00:00Z UTC">2021-05-28T18:00:00Z</span></p>
+</li>
+<li>
+<p><span data-date="2021-05-28" data-time="19:00:00" class="discourse-local-date" data-timezone="UTC" data-email-preview="2021-05-28T19:00:00Z UTC">2021-05-28T19:00:00Z</span></p>
+</li>
+<li>
+<p><span data-date="2021-05-28" data-time="20:00:00" class="discourse-local-date" data-timezone="UTC" data-email-preview="2021-05-28T20:00:00Z UTC">2021-05-28T20:00:00Z</span></p>
+</li>
+<li>
+<p>Sunday instead of Saturday (if this is ranked highly, we can revote with times)</p>
+</li>
+</ol>
+<h1>
+<a name="please-vote-below-1" class="anchor" href="#please-vote-below-1"></a>Please vote below:</h1>
+<div class="poll" data-poll-status="open" data-poll-results="always" data-poll-charttype="bar" data-poll-type="regular" data-poll-name="poll">
+<div>
+<div class="poll-container">
+<div class="poll-title">Vote for your preferred option from the list above</div>
+<ul>
+<li data-poll-option-id="4d8a15e3cc35750f016ce15a43937620">1</li>
+<li data-poll-option-id="cd314db7dfbac2b10687b6f39abfdf41">2</li>
+<li data-poll-option-id="68b434ff88aeae7054e42cd05a4d9056">3</li>
+<li data-poll-option-id="aa2393b424f2f395abb63bf785760a3b">4</li>
+<li data-poll-option-id="8b2f2930cac0574c3450f5db9a6fb7f9">5</li>
+<li data-poll-option-id="60cad69e0cfcb3fa77a68d11d3758002">6</li>
+</ul>
+</div>
+<div class="poll-info">
+<p>
+<span class="info-number">0</span>
+<span class="info-label">voters</span>
+</p>
+</div>
+</div>
+</div>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/proposal-rank-choice-meeting-times-for-the-weekend-socialcg-meeting/1713">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/proposal-rank-choice-meeting-times-for-the-weekend-socialcg-meeting/1713</link>
+          <pubDate>Fri, 07 May 2021 16:22:15 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1713</guid>
+          <source url="https://socialhub.activitypub.rocks/t/proposal-rank-choice-meeting-times-for-the-weekend-socialcg-meeting/1713.rss">PROPOSAL: Rank choice meeting times for the weekend SocialCG Meeting</source>
+        </item>
+        <item>
+          <title>2021-05-07 SocialCG Meeting</title>
+          <dc:creator><![CDATA[bengo]]></dc:creator>
+          <category>SocialCG</category>
+          <description><![CDATA[
+            <p>Per <a href="https://www.w3.org/wiki/SocialCG#Meetings" rel="noopener nofollow ugc">the wiki</a> and <a href="https://cloud.w3c.social/apps/calendar/p/GzxsDfE6CKtp9MHX/dayGridMonth/now" rel="noopener nofollow ugc">the calendar </a>, this meeting will be at:</p>
+<ul>
+<li>5pm UTC</li>
+<li>1pm EDT</li>
+<li>10am PDT</li>
+</ul>
+<p><span data-date="2021-05-07" data-time="17:00:00" class="discourse-local-date" data-timezone="UTC" data-email-preview="2021-05-07T17:00:00Z UTC">2021-05-07T17:00:00Z</span> → <span data-date="2021-05-07" data-time="18:00:00" class="discourse-local-date" data-timezone="UTC" data-email-preview="2021-05-07T18:00:00Z UTC">2021-05-07T18:00:00Z</span></p>
+<h1>
+<a name="agenda-1" class="anchor" href="#agenda-1"></a>Agenda:</h1>
+<ul>
+<li>5min - quick introductions/reintroductions</li>
+<li>5min - <a class="mention" href="/u/bengo">@bengo</a> - PROPOSAL: move Saturday meetings later to accommodate restful Saturday mornings  (and attendance) for US time zones like PDT. Ranked choice <a href="https://socialhub.activitypub.rocks/t/proposal-rank-choice-meeting-times-for-the-weekend-socialcg-meeting/1713" class="inline-onebox">PROPOSAL: Rank choice meeting times for the weekend SocialCG Meeting</a>
+</li>
+<li>15min - <a class="mention" href="/u/grishka">@grishka</a>’s <a href="https://socialhub.activitypub.rocks/t/2021-05-07-socialcg-meeting/1697/2">questions</a>
+</li>
+<li>15min - Capability Negotiation update <a href="https://socialhub.activitypub.rocks/t/2021-05-01-fediverse-interest-group-meeting/1649/23">from last meeting</a>
+</li>
+<li>20min - free-form</li>
+</ul>
+<h1>
+<a name="candidate-agenda-items-2" class="anchor" href="#candidate-agenda-items-2"></a>Candidate Agenda Items</h1>
+<p>Please reply below to propose an agenda item. Please consider doing some ahead-of-time work to articulate the item, and linking it in your proposal so others can come prepared to build consensus or raise objections that we can discuss in our limited time together.</p>
+<h2>
+<a name="example-agenda-proposal-3" class="anchor" href="#example-agenda-proposal-3"></a>Example Agenda Proposal</h2>
+<blockquote>
+<p>PROPOSAL: <a class="mention" href="/u/bengo">@bengo</a> - 5min - quick introductions, reintroductions (&lt;= 30 seconds each)</p>
+</blockquote>
+<p>Read <a href="https://theanarchistlibrary.org/library/c-t-butler-and-amy-rothstein-on-conflict-and-consensus-a-handbook-on-formal-consensus-decisionm#toc62" rel="noopener nofollow ugc">this for more on agendas </a>.</p>
+<h3>
+<a name="meeting-urlhttpsbbbw3csocialbrhi-vp1-fv6-vn7-4" class="anchor" href="#meeting-urlhttpsbbbw3csocialbrhi-vp1-fv6-vn7-4"></a><a href="https://bbb.w3c.social/b/rhi-vp1-fv6-vn7" rel="noopener nofollow ugc">Meeting URL</a>
+</h3>
+            <p><small>11 posts - 6 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/2021-05-07-socialcg-meeting/1697">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/2021-05-07-socialcg-meeting/1697</link>
+          <pubDate>Tue, 04 May 2021 21:39:00 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1697</guid>
+          <source url="https://socialhub.activitypub.rocks/t/2021-05-07-socialcg-meeting/1697.rss">2021-05-07 SocialCG Meeting</source>
+        </item>
+        <item>
+          <title>Continuation of the meetings waitlist</title>
+          <dc:creator><![CDATA[Sebastian]]></dc:creator>
+          <category>SocialCG</category>
+          <description><![CDATA[
+            <p>In the last meetings, the group was able to debate and resolve a number of points, we long wanted to speak about.<br>
+The last <a href="https://socialhub.activitypub.rocks/t/2021-05-01-fediverse-interest-group-meeting/1649/23">meeting</a> was very productive about Capability Negotiation and the Discovery of features …</p>
+<p>However, there are some points remaining and let’s list them here</p>
+<h2>
+<a name="alsoknownas-and-link-relations-1" class="anchor" href="#alsoknownas-and-link-relations-1"></a>alsoKnownAs and Link Relations</h2>
+<p>Following up on <a href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/9" class="inline-onebox">Defining alsoKnownAs - #9 by Sebastian</a><br>
+<a class="mention" href="/u/rhiaro">@rhiaro</a><br>
+but also on the <a href="https://socialhub.activitypub.rocks/t/2020-12-04-socialcg-meeting/1166/2">adhoc discussion in SocialCG IRC</a> [sorry for the mess]</p>
+<hr>
+<h2>
+<a name="capability-negotiation-2" class="anchor" href="#capability-negotiation-2"></a>Capability Negotiation</h2>
+<p>If this would end in an FEP we should speak about some open points from the <a href="https://socialhub.activitypub.rocks/t/2021-05-01-fediverse-interest-group-meeting/1649/24">2021-05-01 meeting</a></p>
+<hr>
+<h2>
+<a name="structure-of-w3c-social-cg-and-official-site-3" class="anchor" href="#structure-of-w3c-social-cg-and-official-site-3"></a>Structure of W3C Social CG and official site</h2>
+<ul>
+<li>guides</li>
+<li>site<br>
+<a href="https://rigelk.gitlab.io/activitypub.rocks/"><strong>Please see Look and feel</strong></a> by<br>
+<a class="mention" href="/u/rigelk">@rigelk</a>
+</li>
+<li>wiki</li>
+<li>OpenCollective</li>
+<li>Official fediverse account (some days ago made <a href="https://gup.pe/u/activitypub" class="inline-onebox">web</a> for rC3)</li>
+<li>fediverse.space</li>
+</ul>
+<p><a class="mention" href="/u/how">@how</a> asked “Is there a way to communicate to W3C that promoting decentralization and using Microsoft services are antithetical?” /me added “and using google captcha and putting forms what a computer thinks we do and not giving the community space and getting EFF back in the boat and …”</p>
+<hr>
+<p><strong>As far as I know, the 2021-02-20 meeting did not happen, correct me if I’m wrong, it would be</strong></p>
+<h2>
+<a name="fediverse-futures-4" class="anchor" href="#fediverse-futures-4"></a>Fediverse Futures</h2>
+<blockquote>
+<p>AFAIK the Fediverse Futures group has not been followed-up on.</p>
+</blockquote>
+<hr>
+<h1>
+<a name="making-hashtag-an-extensionhttpssocialhubactivitypubrocksttopics-and-services-we-can-subscribe-to9954-5" class="anchor" href="#making-hashtag-an-extensionhttpssocialhubactivitypubrocksttopics-and-services-we-can-subscribe-to9954-5"></a>Making <a href="https://socialhub.activitypub.rocks/t/topics-and-services-we-can-subscribe-to/995/4">Hashtag an extension</a>
+</h1>
+<p>as Chris noted for the first November meeting, we should talk about this</p><aside class="quote quote-modified" data-post="4" data-topic="995">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/acka47/40/164_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/topics-and-services-we-can-subscribe-to/995/4">"Topics" and Services we can subscribe to</a> <a class="badge-wrapper  box" href="/c/meeting/apconf2020/53"><span class="badge-category-parent-bg" style="background-color: #0E76BD;"></span><span class="badge-category-bg" style="background-color: #ff7a00;"></span><span style="color: #ffffff" data-drop-close="true" class="badge-category clear-badge" title="Add your proposals for the Conf by creating a New Topic –
+Tag it #bof for Birds of Feather sessions or #hackathon for Hack proposals …">ActivityPub Conference 2020</span></a>
+  </div>
+  <blockquote>
+    At the end of the bof session I had a question about the type Hashtag and where it comes from. I was curious as we where thinking about adding another type (e.g. Category) to refer to a topic from a controlled vocabulary. 
+Taking an <a href="https://octodon.social/@mlemweb/104976859469572967.json" rel="noopener nofollow ugc">example toot</a> one finds the following in the <a href="https://octodon.social/@mlemweb/104976859469572967.json" rel="noopener nofollow ugc">JSON</a>: 
+{
+   "@context":[
+      "https://www.w3.org/ns/activitystreams",
+      {
+         "ostatus":"http://ostatus.org#",
+         "atomUri":"ostatus:atomUri",
+         "inReplyToAtomUri":"ostatus:inReplyToAtomUri",
+       …
+  </blockquote>
+</aside>
+
+<hr>
+<h1>
+<a name="groups-and-events-6" class="anchor" href="#groups-and-events-6"></a>Groups and Events</h1>
+<p>had a lot of efforts and it might be good for new people to hear what the current concensus is</p>
+            <p><small>4 posts - 2 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/continuation-of-the-meetings-waitlist/1692">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/continuation-of-the-meetings-waitlist/1692</link>
+          <pubDate>Mon, 03 May 2021 03:39:30 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1692</guid>
+          <source url="https://socialhub.activitypub.rocks/t/continuation-of-the-meetings-waitlist/1692.rss">Continuation of the meetings waitlist</source>
+        </item>
+        <item>
+          <title>Clarification on meeting times - UTC/timezone issues</title>
+          <dc:creator><![CDATA[jarofgreen]]></dc:creator>
+          <category>SocialCG</category>
+          <description><![CDATA[
+            <p>Can we clarify this?</p>
+<p>I thought the meetings were defined at a UTC time - <a href="https://www.w3.org/wiki/SocialCG#Meetings" class="inline-onebox" rel="noopener nofollow ugc">SocialCG - W3C Wiki</a> says</p>
+<blockquote>
+<p>Meetings in general are alternating Fridays and Saturdays. On Friday at 1700 UTC and Saturday at 1500 UTC.</p>
+</blockquote>
+<p>However today’s meeting happened at a different time: <a href="https://socialhub.activitypub.rocks/t/2021-05-01-fediverse-interest-group-meeting/1649" class="inline-onebox">2021-05-01 Fediverse Interest Group Meeting</a></p>
+<blockquote>
+<ul>
+<li>2pm UTC</li>
+</ul>
+</blockquote>
+<p>I think I know what happened,  based on another comment on that post:</p>
+<blockquote>
+<p>Per <a href="https://cloud.w3c.social/apps/calendar/p/GzxsDfE6CKtp9MHX/dayGridMonth/now" rel="noopener nofollow ugc">the calendar </a></p>
+</blockquote>
+<p>So this meeting was set based on the NextCloud calendar.</p>
+<p>The problem is, that calendar - the NextCloud one - has a timezone “bug”. It’s set to reoccur an event in London time <strong>NOT</strong> UTC time - ie, it stays 3 oclock  (London Time) whenever the event is in the year. However, the event is defined at UTC time so if you then look at London time you should see the event time (London time) shift by an hour over the year.</p>
+<p>I did point this out when the calendar was created: <a href="https://socialhub.activitypub.rocks/t/socialcg-meetings-calendar/1308/2" class="inline-onebox">SocialCG meetings calendar - #2 by jarofgreen</a></p>
+<p>The ActivtyPub aware event listing I put together carefully always created events at UTC time - so if you look down the page (it should open showing them in London time) you’ll see they jump by an hour at one point: <a href="https://denof.theoccasionoctopus.net/a/w3_social_web_incubator_community_group/manage/event?eventListFilterDataSubmitted=1&amp;showCancelled=1&amp;set_timezone=Europe/London" rel="noopener nofollow ugc">https://denof.theoccasionoctopus.net/a/w3_social_web_incubator_community_group/manage/event?eventListFilterDataSubmitted=1&amp;showCancelled=1&amp;set_timezone=Europe/London</a></p>
+<p>So this is a long winded way of saying it’s not my fault I was late for the meeting <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p><strong>But seriously; can we clarify meeting start times for future?</strong></p>
+<p><a href="https://www.w3.org/wiki/SocialCG#Meetings" class="inline-onebox" rel="noopener nofollow ugc">SocialCG - W3C Wiki</a> says 1500 UTC</p>
+<p><a href="https://socialhub.activitypub.rocks/t/2021-05-01-fediverse-interest-group-meeting/1649" class="inline-onebox">2021-05-01 Fediverse Interest Group Meeting</a> says 2pm UTC.</p>
+<p>Something is wrong</p>
+            <p><small>7 posts - 6 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/clarification-on-meeting-times-utc-timezone-issues/1690">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/clarification-on-meeting-times-utc-timezone-issues/1690</link>
+          <pubDate>Sat, 01 May 2021 15:25:20 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1690</guid>
+          <source url="https://socialhub.activitypub.rocks/t/clarification-on-meeting-times-utc-timezone-issues/1690.rss">Clarification on meeting times - UTC/timezone issues</source>
+        </item>
+        <item>
+          <title>Resigning as co-chair of the SocialCG</title>
+          <dc:creator><![CDATA[cwebber]]></dc:creator>
+          <category>SocialCG</category>
+          <description><![CDATA[
+            <p>Hello everyone,</p>
+<p>I’m writing this post to announce that I hereby resign as co-chair of the W3C SocialCG. We still have three other excellent co-chairs: <a class="mention" href="/u/rhiaro">@rhiaro</a>, <a class="mention" href="/u/nightpool">@nightpool</a>, and <a class="mention" href="/u/aaronpk">@aaronpk</a>. I have full confidence in them and where they will bring things.</p>
+<p>I’m stepping back for a few reasons. For one thing, I am very busy right now with <a href="https://spritelyproject.org/" rel="noopener nofollow ugc">Spritely</a> and other work around it. I’ve been having trouble making time for the SocialCG, and it’s probably best to be explicit about that. I think the strongest work I do in terms of the federated social web is providing energy/enthusiasm, research, and writing. I don’t need to be co-chair to do that, and maybe I’d do better as an attendee anyway.</p>
+<p>I think it may also be good for me to step back from the leadership role for avoiding “founder’s syndrome” type reasons. ActivityPub left quite a few things open, and the gaps have been filled in, and understandably so, by more conventional approaches that people know. The directions I’ve been pushing things are compatible with ActivityPub as an actor-model-social-network specification. In many meetings I’ve expressed caution about the consequences I see playing out about those choices, but I don’t have all the answers yet easily at hand for people to pick up and use… I think that can be frustrating to some participants, and understandably so. To that end I don’t want to be in a position where I’m seen as discouraging the hard and enthusiastic work that people are getting out of “ActivityPub in the present” as opposed to the “where ActivityPub (and decentralized social networks in general) should go” which is the foundation of my focus. I hope those paths can meet, but in the meanwhile much of the questions around ActivityPub are “how do I use ActivityPub <em>as deployed</em> ” are quite common (rather than “ <em>as specified</em> ” or “ <em>as specified</em> plus Chris’s strong opinions about how to fill in the gaps that do not reflect present-implementor-reality”). I’m not really the right person to lead that conversation, and I recognize that. I do have strong thoughts and concerns (particularly about how border-oriented approaches tend to result in re-centralization, and that there are better moderation directions available, but per the latter part you’ll be seeing more of that over the next year as I release some relevant demos), but what I don’t want to do is apply “stop energy” against present work.</p>
+<p>To that end, it’s also worth noting that I think the SocialCG has never really ever totally found its footing. We’ve had many resolutions, but typically very little followup to those resolutions. The <em>SocialWG</em> in contrast had a lot of progress, but it also had a clock to race against. Maybe there’s something to that. So what should the SocialCG be today?</p>
+<p>I’m not going to answer that question, but here are some possibilities:</p>
+<ul>
+<li>It could be an “implementor’s group”, of implementors predominantly who are setting the tone of “ActivityPub as deployed”. There’s a lot of interest in getting out community reports related to this, though not all of that has materialized into specific documents.</li>
+<li>It could be a show-and-tell style usergroup much of the time (and this doesn’t have to happen at the SocialCG either… <em>anyone</em> on here can organize “fediverse hangouts” to show off or discuss cool tech, any time!). This direction can always converge on getting out reports and etc after there’s shared confidence in a direction.</li>
+<li>It could even sit, suspended, until it’s needed. This is not necessarily a bad thing or a sign of failure.</li>
+</ul>
+<p>What I think is true is that the SocialCG, and everything around it, is that it needs to be driven either by immediate needs and goals or by energetic enthusiasm or both. But what that means or what shape it is… well, I guess we’ll see.</p>
+<p>At any rate, I’m happy to have served my time as SocialCG co-chair. It’s been an honor and generally very fulfilling to rally people around work that they really care about.</p>
+<p>So… see you in the future in terms of SocialCG meetings, but instead as a participant. Thanks everyone!</p>
+            <p><small>5 posts - 4 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/resigning-as-co-chair-of-the-socialcg/1680">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/resigning-as-co-chair-of-the-socialcg/1680</link>
+          <pubDate>Thu, 29 Apr 2021 17:50:16 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1680</guid>
+          <source url="https://socialhub.activitypub.rocks/t/resigning-as-co-chair-of-the-socialcg/1680.rss">Resigning as co-chair of the SocialCG</source>
+        </item>
+        <item>
+          <title>2021-05-01 Fediverse Interest Group Meeting</title>
+          <dc:creator><![CDATA[bengo]]></dc:creator>
+          <category>SocialCG</category>
+          <description><![CDATA[
+            <p>Per <a href="https://cloud.w3c.social/apps/calendar/p/GzxsDfE6CKtp9MHX/dayGridMonth/now" rel="noopener nofollow ugc">the calendar</a>, this meeting will be at:</p>
+<ul>
+<li>2pm UTC</li>
+<li>10am EST</li>
+<li>7am PDT</li>
+</ul>
+<p><span data-date="2021-05-01" data-time="15:00:00" class="discourse-local-date" data-timezone="Europe/London" data-email-preview="2021-05-01T14:00:00Z UTC">2021-05-01T14:00:00Z</span> → <span data-date="2021-04-30" data-time="16:00:00" class="discourse-local-date" data-timezone="Europe/London" data-email-preview="2021-04-30T15:00:00Z UTC">2021-04-30T15:00:00Z</span></p>
+<h1>
+<a name="agenda-1" class="anchor" href="#agenda-1"></a>Agenda:</h1>
+<ul>
+<li>5min - 30s introductions/reintroductions</li>
+</ul>
+<h1>
+<a name="candidate-agenda-items-2" class="anchor" href="#candidate-agenda-items-2"></a>Candidate Agenda Items</h1>
+<p>Please reply below to propose an agenda item. Please consider doing some ahead-of-time work to articulate the item, and linking it in your proposal so others can come prepared to build consensus or raise objections that we can discuss in our limited time together.</p>
+<h2>
+<a name="example-agenda-proposal-3" class="anchor" href="#example-agenda-proposal-3"></a>Example Agenda Proposal</h2>
+<blockquote>
+<p>PROPOSAL: <a class="mention" href="/u/bengo">@bengo</a>  - 5min - Project update, demo, and call for testers on <a href="https://github.com/gobengo/distbin" rel="noopener nofollow ugc">distbin</a> project. (then include link to blog post about project update)</p>
+</blockquote>
+<p>Read <a href="https://theanarchistlibrary.org/library/c-t-butler-and-amy-rothstein-on-conflict-and-consensus-a-handbook-on-formal-consensus-decisionm#toc62" rel="noopener nofollow ugc">this for more on agendas</a>.</p>
+            <p><small>20 posts - 8 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/2021-05-01-fediverse-interest-group-meeting/1649">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/2021-05-01-fediverse-interest-group-meeting/1649</link>
+          <pubDate>Fri, 23 Apr 2021 17:48:53 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1649</guid>
+          <source url="https://socialhub.activitypub.rocks/t/2021-05-01-fediverse-interest-group-meeting/1649.rss">2021-05-01 Fediverse Interest Group Meeting</source>
+        </item>
+        <item>
+          <title>2021-04-23 Social CG meeting</title>
+          <dc:creator><![CDATA[rhiaro]]></dc:creator>
+          <category>SocialCG</category>
+          <description><![CDATA[
+            <p>Hi all,</p>
+<p>We’ll have a SocialCG meeting this week, which will take the form of an unstructured chat about fediverse topics of interest and whatever related things you’re working on, hosted by <a class="mention" href="/u/bengo">@bengo</a>. We can also reflect on this week’s <a href="https://socialhub.activitypub.rocks/t/ec-ngi0-liaison-webinars-and-workshop-april-2021">EC Activitypub Webinar</a> and think about what we’d like to cover at the next one.</p>
+<p>All welcome!</p>
+<p><strong>Date: <span data-date="2021-04-23" data-time="17:00:00" class="discourse-local-date" data-timezone="Europe/London" data-email-preview="2021-04-23T16:00:00Z UTC">2021-04-23T16:00:00Z</span></strong></p>
+<p><strong>Join:</strong></p>
+<ul>
+<li><a href="https://bbb.w3c.social/b/rhi-vp1-fv6-vn7">BBB</a></li>
+<li><a href="http://irc.w3.org/?channels=social">IRC</a></li>
+</ul>
+<p>Amy</p>
+            <p><small>26 posts - 6 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621</link>
+          <pubDate>Mon, 19 Apr 2021 10:41:08 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1621</guid>
+          <source url="https://socialhub.activitypub.rocks/t/2021-04-23-social-cg-meeting/1621.rss">2021-04-23 Social CG meeting</source>
+        </item>
+        <item>
+          <title>2021-04-17 Social CG Meeting</title>
+          <dc:creator><![CDATA[bengo]]></dc:creator>
+          <category>SocialCG</category>
+          <description><![CDATA[
+            <p>I’m trying to show up more for these meetings. It’s hard for me to keep up to date on the daily, but once a week is literally the least I can do.</p>
+<p>I think I did the right thing in trying to join <a href="https://bbb.w3c.social/b/rhi-vp1-fv6-vn7" rel="noopener nofollow ugc">this telecom link</a>, but haven’t managed to connect with anyone. Perhaps next time.</p>
+<p>There are several places I looked for meeting links:</p>
+<ul>
+<li>
+<a href="https://www.w3.org/wiki/SocialCG#Meetings" class="inline-onebox" rel="noopener nofollow ugc">SocialCG - W3C Wiki</a> &lt;— this seems relatively up to date</li>
+<li><a href="https://denof.theoccasionoctopus.net/a/w3_social_web_incubator_community_group/event/details/f310a0d4-899b-4563-9356-12e0479cafc5" class="inline-onebox" rel="noopener nofollow ugc">Welcome! - Den of The Occasion Octopus</a></li>
+</ul>
+<p>Brainstorms (can inform resolutions/actions):</p>
+<ul>
+<li>Add some link about ‘Meetings’ to <a href="https://www.w3.org/community/SocialCG/" class="inline-onebox" rel="noopener nofollow ugc">Social Web Incubator Community Group</a> → <a href="https://www.w3.org/wiki/SocialCG#Meetings" class="inline-onebox" rel="noopener nofollow ugc">SocialCG - W3C Wiki</a>
+<ul>
+<li>Anyone that gets to the <a href="https://www.w3.org/community/SocialCG/" rel="noopener nofollow ugc">socialcg  page</a> may try to join the mumble server, which is one of the newest (if not new) posts on the CG page</li>
+<li>BLOCKER: (for me) HOWTO update the SocialCG page with latest meeting link. <a class="mention" href="/u/rhiaro">@rhiaro</a> any ideas on how to do this, or who might know?</li>
+</ul>
+</li>
+</ul>
+<p>Resolutions:</p>
+<ul>
+<li>Resolving ‘what is the primary issue tracker that the SocialCG should treat as a job queue? <a href="https://github.com/swicg/general/issues/27" class="inline-onebox" rel="noopener nofollow ugc">RESOLUTION: This is currently the primary issue tracker for SWICG · Issue #27 · swicg/general · GitHub</a>
+</li>
+</ul>
+            <p><small>2 posts - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/2021-04-17-social-cg-meeting/1607">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/2021-04-17-social-cg-meeting/1607</link>
+          <pubDate>Sat, 17 Apr 2021 14:51:12 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1607</guid>
+          <source url="https://socialhub.activitypub.rocks/t/2021-04-17-social-cg-meeting/1607.rss">2021-04-17 Social CG Meeting</source>
+        </item>
+        <item>
+          <title>2021-02-12 Social CG Meeting</title>
+          <dc:creator><![CDATA[rhiaro]]></dc:creator>
+          <category>SocialCG</category>
+          <description><![CDATA[
+            <p>Hi all,</p>
+<p>Unfortunately this week once again we have no chairs available for the SocialCG meeting. However, the <a href="https://bbb.w3c.social">BBB</a> is available for anyone to use who would like to chat with others at the usual Friday time. Perhaps reply in this thread with topics you would like to discuss, so that others know who might be around.</p>
+<p>Date: <span data-date="2021-02-12" data-time="17:00:00" class="discourse-local-date" data-timezone="Europe/London" data-email-preview="2021-02-12T17:00:00Z UTC">2021-02-12T17:00:00Z</span></p>
+<p>If some people do meet and you decide you would like to take notes in IRC that get persisted to the W3C servers, you can see <a href="https://www.w3.org/wiki/SocialCG#Meetings">how to do that on the SocialCG wiki</a>. Ping me in IRC if you’re stuck and I’ll help if I’m online.</p>
+            <p><small>3 posts - 3 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/2021-02-12-social-cg-meeting/1436">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/2021-02-12-social-cg-meeting/1436</link>
+          <pubDate>Thu, 11 Feb 2021 21:06:09 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1436</guid>
+          <source url="https://socialhub.activitypub.rocks/t/2021-02-12-social-cg-meeting/1436.rss">2021-02-12 Social CG Meeting</source>
+        </item>
+        <item>
+          <title>2021-01-29 Social CG informal party - FUN!</title>
+          <dc:creator><![CDATA[Sebastian]]></dc:creator>
+          <category>SocialCG</category>
+          <description><![CDATA[
+            <p><span data-date="2021-01-29" data-time="16:00:00" class="discourse-local-date" data-timezone="Europe/Berlin" data-email-preview="2021-01-29T15:00:00Z UTC">2021-01-29T15:00:00Z</span></p>
+<p>For various very understandable reasons no chair is available today.<br>
+<strong>I propose to do an informal meeting last minute</strong></p>
+<p>Let’s have a party where everybody says what we are struggling with <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"><br>
+Add topics here, come by …</p>
+<p>Personally I would like to talk about what Cristina said last meeting:</p>
+<blockquote>
+<p>“so when you as an admin were peering with another instance you are showing  your set of values, and if that other instance believes that they are sharing those values, that instance can peer with you”</p>
+</blockquote>
+<h2><strong>Join:</strong></h2>
+<ul>
+<li><a href="https://bbb.w3c.social/b/seb-ulr-dbu-jbh">BBB</a></li>
+<li><a href="http://irc.w3.org/?channels=social">IRC</a></li>
+</ul>
+            <p><small>9 posts - 4 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/2021-01-29-social-cg-informal-party-fun/1365">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/2021-01-29-social-cg-informal-party-fun/1365</link>
+          <pubDate>Fri, 29 Jan 2021 11:46:05 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1365</guid>
+          <source url="https://socialhub.activitypub.rocks/t/2021-01-29-social-cg-informal-party-fun/1365.rss">2021-01-29 Social CG informal party - FUN!</source>
+        </item>
+        <item>
+          <title>2021-02-06 Social CG meeting - DEMOS! Diverse clients and generic servers</title>
+          <dc:creator><![CDATA[rhiaro]]></dc:creator>
+          <category>SocialCG</category>
+          <description><![CDATA[
+            <p><strong>Date:</strong> <span data-date="2021-02-06" data-time="16:00:00" class="discourse-local-date" data-timezone="Europe/Berlin" data-email-preview="2021-02-06T15:00:00Z UTC">2021-02-06T15:00:00Z</span> (Saturday)</p>
+<h1>
+<strong>Topic:</strong> Diverse clients and generic servers</h1>
+<h2>Call for demos!</h2>
+<p>Many of us dream of a fediverse with a diverse range of specialised clients (doing one thing really well) which can communicate with generic servers, set up to handle any kind of incoming Activities (perhaps falling back to simple text descriptions for things they don’t understand).</p>
+<p>If you are working on clients like this - even if it isn’t polished, or finished, or only half works, or is just a mockup - we would love a preview.</p>
+<p>If you are working on generic servers, please share these as well!</p>
+<p>Maybe we can find new opportunities to interoperate with each others software.</p>
+<p><strong>Please leave a reply below if you’d like to demo, and any links to your projects (or posts about your projects).</strong></p>
+<h2><strong>Join:</strong></h2>
+<ul>
+<li><a href="https://bbb.w3c.social/b/rhi-vp1-fv6-vn7">BBB</a></li>
+<li><a href="http://irc.w3.org/?channels=social">IRC</a></li>
+</ul>
+            <p><small>11 posts - 7 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364</link>
+          <pubDate>Fri, 29 Jan 2021 09:56:21 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1364</guid>
+          <source url="https://socialhub.activitypub.rocks/t/2021-02-06-social-cg-meeting-demos-diverse-clients-and-generic-servers/1364.rss">2021-02-06 Social CG meeting - DEMOS! Diverse clients and generic servers</source>
+        </item>
+        <item>
+          <title>SocialCG meetings calendar</title>
+          <dc:creator><![CDATA[rhiaro]]></dc:creator>
+          <category>SocialCG</category>
+          <description><![CDATA[
+            <p>We have a calendar with CG meetings. We can also put any other events here as we need!</p>
+<p>You can <a href="https://cloud.w3c.social/apps/calendar/p/GzxsDfE6CKtp9MHX">view in browser</a> or <a>subscribe/download ics link</a>.</p>
+<p>If you are organising events or other meetings, tell me if you want write access to the calendar (or tell me the details and I can add things).</p>
+            <p><small>6 posts - 3 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/socialcg-meetings-calendar/1308">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/socialcg-meetings-calendar/1308</link>
+          <pubDate>Fri, 15 Jan 2021 19:26:42 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1308</guid>
+          <source url="https://socialhub.activitypub.rocks/t/socialcg-meetings-calendar/1308.rss">SocialCG meetings calendar</source>
+        </item>
+        <item>
+          <title>2021-01-23 SocialCG meeting - new fediverse users</title>
+          <dc:creator><![CDATA[rhiaro]]></dc:creator>
+          <category>SocialCG</category>
+          <description><![CDATA[
+            <p><strong>Date:</strong> <span data-date="2021-01-23" data-time="16:00:00" class="discourse-local-date" data-timezone="Europe/Berlin" data-email-preview="2021-01-23T15:00:00Z UTC">2021-01-23T15:00:00Z</span></p>
+<p><strong>Topic:</strong> The wave of new fediverse users who have been displaced from centralized social media recently.</p>
+<ul>
+<li>How should we handle culture changes, communities who provide bad content or harassment, moderation, etc.</li>
+</ul>
+<p><strong>Join:</strong></p>
+<ul>
+<li><a href="https://bbb.w3c.social/b/rhi-vp1-fv6-vn7">BBB</a></li>
+<li><a href="http://irc.w3.org/?channels=social">IRC</a></li>
+</ul>
+<p>Many people have things to say about this. If you are working or thinking and can prepare something to propose at the meeting, it can be really helpful to look for clear outcomes or next steps.</p>
+<p>Feel free to discuss the topic in this thread (or other threads) and link to things you have written already here.</p>
+            <p><small>5 posts - 2 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/2021-01-23-socialcg-meeting-new-fediverse-users/1305">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/2021-01-23-socialcg-meeting-new-fediverse-users/1305</link>
+          <pubDate>Fri, 15 Jan 2021 18:30:07 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1305</guid>
+          <source url="https://socialhub.activitypub.rocks/t/2021-01-23-socialcg-meeting-new-fediverse-users/1305.rss">2021-01-23 SocialCG meeting - new fediverse users</source>
+        </item>
+        <item>
+          <title>BREAKING : W3C Technical Architecture Group (TAG) election result</title>
+          <dc:creator><![CDATA[Sebastian]]></dc:creator>
+          <category>SocialCG</category>
+          <description><![CDATA[
+            <h1>W3C Technical Architecture Group (TAG) election result</h1>
+<p>“<br>
+<strong>The W3C Advisory Committee has elected the following people to the W3C Technical Architecture Group (TAG):</strong></p>
+<p><a class="mention" href="/u/rhiaro">@rhiaro</a><br>
+[Dr.] Amy Guy (Digital Bazaar) [!], Sangwhan Moon (W3C Invited Expert) [!] […] and Lea Verou (W3C Invited Expert) [!].”</p>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/d48129d0948532ab9fabb5b14281b33df26706b3.ico" class="site-icon" width="32" height="32">
+      <a href="https://www.w3.org/blog/news/archives/8846" target="_blank" rel="noopener">w3.org</a>
+  </header>
+  <article class="onebox-body">
+    <img src="" class="thumbnail" width="" height="">
+
+<h3><a href="https://www.w3.org/blog/news/archives/8846" target="_blank" rel="noopener">W3C Advisory Committee Elects Technical Architecture Group | W3C News</a></h3>
+
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+            <p><small>5 posts - 4 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/breaking-w3c-technical-architecture-group-tag-election-result/1270">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/breaking-w3c-technical-architecture-group-tag-election-result/1270</link>
+          <pubDate>Thu, 07 Jan 2021 11:49:28 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1270</guid>
+          <source url="https://socialhub.activitypub.rocks/t/breaking-w3c-technical-architecture-group-tag-election-result/1270.rss">BREAKING : W3C Technical Architecture Group (TAG) election result</source>
+        </item>
+        <item>
+          <title>2021-01-15 SocialCG Meeting - Building a Policy Special Interest Group</title>
+          <dc:creator><![CDATA[Sebastian]]></dc:creator>
+          <category>SocialCG</category>
+          <description><![CDATA[
+            <p><span data-date="2021-01-15" data-time="18:00:00" class="discourse-local-date" data-timezone="Europe/Berlin" data-email-preview="2021-01-15T17:00:00Z UTC">2021-01-15T17:00:00Z</span></p>
+<h2><a href="https://bbb.w3c.social/b/rhi-vp1-fv6-vn7">Join here directly with BigBlueButton</a></h2>
+<hr>
+<p><strong>Topic</strong></p>
+<h1>Policy Group</h1>
+<p>We want to follow the discussions we had about the EU Commissions Proposal of the “Digital Markets Act” and build a Special Interest Group about Interoperability, Interconnection and Data Portability Policy !</p>
+<p>Unfortunately suboptimal incidents happen in the USA, so <strong>personally</strong> may I suggest to reach a group concencus in the beginning, what we now want to speak about too?</p>
+<p>Initial minutes<br>
+</p><aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <a href="https://www.w3.org/2020/12/04-social-minutes.html" target="_blank" rel="noopener">w3.org</a>
+  </header>
+  <article class="onebox-body">
+    <img src="" class="thumbnail" width="" height="">
+
+<h3><a href="https://www.w3.org/2020/12/04-social-minutes.html" target="_blank" rel="noopener">Social CG Telecon -- 04 Dec 2020</a></h3>
+
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>Relevant minutes<br>
+</p><aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <a href="https://www.w3.org/2020/12/11-social-minutes.html" target="_blank" rel="noopener">w3.org</a>
+  </header>
+  <article class="onebox-body">
+    <img src="" class="thumbnail" width="" height="">
+
+<h3><a href="https://www.w3.org/2020/12/11-social-minutes.html" target="_blank" rel="noopener">Social Web Incubator Community Group Teleconference -- 11
+  Dec 2020</a></h3>
+
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>and our</p>
+<aside class="quote quote-modified" data-post="1" data-topic="1216">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/sebastian/40/38_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/rc3-roundtable-interoperability-interconnection-and-portability/1216">rC3 – Roundtable Interoperability, Interconnection and Portability</a> <a class="badge-wrapper  box" href="/c/meeting/rc3/56"><span class="badge-category-parent-bg" style="background-color: #0E76BD;"></span><span class="badge-category-bg" style="background-color: #b239ff;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="(Virtual) Chaos Communication Congress 2020">Remote Chaos Experience</span></a>
+  </div>
+  <blockquote>
+    2020-12-29T17:30:00Z (UTC) 
+This round table event will connect experts, civil society organisations and users to discuss how increased interoperability could be a future-proof way to solve some of the most intractable issues of the Internet. And what else is needed, for example interconnection and data portability. 
+<a href="https://meet.jit.si/ScatteredConsequencesActRegardless">Join via jitsi</a>
+Dr. Ian Brown (CyberBRICS Visiting Professor, Fundação Getulio Vargas in Rio de Janeiro) elaborated on his research which explores interoperability as a tool for comp…
+  </blockquote>
+</aside>
+
+<p><a href="https://love.public.cat/t/what-is-at-stake-with-interoperability/96">Overview</a> and more in the PUBLIC forum<br>
+<a href="https://www.ianbrown.tech/2020/12/16/438/">Subsequent Analysis by Dr. Ian Brown</a></p>
+<p>We are 14 people so far. I will sent invitations as DM.<br>
+If you want to join the Group, write me a DM here or reply.</p>
+            <p><small>8 posts - 4 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/2021-01-15-socialcg-meeting-building-a-policy-special-interest-group/1261">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/2021-01-15-socialcg-meeting-building-a-policy-special-interest-group/1261</link>
+          <pubDate>Tue, 05 Jan 2021 00:16:46 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1261</guid>
+          <source url="https://socialhub.activitypub.rocks/t/2021-01-15-socialcg-meeting-building-a-policy-special-interest-group/1261.rss">2021-01-15 SocialCG Meeting - Building a Policy Special Interest Group</source>
+        </item>
+        <item>
+          <title>Upcoming SocialCG meetings</title>
+          <dc:creator><![CDATA[rhiaro]]></dc:creator>
+          <category>SocialCG</category>
+          <description><![CDATA[
+            <p>Given we have built up a backlog of topics to talk about, I’ve made a draft schedule for future SocialCG meetings: <a href="https://pad.amy.gy/p/socialcg-meetings" rel="noopener nofollow ugc">https://pad.amy.gy/p/socialcg-meetings</a></p>
+<p>So far the idea is to alternate Fridays 1700 UTC and Saturdays 1500 UTC as no time works for everyone but we’ve had success with those times before.</p>
+<p>The topics are flexible - I set up the etherpad so you can make a note if you really want to attend a topic and the time does or doesn’t work for you. Then we can move around if necessary.</p>
+<p>We’ll continue to meet in jitsi and take notes in the W3C <span class="hashtag">#social</span> IRC channel.</p>
+<p>If there are no major objections to this plan, I’ll generate an ICS file to help people keep track.</p>
+<p>Note also the <a href="https://socialhub.activitypub.rocks/t/2021-01-09-socialcg-meeting-fep/1246">next meeting</a> this Saturday about Fediverse Enhancement Proposals.</p>
+<p>And a thousand thank yous to <a class="mention" href="/u/sebastian">@Sebastian</a> for keeping track of the growing topics list, and pushing us to action!</p>
+            <p><small>5 posts - 3 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/upcoming-socialcg-meetings/1257">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/upcoming-socialcg-meetings/1257</link>
+          <pubDate>Mon, 04 Jan 2021 10:57:08 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1257</guid>
+          <source url="https://socialhub.activitypub.rocks/t/upcoming-socialcg-meetings/1257.rss">Upcoming SocialCG meetings</source>
+        </item>
+        <item>
+          <title>2021-01-09 SocialCG Meeting - FEP</title>
+          <dc:creator><![CDATA[Sebastian]]></dc:creator>
+          <category>SocialCG</category>
+          <description><![CDATA[
+            <p><span data-date="2021-01-09" data-time="16:00:00" class="discourse-local-date" data-timezone="Europe/Berlin" data-email-preview="2021-01-09T15:00:00Z UTC">2021-01-09T15:00:00Z</span></p>
+<p><strong>Topic</strong></p>
+<h2>FEP</h2>
+<p><a class="mention" href="/u/pukkamustard">@pukkamustard</a><br>
+and <a class="mention" href="/u/cjs">@cjs</a></p>
+<aside class="quote quote-modified" data-post="2" data-topic="1171">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/pukkamustard/40/111_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/fep-a4ed-the-fediverse-enhancement-proposal-process/1171/2">FEP-a4ed: The Fediverse Enhancement Proposal Process</a> <a class="badge-wrapper  box" href="/c/activitypub/fep/54"><span class="badge-category-parent-bg" style="background-color: #0088CC;"></span><span class="badge-category-bg" style="background-color: #0088CC;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Fediverse Enhancement Proposals (FEP) index and discussion.">Fediverse Enhancement Proposals</span></a>
+  </div>
+  <blockquote>
+    Hello Fediverse, 
+This is call for feedback and comments on the initial Fediverse Enhancement Proposal (FEP): 
+
+<a href="https://git.activitypub.dev/ActivityPubDev/Fediverse-Enhancement-Proposals/src/branch/main/feps/fep-a4ed.md" rel="noopener nofollow ugc">FEP-a4ed: The Fediverse Enhancement Proposal Process</a>.
+Summary: 
+
+A Fediverse Enhancement Proposal (FEP) is a document that provides information to the Fediverse community. The goal of a FEP is to improve interoperability and well-being of diverse services, applications and communities that form the Fediverse. 
+This document describes the scope, format and process of publishing Fedivers…
+  </blockquote>
+</aside>
+
+<p>which started probably here: <a href="https://socialhub.activitypub.rocks/t/fediverse-enhancement-proposal-fep/1059:">https://socialhub.activitypub.rocks/t/fediverse-enhancement-proposal-fep/1059:</a></p>
+<ul>
+<li>
+<p><a href="https://socialhub.activitypub.rocks/t/fep-a4edc7b-the-fediverse-enhancement-proposal-process/1090" class="inline-onebox">FEP-a4edc7b: The Fediverse Enhancement Proposal Process</a> <a class="mention" href="/u/pukkamustard">@pukkamustard</a></p>
+</li>
+<li>
+<p><a href="https://socialhub.activitypub.rocks/t/proposal-mechanism-for-synchronizing-followers-lists-across-servers/852" class="inline-onebox">Proposal: Mechanism for synchronizing followers lists across servers</a> <a class="mention" href="/u/claire">@Claire</a></p>
+</li>
+<li>
+<p><a href="https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097" class="inline-onebox">Come Help: List of FEPs Needed</a> <a class="mention" href="/u/cjs">@cjs</a></p>
+</li>
+<li>
+<p>the <a href="https://socialhub.activitypub.rocks/pub/fediverse-enhancement-proposals#index">FEP Index</a></p>
+</li>
+</ul>
+<p>…<br>
+…</p>
+<hr>
+<p><code>&lt;personalOpinion&gt;</code><br>
+and there were many things <strong>many</strong> people wanted to talk about in 2020 but<br>
+were censored due to “time constraints” - I could understand if users like <a class="mention" href="/u/nedjo">@nedjo</a><br>
+who gave us all the nice thoughts and writings are very disappointed.<br>
+I would like to talk 12 hours this time.<br>
+<code>&lt;/personalOpinion&gt;</code></p>
+<h1>The waitlist</h1>
+<hr>
+<h2>alsoKnownAs and Link Relations</h2>
+<p>Following up on <a href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/9" class="inline-onebox">Defining alsoKnownAs</a><br>
+<a class="mention" href="/u/rhiaro">@rhiaro</a><br>
+but also on the <a href="https://socialhub.activitypub.rocks/t/2020-12-04-socialcg-meeting/1166/2">adhoc discussion in SocialCG IRC</a> [sorry for the mess]</p>
+<hr>
+<h2>Structure of W3C Social CG and official site</h2>
+<ul>
+<li>guides</li>
+<li>site<br>
+<a href="https://rigelk.gitlab.io/activitypub.rocks/"><strong>Please see Look and feel</strong></a> by<br>
+<a class="mention" href="/u/rigelk">@rigelk</a>
+</li>
+<li>wiki</li>
+<li>OpenCollective</li>
+<li>Official fediverse account (some days ago made <a href="https://gup.pe/u/activitypub">https://gup.pe/u/activitypub</a> for rC3)</li>
+<li>fediverse.space</li>
+</ul>
+<p><a class="mention" href="/u/how">@how</a> asked “Is there a way to communicate to W3C that promoting decentralization and using Microsoft services are antithetical?” /me added “and using google captcha and putting forms what a computer thinks we do and not giving the community space and getting EFF back in the boat and …”</p>
+<hr>
+<h2>Building the Policy Group</h2>
+<p>16 people want to join the Policy Group, we need a meeting time, how to ?</p>
+<hr>
+<h2>Fediverse Futures</h2>
+<p>agree to <a class="mention" href="/u/aschrijver">@aschrijver</a></p>
+<blockquote>
+<p>AFAIK the Fediverse Futures group has not been followed-up on.</p>
+</blockquote>
+<p>Here is a diferent twist <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"><br>
+<aside class="quote quote-modified" data-post="1" data-topic="1238">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/aschrijver/40/278_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/fediverse-futures-visions-dreams-feedback-wanted/1238">Fediverse Futures: Visions &amp; dreams. Feedback wanted</a> <a class="badge-wrapper  box" href="/c/fediversity/10"><span class="badge-category-bg" style="background-color: #92278F;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Understanding and discovering communities on this emerging social network that is the Fediverse.">Fediversity</span></a>
+  </div>
+  <blockquote>
+    When typing the title, Discourse suggest this topic with similar title: 
+
+AFAIK the Fediverse Futures group has not been followed-up on. But I want to discuss a different twist to it. 
+Everything and everyone involved in evolving the Fediverse is doing so from a highly technical perspective and mindset. This is logical as we are organically discovering the technical foundations for a new social web, based on a technology standard. But I notice this narrow focus is also leading to a general lack …
+  </blockquote>
+</aside>
+</p>
+<p>related: We want to talk about how we can make our clients work together and how we get generic servers so that users content does not get lost and that we do not have our life fragmented between 9 services<br>
+(for example here mastodon.social [sl007], chaos.social [redaktor], octodon.social [secret], conf.tube [apconf], pixelfed.social [apconf], gup.pe [activitypub], redaktor alpha, immers.space [sl007], funkwhale etc.)</p>
+<hr>
+<h1>The not existing official Test Suite and making the inofficial an official</h1>
+<p>We wanted to talk about that in 3 different Social CGs but it whas concensus that we do not have time.<br>
+November 19<br>
+<aside class="quote quote-modified" data-post="1" data-topic="290">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/cwebber/40/51_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290">The ActivityPub test suite</a> 
+  </div>
+  <blockquote>
+    test.activitypub.rocks has been down for a long time, as pretty much everyone knows.  More or less it’s server issues, and I can be blamed since I run the server (and wrote the test suite). 
+Why hasn’t it gone back up though?  Mainly because I’m a) very busy b) know how poor the test suite is at fulfilling the needs of the community and that makes it hard to feel motivated to put in the work. 
+Here are some quirks about test.activitypub.rocks: 
+
+It was done in a rush to meet the standards deadli…
+  </blockquote>
+</aside>
+<br>
+July 2020 – A heavy thank you <a class="mention" href="/u/cjs">@cjs</a> for “Just Do It!”<br>
+<aside class="quote quote-modified" data-post="5" data-topic="805">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/cjs/40/584_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/unofficial-test-suite-go-fed-testsuite/805/5">Unofficial Test Suite (go-fed/testsuite)</a> <a class="badge-wrapper  box" href="/c/software/go-fed/18"><span class="badge-category-parent-bg" style="background-color: #3AB54A;"></span><span class="badge-category-bg" style="background-color: #ff0000;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Discussion about the suite of Golang ActivityPub libraries and tools.">Go-Fed</span></a>
+  </div>
+  <blockquote>
+    Sneak peek: <a href="https://test.activitypub.dev/" rel="nofollow noopener">https://test.activitypub.dev/</a> 
+Please feel free to <a href="https://github.com/go-fed/testsuite" rel="nofollow noopener">file issues</a>. 
+Caveats: 
+
+UI is ugly
+The “C2S” option in the “new test” page does nothing. You’ll probably want to check the “S2S” one.
+Once you begin the test, you’ll have to refresh the page manually to get updates. Once instructions show, testing is paused and awaiting your input
+Did I mention the UI is ugly? I haven’t done but the bare minimum for the instructions, etc.
+Known problem with the “done” button for the one test that ha…
+  </blockquote>
+</aside>
+</p>
+<p>and now:<br>
+How does it become official? The lack is a very hindering reason for some of us <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"><br>
+There is also <a href="https://socialhub.activitypub.rocks/t/introducing-fedidb-devtools-for-activitypub/660/6">FediDB</a> by<br>
+<a class="mention" href="/u/dansup">@dansup</a></p>
+<p>After that: Somebody but not CJ, dansup or me <em>should</em> answer the <a href="https://socialhub.activitypub.rocks/search?q=test">80 questions</a> about this …</p>
+<hr>
+<h1>Generic Server for diverse clients</h1>
+<p>We wanted to talk about generic servers. It is only solvable by talking to each other.<br>
+pleroma: <a class="mention" href="/u/lanodan">@lanodan</a><br>
+and <a href="https://web.immers.space">https://web.immers.space</a> 3D: <a class="mention" href="/u/datatitian">@datatitian</a><br>
+and <a class="mention" href="/u/birdsofpraise">@birdsofpraise</a><br>
+and <span class="mention">@loweel</span>@boseburo.ddns.net and <a class="mention" href="/u/marius">@marius</a></p>
+<p><a href="https://socialhub.activitypub.rocks/t/extensible-client-to-server-applications/341">related 1</a><br>
+<a href="https://socialhub.activitypub.rocks/t/want-to-build-an-activitypub-client-where-to-start/993">related 2</a><br>
+more related <a href="https://socialhub.activitypub.rocks/search?q=client">100 posts</a></p>
+<p>thank you, by random I noticed a solution to a “bug”, mastodon makes <code>preferredUsername</code> a MUST ::   ¯\__(ツ)_/¯</p>
+<hr>
+<h1>Making <a href="https://socialhub.activitypub.rocks/t/topics-and-services-we-can-subscribe-to/995/4">Hashtag an extension</a>
+</h1>
+<p>as Chris noted for the first November meeting, we should talk about this<br>
+<aside class="quote quote-modified" data-post="4" data-topic="995">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/acka47/40/164_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/topics-and-services-we-can-subscribe-to/995/4">"Topics" and Services we can subscribe to</a> <a class="badge-wrapper  box" href="/c/meeting/apconf2020/53"><span class="badge-category-parent-bg" style="background-color: #0E76BD;"></span><span class="badge-category-bg" style="background-color: #ff7a00;"></span><span style="color: #ffffff" data-drop-close="true" class="badge-category clear-badge" title="Add your proposals for the Conf by creating a New Topic –
+Tag it #bof for Birds of Feather sessions or #hackathon for Hack proposals …">ActivityPub Conference 2020</span></a>
+  </div>
+  <blockquote>
+    At the end of the bof session I had a question about the type Hashtag and where it comes from. I was curious as we where thinking about adding another type (e.g. Category) to refer to a topic from a controlled vocabulary. 
+Taking an <a href="https://octodon.social/@mlemweb/104976859469572967.json" rel="noopener nofollow ugc">example toot</a> one finds the following in the <a href="https://octodon.social/@mlemweb/104976859469572967.json" rel="noopener nofollow ugc">JSON</a>: 
+{
+   "@context":[
+      "https://www.w3.org/ns/activitystreams",
+      {
+         "ostatus":"http://ostatus.org#",
+         "atomUri":"ostatus:atomUri",
+         "inReplyToAtomUri":"ostatus:inReplyToAtomUri",
+       …
+  </blockquote>
+</aside>
+</p>
+<hr>
+<h1>Groups in AP</h1>
+<p>is, what we should also talk about …</p>
+<p><a class="mention" href="/u/grishka">@grishka</a><br>
+and<br>
+<a class="mention" href="/u/ngerakines">@ngerakines</a></p>
+<hr>
+<p>btw:<br>
+I do not remember the elder things we promised to talk about, but did not, so I stop here.</p>
+<hr>
+<p><strong>Wiki</strong></p>
+<p>[sorry, no preview available, unable cause “wgIsProbablyEditable”:false ]<br>
+</p><aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/d48129d0948532ab9fabb5b14281b33df26706b3.ico" class="site-icon" width="32" height="32">
+      <a href="https://www.w3.org/wiki/SocialCG" target="_blank" rel="noopener">w3.org</a>
+  </header>
+  <article class="onebox-body">
+    <img src="" class="thumbnail" width="" height="">
+
+<h3><a href="https://www.w3.org/wiki/SocialCG" target="_blank" rel="noopener">SocialCG - W3C Wiki</a></h3>
+
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p><span data-date="2021-01-09" data-time="16:00:00" class="discourse-local-date" data-timezone="Europe/Berlin" data-email-preview="2021-01-09T15:00:00Z UTC">2021-01-09T15:00:00Z</span></p>
+<h1>Join the meeting everybody:</h1>
+<h3>
+<a href="https://meet.jit.si/ScatteredConsequencesActRegardless">Join via jitsi</a> – chat and vote in <span class="hashtag">#social</span> on freenode: <a href="https://webchat.freenode.net/#social">Web Chat</a>
+</h3>
+<hr>
+<p><code>&lt;personalOpinion&gt;</code><br>
+1 hour is ridiculuous –  <em>the list goes on and on and on</em><br>
+P.S</p>
+<ul>
+<li><a href="https://socialhub.activitypub.rocks/t/funkwhale-is-looking-for-new-maintainers/1140">funkwhale is looking for new maintainers</a></li>
+<li><a>fediverse.space is looking for somebody to overtake</a></li>
+<li><a href="https://rhiaro.co.uk/2020/11/tag-statement">vote amy</a></li>
+</ul>
+<p>Personally I would be interested if we can break free from clones of hypercapitalist services because I do not like kings. If we can begin to use ActivityPub as described in the specification and use the users server with diverse clients. Personally I do not have any interest in the data of my users. A client is fine for me.<br>
+<code>&lt;/personalOpinion&gt;</code></p>
+            <p><small>7 posts - 4 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/2021-01-09-socialcg-meeting-fep/1246">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/2021-01-09-socialcg-meeting-fep/1246</link>
+          <pubDate>Sat, 02 Jan 2021 16:24:52 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1246</guid>
+          <source url="https://socialhub.activitypub.rocks/t/2021-01-09-socialcg-meeting-fep/1246.rss">2021-01-09 SocialCG Meeting - FEP</source>
+        </item>
+        <item>
+          <title>2020-12-11 SocialCG Meeting</title>
+          <dc:creator><![CDATA[Sebastian]]></dc:creator>
+          <category>SocialCG</category>
+          <description><![CDATA[
+            <p>Continuing the discussion from <a href="https://socialhub.activitypub.rocks/t/2020-12-04-socialcg-meeting/1166">the meeting the week before</a> –<br>
+<a href="https://www.w3.org/2020/12/04-social-minutes.html">Log of the 12-04 meeting</a></p>
+<h2>December 2020</h2>
+<p><span data-date="2020-12-11" data-time="15:00:00" class="discourse-local-date" data-timezone="UTC" data-email-preview="2020-12-11T15:00:00Z UTC">2020-12-11T15:00:00Z</span> → <span data-date="2020-12-11" data-time="16:00:00" class="discourse-local-date" data-timezone="UTC" data-email-preview="2020-12-11T16:00:00Z UTC">2020-12-11T16:00:00Z</span></p>
+<h3>
+<a href="https://meet.jit.si/ScatteredConsequencesActRegardless">Join via jitsi</a> – chat and vote in <span class="hashtag">#social</span> on freenode: <a href="https://webchat.freenode.net/#social">Web Chat</a>
+</h3>
+<h1>Agenda</h1>
+<ol>
+<li>
+<p><span class="chcklst-box fa fa-square-o fa-fw"></span> Forming a Lobby,<br>
+the EU Digital Services Act and Interoperability Law (Joost / <a href="https://nlnet.nl">nlnet</a>, Sebastian)</p>
+</li>
+<li>
+<p><span class="chcklst-box fa fa-square-o fa-fw"></span> FEP (pukkamustard, CJ)</p>
+</li>
+<li>
+<p><span class="chcklst-box fa fa-square-o fa-fw"></span> Link relations (Sebastian, rhiaro)</p>
+</li>
+</ol>
+<h2>EU and Interoperability Law</h2>
+<p>Following up the <a href="https://mastodon.social/@sl007/105241868769245847">discussion on mastodon</a>, we need to discuss about EU-supported ActivityPub outreach and funding taking over the <a href="https://www.opentech.fund">OTF</a> that was defunded by Trump.<br>
+<a href="https://mastodon.social/@cjd/105218928131527211">See this long thread</a> …<br>
+<a href="https://netzpolitik.org/2020/interoperabilitaet-wie-die-eu-die-sozialen-netzwerke-aufbrechen-kann/">German Article</a><br>
+We need a lobby and some invited policy advocates, experts and NGOs to the meeting</p>
+<h2>FEP</h2>
+<p>Following up on <a href="https://socialhub.activitypub.rocks/t/fediverse-enhancement-proposal-fep/1059:">https://socialhub.activitypub.rocks/t/fediverse-enhancement-proposal-fep/1059:</a></p>
+<ul>
+<li>
+<p><a href="https://socialhub.activitypub.rocks/t/fep-a4edc7b-the-fediverse-enhancement-proposal-process/1090" class="inline-onebox">FEP-a4edc7b: The Fediverse Enhancement Proposal Process</a> (<a class="mention" href="/u/pukkamustard">@pukkamustard</a>)</p>
+</li>
+<li>
+<p><a href="https://socialhub.activitypub.rocks/t/proposal-mechanism-for-synchronizing-followers-lists-across-servers/852" class="inline-onebox">Proposal: Mechanism for synchronizing followers lists across servers</a> (<a class="mention" href="/u/claire">@Claire</a>)</p>
+</li>
+<li>
+<p><a href="https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097" class="inline-onebox">Come Help: List of FEPs Needed</a> (<a class="mention" href="/u/cjs">@cjs</a>)</p>
+</li>
+<li>
+<p>the <a href="https://socialhub.activitypub.rocks/pub/fediverse-enhancement-proposals#index">FEP Index</a></p>
+</li>
+</ul>
+<h2>Link Relations</h2>
+<p>Following up on <a href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/9" class="inline-onebox">Defining alsoKnownAs</a><br>
+but also on the <a href="https://socialhub.activitypub.rocks/t/2020-12-04-socialcg-meeting/1166/2">adhoc discussion in SocialCG IRC</a> [sorry for the mess]</p>
+            <p><small>16 posts - 7 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/2020-12-11-socialcg-meeting/1180">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/2020-12-11-socialcg-meeting/1180</link>
+          <pubDate>Mon, 07 Dec 2020 20:06:23 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1180</guid>
+          <source url="https://socialhub.activitypub.rocks/t/2020-12-11-socialcg-meeting/1180.rss">2020-12-11 SocialCG Meeting</source>
+        </item>
+        <item>
+          <title>2020-12-04 SocialCG Meeting</title>
+          <dc:creator><![CDATA[how]]></dc:creator>
+          <category>SocialCG</category>
+          <description><![CDATA[
+            <p>Continuing the discussion from <a href="https://socialhub.activitypub.rocks/t/planning-the-next-socialcg-meeting-when/481">Planning the next SocialCG meeting: when?</a>:</p>
+<h2>December 2020</h2>
+<p><span data-date="2020-12-04" data-time="15:00:00" class="discourse-local-date" data-timezone="UTC" data-email-preview="2020-12-04T15:00:00Z UTC">2020-12-04T15:00:00Z</span> → <span data-date="2020-12-04" data-time="16:00:00" class="discourse-local-date" data-timezone="UTC" data-email-preview="2020-12-04T16:00:00Z UTC">2020-12-04T16:00:00Z</span></p>
+<p><a href="https://meet.jit.si/ScatteredConsequencesActRegardless">Join via jitsi</a></p>
+<h1>Agenda</h1>
+<ol>
+<li>
+<p><span class="chcklst-box fa fa-square-o fa-fw"></span> Situation with EU wrt OTF (Joost/nlnet, <a class="mention" href="/u/sebastian">@Sebastian</a>)</p>
+</li>
+<li>
+<p><span class="chcklst-box fa fa-square-o fa-fw"></span> FEP (pukkamustard, CJ)</p>
+</li>
+<li>
+<p><span class="chcklst-box fa fa-square-o fa-fw"></span> Link relations (<a class="mention" href="/u/sebastian">@Sebastian</a>, rhiaro)</p>
+</li>
+</ol>
+<h2>Situation with EU wrt OTF</h2>
+<p>Following up the <a href="https://mastodon.social/@sl007/105241868769245847">discussion on mastodon</a>, we need to discuss about EU-supported ActivityPub outreach and funding taking over the <a href="https://www.opentech.fund">OTF</a> that was defunded by Trump.<br>
+We can also talk about the planned <em>EU Interoperability Law</em> within the “Digital Services Act”.<br>
+<a href="https://mastodon.social/@cjd/105218928131527211">Described in this long thread</a> …<br>
+<a href="https://netzpolitik.org/2020/interoperabilitaet-wie-die-eu-die-sozialen-netzwerke-aufbrechen-kann/">German Article</a><br>
+We need a lobby.</p>
+<h2>FEP</h2>
+<p>Following up on <a href="https://socialhub.activitypub.rocks/t/fediverse-enhancement-proposal-fep/1059:">https://socialhub.activitypub.rocks/t/fediverse-enhancement-proposal-fep/1059:</a></p>
+<ul>
+<li>
+<p><a href="https://socialhub.activitypub.rocks/t/fep-a4edc7b-the-fediverse-enhancement-proposal-process/1090" class="inline-onebox">FEP-a4edc7b: The Fediverse Enhancement Proposal Process</a> (<a class="mention" href="/u/pukkamustard">@pukkamustard</a>)</p>
+</li>
+<li>
+<p><a href="https://socialhub.activitypub.rocks/t/proposal-mechanism-for-synchronizing-followers-lists-across-servers/852" class="inline-onebox">Proposal: Mechanism for synchronizing followers lists across servers</a> (<a class="mention" href="/u/claire">@Claire</a>)</p>
+</li>
+<li>
+<p><a href="https://socialhub.activitypub.rocks/t/come-help-list-of-feps-needed/1097" class="inline-onebox">Come Help: List of FEPs Needed</a> (<a class="mention" href="/u/cjs">@cjs</a>)</p>
+</li>
+<li>
+<p>the <a href="https://socialhub.activitypub.rocks/pub/fediverse-enhancement-proposals#index">FEP Index</a></p>
+</li>
+</ul>
+<h2>Link Relations</h2>
+<p>Following up on <a href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907/9" class="inline-onebox">Defining alsoKnownAs</a><br>
+but also on the <a href="https://socialhub.activitypub.rocks/t/2020-12-04-socialcg-meeting/1166/2">adhoc discussion in SocialCG IRC</a> [sorry for the mess]</p>
+            <p><small>3 posts - 3 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/2020-12-04-socialcg-meeting/1166">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/2020-12-04-socialcg-meeting/1166</link>
+          <pubDate>Tue, 01 Dec 2020 15:04:59 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1166</guid>
+          <source url="https://socialhub.activitypub.rocks/t/2020-12-04-socialcg-meeting/1166.rss">2020-12-04 SocialCG Meeting</source>
+        </item>
+        <item>
+          <title>2020-11-14 SocialCG Meeting</title>
+          <dc:creator><![CDATA[cwebber]]></dc:creator>
+          <category>SocialCG</category>
+          <description><![CDATA[
+            <p><span data-date="2020-11-14" data-time="11:00:00" class="discourse-local-date" data-timezone="America/New_York" data-email-preview="2020-11-14T16:00:00Z UTC">2020-11-14T16:00:00Z</span></p>
+<p>There are a lot of topics to roll over from the last meeting:</p>
+<ul>
+<li><a href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907">Continuation of alsoKnownAs as an extension conversation</a></li>
+<li>
+<a href="https://socialhub.activitypub.rocks/t/fediverse-enhancement-proposal-fep/1059">Federation Enhancement Proposals</a> (lead by <a class="mention" href="/u/pukkamustard">@pukkamustard</a>)</li>
+<li>Use of rel links and ActivityPub (lead by <span class="mention">@sl007</span>)</li>
+<li>Making <a href="https://socialhub.activitypub.rocks/t/topics-and-services-we-can-subscribe-to/995/4">Hashtag an extension</a>
+</li>
+</ul>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/2020-11-14-socialcg-meeting/1128">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/2020-11-14-socialcg-meeting/1128</link>
+          <pubDate>Sat, 07 Nov 2020 18:15:43 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1128</guid>
+          <source url="https://socialhub.activitypub.rocks/t/2020-11-14-socialcg-meeting/1128.rss">2020-11-14 SocialCG Meeting</source>
+        </item>
+        <item>
+          <title>2020-11-07 SocialCG Meeting</title>
+          <dc:creator><![CDATA[cwebber]]></dc:creator>
+          <category>SocialCG</category>
+          <description><![CDATA[
+            <p>SocialCG meeting at: <span data-date="2020-11-07" data-time="16:00:00" class="discourse-local-date" data-timezone="UTC" data-email-preview="2020-11-07T16:00:00Z UTC">2020-11-07T16:00:00Z</span></p>
+<p>Usual <a href="https://www.w3.org/wiki/SocialCG#Meetings" rel="noopener nofollow ugc">participation policy and place</a></p>
+<p><strong>TOPICS:</strong></p>
+<ul>
+<li><a href="https://github.com/w3c/activitystreams/pull/512" rel="noopener nofollow ugc">Officially make alsoKnownAs part of the AS2 vocabulary</a></li>
+<li>
+<a href="https://socialhub.activitypub.rocks/t/topics-and-services-we-can-subscribe-to/995/4">Likewise for Hashtag</a> (<a href="https://openbiblio.social/@acka47/105097117170978544" rel="noopener nofollow ugc">requested here</a>)</li>
+</ul>
+<p>Feel free to suggest others!</p>
+            <p><small>5 posts - 4 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/2020-11-07-socialcg-meeting/1106">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/2020-11-07-socialcg-meeting/1106</link>
+          <pubDate>Sun, 25 Oct 2020 17:23:09 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>Yes</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1106</guid>
+          <source url="https://socialhub.activitypub.rocks/t/2020-11-07-socialcg-meeting/1106.rss">2020-11-07 SocialCG Meeting</source>
+        </item>
+        <item>
+          <title>Retooling or suspending the SocialCG</title>
+          <dc:creator><![CDATA[cwebber]]></dc:creator>
+          <category>SocialCG</category>
+          <description><![CDATA[
+            <p>At the top of the hour is the usual time for the next SocialCG.  Are we having one?  I’ll show up at the <a href="https://www.w3.org/wiki/SocialCG#Meetings" rel="nofollow noopener">usual place</a> if anyone else does also.</p>
+<p>But it feels like the SocialCG is, and has been, spinning its wheels for a long time, for two reasons:</p>
+<ul>
+<li>I’m too busy to organize, though I’m happy to run (or scribe) meetings, as I’ve said before.  I’ve been fairly clear about this and have made various attempts to get others to help me do the organization but people are busy and it hasn’t happened… at the end of the day, I still remain the primary organizer, and I’m not good at it.</li>
+<li>I don’t think the state of the SocialCG reflects the current structure of fediverse activity.  The structure today reflects the structure of the SocialWG: list agenda items beforehand and go through them, and it’s mostly talk.  Fediverse and ActivityPub development are vibrant places right now.  I don’t know about you, but it doesn’t feel like the SocialCG currently reflects that vibrancy.</li>
+</ul>
+<p>I have a suggestion on what we <em>could</em> do: have regular meetings, and people can schedule important action items, but in the general case it can be more like a usergroup first.  By that I mean, we’ll switch from my Mumble server (audio-only) to an audio-video setup (like Jitsi Meet) and people can give <em>presentations</em> on what they’re working on… and if there aren’t presentations to give, we can at least talk about interesting topics that have come up on this forum.  Thus this becomes more of an implementer support and idea generation group.</p>
+<p>That last sentence reflects how SocialHub can perform interesting and useful roles for this group: a space for people to lay out ideas.  If a thread becomes sufficiently interesting, someone can say “I think this would be interesting to talk about on the next SocialCG call!”</p>
+<p>We can still do important decision-making-with-consensus when necessary, but my gut feeling is that this isn’t nearly as necessary as it currently is prioritized.  There may be a time where it becomes so again… likely at a time where we have something else we want to make standards-track.</p>
+<p>The alternate options are:</p>
+<ul>
+<li>Just put the SocialCG on hiatus, re-activating it when a real need is expressed from the community.</li>
+<li>Have meetings when there’s enough topic interest in having meetings.  For a while when <a class="mention" href="/u/nightpool">@nightpool</a> was organizing, this was the structure we used, and honestly I thought it was going fairly well, though other people in the community complained about not having a regular time.  We went back to a regular time but for whatever reason I think the quality of the meetings <em>decreased</em> after that move.  (Maybe it’s because I then effectively became the de-facto organizer again, and honestly I think <a class="mention" href="/u/nightpool">@nightpool</a> did a better job than I did.)</li>
+</ul>
+<p>But what do people think?</p>
+<p>If you want to talk about it with me, I’ll be <a href="https://www.w3.org/wiki/SocialCG#Meetings" rel="nofollow noopener">on Mumble</a> at the top of the hour, or we can on this thread for now.  (Though I’m not very good at keeping on track of this place admittedly, so <a href="https://octodon.social/@cwebber/" rel="nofollow noopener">ping me on the fediverse</a> if I’m missing important updates to this thread.)</p>
+            <p><small>5 posts - 3 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/retooling-or-suspending-the-socialcg/869">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/retooling-or-suspending-the-socialcg/869</link>
+          <pubDate>Sat, 08 Aug 2020 15:36:24 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-869</guid>
+          <source url="https://socialhub.activitypub.rocks/t/retooling-or-suspending-the-socialcg/869.rss">Retooling or suspending the SocialCG</source>
+        </item>
+        <item>
+          <title>2020-05-09 SocialCG Meeting</title>
+          <dc:creator><![CDATA[how]]></dc:creator>
+          <category>SocialCG</category>
+          <description><![CDATA[
+            <p>At <a href="https://socialhub.activitypub.rocks/t/2020-04-25-socialcg-meeting/625">last meeting</a> we decided unanimously to run SocialCG meetings <strong>every second Saturday of the month at 16:00 UTC</strong>. So, for May 2020, that’s the 9th.</p>
+<p>Please refer to the <a href="https://www.w3.org/wiki/SocialCG">SocialCG wiki</a> for instructions on how to join the IRC+Mumble meeting, as well as instructions to take the role of a scribe. <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p><em>This is a wiki, please add topics and point them to relevant discussion. Once a topic is resolved, please check it, so we can skip it during the live meeting.</em></p>
+<h2>Topics from last session</h2>
+<p><em>These were skipped during last meeting due to a lack of speakers to talk about them. If you’re mentioned and wish not to attend, please check them out.</em></p>
+<ul>
+<li>Reaching out to others
+<ul>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> <a href="https://github.com/kantord/LibreLingo/issues/65">LibreLingo and ActivityPub </a> (<a class="mention" href="/u/wakest">@wakest</a>?)</li>
+<li>
+<span class="chcklst-box fa fa-square-o fa-fw"></span> <a href="https://socialhub.activitypub.rocks/t/which-links-between-activitypub-and-solid-project/529">Which links between ActivityPub and Solid project? </a> (<a class="mention" href="/u/alice">@Alice</a>?)</li>
+</ul>
+</li>
+<li>
+<span class="chcklst-box checked fa fa-check-square-o fa-fw"></span> Groups in AP (<a class="mention" href="/u/grishka">@grishka</a>? <a class="mention" href="/u/ngerakines">@ngerakines</a>?)</li>
+</ul>
+<h2>Current Topics</h2>
+<ul>
+<li>
+<span class="chcklst-box checked fa fa-check-square-o fa-fw"></span> Introductions</li>
+<li>
+<span class="chcklst-box checked fa fa-check-square-o fa-fw"></span> Datashards</li>
+<li>
+<span class="chcklst-box checked fa fa-check-square-o fa-fw"></span> Adding WordPress (<a class="mention" href="/u/pfefferle">@pfefferle</a>), Mobilizon (<a class="mention" href="/u/tcit">@tcit</a>) to <a class="hashtag" href="/c/software/14">#<span>software</span></a>
+</li>
+<li>
+<span class="chcklst-box checked fa fa-check-square-o fa-fw"></span> <a href="http://Fediconf.org">Fediconf.org</a>
+</li>
+<li><em>Add your topic here<sup class="footnote-ref"><a href="#footnote-2047-1" id="footnote-ref-2047-1">[1]</a></sup></em></li>
+</ul>
+<hr class="footnotes-sep">
+
+<ol class="footnotes-list">
+<li id="footnote-2047-1" class="footnote-item">
+<p>Precede your topic with <code>[]</code> to create a check list, copy the relevant Discourse topic URL to insert the link. You may also use external resources: this is <a href="https://commonmark.org/help/">Markdown</a>. <a href="#footnote-ref-2047-1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+            <p><small>10 posts - 3 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/2020-05-09-socialcg-meeting/639">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/2020-05-09-socialcg-meeting/639</link>
+          <pubDate>Sat, 25 Apr 2020 17:26:09 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>Yes</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-639</guid>
+          <source url="https://socialhub.activitypub.rocks/t/2020-05-09-socialcg-meeting/639.rss">2020-05-09 SocialCG Meeting</source>
+        </item>
+  </channel>
+</rss>

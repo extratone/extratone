@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>SocialHub Search</ShortName>
+  <Description>Search for posts on SocialHub</Description>
+  <Tags>discourse forum</Tags>
+    <Image type="image/png">https://socialhub.activitypub.rocks/uploads/default/optimized/1X/b7023860b3d7df97ea10ba3c7ab11cb046a77c7a_2_32x32.png</Image>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://socialhub.activitypub.rocks/opensearch.xml"/>
+  <Url type="text/html" template="https://socialhub.activitypub.rocks/search?q={searchTerms}"/>
+  <Query role="example" searchTerms="search term"/>
+</OpenSearchDescription>

@@ -1,0 +1,1000 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>ActivityPub Conference 2020 - SocialHub</title>
+    <link>https://socialhub.activitypub.rocks/c/meeting/apconf2020/53</link>
+    <description>Topics in the &#39;ActivityPub Conference 2020&#39; category Add your proposals for the Conf by creating a New Topic –&lt;br&gt;
+Tag it &lt;a class=&quot;hashtag&quot; href=&quot;https://socialhub.activitypub.rocks/tag/bof&quot;&gt;#&lt;span&gt;bof&lt;/span&gt;&lt;/a&gt; for &lt;em&gt;Birds of Feather sessions&lt;/em&gt; or &lt;a class=&quot;hashtag&quot; href=&quot;https://socialhub.activitypub.rocks/tag/hackathon&quot;&gt;#&lt;span&gt;hackathon&lt;/span&gt;&lt;/a&gt; for &lt;em&gt;Hack proposals&lt;/em&gt; …</description>
+    
+      <lastBuildDate>Tue, 06 Oct 2020 10:19:56 +0000</lastBuildDate>
+      <atom:link href="https://socialhub.activitypub.rocks/c/meeting/apconf2020/53.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Did you miss something?</title>
+          <dc:creator><![CDATA[Sebastian]]></dc:creator>
+          <category>ActivityPub Conference 2020</category>
+          <description><![CDATA[
+            <p><img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/41df830dff9251a5bf2ebdb4e5a1d309e84ad781.png" alt="robin" data-base62-sha1="9oJUh8V0IgBzGcn9AlOTg1Vg6oF" width="40" height="48">  <strong>Yay</strong></p>
+<p><em>updated the website ⬡ <a href="https://conf.activitypub.rocks">https://conf.activitypub.rocks</a></em> …<br>
+<em>We will be uploading the recordings of the live sessions from <span class="hashtag">#apconf2020</span> to <a href="https://conf.tube/video-channels/apconf_channel/videos">conf.tube</a> soon, but in the meantime, you can stream them from Big Blue Button</em> (<strong>Firefox, Chrome</strong>):</p>
+<p>The recordings for <strong>Question &amp; Answer Sessions</strong> are public, updated all the posts, see<br>
+<a href="https://socialhub.activitypub.rocks/tag/talk">https://socialhub.activitypub.rocks/tag/talk</a></p>
+<p>The recording of the <strong>Lightning Talks Round</strong> can be found here</p>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <a href="https://bbb.fosshost.org/playback/presentation/2.0/playback.html?meetingId=2dbbb31314ce3469c302e4c540e8f4807bf7ef01-1601832533158" target="_blank" rel="noopener">bbb.fosshost.org</a>
+  </header>
+  <article class="onebox-body">
+    <img src="" class="thumbnail" width="" height="">
+
+<h3><a href="https://bbb.fosshost.org/playback/presentation/2.0/playback.html?meetingId=2dbbb31314ce3469c302e4c540e8f4807bf7ef01-1601832533158" target="_blank" rel="noopener">Loading</a></h3>
+
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<aside class="quote quote-modified" data-post="1" data-topic="955">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/system/40/11_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/lightning-round-talks/955">Lightning Round Talks</a> <a class="badge-wrapper  box" href="/c/meeting/apconf2020/53"><span class="badge-category-parent-bg" style="background-color: #0E76BD;"></span><span class="badge-category-bg" style="background-color: #ff7a00;"></span><span style="color: #ffffff" data-drop-close="true" class="badge-category clear-badge" title="Add your proposals for the Conf by creating a New Topic –
+Tag it #bof for Birds of Feather sessions or #hackathon for Hack proposals …">ActivityPub Conference 2020</span></a>
+  </div>
+  <blockquote>
+    The lightning talk session for <a class="hashtag" href="/c/meeting/apconf2020/53">#meeting:apconf2020</a>  is scheduled on Sunday 4th. 
+Room: <a href="https://bbb.fosshost.org/b/mor-qfh-vv1-ivq">https://bbb.fosshost.org/b/mor-qfh-vv1-ivq</a> 
+Lightning round talks will be under 5 minutes long and will hopefully include summaries of the BoF sessions as well as individual topics. Since a lot of the lightning round talks will include content from the same day’s BoFs, we can’t require early submission of slides etc, so you can share your screen on Big Blue Button if you’d like to include slides. 
+Talk #-2: <a class="mention" href="/u/mlemweb">@m…</a>
+  </blockquote>
+</aside>
+
+<p><img src="https://socialhub.activitypub.rocks/images/emoji/twitter/partying_face.png?v=9" title=":partying_face:" class="emoji" alt=":partying_face:"> and a little present by Chris at the <a href="https://socialhub.activitypub.rocks/t/activitypub-hackathon-2020/956">Hackathon</a>: <a href="https://bbb.fosshost.org/playback/presentation/2.0/playback.html?meetingId=98a52b344136ed4e45fcac6481f6a18bb9354a6e-1601915922065"><strong>Walkthrough Petnames</strong></a><br>
+(Firefox, Chrome)</p>
+<h2>⬡ Did you miss something else? Please reply here …</h2>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/did-you-miss-something/1071">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/did-you-miss-something/1071</link>
+          <pubDate>Tue, 06 Oct 2020 10:19:56 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1071</guid>
+          <source url="https://socialhub.activitypub.rocks/t/did-you-miss-something/1071.rss">Did you miss something?</source>
+        </item>
+        <item>
+          <title>Petnames GUI</title>
+          <dc:creator><![CDATA[Sebastian]]></dc:creator>
+          <category>ActivityPub Conference 2020</category>
+          <description><![CDATA[
+            <p><div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/1X/2a6fe707c98a89e264a7f30ebed438f535e708dd.jpeg" data-download-href="https://socialhub.activitypub.rocks/uploads/default/2a6fe707c98a89e264a7f30ebed438f535e708dd" title="petnameGUI"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/2a6fe707c98a89e264a7f30ebed438f535e708dd_2_344x230.jpeg" alt="petnameGUI" data-base62-sha1="63pNPlg3wbQ6fb4A62ox1i76k3j" width="344" height="230" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/2a6fe707c98a89e264a7f30ebed438f535e708dd_2_344x230.jpeg, https://socialhub.activitypub.rocks/uploads/default/optimized/1X/2a6fe707c98a89e264a7f30ebed438f535e708dd_2_516x345.jpeg 1.5x, https://socialhub.activitypub.rocks/uploads/default/optimized/1X/2a6fe707c98a89e264a7f30ebed438f535e708dd_2_688x460.jpeg 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/2a6fe707c98a89e264a7f30ebed438f535e708dd_2_10x10.png"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">petnameGUI</span><span class="informations">5102×3402 1.54 MB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg></div></a></div></p>
+<p><strong>Assigning human readable and easy-to-notice Names to Identities.</strong></p>
+<h3>We want to discover how a Petnames Graphical User Interfaces could look like</h3>
+<p>We spoke about this in 2019 and some “Rebooting the Web of Trust” (RWOT) papers were written before and after</p>
+<p><a href="https://github.com/cwebber/rebooting-the-web-of-trust-spring2018/blob/petnames/draft-documents/petnames.md"><strong>Petnames: A humane approach to secure, decentralized naming</strong>, RWOT6</a><br>
+By Christopher Lemmer Webber, based on conversations with Mark S. Miller.</p>
+<p><a href="https://github.com/cwebber/rwot9-prague/blob/secure-uis/draft-documents/secure-user-interfaces.md"><strong>Secure User Interfaces</strong>, RWOT9</a><br>
+<em>By Christopher Lemmer Webber, based on conversations with Mark S. Miller</em></p>
+<p>and</p>
+<p><a href="https://github.com/WebOfTrustInfo/rwot7-toronto/blob/05c0ba923a396a3e61af440794d2a77a0c510ff7/topics-and-advance-readings/political-economy-of-naming.md"><strong>The Political Economy of Naming</strong></a><br>
+<em>By Kate Sills building on discussions about petnames with Mark S. Miller, Christopher Lemmer Webber, and others</em></p>
+<p><a href="https://github.com/WebOfTrustInfo/rwot8-barcelona/blob/56b41515445b55eeefb9139c45fce1c546a49371/draft-documents/naming-survey.md#papers">For a broader picture …</a></p>
+<hr>
+<p><strong>Rough schedule:</strong></p>
+<p><strong>Monday:</strong> Read papers</p>
+<h2>BONUS:</h2>
+<p><strong>Chris walked us through the papers above and, yippie ya yeah –</strong></p>
+<h2><a href="https://bbb.fosshost.org/playback/presentation/2.0/playback.html?meetingId=98a52b344136ed4e45fcac6481f6a18bb9354a6e-1601915922065"><strong>We recorded that!</strong> <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/video_camera.png?v=9" title=":video_camera:" class="emoji" alt=":video_camera:"></a></h2>
+<p><strong>(watch with Firefox or Chrome)</strong></p>
+<p>comment on mastodon:<br>
+“There’s two links there. I just wanted to make sure you knew about them.</p>
+<p><a href="http://i2p-projekt.i2p/en/docs/naming">http://i2p-projekt.i2p/en/docs/naming</a> DEFINITELY does not get petnames right, but it’s dirt simple, and it works.</p>
+<p><a href="https://gnunet.org/en/gns.html">https://gnunet.org/en/gns.html</a> is more of a well thought out petname system, and their biggest issue is that they send people hurtling away from gnunet into the unprotected Internet, by only supporting IPv4 and IPv6 address lookups. Another issue is that gnunet can be a real resource hog. And the custom dispatcher based RPC protocol makes debugging a bit of a nightmare. And nobody’s heard of gnunet, so nobody participates in it, since everyone’s only posting about some shiny new badly done ReactJS thing.”</p>
+<hr>
+<p><strong>Tuesday:</strong> Sketch GUIs<br>
+<strong>Wednesday:</strong> Code and Build GUIs</p>
+<p>Sunday morning tests …</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/petnames-gui/1066">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/petnames-gui/1066</link>
+          <pubDate>Mon, 05 Oct 2020 14:03:37 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1066</guid>
+          <source url="https://socialhub.activitypub.rocks/t/petnames-gui/1066.rss">Petnames GUI</source>
+        </item>
+        <item>
+          <title>ActivityPub Client-to-Server experiments</title>
+          <dc:creator><![CDATA[lain]]></dc:creator>
+          <category>ActivityPub Conference 2020</category>
+          <description><![CDATA[
+            <p>In the AP C2S session we talked about the chicken-and-egg issue of having no clients for C2S because there are no servers and vice versa. During the hackathon we could try to write a C2S client and modify our C2S server parts in tandem to make it work, adding features that are missing at the moment.</p>
+<p>One idea was to port an existing client (like pleroma-fe or similar) to the C2S API. This might be a bit too much.</p>
+<p>We could also implement a basic chat client for Pleroma’s new ChatMessages that does nothing but handle chats, which could also give friendica the opportunity to get started with this feature.</p>
+<p>If you’re interested in this, please post a comment.</p>
+            <p><small>6 posts - 4 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/activitypub-client-to-server-experiments/1063">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/activitypub-client-to-server-experiments/1063</link>
+          <pubDate>Sun, 04 Oct 2020 20:06:09 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1063</guid>
+          <source url="https://socialhub.activitypub.rocks/t/activitypub-client-to-server-experiments/1063.rss">ActivityPub Client-to-Server experiments</source>
+        </item>
+        <item>
+          <title>Fediverse Enhancement Proposal (FEP)</title>
+          <dc:creator><![CDATA[pukkamustard]]></dc:creator>
+          <category>ActivityPub Conference 2020</category>
+          <description><![CDATA[
+            <p>As discussed in <a href="https://socialhub.activitypub.rocks/t/scaling-up-cooperation/837">Scalling Up Cooperation BoF</a> We’d like to try and put together a Git repository and templates for writing up documents that describe how things work on the Fediverse.</p>
+<p>This builds upon work done by <a class="mention" href="/u/cjs">@cjs</a> on <a href="https://library.activitypub.dev/" rel="noopener nofollow ugc">https://library.activitypub.dev/</a> (see also <a href="https://socialhub.activitypub.rocks/t/library-of-non-tech-and-technical-works/866">post on SocialHub</a>).</p>
+<p>It might also be something that be used in context of what was discussed in the <a href="https://socialhub.activitypub.rocks/t/activitypub-experimentation-towards-ap-v2/840/2">Experiments towards V2 BoF</a>.</p>
+            <p><small>18 posts - 6 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/fediverse-enhancement-proposal-fep/1059">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/fediverse-enhancement-proposal-fep/1059</link>
+          <pubDate>Sun, 04 Oct 2020 12:38:54 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1059</guid>
+          <source url="https://socialhub.activitypub.rocks/t/fediverse-enhancement-proposal-fep/1059.rss">Fediverse Enhancement Proposal (FEP)</source>
+        </item>
+        <item>
+          <title>Summary of &quot;The fediverse as an educational platform&quot; BoF</title>
+          <dc:creator><![CDATA[mlemweb]]></dc:creator>
+          <category>ActivityPub Conference 2020</category>
+          <description><![CDATA[
+            <p>We discussed different tools for self-directed learning and simulated learning environments that use ActivityPub, including: <a href="https://haha.academy/" rel="noopener nofollow ugc">HA HA Acadamy</a>, <a href="https://learnawesome.org/" rel="noopener nofollow ugc">LearnAwesome</a>, and <a href="https://spritelyproject.org/#fantasary" rel="noopener nofollow ugc">Spritely Fantasary</a>.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/summary-of-the-fediverse-as-an-educational-platform-bof/1058">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/summary-of-the-fediverse-as-an-educational-platform-bof/1058</link>
+          <pubDate>Sun, 04 Oct 2020 11:31:40 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1058</guid>
+          <source url="https://socialhub.activitypub.rocks/t/summary-of-the-fediverse-as-an-educational-platform-bof/1058.rss">Summary of &quot;The fediverse as an educational platform&quot; BoF</source>
+        </item>
+        <item>
+          <title>Short talk by Bob Mottram - Epicyon grew out of the need for a fediverse server on Freedombone - a self-hosting system</title>
+          <dc:creator><![CDATA[hamishcampbell]]></dc:creator>
+          <category>ActivityPub Conference 2020</category>
+          <description><![CDATA[
+            <p>Short talk by Bob Mottram</p>
+<p>Epicyon grew out of the need for a fediverse server on Freedom one - a self-hosting system</p>
+<p>Originally I had used gnu social, but as the fediverse grew this became less feasible. Gnu social had no moderation capability, so was easily swamped by trolls</p>
+<p>Later I moved over to running pleroma on Freedom one. Pleroma was a significant improvement, but still had problems, and was hard to maintain</p>
+<p>So eventually a couple of years ago it became clear that I either had to leave the fediverse or write a server suitable for self-hosting on ARM single board computers</p>
+<p>And that was the start of Epicyon</p>
+<p>Since ActivityPub has an email-like structure of inbox and outbox I decided to implement it like an email server. That meant no database, just saving posts to files in directories</p>
+<p>I also wanted it to be easy to maintain with the minimum number of dependencies, and capable of use with a screen reader for accessibility</p>
+<p>Interpreting the ActivityPub spec was not easy, and many of the things essential to make it work - like the encryption signatures - were undocumented</p>
+<p>So implementing was like being a detective looking for clues</p>
+<p>Another thing I wanted was customisability. In corporate social media sites are extremely dull and monotonous</p>
+<p>Same old bland layout and generic colors. To some extent the fediverse had copied this. But it didn’t have to be that way</p>
+<p>I also wanted to support Tor and i2p domains, so that in the most hostile environments it would still be possible to set up social networks</p>
+<p>There is now a script for deploying Epicyon on i2p</p>
+<p>One thing I’ve left out so far is the mastodon API, so Epicyon is mainly web interface only</p>
+<p>Instead I’m following the route of making a Progressive Web App</p>
+<p>In future I may try to support WebAuth for two factors, but for now the simple login is good enough. I’ve avoided OAuth because it looked complicated and I didn’t like its clunky UX</p>
+<p>Epicyon is the first web app of any significant size that I’ve written. In Freedombone I’ve avoided inventing any new apps unless there really is no alternative.</p>
+<p>It’s written in Python 3 with a html5 and CSS user interface. There is no JavaScript, so it is usable in Tor browser or Privacy Browser with JavaScript turned off.</p>
+<p>I think the theme ability may be an important factor to draw people into the fediverse. It’s something which the silo systems can’t or won’t deliver. This means you can customize your instance to express your personality.</p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/short-talk-by-bob-mottram-epicyon-grew-out-of-the-need-for-a-fediverse-server-on-freedombone-a-self-hosting-system/1049">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/short-talk-by-bob-mottram-epicyon-grew-out-of-the-need-for-a-fediverse-server-on-freedombone-a-self-hosting-system/1049</link>
+          <pubDate>Sat, 03 Oct 2020 19:25:25 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1049</guid>
+          <source url="https://socialhub.activitypub.rocks/t/short-talk-by-bob-mottram-epicyon-grew-out-of-the-need-for-a-fediverse-server-on-freedombone-a-self-hosting-system/1049.rss">Short talk by Bob Mottram - Epicyon grew out of the need for a fediverse server on Freedombone - a self-hosting system</source>
+        </item>
+        <item>
+          <title>Spritely at the hackathon</title>
+          <dc:creator><![CDATA[cwebber]]></dc:creator>
+          <category>ActivityPub Conference 2020</category>
+          <description><![CDATA[
+            <p>I’m trying to decide what to work on at the hackathon.  I’m also interested if others are interested in learning Spritely fundamentals and helping them over the week, if there’s interest.</p>
+<p>As for me, I think the most interesting and immediately useful thing would be the Mandy layer of Spritely, since that’s the most ActivityPub relevant: <a href="https://spritelyproject.org/#mandy" rel="nofollow noopener">https://spritelyproject.org/#mandy</a></p>
+<p>I have lots of ideas of things to work on though; I’ve also been very interested in the serialization layer, Aurie, since that’s what I’ve been most recently reading papers on and thus am itching to implement: <a href="https://spritelyproject.org/#aurie" rel="nofollow noopener">https://spritelyproject.org/#aurie</a></p>
+<p>Also, I guess I could either hack on Terminal Phase (my space shooter game thing) because that would be a nice “break”, and it does use Spritely Goblins, but it might not be as useful as an “APConf” style contribution.</p>
+<p>If others are interested in learning Spritely stuff over the course of this hackathon, maybe weigh in… maybe we can talk ahead of time.  One thing you can already do is go through the Goblins tutorial: <a href="https://docs.racket-lang.org/goblins/index.html" rel="nofollow noopener">https://docs.racket-lang.org/goblins/index.html</a></p>
+<p>But I would also be happy to help people learn.  Thoughts?</p>
+            <p><small>10 posts - 2 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/spritely-at-the-hackathon/1032">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/spritely-at-the-hackathon/1032</link>
+          <pubDate>Sat, 03 Oct 2020 15:51:00 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1032</guid>
+          <source url="https://socialhub.activitypub.rocks/t/spritely-at-the-hackathon/1032.rss">Spritely at the hackathon</source>
+        </item>
+        <item>
+          <title>RSVP - Meet and Greet</title>
+          <dc:creator><![CDATA[Sebastian]]></dc:creator>
+          <category>ActivityPub Conference 2020</category>
+          <description><![CDATA[
+            <p><strong>RSVP</strong></p>
+<p><strong>Let us connect in here</strong></p>
+<p><em>Please add your handle to the fediverse and write a short public intro to connect with others.</em><br>
+<em>Speakers: We need your info, with what handles/accounts we should link your Talk.</em></p>
+<p><em>You may also <a href="https://socialhub.activitypub.rocks/t/indicate-a-fediverse-handle-in-your-user-profile/1019" class="inline-onebox">Indicate a Fediverse Handle in your User Profile</a></em></p>
+<p>Hello, I’m Sebastian Lasse.<br>
+My handle is <span class="mention">@sl007</span>@mastodon.social or <span class="mention">@redaktor</span>@chaos.social<br>
+Doing redaktor CMS<br>
+Hobbies: Photography, Tennis and conferences with Morgan and all …</p>
+<hr>
+<p>Hamish Campbell a few try this one witchescauldron@activism.openworlds.info<br>
+for boat boatingeurope@campaign.openworlds.info</p>
+<hr>
+<p>Bonjour! Mayel here working on <a href="http://CommonsPub.org">CommonsPub.org</a> and Bonfire.cafe / <a class="mention" href="/u/mayel">@mayel</a>@pub.mayel.space</p>
+<hr>
+<p><a class="mention" href="/u/schmittlauch">@schmittlauch</a>@toot.matereal.eu here. I am working on a completely decentralised topic and hashtag federation for the Fediverse. Currently I haven’t implemented any ActivityPub specifics though as building the foundational DHT is keeping me busy.<br>
+So I am interested on how other approaches try doing something similar.<br>
+Also grateful for Haskell-specific stuff.</p>
+<hr>
+<p>Hi, I’m Erwin Ernst Steinhammer aka eest9<br>
+pronouns: they/them/their<br>
+mastodon: <a class="mention" href="/u/eest9">@eest9</a>@chaos.social<br>
+matrix: <a class="mention" href="/u/eest9">@eest9</a>:cyber-missile.io</p>
+<p>I’m interested in the interconnection between technology and society. How does the fediverse change the public sphere and therefore politics? And what should policy makers consider when it comes to policies that effect the fediverse?</p>
+<hr>
+<p>Paul Fuxjäger aka<br>
+<a href="https://chaos.social/@cypherhippie">@cypherhippie@chaos.social</a><br>
+<a href="https://twitter.com/fuxjaeger" class="onebox" target="_blank" rel="noopener">https://twitter.com/fuxjaeger</a><br>
+Worked in academia on interference mitigation in open communication systems. These days I’m contributing to: <a href="https://battlemesh.org/">https://battlemesh.org</a> <a href="https://funkfeuer.at/">https://funkfeuer.at</a> <a href="https://netidee.at/mastodonid">https://netidee.at/mastodonid</a><br>
+I’m interested in incorporating decentralized identity (DID/VC) standards into the fediverse, here is a very minimal writeup from 2019: <a href="https://github.com/WebOfTrustInfo/rwot9-prague/blob/8aeb8825d45bfc34aacd012727015c7d129a350e/topics-and-advance-readings/fediverse-did-integration.md">https://github.com/WebOfTrustInfo/rwot9-prague/blob/8aeb8825d45bfc34aacd012727015c7d129a350e/topics-and-advance-readings/fediverse-did-integration.md</a> hit me up if you’re interested in this <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<hr>
+<p>Liaizon Wakest<br>
+<span class="mention">@liaizon</span>@wake.st<br>
+I have been participating in the fediverse in various ways for a number of years now.</p>
+<hr>
+<p>pukkamustard<br>
+<a href="https://chaos.social/@pukkamustard">@pukkamustard@chaos.social</a><br>
+Hello! Working on <a href="https://openengiadina.net/">openEngiadina</a> and a using ActivityPub for “open local knowledge”. Interested in Linked Data and experimenting with more decentralized ideas.</p>
+<hr>
+<p>I’m Marnanel Thurman, <a href="https://queer.party/@marnanel">@marnanel@queer.party</a> and <a href="https://marnanel.org/users/marnanel">@marnanel@marnanel.org</a>. (I was also Thomas Thurman, once upon a time.) I’ve been active in the fediverse for a while, and before that on identi.ca. (I’ve been using birdsite since 2007.)</p>
+<p>I started <a href="https://kepi.org.uk">kepi</a>, a Django/Python microblogging server, and I’ve been working on it for about eighteen months.</p>
+<p>I’ve been coding most of my life. About five years ago my partner became very ill and I gave up my job to look after him. That’s still what I do day to day.</p>
+<p>And, yeah, I write stuff. I used to be primary maintainer of Metacity, the standard window manager of GNOME 2. I was on the implementation team for the Nokia N900 for about two years prior to its launch. Other interesting things include a zcode→Javascript JIT compiler named Gnusto, which was later taken over and renamed Parchment; a LiveJournal tool called Joule which was surprisingly popular; a 1993 adventure game called Avalot; and Yarrow, a late-90s web interface to the GROGGS RGTP forum server at Cambridge. (That last one wasn’t very famous, but it was a great learning experience.)</p>
+<p>And I started the campaign to get Alan Turing on UK banknotes!</p>
+<hr>
+<p><a class="mention" href="/u/how">@how</a> is <a href="https://ps.s10y.eu/@how">@how@ps.s10y.eu</a> on the Fediverse.</p>
+<hr>
+<p>Morgan Lemmer-Webber <a class="mention" href="/u/mlemweb">@mlemweb</a>@octodon.social<br>
+Co-host of Foss &amp; Crafts (<a href="http://fossandcrafts.org">fossandcrafts.org</a>)<br>
+I’m interested in FOSS &amp; academia</p>
+<hr>
+<p>Hey, i’m karen@kawen.space , your favorite resident <s>sh*t</s>funposter. I’ve been running a Fediverse instance since 2018 (I think), have previously worked on Pleroma and MoodleNet and I currently work on CommonsPub/Bonfire.</p>
+<hr>
+<p>Hi, I’m <a href="mailto:nilesh@fosstodon.org">nilesh@fosstodon.org</a>. I’ve been building <a href="https://LearnAwesome.org">https://LearnAwesome.org</a> as something like open-source Google Maps for learning for more than a year. It’s got a reasonably good start (3,000 active users). It’s also a way to get more people on to ActivityPub.</p>
+<p>I’m also interested in math, music, design and FOSS. I’ve been programming for almost 15 years all over the place and I have a day job at a fintech in India.</p>
+<hr>
+<p>Hi, I’m Matt (<a href="https://writing.exchange/@matt">@matt@writing.exchange</a>), working on <a href="http://WriteFreely.org">WriteFreely.org</a></p>
+<p>Have been on the fediverse and running a Mastodon instance (<a href="https://writing.exchange">Writing.Exchange</a>) since 2017. I’m most interested in helping the open web grow, and making ActivityPub platforms that are user-friendly and widely accessible.</p>
+<hr>
+<p>I’m Darius, <a href="https://friend.camp/@darius">@darius@friend.camp</a>. I work on a bunch of AP stuff but the most relevant here is that I maintain <a href="https://github.com/hometown-fork/hometown/wiki">Hometown</a>, a fork of Mastodon that among other things tries to consume a wider variety of AP objects. (My current goal is to have an Events tab in the Mastodon UI with a little calendar containing every Event a user has RSVP’ed to in the affirmative or is invited to, to start with.) I’ve built a bunch of other ActivityPub software too… I should probably create a landing page for that on my website…</p>
+<hr>
+<p><a class="mention" href="/u/lanodan">@lanodan</a>, also <a href="https://queer.hacktivis.me/users/lanodan" data-bbcode="true">@lanodan@queer.hacktivis.me</a> (Fediverse) and <a href="mailto:contact+socialhub-rsvp@hacktivis.me">contact+socialhub-rsvp@hacktivis.me</a> (Email).</p>
+<p>Always been a Unix-like user and started coding+self-hosting around 2012 (did my first own website), now basically fully self-hosted since 2019.<br>
+I’ve been on the fediverse since about 2013, with <code>lanodan@loadaverage.org</code> then <code>lanodan_gs@loadaverage.org</code> for GnuSocial and then some Friendicas with <code>lanodan_frndk@</code> (once tried to self-host it). And became a Pleroma Maintainer in April 2018 after using it for some months.</p>
+<hr>
+<p>I am Arnold Schrijver - <a href="https://mastodon.social/@humanetech">@humanetech@mastodon.social</a> on Fedi, <a href="https://matrix.to/#/#humanetechnow:matrix.org" rel="noopener nofollow ugc">@circlebuilder</a> on Matrix. I am initiator / facilitator of <a href="https://community.humanetech.com">Humane Tech Community</a>, and help maintain <a href="https://git.feneas.org/feneas/fediverse/-/wikis/home">Fediverse Party</a> wiki. My crazy side-project <a href="https://innercircles.community">innercircles</a> (warning: JS in teaser), started this March, has lotsa fediverse plans (ping me on matrix) but on a modest approach… to keep me sane <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/blush.png?v=9" title=":blush:" class="emoji" alt=":blush:"></p>
+<hr>
+<p>Hi! I’m Aaron Parecki <a href="https://aaronparecki.com/aaronpk">@aaronpk@aaronparecki.com</a>, I work on the <a href="https://oauth.net">OAuth</a> specs and the IndieWeb community’s extension, <a href="https://indieauth.net">IndieAuth</a>. I also enjoy video production and livestreaming and have fun creating self-hosted versions of things like <a href="https://aaronparecki.com/2016/11/19/15/self-hosted-facebook-live">Facebook Live</a>.</p>
+            <p><small>9 posts - 5 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/rsvp-meet-and-greet/1009">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/rsvp-meet-and-greet/1009</link>
+          <pubDate>Fri, 02 Oct 2020 15:57:31 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1009</guid>
+          <source url="https://socialhub.activitypub.rocks/t/rsvp-meet-and-greet/1009.rss">RSVP - Meet and Greet</source>
+        </item>
+        <item>
+          <title>Would be intrested in talk about metadata ideas -How do we federate metadata flows</title>
+          <dc:creator><![CDATA[hamishcampbell]]></dc:creator>
+          <category>ActivityPub Conference 2020</category>
+          <description><![CDATA[
+            <p>How do we federate metadata flows</p>
+<p>folksonomy and categories – bottom up/top down – open/closed</p>
+<p>Each has advantages and disadvantages.</p>
+<p>Can we be creative and bridge this divide</p>
+<p>The OMN and indymedia reboot are both grassroots bottom up projects, so we obviously start with a folksonomy.</p>
+<p>Recognising the is some use for categories a draft proposal.</p>
+<p>We only have 5 functions <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slightly_smiling_face.png?v=9" title=":slightly_smiling_face:" class="emoji" alt=":slightly_smiling_face:"></p>
+<p>Allow instances to put folksonomy items into category groups, these can be added as extra folksonomy  tags into the flow.</p>
+<p>Allow instances to subscribe to this category groups as a flow (basic tool of OMN)</p>
+<p>Build it out of based on trust.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/would-be-intrested-in-talk-about-metadata-ideas-how-do-we-federate-metadata-flows/1008">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/would-be-intrested-in-talk-about-metadata-ideas-how-do-we-federate-metadata-flows/1008</link>
+          <pubDate>Fri, 02 Oct 2020 15:49:01 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1008</guid>
+          <source url="https://socialhub.activitypub.rocks/t/would-be-intrested-in-talk-about-metadata-ideas-how-do-we-federate-metadata-flows/1008.rss">Would be intrested in talk about metadata ideas -How do we federate metadata flows</source>
+        </item>
+        <item>
+          <title>How to use Groups</title>
+          <dc:creator><![CDATA[Sebastian]]></dc:creator>
+          <category>ActivityPub Conference 2020</category>
+          <description><![CDATA[
+            <p>See</p>
+<aside class="quote quote-modified" data-post="1" data-topic="591">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/ngerakines/40/296_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/groups-implementation/591">Groups implementation</a> <a class="badge-wrapper  box" href="/c/activitypub/5"><span class="badge-category-bg" style="background-color: #0088CC;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Discuss the ActivityPub Recommendation, how to implement it, how to extend it. Home of the ActivityPub SIG.">ActivityPub</span></a>
+  </div>
+  <blockquote>
+    I’ve implemented groups in <a href="https://gitlab.com/ngerakines/tavern" rel="nofollow noopener">Tavern</a> and would like feedback and comments. All of the group specific actor and activity behavior is documented in <a href="https://gitlab.com/ngerakines/tavern/-/blob/issue-21-groups/FEDERATION.md" rel="nofollow noopener">https://gitlab.com/ngerakines/tavern/-/blob/issue-21-groups/FEDERATION.md</a> as well. 
+Groups share the same namespace as users and it is up to instance operators to moderate how that namespace is managed. For example, both @sneakerheads@groups.tavern.town, @sneakerheads-group@tavern.town, and @sneakerheads@tavern.town are all valid names. I’m considering ad…
+  </blockquote>
+</aside>
+
+<p>and<br>
+<aside class="quote quote-modified" data-post="1" data-topic="519">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/grishka/40/196_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/lets-discuss-groups/519">Let's discuss groups</a> <a class="badge-wrapper  box" href="/c/activitypub/s2s/7"><span class="badge-category-parent-bg" style="background-color: #0088CC;"></span><span class="badge-category-bg" style="background-color: #808281;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="This protocol is used to distribute activities between actors on different servers, tying them into the same social graph.">Server to Server</span></a>
+  </div>
+  <blockquote>
+    There will be a moment when I’ll have groups. And then there will be a moment when I’ll have to federate these. There seems to be no consensus on what groups actually are and how to represent them. So, 
+
+
+Group members. How are those represented? Are they the followers collection? Can a group have followers at all? Or should it be a separate, custom collection a-la Mastodon’s pinned toots?
+
+Since it’s a collection of actors anyway, can groups be members of groups? This feels weird to think about…
+  </blockquote>
+</aside>
+</p>
+<aside class="quote quote-modified" data-post="1" data-topic="408">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/datatitian/40/236_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/guppe-groups-a-new-activitypub-app-for-decentralized-social-groups/408">Guppe Groups: a new ActivityPub app for decentralized social groups</a> <a class="badge-wrapper  box" href="/c/software/14"><span class="badge-category-bg" style="background-color: #3AB54A;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Discover and discuss ActivityPub implementations of all sizes and shapes.">Software</span></a>
+  </div>
+  <blockquote>
+    I started learning ActivityPub for a project I want to do with WebVR, and realized the social groups functionality I’d been craving in the fediverse would be dead simple to implement with a server-to-server app. 
+Now I have Guppe Groups up and running. It really just does two things: 
+
+Create new group actors on demand whenever they are searched or tagged
+When receiving an activity to an inbox, announce it
+
+This creates actors whose outboxes serve as group activity timelines that people can foll…
+  </blockquote>
+</aside>
+
+<p>related</p>
+<aside class="quote quote-modified" data-post="1" data-topic="418">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/letter_avatar_proxy/v4/letter/n/f475e1/40.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/how-to-handle-webfinger-for-group-discovery/418">How to handle Webfinger for group discovery</a> <a class="badge-wrapper  box" href="/c/activitypub/s2s/7"><span class="badge-category-parent-bg" style="background-color: #0088CC;"></span><span class="badge-category-bg" style="background-color: #808281;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="This protocol is used to distribute activities between actors on different servers, tying them into the same social graph.">Server to Server</span></a>
+  </div>
+  <blockquote>
+    Hi everyone, I’m a contributor to <a href="https://github.com/dessalines/lemmy" rel="nofollow noopener">Lemmy</a>, and have recently implemented Webfinger support for the project. That was already hard enough without any proper spec of how Webfinger is used by ActivityPub implementations. Now the problem is, Lemmy is mainly focused on groups (its a reddit alternative), but I am not aware of any other ActivityPub projects that support groups. 
+So my question is, what is the best way to handle Webfinger for groups? Webfinger URLs for user accounts look like this: 
+https…
+  </blockquote>
+</aside>
+
+<aside class="quote quote-modified" data-post="1" data-topic="125">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/trwnh/40/262_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/signaling-side-effects-asynchronously-by-generalizing-accept-reject/125">Signaling side effects asynchronously by generalizing Accept/Reject</a> <a class="badge-wrapper  box" href="/c/activitypub/s2s/7"><span class="badge-category-parent-bg" style="background-color: #0088CC;"></span><span class="badge-category-bg" style="background-color: #808281;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="This protocol is used to distribute activities between actors on different servers, tying them into the same social graph.">Server to Server</span></a>
+  </div>
+  <blockquote>
+    Background
+Per S2S (since Accept/Reject are not described in C2S): 
+
+7.6 Accept Activity
+The side effect of receiving this in an inbox is determined by the type of the object received, and it is possible to accept types not described in this document (for example, an Offer ). 
+If the object of an Accept received to an inbox is a Follow activity previously sent by the receiver, the server SHOULD add the actor to the receiver’s <a href="https://www.w3.org/TR/activitypub/#following" rel="nofollow noopener">Following Collection</a>. 
+7.7 Reject Activity
+The side effect of receivin…
+  </blockquote>
+</aside>
+
+            <p><small>3 posts - 2 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/how-to-use-groups/1005">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/how-to-use-groups/1005</link>
+          <pubDate>Fri, 02 Oct 2020 15:34:13 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1005</guid>
+          <source url="https://socialhub.activitypub.rocks/t/how-to-use-groups/1005.rss">How to use Groups</source>
+        </item>
+        <item>
+          <title>Getting extensions into the ActivityStreams 2.0 namespace</title>
+          <dc:creator><![CDATA[rhiaro]]></dc:creator>
+          <category>ActivityPub Conference 2020</category>
+          <description><![CDATA[
+            <p>There have been multiple attempts at a process for getting well-used extensions into the <a href="https://www.w3.org/ns/activitystreams" rel="nofollow noopener">official ActivityStreams 2.0 namespace</a> - doing so helps with discoverability and interop, as people can use each others extension terms, rather than reinventing things over and over. But none of the processes proposed could get consensus, and so nothing has been formalised.</p>
+<p>I’m invested in this because <a href="https://socialhub.activitypub.rocks/t/defining-alsoknownas/907">there is a property used by mastodon that the DID WG also want to use that we need to see in the namespace</a>, but also because it’d be nice if extensions work properly for everyone.</p>
+<p>A lightweight process could be something like:</p>
+<ol>
+<li>Two or more implementations are sharing a term (either a property or activity/object type), and using it in the same way.</li>
+<li>An agreed definition is written up in some sort of authoritative document - another W3C spec, a CG report, or something else stable and persistent (and ideally versioned).</li>
+<li>A PR is made to the AS2 namespace to add the link and JSON-LD context definition.</li>
+<li>The SocialCG convenes a meeting to agree to merge the PR, or if there are changes that would improve the status of the extension so it can be merged, or if there is some reason to definitely not merge it (eg. it is offensive, deliberately misleading, violates someone else’s copyright, the definition really doesn’t make sense, etc).</li>
+</ol>
+<p>I’d love to hear from others, particularly those of you who are using your own vocabularies to complement AS2.</p>
+            <p><small>6 posts - 5 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/getting-extensions-into-the-activitystreams-2-0-namespace/1001">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/getting-extensions-into-the-activitystreams-2-0-namespace/1001</link>
+          <pubDate>Fri, 02 Oct 2020 11:19:15 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-1001</guid>
+          <source url="https://socialhub.activitypub.rocks/t/getting-extensions-into-the-activitystreams-2-0-namespace/1001.rss">Getting extensions into the ActivityStreams 2.0 namespace</source>
+        </item>
+        <item>
+          <title>Events in ActivityPub</title>
+          <dc:creator><![CDATA[Sebastian]]></dc:creator>
+          <category>ActivityPub Conference 2020</category>
+          <description><![CDATA[
+            <p>LONG story SHORT:  <strong>It’s an oldie, I think the same:</strong></p>
+<aside class="quote quote-modified" data-post="1" data-topic="305">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/how/40/94_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/federated-events/305">Federated Events</a> <a class="badge-wrapper  box" href="/c/activitypub/5"><span class="badge-category-bg" style="background-color: #0088CC;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Discuss the ActivityPub Recommendation, how to implement it, how to extend it. Home of the ActivityPub SIG.">ActivityPub</span></a>
+  </div>
+  <blockquote>
+    LONG story SHORT: I think it’s time to federate events! <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/smiley.png?v=9" title="smiley" alt="smiley" class="emoji"> <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/palm_tree.png?v=9" title="palm_tree" alt="palm_tree" class="emoji"> 
+CURRENT SITUATION 
+
+we have a great decentralised events platform “Meetup like” called GetTogether (Python) 
+<a href="https://gettogether.community" rel="nofollow noopener">https://gettogether.community</a>
+
+someone started already to write a standalone AP Python library 
+<a href="https://github.com/dsblank/activitypub" rel="nofollow noopener">https://github.com/dsblank/activitypub</a>
+
+things seems a bit stuck… <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/stuck_out_tongue.png?v=9" title="stuck_out_tongue" alt="stuck_out_tongue" class="emoji"> 
+<a href="https://github.com/GetTogetherComm/GetTogether/issues/60" rel="nofollow noopener">https://github.com/GetTogetherComm/GetTogether/issues/60</a>
+
+
+FEDEVENT 
+
+
+<a href="https://snowcreations.voltihost.com" rel="nofollow noopener">somebody</a> already created an experimental FedEvent but no sou…
+  </blockquote>
+</aside>
+
+<p>What is the best flow to federate events and which interactions might be involved …</p>
+<p><a href="https://mastodon.social/@sl007/104805879842814985">related toots</a> <a class="mention" href="/u/darius">@darius</a></p>
+<p>related<br>
+<aside class="quote quote-modified" data-post="14" data-topic="305">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/letter_avatar_proxy/v4/letter/l/db5fbb/40.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/federated-events/305/14">Federated Events</a> <a class="badge-wrapper  box" href="/c/activitypub/5"><span class="badge-category-bg" style="background-color: #0088CC;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Discuss the ActivityPub Recommendation, how to implement it, how to extend it. Home of the ActivityPub SIG.">ActivityPub</span></a>
+  </div>
+  <blockquote>
+    #introduction 
+Hi, I am the main developer of <a href="https://gancio.org" rel="nofollow noopener">gancio</a>, a shared agenda of events that supports AP. 
+TLDR; 
+All of you know that “supports AP” means everything and nothing, so I’ll try to explain what it supports and why. 
+Gancio was born in Italy from political hacking movements, in particular from the hacklab underscore, a place that crosses the social movements and squats here in Turin (north-west italy). 
+We have set up a “radical local server” cisti dot org that hosts services explicitly desi…
+  </blockquote>
+</aside>
+<br>
+and<br>
+<aside class="quote quote-modified" data-post="8" data-topic="413">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/letter_avatar_proxy/v4/letter/e/5e9695/40.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/how-to-represent-places-in-an-event/413/8">How to represent Places in an event</a> <a class="badge-wrapper  box" href="/c/software/mobilizon/20"><span class="badge-category-parent-bg" style="background-color: #3AB54A;"></span><span class="badge-category-bg" style="background-color: #FAAF2D;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Together, we go further.">Mobilizon</span></a>
+  </div>
+  <blockquote>
+    This is in part a follow-up to above and in part a reply to <a href="https://socialhub.activitypub.rocks/u/heluecht">heluecht</a> from another thread because it makes more sense here. 
+This is what I have in an outbox (part sample, and some things I’m still doubting, some json formatting might be broken too from the cut, snip, paste, and formatting here). Anyway now looks like:- 
+"@context": [
+  "https://www.w3.org/ns/activitystreams",
+  "https://w3id.org/security/v1",
+{
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "schema": "http://schema.org#",
+  "uu…
+  </blockquote>
+</aside>
+</p>
+            <p><small>3 posts - 2 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/events-in-activitypub/999">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/events-in-activitypub/999</link>
+          <pubDate>Fri, 02 Oct 2020 10:41:28 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-999</guid>
+          <source url="https://socialhub.activitypub.rocks/t/events-in-activitypub/999.rss">Events in ActivityPub</source>
+        </item>
+        <item>
+          <title>Onboarding, Official Website, Implementor and User Guides</title>
+          <dc:creator><![CDATA[Sebastian]]></dc:creator>
+          <category>ActivityPub Conference 2020</category>
+          <description><![CDATA[
+            <p>Designers, Writers, Coders et al.<br>
+<strong>We need your help to make the onboarding process to the Fediverse easier</strong><br>
+<aside class="quote quote-modified" data-post="1" data-topic="847">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/aschrijver/40/278_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/easing-the-onboarding-of-new-developers-to-the-fediverse/847">Easing the onboarding of new developers to the Fediverse</a> <a class="badge-wrapper  box" href="/c/community/2"><span class="badge-category-bg" style="background-color: #808281;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Discussion about this site, its organization, how it works, and how we can improve it.">Community</span></a>
+  </div>
+  <blockquote>
+    (This is a continuation of <a href="https://socialhub.activitypub.rocks/t/discussing-onboarding-for-developers/61" class="inline-onebox">Discussing onboarding for developers</a> which veered into technical discussion) 
+TL;DR
+Onboarding new devs to AP/Fediverse is a weak spot that is hampering the evolution (speed) of the ecosystem. Information is super-fragmented and many of the complexities are not readily obvious. Starting new projects is an adventure for the brave. 
+There are efforts to improve this, but time-constraints of experts and - in general - lack of appetite to do the work involved, means this p…
+  </blockquote>
+</aside>
+<br>
+<strong>and to improve the official website</strong><br>
+<aside class="quote quote-modified" data-post="1" data-topic="142">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/rigelk/40/15_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142">Discussing the evolution of the activitypub.rocks site</a> <a class="badge-wrapper  box" href="/c/community/2"><span class="badge-category-bg" style="background-color: #808281;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Discussion about this site, its organization, how it works, and how we can improve it.">Community</span></a>
+  </div>
+  <blockquote>
+    Following the recent <a href="https://redaktor.me/apconf/" rel="nofollow noopener">APConf in Prague</a>, I tried going through the resources at hand for new ActivityPub implementers, <a href="https://socialhub.activitypub.rocks/t/discussing-onboarding-for-developers/61">reviewing what we could improve to ease the onboarding</a>. activitypub.rocks plays a major role in this, being the main landing page for the protocol. 
+In the meantime, this forum has been created and made public. It could play a major role at organizing the information long-term for varied audiences, but would not replace ap.rocks as a landing page, which means we have to properly l…
+  </blockquote>
+</aside>
+</p>
+<hr>
+<p>We have drafts</p>
+<aside class="quote quote-modified" data-post="1" data-topic="479">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/letter_avatar_proxy/v4/letter/n/da6949/40.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/guide-for-new-activitypub-implementers/479">Guide for new ActivityPub implementers</a> <a class="badge-wrapper  box" href="/c/activitypub/5"><span class="badge-category-bg" style="background-color: #0088CC;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Discuss the ActivityPub Recommendation, how to implement it, how to extend it. Home of the ActivityPub SIG.">ActivityPub</span></a>
+  </div>
+  <blockquote>
+    This wiki post is a place for collaboratively drafting ActivityPub documentation with the hope that this material may be incorporated into proposed improvements to the activitypub.rocks site, see <a href="https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142">the conversation about the new main page</a> and the <a href="https://rigelk.gitlab.io/activitypub.rocks/" rel="nofollow noopener">demonstration </a>. 
+ 
+About this guide
+This is an informal guide to help new implementers get up to speed with the <a href="https://www.w3.org/TR/activitypub" rel="nofollow noopener">ActivityPub specification</a> and how to built projects with ActivityPub support. 
+Why choose ActivityPub?
+Why might you choose to implement Activi…
+  </blockquote>
+</aside>
+
+<h1>So, let us hack on that.</h1>
+<p>See the Wikis split in<br>
+Users<br>
+<aside class="quote quote-modified" data-post="1" data-topic="509">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/letter_avatar_proxy/v4/letter/n/da6949/40.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/guide-for-activitypub-users/509">Guide for ActivityPub users</a> <a class="badge-wrapper  box" href="/c/activitypub/5"><span class="badge-category-bg" style="background-color: #0088CC;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Discuss the ActivityPub Recommendation, how to implement it, how to extend it. Home of the ActivityPub SIG.">ActivityPub</span></a>
+  </div>
+  <blockquote>
+    This collaboratively-edited guide provides information on how to become an ActivityPub user. Adopting ActivityPub as a user can be a great way to start putting a more people-centred Internet into practice. 
+ 
+Find and join a Fediverse site
+The easiest way to get started with ActivityPub and the Fediverse is to join a site and start participating. 
+Finding projects
+If you’re looking for alternatives to specific corporate social media sites, <a href="https://switching.software" rel="nofollow noopener">switching.software</a> is a great place to start. They offer…
+  </blockquote>
+</aside>
+<br>
+Implementors<br>
+<aside class="quote quote-modified" data-post="1" data-topic="479">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/letter_avatar_proxy/v4/letter/n/da6949/40.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/guide-for-new-activitypub-implementers/479">Guide for new ActivityPub implementers</a> <a class="badge-wrapper  box" href="/c/activitypub/5"><span class="badge-category-bg" style="background-color: #0088CC;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Discuss the ActivityPub Recommendation, how to implement it, how to extend it. Home of the ActivityPub SIG.">ActivityPub</span></a>
+  </div>
+  <blockquote>
+    This wiki post is a place for collaboratively drafting ActivityPub documentation with the hope that this material may be incorporated into proposed improvements to the activitypub.rocks site, see <a href="https://socialhub.activitypub.rocks/t/discussing-the-evolution-of-the-activitypub-rocks-site/142">the conversation about the new main page</a> and the <a href="https://rigelk.gitlab.io/activitypub.rocks/" rel="nofollow noopener">demonstration </a>. 
+ 
+About this guide
+This is an informal guide to help new implementers get up to speed with the <a href="https://www.w3.org/TR/activitypub" rel="nofollow noopener">ActivityPub specification</a> and how to built projects with ActivityPub support. 
+Why choose ActivityPub?
+Why might you choose to implement Activi…
+  </blockquote>
+</aside>
+</p>
+<p>should there be a guide for instance admins? -&gt; moderation, well being etc. ?</p>
+            <p><small>3 posts - 3 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/onboarding-official-website-implementor-and-user-guides/998">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/onboarding-official-website-implementor-and-user-guides/998</link>
+          <pubDate>Fri, 02 Oct 2020 10:23:58 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-998</guid>
+          <source url="https://socialhub.activitypub.rocks/t/onboarding-official-website-implementor-and-user-guides/998.rss">Onboarding, Official Website, Implementor and User Guides</source>
+        </item>
+        <item>
+          <title>Meet and Greet ⬡ Opening</title>
+          <dc:creator><![CDATA[Sebastian]]></dc:creator>
+          <category>ActivityPub Conference 2020</category>
+          <description><![CDATA[
+            <p>13:30 UTC<br>
+<strong>“Meet and Greet”</strong> in the ‘Hallway Track’ room</p>
+<ul>
+<li>Test your setup, connect, party.<br>
+Bring your cat, dog, green elephant, mascot, photos, confetti …</li>
+</ul>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/1X/ec84ac3dcc849c2b52ac8383aa47d9e055deed7b.jpeg" data-download-href="https://socialhub.activitypub.rocks/uploads/default/ec84ac3dcc849c2b52ac8383aa47d9e055deed7b" title="12448_sl_02_02"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/ec84ac3dcc849c2b52ac8383aa47d9e055deed7b_2_345x230.jpeg" alt="12448_sl_02_02" data-base62-sha1="xKkVRkfJPqKCbPmez4l5YN4u4jx" width="345" height="230" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/ec84ac3dcc849c2b52ac8383aa47d9e055deed7b_2_345x230.jpeg, https://socialhub.activitypub.rocks/uploads/default/optimized/1X/ec84ac3dcc849c2b52ac8383aa47d9e055deed7b_2_517x345.jpeg 1.5x, https://socialhub.activitypub.rocks/uploads/default/optimized/1X/ec84ac3dcc849c2b52ac8383aa47d9e055deed7b_2_690x460.jpeg 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/ec84ac3dcc849c2b52ac8383aa47d9e055deed7b_2_10x10.png"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">12448_sl_02_02</span><span class="informations">2811×1877 1.88 MB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg></div></a></div></p>
+            <p><small>3 posts - 2 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/meet-and-greet-opening/997">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/meet-and-greet-opening/997</link>
+          <pubDate>Fri, 02 Oct 2020 10:10:46 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>Yes</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-997</guid>
+          <source url="https://socialhub.activitypub.rocks/t/meet-and-greet-opening/997.rss">Meet and Greet ⬡ Opening</source>
+        </item>
+        <item>
+          <title>The ActivityPub Test suite</title>
+          <dc:creator><![CDATA[Sebastian]]></dc:creator>
+          <category>ActivityPub Conference 2020</category>
+          <description><![CDATA[
+            <p>In the Hackathon let us heal that Open Wound</p>
+<aside class="quote quote-modified" data-post="1" data-topic="290">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/cwebber/40/51_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/290">The ActivityPub test suite</a> 
+  </div>
+  <blockquote>
+    test.activitypub.rocks has been down for a long time, as pretty much everyone knows.  More or less it’s server issues, and I can be blamed since I run the server (and wrote the test suite). 
+Why hasn’t it gone back up though?  Mainly because I’m a) very busy b) know how poor the test suite is at fulfilling the needs of the community and that makes it hard to feel motivated to put in the work. 
+Here are some quirks about test.activitypub.rocks: 
+
+It was done in a rush to meet the standards deadli…
+  </blockquote>
+</aside>
+
+            <p><small>6 posts - 4 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/996">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/996</link>
+          <pubDate>Fri, 02 Oct 2020 09:43:00 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-996</guid>
+          <source url="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/996.rss">The ActivityPub Test suite</source>
+        </item>
+        <item>
+          <title>&quot;Topics&quot; and Services we can subscribe to</title>
+          <dc:creator><![CDATA[Sebastian]]></dc:creator>
+          <category>ActivityPub Conference 2020</category>
+          <description><![CDATA[
+            <p>In some talks we see the concept of topics -<br>
+for example<br>
+<a href="https://conf.tube/videos/watch/85a7d230-7e75-48fd-b399-d182ddece030">SkoHub: Supporting topic-based content syndication &amp; discovery in a federated environment</a></p>
+<p>People mostly follow people in ActivityPub.<br>
+But there are many people with many topics …<br>
+Let us discover how ActivityPub users can follow their interests</p>
+            <p><small>5 posts - 3 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/topics-and-services-we-can-subscribe-to/995">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/topics-and-services-we-can-subscribe-to/995</link>
+          <pubDate>Fri, 02 Oct 2020 09:38:47 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-995</guid>
+          <source url="https://socialhub.activitypub.rocks/t/topics-and-services-we-can-subscribe-to/995.rss">&quot;Topics&quot; and Services we can subscribe to</source>
+        </item>
+        <item>
+          <title>Discovery for Interoperability</title>
+          <dc:creator><![CDATA[Sebastian]]></dc:creator>
+          <category>ActivityPub Conference 2020</category>
+          <description><![CDATA[
+            <p>Some of the Talks show the missing opportunity for <strong>machine-readable discovery</strong> of remote AP supporting <code>type</code> …<br>
+<aside class="quote quote-modified" data-post="1" data-topic="630">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/koehn/40/311_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/service-capability-discovery/630">Service Capability Discovery</a> <a class="badge-wrapper  box" href="/c/activitypub/s2s/7"><span class="badge-category-parent-bg" style="background-color: #0088CC;"></span><span class="badge-category-bg" style="background-color: #808281;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="This protocol is used to distribute activities between actors on different servers, tying them into the same social graph.">Server to Server</span></a>
+  </div>
+  <blockquote>
+    The S2S specification doesn’t appear to have an API for discovering what capabilities an Actor’s server supports. As an example, I happen to know that right now Mastodon doesn’t support AP features such as relationships, so I shouldn’t offer my users an option to use those features with actors running on Mastodon. If I did, the experience for my user would be confusing (“I sent Bob an Offer activity (friend request), but Bob never responded,” when Mastodon never presented Bob with the activity). …
+  </blockquote>
+</aside>
+</p>
+<p>You can see this in <a href="https://conf.tube/videos/watch/4102f53a-3f91-46c1-bb9b-fb954990f023" class="inline-onebox">Come Together Right Now - A design approach to interoperability - ConfTube</a><br>
+and users are working on solutions.<br>
+<a class="mention" href="/u/darius">@darius</a> with <a href="https://socialhub.activitypub.rocks/t/documenting-federation-behavior-in-a-semi-standard-way/453" class="inline-onebox">Documenting federation behavior in a semi-standard way?</a><br>
+and <a class="mention" href="/u/cjs">@cjs</a> in the Talk <a href="https://conf.tube/videos/watch/952f9cef-3b97-45e4-a248-199772a23f62" class="inline-onebox">Go-Fed: Past, Present, and Future - ConfTube</a></p>
+<p>Let us debate on how to discover …</p>
+            <p><small>6 posts - 3 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/discovery-for-interoperability/992">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/discovery-for-interoperability/992</link>
+          <pubDate>Fri, 02 Oct 2020 09:33:42 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-992</guid>
+          <source url="https://socialhub.activitypub.rocks/t/discovery-for-interoperability/992.rss">Discovery for Interoperability</source>
+        </item>
+        <item>
+          <title>Hackathon: where&#39;s kepi going next?</title>
+          <dc:creator><![CDATA[marnanel]]></dc:creator>
+          <category>ActivityPub Conference 2020</category>
+          <description><![CDATA[
+            <p><a href="https://gitlab.com/marnanel/kepi/" rel="nofollow noopener">kepi</a> is a Mastodon-alike server written in Django, currently pre-alpha and running on <a href="https://marnanel.org/users/marnanel" rel="nofollow noopener">one live test site</a> (with no current HTML interface). It supports ActivityPub for server-to-server communications; the client-to-server interface is provided by the Mastodon protocol.</p>
+<p>During this hackathon session, we will discuss:</p>
+<ul>
+<li>users’ hopes for this project</li>
+<li>what needs to be done to achieve them</li>
+<li>packaging to make kepi more easily testable</li>
+</ul>
+<p>If all goes well, we should come out of the session with a roadmap to v1.0. If all goes excellently, we should also have some working installation code and documentation.</p>
+<p>Everyone is welcome to participate, especially documentors, those who code in Django and other Python frameworks, and admins who might want to use kepi.</p>
+<p>(Over the weekend, I’ll upload some documentation about the current structure of kepi, and link it here.)</p>
+<p><a><img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/fd7d5666dce3d6ebd654e03597b50e43cbd26b33.png" alt="image" data-base62-sha1="AatkJpssPaX5uVHyfHoS7RcuReb" width="690" height="371"></a></p>
+<p>(kepi was briefly known as chapeau; gitlab is still slightly confused about the name change, so “chapeau” appears in the URL. If anyone knows how to stop that, please let me know!)</p>
+            <p><small>3 posts - 2 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/hackathon-wheres-kepi-going-next/988">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/hackathon-wheres-kepi-going-next/988</link>
+          <pubDate>Fri, 02 Oct 2020 00:24:23 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-988</guid>
+          <source url="https://socialhub.activitypub.rocks/t/hackathon-wheres-kepi-going-next/988.rss">Hackathon: where&#39;s kepi going next?</source>
+        </item>
+        <item>
+          <title>Indymedia reboot and epicyon codeing - hackathon</title>
+          <dc:creator><![CDATA[hamishcampbell]]></dc:creator>
+          <category>ActivityPub Conference 2020</category>
+          <description><![CDATA[
+            <p>Template and back end work on the epicyon <a href="https://epicyon.net/" rel="noopener nofollow ugc">https://epicyon.net/</a> activertypub code base to make a village/street level indymedia news site based on the OMN project.</p>
+<p>We plan to get a test activertypub news site online by the end of the week, if your not sure how it should work watch the video <a href="https://conf.tube/videos/watch/953de898-74dc-4665-95fb-313042f66cc6?start=" class="inline-onebox" rel="noopener nofollow ugc">The reboot of the indymedia project - ConfTube</a></p>
+<p><strong>Todo:</strong></p>
+<ul>
+<li>
+<p>Add or check emoji. Many are implemented, but it might not be very comprehensive.</p>
+</li>
+<li>
+<p>Figure out the workflow for incoming moderated posts.</p>
+</li>
+<li>
+<p>Artwork for themes. Backgrounds, banners, icon sets, fonts. Get as creative as you want. Instance appearance doesn’t retain users but it’s an initial “this might be interesting” sign.</p>
+</li>
+<li>
+<p>Fix polls, which currently don’t work very well. How are polls supposed to work at the protocol level?</p>
+</li>
+<li>
+<p>Add or fix translations. Translate the website or the Gemini site.</p>
+</li>
+<li>
+<p>Testing with i2p. Are there any new bugs?</p>
+</li>
+<li>
+<p>Change the way that events are displayed, also ideas for how rsvp should be implemented. Is there any consensus on this?</p>
+</li>
+</ul>
+<p>We need to think about a database driven activertypub code base for bigger sites as well<a href="/uploads/short-url/38d1GfRQ9hQcGALyk4agZ2aqSYI.jpeg"></a></p>
+<aside class="quote quote-modified" data-post="1" data-topic="942">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/socialhub.activitypub.rocks/hamishcampbell/40/284_2.png" class="avatar">
+    <a href="https://socialhub.activitypub.rocks/t/the-reboot-of-the-indymedia-project/942">The reboot of the indymedia project</a> <a class="badge-wrapper  box" href="/c/meeting/apconf2020/53"><span class="badge-category-parent-bg" style="background-color: #0E76BD;"></span><span class="badge-category-bg" style="background-color: #ff7a00;"></span><span style="color: #ffffff" data-drop-close="true" class="badge-category clear-badge" title="Add your proposals for the Conf by creating a New Topic –
+Tag it #bof for Birds of Feather sessions or #hackathon for Hack proposals …">ActivityPub Conference 2020</span></a>
+  </div>
+  <blockquote>
+    Hamish Campbell 
+ 
+We are a wide affinity group working to reboot the global indymedia network using modern federated protocols such as <a class="hashtag" href="/c/activitypub/5">#activitypub</a>. This reboot will be based on the OMN project code. 
+What is the OMN (Open Media Network): 
+The project is to shift power to the producers and consumers of media. It’s about good UI and simple empowering #KISS tools to move content, by categorising it with a grassroots folksonomy. This simple approach is balanced by shared site level syntax for the …
+  </blockquote>
+</aside>
+
+            <p><small>16 posts - 5 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987</link>
+          <pubDate>Thu, 01 Oct 2020 20:58:44 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-987</guid>
+          <source url="https://socialhub.activitypub.rocks/t/indymedia-reboot-and-epicyon-codeing-hackathon/987.rss">Indymedia reboot and epicyon codeing - hackathon</source>
+        </item>
+        <item>
+          <title>Spritely (or ocaps or virtual worlds) BoF?</title>
+          <dc:creator><![CDATA[cwebber]]></dc:creator>
+          <category>ActivityPub Conference 2020</category>
+          <description><![CDATA[
+            <p>Just curious if anyone is interested in one or more BoFs on: Spritely, virtual worlds, or ocaps on the fediverse.  Could be one or multiple.</p>
+<p>There will of course already be the <a href="https://socialhub.activitypub.rocks/t/spritely-and-federation-futures/932">Q&amp;A session about the Spritely talk</a> so maybe more is not needed.  Unsure.  But unsurprisingly I’m interested in conversations about all these.</p>
+<p>What do people think?</p>
+            <p><small>3 posts - 3 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/spritely-or-ocaps-or-virtual-worlds-bof/985">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/spritely-or-ocaps-or-virtual-worlds-bof/985</link>
+          <pubDate>Thu, 01 Oct 2020 18:20:31 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-985</guid>
+          <source url="https://socialhub.activitypub.rocks/t/spritely-or-ocaps-or-virtual-worlds-bof/985.rss">Spritely (or ocaps or virtual worlds) BoF?</source>
+        </item>
+        <item>
+          <title>The fediverse as an educational platform</title>
+          <dc:creator><![CDATA[mlemweb]]></dc:creator>
+          <category>ActivityPub Conference 2020</category>
+          <description><![CDATA[
+            <p>This year’s APconf talks engage with quite a few academic and educational disciplines. Let’s all get together and discuss the ways that the fediverse can be used as an educational tool and what work still needs to be done to make those tools accessible.</p>
+            <p><small>9 posts - 5 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/the-fediverse-as-an-educational-platform/983">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/the-fediverse-as-an-educational-platform/983</link>
+          <pubDate>Thu, 01 Oct 2020 15:11:10 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-983</guid>
+          <source url="https://socialhub.activitypub.rocks/t/the-fediverse-as-an-educational-platform/983.rss">The fediverse as an educational platform</source>
+        </item>
+        <item>
+          <title>SkoHub: Supporting topic-based content syndication &amp; discovery in a federated environment</title>
+          <dc:creator><![CDATA[acka47]]></dc:creator>
+          <category>ActivityPub Conference 2020</category>
+          <description><![CDATA[
+            <p><em>Adrian Pohl (<a class="mention" href="/u/acka47">@acka47</a>), <a class="mention" href="/u/literarymachine">@literarymachine</a></em></p>
+<p><iframe width="560" height="315" src="https://conf.tube/videos/embed/85a7d230-7e75-48fd-b399-d182ddece030" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+<p>SkoHub implements an approach to resource discovery in a federated environment that is based on subscription and push notification instead of crawling, indexing and search.<br>
+To enable this, it combines ActivityPub with SKOS (Simple Knowledge Organization Systems), a long-lived W3C standard for publishing classifications, thesauri and other controlled vocabularies on the web. The core idea is to make the terms of a Knowledge Organization Systems ActivityPub actors. Thus, people can follow topics and receive notifications about newly published resources via a topic-based channel. The initial SkoHub project has been carried out in 2019/20 by the hbz in cooperation with graphthinking GmbH.</p>
+<p>See <a class="hashtag" href="/c/software/skohub/42">#<span>software:skohub</span></a></p>
+<h2>Questions &amp; Answers available!</h2>
+<p><strong><a href="https://conf.tube/videos/watch/a29cc101-08ab-4b18-b208-c2258b46c5bd" rel="noopener nofollow ugc">Q&amp;A Session – SkoHub: Supporting topic-based content syndication &amp; discovery in a federated environment</a></strong><br>
+⬡ Hooray, the live Questions &amp; Answers are available here<br>
+<iframe width="560" height="315" src="https://conf.tube/videos/embed/a29cc101-08ab-4b18-b208-c2258b46c5bd" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/skohub-supporting-topic-based-content-syndication-discovery-in-a-federated-environment/931">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/skohub-supporting-topic-based-content-syndication-discovery-in-a-federated-environment/931</link>
+          <pubDate>Wed, 30 Sep 2020 20:50:37 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-931</guid>
+          <source url="https://socialhub.activitypub.rocks/t/skohub-supporting-topic-based-content-syndication-discovery-in-a-federated-environment/931.rss">SkoHub: Supporting topic-based content syndication &amp; discovery in a federated environment</source>
+        </item>
+        <item>
+          <title>ActivityPub Hackathon 2020</title>
+          <dc:creator><![CDATA[system]]></dc:creator>
+          <category>ActivityPub Conference 2020</category>
+          <description><![CDATA[
+            <p><img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/41df830dff9251a5bf2ebdb4e5a1d309e84ad781.png" alt="robin" data-base62-sha1="9oJUh8V0IgBzGcn9AlOTg1Vg6oF" width="40" height="48">  <strong>Yay</strong><br>
+We will kickstart the Hackathon <strong>today, 12:00 UTC</strong> in the <a href="https://bbb.fosshost.org/b/mor-phk-9a0-6ey">Hallway Track Room</a><br>
+and Everybody can participate.</p>
+<p>Today is about <code>Announce</code> ideas and <code>Create</code> combs.<br>
+Some ideas were already sketched here:<br>
+<a href="https://socialhub.activitypub.rocks/tag/hackathon">https://socialhub.activitypub.rocks/tag/hackathon</a></p>
+<p>So, <strong>Monday</strong> is an exploration day where people kind of test out ideas and see what kind of things they are thinking that they like to work on.</p>
+<p>On <strong>Tuesday</strong> we basically commit to ideas and everybody writes out what is their planning on doing. And if you do not have it by then and you still experiment as in terms of the general ideas it is obviously OK too.<br>
+We find the combs and projects which matter to us and hack/design/write/play <strong>during the week …</strong><br>
+The combs will schedule asynchronous meetings whenever it is best for them and can meet with other projects in the Hallway Track which is open during the week or via irc channel <a class="hashtag" href="https://socialhub.activitypub.rocks/tag/apconf">#<span>apconf</span></a> freenode …<br>
+We can split up in rooms where everybody can share their screens (tell a moderator), coordinate working on repositories and take shared notes.</p>
+<p><strong>At the end of the week we come together.</strong><br>
+On <strong>Sunday, 15:00 UTC</strong> we will have presentations in the <a href="https://bbb.fosshost.org/b/mor-phk-9a0-6ey">Hallway Track Room</a> , we specially mean some kinds of demos – so that everyone who is participating in the hackathon can show of what stuff they built during the week.<br>
+And even if your thing fails during the week, actually thats just as good as if it succeeds widely.<br>
+Because what happens often in a hackathon is when people explore interesting and experimental ideas its sometimes things come out the way you expect and something they don’t – and even hen dont thats a wonderful opportunity, its a lesson for everybody incl yourself.<br>
+That is the general idea and structure.</p>
+<p>[partly transcribed from the end of the Lightning Talk Round, C. Webber]</p>
+<h2><a href="https://socialhub.activitypub.rocks/c/meeting/apconf2020/53">Propose your ideas in the category</a></h2>
+<p><strong>Tag them “hackathon” in the field "Tags"</strong></p>
+            <p><small>5 posts - 4 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/activitypub-hackathon-2020/956">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/activitypub-hackathon-2020/956</link>
+          <pubDate>Wed, 30 Sep 2020 20:50:14 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-956</guid>
+          <source url="https://socialhub.activitypub.rocks/t/activitypub-hackathon-2020/956.rss">ActivityPub Hackathon 2020</source>
+        </item>
+        <item>
+          <title>Lightning Round Talks</title>
+          <dc:creator><![CDATA[system]]></dc:creator>
+          <category>ActivityPub Conference 2020</category>
+          <description><![CDATA[
+            <p>The lightning talk session for <a class="hashtag" href="/c/meeting/apconf2020/53">#<span>meeting:apconf2020</span></a>  is scheduled on <strong>Sunday 4th</strong>.</p>
+<p>Room: <a href="https://bbb.fosshost.org/b/mor-qfh-vv1-ivq">https://bbb.fosshost.org/b/mor-qfh-vv1-ivq</a></p>
+<p>Lightning round talks will be under 5 minutes long and will hopefully include summaries of the BoF sessions as well as individual topics. Since a lot of the lightning round talks will include content from the same day’s BoFs, we can’t require early submission of slides etc, so you can share your screen on Big Blue Button if you’d like to include slides.</p>
+<h3>Talk <span class="hashtag">#-2:</span> <a class="mention" href="/u/mlemweb">@mlemweb</a>  <a href="https://socialhub.activitypub.rocks/t/summary-of-the-fediverse-as-an-educational-platform-bof/1058/2" class="inline-onebox">Summary of "The fediverse as an educational platform" BoF</a>
+</h3>
+<h3>Talk <span class="hashtag">#-1:</span> <a class="mention" href="/u/strypey">@strypey</a>
+</h3>
+<ul>
+<li><a href="https://fediverse.space">https://fediverse.space</a></li>
+</ul>
+<h3>Talk <span class="hashtag">#0:</span> <a class="mention" href="/u/cjs">@cjs</a> Summarizing these BoF:</h3>
+<ul>
+<li><a href="https://socialhub.activitypub.rocks/t/discovery-for-interoperability/992/">Discovery for Interoperability</a></li>
+<li><a href="https://socialhub.activitypub.rocks/t/the-activitypub-test-suite/996">The ActivityPub Test suite</a></li>
+<li><a href="https://socialhub.activitypub.rocks/t/implementing-activitypub-client-to-server/981">Implementing ActivityPub Client-to-Server</a></li>
+</ul>
+<h3>Talk <span class="hashtag">#1:</span> <a class="mention" href="/u/how">@how</a> summarizing</h3>
+<ul>
+<li><a href="https://socialhub.activitypub.rocks/t/scaling-up-cooperation/837" class="inline-onebox">Scaling Up Cooperation</a></li>
+<li><a href="https://socialhub.activitypub.rocks/t/intermapping/838" class="inline-onebox">Intermapping</a></li>
+</ul>
+<h3>Talk <span class="hashtag">#2:</span> <a class="mention" href="/u/lain">@lain</a> Migrating servers from one AP server to another</h3>
+<h3>Talk <span class="hashtag">#3:</span> SNAC_Steffen on Interusability</h3>
+<h2>Recording available!</h2>
+<p><iframe width="560" height="315" src="https://conf.tube/videos/embed/4a431c74-b594-4d0f-bef6-f0ee4455bee2" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/lightning-round-talks/955">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/lightning-round-talks/955</link>
+          <pubDate>Wed, 30 Sep 2020 20:48:36 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-955</guid>
+          <source url="https://socialhub.activitypub.rocks/t/lightning-round-talks/955.rss">Lightning Round Talks</source>
+        </item>
+        <item>
+          <title>Let&#39;s Play and Win Our Own Game</title>
+          <dc:creator><![CDATA[system]]></dc:creator>
+          <category>ActivityPub Conference 2020</category>
+          <description><![CDATA[
+            <p><em>I’m Darius Kazemi (<a class="mention" href="/u/darius">@darius</a>)  <a href="https://friend.camp/@darius">@darius@friend.camp</a>, and I’m an independent researcher, programmer, and artist. I’m the maintainer of Hometown, a fork of Mastodon with community-enhancing features, and I added AcitvityPub support to the open source event organizing software Gathio. I was a Mozilla Open Web Fellow in 2018-2019</em></p>
+<p><iframe width="560" height="315" src="https://conf.tube/videos/embed/b8d6c88a-0e73-46dd-9e35-d4645bb12db8" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+<p>As creators of federated social software, we have a choice: we can compete with social media giants on their own terms, or we can play our own game, one that’s impossible for the giants to play in the first place. If we want to do the latter, we need to identify the fundamental assumptions that constrain the giants and ask ourselves what we can do when we throw those assumptions out entirely.</p>
+<p>In this talk, I am going to try and inspire you to make things that would be literally impossible to make on the centralized web. I am going to talk about both the advantages and disadvantages of doing this kind of thing. Expect to hear concrete examples of software that already exists, and also examples of software that could conceivably exist in the very near future.</p>
+<h2>Questions &amp; Answers available!</h2>
+<p><strong><a href="https://conf.tube/videos/watch/ee874639-6f5d-4fbc-a63f-ca9cfebdb1ab">Q&amp;A Session – Closing Keynote, “Let’s Play and Win Our Own Game”</a></strong><br>
+⬡ Hooray, the live Questions &amp; Answers are available here<br>
+<iframe width="560" height="315" src="https://conf.tube/videos/embed/ee874639-6f5d-4fbc-a63f-ca9cfebdb1ab" frameborder="0" allowfullscreen="" scrolling="no" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe></p>
+            <p><small>13 posts - 6 participants</small></p>
+            <p><a href="https://socialhub.activitypub.rocks/t/lets-play-and-win-our-own-game/953">Read full topic</a></p>
+          ]]></description>
+          <link>https://socialhub.activitypub.rocks/t/lets-play-and-win-our-own-game/953</link>
+          <pubDate>Wed, 30 Sep 2020 20:47:06 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">socialhub.activitypub.rocks-topic-953</guid>
+          <source url="https://socialhub.activitypub.rocks/t/lets-play-and-win-our-own-game/953.rss">Let&#39;s Play and Win Our Own Game</source>
+        </item>
+  </channel>
+</rss>

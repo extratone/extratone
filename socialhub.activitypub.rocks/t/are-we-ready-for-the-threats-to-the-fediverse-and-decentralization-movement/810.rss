@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Are we ready for the threats to the Fediverse and decentralization movement?</title>
+    <link>https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810</link>
+    <description>Yesterday for quite some time an excellent article [featured on Hacker News](https://news.ycombinator.com/item?id=23872004) written by [Cade Diehm](https://shiba.computer/). It didn&#39;t get much attention, maybe due to its title, but it contained a very urgent message to anyone involved in evolving The Decentralized Web. So I am posting here for you to read.
+
+https://newdesigncongress.org/en/pub/this-is-fine/
+
+Some quotes from the article:
+
+&gt; The resilience of centralised networks and the political organisation of their owners remains significantly underestimated by protocol activists. At the same time, the decentralised networks and the communities they serve have never been more vulnerable. The peer-to-peer community is dangerously unprepared for a crisis-fuelled future that has very suddenly arrived at their door.
+
+The article details about the demise of early P2P applications such as Napster which seemed at one time poised to win the Copyright War, and mentions BitTorrent that exposed its users to litigators.
+
+Then it goes into the optimism we now feel for new decentralized protocols, and which attract a large user base of people with often outspoken, non-mainstream, rather activist opinions that embrace new platforms as safe havens to express themselves. But..
+
+&gt; As we can see from history, blind faith in technically resilient network protocols is naïve and misplaced.
+
+And further on the article goes specifically into detail on DAT, SSB - which I leave to the reader - and ActivityPub:
+
+&gt; The Fediverse – a network comprised of Mastodon, Pleroma and other adjacent projects – suffers from the same glaring contradiction. Similar to email nodes, servers (known as *Instances* within this network) are branded around common interests, political beliefs or sexualities. [..]
+&gt;
+&gt; This collection of networks offers no end to end encryption. Anyone with administrator access to an Instance can read anything that travels through that Instance’s infrastructure – including direct messages. The level of risk correlates with the number of cross-Instance interactions between users.
+
+Of course that is a known issue. [One HN commenter](https://news.ycombinator.com/item?id=23890244) points out, e2ee is being worked on in Mastodon. Article also mentions:
+
+&gt; The Fediverse has also grappled with its own limitations in threat modelling, such as failing to collectively anticipate the establishment of far right and fascist political Instances – deplatformed refugees from dominant social media platforms.
+
+So what is needed?
+
+&gt; [The current] global instability demands platform reform. Peer-to-peer networks theoretically offer a level of resilience, safety and community determination that may no longer be possible with these incumbent powers. The moment demands not another protocol, not another manifesto, not another social network, but a savvy understanding of the political dynamics of protocols and the nakedness of today’s networks. By embracing a reverse *Shock Doctrine as a Service* , developing clear, historically-grounded narratives, and building sensitivity to the user’s abilities and safety, these new decentralisation reformists can succeed where others have failed.
+
+How?
+
+&gt; There is a rich but incomplete field of emergent work to draw from: New frameworks such as *Socio-technical Security* , and *Decentralization off the shelf* , exist to assist protocol designers understand and model interfaces and threats more completely and realistically. We must draw from groups that resist the Californian Ideology’s definition of identity, from the 1970s civil-rights aligned student activists who fought against digitised student records, to today’s Decolonise Design movement. Reformists must cede space for decision-making and expertise to under-represented or assailed communities.
+
+The article concludes (emphasis mine):
+
+&gt; We can no longer marvel at the novel interactions afforded by peer-to-peer technologies, nor perform political theatrics within these networks. We need to lay aside our delusions that decentralisation grants us immunity – any ground ceded to the commons will be met with amplified resistance from those who already own these spaces. [..]
+&gt;
+&gt; **Without cohesive organisation, mobilisation to harden security and privacy and without a sincere commitment from protocol designers to revise their collective assumptions, the push back from incumbent power will leverage each and every socio-technical flaw in each and every network.**</description>
+    
+    <lastBuildDate>Mon, 07 Jun 2021 13:21:42 +0000</lastBuildDate>
+    <category>Fediversity</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Are we ready for the threats to the Fediverse and decentralization movement?</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>Decentralization became a problematic notion to me, especially as I considered the model of “decentralziation” used by the French State ; the prerogatives of municipalities have been shrunk to a minimum, and the Regions became the actual power source for local decision-making ; Regions in turn are in the hand of Prefecture – a military / police institution that makes executive decision for the whole region, effectively ignoring local specificity – and the Regional Council which is made up of elected people whose agenda is to develop industry (with a neoliberal stance on that). Obviously this model of decentralization does not work at all. So we should be wary about making it a label, and rather question its meaning, what we want from it. I currently prefer the term <strong>dispersion</strong> that evokes a splash of water drops in a fractal / holographic configuration.</p>
+<p>Indeed, we must find a way to get closer to the grassroots movements everywhere and start working from their own requirements and specificity.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/20</link>
+        <pubDate>Mon, 07 Jun 2021 13:21:42 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-810-20</guid>
+        <source url="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810.rss">Are we ready for the threats to the Fediverse and decentralization movement?</source>
+      </item>
+      <item>
+        <title>Are we ready for the threats to the Fediverse and decentralization movement?</title>
+        <dc:creator><![CDATA[hamishcampbell]]></dc:creator>
+        <description><![CDATA[
+            <p>Maybe this post helps to see the bridge we need to build <a href="http://hamishcampbell.com/2021/05/29/misunderstanding-out-reaching-the-omn-openweb-projects/" rel="noopener nofollow ugc">http://hamishcampbell.com/2021/05/29/misunderstanding-out-reaching-the-omn-openweb-projects/</a> to mediate the unthinking threats we face.<br>
+<div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/2X/f/fea2b76e2eb3a0d8cfa5aeecbaa8964fbd4c8139.jpeg" data-download-href="https://socialhub.activitypub.rocks/uploads/default/fea2b76e2eb3a0d8cfa5aeecbaa8964fbd4c8139" title=""><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/f/fea2b76e2eb3a0d8cfa5aeecbaa8964fbd4c8139_2_666x500.jpeg" alt="" data-base62-sha1="AkBTynFN8OL4alODyRXVH9xWSVP" width="666" height="500" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/f/fea2b76e2eb3a0d8cfa5aeecbaa8964fbd4c8139_2_666x500.jpeg, https://socialhub.activitypub.rocks/uploads/default/original/2X/f/fea2b76e2eb3a0d8cfa5aeecbaa8964fbd4c8139.jpeg 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/2X/f/fea2b76e2eb3a0d8cfa5aeecbaa8964fbd4c8139.jpeg 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/2X/f/fea2b76e2eb3a0d8cfa5aeecbaa8964fbd4c8139_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename"></span><span class="informations">720×540 65.6 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/19</link>
+        <pubDate>Sat, 29 May 2021 10:06:49 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-810-19</guid>
+        <source url="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810.rss">Are we ready for the threats to the Fediverse and decentralization movement?</source>
+      </item>
+      <item>
+        <title>Are we ready for the threats to the Fediverse and decentralization movement?</title>
+        <dc:creator><![CDATA[hamishcampbell]]></dc:creator>
+        <description><![CDATA[
+            <p>Democratic “governance” is needed to escape from the inward looking cliques.</p>
+<p><span class="hashtag">#KISS</span> power breeds social power.</p>
+<p>The important question is how the power is shared and what it’s used for.  The <span class="hashtag">#deathcult</span> and everything it builds has no ideas and no solutions to this, you have to look else where, OUTSIDE the current world view.</p>
+<p>I am doing this here:</p><aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/e96071ab96a5e76fc14e8098123273b2bc357025.png" class="site-icon" width="180" height="180">
+      <a href="https://unite.openworlds.info/Open-Media-Network/4opens/wiki" target="_blank" rel="noopener nofollow ugc">Gitea: Open Media Network</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://socialhub.activitypub.rocks/uploads/default/original/2X/9/9e50070bba0871f3731a38bbf72a97a036ce8fbb.png" class="thumbnail onebox-avatar" width="290" height="290">
+
+<h3><a href="https://unite.openworlds.info/Open-Media-Network/4opens/wiki" target="_blank" rel="noopener nofollow ugc">4opens</a></h3>
+
+<p>The #4Opens
+
+The #dotcons can not be fixed.
+
+The #fashionistas who keep flocking to new “ethical-ish” ones are a problem, not a solution.
+
+The #4opens are a simple way to judge the value of an “alt/grassroots” tech project.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/e96071ab96a5e76fc14e8098123273b2bc357025.png" class="site-icon" width="180" height="180">
+      <a href="https://unite.openworlds.info/Open-Media-Network/openwebgovernancebody/wiki/Online-governance-" target="_blank" rel="noopener nofollow ugc">Gitea: Open Media Network</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://socialhub.activitypub.rocks/uploads/default/original/2X/9/9e50070bba0871f3731a38bbf72a97a036ce8fbb.png" class="thumbnail onebox-avatar" width="290" height="290">
+
+<h3><a href="https://unite.openworlds.info/Open-Media-Network/openwebgovernancebody/wiki/Online-governance-" target="_blank" rel="noopener nofollow ugc">openwebgovernancebody</a></h3>
+
+<p>(OGB) This is a space for working through Governance of horizontal projects - using #KISS online tools.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/18</link>
+        <pubDate>Mon, 24 May 2021 10:02:20 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-810-18</guid>
+        <source url="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810.rss">Are we ready for the threats to the Fediverse and decentralization movement?</source>
+      </item>
+      <item>
+        <title>Are we ready for the threats to the Fediverse and decentralization movement?</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="hamishcampbell" data-post="16" data-topic="810">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/hamishcampbell/40/284_2.png" class="avatar"> hamishcampbell:</div>
+<blockquote>
+<p>On the level of fantasies vs reality we still have way too much of the first, we need to build out the second, for that to happen we need light, democracy and <span class="hashtag">#4opens</span> in tech.</p>
+</blockquote>
+</aside>
+<p>Most importantly we need way more people to help us with that. Depicting fantasies (or rather dreams for the future) as inspiration of “what might be” is a good way to entice people to join the effort. Right now we have many people using the fediverse, and too few people building the fediverse (and this applies both to technical and non-technical ways that people can contribute to that).</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/17</link>
+        <pubDate>Mon, 24 May 2021 09:16:29 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-810-17</guid>
+        <source url="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810.rss">Are we ready for the threats to the Fediverse and decentralization movement?</source>
+      </item>
+      <item>
+        <title>Are we ready for the threats to the Fediverse and decentralization movement?</title>
+        <dc:creator><![CDATA[hamishcampbell]]></dc:creator>
+        <description><![CDATA[
+            <p>How to build out “design for communities and enable groups to collaborate in the best conditions” we have this, but its unspoken and thus fragile and transitory at the moment.  For the <span class="hashtag">#openweb</span> to grow in relevance we need strong foundations, currently we have sand with a few twigs, nice and organic but not “society”.</p>
+<p>We need to bridge “hard tech” funding agenders to be “tech social” agenders, we have to overcome “On the political side, there is arrogance and ignorance, on the geek side there is naivety and over complexity” to build and hold this needed bridge in place.</p>
+<p>There are lots of challenges and darkness is not helping in this process.</p>
+<p>Yes, there is a role for closed in working around naked repression. BUT we are privileged middle class kids playing with sand and sticks, we don’t need it, and wider society does not need it.</p>
+<p><img src="https://socialhub.activitypub.rocks/uploads/default/original/2X/6/630607201b42c2aeae2623d730a5db8718a11e6d.png" alt="" data-base62-sha1="e80bpRK9E5DCaLV2uvKoeal7wDz" width="275" height="347"></p>
+<p>I have been in places were closed is a practical path, I have used darkness to hide from repression, but the solution was always open in the end <a href="http://www.undercurrents.org/diaz.html" class="inline-onebox" rel="noopener nofollow ugc">Diaz</a></p>
+<p>On the level of fantasies vs reality we still have way too much of the first, we need to build out the second, for that to happen we need light, democracy and <span class="hashtag">#4opens</span> in tech.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/16</link>
+        <pubDate>Mon, 24 May 2021 09:05:29 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-810-16</guid>
+        <source url="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810.rss">Are we ready for the threats to the Fediverse and decentralization movement?</source>
+      </item>
+      <item>
+        <title>Are we ready for the threats to the Fediverse and decentralization movement?</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <p>I understand your points and agree fully: we need to design for communities and enable groups to collaborate in the best conditions. I only frown at the metaphor: for light casts shadows, and too much light cast stronger shadows ; the Enlightenment had its wrongs too.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/15</link>
+        <pubDate>Mon, 24 May 2021 08:36:43 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-810-15</guid>
+        <source url="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810.rss">Are we ready for the threats to the Fediverse and decentralization movement?</source>
+      </item>
+      <item>
+        <title>Are we ready for the threats to the Fediverse and decentralization movement?</title>
+        <dc:creator><![CDATA[hamishcampbell]]></dc:creator>
+        <description><![CDATA[
+            <p><div class="lightbox-wrapper"><a class="lightbox" href="https://socialhub.activitypub.rocks/uploads/default/original/1X/9e12c8fabb711a3ea59a3f2b71ef8734d9e5e410.png" data-download-href="https://socialhub.activitypub.rocks/uploads/default/9e12c8fabb711a3ea59a3f2b71ef8734d9e5e410" title="17636"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/9e12c8fabb711a3ea59a3f2b71ef8734d9e5e410_2_226x500.png" alt="17636" data-base62-sha1="mynGBtWuAoAa4Rq3mkYwBj7rqWA" width="226" height="500" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/9e12c8fabb711a3ea59a3f2b71ef8734d9e5e410_2_226x500.png, https://socialhub.activitypub.rocks/uploads/default/original/1X/9e12c8fabb711a3ea59a3f2b71ef8734d9e5e410.png 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/1X/9e12c8fabb711a3ea59a3f2b71ef8734d9e5e410.png 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/9e12c8fabb711a3ea59a3f2b71ef8734d9e5e410_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">17636</span><span class="informations">300×663 34.6 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div><br>
+This article is muddled human <span class="hashtag">#geekproblem</span> full of <span class="hashtag">#encryptionsit</span> talk, it talks about  assumptions that have failed and will keep failing. And an agenda that are poison to the <span class="hashtag">#openweb</span>.</p>
+<p><strong>Best to keep focues</strong><br>
+Let’s be clear we need to look at things from open/closed we need to judge projects from the <span class="hashtag">#4opens</span> we need to STOP building for defeat and build for rolling out “community” based trust networks as theses are the ONLY projects that have hope.</p>
+<p>Yes, basic security is needed for identity and trust building, but going beyond this 90% open and 10% closed is pushing out darkness, not light. Yes trolls like to live in caves, but we are humans not trolls, and we need to build for humans not trolls.</p>
+<p>You have all seen the hobbit, when trolls are exposed to daylight they turn to stone, darkness is their friend, light their end.</p>
+<p>It’s simple, open is light, closed is darkness. The repression is going to happen what every we do, best to meet it with light and turn it to stone.</p>
+<p>Think like a human being, don’t spread the muddle <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/14</link>
+        <pubDate>Sun, 23 May 2021 08:57:44 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-810-14</guid>
+        <source url="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810.rss">Are we ready for the threats to the Fediverse and decentralization movement?</source>
+      </item>
+      <item>
+        <title>Are we ready for the threats to the Fediverse and decentralization movement?</title>
+        <dc:creator><![CDATA[strypey]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Paul, thanks for the link. UnFound looks like an intriguing project to facilitate the emergence of more platform co-ops.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/13</link>
+        <pubDate>Sun, 23 May 2021 08:03:49 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-810-13</guid>
+        <source url="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810.rss">Are we ready for the threats to the Fediverse and decentralization movement?</source>
+      </item>
+      <item>
+        <title>Are we ready for the threats to the Fediverse and decentralization movement?</title>
+        <dc:creator><![CDATA[zleap]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi<br>
+I like the idea of Platform co-operatives.</p>
+<p>Just reading this here.</p>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://www.uk.coop/core/misc/favicon.ico" class="site-icon" width="32" height="32">
+      <a href="https://www.uk.coop/start-new-co-op/support/start-platform-co-op" target="_blank" rel="noopener nofollow ugc">Co-operatives UK</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/362;"><img src="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/4d7f98c81e1aec0668559fb132c9e88ff53fa68c_2_690x362.jpeg" class="thumbnail" width="690" height="362" srcset="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/4d7f98c81e1aec0668559fb132c9e88ff53fa68c_2_690x362.jpeg, https://socialhub.activitypub.rocks/uploads/default/optimized/1X/4d7f98c81e1aec0668559fb132c9e88ff53fa68c_2_1035x543.jpeg 1.5x, https://socialhub.activitypub.rocks/uploads/default/original/1X/4d7f98c81e1aec0668559fb132c9e88ff53fa68c.jpeg 2x" data-small-upload="https://socialhub.activitypub.rocks/uploads/default/optimized/1X/4d7f98c81e1aec0668559fb132c9e88ff53fa68c_2_10x10.png"></div>
+
+<h3><a href="https://www.uk.coop/start-new-co-op/support/start-platform-co-op" target="_blank" rel="noopener nofollow ugc">Start a platform co-op</a></h3>
+
+<p>UnFound is for founders looking for a different way to set-up and run a platform business. It brings together entrepreneurs that would like to develop their digital business in a more collaborative and equitable way.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>Paul</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/12</link>
+        <pubDate>Sun, 03 Jan 2021 11:20:25 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-810-12</guid>
+        <source url="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810.rss">Are we ready for the threats to the Fediverse and decentralization movement?</source>
+      </item>
+      <item>
+        <title>Are we ready for the threats to the Fediverse and decentralization movement?</title>
+        <dc:creator><![CDATA[strypey]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="titi" data-post="10" data-topic="810">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/titi/40/515_2.png" class="avatar"> titi:</div>
+<blockquote>
+<p>coops can adopt and use the “collaborative organization way” of ethical tech movement</p>
+</blockquote>
+</aside>
+<p>I’m sure both networks / movements can learn from each others’ organizing and decision-making systems <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<aside class="quote no-group" data-username="titi" data-post="10" data-topic="810">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/titi/40/515_2.png" class="avatar"> titi:</div>
+<blockquote>
+<p>In my experience it’s exhausting and you risk to be insulted</p>
+</blockquote>
+</aside>
+<p>At the risk of labouring the point, we don’t need to convince existing cooperatives of anything at first. We can just start using cooperative companies or B Corps to avoid the problems that come from being dependent on funding from billionaires and corporations (via either venture capital or philanthropic charities), or on purely volunteer labour. <a href="https://loomio.coop/our_cooperative/history" rel="noopener nofollow ugc">Loomio is an early example</a>, but there is now a whole <a href="https://platform.coop/about/benefits/" rel="noopener nofollow ugc">movement of “platform cooperatives”</a> doing this. I suspect that as this movement grows, the existing co-ops will get more interested, but that’s a bonus (for them and for us), not a requirement for us to get benefit from using cooperative company structures.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/11</link>
+        <pubDate>Sun, 04 Oct 2020 15:34:17 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-810-11</guid>
+        <source url="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810.rss">Are we ready for the threats to the Fediverse and decentralization movement?</source>
+      </item>
+      <item>
+        <title>Are we ready for the threats to the Fediverse and decentralization movement?</title>
+        <dc:creator><![CDATA[titi]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="strypey" data-post="9" data-topic="810">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/strypey/40/224_2.png" class="avatar"> strypey:</div>
+<blockquote>
+<p>ethical tech movement can adopt and use the economic “code” of co-ops</p>
+</blockquote>
+</aside>
+<p>Yes, and coops can adopt and use the “collaborative organization way” of ethical tech movement <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"> I was surprised with <a href="https://mon-parcours-collaboratif.fr/" rel="noopener nofollow ugc">“Mon parcours collaborative”</a>. There is an interesting report that shows that coops and associations don’t know much about digital collaboration tools and practices… I think I’d get the same result in Catalunya… Why? Because it seems to me <em>there is no time</em> to stop and think…</p>
+<aside class="quote no-group" data-username="strypey" data-post="9" data-topic="810">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/strypey/40/224_2.png" class="avatar"> strypey:</div>
+<blockquote>
+<p>and this is another potential source of sustainable funding for us</p>
+</blockquote>
+</aside>
+<p>That’s the thing! Our networks, our tools, our rules (people, tech and mutual agreement). Shared infraestructures, glocal nodes… the possibility of other economies out of FIAT world…</p>
+<aside class="quote no-group" data-username="strypey" data-post="9" data-topic="810">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/strypey/40/224_2.png" class="avatar"> strypey:</div>
+<blockquote>
+<p>it will take some work on our part to convince</p>
+</blockquote>
+</aside>
+<p>Be careful… It’s Plato’s digital cave <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"> In my experience it’s exhausting and you risk to be insulted… If you try it, I encourage you to protect yourself with a huge amount of <a href="https://xkcd.com/743/" rel="noopener nofollow ugc">humor and empathy</a>… I’m very sorry to say this and I wouldn’t want to offend anyone but I really feel I talk with “digital alcoholics” (because their overuse of dopaminic tools) :_(</p>
+<aside class="quote no-group" data-username="strypey" data-post="9" data-topic="810">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/strypey/40/224_2.png" class="avatar"> strypey:</div>
+<blockquote>
+<p>to make sure that the software we recommend really is ready to everyday use by non-geeks.</p>
+</blockquote>
+</aside>
+<p>That’s why we proposed <a href="https://equipamentslliures.cat/projecte" rel="noopener nofollow ugc">“Equipaments Lliures”</a> and we had the idea of the book <a href="https://documents.lleialtat.cat/w/lleialtec/#Llibre" rel="noopener nofollow ugc">“Totes les lluites són una: tecnologies ètiques per a la transformació social”</a> …</p>
+<aside class="quote no-group" data-username="strypey" data-post="9" data-topic="810">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/strypey/40/224_2.png" class="avatar"> strypey:</div>
+<blockquote>
+<p>case studies</p>
+</blockquote>
+</aside>
+<p>I prefer Discourse <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"> Some experiences <a href="https://equipamentslliures.cat/infraestructura/agora" rel="noopener nofollow ugc">here</a> In catalan, sorry…</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/10</link>
+        <pubDate>Sun, 04 Oct 2020 12:38:02 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-810-10</guid>
+        <source url="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810.rss">Are we ready for the threats to the Fediverse and decentralization movement?</source>
+      </item>
+      <item>
+        <title>Are we ready for the threats to the Fediverse and decentralization movement?</title>
+        <dc:creator><![CDATA[strypey]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="titi" data-post="6" data-topic="810">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/titi/40/515_2.png" class="avatar"> titi:</div>
+<blockquote>
+<p>It seems to me that the “ESS” (Economia Social i Solidària) I know (catalan sector) doesn’t fully understand the Internets as a set of tools WE must shape and construct…</p>
+</blockquote>
+</aside>
+<p>My point was more that the ethical tech movement can adopt and use the economic “code” of co-ops etc as a way of sustainably funding our own work, regardless of what the existing co-op movement does with its tech use. Buy I agree it does make sense for the existing solidarity economy to defend their own software freedom, by using and supporting ethical tech, and this is another potential source of sustainable funding for us. As you say, it will take some work on our part to convince them the transition pain is worth the benefits, and to make sure that the software we recommend really is ready to everyday use by non-geeks. Perhaps we need to research, write up and propagate more case studies like this one about the <a href="https://blog.loomio.org/2019/03/27/helping-uk-cooperatives-thrive/" rel="noopener nofollow ugc">Co-operative Assistance Network Limited (CAN) in the UK using Loomio</a>?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/9</link>
+        <pubDate>Sun, 04 Oct 2020 11:16:09 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-810-9</guid>
+        <source url="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810.rss">Are we ready for the threats to the Fediverse and decentralization movement?</source>
+      </item>
+      <item>
+        <title>Are we ready for the threats to the Fediverse and decentralization movement?</title>
+        <dc:creator><![CDATA[titi]]></dc:creator>
+        <description><![CDATA[
+            <p>Yesterday I tried to connect to BBB but I couldn’t… I will try today again. I see it’s at 17h (5pm), right? I hope I hear you all there <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"> (even if my english is not like yours…)</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/8</link>
+        <pubDate>Sun, 04 Oct 2020 10:44:05 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-810-8</guid>
+        <source url="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810.rss">Are we ready for the threats to the Fediverse and decentralization movement?</source>
+      </item>
+      <item>
+        <title>Are we ready for the threats to the Fediverse and decentralization movement?</title>
+        <dc:creator><![CDATA[how]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="titi" data-post="6" data-topic="810">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/titi/40/515_2.png" class="avatar"> titi:</div>
+<blockquote>
+<p>It seems to me that the “ESS” (Economia Social i Solidària) I know (catalan sector) doesn’t fully understand the Internets as a set of tools WE must shape and construct…</p>
+</blockquote>
+</aside>
+<p>I’m pretty sure <a class="mention" href="/u/natacha">@natacha</a> would appreciate your perspective on this during the <a href="https://socialhub.activitypub.rocks/t/intermapping/838" class="inline-onebox">Intermapping</a> session tomorrow…</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/7</link>
+        <pubDate>Sat, 03 Oct 2020 17:25:04 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-810-7</guid>
+        <source url="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810.rss">Are we ready for the threats to the Fediverse and decentralization movement?</source>
+      </item>
+      <item>
+        <title>Are we ready for the threats to the Fediverse and decentralization movement?</title>
+        <dc:creator><![CDATA[titi]]></dc:creator>
+        <description><![CDATA[
+            <p>I really like your approach <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<aside class="quote no-group" data-username="strypey" data-post="5" data-topic="810">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/strypey/40/224_2.png" class="avatar"> strypey:</div>
+<blockquote>
+<p>allergic to money.</p>
+</blockquote>
+</aside>
+<p>Only FIAT alergic <img src="https://socialhub.activitypub.rocks/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"> Do you know Duniter-Ğ1? We will put videos about it in this <a href="https://video.monedalliure.org/" rel="nofollow noopener">peertube</a>. <a href="https://forum.monnaie-libre.fr/" rel="nofollow noopener">International community</a> (mostly french). Website <a href="https://monedalliure.org/" rel="nofollow noopener">catalan</a>; website <a href="https://moneda-libre.org/" rel="nofollow noopener">spanish</a>.</p>
+<aside class="quote no-group" data-username="strypey" data-post="5" data-topic="810">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/strypey/40/224_2.png" class="avatar"> strypey:</div>
+<blockquote>
+<p>But to do that sustainably, we need to find cooperative and distributive ways to manage money, fund projects, create secure livelihoods for workers, and so on</p>
+</blockquote>
+</aside>
+<p>Yes, but… In my experience is not only about to have “the right tools”; it’s about adoption, it’s about understanding the <strong>connection between big concepts</strong>. Trying to explain that I coordinated a book called <a href="https://documents.lleialtat.cat/w/lleialtec/#Llibre" rel="nofollow noopener">“Totes les lluites són una: tecnologies ètiques per a la transformació social”</a> (All the fights are one: ethic tech for social transformation).</p>
+<p>It seems to me that the “ESS” (Economia Social i Solidària) I know (catalan sector) doesn’t fully understand the Internets as a set of tools WE must shape and construct… In my experience, free software is painful for the catalan-ESS and it makes me sad to try but not sucess… See the <a href="https://xes.cat/xarxes-locals/" rel="nofollow noopener">“xarxes locals”</a> (social networks): it’s clearly a local timeline of a local node but it seems they don’t understand federated-tech even if is the same concept that a regular federation…</p>
+<p>Last thing I tried (this week) is to offer a three month course to <a href="https://educoop.coop/" rel="nofollow noopener">Educoop</a> participants about “digital communication” including talks about GAFAM and licenses, and workshops about the Fedi or basic design with Inkscape. We’ll see if it happens…</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/6</link>
+        <pubDate>Sat, 03 Oct 2020 16:38:50 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-810-6</guid>
+        <source url="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810.rss">Are we ready for the threats to the Fediverse and decentralization movement?</source>
+      </item>
+      <item>
+        <title>Are we ready for the threats to the Fediverse and decentralization movement?</title>
+        <dc:creator><![CDATA[strypey]]></dc:creator>
+        <description><![CDATA[
+            <p>This is a valuable article. The elephant in the room in so many utopian discussions about decentralization is a total amnesia about our history, from the evolution of the net, to deeper political-economic history. One of the most powerful levers that the centralizers use to resist decentralization is their financial “capital” (ie large pools of money). For any other form of decentralization to work - from federated social media and chat to consensus decision-making and participatory budgeting - it depends on  sustainable decentralization of economic exchange.</p>
+<p>From the <a href="https://community.humanetech.com/t/technokleptocracy-collateral-damage/4810/14" rel="noopener nofollow ugc">thread about kleptocracy on the Humante Tech Community forum</a>:</p>
+<aside class="quote no-group quote-modified" data-username="aschrijver" data-post="15" data-topic="4810">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://socialhub.activitypub.rocks/user_avatar/socialhub.activitypub.rocks/aschrijver/40/278_2.png" class="avatar">
+</div>
+<blockquote>
+<p>One of the sub projects, Hyptis, will provide Distributed Finance capabilities. While this is very nice and targeted to small-scale application, it will enable commercialization of the Fediverse in one way or other. And this can speed up adverse developments that we are not able to handle.</p>
+</blockquote>
+</aside>
+<p>To grow the solidarity economy, we need to work independently of capitalists without becoming allergic to money. Yes, capitalists use money to buy control of our work and we need to avoid that. But to do that sustainably, we need to find cooperative and distributive ways to manage money, fund projects, create secure livelihoods for workers, and so on. <a href="https://invidious.snopyta.org/watch?v=L01iiJz8Thc" rel="noopener nofollow ugc">Dmytri Kleiner offers an unusual and valuable perspective</a> on this, although I disagree with him on a few things (eg his take on <a href="http://telekommunisten.net/the-telekommunist-manifesto/" rel="noopener nofollow ugc">copyright, copyleft, and his Copyfarleft concept</a> are utterly wrong-headed IMHO).</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/5</link>
+        <pubDate>Mon, 28 Sep 2020 09:06:17 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-810-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810.rss">Are we ready for the threats to the Fediverse and decentralization movement?</source>
+      </item>
+      <item>
+        <title>Are we ready for the threats to the Fediverse and decentralization movement?</title>
+        <dc:creator><![CDATA[birdsofpraise]]></dc:creator>
+        <description><![CDATA[
+            <p>This is a really useful article, and provides some interesting links that I look forward to following more deeply.</p>
+<p>One thought from <a href="https://decentpatterns.xyz/" rel="nofollow noopener">https://decentpatterns.xyz/</a> that strikes me is this: “One of the missing aspects are tools that developers and designers can use to understand how to build applications.”</p>
+<p>As an AP developer I find myself doing a lot of work understanding protocols and writing code to interface with them, which I know has been done by others but not shared. And open source in general has almost no desire to do UX/design work, and when it does it’s generally not done in a way that is useful to developers of other projects.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/4</link>
+        <pubDate>Sun, 26 Jul 2020 13:09:11 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-810-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810.rss">Are we ready for the threats to the Fediverse and decentralization movement?</source>
+      </item>
+      <item>
+        <title>Are we ready for the threats to the Fediverse and decentralization movement?</title>
+        <dc:creator><![CDATA[melvincarvalho]]></dc:creator>
+        <description><![CDATA[
+            <p>Simple experimental idea</p>
+<ul>
+<li>Run peerjs on some fediverse servers ( a one liner – npx peer [options] )</li>
+<li>Add a privacy-first way to identify users or browsers to each other on the fediverse</li>
+<li>Build a simple direct message (chat) tool that is e2e encrypted, private, and modular can be added on to existing fediverse software</li>
+</ul>
+<p>I think this would could get to proof of concept in a weekend for a single developer, and show how p2p and federated systems can cooperate</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/3</link>
+        <pubDate>Thu, 23 Jul 2020 23:37:13 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-810-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810.rss">Are we ready for the threats to the Fediverse and decentralization movement?</source>
+      </item>
+      <item>
+        <title>Are we ready for the threats to the Fediverse and decentralization movement?</title>
+        <dc:creator><![CDATA[melvincarvalho]]></dc:creator>
+        <description><![CDATA[
+            <p>No reason why web systems and p2p cant play nicely together.  I built an app this week using peerjs but delivered over the web.  So you can chat from one browser to another without a central server.  But also just use wget and install it anywhere.  Two systems with different features complimenting each other</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/2</link>
+        <pubDate>Thu, 23 Jul 2020 23:30:04 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-810-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810.rss">Are we ready for the threats to the Fediverse and decentralization movement?</source>
+      </item>
+      <item>
+        <title>Are we ready for the threats to the Fediverse and decentralization movement?</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Yesterday for quite some time an excellent article <a href="https://news.ycombinator.com/item?id=23872004" rel="nofollow noopener">featured on Hacker News</a> written by <a href="https://shiba.computer/" rel="nofollow noopener">Cade Diehm</a>. It didn’t get much attention, maybe due to its title, but it contained a very urgent message to anyone involved in evolving The Decentralized Web. So I am posting here for you to read.</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://newdesigncongress.org/assets/i/favicon.ico" class="site-icon" width="16" height="16">
+      <a href="https://newdesigncongress.org/en/pub/this-is-fine/" target="_blank" rel="nofollow noopener">newdesigncongress.org</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:478/480;"><img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/de7dbb20eed8b027d64fdc2d32fa8094416cec49.png" class="thumbnail" width="478" height="480"></div>
+
+<h3><a href="https://newdesigncongress.org/en/pub/this-is-fine/" target="_blank" rel="nofollow noopener">This is Fine: Optimism &amp; Emergency in the P2P Network | The New Design...</a></h3>
+
+<p>As we enter the 2020s, centralised power and decentralised communities are on the verge of outright conflict for the control of the digital public space. The resilience of centralised networks and the political organisation of their owners remains...</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>Some quotes from the article:</p>
+<blockquote>
+<p>The resilience of centralised networks and the political organisation of their owners remains significantly underestimated by protocol activists. At the same time, the decentralised networks and the communities they serve have never been more vulnerable. The peer-to-peer community is dangerously unprepared for a crisis-fuelled future that has very suddenly arrived at their door.</p>
+</blockquote>
+<p>The article details about the demise of early P2P applications such as Napster which seemed at one time poised to win the Copyright War, and mentions BitTorrent that exposed its users to litigators.</p>
+<p>Then it goes into the optimism we now feel for new decentralized protocols, and which attract a large user base of people with often outspoken, non-mainstream, rather activist opinions that embrace new platforms as safe havens to express themselves. But…</p>
+<blockquote>
+<p>As we can see from history, blind faith in technically resilient network protocols is naïve and misplaced.</p>
+</blockquote>
+<p>And further on the article goes specifically into detail on DAT, SSB - which I leave to the reader - and ActivityPub:</p>
+<blockquote>
+<p>The Fediverse – a network comprised of Mastodon, Pleroma and other adjacent projects – suffers from the same glaring contradiction. Similar to email nodes, servers (known as <em>Instances</em> within this network) are branded around common interests, political beliefs or sexualities. […]</p>
+<p>This collection of networks offers no end to end encryption. Anyone with administrator access to an Instance can read anything that travels through that Instance’s infrastructure – including direct messages. The level of risk correlates with the number of cross-Instance interactions between users.</p>
+</blockquote>
+<p>Of course that is a known issue. <a href="https://news.ycombinator.com/item?id=23890244" rel="nofollow noopener">One HN commenter</a> points out, e2ee is being worked on in Mastodon. Article also mentions:</p>
+<blockquote>
+<p>The Fediverse has also grappled with its own limitations in threat modelling, such as failing to collectively anticipate the establishment of far right and fascist political Instances – deplatformed refugees from dominant social media platforms.</p>
+</blockquote>
+<p>So what is needed?</p>
+<blockquote>
+<p>[The current] global instability demands platform reform. Peer-to-peer networks theoretically offer a level of resilience, safety and community determination that may no longer be possible with these incumbent powers. The moment demands not another protocol, not another manifesto, not another social network, but a savvy understanding of the political dynamics of protocols and the nakedness of today’s networks. By embracing a reverse <em>Shock Doctrine as a Service</em> , developing clear, historically-grounded narratives, and building sensitivity to the user’s abilities and safety, these new decentralisation reformists can succeed where others have failed.</p>
+</blockquote>
+<p>How?</p>
+<blockquote>
+<p>There is a rich but incomplete field of emergent work to draw from: New frameworks such as <em>Socio-technical Security</em> , and <em>Decentralization off the shelf</em> , exist to assist protocol designers understand and model interfaces and threats more completely and realistically. We must draw from groups that resist the Californian Ideology’s definition of identity, from the 1970s civil-rights aligned student activists who fought against digitised student records, to today’s Decolonise Design movement. Reformists must cede space for decision-making and expertise to under-represented or assailed communities.</p>
+</blockquote>
+<p>The article concludes (emphasis mine):</p>
+<blockquote>
+<p>We can no longer marvel at the novel interactions afforded by peer-to-peer technologies, nor perform political theatrics within these networks. We need to lay aside our delusions that decentralisation grants us immunity – any ground ceded to the commons will be met with amplified resistance from those who already own these spaces. […]</p>
+<p><strong>Without cohesive organisation, mobilisation to harden security and privacy and without a sincere commitment from protocol designers to revise their collective assumptions, the push back from incumbent power will leverage each and every socio-technical flaw in each and every network.</strong></p>
+</blockquote>
+          <p><a href="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810/1</link>
+        <pubDate>Mon, 20 Jul 2020 16:43:11 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-810-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/are-we-ready-for-the-threats-to-the-fediverse-and-decentralization-movement/810.rss">Are we ready for the threats to the Fediverse and decentralization movement?</source>
+      </item>
+  </channel>
+</rss>

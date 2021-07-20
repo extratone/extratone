@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Upcoming SocialCG meetings</title>
+    <link>https://socialhub.activitypub.rocks/t/upcoming-socialcg-meetings/1257</link>
+    <description>Given we have built up a backlog of topics to talk about, I&#39;ve made a draft schedule for future SocialCG meetings: https://pad.amy.gy/p/socialcg-meetings
+
+So far the idea is to alternate Fridays 1700 UTC and Saturdays 1500 UTC as no time works for everyone but we&#39;ve had success with those times before.
+
+The topics are flexible - I set up the etherpad so you can make a note if you really want to attend a topic and the time does or doesn&#39;t work for you. Then we can move around if necessary.
+
+We&#39;ll continue to meet in jitsi and take notes in the W3C #social IRC channel.
+
+If there are no major objections to this plan, I&#39;ll generate an ICS file to help people keep track.
+
+Note also the [next meeting](https://socialhub.activitypub.rocks/t/2021-01-09-socialcg-meeting-fep/1246) this Saturday about Fediverse Enhancement Proposals.
+
+And a thousand thank yous to @Sebastian for keeping track of the growing topics list, and pushing us to action!</description>
+    
+    <lastBuildDate>Mon, 04 Jan 2021 13:43:58 +0000</lastBuildDate>
+    <category>SocialCG</category>
+    <atom:link href="https://socialhub.activitypub.rocks/t/upcoming-socialcg-meetings/1257.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Upcoming SocialCG meetings</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://socialhub.activitypub.rocks/t/upcoming-socialcg-meetings/1257/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/upcoming-socialcg-meetings/1257/5</link>
+        <pubDate>Tue, 05 Jan 2021 09:26:26 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1257-5</guid>
+        <source url="https://socialhub.activitypub.rocks/t/upcoming-socialcg-meetings/1257.rss">Upcoming SocialCG meetings</source>
+      </item>
+      <item>
+        <title>Upcoming SocialCG meetings</title>
+        <dc:creator><![CDATA[Sebastian]]></dc:creator>
+        <description><![CDATA[
+            <p>Although rhiaros post is better, there is also a wiki<br>
+</p><aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://socialhub.activitypub.rocks/uploads/default/original/1X/d48129d0948532ab9fabb5b14281b33df26706b3.ico" class="site-icon" width="32" height="32">
+      <a href="https://www.w3.org/wiki/SocialCG" target="_blank" rel="noopener">w3.org</a>
+  </header>
+  <article class="onebox-body">
+    <img src="" class="thumbnail" width="" height="">
+
+<h3><a href="https://www.w3.org/wiki/SocialCG" target="_blank" rel="noopener">SocialCG - W3C Wiki</a></h3>
+
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>addendum:<br>
+Pinned this topic by rhiaro globally for 1 week …</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/upcoming-socialcg-meetings/1257/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/upcoming-socialcg-meetings/1257/4</link>
+        <pubDate>Mon, 04 Jan 2021 13:43:58 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1257-4</guid>
+        <source url="https://socialhub.activitypub.rocks/t/upcoming-socialcg-meetings/1257.rss">Upcoming SocialCG meetings</source>
+      </item>
+      <item>
+        <title>Upcoming SocialCG meetings</title>
+        <dc:creator><![CDATA[rhiaro]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/aschrijver">@aschrijver</a> Thanks for your question! The IRC room can be accessed in your browser at <a href="http://irc.w3.org/?channels=social" rel="noopener nofollow ugc">irc.w3.org/?channels=social</a> We use it to take notes during the meeting, which are then automatically published to w3c servers. We also use it for queuing, because there is a handy bot that can manage that for us. But if you can’t or prefer not to join the IRC, you can fall back on ‘raise hand’ in jitsi to queue. It is easier for the chair if everyone is using the same mechanism, but we manage if it’s not possible.</p>
+<p>The rest of the meeting joining information are published on the announcement for the specific meeting.</p>
+<p>It is preferable to <a href="https://www.w3.org/community/SocialCG/" rel="noopener nofollow ugc">join the socialcg</a> but not required. The main advantage we get from this is upon joining you sign an <a href="https://www.w3.org/community/about/process/cla/" rel="noopener nofollow ugc">IPR agreement</a> through w3c that appropriately licenses any substantive contributions you make to the groups work. (This basically means if the group produces an open standard with your contributions, you/your company can’t later sue anyone who implements it for copyright infringement - it protects everyone involved and ensures the standard is truly open.) Since we are not working directly on any technical specifications as a group at the moment, this is not particularly urgent. It’s also okay for observers to come to meetings and listen. It’s just as soon as anyone has a significant contribution to make to technical that joining becomes important.</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/upcoming-socialcg-meetings/1257/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/upcoming-socialcg-meetings/1257/3</link>
+        <pubDate>Mon, 04 Jan 2021 11:14:41 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1257-3</guid>
+        <source url="https://socialhub.activitypub.rocks/t/upcoming-socialcg-meetings/1257.rss">Upcoming SocialCG meetings</source>
+      </item>
+      <item>
+        <title>Upcoming SocialCG meetings</title>
+        <dc:creator><![CDATA[aschrijver]]></dc:creator>
+        <description><![CDATA[
+            <p>Having never joined before, what are the procedures to follow? Do we have to signup as SocialCG members, and do we need to have a grasp of IRC and operate it besides the Jitsi call?</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/upcoming-socialcg-meetings/1257/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/upcoming-socialcg-meetings/1257/2</link>
+        <pubDate>Mon, 04 Jan 2021 11:04:04 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1257-2</guid>
+        <source url="https://socialhub.activitypub.rocks/t/upcoming-socialcg-meetings/1257.rss">Upcoming SocialCG meetings</source>
+      </item>
+      <item>
+        <title>Upcoming SocialCG meetings</title>
+        <dc:creator><![CDATA[rhiaro]]></dc:creator>
+        <description><![CDATA[
+            <p>Given we have built up a backlog of topics to talk about, I’ve made a draft schedule for future SocialCG meetings: <a href="https://pad.amy.gy/p/socialcg-meetings" rel="noopener nofollow ugc">https://pad.amy.gy/p/socialcg-meetings</a></p>
+<p>So far the idea is to alternate Fridays 1700 UTC and Saturdays 1500 UTC as no time works for everyone but we’ve had success with those times before.</p>
+<p>The topics are flexible - I set up the etherpad so you can make a note if you really want to attend a topic and the time does or doesn’t work for you. Then we can move around if necessary.</p>
+<p>We’ll continue to meet in jitsi and take notes in the W3C <span class="hashtag">#social</span> IRC channel.</p>
+<p>If there are no major objections to this plan, I’ll generate an ICS file to help people keep track.</p>
+<p>Note also the <a href="https://socialhub.activitypub.rocks/t/2021-01-09-socialcg-meeting-fep/1246">next meeting</a> this Saturday about Fediverse Enhancement Proposals.</p>
+<p>And a thousand thank yous to <a class="mention" href="/u/sebastian">@Sebastian</a> for keeping track of the growing topics list, and pushing us to action!</p>
+          <p><a href="https://socialhub.activitypub.rocks/t/upcoming-socialcg-meetings/1257/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://socialhub.activitypub.rocks/t/upcoming-socialcg-meetings/1257/1</link>
+        <pubDate>Mon, 04 Jan 2021 10:57:09 +0000</pubDate>
+        <guid isPermaLink="false">socialhub.activitypub.rocks-post-1257-1</guid>
+        <source url="https://socialhub.activitypub.rocks/t/upcoming-socialcg-meetings/1257.rss">Upcoming SocialCG meetings</source>
+      </item>
+  </channel>
+</rss>

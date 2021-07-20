@@ -1,0 +1,2640 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    
+    
+    <title>Readium and other good intentions – Baldur Bjarnason</title>
+    
+    
+    <meta
+      name="description"
+      content="
+The Readium project is important, interesting, and to be welcomed. But there are issues. (I&#8217;m a sceptical bastard. What else did you expect?)
+
+"
+    />
+    <meta name="image" content="">
+    
+    <meta itemprop="name" content="Readium and other good intentions" />
+    <meta
+      itemprop="description"
+      content="
+The Readium project is important, interesting, and to be welcomed. But there are issues. (I&#8217;m a sceptical bastard. What else did you expect?)
+
+"
+    />
+    <meta itemprop="image" content="">
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Readium and other good intentions" />
+    <meta
+      name="twitter:description"
+      content="
+The Readium project is important, interesting, and to be welcomed. But there are issues. (I&#8217;m a sceptical bastard. What else did you expect?)
+
+"
+    />
+    
+    
+    
+    <meta name="og:title" content="Readium and other good intentions" />
+    <meta
+      name="og:description"
+      content="
+The Readium project is important, interesting, and to be welcomed. But there are issues. (I&#8217;m a sceptical bastard. What else did you expect?)
+
+"
+    />
+    
+    <meta name="og:url" content="https://www.baldurbjarnason.com/notes/readium-and-good-intentions/" />
+    <meta name="og:site_name" content="Baldur Bjarnason" />
+    <meta name="og:type" content="article" />
+    
+    <meta name="article:author" content="https://www.baldurbjarnason.com/" />
+    <meta name="author" content="Baldur Bjarnason" />
+    <meta name="article:tag" content="" />
+    <link href="../../fonts/literata/literata.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="../../styles/main.min.3a98d38583d9a7fb72c3343ba33af9ea82872d943b7705b3fc07a60f39c06415.css" />
+     
+
+    <link href="../../stylesheets/syntax.css" rel="stylesheet" />
+    <link href="../../feed.xml" rel="alternate"
+    type="application/rss+xml" title="All posts for Baldur Bjarnason" /> <link
+    href="../../index.xml" rel="feed" type="application/rss+xml"
+    title="All posts for Baldur Bjarnason" />
+    <link href="https://micro.blog/baldur" rel="me" />
+     
+    
+     
+    
+    
+  </head>
+  <body class="page">
+    <nav class="Top" aria-label="Site navigation">
+      <ul>
+        <li><a href="../../index.html#archive">Writing</a></li>
+        <li><a href="../../work/2021.html">Work</a></li>
+        <li><a href="../../../notes.baldurbjarnason.com/index.html">Notes</a></li>
+        <li><a href="https://github.com/baldurbjarnason">GitHub</a></li>
+        <li><a href="mailto:baldur.bjarnason@gmail.com">Email</a></li>
+      </ul>
+    </nav>
+    <header class="header">
+      <div class="Description">
+        <div class="Title"><a href="../../index.html">Baldur Bjarnason</a></div>
+        <p>
+          <em>
+            …&thinsp;web developer, writer, and consultant based in Hveragerði,
+            Iceland.
+          </em>
+        </p>
+        <p>
+          I write about web dev, interactive media, digital publishing, and
+          product development.
+        </p>
+
+        <p>
+          <a href="../../work/2021.html">I&rsquo;m available for consulting and hire</a>.
+        </p>
+        
+      </div>
+    </header>
+
+    
+
+<main>
+  <div class="FrontBody">
+    <header id="start">
+      <aside class="Date">
+  <time datetime="2012-02-13T00:00:00Z"
+    >13 February 2012</time
+  >
+</aside>
+
+      <h1>Readium and other good intentions</h1>
+      <div class="Tags">
+  
+</div>
+
+    </header>
+    <article class="post">
+  
+ <ul>
+<li><p><em>Update: It&#8217;s clear from updates, both on the <a href="http://readium.org/news/more-on-readium-goals-and-status">Readium website</a> and their <a href="http://idpf.org/forum/topic-524">forum</a>, that the primary goal is to work on WebKit itself and deliver library-based components. I&#8217;ve struck out the passages below that were wrong.</em></p></li>
+<li><p><em>Update 2: I&#8217;ve added <a href="index.html#comments" title="Comments">a comment</a> from Bill McCoy Executive Director – International Digital Publishing Forum (IDPF).</em></p></li>
+</ul>
+
+<p>One of the classic acts of a political party in trouble is to announce a tax cut. Percentages, large dollar amounts, and a whole lot of numbers are chanted by the beleaguered politician as if it were a chant that warded off electoral failure.</p>
+
+<p>These numbers, concrete as they sound, are rarely substantiated by fact because they aren&#8217;t fact. They might be facts in the future, but they aren&#8217;t facts now.</p>
+
+<p>Not yet, at least.</p>
+
+<p>You see, one of the problems with pushing forward with big plans, popular as they may be with the electorate, is that the electorate isn&#8217;t the system. The system has needs and a law won&#8217;t be passed unless it fulfils those needs.</p>
+
+<p>The politician may be honest in his plan to cut that tax but he has to deal with treasury, lobbyists, other politicians, his friends, his enemies, his political allies. For a law to pass you need the support of so many people and so many organisations.</p>
+
+<p>Before you know it, the tax cut only applies to a minority of people, most of whom happen to belong to a demographic with strong influences among the participants in the political process.</p>
+
+<p>It may be cynical to say this, but it&#8217;s very hard to convince participants in an extended process like this not to act merely in their self interest.</p>
+
+<p><a href="http://readium.org/news/readium-open-source-initiative-launched-to-accelerate-adoption-of-epub-3">Readium</a> – a new open source initiative launched by the IDPF with the support of Adobe, Google, Kobo, and B&amp;N – is like that tax cut; a popular, possibly sensible, good intention that will go only as far as its participants let it.</p>
+
+<h3 id="whatisit">What is it?</h3>
+
+<p>The first impression of Readium is that it will be a foundational engineering project that will build the difficult, but essential, building blocks which will then be reused by the project&#8217;s supporters.</p>
+
+<p>This pitch, nice and cuddly as it sounds, is the &#8216;I will cut your taxes by X&#8217; part of the process. It is what saying &#8216;increasing implementation consistency&#8217; and being able to embed Readium components in other apps implies. It may not be what the project is intended for, but it is what the website&#8217;s copy implies.</p>
+
+<p>This is what a lot of people will interpret the project to be, which in turn will turn into our equivalent of the &#8216;this is what this tax cut will mean to you&#8217; speculative nonsense that journalists churn out after a politician&#8217;s announcement. Extrapolating fantasies from vague declarations is what pundits and journos do best and I doubt they will let us down this time.</p>
+
+<del>Because, as far as I can tell, this first impression is wrong.</del>
+
+<p><em>Note: Turns out <a href="http://readium.org/news/more-on-readium-goals-and-status">I&#8217;m the one wrong about this</a>. Apologies.</em></p>
+
+<p><del markdown=1>Readium, judging from the <a href="http://readium.org/readium-project-goals">project&#8217;s goals</a> and what the <a href="http://readium.org/faq">FAQ</a> says and judging from what the proof of concept prototype, is going to be a javascript framework built on top of Webkit.</del></p>
+
+<del>If it isn&#8217;t, they need to say so, right now </del>
+
+<p>I don&#8217;t see, personally, how they can implement a full-featured ePub engine (with all of the musts and shoulds) in javascript.</p>
+
+<p>That isn&#8217;t to say that javascript-based implementations are a bad idea. They aren&#8217;t. They are a very good idea as both Ibis and Monocle prove. But they are always going to face limitations based on their execution context which are going to prevent them from implementing every optional feature of the specification.</p>
+
+<p><del markdown=1>And if a javascript-based implementation isn&#8217;t the plan, then shipping a half-arsed one<a href="index.html#fn:1" id="fnref:1" title="see footnote" class="footnote">1</a> as a proof of concept was a very bad idea.</del></p>
+
+<h3 id="atechnicalprojectneedstobetechnical">A technical project needs to be technical</h3>
+
+<p>As an open source project, Readium lacks a concrete outline of its specific technical goals. Does it intend to be a low-level ePub rendering engine, in effect be a webkit branch that is extended to deal with ePub? If so, say that.</p>
+
+<p>Use concrete terms. &#8216;Building on&#8217; can be interpreted in too many ways for it to be useful technically.</p>
+
+<p>Say something like &#8216;the Readium project aims to deliver a webkit branch that has been extended to deal with the needs and features that are unique to ePub3&#8217;. Outline specific technical problems that need to be tackled such as:</p>
+
+<ul>
+<li>How will a paginated view be implemented natively in webkit&#8217;s rendering engine?</li>
+<li>How will webkit&#8217;s API be extended to deal with media overlays, content switching and epub:trigger (just to mention a few things)?</li>
+<li>How will the webkit library be modified to handle ePub specific security and code execution issues? And don&#8217;t pretend there aren&#8217;t any.</li>
+<li>What components will the project deliver? Say so in exact detail.</li>
+</ul>
+
+<p>You don&#8217;t have to have answers to any of these questions but you do need to list the questions that need answering. This is an open source project after all and you have to tell the participants exactly what questions they need to be tackling as a part of the project.</p>
+
+<p>Wishy washy, vague and woolly marketing statements are useless when it comes to driving participation. Be technical and tell us, exactly, what the project intends to do.</p>
+
+<p>And, no, you haven&#8217;t told us yet. At least I didn&#8217;t find anything resembling concrete technical statements on the website.</p>
+
+<p>Remember, webkit first launched with working code, not a &#8216;proof of concept&#8217;.</p>
+
+<h3 id="assumingthebest">Assuming the best</h3>
+
+<p>If we do take it as a given that they are going to work on implementing proper, rendering engine-level, support for ePub and not just faff around with hacks, then we still run into the participant issue, just like our proverbial tax-cutting politician.</p>
+
+<p>Starting with zero code, since none of the participants seem to be donating parts of their proprietary efforts and the &#8216;proof of concept&#8217; doesn&#8217;t seem to have a single line of engine code, the project will have to navigate the conflicting interests of Adobe, Kobo, B&amp;N, Bluefire, Copia, Google, and others.</p>
+
+<p>And even if it manages to deliver a fully-featured ePub3 rendering engine that doesn&#8217;t mean any of the supporters will use that engine in any of their projects.</p>
+
+<p>Why? <em>Because they aren&#8217;t limited by what they can engineer.</em></p>
+
+<p>At least three of the supporting organisations (Samsung, Google, and Adobe) have shipped extensively modified branches of the webkit engine: Samsung in the excellent browser engine that comes with the bada OS; Google, twice, in the Android browser and in the Chrome browser; Adobe in the AIR desktop runtime.</p>
+
+<p>The limits aren&#8217;t in what they can engineer but in what they can ship. Apple is unlikely to let an ereader app ship on iOS with full javascript support.</p>
+
+<p>Why? Because an ereader app with full javascript support is an <em>app platform</em> as well as a publishing platform and app platforms threaten the <em>very existence</em> of their App Store.</p>
+
+<p>So, the iOS version would require an entirely different codebase and feature set. That is, it wouldn&#8217;t be a full-featured implementation. That&#8217;s two codebases, three if you think the Android version won&#8217;t share anything with the Chrome extension.</p>
+
+<p>Three codebases that share little aren&#8217;t a single project. They are three projects that share management.</p>
+
+<p>The decision to support the entire ePub3 spec is made on the business level and will be governed by the corporations&#8217; existing <a href="http://www.baldurbjarnason.com/valuenetworks/">value network</a>. Some of these decisions will be governed by platform risk, such as with Apple&#8217;s App Store, others by cost. Unless these companies have decided on the business level that full-featured, compatible, standard, ePub3 support is a selling point, that support is unlikely to end up in a shipping product.</p>
+
+<p>We&#8217;ll see what happens. If they contribute a lot of code, then we can be optimistic.</p>
+
+<h3 id="otherissues">Other issues</h3>
+
+<p>Not choosing a reference platform for the reference implementation is a mistake. ePub3 is extensive enough without having to deal with a mess of cross-platform issues. Pick one, like Android, to be the main target. Develop everything with cross-platform support in mind, but having a single target platform does wonders for focusing development. Leave it up to the participants to maintain ports to other platforms. It&#8217;s what kept webkit alive in the early years when it was only used by OS X. Cross-platform support can come when the project has proven its worth.</p>
+
+<p>Implicitly optional features like XMLHTTPRequest are useless if you can&#8217;t deliver basic things like <a href="../epub-widgets-and-windows/index.html#andsothemechanics">full-bleed backgrounds</a>.</p>
+
+<p>Supporting optional CSS modules is pointless if, like Readium supporter B&amp;N, <a href="http://www.mobileread.com/forums/showthread.php?t=165692">you override the ebook designer&#8217;s stylesheet by default</a>.</p>
+
+<p>Implementing full support for ePub3&#8217;s multimedia features is meaningless if implementations can&#8217;t agree on what codecs to support.</p>
+
+<p>No amount of javascript support can address the needs of hypertext in ePub if the reading system doesn&#8217;t support <a href="../epub-widgets-and-windows/index.html#nonlinear">non-linear chapters</a> using <code>linear="no"</code>. Without it a whole spectrum of ebook features, widgets, and UIs are ruled out.</p>
+
+<p>And without <a href="../epub-widgets-and-windows/index.html#divergences">extensive documentation</a>, any rendering engine, no matter how full-featured, is just going to make the lives of ebook developers more difficult, not less.</p>
+
+<p>Shipping a development platform without public documentation like most ebook reading system vendors do is sheer insanity.</p>
+
+<p>Most of these issues aren&#8217;t solved by a reference implementation. Some of them wouldn&#8217;t even be solved if everybody shipped the <em>same</em> implementation. Deciding to overrule the designer&#8217;s stylesheet isn&#8217;t a technical decision but a business decision. An open source engine can&#8217;t force vendors to document the features they support. Just look at the varying levels of documentation on the dizzying number of browsers based on webkit.</p>
+
+<h3 id="dontbeakilljoy">Don&#8217;t be a killjoy</h3>
+
+<p>I know I am being too harsh.</p>
+
+<p>Even if Readium ends up being just a reference implementation it would still be useful.</p>
+
+<p>If it delivers a full-featured ePub rendering engine based on webkit, so much the better. A component like that would enable wondrous things in the marketplace. It&#8217;d do more to enable new, competitive entrants than it would help the project&#8217;s big supporters like B&amp;N, Kobo, or Adobe. But, hey!, how nice of them to help disrupt themselves. Class.</p>
+
+<p>But, let&#8217;s not pretend it solves the ePub fragmentation problem.  You don&#8217;t solve the problem of too many differing implementations by adding a new one. The format fragmentation problem is caused by the <a href="http://www.baldurbjarnason.com/valuenetworks/">value networks</a> that drive product development at the various vendors, not by technical issues or implementation problems.</p>
+
+<p>Support and extensive participation in the Readium project could be a sign of a change in values, but the only true signal is shipping code and published documentation.</p>
+
+<p>This announcement comes with neither.</p>
+
+<h3 id="comments">Comments</h3>
+
+<p><em>Bill McCoy (Executive Director – International Digital Publishing Forum (IDPF)) wrote this here thing:</em></p>
+
+<blockquote>
+  <p>Baldur, I totally agree with you on two key points:</p>
+
+<ul>
+<li><p>business considerations not engineering will be the determinant of a number of decisions about EPUB 3 feature support. For example, whether a given ebook distribution channel permits e.g. remote data access from JS (which impacts control over valuable analytics data and direct communication with readers).</p></li>
+<li><p>eReading app capabilities on iOS is subject to unilateral control by Apple and it would be risky to e.g. count on EPUB 3 JS features that go beyond what iBooks can do being permitted to ship there.</p></li>
+</ul>
+
+<p>But I think you missed the boat on several other points, perhaps misunderstanding what Readium Project is actually doing:</p>
+
+<ul>
+<li><p>for companies who have already made the business decision to robustly support EPUB 3, Readium doesn&#8217;t change a thing, strategically. It&#8217;s just tactics: a way to collaborate to help with the &#8220;when&#8221; (and, perhaps, the &#8220;how much&#8221;) while giving publishers a tool to prep and check EPUB 3 content in the meantime. Concretely, its primary aim is to help ensure we get widespread EPUB 3 support in the market <strong>this year</strong>, with a higher level of initial functionality than would otherwise be the case.</p></li>
+<li><p>iBooks already has quite a lot of EPUB 3 features including significant JavaScript support. And, not every solution has to run on iOS.</p></li>
+<li><p>&#8220;You don’t solve the problem of too many differing implementations by adding a new one&#8221;.  Well, sure, no more than with standards: <a href="http://xkcd.com/927/">http://xkcd.com/927/</a>! But, we have a situation where a dozen folks recently decided to implement their own EPUB 3 engines via WebKit (a la Apple iBooks). I think it&#8217;s a reasonable goal for Readium to coalesce some of these implementations and make the overall result more consistent and capable. And, while Chrome and Safari are quite different, I do think the shared use of WebKit has significantly reduced the problems many of us have personally suffered through of HTML/CSS incompatibility, by creating some sharing and setting a higher bar for other implementations - creating a &#8220;race to the top&#8221;.</p></li>
+<li><p>&#8220;publishers liberation&#8221; is one aspect of this. A fully-featured EPUB 3 implementation can be wrapped in an app shell with PhoneGap, or combined with a publisher skinned browser extension. This can give publishers direct distribution options free of all channel fetters. This option as well as just general availability of robust EPUB 3 support can help set up a &#8220;race to the top&#8221; among eReading apps &amp; content distributors, as we now see with browsers.</p></li>
+<li><p>Your post included some criticisms of the proof-of-concept prototype Chrome browser extension. The entire effort is all of 5 weeks old, and &#8220;proof-of-concept prototype&#8221; is the operative term. And, the suggestion that going public early was a bad idea is contrary both the spirit of open source collaboration and the principles of lean startups.  But it&#8217;s a fair point that we could have communicated the initial status more emphatically and we&#8217;ve tried to address that on the readium.org site.</p></li>
+</ul>
+</blockquote>
+
+<div class="footnotes">
+<hr />
+<ol>
+
+<li id="fn:1"><p>And it is a half-arsed implementation. Slow as molasses on a rather newish laptop, ugly kitsch skeuomorphic UI obviously done without any input from a ebook designer on what they want, and buggy as hell. It&#8217;s an awful first impression.<a href="index.html#fnref:1" title="return to article" class="reversefootnote">&#160;&#8617;</a></p></li>
+
+</ol>
+</div>
+  <footer>
+    <div class="FooterNav">
+      <p class="left">
+        <a href="https://www.baldurbjarnason.com/notes/epub-widgets-and-windows/"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="3"
+            stroke-linecap="butt"
+            stroke-linejoin="round"
+          >
+            <path d="M19 12H6M12 5l-7 7 7 7" />
+          </svg>
+          ePub windows and widgets – a proposal</a
+        >&nbsp;
+      </p>
+      <p class="right">
+        <a href="../explanatory-windows/index.html"
+          >Explanatory windows
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="3"
+            stroke-linecap="butt"
+            stroke-linejoin="round"
+          >
+            <path d="M5 12h13M12 5l7 7-7 7" /></svg></a
+        >
+      </p>
+    </div>
+    <form
+  action="https://app.convertkit.com/forms/1092832/subscriptions"
+  class="seva-form formkit-form"
+  method="post"
+  data-sv-form="1092832"
+  data-uid="17fe25197d"
+  data-format="inline"
+  data-version="5"
+  data-options='{"settings":{"after_subscribe":{"action":"message","redirect_url":"","success_message":"Success! Now check your email to confirm your subscription."},"return_visitor":{"action":"hide","custom_content":""},"recaptcha":{"enabled":false}},"version":5}'
+  min-width="400 500 600 700 800"
+>
+  <div class="formkit-header" data-element="header">
+    <h2>Join my Newsletter</h2>
+  </div>
+  <p>
+    Do you ever wonder why a newly released open source project matters? Why it
+    doesn't? How new or old standards or specifications affect your work? Why
+    the web, tech, and publishing are the way they are?
+  </p>
+  <p>
+    This is an unapologetically political newsletter about tech, the web, and
+    publishing&mdash;with context.
+  </p>
+  <p>
+    Because, to decide whether to use a piece of software, web standard, or open
+    source project, you need to know
+    <em><strong>why</strong></em> it&lsquo;s interesting, not just
+    <em><strong>that</strong></em> it&lsquo;s interesting.
+  </p>
+  <p
+    data-element="fields"
+    data-stacked="false"
+    class="seva-fields formkit-fields"
+  >
+    <label for="email_address" class="visually-hidden"
+      >Your email address</label
+    >
+    <input
+      class="formkit-input"
+      name="email_address"
+      id="email_address"
+      placeholder="example@example.com"
+      required=""
+      type="email"
+    />
+    <button data-element="submit" class="formkit-submit formkit-submit">
+      <span>Subscribe</span>
+    </button>
+  </p>
+  <p class="formkit-guarantee" data-element="guarantee">
+    I won't send you spam. Unsubscribe at any time.
+  </p>
+</form>
+
+  </footer>
+</article>
+
+  </div>
+  <h2 id="archive">Writing</h2>
+<ul class="FrontArchive">
+  
+  <li>
+    <a href="../../2021/ways-of-reading/index.html"
+      >Ways of reading without the influence of community</a
+    >
+    <span class="Date">6 July 2021</span>
+  </li>
+  
+  <li>
+    <a href="../../2021/the-oss-bubble-and-the-blogging-bubble/index.html"
+      >The Open-Source Software bubble that is and the blogging bubble that was</a
+    >
+    <span class="Date">11 May 2021</span>
+  </li>
+  
+  <li>
+    <a href="../../2021/you-are-what-you-do/index.html"
+      >You are what you do, not what you say or write</a
+    >
+    <span class="Date">4 May 2021</span>
+  </li>
+  
+  <li>
+    <a href="../../2021/the-curious-case-of-the-crashing-conic-gradient/index.html"
+      >The Curious Case Of The Crashing Conic Gradient And How I Used A Technique I Learned In The 90s To Fix It</a
+    >
+    <span class="Date">28 April 2021</span>
+  </li>
+  
+  <li>
+    <a href="../../2021/100-things-every-web-developer-should-know/index.html"
+      >136 facts every web dev should know before they burn out and turn to landscape painting or nude modelling</a
+    >
+    <span class="Date">21 April 2021</span>
+  </li>
+  
+  <li>
+    <a href="https://www.baldurbjarnason.com/work/2021/"
+      >I’m available for work</a
+    >
+    <span class="Date">20 April 2021</span>
+  </li>
+  
+  <li>
+    <a href="../../2021/which-kind-of-web-developer-are-you/index.html"
+      >Which type of novelty-seeking web developer are you?</a
+    >
+    <span class="Date">31 March 2021</span>
+  </li>
+  
+  <li>
+    <a href="../../every-day-a-fair-warning/index.html"
+      >Every Day; a Fair Warning (You Should Read These Articles)</a
+    >
+    <span class="Date">3 March 2020</span>
+  </li>
+  
+  <li>
+    <a href="../../2020/weeknote-3/index.html"
+      >Weeknote 3 - Resistance and the dull blade</a
+    >
+    <span class="Date">10 February 2020</span>
+  </li>
+  
+  <li>
+    <a href="../../2020/weeknote-2/index.html"
+      >Weeknote 2 (2020) - News, Bad News, and Star Wars</a
+    >
+    <span class="Date">2 February 2020</span>
+  </li>
+  
+  <li>
+    <a href="../../2020/weeknote-1/index.html"
+      >Weeknote 1 (2020) - Ending the hiatus</a
+    >
+    <span class="Date">26 January 2020</span>
+  </li>
+  
+  <li>
+    <a href="../../the-ed-tech-conundrum/index.html"
+      >The Ed Tech Conundrum</a
+    >
+    <span class="Date">2 January 2020</span>
+  </li>
+  
+  <li>
+    <a href="../../past-present-future-web/index.html"
+      >Thinking about the past, present, and future of web development</a
+    >
+    <span class="Date">1 January 2020</span>
+  </li>
+  
+  <li>
+    <a href="../../the-weakened-web/index.html"
+      >The Web Falls Apart</a
+    >
+    <span class="Date">3 November 2019</span>
+  </li>
+  
+  <li>
+    <a href="../../weeknote-19/index.html"
+      >Weeknote 19 ─ blog redesign and changes at work</a
+    >
+    <span class="Date">27 October 2019</span>
+  </li>
+  
+  <li>
+    <a href="../../life-and-lemonades/index.html"
+      >When life hands you lemonades, sit down and contemplate the meaning of life</a
+    >
+    <span class="Date">10 September 2019</span>
+  </li>
+  
+  <li>
+    <a href="../../weeknote-18/index.html"
+      >Weeknote 18 - Uncertainty and Discomfort</a
+    >
+    <span class="Date">11 August 2019</span>
+  </li>
+  
+  <li>
+    <a href="../../weeknote-17/index.html"
+      >Web Dev: The Red Queen Wire Mommy of Modern Tech</a
+    >
+    <span class="Date">6 August 2019</span>
+  </li>
+  
+  <li>
+    <a href="../../weeknote-16/index.html"
+      >Weeknote 16 – Vacation</a
+    >
+    <span class="Date">29 July 2019</span>
+  </li>
+  
+  <li>
+    <a href="../../weeknote-15/index.html"
+      >Weeknote 15 - Counting Down the Days</a
+    >
+    <span class="Date">1 July 2019</span>
+  </li>
+  
+  <li>
+    <a href="../../weeknote-14/index.html"
+      >Weeknote 14 - Shadows and DOMs</a
+    >
+    <span class="Date">25 June 2019</span>
+  </li>
+  
+  <li>
+    <a href="../../weeknote-13/index.html"
+      >Weeknote 13 - The weight of deadlines</a
+    >
+    <span class="Date">16 June 2019</span>
+  </li>
+  
+  <li>
+    <a href="../../webby-things-1/index.html"
+      >That Web Dev Thing Where Everybody Says Something Clever Involving Toast</a
+    >
+    <span class="Date">15 June 2019</span>
+  </li>
+  
+  <li>
+    <a href="../../swiftui-macos-privacy-web/index.html"
+      >SwiftUI, Privacy, macOS, and the Web</a
+    >
+    <span class="Date">9 June 2019</span>
+  </li>
+  
+  <li>
+    <a href="../../weeknote-12/index.html"
+      >Weeknote 12 - The genres of web media</a
+    >
+    <span class="Date">5 June 2019</span>
+  </li>
+  
+  <li>
+    <a href="../../the-aesthetics-of-concentration/index.html"
+      >The Aesthetics of Concentration</a
+    >
+    <span class="Date">3 June 2019</span>
+  </li>
+  
+  <li>
+    <a href="../../weeknote-11/index.html"
+      >Weeknote 11 - do I have focus?</a
+    >
+    <span class="Date">29 May 2019</span>
+  </li>
+  
+  <li>
+    <a href="../../weeknote-10/index.html"
+      >Weeknote 10 - A clear view and more reading</a
+    >
+    <span class="Date">20 May 2019</span>
+  </li>
+  
+  <li>
+    <a href="../../2019/05/12/weeknote-9-being-contemplative-finishing-a-photo-project/index.html"
+      >Weeknote 9 - Being contemplative, finishing a photo project</a
+    >
+    <span class="Date">12 May 2019</span>
+  </li>
+  
+  <li>
+    <a href="../../2019/05/05/weeknote-8-moving-endgame-and-more-musings-on-colour/index.html"
+      >Weeknote 8 – Moving, Endgame, and more musings on colour</a
+    >
+    <span class="Date">5 May 2019</span>
+  </li>
+  
+  <li>
+    <a href="../../2019/04/29/weeknote-7-story-length-and-that-thing-about-colour/index.html"
+      >Weeknote 7 - Story length and that thing about colour</a
+    >
+    <span class="Date">29 April 2019</span>
+  </li>
+  
+  <li>
+    <a href="../../2019/04/22/weeknote-6-star-trek-rest-and-spring-finally-arrives/index.html"
+      >Weeknote 6 – Star Trek, rest and spring finally arrives</a
+    >
+    <span class="Date">22 April 2019</span>
+  </li>
+  
+  <li>
+    <a href="../../2019/04/14/weeknote-5-stuff-comics-superheroes-and-other-nonsense/index.html"
+      >Weeknote 5 – Stuff, comics, superheroes, and other nonsense</a
+    >
+    <span class="Date">14 April 2019</span>
+  </li>
+  
+  <li>
+    <a href="../../2019/04/07/weeknote-4-tv-week-with-the-expanse/index.html"
+      >Weeknote 4 – TV week with The Expanse</a
+    >
+    <span class="Date">7 April 2019</span>
+  </li>
+  
+  <li>
+    <a href="../../2019/03/31/weeknote-3-mvps-fatigue-and-emotional-crutches/index.html"
+      >Weeknote 3 — MVPs, fatigue, and emotional crutches</a
+    >
+    <span class="Date">31 March 2019</span>
+  </li>
+  
+  <li>
+    <a href="../../2019/03/24/weeknote-2-web-development-mistakes-mary-sues-and-icy-spring/index.html"
+      >Weeknote 2 - Web Development Mistakes, Mary Sues, and Icy Spring</a
+    >
+    <span class="Date">24 March 2019</span>
+  </li>
+  
+  <li>
+    <a href="../../2019/03/18/weeknote-1/index.html"
+      >Weeknote 1</a
+    >
+    <span class="Date">18 March 2019</span>
+  </li>
+  
+  <li>
+    <a href="../../2019/02/12/hitchcock-and-the-author-construct/index.html"
+      >Hitchcock and the author construct</a
+    >
+    <span class="Date">12 February 2019</span>
+  </li>
+  
+  <li>
+    <a href="../../2018/11/03/seams-stitches-and-the-decline-of-the-mac/index.html"
+      >Seams, Stitches, And The Decline Of The Mac</a
+    >
+    <span class="Date">3 November 2018</span>
+  </li>
+  
+  <li>
+    <a href="../../2018/09/03/neither-paper-nor-digital-does-active-reading-well/index.html"
+      >Neither Paper Nor Digital Does Active Reading Well</a
+    >
+    <span class="Date">3 September 2018</span>
+  </li>
+  
+  <li>
+    <a href="../../2018/01/07/leftover-thoughts-from-2017/index.html"
+      >Leftover Thoughts From 2017</a
+    >
+    <span class="Date">7 January 2018</span>
+  </li>
+  
+  <li>
+    <a href="../under-engineering-websites/index.html"
+      >Over-engineering is under-engineering</a
+    >
+    <span class="Date">25 November 2017</span>
+  </li>
+  
+  <li>
+    <a href="../the-process-is-the-thing/index.html"
+      >The process is the thing</a
+    >
+    <span class="Date">23 March 2017</span>
+  </li>
+  
+  <li>
+    <a href="../vonbedon-notes-on-a-project/index.html"
+      >Von Be Don: A few notes on a recent digital publishing project in Iceland</a
+    >
+    <span class="Date">19 February 2017</span>
+  </li>
+  
+  <li>
+    <a href="../why-drm-is-a-problem-for-the-w3c/index.html"
+      >W3C and EME: it isn't about preventing DRM but saving the W3C</a
+    >
+    <span class="Date">14 February 2017</span>
+  </li>
+  
+  <li>
+    <a href="../for-the-want-of-an-indirect-pointer/index.html"
+      >Unpopular opinion: dismissing indirect pointers is a mistake</a
+    >
+    <span class="Date">4 February 2017</span>
+  </li>
+  
+  <li>
+    <a href="../feels-like-poison/index.html"
+      >Anger feels like poison</a
+    >
+    <span class="Date">24 January 2017</span>
+  </li>
+  
+  <li>
+    <a href="../is-js-more-fragile/index.html"
+      >Is JavaScript more fragile?</a
+    >
+    <span class="Date">7 December 2016</span>
+  </li>
+  
+  <li>
+    <a href="../progressive-enhancement-debate/index.html"
+      >Debating Progressive Enhancement</a
+    >
+    <span class="Date">5 December 2016</span>
+  </li>
+  
+  <li>
+    <a href="../the-less-pro-apple/index.html"
+      >The downside of believing in Apple</a
+    >
+    <span class="Date">1 November 2016</span>
+  </li>
+  
+  <li>
+    <a href="../icelandic-politics-primer/index.html"
+      >A short primer on Icelandic politics on the day of the 2016 election</a
+    >
+    <span class="Date">29 October 2016</span>
+  </li>
+  
+  <li>
+    <a href="../web-media-tragedy/index.html"
+      >The Tragedy/Farce of the Open Web according to journalists</a
+    >
+    <span class="Date">18 October 2016</span>
+  </li>
+  
+  <li>
+    <a href="../debating-web-development/index.html"
+      >Notes on debating for the web development community</a
+    >
+    <span class="Date">17 October 2016</span>
+  </li>
+  
+  <li>
+    <a href="../addendum-on-coupling-and-commodification/index.html"
+      >Addendum on loose coupling and the iOS App Store</a
+    >
+    <span class="Date">11 October 2016</span>
+  </li>
+  
+  <li>
+    <a href="../idle-sunday-thoughts-on-modularity/index.html"
+      >Idle thoughts on modularity and loose coupling in digital media</a
+    >
+    <span class="Date">9 October 2016</span>
+  </li>
+  
+  <li>
+    <a href="../when-fear-is-rational/index.html"
+      >When fear is rational</a
+    >
+    <span class="Date">24 June 2016</span>
+  </li>
+  
+  <li>
+    <a href="../once-upon-a-time-there-was-word/index.html"
+      >Once upon a time, I couldn't imagine a better word processor than Word</a
+    >
+    <span class="Date">7 June 2016</span>
+  </li>
+  
+  <li>
+    <a href="../a-thought-to-consider/index.html"
+      >A thought to consider</a
+    >
+    <span class="Date">24 May 2016</span>
+  </li>
+  
+  <li>
+    <a href="../thoughts-on-standardisation/index.html"
+      >A few thoughts on standardisation, W3C, and the IDPF</a
+    >
+    <span class="Date">16 May 2016</span>
+  </li>
+  
+  <li>
+    <a href="../zero-marginal-cost/index.html"
+      >Filling in the gaps – the dynamics of zero marginal cost</a
+    >
+    <span class="Date">21 April 2016</span>
+  </li>
+  
+  <li>
+    <a href="../choosing-a-host/index.html"
+      >Which CMS/blog system would you choose?</a
+    >
+    <span class="Date">12 April 2016</span>
+  </li>
+  
+  <li>
+    <a href="../some-notes-on-security/index.html"
+      >A few simplified points on web and document security</a
+    >
+    <span class="Date">30 March 2016</span>
+  </li>
+  
+  <li>
+    <a href="../judge-the-work/index.html"
+      >Judge the work</a
+    >
+    <span class="Date">21 January 2016</span>
+  </li>
+  
+  <li>
+    <a href="../why-did-paul-graham/index.html"
+      >Why did Paul Graham argue against equality?</a
+    >
+    <span class="Date">13 January 2016</span>
+  </li>
+  
+  <li>
+    <a href="../purpose-joy-capability/index.html"
+      >Purpose, Joy, Capability</a
+    >
+    <span class="Date">4 January 2016</span>
+  </li>
+  
+  <li>
+    <a href="../fix-the-app-store/index.html"
+      >You can't fix the App Store, so here's how you fix it</a
+    >
+    <span class="Date">20 November 2015</span>
+  </li>
+  
+  <li>
+    <a href="../twitter-troubles/index.html"
+      >Why I am worried about Twitter and why you should be too</a
+    >
+    <span class="Date">4 November 2015</span>
+  </li>
+  
+  <li>
+    <a href="../the-crossroads/index.html"
+      >The crossroads or the wilderness</a
+    >
+    <span class="Date">23 October 2015</span>
+  </li>
+  
+  <li>
+    <a href="../people-problems/index.html"
+      >You can't solve people problems with software</a
+    >
+    <span class="Date">28 September 2015</span>
+  </li>
+  
+  <li>
+    <a href="../ad-blockers/index.html"
+      >The discussion about ad blocking is very dumb (but not in the way you think)</a
+    >
+    <span class="Date">18 September 2015</span>
+  </li>
+  
+  <li>
+    <a href="../this-is-a-podcast/index.html"
+      >This is not a book, but it is a podcast</a
+    >
+    <span class="Date">10 September 2015</span>
+  </li>
+  
+  <li>
+    <a href="../a-week-of-this-is-not-a-book/index.html"
+      >A week of 'This is not a book'</a
+    >
+    <span class="Date">7 September 2015</span>
+  </li>
+  
+  <li>
+    <a href="../launching-thisisnotabook/index.html"
+      >Launching "This is not a book" – what it is and why you should be interested</a
+    >
+    <span class="Date">1 September 2015</span>
+  </li>
+  
+  <li>
+    <a href="../my-kingdom-for-a-new-bookstore/index.html"
+      >My kingdom for a new bookstore</a
+    >
+    <span class="Date">28 August 2015</span>
+  </li>
+  
+  <li>
+    <a href="../modern-software-sucks/index.html"
+      >Modern software sucks</a
+    >
+    <span class="Date">26 August 2015</span>
+  </li>
+  
+  <li>
+    <a href="../the-cost-benefit/index.html"
+      >The cost versus benefits of disorganised programming power</a
+    >
+    <span class="Date">25 August 2015</span>
+  </li>
+  
+  <li>
+    <a href="../OSS-and-money/index.html"
+      >Who benefits the most from Open Source Software?</a
+    >
+    <span class="Date">25 August 2015</span>
+  </li>
+  
+  <li>
+    <a href="../sex-apocalypse/index.html"
+      >Sex Apocalypse Later</a
+    >
+    <span class="Date">24 August 2015</span>
+  </li>
+  
+  <li>
+    <a href="../that-amazon-thing/index.html"
+      >Random thoughts on work and that Amazon thing</a
+    >
+    <span class="Date">23 August 2015</span>
+  </li>
+  
+  <li>
+    <a href="../bookmarks-great-caper/index.html"
+      >Bookmarks – UI flaws and other great capers</a
+    >
+    <span class="Date">14 August 2015</span>
+  </li>
+  
+  <li>
+    <a href="../bookmarks-ad-blockers-again/index.html"
+      >Bookmarks – learnable programming</a
+    >
+    <span class="Date">13 August 2015</span>
+  </li>
+  
+  <li>
+    <a href="../bookmarks-midweek-blues/index.html"
+      >Bookmarks – More money for open-source</a
+    >
+    <span class="Date">12 August 2015</span>
+  </li>
+  
+  <li>
+    <a href="../bookmarks-leaving-bosses/index.html"
+      >Bookmarks – Leaving bosses</a
+    >
+    <span class="Date">11 August 2015</span>
+  </li>
+  
+  <li>
+    <a href="../bookmarks-getting-better/index.html"
+      >Bookmarks – Promoting other people's work</a
+    >
+    <span class="Date">10 August 2015</span>
+  </li>
+  
+  <li>
+    <a href="../bookmarks-thingamabob/index.html"
+      >Bookmarks – What Would Kamala Khan Do?</a
+    >
+    <span class="Date">7 August 2015</span>
+  </li>
+  
+  <li>
+    <a href="../trickle-down-golden-goose/index.html"
+      >Bookmarks – Trickle down golden geese</a
+    >
+    <span class="Date">6 August 2015</span>
+  </li>
+  
+  <li>
+    <a href="../hateviews/index.html"
+      >Bookmarks – Hateviews are us</a
+    >
+    <span class="Date">5 August 2015</span>
+  </li>
+  
+  <li>
+    <a href="../bookmarks-milk-it/index.html"
+      >Bookmarks – Milk it</a
+    >
+    <span class="Date">4 August 2015</span>
+  </li>
+  
+  <li>
+    <a href="../iterating-the-web-away/index.html"
+      >Iterating the web away: <br>losing the next generation</a
+    >
+    <span class="Date">4 August 2015</span>
+  </li>
+  
+  <li>
+    <a href="../bookmarks-paying-attention/index.html"
+      >Bookmarks – You haven't been paying attention</a
+    >
+    <span class="Date">3 August 2015</span>
+  </li>
+  
+  <li>
+    <a href="../bookmarks-stop-the-web/index.html"
+      >Bookmarks – It's a note card world, we just live in it</a
+    >
+    <span class="Date">31 July 2015</span>
+  </li>
+  
+  <li>
+    <a href="../bookmarks-sucky-websites/index.html"
+      >Bookmarks – Just call it Smylfeste</a
+    >
+    <span class="Date">30 July 2015</span>
+  </li>
+  
+  <li>
+    <a href="../bookmarks-that-one-is-an-idiot/index.html"
+      >Bookmarks – That one is shaped like an idiot</a
+    >
+    <span class="Date">29 July 2015</span>
+  </li>
+  
+  <li>
+    <a href="../blogger-nostalgia/index.html"
+      >Blogger nostalgia</a
+    >
+    <span class="Date">28 July 2015</span>
+  </li>
+  
+  <li>
+    <a href="../bookmarks-make-it-simpler/index.html"
+      >Bookmarks – Make it simpler</a
+    >
+    <span class="Date">28 July 2015</span>
+  </li>
+  
+  <li>
+    <a href="../bookmarks-javascript-cry/index.html"
+      >Wet streets cause rain and criminal responsibility</a
+    >
+    <span class="Date">27 July 2015</span>
+  </li>
+  
+  <li>
+    <a href="../bookmark-5/index.html"
+      >Tweet bookmarks galore</a
+    >
+    <span class="Date">26 July 2015</span>
+  </li>
+  
+  <li>
+    <a href="../bookmarks-4/index.html"
+      >Random links that catch my fancy, part four of ∞</a
+    >
+    <span class="Date">23 July 2015</span>
+  </li>
+  
+  <li>
+    <a href="../bookmarks-3/index.html"
+      >Random links that catch my fancy, part three of ∞</a
+    >
+    <span class="Date">22 July 2015</span>
+  </li>
+  
+  <li>
+    <a href="../mythic-dimension-of-sexuality/index.html"
+      >Mythic visions of sexuality</a
+    >
+    <span class="Date">21 July 2015</span>
+  </li>
+  
+  <li>
+    <a href="../bookmarks-2/index.html"
+      >Random links that catch my fancy, part two of ∞</a
+    >
+    <span class="Date">21 July 2015</span>
+  </li>
+  
+  <li>
+    <a href="../bookmarks/index.html"
+      >Random links that catch my fancy, part one of ∞</a
+    >
+    <span class="Date">20 July 2015</span>
+  </li>
+  
+  <li>
+    <a href="../modularisation-exercise/index.html"
+      >An exercise for the reader in integration and modularity</a
+    >
+    <span class="Date">17 July 2015</span>
+  </li>
+  
+  <li>
+    <a href="../how-to-read-baldur/index.html"
+      >How to read my nonsense</a
+    >
+    <span class="Date">17 July 2015</span>
+  </li>
+  
+  <li>
+    <a href="../decentralised-or-disorganised/index.html"
+      >Is it distributed or just a disorganised hierarchy?</a
+    >
+    <span class="Date">10 July 2015</span>
+  </li>
+  
+  <li>
+    <a href="../the-robust-web/index.html"
+      >On the vaunted robustness of the web</a
+    >
+    <span class="Date">10 July 2015</span>
+  </li>
+  
+  <li>
+    <a href="../the-rules-have-changed-for-rss/index.html"
+      >The rules of the game have changed for RSS</a
+    >
+    <span class="Date">10 July 2015</span>
+  </li>
+  
+  <li>
+    <a href="../web-app-developer-lament/index.html"
+      >The web app developer's lament</a
+    >
+    <span class="Date">6 July 2015</span>
+  </li>
+  
+  <li>
+    <a href="../paradigm-shift/index.html"
+      >Other people write about digital media</a
+    >
+    <span class="Date">25 June 2015</span>
+  </li>
+  
+  <li>
+    <a href="../media-changes/index.html"
+      >The plural of 'Medium' is clearly 'clusterfuck'</a
+    >
+    <span class="Date">25 June 2015</span>
+  </li>
+  
+  <li>
+    <a href="../burnout/index.html"
+      >Burnout</a
+    >
+    <span class="Date">24 June 2015</span>
+  </li>
+  
+  <li>
+    <a href="../our-working-files/index.html"
+      >The files Steven Pressfield works with</a
+    >
+    <span class="Date">24 June 2015</span>
+  </li>
+  
+  <li>
+    <a href="../ios9-content-blocking/index.html"
+      >iOS 9 content blocking extensions are not a mobile advertising armageddon</a
+    >
+    <span class="Date">14 June 2015</span>
+  </li>
+  
+  <li>
+    <a href="../writing-the-other/index.html"
+      ><em>Writing the Other</em>: <br>a book that's useful to all writers</a
+    >
+    <span class="Date">3 June 2015</span>
+  </li>
+  
+  <li>
+    <a href="../wwdc-predictions/index.html"
+      >Should I make a WWDC prediction? <br>Yes, let's</a
+    >
+    <span class="Date">3 June 2015</span>
+  </li>
+  
+  <li>
+    <a href="../grim-meathook-present-2/index.html"
+      >Grim Meathook Present #2</a
+    >
+    <span class="Date">2 June 2015</span>
+  </li>
+  
+  <li>
+    <a href="../software-quality/index.html"
+      >Other people discuss software quality (spoiler: it sucks)</a
+    >
+    <span class="Date">2 June 2015</span>
+  </li>
+  
+  <li>
+    <a href="../startup-fallacy/index.html"
+      >Other people talk about startups and entrepreneurship</a
+    >
+    <span class="Date">2 June 2015</span>
+  </li>
+  
+  <li>
+    <a href="../quick-thoughts-big-problems/index.html"
+      >A few quick links and thoughts on big web problems</a
+    >
+    <span class="Date">29 May 2015</span>
+  </li>
+  
+  <li>
+    <a href="../femininity-heroism/index.html"
+      >I really want the Supergirl TV show to be fun</a
+    >
+    <span class="Date">25 May 2015</span>
+  </li>
+  
+  <li>
+    <a href="../grim-meathook-present/index.html"
+      >Our Grim Meathook Present</a
+    >
+    <span class="Date">25 May 2015</span>
+  </li>
+  
+  <li>
+    <a href="../new-age-of-html/index.html"
+      >The new age of HTML:<br> the web is being torn apart</a
+    >
+    <span class="Date">20 May 2015</span>
+  </li>
+  
+  <li>
+    <a href="../her-movie-his-name/index.html"
+      >Her movie, his name;<br> Mad Max: Fury Road</a
+    >
+    <span class="Date">19 May 2015</span>
+  </li>
+  
+  <li>
+    <a href="../we-are-a-violent-species/index.html"
+      >We are a violent species</a
+    >
+    <span class="Date">19 May 2015</span>
+  </li>
+  
+  <li>
+    <a href="../toxic-environments/index.html"
+      >Toxic environments: <br> inequality in tech is a symptom of something worse</a
+    >
+    <span class="Date">18 May 2015</span>
+  </li>
+  
+  <li>
+    <a href="../../2015/05/16/where-i-write-about-facebooks-instant-articles/index.html"
+      >Where I write about Facebook's Instant Articles</a
+    >
+    <span class="Date">16 May 2015</span>
+  </li>
+  
+  <li>
+    <a href="../media-websites-vs-facebook/index.html"
+      >Facebook and the media: <br>united, they attack the web</a
+    >
+    <span class="Date">15 May 2015</span>
+  </li>
+  
+  <li>
+    <a href="../decision-cycles/index.html"
+      >Speeding up decision cycles with rules and heuristics</a
+    >
+    <span class="Date">14 May 2015</span>
+  </li>
+  
+  <li>
+    <a href="../a-you-are-here-5/index.html"
+      >You are here #5: <br>UX, design, and CSS as a parasite</a
+    >
+    <span class="Date">14 May 2015</span>
+  </li>
+  
+  <li>
+    <a href="../you-are-here-4/index.html"
+      >You are here #4: <br>an epic journey through app dev and male bodies</a
+    >
+    <span class="Date">13 May 2015</span>
+  </li>
+  
+  <li>
+    <a href="../you-are-here-3/index.html"
+      >You are here #3: <br>the glorious wonders of online reading await you</a
+    >
+    <span class="Date">12 May 2015</span>
+  </li>
+  
+  <li>
+    <a href="../18-39-16/index.html"
+      >2015-05-11-18-39-16</a
+    >
+    <span class="Date">11 May 2015</span>
+  </li>
+  
+  <li>
+    <a href="../you-are-here-2/index.html"
+      >You are here #2: <br>an artisanal curation of reading material</a
+    >
+    <span class="Date">11 May 2015</span>
+  </li>
+  
+  <li>
+    <a href="../you-are-here-1/index.html"
+      >You are here #1: <br>a selection of fine links and tweets for your pleasure</a
+    >
+    <span class="Date">10 May 2015</span>
+  </li>
+  
+  <li>
+    <a href="../00-59-18/index.html"
+      >2015-05-07-00-59-18</a
+    >
+    <span class="Date">7 May 2015</span>
+  </li>
+  
+  <li>
+    <a href="../../2015/05/04/four-publishing-related-thoughts-on-a-friday-afternoon/index.html"
+      >Five publishing-related thoughts on a Friday afternoon</a
+    >
+    <span class="Date">4 May 2015</span>
+  </li>
+  
+  <li>
+    <a href="../../2015/05/04/why-should-people-read-more-books/index.html"
+      >Why should people read more books?</a
+    >
+    <span class="Date">4 May 2015</span>
+  </li>
+  
+  <li>
+    <a href="../../2015/05/04/how-is-taxing-ebooks-as-print-books-supposed-to-work/index.html"
+      >How is taxing ebooks as print books supposed to work?</a
+    >
+    <span class="Date">4 May 2015</span>
+  </li>
+  
+  <li>
+    <a href="../../2015/03/04/kathy-sierras-badass-making-users-awesome-the-book-you-all-should-read/index.html"
+      >Kathy Sierra's Badass: Making Users Awesome – the book you all should read</a
+    >
+    <span class="Date">4 March 2015</span>
+  </li>
+  
+  <li>
+    <a href="../../2015/03/01/idle-sunday-thoughts-about-web-trends/index.html"
+      >Idle Sunday thoughts about web trends</a
+    >
+    <span class="Date">1 March 2015</span>
+  </li>
+  
+  <li>
+    <a href="../../2015/03/01/repetition-only-works-in-fiction/index.html"
+      >Repetition only works in fiction</a
+    >
+    <span class="Date">1 March 2015</span>
+  </li>
+  
+  <li>
+    <a href="../../2015/03/01/the-web-has-covered-the-basicse2808a-e2808athats-why-itll-get-harder-from-now/index.html"
+      >The web has covered the basics — that’s why it’ll get harder from now</a
+    >
+    <span class="Date">1 March 2015</span>
+  </li>
+  
+  <li>
+    <a href="../../2015/01/09/a-draft-of-a-chapter-of-some-thoughts-on-things/index.html"
+      >A draft of a chapter of some thoughts on things.</a
+    >
+    <span class="Date">9 January 2015</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/12/31/taking-stock-of-2013-and-2014/index.html"
+      >Taking stock of 2013 and 2014</a
+    >
+    <span class="Date">31 December 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/12/17/the-weather-of-course/index.html"
+      >The weather, of course</a
+    >
+    <span class="Date">17 December 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/12/03/publishing-business-ideas-are-a-dime-a-dozen/index.html"
+      >Publishing  business ideas are a dime a dozen</a
+    >
+    <span class="Date">3 December 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/11/25/eu-vat-changes-shift-the-digital-landscape/index.html"
+      >EU VAT changes shift the digital landscape</a
+    >
+    <span class="Date">25 November 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/11/25/money-is-a-poor-measure-of-value/index.html"
+      >Money is a poor measure of value</a
+    >
+    <span class="Date">25 November 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/11/13/on-conference/index.html"
+      >On conferences</a
+    >
+    <span class="Date">13 November 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/11/12/crushed-by-multinationals/index.html"
+      >Crushed by multinationals</a
+    >
+    <span class="Date">12 November 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/11/07/software-as-a-strategy-prefabricated-publishers/index.html"
+      >Software as a strategy: prefabricated publishers</a
+    >
+    <span class="Date">7 November 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/11/06/software-as-strategy-in-the-ebook-world/index.html"
+      >Software as strategy in the ebook world</a
+    >
+    <span class="Date">6 November 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/11/05/the-five-types-of-unpublished-books/index.html"
+      >The five types of unpublished books</a
+    >
+    <span class="Date">5 November 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/11/04/four-hundred-words-from-anita-elberses-book-blockbusters/index.html"
+      >Four hundred words from Anita Elberse's book "Blockbusters"</a
+    >
+    <span class="Date">4 November 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/11/04/the-splintered-author/index.html"
+      >The splintered author</a
+    >
+    <span class="Date">4 November 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/11/03/there-is-no-war-between-amazon-and-traditional-publishing/index.html"
+      >There is no war between Amazon and Traditional Publishing</a
+    >
+    <span class="Date">3 November 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/10/10/ebooks-suck-for-learning/index.html"
+      >Ebooks suck for learning</a
+    >
+    <span class="Date">10 October 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/09/09/the-poisoning-of-social-media-a-reading-list/index.html"
+      >The Poisoning of Social Media: A Reading List</a
+    >
+    <span class="Date">9 September 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/08/10/wobbly-amazon/index.html"
+      >Wobbly Amazon</a
+    >
+    <span class="Date">10 August 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/07/24/this-weeks-must-read-post/index.html"
+      >This week's must-read post</a
+    >
+    <span class="Date">24 July 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/07/10/friends-dont-let-their-friends-become-authors/index.html"
+      >Friends don’t let their friends become authors</a
+    >
+    <span class="Date">10 July 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/07/04/both-at-the-same-time/index.html"
+      >Both at the same time</a
+    >
+    <span class="Date">4 July 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/04/15/so-i-had-to-make-an-ebook-cover/index.html"
+      >So I had to make an ebook cover...</a
+    >
+    <span class="Date">15 April 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/03/31/so-long-readmill-and-thanks-for-all-the-fish/index.html"
+      >So long, Readmill, and thanks for all the fish</a
+    >
+    <span class="Date">31 March 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/03/24/what-ebook-production-problems-are-self-publishers-facing/index.html"
+      >What ebook production problems are self-publishers facing?</a
+    >
+    <span class="Date">24 March 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/03/13/many-stories-many-truths/index.html"
+      >Many stories, many truths</a
+    >
+    <span class="Date">13 March 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/02/28/problem-statements-for-digital-publishing-research/index.html"
+      >Problem statements for digital publishing research</a
+    >
+    <span class="Date">28 February 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/02/21/to-do-to-do/index.html"
+      >To do, to do</a
+    >
+    <span class="Date">21 February 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/02/20/ibooks-author-tempts-you-with-bling/index.html"
+      >iBooks Author tempts you with bling</a
+    >
+    <span class="Date">20 February 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/02/19/microsoft-word-is-a-liability/index.html"
+      >Microsoft Word is a liability</a
+    >
+    <span class="Date">19 February 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/02/18/the-print-design-mentality/index.html"
+      >The print design mentality</a
+    >
+    <span class="Date">18 February 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/02/12/book-contracts/index.html"
+      >Book contracts</a
+    >
+    <span class="Date">12 February 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/02/05/intermission-sorting-through-the-banal/index.html"
+      >Intermission: sorting through the banal</a
+    >
+    <span class="Date">5 February 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/01/30/how-to-create-value-with-a-new-thing/index.html"
+      >How to create value with a new thing</a
+    >
+    <span class="Date">30 January 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/01/29/html-is-too-complex/index.html"
+      >HTML is too complex</a
+    >
+    <span class="Date">29 January 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/01/28/the-ebook-as-an-api/index.html"
+      >The ebook as an API</a
+    >
+    <span class="Date">28 January 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/01/27/my-last-word-on-drm/index.html"
+      >My last word on DRM</a
+    >
+    <span class="Date">27 January 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/01/23/except-except-except/index.html"
+      >Except, except, except</a
+    >
+    <span class="Date">23 January 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/01/22/a-thought-exercise/index.html"
+      >A thought exercise</a
+    >
+    <span class="Date">22 January 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/01/21/losing-faith-in-yourself/index.html"
+      >Losing faith in yourself</a
+    >
+    <span class="Date">21 January 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/01/20/changing-your-readership-mix/index.html"
+      >Changing your readership mix</a
+    >
+    <span class="Date">20 January 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/01/18/sex-education-readers-and-futures-what-works-what-doesnt/index.html"
+      >Sex, education, readers, and futures: what works, what doesn't</a
+    >
+    <span class="Date">18 January 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/01/17/the-various-types-of-readers/index.html"
+      >The various types of readers</a
+    >
+    <span class="Date">17 January 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/01/16/the-unevenly-distributed-ebook-future/index.html"
+      >The unevenly distributed ebook future</a
+    >
+    <span class="Date">16 January 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/01/15/sex-violence-and-stilbrot/index.html"
+      >Sex, violence, and stílbrot</a
+    >
+    <span class="Date">15 January 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/01/14/recipe-for-pundit-response-to-hugh-howeys-suggestions/index.html"
+      >Recipe for pundit response to Hugh Howey’s suggestions</a
+    >
+    <span class="Date">14 January 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/01/13/bling-it-up-for-education/index.html"
+      >Bling it up for education</a
+    >
+    <span class="Date">13 January 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/01/09/blogging-has-trained-me-to-assume-youre-stupid/index.html"
+      >Blogging has trained me to assume you’re stupid</a
+    >
+    <span class="Date">9 January 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/01/08/ergodic-literature/index.html"
+      >Ergodic literature</a
+    >
+    <span class="Date">8 January 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/01/07/what-i-thought-i-wanted-versus-what-i-really-wanted/index.html"
+      >What I thought I wanted versus what I really wanted</a
+    >
+    <span class="Date">7 January 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/01/06/the-mistake-of-enhancing-novels/index.html"
+      >The mistake of 'enhancing' novels</a
+    >
+    <span class="Date">6 January 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/01/04/pessimistic-ramblings-and-other-fun-links-week-overview-further-reading/index.html"
+      >Pessimistic ramblings and other fun links (week overview + further reading)</a
+    >
+    <span class="Date">4 January 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/01/03/stumbling-into-publishing/index.html"
+      >Stumbling into publishing</a
+    >
+    <span class="Date">3 January 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/01/02/the-publishing-industrys-new-product-categories/index.html"
+      >The publishing industry's new product categories</a
+    >
+    <span class="Date">2 January 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2014/01/01/the-last-two-knights-and-necromancers-stories/index.html"
+      >The last two Knights and Necromancers stories</a
+    >
+    <span class="Date">1 January 2014</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/12/31/random-loosely-connected-thoughts-on-the-future/index.html"
+      >Random, loosely connected, thoughts on the future</a
+    >
+    <span class="Date">31 December 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/12/29/old-photos-posted-without-context-reykjavik-cats/index.html"
+      >Old photos posted without context: Reykjavík Cats</a
+    >
+    <span class="Date">29 December 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/12/22/old-photos-posted-without-context-sweep-after-use/index.html"
+      >Old photos posted without context: Sweep After Use</a
+    >
+    <span class="Date">22 December 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/12/20/the-checklist-ibooks-image-handling/index.html"
+      >The Checklist: fix iBooks image handling</a
+    >
+    <span class="Date">20 December 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/12/17/great-text-transcends-nothing/index.html"
+      >Great text transcends nothing</a
+    >
+    <span class="Date">17 December 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/10/17/quarantine-all-ebooks/index.html"
+      >Quarantine all ebooks</a
+    >
+    <span class="Date">17 October 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/10/17/the-self-publishers-perspective-of-the-ebook-market/index.html"
+      >The self-publisher's perspective of the ebook market</a
+    >
+    <span class="Date">17 October 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/10/10/light-evening-trauma/index.html"
+      >Light evening trauma</a
+    >
+    <span class="Date">10 October 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/10/02/just-say-no-to-ebook-css-and-js/index.html"
+      >Just say no to ebook CSS and JS</a
+    >
+    <span class="Date">2 October 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/09/17/the-google-wave-heuristic/index.html"
+      >The Google Wave Heuristic</a
+    >
+    <span class="Date">17 September 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/09/12/amazons-biggest-ally-is-apple/index.html"
+      >Amazon's biggest ally is Apple</a
+    >
+    <span class="Date">12 September 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/08/26/readmill-versus-kindle-readmill-is-worth-the-hassle/index.html"
+      >Readmill versus Kindle – Readmill is worth the hassle</a
+    >
+    <span class="Date">26 August 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/08/19/proprietary-ebook-formats-versus-drm/index.html"
+      >Proprietary ebook formats versus DRM</a
+    >
+    <span class="Date">19 August 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/08/16/publishing-has-catered-to-dumb-for-a-long-while/index.html"
+      >Publishing has catered to dumb for a long while</a
+    >
+    <span class="Date">16 August 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/08/14/computers-are-both-too-difficult-and-people-are-computer-illiterate/index.html"
+      >Computers are too difficult and people are computer illiterate</a
+    >
+    <span class="Date">14 August 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/08/12/why-disruption-goes-unchecked/index.html"
+      >Why disruption goes unchecked</a
+    >
+    <span class="Date">12 August 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/08/09/make-ebooks-worth-it/index.html"
+      >Make ebooks worth it</a
+    >
+    <span class="Date">9 August 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/08/08/ebooks-and-cognitive-mapping/index.html"
+      >Ebooks and cognitive mapping</a
+    >
+    <span class="Date">8 August 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/08/07/ebook-silos-update/index.html"
+      >Ebook silos, update</a
+    >
+    <span class="Date">7 August 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/08/06/ebook-silos-and-missed-opportunities/index.html"
+      >Ebook silos and missed opportunities</a
+    >
+    <span class="Date">6 August 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/08/05/technology-is-not-inherently-good/index.html"
+      >Technology is not inherently good</a
+    >
+    <span class="Date">5 August 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/07/29/administrative-note-on-baldurbjarnason-com-and-feeds/index.html"
+      >Administrative note on baldurbjarnason.com and feeds</a
+    >
+    <span class="Date">29 July 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/07/29/posted-without-comment/index.html"
+      >Posted without comment</a
+    >
+    <span class="Date">29 July 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/07/24/the-inefficiencies-of-joy/index.html"
+      >The inefficiencies of joy</a
+    >
+    <span class="Date">24 July 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/07/23/winner-takes-all-versus-the-matthew-effect/index.html"
+      >Winner takes all versus the Matthew effect</a
+    >
+    <span class="Date">23 July 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/07/22/what-you-people-read-on-my-websites/index.html"
+      >What you people read (on my websites)</a
+    >
+    <span class="Date">22 July 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/07/19/tolerating-the-heat-noticing-the-water/index.html"
+      >Tolerating the heat, noticing the water</a
+    >
+    <span class="Date">19 July 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/07/18/if-the-kindle-fails-so-will-ebooks/index.html"
+      >If the Kindle fails so will ebooks</a
+    >
+    <span class="Date">18 July 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/07/16/followup-to-this-ebook-is-a-lemon/index.html"
+      >Followup to 'this ebook is a lemon'</a
+    >
+    <span class="Date">16 July 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/07/12/this-ebook-is-a-lemon/index.html"
+      >This ebook is a lemon</a
+    >
+    <span class="Date">12 July 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/07/10/caught-between-madmen-and-mercenaries/index.html"
+      >Caught between madmen and mercenaries</a
+    >
+    <span class="Date">10 July 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/07/03/major-update-to-studio-tendras-oz-project/index.html"
+      >Major update to Studio Tendra's Oz project</a
+    >
+    <span class="Date">3 July 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/07/01/what-are-self-publishings-biggest-pain-points/index.html"
+      >What are self-publishing's biggest pain points?</a
+    >
+    <span class="Date">1 July 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/07/01/intellectual-terrain/index.html"
+      >Intellectual terrain</a
+    >
+    <span class="Date">1 July 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/06/26/good-books-dont-win/index.html"
+      >Good books don't win</a
+    >
+    <span class="Date">26 June 2013</span>
+  </li>
+  
+  <li>
+    <a href="../why-does-it-matter/index.html"
+      >Why does it matter?</a
+    >
+    <span class="Date">10 May 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/05/07/the-oz-reading-club-books-two-and-three/index.html"
+      >The OZ Reading Club: Books three and four</a
+    >
+    <span class="Date">7 May 2013</span>
+  </li>
+  
+  <li>
+    <a href="../the-ebook-innovation/index.html"
+      >Which kind of innovation?</a
+    >
+    <span class="Date">3 May 2013</span>
+  </li>
+  
+  <li>
+    <a href="../books-and-print/index.html"
+      >Books and Print Showcase</a
+    >
+    <span class="Date">2 May 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/04/30/peasants/index.html"
+      >Peasants</a
+    >
+    <span class="Date">30 April 2013</span>
+  </li>
+  
+  <li>
+    <a href="../for-the-love/index.html"
+      >For the love</a
+    >
+    <span class="Date">14 April 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/04/05/the-idiocies-of-young-men/index.html"
+      >The idiocies of young men</a
+    >
+    <span class="Date">5 April 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/04/02/studio-tendras-grand-and-marvelous-oz-reading-club/index.html"
+      >Studio Tendra's grand and marvellous Oz Reading Club</a
+    >
+    <span class="Date">2 April 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/03/29/icelands-crowd-sourced-constitution-is-dead/index.html"
+      >Iceland’s ‘crowd-sourced’ constitution is dead</a
+    >
+    <span class="Date">29 March 2013</span>
+  </li>
+  
+  <li>
+    <a href="../the-bn-fallacy/index.html"
+      >The B&amp;N fallacy</a
+    >
+    <span class="Date">27 February 2013</span>
+  </li>
+  
+  <li>
+    <a href="https://www.baldurbjarnason.com/notes/hire-me/"
+      >Hire me!</a
+    >
+    <span class="Date">19 February 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/02/15/a-question-only-you-can-answer/index.html"
+      >A question only you can answer</a
+    >
+    <span class="Date">15 February 2013</span>
+  </li>
+  
+  <li>
+    <a href="../respect-the-reader/index.html"
+      >Respect the reader</a
+    >
+    <span class="Date">6 February 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/02/05/33-observations-on-the-year-2012/index.html"
+      >33 observations on the year 2012</a
+    >
+    <span class="Date">5 February 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/02/04/knights-and-necromancers-new-books-and-megapacks/index.html"
+      >Knights and Necromancers: new books and megapacks!</a
+    >
+    <span class="Date">4 February 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2013/01/02/the-falcons-shriek/index.html"
+      >The falcon's shriek</a
+    >
+    <span class="Date">2 January 2013</span>
+  </li>
+  
+  <li>
+    <a href="../../2012/12/29/what-is-actually-going-on-in-iceland/index.html"
+      >What is actually going on in Iceland</a
+    >
+    <span class="Date">29 December 2012</span>
+  </li>
+  
+  <li>
+    <a href="../../2012/12/25/merry-christmas/index.html"
+      >Merry Christmas!</a
+    >
+    <span class="Date">25 December 2012</span>
+  </li>
+  
+  <li>
+    <a href="../tag-soup/index.html"
+      >Tag soup is history</a
+    >
+    <span class="Date">21 December 2012</span>
+  </li>
+  
+  <li>
+    <a href="https://www.baldurbjarnason.com/notes/schlock/"
+      >Schlock</a
+    >
+    <span class="Date">15 December 2012</span>
+  </li>
+  
+  <li>
+    <a href="../../2012/12/05/strange-definitions-of-nice/index.html"
+      >Strange definitions of 'nice'</a
+    >
+    <span class="Date">5 December 2012</span>
+  </li>
+  
+  <li>
+    <a href="../../2012/12/04/books-of-christmas-past/index.html"
+      >Books of Christmas Past</a
+    >
+    <span class="Date">4 December 2012</span>
+  </li>
+  
+  <li>
+    <a href="../ids-in-css/index.html"
+      >Using IDs in CSS</a
+    >
+    <span class="Date">26 November 2012</span>
+  </li>
+  
+  <li>
+    <a href="../../2012/11/22/design-highlights-from-the-icelandic-book-season/index.html"
+      >Design highlights from the Icelandic book season</a
+    >
+    <span class="Date">22 November 2012</span>
+  </li>
+  
+  <li>
+    <a href="../../2012/11/19/news-updates-and-the-icelandic-book-market/index.html"
+      >News, updates, and the Icelandic book market</a
+    >
+    <span class="Date">19 November 2012</span>
+  </li>
+  
+  <li>
+    <a href="https://www.baldurbjarnason.com/notes/standardisation/"
+      >A response, of sorts</a
+    >
+    <span class="Date">15 November 2012</span>
+  </li>
+  
+  <li>
+    <a href="../../2012/11/08/high-tide-and-a-room-of-your-own/index.html"
+      >High tide and a room of your own</a
+    >
+    <span class="Date">8 November 2012</span>
+  </li>
+  
+  <li>
+    <a href="../../2012/11/06/knights-and-necromancers-2-has-been-released/index.html"
+      >Knights and Necromancers 2 has been released</a
+    >
+    <span class="Date">6 November 2012</span>
+  </li>
+  
+  <li>
+    <a href="../../2012/10/30/the-comment-fiction-challenge-post-mortem/index.html"
+      >The comment-fiction challenge post-mortem</a
+    >
+    <span class="Date">30 October 2012</span>
+  </li>
+  
+  <li>
+    <a href="../../2012/10/29/fantasy-collapse-and-a-sense-of-history/index.html"
+      >Fantasy, Collapse, and a sense of history</a
+    >
+    <span class="Date">29 October 2012</span>
+  </li>
+  
+  <li>
+    <a href="../../2012/10/26/two-questions-on-putting-books-on-the-web/index.html"
+      >Two questions on putting books on the web</a
+    >
+    <span class="Date">26 October 2012</span>
+  </li>
+  
+  <li>
+    <a href="https://www.baldurbjarnason.com/notes/ibooks-30/"
+      >iBooks 3.0</a
+    >
+    <span class="Date">25 October 2012</span>
+  </li>
+  
+  <li>
+    <a href="../../2012/10/22/perceptions-of-society/index.html"
+      >Perceptions of society</a
+    >
+    <span class="Date">22 October 2012</span>
+  </li>
+  
+  <li>
+    <a href="../../2012/10/19/what-ive-been-up-to/index.html"
+      >What I've been up to</a
+    >
+    <span class="Date">19 October 2012</span>
+  </li>
+  
+  <li>
+    <a href="../../2012/10/01/the-readmill-comment-fiction-challenge/index.html"
+      >The Readmill comment fiction challenge</a
+    >
+    <span class="Date">1 October 2012</span>
+  </li>
+  
+  <li>
+    <a href="https://www.baldurbjarnason.com/notes/is-it-safe/"
+      >Is it safe?</a
+    >
+    <span class="Date">27 September 2012</span>
+  </li>
+  
+  <li>
+    <a href="../the-time-work-takes/index.html"
+      >The time work takes</a
+    >
+    <span class="Date">24 September 2012</span>
+  </li>
+  
+  <li>
+    <a href="../../2012/09/21/i-need-your-help/index.html"
+      >I need your help</a
+    >
+    <span class="Date">21 September 2012</span>
+  </li>
+  
+  <li>
+    <a href="../../2012/09/19/designing-the-covers/index.html"
+      >Designing the covers</a
+    >
+    <span class="Date">19 September 2012</span>
+  </li>
+  
+  <li>
+    <a href="../../2012/09/19/free-kindle-version/index.html"
+      >Free Kindle version</a
+    >
+    <span class="Date">19 September 2012</span>
+  </li>
+  
+  <li>
+    <a href="../../2012/09/17/what-is-this/index.html"
+      >What is this?</a
+    >
+    <span class="Date">17 September 2012</span>
+  </li>
+  
+  <li>
+    <a href="../the-stillborn-creature/index.html"
+      >The stillborn creature</a
+    >
+    <span class="Date">1 August 2012</span>
+  </li>
+  
+  <li>
+    <a href="https://www.baldurbjarnason.com/notes/epub-javascript-security/"
+      >EPUB javascript security</a
+    >
+    <span class="Date">27 July 2012</span>
+  </li>
+  
+  <li>
+    <a href="https://www.baldurbjarnason.com/notes/i-be-writing/"
+      >I be writing</a
+    >
+    <span class="Date">21 July 2012</span>
+  </li>
+  
+  <li>
+    <a href="https://www.baldurbjarnason.com/notes/farce/"
+      >Farce</a
+    >
+    <span class="Date">16 July 2012</span>
+  </li>
+  
+  <li>
+    <a href="https://www.baldurbjarnason.com/notes/bad-writing/"
+      >Bad writing</a
+    >
+    <span class="Date">19 June 2012</span>
+  </li>
+  
+  <li>
+    <a href="../points-on-drm/index.html"
+      >A few random points on DRM</a
+    >
+    <span class="Date">7 June 2012</span>
+  </li>
+  
+  <li>
+    <a href="../web-and-ebooks/index.html"
+      >The web and ebooks have little in common</a
+    >
+    <span class="Date">7 May 2012</span>
+  </li>
+  
+  <li>
+    <a href="https://www.baldurbjarnason.com/notes/end-of-ebook-dev/"
+      >The end of ebook development</a
+    >
+    <span class="Date">26 April 2012</span>
+  </li>
+  
+  <li>
+    <a href="../aftermath/index.html"
+      >Aftermath – notes on the Amazon post</a
+    >
+    <span class="Date">20 April 2012</span>
+  </li>
+  
+  <li>
+    <a href="https://www.baldurbjarnason.com/notes/today-is-not-tomorrow/"
+      >Today is not tomorrow (or, how to beat Amazon)</a
+    >
+    <span class="Date">15 April 2012</span>
+  </li>
+  
+  <li>
+    <a href="../bits-and-bobs/index.html"
+      >Bits, bobs, and anecdata</a
+    >
+    <span class="Date">3 April 2012</span>
+  </li>
+  
+  <li>
+    <a href="https://www.baldurbjarnason.com/notes/lessons-in-interactivity/"
+      >Lessons in interactivity</a
+    >
+    <span class="Date">29 March 2012</span>
+  </li>
+  
+  <li>
+    <a href="../hierarchies-of-ebook-design/index.html"
+      >Hierarchies of ebook design</a
+    >
+    <span class="Date">20 March 2012</span>
+  </li>
+  
+  <li>
+    <a href="https://www.baldurbjarnason.com/notes/treat-ebook-developers-as-developers/"
+      >It's time to treat ebook developers as developers</a
+    >
+    <span class="Date">12 March 2012</span>
+  </li>
+  
+  <li>
+    <a href="../code-does-not-change-minds/index.html"
+      >Code doesn't change minds</a
+    >
+    <span class="Date">7 March 2012</span>
+  </li>
+  
+  <li>
+    <a href="https://www.baldurbjarnason.com/notes/amazon-wins/"
+      >Game over, Amazon wins</a
+    >
+    <span class="Date">3 March 2012</span>
+  </li>
+  
+  <li>
+    <a href="../idpf-css-pgt/index.html"
+      >On CSS Page Templates</a
+    >
+    <span class="Date">2 March 2012</span>
+  </li>
+  
+  <li>
+    <a href="https://www.baldurbjarnason.com/notes/javascript-in-ebooks/"
+      >Javascript in ebooks</a
+    >
+    <span class="Date">29 February 2012</span>
+  </li>
+  
+  <li>
+    <a href="../explanatory-windows/index.html"
+      >Explanatory windows</a
+    >
+    <span class="Date">20 February 2012</span>
+  </li>
+  
+  <li>
+    <a href="https://www.baldurbjarnason.com/notes/readium-and-good-intentions/"
+      >Readium and other good intentions</a
+    >
+    <span class="Date">13 February 2012</span>
+  </li>
+  
+  <li>
+    <a href="https://www.baldurbjarnason.com/notes/epub-widgets-and-windows/"
+      >ePub windows and widgets – a proposal</a
+    >
+    <span class="Date">10 February 2012</span>
+  </li>
+  
+  <li>
+    <a href="../ebook-widget-semantics/index.html"
+      >The semantics of ebook widgets</a
+    >
+    <span class="Date">4 February 2012</span>
+  </li>
+  
+  <li>
+    <a href="https://www.baldurbjarnason.com/notes/widgets-javascript/"
+      >iBooks widgets – to javascript or not to javascript</a
+    >
+    <span class="Date">1 February 2012</span>
+  </li>
+  
+  <li>
+    <a href="../what-do-we-want-from-the-kindle/index.html"
+      >What do we want from the Kindle platform?</a
+    >
+    <span class="Date">1 February 2012</span>
+  </li>
+  
+  <li>
+    <a href="https://www.baldurbjarnason.com/notes/disruptive-crap/"
+      >Disruptive crap</a
+    >
+    <span class="Date">27 January 2012</span>
+  </li>
+  
+  <li>
+    <a href="../elsewhere/index.html"
+      >Me, elsewhere</a
+    >
+    <span class="Date">26 January 2012</span>
+  </li>
+  
+  <li>
+    <a href="https://www.baldurbjarnason.com/notes/the-pros-and-cons-of-iBooks-2/"
+      >The pros and cons of the iBooks 2.0 textbook format</a
+    >
+    <span class="Date">21 January 2012</span>
+  </li>
+  
+  <li>
+    <a href="https://www.baldurbjarnason.com/notes/the-ibooks-builtin-widgets/"
+      >The iBooks 2.0 built-in widgets</a
+    >
+    <span class="Date">20 January 2012</span>
+  </li>
+  
+  <li>
+    <a href="https://www.baldurbjarnason.com/notes/the-ibooks-textbook-format/"
+      >The iBooks 2.0 textbook format</a
+    >
+    <span class="Date">19 January 2012</span>
+  </li>
+  
+  <li>
+    <a href="https://www.baldurbjarnason.com/notes/the-publishing-animal/"
+      >The publishing animal</a
+    >
+    <span class="Date">17 January 2012</span>
+  </li>
+  
+  <li>
+    <a href="../A-day-of-innovation-on-the-future-of-the-book/index.html"
+      >A day of innovation on the future of the book</a
+    >
+    <span class="Date">8 December 2011</span>
+  </li>
+  
+  <li>
+    <a href="https://www.baldurbjarnason.com/notes/what-a-publisher-does/"
+      >What a publisher does</a
+    >
+    <span class="Date">30 November 2011</span>
+  </li>
+  
+  <li>
+    <a href="../Design-Pseudoscience/index.html"
+      >Design pseudoscience</a
+    >
+    <span class="Date">8 November 2011</span>
+  </li>
+  
+  <li>
+    <a href="../a-tale-of-three-blog-posts/index.html"
+      >A tale of three blog posts</a
+    >
+    <span class="Date">28 October 2011</span>
+  </li>
+  
+  <li>
+    <a href="https://www.baldurbjarnason.com/notes/css-and-ebook-design/"
+      >CSS and ebook design</a
+    >
+    <span class="Date">24 October 2011</span>
+  </li>
+  
+  <li>
+    <a href="../the-loss-of-ambient-intimacy/index.html"
+      >The loss of ambient intimacy</a
+    >
+    <span class="Date">15 September 2011</span>
+  </li>
+  
+  <li>
+    <a href="../friday-links-and-reading/index.html"
+      >Friday links and reading</a
+    >
+    <span class="Date">26 August 2011</span>
+  </li>
+  
+  <li>
+    <a href="https://www.baldurbjarnason.com/notes/convert-or-engage/"
+      >Convert or engage</a
+    >
+    <span class="Date">4 August 2011</span>
+  </li>
+  
+  <li>
+    <a href="../CSS3-hyphens/index.html"
+      >CSS3 Hyphens</a
+    >
+    <span class="Date">30 July 2011</span>
+  </li>
+  
+  <li>
+    <a href="../just-you-and-the-megacorporation/index.html"
+      >Just you &amp; Google</a
+    >
+    <span class="Date">29 July 2011</span>
+  </li>
+  
+  <li>
+    <a href="../knowledge-is-not-adoption/index.html"
+      >Knowledge is not adoption</a
+    >
+    <span class="Date">24 July 2011</span>
+  </li>
+  
+  <li>
+    <a href="../HTML5-history-api/index.html"
+      >HTML5 history API</a
+    >
+    <span class="Date">23 July 2011</span>
+  </li>
+  
+  <li>
+    <a href="../social-in-the-mind/index.html"
+      >Your friends, in boxes</a
+    >
+    <span class="Date">17 July 2011</span>
+  </li>
+  
+  <li>
+    <a href="../localstorage-and-messaging/index.html"
+      >Localstorage &amp; messaging in ePub</a
+    >
+    <span class="Date">27 January 2011</span>
+  </li>
+  
+  <li>
+    <a href="../javascript-in-epub/index.html"
+      >Javascript in epub</a
+    >
+    <span class="Date">26 January 2011</span>
+  </li>
+  
+  <li>
+    <a href="../an-epub-experiment/index.html"
+      >An epub experiment</a
+    >
+    <span class="Date">25 January 2011</span>
+  </li>
+  
+  <li>
+    <a href="../what-is-an-ebook/index.html"
+      >What is an ebook?</a
+    >
+    <span class="Date">21 December 2010</span>
+  </li>
+  
+  <li>
+    <a href="https://www.baldurbjarnason.com/notes/hypotheses-and-testing/"
+      >Hypotheses and testing</a
+    >
+    <span class="Date">25 October 2010</span>
+  </li>
+  
+  <li>
+    <a href="https://www.baldurbjarnason.com/notes/identifying-publishing-inn/"
+      >Identifying publishing innovators</a
+    >
+    <span class="Date">7 October 2010</span>
+  </li>
+  
+  <li>
+    <a href="https://www.baldurbjarnason.com/notes/on-quality-in-publishing/"
+      >On quality in publishing</a
+    >
+    <span class="Date">7 October 2010</span>
+  </li>
+  
+  <li>
+    <a href="../An-interesting-discussion/index.html"
+      >An interesting discussion</a
+    >
+    <span class="Date">28 June 2010</span>
+  </li>
+  
+</ul>
+
+</main>
+
+    
+    
+    <div class="Bottom"></div>
+  </body>
+</html>
