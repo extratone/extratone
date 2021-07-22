@@ -1,0 +1,628 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>David Blue Interviewed By Null</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="9dbcf237-2c38-48c2-9228-97b84ddf8cab" class="page serif"><header><div class="page-header-icon undefined"><img class="icon" src="David%20Blue%20Interviewed%20By%20Null%209dbcf2372c3848c2922897b84ddf8cab/icons8_deniedcolor.ico"/></div><h1 class="page-title">David Blue Interviewed By Null</h1></header><div class="page-body"><figure id="f1563eb6-3f91-495a-9430-fde99d0c8ca6"><div class="source"><a href="David%20Blue%20Interviewed%20By%20Null%209dbcf2372c3848c2922897b84ddf8cab/Null_Interview_Voice_Notes.mp3">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f874fd49-c1ec-49d2-bca8-b07ce80174b9/Null_Interview_Voice_Notes.mp3</a></div></figure><ul id="496933d1-178f-45a1-98fa-c0dd98520ef5" class="toggle"><li><details open=""><summary><span style="border-bottom:0.05em solid"><strong>Transcript of the above voice notes file</strong></span></summary><p id="b883a2fe-dccf-4532-9004-2e6ef3188abe" class="block-color-brown">Um, I had actually a bit of success doing serious content before drywall. I had a tech YouTube channel that had but a few views on a few things. I mean really, just bad unboxings and bad reviews from a 13 year old. I even had a gun review actually on my biggest channel, which also has my flying stuff.</p><p id="492765d0-3480-40c3-9595-c9594fd62e11" class="block-color-brown">And that Channel had almost 100,000 views. I think when I took it down, but drywall in terms of learning experiences when you&#x27;re when you&#x27;re just producing content in so many different forms and you&#x27;re constantly doing that, you tend to hone skills in the process as a result of doing this stuff for so long I.</p><p id="e1256ee2-e16e-4a33-b6b7-48cff17cbac7" class="block-color-brown">Have quite a bit of experience with video, audio, digital audio workstations. To a certain extent, I just haven&#x27;t an understanding of audio and video. An editing of course, both those editing, recording, even music theory actually to it&#x27;s a certain extent, I think I inadvertently.</p><p id="b20b286b-6c40-4997-82d7-5c03f7c24a91" class="block-color-brown">Through drywall.</p><p id="32426b1d-bb90-405d-bbe9-46affe812643" class="block-color-brown">Kind of I don&#x27;t know. I&#x27;m not gonna say that I&#x27;m actually like a musician or anything really, but I kind of honed a set of skills and it even reflects into the piano stuff that I do. Which is the most serious.</p><p id="4c77aa8f-99c5-4528-8e66-1f38e3c7e55d" class="block-color-brown">Music that I release.</p><p id="22df5c0b-77a7-481b-abff-4081b19e5493" class="block-color-brown">But it&#x27;s also worth noting on the previous question.</p><p id="1e5c0879-628c-460a-a078-f3e439db9f50" class="block-color-brown">That in that dropping all standards I tried it to completely remove any filter that I had or any criticism of my own work an an to just release things. Just recorded them and release them immediately without any standards an I think.</p><p id="acd3182c-a02b-4c33-9eb4-5afd3967779a" class="block-color-brown">It might have partially been an insecurity &#x27;cause I looked back on a lot of the content that I had produced and really tried on in childhood. And of course it wasn&#x27;t very good. And that was just made me cringe so much that I was just like, well, what if we just make stuff that that is not trying and an it&#x27;s obvious that you know we&#x27;re not trying and that kind of removes me. Exempts me from criticism from myself, of course, and from.</p><p id="2fca7c19-9cdf-4edf-a5e8-7542db11c396" class="block-color-brown">Anyone else and that nonsensical nature is really just. It&#x27;s like a weapon of confusion, really.</p><p id="6b5eb36b-7985-4ad9-8eed-b0fefde8cde1" class="block-color-brown">It&#x27;s using confusion as a.</p><p id="76891f6a-7feb-42f4-9882-9d4964bd85ac" class="block-color-brown">As a weapon. Not that I have that many people judging my content necessarily other than me.</p><p id="c71ee763-05d8-4cf2-a457-4783421641b7" class="block-color-brown">But</p><p id="bb6ff517-6a61-49ce-b7c4-2103e7a12d89" class="block-color-brown">Drywall continues.</p><p id="9aacdc25-5601-4f08-8e2a-4a6c71121f93" class="block-color-brown">To its function is basically a United Banner.</p><p id="b7ced24f-6781-482e-976f-1811ae17df77" class="block-color-brown">Um, other things that I continue to produce continue to produce tricast, obviously.</p><p id="a465b944-bfe7-43cf-849d-deb537a1a1f7" class="block-color-brown">Had a commitment to that episode 36 what we just finished, and that&#x27;s probably the longest that I&#x27;ve done anything regularly, ever. Probably except for the original vlog series, where every day I would just record my high school lunch table and.</p><p id="edb0cac6-dec4-4d1c-95b2-8d1dd7d2f5fe" class="block-color-brown">But</p><p id="92565fcb-1fd5-42c1-ae8c-da00b3f62bb8" class="block-color-brown">Yeah, drywall doesn&#x27;t, it&#x27;s not.</p><p id="14f12dfb-3fd9-4f37-8f97-fce8bbb3130d" class="block-color-brown">About success, necessarily? Um, I&#x27;ve always had the mentality that you know I, or at least when I grew up when I grew out of that, everything is art stage. I kind of just accepted that I was never really going to have much of an audience. There&#x27;s just no reason for me to have an audience.</p><p id="6b758c6a-1b0e-435a-87fa-198fbb6bb026" class="block-color-brown">And that&#x27;s really because I think that my most unique value, or the one that has the potential to really give me places I guess, comes can only come from when I sort of let the filter down and it takes a lot of repetition. But I will say insightful things after a while. It&#x27;s if you watched hockey, you notice that they most of all kiss me saying the same thing over and over again, but then.</p><p id="77d10b86-b10a-4970-a9d9-47aaf4d9992c" class="block-color-brown">After doing that thought process come across something that&#x27;s actually be worthwhile, so I guess that&#x27;s really the definition of the expression hit or miss.</p></details></li></ul><hr id="7deb5d1f-3419-4296-85d4-36210cc61396"/><p id="b6d9276d-2398-4800-b591-67f70a5dc627" class=""><strong>PREFACE:</strong> In this interview, I will speak frankly and honestly about myself. Restraint for the sake of appearing less admiring of myself is a waste of time in a place like this. Have no fear, I regard myself no higher than most healthy people regard themselves.<div class="indented"><p id="85956213-4c08-46a7-8f5b-d210b272cf66" class="block-color-blue_background"><strong>What were you first plans for Drywall? And how did it expand to what it is today?</strong></p></div></p><p id="cc1228e0-3ece-42cd-9c6c-e737d292e877" class="">Drywall was, ultimately, I think, my extremely strange way of dealing with adolescence, identity, post-religion, nihilism, artistic standards, and academic pressure.</p><p id="ff4491ac-40db-4bf0-8628-cc4de2efdfb4" class="">After a young childhood full of an obsession with creating content (video, photo, audio, and written,) I was working under something like 12 different names (YouTube channels, blogs, etc,) and I decided the best option to optimize my tendency to cycle through interests was to unite everything under one banner. I came to this decision Junior year of high school, during a phase where I was rejecting all the serious work I&#x27;d done in the past, and trying to produce an overwhelming amount of content that was truly meaningless, (Specifically, music and poetry,) with the mindset that with enough garbage YouTube videos getting 5,10,50 views, it would eventually add up. (and it did. I made YouTube partner with nothing but high school lunch table vlogs.) During the summer and fall of 2011, I recorded Hamura, the debut Drywall album, and I consider its release date (October 28th, 2011) to be the true birth of Drywall and David Blue. The album itself features sounds of a treadmill, turn signal indicators, the sound of a vhs tape being repeatedly slid in and out of its case, an original, hand-made native american 5-holed flute, and other nonsense. During the time, I was heavily influenced by the Columbia grind/punk scene (a lot of my friends were heavily involved in it,) in that I was trying to make angry-sounding ANTI-music that contained absolutely zero human emotion. I planned to record music that could have absolutely zero function as music. Children of the Corn 30 is a (matured) reflection of that mentality in the film medium. Key Parts of the Drywall alter (Drywall is actually a virtual band contained within the alter&#x27;s alter&#x27;s) included drinking gasoline, eating industrial waste, an obsession with clipping, and fear of sine waves and living in a storm drain surrounded by a pile of analog electronics. Around this time, my friends and I were &quot;ironically&quot; listening to noise tapes (I was new to obscure human interests, in general, and therefore very entertained by them,) ((the core of the David blue Alter is a worship of human variety, and this is the time that began for me)) The image of drywall involves a Thai Air Force jumpsuit, fairy wings, and obscure tribal instruments. In his storm drain, he records himself shrieking all day. If you wait outside the entrance long enough, a cassette containing these sounds will eventually fly out.</p><p id="edf7a328-73c5-4cde-b644-dd151e9091f1" class="">I&#x27;d spent a lot of time much time throughout my childhood trying to produce content that was &quot;technically good&quot; as I was caught up in the early days of YouTube and tech journalism and emulating people like Mark Watson and Jon Rettinger. I had thought I was going to be a professional pilot for most of my life, and I produced a sort of vlog series for every lesson I took as a student pilot. This gained more views, technically, than anything else I&#x27;ve ever done on the net, but I took it down long ago. My expression of &quot;teen angst&quot; was rejecting excellence completely in favor of quantity, my only &quot;teen rebellion&quot; was one against my former self. I flipped completely, and ceased all criticism of my own work, and began releasing as much content as I could indiscriminately. I created a twitter account for Drywall (@ihadtopee,) and I would literally just post random characters or zalgo text when TweetDeck allowed tweeting with just the enter key until I hit my Tweet cap every night. In general, I just rejected the idea of &quot;good&quot; art or &quot;good&quot; content and went into this state where everything was &quot;art&quot; and nothing meant anything. After escaping a radical Christian environment (which insisted upon the idea that everything had meaning,) I think I was just enjoying a sort of intellectual toddlerhood as I was encouraged to love what I could perceive for the first time, and was socialized. My childhood isolation and content obsession meant I was completely unable to have an actual conversation with people my own age. Once I saw that there was actual worth in my peers, I started regarding my previous work as tremendously cringeworthy. I think in part to preserve my pride, I set out to intentionally remove any intent from my content production. (I&#x27;ve always fetishised apathy.) As long as it&#x27;s obvious we&#x27;re not trying, we&#x27;re exempt from criticism. It&#x27;s so nonsensical it could be considered a &quot;weapon of confusion,&quot; even.</p><p id="405d8c54-431b-4bf1-8394-02177cb9f745" class="">Projects like <em>Children of the Corn 30</em> and <em>Drycast</em> represent a matured expression of these ideals. The adolescent insecurity is long gone, I think, and what&#x27;s left is an absolute love of variety. This means that I&#x27;m totally comfortable with taking pride in what I do, putting effort into the quality of the medium and the packaging, but the unique brand of thought, perspective, and analysis remains - it&#x27;s just more clearly communicated. <em>Drycast</em> is a sort of people-journalism mechanism. It&#x27;s an anti-podcast in that its explicit purpose is maximum variety.</p><p id="1a14bf42-e3ad-40ae-b311-7d606e3ee927" class="">And sure, it&#x27;ll never be successful outside of the very small group that identify and enjoy our way of doing things, but I&#x27;m actually very proud of it. In my crazy-ass subjectivity, I find it more entertaining than anything else of its kind. In fact, that&#x27;s a general rule with everything I create. I know most of it is never going to be very valued by anyone else, but I&#x27;m more entertained by my set of creations than equivalent offers from anybody else, which isn&#x27;t as delusional as it sounds, when you think about it. I think it indicates that I&#x27;m making the content I want to make.</p><p id="57948aa5-0626-4f29-826a-b3b0e2d0763a" class="">I have a bad habit of telling people &quot;this is the best episode of <em>Honk</em> yet,&quot; or &quot;this is the best Drywall video yet,&quot; or &quot;this is the best <em>Drycast</em> episode yet.&quot; When I do use that language, I genuinely believe it - it has nothing to do with hype. Ideally, I&#x27;d say it about every new piece of content I create. Though it depends, of course, on the natural fluctuations and cycles of focus, I say it about most.<div class="indented"><p id="82ed921a-02bb-460d-a275-62e43c37908f" class="block-color-teal_background"><strong>Do you enjoy your success with your project? (Not only considering hits, learning experiences etc.)</strong></p></div></p><p id="e3c57093-cd2c-4aac-a42d-c4d4d9940fca" class="">My childhood endeavors were actually more successful in terms of engagement than Drywall as a whole. My aviation YouTube channel had nearly 100,000 total views before I shut it down, and my shitty tech channel (bad unboxings, useless reviews) had about as much as the Drywall channel has now after just a few months.</p><p id="7c4962b9-9e7d-4e68-85f9-e87d4be7df1a" class="">Drywall continues what I&#x27;ve been doing for my entire life, it just unifies whatever I feel like doing at the moment under one banner. The result of so many years of content-obsessiveness is a relative competence and familiarity with video and audio (design, recording, and editing,) writing, and any aspect of contemporary net content production you can think of. When you&#x27;re constantly switching between mediums, you tend to hone a ton of different skills in the process. Drywall even inadvertently sharpened my knowledge of music theory, in my effort to completely ruin it.</p><p id="27d575cb-11bb-4751-b618-b13047bf971e" class="">I realized that my strength lies not with creating content for a specific purpose or audience. My only valuable contributions, really, are little bits of profound insight amidst torrents of repetitive, unfiltered garbage. My best work only comes when my mind is allowed off the leash. (<em>Honk</em> is probably the best representation of this.) It took me awhile to figure it out about myself, but it&#x27;s definitely how I tick. The formula is patterns of repetition as a sort of foundation, and layers of small, in-the-moment (improvised) deviations on top of it, eventually adding up to something genius or profound, every once in awhile. This intentional lack of preparation to encourage instinctual genius makes for a very jazzy method of thought, I suppose. You can see it most literally manifested in my piano improvs. They tend to be very boring unless you&#x27;re really listening for the deviations. In talking, video, or audio, it means lots and lots of mediocre thinking-out-loud for every useful or insightful argument. It&#x27;s the definition of the expression &quot;hit or miss.&quot; Drywall, originally, was the process of rejecting standards and preference and combating my filter. I think I have a bit of a reputation for being funny, but all of the worthwhile humor I&#x27;ve sent into the world has just been a side-effect of creating with a purpose other than explicit comedy. This is why I find standup comedy to be utterly ridiculous. I&#x27;m funnier than George Lopez when I&#x27;m trying to instill fear of overpopulation into my audience. &quot;At this location, at this time, I am going to be funny&quot; is just ridiculous.</p></div></article></body></html>

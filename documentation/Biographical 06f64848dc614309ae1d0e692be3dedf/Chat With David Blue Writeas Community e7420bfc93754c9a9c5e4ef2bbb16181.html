@@ -1,0 +1,628 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>&quot;Chat With David Blue&quot; | Writeas Community</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="e7420bfc-9375-4c9a-9c5e-4ef2bbb16181" class="page sans"><header><img class="page-cover-image" src="Chat%20With%20David%20Blue%20Writeas%20Community%20e7420bfc93754c9a9c5e4ef2bbb16181/David_Blue_Portrait_Banner.png.jpeg" style="object-position:center 50%"/><div class="page-header-icon page-header-icon-with-cover"><img class="icon" src="Chat%20With%20David%20Blue%20Writeas%20Community%20e7420bfc93754c9a9c5e4ef2bbb16181/David_Blue_Portrait_Little.jpg.jpeg"/></div><h1 class="page-title">&quot;Chat With David Blue&quot; | Writeas Community</h1></header><div class="page-body"><figure id="9458cb1c-0b8b-4f32-b3e5-d000f89952f1"><div class="source"><a href="https://write.as/community/chat-with-david-blue">https://write.as/community/chat-with-david-blue</a></div></figure><figure id="baa5d26b-e1e4-46eb-a699-9630fcc3e74d"><div class="source"><a href="Chat%20With%20David%20Blue%20Writeas%20Community%20e7420bfc93754c9a9c5e4ef2bbb16181/Chat_with_David_Blue_-_Community_-_write.as.html">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3aef8661-1cba-4b66-928e-0cf3562f435b/Chat_with_David_Blue_-_Community_-_write.as.html</a></div></figure><hr id="348ae746-407b-4246-8da0-fbc98644faf6"/><p id="523517c9-ef14-4c69-b6fc-c3084144665d" class=""><em>This is an ongoing series where </em><a href="https://blog.cjeller.site/"><em><strong>CJ Eller</strong></em></a><em>, community manager at Write.as, takes the time to chat with the many interesting people who use Write.as about their lives &amp; writing practice.</em></p><p id="ee11af64-e0b0-4468-9dfa-a79e4f916942" class=""><em>Our first conversation is with </em><em><strong>David Blue</strong></em><em>. David is the founder &amp; editor of </em><a href="https://extratone.com/"><em><strong>Extratone</strong></em></a><em>, a digital magazine about technology, electronic music, and New Culture. He also has a </em><a href="https://bilge.world/"><em><strong>personal blog</strong></em></a><em> and writes about car culture over at </em><a href="https://dieselgoth.com/"><em><strong>Honk</strong></em></a><em>.</em></p><p id="7209562b-39ab-4e5e-bd72-56f38345d927" class=""><em>This conversation was conducted over on </em><a href="https://www.are.na/cj-eller/cj-eller-and-david-blue-dwee1tp93mk"><em><strong>Are.na</strong></em></a></p><hr id="1e4893bb-80c3-41ff-b3d6-d1f3ab45624f"/><p id="e29cd957-8c78-4ca4-b09a-04fc19aa3943" class="block-color-brown_background"><strong>CJ Eller</strong>: So before we got on this chat, you mentioned how Markdown was something that saved you from fiddling your life away. Can you go more into that?</p><p id="5e098e7f-4503-4aff-be20-2defe60fff2f" class="block-color-blue_background"><strong>David Blue</strong>: I started an online magazine four years ago originally on WordPress. I thought I knew something about web development, but honestly I did not. It ended up becoming a fixation on trying to make something <em>technically</em> different from what I&#x27;d seen done with WordPress, which detracted heavily from my Editorial duties over the years. I&#x27;m on the OCD spectrum so I just couldn&#x27;t let it go. I spent thousands of hours fiddling with different themes and formatting within those themes, and what I ended up with was a mess. I would make changes that would break old posts, so I&#x27;d go back and fix those, only to make more changes days/weeks/months later and have to go back again. I&#x27;d known vaguely about Markdown, but it wasn&#x27;t until it was mentioned in the WordPress dev Slack that I really considered it seriously as a way out of what I&#x27;d been doing. I realized that its inherit limitations were actually very good for me – that I needed a limited system to constrain my workflow to keep myself on task. Finally, in late-2018, I started to convert our old content to Markdown and essentially haven&#x27;t looked back since.</p><p id="b00214ff-cf5b-4f34-8e73-e9297c6c7fef" class="block-color-brown_background"><strong>CJ Eller</strong>: Did it take a while for you to accept Markdown&#x27;s limitations? What happened after this turning point for you? Did you look for a Markdown plugin on WordPress to help?</p><p id="7c6906dd-3d79-4130-9785-d3a57e75003f" class=""><strong>David Blue</strong>: There are third-party plugins, yes, but I believe the new WordPress editor now supports “<a href="https://wordpress.com/support/wordpress-editor/blocks/markdown-block/"><strong>markdown blocks</strong></a>,” which is sortof handy for those who want to continue in that direction. The turning point was probably when we ran out of money and lost our account with our hosting provider. I was left with an old external HD full of old backups and an empty domain. I&#x27;d already started moving that direction within WordPress (largely because of the <a href="https://wptavern.com/wordpress-core-editor-team-publishes-ui-prototype-for-gutenberg-an-experimental-block-based-editor"><strong>Gutenberg editor project</strong></a>,) but losing the site in its entirety was what I really needed to push us into a more modern, progressive CMS. Honestly, Markdown is capable of everything we <em>actually</em> need and nothing more. I&#x27;d like to think I was able to realize this from the beginning.</p><p id="5a20c88a-b587-459f-ad0e-73c8e8d9b638" class=""><strong>CJ Eller</strong>: So you&#x27;re left with an old external HD full of old backups and an empty domain. Talk to me about the process then of finding that modern, progressive CMS. Did you have a vague idea of what you were looking for? I imagine getting those backups ready for whatever you were going to choose as another process entirely.</p><p id="ac15fea1-9a56-448a-a4dc-a319efa35a31" class=""><strong>David Blue</strong>: I actually decided to ditch the backups and just move forward with a different Editorial direction (the project has since been more or less put on hiatus.) I knew Markdown had to be involved and that I never wanted to look at anything like WordPress&#x27; dashboard ever again. I played around with a local Ghost instance but just didn&#x27;t <em>feel</em> anything for it, if that makes sense. I&#x27;d already moved my <a href="http://bilge.world/"><strong>personal blog</strong></a> to Write.As months before and eventually realized that it was just what <a href="http://extratone/"><em><strong>Extratone</strong></em></a> needed – so far, I&#x27;ve only imported my own contributions and the most recent work from others.</p><p id="b4ba3ade-96da-4685-b2cf-4ed2113bff29" class=""><strong>CJ Eller</strong>: Could you explain what you mean by <em>feeling</em> something for a piece of software? I noticed this in your <a href="https://bilge.world/poweruser-tips-software-shortcuts"><strong>recent post</strong></a> on your personal blog. What I enjoyed about it so much is that there&#x27;s a personal enthusiasm about the software you recommend jumps through the screen. I <em>want</em> to use <a href="https://bear.app/"><strong>Bear</strong></a> more after reading your post.</p><p id="9fc6121d-eaa5-4253-a657-045dff48b9f0" class=""><strong>David Blue</strong>: I&#x27;m glad to hear that! I suppose it dates back to my upbringing on a farm in rural Missouri, where I felt a real affection for – and attachment to – our tractors, combine, and such. When one cares about their work, I think it&#x27;s inevitable for them to be emotionally invested in the tools they use to accomplish it every day. During my brief stint in IT in the beginning of 2019, I saw a lot of users struggling with outdated and ridiculously unintuitive software throughout their entire workday and it made me really appreciate the idea of “good workflow.” I&#x27;m not really a developer, but I believe software can always be better because I&#x27;ve seen it. As an End User of sorts with not much cash, I feel like my main contribution back to developers should be celebrating their good work. This is an idea I feel I do not encounter enough in day-to-day life.</p><p id="2e168f06-93d2-4713-9278-dc702437f5fb" class=""><strong>CJ Eller</strong>: As someone who also had a brief stint in IT, I totally agree with the struggles people go through because of outdated &amp; unintuitive software. But IT also made me realize how much of software is personal — someone will want a solution that&#x27;s unintuitive to you but is intuitive to them. You learn a lot of empathy from that. I am intrigued by your last point there — why don&#x27;t you think you encounter the idea of celebrating software developers enough in day-to-day life?</p><p id="e1a84d8b-eb63-4b8b-a892-429fff0bd1b3" class=""><strong>David Blue</strong>: I suppose specifically I mean I don&#x27;t see enough celebration of <em>good</em> development. It&#x27;s hard to challenge the personal workflow of anyone, yes, but I hope folks will continue to want to better their lives with new solutions. As I mentioned in my Tips post, Microsoft Word is a great specific example of software that simply <a href="https://slate.com/technology/2012/04/microsoft-word-is-cumbersome-inefficient-and-obsolete-its-time-for-it-to-die.html"><em><strong>should not</strong></em></a><a href="https://slate.com/technology/2012/04/microsoft-word-is-cumbersome-inefficient-and-obsolete-its-time-for-it-to-die.html"><strong> be used anymore</strong></a> – especially in composition for The Web. Not that Word is <em>celebrated</em>, necessarily, but <strong>its alternatives are not</strong>. It should be noted that I have no specific authority in this matter other than years of experience with – and enjoyment of – playing around with software. I just think that End Users deserve better than they get, and awareness of new/different software is a huge part of the problem. Making average people aware of better solutions should be the primary function of special interest tech journalism, IMO.</p><p id="899d7d24-b572-4965-82c4-6232bfc1955f" class=""><strong>CJ Eller</strong>: Great point about Microsoft Word. I don&#x27;t even remember the last time I seriously used it — high school maybe? And like you said, discovery can be an issue to the adoption of these alternative tools. So are there any common patterns you&#x27;ve noticed as to how you&#x27;ve come about these software alternatives that you now use? Patterns that someone could adopt?</p><p id="422b40e4-8f80-46c9-9bc9-4074d163b746" class=""><strong>David Blue</strong>: It&#x27;s not that I slave away, but it does take a lot of time to discover them. The simple answer is: I drink a lot of caffeine and hyperfixate on the internet. I&#x27;m not sure it&#x27;s something the average user should <em>want</em> to adopt, but if they do, they should be <a href="http://joinmastodon.org/"><strong>on Mastodon</strong></a>. They should be googling “alternatives to...” regularly, and they should worship Free and Open Source Software. Accepting that you never have to settle for one piece of software is probably the beginning. For lack of a better term, I just love <em>playing around</em> with software. That&#x27;s not something I would advocate for my old clients or other End Users – I would rather find out myself and then present a list of alternatives in an entertaining way. I hope that&#x27;s an appropriate and sufficient answer hehe.</p><p id="2454f621-db52-4309-aa4b-075590eb8a00" class=""><strong>CJ Eller</strong>: No that&#x27;s great! The acceptance of never having to settle for one piece of software is at once valuable and challenging to adopt. If you keep switching you could be a sort of software vagabond who throws their data into a rucksack to head to the next viable platform. I&#x27;ve always had trouble trying to find the proper balance between playing around with software &amp; learning a tool well enough that it can be useful. How have you personally navigated that? I could imagine your foray into &amp; out of Wordpress as a place to start.</p><p id="5d13a7ec-2ebb-4990-a1b5-2ddef3bb639a" class=""><strong>David Blue</strong>: It&#x27;s always a challenge when trying new things. I obsess over different ways to accomplish tasks. I&#x27;ve probably signed <em>Extratone</em> for 15 different newsletter services (including <a href="http://buttondown.email/"><strong>Buttondown</strong></a> today) though I haven&#x27;t actually written a single edition of our newsletter in nearly two years. I think it&#x27;s only recently that I&#x27;ve been able to look at these habits from a reasonable perspective. As in, I am now able to finally differentiate between playing and being productive, but it took some 15 years. Self-awareness of one&#x27;s actual progress is key. Asking questions like <em>why am I actually doing this – for profit or for play?</em> Differentiating between these two is something someone like me will always struggle with, I think.</p><p id="f76fd3ed-39e2-4b03-85d5-9655419a5a16" class=""><strong>CJ Eller</strong>: The distinction between playing and being productive can be quite blurry. I sometimes find that playing around with a piece of software can lead to a productive use of it. How about you? Did you start with the idea of creating <em>Extratone</em> first and then tried to find the right software to fit the job? Or did you start playing around with Wordpress and then the idea of the digital publication took form soon after?</p><p id="387290db-09c6-4b89-8683-de4ef3f4ee12" class=""><strong>David Blue</strong>: That&#x27;s an insightful supposition. I actually tried to launch an online magazine before <em>Extratone</em> with virtually zero editorial focus along with a standalone podcast that I&#x27;d been hosting on WordPress for years. I originally began playing around with WordPress sites in my early adolescence, so you could say it all culminated in the idea. It took maturity to realize that I actually wanted to build a platform for <em>other</em> voices rather than continue to invest in my own. I&#x27;d like to believe that was all enabled by the playing hehe.</p><p id="3d047175-8eea-4c70-83db-6c9342974c57" class=""><strong>CJ Eller</strong>: So what lead you to the conclusion of building a platform for other voices? Especially curious from the <em>maturity</em> angle. Because you still have a <a href="https://bilge.world/"><strong>personal blog</strong></a>, so it doesn&#x27;t feel like you&#x27;ve completely neglected your personal voice. But would you consider that as not the same investment of time &amp; effort that you&#x27;d put into something like <em>Extratone</em>?</p><p id="9e89bfa2-c946-4ee5-a3ca-b17307bffdc7" class=""><strong>David Blue</strong>: I should be clear that I have <em>not</em> accomplished what I set out to do with <em>Extratone</em>. After a fairly big personal trauma in 2015, I had a bit of an existential crisis and realized that I had surrounded myself with so many talented (in a particularly relevant way) online friends who were producing all sorts of incredible content – music and videos, mostly. I realized that I was better at editing and other platform duties than I was at writing, and that perhaps the online communities I was astride could be provided a single banner to give themselves. In that sense, I haven&#x27;t figured out how to do what I set out to yet. Ideally, my byline would be completely gone from <em>Extratone</em>, so I&#x27;ve more or less put it on hold until I figure out how to accomplish that. Turning it into a somewhat profitable media company is still my biggest long-term life goal.</p><p id="e72cd77f-1c5e-4dd1-a9c9-f2ed96a06c9a" class=""><strong>CJ Eller</strong>: The curatorial characteristic you describe is underrated, even though the “everyone is a curator” idea is jammed down our throats all the time. There&#x27;s something about this curation on a person-to-person level that still has lots of room for experimentation. On that subject, do you have any examples of communities, sites, or models that guide where you&#x27;d want <em>Extratone</em> to go?</p><p id="7b724b24-9205-478a-bbf1-7e33531b01b7" class=""><strong>David Blue</strong>: My citable aspirations in that regard have been somewhat superficial, I&#x27;m afraid. From a technical perspective, I really admired what Joshua Topolsky was <a href="https://www.niemanlab.org/2016/08/newsonomics-sketching-in-the-details-of-josh-topolskys-new-outline/"><strong>trying to do</strong></a> with <a href="http://theoutline.com/"><em><strong>The Outline</strong></em></a> – which just <a href="https://www.niemanlab.org/2020/04/the-outline-an-attempt-to-build-a-bolder-kind-of-news-site-appears-to-have-met-its-end/"><strong>closed this month</strong></a>, actually. They built their own CMS including a bespoke advertising delivery platform which really looked <em>great</em> but they just <a href="https://www.niemanlab.org/2018/10/the-outline-built-itself-on-being-weird-but-is-it-weird-enough-to-survive/"><strong>couldn&#x27;t figure out</strong></a> a sustainable editorial focus. In my fantasy world, I have the connections and digital media insight of Topolsky and know how to apply them in a way that supports <em>our</em> community because I don&#x27;t see any one brand popping up any substantial umbrellas over the electronic musicians I know. (It wasn&#x27;t until “too late” that I realized <em>Extratone</em>&#x27;s sole editorial focus should have been electronic music all along.) I read a lot about media but I&#x27;m pretty picky as far as hero worship goes when it comes to my own professional goals. I once promised that <em>Extratone</em> would <em>never</em> run ads, so I could see some sort of non-profit classification working out in our future. I believe I could be an excellent curator – I&#x27;m just not quite sure how to get there yet.</p><p id="43100b08-51e8-49d8-9bf4-8793fb8b7f0e" class=""><strong>CJ Eller</strong>: I think you&#x27;re a great curator — had to ask that question of influence because I think you have a unique curatorial presence on the web. Just saw you tweet about <a href="https://www.tractordata.com/"><strong>tractordata.com</strong></a>. Who else would recommend that? Love it. That&#x27;s why I thought <a href="https://are.na/"><strong>Are.na</strong></a> would be right up your alley. So you emphasized “<em>our</em> community” there — what do you define as your community in that broader context? If it&#x27;s the electronic music community you referred to, I&#x27;d love to hear how you got immersed in that subculture.</p><p id="33b0cca3-47b8-44ed-a64a-5d2c3bda5f3d" class=""><strong>David Blue</strong>: Well thank you! That&#x27;s a question I&#x27;m still struggling to define. <strong>Electronic music</strong> is about as far as I&#x27;ve gotten. I met most of my talented friends on Twitter over the past 10 years or so and have tried to contain them in a <a href="https://twitter.com/i/lists/1032269790616858625"><strong>list</strong></a> before. There are innate challenges in defining such a creative community – I have done my best to label without being constricting, but it&#x27;s definitely difficult trying to figure out how to provide a flag which everyone feels comfortable flying. I still think the best I&#x27;ve done to articulate what I&#x27;m trying to say was for <a href="https://extratone.com/about"><em><strong>Extratone</strong></em></a><a href="https://extratone.com/about"><strong>&#x27;s About page</strong></a>. Most of the folks I&#x27;m talking about are used to hustling their own brand so it&#x27;s been a real challenge working on the right way to reach out.</p><p id="ed8a85c2-af7b-4d7c-a3cd-5d63946ca59e" class=""><strong>CJ Eller</strong>: A flag which everyone feels comfortable flying — that&#x27;s a great way to put it. What I find interesting about your internet presence is that you defy the idea of flying just a single flag. Along with <em>Extratone</em> you have <a href="https://anchor.fm/extratone"><strong>multiple</strong></a> <a href="https://anchor.fm/davidblue"><strong>podcasts</strong></a>, <a href="https://bilge.world/"><strong>multiple</strong></a> <a href="https://dieselgoth.com/"><strong>blogs</strong></a>, and now you&#x27;re starting a <a href="https://mstd.racing/"><strong>Motorsports &amp; Tech dedicated Mastodon instance</strong></a>.</p><p id="3d1d07fb-9422-4199-a189-b2b86f7095d4" class="">I&#x27;ve been thinking a lot lately about how important it is to have many online buckets to put your ideas in. One just feels too limiting, especially if it&#x27;s solely linked to your legal identity. How do you think about this matter of identity &amp; expression with your own online presence?</p><p id="14b13a07-26f2-4d2c-9545-7d841387f8f2" class=""><strong>David Blue</strong>: That&#x27;s a very good question. I can&#x27;t take credit for <a href="https://mastd.racing/"><strong>mastd.racing</strong></a>, actually – I&#x27;m not sure who created that server but it&#x27;s administered by an account called <a href="https://mastd.racing/@RaceControl"><strong>RaceControl</strong></a>. You&#x27;ve arrived at another one of my biggest challenges. Consolidating my interests has always been a problem, especially on The Web. Age has definitely helped narrow them down a bit, but I still can&#x27;t help myself sometimes. I think it&#x27;s ended up alienating a lot of my followers on social because I have a hard time posting just within my niche(s). I&#x27;m not so sure how to feel about this, honestly. One could argue that I should post whatever I want, whenever, but <em>consider your audience</em> is also a concept I can no longer ignore. If anything, I need to learn to let myself be limited a bit <em>more</em> by those buckets. Once again, <em>Extratone</em> is a good example of this – I should&#x27;ve never published app reviews there, but I did. We&#x27;re all learning, I suppose.</p><p id="a56dcdc5-c8a2-4b3a-a0cd-9cce9167dc59" class=""><strong>CJ Eller</strong>: Do you feel like you have to even learn to limit yourself on your <a href="https://bilge.world/"><strong>personal blog</strong></a>? It seems like a personal blog can act as the release valve — a way of getting around cornering yourself into the niches that <em>Extratone</em> and other projects require. You can freely write about <a href="https://bilge.world/preferred-writing-instruments"><strong>pens</strong></a> and <a href="https://bilge.world/star-trek-picard-review"><strong>Picard</strong></a> without feeling constrained to a single subject.</p><p id="61681777-afdd-4e8b-80b3-d75a633199d0" class=""><strong>David Blue</strong>: I think I&#x27;m just now coming around to understanding personal blogging and the freedom that entails. It&#x27;s been a long while since I&#x27;ve had the urge to write about things on which I don&#x27;t consider myself at least somewhat of an authority. I think – like many people – I originally just used my personal blog as a guinea pig for messing around with themes, and I&#x27;m just now actually catching up on some of the lesser items on my “to-write” list. Since we&#x27;ve begun talking I&#x27;ve begun building my blogs bookmark folder back up and following the <a href="https://write.as/community/tag:100DaystoOffload"><strong>#100DaystoOffload</strong></a> challenge, which I find immensely impressive. I can&#x27;t say I&#x27;m quite up to it, personally, but I definitely plan on opening up the taps a bit more. (I also don&#x27;t want to flood <a href="https://read.write.as/"><strong>read.write.as</strong></a> with too many joke posts ya know hehe.)</p><p id="dd2f42a8-4b2e-4854-9ad2-625a1591813c" class=""><strong>CJ Eller</strong>: That&#x27;s awesome! You&#x27;re reminding me of the interesting relationship between writing &amp; tinkering when it comes to blogs. They both feed into each other in a strange way. Before, when my blog was on Wordpress, I didn&#x27;t care about tinkering around — writing was my sole focus. When I moved to my new blog, however, I found myself shift towards creating apps that extend my blog and messing around with its CSS. So it&#x27;s interesting that you&#x27;ve gone the opposite way, publishing more instead of solely tinkering. What has awoken the urge for you to tackle those items on your personal “to-write” list? To open up those taps a bit more? Because I can see the publication mindset, being somewhat of an authority, getting in the way.</p><p id="2d8e83be-5678-4f52-bd91-8f769dd346b3" class=""><strong>David Blue</strong>: That is interesting. I&#x27;m wondering how many people are in each of our camps. I hate to be so topical, but the pandemic and being home constantly has definitely contributed. I&#x27;ve also begun to learn to let things go, which is an essential skill. Being able to actually kill work when it needs to die is the real secret. I just built up the strength to delete the rest of my 2019 list a few weeks ago.</p><p id="3cf5ccbb-b7ae-41d5-984f-853a18a0f609" class=""><strong>CJ Eller</strong>: I wonder also! And hey, no problem bringing up the current situation. It&#x27;s making me write more also. I want to drill into that practice of letting go as an essential skill for blogging. As a final question for this chat, how have you gone about the decision of keeping ideas that you&#x27;ve had for a long time and when to let them go? It&#x27;s been something I&#x27;ve been struggling with for recently as ideas for blog posts start to pile up.</p><p id="d863ac7b-f912-47bc-bcb2-ff5b31f5c690" class=""><strong>David Blue</strong>: Self-curation is definitely tough. Generally, it&#x27;s very hard to let things go – especially when I&#x27;ve progressed at all significantly into research/first drafting, but I know when to kill something if I reread and am unable to immediately see where I was going. I&#x27;ve noticed that trying to rekindle interest or momentum in a topic is unusually not a worthwhile use of time in my case. If I can&#x27;t get my rhythm back fairly early in, I am very unlikely to, ever. That said, I think it&#x27;s also important to <em>forgive yourself</em> for investing time in something that won&#x27;t work out – otherwise, you will settle for less than what you originally intended and release something you won&#x27;t be happy with. Thank you so much for your time! I really enjoyed this!</p><p id="758afed4-b31b-4fb8-ab1a-750b938223d7" class=""><strong>CJ Eller</strong>: Forgive and forget! That&#x27;s a great point about rekindling an interest being a sign of letting go of an idea. I&#x27;ve done that too many times. This has been a blast to chat virtually David — really enjoyed your thoughts and am looking forward to future blog posts and installments of <em>Extratone</em>!</p></div></article></body></html>

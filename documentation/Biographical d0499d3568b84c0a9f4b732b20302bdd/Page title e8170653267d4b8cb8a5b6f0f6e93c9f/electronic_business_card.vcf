@@ -1,0 +1,29 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//iPhone OS 14.2.1//EN
+N:Blue;David;;;
+FN:David Blue
+NICKNAME:Mr. Blue
+ORG:Extratone;
+EMAIL;type=INTERNET;type=HOME;type=pref:ihadtopee@gmail.com
+TEL;type=IPHONE;type=CELL;type=VOICE;type=pref:(573) 823-4380
+ADR;type=OTHER;type=pref:;;1714 Oak Cliff Pl.;Columbia;MO;65203;United States
+item1.ADR;type=HOME:;;2216 SE 58th Ave;Portland;OR;97215;United States
+item1.X-ABADR:US
+item1.X-APPLE-SUBLOCALITY:Mt. Tabor
+item1.X-APPLE-SUBADMINISTRATIVEAREA:Multnomah
+X-SOCIALPROFILE;type=twitter:http://twitter.com/FickleCrux
+X-SOCIALPROFILE;type=facebook:http://www.facebook.com/AsphaltApostle
+X-SOCIALPROFILE;type=flickr:http://www.flickr.com/photos/DavidBlue
+item2.URL;type=pref:http://bilge.world
+item2.X-ABLabel:_$!<HomePage>!$_
+BDAY:1994-01-27
+item3.X-ABRELATEDNAMES;type=pref:Eileen Long
+item3.X-ABLabel:_$!<Mother>!$_
+item4.X-ABRELATEDNAMES:Hawthorn Bradley
+item4.X-ABLabel:fiance
+item5.X-ABRELATEDNAMES:Hawthorn Bradley
+item5.X-ABLabel:_$!<Spouse>!$_
+item6.X-ABRELATEDNAMES:Daniel Rold
+item6.X-ABLabel:_$!<Brother>!$_
+END:VCARD

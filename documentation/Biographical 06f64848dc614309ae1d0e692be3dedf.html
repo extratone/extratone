@@ -1,0 +1,632 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Biographical</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="d0499d35-68b8-4c0a-9f4b-732b20302bdd" class="page sans"><header><img class="page-cover-image" src="Biographical%2006f64848dc614309ae1d0e692be3dedf/David_Blue_Portrait_7.jpg" style="object-position:center 50%"/><div class="page-header-icon page-header-icon-with-cover"><img class="icon" src="Biographical%2006f64848dc614309ae1d0e692be3dedf/Retouched_Headshot.jpg"/></div><h1 class="page-title">Biographical</h1></header><div class="page-body"><figure id="c563f96a-a25b-4db0-9c8f-86e721b0fe68" class="link-to-page"><a href="Biographical%2006f64848dc614309ae1d0e692be3dedf/BBL%20Bio%20c563f96aa25b4db09c8f86e721b0fe68.html">BBL Bio</a></figure><blockquote id="6b3f6b2f-c4d8-4bc5-a36f-e3b4cb973a39" class=""><strong><mark class="highlight-orange">A whirlwind of bitchery spinning round a wild, wholesome little yokel.</mark></strong></blockquote><p id="7c8a0ad8-c32a-49b3-8201-991c610b1199" class=""><a href="https://www.notion.so/9fdc8e9610b34b8f991ebc148b760055"><img class="icon" src="Biographical%2006f64848dc614309ae1d0e692be3dedf/icons8_hashtag_activity_gridofficel_64.png"/>Social Directory</a> </p><figure id="82a7d02f-4bed-4c06-883d-a9c353ac7ce5" class="block-color-blue link-to-page"><a href="https://www.notion.so/Rollodex-82a7d02f4bed4c06883da9c353ac7ce5"><span class="icon">🗃️</span>Rollodex</a></figure><figure id="9c425ae3-e81f-4470-ad9e-2490a3a8f02c" class="link-to-page"><a href="Biographical%2006f64848dc614309ae1d0e692be3dedf/David%20Blue&#x27;s%20Astrological%20Chart%20(Via%20Co-Star)%209c425ae3e81f4470ad9e2490a3a8f02c.html"><img class="icon" src="Biographical%2006f64848dc614309ae1d0e692be3dedf/David%20Blue&#x27;s%20Astrological%20Chart%20(Via%20Co-Star)%209c425ae3e81f4470ad9e2490a3a8f02c/icons8_aquariuscolor_64.png"/>David Blue&#x27;s Astrological Chart (Via Co-Star)</a></figure><figure id="e6aa205f-3684-4c56-bfe4-c4fa0d6d7feb" class="link-to-page"><a href="Biographical%2006f64848dc614309ae1d0e692be3dedf/Introduction%20to%20The%20W-Word%20e6aa205f36844c56bfe4c4fa0d6d7feb.html"><span class="icon">✍🏻</span>Introduction to The W-Word</a></figure><hr id="22dfe08b-2907-464c-b48f-39543e7f6961"/><figure id="9835bfef-a32a-4297-b24d-5cdbfea5dc8b"><a href="https://bilge.world/personal-technology-history" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Why I Write About Technology</div><div class="bookmark-description">Incalculable odds were against my arrival in this world happening in early 1994, positioning my life within a timeline that would allow me to bridge my two species&#x27; most significant millenniums in the first grade as a student in the first class at Fairview Elementary school to receive curriculum-mandated exposure to brand-new Windows 98 PCs in its brand-new, fluorescent-lit computer lab in the center core of its 50-year-old rectangular brick structure.</div></div><div class="bookmark-href"><img src="https://i.snap.as/iTL3WJk.png" class="icon bookmark-icon"/>https://bilge.world/personal-technology-history</div></div><img src="https://write.as/img/w-sq-light.png" class="bookmark-image"/></a></figure><figure id="7604a83b-2964-49d8-bb54-393677cafe23"><div class="source"><a href="https://gist.github.com/extratone/91ebe16b0c620f309e70b40f5d4dcd9e">https://gist.github.com/extratone/91ebe16b0c620f309e70b40f5d4dcd9e</a></div></figure><h1 id="02f9b71d-57ab-4a5f-bc50-5414f6e8cd53" class="block-color-gray">Social Bios</h1><p id="2d3869d7-15c1-4e7c-8fab-1e10513ed605" class="">lapsed auto writer &amp; self-described software historian. through Motorsport all things are possible. • <a href="mailto:davidblue@extratone.com">davidblue@extratone.com</a> • ⒽⒺ ⚫ ⒽⒾⓂ (Updated <time>@Oct 22, 2020 2:31 PM</time>)</p><p id="08eef6a5-8990-4a7a-8ee5-ab4c106e40eb" class="block-color-gray">lapsed auto writer &amp; 100% Open Source Bitch. through Motorsport all things are possible. • <a href="mailto:davidblue@extratone.com">davidblue@extratone.com</a> • ⒽⒺ ⚫ ⒽⒾⓂ</p><p id="a0d1f0c5-6ccb-4819-b9e1-4dafb079c9b0" class="block-color-gray">lapsed auto writer &amp; word processing stan. through Motorsport all things are possible. • <a href="mailto:davidblue@extratone.com">davidblue@extratone.com</a> • ⒽⒺ ⚫ ⒽⒾⓂ</p><figure id="9d9f68c2-add9-45f6-9ea5-3cdd5be1d75a"><div class="source"><a href="https://gist.github.com/extratone/17a761e1176c8da6883128758eb68191">https://gist.github.com/extratone/17a761e1176c8da6883128758eb68191</a></div></figure><div id="2c7113c5-ed30-4b56-83a1-b9ce53fb2cb2" class="column-list"><div id="b754a4e4-d042-4f54-81a5-9af620b24839" style="width:50%" class="column"><h2 id="d8e3afa2-7692-4c25-9533-2e1c0497ef73" class="block-color-gray">Mastodon</h2><p id="4dd98a61-c188-421f-b60c-f9025a18a601" class="block-color-gray">Editor-in-Chief, Neoyokel, Screwston Loyalist, Angst Wrangler, Literacy Advocate, Lapsed Car Writer, and 100% Open Source Bitch.</p><p id="fe2cd963-3bef-4c5b-999f-b48d7d8fbaba" class="block-color-gray">ⒽⒺ ⚫︎ ⒽⒾⓂ︎
+Posts about media and The Web.</p><p id="83af8dc0-0020-4638-a820-7c314d46c360" class="block-color-gray"><a href="mailto:davidblue@extratone.com">davidblue@extratone.com</a></p><p id="3cf634f5-d4af-4bec-bbb7-80f165fc43ed" class="block-color-gray">Editor-in-Chief, Neoyokel, Screwston Loyalist, Angst Wrangler, Literacy Advocate, Lapsed Car Writer, and Word Processing Stan.</p><p id="be0dccb5-ecd4-4b4d-bc3b-1a3cd01c8e1a" class="block-color-gray">ⒽⒺ ⚫︎ ⒽⒾⓂ︎
+Posts about media and The Web.</p><p id="2f0179a3-abb3-4a6b-a6b9-3e93b5853613" class="block-color-gray"><a href="mailto:davidblue@extratone.com">davidblue@extratone.com</a></p></div><div id="b3d70e0f-9be8-46fc-9621-ab2a01dcdade" style="width:50%" class="column"><h2 id="07cc0d94-ea04-46d3-bbf7-8ddaac70226c" class="block-color-gray">Reddit</h2><p id="e28990fb-188a-4b1e-ac1d-771a973acd18" class="block-color-gray">Editor-in-Chief, Neoyokel, Angst Wrangler, Literacy Advocate, Computing Historian, and 100% Open Source Bitch.</p><figure id="06f64848-dc61-4309-ae1d-0e692be3dedf"><div class="source"><a href="Biographical%2006f64848dc614309ae1d0e692be3dedf/DiaspBio.md">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/071d5e1c-a2de-4d8b-9a04-38476855101b/DiaspBio.md</a></div></figure></div></div><figure id="13c355d1-dd8c-405e-a5b9-8f51751a2cd0" class="link-to-page"><a href="Biographical%2006f64848dc614309ae1d0e692be3dedf/Mastodon%20Introduction%2013c355d1dd8c405ea5b98f51751a2cd0.html">Mastodon Introduction</a></figure><hr id="d9931121-0569-4a82-bb85-f6c7e13f16ef"/><ul id="07cba698-259f-42d5-9a8b-472dc6a49f9e" class="block-color-gray toggle"><li><details open=""><summary>Legacy</summary><p id="e149cfb7-879f-495e-8c07-399f6f6bf6d7" class=""><time>@Jul 20, 2016 4:42 AM</time> </p><p id="810bfce3-0d7c-4379-8638-1a10beb31513" class="">David Blue is the Founder and Editor-in-Chief of <em>Extratone </em>and the originator of &quot;Drywall,&quot; the counter-counterculture from which it formed. His work has thus far been defined by his chronologically-inappropriate use of the phrase &quot;good morning.&quot;</p><p id="77c6160f-7e39-4009-8c30-3ff8aed922b8" class="">Editor-in-Chief David Blue brings us along for the journey as he attempts to tackle the blog medium and his tediously-fickle intellect simultaneously.</p></details></li></ul><div id="fe5f0573-3bcc-4e11-8de5-2683872562bd" class="column-list"><div id="685a759b-0c30-47a7-9228-9a3c62414963" style="width:50%" class="column"><figure id="14e3772f-cd8a-4b41-a1dd-ab7eadb17ead" class="link-to-page"><a href="Biographical%2006f64848dc614309ae1d0e692be3dedf/David%20Blue%20Bio%2014e3772fcd8a4b41a1ddab7eadb17ead.html"><img class="icon" src="Biographical%2006f64848dc614309ae1d0e692be3dedf/David%20Blue%20Bio%2014e3772fcd8a4b41a1ddab7eadb17ead/icons8_applicantfluent_64.png"/>David Blue Bio</a></figure><figure id="1343cc00-b623-4e94-bcf3-c500bbd3042d" class="link-to-page"><a href="Biographical%2006f64848dc614309ae1d0e692be3dedf/The%20Dave%20That%20Identifies%20Friends%20By%20Their%20Occupati%201343cc00b6234e94bcf3c500bbd3042d.html"><img class="icon" src="Biographical%2006f64848dc614309ae1d0e692be3dedf/The%20Dave%20That%20Identifies%20Friends%20By%20Their%20Occupati%201343cc00b6234e94bcf3c500bbd3042d/icons8_sonic_the_hedgehog.ico"/>The Dave That Identifies Friends By Their Occupation</a></figure><figure id="1bbbb5f6-3696-46fb-ae70-24c3295523e4" class="link-to-page"><a href="Biographical%2006f64848dc614309ae1d0e692be3dedf/The%20Day%20of%20Reformed%20Precocity%201bbbb5f6369646fbae7024c3295523e4.html"><img class="icon" src="https://sln.me/img/icon/style10/d26.png"/>The Day of Reformed Precocity</a></figure><figure id="4482c857-59ea-486a-abe6-2275d7502c4d" class="link-to-page"><a href="Biographical%2006f64848dc614309ae1d0e692be3dedf/Written%20Influences%204482c85759ea486aabe62275d7502c4d.html">Written Influences</a></figure><p id="b044ee22-f533-447f-9a45-e6b753ffbb56" class="">
+</p></div><div id="de7b8383-5bf4-4111-ae92-b22d2e377ab5" style="width:50%" class="column"><h3 id="a79c4dfb-8447-4f87-b629-b9a91037a80e" class="block-color-teal">Interviews</h3><figure id="e7420bfc-9375-4c9a-9c5e-4ef2bbb16181" class="block-color-teal link-to-page"><a href="Biographical%2006f64848dc614309ae1d0e692be3dedf/Chat%20With%20David%20Blue%20Writeas%20Community%20e7420bfc93754c9a9c5e4ef2bbb16181.html"><img class="icon" src="Biographical%2006f64848dc614309ae1d0e692be3dedf/Chat%20With%20David%20Blue%20Writeas%20Community%20e7420bfc93754c9a9c5e4ef2bbb16181/David_Blue_Portrait_Little.jpg.jpeg"/>&quot;Chat With David Blue&quot; | Writeas Community</a></figure><figure id="9dbcf237-2c38-48c2-9228-97b84ddf8cab" class="block-color-teal link-to-page"><a href="Biographical%2006f64848dc614309ae1d0e692be3dedf/David%20Blue%20Interviewed%20By%20Null%209dbcf2372c3848c2922897b84ddf8cab.html"><img class="icon" src="Biographical%2006f64848dc614309ae1d0e692be3dedf/David%20Blue%20Interviewed%20By%20Null%209dbcf2372c3848c2922897b84ddf8cab/icons8_deniedcolor.ico"/>David Blue Interviewed By Null</a></figure><figure id="87bf310b-a325-42e3-95c6-3908a67522f2" class="block-color-teal link-to-page"><a href="Biographical%2006f64848dc614309ae1d0e692be3dedf/David%20Blue%20Ben%20Astarb%20Interview%2087bf310ba32542e395c63908a67522f2.html"><img class="icon" src="Biographical%2006f64848dc614309ae1d0e692be3dedf/David%20Blue%20Ben%20Astarb%20Interview%2087bf310ba32542e395c63908a67522f2/icons8_speech_bubblecolor.ico"/>David Blue Ben Astarb Interview</a></figure><p id="6fed324b-cc92-45b4-ace6-766672110b3e" class="block-color-teal">
+</p></div></div><figure id="a5970084-f6f5-469f-814b-1647d58ba016"><div class="source"><a href="https://www.merriam-webster.com/dictionary/navel-gazing">https://www.merriam-webster.com/dictionary/navel-gazing</a></div></figure><figure id="e8170653-267d-4b8c-b8a5-b6f0f6e93c9f" class="link-to-page"><a href="Biographical%2006f64848dc614309ae1d0e692be3dedf/Page%20title%20e8170653267d4b8cb8a5b6f0f6e93c9f.html">Page title...</a></figure><figure id="c48315db-4128-48f6-b048-c04043cf3790" class="link-to-page"><a href="Biographical%2006f64848dc614309ae1d0e692be3dedf/About%20%E2%80%94%20Extratone%20c48315db412848f6b048c04043cf3790.html">About — Extratone</a></figure></div></article></body></html>

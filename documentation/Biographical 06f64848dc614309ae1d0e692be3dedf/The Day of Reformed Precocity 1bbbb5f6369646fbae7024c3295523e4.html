@@ -1,0 +1,633 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>The Day of Reformed Precocity</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="1bbbb5f6-3696-46fb-ae70-24c3295523e4" class="page serif"><header><div class="page-header-icon undefined"><img class="icon" src="https://sln.me/img/icon/style10/d26.png"/></div><h1 class="page-title">The Day of Reformed Precocity</h1></header><div class="page-body"><figure id="29fae812-582b-4678-a9ca-2f56774f31d1" class="link-to-page"><a href="The%20Day%20of%20Reformed%20Precocity%201bbbb5f6369646fbae7024c3295523e4/The%20Week%20of%20Genius%2029fae812582b4678a9ca2f56774f31d1.html"><img class="icon" src="https://sln.me/img/icon/style10/w42.png"/>The Week of Genius</a></figure><div id="8b7d7cc1-2660-45d2-81b8-447835388c09" class="column-list"><div id="a44805b8-2136-4467-aa30-8f03b9f9ca44" style="width:31.25%" class="column"><p id="06bfc87e-01e3-4892-b6e8-5c7b0537bb7c" class="block-color-blue"><strong>BRIGHT
+QUICK
+CHILDLIKE	</strong></p><h3 id="5b022a05-1bde-48f7-b5d9-4a99097e2783" class="">Meditation</h3><figure class="block-color-pink callout" style="white-space:pre-wrap;display:flex" id="b4f19b35-c3c7-4205-a642-9a907c99b240"><div style="font-size:1.5em"><span class="icon">ℹ️</span></div><div style="width:100%">Youth is becoming to a younger person, age to an older one</div></figure></div><div id="6c8ca616-4e06-4a9d-a6c9-eaaf1b9c7959" style="width:68.75%" class="column"><p id="b2294938-967b-4fc3-82ba-6b0c3114b8fd" class="block-color-blue"><strong>CHILDISH
+IMPATIENT
+IMMATURE</strong></p><h3 id="b2876b11-1b0e-4be3-8033-91ef3d641755" class="block-color-orange">Advice</h3><p id="22bb35e8-ac73-4133-8263-d0f25aff64e3" class="block-color-orange">Growing up should not be viewed as a disaster or punishment.</p><p id="c5a8ed96-4ad4-4d75-99a6-bb1ee599e110" class="block-color-orange">Accept the inevitable responsibilities as well as rewards of maturation.</p><p id="4ff171d7-8b64-47a9-842e-82dbc3802d7a" class="block-color-orange">Let go of your fear and gain a respect and understanding of aging.</p></div></div><h1 id="1a38579c-89e2-44de-be5a-33a51b5dfc84" class="">Personality Report</h1><p id="2c314369-f951-42ec-94cc-71f067fa7c99" class="">One of the most prominent themes in the lives of January 27 people is that of early development, as those born on this day often manifest their talents at an early age. Not infrequently their professions are related to the same theme, and may deal directly or indirectly with young people. January 27 people are usually highly concerned with what is new and keeping young themselves.</p><p id="be1c7715-857b-4d1e-b4dd-87aff2503e73" class="">One associated problem often encountered by January 27 people is that of premature development—obviously the greatest danger in childhood is that they be exploited or pushed too fast. Not infrequently their projects develop too quickly, their ideas manifest too suddenly, their financial affairs expand too precipitously.</p><p id="b9a7c662-878f-4c6e-b5e3-5ed937a7daf0" class="">Because those born on this day are psychologically predisposed to speedy decisions, it may be very difficult for them to maintain control over their affairs. In their interpersonal relationships, as well, they may push both friendships and romantic attachments too quickly, thus creating an uncomfortable, albeit exciting situation for the other person involved. Sweeping others off their feet with a kind of tumultuous energy is typical of January 27 people.</p><p id="bbcc804d-ef23-4d95-be18-b86eda60ce71" class="">Above all, those born on this day must learn patience and discrimination. Not all of their work is of the highest calibre, though they expect it to be and can firmly believe it is. Unless January 27 people pay careful attention to the opinions and reactions of others they may suffer disappointment and rejection. In addition they must learn not only what they can do, but also who they are. Cultivating a realistic outlook toward life is essential for them if they wish to be successful in the world.</p><p id="b2ea3852-2328-4792-9219-d555752bf367" class="">For January 27 people, keeping their childlike nature satisfied can be a full time job in itself. They may be accused more than once in their lives of being overenthusiastic, juvenile, childish or even infantile in their emotional attitudes. All maturing experiences—having children themselves, conjugal sex, sharing household duties and responsibilities, holding a job, are both a challenge and opportunity for growth. If those born on this day get stuck in any of the developmental stages of childhood, they run the risk of being an eternal Peter Pan, i.e., never growing up. As charming a role as this may seem, it can wear thin when they find themselves in middle age.</p><p id="3b2c41e7-3716-44d5-a1c2-09b6d2b21ed7" class="">It is not uncommon that January 27 people undergo maturity crises at the ages of twenty-eight, thirty-six or forty-two, when they are faced by stark choices as to whether they wish to fully accept adult responsibilities or not. Such decisions can only be made by the January 27 person him/herself and cannot be forced. Those born on this day must come to realize that retaining youth need not conflict with a maturing and strengthening of character. Working with children and young people, starting new projects and studying the process of learning and creativity can all help to sustain their youthful needs in a healthy fashion.</p><div id="32873a88-647d-4736-8c97-951d9eb01722" class="column-list"><div id="688230fc-3274-44d1-be5a-2b092eb2f842" style="width:50%" class="column"><h3 id="5532660c-5fe7-4652-8495-c1808af5243e" class="">Health</h3><p id="2ab054ea-ad41-4797-8436-756040f751c5" class="">Those born on January 27 may be prone to various childhood maladies, some of which can spell lasting difficulties into their adult life. Therefore, parents who have children born on this day must take special care to treat their illnesses swiftly and intelligently. Later in life January 27 people are particularly prone to difficulties with their nervous and circulatory systems, which may in fact be related to each other. Keeping themselves in good shape with a sensible, down-to-earth, varied diet and seeing that they get proper dietary supplements is a great help. In addition, regular physical exercise in the open air is essential, whenever possible.</p><p id="3deec27a-b115-4887-bce8-7c4b94fa5638" class="">
+</p></div><div id="c06cc5b4-46b5-44d7-8625-b057948167ab" style="width:50%" class="column"><h3 id="19f1edcd-b41d-4ea0-b66a-07fdbee55670" class="">Numerology</h3><p id="6a8ffce9-13a5-48f4-aa4d-7f9aff140277" class="">Those born on the 27th of the month are ruled by the number 9 (2+7=9), and by the planet Mars. The number 9 is powerful in its influence on other numbers (any number added to 9 yields that number (e.g., 5+9=14, 4+1=5) and any number multiplied by 9 yields a 9 (e.g., 9x5=45, 4+5=9). The planet Mars is forceful and aggressive, and Number 9 people thus have the capacity to envelop situations. The combination of Mars with Uranus (ruler of Aquarius) can indicate marked mental abilities but leave January 27 people cool or unemotional most of the time, with periodic, and often childish, outbursts.</p><h3 id="2599471e-d61a-4e19-b42b-264ab0427d1e" class="">Tarot</h3><p id="e816e27b-f6bb-4448-aa51-2103d479ae51" class="">The 9th card of the Major Arcana is The Hermit, who is usually depicted walking with a lantern and a stick—he represents meditation, isolation and quietude. The Hermit also signifies crystallized wisdom and ultimate discipline. The Hermit is a taskmaster who motivates by conscience and guides others on their path. The positive indications of this card are stick-to-it-iveness, purpose, profundity and concentration; negative qualities include dogmatism, intolerance, mistrust and discouragement. For January 27 people, the negative characteristics are a warning to those who would hold on to past accomplishments and fail to mature.</p></div></div></div></article></body></html>
