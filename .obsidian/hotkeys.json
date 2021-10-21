@@ -21,16 +21,16 @@
       "modifiers": [
         "Mod"
       ],
-      "key": "\\"
+      "key": "/"
     }
   ],
   "file-explorer:new-file-in-new-pane": [
     {
       "modifiers": [
         "Alt",
-        "Mod"
+        "Shift"
       ],
-      "key": "`"
+      "key": "N"
     }
   ],
   "cycle-through-panes:cycle-through-panes": [
@@ -63,8 +63,7 @@
   "file-explorer:open": [
     {
       "modifiers": [
-        "Mod",
-        "Shift"
+        "Mod"
       ],
       "key": "E"
     }
@@ -75,7 +74,7 @@
         "Mod",
         "Shift"
       ],
-      "key": "ArrowUp"
+      "key": "PageUp"
     }
   ],
   "hotkey-helper:open-plugins": [
@@ -279,6 +278,78 @@
         "Shift"
       ],
       "key": "Enter"
+    }
+  ],
+  "templater-obsidian:insert-templater": [],
+  "editor:insert-embed": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "K"
+    }
+  ],
+  "workspace:copy-path": [],
+  "workspace:export-pdf": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "E"
+    }
+  ],
+  "file-recovery:open": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "P"
+    }
+  ],
+  "app:go-back": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "ArrowLeft"
+    }
+  ],
+  "app:go-forward": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "ArrowRight"
+    }
+  ],
+  "outline:open-for-current": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "O"
+    }
+  ],
+  "obsidian-outliner:move-list-item-down": [],
+  "insert-current-date": [],
+  "insert-current-time": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "T"
+    }
+  ],
+  "editor:toggle-strikethrough": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "S"
     }
   ]
 }
