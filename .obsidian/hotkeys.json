@@ -24,15 +24,7 @@
       "key": "\\"
     }
   ],
-  "file-explorer:new-file-in-new-pane": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod"
-      ],
-      "key": "`"
-    }
-  ],
+  "file-explorer:new-file-in-new-pane": [],
   "cycle-through-panes:cycle-through-panes": [
     {
       "modifiers": [
