@@ -1,0 +1,136 @@
+{
+  "main": {
+    "id": "7ed2b2dde569dc54",
+    "type": "split",
+    "children": [
+      {
+        "id": "d30c15a5d7dd3110",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "evernotes/E.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "eaaf6ed8875ccbc5",
+    "type": "split",
+    "children": [
+      {
+        "id": "a774cce0165e6179",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8525fb2ccc87e9a7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "29943dd4edf5e0e4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "bf635588456c2e6b",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "a9c3961137ab7f2b",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ede937ddfac9f863",
+    "type": "split",
+    "children": [
+      {
+        "id": "2a35322e00c82611",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "afddd7681725bac6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "evernotes/E.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "78a40673f3f44de7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "evernotes/E.md"
+              }
+            }
+          },
+          {
+            "id": "e7b1a4ae8df7e138",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "d30c15a5d7dd3110",
+  "lastOpenFiles": [
+    "evernotes/E.md",
+    "Untitled.md",
+    "Recording 20211020033159.m4a",
+    "Todoist.md",
+    "shortcuts/Siri Shortcuts for Scrubs.md",
+    "shortcuts/Untitled.md",
+    "SI on Discord Regarding Swift.md",
+    "I Trust Telegram.md",
+    "Telegram Notes.md",
+    "A Hearty Foundation.md"
+  ]
+}

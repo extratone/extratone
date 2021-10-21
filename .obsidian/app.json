@@ -1,0 +1,42 @@
+{
+  "mobilePullAction": "editor:save-file",
+  "mobileToolbarCommands": [
+    "editor:insert-wikilink",
+    "editor:insert-embed",
+    "editor:insert-tag",
+    "editor:attach-file",
+    "editor:set-heading",
+    "editor:toggle-bold",
+    "editor:toggle-italics",
+    "editor:toggle-strikethrough",
+    "editor:toggle-code",
+    "editor:toggle-blockquote",
+    "editor:insert-link",
+    "editor:toggle-bullet-list",
+    "editor:toggle-numbered-list",
+    "editor:toggle-checklist-status",
+    "editor:indent-list",
+    "editor:toggle-keyboard",
+    "editor:unindent-list",
+    "editor:configure-toolbar",
+    "editor:toggle-comments",
+    "editor:toggle-fold",
+    "editor:unfold-all",
+    "editor:focus",
+    "editor:fold-all"
+  ],
+  "attachmentFolderPath": "media",
+  "communityPluginSortOrder": "download",
+  "trashOption": "local",
+  "showUnsupportedFiles": true,
+  "spellcheck": true,
+  "emacsyKeys": false,
+  "promptDelete": false,
+  "alwaysUpdateLinks": true,
+  "pdfExportSettings": {
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 97
+  }
+}
