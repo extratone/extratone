@@ -16,10 +16,10 @@
     "progress": true,
     "current-time": true,
     "duration": true,
-    "mute": false,
+    "mute": true,
     "volume": true,
     "captions": true,
-    "settings": true,
+    "settings": false,
     "pip": false,
     "fullscreen": false
   },
@@ -41,5 +41,6 @@
     "fullscreen": true
   },
   "timestampTemplate": "\n{{TIMESTAMP}}\n",
+  "timestampOffset": 0,
   "hideEmbedControls": false
 }

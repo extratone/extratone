@@ -20,3 +20,5 @@ a firm warning or reprimand.
 reprimand, rebuke, reproof, remonstrance, reproach, admonishment, stricture, lecture, criticism, recrimination, tirade, diatribe, philippic, harangue, attack, scolding, chastisement, castigation, upbraiding, berating, reproval, censure, condemnation, telling-off, dressing-down, talking-to, tongue-lashing, bashing, blast, rap, rap over the knuckles, slap on the wrist, flea in one's ear, earful, roasting, rollicking, caning, blowing-up, rocket, wigging, slating, ticking off, carpeting, serve, rating, exhortation, warning, caution, caveat, piece of advice, recommendation, injunction, monition, enjoinment, instruction, direction, suggestion, lesson, precept, advice, counsel, guidance, urging, encouragement, persuasion, pressure, bollocking
 
 
+
+![[Recording 20211021130654.webm]]
