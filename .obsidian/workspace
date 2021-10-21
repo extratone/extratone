@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "d30c15a5d7dd3110",
+        "id": "41351aebb5851dff",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "evernotes/E.md",
+            "file": "vocabulary/Admonition (en-US).md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 195.00347518920898
   },
   "right": {
     "id": "ede937ddfac9f863",
@@ -84,7 +84,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "evernotes/E.md",
+                "file": "vocabulary/Admonition (en-US).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,27 +101,28 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "evernotes/E.md"
+                "file": "vocabulary/Admonition (en-US).md"
               }
             }
           },
           {
-            "id": "e7b1a4ae8df7e138",
+            "id": "39975e2374b32535",
             "type": "leaf",
             "state": {
-              "type": "calendar",
+              "type": "dictionary-view",
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
-  "active": "d30c15a5d7dd3110",
+  "active": "41351aebb5851dff",
   "lastOpenFiles": [
+    "vocabulary/Admonition (en-US).md",
     "evernotes/E.md",
     "Untitled.md",
     "Recording 20211020033159.m4a",
@@ -130,7 +131,6 @@
     "shortcuts/Untitled.md",
     "SI on Discord Regarding Swift.md",
     "I Trust Telegram.md",
-    "Telegram Notes.md",
-    "A Hearty Foundation.md"
+    "Telegram Notes.md"
   ]
 }
