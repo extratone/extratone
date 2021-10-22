@@ -39,6 +39,7 @@
     "margin": "0",
     "downscalePercent": 97
   },
-  "showLineNumber": true,
-  "useTab": false
+  "showLineNumber": false,
+  "useTab": false,
+  "smartIndentList": false
 }

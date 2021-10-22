@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "798cbb4539b30353",
+        "id": "d29f7ccba496fb33",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "obsidian/Federico's Obsidian Configuration.md",
-            "mode": "preview"
+            "file": "posts/Untitled.md",
+            "mode": "source"
           }
         }
       }
@@ -68,8 +68,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 195.00347518920898,
-    "collapsed": true
+    "width": 195.00347518920898
   },
   "right": {
     "id": "ede937ddfac9f863",
@@ -85,7 +84,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian/Federico's Obsidian Configuration.md",
+                "file": "posts/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +101,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidian/Federico's Obsidian Configuration.md"
+                "file": "posts/Untitled.md"
               }
             }
           },
@@ -126,19 +125,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 190.83331298828125
+    "width": 190.83331298828125,
+    "collapsed": true
   },
-  "active": "798cbb4539b30353",
+  "active": "d29f7ccba496fb33",
   "lastOpenFiles": [
+    "posts/Untitled.md",
+    "events/DISCORDSIX-240/DISCORDSIX-240.md",
+    "YouTube Stream Metadata.md",
+    "Extratone2022.jpg",
+    "Extratone2022.png",
+    "F71F25E9-0C58-48D6-8BD4-AFA6D622E021.jpeg",
+    "audio/Recording 20211021164959.m4a",
     "obsidian/Federico's Obsidian Configuration.md",
     "vocabulary/Admonition (en-US).md",
-    "evernotes/E.md",
-    "Untitled.md",
-    "Recording 20211020033159.m4a",
-    "Todoist.md",
-    "shortcuts/Siri Shortcuts for Scrubs.md",
-    "shortcuts/Untitled.md",
-    "SI on Discord Regarding Swift.md",
-    "I Trust Telegram.md"
+    "evernotes/E.md"
   ]
 }
