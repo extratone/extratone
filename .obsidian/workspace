@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "posts/Untitled.md",
+            "file": "obsidian/Federico's Obsidian Configuration.md",
             "mode": "source"
           }
         }
@@ -84,7 +84,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/Untitled.md",
+                "file": "obsidian/Federico's Obsidian Configuration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,7 +101,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/Untitled.md"
+                "file": "obsidian/Federico's Obsidian Configuration.md"
               }
             }
           },
@@ -130,6 +130,8 @@
   },
   "active": "d29f7ccba496fb33",
   "lastOpenFiles": [
+    "obsidian/Federico's Obsidian Configuration.md",
+    "gist/ieeg.md",
     "posts/Untitled.md",
     "events/DISCORDSIX-240/DISCORDSIX-240.md",
     "YouTube Stream Metadata.md",
@@ -137,8 +139,6 @@
     "Extratone2022.png",
     "F71F25E9-0C58-48D6-8BD4-AFA6D622E021.jpeg",
     "audio/Recording 20211021164959.m4a",
-    "obsidian/Federico's Obsidian Configuration.md",
-    "vocabulary/Admonition (en-US).md",
-    "evernotes/E.md"
+    "vocabulary/Admonition (en-US).md"
   ]
 }

@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Federico's Obsidian Configuration",
+      "path": "obsidian/Federico's Obsidian Configuration.md"
+    },
+    {
+      "basename": "ieeg",
+      "path": "gist/ieeg.md"
+    },
+    {
       "basename": "Untitled",
       "path": "posts/Untitled.md"
     },
@@ -23,10 +31,6 @@
     {
       "basename": "Recording 20211021164959",
       "path": "audio/Recording 20211021164959.m4a"
-    },
-    {
-      "basename": "Federico's Obsidian Configuration",
-      "path": "obsidian/Federico's Obsidian Configuration.md"
     },
     {
       "basename": "Admonition (en-US)",
