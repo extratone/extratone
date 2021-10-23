@@ -57,7 +57,7 @@
             }
           },
           {
-            "id": "a9c3961137ab7f2b",
+            "id": "02edb6f260a393d7",
             "type": "leaf",
             "state": {
               "type": "recent-files",
@@ -103,22 +103,6 @@
               "state": {
                 "file": "obsidian/Federico's Obsidian Configuration.md"
               }
-            }
-          },
-          {
-            "id": "39975e2374b32535",
-            "type": "leaf",
-            "state": {
-              "type": "dictionary-view",
-              "state": {}
-            }
-          },
-          {
-            "id": "8dec6ab6fdaba8ea",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
             }
           }
         ]

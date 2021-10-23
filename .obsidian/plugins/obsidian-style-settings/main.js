@@ -8429,6 +8429,10 @@ function detectIndent(string) {
 const settingRegExp = /\/\*\s*@settings[\r\n]+?([\s\S]+?)\*\//g;
 const nameRegExp = /^name:\s*(.+)$/m;
 class CSSSettingsPlugin extends obsidian.Plugin {
+    constructor() {
+        super(...arguments);
+        this.debounceTimer = 0;
+    }
     onload() {
         return __awaiter(this, void 0, void 0, function* () {
             this.settingsManager = new CSSSettingsManager(this);
@@ -8436,47 +8440,55 @@ class CSSSettingsPlugin extends obsidian.Plugin {
             this.settingsTab = new CSSSettingsTab(this.app, this);
             this.addSettingTab(this.settingsTab);
             this.registerEvent(this.app.workspace.on("css-change", () => {
-                const styleSheets = document.styleSheets;
-                const settingsList = [];
-                const errorList = [];
-                for (let i = 0, len = styleSheets.length; i < len; i++) {
-                    const sheet = styleSheets.item(i);
-                    const text = sheet.ownerNode.textContent.trim();
-                    let match = settingRegExp.exec(text);
-                    if (match && match.length) {
-                        do {
-                            const nameMatch = text.match(nameRegExp);
-                            const name = nameMatch
-                                ? nameMatch[1]
-                                : undefined;
-                            try {
-                                const str = match[1].trim();
-                                const indent = detectIndent(str);
-                                const settings = jsYaml.load(str.replace(/\t/g, indent.type === "space" ? indent.indent : "    "), {
-                                    filename: name,
-                                });
-                                if (typeof settings === "object" &&
-                                    settings.name &&
-                                    settings.id &&
-                                    settings.settings) {
-                                    settingsList.push(settings);
-                                }
-                            }
-                            catch (e) {
-                                errorList.push({ name, error: `${e}` });
-                            }
-                        } while ((match = settingRegExp.exec(text)) !== null);
-                    }
-                }
-                this.settingsTab.setSettings(settingsList, errorList);
-                this.settingsManager.initClasses();
+                this.parseCSS();
+            }));
+            this.registerEvent(this.app.workspace.on("parse-style-settings", () => {
+                this.parseCSS();
             }));
             document.body.classList.add("css-settings-manager");
-            // Let other plugins register before calling this to pick up on plugin style settings
-            setTimeout(() => {
-                this.app.workspace.trigger("css-change");
-            });
+            this.parseCSS();
         });
+    }
+    parseCSS() {
+        clearTimeout(this.debounceTimer);
+        this.debounceTimer = window.setTimeout(() => {
+            const styleSheets = document.styleSheets;
+            const settingsList = [];
+            const errorList = [];
+            for (let i = 0, len = styleSheets.length; i < len; i++) {
+                const sheet = styleSheets.item(i);
+                const text = sheet.ownerNode.textContent.trim();
+                let match = settingRegExp.exec(text);
+                if (match && match.length) {
+                    do {
+                        const nameMatch = text.match(nameRegExp);
+                        const name = nameMatch
+                            ? nameMatch[1]
+                            : undefined;
+                        try {
+                            const str = match[1].trim();
+                            const indent = detectIndent(str);
+                            const settings = jsYaml.load(str.replace(/\t/g, indent.type === "space" ? indent.indent : "    "), {
+                                filename: name,
+                            });
+                            settings.settings = settings.settings.filter(setting => setting);
+                            if (typeof settings === "object" &&
+                                settings.name &&
+                                settings.id &&
+                                settings.settings &&
+                                settings.settings.length) {
+                                settingsList.push(settings);
+                            }
+                        }
+                        catch (e) {
+                            errorList.push({ name, error: `${e}` });
+                        }
+                    } while ((match = settingRegExp.exec(text)) !== null);
+                }
+            }
+            this.settingsTab.setSettings(settingsList, errorList);
+            this.settingsManager.initClasses();
+        }, 100);
     }
     onunload() {
         this.settingsManager.cleanup();
