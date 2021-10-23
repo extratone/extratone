@@ -175,7 +175,8 @@
   "app:toggle-left-sidebar": [
     {
       "modifiers": [
-        "Ctrl"
+        "Mod",
+        "Shift"
       ],
       "key": "ArrowLeft"
     }
@@ -183,7 +184,8 @@
   "app:toggle-right-sidebar": [
     {
       "modifiers": [
-        "Ctrl"
+        "Mod",
+        "Shift"
       ],
       "key": "ArrowRight"
     }

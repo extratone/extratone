@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "README.md",
+            "file": "curation/Notion Library Export.md",
             "mode": "source"
           }
         }
@@ -84,7 +84,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "curation/Notion Library Export.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,19 +101,36 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "curation/Notion Library Export.md"
               }
             }
+          },
+          {
+            "id": "3545d32ba3ed8ca0",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "b8e3f1b6b9e34fd2",
+            "type": "leaf",
+            "state": {
+              "type": "side-panel-control-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 190.83331298828125,
-    "collapsed": true
+    "width": 270.94097900390625
   },
   "active": "d29f7ccba496fb33",
   "lastOpenFiles": [
+    "curation/Notion Library Export.md",
     "README.md",
     "configuration/Audio-Recorder Plugin Configuration.md",
     "obsidian/Federico's Obsidian Configuration.md",
@@ -122,7 +139,6 @@
     "events/DISCORDSIX-240/DISCORDSIX-240.md",
     "YouTube Stream Metadata.md",
     "Extratone2022.jpg",
-    "Extratone2022.png",
-    "F71F25E9-0C58-48D6-8BD4-AFA6D622E021.jpeg"
+    "Extratone2022.png"
   ]
 }
