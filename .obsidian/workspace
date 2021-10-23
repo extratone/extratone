@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "obsidian/Federico's Obsidian Configuration.md",
+            "file": "README.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 195.00347518920898
+    "width": 267.5136413574219
   },
   "right": {
     "id": "ede937ddfac9f863",
@@ -84,7 +84,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian/Federico's Obsidian Configuration.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,7 +101,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidian/Federico's Obsidian Configuration.md"
+                "file": "README.md"
               }
             }
           }
@@ -114,6 +114,8 @@
   },
   "active": "d29f7ccba496fb33",
   "lastOpenFiles": [
+    "README.md",
+    "configuration/Audio-Recorder Plugin Configuration.md",
     "obsidian/Federico's Obsidian Configuration.md",
     "gist/ieeg.md",
     "posts/Untitled.md",
@@ -121,8 +123,6 @@
     "YouTube Stream Metadata.md",
     "Extratone2022.jpg",
     "Extratone2022.png",
-    "F71F25E9-0C58-48D6-8BD4-AFA6D622E021.jpeg",
-    "audio/Recording 20211021164959.m4a",
-    "vocabulary/Admonition (en-US).md"
+    "F71F25E9-0C58-48D6-8BD4-AFA6D622E021.jpeg"
   ]
 }

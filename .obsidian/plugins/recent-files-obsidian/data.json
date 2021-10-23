@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "Audio-Recorder Plugin Configuration",
+      "path": "configuration/Audio-Recorder Plugin Configuration.md"
+    },
+    {
       "basename": "Federico's Obsidian Configuration",
       "path": "obsidian/Federico's Obsidian Configuration.md"
     },
@@ -55,10 +63,6 @@
     {
       "basename": "Telegram Notes",
       "path": "Telegram/Telegram Notes.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
     },
     {
       "basename": "READMEdepr",
