@@ -1,8 +1,32 @@
 {
   "recentFiles": [
     {
+      "basename": "Software-Configuration",
+      "path": "raindrop/Software-Configuration.md"
+    },
+    {
+      "basename": "apps",
+      "path": "archive/apps.md"
+    },
+    {
+      "basename": "Blessed Web Utilities",
+      "path": "archive/Blessed Web Utilities.md"
+    },
+    {
+      "basename": "vocabulary",
+      "path": "vocabulary.md"
+    },
+    {
+      "basename": "Social",
+      "path": "Social.md"
+    },
+    {
+      "basename": "YouTube Stream Metadata",
+      "path": "events/YouTube Stream Metadata.md"
+    },
+    {
       "basename": "Notion Library Export",
-      "path": "curation/Notion Library Export.md"
+      "path": "archive/Notion Library Export.md"
     },
     {
       "basename": "README",
@@ -29,16 +53,8 @@
       "path": "events/DISCORDSIX-240/DISCORDSIX-240.md"
     },
     {
-      "basename": "YouTube Stream Metadata",
-      "path": "YouTube Stream Metadata.md"
-    },
-    {
       "basename": "Extratone2022",
       "path": "Extratone2022.jpg"
-    },
-    {
-      "basename": "Extratone2022",
-      "path": "Extratone2022.png"
     },
     {
       "basename": "Recording 20211021164959",
@@ -51,10 +67,6 @@
     {
       "basename": "E",
       "path": "evernotes/E.md"
-    },
-    {
-      "basename": "Untitled",
-      "path": "Untitled.md"
     },
     {
       "basename": "Todoist",

@@ -1,15 +1,15 @@
 {
   "main": {
-    "id": "7ed2b2dde569dc54",
+    "id": "08bd1fb43e73fa71",
     "type": "split",
     "children": [
       {
-        "id": "d29f7ccba496fb33",
+        "id": "ea7abc635ee01b84",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "curation/Notion Library Export.md",
+            "file": "raindrop/Software-Configuration.md",
             "mode": "source"
           }
         }
@@ -57,7 +57,7 @@
             }
           },
           {
-            "id": "02edb6f260a393d7",
+            "id": "ea4eaf189fbfb683",
             "type": "leaf",
             "state": {
               "type": "recent-files",
@@ -68,7 +68,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 267.5136413574219
+    "width": 267.5136413574219,
+    "collapsed": true
   },
   "right": {
     "id": "ede937ddfac9f863",
@@ -84,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "curation/Notion Library Export.md",
+                "file": "raindrop/Software-Configuration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,44 +102,36 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "curation/Notion Library Export.md"
+                "file": "raindrop/Software-Configuration.md"
               }
             }
           },
           {
-            "id": "3545d32ba3ed8ca0",
+            "id": "769f38153c7058ee",
             "type": "leaf",
             "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
-          },
-          {
-            "id": "b8e3f1b6b9e34fd2",
-            "type": "leaf",
-            "state": {
-              "type": "side-panel-control-view",
+              "type": "calendar",
               "state": {}
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
     "width": 270.94097900390625
   },
-  "active": "d29f7ccba496fb33",
+  "active": "ea7abc635ee01b84",
   "lastOpenFiles": [
-    "curation/Notion Library Export.md",
-    "README.md",
-    "configuration/Audio-Recorder Plugin Configuration.md",
-    "obsidian/Federico's Obsidian Configuration.md",
-    "gist/ieeg.md",
-    "posts/Untitled.md",
-    "events/DISCORDSIX-240/DISCORDSIX-240.md",
-    "YouTube Stream Metadata.md",
-    "Extratone2022.jpg",
-    "Extratone2022.png"
+    "raindrop/Software-Configuration.md",
+    "archive/apps.md",
+    "archive/Blessed Web Utilities.md",
+    "Extratone2022.png",
+    "HaphazardPreview.png",
+    "HaphazardPreview.jpg",
+    "Untitled.md",
+    "vocabulary.md",
+    "Social.md",
+    "events/YouTube Stream Metadata.md"
   ]
 }
