@@ -120,15 +120,7 @@
       "key": "Z"
     }
   ],
-  "app:reload": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "R"
-    }
-  ],
+  "app:reload": [],
   "editor:toggle-blockquote": [
     {
       "modifiers": [
@@ -175,8 +167,8 @@
   "app:toggle-left-sidebar": [
     {
       "modifiers": [
-        "Mod",
-        "Shift"
+        "Alt",
+        "Mod"
       ],
       "key": "ArrowLeft"
     }
@@ -184,8 +176,8 @@
   "app:toggle-right-sidebar": [
     {
       "modifiers": [
-        "Mod",
-        "Shift"
+        "Alt",
+        "Mod"
       ],
       "key": "ArrowRight"
     }
@@ -362,5 +354,6 @@
       ],
       "key": "L"
     }
-  ]
+  ],
+  "app:open-help": []
 }
