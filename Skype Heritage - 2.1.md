@@ -1,1 +1,0 @@
-# Our Collective Skype Heritage

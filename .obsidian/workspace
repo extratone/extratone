@@ -96,6 +96,33 @@
               "type": "advanced-tables-toolbar",
               "state": {}
             }
+          },
+          {
+            "id": "326397920c54bd0e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "archive/The Tone/Hassle & Hustle  State of the Extranet 11 - .md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4499de9cfe87a736",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "archive/The Tone/Hassle & Hustle  State of the Extranet 11 - .md"
+              }
+            }
           }
         ],
         "currentTab": 1

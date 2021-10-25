@@ -1,0 +1,147 @@
+{
+  "main": {
+    "id": "25595b822c3ef30f",
+    "type": "split",
+    "children": [
+      {
+        "id": "262032ffc6d149bf",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "README.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "eaaf6ed8875ccbc5",
+    "type": "split",
+    "children": [
+      {
+        "id": "a774cce0165e6179",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8525fb2ccc87e9a7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "29943dd4edf5e0e4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "40420a0ec1354cfe",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 267.5136413574219
+  },
+  "right": {
+    "id": "ede937ddfac9f863",
+    "type": "split",
+    "children": [
+      {
+        "id": "2a35322e00c82611",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "df053feaa4859edc",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "5edc6dd332d2fe00",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "869bd17a3cca41e7",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "326397920c54bd0e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4499de9cfe87a736",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 270.94097900390625
+  },
+  "active": "262032ffc6d149bf",
+  "lastOpenFiles": [
+    "README.md",
+    "vocabulary/vocabulary.md",
+    "futureland/Skype Heritage - 2.1.md",
+    "correspondence/Obsidian Meta Discord Correspondence.md",
+    "vocabulary/merriam-webster.md",
+    "vocabulary/extratone.com Transfer from OneDrive for Business to iCloud.md",
+    "brand/Extratone Brand Preview 1.jpg",
+    "archive/The Tone/Hassle & Hustle  State of the Extranet 11 - .md",
+    "archive/dropbox/Instagram_Trash.md",
+    "documentation/feneas/fediverse-main/source/_posts/fediverse-in-2019.md"
+  ]
+}
