@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "raindrop/Software-Configuration.md",
+            "file": "vocabulary.md",
             "mode": "source"
           }
         }
@@ -49,15 +49,7 @@
             }
           },
           {
-            "id": "bf635588456c2e6b",
-            "type": "leaf",
-            "state": {
-              "type": "starred",
-              "state": {}
-            }
-          },
-          {
-            "id": "ea4eaf189fbfb683",
+            "id": "40420a0ec1354cfe",
             "type": "leaf",
             "state": {
               "type": "recent-files",
@@ -68,8 +60,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 267.5136413574219,
-    "collapsed": true
+    "width": 267.5136413574219
   },
   "right": {
     "id": "ede937ddfac9f863",
@@ -85,7 +76,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "raindrop/Software-Configuration.md",
+                "file": "vocabulary.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,16 +93,27 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "raindrop/Software-Configuration.md"
+                "file": "vocabulary.md"
               }
             }
           },
           {
-            "id": "769f38153c7058ee",
+            "id": "df053feaa4859edc",
             "type": "leaf",
             "state": {
               "type": "calendar",
               "state": {}
+            }
+          },
+          {
+            "id": "5edc6dd332d2fe00",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
             }
           }
         ],
@@ -123,15 +125,15 @@
   },
   "active": "ea7abc635ee01b84",
   "lastOpenFiles": [
-    "raindrop/Software-Configuration.md",
-    "archive/apps.md",
-    "archive/Blessed Web Utilities.md",
-    "Extratone2022.png",
-    "HaphazardPreview.png",
-    "HaphazardPreview.jpg",
-    "Untitled.md",
     "vocabulary.md",
-    "Social.md",
-    "events/YouTube Stream Metadata.md"
+    "events/Social.md",
+    "events/Live Stream.md",
+    "events/EXTRATONE DISCORD SIXTH ANNIVERSARY CEREMONY · Issue 240 · extratoneextratone(httpsgithub.comextratoneextratoneissues240).md",
+    "events/Event Meta.md",
+    "audio/Recording 20211021130654.webm",
+    "audio/Recording 20211021161611.m4a",
+    "brand/Extratone2022 1.jpg",
+    "raindrop/Software-Configuration.md",
+    "archive/apps.md"
   ]
 }
