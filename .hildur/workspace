@@ -4,14 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "262032ffc6d149bf",
+        "id": "b652afdc74ee835d",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "README.md",
-            "mode": "source"
-          }
+          "type": "graph",
+          "state": {}
         }
       }
     ],
@@ -56,11 +53,13 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 267.5136413574219
+    "width": 267.5136413574219,
+    "collapsed": true
   },
   "right": {
     "id": "ede937ddfac9f863",
@@ -103,7 +102,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,9 +117,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "README.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -129,9 +125,10 @@
       }
     ],
     "direction": "horizontal",
-    "width": 270.94097900390625
+    "width": 270.94097900390625,
+    "collapsed": true
   },
-  "active": "262032ffc6d149bf",
+  "active": "b652afdc74ee835d",
   "lastOpenFiles": [
     "README.md",
     "vocabulary/vocabulary.md",
