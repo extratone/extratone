@@ -4,11 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "b652afdc74ee835d",
+        "id": "5506508b6c3f99f1",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "archive/dropbox/Extratone/Essential_Newsletters.md",
+            "mode": "preview"
+          }
         }
       }
     ],
@@ -53,13 +56,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 267.5136413574219,
-    "collapsed": true
+    "width": 267.5136413574219
   },
   "right": {
     "id": "ede937ddfac9f863",
@@ -102,6 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "archive/dropbox/Extratone/Essential_Newsletters.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +119,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "archive/dropbox/Extratone/Essential_Newsletters.md"
+              }
             }
           }
         ],
@@ -128,17 +132,17 @@
     "width": 270.94097900390625,
     "collapsed": true
   },
-  "active": "b652afdc74ee835d",
+  "active": "5506508b6c3f99f1",
   "lastOpenFiles": [
-    "README.md",
-    "vocabulary/vocabulary.md",
-    "futureland/Skype Heritage - 2.1.md",
-    "correspondence/Obsidian Meta Discord Correspondence.md",
-    "vocabulary/merriam-webster.md",
-    "vocabulary/extratone.com Transfer from OneDrive for Business to iCloud.md",
-    "brand/Extratone Brand Preview 1.jpg",
-    "archive/The Tone/Hassle & Hustle  State of the Extranet 11 - .md",
-    "archive/dropbox/Instagram_Trash.md",
-    "documentation/feneas/fediverse-main/source/_posts/fediverse-in-2019.md"
+    "archive/dropbox/Extratone/Essential_Newsletters.md",
+    "archive/TL/assumed-suicidal-but-impervious-to-email-fatigue.md",
+    "archive/TL/a-year-of-blasphemy.md",
+    "archive/The Tone/The Nieman Demon  State of the Extranet 8 - .md",
+    "archive/The Tone/Happy Birthday, Trato - .md",
+    "archive/Safari Bookmarks.md",
+    "archive/PodcastingHistoryOnePage.md",
+    "archive/Notion Library Export.md",
+    "archive/Drywall Interview - Null.md",
+    "archive/iPhone & iOS Bookmarks.md"
   ]
 }
