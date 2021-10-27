@@ -4,11 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "c8071baa5bb5b822",
+        "id": "7e4a723513aa00cf",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "drafts/documentation.txt",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -59,6 +62,14 @@
           "type": "starred",
           "state": {}
         }
+      },
+      {
+        "id": "4bafaa309ae133ee",
+        "type": "leaf",
+        "state": {
+          "type": "recent-files",
+          "state": {}
+        }
       }
     ],
     "currentTab": 0
@@ -73,6 +84,7 @@
         "state": {
           "type": "backlink",
           "state": {
+            "file": "drafts/documentation.txt",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -88,12 +100,20 @@
         "type": "leaf",
         "state": {
           "type": "outline",
-          "state": {}
+          "state": {
+            "file": "drafts/documentation.txt"
+          }
         }
       }
-    ],
-    "currentTab": 0
+    ]
   },
-  "active": "c8071baa5bb5b822",
-  "lastOpenFiles": []
+  "active": "7e4a723513aa00cf",
+  "lastOpenFiles": [
+    "drafts/documentation.txt",
+    "media/Recording 20211026202721.m4a",
+    "Audio 2021-10-25 19.54.35.m4a",
+    "raindrop/Reading List.md",
+    "anecdotes/MacOS Monterey Day.md",
+    "anecdotes/Untitled.md"
+  ]
 }

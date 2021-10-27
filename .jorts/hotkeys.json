@@ -183,15 +183,6 @@
       "key": "L"
     }
   ],
-  "markdown:toggle-preview": [
-    {
-      "modifiers": [
-        "Alt",
-        "Ctrl"
-      ],
-      "key": "P"
-    }
-  ],
   "editor:toggle-fold": [
     {
       "modifiers": [
@@ -271,6 +262,22 @@
         "Mod"
       ],
       "key": "ArrowUp"
+    }
+  ],
+  "command-palette:open": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "\\"
+    }
+  ],
+  "markdown:toggle-preview": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "P"
     }
   ]
 }
