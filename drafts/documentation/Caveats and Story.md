@@ -1,0 +1,2 @@
+# Caveats and Story
+My laptop is broken. I am away from office. I have an iPad Pro 2020. I got my office desktop's magic keyboard and trackpad. In this post I am discussing if iPad can help given that I do not have (physical) access to my main computers. Would I recommend this over a main computer - No! But, can you do some things on the iPad reasonably well enough given keyboard and trackpad - Yes!

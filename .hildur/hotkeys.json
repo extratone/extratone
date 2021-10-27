@@ -89,9 +89,10 @@
   "editor:attach-file": [
     {
       "modifiers": [
+        "Alt",
         "Mod"
       ],
-      "key": "O"
+      "key": "K"
     }
   ],
   "open-with-default-app:open": [
@@ -355,14 +356,14 @@
     }
   ],
   "app:open-help": [],
-  "switcher:open": [],
-  "darlal-switcher-plus:switcher-plus:open": [
+  "obsidian-outliner:move-list-item-up": [],
+  "file-explorer:move-file": [
     {
       "modifiers": [
-        "Alt",
-        "Shift"
+        "Mod"
       ],
-      "key": "O"
+      "key": "M"
     }
-  ]
+  ],
+  "hotkeysplus-obsidian:better-toggle-todo": []
 }

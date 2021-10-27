@@ -1,0 +1,1 @@
+# [My iPad Setup](https://nipunbatra.github.io/blog/setup/2021/06/14/setup-ipad.html)

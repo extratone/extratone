@@ -1,0 +1,24 @@
+# State of The iPhone 2021 LIVE
+## Bomb my first Crowdcast over lunch, tomorrow.
+
+- Save or unsave a story: Command + S
+- Copy a link for the story: Option + Command + C
+- Close a story: Command + [ (left bracket)
+- Go to the next story or page: Right Arrow
+- Go to the previous story or page: Left Arrow
+- Go to the top: Command + Up Arrow
+- Go to the bottom: Command + Down Arrow
+- Suggest more stories like the current one: Command + L
+- Suggest less stories like the current one: Command + D
+- Follow or unfollow the current channel or topic: Shift + Command + L
+- Block or unblock the current channel or topic: Shift + Command + D
+
+- Zoom in: Command + Plus Sign
+- Zoom out: Command + Hyphen
+- Reset the zoom: Command + 0 (zero)
+- Increase the text size: Option + Command + Plus Sign
+- Decrease the text size: Option + Command + Hyphen
+- Hide or unhide the sidebar: Option + Command + S
+- Show a magazine’s table of contents: Command + T
+- Refresh the feed: Command + R**
+/*

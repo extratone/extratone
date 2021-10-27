@@ -1,0 +1,21 @@
+# "[A Comprehensive Guide to All 120+ Settings URLs Supported by iOS and iPadOS 13.1](https://www.macstories.net/ios/a-comprehensive-guide-to-all-120-settings-urls-supported-by-ios-and-ipados-13-1/)" Oct 1, 2019 at 10:00
+***
+![](https://2672686a4cf38e8c2458-2712e00ea34e3076747650c92426bbb5.ssl.cf1.rackcdn.com/2019-10-01-14-16-44.png)
+
+A few weeks ago, I came across [a post on Reddit](https://reddit.com/r/shortcuts/comments/d4fzyk/you_can_currently_open_specific_pages_in_the/) claiming that Apple had restored the ability to launch specific sections of the Settings app via Shortcuts in iOS and iPadOS 13.1. I was inspired by that discovery to finish working on a project I had long been putting off: documenting **all the URLs supported by the Settings app** in iOS and iPadOS.
+
+After <del>some</del> a _lot_ of trial and error, I’ve collected 120+ URLs that can open individual pages and sub-sections of the Settings app. In this post, I’m going to share the complete list of URLs that are supported as of iOS and iPadOS 13.1 (specifically, iOS 13.1.2), as well as a custom shortcut to launch them.
+
+The ability to open specific sections of the Settings app isn’t new in iOS 13.1: for [several years now](https://holgr.com/no-jailbreak-necessary-how-to-quickly-access-ios-settings-on-your-ipad-iphone-or-ipod/), Apple has offered a `prefs:root` URL scheme designed to launch the Settings app at a specific path. For instance, `prefs:root=Bluetooth` can open Settings’ Bluetooth page, while `prefs:root=ControlCenter&path=CUSTOMIZE_CONTROLS` can navigate directly into Settings ⇾ Control Center ⇾ Customize Controls. You get the idea.
+
+Historically, Settings URLs have been affected by two main problems: Apple’s tendency to either break them in new versions of iOS or [reject](https://github.com/dpa99c/cordova-diagnostic-plugin/issues/262) apps that [implemented them](https://cromulentlabs.wordpress.com/2017/08/22/on-upcoming-changes-in-ios-11/) citing usage of private APIs, and the inconsistent text format used in the URLs themselves. The `prefs:root` URL scheme goes back several years in iOS’ history, and we’ve seen apps (such as the popular [Launcher](https://itunes.apple.com/us/app/id905099592?at=10l6nh&ct=ms_inline)) implement support for them by letting users open the Settings app at a specific path. A quick Google search demonstrates how, over the years, [others have tried](https://gist.github.com/deanlyoung/368e274945a6929e0ea77c4eca345560) to put together a list of all (or, at the very least, the most popular) URLs supported by Settings.
+
+Following [two](https://www.macstories.net/stories/ios-and-ipados-13-the-macstories-review/) big [launches](https://www.macstories.net/news/introducing-macstories-shortcuts-icons-300-custom-home-screen-icons-for-your-shortcuts/) on MacStories last month, I needed to work on something different and fun1, so I decided to spend a few days documenting all the Settings URLs – for main pages and sub-sections – that I could reliably open in iOS and iPadOS 13.1.
+
+I used pre-existing work as the foundation for my research: I went through old lists of `prefs:root` URLs (primarily [these](https://gist.github.com/deanlyoung/368e274945a6929e0ea77c4eca345560) [two](https://forums.macrumors.com/threads/manually-creating-settings-launchers-in-app-launching-apps.2037291/)) and re-tested each URL for iOS and iPadOS 13.1; some of them were still working, others required an update. Then, I turned my attention to finding the URLs for _new_ Settings pages Apple added over the past couple of years and – the most time-consuming task of all – I tested every single sub-page too.
+
+There is no automated method for discovering Settings URLs or scraping the Settings app: I had to _guess_ each one by starting with the title of each page (in English), trying different encoding and capitalization formats, and attempting to launch it via Shortcuts. It took a while, but it was exactly the kind of boring, repetitive task I needed to take my mind off the iOS 13 review.
+
+Below, you’ll find a list of the 120+ Settings URLs I was able to test in iOS and iPadOS 13.1, grouped by section and listed in the same order they appear in the Settings app.
+
+Some notes on these URLs:

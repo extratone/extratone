@@ -1,28 +1,120 @@
 {
   "recentFiles": [
     {
-      "basename": "Attachment Test",
-      "path": "Attachment Test.md"
+      "basename": "DraftsAudioTest",
+      "path": "media/DraftsAudioTest.m4a"
     },
     {
-      "basename": "Podcast Documentation Template",
-      "path": "configuration/Podcast Documentation Template.md"
+      "basename": "documentation",
+      "path": "drafts/documentation.md"
     },
     {
-      "basename": "Podcasts Documentation",
-      "path": "documentation/Podcasts Documentation.md"
+      "basename": "Drafts Keyboard Shortcuts",
+      "path": "drafts/documentation/Drafts Keyboard Shortcuts.md"
     },
     {
-      "basename": "Title_Formats_and_Style_for_Works_of_Art_or_Artifi",
-      "path": "archive/dropbox/Extratone/Reference/Title_Formats_and_Style_for_Works_of_Art_or_Artifi.md"
+      "basename": "NotionLibrary",
+      "path": "curation/NotionLibrary.csv"
     },
     {
-      "basename": "Futureland_-_Episode_27-1",
-      "path": "archive/dropbox/Extratone/Futureland_-_Episode_27-1.md"
+      "basename": "pages",
+      "path": "pages/pages.md"
     },
     {
-      "basename": "Extratone Radio",
-      "path": "pages/Extratone Radio.md"
+      "basename": "Anecdotes",
+      "path": "Anecdotes.md"
+    },
+    {
+      "basename": "Posts",
+      "path": "Posts/Posts.md"
+    },
+    {
+      "basename": "Telegram Tips Series",
+      "path": "telegram/Telegram Tips Series.md"
+    },
+    {
+      "basename": "Universal Clipboard",
+      "path": "telegram/Universal Clipboard.md"
+    },
+    {
+      "basename": "A Hearty Foundation",
+      "path": "telegram/A Hearty Foundation.md"
+    },
+    {
+      "basename": "Community",
+      "path": "telegram/Community.md"
+    },
+    {
+      "basename": "File Transfer & Cloud Backup",
+      "path": "telegram/File Transfer & Cloud Backup.md"
+    },
+    {
+      "basename": "CHANGELOG",
+      "path": "CHANGELOG.md"
+    },
+    {
+      "basename": "GM",
+      "path": "GM.md"
+    },
+    {
+      "basename": "Telegram (Dedicated Draft)",
+      "path": "telegram/Telegram (Dedicated Draft).md"
+    },
+    {
+      "basename": "Drafting",
+      "path": "telegram/Drafting.md"
+    },
+    {
+      "basename": "index",
+      "path": "index.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "How I’ve used Telegram as the ultimate cross-platform Universal Clipboard, file sharing service, and more.",
+      "path": "telegram/How I’ve used Telegram as the ultimate cross-platform Universal Clipboard, file sharing service, and more..md"
+    },
+    {
+      "basename": "SendFullSizedImage",
+      "path": "video/SendFullSizedImage.mp4"
+    },
+    {
+      "basename": "Why",
+      "path": "Why.md"
+    },
+    {
+      "basename": "~~Transparency~~ Opacity",
+      "path": "telegram/~~Transparency~~ Opacity.md"
+    },
+    {
+      "basename": "Telegram 1",
+      "path": "telegram/Telegram 1.md"
+    },
+    {
+      "basename": "Notes-Telegram (Index)",
+      "path": "telegram/Notes-Telegram (Index).md"
+    },
+    {
+      "basename": "Telegram",
+      "path": "drafts/Telegram.md"
+    },
+    {
+      "basename": "Notes-Telegram",
+      "path": "notes/Notes-Telegram.md"
+    },
+    {
+      "basename": "tratobot wtf",
+      "path": "telegram/tratobot wtf.md"
+    },
+    {
+      "basename": "Obsidian Meta",
+      "path": "notes/Obsidian Meta.md"
+    },
+    {
+      "basename": "blimp",
+      "path": "archive/blimp.pdf"
     },
     {
       "basename": "Essential_Newsletters",
@@ -73,10 +165,6 @@
       "path": "Audio 2021-10-25 19.54.35.m4a"
     },
     {
-      "basename": "README",
-      "path": "README.md"
-    },
-    {
       "basename": "vocabulary",
       "path": "vocabulary/vocabulary.md"
     },
@@ -111,94 +199,6 @@
     {
       "basename": "fediverse-in-2019",
       "path": "documentation/feneas/fediverse-main/source/_posts/fediverse-in-2019.md"
-    },
-    {
-      "basename": "Software-Configuration",
-      "path": "raindrop/Software-Configuration.md"
-    },
-    {
-      "basename": "Reading List",
-      "path": "raindrop/Reading List.md"
-    },
-    {
-      "basename": "Social",
-      "path": "events/Social.md"
-    },
-    {
-      "basename": "Live Stream",
-      "path": "events/Live Stream.md"
-    },
-    {
-      "basename": "EXTRATONE DISCORD SIXTH ANNIVERSARY CEREMONY · Issue 240 · extratoneextratone(httpsgithub.comextratoneextratoneissues240)",
-      "path": "events/EXTRATONE DISCORD SIXTH ANNIVERSARY CEREMONY · Issue 240 · extratoneextratone(httpsgithub.comextratoneextratoneissues240).md"
-    },
-    {
-      "basename": "Event Meta",
-      "path": "events/Event Meta.md"
-    },
-    {
-      "basename": "Recording 20211021130654",
-      "path": "audio/Recording 20211021130654.webm"
-    },
-    {
-      "basename": "Recording 20211021161611",
-      "path": "audio/Recording 20211021161611.m4a"
-    },
-    {
-      "basename": "Extratone2022 1",
-      "path": "brand/Extratone2022 1.jpg"
-    },
-    {
-      "basename": "apps",
-      "path": "archive/apps.md"
-    },
-    {
-      "basename": "Blessed Web Utilities",
-      "path": "archive/Blessed Web Utilities.md"
-    },
-    {
-      "basename": "YouTube Stream Metadata",
-      "path": "events/YouTube Stream Metadata.md"
-    },
-    {
-      "basename": "Audio-Recorder Plugin Configuration",
-      "path": "configuration/Audio-Recorder Plugin Configuration.md"
-    },
-    {
-      "basename": "Federico's Obsidian Configuration",
-      "path": "obsidian/Federico's Obsidian Configuration.md"
-    },
-    {
-      "basename": "ieeg",
-      "path": "gist/ieeg.md"
-    },
-    {
-      "basename": "Untitled",
-      "path": "posts/Untitled.md"
-    },
-    {
-      "basename": "DISCORDSIX-240",
-      "path": "events/DISCORDSIX-240/DISCORDSIX-240.md"
-    },
-    {
-      "basename": "Recording 20211021164959",
-      "path": "audio/Recording 20211021164959.m4a"
-    },
-    {
-      "basename": "Admonition (en-US)",
-      "path": "vocabulary/Admonition (en-US).md"
-    },
-    {
-      "basename": "E",
-      "path": "evernotes/E.md"
-    },
-    {
-      "basename": "Todoist",
-      "path": "Todoist.md"
-    },
-    {
-      "basename": "Telegram",
-      "path": "Telegram/Telegram.md"
     }
   ],
   "omittedPaths": [],

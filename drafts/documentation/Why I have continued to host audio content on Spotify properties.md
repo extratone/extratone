@@ -1,0 +1,4 @@
+# Why I have continued to host audio content on Spotify properties
+If you've followed my work at all in the past three years, I thought the potential appearance of _actual_ open.spotify embeds on _The Psalms_, going forward might prompt some questions. More importantly, though, are the potentials provided in the current configuration of the company's web-facing publishing assets for those artists they have had the most detrimental effect on.
+
+**Anchor.fm and the Anchor mobile apps**, namely, are the first means for individual creators to publish content on the Spotify service, apparently minus even the most basic editorial intervention.
