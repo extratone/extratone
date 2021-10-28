@@ -1,10 +1,10 @@
 {
   "main": {
-    "id": "2b783e99ddf92202",
+    "id": "e6ca804ccb3f8b4e",
     "type": "split",
     "children": [
       {
-        "id": "e9db676d4503f495",
+        "id": "bbe11e7759fc26ef",
         "type": "leaf",
         "state": {
           "type": "empty",
@@ -46,10 +46,26 @@
             }
           },
           {
-            "id": "40420a0ec1354cfe",
+            "id": "93bef71320cbf1e7",
             "type": "leaf",
             "state": {
               "type": "recent-files",
+              "state": {}
+            }
+          },
+          {
+            "id": "0a31c02ce05a2642",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "211d1de3e886308b",
+            "type": "leaf",
+            "state": {
+              "type": "file-tree-view",
               "state": {}
             }
           }
@@ -68,14 +84,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "df053feaa4859edc",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          },
-          {
             "id": "5edc6dd332d2fe00",
             "type": "leaf",
             "state": {
@@ -84,14 +92,6 @@
                 "sortOrder": "frequency",
                 "useHierarchy": true
               }
-            }
-          },
-          {
-            "id": "869bd17a3cca41e7",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
             }
           },
           {
@@ -106,7 +106,7 @@
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -117,6 +117,33 @@
               "type": "outline",
               "state": {}
             }
+          },
+          {
+            "id": "4ebfc0f906a626a9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6e72530da56acaaf",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_nodes",
+              "state": {}
+            }
+          },
+          {
+            "id": "68e681d5bb0a87d5",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_style",
+              "state": {}
+            }
           }
         ],
         "currentTab": 1
@@ -125,17 +152,17 @@
     "direction": "horizontal",
     "width": 270.94097900390625
   },
-  "active": "e9db676d4503f495",
+  "active": "bbe11e7759fc26ef",
   "lastOpenFiles": [
-    "Attachment Test.md",
-    "images/¢.JPG",
-    "configuration/Podcast Documentation Template.md",
-    "documentation/Podcasts Documentation.md",
-    "archive/dropbox/Extratone/Reference/Title_Formats_and_Style_for_Works_of_Art_or_Artifi.md",
-    "archive/dropbox/Extratone/Futureland_-_Episode_27-1.md",
-    "pages/Extratone Radio.md",
-    "archive/dropbox/Extratone/Essential_Newsletters.md",
-    "archive/TL/assumed-suicidal-but-impervious-to-email-fatigue.md",
-    "archive/TL/a-year-of-blasphemy.md"
+    "media/DraftsAudioTest.m4a",
+    "drafts/documentation.md",
+    "drafts/documentation/Drafts Keyboard Shortcuts.md",
+    "curation/NotionLibrary.csv",
+    "pages/pages.md",
+    "Anecdotes.md",
+    "Posts/Posts.md",
+    "telegram/Telegram Tips Series.md",
+    "telegram/Universal Clipboard.md",
+    "telegram/A Hearty Foundation.md"
   ]
 }
