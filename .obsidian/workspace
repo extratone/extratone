@@ -49,7 +49,7 @@
             }
           },
           {
-            "id": "40420a0ec1354cfe",
+            "id": "59f6525dd83c197b",
             "type": "leaf",
             "state": {
               "type": "recent-files",
@@ -71,14 +71,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "df053feaa4859edc",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          },
-          {
             "id": "5edc6dd332d2fe00",
             "type": "leaf",
             "state": {
@@ -87,14 +79,6 @@
                 "sortOrder": "frequency",
                 "useHierarchy": true
               }
-            }
-          },
-          {
-            "id": "869bd17a3cca41e7",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
             }
           },
           {
@@ -122,6 +106,14 @@
               "state": {
                 "file": "archive/The Tone/Hassle & Hustle  State of the Extranet 11 - .md"
               }
+            }
+          },
+          {
+            "id": "c0515ac095c79169",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
             }
           }
         ],

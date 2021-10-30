@@ -10266,7 +10266,7 @@ function metadataWriter(options, input) {
         if (!hasMetadata && options.createHeaderIfNotPresent) {
             metadataNode = {
                 type: "yaml",
-                value: jsYaml.dump(newHeaderTemplateYAML(options.newHeaderTemplate, input)),
+                value: jsYaml.dump(newHeaderTemplateYAML(options.newHeaderTemplate, input)).replace(/\n$/, ""),
             };
             ast.children.unshift(metadataNode);
             hasMetadata = true;
@@ -10275,7 +10275,7 @@ function metadataWriter(options, input) {
             // Only updates if frontmatter already created
             if (options.updateHeader && hasMetadata) {
                 // Write metadata (by reference)
-                metadataNode.value = mergeValues(metadataNode.value, newHeaderTemplateYAML(options.updateHeaderTemplate, input));
+                metadataNode.value = mergeValues(metadataNode.value, newHeaderTemplateYAML(options.updateHeaderTemplate, input)).replace(/\n$/, "");
             }
         }
         if (typeof next === "function") {
@@ -13258,7 +13258,7 @@ function extension$1(config, extension) {
 var inConstruct = 'phrasing';
 var notInConstruct = ['autolink', 'link', 'image', 'label'];
 
-var unsafe$5 = [
+var unsafe$4 = [
   {
     character: '@',
     before: '[+\\-.\\w]',
@@ -13283,7 +13283,7 @@ var unsafe$5 = [
 ];
 
 var toMarkdown$7 = {
-	unsafe: unsafe$5
+	unsafe: unsafe$4
 };
 
 var containerPhrasing$1 = phrasing$1;
@@ -13344,7 +13344,7 @@ function phrasing$1(parent, context, safeOptions) {
   return results.join('')
 }
 
-var unsafe$4 = [{character: '~', inConstruct: 'phrasing'}];
+var unsafe$3 = [{character: '~', inConstruct: 'phrasing'}];
 var handlers$2 = {delete: handleDelete};
 
 handleDelete.peek = peekDelete;
@@ -13361,7 +13361,7 @@ function peekDelete() {
 }
 
 var toMarkdown$6 = {
-	unsafe: unsafe$4,
+	unsafe: unsafe$3,
 	handlers: handlers$2
 };
 
@@ -14017,7 +14017,7 @@ function listItem$1(node, parent, context) {
   }
 }
 
-var unsafe$3 = [{atBreak: true, character: '-', after: '[:|-]'}];
+var unsafe$2 = [{atBreak: true, character: '-', after: '[:|-]'}];
 
 var handlers$1 = {
   listItem: listItemWithTaskListItem
@@ -14039,7 +14039,7 @@ function listItemWithTaskListItem(node, parent, context) {
 }
 
 var toMarkdown$4 = {
-	unsafe: unsafe$3,
+	unsafe: unsafe$2,
 	handlers: handlers$1
 };
 
@@ -14573,7 +14573,7 @@ function longestStreak(value, character) {
   return maximum
 }
 
-var unsafe$2 = [
+var unsafe$1 = [
   {character: '\r', inConstruct: ['mathFlowMeta']},
   {character: '\r', inConstruct: ['mathFlowMeta']},
   {character: '$', inConstruct: ['mathFlowMeta', 'phrasing']},
@@ -14646,7 +14646,7 @@ function inlineMathPeek() {
 }
 
 var toMarkdown$2 = {
-	unsafe: unsafe$2,
+	unsafe: unsafe$1,
 	handlers: handlers
 };
 
@@ -26651,7 +26651,7 @@ function joinDefaults$1(left, right, parent, context) {
   }
 }
 
-var unsafe$1 = [
+var unsafe = [
   {
     character: '\t',
     inConstruct: ['codeFencedLangGraveAccent', 'codeFencedLangTilde']
@@ -26783,7 +26783,7 @@ function toMarkdown$1(tree, options) {
   var result;
 
   configure_1$1(context, {
-    unsafe: unsafe$1,
+    unsafe: unsafe,
     join: join$1,
     handlers: handle$1
   });
@@ -26968,14 +26968,14 @@ var blockquote_1 = blockquote$1;
 
 
 
-function blockquote$1(node, _, context) {
-  var exit = context.enter('blockquote');
-  var value = indentLines_1(containerFlow(node, context), map);
+function blockquote$1 (node, _, context) {
+  const exit = context.enter('blockquote');
+  const value = indentLines_1(containerFlow(node, context), map);
   exit();
   return value
 }
 
-function map(line, index, blank) {
+function map (line, index, blank) {
   return '>' + (blank ? '' : ' ') + line
 }
 
@@ -27015,7 +27015,7 @@ var _break$1 = hardBreak$1;
 
 
 function hardBreak$1(node, _, context, safe) {
-  var index = -1;
+  let index = -1;
 
   while (++index < context.unsafe.length) {
     // If we can’t put eols in this construct (setext headings, tables), use a
@@ -27231,17 +27231,16 @@ var code_1 = code$1;
 
 
 
-// var indentLines = require('../util/indent-lines')
 
 
 function code$1(node, _, context) {
-  var marker = checkFence_1(context);
-  var raw = node.value || '';
-  var suffix = marker === '`' ? 'GraveAccent' : 'Tilde';
-  var value;
-  var sequence;
-  var exit;
-  var subexit;
+  const marker = checkFence_1(context);
+  const raw = node.value || '';
+  const suffix = marker === '`' ? 'GraveAccent' : 'Tilde';
+  let value;
+  let sequence;
+  let exit;
+  let subexit;
 
   if (formatCodeAsIndented_1(node, context)) {
     exit = context.enter('codeIndented');
@@ -28051,124 +28050,13 @@ function joinDefaults(left, right, parent, context) {
   }
 }
 
-var unsafe = [
-  {
-    character: '\t',
-    inConstruct: ['codeFencedLangGraveAccent', 'codeFencedLangTilde']
-  },
-  {
-    character: '\r',
-    inConstruct: [
-      'codeFencedLangGraveAccent',
-      'codeFencedLangTilde',
-      'codeFencedMetaGraveAccent',
-      'codeFencedMetaTilde',
-      'destinationLiteral',
-      'headingAtx'
-    ]
-  },
-  {
-    character: '\n',
-    inConstruct: [
-      'codeFencedLangGraveAccent',
-      'codeFencedLangTilde',
-      'codeFencedMetaGraveAccent',
-      'codeFencedMetaTilde',
-      'destinationLiteral',
-      'headingAtx'
-    ]
-  },
-  {
-    character: ' ',
-    inConstruct: ['codeFencedLangGraveAccent', 'codeFencedLangTilde']
-  },
-  // An exclamation mark can start an image, if it is followed by a link or
-  // a link reference.
-  {character: '!', after: '\\[', inConstruct: 'phrasing'},
-  // A quote can break out of a title.
-  {character: '"', inConstruct: 'titleQuote'},
-  // A number sign could start an ATX heading if it starts a line.
-  {atBreak: true, character: '#'},
-  {character: '#', inConstruct: 'headingAtx', after: '(?:[\r\n]|$)'},
-  // Dollar sign and percentage are not used in markdown.
-  // An ampersand could start a character reference.
-  {character: '&', after: '[#A-Za-z]', inConstruct: 'phrasing'},
-  // An apostrophe can break out of a title.
-  {character: "'", inConstruct: 'titleApostrophe'},
-  // A left paren could break out of a destination raw.
-  {character: '(', inConstruct: 'destinationRaw'},
-  {before: '\\]', character: '(', inConstruct: 'phrasing'},
-  // A right paren could start a list item or break out of a destination
-  // raw.
-  {atBreak: true, before: '\\d+', character: ')'},
-  {character: ')', inConstruct: 'destinationRaw'},
-  // An asterisk can start thematic breaks, list items, emphasis, strong.
-  {atBreak: true, character: '*'},
-  {character: '*', inConstruct: 'phrasing'},
-  // A plus sign could start a list item.
-  {atBreak: true, character: '+'},
-  // A dash can start thematic breaks, list items, and setext heading
-  // underlines.
-  {atBreak: true, character: '-'},
-  // A dot could start a list item.
-  {atBreak: true, before: '\\d+', character: '.', after: '(?:[ \t\r\n]|$)'},
-  // Slash, colon, and semicolon are not used in markdown for constructs.
-  // A less than can start html (flow or text) or an autolink.
-  // HTML could start with an exclamation mark (declaration, cdata, comment),
-  // slash (closing tag), question mark (instruction), or a letter (tag).
-  // An autolink also starts with a letter.
-  // Finally, it could break out of a destination literal.
-  {atBreak: true, character: '<', after: '[!/?A-Za-z]'},
-  {character: '<', after: '[!/?A-Za-z]', inConstruct: 'phrasing'},
-  {character: '<', inConstruct: 'destinationLiteral'},
-  // An equals to can start setext heading underlines.
-  {atBreak: true, character: '='},
-  // A greater than can start block quotes and it can break out of a
-  // destination literal.
-  {atBreak: true, character: '>'},
-  {character: '>', inConstruct: 'destinationLiteral'},
-  // Question mark and at sign are not used in markdown for constructs.
-  // A left bracket can start definitions, references, labels,
-  {atBreak: true, character: '['},
-  {character: '[', inConstruct: ['phrasing', 'label', 'reference']},
-  // A backslash can start an escape (when followed by punctuation) or a
-  // hard break (when followed by an eol).
-  // Note: typical escapes are handled in `safe`!
-  {character: '\\', after: '[\\r\\n]', inConstruct: 'phrasing'},
-  // A right bracket can exit labels.
-  {
-    character: ']',
-    inConstruct: ['label', 'reference']
-  },
-  // Caret is not used in markdown for constructs.
-  // An underscore can start emphasis, strong, or a thematic break.
-  {atBreak: true, character: '_'},
-  {before: '[^A-Za-z]', character: '_', inConstruct: 'phrasing'},
-  {character: '_', after: '[^A-Za-z]', inConstruct: 'phrasing'},
-  // A grave accent can start code (fenced or text), or it can break out of
-  // a grave accent code fence.
-  {atBreak: true, character: '`'},
-  {
-    character: '`',
-    inConstruct: [
-      'codeFencedLangGraveAccent',
-      'codeFencedMetaGraveAccent',
-      'phrasing'
-    ]
-  },
-  // Left brace, vertical bar, right brace are not used in markdown for
-  // constructs.
-  // A tilde can start code (fenced).
-  {atBreak: true, character: '~'}
-];
-
 var mdastUtilToMarkdownPatch = toMarkdown;
 
 
 
 
 
-
+var defaultUnsafe = [];
 
 function toMarkdown(tree, options) {
   var settings = options || {};
@@ -28183,7 +28071,7 @@ function toMarkdown(tree, options) {
   var result;
 
   configure_1(context, {
-    unsafe: unsafe,
+    unsafe: defaultUnsafe,
     join: join,
     handlers: handle
   });

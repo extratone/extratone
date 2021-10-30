@@ -1,10 +1,10 @@
 {
   "main": {
-    "id": "e6ca804ccb3f8b4e",
+    "id": "e29028d2275b3594",
     "type": "split",
     "children": [
       {
-        "id": "bbe11e7759fc26ef",
+        "id": "1caf21fe0199bba7",
         "type": "leaf",
         "state": {
           "type": "empty",
@@ -46,14 +46,6 @@
             }
           },
           {
-            "id": "93bef71320cbf1e7",
-            "type": "leaf",
-            "state": {
-              "type": "recent-files",
-              "state": {}
-            }
-          },
-          {
             "id": "0a31c02ce05a2642",
             "type": "leaf",
             "state": {
@@ -62,14 +54,23 @@
             }
           },
           {
-            "id": "211d1de3e886308b",
+            "id": "0cef6f03eb44c1e0",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          },
+          {
+            "id": "0323f56f1ec509d7",
             "type": "leaf",
             "state": {
               "type": "file-tree-view",
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -130,7 +131,7 @@
             }
           },
           {
-            "id": "6e72530da56acaaf",
+            "id": "87ab61214c23cd6c",
             "type": "leaf",
             "state": {
               "type": "juggl_nodes",
@@ -138,7 +139,7 @@
             }
           },
           {
-            "id": "68e681d5bb0a87d5",
+            "id": "e0b15011ad57198c",
             "type": "leaf",
             "state": {
               "type": "juggl_style",
@@ -150,19 +151,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 270.94097900390625
+    "width": 270.94097900390625,
+    "collapsed": true
   },
-  "active": "bbe11e7759fc26ef",
+  "active": "1caf21fe0199bba7",
   "lastOpenFiles": [
+    "notes/Regarding Obsidian's Audio Recording Plugin.md",
+    "media/Recording 20211029204626.webm",
+    "notes/iP12PM/Face ID vs. Touch ID.md",
+    "Recording 20211029195446.webm",
     "media/DraftsAudioTest.m4a",
     "drafts/documentation.md",
     "drafts/documentation/Drafts Keyboard Shortcuts.md",
     "curation/NotionLibrary.csv",
     "pages/pages.md",
-    "Anecdotes.md",
-    "Posts/Posts.md",
-    "telegram/Telegram Tips Series.md",
-    "telegram/Universal Clipboard.md",
-    "telegram/A Hearty Foundation.md"
+    "Anecdotes.md"
   ]
 }
