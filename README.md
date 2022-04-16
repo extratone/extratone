@@ -146,3 +146,5 @@ Thank you again for your hospitality.
 | YouTube (Personal)          | https://www.youtube.com/channel/UCKRJGK62ZfwE9dnac2s-pww     |
 | Zenly                       | https://zen.ly/extratone                                     |
 | ~                           | https://tilde.town/~extratone/                               |
+
+`<a rel="me" href="https://mastodon.social/@DavidBlue">Mastodon</a>`
