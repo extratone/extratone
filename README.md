@@ -30,6 +30,10 @@ Here's my personal phone number: **+1 (573) 823-4380**
 
 Thank you again for your hospitality.
 
+### *The Psalms*' feed
+<!-- BLOG-POST-LIST:START -->
+<!-- BLOG-POST-LIST:END -->
+
 ***
 
 † [The Psalms](https://bilge.world) (My technology blog. Entirely nonsecular, I promise)
