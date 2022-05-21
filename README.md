@@ -30,6 +30,15 @@ Here's my personal phone number: **+1 (573) 823-4380**
 
 Thank you again for your hospitality.
 
+### *The Psalms*' feed
+<!-- BLOG-POST-LIST:START -->
+- [How I Maintain a Vocabulary List in Drafts with Terminology](https://bilge.world/drafts-terminology-vocabulary?pk_campaign=rss-feed)
+- [TildeTown on iPhone with Blink Shell](https://bilge.world/tildetown-iphone-blink-shell?pk_campaign=rss-feed)
+- [Run Siri Shortcuts with Hyperlinks](https://bilge.world/run-siri-shortcuts-with-hyperlinks?pk_campaign=rss-feed)
+- [Apple Rag Review](https://bilge.world/apple-polishing-cloth?pk_campaign=rss-feed)
+- [Windows Eternal Drafts Theme](https://bilge.world/windows-eternal?pk_campaign=rss-feed)
+<!-- BLOG-POST-LIST:END -->
+
 ***
 
 † [The Psalms](https://bilge.world) (My technology blog. Entirely nonsecular, I promise)
