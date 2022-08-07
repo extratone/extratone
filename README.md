@@ -32,11 +32,11 @@ Thank you again for your hospitality.
 
 ### *The Psalms*' feed
 <!-- BLOG-POST-LIST:START -->
+- [Siri Shortcuts and the DJ Screw Discography](https://bilge.world/dj-screw-shortcuts?pk_campaign=rss-feed)
 - [Quick Key Command Formatting with ksc and Siri Shortcuts](https://bilge.world/ksc-shortcut?pk_campaign=rss-feed)
 - [Retrieve Live NPR Program Information with Siri Shortcuts](https://bilge.world/npr-siri-shortcuts?pk_campaign=rss-feed)
 - [How I Maintain a Vocabulary List in Drafts with Terminology](https://bilge.world/drafts-terminology-vocabulary?pk_campaign=rss-feed)
 - [TildeTown on iPhone with Blink Shell](https://bilge.world/tildetown-iphone-blink-shell?pk_campaign=rss-feed)
-- [Run Siri Shortcuts with Hyperlinks](https://bilge.world/run-siri-shortcuts-with-hyperlinks?pk_campaign=rss-feed)
 <!-- BLOG-POST-LIST:END -->
 
 ***
