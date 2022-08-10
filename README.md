@@ -1,4 +1,4 @@
-![David Blue](images/Substation/substation.JPG)
+![David Blue](https://github.com/extratone/extratone/raw/main/images/Substation/substation.JPG) 
 
 # ※ G o o d  M o r n i n g ※
 
@@ -16,7 +16,7 @@ Similar limitations of mine have been allowed to prevent me from being all that 
 
 I have formally decided to shoulder the burden of thoroughly documenting the stories, peculiarities, and most technical details of [**using a Bluetooth keyboard with an iPhone**](https://github.com/extratone/keys), but I am determined to do so as collaboratively as possible. I have also been documenting various other processes specific to iPhone (read: doing free labor for the most valuable company in the history of the world) which I hope to compile throughout the rest of the year into entertaining, thoughtful, and *helpful* essays/guides on [**bilge.world**](https://bilge.world/tag:software).
 
-![Editorial Git Wood](images/Editorial%20Git%20Wood.png)
+![Editorial Git Wood](https://github.com/extratone/extratone/raw/main/images/Editorial%20Git%20Wood.png)
 
 Perhaps the most intriguing (or off-putting) endeavor of mine specific to GitHub has been publicly learning how to "[write in public](https://tomcritchlow.com/2020/07/23/thinking-in-public/)" using Git for version/revision tracking. I have discovered I was less original in this concept than I thought, but frankly, this process which I have begun to describe as ==[**Editorial Git**](https://github.com/extratone/bilge/discussions/86)== cannot be thoroughly explored within the context of academia.
 
