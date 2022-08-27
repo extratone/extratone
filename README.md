@@ -1,4 +1,4 @@
-![David Blue](https://github.com/extratone/extratone/raw/main/images/Substation/substation.JPG) 
+[![David Blue Substation](https://github.com/extratone/extratone/raw/main/images/Substation/substation.JPG)](https://www.instagram.com/p/CPypxmwlOs4/)
 
 # ※ G o o d  M o r n i n g ※
 
@@ -39,7 +39,7 @@ Thank you again for your hospitality.
 - [TildeTown on iPhone with Blink Shell](https://bilge.world/tildetown-iphone-blink-shell?pk_campaign=rss-feed)
 <!-- BLOG-POST-LIST:END -->
 
-***
+---
 
 † [The Psalms](https://bilge.world) (My technology blog. Entirely nonsecular, I promise)
 
