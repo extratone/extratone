@@ -104,7 +104,7 @@ Thank you again for your hospitality.
 | Liberapay                   | https://liberapay.com/davidblue/                             |
 | LinkedIn                    | http://linkedin.com/in/extratone                             |
 | Linktree (Lmao)             | https://linktr.ee/davidblue                                  |
-| Mastodon                    | https://mastodon.social/@DavidBlue                           |
+| Mastodon                    | <a rel="me" href="https://mastodon.social/@DavidBlue">https://mastodon.social/@DavidBlue</a>                           |
 | Matter Music                | https://app.matter.online/@davidblue                         |
 | Medium                      | https://medium.com/@FickleCrux                               |
 | Microsoft Docs              | https://docs.microsoft.com/en-us/users/extratone/            |
