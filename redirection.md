@@ -1,0 +1,288 @@
+# WTF Redirection
+Updated `04212023-022858`
+
+[**WTF Redirection Update**](shortcuts://run-shortcut?name=WTF%20Redirection%20Update)
+
+- [Repo](https://github.com/extratone/bilge/blob/main/redirection.md)
+- [**GitHub Issue**](https://github.com/extratone/bilge/issues/322)
+- [**Shared Numbers Spreadsheet**](https://www.icloud.com/numbers/0f6uEMTwLwddUpsXQ7i3qheqw#WTF_Redirection) 
+- [WTF Repo File](https://github.com/extratone/wtf/blob/main/redirection.md)
+- [Gist](https://gist.github.com/extratone/1dcfb669e7f366ea32abcd0468e8c0d5)
+- [Extranet Redirection](drafts://open?uuid=1C547BA9-D29F-4F2E-8B24-3F5872D329B6)
+- [WTF](https://davidblue.wtf/drafts/218F8FAA-C0B9-4B4F-B896-3089E005E86E.html)
+- [Tilde](https://tilde.town/~extratone/redirection) 
+- [Telegraph](https://telegra.ph/WTF-Redirection-04-19)
+- [Micro.Blog](https://dieselgoth.micro.blog/redirection)
+- [Medium](https://extratone.medium.com/3685289b398d)
+- [Simplenote Publish](http://simp.ly/publish/7G1cRt)
+- [Simplenote Local](simplenote://note/8a3aa299b90242f6984b8e11515fb1e7)
+- [Ulysses](ulysses://x-callback-url/open?id=GLpllyiGdzyanGc5tV1F8g)
+- [Things]([Things](things:///show?id=4ACkCyj5WAMdCW2RUz5Wm7))
+
+---
+<script src="https://gist.github.com/extratone/1dcfb669e7f366ea32abcd0468e8c0d5.js"></script>
+---
+
+## Automation
+
+ I have managed to semi-automate the process of updating this very list by way of [a relatively rudimentary Siri Shortcut]([Shortcuts]([Shortcuts](https://www.icloud.com/shortcuts/5ad24059cbd542d6824f9be09db90a52))) in a single run.
+
+### Source Files
+
+- [**iCloud Share Link**](https://www.icloud.com/shortcuts/5ad24059cbd542d6824f9be09db90a52)
+- [jelly]([undefined](https://davidblue.wtf/redirection/WTFRedirectionUpdate.jelly))
+- [plist]([undefined](https://davidblue.wtf/redirection/WTFRedirectionUpdate.plist))
+- [json]([undefined](https://davidblue.wtf/redirection/WTFRedirectionUpdate.json))
+- [shortcut]([undefined](https://davidblue.wtf/redirection/WTFRedirectionUpdate.shortcut))
+- [html]([undefined](https://davidblue.wtf/redirection/automation))
+
+![GizmoPack Universal Variable](https://user-images.githubusercontent.com/43663476/186688762-1b08ac02-7aca-46bb-9648-d42bddc835db.png)
+
+### GizmoPack Universal Variables
+
+If you happen to have/be interested in trying [GizmoPack for iOS/iPadOS](https://apps.apple.com/us/app/gizmopack/id1505218567) (a quaint but very fascinating extension app for Siri Shortcuts,) you'll find that the entire value of this document is regularly updated within the *Protected* Universal Variable entitled `redirection`.
+
+[![GizmoPack Icon](https://user-images.githubusercontent.com/43663476/186686145-18f80148-c5c2-41ea-aefd-bef45f53e163.png)](https://apps.apple.com/us/app/gizmopack/id1505218567)
+
+---
+
+- [**/~**](https://davidblue.wtf/~), Redirects to the plain HTML version of my Tilde.Town directory.
+- [**/~radio**](https://davidblue.wtf/~radio), Redirects to an ITTY URI redirect that opens Tilde Radio's stream in VLC, locally.
+- [**/affect-effect**](https://davidblue.wtf/affect-effect), Redirects to a capture/republished page of "'Affect' vs. 'Effect'" from *Merriam-Webster*.
+- [**/amandabat**](https://davidblue.wtf/amandabat), Redirects to the WTF documentation page for my efforts to log my iPad Pro's battery consumption.
+- [**/amandaframes**](https://davidblue.wtf/amandaframes), Redirects to my *iPad Professional* Shared iCloud Photos Album.
+- [**/amandanotes**](https://davidblue.wtf/amandanotes), Redirects to my in-progress master notes file regarding the *iPad Professional.*
+- [**/amandanum**](https://davidblue.wtf/amandanum), Redirects to the live-updated shared Numbers spreadsheet logging my iPad Pro's battery consumption.
+- [**/amazon**](https://davidblue.wtf/amazon), Redirects to my *ACQUIRE* Wish(?) List on Amazon.
+- [**/apogee**](https://davidblue.wtf/apogee), Redirects to the WTF vocabulary page for *apogee*.
+- [**/applenotes**](https://davidblue.wtf/applenotes), Redirects to an index file of all my Apple Notes.
+- [**/applet**](https://davidblue.wtf/applet), Redirects to the WTF documentation page for my iOS Contacts to Gists IFTTT Applet.
+- [**/appreviews**](https://davidblue.wtf/appreviews), Redirects to the WTF index page for my App Store Reviews project.
+- [**/apps**](https://davidblue.wtf/apps), Redirects to the WTF Documentation page for my AppWish curation.
+- [**/artists**](https://davidblue.wtf/artists), Redirects to my MusicHarbor artists list.
+- [**/aschat**](https://davidblue.wtf/aschat), Redirects to "Chat with David Blue" on the Write.as Community Blog.l
+- [**/astrology**](https://davidblue.wtf/astrology), Redirects to "The Day of Reformed Precocity."
+- [**/auto**](https://davidblue.wtf/auto), Redirects to the “auto” tag on The Psalms.
+- [**/autocompletes**](https://davidblue.wtf/autocompletes), Redirects to the reference page for my Drafts Autocompletes.
+- [**/baseball**](https://davidblue.wtf/baseball), Redirects to MySpace Tom’s baseball Twitter List.
+- [**/beams**](https://davidblue.wtf/beams), Temporarily redirects to Issue #248 on *The Psalms*' GitHub Repository until I finally write my post about Beams.
+- [**/bezels**](https://davidblue.wtf/bezels), Redirects to the WTF documentation page for my shared Apple Design Resources project.
+- [**/bigboy**](https://davidblue.wtf/bigboy), Redirects to my *Big Boy, Big Phone* shared iCloud Photos album.
+- [**/birthday**](https://davidblue.wtf/birthday), Redirects to the Drywall birthday joke video.
+- [**/blessed**](https://davidblue.wtf/blessed), Redirects to my Blessed Web Utilities Raindrop collection.
+- [**/blinkgreyhound**](https://davidblue.wtf/blinkgreyhound), WTF documentation page for my Greyhound Blink Shell theme.
+- [**/blinkpresses**](https://davidblue.wtf/blinkpresses), Redirects to the WTF documentation page for my custom keyboard shortcuts for Blink.
+- [**/blue**](https://davidblue.wtf/blue), Redirects to the *Colornames* web page for *David Blue* (#00006b.)
+- [**/bookmarks**](https://davidblue.wtf/bookmarks), Redirects to the WTF documentation page for my various Mastodon bookmarking efforts.
+- [**/books**](https://davidblue.wtf/books), Redirects to the "artist page" for "David Blue" on the Apple Books store.
+- [**/brewindex**](https://davidblue.wtf/brewindex), Redirects to the WTF documentation page for the Top Brew Packages Index.
+- [**/call**](https://davidblue.wtf/call), Redirects to an itty.bitty link that serves a `tel:` URL to my personal phone number.
+- [**/capture**](https://davidblue.wtf/capture), Redirects to the WTF documentation page for my Comprehensive Capture Shortcut.
+- [**/casenet**](https://davidblue.wtf/casenet), Look me up on Case.net!
+- [**/checklist**](https://davidblue.wtf/checklist), Redirects to the WTF documentation page for my conversion of FedEx Virtual's Live Aircraft Checklist.
+- [**/church**](https://davidblue.wtf/church), Redirects to the WTF documentation page for my *If you scared, go to church* Apple Music playlist.
+- [**/codenames**](https://davidblue.wtf/codenames), Redirects to the WTF index page of iPhone OS/iOS Development Codenames.
+- [**/columbiamobot**](https://davidblue.wtf/columbiamobot), Redirects to the WTF documentation page for the Columbia MO Telegram Bot.
+- [**/command**](https://davidblue.wtf/command), Redirects to a ... page... in my Notion workspace containing my synced annotation via Command Browser.
+- [**/community**](https://davidblue.wtf/community), Redirects to the WTF documentation page for my Drafts Twitter Community experiment.
+- [**/costar**](https://davidblue.wtf/costar), Redirects to my Co-Star page - a beautifully-rendered representation of my astrological chart.
+- [**/cpsam**](https://davidblue.wtf/cpsam), Redirects to the Apple Maps share link for the Columbia Public Schools main building.
+- [**/craftx**](https://davidblue.wtf/craftx), Redirects to a published Craft note containing the documentation for Craft's URL scheme support.
+- [**/davodtime**](https://davidblue.wtf/davodtime), Redirects to a wee description page for my personal standard time reference format, DavodTime.
+- [**/dd**](https://davidblue.wtf/dd), Redirects to the WTF documentation page for my Drafts configurables.
+- [**/dddiscourse**](https://davidblue.wtf/dddiscourse), Redirects to the WTF documentation page for my Raw Discourse Thread ⇨ Drafts Siri Shortcut.
+- [**/ddmastobed**](https://davidblue.wtf/ddmastobed), Redirects to the local installation link for my Mastodon Embed Constructor Drafts Autocomplete.
+- [**/ddmastopost**](https://davidblue.wtf/ddmastopost), Redirects to the WTF documentation page for my Selection to Mastodon Drafts Action.
+- [**/ddstuff**](https://davidblue.wtf/ddstuff), Redirects to the WTF documentation page for my Stuff Drafts Theme.
+- [**/ddtranslate**](https://davidblue.wtf/ddtranslate), Redirects to the WTF documentation page for my Google Translate Drafts Action.
+- [**/detailspro**](https://davidblue.wtf/detailspro), Redirects to my user profile on the DetailsPro shared community library.
+- [**/discord**](https://davidblue.wtf/discord), Redirects to my Discord User profile - `David Blue#1917`.
+- [**/distributed**](https://davidblue.wtf/distributed), Redirects to a WTF index for my Distributed iCloud Drive folder.
+- [**/documentation**](https://davidblue.wtf/documentation), Redirects to my Documentation Raindrop collection.
+- [**/dolt**](https://davidblue.wtf/dolt), Redirects to the WTF vocabulary page for "dolt."
+- [**/doof**](https://davidblue.wtf/doof), Redirects to the WTF vocabulary page for "doof."
+- [**/dosspride**](https://davidblue.wtf/dosspride), Redirects to the Apple Music page for Doss' Pride 2022 mix.
+- [**/doubletap**](https://davidblue.wtf/doubletap), Redirects to the pod.links page for Accessible Media's *DoubleTap Canada*, which has quickly become my favorite technology podcast currently running.
+- [**/drafts/keys**](https://davidblue.wtf/drafts/keys), Redirects to a list of my Drafts keyboard shortcuts on WTF.
+- [**/draftsconfig**](https://davidblue.wtf/draftsconfig), Redirects to the WTF documentation page for my Drafts configurables.
+- [**/draftsdrop**](https://davidblue.wtf/draftsdrop), Redirects to my Drafts-specific Raindrop collection.
+- [**/draws**](https://davidblue.wtf/draws), Redirects to the main WTF page for the *David Blue Draws* Collection.
+- [**/dropthings**](https://davidblue.wtf/dropthings), Redirects to my Things-specific Raindrop collection.
+- [**/eat**](https://davidblue.wtf/eat), Redirects to the Studio Eat Raindrop Collection.
+- [**/editorial**](https://davidblue.wtf/editorial), Redirects to my main page for Editorial for iOS.
+- [**/editorialdrop**](https://davidblue.wtf/editorialdrop), Redirects to my Editorial-specific Raindrop collection.
+- [**/electriccar**](https://davidblue.wtf/electriccar), Redirects to an excerpt from *The Gasoline Automobile* regarding EVs.
+- [**/escort**](https://davidblue.wtf/escort), Redirects to Pro-Choice Missouri's Clinic Escort signup form.
+- [**/extratext**](https://davidblue.wtf/extratext), Redirects to the WTF documentation page for my Extratext TextExpander Snippet Group.
+- [**/facebook**](https://davidblue.wtf/facebook), Redirects to my Facebook profile.
+- [**/fdxlog**](https://davidblue.wtf/fdxlog), Redirects to the Craft Publish page of my Flight Log for FedEx Virtual.
+- [**/film**](https://davidblue.wtf/film), Redirects to "David Blue on Film and Cinema."
+- [**/follow**](https://davidblue.wtf/follow), Redirects to the master “Why I Didn’t Follow You Back” WTF page.
+- [**/following**](https://davidblue.wtf/following), Redirects to the WTF documentation page for my followed Mastodon accounts index.
+- [**/freeform**](https://davidblue.wtf/freeform), Redirects to a public invitation link to my single test Freeform document.
+- [**/furryblimp**](https://davidblue.wtf/furryblimp), Redirects to the WTF documentation page for the *He Makes Witch House in His Furry Blimp* *Drycast* Excerpt.
+- [**/gallery**](https://davidblue.wtf/gallery), Redirects to the public page of my *Distributed* Shared iCloud Photos Album.
+- [**/gerogerigegege**](https://davidblue.wtf/gerogerigegege), Redirects to my main music Raindrop collection.
+- [**/github**](https://davidblue.wtf/github), Redirects to my GitHub profile.
+- [**/globe**](https://davidblue.wtf/globe), Redirects to my collected documentation page on WTF for iPad's Globe Keyboard Shortcuts.
+- [**/gnmasto**](https://davidblue.wtf/gnmasto), Redirects to a Google News Topic link for "Twitter Users are Switching to Mastodon."
+- [**/googlegod**](https://davidblue.wtf/googlegod), Redirects to my post on Hacker News for "Google Is Not God of The Web."
+- [**/greyhound**](https://davidblue.wtf/greyhound), Redirects to the WTF documentation page for my Greyhound Drafts Theme.
+- [**/gt7**](https://davidblue.wtf/gt7), Redirects to a mirrored Apple Music playlist I created of the official Gran Turismo 7 playlist on Spotify.
+- [**/gt7spotify**](https://davidblue.wtf/gt7spotify), Redirects to the official Gran Turismo 7 playlist on Spotify.
+- [**/highlights**](https://davidblue.wtf/highlights), Redirects to the markdown file containing the sum of my annotation via Finn Voorhees' [Highlights for iOS](https://testflight.apple.com/join/OONmU0Z2) (Beta.)
+- [**/hire**](https://davidblue.wtf/hire), Redirects to my “General Consultation” Fantastical Openings page.
+- [**/homebrew**](https://davidblue.wtf/homebrew), Redirects to the WTF documentation page for my preferred Homebrew packages list on macOS installations.
+- [**/honk**](https://davidblue.wtf/honk), Redirects to the YouTube playlist for the legacy Drywall car show, *Honk*.
+- [**/honking**](https://davidblue.wtf/honking), Redirects to Extratone's Honking playlist.
+- [**/htmlcomment**](https://davidblue.wtf/htmlcomment), Redirects to the WTF Documentation page for my HTML Comment Drafts Action.
+- [**/hypnagogic**](https://davidblue.wtf/hypnagogic), Redirects to the WTF vocabulary page for *hypnagogic*.
+- [**/iflauncher**](https://davidblue.wtf/iflauncher), Redirects to the WTF documentation page for my Infinite Launcher Siri Shortcut.
+- [**/ifroadmap**](https://davidblue.wtf/ifroadmap), Redirects to the WTF documentation page (and markdown index) for the Infinite Flight API Roadmap.
+- [**/ifwt23**](https://davidblue.wtf/ifwt23), Redirects to my Craft index for all documentation regarding Infinite Flight World Tour 2023.
+- [**/information**](https://davidblue.wtf/information), Redirects to my subscriber friend invite code URL for *The Information*. (30 days free.)
+- [**/instance**](https://davidblue.wtf/instance), Redirects to a pre-filled instances.social search for English-speaking servers with greater than 2000 members that do not allow links to illegal content or pornographic content without proper tagging.
+- [**/ipadpros**](https://davidblue.wtf/ipadpros), Redirects to the WTF index page for Tim Chaten's *iPad Pros* Podcast.
+- [**/ipod**](https://davidblue.wtf/ipod), Redirects to an anecdote about my iPod First Generation.
+- [**/issuedraft**](https://davidblue.wtf/issuedraft), Redirects to the WTF documentation page for my GitHub Issue ⇨ Draft Siri Shortcut.
+- [**/itch**](https://davidblue.wtf/itch), Redirects to the page I have on itch.io for no justifiable reason.
+- [**/ivory**](https://davidblue.wtf/ivory), Redirects to an itty.bitty.site bounceoff that opens a very special Post in Tapbots' upcoming Mastodon client, Ivory.
+- [**/iwallpapers**](https://davidblue.wtf/iwallpapers), Redirects to my shared Wallpapers iCloud Photos album.
+- [**/jia**](https://davidblue.wtf/jia), Redirects to Jia Tolentino's author feed on *The New Yorker*'s website.
+- [**/jortsnum**](https://davidblue.wtf/jortsnum), Redirects to the shared Numbers spreadsheet containing my ongoing cellular data usage log.
+- [**/juke**](https://davidblue.wtf/juke), Redirects to the fifth episode of my old car show, *Honk*, regarding the Nissan Juke NISMO.
+- [**/k2keys**](https://davidblue.wtf/k2keys), Redirects to the WTF documentation page for the Keychron K2's key combinations.
+- [**/kb43**](https://davidblue.wtf/kb43), Redirects to the iCloud Drive share URL to my packaged (Ken Block) KB43 Word Mark.
+- [**/keep**](https://davidblue.wtf/keep), Redirects to a private gist of all my saved terminal commands.
+- [**/keysdrop**](https://davidblue.wtf/keysdrop), Redirects to my iPhone Keyboarding-specific Raindrop collection.
+- [**/knowledge**](https://davidblue.wtf/knowledge), Redirects to my profile on KnowledgeHub.
+- [**/latte**](https://davidblue.wtf/latte), Redirects to the WTF documentation page for my GitHub Repository Template.
+- [**/ledger**](https://davidblue.wtf/ledger), Redirects to the WTF documentation page for my Siri Shortcuts Ledger.
+- [**/legacyredirects**](https://davidblue.wtf/legacyredirects), Redirects to an archive of the original *Extranet Redirection* document - the inspiration for this thing!
+- [**/leverage**](https://davidblue.wtf/leverage), Redirects to a very funny internet video I posted ~~on the Twitter website~~ (actually changed it to the same video posted on TikTok for now.)
+- [**/live**](https://davidblue.wtf/live), A dynamic redirect I use whenever I go live on YouTube/Twitter/Twitch, etc.
+- [**/lund**](https://davidblue.wtf/lund), Redirects to my page documenting a student pilot's (well-handled) emergency landing that resulted in a very hilarious photograph.
+- [**/mac6k**](https://davidblue.wtf/mac6k), Redirects to my mirror of *512 Pixels*' "Every Default macOS Wallpaper – in Glorious 6K Resolution."
+- [**/magazines**](https://davidblue.wtf/magazines), Redirects to my Magazines Raindrop collection.
+- [**/manhildur**](https://davidblue.wtf/manhildur), Redirects to the Hildur Manpages Index on the Software History Society NeoCities page.
+- [**/mastodon**](https://davidblue.wtf/mastodon), Redirects to my profile on mastodon.social.
+- [**/mastodonbookmarks**](https://davidblue.wtf/mastodonbookmarks), Redirects to a CSV file of all my mastodon.social bookmarks.
+- [**/mastodonlists**](https://davidblue.wtf/mastodonlists), Redirects to a CSV file of all my mastodon.social lists.
+- [**/matrix**](https://davidblue.wtf/matrix), Redirects to a matrix.to preview link of my main Matrix profile on matrix.org.
+- [**/mdtest**](https://davidblue.wtf/mdtest), Redirects to the WTF documentation page for my personal Markdown test document.
+- [**/mdx**](https://davidblue.wtf/mdx), Redirects to the WTF snippets page of the MDX Specification.
+- [**/mediumapi**](https://davidblue.wtf/mediumapi), Redirects to the WTF documentation page for Medium's API.
+- [**/meme**](https://davidblue.wtf/meme), Redirects to the WTF vocabulary page for *meme*.
+- [**/microblog**](https://davidblue.wtf/microblog), Redirects to the WTF documentation page for my micro.blog trial experiment.
+- [**/microdrop**](https://davidblue.wtf/microdrop), Redirects to my Micro.Blog Raindrop collection.
+- [**/middlenames**](https://davidblue.wtf/middlenames), Redirects to the WTF aggregation/documentation page for my ancient Middle Name Candidates list.
+- [**/moment**](https://davidblue.wtf/moment), David Blue.
+- [**/monsanto**](https://davidblue.wtf/monsanto), Redirects to my legacy Monsanto Merch Redbubble product page.
+- [**/musicapps**](https://davidblue.wtf/musicapps), Redirects to "iPhone and Music - For Artists, Curators, and Enthusiasts" on *The Psalms*.
+- [**/nascar**](https://davidblue.wtf/nascar), Redirects to "Gender, NASCAR, and Sentient Appliances," newly re-published on Whyp.
+- [**/neeva**](https://davidblue.wtf/neeva), Redirects to the public URL for my *Reading* Neeva Space.
+- [**/neopress**](https://davidblue.wtf/neopress), Redirects to my (updated) index of [the NeoCities Press page](https://neocities.org/press).
+- [**/netflix**](https://davidblue.wtf/netflix), Redirects to a record of David Blue's Netflix Activity in full (and a bit of a guide on how to retrieve yours.)
+- [**/npm**](https://davidblue.wtf/npm), Redirects to my list of npm packages.
+- [**/obsidian**](https://davidblue.wtf/obsidian), Redirects to my Obsidian-specific Raindrop collection.
+- [**/onamp**](https://davidblue.wtf/onamp), Redirects to my (@extratone) profile on Amazon's new social audio app/network.
+- [**/openaireply**](https://davidblue.wtf/openaireply), Redirects to a Shared Numbers spreadsheet full of live-updated OpenAI Foolery Responses.
+- [**/pain**](https://davidblue.wtf/pain), Redirects to Frankie Muniz's iconic Tweet.
+- [**/panicurine**](https://davidblue.wtf/panicurine), Redirects to the *Colornames* web page for *Panic Urine* (#f7ff85.)
+- [**/pendictionary**](https://davidblue.wtf/pendictionary), Redirects to the WTF documentation page for Goulet Pens' *Glossary of Fountain Pen Terminology*.
+- [**/periscope**](https://davidblue.wtf/periscope). Redirects to the “Periscope” playlist on *Extratone*’s YouTube channel.
+- [**/pinterest**](https://davidblue.wtf/pinterest), Redirects to my profile (@dieselgoth) on Pinterest.
+- [**/pixelfed**](https://davidblue.wtf/pixelfed), Redirects to my profile on pixelfed.social.
+- [**/plurk**](https://davidblue.wtf/plurk), Redirects to my profile page on Plurk.
+- [**/pocketcasts**](https://davidblue.wtf/pocketcasts), Redirects to my most current Pocket Casts lists export.
+- [**/podcast**](https://davidblue.wtf/podcast), Redirects to *End Users* pods.link page.
+- [**/prairiehome**](https://davidblue.wtf/prairiehome), Redirects to a Google Photos album filled with a handful of very mediocre photographs I captured at a particularly return-to-origin Nearby Evening I had years ago.
+- [**/preview**](https://davidblue.wtf/preview), Redirects to the WTF documentation page for my primary HTML preview template for Drafts.
+- [**/pro**](https://davidblue.wtf/pro), *Also* redirects to my *iPad Professional* Shared iCloud Photos Album.
+- [**/propagation**](https://davidblue.wtf/propagation), Redirects to the WTF index page for my *propagation* Apple Music Playlist.
+- [**/pungle**](https://davidblue.wtf/pungle), Redirects to the WTF vocabulary page for *pungle*.
+- [**/raindrop**](https://davidblue.wtf/raindrop), Redirects to my main Raindrop profile.
+- [**/reading**](https://davidblue.wtf/reading), Redirects to my Reading List Raindrop collection.
+- [**/redirection**](https://davidblue.wtf/redirection), Redirects to this document!
+- [**/reminderstemplates**](https://davidblue.wtf/reminderstemplates), Redirects to the WTF documentation/index page for my Apple Reminders Templates.
+- [**/rhbest**](https://davidblue.wtf/rhbest), Redirects to the WTF Documentation Page for my "Best of RoutineHub" (Work in Progress) list.
+- [**/rhshare**](https://davidblue.wtf/rhshare), Redirects to an immortal Discord invite link to the RoutineHub server's #share-a-shortcut channel.
+- [**/ringtones**](https://davidblue.wtf/ringtones), Redirects to a page with all of my custom iPhone/iOS ringtones (embeds and links to download the ringtone files.)
+- [**/routinehub**](https://davidblue.wtf/routinehub), Redirects to the WTF documentation page for my RoutineHub Library.
+- [**/rowdyhitler**](https://davidblue.wtf/rowdyhitler), Redirects to the TikTok re-upload of my classic Joke Video, *Flight of The Joke Numbers*.
+- [**/rreading**](https://davidblue.wtf/rreading), Redirects to the invite URL for my Shared Apple Reminders Reading List.
+- [**/rtfarah**](https://davidblue.wtf/rtfarah), Redirects to a WTF index page of all work by Matt Farah for Road & Track.
+- [**/rufus**](https://davidblue.wtf/rufus), Redirects to download the latest version of the Rufus Bootable Utility (portable.)
+- [**/runestonetheme**](https://davidblue.wtf/runestonetheme), Redirects to the WTF documentation page for The Psalms' Runestone Theme.
+- [**/scarysummaries**](https://davidblue.wtf/scarysummaries), Redirects to the WTF documentation page for my Scary Summaries OpenAI Experimentation with the Toolbox Pro Beta.
+- [**/scdl**](https://davidblue.wtf/scdl), Redirects to the WTF documentation page for the Soundcloud Music Downloader (scdl).
+- [**/screw**](https://davidblue.wtf/screw), Redirects to the WTF documentation for my DJ Screw Discography Raindrop Collection - an Index of the DJ Screw Discography Collection on Archive.org.
+- [**/screwball**](https://davidblue.wtf/screwball), Redirects to the WTF vocabulary page for *screwball*.
+- [**/scrubs**](https://davidblue.wtf/scrubs), Redirects to the WTF-local “Siri Shortcuts for Scrubs” library.
+- [**/scud**](https://davidblue.wtf/scud), Redirects to the WTF vocabulary page for "scud."
+- [**/services**](https://davidblue.wtf/services), Redirects to my "Services I Offer" page.
+- [**/sessionize**](https://davidblue.wtf/sessionize), Redirects to my speaker profile on Sessionize.
+- [**/shellfishkeys**](https://davidblue.wtf/shellfishkeys), Redirects to the WTF documentation page for Secure ShellFish's Keyboard Shortcuts.
+- [**/shortcutsdrop**](https://davidblue.wtf/shortcutsdrop), Redirects to my Siri Shortcuts Raindrop collection.
+- [**/shortcutsfb**](https://davidblue.wtf/shortcutsfb), Redirects to the (Siri) Shortcuts Facebook Group.
+- [**/shortcutsguide**](https://davidblue.wtf/shortcutsguide), Redirects to the official Shortcuts User Guide published by Apple.
+- [**/signal**](https://davidblue.wtf/signal), Redirects to Extratone's Signal group invite code.
+- [**/skype**](https://davidblue.wtf/skype), Redirects to David Blue's personal *Skype* invite link. Yes, Skype, in 2022.
+- [**/sms**](https://davidblue.wtf/sms), Redirects to an itty.bitty link that serves a `sms:` URL to my personal phone number.
+- [**/snapchat**](https://davidblue.wtf/snapchat), Redirects to my Snapchat profile.
+- [**/socialdrop**](https://davidblue.wtf/socialdrop), Redirects to my Social Directory Raindrop collection.
+- [**/sophiesell**](https://davidblue.wtf/sophiesell), Redirects to my Facebook Marketplace listing for my Microsoft Surface Laptop 2.
+- [**/sourcetool**](https://davidblue.wtf/sourcetool), Redirects to the WTF documentation page the ongoing development of the Batch Source Tool Custom Siri Shortcut.
+- [**/springbepia**](https://davidblue.wtf/springbepia), Redirects to the local installation link for my Bepia Theme for Spring for Twitter.
+- [**/springeternal**](https://davidblue.wtf/springeternal), Redirects to the local installation link for my Windows Eternal Theme for Spring for Twitter.
+- [**/springshaft**](https://davidblue.wtf/springshaft), Redirects to the local installation link for my Mineshaft Gold theme for Spring for Twitter.
+- [**/springtheme**](https://davidblue.wtf/springtheme), Redirects to the WTF documentation page for The Psalms Theme for Spring for Twitter.
+- [**/springthings**](https://davidblue.wtf/springthings), Redirects to the local installation link for my Things 3 Theme for Spring for Twitter.
+- [**/springtweetcapture**](https://davidblue.wtf/springtweetcapture), Redirects to the WTF documentation page for my Spring Tweet Capture Siri Shortcut.
+- [**/springx**](https://davidblue.wtf/springx), Redirects to the WTF documentation page for Spring for Twitter's URL Scheme.
+- [**/spykids3spam**](https://davidblue.wtf/spykids3spam), Redirects to the WTF documentation page for my SpyKids3Spam Siri Shortcut.
+- [**/sswiki**](https://davidblue.wtf/sswiki), Redirects to an index of my writing on Social Web Software and Services in *The Psalms* GitHub Wiki.
+- [**/stern**](https://davidblue.wtf/stern), Redirects to *The Wall Street Journal*'s author page for Joanna Stern, Senior Personal Technology Columnist.
+- [**/stripe**](https://davidblue.wtf/stripe), Redirects to a Stripe pay link to tip me directly.
+- [**/swang**](https://davidblue.wtf/swang), Redirects to the WTF vocabulary entry I authored for "swang."
+- [**/tabs**](https://davidblue.wtf/tabs),  Redirects to an invite to join my *Reading* Shared Safari Tab Group.
+- [**/taiokeys**](https://davidblue.wtf/taiokeys), Redirects to a shared Numbers spreadsheet on iCloud documenting keyboard shortcuts within the iOS/iPadOS/macOS, Markdown-based writing application, Taio.
+- [**/targetffmpeg**](https://davidblue.wtf/targetffmpeg), Redirects to the WTF documentation page for my Resize Video to Target Size Shortcut.
+- [**/teaviation**](https://davidblue.wtf/teaviation), Redirects to the WTF documentation page for my Aviation TextExpander Snippet Group.
+- [**/telegram**](https://davidblue.wtf/telegram), Redirects to the *Extratone* Telegram channel.
+- [**/telegraph**](https://davidblue.wtf/telegraph), Redirects to the WTF index page for my posts on Telegra.ph.
+- [**/terminology**](https://davidblue.wtf/terminology), Redirects to the WTF copy of my Terminology Dictionary App Store Review.
+- [**/thingschrome**](https://davidblue.wtf/thingschrome), Redirects to the WTF documentation page for my Things Chrome Theme.
+- [**/thingsnoir**](https://davidblue.wtf/thingsnoir), Redirects to the installation URL for my Things Dark Noir theme.
+- [**/thingsupdate**](https://davidblue.wtf/thingsupdate), Redirects to the WTF documentation page for my Things Update Drafts action.
+- [**/tildedrop**](https://davidblue.wtf/tildedrop), Redirects to my tilde Raindrop collection.
+- [**/timmy**](https://davidblue.wtf/timmy), Redirects to the WTF documentation page for Timmy's Pool Party.
+- [**/trent**](https://davidblue.wtf/trent), Redirect to the timecoded YouTube moment we discovered His Name...
+- [**/tripod**](https://davidblue.wtf/tripod), Redirects to some brief documentation I attempted to explain the hellish contraption I use to suspend my phone in front of my face when keyboarding.
+- [**/truck**](https://davidblue.wtf/truck), Redirects to my *Gran Turismo 6* gameplay demo video.
+- [**/tuskerx**](https://davidblue.wtf/tuskerx), Redirects to the WTF documentation page for my email thread with Tusker Developer shadowfacts on the future of X-Callback-URL.
+- [**/tweetdecklists**](https://davidblue.wtf/tweetdecklists), Redirects to the WTF documentation for my "Backup/Export Twitter Lists with TweetDeck" guide.
+- [**/twitter**](https://davidblue.wtf/twitter), Redirects to my Twitter profile.
+- [**/ulysseshelp**](https://davidblue.wtf/ulysseshelp), Redirects to the WTF documentation page concatenating all the default, in-app Ulysses help notes.
+- [**/ulyssesx**](https://davidblue.wtf/ulyssesx), Redirects to Ulysses' X-Callback Support page, revived!
+- [**/usage**](https://davidblue.wtf/usage), Redirects to the WTF documentation page for my ongoing cellular data usage log.
+- [**/userguide**](https://davidblue.wtf/userguide), Redirects to Apple's official "iPhone User Guide" in the Apple Books store.
+- [**/val2021**](https://davidblue.wtf/val2021), Redirects to the main page for the 2021 film *Val* on Amazon Prime Video.
+- [**/vfruits**](https://davidblue.wtf/vfruits), Redirects to an Itty URL that will open Datafruits.fm's live stream in VLC for iOS/iPadOS.
+- [**/vocabulary**](https://davidblue.wtf/vocabulary), Redirects internally to the WTF vocabulary index.
+- [**/vr**](https://davidblue.wtf/vr), Redirects to "Virtual Reality Virginity, Lost" on *The Psalms*.
+- [**/wallpaper**](https://davidblue.wtf/wallpaper), Redirects to my shared Wallpapers iCloud Photos album.
+- [**/waterminder**](https://davidblue.wtf/waterminder), Redirects to my fucking shared WaterMinder data.
+- [**/waterminderx**](https://davidblue.wtf/waterminderx), Redirects to the WTF reference page for WaterMinder's X-Callback-URL support.
+- [**/wayback**](https://davidblue.wtf/wayback), Redirects to the WTF Documentation page for the wayback_machine_downloader.
+- [**/wcindex**](https://davidblue.wtf/wcindex), Redirects to the WTF documentation page for my index of local repositories in [Working Copy](https://apps.apple.com/us/app/working-copy-git-client/id896694807).
+- [**/whatsnew**](https://davidblue.wtf/whatsnew), Redirects to the "What's new in Shortcuts" Apple Support page.
+- [**/whirl**](https://davidblue.wtf/whirl), Redirects to dozens’ Tilde Whirl podcast!
+- [**/wiki**](https://davidblue.wtf/wiki), Redirects to my (Failed) Personal Wiki experiment on Fucking Notion.
+- [**/wikipedia**](https://davidblue.wtf/wikipedia), Redirects to my personal user page on Wikipedia.
+- [**/wishlist**](https://davidblue.wtf/wishlist), Redirects to my HELP Amazon wishlist.
+- [**/withlove**](https://davidblue.wtf/withlove), Redirects to my "remix" of Hilary Duff's *With Love* on Whyp.
+- [**/woofs**](https://davidblue.wtf/woofs), Redirects to the live video stream of my local Yuppie Pet Daycare.
+- [**/xspec**](https://davidblue.wtf/xspec), Redirects to the WTF archive page for the original x-callback-url Specification.
+- [**/ytfeed**](https://davidblue.wtf/ytfeed), Redirects to an XML/RSS feed of Extratone's YouTube channel.
+- [**/zariah**](https://davidblue.wtf/zariah),  Redirects to the Craft Publish page for my primary aircraft in Infinite Flight.
