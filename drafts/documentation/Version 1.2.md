@@ -1,3 +1,0 @@
-# Version 1.2
-2021-04-28-02.47.38
-I removed the copy to clipboard action from the Shortcut and updated it accordingly on RoutineHub today - it turns out, it was just copying the entire URL from whatever streaming service `eg: song.link/youtube.com/thelink instead of song.link.com/correctlink` which needlessly adds to the already-overwhelming number of API requests they’re experiencing right now. Instead, just tap the small “copy link” text (first of three buttons, by default.)

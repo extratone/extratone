@@ -1,1 +1,0 @@
-# Incorrect/Inconsistent Spotlight Response to `⌘ + Spacebar`

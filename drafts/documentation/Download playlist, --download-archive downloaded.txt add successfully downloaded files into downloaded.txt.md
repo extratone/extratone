@@ -1,2 +1,0 @@
-# Download playlist, --download-archive downloaded.txt add successfully downloaded files into downloaded.txt
-youtube-dl --download-archive downloaded.txt --no-overwrites -ict --yes-playlist --extract-audio --audio-format mp3 --audio-quality 0 --socket-timeout 5 https://www.youtube.com/playlist?list=UUCvVpbYRgYjMN7mG7qQN0Pg
